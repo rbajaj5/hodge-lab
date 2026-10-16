@@ -14,6 +14,12 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Imaginary geometry gallery:** the same GPU-generated Gaussian input under different flow angles and directional conductances. These are regularized illustrations. [Equations, images, and checks](notes/imaginary-geometry-gallery.md).
 
+**Hodge projection search:** 600 new three-character degree-seven candidates outside the Jacobian ideal; all 34 shortlisted/control directions fail exact checks with the full 840-dimensional correction space. [The coefficient heat flow and its obstruction](notes/hodge-projected-search.md).
+
+**48-handle continuation:** paired GPU fields, rotated harmonic directions, and a measured phase-coherence crossover. No phase transition found in this finite Gaussian model; the crossover scale depends on smoothing. [Images, equations, and failed long-flow approximation](notes/high-genus-flow.md).
+
+![One genus-48 field at three stiffnesses](results/high-genus-flow/stiffness-triptych.png)
+
 ![One field, three directions](results/imaginary-geometry/angle-triptych.png)
 
 **Attribution update:** fqlx had already published the 138 single-character exclusions before our preceding commit. Our separately implemented calculation checks that result; it is not a first report of the bound. [Single-character calculation and chronology](notes/degree-seven.md).
@@ -36,6 +42,8 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Hodge correction projection | 600 three-character directions screened; 34 fixed directions exactly rejected | [Heat flow and complete correction map](notes/hodge-projected-search.md) |
+| Genus-48 Gaussian phase response | Three paired weightings, 256 samples each; broad analytic crossover and strong smoothing dependence | [High-genus gallery and limits](notes/high-genus-flow.md) |
 | Imaginary geometry gallery | CUDA GFF transforms and flow textures; paired angle and directional-weight comparisons | [Gallery and model](notes/imaginary-geometry-gallery.md) |
 | Dimer-inspired cycle determinants | 45 distinct directions pass E1; all fail E2 with all 840 corrections allowed | [Determinants, twists, and redundant edge weights](notes/dubedat-cycles.md) |
 | Degree-seven {chi_X0, chi_Y0} family | Excluded by 25 exact chart identities; combined work covers all 9,453 two-character families | [Family-13 continuation and family-30 replay](notes/x0-y0-exclusion.md) |
@@ -76,6 +84,9 @@ python algebra/degree7_character_search.py --check
 python algebra/degree7_y0_x1.py --check
 python -S algebra/degree7_x0_y0.py --check
 python -S experiments/dubedat_cycle_search.py --check
+python -S experiments/hodge_projected_search.py --check
+python -S experiments/check_hodge_projected_search.py
+python experiments/check_high_genus_flow.py
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.
@@ -94,6 +105,8 @@ python experiments/gram_discrimination.py --cpu
 python experiments/denominator_gram_search.py --cpu
 python -S experiments/dubedat_cycle_search.py --workers 3
 python experiments/plot_dubedat_cycles.py
+python experiments/hodge_projected_search.py
+python experiments/plot_hodge_search.py
 ```
 
 For an NVIDIA GPU with a compatible CUDA 12 environment:
@@ -107,6 +120,8 @@ python experiments/gram_discrimination.py
 python experiments/denominator_gram_search.py
 python experiments/gpu_identity_screen.py
 python experiments/imaginary_geometry_gallery.py
+python experiments/high_genus_flow.py
+python experiments/render_high_genus_flow.py
 ```
 
 The recorded GPU was an RTX 5070 Ti Laptop GPU, using CuPy 13.6.0. Gaussian noise is seeded on the CPU; GPU/CPU responsibilities are recorded in each report. `HODGE_CUDA_DEPS` can point to an existing isolated dependency directory; it is optional. Regeneration overwrites the corresponding result files; review the diff before committing a new run. Floating-point output may vary slightly by platform.

@@ -1,0 +1,147 @@
+{
+  "seed": 202610164801,
+  "samples_per_weight": 256,
+  "fixed_anchor_vertices": 96,
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "vertices": 7200,
+  "edges": 21882,
+  "faces": 14588,
+  "genus": 48,
+  "harmonic_dimension_from_topology": 96,
+  "chi_display": 0.62,
+  "smoothing_steps": 64,
+  "smoothing_dt": 0.03636363636363637,
+  "mesh_sha256": "17fbeb908a08366fae2b011ae058f539a855297fd6fdeb067bd538cc648dbc26",
+  "experiments": [
+    {
+      "anisotropy": -1.6,
+      "conductance_range": [
+        0.1181238356011435,
+        2.8978527449817135
+      ],
+      "sample_solve": {
+        "iterations": 400,
+        "max_grounded_residual": 2.6780164214686277e-12,
+        "seconds": 0.5889294000007794
+      },
+      "covariance_solve": {
+        "iterations": 420,
+        "max_grounded_residual": 7.33487988895176e-12,
+        "seconds": 0.29638059999706456
+      },
+      "max_full_relative_residual": 2.7130330190012934e-12,
+      "scipy_independent_relative_error": 2.005503060681169e-11,
+      "mean_edge_energy": 7213.67748388317,
+      "edge_energy_standard_error": 7.106501126775634,
+      "expected_edge_energy": 7199,
+      "phase_response": {
+        "response_peak_stiffness": 0.22394978272638227,
+        "response_peak_height": 0.33838879343089445,
+        "half_max_stiffness_interval": [
+          0.07440162284726946,
+          1.0106358346467719
+        ],
+        "half_max_width_decades": 1.1330122847082613
+      }
+    },
+    {
+      "anisotropy": 0.0,
+      "conductance_range": [
+        1.0,
+        1.0
+      ],
+      "sample_solve": {
+        "iterations": 260,
+        "max_grounded_residual": 1.942227960168847e-11,
+        "seconds": 0.341637699995772
+      },
+      "covariance_solve": {
+        "iterations": 280,
+        "max_grounded_residual": 8.788367033596401e-12,
+        "seconds": 0.19227809999574674
+      },
+      "max_full_relative_residual": 1.9447682268570162e-11,
+      "scipy_independent_relative_error": 1.6156764250384818e-10,
+      "mean_edge_energy": 7214.4409989967235,
+      "edge_energy_standard_error": 7.281613525048266,
+      "expected_edge_energy": 7199,
+      "phase_response": {
+        "response_peak_stiffness": 0.20078730546004223,
+        "response_peak_height": 0.34875000165854914,
+        "half_max_stiffness_interval": [
+          0.07047614722427017,
+          0.8858018935421591
+        ],
+        "half_max_width_decades": 1.099294450192898
+      }
+    },
+    {
+      "anisotropy": 1.6,
+      "conductance_range": [
+        0.34508309703856616,
+        8.465691914852783
+      ],
+      "sample_solve": {
+        "iterations": 440,
+        "max_grounded_residual": 4.8639301305292326e-12,
+        "seconds": 0.5100605999978143
+      },
+      "covariance_solve": {
+        "iterations": 460,
+        "max_grounded_residual": 1.9558047366754492e-11,
+        "seconds": 0.2822790000063833
+      },
+      "max_full_relative_residual": 4.864701979778168e-12,
+      "scipy_independent_relative_error": 3.8313424369941866e-11,
+      "mean_edge_energy": 7210.222706917625,
+      "edge_energy_standard_error": 7.680821377093671,
+      "expected_edge_energy": 7199,
+      "phase_response": {
+        "response_peak_stiffness": 0.19593765716651523,
+        "response_peak_height": 0.34583542488326474,
+        "half_max_stiffness_interval": [
+          0.06796292622533823,
+          0.8677230064550076
+        ],
+        "half_max_width_decades": 1.1061090426421725
+      }
+    }
+  ],
+  "smoothing_controls": [
+    {
+      "smoothing_steps": 0,
+      "response_peak_stiffness": 0.9384047484578156,
+      "response_peak_height": 0.3619090649804093,
+      "half_max_stiffness_interval": [
+        0.3469458890993829,
+        4.063241670076012
+      ],
+      "half_max_width_decades": 1.0686109077190031
+    },
+    {
+      "smoothing_steps": 16,
+      "response_peak_stiffness": 0.35005881299895936,
+      "response_peak_height": 0.3573067294403611,
+      "half_max_stiffness_interval": [
+        0.1270924046331323,
+        1.5261181197695752
+      ],
+      "half_max_width_decades": 1.0794685520266298
+    },
+    {
+      "smoothing_steps": 128,
+      "response_peak_stiffness": 0.14270380659212817,
+      "response_peak_height": 0.3395359013669961,
+      "half_max_stiffness_interval": [
+        0.048221904896308274,
+        0.6373301864973591
+      ],
+      "half_max_width_decades": 1.1211201266915993
+    }
+  ],
+  "harmonic_closed_residual": 1.223124333352605e-10,
+  "harmonic_coclosed_residual": 1.8190685137191965e-10,
+  "seconds": 6.650316000006569,
+  "interpretation": "Analytic finite-Gaussian phase-decoherence crossover, not a detected thermodynamic phase transition. Scalar relative-phase coherence uses 96 fixed vertices, not parallel-transported tangent alignment. No mesh/volume limit, dimer model, compact winding sectors, SLE theorem or algebraic certificate.",
+  "compute": "Seeded CPU noise; CUDA sampling, smoothing, covariance and Hodge projections. Independent SciPy sparse solves. CPU analytic response formulas."
+}

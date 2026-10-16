@@ -26,3 +26,6 @@ jobs:
       - run: python -S algebra/degree7_y0_x1.py --check
       - run: python -S algebra/degree7_x0_y0.py --check
       - run: python -S experiments/dubedat_cycle_search.py --check
+      - run: python -S experiments/hodge_projected_search.py --check
+      - run: python -S experiments/check_hodge_projected_search.py
+      - run: python experiments/check_high_genus_flow.py

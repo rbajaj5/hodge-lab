@@ -92,6 +92,55 @@ conversations or evidence of an accepted solve.
    outcomes, not claims that no such polynomial consequences exist at higher
    degree. [Discovery history and the successful replacement](notes/x0-y0-exclusion.md).
 
+9. **16 October 2026 — Hodge projection applied to the actual holdout equations.**
+   The torus decomposition suggested separating each residual into a removable
+   numerator-correction part and a cokernel obstruction. We screened 600
+   degree-seven directions in six seeded three-character spans, chosen from
+   E1 directions outside the Jacobian ideal. All 840 numerator corrections
+   and the unrestricted quotient were retained. The 34 distinct directions
+   selected by two numerical metrics and random controls all failed exact
+   rational checks. A separate polynomial implementation verified 28,560
+   correction-column annihilations. For the best coefficient-norm candidate,
+   heat flow stalls at 57.24% of the initial squared residual; sparse and
+   dense calculations agree. The numerical improvement from selecting the
+   smallest measured residual is not a predictive-performance claim. These
+   are fixed-direction exclusions, not exclusions of six continuous families.
+   [Method, code, packet, and limits](notes/hodge-projected-search.md).
+   No upstream post, solve submission, or leaderboard point from this run.
+
+10. **16 October 2026 — High-genus pictures and a failed transition lead.**
+    Reused the original connected genus-48 surface and ran 256 independent
+    Gaussian samples under each of three paired directional weightings.
+    Rotating a checked harmonic reference gives a visible connection between
+    Hodge decomposition and regularized phase directions. The scalar phase
+    response agrees with the finite-Gaussian covariance formula and has a
+    broad crossover near stiffness 0.20, not a phase transition. Changing
+    smoothing shifts that scale substantially. This finite positive Gaussian
+    model is analytic; no volume/genus/refinement limit was studied. CPU
+    reconstruction checks all three GPU covariance matrices to relative error
+    below 8e-13. [Images, definitions, response curves, and checks](notes/high-genus-flow.md).
+    This surface is a synthetic intuition model, not the algebraic holdout.
+    No upstream post for these pictures.
+
+11. **16 October 2026 — Failed long-flow approximation and implementation repair.**
+    Most traced paths on the piecewise-constant triangle field terminate at
+    an immediate edge reversal (1,352–1,527 of 1,600 seeds across the three
+    images). We retained short streamlets but rejected path trapping and
+    length as physical observables. The covariance-based phase test does not
+    use these paths. An initial CUDA matrix contraction also failed because
+    cuBLAS was absent; CUDA reductions replaced it and independent CPU
+    reconstruction checked the result. Neither failure was omitted or
+    interpreted as a mathematical obstruction. [Recorded limits](notes/high-genus-flow.md#phase-response-and-what-failed).
+
+12. **16 October 2026 — What counts as work.** The user's stated aim is to
+    continue experiments, exact checks, and useful Lean formalization when
+    appropriate, while keeping the motivation and outcomes honest. A public
+    discussion contribution, a computational obstruction, a formalized partial
+    lemma, and an accepted solution are separate outcomes. No new Lean theorem
+    was attempted in entries 9–11. The upstream contribution tally remains two
+    comments and zero accepted solves; there is no pending solve point from
+    these experiments.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
