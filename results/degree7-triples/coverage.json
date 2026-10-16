@@ -1,0 +1,3682 @@
+{
+  "tested_families": 152,
+  "excluded_families": 132,
+  "unresolved_families": 20,
+  "anchor_extensions": 136,
+  "excluded_anchor_extensions": 132,
+  "remaining_third_characters": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      2,
+      3
+    ],
+    [
+      5,
+      3,
+      0
+    ]
+  ],
+  "coordinate_triples_tested": 20,
+  "total_possible_three_character_families": 428536,
+  "closure_dependency": "The archived complete X0/Y0 exclusion; no new proof of that pair is claimed.",
+  "families": [
+    {
+      "number": 1,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 2,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 18,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 3,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 19,
+      "anchor_extension": true,
+      "coordinate_triple": true
+    },
+    {
+      "number": 4,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 5,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 6,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 7,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 8,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 9,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 10,
+      "characters": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 11,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 12,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 13,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 14,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 15,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 16,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": true,
+      "coordinate_triple": true
+    },
+    {
+      "number": 17,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 18,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 19,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 20,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 21,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 22,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 23,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 24,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 25,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 26,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 27,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 28,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 29,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 30,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 31,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 32,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 18,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 33,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 34,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 35,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 36,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 37,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 38,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 19,
+      "anchor_extension": true,
+      "coordinate_triple": true
+    },
+    {
+      "number": 39,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 19,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 40,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 41,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 42,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 43,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 44,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 45,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 46,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 47,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 48,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 49,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 50,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 51,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 52,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 53,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 54,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 55,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 56,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 57,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 58,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 59,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 60,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 61,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          5,
+          0
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 19,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 62,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 63,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 64,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          0,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 18,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 65,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          0,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 66,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          0,
+          5
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 67,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 68,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 69,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 70,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          1,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 71,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          1,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 72,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 73,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 74,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 75,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 76,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 18,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 77,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 78,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 79,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 80,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 81,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 82,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 83,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          5,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 84,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          5,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 85,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          5,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 86,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 87,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 88,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 89,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          4
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 90,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 91,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 92,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 93,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 94,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 95,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          5
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 96,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          3,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 97,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 98,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          3,
+          4
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 99,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          3
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 100,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 101,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          5,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 102,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          5,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 103,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          5,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 104,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          5,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 105,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 106,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 107,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 108,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          5
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 109,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 110,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 111,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          4
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 112,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          0
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 113,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 114,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 115,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 116,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          3,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 117,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          3,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 118,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          3,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 119,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          3,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 120,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          4,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 121,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          4,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 122,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          4,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 123,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          0
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 18,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 124,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 125,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 126,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 127,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 128,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 129,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 130,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          1,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 131,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          1,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 132,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          1,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 133,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          1,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 134,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          2,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 17,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 135,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          2,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 136,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          2,
+          2
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 137,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": true,
+      "coordinate_triple": true
+    },
+    {
+      "number": 138,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          1
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 139,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 140,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          4
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 141,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          5
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 142,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 143,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          4,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 144,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          4,
+          4
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 145,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          4,
+          5
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 146,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          5,
+          0
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 14,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 147,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          5,
+          3
+        ]
+      ],
+      "status": "excluded_by_relaxed_duals",
+      "initial_dimension": 16,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 148,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          5,
+          4
+        ]
+      ],
+      "status": "excluded_by_shared_charts",
+      "initial_dimension": 15,
+      "anchor_extension": true,
+      "coordinate_triple": false
+    },
+    {
+      "number": 149,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 150,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 151,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 21,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    },
+    {
+      "number": 152,
+      "characters": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "initial_dimension": 20,
+      "anchor_extension": false,
+      "coordinate_triple": true
+    }
+  ]
+}

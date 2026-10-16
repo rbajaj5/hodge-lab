@@ -10,6 +10,10 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
+**Systematic three-character continuation:** of all 136 extensions of the `X0/Y0` pair by a third character, **132 complete families are excluded and four remain unresolved**. Including all coordinate-character triples gives 152 tested families and 20 unresolved. Exact duals and shared-numerator chart proofs are replayed by two polynomial constructions. [Coverage, failed charts, and reproducible proofs](notes/three-character-families.md).
+
+![Coverage of all X0/Y0 three-character extensions](results/degree7-triples/character-atlas.png)
+
 **Dubedat-inspired construction:** a weighted six-cycle matrix generates degree-seven determinants and exact first-equation lifts. All **45** tested directions fail the full second equation, including 30 with seven or eight characters. [Construction and exact witnesses](notes/dubedat-cycles.md).
 
 **Imaginary geometry gallery:** the same GPU-generated Gaussian input under different flow angles and directional conductances. These are regularized illustrations. [Equations, images, and checks](notes/imaginary-geometry-gallery.md).
@@ -42,6 +46,7 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Systematic three-character families | 152 complete families tested; 132 excluded, 20 unresolved; all 136 X0/Y0 extensions included | [Exact duals, shared charts, and coverage map](notes/three-character-families.md) |
 | Hodge correction projection | 600 three-character directions screened; 34 fixed directions exactly rejected | [Heat flow and complete correction map](notes/hodge-projected-search.md) |
 | Genus-48 Gaussian phase response | Three paired weightings, 256 samples each; broad analytic crossover and strong smoothing dependence | [High-genus gallery and limits](notes/high-genus-flow.md) |
 | Imaginary geometry gallery | CUDA GFF transforms and flow textures; paired angle and directional-weight comparisons | [Gallery and model](notes/imaginary-geometry-gallery.md) |
@@ -87,6 +92,10 @@ python -S experiments/dubedat_cycle_search.py --check
 python -S experiments/hodge_projected_search.py --check
 python -S experiments/check_hodge_projected_search.py
 python experiments/check_high_genus_flow.py
+python -S algebra/degree7_triples.py --check
+python -S algebra/check_degree7_triples.py
+python -S algebra/degree7_triple_shared.py --check
+python -S algebra/degree7_triple_shared.py --check --independent
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.

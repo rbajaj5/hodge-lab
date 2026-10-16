@@ -1,0 +1,18 @@
+{
+  "upstream_commit": "b8c4edeb80a82395ec07164caf445cfa43bbbd56",
+  "preceding_hodge_lab_commit": "73471702729e378adc69817f5ddfd7ba2571f862",
+  "target": {
+    "instance": "holdout",
+    "q": 1
+  },
+  "dependency_sha256": {
+    "sources/sextics/data/holdout/instance.rec": "59a5f8470eca127eb7ec4d20aea7c349c5069c71fc89a3bb86df931d9c48a6e2",
+    "algebra/degree7_e1_basis.json": "95e2a9b264634de30cf049a885dd6977207a4080f276c9d8edeec2bb516214df",
+    "results/degree7-x0-y0/certificate.json.gz": "d133297f90efe8522f938aeac4367974417a870e80f7cbfe9b53b405ef09dfb5",
+    "references/degree7-x0-y0-dependencies.json": "2688e296615aa9329bfa8a00e580c69982f324a305dc758dd632931710f075c1"
+  },
+  "line_endings": "Text hashes normalize CRLF to LF.",
+  "prior_method": "fqlx enlarged-correction pair scan, https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982957",
+  "closure": "Prior Hodge Lab complete X0/Y0 pair exclusion; scripts replay its pinned dependencies.",
+  "new_scope": "152 complete D7 triples; 132 excluded, 20 unresolved. No solve or Lean claim."
+}

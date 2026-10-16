@@ -29,3 +29,7 @@ jobs:
       - run: python -S experiments/hodge_projected_search.py --check
       - run: python -S experiments/check_hodge_projected_search.py
       - run: python experiments/check_high_genus_flow.py
+      - run: python -S algebra/degree7_triples.py --check
+      - run: python -S algebra/check_degree7_triples.py
+      - run: python -S algebra/degree7_triple_shared.py --check
+      - run: python -S algebra/degree7_triple_shared.py --check --independent

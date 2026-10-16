@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "independent_polynomials": true,
+  "families_attempted": 24,
+  "families_covered": 20,
+  "charts": 70,
+  "excluded_charts": 48,
+  "inferences": 1739,
+  "families": [
+    {
+      "family": 3,
+      "covered": true,
+      "charts": 10,
+      "excluded_charts": 6,
+      "inferences": 236
+    },
+    {
+      "family": 13,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 44
+    },
+    {
+      "family": 16,
+      "covered": false,
+      "charts": 5,
+      "excluded_charts": 0,
+      "inferences": 15
+    },
+    {
+      "family": 29,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 22
+    },
+    {
+      "family": 32,
+      "covered": true,
+      "charts": 4,
+      "excluded_charts": 4,
+      "inferences": 108
+    },
+    {
+      "family": 33,
+      "covered": true,
+      "charts": 2,
+      "excluded_charts": 2,
+      "inferences": 72
+    },
+    {
+      "family": 38,
+      "covered": true,
+      "charts": 10,
+      "excluded_charts": 6,
+      "inferences": 236
+    },
+    {
+      "family": 45,
+      "covered": true,
+      "charts": 3,
+      "excluded_charts": 3,
+      "inferences": 115
+    },
+    {
+      "family": 48,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 38
+    },
+    {
+      "family": 61,
+      "covered": true,
+      "charts": 3,
+      "excluded_charts": 3,
+      "inferences": 118
+    },
+    {
+      "family": 64,
+      "covered": true,
+      "charts": 3,
+      "excluded_charts": 3,
+      "inferences": 33
+    },
+    {
+      "family": 70,
+      "covered": true,
+      "charts": 3,
+      "excluded_charts": 3,
+      "inferences": 115
+    },
+    {
+      "family": 87,
+      "covered": false,
+      "charts": 1,
+      "excluded_charts": 0,
+      "inferences": 7
+    },
+    {
+      "family": 89,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 44
+    },
+    {
+      "family": 98,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 31
+    },
+    {
+      "family": 99,
+      "covered": true,
+      "charts": 3,
+      "excluded_charts": 3,
+      "inferences": 91
+    },
+    {
+      "family": 111,
+      "covered": true,
+      "charts": 2,
+      "excluded_charts": 2,
+      "inferences": 118
+    },
+    {
+      "family": 112,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 38
+    },
+    {
+      "family": 115,
+      "covered": false,
+      "charts": 2,
+      "excluded_charts": 0,
+      "inferences": 4
+    },
+    {
+      "family": 123,
+      "covered": true,
+      "charts": 1,
+      "excluded_charts": 1,
+      "inferences": 28
+    },
+    {
+      "family": 137,
+      "covered": false,
+      "charts": 5,
+      "excluded_charts": 0,
+      "inferences": 35
+    },
+    {
+      "family": 144,
+      "covered": true,
+      "charts": 2,
+      "excluded_charts": 2,
+      "inferences": 72
+    },
+    {
+      "family": 145,
+      "covered": true,
+      "charts": 3,
+      "excluded_charts": 2,
+      "inferences": 19
+    },
+    {
+      "family": 148,
+      "covered": true,
+      "charts": 2,
+      "excluded_charts": 2,
+      "inferences": 100
+    }
+  ],
+  "seconds": 7.942970800002513,
+  "scope": "Third character vanishes in covered families; closure requires prior X0/Y0 exclusion. The relaxed pass must also be verified."
+}

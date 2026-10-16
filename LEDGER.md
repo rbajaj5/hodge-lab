@@ -141,6 +141,60 @@ conversations or evidence of an accepted solve.
     comments and zero accepted solves; there is no pending solve point from
     these experiments.
 
+13. **16 October 2026 — From sampled directions to complete three-character families.**
+    The user's request was to make the holdout search systematic. We tested
+    all 136 third-character extensions of the previously difficult `X0/Y0`
+    pair, plus all 20 coordinate-character triples, giving 152 distinct
+    families after four overlaps. All coefficients in each retained E1
+    character space vary over the complex numbers. Exact obstruction
+    functionals replace the earlier numerical projection: 112 families
+    reduce to the already excluded pair. This extends fqlx's enlarged-
+    correction pair strategy; it is not a new theorem from imaginary geometry.
+    [Selection, equations, attribution, and coverage map](notes/three-character-families.md).
+
+14. **16 October 2026 — Successful shared-numerator continuation and retained failures.**
+    The relaxed test left 40 families unresolved. For the 24 remaining
+    `X0/Y0` extensions we restored the actual shared numerator coefficients,
+    retaining the full correction space allowed by exact stabilizer projection.
+    Seventeen complete chart covers succeeded. Three more succeeded after
+    removing coefficients already proved zero and repeating the remaining
+    charts. Their original failed charts remain in the packet. The result is
+    **132 excluded and four unresolved X0/Y0 extensions**, or 132 excluded
+    and 20 unresolved families in the combined selection. All 24 initial
+    shared-family runs completed inside their 60-second limits. No numerical
+    failure, timeout, or unresolved chart is treated as a nonexistence proof.
+    The four residual third characters are `(0,1,0)`, `(3,0,1)`, `(4,2,3)`,
+    and `(5,3,0)`; their 13 terminal charts need stronger methods. The other
+    16 coordinate triples received only the relaxed pass. [Proof packets,
+    stopping rules, and failed attempts](notes/three-character-families.md#what-remains-and-what-failed).
+
+15. **16 October 2026 — Evidence and scope of this batch.** Exact replay checks
+    6,219 physical duals, 265 square identities, and 70 chart attempts with
+    1,739 inferences. A separate polynomial construction uses the pinned target
+    and opposite division order; it shares the identity replayer and is not
+    independent human review. Damaged identities are rejected, and all 28
+    unit tests pass. No Lean theorem was attempted: the useful output here is
+    the portable rational obstruction and explicit remaining families. This
+    covers 152 of 428,536 possible triples; the unconditional degree bound
+    remains seven and holdout remains unsolved. The checkpoint-read race in an
+    early pilot was an implementation failure, repaired with atomic writes,
+    not a mathematical result. This batch is recorded in Hodge Lab; no new
+    upstream post or solve submission is counted in the tally.
+
+16. **16 October 2026 — Keep the simpler baseline competitive.** The comparison
+    with sequence-model research suggests evaluating an ambitious mechanism
+    against improvements to an established method. The analogy has limits:
+    [Mamba](https://arxiv.org/abs/2312.00752) changes sequence processing and its
+    computational scaling, whereas [RoPE](https://arxiv.org/abs/2104.09864),
+    [ALiBi](https://arxiv.org/abs/2108.12409), and
+    [YaRN](https://arxiv.org/abs/2309.00071) concern positional representation
+    or context extension; their original papers predate Mamba. This is not a
+    claim that one settles the other's research questions. In Hodge Lab, the
+    practical lesson is to compare geometric proposals with exact symmetry
+    and algebraic baselines, and attribute success to the method that actually
+    supplied the verified obstruction. The 132-family result does not establish
+    an advantage for anisotropy, GPUs, or imaginary geometry.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
