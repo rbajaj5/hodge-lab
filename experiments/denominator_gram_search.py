@@ -266,7 +266,8 @@ def run(cpu=False):
         'replications':replications,
         'replication_protocol':'After seeing the primary result, run four fresh fixed candidate seeds with unchanged Gram matrices, support sizes, weights, temperature and selection rule. Report all seeds. Not a preregistered significance test.',
         'backend':'NumPy CPU' if cpu else cp.cuda.runtime.getDeviceProperties(0)['name'].decode(),
-        'work_split':'GPU weighted covariance and quadratic scoring; CPU polynomial feature evaluation, sparse least squares, and exact rational certificates.',
+        'work_split':('All numerical and exact computations on CPU.' if cpu else
+                      'GPU weighted covariance and quadratic scoring; CPU polynomial feature evaluation, sparse least squares, and exact rational certificates.'),
         'seconds':time.perf_counter()-start,
         'scope':'Fixed real rational candidates, two support sizes, one temperature, one set of training planes and five candidate seeds. No complex search, global degree-six exclusion, or Hodge certificate inferred. Gram energy is a heuristic; the E2 norm is a coordinate-dependent numerical surrogate. Exact dual checks exclude only their fixed candidates and scalar multiples.'}
     OUT.mkdir(parents=True,exist_ok=True)
