@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "field": "GF(1000003)",
+      "prime": 1000003,
+      "N_columns": 4752,
+      "D_columns": 462,
+      "rows": 6188,
+      "rank_N": 4437,
+      "rank_N_AD": 4790,
+      "N_kernel_dimension": 315,
+      "D_projection_dimension": 109,
+      "independent_Koszul_generators": 315,
+      "all_E1_lifts_verified": true,
+      "F_basis_coordinates": {
+        "0": "1",
+        "36": "1",
+        "82": "1",
+        "105": "1",
+        "108": "1",
+        "96": "1"
+      },
+      "legality": "D proportional to F is inadmissible; preserve its coordinate in general D",
+      "column_elimination_steps": 9767,
+      "seconds": 0.03319829999963986
+    },
+    {
+      "field": "GF(1000033)",
+      "prime": 1000033,
+      "N_columns": 4752,
+      "D_columns": 462,
+      "rows": 6188,
+      "rank_N": 4437,
+      "rank_N_AD": 4790,
+      "N_kernel_dimension": 315,
+      "D_projection_dimension": 109,
+      "independent_Koszul_generators": 315,
+      "all_E1_lifts_verified": true,
+      "F_basis_coordinates": {
+        "0": "1",
+        "36": "1",
+        "82": "1",
+        "105": "1",
+        "108": "1",
+        "96": "1"
+      },
+      "legality": "D proportional to F is inadmissible; preserve its coordinate in general D",
+      "column_elimination_steps": 9767,
+      "seconds": 0.03280109999832348
+    },
+    {
+      "field": "Q",
+      "prime": null,
+      "N_columns": 4752,
+      "D_columns": 462,
+      "rows": 6188,
+      "rank_N": 4437,
+      "rank_N_AD": 4790,
+      "N_kernel_dimension": 315,
+      "D_projection_dimension": 109,
+      "independent_Koszul_generators": 315,
+      "all_E1_lifts_verified": true,
+      "F_basis_coordinates": {
+        "0": "1",
+        "36": "1",
+        "82": "1",
+        "105": "1",
+        "108": "1",
+        "96": "1"
+      },
+      "legality": "D proportional to F is inadmissible; preserve its coordinate in general D",
+      "column_elimination_steps": 9767,
+      "seconds": 0.13894319999963045,
+      "basis_sha256": "16865f330d40b52a3bbd0c6d7ec11ef4ebd6113709fbd41941b147d392e1c182"
+    }
+  ],
+  "claim": "Independent reproduction of prior degree-six E1 result; not new mathematics or a full E2 solution"
+}

@@ -1,0 +1,20 @@
+# Sources and exact revisions
+
+Every source below is a public Git submodule pinned to the displayed commit. `sources.json` is the machine-readable ledger. Direct imports retain source notices and licensing. Pinning a source records provenance; it does not independently validate all of its claims.
+
+| Source | Revision | Actual role |
+|---|---|---|
+| [sextics](https://github.com/hodge-computer/sextics) | [b8c4edeb80a8](https://github.com/hodge-computer/sextics/tree/b8c4edeb80a82395ec07164caf445cfa43bbbd56) | Actual target polynomials, accepted witness controls, pinned formal contract and historical leaderboard inputs. |
+| [a183068-supercongruence](https://github.com/rbajaj5/a183068-supercongruence) | [e6955c6a329a](https://github.com/rbajaj5/a183068-supercongruence/tree/e6955c6a329a713e7ed7b3f1dca165f587131c90) | Conceptual transfer: constant terms, factorial ratios and period congruence tests. No source theorem is assumed for the holdout. |
+| [kemeny-dp-posets](https://github.com/rbajaj5/kemeny-dp-posets) | [2de3f0ef2174](https://github.com/rbajaj5/kemeny-dp-posets/tree/2de3f0ef2174a0aad971b52f3ae26b8cc37ea552) | Direct imports: exact Kemeny scoring and subset dynamic programming; compared with HodgeRank. |
+| [ginibre-braid-dynamics-conjectures](https://github.com/rbajaj5/ginibre-braid-dynamics-conjectures) | [7a74b0cf1c37](https://github.com/rbajaj5/ginibre-braid-dynamics-conjectures/tree/7a74b0cf1c37f69e5ea1367ec5ffb5203ae728d3) | Direct imports: braid statistics and the existing order-sensitive pure-braid fixture. |
+| [sports-betting-assurance](https://github.com/rbajaj5/sports-betting-assurance) | [4b04e3d04d1b](https://github.com/rbajaj5/sports-betting-assurance/tree/4b04e3d04d1b1445b21698bb96fa18099ae101d4) | Direct import: BetGuard matrix-conditioning diagnostics, applied to eigenvector matrices. |
+| [qrcert](https://github.com/rbajaj5/qrcert) | [460fb63ab520](https://github.com/rbajaj5/qrcert/tree/460fb63ab5201848fcbf45c877902ac0c70bfe6f) | Architectural inspiration: separate candidate production from verification. No Lean soundness theorem is imported. |
+| [hypercube-probabilistic-estimates](https://github.com/rbajaj5/hypercube-probabilistic-estimates) | [2a110f24fe87](https://github.com/rbajaj5/hypercube-probabilistic-estimates/tree/2a110f24fe8793f80b323db641789a867e9801bf) | Conceptual transfer: exact cube spectra and degree multiplicities. The implemented unnormalized Laplacian is stated explicitly. |
+| [four-color-proof-program](https://github.com/rbajaj5/four-color-proof-program) | [6aec1aeab101](https://github.com/rbajaj5/four-color-proof-program/tree/6aec1aeab101ca5be051649ac1081fabfaa412ad) | Direct graph/coloring imports; adaptation of the spectral field filter to CuPy, without sample-wise variance normalization. |
+| [goe-determinant-factor-density](https://github.com/rbajaj5/goe-determinant-factor-density) | [d5f5974c195a](https://github.com/rbajaj5/goe-determinant-factor-density/tree/d5f5974c195a4fe84e5be3698c4da98f50ce71a2) | Inspected reference only. No GOE density theorem or implementation is used in the current experiments. |
+| [cycle-coloring-boundary-layer-audit](https://github.com/rbajaj5/cycle-coloring-boundary-layer-audit) | [75b65746ceaf](https://github.com/rbajaj5/cycle-coloring-boundary-layer-audit/tree/75b65746ceafd90529871ccf0ff997057386001b) | Inspected reference only. Available as a pinned source for later graph-cycle experiments; no new result claimed here. |
+
+The degree-six E1 dimensions and individual-direction search were previously reported by fqlx in [the holdout discussion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18980950). The repository credits these as reproduced prior work.
+
+Primary mathematical references are linked at the point of use in [anisotropy](notes/anisotropy.md), [response duality](notes/response-duality.md), [Gram discrimination](notes/gram-discrimination.md), and the [research log](RESEARCH_LOG.md).

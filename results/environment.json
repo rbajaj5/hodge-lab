@@ -1,0 +1,15 @@
+{
+  "python": "3.11.9",
+  "platform": "Windows",
+  "libraries": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1"
+  },
+  "cuda_experiment_environment": {
+    "cupy": "13.6.0",
+    "cuda_runtime": "12.9",
+    "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+  },
+  "notes": "CPU packages are from the active Python environment; CUDA experiments used an isolated CuPy installation. No machine-specific paths are required in the repository."
+}

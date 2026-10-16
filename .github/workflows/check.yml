@@ -1,0 +1,21 @@
+name: CPU checks and certificate replay
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python experiments/check_transfer_packet.py
+      - run: python algebra/degree6_verify_all_coefficients.py
+      - run: python algebra/fixed_denominator_search.py --check

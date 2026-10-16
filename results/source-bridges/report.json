@@ -1,0 +1,580 @@
+{
+  "seed": 202610162006,
+  "ranking": {
+    "counts": {
+      "profiles": 2600,
+      "unique_kemeny": 2328,
+      "hodge_order_is_kemeny": 1768,
+      "strict_hodge_scores": 1464,
+      "strict_hodge_but_suboptimal": 216
+    },
+    "example": {
+      "ballots": [
+        "ABCD",
+        "ABCD",
+        "BCDA"
+      ],
+      "hodge_ranking": "BACD",
+      "kemeny_ranking": "ABCD",
+      "hodge_cost": 4,
+      "kemeny_cost": 3,
+      "score_numerators": [
+        3,
+        5,
+        -1,
+        -7
+      ],
+      "score_denominator": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "pairwise_margins": [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      "gradient_numerators": [
+        -2,
+        4,
+        10,
+        6,
+        12,
+        6
+      ],
+      "cyclic_numerators": [
+        6,
+        0,
+        -6,
+        6,
+        0,
+        6
+      ],
+      "component_denominator": 4,
+      "cyclic_energy_fraction": 0.3,
+      "stability_certificate": {
+        "solution": {
+          "optimum_cost": 3,
+          "selected_ranking": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "optimum_count": 1,
+          "state_count": 16
+        },
+        "second_ranking": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "second_cost": 4,
+        "second_score_gap": 1,
+        "second_distance": 1,
+        "destabilizing_ranking": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "destabilizing_cost": 4,
+        "destabilizing_score_gap": 1,
+        "destabilizing_distance": 1,
+        "uniqueness_radius": 1,
+        "added_witness_copies": 1,
+        "augmented_state_count": 40,
+        "minimum_cost_by_distance": [
+          3,
+          4,
+          5,
+          6,
+          9,
+          12,
+          15
+        ]
+      }
+    },
+    "scope": "All 2600 unlabeled-voter multisets of three full rankings on four labeled candidates. Hodge least squares uses equal pair weights, with lexicographic score ties. With all triangles filled the harmonic component is zero; cyclic remainder is coexact. This is HodgeRank, not a Hodge-conjecture proof."
+  },
+  "cube_gff": {
+    "dimension": 10,
+    "vertices": 1024,
+    "samples": 2048,
+    "mass_squared": 0.5,
+    "precision_eigenvalues": "2*|S|+mass_squared",
+    "mean_precision_energy": 1025.2276475903714,
+    "theoretical_mean_energy": 1024,
+    "mean_energy_z_score": 1.2276475903713617,
+    "inverse_transform_max_error": 8.881784197001252e-16,
+    "levels": [
+      {
+        "degree": 0,
+        "multiplicity": 1,
+        "theoretical_variance": 2.0,
+        "empirical_variance": 2.059368269510377
+      },
+      {
+        "degree": 1,
+        "multiplicity": 10,
+        "theoretical_variance": 0.4,
+        "empirical_variance": 0.3977729461772816
+      },
+      {
+        "degree": 2,
+        "multiplicity": 45,
+        "theoretical_variance": 0.2222222222222222,
+        "empirical_variance": 0.22098485135988913
+      },
+      {
+        "degree": 3,
+        "multiplicity": 120,
+        "theoretical_variance": 0.15384615384615385,
+        "empirical_variance": 0.154188470471152
+      },
+      {
+        "degree": 4,
+        "multiplicity": 210,
+        "theoretical_variance": 0.11764705882352941,
+        "empirical_variance": 0.11747808229259334
+      },
+      {
+        "degree": 5,
+        "multiplicity": 252,
+        "theoretical_variance": 0.09523809523809523,
+        "empirical_variance": 0.09517857408276563
+      },
+      {
+        "degree": 6,
+        "multiplicity": 210,
+        "theoretical_variance": 0.08,
+        "empirical_variance": 0.08043100215078494
+      },
+      {
+        "degree": 7,
+        "multiplicity": 120,
+        "theoretical_variance": 0.06896551724137931,
+        "empirical_variance": 0.06908401458596473
+      },
+      {
+        "degree": 8,
+        "multiplicity": 45,
+        "theoretical_variance": 0.06060606060606061,
+        "empirical_variance": 0.06107598253041857
+      },
+      {
+        "degree": 9,
+        "multiplicity": 10,
+        "theoretical_variance": 0.05405405405405406,
+        "empirical_variance": 0.054117798466336096
+      },
+      {
+        "degree": 10,
+        "multiplicity": 1,
+        "theoretical_variance": 0.04878048780487805,
+        "empirical_variance": 0.0486849145138486
+      }
+    ],
+    "scope": "Real massive GFF on the Boolean cube graph, counting-measure covariance (L+0.5I)^-1. Walsh transform and filtering on CUDA; seeded Gaussian draws on CPU. Monte Carlo agreement is a finite diagnostic."
+  },
+  "ginibre": {
+    "size": 12,
+    "amplitude": 0.9,
+    "coarse": {
+      "steps": 1024,
+      "winding": -11.000000000000002,
+      "direct_discriminant_winding": -10.999999999999998,
+      "min_sampled_gap": 0.02404685669354257,
+      "max_step_over_previous_gap": 1.2298154594666173,
+      "max_discriminant_phase_step": 1.6992838651559499,
+      "max_eigenpair_relative_residual": 2.7878381323219974e-15,
+      "max_eigenvector_condition_number": 78.32963746464767,
+      "endpoint_permutation": [
+        11,
+        3,
+        2,
+        1,
+        8,
+        10,
+        6,
+        0,
+        4,
+        7,
+        9,
+        5
+      ],
+      "conditioning_report": {
+        "n_observations": 24,
+        "n_features": 24,
+        "rank": 24,
+        "effective_rank": 14.057513768056628,
+        "condition_number": 78.32963746464804,
+        "min_singular_value": 0.024194230644161603,
+        "max_singular_value": 1.8951253150932565,
+        "accepted": true,
+        "reasons": []
+      }
+    },
+    "fine": {
+      "steps": 16384,
+      "winding": -10.999999999999998,
+      "direct_discriminant_winding": -11.000000000000002,
+      "min_sampled_gap": 0.023535833778631894,
+      "max_step_over_previous_gap": 0.13422026604429269,
+      "max_discriminant_phase_step": 0.5183375588151242,
+      "max_eigenpair_relative_residual": 3.1653419054897465e-15,
+      "max_eigenvector_condition_number": 79.99222467286035,
+      "endpoint_permutation": [
+        11,
+        3,
+        2,
+        1,
+        8,
+        10,
+        6,
+        0,
+        4,
+        7,
+        9,
+        5
+      ],
+      "conditioning_report": {
+        "n_observations": 24,
+        "n_features": 24,
+        "rank": 24,
+        "effective_rank": 14.057955287408355,
+        "condition_number": 79.99222467286043,
+        "min_singular_value": 0.023688579235907205,
+        "max_singular_value": 1.8949021524195455,
+        "accepted": true,
+        "reasons": []
+      }
+    },
+    "refinement_history": [
+      {
+        "steps": 1024,
+        "winding": -11.000000000000002,
+        "direct_discriminant_winding": -10.999999999999998,
+        "min_sampled_gap": 0.02404685669354257,
+        "max_step_over_previous_gap": 1.2298154594666173,
+        "max_discriminant_phase_step": 1.6992838651559499,
+        "max_eigenpair_relative_residual": 2.7878381323219974e-15,
+        "max_eigenvector_condition_number": 78.32963746464767,
+        "endpoint_permutation": [
+          11,
+          3,
+          2,
+          1,
+          8,
+          10,
+          6,
+          0,
+          4,
+          7,
+          9,
+          5
+        ],
+        "conditioning_report": {
+          "n_observations": 24,
+          "n_features": 24,
+          "rank": 24,
+          "effective_rank": 14.057513768056628,
+          "condition_number": 78.32963746464804,
+          "min_singular_value": 0.024194230644161603,
+          "max_singular_value": 1.8951253150932565,
+          "accepted": true,
+          "reasons": []
+        }
+      },
+      {
+        "steps": 2048,
+        "winding": -11.000000000000002,
+        "direct_discriminant_winding": -11.000000000000004,
+        "min_sampled_gap": 0.02404685669354257,
+        "max_step_over_previous_gap": 0.7806302453938909,
+        "max_discriminant_phase_step": 1.6197002144521395,
+        "max_eigenpair_relative_residual": 3.1653419054897465e-15,
+        "max_eigenvector_condition_number": 78.32963746464767,
+        "endpoint_permutation": [
+          11,
+          3,
+          2,
+          1,
+          8,
+          10,
+          6,
+          0,
+          4,
+          7,
+          9,
+          5
+        ],
+        "conditioning_report": {
+          "n_observations": 24,
+          "n_features": 24,
+          "rank": 24,
+          "effective_rank": 14.057513768056628,
+          "condition_number": 78.32963746464804,
+          "min_singular_value": 0.024194230644161603,
+          "max_singular_value": 1.8951253150932565,
+          "accepted": true,
+          "reasons": []
+        }
+      },
+      {
+        "steps": 4096,
+        "winding": -10.999999999999998,
+        "direct_discriminant_winding": -11.000000000000002,
+        "min_sampled_gap": 0.02404685669354257,
+        "max_step_over_previous_gap": 0.4707512257400352,
+        "max_discriminant_phase_step": 1.383708447900683,
+        "max_eigenpair_relative_residual": 3.1653419054897465e-15,
+        "max_eigenvector_condition_number": 78.32963746464767,
+        "endpoint_permutation": [
+          11,
+          3,
+          2,
+          1,
+          8,
+          10,
+          6,
+          0,
+          4,
+          7,
+          9,
+          5
+        ],
+        "conditioning_report": {
+          "n_observations": 24,
+          "n_features": 24,
+          "rank": 24,
+          "effective_rank": 14.057513768056628,
+          "condition_number": 78.32963746464804,
+          "min_singular_value": 0.024194230644161603,
+          "max_singular_value": 1.8951253150932565,
+          "accepted": true,
+          "reasons": []
+        }
+      },
+      {
+        "steps": 8192,
+        "winding": -10.999999999999996,
+        "direct_discriminant_winding": -10.999999999999998,
+        "min_sampled_gap": 0.02404685669354257,
+        "max_step_over_previous_gap": 0.26144809602149255,
+        "max_discriminant_phase_step": 0.9572243487551357,
+        "max_eigenpair_relative_residual": 3.1653419054897465e-15,
+        "max_eigenvector_condition_number": 78.32963746464767,
+        "endpoint_permutation": [
+          11,
+          3,
+          2,
+          1,
+          8,
+          10,
+          6,
+          0,
+          4,
+          7,
+          9,
+          5
+        ],
+        "conditioning_report": {
+          "n_observations": 24,
+          "n_features": 24,
+          "rank": 24,
+          "effective_rank": 14.057513768056628,
+          "condition_number": 78.32963746464804,
+          "min_singular_value": 0.024194230644161603,
+          "max_singular_value": 1.8951253150932565,
+          "accepted": true,
+          "reasons": []
+        }
+      },
+      {
+        "steps": 16384,
+        "winding": -10.999999999999998,
+        "direct_discriminant_winding": -11.000000000000002,
+        "min_sampled_gap": 0.023535833778631894,
+        "max_step_over_previous_gap": 0.13422026604429269,
+        "max_discriminant_phase_step": 0.5183375588151242,
+        "max_eigenpair_relative_residual": 3.1653419054897465e-15,
+        "max_eigenvector_condition_number": 79.99222467286035,
+        "endpoint_permutation": [
+          11,
+          3,
+          2,
+          1,
+          8,
+          10,
+          6,
+          0,
+          4,
+          7,
+          9,
+          5
+        ],
+        "conditioning_report": {
+          "n_observations": 24,
+          "n_features": 24,
+          "rank": 24,
+          "effective_rank": 14.057955287408355,
+          "condition_number": 79.99222467286043,
+          "min_singular_value": 0.023688579235907205,
+          "max_singular_value": 1.8949021524195455,
+          "accepted": true,
+          "reasons": []
+        }
+      }
+    ],
+    "sampling_resolved": true,
+    "conditioning_negative_control": {
+      "residual": 0.0,
+      "report": {
+        "n_observations": 2,
+        "n_features": 2,
+        "rank": 2,
+        "effective_rank": 1.0,
+        "condition_number": 19999999999.999996,
+        "min_singular_value": 7.071067811865477e-11,
+        "max_singular_value": 1.414213562373095,
+        "accepted": false,
+        "reasons": [
+          "minimum singular value below limit: 7.07e-11 < 1e-08",
+          "condition number above limit: 2e+10 > 1e+03"
+        ]
+      }
+    },
+    "order_sensitive_fixture": {
+      "words": [
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "pair_windings": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "burau_matrices": [
+        [
+          [
+            -3,
+            2
+          ],
+          [
+            -2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            -2,
+            -3
+          ]
+        ]
+      ],
+      "level_two_distance": 1.414213562373096
+    },
+    "model": "G(t)=(G0+0.9*cos(2*pi*t)*G1+0.9*sin(2*pi*t)*G2)/sqrt(1+0.9^2), independent normalized complex Ginibre Gi. Every fixed-time marginal is Ginibre; paths are smooth and periodic, not Brownian or OU.",
+    "scope": "CUDA loop construction and pair/discriminant phases; CPU eigensolvers, assignment, and conditioning. Agreement under doubling and small sampled steps are numerical evidence, not an interval-certified noncollision theorem. Discriminant winding sees only the braid exponent sum."
+  },
+  "fractional_meshes": {
+    "models": [
+      {
+        "H": 0.15,
+        "vertices": 290,
+        "edges": 864,
+        "faces": 576,
+        "euler_characteristic": 2,
+        "odd_degree_vertices": 128,
+        "colors_used": 4,
+        "proper_coloring_verified": true,
+        "surface_harmonic_one_form_dimension": 0,
+        "graph_cycle_rank": 575
+      },
+      {
+        "H": 0.5,
+        "vertices": 290,
+        "edges": 864,
+        "faces": 576,
+        "euler_characteristic": 2,
+        "odd_degree_vertices": 152,
+        "colors_used": 4,
+        "proper_coloring_verified": true,
+        "surface_harmonic_one_form_dimension": 0,
+        "graph_cycle_rank": 575
+      },
+      {
+        "H": 0.85,
+        "vertices": 290,
+        "edges": 864,
+        "faces": 576,
+        "euler_characteristic": 2,
+        "odd_degree_vertices": 158,
+        "colors_used": 4,
+        "proper_coloring_verified": true,
+        "surface_harmonic_one_form_dimension": 0,
+        "graph_cycle_rank": 575
+      }
+    ],
+    "scope": "CuPy port of the repository spectral filter; three H values share the same Gaussian noise. No per-sample variance normalization. The boundary is capped by one exterior vertex, not glued into a torus. These are triangulated spheres: surface b1=0 despite many graph cycles. Exact edge checks certify each produced coloring; this is not continuum imaginary geometry."
+  },
+  "source_commits": {
+    "a183068-supercongruence": "e6955c6a329a713e7ed7b3f1dca165f587131c90",
+    "kemeny-dp-posets": "2de3f0ef2174a0aad971b52f3ae26b8cc37ea552",
+    "ginibre-braid-dynamics-conjectures": "7a74b0cf1c37f69e5ea1367ec5ffb5203ae728d3",
+    "sports-betting-assurance": "4b04e3d04d1b1445b21698bb96fa18099ae101d4",
+    "qrcert": "460fb63ab5201848fcbf45c877902ac0c70bfe6f",
+    "hypercube-probabilistic-estimates": "2a110f24fe8793f80b323db641789a867e9801bf",
+    "four-color-proof-program": "6aec1aeab101ca5be051649ac1081fabfaa412ad"
+  },
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "seconds": 6.5318049999987124
+}

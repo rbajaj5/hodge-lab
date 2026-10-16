@@ -1,0 +1,414 @@
+{
+  "plane_seed": 202610162137,
+  "coefficient_exponents": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "baseline_coefficients": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "domain": "RP^1, theta modulo pi; uniform fixed reference measure",
+  "critical_points": [
+    1.0368904055363988,
+    2.9329053318508875
+  ],
+  "maximum_angle": 1.0368904055363988,
+  "curvature_K": 0.2380507845085151,
+  "force_L": [
+    -0.1586941419813357,
+    -2.8843352392417427e-07,
+    -0.0002262772850027611,
+    0.02266093370088733,
+    -0.016071318701600393,
+    0.15229835007044773,
+    3.5966865109932144e-05,
+    -3.2242349822310236e-06
+  ],
+  "next_local_maximum_height_gap": null,
+  "critical_point_status": "Numerically bracketed simple stationary points; no interval proof of uniqueness.",
+  "zero_temperature_Q": [
+    [
+      0.10579184080904175,
+      1.9228128440031502e-07,
+      0.00015084545790310078,
+      -0.015106681700641963,
+      0.010713781671103206,
+      -0.1015281509762816,
+      -2.3976945970429914e-05,
+      2.1494035615457385e-06
+    ],
+    [
+      1.9228128440031502e-07,
+      3.4947962005284367e-13,
+      2.7416819831991154e-10,
+      -2.7457052814397313e-08,
+      1.9472765430207074e-08,
+      -1.84531842183807e-07,
+      -4.3579144969346164e-11,
+      3.906634711599643e-12
+    ],
+    [
+      0.00015084545790310078,
+      2.7416819831991154e-10,
+      2.1508607843461776e-07,
+      -2.1540170783520098e-05,
+      1.5276464514579895e-05,
+      -0.0001447659886334392,
+      -3.418801834213181e-08,
+      3.064770987822831e-09
+    ],
+    [
+      -0.015106681700641963,
+      -2.7457052814397313e-08,
+      -2.1540170783520098e-05,
+      0.002157178004081068,
+      -0.0015298882057234722,
+      0.014497842638185023,
+      3.4238187761812473e-06,
+      -3.0692684050283124e-07
+    ],
+    [
+      0.010713781671103206,
+      1.9472765430207074e-08,
+      1.5276464514579895e-05,
+      -0.0015298882057234722,
+      0.0010850091729026484,
+      -0.010281988050421728,
+      -2.428200155158551e-06,
+      2.1767501449435526e-07
+    ],
+    [
+      -0.1015281509762816,
+      -1.84531842183807e-07,
+      -0.0001447659886334392,
+      0.014497842638185023,
+      -0.010281988050421728,
+      0.09743629907403631,
+      2.3010611894257717e-05,
+      -2.062776936639919e-06
+    ],
+    [
+      -2.3976945970429914e-05,
+      -4.3579144969346164e-11,
+      -3.418801834213181e-08,
+      3.4238187761812473e-06,
+      -2.428200155158551e-06,
+      2.3010611894257717e-05,
+      5.434199213024571e-09,
+      -4.871465764250805e-10
+    ],
+    [
+      2.1494035615457385e-06,
+      3.906634711599643e-12,
+      3.064770987822831e-09,
+      -3.0692684050283124e-07,
+      2.1767501449435526e-07,
+      -2.062776936639919e-06,
+      -4.871465764250805e-10,
+      4.3670056547410516e-11
+    ]
+  ],
+  "zero_temperature_positive_eigenvalue": 0.20647054762435896,
+  "zero_temperature_complex_dimensions": {
+    "degree_0": 8,
+    "degree_1": 1,
+    "H0": 7,
+    "H1": 0
+  },
+  "sampled_centered_feature_rank": 6,
+  "directional_envelope_checks": [
+    {
+      "envelope_second_difference": 0.0013425510703157784,
+      "predicted_curvature_response": 0.001342549382921693,
+      "critical_motion_error": 1.5325936353338676e-10,
+      "refined_critical_motion_error": 3.446549989849501e-11
+    },
+    {
+      "envelope_second_difference": 0.12088188505732234,
+      "predicted_curvature_response": 0.12088188285973463,
+      "critical_motion_error": 1.3912276775052135e-08,
+      "refined_critical_motion_error": 3.4772905666002885e-09
+    },
+    {
+      "envelope_second_difference": 0.01640317881523856,
+      "predicted_curvature_response": 0.01640317580023838,
+      "critical_motion_error": 2.3172114227421048e-10,
+      "refined_critical_motion_error": 5.519568135881059e-11
+    },
+    {
+      "envelope_second_difference": 0.061552818397814235,
+      "predicted_curvature_response": 0.061552818646417554,
+      "critical_motion_error": 1.7563072107762423e-09,
+      "refined_critical_motion_error": 4.384724805461815e-10
+    },
+    {
+      "envelope_second_difference": 0.021834864472047855,
+      "predicted_curvature_response": 0.021834869665169628,
+      "critical_motion_error": 9.730927175155557e-10,
+      "refined_critical_motion_error": 2.4145574428757755e-10
+    },
+    {
+      "envelope_second_difference": 0.08467480883123102,
+      "predicted_curvature_response": 0.08467480601719359,
+      "critical_motion_error": 8.41671476958794e-09,
+      "refined_critical_motion_error": 2.1039866515693006e-09
+    },
+    {
+      "envelope_second_difference": 0.0011276535261117715,
+      "predicted_curvature_response": 0.0011276564246594592,
+      "critical_motion_error": 8.55694681778374e-12,
+      "refined_critical_motion_error": 6.336500768533426e-12
+    },
+    {
+      "envelope_second_difference": 0.006635009208721954,
+      "predicted_curvature_response": 0.006635008800296593,
+      "critical_motion_error": 1.8791504463600006e-10,
+      "refined_critical_motion_error": 4.9137166557855494e-11
+    }
+  ],
+  "thermal": [
+    {
+      "T": 0.05,
+      "eigenvalues": [
+        -5.289424553311462e-18,
+        6.144540925193328e-22,
+        5.79942048355866e-07,
+        1.990496198108301e-05,
+        0.0001397250831409713,
+        0.00920342814241553,
+        0.0379189451132823,
+        0.049371778470205414
+      ],
+      "relative_error_to_zero_temperature": 0.8348081414607486,
+      "paired_positive_spectral_residual": 1.5179266002949e-16,
+      "quadrature_relative_discrepancy": 4.0860857832455505e-15,
+      "target_observable_mean": -0.12328859562671139
+    },
+    {
+      "T": 0.02,
+      "eigenvalues": [
+        -1.9165163288079077e-22,
+        1.8208219283576646e-17,
+        6.534359438956018e-07,
+        2.9812723202682532e-05,
+        0.0002836125029779161,
+        0.010935332459783561,
+        0.0604879681574163,
+        0.10312160928223563
+      ],
+      "relative_error_to_zero_temperature": 0.6125081241495997,
+      "paired_positive_spectral_residual": 1.7857405523898123e-15,
+      "quadrature_relative_discrepancy": 3.2909691420964855e-15,
+      "target_observable_mean": -0.04400721229303356
+    },
+    {
+      "T": 0.01,
+      "eigenvalues": [
+        2.832799259554574e-22,
+        4.339316226122089e-18,
+        2.0637105114578638e-07,
+        1.597011772134864e-05,
+        0.00024290290089476523,
+        0.0033603168139050683,
+        0.028533226567667058,
+        0.14803869096351052
+      ],
+      "relative_error_to_zero_temperature": 0.3279668452886056,
+      "paired_positive_spectral_residual": 7.233361077927655e-16,
+      "quadrature_relative_discrepancy": 2.555917162496159e-15,
+      "target_observable_mean": -0.005901504866327645
+    },
+    {
+      "T": 0.005,
+      "eigenvalues": [
+        -1.1294641932339427e-17,
+        -3.747609242241202e-23,
+        7.626468290906253e-09,
+        1.6065668789401339e-06,
+        4.748427387295197e-05,
+        0.0001499454991789054,
+        0.007812819185782126,
+        0.1754589411573392
+      ],
+      "relative_error_to_zero_temperature": 0.16532437665086142,
+      "paired_positive_spectral_residual": 7.522946482147837e-15,
+      "quadrature_relative_discrepancy": 2.914597524310792e-15,
+      "target_observable_mean": -0.0006289088290417243
+    },
+    {
+      "T": 0.002,
+      "eigenvalues": [
+        -5.458590473685792e-24,
+        5.270444805870394e-18,
+        2.9676691292850996e-12,
+        1.0979865529018214e-08,
+        1.1642155527997665e-06,
+        1.6562276482318392e-05,
+        0.0021567376145204113,
+        0.19357604166255535
+      ],
+      "relative_error_to_zero_temperature": 0.06832917993195217,
+      "paired_positive_spectral_residual": 2.7148660897127086e-14,
+      "quadrature_relative_discrepancy": 2.595498695489829e-15,
+      "target_observable_mean": -0.00017657991359519847
+    },
+    {
+      "T": 0.001,
+      "eigenvalues": [
+        -6.656424615945037e-24,
+        1.1504282109536527e-18,
+        4.744007239303363e-14,
+        5.917389560381694e-10,
+        1.2717067440270088e-07,
+        3.870269629436032e-06,
+        0.0009583538880734602,
+        0.19994829789838858
+      ],
+      "relative_error_to_zero_temperature": 0.03452575225340677,
+      "paired_positive_spectral_residual": 1.4909309165343268e-13,
+      "quadrature_relative_discrepancy": 1.2214520220870362e-15,
+      "target_observable_mean": -9.944878554828819e-05
+    },
+    {
+      "T": 0.0005,
+      "eigenvalues": [
+        -4.052988542579055e-18,
+        1.6913701933312176e-24,
+        1.119253014561707e-15,
+        3.448021760711904e-11,
+        1.4977727123943736e-08,
+        9.365937873836378e-07,
+        0.0004521453672245735,
+        0.2031914834723473
+      ],
+      "relative_error_to_zero_temperature": 0.017349539701606333,
+      "paired_positive_spectral_residual": 1.062987247426776e-12,
+      "quadrature_relative_discrepancy": 1.9290348575147328e-15,
+      "target_observable_mean": -6.931405325646717e-05
+    },
+    {
+      "T": 0.0002,
+      "eigenvalues": [
+        -5.418885059820648e-25,
+        5.984498215778369e-18,
+        1.0344661099630768e-17,
+        8.471796422640784e-13,
+        9.267830632650519e-10,
+        1.4700324141964536e-07,
+        0.00017472288731624867,
+        0.20515472465264428
+      ],
+      "relative_error_to_zero_temperature": 0.006960071768715998,
+      "paired_positive_spectral_residual": 6.465215998153338e-13,
+      "quadrature_relative_discrepancy": 4.248691020985332e-15,
+      "target_observable_mean": -5.361663551840405e-05
+    },
+    {
+      "T": 0.0001,
+      "eigenvalues": [
+        -2.4830627649217694e-23,
+        4.322740482084113e-20,
+        9.886196690623189e-18,
+        5.224771140942374e-14,
+        1.1458716280373134e-10,
+        3.65178729936658e-08,
+        8.63671457927033e-05,
+        0.20581194572261263
+      ],
+      "relative_error_to_zero_temperature": 0.0034833641170233898,
+      "paired_positive_spectral_residual": 1.9938782216716985e-13,
+      "quadrature_relative_discrepancy": 1.1432448526862113e-14,
+      "target_observable_mean": -4.875924086074646e-05
+    },
+    {
+      "T": 2e-05,
+      "eigenvalues": [
+        -1.1276513868021418e-17,
+        -9.60078002553629e-26,
+        1.7744051604440964e-20,
+        7.930059899287252e-17,
+        9.087891485794596e-13,
+        1.4533262389867552e-09,
+        1.7116333309848763e-05,
+        0.2063387174390512
+      ],
+      "relative_error_to_zero_temperature": 0.0006972018222341385,
+      "paired_positive_spectral_residual": 3.574210734218563e-14,
+      "quadrature_relative_discrepancy": 1.7663959711785024e-14,
+      "target_observable_mean": -4.5004418736166656e-05
+    }
+  ],
+  "observable": "A/F^(q+1) on the unit projective-circle probe; this retains the specified q and A as a diagnostic only.",
+  "target_observable_at_maximum": -4.408370149461916e-05,
+  "backend": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "scope": "Finite response complexes constructed from the sextic coefficient family. No identification with the complex hypersurface cohomology, no Hodge filtration, and no algebraic certificate inferred."
+}

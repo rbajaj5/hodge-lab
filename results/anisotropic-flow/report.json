@@ -1,0 +1,101 @@
+{
+  "paper": "https://arxiv.org/abs/2405.08296v1",
+  "seed": 202610162137,
+  "target_sha256": "59a5f8470eca127eb7ec4d20aea7c349c5069c71fc89a3bb86df931d9c48a6e2",
+  "plane_columns": [
+    [
+      -0.2727446503334181,
+      0.07738351033998556
+    ],
+    [
+      -0.19895545625304067,
+      -0.6746301182043192
+    ],
+    [
+      -0.27640525375622715,
+      0.593931656904437
+    ],
+    [
+      0.6259801828964608,
+      -0.2045849558256079
+    ],
+    [
+      -0.27951980443573665,
+      0.11438503806400718
+    ],
+    [
+      0.582790448949468,
+      0.36220469597006555
+    ]
+  ],
+  "surface_energy_epsilon": 0.055173594818298706,
+  "minimum_continuum_stiffness": 0.6871413219763576,
+  "refinement": [
+    {
+      "nodes": 64,
+      "dt": 0.0002,
+      "steps": 5000,
+      "area_relative_drift_after_projection": 1.5543122344752192e-15,
+      "max_single_step_area_drift_before_projection": 4.540621778570397e-08,
+      "minimum_curvature_radius": 0.6628321606035834,
+      "initial_shape_error": [
+        0.03361315048264259,
+        0.033613150482642615,
+        0.03361315048264253,
+        0.0336131504826426,
+        0.03361315048264254,
+        0.03361315048264261,
+        0.03361315048264256,
+        0.033613150482642615
+      ],
+      "final_shape_error": [
+        0.0012333887116247146,
+        0.0012122691906013988,
+        0.001235671186054052,
+        0.0012343033516327053,
+        0.001229051631702377,
+        0.0012330227850081677,
+        0.0012227433528018447,
+        0.001234187631179097
+      ],
+      "perimeter_decreased": true
+    },
+    {
+      "nodes": 128,
+      "dt": 5e-05,
+      "steps": 20000,
+      "area_relative_drift_after_projection": 3.219646771412954e-15,
+      "max_single_step_area_drift_before_projection": 3.0608251488928317e-09,
+      "minimum_curvature_radius": 0.6563788780710389,
+      "initial_shape_error": [
+        0.03361334316790946,
+        0.03361334316790949,
+        0.0336133431679094,
+        0.0336133431679095,
+        0.033613343167909406,
+        0.03361334316790946,
+        0.033613343167909454,
+        0.03361334316790948
+      ],
+      "final_shape_error": [
+        0.001218058397659031,
+        0.0011969639528094252,
+        0.001220350423763531,
+        0.0012188668335753718,
+        0.0012137519930412984,
+        0.001217711950736514,
+        0.0012074980885883077,
+        0.0012189642784855882
+      ],
+      "perimeter_decreased": true
+    }
+  ],
+  "final_support_grid_discrepancy": 2.9067085266509807e-05,
+  "short_cpu_gpu_max_error": 1.3322676295501878e-15,
+  "backend": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "construction": "g=(F(U*(cos(theta),sin(theta)))-mean)/max_abs_centered; phi=1+epsilon*g; epsilon=.35/sum_k(abs((1-k^2)*g_hat_k)). The Fourier triangle inequality gives phi+phi_second>=.65. Euclidean mobility.",
+  "equation": "h_t=-(phi+phi_second)/(h+h_second)+lambda; lambda=integral(phi+phi_second)/integral(h+h_second).",
+  "discretization": "Periodic central differences, forward Euler, per-step rescaling to restore discrete area. The rescaling is a numerical correction, not part of the continuum equation.",
+  "scope": "A chosen real-plane probe uses F but not q or A. It is not canonical, does not encode the complex Hodge target, and cannot certify a solve. Only convex smooth curves are represented; no merging or topology changes, and no general flat-flow theorem is verified.",
+  "input_hash_encoding": "Source bytes with CRLF normalized to LF."
+}

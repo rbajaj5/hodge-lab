@@ -1,0 +1,242 @@
+{
+  "paper": "https://arxiv.org/abs/2609.21049v1",
+  "seed": 202610162252,
+  "gaussian_model": "N(0,Q_zero+ridge I) versus N(0,Q_T+ridge I). Gram interpreted as covariance, not precision.",
+  "ridge": 0.010323527381217949,
+  "cases": [
+    {
+      "response_temperature": 0.005,
+      "independent_vectors": 1,
+      "relative_covariance_eigenvalues": [
+        0.801009971774976,
+        1.0000000000000002,
+        1.0000000000000004,
+        1.0000008055922782,
+        1.0002967320092198,
+        1.004753827892033,
+        1.0593569971057766,
+        1.7994235055696488
+      ],
+      "scalar_root": 0.14587301960121996,
+      "clipped_proxy": 0.14587301960121996,
+      "quadrature_root_discrepancy": 5.925937796025238e-10,
+      "quadrature_history": [
+        {
+          "nodes": 128,
+          "root": 0.1458726427872491
+        },
+        {
+          "nodes": 256,
+          "root": 0.14587302019381373
+        },
+        {
+          "nodes": 512,
+          "root": 0.14587301960121996
+        }
+      ],
+      "tv_estimate": 0.148773193359375,
+      "standard_error": 0.002602249618578243,
+      "approximate_95_percent_interval": [
+        0.14367278410696163,
+        0.15387360261178837
+      ],
+      "samples_per_hypothesis": 65536,
+      "likelihood_region_counts": [
+        47489,
+        37739
+      ]
+    },
+    {
+      "response_temperature": 0.005,
+      "independent_vectors": 8,
+      "relative_covariance_eigenvalues": [
+        0.801009971774976,
+        1.0000000000000002,
+        1.0000000000000004,
+        1.0000008055922782,
+        1.0002967320092198,
+        1.004753827892033,
+        1.0593569971057766,
+        1.7994235055696488
+      ],
+      "scalar_root": 0.5506952844706964,
+      "clipped_proxy": 0.5506952844706964,
+      "quadrature_root_discrepancy": 2.3032464824268573e-11,
+      "quadrature_history": [
+        {
+          "nodes": 128,
+          "root": 0.5506952844476639
+        },
+        {
+          "nodes": 256,
+          "root": 0.5506952844706964
+        }
+      ],
+      "tv_estimate": 0.45916748046875,
+      "standard_error": 0.002442438093067583,
+      "approximate_95_percent_interval": [
+        0.45438030180633754,
+        0.46395465913116246
+      ],
+      "samples_per_hypothesis": 65536,
+      "likelihood_region_counts": [
+        50605,
+        20513
+      ]
+    },
+    {
+      "response_temperature": 0.001,
+      "independent_vectors": 1,
+      "relative_covariance_eigenvalues": [
+        0.9525694657680721,
+        1.0,
+        1.0000000000000004,
+        1.0000000000046803,
+        1.0000001297422534,
+        1.0000125226933647,
+        1.0092523675649372,
+        1.102943636006776
+      ],
+      "scalar_root": 0.02644394150461573,
+      "clipped_proxy": 0.02644394150461573,
+      "quadrature_root_discrepancy": 1.3091991858671381e-08,
+      "quadrature_history": [
+        {
+          "nodes": 128,
+          "root": 0.02644395459660759
+        },
+        {
+          "nodes": 256,
+          "root": 0.02644394150461573
+        }
+      ],
+      "tv_estimate": 0.0284271240234375,
+      "standard_error": 0.0026478276823478776,
+      "approximate_95_percent_interval": [
+        0.02323738176603566,
+        0.03361686628083934
+      ],
+      "samples_per_hypothesis": 65536,
+      "likelihood_region_counts": [
+        42982,
+        41119
+      ]
+    },
+    {
+      "response_temperature": 0.001,
+      "independent_vectors": 8,
+      "relative_covariance_eigenvalues": [
+        0.9525694657680721,
+        1.0,
+        1.0000000000000004,
+        1.0000000000046803,
+        1.0000001297422534,
+        1.0000125226933647,
+        1.0092523675649372,
+        1.102943636006776
+      ],
+      "scalar_root": 0.09958402064708544,
+      "clipped_proxy": 0.09958402064708544,
+      "quadrature_root_discrepancy": 1.3530843112619095e-14,
+      "quadrature_history": [
+        {
+          "nodes": 128,
+          "root": 0.0995840206470719
+        },
+        {
+          "nodes": 256,
+          "root": 0.09958402064708544
+        }
+      ],
+      "tv_estimate": 0.0818023681640625,
+      "standard_error": 0.0027433106537856494,
+      "approximate_95_percent_interval": [
+        0.07642547928264262,
+        0.08717925704548238
+      ],
+      "samples_per_hypothesis": 65536,
+      "likelihood_region_counts": [
+        38169,
+        32808
+      ]
+    },
+    {
+      "response_temperature": 0.0002,
+      "independent_vectors": 1,
+      "relative_covariance_eigenvalues": [
+        0.9901649018269079,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0000000000000004,
+        1.0000000001848646,
+        1.0000000901194313,
+        1.0018104458220163,
+        1.0189618942744743
+      ],
+      "scalar_root": 0.005168707963107507,
+      "clipped_proxy": 0.005168707963107507,
+      "quadrature_root_discrepancy": 2.640642877103916e-09,
+      "quadrature_history": [
+        {
+          "nodes": 128,
+          "root": 0.005168710603750384
+        },
+        {
+          "nodes": 256,
+          "root": 0.005168707963107507
+        }
+      ],
+      "tv_estimate": 0.0077972412109375,
+      "standard_error": 0.002660803220606982,
+      "approximate_95_percent_interval": [
+        0.002582066898547815,
+        0.013012415523327185
+      ],
+      "samples_per_hypothesis": 65536,
+      "likelihood_region_counts": [
+        41814,
+        41303
+      ]
+    },
+    {
+      "response_temperature": 0.0002,
+      "independent_vectors": 8,
+      "relative_covariance_eigenvalues": [
+        0.9901649018269079,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0000000000000004,
+        1.0000000001848646,
+        1.0000000901194313,
+        1.0018104458220163,
+        1.0189618942744743
+      ],
+      "scalar_root": 0.019388660228884778,
+      "clipped_proxy": 0.019388660228884778,
+      "quadrature_root_discrepancy": 2.0435042547006788e-15,
+      "quadrature_history": [
+        {
+          "nodes": 128,
+          "root": 0.019388660228882734
+        },
+        {
+          "nodes": 256,
+          "root": 0.019388660228884778
+        }
+      ],
+      "tv_estimate": 0.0189666748046875,
+      "standard_error": 0.002752456187029455,
+      "approximate_95_percent_interval": [
+        0.013571860678109768,
+        0.024361488931265232
+      ],
+      "samples_per_hypothesis": 65536,
+      "likelihood_region_counts": [
+        36059,
+        34816
+      ]
+    }
+  ],
+  "backend": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "scope": "Statistical distinguishability of explicitly regularized Gaussian models. Independence holds after a common whitening/rotation, and across repeated draws. Gram entries are not treated as independent. Proxy is not TV itself or a certified testing threshold; intervals are Monte Carlo normal approximations. This does not verify a polynomial witness."
+}
