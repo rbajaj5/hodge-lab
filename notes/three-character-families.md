@@ -1,5 +1,7 @@
 # A systematic three-character slice of holdout
 
+Published as a [partial result in holdout Discussion 44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710), with [passing CI for the immutable proof commit](https://github.com/rbajaj5/hodge-lab/actions/runs/38981740498).
+
 **132 complete degree-seven three-character families are excluded.** We tested
 all 136 extensions of the pair `chi_X0=(0,0,1), chi_Y0=(1,2,3)` by one other
 nonempty E1 character. Four extensions remain unresolved. We also tested all

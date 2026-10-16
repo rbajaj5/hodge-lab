@@ -4,13 +4,15 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 16 October 2026:** 2 discussion comments; 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 16 October 2026:** 3 discussion comments; 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
 1. **16 October 2026, 17:20 EDT / 21:20 UTC — [Holdout discussion #44: exact partial result](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983276).** Shared an exact exclusion of the degree-seven `{chi_Y0, chi_X1}` denominator family, with reproducible code and certificate checks. The purpose was to contribute a checkable partial result and narrow the remaining search. The post credits fqlx's preceding calculations and the project's mathematical framework, and discloses Codex assistance. It reports 9,451 of 9,453 two-character families excluded **at the time of posting**, while explicitly leaving the full holdout unresolved. No Lean `HasCertificate` proof or solve submission was claimed. Evidence: [pinned explanation and code links](https://github.com/rbajaj5/hodge-lab/blob/dc2756300cbfa7a54d4735c60b852cd38ca8725e/notes/degree-seven-pair.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38968484482).
 
 2. **16 October 2026, 18:52 EDT / 22:52 UTC — [Holdout discussion #44: family-13 exclusion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984345).** Shared the exact `{chi_X0, chi_Y0}` degree-seven exclusion and our reproduction of fqlx's distinct family-30 proof. The purpose was to fill the last two-character proof gap with a portable check, while crediting the complementary upstream work. The post records the 25 rational chart identities, independent coefficient reconstruction, corruption check, and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38978064849). It links [immutable source and explanation](https://github.com/rbajaj5/hodge-lab/blob/5a1683fb82217aa49450614dc78d3b3e18b768c1/notes/x0-y0-exclusion.md), discloses Codex assistance, and explicitly leaves three-or-more-character denominators and higher degrees open. The combined count is 9,453/9,453 two-character families; no existence certificate, Lean proof, or accepted solve is claimed. The published body, author, and permanent URL were read back and verified.
+
+3. **16 October 2026, 19:33 EDT / 23:33 UTC — [Holdout discussion #44: 132 three-character family exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710).** Shared the systematic test of all 136 third-character extensions of the `X0/Y0` pair: 112 exclusions via exact necessary-condition duals and 20 through shared-numerator chart covers. The post explicitly retains four unresolved extensions and the 16 additional coordinate triples that survived the relaxed pass. It links [immutable proofs, failed attempts, and explanation](https://github.com/rbajaj5/hodge-lab/blob/841cd0623c64d917a31ddf8433ddfbcc10c1260a/notes/three-character-families.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38981740498), credits fqlx and the prior mathematical framework, and discloses Codex assistance and the shared identity replayer. The purpose is to narrow a reproducible search region and make the four residual extensions available to collaborators. No Lean theorem, solution, improved unconditional degree bound, or leaderboard point is claimed. The body was previewed using GitHub's Markdown renderer; the published author and full body were independently read back and matched to the prepared text. [Publication receipt](results/degree7-triples/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -178,8 +180,9 @@ conversations or evidence of an accepted solve.
     covers 152 of 428,536 possible triples; the unconditional degree bound
     remains seven and holdout remains unsolved. The checkpoint-read race in an
     early pilot was an implementation failure, repaired with atomic writes,
-    not a mathematical result. This batch is recorded in Hodge Lab; no new
-    upstream post or solve submission is counted in the tally.
+    not a mathematical result. This batch was initially recorded only in
+    Hodge Lab. After the proof commit passed CI, it was shared as post 3 above;
+    no solve submission is counted.
 
 16. **16 October 2026 — Keep the simpler baseline competitive.** The comparison
     with sequence-model research suggests evaluating an ambitious mechanism
@@ -194,6 +197,21 @@ conversations or evidence of an accepted solve.
     and algebraic baselines, and attribute success to the method that actually
     supplied the verified obstruction. The 132-family result does not establish
     an advantage for anisotropy, GPUs, or imaginary geometry.
+
+17. **16 October 2026 — Algebra as composition: Marco Kuhlmann's dependency structures.**
+    The user supplied [Kuhlmann's 2007 dissertation](https://www.ps.uni-saarland.de/Publications/documents/kuhlmann2007dependency.pdf).
+    Its dependency algebras connect rules for composing structures with
+    grammatical expressivity and parsing complexity; sections 3.2, 4.2, and
+    8.3 are relevant. This is a more precise methodological connection than
+    treating every matrix problem as the same algebraic problem. A proposed,
+    **unexecuted** follow-up is to examine variable/constraint incidence and
+    separator sizes in the four residual holdout systems, then test whether
+    elimination can be organized into smaller pieces while preserving shared
+    variables and compatibility conditions. The current relaxed-to-shared
+    comparison already demonstrates why losing those conditions matters.
+    No reduction from polynomial certificate search to Kuhlmann's grammar
+    algorithms, complexity bound, or new holdout theorem has been established
+    from this analogy.
 
 ## Keeping this current
 
