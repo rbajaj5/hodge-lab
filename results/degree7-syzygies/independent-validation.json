@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "charts": [
+    {
+      "family": 87,
+      "pivot": 2,
+      "equation_products": 23860,
+      "identities": 262,
+      "new_independent_relations": 32,
+      "chart_inferences": 5,
+      "power_equation_products": 19,
+      "power_identities": 3,
+      "excluded_charts": 1
+    },
+    {
+      "family": 115,
+      "pivot": 0,
+      "equation_products": 27602,
+      "identities": 281,
+      "new_independent_relations": 31,
+      "chart_inferences": 3,
+      "power_equation_products": 19,
+      "power_identities": 2,
+      "excluded_charts": 0
+    },
+    {
+      "family": 115,
+      "pivot": 10,
+      "equation_products": 23850,
+      "identities": 281,
+      "new_independent_relations": 31,
+      "chart_inferences": 13,
+      "power_equation_products": 4,
+      "power_identities": 2,
+      "excluded_charts": 0
+    }
+  ],
+  "equation_products": 75312,
+  "identities": 824,
+  "new_independent_relations": 94,
+  "chart_inferences": 21,
+  "power_equation_products": 42,
+  "power_identities": 7,
+  "excluded_charts": 1,
+  "fully_excluded_families": [
+    87
+  ],
+  "corrupted_identity_rejected": true,
+  "corrupted_power_identity_rejected": true,
+  "independent_polynomial_construction": true,
+  "seconds": 24.974994299998798
+}

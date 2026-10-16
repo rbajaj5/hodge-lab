@@ -1,5 +1,10 @@
 # A systematic three-character slice of holdout
 
+**Later follow-up:** [polynomial syzygies](polynomial-syzygies.md) exclude
+family 87, with third character `(3,0,1)`. The cumulative fixed-pair count is
+now 133/136. The 132-family counts and archived chart outcomes below describe
+this original batch and remain unchanged.
+
 Published as a [partial result in holdout Discussion 44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710), with [passing CI for the immutable proof commit](https://github.com/rbajaj5/hodge-lab/actions/runs/38981740498).
 
 **132 complete degree-seven three-character families are excluded.** We tested

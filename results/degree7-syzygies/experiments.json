@@ -1,0 +1,306 @@
+{
+  "arithmetic": "Rational; Singular 4.4.1 for exploratory module/Groebner work, Fraction for exported proof",
+  "attempts": [
+    {
+      "kind": "unrestricted_syzygy_module",
+      "family": 87,
+      "pivot": 2,
+      "timeout_seconds": 45,
+      "returncode": 124,
+      "seconds": 48.222541700000875,
+      "stdout_bytes": 10,
+      "stderr": "",
+      "done": false
+    },
+    {
+      "kind": "unrestricted_syzygy_module",
+      "family": 115,
+      "pivot": 0,
+      "timeout_seconds": 45,
+      "returncode": 124,
+      "seconds": 48.21237829999882,
+      "stdout_bytes": 10,
+      "stderr": "",
+      "done": false
+    },
+    {
+      "kind": "unrestricted_syzygy_module",
+      "family": 115,
+      "pivot": 10,
+      "timeout_seconds": 45,
+      "returncode": 124,
+      "seconds": 45.132723999995505,
+      "stdout_bytes": 10,
+      "stderr": "",
+      "done": false
+    },
+    {
+      "kind": "necessary_ideal_Groebner",
+      "family": 87,
+      "pivot": 2,
+      "status": "completed_CAS_only",
+      "seconds": 15.71,
+      "finding": "Basis contains Y0 coordinates; zero-dimensional necessary ideal; not used as proof"
+    },
+    {
+      "kind": "baseline_ideal_Groebner",
+      "family": 87,
+      "pivot": 2,
+      "status": "completed_CAS_only",
+      "seconds": 31.02,
+      "finding": "dimension 3; not an existence or full-certificate assertion"
+    },
+    {
+      "kind": "linear_membership_export",
+      "family": 87,
+      "pivot": 2,
+      "timeout_seconds": 60,
+      "returncode": 124,
+      "seconds": 63.96,
+      "exported_identities": 0
+    },
+    {
+      "kind": "linear_membership_export_after_affine_reduction",
+      "family": 87,
+      "pivot": 2,
+      "timeout_seconds": 90,
+      "returncode": 124,
+      "seconds": 90.08,
+      "exported_identities": 0
+    },
+    {
+      "kind": "bounded_linear_membership_search",
+      "family": 87,
+      "pivot": 2,
+      "searched_total_degrees": [
+        3,
+        4,
+        5
+      ],
+      "memberships_found": [
+        1,
+        1,
+        2
+      ],
+      "target_count": 7,
+      "degree5_rows": 3300,
+      "degree5_rank": 1774,
+      "degree5_seconds": 147.52609169999778,
+      "status": "insufficient; superseded by simpler exact cubic-power proof; no exported linear-membership proof used"
+    },
+    {
+      "kind": "necessary_ideal_Groebner",
+      "family": 115,
+      "pivot": 0,
+      "timeout_seconds": 30,
+      "returncode": 124,
+      "seconds": 33.18
+    },
+    {
+      "kind": "necessary_ideal_Groebner",
+      "family": 115,
+      "pivot": 10,
+      "timeout_seconds": 30,
+      "returncode": 124,
+      "seconds": 30.09
+    }
+  ],
+  "continuation_attempts": [
+    {
+      "family": 87,
+      "pivot": 2,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "denominator_dimension": 14,
+      "correction_dimension": 58,
+      "baseline_relations": 17,
+      "relations": 245,
+      "additional_independent_directions": 32,
+      "excluded": true,
+      "discovery": {
+        "physical_rows": 244,
+        "expanded_rows": 3416,
+        "baseline_equation_rank": 219,
+        "expanded_equation_rank": 2967,
+        "baseline_multiple_rank": 213,
+        "denominator_relation_rank": 245,
+        "seconds": 68.00420180000219
+      },
+      "continuation_attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "active_variables": 9,
+          "rows": 108,
+          "rank": 82,
+          "identities_found": 3,
+          "seconds": 0.039201599996886216
+        }
+      ]
+    },
+    {
+      "family": 115,
+      "pivot": 0,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "denominator_dimension": 15,
+      "correction_dimension": 58,
+      "baseline_relations": 17,
+      "relations": 264,
+      "additional_independent_directions": 31,
+      "excluded": false,
+      "discovery": {
+        "physical_rows": 255,
+        "expanded_rows": 3825,
+        "baseline_equation_rank": 224,
+        "expanded_equation_rank": 3275,
+        "baseline_multiple_rank": 233,
+        "denominator_relation_rank": 264,
+        "seconds": 91.52349479999975
+      },
+      "continuation_attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "active_variables": 14,
+          "rows": 286,
+          "rank": 264,
+          "identities_found": 1,
+          "seconds": 0.23463410000113072
+        },
+        {
+          "iteration": 1,
+          "degree": 3,
+          "active_variables": 13,
+          "rows": 255,
+          "rank": 226,
+          "identities_found": 1,
+          "seconds": 0.2024237000005087
+        },
+        {
+          "iteration": 2,
+          "degree": 3,
+          "active_variables": 12,
+          "rows": 225,
+          "rank": 198,
+          "identities_found": 0,
+          "seconds": 0.13916649999737274
+        },
+        {
+          "iteration": 2,
+          "degree": 4,
+          "active_variables": 12,
+          "rows": 1755,
+          "rank": 1233,
+          "identities_found": 0,
+          "seconds": 21.046583600000304
+        }
+      ]
+    },
+    {
+      "family": 115,
+      "pivot": 10,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "denominator_dimension": 15,
+      "correction_dimension": 58,
+      "baseline_relations": 17,
+      "relations": 264,
+      "additional_independent_directions": 31,
+      "excluded": false,
+      "discovery": {
+        "physical_rows": 255,
+        "expanded_rows": 3825,
+        "baseline_equation_rank": 224,
+        "expanded_equation_rank": 3275,
+        "baseline_multiple_rank": 233,
+        "denominator_relation_rank": 264,
+        "seconds": 85.4824038999941
+      },
+      "continuation_attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "active_variables": 13,
+          "rows": 170,
+          "rank": 159,
+          "identities_found": 1,
+          "seconds": 0.06814800000574905
+        },
+        {
+          "iteration": 1,
+          "degree": 3,
+          "active_variables": 12,
+          "rows": 146,
+          "rank": 132,
+          "identities_found": 1,
+          "seconds": 0.05149689999961993
+        },
+        {
+          "iteration": 2,
+          "degree": 3,
+          "active_variables": 11,
+          "rows": 146,
+          "rank": 118,
+          "identities_found": 0,
+          "seconds": 0.04813239999930374
+        },
+        {
+          "iteration": 2,
+          "degree": 4,
+          "active_variables": 11,
+          "rows": 1092,
+          "rank": 784,
+          "identities_found": 0,
+          "seconds": 4.865932100001373
+        }
+      ]
+    }
+  ],
+  "interpretation": "Timeouts and failed membership tests imply no mathematical impossibility. Final proof discovery and replay require no Singular."
+}

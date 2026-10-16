@@ -1,0 +1,235 @@
+{
+  "target": {
+    "instance": "holdout",
+    "q": 1,
+    "A": "X0^3 Y0^3"
+  },
+  "charts": [
+    {
+      "family": 87,
+      "pivot": 2,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "denominator_dimension": 14,
+      "correction_dimension": 58,
+      "baseline_relations": 17,
+      "relations": 245,
+      "additional_independent_directions": 32,
+      "excluded": true,
+      "discovery": {
+        "physical_rows": 244,
+        "expanded_rows": 3416,
+        "baseline_equation_rank": 219,
+        "expanded_equation_rank": 2967,
+        "baseline_multiple_rank": 213,
+        "denominator_relation_rank": 245,
+        "seconds": 68.00420180000219
+      },
+      "continuation_attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "active_variables": 9,
+          "rows": 108,
+          "rank": 82,
+          "identities_found": 3,
+          "seconds": 0.039201599996886216
+        }
+      ]
+    },
+    {
+      "family": 115,
+      "pivot": 0,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "denominator_dimension": 15,
+      "correction_dimension": 58,
+      "baseline_relations": 17,
+      "relations": 264,
+      "additional_independent_directions": 31,
+      "excluded": false,
+      "discovery": {
+        "physical_rows": 255,
+        "expanded_rows": 3825,
+        "baseline_equation_rank": 224,
+        "expanded_equation_rank": 3275,
+        "baseline_multiple_rank": 233,
+        "denominator_relation_rank": 264,
+        "seconds": 91.52349479999975
+      },
+      "continuation_attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "active_variables": 14,
+          "rows": 286,
+          "rank": 264,
+          "identities_found": 1,
+          "seconds": 0.23463410000113072
+        },
+        {
+          "iteration": 1,
+          "degree": 3,
+          "active_variables": 13,
+          "rows": 255,
+          "rank": 226,
+          "identities_found": 1,
+          "seconds": 0.2024237000005087
+        },
+        {
+          "iteration": 2,
+          "degree": 3,
+          "active_variables": 12,
+          "rows": 225,
+          "rank": 198,
+          "identities_found": 0,
+          "seconds": 0.13916649999737274
+        },
+        {
+          "iteration": 2,
+          "degree": 4,
+          "active_variables": 12,
+          "rows": 1755,
+          "rank": 1233,
+          "identities_found": 0,
+          "seconds": 21.046583600000304
+        }
+      ]
+    },
+    {
+      "family": 115,
+      "pivot": 10,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "denominator_dimension": 15,
+      "correction_dimension": 58,
+      "baseline_relations": 17,
+      "relations": 264,
+      "additional_independent_directions": 31,
+      "excluded": false,
+      "discovery": {
+        "physical_rows": 255,
+        "expanded_rows": 3825,
+        "baseline_equation_rank": 224,
+        "expanded_equation_rank": 3275,
+        "baseline_multiple_rank": 233,
+        "denominator_relation_rank": 264,
+        "seconds": 85.4824038999941
+      },
+      "continuation_attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "active_variables": 13,
+          "rows": 170,
+          "rank": 159,
+          "identities_found": 1,
+          "seconds": 0.06814800000574905
+        },
+        {
+          "iteration": 1,
+          "degree": 3,
+          "active_variables": 12,
+          "rows": 146,
+          "rank": 132,
+          "identities_found": 1,
+          "seconds": 0.05149689999961993
+        },
+        {
+          "iteration": 2,
+          "degree": 3,
+          "active_variables": 11,
+          "rows": 146,
+          "rank": 118,
+          "identities_found": 0,
+          "seconds": 0.04813239999930374
+        },
+        {
+          "iteration": 2,
+          "degree": 4,
+          "active_variables": 11,
+          "rows": 1092,
+          "rank": 784,
+          "identities_found": 0,
+          "seconds": 4.865932100001373
+        }
+      ]
+    }
+  ],
+  "newly_excluded_complete_families": [
+    87
+  ],
+  "cumulative_fixed_pair_extensions": {
+    "excluded": 133,
+    "total": 136,
+    "unresolved": 3
+  },
+  "cumulative_previous_selection": {
+    "excluded": 133,
+    "total": 152,
+    "unresolved": 19
+  },
+  "remaining_third_characters": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      4,
+      2,
+      3
+    ],
+    [
+      5,
+      3,
+      0
+    ]
+  ],
+  "scope": "Only the previously selected degree-seven families; no general three-character exclusion, existence certificate, Lean proof, solve PR, or leaderboard point."
+}

@@ -213,6 +213,45 @@ conversations or evidence of an accepted solve.
     algorithms, complexity bound, or new holdout theorem has been established
     from this analogy.
 
+18. **16 October 2026 — Polynomial syzygies turn the literature lead into a new exclusion.**
+    The user supplied David Yang's paper on equivariant sheaves and Koszul
+    cohomology and asked us to pursue that direction. We tested affine
+    polynomial multipliers of the actual shared correction equations,
+    producing denominator-only identities while retaining all numerator
+    compatibility. Across three charts, 94 directions extend the bounded
+    constant-multiplier baseline. Three cubic power identities and a final
+    three-row physical identity exclude the complete triple with third
+    character `(3,0,1)` (our family 87). Cumulative coverage is 133/136 fixed-
+    pair extensions, with three still open; holdout remains unsolved. The
+    computation is ordinary exact polynomial elimination. No application of
+    Yang's line-bundle cohomology theorem has been proved.
+    [Proof, comparison, checks, and scope](notes/polynomial-syzygies.md).
+
+19. **16 October 2026 — Unsuccessful searches and the choice to seek powers.**
+    Full Singular module-syzygy searches timed out at 45 seconds on all three
+    charts. A Gröbner calculation on family 87 suggested a stronger component
+    vanishing, but multiplier exports timed out at 60 and 90 seconds.
+    A direct bounded search for linear memberships was also insufficient.
+    Seeking coordinate powers instead supplied the three useful cubes, each
+    with an exact rational identity. Two charts of family 115 gain cubic
+    vanishings but still survive the configured degree-four continuation.
+    All failed bounds and CAS-only observations are separated from the
+    portable proof. The next proposed step is to rebuild its syzygy system
+    after those vanishings; this remains unexecuted in this batch.
+    [Attempts and reproducible inputs](results/degree7-syzygies/experiments.json).
+
+20. **16 October 2026 — Etingof and Kelly: useful hypotheses, no automatic transfer.**
+    The later PDFs are Etingof's paper on Koszul duality and PBW in symmetric
+    tensor categories, and Jack Kelly's thesis on exact categories and derived
+    analytic algebra. We examined the introductions and relevant deformation
+    and duality statements. Etingof's low-degree flatness criterion requires
+    a Koszul special fiber; Kelly's equivalences require the relevant
+    homotopical/operadic constructions. Neither setup has been established
+    for holdout. These sources guide questions about higher relations and
+    compatibility, but do not certify our calculation or justify a universal
+    degree-three stopping rule. The source PDFs and private conversations
+    are not republished here. [Sources and interpretation](notes/polynomial-syzygies.md#how-the-papers-guided-the-experiment).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
