@@ -1,0 +1,42 @@
+{
+  "cases": 45,
+  "distinct_D_directions_mod_gauge": 45,
+  "rejected": 45,
+  "solvable_E2": 0,
+  "groups": [
+    {
+      "edges": "monomial",
+      "twist": "1",
+      "cases": 15,
+      "rejected": 15,
+      "character_counts_mod_gauge": [
+        2
+      ]
+    },
+    {
+      "edges": "mixed",
+      "twist": "1",
+      "cases": 15,
+      "rejected": 15,
+      "character_counts_mod_gauge": [
+        7,
+        8
+      ]
+    },
+    {
+      "edges": "mixed",
+      "twist": "-1",
+      "cases": 15,
+      "rejected": 15,
+      "character_counts_mod_gauge": [
+        7,
+        8
+      ]
+    }
+  ],
+  "Koszul_corrections_per_case": 840,
+  "reciprocal_edge_controls": 45,
+  "certificate_sha256": "2e8328dd34b5a6f5c8a6fd826b15e63a193e4cfda4aa415f5b1be23a9b57881d",
+  "seconds": 110.58412510000198,
+  "scope": "Finite fixed-denominator search over Q with exact obstructions valid over C. No exclusion of all cycle matrices, continuous twists, mixed-character families, or degree seven. No certificate of existence or Lean theorem. CPU rational arithmetic; no GPU claim."
+}

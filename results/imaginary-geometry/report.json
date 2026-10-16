@@ -1,0 +1,78 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "grid": [
+    1280,
+    1280
+  ],
+  "seed": 2026101649,
+  "precision": "L_c = cx L_x + cy L_y on the periodic square grid",
+  "covariance_before_smoothing": "L_c pseudoinverse on mean-zero functions",
+  "weights": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      4.0,
+      0.25
+    ],
+    [
+      0.25,
+      4.0
+    ]
+  ],
+  "shared_gaussian_coefficients": true,
+  "shared_LIC_noise": true,
+  "phase": "h_smoothed / 0.62 + theta; no sample-dependent phase rescaling",
+  "smoothing": "exp(-18 L_isotropic), fixed across conductances",
+  "mean_zero_errors": [
+    2.2898349882893855e-18,
+    5.117434254131581e-19,
+    6.591949208711867e-19
+  ],
+  "CPU_GPU_max_errors": [
+    2.6645352591003757e-15,
+    2.6645352591003757e-15,
+    2.6645352591003757e-15
+  ],
+  "spectral_energy_relative_errors": [
+    1.421604315970332e-16,
+    1.421604315970332e-16,
+    1.421604315970332e-16
+  ],
+  "LIC": "95 midpoint steps in each direction, stride 0.9 grid cells, periodic bilinear sampling",
+  "LIC_statistics": [
+    {
+      "mean": 0.5002539157867432,
+      "std": 0.02216850034892559
+    },
+    {
+      "mean": 0.4999760091304779,
+      "std": 0.022075342014431953
+    },
+    {
+      "mean": 0.5003609657287598,
+      "std": 0.021987317129969597
+    },
+    {
+      "mean": 0.5003293752670288,
+      "std": 0.022156961262226105
+    },
+    {
+      "mean": 0.499973326921463,
+      "std": 0.022031817585229874
+    }
+  ],
+  "display_color_limits": [
+    -2.4,
+    2.4
+  ],
+  "display_fields": "256x256, extra heat time 8 then stride-5 subsampling, int16 / 4000",
+  "seconds": 3.029344199996558,
+  "limits": "Finite heat-regularized GFF angle flows; no exact SLE sample, GFF/SLE coupling, or convergence claim. The anisotropic variants are chosen weighted models. The periodic domain is genus one, not genus 48. No holdout polynomial certificate follows from these images.",
+  "references": [
+    "https://math.mit.edu/research/undergraduate/urop-plus/documents/2016/Sellke.pdf",
+    "https://arxiv.org/abs/1201.1496",
+    "https://arxiv.org/abs/1110.2808"
+  ]
+}

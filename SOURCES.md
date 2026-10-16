@@ -1,6 +1,6 @@
 # Sources and exact revisions
 
-Every source below is a public Git submodule pinned to the displayed commit. `sources.json` is the machine-readable ledger. Direct imports retain source notices and licensing. Pinning a source records provenance; it does not independently validate all of its claims.
+Every source in the table below is a public Git submodule pinned to the displayed commit. `sources.json` is the machine-readable ledger for those submodules; subsequent sections identify other primary sources and pinned proof packets. Direct imports retain source notices and licensing. Pinning a source records provenance; it does not independently validate all of its claims.
 
 | Source | Revision | Actual role |
 |---|---|---|
@@ -18,6 +18,12 @@ Every source below is a public Git submodule pinned to the displayed commit. `so
 The degree-six E1 dimensions and individual-direction search were previously reported by fqlx in [the holdout discussion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18980950). The repository credits these as reproduced prior work.
 
 Primary mathematical references are linked at the point of use in [anisotropy](notes/anisotropy.md), [response duality](notes/response-duality.md), [Gram discrimination](notes/gram-discrimination.md), and the [research log](RESEARCH_LOG.md).
+
+## Dimer inspiration and the completed two-character scan
+
+Julien Dubedat's [Dimers and analytic torsion I](https://arxiv.org/abs/1110.2808) and [Double dimers, conformal loop ensembles and isomonodromic deformations](https://arxiv.org/abs/1403.6076) motivate the determinant, inverse-operator, and cycle-twist directions. Our [six-cycle polynomial ansatz](notes/dubedat-cycles.md) is an adaptation; no result transferring these dimer constructions to the holdout is assumed.
+
+fqlx's [family-30 proof](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983962) is pinned at gist revision `d69313fe578843f8341e6ed557c425bc7755c1d7`. Both its verifier and separate audit passed locally. The [manifest](references/fqlx-pair30.json) records all 20 downloaded file hashes; the [replay](results/upstream-pair30/replay.json) records the executed checks. Credit for this proof belongs to fqlx. Combined with the prior scan and our family-22 and [family-13](notes/x0-y0-exclusion.md) exclusions, it covers every two-character family in the degree-seven scan, without excluding general degree seven.
 
 ## Further upstream mathematical progress
 

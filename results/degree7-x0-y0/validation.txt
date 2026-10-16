@@ -1,0 +1,26 @@
+{"rebuilt_families": 138, "charts_checked": 289, "exact_inferences_checked": 460, "corrupted_witness_rejected": true}
+{
+  "claim": "No admissible degree-seven denominator supported on chi_X0 and chi_Y0 modulo F*S1.",
+  "degree": 7,
+  "denominator_coordinates": 13,
+  "Koszul_coordinates": 58,
+  "physical_equations": 244,
+  "initial_exact_inferences": 17,
+  "linear_square_checked": true,
+  "necessary_relations_checked": 11,
+  "double_charts_checked": 25,
+  "multiplier_terms": 31974,
+  "maximum_multiplier_degree": 5,
+  "both_nonzero_characters_excluded": true,
+  "single_character_theorem_required": true,
+  "columns_reconstructed": 845,
+  "coefficients_checked": 16608,
+  "opposite_physical_monomial_division": true,
+  "subgroup_selection_checked_independently": true,
+  "corrupted_chart_rejected": true,
+  "single_character_certificates_replayed": true,
+  "certificate_sha256": "d133297f90efe8522f938aeac4367974417a870e80f7cbfe9b53b405ef09dfb5",
+  "public_dependency_commit": "dc2756300cbfa7a54d4735c60b852cd38ca8725e",
+  "seconds": 15.854265699999814,
+  "limits": "Exact computational exclusion only; no Lean HasCertificate proof, no general degree-seven exclusion, no independent human review."
+}

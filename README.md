@@ -8,7 +8,13 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
-**Current search: degree seven.** We have now excluded the **{chi_Y0, chi_X1} two-character denominator family**, one of three left unresolved by fqlx's published scan. Together with that reproduced scan, this excludes **9,451 of 9,453 two-character families**. Two pairs, denominators with three or more characters, and higher degrees remain open. [Exact argument and checks](notes/degree-seven-pair.md).
+**Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
+
+**Dubedat-inspired construction:** a weighted six-cycle matrix generates degree-seven determinants and exact first-equation lifts. All **45** tested directions fail the full second equation, including 30 with seven or eight characters. [Construction and exact witnesses](notes/dubedat-cycles.md).
+
+**Imaginary geometry gallery:** the same GPU-generated Gaussian input under different flow angles and directional conductances. These are regularized illustrations. [Equations, images, and checks](notes/imaginary-geometry-gallery.md).
+
+![One field, three directions](results/imaginary-geometry/angle-triptych.png)
 
 **Attribution update:** fqlx had already published the 138 single-character exclusions before our preceding commit. Our separately implemented calculation checks that result; it is not a first report of the bound. [Single-character calculation and chronology](notes/degree-seven.md).
 
@@ -30,6 +36,9 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Imaginary geometry gallery | CUDA GFF transforms and flow textures; paired angle and directional-weight comparisons | [Gallery and model](notes/imaginary-geometry-gallery.md) |
+| Dimer-inspired cycle determinants | 45 distinct directions pass E1; all fail E2 with all 840 corrections allowed | [Determinants, twists, and redundant edge weights](notes/dubedat-cycles.md) |
+| Degree-seven {chi_X0, chi_Y0} family | Excluded by 25 exact chart identities; combined work covers all 9,453 two-character families | [Family-13 continuation and family-30 replay](notes/x0-y0-exclusion.md) |
 | Degree-seven {chi_Y0, chi_X1} family | Excluded by an exact square of a linear form, chart contradictions, and the single-character theorem | [Two-character continuation](notes/degree-seven-pair.md) |
 | Degree-seven character families | All 138 single-character families excluded with 289 exact chart certificates; mixed characters remain open | [Degree-seven frontier](notes/degree-seven.md) |
 | Upstream degree-six exclusion | fqlx's full bound reproduced, including opposite-pivot verification | [Attributed replay](results/upstream-degree6/replay.json) |
@@ -65,6 +74,8 @@ python algebra/degree7_e1.py --check
 python algebra/degree7_verify_polynomials.py
 python algebra/degree7_character_search.py --check
 python algebra/degree7_y0_x1.py --check
+python -S algebra/degree7_x0_y0.py --check
+python -S experiments/dubedat_cycle_search.py --check
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.
@@ -81,6 +92,8 @@ python experiments/anisotropic_flow.py --cpu
 python experiments/response_hodge.py --cpu
 python experiments/gram_discrimination.py --cpu
 python experiments/denominator_gram_search.py --cpu
+python -S experiments/dubedat_cycle_search.py --workers 3
+python experiments/plot_dubedat_cycles.py
 ```
 
 For an NVIDIA GPU with a compatible CUDA 12 environment:
@@ -93,6 +106,7 @@ python experiments/response_hodge.py
 python experiments/gram_discrimination.py
 python experiments/denominator_gram_search.py
 python experiments/gpu_identity_screen.py
+python experiments/imaginary_geometry_gallery.py
 ```
 
 The recorded GPU was an RTX 5070 Ti Laptop GPU, using CuPy 13.6.0. Gaussian noise is seeded on the CPU; GPU/CPU responsibilities are recorded in each report. `HODGE_CUDA_DEPS` can point to an existing isolated dependency directory; it is optional. Regeneration overwrites the corresponding result files; review the diff before committing a new run. Floating-point output may vary slightly by platform.

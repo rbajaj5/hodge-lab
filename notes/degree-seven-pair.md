@@ -2,7 +2,7 @@
 
 For the fixed `holdout`, the complete degree-seven denominator family with characters **chi_Y0 and chi_X1**, modulo `F S_1`, is excluded. This closes family **22** in [fqlx's published list of 35 mixed residuals](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982957). That update excluded 32 of the 35 and left families 13, 22, and 30 unresolved.
 
-Combining this result with the reproduced upstream calculation gives **9,451 excluded pairs out of 9,453**. The remaining pairs are `{chi_X0, chi_Y0}` and `{chi_X1, chi_Y1}`. Denominators involving three or more full-group characters, and higher degrees, are not excluded. No certificate of existence or Lean `HasCertificate` theorem has been found.
+At the time this result was posted, combining it with the reproduced upstream calculation gave **9,451 excluded pairs out of 9,453**. The two remaining pairs have since been excluded by our `{chi_X0, chi_Y0}` proof and fqlx's `{chi_X1, chi_Y1}` proof; see the [subsequent update and attribution](x0-y0-exclusion.md). Denominators involving three or more full-group characters, and higher degrees, are not excluded. No certificate of existence or Lean `HasCertificate` theorem has been found.
 
 ## Exact system and completeness
 

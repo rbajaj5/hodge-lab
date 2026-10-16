@@ -1,0 +1,32 @@
+{
+  "status": "provisional CAS calculation, not a standalone certificate",
+  "field": "QQ",
+  "algorithm": "Singular slimgb",
+  "pivots": [
+    0,
+    2,
+    3,
+    4,
+    5
+  ],
+  "unit_ideal_in_all_five_charts": true,
+  "export_attempt": {
+    "algorithm": "liftstd with slimgb",
+    "pivot": 0,
+    "timeout_seconds": 50,
+    "exit_code": 124
+  },
+  "verification_status": "Polynomial multipliers for independent replay have not been exported. Do not add this family to the certificate-backed count.",
+  "smaller_subsystem": {
+    "pivot": 0,
+    "original_equations": 223,
+    "retained_equations": 63,
+    "subset_tests": 48,
+    "seconds_per_subset_limit": 4,
+    "unit_ideal_verified_by_cas": true,
+    "minimality_proved": false,
+    "export_timeout_seconds": 50,
+    "export_exit_code": 124,
+    "exported_multiplier_blocks": 0
+  }
+}
