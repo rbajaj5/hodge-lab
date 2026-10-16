@@ -2,6 +2,8 @@
 
 This notebook now rules out **all 138 single-character denominator families at degree seven**, with exact rational certificates for **289 nonzero-coordinate charts**. In plain language: a degree-seven solution would have to combine at least two symmetry types in its denominator, after removing multiples of `F`. The holdout remains unsolved.
 
+**Attribution and frontier update:** [fqlx's 21:00:49 UTC comment](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982957) already reported this same 138-family result, plus the exclusion of 9,450 of 9,453 two-character families. We discovered that reply only after publishing the preceding notebook commit. Our single-character implementation is a separate computational check of an already reported result. The subsequent [two-character continuation](degree-seven-pair.md) closes one of fqlx's three remaining pairs. Two pairs and all more general denominator classes remain unresolved here.
+
 ![Map of the degree-seven character families](../results/degree7-characters/character-map.png)
 
 ## First, an upstream result changes the search degree
@@ -109,4 +111,4 @@ This fetches the pinned public source revision into `work/upstream-degree6`, che
 
 Artifacts: [summary](../results/degree7-characters/report.json), [exact proof packet](../results/degree7-characters/certificates.json.gz), [polynomial validation](../results/degree7-characters/polynomial-validation.json), [certificate validation](../results/degree7-characters/certificate-validation.json), and [E1 basis](../algebra/degree7_e1_basis.json).
 
-The remaining search is for **mixed-character denominators at degree seven, or denominators of higher degree**. A promising next reduction is to project numerators using the subgroup that preserves a selected mixed-character denominator family. The single-character exclusions cannot be combined into a global exclusion: cross terms between characters can change the equations.
+The remaining search is for **mixed-character denominators at degree seven, or denominators of higher degree**. The [continuation](degree-seven-pair.md) uses the subgroup preserving a selected two-character denominator family. Single-character exclusions alone cannot be combined into a global exclusion: cross terms between characters can change the equations.

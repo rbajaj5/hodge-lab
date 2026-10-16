@@ -6,7 +6,9 @@ A public lab notebook for [hodge.computer](https://hodge.computer/). We test geo
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
-**Current search: degree seven.** We reproduced fqlx's upstream exclusion of every denominator of degree at most six. Our next exact calculation excludes all **138 single-character degree-seven families**, covering **289 nonzero-coordinate charts**. A degree-seven solution would have to mix symmetry types in its denominator class. [Argument, attribution, and reproducible proofs](notes/degree-seven.md).
+**Current search: degree seven.** We have now excluded the **{chi_Y0, chi_X1} two-character denominator family**, one of three left unresolved by fqlx's published scan. Together with that reproduced scan, this excludes **9,451 of 9,453 two-character families**. Two pairs, denominators with three or more characters, and higher degrees remain open. [Exact argument and checks](notes/degree-seven-pair.md).
+
+**Attribution update:** fqlx had already published the 138 single-character exclusions before our preceding commit. Our separately implemented calculation checks that result; it is not a first report of the bound. [Single-character calculation and chronology](notes/degree-seven.md).
 
 ![Exact degree-seven symmetry-family exclusions](results/degree7-characters/character-map.png)
 
@@ -26,6 +28,7 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Degree-seven {chi_Y0, chi_X1} family | Excluded by an exact square of a linear form, chart contradictions, and the single-character theorem | [Two-character continuation](notes/degree-seven-pair.md) |
 | Degree-seven character families | All 138 single-character families excluded with 289 exact chart certificates; mixed characters remain open | [Degree-seven frontier](notes/degree-seven.md) |
 | Upstream degree-six exclusion | fqlx's full bound reproduced, including opposite-pivot verification | [Attributed replay](results/upstream-degree6/replay.json) |
 | Denominator Gram rankings | 3,840 candidate draws; lower E2 residual than random, no anisotropy advantage; 254 distinct exact rejections | [Ranking experiment](notes/denominator-ranking.md) |
@@ -59,6 +62,7 @@ python experiments/denominator_gram_search.py --check
 python algebra/degree7_e1.py --check
 python algebra/degree7_verify_polynomials.py
 python algebra/degree7_character_search.py --check
+python algebra/degree7_y0_x1.py --check
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.

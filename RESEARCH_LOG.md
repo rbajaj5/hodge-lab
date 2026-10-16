@@ -2,7 +2,13 @@
 
 The purpose is to make small computational connections and test them against explicit targets. Results below include failed approaches.
 
-The [research milestones](notes/research-milestones.md) separate candidate ranking, exact exclusions, implementation checks, and external review. They give failed approaches and corrected claims an explicit role in deciding what to try next. The next planned experiment is a complete mixed-character degree-seven pilot; it has not run yet.
+The [research milestones](notes/research-milestones.md) separate candidate ranking, exact exclusions, implementation checks, and external review. They give failed approaches and corrected claims an explicit role in deciding what to try next.
+
+## One residual two-character family closed
+
+Reading the full discussion, including replies, revealed fqlx's 21:00:49 UTC degree-seven update. It already contained the 138 single-character exclusions and went further: 9,450 of 9,453 two-character families were excluded, with three remaining. Our preceding single-character commit is therefore a separate check of an already reported result, not the first report. The pinned upstream package was reproduced, including all pair and subgroup checks; a Windows log-encoding failure in the final tangent phase was resolved by rerunning that phase in UTF-8 mode.
+
+Our [continuation](notes/degree-seven-pair.md) closes the `{chi_Y0,chi_X1}` family. Starting with its full 14-coordinate denominator space and 60 shared numerator corrections, a six-term coefficient identity forces the square of a linear form to vanish. Subsequent exact chart contradictions eliminate the entire `chi_Y0` component, reducing to the already excluded `chi_X1` family. The checker reconstructs all 945 physical columns with a second polynomial API, checks 18,253 coefficients and 196 proof inferences, and rejects an altered witness. Two two-character families, more general mixtures, and higher degrees remain open. No Lean `HasCertificate` proof has been obtained.
 
 ## Frontier correction and degree-seven exclusions
 

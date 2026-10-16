@@ -1,0 +1,40 @@
+{
+  "initial_excluded_coordinates": [
+    1,
+    6,
+    9
+  ],
+  "subsequent_exclusion_batches": [
+    [
+      11
+    ],
+    [
+      8,
+      10,
+      12,
+      13
+    ]
+  ],
+  "remaining_free_denominator_coordinates": [
+    0,
+    2,
+    3,
+    4,
+    5
+  ],
+  "remaining_character": [
+    0,
+    1,
+    0
+  ],
+  "exact_inferences": 196,
+  "single_character_theorem_required": true,
+  "degree": 7,
+  "denominator_coordinates": 14,
+  "Koszul_coordinates": 60,
+  "physical_equations": 344,
+  "basis_sha256": "95e2a9b264634de30cf049a885dd6977207a4080f276c9d8edeec2bb516214df",
+  "seconds": 27.751293199999054,
+  "scope": "The complete {chi_Y0, chi_X1} denominator family modulo F*S1 only. No certificate of existence and no general degree-seven exclusion.",
+  "prior_work": "fqlx Discussion 44 comment 18982957; this is the remaining family numbered 22 in that package."
+}

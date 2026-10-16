@@ -1,0 +1,30 @@
+{
+  "attribution": "fqlx; all results in this record are upstream reproductions.",
+  "discussion": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982957",
+  "gist_revision": "ffff4273a7a04905bb7de50382d731b91e08b328",
+  "recorded_at_utc": "2026-10-16T21:16:21.120355+00:00",
+  "mode": "existing_result_record_audit",
+  "source_hashes_checked": 26,
+  "result_hashes": {
+    "eigen/degree7-eigen-verification.json": "29822dcf823a1ddabc9a56c158ebb556073a6c7624f25bf901d56960b9bdd1ff",
+    "module.json": "286253926660c45748f026e858d0f8b405c59fbfbf7f0b50923f41e455d92896",
+    "global.json": "de658a78b21ac3888a3afba53241267a04c0458234133881541e3669c1ed45ca",
+    "pairs/degree7-two-character-verification.json": "07fdcb5c4f7863e988f1ad39cba26d212d48f9c0ced4651f74a5c516be92906e",
+    "actual/degree7-actual-pairs-verification.json": "51158831f1225449b23bebbdb17f863eb9f87f64c36aa64957faad8eb4199025",
+    "cyclic.json": "a5766af03f08fa144977500db284af806fd21ade0c32d891d2d5a1f624961981",
+    "cosets.json": "c30f33ebd29672a25ac9d88c35c76732e022d276f56d9614125cdc4719bd2dee",
+    "tangent.json": "f82c7ca6271f4ef9a0739684d28dbb191507d27d150585e942446b6dc2d1bf4d"
+  },
+  "single_character_families_excluded": 138,
+  "two_character_families_excluded": 9450,
+  "two_character_families_unresolved": 3,
+  "remaining_upstream_family_indices": [
+    13,
+    22,
+    30
+  ],
+  "global_radical_linear_restrictions": 7,
+  "coordinate_kernel_families_excluded": 180,
+  "tangent_factor_family_excluded": true,
+  "scope": "These are the upstream results before the Hodge Lab Y0/X1 continuation. No HasCertificate proof."
+}
