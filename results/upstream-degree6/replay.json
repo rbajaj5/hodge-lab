@@ -1,0 +1,61 @@
+{
+  "attribution": "fqlx, upstream degree-six exclusion; reproduced here, not a new bound.",
+  "discussion": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982028",
+  "gist_revision": "9afdfe668c9a967e9b8c7d9bc9ce8750a76e62a5",
+  "reproduced_at_utc": "2026-10-16T20:56:59.220406+00:00",
+  "input_files_sha256_verified": 26,
+  "commands": [
+    [
+      "reconstruct_global_degree6.py",
+      "--output-dir",
+      "reproduced"
+    ],
+    [
+      "reduce_e2_opposite.py",
+      "reproduced/degree6-global-checkpoint.json",
+      "--output",
+      "reproduced/opposite-e2.json"
+    ],
+    [
+      "audit_full_e2.py",
+      "reproduced/opposite-e2.json"
+    ]
+  ],
+  "minimum_possible_denominator_degree": 7,
+  "all_final_denominator_coordinates_excluded": [
+    3,
+    6,
+    12,
+    19,
+    28,
+    36,
+    69,
+    82,
+    96,
+    105,
+    108
+  ],
+  "final_exclusion_rounds": [
+    [
+      6,
+      12
+    ],
+    [
+      28,
+      69
+    ],
+    [
+      3,
+      19,
+      96
+    ],
+    [
+      36,
+      82,
+      105,
+      108
+    ]
+  ],
+  "opposite_physical_and_parameter_pivots_reproduced": true,
+  "scope": "The exact pinned holdout with complex coefficients and an unrestricted quotient; no denominator degree at most six. This upstream result is not a Lean theorem or an unrestricted nonexistence proof."
+}

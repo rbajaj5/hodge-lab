@@ -1,0 +1,24 @@
+# Research milestones and evidence
+
+The aim is to reduce uncertainty about the fixed holdout problem. A useful result can be a solution, an exact exclusion, a failed heuristic, or a correction that prevents further wasted computation. Public code makes inspection possible; it does not establish correctness by itself.
+
+## What the current results establish
+
+| Milestone | Evidence and status | What it does not establish |
+|---|---|---|
+| Compare candidate selectors | The [degree-six benchmark](denominator-ranking.md) found about a 32% residual reduction versus random selection, with no clear anisotropic advantage over uniform weighting | Improved solution discovery: all 254 distinct shortlisted candidates were rejected |
+| Update the search from prior work | fqlx's degree-at-most-six exclusion was reproduced from pinned sources; the earlier benchmark is now explicitly historical | A new lower bound attributable to this repository |
+| Exclude a stated family exactly | All 138 [single-character degree-seven families](degree-seven.md) have replayable exclusions covering 289 charts | An exclusion of mixed-character degree-seven denominators |
+| Check the implementation through another construction | A second polynomial API reconstructs all family equations; proof replay checks exact identities; corruption tests fail as expected | Independent expert review or formal verification of the entire mathematical reduction |
+| Obtain external mathematical review | Pending; no such review is claimed here | Public availability and passing CI are not substitutes for this milestone |
+
+## Next experiments
+
+1. **Construct a complete two-character pilot.** Select a small set of character pairs by a published rule, recording all selected and skipped pairs before running the solver. Retain every numerator character allowed by the subgroup preserving that pair, every cross term, and the unrestricted quotient. Reconstruct the equations using the second polynomial API before interpreting solver output. The existing single-character constructor deliberately rejects mixed input.
+2. **Evaluate computational tractability.** Record equation sizes, elapsed time, and the declared resource limit. Classify each chart as exactly excluded, supplied with an exactly verified witness, or unresolved. A timeout is unresolved. A pilot does not cover every mixed-character denominator.
+3. **Revisit geometric ranking only on an open search space.** If ranking is needed, compare anisotropic, uniform, and random selectors on identical candidate pools and equal selection budgets. Freeze seeds, scores, and selection rules before exact evaluation. Separate tuning pools from evaluation pools. Report exact outcomes and cost alongside residuals. A residual reduction alone is insufficient evidence to adopt anisotropic weighting.
+4. **Prepare a reviewable claim.** Keep the reduction, source attribution, exact certificates, replay instructions, and limitations together. Record external review only when it actually occurs. Any claim of an accepted challenge solve must meet the upstream proof contract.
+
+Each experiment should record its question, target revision, assumptions, baseline, resource budget, success criterion, stopping criterion, outcome, and the next decision. Fix these before execution when possible; label later changes as exploratory. Report failed candidates and exclusions with the same care as positive results. Do not award progress merely for more GPU time, more candidates, or a better-looking plot.
+
+The immediate decision is to build the mixed-character pilot. Degree-six sampling is no longer an active search for this holdout, and the current evidence does not justify preferring anisotropic weighting to its simpler uniform baseline.

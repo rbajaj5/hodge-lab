@@ -20,3 +20,6 @@ jobs:
       - run: python algebra/degree6_verify_all_coefficients.py
       - run: python algebra/fixed_denominator_search.py --check
       - run: python experiments/denominator_gram_search.py --check
+      - run: python algebra/degree7_e1.py --check
+      - run: python algebra/degree7_verify_polynomials.py
+      - run: python algebra/degree7_character_search.py --check

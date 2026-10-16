@@ -2,6 +2,8 @@
 
 This directory works on the fixed `holdout` instance in the pinned `hodge-computer/sextics` submodule. It is not a solution of the instance.
 
+**Frontier update:** fqlx's complete degree-six exclusion has now been reproduced, and our search has moved to degree seven. All 138 single-character degree-seven families are excluded by exact chart certificates in this repository; mixed-character families remain open. See the [degree-seven argument and checks](../notes/degree-seven.md). The degree-six calculations below are retained as earlier experiments and reusable verification machinery.
+
 The cleared certificate equation at `q=1` is
 
 ```text
@@ -37,7 +39,7 @@ L(M_column) = 0 for every correction column,
 L(b) = 1.
 ```
 
-Thus `M z + b = 0` is inconsistent even over the complex numbers for that fixed direction. This is stronger than an unsuccessful numerical optimizer. It excludes only the recorded candidates and their nonzero scalar multiples. The unrestricted degree-six problem remains open in this work. The individual-direction scan is also a reproduction of an approach already discussed upstream.
+Thus `M z + b = 0` is inconsistent even over the complex numbers for that fixed direction. This is stronger than an unsuccessful numerical optimizer. The scan itself excludes only the recorded candidates and their nonzero scalar multiples. The later upstream argument excludes the entire degree-six problem, as documented above. The individual-direction scan is also a reproduction of an approach already discussed upstream.
 
 ```sh
 python algebra/degree6_e1.py

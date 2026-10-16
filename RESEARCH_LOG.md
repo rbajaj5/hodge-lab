@@ -2,6 +2,16 @@
 
 The purpose is to make small computational connections and test them against explicit targets. Results below include failed approaches.
 
+The [research milestones](notes/research-milestones.md) separate candidate ranking, exact exclusions, implementation checks, and external review. They give failed approaches and corrected claims an explicit role in deciding what to try next. The next planned experiment is a complete mixed-character degree-seven pilot; it has not run yet.
+
+## Frontier correction and degree-seven exclusions
+
+At approximately 20:47 UTC, a refreshed read of Discussion 44 revealed fqlx's 19:58 UTC update excluding every denominator of degree at most six. That update had not been incorporated into the earlier Gram-ranking run. We reproduced the pinned source package and its opposite-pivot audit, verifying all 26 source hashes. The degree-six bound is fqlx's result.
+
+The [degree-seven calculation](notes/degree-seven.md) independently reproduces the complete 295-dimensional E1 denominator space, its six `F S1` gauge directions, and the 840-dimensional numerator kernel. The retained 289-dimensional denominator space splits into 138 diagonal-character families. Full E2 with the complete character-projected numerator space excludes 262 charts by affine/square-zero consequences and the remaining 27 by explicit cubic ideal identities. Every one of the 138 families is therefore excluded. This does not exclude mixed-character denominators at degree seven.
+
+A second polynomial implementation rebuilt all 2,294 E2 columns and 25,201 coefficients, checked all 295 E1 lifts, and verified 1,770 degree-seven gauge identities. Independent proof replay checks 460 inferences and rejects altered witnesses. All exact calculations use rational arithmetic; no Lean existence theorem or solved holdout is claimed.
+
 ## Denominator Gram ranking
 
 The [denominator ranking experiment](notes/denominator-ranking.md) constructs Grams on the actual 108-coordinate denominator basis, using 24 random plane restrictions of the fixed holdout. Five independent candidate pools contain 3,840 draws with two or four nonzero coordinates. Each geometric selector freezes 16 picks before the complete E2 least-squares evaluation.

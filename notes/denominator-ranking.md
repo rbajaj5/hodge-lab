@@ -1,5 +1,7 @@
 # Can geometric Gram matrices rank denominator candidates?
 
+**Frontier update:** a later review of [fqlx's upstream update](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982028) established that all degree-six denominators were already excluded by an exact argument. We reproduced that bound. This experiment remains a numerical benchmark on an excluded degree; the active work has moved to [degree seven](degree-seven.md). The upstream update was posted before this experiment ran but had not been incorporated into it.
+
 **They improve the chosen numerical residual in this experiment. The anisotropic weighting adds no clear benefit over uniform weighting, and no exact solution was found.** Five pools of 768 rational candidates gave a mean shortlisted E2 residual of **0.31257** for the anisotropic Gram and **0.31222** for the uniform Gram, against a random-selection expectation of **0.45896**. That is about a **32% reduction** for either geometric ranking. All **254 distinct shortlisted directions** were rejected by exact rational certificates.
 
 ![Denominator rankings and exact checks](../results/denominator-gram/denominator-ranking.png)
@@ -90,4 +92,4 @@ Tests compare covariance with scalar weighted variance, floating contraction wit
 
 The [report](../results/denominator-gram/report.json) contains every draw and score. [Saved matrices](../results/denominator-gram/grams.npz) contain both Grams, their fresh-plane counterparts, and the denominator coefficient map. [The experiment](../experiments/denominator_gram_search.py) generates the data and figure. Upstream E1 attribution remains in the [algebra notes](../algebra/README.md).
 
-For subsequent searches, a denominator Gram can provide an inexpensive ordering heuristic while retaining algebraic checks. Uniform weighting is the simpler default supported by this comparison. These results do not exclude other degree-six denominators, complex coefficient families, or higher degrees.
+For subsequent searches in an unresolved degree, a denominator Gram can provide an inexpensive ordering heuristic while retaining algebraic checks. Uniform weighting is the simpler default supported by this comparison. This finite experiment did not itself exclude all degree-six denominators; the separately attributed upstream argument now does. The current search concerns degree seven and above.

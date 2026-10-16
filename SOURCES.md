@@ -18,3 +18,7 @@ Every source below is a public Git submodule pinned to the displayed commit. `so
 The degree-six E1 dimensions and individual-direction search were previously reported by fqlx in [the holdout discussion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18980950). The repository credits these as reproduced prior work.
 
 Primary mathematical references are linked at the point of use in [anisotropy](notes/anisotropy.md), [response duality](notes/response-duality.md), [Gram discrimination](notes/gram-discrimination.md), and the [research log](RESEARCH_LOG.md).
+
+## Further upstream mathematical progress
+
+The degree-six bound is credited to [fqlx's Discussion 44 update](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982028), with [source pinned at gist revision 9afdfe668c9a967e9b8c7d9bc9ce8750a76e62a5](https://gist.github.com/fqlx/4d7b74cea96f656c63dd30f291147b56/9afdfe668c9a967e9b8c7d9bc9ce8750a76e62a5). The [hash manifest](references/fqlx-degree6.json) and [replay record](results/upstream-degree6/replay.json) identify precisely what was executed. The reproduction script fetches the original files when requested; the new degree-seven implementation adapts this repository's earlier polynomial code and credits the upstream E1 counts and symmetry strategy. The degree-six bound and the degree-seven E1 dimensions are reproductions, not new claims.

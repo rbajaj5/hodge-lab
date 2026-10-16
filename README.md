@@ -1,10 +1,16 @@
 # Hodge lab
 
-A public computational notebook for exploring [hodge.computer](https://hodge.computer/), exact polynomial certificates, and random geometry. It connects earlier experiments in rankings, braids, Gaussian fields, and arithmetic through small reproducible calculations.
+A public lab notebook for [hodge.computer](https://hodge.computer/). We test geometric ideas for making better guesses at algebra problems, then check those guesses exactly. The code, pictures, results, and failed approaches stay visible.
 
 **Current status: no new accepted Hodge solve.** The repository contains actual GPU runs, exact rejection certificates, independent checks, and the approaches that failed. Code and notes were developed with AI assistance; the recorded checks describe what was executed.
 
-**Denominator ranking:** five pools of 768 candidates give about a 32% lower normalized E2 residual for Gram-ranked shortlists than random selection. Anisotropic and uniform weighting are essentially tied. All 254 distinct shortlisted directions fail exact checks. [Method, comparison, and a three-coefficient rejection proof](notes/denominator-ranking.md).
+**How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
+
+**Current search: degree seven.** We reproduced fqlx's upstream exclusion of every denominator of degree at most six. Our next exact calculation excludes all **138 single-character degree-seven families**, covering **289 nonzero-coordinate charts**. A degree-seven solution would have to mix symmetry types in its denominator class. [Argument, attribution, and reproducible proofs](notes/degree-seven.md).
+
+![Exact degree-seven symmetry-family exclusions](results/degree7-characters/character-map.png)
+
+**Earlier ranking benchmark:** five pools of 768 degree-six candidates gave about a 32% lower normalized E2 residual for Gram-ranked shortlists than random selection. Anisotropic and uniform weighting were essentially tied; all 254 distinct shortlisted directions failed exact checks. The upstream degree-six exclusion had not yet been incorporated into that experiment. [Method and corrected frontier context](notes/denominator-ranking.md).
 
 ![Denominator Gram ranking compared with exact algebra](results/denominator-gram/denominator-ranking.png)
 
@@ -20,6 +26,8 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Degree-seven character families | All 138 single-character families excluded with 289 exact chart certificates; mixed characters remain open | [Degree-seven frontier](notes/degree-seven.md) |
+| Upstream degree-six exclusion | fqlx's full bound reproduced, including opposite-pivot verification | [Attributed replay](results/upstream-degree6/replay.json) |
 | Denominator Gram rankings | 3,840 candidate draws; lower E2 residual than random, no anisotropy advantage; 254 distinct exact rejections | [Ranking experiment](notes/denominator-ranking.md) |
 | Coefficient response and Hodge complex | Envelope derivatives, Gram factorization, paired modes, and thermal localization checked | [Response report](results/response-hodge/report.json) |
 | Competing Gram models | Six Gaussian comparisons using a product-TV proxy and independent likelihood sampling | [Interpretation and results](notes/gram-discrimination.md) |
@@ -48,6 +56,9 @@ python experiments/check_transfer_packet.py
 python algebra/degree6_verify_all_coefficients.py
 python algebra/fixed_denominator_search.py --check
 python experiments/denominator_gram_search.py --check
+python algebra/degree7_e1.py --check
+python algebra/degree7_verify_polynomials.py
+python algebra/degree7_character_search.py --check
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.
