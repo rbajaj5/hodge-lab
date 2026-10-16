@@ -22,7 +22,6 @@ import statistics
 import subprocess
 import sys
 import time
-import numpy as np
 
 VARIABLES=('X0','X1','X2','Y0','Y1','Y2')
 ZERO=(0,)*6
@@ -191,6 +190,7 @@ def load_cupy(deps=None):
     return cp,handles
 
 def main():
+    import numpy as np
     workspace=Path(__file__).resolve().parents[1]
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--repo',type=Path,default=workspace/'sources/sextics')

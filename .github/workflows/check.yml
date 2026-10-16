@@ -23,4 +23,4 @@ jobs:
       - run: python algebra/degree7_e1.py --check
       - run: python algebra/degree7_verify_polynomials.py
       - run: python algebra/degree7_character_search.py --check
-      - run: python algebra/degree7_y0_x1.py --check
+      - run: python -S algebra/degree7_y0_x1.py --check
