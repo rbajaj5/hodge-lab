@@ -26,6 +26,8 @@ Removing the denominator's `F` component leaves 108 coordinates. This is a gauge
 
 ## Search performed
 
+The subsequent [denominator Gram experiment](../notes/denominator-ranking.md) compares geometric rankings across five pools of 768 candidates and exports 254 further distinct fixed-direction rejection certificates. Its check command is `python experiments/denominator_gram_search.py --check`. Lower numerical residuals did not produce an exact solve.
+
 `fixed_denominator_search.py` tests the 108 basis directions and 12 seeded integer combinations of the five retained directions appearing in the basis expansion of `F`. For each fixed denominator, it solves for all 315 correction coefficients over the rationals.
 
 When a candidate fails, the report stores a rational functional `L` with

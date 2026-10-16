@@ -19,3 +19,4 @@ jobs:
       - run: python experiments/check_transfer_packet.py
       - run: python algebra/degree6_verify_all_coefficients.py
       - run: python algebra/fixed_denominator_search.py --check
+      - run: python experiments/denominator_gram_search.py --check

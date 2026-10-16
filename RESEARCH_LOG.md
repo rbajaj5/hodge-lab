@@ -2,6 +2,14 @@
 
 The purpose is to make small computational connections and test them against explicit targets. Results below include failed approaches.
 
+## Denominator Gram ranking
+
+The [denominator ranking experiment](notes/denominator-ranking.md) constructs Grams on the actual 108-coordinate denominator basis, using 24 random plane restrictions of the fixed holdout. Five independent candidate pools contain 3,840 draws with two or four nonzero coordinates. Each geometric selector freezes 16 picks before the complete E2 least-squares evaluation.
+
+Mean residuals were 0.31257 (anisotropic), 0.31222 (uniform), and 0.45896 (random expectation from repeated balanced shortlists). Both Grams improve this normalized coefficient residual by about 32%; the extra anisotropic weighting provides no aggregate gain. The relative residual after corrections is about 0.93 for both anisotropic and random picks, so the gain mainly reflects smaller initial obstructions. An algebra reference that sees all E2 fits achieves 0.23946. All 254 distinct shortlisted directions fail exact rational dual checks, including the best numerical candidate, which has a three-coefficient obstruction. No solution is claimed.
+
+The primary result was followed by four fresh candidate seeds with no changes to the ranking rule or geometric matrices. All results, seeds, matrices, candidates, and exact witnesses are public. CPU checks independently compare numerical contraction with exact coefficients and sparse fitting with dense factorization, then replay the certificates with corruption controls.
+
 ## Exact holdout work
 
 The degree-six E1 parameterization reproduces prior results by fqlx, with source attribution in `algebra/README.md`. The full E2 coefficient tensor is independently reconstructed. The fixed-denominator search allows every degree-six numerator correction and exports exact rational dual certificates for unsuccessful choices. It does not search all denominator combinations or all degrees.

@@ -4,18 +4,23 @@ A public computational notebook for exploring [hodge.computer](https://hodge.com
 
 **Current status: no new accepted Hodge solve.** The repository contains actual GPU runs, exact rejection certificates, independent checks, and the approaches that failed. Code and notes were developed with AI assistance; the recorded checks describe what was executed.
 
+**Denominator ranking:** five pools of 768 candidates give about a 32% lower normalized E2 residual for Gram-ranked shortlists than random selection. Anisotropic and uniform weighting are essentially tied. All 254 distinct shortlisted directions fail exact checks. [Method, comparison, and a three-coefficient rejection proof](notes/denominator-ranking.md).
+
+![Denominator Gram ranking compared with exact algebra](results/denominator-gram/denominator-ranking.png)
+
 ![Paired Hodge response operators](results/response-hodge/response-hodge.png)
 
 The unifying construction is [curvature-mediated response duality](notes/response-duality.md): coefficient changes produce spatial forces, inverse curvature turns them into displacement, and the pulled-back form is `Q=L* K^-1 L`. Its factorization defines a two-term Hodge complex. The holdout's eight coefficients give a concrete numerical example; its thermal Gram approaches the predicted rank-one limit to about 0.070% in the recorded low-temperature run.
 
 ![An anisotropic flow derived from the holdout sextic](results/anisotropic-flow/anisotropic-flow.png)
 
-The newest experiment uses the holdout polynomial's directional variation to construct an elliptic surface energy, then evolves eight planar curves toward area-matched Wulff shapes. This is a chosen interpretation of the polynomial inspired by [Kim–Kwon, arXiv:2405.08296](https://arxiv.org/abs/2405.08296v1). [Construction, equations, and scope](notes/anisotropy.md).
+The flow experiment uses the holdout polynomial's directional variation to construct an elliptic surface energy, then evolves eight planar curves toward area-matched Wulff shapes. This is a chosen interpretation of the polynomial inspired by [Kim–Kwon, arXiv:2405.08296](https://arxiv.org/abs/2405.08296v1). [Construction, equations, and scope](notes/anisotropy.md).
 
 ## What is here
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Denominator Gram rankings | 3,840 candidate draws; lower E2 residual than random, no anisotropy advantage; 254 distinct exact rejections | [Ranking experiment](notes/denominator-ranking.md) |
 | Coefficient response and Hodge complex | Envelope derivatives, Gram factorization, paired modes, and thermal localization checked | [Response report](results/response-hodge/report.json) |
 | Competing Gram models | Six Gaussian comparisons using a product-TV proxy and independent likelihood sampling | [Interpretation and results](notes/gram-discrimination.md) |
 | Actual holdout, degree-six denominators | 120 fixed denominator directions tested with all 315 numerator corrections | [Exact search and dual certificates](algebra/README.md) |
@@ -42,6 +47,7 @@ python -m unittest discover -s tests -v
 python experiments/check_transfer_packet.py
 python algebra/degree6_verify_all_coefficients.py
 python algebra/fixed_denominator_search.py --check
+python experiments/denominator_gram_search.py --check
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.
@@ -57,6 +63,7 @@ python experiments/plot_source_bridges.py
 python experiments/anisotropic_flow.py --cpu
 python experiments/response_hodge.py --cpu
 python experiments/gram_discrimination.py --cpu
+python experiments/denominator_gram_search.py --cpu
 ```
 
 For an NVIDIA GPU with a compatible CUDA 12 environment:
@@ -67,6 +74,7 @@ python experiments/source_bridge_lab.py
 python experiments/anisotropic_flow.py
 python experiments/response_hodge.py
 python experiments/gram_discrimination.py
+python experiments/denominator_gram_search.py
 python experiments/gpu_identity_screen.py
 ```
 
