@@ -23,8 +23,15 @@ open. [Short proof, literature motivation, and failed attempts](notes/polynomial
 **134/136 fixed-pair extensions excluded** (134/152 in the combined selection).
 Rebuilding after the verified zeros and searching through total degree five
 closes one chart; its forced zero closes the other. The two larger families
-remain unresolved, with checked conditional progress and ten timed-out
+remained unresolved at that checkpoint, with checked conditional progress and ten timed-out
 searches retained. [Proof, visualization, and failed attempts](notes/syzygy-rebuild.md).
+
+**Latest Koszul continuation:** families 16 and 137 are now excluded, completing
+**136/136 fixed-pair extensions** (136/152 in the original combined selection).
+Two-row square identities force global linear vanishings; rebuilding the
+Koszul correction equations then closes all ten third-component charts.
+Sixteen other selected triples remain open. [Exact proof, dependencies,
+and retained failed searches](notes/koszul-rank-continuation.md).
 
 ![How syzygies close family 115](results/degree7-syzygy-rebuild/syzygy-proof-map.png)
 
@@ -62,6 +69,7 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Koszul continuation after local rank identities | Families 16 and 137 excluded; 136/136 fixed-pair extensions covered; 16 other selected triples still open | [Exact chart covers and failed searches](notes/koszul-rank-continuation.md) |
 | Rebuilt polynomial syzygies | Family 115 excluded; 134/136 fixed-pair extensions covered; two remain unresolved | [Exact proof, dependencies, and visualization](notes/syzygy-rebuild.md) |
 | Polynomial syzygies of the shared correction map | One further complete family excluded; 133/136 X0/Y0 extensions now excluded; two next-family charts still unresolved | [Exact identities, literature, and failures](notes/polynomial-syzygies.md) |
 | Original systematic three-character batch | 152 complete families tested; 132 excluded at that checkpoint; all 136 X0/Y0 extensions included | [Exact duals, shared charts, and coverage map](notes/three-character-families.md) |
@@ -114,6 +122,10 @@ python -S algebra/degree7_triples.py --check
 python -S algebra/check_degree7_triples.py
 python -S algebra/degree7_triple_shared.py --check
 python -S algebra/degree7_triple_shared.py --check --independent
+python -S algebra/degree7_rank_strata.py --check-all
+python -S algebra/degree7_rank_strata.py --check-all --independent
+python -S algebra/degree7_koszul_continuation.py
+python -S algebra/degree7_koszul_continuation.py --independent
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.

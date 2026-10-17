@@ -1,0 +1,171 @@
+{
+  "purpose": "Discovery pilots and retained timeout checkpoints; not proof certificates. Use the portable discovery runner in algebra/ for fresh runs.",
+  "python_flint": "0.9.0",
+  "files": [
+    {
+      "file": "koszul-analyzed137-11.json.gz",
+      "bytes": 646194,
+      "sha256": "6027fb71ea2a7e1711f1a39fc4a4c8589bac4331b27c6a1e4196c71457a9450d"
+    },
+    {
+      "file": "koszul-analyzed137-8.json.gz",
+      "bytes": 1005422,
+      "sha256": "51a8834a7a89012c3d355556427e41baf4eba60504664e9c247a098c2d686c4c"
+    },
+    {
+      "file": "koszul137-8.json.gz",
+      "bytes": 819321,
+      "sha256": "a16cbb07cbc5e18edab5fa33399e2da7d13939923cfc9cf21750041f8a52c8bc"
+    },
+    {
+      "file": "koszul137-8.log",
+      "bytes": 262,
+      "sha256": "ea00ceb651a3e77ec75600805943d10d08c01a4b30a339b1eea83375933d4574"
+    },
+    {
+      "file": "koszul137.py",
+      "bytes": 2938,
+      "sha256": "4235fabc24af8a6b746f33c9592e401a026545ff3a72c52be736c80a8f0a7161"
+    },
+    {
+      "file": "koszul137_refined.py",
+      "bytes": 3131,
+      "sha256": "8a13bfc260406b20287ef0c99ca783c19a966a1f8a9033d96bc1ec48ec6e298d"
+    },
+    {
+      "file": "koszul_analyze137.py",
+      "bytes": 1077,
+      "sha256": "85e12e97b936787bf28ca0d1ca062bfbbc19e4a4e1df1687356d550f94f0da07"
+    },
+    {
+      "file": "koszul_global137.py",
+      "bytes": 1767,
+      "sha256": "0f12a096d2c75c3a75abbbf0565c5cbe064d10e64e015e698266d199cef31303"
+    },
+    {
+      "file": "koszul_refine16.py",
+      "bytes": 3072,
+      "sha256": "27b7470f25692a34ccbf47c9bb727d911ff8c3aa91888c1ea3e51b54fe5ec44e"
+    },
+    {
+      "file": "rank-follow-137-11.json.gz",
+      "bytes": 645109,
+      "sha256": "9a67636038e8d0f84ed1eb7ede37e13986e7d91d1874bfb5b590b65c46b34356"
+    },
+    {
+      "file": "rank-follow-137-11.log",
+      "bytes": 237,
+      "sha256": "10e47867ac640972d875b316d7f84c2a2287a27a30f0af512bdf36a0fe8ae2ea"
+    },
+    {
+      "file": "rank-follow-137-8.json.gz",
+      "bytes": 1003888,
+      "sha256": "9d47fd38aaf7bc0f8d33f382ca9efcc73260a1fc2f1ad7bfb0d20d27f2330ec4"
+    },
+    {
+      "file": "rank-follow-137-8.log",
+      "bytes": 298,
+      "sha256": "1a94448d7f4efe34a89988fe580df2ddb5a29e623e245dc1e1a3752411c4bc01"
+    },
+    {
+      "file": "rank-follow-16-11.json.gz",
+      "bytes": 446756,
+      "sha256": "8e61037f38c96693ba18e326ef19ab6ef39dd8c4a601b0bd262bf406cb4eead6"
+    },
+    {
+      "file": "rank-follow-16-11.log",
+      "bytes": 271,
+      "sha256": "566dbf1578127e59827917193593fdd67f89ece466477eb75bd28a318abe18c9"
+    },
+    {
+      "file": "rank-follow-16-13.json.gz",
+      "bytes": 552757,
+      "sha256": "126426458b8f74895c9616ef9041db1d989ad2093b1873845600c4c6a166101f"
+    },
+    {
+      "file": "rank-follow-16-13.log",
+      "bytes": 236,
+      "sha256": "0aa0988549fc69d76f5892390491e224fe68ad55d6d872980f497ff8b243c60e"
+    },
+    {
+      "file": "rank-leaf-samples-137.json",
+      "bytes": 354,
+      "sha256": "c9dad8ec8635425800fa38f02e33da6bc7ff116c601da7370e222c554e3258e2"
+    },
+    {
+      "file": "rank-leaf-samples-16.json",
+      "bytes": 353,
+      "sha256": "b19343ce9a1c18e60a40fac6142b92fdc7d3940341c181453194de7390d2cc9f"
+    },
+    {
+      "file": "rank-samples-137.json",
+      "bytes": 353,
+      "sha256": "cd60a55cab43b3617365996c1b20ca2cb37c870554652b07d49f2939d9245d99"
+    },
+    {
+      "file": "rank-samples-16.json",
+      "bytes": 354,
+      "sha256": "c881f3f6bb9c924c6f5cd5f3fd89b20dd9b9599c9716cd048af74f2e1306c958"
+    },
+    {
+      "file": "rank-singletons-137-11.json",
+      "bytes": 18199,
+      "sha256": "bd847930b76a95409b9c01f2ccd7a29a068df5ec39ae8a0e086f308d9d8d4d78"
+    },
+    {
+      "file": "rank-singletons-16-13.json",
+      "bytes": 17005,
+      "sha256": "97cd468089b6825d46073a112661a832c9af62814470bb0ce2b0734d9cf1c8e2"
+    },
+    {
+      "file": "rank_batch.py",
+      "bytes": 1197,
+      "sha256": "47047a2b45bd94841af7d38185e0dfca22e433de994481ae24fac55cdea8f5bb"
+    },
+    {
+      "file": "rank_followup.py",
+      "bytes": 2939,
+      "sha256": "d1199d811a42c90e2c1f9860b9f4ff0203f56305f74c9bb21e77913d8dc51cf2"
+    },
+    {
+      "file": "rank_global.py",
+      "bytes": 720,
+      "sha256": "32edf3563e721b8c7c444aa518a24e51249eaa6087d4ec0aa1b67d4654bea94d"
+    },
+    {
+      "file": "rank_leaf.py",
+      "bytes": 1474,
+      "sha256": "05ddb7e3a75ba7b7325f12ef0d26b604571b3d339bcbe6a46a4b2066c36d6fdb"
+    },
+    {
+      "file": "rank_leaf_sample.py",
+      "bytes": 351,
+      "sha256": "46569b364fd98397ced483a6a63aee292434d5ea6bb417dbb2c265440fb80fd3"
+    },
+    {
+      "file": "rank_minor_probe.py",
+      "bytes": 1160,
+      "sha256": "fe4c5e4dd41475724e938773315d8ee84106d92190bfe4f6013ff708dc875140"
+    },
+    {
+      "file": "rank_prepare.py",
+      "bytes": 1663,
+      "sha256": "950c630c3b105b8b28c7e4965d32429679f533dc40a15381a24de3cb2ddf0566"
+    },
+    {
+      "file": "rank_sample.py",
+      "bytes": 1273,
+      "sha256": "d155c50a301028b39df836010f3fcd4bdeeabfd0baede44f9cceb6e3748c8ec7"
+    },
+    {
+      "file": "rank_singletons.py",
+      "bytes": 1791,
+      "sha256": "ea0acdbcad8e4c2e8625ddf06a061c57a4cb72dd5a5e4b14e46efc3f523623f3"
+    },
+    {
+      "file": "rank_units.py",
+      "bytes": 2496,
+      "sha256": "9c2cf6ce3e251263b669f45fd387ccf8a97408919486e7643a69e941a47708f6"
+    }
+  ]
+}

@@ -38,3 +38,18 @@ jobs:
       - run: python -S algebra/degree7_syzygy_rebuild.py --check
       - run: python -S algebra/degree7_syzygy_rebuild.py --check --independent
       - run: python -S algebra/check_family16_global_cubes.py
+  koszul-continuation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S algebra/degree7_rank_strata.py --check-all
+      - run: python -S algebra/degree7_rank_strata.py --check-all --independent
+      - run: python -S algebra/degree7_koszul_continuation.py
+      - run: python -S algebra/degree7_koszul_continuation.py --independent

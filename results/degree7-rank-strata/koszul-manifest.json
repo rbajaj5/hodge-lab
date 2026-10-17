@@ -1,0 +1,48 @@
+{
+  "refinements": [
+    {
+      "file": "koszul-16-7-refined.json.gz"
+    },
+    {
+      "file": "koszul-16-10-refined.json.gz"
+    },
+    {
+      "file": "koszul-16-12-refined.json.gz"
+    },
+    {
+      "file": "koszul-16-13-refined.json.gz"
+    }
+  ],
+  "excluded_family16_pivots": [
+    7,
+    10,
+    11,
+    12,
+    13
+  ],
+  "scope": "Families 16 and 137 are excluded using the separately checked X0/Y0 pair theorem and first-pass dependencies. Combined prior and present coverage: 136/136 fixed-X0/Y0 third-character extensions, 136/152 selected triples. No exclusion of arbitrary triples or degree-seven denominators; no HasCertificate proof.",
+  "family137_charts": [
+    {
+      "file": "koszul-137-13.json.gz"
+    },
+    {
+      "file": "koszul-137-8-refined.json.gz"
+    },
+    {
+      "file": "koszul-137-11-refined.json.gz"
+    },
+    {
+      "file": "koszul-137-16-refined.json.gz"
+    },
+    {
+      "file": "koszul-137-17-refined.json.gz"
+    }
+  ],
+  "excluded_family137_pivots": [
+    8,
+    11,
+    13,
+    16,
+    17
+  ]
+}

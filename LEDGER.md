@@ -323,6 +323,39 @@ conversations or evidence of an accepted solve.
     rank-stratification experiment, or a sixth upstream post.
     [Sources, assumptions, and proposed calculation](notes/syzygy-literature-map.md).
 
+27. **16 October 2026 — A local rank obstruction becomes a two-row identity.**
+    Ten bounded rank-block searches all remained unresolved after discovering
+    one new linear relation per family. Each relation has a simpler global
+    proof: two unnormalized physical rows give `L^2=(9/2)Ej-27Ek`. Hence `L=0`
+    even on exceptional rank loci. No nonconstant pivot is silently inverted.
+    The search was local to small blocks, not a complete stratification of
+    the full correction matrix. [Identities, bounds, and reasoning](notes/koszul-rank-continuation.md).
+
+28. **16 October 2026 — Rebuilding Koszul syzygies closes families 16 and 137.**
+    The family-16 global cubes and new linear identity close chart 11; its
+    forced zero makes the other four charts tractable. For family 137,
+    composing and homogenizing conditional relations supplies two global
+    cubes after its linear vanishing. Chart 13 then closes, and its zero
+    closes the remaining four charts. Both polynomial constructions replay
+    the complete dependency chain. Combined coverage is now 136/136 fixed-
+    `X0/Y0` extensions and 136/152 selected triples; holdout remains unsolved.
+    This is computation in the gradient Koszul complex and its correction
+    map, not an application of a geometric Koszul-cohomology vanishing
+    theorem. [Complete proof and checks](notes/koszul-rank-continuation.md).
+    No sixth upstream post has been published at this proof checkpoint.
+
+29. **16 October 2026 — Failed bounds and the successful change of order.**
+    Three of four initial syzygy follow-ups timed out at 120 seconds; an
+    unrefined family-137 chart timed out again at 150 seconds. Their retained
+    checkpoints led to useful reductions but are not themselves exclusions.
+    All eight final rebuilds completed within their stated limits. A
+    generic-pivot pilot with unhandled exceptional guards was discarded as
+    a proof route. The successful intervention was to substitute verified
+    vanishings before rebuilding shared correction syzygies, then export
+    exact powers or unit identities. CPU exact arithmetic supplied the
+    proofs; no GPU, braid, optical, or imaginary-geometry advantage is
+    asserted. [Logs and retained discovery inputs](results/degree7-rank-strata/).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

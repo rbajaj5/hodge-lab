@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "independent_polynomials": true,
+  "global_linear_checks": [
+    {
+      "family": 16,
+      "physical_rows": 2,
+      "first_pass": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      },
+      "scope": "Global linear vanishing after first-pass reduction; no normalization or family-16 cube dependency."
+    },
+    {
+      "family": 137,
+      "physical_rows": 2,
+      "first_pass": {
+        "correction_pairings": 6755,
+        "quadratic_pairings": 1700,
+        "physical_duals": 49,
+        "power_identities": 2
+      },
+      "scope": "Global linear vanishing after first-pass reduction; no normalization or family-16 cube dependency."
+    }
+  ],
+  "charts": [
+    {
+      "family": 16,
+      "pivot": 7,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 2,
+      "constant_pivots": 35,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 16,
+      "pivot": 10,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 0,
+      "constant_pivots": 8,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 16,
+      "pivot": 11,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 30,
+      "constant_pivots": 20,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 16,
+      "pivot": 12,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 14,
+      "constant_pivots": 25,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 16,
+      "pivot": 13,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 0,
+      "constant_pivots": 8,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 137,
+      "pivot": 8,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 20,
+      "constant_pivots": 30,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 6755,
+        "quadratic_pairings": 1700,
+        "physical_duals": 49,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 137,
+      "pivot": 11,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 0,
+      "constant_pivots": 8,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 6755,
+        "quadratic_pairings": 1700,
+        "physical_duals": 49,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 137,
+      "pivot": 13,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 19,
+      "constant_pivots": 22,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 6755,
+        "quadratic_pairings": 1700,
+        "physical_duals": 49,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 137,
+      "pivot": 16,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 0,
+      "constant_pivots": 24,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 6755,
+        "quadratic_pairings": 1700,
+        "physical_duals": 49,
+        "power_identities": 2
+      }
+    },
+    {
+      "family": 137,
+      "pivot": 17,
+      "excluded": false,
+      "nodes": 2,
+      "affine_inferences": 0,
+      "constant_pivots": 8,
+      "checked_minors": 1,
+      "unresolved_leaves": 1,
+      "first_pass": {
+        "correction_pairings": 6755,
+        "quadratic_pairings": 1700,
+        "physical_duals": 49,
+        "power_identities": 2
+      }
+    }
+  ],
+  "corrupt_identity_rejected": true,
+  "nonconstant_pivot_rejected": true,
+  "omitted_branch_rejected": true,
+  "seconds": 38.64170660000673,
+  "scope": "Two necessary linear vanishings and ten bounded local-rank searches; no family exclusion."
+}

@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "independent_polynomials": true,
+  "charts": [
+    {
+      "family": 16,
+      "pivot": 11,
+      "excluded": true,
+      "physical_products": 12289,
+      "syzygy_identities": 88,
+      "chart_inferences": 0,
+      "power_equation_products": 69,
+      "power_identities": 1,
+      "excluded_charts": 1
+    },
+    {
+      "family": 16,
+      "pivot": 7,
+      "excluded": true,
+      "affine_inferences": 13,
+      "physical_products": 13350,
+      "syzygy_identities": 89,
+      "chart_inferences": 4
+    },
+    {
+      "family": 16,
+      "pivot": 10,
+      "excluded": true,
+      "affine_inferences": 0,
+      "physical_products": 14010,
+      "syzygy_identities": 87,
+      "chart_inferences": 0,
+      "power_equation_products": 20,
+      "power_identities": 1,
+      "excluded_charts": 1
+    },
+    {
+      "family": 16,
+      "pivot": 12,
+      "excluded": true,
+      "affine_inferences": 40
+    },
+    {
+      "family": 16,
+      "pivot": 13,
+      "excluded": true,
+      "affine_inferences": 0,
+      "physical_products": 13926,
+      "syzygy_identities": 87,
+      "chart_inferences": 8,
+      "power_equation_products": 17,
+      "power_identities": 2,
+      "excluded_charts": 1
+    },
+    {
+      "family": 137,
+      "pivot": 13,
+      "excluded": true,
+      "affine_inferences": 40,
+      "physical_products": 16742,
+      "syzygy_identities": 85,
+      "chart_inferences": 0,
+      "power_equation_products": 65,
+      "power_identities": 1,
+      "excluded_charts": 1
+    },
+    {
+      "family": 137,
+      "pivot": 8,
+      "excluded": true,
+      "affine_inferences": 71
+    },
+    {
+      "family": 137,
+      "pivot": 11,
+      "excluded": true,
+      "affine_inferences": 0,
+      "physical_products": 16841,
+      "syzygy_identities": 83,
+      "chart_inferences": 10,
+      "power_equation_products": 30,
+      "power_identities": 2,
+      "excluded_charts": 1
+    },
+    {
+      "family": 137,
+      "pivot": 16,
+      "excluded": true,
+      "affine_inferences": 1,
+      "physical_products": 17086,
+      "syzygy_identities": 83,
+      "chart_inferences": 0,
+      "power_equation_products": 16,
+      "power_identities": 1,
+      "excluded_charts": 1
+    },
+    {
+      "family": 137,
+      "pivot": 17,
+      "excluded": true,
+      "affine_inferences": 0,
+      "physical_products": 18720,
+      "syzygy_identities": 83,
+      "chart_inferences": 10,
+      "power_equation_products": 30,
+      "power_identities": 2,
+      "excluded_charts": 1
+    }
+  ],
+  "excluded_family16_pivots": [
+    7,
+    10,
+    11,
+    12,
+    13
+  ],
+  "excluded_family137_pivots": [
+    8,
+    11,
+    13,
+    16,
+    17
+  ],
+  "corrupt_unit_rejected": true,
+  "unproved_chart_dependencies_rejected": true,
+  "family137_global_cube_products": 18,
+  "seconds": 80.69139939999877,
+  "scope": "Families 16 and 137 are excluded using the separately checked X0/Y0 pair theorem and first-pass dependencies. Combined prior and present coverage: 136/136 fixed-X0/Y0 third-character extensions, 136/152 selected triples. No exclusion of arbitrary triples or degree-seven denominators; no HasCertificate proof."
+}
