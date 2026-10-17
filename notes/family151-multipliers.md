@@ -239,3 +239,10 @@ reductions; and Eisenbud's graded-syzygy viewpoint. Dubedat's operator
 intuition motivated earlier visualizations, but no imaginary-geometry theorem
 is used in this proof. Prepared with OpenAI Codex assistance on behalf of
 `rbajaj5`. This result adds a checked exclusion, not a solution certificate.
+
+Published as [upstream contribution 11](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998404)
+on 17 October 2026 at 12:34 UTC, immediately before pushing the linked proof
+commit `a825be71140bb5c70327c2229c208df7d959e164`. The complete body and author
+were read back and matched. The [publication receipt](../results/family151-multipliers/upstream-post.json)
+records this check. The [remote workflow](https://github.com/rbajaj5/hodge-lab/actions/runs/39033064675)
+was still running at publication; no remote success was claimed then.
