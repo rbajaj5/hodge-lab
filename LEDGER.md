@@ -1245,9 +1245,68 @@ conversations or evidence of an accepted solve.
     checker rejects nine mutated inputs. The visualization binds these
     receipts and shows the exact polynomial restrictions.
     [Exact restricted polynomials, visualization, checks, and interpretation](notes/cyclic-fano-slice-audit.md).
+    Published as notebook commit
+    [`dc6ff3f`](https://github.com/rbajaj5/hodge-lab/commit/dc6ff3ffb4678952801e847a5b4c99865e5b2ac1).
+    Its [dedicated Linux CI job](https://github.com/rbajaj5/hodge-lab/actions/runs/39066408172/job/117494904808)
+    passed the primary replay, independent checker, and visualization
+    generator. This records that targeted job, not every workflow job.
     All previous exclusions, target files, and prior packets are preserved.
     No upstream comment or PR accompanies this notebook audit. The
     contribution tally remains 24; no new solve or Lean proof is claimed.
+
+68. **17 October 2026 — Separate pole orders with exact blowup charts.**
+    Continued the Shafarevich reading with the two charts of a chosen
+    transverse plane, setting `X0=Y0=1` and retaining `X1=u` as a parameter.
+    The same failed `Y2` polar defines a smooth plane curve at the origin.
+    Each chart's total denominator has one exceptional factor; its strict
+    transform meets the exceptional curve transversely. The scalar numerator
+    remains `-4/3`, so the pole persists. Along the special axis, four orders
+    of contact with the strict transform add to the one exceptional factor,
+    explaining the previously observed pole order five. This is not
+    exceptional multiplicity five or a phase transition.
+    The subsequent intersection-theory excerpt identifies exact local
+    quotient-ring lengths 1, 4, and 5 for these three intersections.
+    The next excerpt's surface-blowup formulas explain the same drop from
+    five to four and the exceptional multiplicity one; no fourfold
+    intersection number is inferred.
+    Primary replay checks both charts and overlap identities and rejects six
+    altered packets; independent reconstruction rejects eight altered inputs.
+    The figure uses exact equations with a labeled numerical real-curve
+    display. The calculation pulls back a scalar coefficient in its original
+    frame; it does not transform the full vector field or construct a
+    fourfold blowup. This is a geometric explanation of an existing failed
+    candidate, with no additional denominator exclusion or certificate.
+    [Equations, geometric visualization, local lengths, and reproduction](notes/cyclic-fano-blowup-audit.md).
+    No upstream comment or PR accompanies this notebook batch. The upstream
+    contribution tally remains 24.
+
+69. **17 October 2026 — Exclude the complete constant first-polar family.**
+    Extended the preceding seven-direction pilot to every nonzero complex
+    constant vector `v` in the five base directions, with denominator
+    `E_v = partial_v Delta` of degree five. All directions satisfy the first
+    equation by the same explicit polynomial lift. Five pure-monomial
+    coefficients give an invertible minor, so nonzero `v` cannot give a zero
+    denominator. Reflection averaging in `t=2Z+Q` annihilates the complete
+    degree-five correction space while preserving the particular residual.
+    Five coefficient equations force all direction parameters to vanish;
+    explicit ideal identities give four parameter squares and the remaining
+    parameter's fourth power. Thus no nonzero member of this family works,
+    including exceptional parameter choices. The mixed term in the `X0`
+    equation is retained until the `Y1` and `Y2` vanishings have been proved.
+    The source-based primary replay checks all 15 quadratic parameter terms,
+    125 basis/Koszul projection identities, 15 quotient directions, the
+    five coefficient rows and five coordinate-power identities. It rejects
+    seven altered packets. Shafarevich's supplied finite-group averaging
+    discussion gives a direct interpretation of the projection; the
+    exclusion comes from the checked equations, not the analogy.
+    Independent reconstruction passes the same full coefficient and
+    correction checks, five original-coordinate Piola lifts, 180 Euler
+    normalization identities, and eight altered-input rejection controls.
+    [Complete proof, coefficient-map visualization, exact packet, and limits](notes/cyclic-fano-polar-family.md).
+    This rules out this constant first-polar family only. Polynomial
+    directions, products, powers, and other degree-five denominators are
+    outside the result. No successful certificate, Lean proof, accepted solve
+    or upstream post is claimed. The contribution tally remains 24.
 
 ## Keeping this current
 

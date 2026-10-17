@@ -1,0 +1,174 @@
+{
+  "schema": "cyclic-fano-constant-polar-family-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "ce1fcb1ca3895f68c00804f95457f86a73c61a2c8058b1104a1f5446f6f08253",
+  "packet_lf_sha256": "2601470e85f1b0c7023f48dd5ee1541fbde68f23d53e9723c97076c0303f7b85",
+  "primary_validation_lf_sha256": "d02735c8a26d76e9cdb0fa23b9edaf539872967c68d1a83ed957332dfcad65a4",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "independent_arithmetic_dependencies": {
+    "check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "exact_E1_and_original_Piola_basis_lifts_checked": 5,
+  "Euler_normalization_basis_identities_checked": 180,
+  "all_parameter_quadratic_terms_reconstructed": 15,
+  "complete_Koszul_fields_per_denominator": 25,
+  "basis_correction_columns_checked": 125,
+  "quotient_columns_checked": 15,
+  "all_corrections_have_zero_even_projection": true,
+  "five_coefficient_equations": [
+    {
+      "spatial_powers": [
+        1,
+        4,
+        0,
+        3,
+        0,
+        0
+      ],
+      "parameter_polynomial": [
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "spatial_powers": [
+        1,
+        0,
+        0,
+        3,
+        4,
+        0
+      ],
+      "parameter_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "spatial_powers": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        4
+      ],
+      "parameter_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "spatial_powers": [
+        5,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "parameter_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": [
+            "400/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-5472/49",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "spatial_powers": [
+        1,
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      "parameter_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-64",
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "coordinate_power_identities_checked": {
+    "v_X0": 4,
+    "v_X1": 2,
+    "v_Y0": 2,
+    "v_Y1": 2,
+    "v_Y2": 2
+  },
+  "nonzero_parameter_implies_nonzero_denominator": true,
+  "pure_coefficient_matrix_determinant": "-340402176/49",
+  "negative_controls_rejected": 8,
+  "regular_sequence_completeness": "The source F reduces to the smooth Fermat sextic modulo5, so its characteristic-zero projective hypersurface is smooth. A nonzero common gradient zero of weighted G would lift under X2^3=Z to one of F. Thus the six partials of G form a regular sequence, and every homogeneous E1 correction is Koszul. At degree5 the only allowed multipliers are the25 linear multipliers on base/Z pairs.",
+  "all_parameter_scope": "Each correction image is linear in E_v, so all five basis images cover every constant complex v. All15 quadratic parameter coefficients of the particular residual are reconstructed, and the exact five coordinate-power identities force v=0. This is not inference from finitely sampled directions.",
+  "conclusion": "Every nonzero constant-direction first polar of Delta is excluded as a degree-five denominator for the fixed target over C.",
+  "limits": "No claim about polynomial-direction polars, products, powers, arbitrary degree-five denominators, other supports, Lean HasCertificate, or a solved instance."
+}

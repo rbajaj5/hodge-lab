@@ -79,13 +79,27 @@ products, not every denominator through degree twelve.
 Dolgachev's first-polars construction gives a separate degree-five family
 with an explicit solution of the first equation. Seven fixed directions
 all fail the complete second equation, each with a one-coefficient exact
-obstruction. The remaining polar directions are untested.
+obstruction. This original pilot tested seven directions.
 [Geometric derivation, actual Koszul-map visualization, and checked pilot](notes/cyclic-fano-branch-polars.md).
+
+The [full constant-direction polar-family calculation](notes/cyclic-fano-polar-family.md)
+extends that pilot to **every nonzero complex constant direction**. Five
+exact coefficient equations force all five direction parameters to vanish;
+the complete correction and quotient spaces cannot change those equations
+after reflection averaging. This excludes this degree-five family, not
+arbitrary degree-five denominators or products of polars.
 
 A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
 shows why a successful-looking curve slice can mislead: one polar's residual
 and denominator both vanish on the slice, while a numerator component stays
 nonzero. The rational field has a pole; this is no new certificate.
+
+The follow-up [blowup-chart audit](notes/cyclic-fano-blowup-audit.md)
+separates exceptional-divisor multiplicity from special approach directions.
+The scalar coefficient still has a simple pole along the exceptional divisor;
+the previously observed order-five pole is one plus four orders of contact
+with the strict transform. The figure shows this local geometry, not a
+resolved candidate or a new certificate.
 
 A preceding bounded pilot examined `quadric-contact-broken`, another newly
 added target. A natural quartic denominator passes the first equation but fails

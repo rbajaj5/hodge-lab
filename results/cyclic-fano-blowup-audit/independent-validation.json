@@ -1,0 +1,113 @@
+{
+  "schema": "cyclic-fano-blowup-audit-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "a541f4097e5cbef097765f986b4dafb0b52e2b51df8491918ea0eca89e49d4b7",
+  "packet_lf_sha256": "d5483ca738dfb53cf7e80160e4824a7f2ee07c3d2e2e25dd24fa00f3b35bcbeb",
+  "primary_validation_lf_sha256": "88f8fa2a509591f66d6c440ff3ec559d375c1badc95c9a9ee37dc6f8f1f9881e",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "independent_arithmetic_dependencies": {
+    "check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "both_chart_factorizations_checked": true,
+  "both_overlap_identities_checked": true,
+  "original_plane_divisor_smooth": true,
+  "exceptional_multiplicity": 1,
+  "strict_transform_transverse_to_exceptional": true,
+  "strict_transform_at_special_axis": [
+    {
+      "powers": [
+        0,
+        4,
+        0
+      ],
+      "coefficient": [
+        "-24",
+        "0"
+      ]
+    }
+  ],
+  "implicit_strict_branch_leading_coefficient": "588/25",
+  "implicit_strict_branch_order": 4,
+  "implicit_strict_branch_remainder_order": 5,
+  "implicit_branch_unit": [
+    {
+      "powers": [
+        0,
+        0,
+        0
+      ],
+      "coefficient": [
+        "50/49",
+        "0"
+      ]
+    },
+    {
+      "powers": [
+        0,
+        1,
+        0
+      ],
+      "coefficient": [
+        "-40/7",
+        "0"
+      ]
+    },
+    {
+      "powers": [
+        0,
+        2,
+        1
+      ],
+      "coefficient": [
+        "50/49",
+        "0"
+      ]
+    },
+    {
+      "powers": [
+        1,
+        1,
+        1
+      ],
+      "coefficient": [
+        "50/49",
+        "0"
+      ]
+    },
+    {
+      "powers": [
+        1,
+        2,
+        2
+      ],
+      "coefficient": [
+        "-20/7",
+        "0"
+      ]
+    }
+  ],
+  "axis_scalar_pole_orders": [
+    1,
+    5
+  ],
+  "scalar_numerator": [
+    {
+      "powers": [
+        0,
+        0,
+        0
+      ],
+      "coefficient": [
+        "-4/3",
+        "0"
+      ]
+    }
+  ],
+  "negative_controls_rejected": 8,
+  "local_unit_scope": "The y-chart strict factor is a unit in each local ring along the exceptional divisor; it is a nonconstant polynomial, not a unit of the entire affine chart coordinate ring.",
+  "frame_scope": "The orders belong to the pullback of the scalar coefficient P_Y2/E in its fixed ambient frame. No transformation of the full vector field to a blowup tangent basis is asserted.",
+  "target_scope": "This is the blowup of a two-dimensional normal-plane slice with u a parameter, not the whole fourfold. Linking the base charts to a chosen target root requires Delta(1,u,1,0,0)!=0, where (G_Z)^2=Delta on G=0.",
+  "limits": "No pole removal, new denominator success, fourfold certificate, full target blowup, or phase transition is established."
+}

@@ -17,6 +17,12 @@ jobs:
       - run: python -S experiments/cyclic_fano_slice_audit.py verify
       - run: python -S experiments/check_cyclic_fano_slice_audit.py
       - run: python experiments/plot_cyclic_fano_slice_audit.py
+      - run: python -S experiments/cyclic_fano_blowup_audit.py verify
+      - run: python -S experiments/check_cyclic_fano_blowup_audit.py
+      - run: python experiments/plot_cyclic_fano_blowup_audit.py
+      - run: python -S experiments/cyclic_fano_polar_family.py verify
+      - run: python -S experiments/check_cyclic_fano_polar_family.py
+      - run: python experiments/plot_cyclic_fano_polar_family.py
   cyclic-fano-branch-products:
     runs-on: ubuntu-latest
     timeout-minutes: 10

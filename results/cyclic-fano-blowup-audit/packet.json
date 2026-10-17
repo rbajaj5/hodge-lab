@@ -1,0 +1,592 @@
+{
+  "schema": "cyclic-fano-blowup-audit-v1",
+  "status": "PASS",
+  "instance": "cyclic-triple-fano",
+  "source_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "producer_sha256": "3f485da24b5b53bc5b0aa70dcd091594297ea0172972fdfa455345c43b0bc880",
+  "dependencies": {
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0"
+  },
+  "prior_slice_packet_sha256": "0510df80dd11c0dec143c2c587d6f701258a012968697ca57cb75d3abc2c6330",
+  "prior_slice_independent_receipt_sha256": "a926610cfbfbed73edfd980ee6c6721e1cc1e1ccdd986b91ae3ffa1bbb231acb",
+  "global_variables": [
+    "X0",
+    "X1",
+    "Z",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "global_denominator": [
+    {
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "coefficient": "-24"
+    },
+    {
+      "powers": [
+        1,
+        1,
+        0,
+        0,
+        3,
+        0
+      ],
+      "coefficient": "-20/7"
+    },
+    {
+      "powers": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        0
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        2,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": "-40/7"
+    },
+    {
+      "powers": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "50/49"
+    }
+  ],
+  "plane_variables": [
+    "u",
+    "y",
+    "z"
+  ],
+  "plane_substitution": [
+    "1",
+    "u",
+    "Z",
+    "1",
+    "y",
+    "z"
+  ],
+  "plane_denominator": [
+    {
+      "powers": [
+        0,
+        0,
+        5
+      ],
+      "coefficient": "-24"
+    },
+    {
+      "powers": [
+        0,
+        1,
+        0
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        0,
+        1,
+        1
+      ],
+      "coefficient": "-40/7"
+    },
+    {
+      "powers": [
+        0,
+        2,
+        1
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        1,
+        2,
+        0
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        1,
+        3,
+        0
+      ],
+      "coefficient": "-20/7"
+    }
+  ],
+  "scalar_numerator": [
+    {
+      "powers": [
+        0,
+        0,
+        0
+      ],
+      "coefficient": "-4/3"
+    }
+  ],
+  "plane_derivative_E_y_at_origin": [
+    {
+      "powers": [
+        0,
+        0,
+        0
+      ],
+      "coefficient": "50/49"
+    }
+  ],
+  "plane_divisor_smooth_at_origin": true,
+  "charts": {
+    "y": {
+      "variables": [
+        "u",
+        "r",
+        "t"
+      ],
+      "substitution": {
+        "y": "r",
+        "z": "r*t"
+      },
+      "total_transform": [
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            5
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0
+          ],
+          "coefficient": "-20/7"
+        }
+      ],
+      "strict_transform": [
+        {
+          "powers": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            4,
+            5
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-20/7"
+        }
+      ],
+      "exceptional_factor": [
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "exceptional_multiplicity": 1,
+      "restriction_to_exceptional": [
+        {
+          "powers": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "scalar_numerator": [
+        {
+          "powers": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4/3"
+        }
+      ]
+    },
+    "z": {
+      "variables": [
+        "u",
+        "r",
+        "t"
+      ],
+      "substitution": {
+        "y": "r*t",
+        "z": "r"
+      },
+      "total_transform": [
+        {
+          "powers": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            0,
+            3,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            3,
+            3
+          ],
+          "coefficient": "-20/7"
+        }
+      ],
+      "strict_transform": [
+        {
+          "powers": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            3
+          ],
+          "coefficient": "-20/7"
+        }
+      ],
+      "exceptional_factor": [
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "exceptional_multiplicity": 1,
+      "restriction_to_exceptional": [
+        {
+          "powers": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "scalar_numerator": [
+        {
+          "powers": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4/3"
+        }
+      ]
+    }
+  },
+  "overlap": {
+    "coordinate_change": "r_z=r_y*t_y, t_z=1/t_y",
+    "strict_identity": "H_y(u,r,t)=t*H_z(u,r*t,1/t)",
+    "reverse_identity": "H_z(u,r,t)=t*H_y(u,r*t,1/t)",
+    "both_polynomial_identities_checked": true
+  },
+  "exceptional_intersection": {
+    "y_chart": "empty",
+    "z_chart_t": 0,
+    "intersection_multiplicity": 1,
+    "strict_derivative_t": [
+      {
+        "powers": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "50/49"
+      }
+    ],
+    "strict_derivative_r": [],
+    "jacobian_r_H_at_origin": "50/49",
+    "strict_transform_smooth": true,
+    "crossing_transverse": true
+  },
+  "special_axis": {
+    "chart": "z",
+    "equation": "t=0",
+    "strict_transform_restriction": [
+      {
+        "powers": [
+          0,
+          4,
+          0
+        ],
+        "coefficient": "-24"
+      }
+    ],
+    "strict_contact_order": 4,
+    "exceptional_contact_order": 1,
+    "total_denominator_order": 5,
+    "implicit_strict_branch_leading_term": {
+      "t_coefficient": "588/25",
+      "r_power": 4,
+      "error_order": 5
+    },
+    "leading_branch_substitution_remainder": [
+      {
+        "powers": [
+          0,
+          5,
+          0
+        ],
+        "coefficient": "-672/5"
+      },
+      {
+        "powers": [
+          0,
+          10,
+          0
+        ],
+        "coefficient": "14112/25"
+      },
+      {
+        "powers": [
+          1,
+          9,
+          0
+        ],
+        "coefficient": "14112/25"
+      },
+      {
+        "powers": [
+          1,
+          14,
+          0
+        ],
+        "coefficient": "-116169984/3125"
+      }
+    ]
+  },
+  "axis_controls": {
+    "y_axis_total": [
+      {
+        "powers": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "50/49"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          0
+        ],
+        "coefficient": "50/49"
+      },
+      {
+        "powers": [
+          1,
+          3,
+          0
+        ],
+        "coefficient": "-20/7"
+      }
+    ],
+    "y_axis_order": 1,
+    "z_axis_total": [
+      {
+        "powers": [
+          0,
+          5,
+          0
+        ],
+        "coefficient": "-24"
+      }
+    ],
+    "z_axis_order": 5
+  },
+  "local_divisor_orders": {
+    "denominator_exceptional": 1,
+    "denominator_strict_transform": 1,
+    "scalar_pole_exceptional": 1,
+    "scalar_pole_strict_transform": 1,
+    "scope": "Near the exceptional curve over the normal-plane origin; local branches, not a global factorization."
+  },
+  "scalar_scope": "The scalar coefficient f=P_Y2/E is pulled back in its fixed ambient frame. This is not a transformation of the entire vector field to blowup tangent coordinates.",
+  "geometric_scope": "Two charts of the blowup of the normal (y,z) plane at its origin, with u a parameter. No full-fourfold blowup, new certificate, pole removal or phase transition is claimed.",
+  "lift_condition": "Delta at y=z=0 equals -367/49-4*u^6. If this is nonzero, a chosen unramified root of G lifts the base charts locally; no global lift is asserted.",
+  "reading": "Shafarevich, Basic Algebraic Geometry 1, third edition, Ch.2 \u00a7\u00a74.2\u20134.3 and Ch.3 \u00a7\u00a71.1\u20131.2."
+}

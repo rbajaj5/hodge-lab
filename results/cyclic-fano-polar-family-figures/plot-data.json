@@ -1,0 +1,204 @@
+{
+  "schema": "cyclic-fano-constant-polar-family-plot-v1",
+  "instance": "cyclic-triple-fano",
+  "discussion_number": 112,
+  "sha256_policy": "File bytes with CRLF normalized to LF",
+  "source_sha256": {
+    "results/cyclic-fano-polar-family/packet.json": "2601470e85f1b0c7023f48dd5ee1541fbde68f23d53e9723c97076c0303f7b85",
+    "results/cyclic-fano-polar-family/validation.json": "d02735c8a26d76e9cdb0fa23b9edaf539872967c68d1a83ed957332dfcad65a4",
+    "results/cyclic-fano-polar-family/independent-validation.json": "12810b046539c6dbd5435aeeae60757019b7117f7eb9808cc644408c26705866",
+    "experiments/cyclic_fano_polar_family.py": "d3b4e2374248caaf194bf2843af81d0597d0b6dab395abd922c1e3df1c2fabcc",
+    "experiments/check_cyclic_fano_polar_family.py": "ce1fcb1ca3895f68c00804f95457f86a73c61a2c8058b1104a1f5446f6f08253",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "experiments/cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "experiments/quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+    "experiments/check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "experiments/check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "plot_source_sha256": "71a4b4a1e37ad63aa7786335f40a8e4b63dcb6aec823c9a1bac3f339a096dc29",
+  "visible_coefficient_matrix": [
+    [
+      "0",
+      "-160",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-160",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-160",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-64",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-5472/49",
+      "0",
+      "0",
+      "0",
+      "0",
+      "400/147"
+    ]
+  ],
+  "visible_column_labels": [
+    "$v_0^2$",
+    "$v_1^2$",
+    "$v_2^2$",
+    "$v_3^2$",
+    "$v_4^2$",
+    "$v_3v_4$"
+  ],
+  "visible_column_parameter_powers": [
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "row_labels": [
+    "$X_{0} X_{1}^{4} Y_{0}^{3}$",
+    "$X_{0} Y_{0}^{3} Y_{1}^{4}$",
+    "$X_{0} Y_{0}^{3} Y_{2}^{4}$",
+    "$X_{0} Y_{0}^{7}$",
+    "$X_{0}^{5} Y_{0}^{3}$"
+  ],
+  "source_equation_indices": [
+    0,
+    1,
+    2,
+    4,
+    3
+  ],
+  "omitted_zero_quadratic_columns": 9,
+  "equations": [
+    [
+      {
+        "powers": [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-160"
+      }
+    ],
+    [
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "coefficient": "-160"
+      }
+    ],
+    [
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": "-160"
+      }
+    ],
+    [
+      {
+        "powers": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-5472/49"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": "400/147"
+      }
+    ],
+    [
+      {
+        "powers": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "coefficient": "-64"
+      }
+    ]
+  ],
+  "denominator_injectivity_determinant": "-340402176/49",
+  "projection_caption": "Zero even projections checked: 5 direction coefficients \u00d7 25 complete Koszul corrections = 125 images, plus all 15 quotient images.",
+  "scope": "No exclusion of polynomial-direction polars, products, higher powers, arbitrary degree-five denominators or other supports. No HasCertificate proof or solved instance."
+}
