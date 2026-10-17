@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 24 discussion contributions (seventeen top-level comments and seven replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Historical publication tally, through 17 October 2026 (EDT):** 24 discussion contributions (originally seventeen top-level comments and seven replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
 
 ## Posts
 
@@ -1313,6 +1313,43 @@ conversations or evidence of an accepted solve.
     directions, products, powers, and other degree-five denominators are
     outside the result. No successful certificate, Lean proof, accepted solve
     or upstream post is claimed. The contribution tally remains 24.
+
+70. **17 October 2026, 16:32 EDT / 20:32 UTC — Read the complete discussion and record new T100 credit.**
+    Fetched every current comment and reply page for holdout #44,
+    cycle-three #55, mixed-biweight #56, and all ten new-target threads
+    #111–120. The holdout snapshot contains 13 top-level comments and six
+    replies following the maintainer's consolidation; the historical
+    publication entries above remain intact.
+
+    [Ben Burns's T100 reproduction audit](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003434),
+    posted at 15:41 EDT, explicitly credits `rbajaj5`'s result. GitHub's
+    public author metadata identifies `fqlx` as Ben Burns. He reports
+    replaying the full five-stage chain at notebook commit `c50638e`,
+    including the initial 16-to-13 reductions, the `a56=0` reduction,
+    all 156 necessary relations, 13 power identities, and the terminal
+    charts and pair dependency. He reports that all stages pass and
+    altered witnesses are rejected. His audit uses our supplied checkers;
+    it does not claim a separately authored implementation or independent
+    human review. We verified the live attribution and read its scope in
+    this checkpoint; we did not execute his new reproduction packet.
+
+    [Benjamin Diamond's maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085)
+    also credits the linked pair results and our **812 selected triples**.
+    Burns separately checked the support counting and the distinctness of
+    his additional triple, reporting **813** supports in that combined
+    union. This is reported coverage of selected supports, not an accepted
+    solve, an independently replayed audit of every family, or an improved
+    unconditional degree bound. The holdout remains open. The summary
+    recommends substantial continuations as replies to existing results,
+    with detailed logs retained in linked research notes.
+
+    Cyclic-triple-fano #112 currently has our one top-level contribution
+    and no replies. No answer is marked in any monitored thread. An hourly
+    read-only watch now checks new comments, replies, and edits against a
+    local timestamped snapshot, reporting meaningful changes rather than
+    repeating unchanged material. No upstream comment, edit, or submission
+    accompanies this checkpoint; the historical contribution tally stays
+    **24**. [Compact public metadata receipt](results/discussion-watch/2026-10-17.json).
 
 ## Keeping this current
 
