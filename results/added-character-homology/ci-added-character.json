@@ -1,0 +1,147 @@
+{
+  "proof_commit": "718cf9a2e721b58782748ac90414dd7707f2a061",
+  "run_id": 39038721865,
+  "run_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39038721865",
+  "workflow_status_at_receipt": "in_progress",
+  "workflow_conclusion_at_receipt": "",
+  "job": {
+    "completedAt": "2026-10-17T14:00:13Z",
+    "conclusion": "success",
+    "databaseId": 117413689551,
+    "name": "added-character-homology",
+    "startedAt": "2026-10-17T13:57:55Z",
+    "status": "completed",
+    "steps": [
+      {
+        "completedAt": "2026-10-17T13:57:56Z",
+        "conclusion": "success",
+        "name": "Set up job",
+        "number": 1,
+        "startedAt": "2026-10-17T13:57:56Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:58:06Z",
+        "conclusion": "success",
+        "name": "Run actions/checkout@v4",
+        "number": 2,
+        "startedAt": "2026-10-17T13:57:56Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:58:07Z",
+        "conclusion": "success",
+        "name": "Run actions/setup-python@v5",
+        "number": 3,
+        "startedAt": "2026-10-17T13:58:06Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:58:34Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_added_character_homology.py",
+        "number": 4,
+        "startedAt": "2026-10-17T13:58:07Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:04Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_added_character_homology.py --independent",
+        "number": 5,
+        "startedAt": "2026-10-17T13:58:34Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:04Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/plot_added_character_homology.py --check",
+        "number": 6,
+        "startedAt": "2026-10-17T13:59:04Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:14Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/added100_multipliers.py --check",
+        "number": 7,
+        "startedAt": "2026-10-17T13:59:04Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:25Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/added100_multipliers.py --check --independent",
+        "number": 8,
+        "startedAt": "2026-10-17T13:59:14Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:30Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/added100_multipliers.py --check-blocks",
+        "number": 9,
+        "startedAt": "2026-10-17T13:59:25Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:37Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/added100_multipliers.py --check-blocks --independent",
+        "number": 10,
+        "startedAt": "2026-10-17T13:59:30Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:45Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/added100_multipliers.py --check-closure",
+        "number": 11,
+        "startedAt": "2026-10-17T13:59:37Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T13:59:54Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/added100_multipliers.py --check-closure --independent",
+        "number": 12,
+        "startedAt": "2026-10-17T13:59:45Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T14:00:11Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/plot_added100_continuation.py --check",
+        "number": 13,
+        "startedAt": "2026-10-17T13:59:54Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T14:00:11Z",
+        "conclusion": "success",
+        "name": "Post Run actions/setup-python@v5",
+        "number": 25,
+        "startedAt": "2026-10-17T14:00:11Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T14:00:12Z",
+        "conclusion": "success",
+        "name": "Post Run actions/checkout@v4",
+        "number": 26,
+        "startedAt": "2026-10-17T14:00:11Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T14:00:12Z",
+        "conclusion": "success",
+        "name": "Complete job",
+        "number": 27,
+        "startedAt": "2026-10-17T14:00:12Z",
+        "status": "completed"
+      }
+    ],
+    "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39038721865/job/117413689551"
+  },
+  "scope": "Dedicated added-character homology job passed all primary replays, multiplier and closure checks, and visualization-data checks. Other workflow jobs may still be running."
+}

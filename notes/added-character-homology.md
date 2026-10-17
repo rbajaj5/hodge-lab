@@ -253,3 +253,11 @@ symmetry and one-/two-character calculations, and the preceding exact
 physical-dual/rebuilding work. Eisenbud's graded-syzygy viewpoint and the
 distinct geometric/categorical work of Yang and Eisenbud-Erman motivate
 the experiment; they do not by themselves prove the computed exclusions.
+
+**Publication and CI receipt:** the consolidated result was posted as
+[upstream contribution 15](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999334),
+then proof commit `718cf9a2e721b58782748ac90414dd7707f2a061` was pushed.
+The dedicated Linux job subsequently passed both primary replays, both
+versions of all three A100 checks, and both figure-data checks.
+[Exact job receipt](../results/added-character-homology/ci-added-character.json).
+Other workflow jobs were still running when this receipt was recorded.
