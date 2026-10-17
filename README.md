@@ -10,9 +10,13 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current status: no new accepted Hodge solve.** The repository contains actual GPU runs, exact rejection certificates, independent checks, and the approaches that failed. Code and notes were developed with AI assistance; the recorded checks describe what was executed.
 
-**Publication pause, 17 October 2026:** further work stays in this notebook.
-Upstream posts, edits, and submissions are paused at the user's direction.
-The ledger preserves contributions already made before that instruction.
+**Batched publication, 17 October 2026:** useful contributions on the new
+targets may continue, consolidated into fewer substantive comments. Small
+attempts, diagnostics, and failures stay in this notebook. The ledger retains
+the earlier stand-down and the subsequent direction to resume in batches.
+The latest request favors still less frequent updates: the current
+fiber/spectral consolidation is prepared locally and held for a later
+substantial batch. No new discussion activity is implied by these notes.
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
@@ -29,6 +33,26 @@ weighted quotient. Its deformation map has an exact positive Gram matrix;
 Bourbaki's spectral projectors give a checked right inverse. The support
 divisor and certificate remain unconstructed.
 [Curve, spectral visualizations, checks, and limits](notes/cyclic-fano-curve.md).
+
+The continuation reduces one complete normalized evaluation fiber to three
+equations of degrees four, five, and six. An exact Macaulay minor proves
+fiber length 120 with multiplicities. Both curve charts have unit evaluation
+minors, and one omitted section maps into `X1=0`.
+[Fiber proof, boundary visualization, and limits](notes/cyclic-fano-continuation.md).
+
+The spectral follow-up resolves that fiber's multiplicities: **117 simple
+points and one triple point over the complex numbers**. Exact multiplication
+operators, a trace-pairing minor, and a local cubic calculation prove the
+count. All seven squarefree-characteristic-polynomial attempts failed;
+the resulting nilpotent block supplied the useful clue.
+[Spectral proof, two visualizations, and failed attempts](notes/cyclic-fano-spectrum.md).
+
+The next bounded pilot is `quadric-contact-broken`, another newly added
+target. A natural quartic denominator passes the first equation but fails
+the complete normalized correction test: one coefficient annihilates all
+36 correction/quotient columns and detects a nonzero residual.
+[Fixed-denominator obstruction, map visualization, and limits](notes/quadric-contact-pilot.md).
+This is also held locally for the next consolidated publication.
 
 ![Exact deformation map for the new cyclic Fano target](results/cyclic-fano-curve-figures/cyclic-fano-map.png)
 

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "packet_sha256": "22a512b48666ae45e10e3ecb69863130cab404ecf62946ef0cd74b37e9d6f842",
+  "producer_sha256": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+  "standard_library_only": true,
+  "coefficient_rank": 36,
+  "augmented_rank": 37,
+  "consistent": false,
+  "mutations_rejected": [
+    "dual_coefficient",
+    "rhs_coefficient",
+    "matrix_coefficient"
+  ],
+  "certificate_found": false
+}

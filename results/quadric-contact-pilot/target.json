@@ -1,0 +1,29 @@
+{
+  "instance": "quadric-contact-broken",
+  "source_snapshot_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "triaged_main_commit": "4e920b85e0d45046a9cec2a929502aec0e56679c",
+  "source_note": "Bytes copied from the d96911d checkout. Parent triage compared upstream through4e920b8 and found only UI/server changes, with no target or policy changes. This snapshot does not claim a fresh network fetch at4e920b8.",
+  "target": {
+    "q": "1",
+    "F": "X0**6 + 5*X0**4*Y0**2 + 5*X0**2*X1**2*Y1**2 + 5*X0**2*X1*X2*Y1*Y2 + 5*X0**2*X2**2*Y2**2 + 5*X0**2*Y0**4 + 5*X0*X1*X2**2*Y0*Y1/7 + 10*X0*X1*Y0*Y1*Y2**2/7 + X1**6 + 5*X1**2*Y0**2*Y1**2 + 5*X1*X2*Y0**2*Y1*Y2 + X2**6 + 5*X2**2*Y0**2*Y2**2 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*X1**2*Y0 - X0*X1**2*Y0**3"
+  },
+  "variables": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "source_sha256": {
+    "instance.rec": "ecec257b5b6b8efe3b8345f9c71fc19f8120cf4172923ac4fae8a20c1a8179b4",
+    "why.md": "e571a07db44125482781b61e80e385e5490a2a22e27c4e6e820aa644c0ef4049",
+    "provenance.json": "de15f76d86d9195a2835b8ba13117006570469cfdca994ae70a1511c254a5454"
+  },
+  "source_urls": {
+    "instance.rec": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/data/quadric-contact-broken/instance.rec",
+    "why.md": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/data/quadric-contact-broken/why.md",
+    "provenance.json": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/data/quadric-contact-broken/provenance.json"
+  }
+}

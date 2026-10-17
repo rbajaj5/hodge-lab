@@ -1,0 +1,30 @@
+{
+  "schema": "cyclic-fano-fiber-independent-v1",
+  "status": "PASS",
+  "packet_sha256": "f409a8993bcaeb9d5961dd46095d121f96ded4969aaf6ee6973744680cb380d4",
+  "infinity_witness_sha256": "3c18a5e9bdabdeba01e10ea461951d0ef838ffb2917cc57a05c04c68a30484f9",
+  "checker_sha256": "d995eee7b22b119f2d3e83d5b70d2080caa7fa685a0a9d62b6581ce180802cc8",
+  "reconstruction": "quadratic-in-Z Taylor recurrence from raw protected F",
+  "three_degrees": [
+    4,
+    5,
+    6
+  ],
+  "reduced_jacobian_determinant": "-180*i/7",
+  "macaulay_shape": [
+    105,
+    136
+  ],
+  "selected_minor_mod_101": 47,
+  "all_columns_rebuilt": true,
+  "no_infinity_over_characteristic_zero": true,
+  "complete_intersection_length_with_multiplicity": 120,
+  "mutations_rejected": [
+    "equation",
+    "triangular solution",
+    "remaining equation",
+    "Macaulay coefficient",
+    "minor determinant"
+  ],
+  "limits": "Fixed-point fiber of this slice only. Not 120 distinct points, not a degree for the seed component, not a support divisor or certificate."
+}

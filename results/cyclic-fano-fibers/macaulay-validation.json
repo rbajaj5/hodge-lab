@@ -1,0 +1,17 @@
+{
+  "schema": "cyclic-fano-fiber-macaulay-validation-v1",
+  "status": "PASS",
+  "input_packet_sha256": "f409a8993bcaeb9d5961dd46095d121f96ded4969aaf6ee6973744680cb380d4",
+  "witness_sha256": "3c18a5e9bdabdeba01e10ea461951d0ef838ffb2917cc57a05c04c68a30484f9",
+  "producer_sha256": "0758745e003cc05bae120897d34eb1798541a6f8f82b35fa863f7722dc8bf3b3",
+  "standard_library_only": true,
+  "prime": 101,
+  "rank": 105,
+  "minor_determinant": 47,
+  "mutations_rejected": [
+    "column_coefficient",
+    "repeated_minor_column",
+    "wrong_i_image"
+  ],
+  "scope": "Reconstructs the degree13 coefficient matrix from the exported rational Gaussian polynomials and verifies its nonzero residue-field minor. Exact source-to-fiber symbolic identities are checked separately by verify and the independent checker."
+}

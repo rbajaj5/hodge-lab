@@ -1,0 +1,324 @@
+{
+  "schema": "cyclic-fano-ramification-plot-v1",
+  "instance": "cyclic-triple-fano",
+  "discussion_number": 112,
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "packet_path": "results/cyclic-fano-ramification/packet.json",
+  "packet_sha256": "188948bd8416af04f4f46311da89084fa281d01a7ce562afd756ca49352845eb",
+  "validation_sha256": "fad1739ca0cbc8e670965ab81db26335aea0ddc8ca69464a95816f382d4c450b",
+  "checker_path": "experiments/check_cyclic_fano_ramification.py",
+  "checker_sha256": "17cd55eee45a70a070e52942ab3ed1088a8746deb998f09e79e7f25ebd94b2ef",
+  "frozen_curve_path": "results/cyclic-fano-curve/cyclic-free-curve.json",
+  "frozen_curve_sha256": "a1a67db6e117bc2ff39f997db176401f1b7a762f63d9c26176eac399c842220a",
+  "plot_source_sha256": "a20f5290ebc06aa343b5c115d1e97bfdea8fe86c2a0a85d6a577546ef9b6d837",
+  "upstream_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "s_chart_matrix": [
+    [
+      "1",
+      "r",
+      "0",
+      "0"
+    ],
+    [
+      "-r**3",
+      "0",
+      "-42/5",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "r",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "-5/42",
+      "0",
+      "I"
+    ]
+  ],
+  "t_chart_matrix": [
+    [
+      "u",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "-1",
+      "0",
+      "-42*u**3/5",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "I"
+    ],
+    [
+      "0",
+      "-5*u/42",
+      "0",
+      "0"
+    ]
+  ],
+  "s_chart_unit_rows": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "t_chart_unit_rows": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "s_chart_maximal_minors": [
+    {
+      "rows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "determinant": "r**5"
+    },
+    {
+      "rows": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "determinant": "I*r**5"
+    },
+    {
+      "rows": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "determinant": "1"
+    },
+    {
+      "rows": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "determinant": "-5*r/42"
+    },
+    {
+      "rows": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "determinant": "5*r**4/42"
+    }
+  ],
+  "t_chart_maximal_minors": [
+    {
+      "rows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "determinant": "1"
+    },
+    {
+      "rows": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "determinant": "-u**5"
+    },
+    {
+      "rows": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "determinant": "5*u**2/42"
+    },
+    {
+      "rows": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "determinant": "I*u**5"
+    },
+    {
+      "rows": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "determinant": "5*u/42"
+    }
+  ],
+  "maximal_minors_rechecked": 10,
+  "unit_minor_determinants": [
+    "1",
+    "1"
+  ],
+  "misleading_single_minor": "r**5",
+  "chart_transition": {
+    "overlap": "r*u=1",
+    "target_from_X1_to_Y1": [
+      "xx/rr",
+      "1/rr",
+      "zz/rr**3",
+      "yy/rr",
+      "vv/rr"
+    ],
+    "target_variables": [
+      "xx=X0/X1",
+      "zz=Z/X1^3",
+      "yy=Y0/X1",
+      "rr=Y1/X1",
+      "vv=Y2/X1"
+    ],
+    "target_derivative_on_seed": [
+      [
+        "1/r",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/r**2",
+        "0"
+      ],
+      [
+        "0",
+        "r**(-3)",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/r",
+        "-I/r**2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-I/r",
+        "1/r"
+      ]
+    ],
+    "source_derivative_u_to_r": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/u**2"
+      ]
+    ],
+    "identity": "J_u(u)=T(1/u) J_r(1/u) diag(1,1,1,-1/u^2)",
+    "identity_verified": true
+  },
+  "chosen_affine_boundary": {
+    "removed_source_section": "s=0",
+    "section_image": [
+      "b",
+      "0",
+      "j",
+      "c",
+      "1",
+      "e"
+    ],
+    "containing_hypersurface": "X1=0 on W",
+    "section_tangent_in_Y1_chart": [
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "section_rank_at_seed_endpoint": 3,
+    "unit_minor_rows": [
+      0,
+      2,
+      3
+    ],
+    "unit_minor": "1",
+    "target_gradient_Y2_at_endpoint": "6*I",
+    "interpretation": "The section image is locally a divisor in W at this endpoint, contained in X1=0. X1 can cover this one boundary image in the chosen support procedure."
+  },
+  "rank_everywhere_on_seed": 4,
+  "metric_caveat": "Coordinate matrices and exact ranks; no canonical metric or intrinsic singular-value interpretation.",
+  "scope": "The marked evaluation is unramified along this seed. The omitted source section has a rank-three image in X1=0 locally at its endpoint. This is not a complete support, global branch computation, certificate, or solution."
+}

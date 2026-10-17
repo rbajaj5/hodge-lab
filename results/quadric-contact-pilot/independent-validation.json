@@ -1,0 +1,55 @@
+{
+  "schema": "quadric-contact-pilot-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "fb33bb36ee85063acb1071196607415481dd8a49b4a5c62cdb3945c1e10b491d",
+  "pilot_lf_sha256": "22a512b48666ae45e10e3ecb69863130cab404ecf62946ef0cd74b37e9d6f842",
+  "target_lf_sha256": "f16328f4526cda05ea23ea6fba8452c9679a5d9cf96f4742bc7015096dc57841",
+  "instance_rec_lf_sha256": "ecec257b5b6b8efe3b8345f9c71fc19f8120cf4172923ac4fae8a20c1a8179b4",
+  "arithmetic": "Python standard-library Fraction sparse polynomials and rational elimination; no CAS or producer imports",
+  "target": {
+    "instance": "quadric-contact-broken",
+    "q": 1,
+    "source_snapshot_commit": "d96911d725077e66a8f10848908be01a643b1714"
+  },
+  "exact_E1_checked": true,
+  "exact_E2_residual_checked": true,
+  "smoothness": {
+    "prime": 5,
+    "F_reduction": "sum(z_i^6)",
+    "gradient_reductions": "z_i^5 for i=0,...,5",
+    "argument": "The projective gradient zero locus is empty in the special fiber. Properness gives emptiness in characteristic zero. The six homogeneous gradients are a regular sequence in the six-variable polynomial ring."
+  },
+  "complete_fixed_denominator_space": {
+    "denominator_degree": 4,
+    "numerator_degree": 5,
+    "Koszul_directions": 15,
+    "quotient_degree": 2,
+    "quotient_monomials": 21,
+    "argument": "Euler normalization turns every legal fixed-D certificate into N(F)=AD. The regular gradient sequence has all its degree-five syzygies spanned by the constant Koszul fields. The full nonzero E2 quotient has degree two. No field parity restriction is imposed.",
+    "denominator_admissibility": "A smooth sextic in P5 is geometrically irreducible; the nonzero quartic D is therefore relatively prime to F over C."
+  },
+  "matrix": {
+    "compressed_rows": 487,
+    "all_degree8_rows": 1287,
+    "columns": 36,
+    "rational_rank": 36,
+    "rational_augmented_rank": 37
+  },
+  "exact_obstruction": {
+    "monomial_powers": [
+      2,
+      3,
+      2,
+      0,
+      1,
+      0
+    ],
+    "functional_coefficient": "-7/5",
+    "all_36_correction_pairings_zero": true,
+    "rhs_pairing": "1",
+    "uncorrected_residual_coefficient": "5/7"
+  },
+  "conclusion": "Every legal homogeneous numerator with this particular quartic denominator is excluded, over C. The same holds for its nonzero scalar multiples.",
+  "limits": "No exclusion of all quartic denominators, powers of this denominator, other supports, or certificates of arbitrary degree. No Lean proof or solution is produced.",
+  "negative_controls_rejected": 5
+}

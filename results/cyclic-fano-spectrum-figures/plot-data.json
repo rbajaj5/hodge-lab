@@ -1,0 +1,1117 @@
+{
+  "schema": "cyclic-fano-spectrum-plot-v1",
+  "instance": "cyclic-triple-fano",
+  "discussion_number": 112,
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "packet_path": "results/cyclic-fano-spectrum/spectrum-101.json",
+  "packet_sha256": "5c65bd6a7a6da77f3d112f9b77b4dee9a583200d65d23591ef33cfe9626e73a9",
+  "validation_sha256": "7155617263350bff442f4c64ed4fdfe9fac84974d2ff2f9ccc0c66e863fbfb3a",
+  "independent_validation_sha256": "091040a4a3a78e722c736a865adb6caa783c0df21d3f796d8c9afe235193891a",
+  "source_sha256": {
+    "experiments/cyclic_fano_spectrum.py": "b1613f0716b27ee767c8792b3756cfbf2111e1b0d68ad3a121d290f39bb89060",
+    "experiments/check_cyclic_fano_spectrum.py": "173b0b574eab43b7fb8017670d532b36119b10e3c24f684889aac42b23b5c735",
+    "results/cyclic-fano-fibers/fiber-equations.json": "f409a8993bcaeb9d5961dd46095d121f96ded4969aaf6ee6973744680cb380d4",
+    "results/cyclic-fano-fibers/groebner-101.json": "0a5d3953f1324d8773896119649ce57ca97c7ec629d77af9184547eac7edafd5",
+    "results/cyclic-fano-fibers/infinity-witness.json": "3c18a5e9bdabdeba01e10ea461951d0ef838ffb2917cc57a05c04c68a30484f9"
+  },
+  "plot_source_sha256": "6711c8f5e4b8c387a8cac254a003129dd2946100fd7a5c33b1132ed4d48fdb99",
+  "prime": 101,
+  "i_image": 10,
+  "dimension": 120,
+  "matrix_convention": "Columns: multiplication of each listed monomial by b,c,v, followed by exact reduction.",
+  "basis_order": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      7
+    ],
+    [
+      0,
+      0,
+      8
+    ],
+    [
+      0,
+      0,
+      9
+    ],
+    [
+      0,
+      0,
+      10
+    ],
+    [
+      0,
+      0,
+      11
+    ],
+    [
+      0,
+      0,
+      12
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      1,
+      6
+    ],
+    [
+      0,
+      1,
+      7
+    ],
+    [
+      0,
+      1,
+      8
+    ],
+    [
+      0,
+      1,
+      9
+    ],
+    [
+      0,
+      1,
+      10
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      4
+    ],
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      2,
+      6
+    ],
+    [
+      0,
+      2,
+      7
+    ],
+    [
+      0,
+      2,
+      8
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      3,
+      1
+    ],
+    [
+      0,
+      3,
+      2
+    ],
+    [
+      0,
+      3,
+      3
+    ],
+    [
+      0,
+      3,
+      4
+    ],
+    [
+      0,
+      3,
+      5
+    ],
+    [
+      0,
+      3,
+      6
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      4,
+      1
+    ],
+    [
+      0,
+      4,
+      2
+    ],
+    [
+      0,
+      4,
+      3
+    ],
+    [
+      0,
+      4,
+      4
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      5,
+      1
+    ],
+    [
+      0,
+      5,
+      2
+    ],
+    [
+      0,
+      6,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      3
+    ],
+    [
+      1,
+      0,
+      4
+    ],
+    [
+      1,
+      0,
+      5
+    ],
+    [
+      1,
+      0,
+      6
+    ],
+    [
+      1,
+      0,
+      7
+    ],
+    [
+      1,
+      0,
+      8
+    ],
+    [
+      1,
+      0,
+      9
+    ],
+    [
+      1,
+      0,
+      10
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      1,
+      1,
+      4
+    ],
+    [
+      1,
+      1,
+      5
+    ],
+    [
+      1,
+      1,
+      6
+    ],
+    [
+      1,
+      1,
+      7
+    ],
+    [
+      1,
+      1,
+      8
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      1,
+      2,
+      5
+    ],
+    [
+      1,
+      2,
+      6
+    ],
+    [
+      1,
+      3,
+      0
+    ],
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      1,
+      3,
+      2
+    ],
+    [
+      1,
+      3,
+      3
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1,
+      4,
+      0
+    ],
+    [
+      1,
+      4,
+      1
+    ],
+    [
+      1,
+      4,
+      2
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      3
+    ],
+    [
+      2,
+      0,
+      4
+    ],
+    [
+      2,
+      0,
+      5
+    ],
+    [
+      2,
+      0,
+      6
+    ],
+    [
+      2,
+      0,
+      7
+    ],
+    [
+      2,
+      0,
+      8
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      1,
+      4
+    ],
+    [
+      2,
+      1,
+      5
+    ],
+    [
+      2,
+      1,
+      6
+    ],
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      3
+    ],
+    [
+      2,
+      2,
+      4
+    ],
+    [
+      2,
+      3,
+      0
+    ],
+    [
+      2,
+      3,
+      1
+    ],
+    [
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      3,
+      0,
+      2
+    ],
+    [
+      3,
+      0,
+      3
+    ],
+    [
+      3,
+      0,
+      4
+    ],
+    [
+      3,
+      0,
+      5
+    ],
+    [
+      3,
+      0,
+      6
+    ],
+    [
+      3,
+      1,
+      0
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      2
+    ],
+    [
+      3,
+      1,
+      3
+    ],
+    [
+      3,
+      1,
+      4
+    ]
+  ],
+  "basis_group_boundaries": [
+    49,
+    84,
+    108
+  ],
+  "matrix_nonzero_counts": {
+    "b": 4472,
+    "c": 4106,
+    "v": 2071
+  },
+  "attempts": [
+    {
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "minimal_degree": 119,
+      "repeated_factor_label": "t",
+      "repeated_factor_coefficients": [
+        0,
+        1
+      ],
+      "characteristic_multiplicity": 4,
+      "minimal_multiplicity": 3,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          4
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "weights": [
+        0,
+        1,
+        0
+      ],
+      "minimal_degree": 118,
+      "repeated_factor_label": "t-10",
+      "repeated_factor_coefficients": [
+        91,
+        1
+      ],
+      "characteristic_multiplicity": 3,
+      "minimal_multiplicity": 1,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "minimal_degree": 118,
+      "repeated_factor_label": "t+10",
+      "repeated_factor_coefficients": [
+        10,
+        1
+      ],
+      "characteristic_multiplicity": 3,
+      "minimal_multiplicity": 1,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "minimal_degree": 119,
+      "repeated_factor_label": "t",
+      "repeated_factor_coefficients": [
+        0,
+        1
+      ],
+      "characteristic_multiplicity": 4,
+      "minimal_multiplicity": 3,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          4
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "minimal_degree": 120,
+      "repeated_factor_label": "t+10",
+      "repeated_factor_coefficients": [
+        10,
+        1
+      ],
+      "characteristic_multiplicity": 3,
+      "minimal_multiplicity": 3,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "weights": [
+        1,
+        3,
+        7
+      ],
+      "minimal_degree": 120,
+      "repeated_factor_label": "t+40",
+      "repeated_factor_coefficients": [
+        40,
+        1
+      ],
+      "characteristic_multiplicity": 3,
+      "minimal_multiplicity": 3,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "weights": [
+        2,
+        5,
+        11
+      ],
+      "minimal_degree": 120,
+      "repeated_factor_label": "t-41",
+      "repeated_factor_coefficients": [
+        60,
+        1
+      ],
+      "characteristic_multiplicity": 3,
+      "minimal_multiplicity": 3,
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          1
+        ]
+      ]
+    }
+  ],
+  "selected_form": [
+    1,
+    2,
+    3
+  ],
+  "projector_ranks": [
+    1,
+    3,
+    16,
+    23,
+    35,
+    42
+  ],
+  "nilpotent_ranks": [
+    2,
+    1,
+    0
+  ],
+  "restricted_nilpotent_matrix": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "trace_form_rank": 118,
+  "trace_minor_determinant_mod101": 89,
+  "exact_Q_i_local_jet": {
+    "field": "Q(i)",
+    "point": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "-1"
+      ]
+    ],
+    "coordinate_order": [
+      "b",
+      "c",
+      "v"
+    ],
+    "equation_values": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "jacobian": [
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "6"
+        ],
+        [
+          "0",
+          "-24"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "-18"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "6"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "jacobian_rank": 2,
+    "selected_rows": [
+      0,
+      1
+    ],
+    "selected_columns": [
+      1,
+      2
+    ],
+    "nonzero_minor": [
+      "-180",
+      "0"
+    ],
+    "tangent_kernel_basis": [
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "implicit_jet_parameter": "b",
+    "c_jet_coefficients_ascending": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "-8/175",
+        "1/6"
+      ]
+    ],
+    "v_jet_coefficients_ascending": [
+      [
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "8/175",
+        "-1/6"
+      ]
+    ],
+    "remaining_scalar_cubic_coefficient": [
+      "-1",
+      "-48/175"
+    ],
+    "local_length": 3,
+    "local_jet_reason": "The first two equations have invertible (c,v) Jacobian. Their formal implicit solutions have the displayed jets; the third equation has first nonzero coefficient (\u22121\u221248i/175)b^3. Thus the completed local algebra is Q(i)[[b]]/(b^3).",
+    "curve": [
+      "0",
+      "s",
+      "0",
+      "I*t",
+      "t",
+      "I*s"
+    ],
+    "conclusion": "The characteristic-zero fixed-point fiber is finite, and this exact rational point has a nonzero tangent space. Hence its local Artinian ring is not reduced. This argument does not infer nonreducedness from reduction modulo101."
+  },
+  "characteristic_zero_conclusion": {
+    "geometric_points": 118,
+    "triple_points": 1,
+    "other_simple_points": 117,
+    "argument": [
+      "The degree13 leading-form minor is a unit in Z[i] localized at (101,i-10), proving finiteness over that DVR.",
+      "Generic and special fiber dimensions120 make this finite module free of rank120; the modular standard monomials lift to a basis.",
+      "The nonzero size118 algebraic trace minor lifts to characteristic zero and proves at least118 geometric points.",
+      "The independently verified exact length-three point plus total length120 allows at most118 geometric points. Equality gives this triple point and117 simple points."
+    ]
+  },
+  "initial_implementation_failure_sha256": "1e56126c66d984dc983f8ef3f0ec91e26d5046c513889e321f77087a38a838c2",
+  "scope": "Finite-field multiplication maps and exact primary blocks; the separate Q(i) jet and trace-minor lifting argument give the characteristic-zero point count. No complex spectral locations, positive Hermitian trace form, seed component degree, or certificate is claimed."
+}

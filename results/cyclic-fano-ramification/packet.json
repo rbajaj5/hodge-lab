@@ -1,0 +1,528 @@
+{
+  "schema": "cyclic-fano-seed-ramification-v1",
+  "instance": "cyclic-triple-fano",
+  "upstream_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "frozen_curve_packet_lf_sha256": "a1a67db6e117bc2ff39f997db176401f1b7a762f63d9c26176eac399c842220a",
+  "checker_lf_sha256": "17cd55eee45a70a070e52942ab3ed1088a8746deb998f09e79e7f25ebd94b2ef",
+  "coefficient_field": "Q(i), i^2=-1",
+  "quotient_coordinates": [
+    "X0",
+    "X1",
+    "Z",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "seed_curve": [
+    "0",
+    "s",
+    "0",
+    "I*s",
+    "t",
+    "I*t"
+  ],
+  "family_coordinate_polynomials": [
+    "a*s + b*t",
+    "s",
+    "f*s**3 + g*s**2*t + h*s*t**2 + j*t**3",
+    "c*t + s*y",
+    "t",
+    "d*s + e*t"
+  ],
+  "family_basepoint": {
+    "a": "0",
+    "b": "0",
+    "c": "0",
+    "y": "I",
+    "d": "0",
+    "e": "I",
+    "f": "0",
+    "g": "0",
+    "h": "0",
+    "j": "0"
+  },
+  "implicit_derivative_matrix": [
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-5/42",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-42/5"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-1",
+      "0",
+      "0"
+    ]
+  ],
+  "global_family_tangent_columns": [
+    [
+      "s",
+      "t",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-t**3",
+      "0",
+      "-42*s**3/5"
+    ],
+    [
+      "0",
+      "0",
+      "t"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-5*s/42",
+      "0"
+    ]
+  ],
+  "charts": [
+    {
+      "name": "X1=1",
+      "source_coordinate": "r",
+      "target_coordinates": [
+        "X0",
+        "Z",
+        "Y0",
+        "Y1",
+        "Y2"
+      ],
+      "source_columns": [
+        "a",
+        "b",
+        "c",
+        "r"
+      ],
+      "evaluation_matrix": [
+        [
+          "1",
+          "r",
+          "0",
+          "0"
+        ],
+        [
+          "-r**3",
+          "0",
+          "-42/5",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "r",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "-5/42",
+          "0",
+          "I"
+        ]
+      ],
+      "maximal_minors": [
+        {
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "determinant": "r**5"
+        },
+        {
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "determinant": "I*r**5"
+        },
+        {
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "determinant": "1"
+        },
+        {
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "determinant": "-5*r/42"
+        },
+        {
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "determinant": "5*r**4/42"
+        }
+      ],
+      "unit_minor_rows": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "unit_minor_determinant": "1",
+      "maximal_minor_ideal": "(1)",
+      "rank_at_every_complex_coordinate": 4,
+      "hypersurface_gradient": [
+        [
+          "5*I*r**4/7",
+          "5*I*r/7",
+          "6*I",
+          "6*r**5",
+          "6*I*r**5"
+        ]
+      ]
+    },
+    {
+      "name": "Y1=1",
+      "source_coordinate": "u",
+      "target_coordinates": [
+        "X0",
+        "X1",
+        "Z",
+        "Y0",
+        "Y2"
+      ],
+      "source_columns": [
+        "a",
+        "b",
+        "c",
+        "u"
+      ],
+      "evaluation_matrix": [
+        [
+          "u",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0",
+          "-42*u**3/5",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "I"
+        ],
+        [
+          "0",
+          "-5*u/42",
+          "0",
+          "0"
+        ]
+      ],
+      "maximal_minors": [
+        {
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "determinant": "1"
+        },
+        {
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "determinant": "-u**5"
+        },
+        {
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "determinant": "5*u**2/42"
+        },
+        {
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "determinant": "I*u**5"
+        },
+        {
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "determinant": "5*u/42"
+        }
+      ],
+      "unit_minor_rows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unit_minor_determinant": "1",
+      "maximal_minor_ideal": "(1)",
+      "rank_at_every_complex_coordinate": 4,
+      "hypersurface_gradient": [
+        [
+          "5*I*u/7",
+          "6*u**5",
+          "5*I*u**2/7",
+          "6*I*u**5",
+          "6*I"
+        ]
+      ]
+    }
+  ],
+  "chart_transition": {
+    "overlap": "r*u=1",
+    "target_from_X1_to_Y1": [
+      "xx/rr",
+      "1/rr",
+      "zz/rr**3",
+      "yy/rr",
+      "vv/rr"
+    ],
+    "target_variables": [
+      "xx=X0/X1",
+      "zz=Z/X1^3",
+      "yy=Y0/X1",
+      "rr=Y1/X1",
+      "vv=Y2/X1"
+    ],
+    "target_derivative_on_seed": [
+      [
+        "1/r",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/r**2",
+        "0"
+      ],
+      [
+        "0",
+        "r**(-3)",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/r",
+        "-I/r**2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-I/r",
+        "1/r"
+      ]
+    ],
+    "source_derivative_u_to_r": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/u**2"
+      ]
+    ],
+    "identity": "J_u(u)=T(1/u) J_r(1/u) diag(1,1,1,-1/u^2)",
+    "identity_verified": true
+  },
+  "ramification_along_seed": {
+    "scheme": "empty",
+    "all_maximal_minors_checked": 10,
+    "reason": "The maximal-minor ideal is the unit ideal on each of two charts covering P1.",
+    "misleading_single_minor": "r^5 vanishes at r=0 while the evaluation still has rank four."
+  },
+  "chosen_affine_boundary": {
+    "removed_source_section": "s=0",
+    "section_image": [
+      "b",
+      "0",
+      "j",
+      "c",
+      "1",
+      "e"
+    ],
+    "containing_hypersurface": "X1=0 on W",
+    "section_tangent_in_Y1_chart": [
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "section_rank_at_seed_endpoint": 3,
+    "unit_minor_rows": [
+      0,
+      2,
+      3
+    ],
+    "unit_minor": "1",
+    "target_gradient_Y2_at_endpoint": "6*I",
+    "interpretation": "The section image is locally a divisor in W at this endpoint, contained in X1=0. X1 can cover this one boundary image in the chosen support procedure."
+  },
+  "opposite_affine_boundary": {
+    "removed_source_section": "t=0",
+    "section_image": [
+      "a",
+      "1",
+      "f",
+      "y",
+      "0",
+      "d"
+    ],
+    "containing_hypersurface": "Y1=0 on W",
+    "section_rank_at_seed_endpoint": 3,
+    "minor_rows": [
+      0,
+      1,
+      4
+    ],
+    "minor": "-1"
+  },
+  "quotient_branch_comparison": {
+    "branch_divisor_of_X_to_W": "Z=0",
+    "seed_contained": true,
+    "normal_Z_family_derivative_X1_chart": [
+      [
+        "-r**3",
+        "0",
+        "-42/5"
+      ]
+    ],
+    "normal_Z_family_derivative_Y1_chart": [
+      [
+        "-1",
+        "0",
+        "-42*u**3/5"
+      ]
+    ],
+    "interpretation": "The family has a nonzero normal deformation to Z=0 at every seed point. This branch divisor is not the ramification locus of the marked evaluation."
+  },
+  "geometric_consequences": [
+    "The fixed local incidence component is smooth of dimension three at the base parameter. The two unit minors show marked evaluation is etale at every point of the seed fiber.",
+    "After shrinking the smooth parameter component, evaluation can be made etale along the complete family: its critical locus is closed in P1 times S, and its projection to S is closed by properness.",
+    "This does not compute the branch or boundary images of a compactification. Other sheets or parameter boundaries can still meet the seed image downstairs."
+  ],
+  "limitations": [
+    "No global elimination, degree of the generically finite evaluation, complete branch divisor, or parameter-compactification boundary has been computed.",
+    "X1 is a factor covering only the chosen removed source section; X1 alone is not established as a support, and no claim is made that every certificate denominator contains X1.",
+    "No rational primitive, certificate, Lean proof, or solution is supplied. All freeness and evaluation statements concern W, not a rational or free lift to X."
+  ]
+}

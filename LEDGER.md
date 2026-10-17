@@ -997,6 +997,69 @@ conversations or evidence of an accepted solve.
     Further notebook-only typography fixes preserve the multiplication sign
     and double-bar norm notation through GitHub Markdown.
 
+58. **17 October 2026 — Resume new-target contributions in consolidated batches.**
+    The user explicitly reopened useful contributions and requested fewer
+    comments. Updated the repository instructions accordingly. Continued only
+    `cyclic-triple-fano`: exact Taylor elimination reduces the full normalized
+    fiber through `[0:1:0:i:1:i]` to three equations of degrees four, five, and
+    six. A 105-by-105 minor of the degree-13 Macaulay map is 47 modulo 101,
+    proving a nonzero characteristic-zero minor and no points at infinity.
+    Complete-intersection degree gives total fiber length 120, counting
+    multiplicities. The seed is reduced; distinctness of all points and
+    the seed component's covering degree are not established. A separate
+    recurrence reconstruction from the protected F verifies the equations
+    and every Macaulay column. The bounded modular Groebner attempt completed
+    and is retained as corroboration, not the characteristic-zero proof.
+    Two exact unit minors show evaluation is unramified along the whole seed;
+    the apparent zero of the single r^5 minor was a misleading diagnostic.
+    The omitted s=0 section maps locally to a divisor inside X1=0. This is
+    only one boundary image; no support equation or certificate is claimed.
+    [Proof, exact-data visualization, attempts, and limits](notes/cyclic-fano-continuation.md).
+    The publication plan is to consolidate the existing #112 contribution,
+    with no additional comment or increment to the upstream tally.
+
+59. **17 October 2026 — Use the supplied spectral theory to resolve the fiber's multiplicities.**
+    Continued only `cyclic-triple-fano` after the user supplied Bourbaki's
+    spectral multiplicity, trace, normal-operator and polar-decomposition
+    passages. Built the actual 120-dimensional quotient multiplication maps
+    modulo 101. All seven squarefree-characteristic-polynomial tests failed;
+    the retained length-three nilpotent block suggested the exact swapped
+    curve `[0:s:0:it:t:is]`. A separate rational cubic-jet calculation proves
+    its local length is three over Q(i). A size-118 trace minor is 89 modulo
+    101; the finite-free model lifts its nonvanishing to characteristic zero.
+    Together with total length 120, this proves 118 geometric points over C:
+    the triple point and 117 simple points. It does not identify the degree
+    of the seed component or construct a support or certificate. Kept all
+    seven failed tests and the initial type-coercion implementation error.
+    [Proof, actual-operator visualizations, reproduction, and limits](notes/cyclic-fano-spectrum.md).
+    The user then requested still more infrequent comments. The prepared
+    consolidation of contribution 24 is held locally; no upstream edit,
+    new comment, or supporting public push has been made for entries 58–59.
+    The upstream tally remains 24. Current upstream main `4e920b8` changes
+    website/navigation files; the protected target and relevant contribution
+    rules are unchanged from the pinned source. Discussion 112 still contains
+    only our original comment, with no replies or open solution PRs observed.
+
+60. **17 October 2026 — Choose a tractable pilot on the new quadric-contact target.**
+    Following the user's invitation to select an easier new instance,
+    compared the new targets and chose `quadric-contact-broken` for a small
+    exact test, without claiming it is the easiest target to solve. Its
+    discussion 119 was empty and unlocked, with no answer or open solution
+    PR observed. A natural quartic denominator repairs the first equation
+    of the old contact field. The full second-equation test has 15 constant
+    Koszul corrections and 21 quadratic quotient coefficients. Its actual
+    487-by-36 matrix has rank 36 and augmented rank 37. One coefficient
+    already gives an exact rational obstruction, excluding this denominator
+    even with unrestricted corrections and a nonzero quotient. Higher powers
+    and other denominators remain open. Retained the bounded failed attempt,
+    protected source snapshot, exact witness, and operator visualization.
+    Primary and separate standard-library reconstructions pass, including
+    five mutation controls in the independent checker. The visualization
+    reconstructs the physical map and binds the final validation receipt.
+    [Pilot, explanation, source binding, and reproduction](notes/quadric-contact-pilot.md).
+    Work remains local alongside entries 58–59; no post, discussion edit,
+    public push, solve PR, or accepted solution is claimed.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
