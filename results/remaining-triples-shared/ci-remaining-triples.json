@@ -1,0 +1,97 @@
+{
+  "head_sha": "5e768a2c1261f12fe124bcf9d62ee768fdd482b6",
+  "run_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39031883708",
+  "run_status_at_check": "in_progress",
+  "target_job": {
+    "completedAt": "2026-10-17T12:18:49Z",
+    "conclusion": "success",
+    "databaseId": 117393820401,
+    "name": "remaining-triples",
+    "startedAt": "2026-10-17T12:16:39Z",
+    "status": "completed",
+    "steps": [
+      {
+        "completedAt": "2026-10-17T12:16:40Z",
+        "conclusion": "success",
+        "name": "Set up job",
+        "number": 1,
+        "startedAt": "2026-10-17T12:16:40Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:16:58Z",
+        "conclusion": "success",
+        "name": "Run actions/checkout@v4",
+        "number": 2,
+        "startedAt": "2026-10-17T12:16:40Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:16:58Z",
+        "conclusion": "success",
+        "name": "Run actions/setup-python@v5",
+        "number": 3,
+        "startedAt": "2026-10-17T12:16:58Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:17:08Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/reproduce_pair30.py --fetch --output-directory results/remaining-triples-shared/pair30",
+        "number": 4,
+        "startedAt": "2026-10-17T12:16:58Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:17:56Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_remaining_triples.py",
+        "number": 5,
+        "startedAt": "2026-10-17T12:17:08Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:18:45Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_remaining_triples.py --independent",
+        "number": 6,
+        "startedAt": "2026-10-17T12:17:56Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:18:45Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/plot_remaining_triples.py --check",
+        "number": 7,
+        "startedAt": "2026-10-17T12:18:45Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:18:46Z",
+        "conclusion": "success",
+        "name": "Post Run actions/setup-python@v5",
+        "number": 13,
+        "startedAt": "2026-10-17T12:18:45Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:18:46Z",
+        "conclusion": "success",
+        "name": "Post Run actions/checkout@v4",
+        "number": 14,
+        "startedAt": "2026-10-17T12:18:46Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T12:18:46Z",
+        "conclusion": "success",
+        "name": "Complete job",
+        "number": 15,
+        "startedAt": "2026-10-17T12:18:46Z",
+        "status": "completed"
+      }
+    ],
+    "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39031883708/job/117393820401"
+  },
+  "scope": "New remaining-triples job passed all arithmetic and figure-data checks; other workflow jobs were still running."
+}

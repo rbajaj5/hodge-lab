@@ -186,9 +186,13 @@ columns from the old basis being reused after the basis change.
 
 All seven displayed identities are checked exactly; 21 desktop/mobile
 layouts and the before/after, family, monomial, tooltip, and state controls
-pass. The static PNG and browser screenshots were inspected. The new
-`remaining-triples` CI job repeats the arithmetic and figure-data checks;
-its remote result is recorded after completion.
+pass. The static PNG and browser screenshots were inspected. The Linux
+[`remaining-triples` job passed](https://github.com/rbajaj5/hodge-lab/actions/runs/39031883708/job/117393820401)
+at proof commit `5e768a2c1261f12fe124bcf9d62ee768fdd482b6`, including the
+pinned external fetch, both exact replays, and the figure-data check.
+Its [receipt](../results/remaining-triples-shared/ci-remaining-triples.json)
+records all successful steps. Other workflow jobs were still running at
+that checkpoint; this is not a claim of full-workflow completion.
 
 ## Attribution and next direction
 
