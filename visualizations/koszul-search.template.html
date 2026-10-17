@@ -1,0 +1,230 @@
+<div id="koszul-search-explorer">
+  <style>
+    #koszul-search-explorer { position: relative; }
+    #koszul-search-explorer .explorer-plots { display: grid; grid-template-columns: 1fr 1.06fr; gap: 20px; }
+    #koszul-search-explorer .explorer-plots figure { margin: 0; min-width: 0; }
+    #koszul-search-explorer .explorer-plots figcaption { margin: 12px 0 4px; }
+    #koszul-search-explorer .explorer-chart { width: 100%; display: block; overflow: visible; }
+    #koszul-search-explorer .explorer-chart text { fill: var(--foreground); font-size: 12px; }
+    #koszul-search-explorer .explorer-chart .domain,
+    #koszul-search-explorer .explorer-chart .tick line { stroke: var(--border); }
+    #koszul-search-explorer .explorer-legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0 6px; }
+    #koszul-search-explorer .legend-series { background: transparent; border: none; padding: 4px 0; color: var(--foreground); font: inherit; display: inline-flex; align-items: center; gap: 7px; }
+    #koszul-search-explorer .legend-series[aria-pressed="false"] { opacity: .5; }
+    #koszul-search-explorer .swatch { width: 18px; height: 3px; display: inline-block; }
+    #koszul-search-explorer .detail { margin-top: 12px; }
+    #koszul-search-explorer .tooltip { position: absolute; pointer-events: none; z-index: 4; padding: 9px 12px; background: var(--popover); color: var(--popover-foreground); border: 1px solid var(--border); }
+    #koszul-search-explorer .tooltip-row { display: flex; justify-content: space-between; gap: 20px; }
+    @media (max-width: 640px) {
+      #koszul-search-explorer .explorer-plots { grid-template-columns: 1fr; gap: 12px; }
+    }
+    @media (pointer: coarse) {
+      #koszul-search-explorer .legend-series { min-height: 44px; }
+    }
+  </style>
+  <h2>Where the Koszul search goes</h2>
+  <div class="viz-controls">
+    <label class="form-label">Family
+      <select class="form-select" data-family aria-label="Denominator family"></select>
+    </label>
+    <label class="form-label">Evaluations <output class="tabular-nums" data-step-label></output>
+      <input class="form-range" data-step type="range" min="1" step="1" aria-label="Evaluations included">
+    </label>
+  </div>
+  <div class="explorer-legend" aria-label="Search methods">
+    <button type="button" class="legend-series cursor-interaction" data-series="optimized" aria-pressed="true"><span class="swatch" style="background:var(--viz-series-1)"></span>Optimized <output class="tabular-nums" data-opt-score></output></button>
+    <button type="button" class="legend-series cursor-interaction" data-series="random" aria-pressed="true"><span class="swatch" style="background:var(--viz-series-2)"></span>Random <output class="tabular-nums" data-random-score></output></button>
+  </div>
+  <div class="explorer-plots">
+    <figure>
+      <figcaption>Character shares in the denominator</figcaption>
+      <svg class="explorer-chart" data-triangle role="img" aria-label="Three-character coefficient energy shares and the path of the best candidates"></svg>
+    </figure>
+    <figure>
+      <figcaption>Best residual score seen</figcaption>
+      <svg class="explorer-chart" data-history role="img" aria-label="Best normalized squared residual against objective evaluations, with optimization and random search"></svg>
+    </figure>
+  </div>
+  <div class="text-small text-muted detail" data-detail aria-live="polite"></div>
+  <div class="tooltip text-small" data-tip role="tooltip" hidden></div>
+  <script type="application/json" data-dataset>__KOSZUL_DATA__</script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root = document.getElementById('koszul-search-explorer');
+  if (!window.d3) { root.querySelector('[data-detail]').textContent = 'The chart library could not load.'; return; }
+  const dataset = JSON.parse(root.querySelector('[data-dataset]').textContent);
+  const familySelect = root.querySelector('[data-family]');
+  const slider = root.querySelector('[data-step]');
+  const tip = root.querySelector('[data-tip]');
+  const methods = ['optimized', 'random'];
+  const color = {optimized:'var(--viz-series-1)', random:'var(--viz-series-2)'};
+  let family = dataset.families[0], step = family.optimized.length;
+  let visible = {optimized:true, random:true}, pinned = false, firstDraw = true;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const bestCache = new Map();
+  for (const f of dataset.families) {
+    const option = document.createElement('option'); option.value = f.id; option.textContent = `Family ${f.id}`; familySelect.append(option);
+    const map = {};
+    for (const method of methods) {
+      let best = 0;
+      map[method] = f[method].map((r,i,rows) => { if (r[0] < rows[best][0]) best = i; return best; });
+    }
+    bestCache.set(f.id,map);
+  }
+  function applyState(s) {
+    if (!s || typeof s !== 'object') return;
+    const picked = dataset.families.find(f => f.id === Number(s.family));
+    if (picked) family = picked;
+    step = Number.isFinite(Number(s.evaluations)) ? Math.max(1,Math.min(family.optimized.length,Math.round(Number(s.evaluations)))) : family.optimized.length;
+    if (s.visible && typeof s.visible === 'object') visible = {optimized:s.visible.optimized !== false,random:s.visible.random !== false};
+  }
+  applyState(window.openai?.widgetState?.modelContent);
+  function current(method) { return family[method][bestCache.get(family.id)[method][step-1]]; }
+  function saveState() {
+    const state = {family:family.id,evaluations:step,visible:{...visible},
+      optimizedScore:current('optimized')[0],characterShares:current('optimized').slice(1),
+      interpretation:'Squared coefficient norm shares of D mod F; existing bounded search'};
+    if (window.openai?.setWidgetState) window.openai.setWidgetState({modelContent:state,privateContent:null}).catch(()=>{});
+  }
+  function formatScore(x) { return d3.format('.3g')(x); }
+  function formatShare(x) {
+    return x === 0 ? '0%' : x < .00001 ? '<0.001%' :
+      x < .001 ? `${d3.format('.2g')(100*x)}%` : d3.format('.1%')(x);
+  }
+  function updatePath(selection,d,animate) {
+    selection.interrupt();
+    if (animate && !reducedMotion.matches) selection.transition().duration(160).attr('d',d);
+    else selection.attr('d',d);
+  }
+  function move(selection,x,y,animate) {
+    selection.interrupt();
+    if (animate && !reducedMotion.matches) selection.transition().duration(160).attr('transform',`translate(${x},${y})`);
+    else selection.attr('transform',`translate(${x},${y})`);
+  }
+  function resample(points,n=128) {
+    if (points.length === 1) return Array.from({length:n},()=>points[0]);
+    return Array.from({length:n},(_,i)=>{
+      const t = i*(points.length-1)/(n-1), a = Math.floor(t), b = Math.min(points.length-1,a+1), u=t-a;
+      return [points[a][0]*(1-u)+points[b][0]*u,points[a][1]*(1-u)+points[b][1]*u];
+    });
+  }
+  function triangle(animate) {
+    const svg = d3.select(root.querySelector('[data-triangle]'));
+    const w = svg.node().parentElement.getBoundingClientRect().width;
+    const side = Math.min(w-64,350), h = Math.sqrt(3)*side/2+102;
+    svg.attr('viewBox',`0 0 ${w} ${h}`).attr('height',h);
+    const v = [[w/2,52],[(w-side)/2,h-50],[(w+side)/2,h-50]];
+    const xy = r => [0,1].map(k=>r.slice(1).reduce((sum,a,j)=>sum+a*v[j][k],0));
+    svg.selectAll('title').data([0]).join('title').text(`Family ${family.id}: character-energy composition. Edges lose one character; vertices contain one character.`);
+    const grid=[];
+    for(let k=0;k<3;k++) for(const a of [.25,.5,.75]) {
+      const j=(k+1)%3,l=(k+2)%3;
+      grid.push([[a*v[k][0]+(1-a)*v[j][0],a*v[k][1]+(1-a)*v[j][1]],
+                 [a*v[k][0]+(1-a)*v[l][0],a*v[k][1]+(1-a)*v[l][1]]]);
+    }
+    svg.selectAll('.ternary-grid').data(grid).join('path').attr('class','ternary-grid').attr('d',d3.line()).attr('fill','none').attr('stroke','var(--border)').attr('stroke-width',1);
+    svg.selectAll('.triangle-frame').data([v]).join('path').attr('class','triangle-frame').attr('d',d3.line()(v)+'Z').attr('fill','none').attr('stroke','var(--muted-foreground)').attr('stroke-width',1);
+    const candidates = visible.optimized ? family.optimized.slice(0,step) : [];
+    svg.selectAll('.trial').data(candidates).join('circle').attr('class','trial').attr('cx',r=>xy(r)[0]).attr('cy',r=>xy(r)[1]).attr('r',1.6).attr('fill','var(--muted-foreground)').attr('opacity',.25);
+    for(const method of methods) {
+      const points = bestCache.get(family.id)[method].slice(0,step).map(i=>xy(family[method][i]));
+      const path = svg.selectAll(`.trail-${method}`).data([0]).join('path').attr('class',`trail-${method}`).attr('fill','none').attr('stroke',color[method]).attr('stroke-width',method==='optimized'?2:1.5).attr('opacity',method==='optimized'?1:.55).style('display',visible[method]?null:'none');
+      updatePath(path,d3.line()(resample(points)),animate);
+      const marker=svg.selectAll(`.marker-${method}`).data([0]).join('g').attr('class',`marker-${method}`).style('display',visible[method]?null:'none');
+      if (method==='optimized') marker.selectAll('circle').data([0]).join('circle').attr('r',5).attr('fill',color[method]);
+      else marker.selectAll('path').data([0]).join('path').attr('d','M -5 -5 L 5 5 M -5 5 L 5 -5').attr('stroke',color[method]).attr('stroke-width',2);
+      move(marker,...xy(current(method)),animate);
+    }
+    const share=current('optimized').slice(1);
+    const labelPositions=[[w/2,15,'middle'],[Math.max(4,v[1][0]-10),h-27,'start'],[Math.min(w-4,v[2][0]+10),h-27,'end']];
+    svg.selectAll('.corner-label').data(family.characters).join('text').attr('class','corner-label')
+      .attr('x',(_,i)=>labelPositions[i][0]).attr('y',(_,i)=>labelPositions[i][1]).attr('text-anchor',(_,i)=>labelPositions[i][2])
+      .each(function(c,i){const t=d3.select(this);t.selectAll('tspan').remove();t.append('tspan').text(`χ(${c.join(',')})`);t.append('tspan').attr('x',labelPositions[i][0]).attr('dy',16).text(formatShare(share[i]));});
+    svg.selectAll('.ternary-unit').data([0]).join('text').attr('class','ternary-unit').attr('x',w/2).attr('y',h-1).attr('text-anchor','middle').text('Squared coefficient norm · %');
+  }
+  function history(animate) {
+    const svg=d3.select(root.querySelector('[data-history]'));
+    const w=svg.node().parentElement.getBoundingClientRect().width,h=320;
+    svg.attr('viewBox',`0 0 ${w} ${h}`).attr('height',h);
+    const frame={x:64,y:16,w:w-80,h:234};
+    const series=methods.map(method=>({method,values:bestCache.get(family.id)[method].map((j,i)=>({x:i+1,y:family[method][j][0]}))}));
+    const [xmin,xmax]=d3.extent(series.flatMap(s=>s.values),d=>d.x);
+    const [ymin,ymax]=d3.extent(series.flatMap(s=>s.values),d=>d.y);
+    const yp=Math.max(.12,Math.log(ymax/ymin)*.07);
+    const x=d3.scaleLinear().domain([xmin-.5,xmax+.5]).range([frame.x+5,frame.x+frame.w-5]);
+    const y=d3.scaleLog().domain([ymin*Math.exp(-yp),ymax*Math.exp(yp)]).range([frame.y+frame.h-5,frame.y+5]);
+    svg.selectAll('title').data([0]).join('title').text(`Family ${family.id}: best-so-far score over ${xmax} evaluations per method. Lower is better.`);
+    svg.selectAll('rect[data-chart-frame]').data([0]).join('rect').attr('data-chart-frame','').attr('x',frame.x).attr('y',frame.y).attr('width',frame.w).attr('height',frame.h).attr('fill','none').attr('stroke','var(--border)').attr('stroke-width',1);
+    svg.selectAll('.x-axis').data([0]).join('g').attr('class','x-axis').attr('transform',`translate(0,${frame.y+frame.h})`).call(d3.axisBottom(x).ticks(w<400?3:4).tickFormat(d3.format('d')).tickSize(3));
+    const yTicks=d3.ticks(Math.log10(ymin),Math.log10(ymax),3).map(v=>10**v);
+    svg.selectAll('.y-axis').data([0]).join('g').attr('class','y-axis').attr('transform',`translate(${frame.x},0)`).call(d3.axisLeft(y).tickValues(yTicks).tickFormat(d3.format('.2g')).tickSize(3));
+    svg.selectAll('text.axis-title[data-axis="x"]').data([0]).join('text').attr('class','axis-title').attr('data-axis','x').attr('x',frame.x+frame.w/2).attr('y',h-24).attr('text-anchor','middle').text('Objective evaluations');
+    svg.selectAll('text.axis-title[data-axis="y"]').data([0]).join('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(13,${frame.y+frame.h/2}) rotate(-90)`).attr('text-anchor','middle').text('Normalized squared residual');
+    for(const s of series) {
+      const path=svg.selectAll(`.history-${s.method}`).data([0]).join('path').attr('class',`history-${s.method}`).attr('fill','none').attr('stroke',color[s.method]).attr('stroke-width',2).style('display',visible[s.method]?null:'none');
+      const points=Array.from({length:128},(_,i)=>{const xx=xmin+(xmax-xmin)*i/127;return [x(xx),y(interpolate(s.values,xx))];});
+      updatePath(path,d3.line()(points),animate);
+      const marker=svg.selectAll(`.current-${s.method}`).data([0]).join('g').attr('class',`current-${s.method}`).style('display',visible[s.method]?null:'none');
+      marker.selectAll('circle').data([0]).join('circle').attr('r',4.5).attr('fill',color[s.method]);
+      move(marker,x(step),y(current(s.method)[0]),animate);
+    }
+    svg.selectAll('.selected-guide').data([0]).join('line').attr('class','selected-guide').attr('x1',x(step)).attr('x2',x(step)).attr('y1',frame.y).attr('y2',frame.y+frame.h).attr('stroke','var(--muted-foreground)').attr('stroke-width',1).attr('opacity',.6);
+    const hover=svg.selectAll('[data-chart-hover-guide]').data([0]).join('line').attr('data-chart-hover-guide','').attr('y1',frame.y).attr('y2',frame.y+frame.h).attr('stroke','var(--muted-foreground)').attr('stroke-width',1).attr('visibility','hidden');
+    const markers=svg.selectAll('[data-chart-hover-marker]').data(series,d=>d.method).join('circle').attr('data-chart-hover-marker',d=>d.method).attr('r',4).attr('fill',d=>color[d.method]).attr('visibility','hidden');
+    const hit=svg.selectAll('[data-chart-hover-overlay]').data([0]).join('rect').attr('data-chart-hit','').attr('data-chart-hover-overlay','cross-series')
+      .attr('x',frame.x).attr('y',frame.y).attr('width',frame.w).attr('height',frame.h).attr('fill','transparent');
+    function show(event) {
+      const [px]=d3.pointer(event,svg.node()),cx=Math.max(x(xmin),Math.min(x(xmax),px)),xx=x.invert(cx);
+      hover.attr('x1',cx).attr('x2',cx).attr('visibility','visible');
+      markers.attr('cx',cx).attr('cy',s=>y(interpolate(s.values,xx))).attr('visibility',s=>visible[s.method]?'visible':'hidden');
+      tip.replaceChildren();
+      const title=document.createElement('div');title.textContent=`Evaluation ${d3.format('.1f')(xx)} · interpolated`;tip.append(title);
+      for(const s of series.filter(s=>visible[s.method])) {
+        const row=document.createElement('div');row.className='tooltip-row';
+        const label=document.createElement('span');label.textContent=s.method==='optimized'?'Optimized':'Random';
+        const value=document.createElement('span');value.className='tabular-nums';value.textContent=formatScore(interpolate(s.values,xx));row.append(label,value);tip.append(row);
+      }
+      tip.hidden=false;
+      const box=root.getBoundingClientRect(),tw=tip.getBoundingClientRect().width,th=tip.getBoundingClientRect().height;
+      tip.style.left=`${Math.max(0,Math.min(box.width-tw,event.clientX-box.left+12))}px`;
+      tip.style.top=`${Math.max(0,Math.min(box.height-th,event.clientY-box.top+16))}px`;
+    }
+    hit.on('pointermove',event=>{if(!pinned)show(event);}).on('pointerdown',event=>{pinned=!pinned;show(event);})
+      .on('pointerleave',()=>{if(!pinned){tip.hidden=true;hover.attr('visibility','hidden');markers.attr('visibility','hidden');}});
+    // Labels are measured as one set; remove excess ticks rather than shrink type.
+    const texts=svg.selectAll('.tick text, .axis-title').nodes();
+    for(let i=0;i<texts.length;i++)for(let j=i+1;j<texts.length;j++){
+      if(texts[i].style.display==='none'||texts[j].style.display==='none')continue;
+      const a=texts[i].getBoundingClientRect(),b=texts[j].getBoundingClientRect();
+      if(a.left<b.right+4&&a.right+4>b.left&&a.top<b.bottom+4&&a.bottom+4>b.top){
+        if(texts[j].closest('.tick'))texts[j].style.display='none';else if(texts[i].closest('.tick'))texts[i].style.display='none';
+      }
+    }
+  }
+  function interpolate(values,xx) {
+    const nearest=d3.bisector(d=>d.x).center(values,xx);
+    const a=values[nearest].x>xx?Math.max(0,nearest-1):nearest,b=Math.min(values.length-1,a+1);
+    const u=a===b?0:Math.max(0,Math.min(1,(xx-values[a].x)/(values[b].x-values[a].x)));
+    return Math.exp(Math.log(values[a].y)*(1-u)+Math.log(values[b].y)*u);
+  }
+  function draw(animate=false) {
+    tip.hidden=true;pinned=false;
+    familySelect.value=family.id;slider.max=family.optimized.length;slider.value=step;
+    root.querySelector('[data-step-label]').textContent=`${step} / ${family.optimized.length}`;
+    root.querySelector('[data-opt-score]').textContent=formatScore(current('optimized')[0]);
+    root.querySelector('[data-random-score]').textContent=formatScore(current('random')[0]);
+    root.querySelectorAll('[data-series]').forEach(b=>b.setAttribute('aria-pressed',String(visible[b.dataset.series])));
+    root.querySelector('[data-detail]').textContent=`Corner values: optimized best seen · Rounded final candidate: exact rejection, ${family.rounded.optimized.characters} character${family.rounded.optimized.characters===1?'':'s'}`;
+    triangle(animate&&!firstDraw);history(animate&&!firstDraw);firstDraw=false;
+  }
+  familySelect.addEventListener('change',()=>{family=dataset.families.find(f=>f.id===Number(familySelect.value));step=family.optimized.length;draw(true);saveState();});
+  slider.addEventListener('input',()=>{step=Number(slider.value);draw(true);});
+  slider.addEventListener('change',saveState);
+  root.querySelectorAll('[data-series]').forEach(b=>b.addEventListener('click',()=>{visible[b.dataset.series]=!visible[b.dataset.series];draw();saveState();}));
+  window.addEventListener('openai:set_globals',event=>{const s=event.detail?.globals?.widgetState;if(s){applyState(s.modelContent);draw();}});
+  new ResizeObserver(()=>draw()).observe(root.querySelector('.explorer-plots'));
+  draw();
+})();
+</script>

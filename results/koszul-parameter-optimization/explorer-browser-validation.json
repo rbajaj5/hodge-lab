@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "browser": "Microsoft Edge 155.0.4283.45",
+  "checkedContentWidths": [
+    736,
+    360,
+    320
+  ],
+  "mobileFamilyLayouts": 32,
+  "interactionChecks": [
+    "family selection",
+    "evaluation slider",
+    "legend toggles both plots and tooltip",
+    "cursor-aligned interpolated tooltip",
+    "pinned tooltip",
+    "host state restoration",
+    "touch targets at least 44px"
+  ],
+  "sourceFragmentSha256": "e8f88a5a6d2b5a13ddd3955bc4851a9c8f7320ad19fdd15e75c851c4c24cb1af",
+  "scriptErrors": [],
+  "overflows": [],
+  "labelCollisions": [],
+  "targetHeights": [
+    44,
+    44
+  ],
+  "scope": "Presentation QA only. Mathematical share checks are in explorer-validation.json; no new optimization or proof search."
+}

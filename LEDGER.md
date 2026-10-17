@@ -394,6 +394,21 @@ conversations or evidence of an accepted solve.
     This batch stays in Hodge Lab; the upstream tally remains six, reconfirmed
     against discussion #44.
 
+32. **16 October 2026 — Visual focus: where the parameter search moves.**
+    Added an interactive view of the existing 16-family optimization batch.
+    The triangle shows squared coefficient-norm shares of the denominator's
+    three characters; its paths are linked to the best residual seen at each
+    evaluation. All 4,156 recorded evaluations remain available. Same-character
+    Gram cross terms are retained, with 64 direct polynomial checks. Small
+    floating-point shares and exact character loss after rounding are labeled
+    separately. All 32 failed rational finalists remain in the source packet.
+    Browser checks cover desktop/mobile layouts, controls, tooltips, and state
+    restoration. This is an interpretation of an existing search, not a new
+    exclusion, phase transition, or imaginary-geometry identification. The
+    user's current priority is visual understanding; no new upstream post
+    was made and the tally remains six.
+    [Explorer, interpretation, and checks](notes/koszul-parameter-optimization.md#interactive-view-of-character-concentration).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -132,6 +132,58 @@ denominators in the searched chart.
 
 ## Checks and reproducibility
 
+### Interactive view of character concentration
+
+The [search explorer](../visualizations/koszul-search-standalone.html) links a
+three-character triangle to the score history. Download the standalone HTML
+and open it in a browser; it loads D3 7.9.0 from jsDelivr and contains all the
+search data. GitHub itself displays the HTML source. Select any of the 16
+families, scrub its evaluation count, and toggle the optimized or random path.
+The right-hand plot retains the full history and marks the selected prefix.
+
+For each character `c`, the triangle coordinate is
+`||D_c mod F||^2 / ||D mod F||^2`, using the same coefficient norm as the
+objective. The builder keeps cross terms between basis directions of the
+same character; different characters have disjoint monomial supports.
+An edge has zero contribution from one character, while a vertex has only
+one character. Floating-point proximity to an edge is not an exact vanishing.
+Very small nonzero shares are labeled as such. The final rationalized
+candidate's exact rejection and character count are reported separately.
+
+Gray dots are evaluated optimization points. The two colored paths connect
+successive best-so-far candidates, including across the two optimizer starts;
+they are not a continuous mathematical flow or the path of every accepted
+optimizer iterate. All **4,156 evaluations** are embedded; paths are resampled
+for display and animation. Hover values interpolate geometrically between
+recorded scores on the logarithmic axis. They are not additional evaluations.
+
+This visualizes denominator composition during a search using the Koszul
+correction map. It does not display the map's individual entries, prove a
+rank change, or identify a phase transition. The operator perspective behind
+our Dubedat-inspired experiments remains motivation, not a theorem connecting
+this parameter triangle to imaginary geometry or genus.
+
+The [builder](../experiments/build_search_explorer.py) checks **64** selected
+states against direct rational polynomial assembly and preserves the source
+commit and hashes. Its check mode also verifies that the standalone export
+contains the current fragment. [Browser checks](../results/koszul-parameter-optimization/explorer-browser-validation.json)
+cover family selection, scrubbing, toggles, tooltips, state restoration, and
+touch targets, with no script errors or detected label collisions at the
+recorded widths. These are presentation checks, not further proof searches.
+
+```sh
+python experiments/build_search_explorer.py --check
+# Rebuild the inline source from the existing recorded experiment:
+python experiments/build_search_explorer.py
+```
+
+The standalone copy was exported with Codex's bundled visualization renderer;
+after changing the fragment, re-export it with that renderer before running
+`--check`. The editable fragment, template, and standalone export are all in
+`visualizations/`. No search data or upstream file is changed by this view.
+
+### Search and exact checks
+
 Discovery ran on the CPU with Python 3.11.9, NumPy 2.4.6, and SciPy 1.17.1.
 The record includes every objective evaluation, starting point, stopping
 reason, rationalized candidate, and exact dual. A one-family pilot preceded

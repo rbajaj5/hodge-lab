@@ -16,6 +16,12 @@ the numerical score (median reduction 91.9%). All 32 rounded finalists fail
 exact checks; ten optimized winners round into previously excluded one- or
 two-character sectors. [Search history, visualization, checks, and limits](notes/koszul-parameter-optimization.md).
 
+**Explore those searches:** the [interactive trajectory view](visualizations/koszul-search-standalone.html)
+links the residual history to the denominator's three character shares. Select
+a family and move through its recorded evaluations to see boundary drift.
+Download the HTML and open it in a browser; GitHub's file viewer shows source.
+This presents the existing experiment, with all failed finalists retained.
+
 **Original systematic three-character batch:** of all 136 extensions of the `X0/Y0` pair by a third character, **132 complete families were excluded and four remained unresolved at that checkpoint**. Including all coordinate-character triples gave 152 tested families and 20 unresolved. Exact duals and shared-numerator chart proofs are replayed by two polynomial constructions. [Coverage, failed charts, and reproducible proofs](notes/three-character-families.md).
 
 **First polynomial-syzygy follow-up:** one of those four residual families was
