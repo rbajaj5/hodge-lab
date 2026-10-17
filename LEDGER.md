@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 16 discussion contributions (thirteen top-level comments and three replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 17 discussion contributions (fourteen top-level comments and three replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -39,6 +39,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 15. **17 October 2026, 09:57 EDT / 13:57 UTC — [Holdout discussion #44: added-character homology and 132 X0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999334).** Shared one consolidated exact partial result: 132 fresh full three-character families are excluded, bringing the selected union to **680**. The added-only homology ranking shows no advantage: both prospective groups close 4/4, with unmatched block sizes and empty controls explicitly disclosed. The post preserves the 131/132 checkpoint and explains A100's separate multiplier/power/rebuilding closure, including failed charts. It links [immutable proof, figures, credits, limits, and unsuccessful attempts](https://github.com/rbajaj5/hodge-lab/blob/718cf9a2e721b58782748ac90414dd7707f2a061/notes/added-character-homology.md), credits the prior mathematical work and Codex-assisted implementation, and distinguishes both physical replays from human review. The full body, author, URL, and absence of a reply parent were read back and verified; the proof commit was pushed immediately after posting. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/added-character-homology/upstream-post.json).
 
 16. **17 October 2026, 10:43 EDT / 14:43 UTC — [Holdout discussion #44: concrete reason for reading Yang](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999956).** Replied to contribution 15 with the distinction between Koszul H1 relations and H0/image information relevant to coordinate-power exclusions. The checked A19/A30/A61 examples show why equal H1 need not give equal constraint strength. The reply retains the negative ranking result, credits classical Koszul algebra separately from Yang's geometric interpretation, and explicitly says Yang's geometric hypotheses have not been established here. It links the public rationale and existing visualization; no new exclusion, solve, or GPU requirement is claimed. The complete existing thread was reread, Markdown preview inspected, and published body, author, URL, and reply parent read back and matched. [Publication receipt](results/yang-rationale/upstream-post.json).
+
+17. **17 October 2026, 10:45 EDT / 14:45 UTC — [Holdout discussion #44: 131 fresh X0/Y1 triple exclusions and typed-search comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999988).** Shared the checked 131/132 batch, bringing selected coverage to 811 triples. T100's additional nineteen necessary relations and raw56 vanishing are explicitly partial; both rebuilt charts remain unsuccessful. The post reports the negative frozen cache experiment and the separate exact target-character projection, preserving timeouts and distinguishing their evidence. It links the immutable proof commit, five actual-operator/history figures, credits, bounds, and fifteen passing local checks. The current thread was reread and Markdown preview inspected; the complete published body, author, URL, and absence of a reply parent were read back and matched. The proof commit was pushed immediately after posting. Remote CI is pending, not claimed successful. No Lean proof, solve PR, improved degree bound, or leaderboard point is claimed. [Publication receipt](results/typed-rewrite-families/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -795,6 +797,8 @@ conversations or evidence of an accepted solve.
     and successful/failed family history. The grammar encoding theorem is
     not being applied to the Hodge problem.
     [Method, references, limits, and experimental record](notes/typed-rewrite-search.md).
+    Published the consolidated result as contribution 17 and pushed the
+    proof, figures, failures, and checks. Remote CI was pending at handoff.
 
 49. **17 October 2026 — Publish the concrete reason for reading Yang.**
     Added a [public rationale with an existing checked visualization](notes/why-yang.md)
