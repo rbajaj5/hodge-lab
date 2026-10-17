@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "packet_sha256": "5477efed02d73c66d3561867498f3d80c5b6964cf9560d5e5e3a063503f41749",
+  "validation_sha256": "abea4a5fc2be062c218ac7deadb85e3cc87e3ed966ba79e43715172a9691ef64",
+  "independent_validation_sha256": "a7b29aac0e8fb4469cd29bb8c2de166e4a4d01edef9be144e45befcbddc491af",
+  "plot_script_sha256": "9ead10cb0ff3ec16a0d2a5e20bc2d3ae5be5093620f3c85cd4dbbb8667075887",
+  "maps": [
+    {
+      "candidate": "cyclic_branch_Z",
+      "shape": [
+        396,
+        150
+      ],
+      "rank": 150,
+      "augmented_rank": 151,
+      "dual_terms": 2,
+      "equation1_rows": 321
+    },
+    {
+      "candidate": "quadratic_branch_2Z_plus_Q",
+      "shape": [
+        396,
+        150
+      ],
+      "rank": 150,
+      "augmented_rank": 151,
+      "dual_terms": 2,
+      "equation1_rows": 321
+    },
+    {
+      "candidate": "omitted_section_X1_cubed",
+      "shape": [
+        337,
+        150
+      ],
+      "rank": 150,
+      "augmented_rank": 151,
+      "dual_terms": 1,
+      "equation1_rows": 322
+    }
+  ],
+  "scope": "Actual coefficient occupancy; exact ranks come from arithmetic checks, not image appearance."
+}

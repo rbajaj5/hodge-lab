@@ -17,9 +17,12 @@ supersedes that publication pause, while preserving the new-target-only scope.
 The latest clarification favors more infrequent discussion updates. Hold
 the prepared cyclic-Fano consolidation while collecting a larger coherent
 batch; do not automatically post or edit a comment after each experiment.
-Keep unpublished work local until it is ready for the shared contribution
-and supporting repository push. Clearly distinguish local commits, pushed
-notebook results, and actual discussion activity in the ledger.
+The user's subsequent explicit direction is to keep pushing checked results,
+visualizations, and failed attempts to Hodge Lab while saving upstream comments
+for a substantial batch. Follow that direction: notebook pushes may precede
+the consolidated discussion update. Clearly distinguish local commits, pushed
+notebook results, and actual discussion activity in the ledger. This is a
+staging workflow for eventual contribution, not permanent withholding.
 
 For every substantive research batch, include a reproducible internal
 visualization and link it from the result note and LEDGER.md. Prefer actual

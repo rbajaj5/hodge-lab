@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "packet_sha256": "5477efed02d73c66d3561867498f3d80c5b6964cf9560d5e5e3a063503f41749",
+  "source_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "exact_fixed_denominators": 3,
+  "basis_vector_transfers": 450,
+  "mutation_controls_rejected": [
+    "cyclic_branch_Z",
+    "quadratic_branch_2Z_plus_Q",
+    "omitted_section_X1_cubed"
+  ],
+  "ranks": [
+    [
+      150,
+      151
+    ],
+    [
+      150,
+      151
+    ],
+    [
+      150,
+      151
+    ]
+  ],
+  "certificate_found": false
+}

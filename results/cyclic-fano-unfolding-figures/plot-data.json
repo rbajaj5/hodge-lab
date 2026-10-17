@@ -1,0 +1,101 @@
+{
+  "schema": "cyclic-fano-unfolding-plot-v1",
+  "instance": "cyclic-triple-fano",
+  "discussion_number": 112,
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "packet_sha256": {
+    "unfolding-X0.json": "2f028afea25fcaf91bb6015a17e432d2c4368e4d9432845788fee59ae50e2d1d",
+    "unfolding-Y0.json": "7495c649401f26b08cb37ee83a70e69c25980ec6adb5871f432e987e3ba144dc",
+    "unfolding-Y2.json": "b99c1992f67c9cbf6cb352500355b1e39a9b74a4d41ae1b1f6d4269b14d0eb96"
+  },
+  "validation_sha256": {
+    "validation-X0.json": "079be16de006fc04f178a71fe5a029d303fee862cdae7c693ca709d8f968c1c6",
+    "validation-Y0.json": "328606897fc2865d167977fa9b8bd89de8ebd1fd2c481d5ed820300cb102775a",
+    "validation-Y2.json": "94c3162a2f9fae46e52892c7646d4e0b8ea41a1f75d09dd632a8d3e5bf1da45d"
+  },
+  "independent_validation_sha256": "3f0e284cd3fbbb592d6a01c67daa2b0eadbd7fa654f7c75a33e6ac08f60db603",
+  "summary_sha256": "0b83b684e4f259286485a8992acc2f90861701b8a8b431298e8805edd3dac7e0",
+  "source_sha256": {
+    "experiments/cyclic_fano_unfolding.py": "a93f0c4ede4cc29a765a9f2054d889f0e4238aea8e77edfc54aa35eae40330f8",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+    "results/cyclic-fano-curve/target.json": "7d540fcd1d98b54ff44ab2c5b97c511276c3b90403b384d0f3240694f8d1a9bb",
+    "results/cyclic-fano-fibers/fiber-equations.json": "f409a8993bcaeb9d5961dd46095d121f96ded4969aaf6ee6973744680cb380d4",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c"
+  },
+  "plot_source_sha256": "efcd095187adbf13132d34033ea349d7dd381ee06fc856689a33e2f555f4bdaa",
+  "jet_total_order": 4,
+  "slice_h_b3": [
+    "5/6",
+    "8/35"
+  ],
+  "slice_h_b4": [
+    "-97/70",
+    "-2227/210"
+  ],
+  "T1_column_order": [
+    "X0",
+    "Y0",
+    "Y2",
+    "h"
+  ],
+  "T1_row_basis": [
+    "1",
+    "b"
+  ],
+  "T1_matrix": [
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-6/5"
+      ],
+      [
+        "6/5",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "252/25",
+        "-18/5"
+      ],
+      [
+        "18/5",
+        "252/25"
+      ]
+    ]
+  ],
+  "T1_rank": 1,
+  "transverse_attempt_outcomes": {
+    "X0": "Rank1: added target direction has zero T1 class.",
+    "Y0": "Rank1: added target direction has zero T1 class.",
+    "Y2": "Rank1: added target direction has\u2212i times the h T1 class."
+  },
+  "initial_implementation_failure_sha256": "7f7c76a1bd0563098fb5c9c47f03ce8fae4a4f2143bd05ce794e80dab863fa45",
+  "target_chart_tangent_rank": 4,
+  "normal_form": "h=w^3 after an unspecified local analytic source change",
+  "diagram_coordinates": "zeta=w/rho and eta=h/rho^3; no numerical value of rho is asserted",
+  "scope": "Exact local jet coefficients and rank-one first-order T1 map. The circle diagram is a rescaled analytic normal-form illustration; it gives no original-coordinate radius, global roots, global branch equation, miniversal cusp, support, or certificate. Local evaluation-fiber monodromy is not identified with the original X2 cyclic deck action.",
+  "normal_form_sample_count": 721,
+  "normal_form_max_draw_residual": 4.171839369083926e-15,
+  "monodromy_permutation": [
+    1,
+    2,
+    0
+  ]
+}

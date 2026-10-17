@@ -14,9 +14,10 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 targets may continue, consolidated into fewer substantive comments. Small
 attempts, diagnostics, and failures stay in this notebook. The ledger retains
 the earlier stand-down and the subsequent direction to resume in batches.
-The latest request favors still less frequent updates: the current
-fiber/spectral consolidation is prepared locally and held for a later
-substantial batch. No new discussion activity is implied by these notes.
+The latest direction is to keep pushing checked notebook work while holding
+upstream comments for a substantial batch. The fiber/spectral consolidation
+and this continuation therefore appear here before the next discussion
+update. The ledger distinguishes notebook publication from upstream activity.
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
@@ -47,12 +48,25 @@ count. All seven squarefree-characteristic-polynomial attempts failed;
 the resulting nilpotent block supplied the useful clue.
 [Spectral proof, two visualizations, and failed attempts](notes/cyclic-fano-spectrum.md).
 
-The next bounded pilot is `quadric-contact-broken`, another newly added
-target. A natural quartic denominator passes the first equation but fails
+Moving the evaluation point along an actual curve on the same target
+smooths the triple point into three nearby sheets. The exact local map has
+ramification index three. All four target tangent directions together still
+fail the first-order versality test; no generic cusp or global branch equation
+is claimed. [Local geometry, monodromy visualization, and failed directions](notes/cyclic-fano-unfolding.md).
+
+The final supplied Bourbaki character projectors reduce a degree-three
+fixed-denominator numerator search from 756 to 150 coefficients. Exact
+Piola transfer preserves the physical equations. Three denominators suggested
+by the branch and boundary geometry all fail, each with a short rational
+obstruction. [Character maps, proof, and failed guesses](notes/cyclic-fano-transfer.md).
+
+A preceding bounded pilot examined `quadric-contact-broken`, another newly
+added target. A natural quartic denominator passes the first equation but fails
 the complete normalized correction test: one coefficient annihilates all
 36 correction/quotient columns and detects a nonzero residual.
 [Fixed-denominator obstruction, map visualization, and limits](notes/quadric-contact-pilot.md).
-This is also held locally for the next consolidated publication.
+This earlier pilot is included in the notebook batch; no new upstream
+discussion comment is implied.
 
 ![Exact deformation map for the new cyclic Fano target](results/cyclic-fano-curve-figures/cyclic-fano-map.png)
 

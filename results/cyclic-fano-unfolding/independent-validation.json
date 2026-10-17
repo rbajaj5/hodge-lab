@@ -1,0 +1,1345 @@
+{
+  "schema": "cyclic-fano-unfolding-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+  "summary_packet_lf_sha256": "0b83b684e4f259286485a8992acc2f90861701b8a8b431298e8805edd3dac7e0",
+  "axes": [
+    {
+      "schema": "cyclic-fano-unfolding-axis-independent-v1",
+      "status": "PASS",
+      "parameter_direction": "X0",
+      "checker_lf_sha256": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+      "packet_lf_sha256": "2f028afea25fcaf91bb6015a17e432d2c4368e4d9432845788fee59ae50e2d1d",
+      "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+      "arithmetic": "Python standard-library Fraction pairs; independent raw-source polynomial composition and simultaneous Hensel elimination; no producer or CAS import",
+      "jet_order": 4,
+      "target_equation_exactly_reconstructed": true,
+      "target_z_jet_checked": true,
+      "physical_unknown_jets_checked": 5,
+      "physical_incidence_coefficients_zero_through_order4": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "physical_first_five_jacobian_determinant": [
+        "0",
+        "22500/343"
+      ],
+      "scalar_germ_jet": [
+        {
+          "powers": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": [
+            "6/5",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-5433/25",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            3
+          ],
+          "coefficient": [
+            "89268536/3125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            4
+          ],
+          "coefficient": [
+            "-357524879034/78125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-18/5",
+            "-252/25"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            2
+          ],
+          "coefficient": [
+            "27003/25",
+            "2646802/875"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            3
+          ],
+          "coefficient": [
+            "-720062439/3125",
+            "-70597690672/109375"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-4602/125",
+            "4744/175"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": [
+            "61165598/3125",
+            "-66162408/4375"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "1",
+            "48/175"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1
+          ],
+          "coefficient": [
+            "-35767/125",
+            "-91268/4375"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "-1191/875",
+            "-51/5"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1
+          ],
+          "coefficient": [
+            "18/5",
+            "252/25"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-16401/25",
+            "-1614862/875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3
+          ],
+          "coefficient": [
+            "73585104/625",
+            "7278145422/21875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1
+          ],
+          "coefficient": [
+            "2598/125",
+            "1096/175"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2
+          ],
+          "coefficient": [
+            "-27625781/3125",
+            "1071456/4375"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-3",
+            "-144/175"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1
+          ],
+          "coefficient": [
+            "188566/125",
+            "1366738/4375"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0
+          ],
+          "coefficient": [
+            "2727/875",
+            "4742/175"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            1
+          ],
+          "coefficient": [
+            "2004/125",
+            "-1168/35"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-14887767/3125",
+            "39142512/4375"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "3",
+            "144/175"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-206777/125",
+            "-1738196/4375"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-207/175",
+            "-3516/175"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1",
+            "-48/175"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1
+          ],
+          "coefficient": [
+            "53978/125",
+            "462726/4375"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-1347/875",
+            "-54/175"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "846/875",
+            "613/175"
+          ]
+        }
+      ],
+      "central_cubic": [
+        "-1",
+        "-48/175"
+      ],
+      "central_quartic": [
+        "846/875",
+        "613/175"
+      ],
+      "T1_rank": 1,
+      "T1_matrix": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "6/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "18/5",
+            "252/25"
+          ]
+        ]
+      ],
+      "prepared_constant_linear_parameter_matrix": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-36750/32929",
+            "10080/32929"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-9587552310/1084319041",
+            "-12218234070/1084319041"
+          ]
+        ]
+      ],
+      "genuine_seed_path_smoothing": {
+        "g_h_at_origin": [
+          "6/5",
+          "0"
+        ],
+        "h_of_b_cubic_coefficient": [
+          "5/6",
+          "8/35"
+        ],
+        "ramification_index": 3,
+        "local_sheet_monodromy": "a three-cycle, up to labeling and orientation",
+        "argument": "The implicit function theorem gives h(b)=alpha*b^3+O(b^4), alpha nonzero. A local analytic cube root of the unit changes b to w with h=w^3."
+      },
+      "local_flatness": "On the selected target surface germ, the scalar is b-regular of order three. Weierstrass preparation identifies its completed/analytic local algebra with a monic cubic quotient, finite and free of rank three over the local target base.",
+      "failed_approach": "This selected two-parameter surface has T1 rank one, so this computation does not establish a versal two-parameter unfolding or cusp branch equation.",
+      "limits": "These are local jets on an actual fixed-hypersurface target surface. No quantitative convergence radius, full-target discriminant, global branch/support divisor, seed-component degree, certificate or Lean proof follows.",
+      "negative_controls_rejected": 5
+    },
+    {
+      "schema": "cyclic-fano-unfolding-axis-independent-v1",
+      "status": "PASS",
+      "parameter_direction": "Y0",
+      "checker_lf_sha256": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+      "packet_lf_sha256": "7495c649401f26b08cb37ee83a70e69c25980ec6adb5871f432e987e3ba144dc",
+      "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+      "arithmetic": "Python standard-library Fraction pairs; independent raw-source polynomial composition and simultaneous Hensel elimination; no producer or CAS import",
+      "jet_order": 4,
+      "target_equation_exactly_reconstructed": true,
+      "target_z_jet_checked": true,
+      "physical_unknown_jets_checked": 5,
+      "physical_incidence_coefficients_zero_through_order4": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "physical_first_five_jacobian_determinant": [
+        "0",
+        "22500/343"
+      ],
+      "scalar_germ_jet": [
+        {
+          "powers": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": [
+            "6/5",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-5433/25",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            3
+          ],
+          "coefficient": [
+            "89268536/3125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            4
+          ],
+          "coefficient": [
+            "-357524879034/78125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "18/5"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            2
+          ],
+          "coefficient": [
+            "0",
+            "-22572501/3125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            3
+          ],
+          "coefficient": [
+            "0",
+            "3827601984/3125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1
+          ],
+          "coefficient": [
+            "4542/125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": [
+            "-3699247194/78125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "-2472696/3125"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1
+          ],
+          "coefficient": [
+            "18/5",
+            "252/25"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-16401/25",
+            "-1614862/875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3
+          ],
+          "coefficient": [
+            "73585104/625",
+            "7278145422/21875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-1804/175",
+            "42/5"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2
+          ],
+          "coefficient": [
+            "-6370213806/109375",
+            "59855757/3125"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": [
+            "0",
+            "-1/7"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1
+          ],
+          "coefficient": [
+            "5856/125",
+            "1921658/4375"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0
+          ],
+          "coefficient": [
+            "-538/175",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            1
+          ],
+          "coefficient": [
+            "2004/125",
+            "-1168/35"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-14887767/3125",
+            "39142512/4375"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-2/7",
+            "-3/5"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1
+          ],
+          "coefficient": [
+            "327532/125",
+            "8615556/3125"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-732/125",
+            "488/175"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1",
+            "-48/175"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1
+          ],
+          "coefficient": [
+            "53978/125",
+            "462726/4375"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": [
+            "48/175",
+            "1/5"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "846/875",
+            "613/175"
+          ]
+        }
+      ],
+      "central_cubic": [
+        "-1",
+        "-48/175"
+      ],
+      "central_quartic": [
+        "846/875",
+        "613/175"
+      ],
+      "T1_rank": 1,
+      "T1_matrix": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "6/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "18/5",
+            "252/25"
+          ]
+        ]
+      ],
+      "prepared_constant_linear_parameter_matrix": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-36750/32929",
+            "10080/32929"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-9587552310/1084319041",
+            "-12218234070/1084319041"
+          ]
+        ]
+      ],
+      "genuine_seed_path_smoothing": {
+        "g_h_at_origin": [
+          "6/5",
+          "0"
+        ],
+        "h_of_b_cubic_coefficient": [
+          "5/6",
+          "8/35"
+        ],
+        "ramification_index": 3,
+        "local_sheet_monodromy": "a three-cycle, up to labeling and orientation",
+        "argument": "The implicit function theorem gives h(b)=alpha*b^3+O(b^4), alpha nonzero. A local analytic cube root of the unit changes b to w with h=w^3."
+      },
+      "local_flatness": "On the selected target surface germ, the scalar is b-regular of order three. Weierstrass preparation identifies its completed/analytic local algebra with a monic cubic quotient, finite and free of rank three over the local target base.",
+      "failed_approach": "This selected two-parameter surface has T1 rank one, so this computation does not establish a versal two-parameter unfolding or cusp branch equation.",
+      "limits": "These are local jets on an actual fixed-hypersurface target surface. No quantitative convergence radius, full-target discriminant, global branch/support divisor, seed-component degree, certificate or Lean proof follows.",
+      "negative_controls_rejected": 5
+    },
+    {
+      "schema": "cyclic-fano-unfolding-axis-independent-v1",
+      "status": "PASS",
+      "parameter_direction": "Y2",
+      "checker_lf_sha256": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+      "packet_lf_sha256": "b99c1992f67c9cbf6cb352500355b1e39a9b74a4d41ae1b1f6d4269b14d0eb96",
+      "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+      "arithmetic": "Python standard-library Fraction pairs; independent raw-source polynomial composition and simultaneous Hensel elimination; no producer or CAS import",
+      "jet_order": 4,
+      "target_equation_exactly_reconstructed": true,
+      "target_z_jet_checked": true,
+      "physical_unknown_jets_checked": 5,
+      "physical_incidence_coefficients_zero_through_order4": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "physical_first_five_jacobian_determinant": [
+        "0",
+        "22500/343"
+      ],
+      "scalar_germ_jet": [
+        {
+          "powers": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": [
+            "6/5",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-5433/25",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            3
+          ],
+          "coefficient": [
+            "89268536/3125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            4
+          ],
+          "coefficient": [
+            "-357524879034/78125",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": [
+            "0",
+            "-6/5"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "10776/25"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            2
+          ],
+          "coefficient": [
+            "0",
+            "-283632609/3125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            3
+          ],
+          "coefficient": [
+            "0",
+            "1492341934761/78125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": [
+            "5343/25",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-59869212/625",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": [
+            "464772830157/15625",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "0",
+            "104981987/3125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "-1600882550823/78125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "-82367091153/15625",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            1
+          ],
+          "coefficient": [
+            "18/5",
+            "252/25"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-16401/25",
+            "-1614862/875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            3
+          ],
+          "coefficient": [
+            "73585104/625",
+            "7278145422/21875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": [
+            "252/25",
+            "-18/5"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-3185824/875",
+            "32472/25"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            2
+          ],
+          "coefficient": [
+            "100804693524/109375",
+            "-1023582303/3125"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0
+          ],
+          "coefficient": [
+            "16071/25",
+            "1570837/875"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-943294146/3125",
+            "-92404530518/109375"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            3,
+            0
+          ],
+          "coefficient": [
+            "-27990962854/109375",
+            "287637363/3125"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            1
+          ],
+          "coefficient": [
+            "2004/125",
+            "-1168/35"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-14887767/3125",
+            "39142512/4375"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-1178/35",
+            "-2079/125"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            1
+          ],
+          "coefficient": [
+            "88868394/4375",
+            "7616823/625"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            2,
+            0
+          ],
+          "coefficient": [
+            "23172423/3125",
+            "-49709932/4375"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1",
+            "-48/175"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1
+          ],
+          "coefficient": [
+            "53978/125",
+            "462726/4375"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0
+          ],
+          "coefficient": [
+            "461526/4375",
+            "-53703/125"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "846/875",
+            "613/175"
+          ]
+        }
+      ],
+      "central_cubic": [
+        "-1",
+        "-48/175"
+      ],
+      "central_quartic": [
+        "846/875",
+        "613/175"
+      ],
+      "T1_rank": 1,
+      "T1_matrix": [
+        [
+          [
+            "0",
+            "-6/5"
+          ],
+          [
+            "6/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "252/25",
+            "-18/5"
+          ],
+          [
+            "18/5",
+            "252/25"
+          ]
+        ]
+      ],
+      "prepared_constant_linear_parameter_matrix": [
+        [
+          [
+            "10080/32929",
+            "36750/32929"
+          ],
+          [
+            "-36750/32929",
+            "10080/32929"
+          ]
+        ],
+        [
+          [
+            "-12218234070/1084319041",
+            "9587552310/1084319041"
+          ],
+          [
+            "-9587552310/1084319041",
+            "-12218234070/1084319041"
+          ]
+        ]
+      ],
+      "genuine_seed_path_smoothing": {
+        "g_h_at_origin": [
+          "6/5",
+          "0"
+        ],
+        "h_of_b_cubic_coefficient": [
+          "5/6",
+          "8/35"
+        ],
+        "ramification_index": 3,
+        "local_sheet_monodromy": "a three-cycle, up to labeling and orientation",
+        "argument": "The implicit function theorem gives h(b)=alpha*b^3+O(b^4), alpha nonzero. A local analytic cube root of the unit changes b to w with h=w^3."
+      },
+      "local_flatness": "On the selected target surface germ, the scalar is b-regular of order three. Weierstrass preparation identifies its completed/analytic local algebra with a monic cubic quotient, finite and free of rank three over the local target base.",
+      "failed_approach": "This selected two-parameter surface has T1 rank one, so this computation does not establish a versal two-parameter unfolding or cusp branch equation.",
+      "limits": "These are local jets on an actual fixed-hypersurface target surface. No quantitative convergence radius, full-target discriminant, global branch/support divisor, seed-component degree, certificate or Lean proof follows.",
+      "negative_controls_rejected": 5
+    }
+  ],
+  "all_four_target_directions": {
+    "coordinates": [
+      "U",
+      "V",
+      "h",
+      "W"
+    ],
+    "target_chart": "(X0,Y0,Y1,Y2)=(U,i+V,1+h,i(1+h)+W); Z is solved by G_Z=5i/7 at the origin.",
+    "T1_matrix": [
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "6/5",
+          "0"
+        ],
+        [
+          "0",
+          "-6/5"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "18/5",
+          "252/25"
+        ],
+        [
+          "252/25",
+          "-18/5"
+        ]
+      ]
+    ],
+    "T1_rank": 1,
+    "argument": "The three axis computations supply U,V,W derivatives and the common h derivative. These four are independent target coordinates, so this is the full first-order T1 map.",
+    "conclusion": "The full target evaluation unfolding fails the first-order versality test at this triple point. A cusp branch normal form is not established."
+  },
+  "actual_seed_path_branch_jet": {
+    "h_coefficients_ascending": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "5/6",
+        "8/35"
+      ],
+      [
+        "-97/70",
+        "-2227/210"
+      ]
+    ],
+    "remainder": "O(b^5)",
+    "substitution_into_scalar_four_jet_zero": true
+  },
+  "negative_controls_rejected": 15,
+  "limits": "The h path has a certified local degree-three smoothing and three-cycle monodromy. The complete target branch germ and all global boundary/support equations remain uncomputed."
+}

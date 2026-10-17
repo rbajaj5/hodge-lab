@@ -1,0 +1,180 @@
+{
+  "schema": "cyclic-fano-unfolding-summary-v1",
+  "producer_sha256": "a93f0c4ede4cc29a765a9f2054d889f0e4238aea8e77edfc54aa35eae40330f8",
+  "axis_packet_sha256": {
+    "X0": "2f028afea25fcaf91bb6015a17e432d2c4368e4d9432845788fee59ae50e2d1d",
+    "Y0": "7495c649401f26b08cb37ee83a70e69c25980ec6adb5871f432e987e3ba144dc",
+    "Y2": "b99c1992f67c9cbf6cb352500355b1e39a9b74a4d41ae1b1f6d4269b14d0eb96"
+  },
+  "fixed_target_manifest_sha256": "7d540fcd1d98b54ff44ab2c5b97c511276c3b90403b384d0f3240694f8d1a9bb",
+  "axis_attempts": {
+    "X0": "Rank1: added target direction has zero T1 class.",
+    "Y0": "Rank1: added target direction has zero T1 class.",
+    "Y2": "Rank1: added target direction has\u2212i times the h T1 class."
+  },
+  "target_tangent_coordinate_order": [
+    "X0",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "target_tangent_direction_order": [
+    "X0 perturbation",
+    "Y0 perturbation",
+    "Y2 perturbation",
+    "seed-line h"
+  ],
+  "target_tangent_basis_matrix": [
+    [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ]
+  ],
+  "target_tangent_basis_determinant": [
+    "-1",
+    "0"
+  ],
+  "full_T1_matrix": [
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-6/5"
+      ],
+      [
+        "6/5",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "252/25",
+        "-18/5"
+      ],
+      [
+        "18/5",
+        "252/25"
+      ]
+    ]
+  ],
+  "full_T1_rank": 1,
+  "miniversal": false,
+  "actual_seed_line_target": [
+    "0",
+    "1",
+    "0",
+    "I",
+    "1+h",
+    "I*(1+h)"
+  ],
+  "h_of_b_jet_coefficients_ascending": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "5/6",
+      "8/35"
+    ],
+    [
+      "-97/70",
+      "-2227/210"
+    ]
+  ],
+  "h_of_b_remainder": "O(b^5)",
+  "ramification_index": 3,
+  "ramification_reason": "The exact implicit incidence germ has nonzero g_h=6/5. It defines a smooth source curve h=h(b). Its first nonzero term is(5/6+8i/35)b^3, so the target-map ramification index is exactly3. An analytic coordinate change makes this local one-dimensional map z\u2192z^3.",
+  "local_monodromy": "A three-cycle on the three nearby sheets of this one-dimensional analytic germ.",
+  "limits": "All four target tangent directions are accounted for, and their T1 image has rank1; a miniversal cusp unfolding is not established. The order4 jets do not give a global branch polynomial, support divisor, certificate, or degree of the seed covering component."
+}

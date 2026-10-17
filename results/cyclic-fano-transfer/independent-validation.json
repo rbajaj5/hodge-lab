@@ -1,0 +1,157 @@
+{
+  "schema": "cyclic-fano-transfer-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "c4097db86ad22ff3213d9570dc89cb5e60239cc478df4836943c26c46fec5715",
+  "independent_arithmetic_dependency_lf_sha256": "fb33bb36ee85063acb1071196607415481dd8a49b4a5c62cdb3945c1e10b491d",
+  "packet_lf_sha256": "5477efed02d73c66d3561867498f3d80c5b6964cf9560d5e5e3a063503f41749",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "arithmetic": "Independent checker sparse Fraction polynomials and exact rational elimination; no producer or CAS import",
+  "quotient_and_density_reconstructed_from_raw_source": true,
+  "mod5_Fermat_smoothness_checked": true,
+  "physical_Piola_basis_transfers": 450,
+  "character_dimensions": [
+    {
+      "denominator_degree": 3,
+      "all_upstairs_numerator_coefficients": 756,
+      "character_projected_coefficients": 150,
+      "weighted_coefficients": 150
+    },
+    {
+      "denominator_degree": 4,
+      "all_upstairs_numerator_coefficients": 1512,
+      "character_projected_coefficients": 321,
+      "weighted_coefficients": 321
+    },
+    {
+      "denominator_degree": 6,
+      "all_upstairs_numerator_coefficients": 4752,
+      "character_projected_coefficients": 1110,
+      "weighted_coefficients": 1110
+    },
+    {
+      "denominator_degree": 7,
+      "all_upstairs_numerator_coefficients": 7722,
+      "character_projected_coefficients": 1866,
+      "weighted_coefficients": 1866
+    },
+    {
+      "denominator_degree": 9,
+      "all_upstairs_numerator_coefficients": 18018,
+      "character_projected_coefficients": 4586,
+      "weighted_coefficients": 4586
+    }
+  ],
+  "tests": [
+    {
+      "candidate": "cyclic_branch_Z",
+      "shape": [
+        396,
+        150
+      ],
+      "rational_rank": 150,
+      "rational_augmented_rank": 151,
+      "exact_dual_terms": 2,
+      "dual_physical_rows": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            0,
+            1,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "3"
+        },
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            1,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-42/5"
+        }
+      ],
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "candidate": "quadratic_branch_2Z_plus_Q",
+      "shape": [
+        396,
+        150
+      ],
+      "rational_rank": 150,
+      "rational_augmented_rank": 151,
+      "exact_dual_terms": 2,
+      "dual_physical_rows": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            0,
+            1,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "3/2"
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "3/2"
+        }
+      ],
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "candidate": "omitted_section_X1_cubed",
+      "shape": [
+        337,
+        150
+      ],
+      "rational_rank": 150,
+      "rational_augmented_rank": 151,
+      "exact_dual_terms": 1,
+      "dual_physical_rows": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            3,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "3"
+        }
+      ],
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    }
+  ],
+  "Euler_normalization": {
+    "weighted_Euler_divergence": 8,
+    "R_weight": "d-2",
+    "identity": "If P(G)=beta*E+G*R, replace P by P-(R/6)*epsilon_weighted. The normal component changes by -G*R and E*div(P)-P(E) by -E*R, leaving the cleared expression unchanged.",
+    "complete_scope": "Character averaging preserves an arbitrary certificate at each fixed invariant D. All weighted numerator monomials of degrees d-1 and d+1 are included. At d=3, the second expression has weight4 and cannot contain a nonzero G-multiple of weight6."
+  },
+  "conclusion": "Each of these three specific invariant cubic denominators is excluded over C, with complete homogeneous numerator freedom and no additional parity condition.",
+  "limits": "No exclusion of their powers, products, other denominator equations or arbitrary degree; no global support, certificate or Lean proof.",
+  "negative_controls_rejected": 6
+}

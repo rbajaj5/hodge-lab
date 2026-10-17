@@ -1060,6 +1060,54 @@ conversations or evidence of an accepted solve.
     Work remains local alongside entries 58–59; no post, discussion edit,
     public push, solve PR, or accepted solution is claimed.
 
+61. **17 October 2026 — Resume notebook pushes while holding upstream comments.**
+    The user explicitly asked to continue cyclic Fano, push results,
+    visualizations and failures here, and save upstream comments for a
+    substantial batch. This supersedes the local-only staging of entries
+    58–60. The notebook publication includes their previously local commit
+    `9cf26be` and the continuation below. Read discussion 112 again: only
+    the original contribution was present, with no replies, accepted answer,
+    or open solution PR observed. Upstream main `adfb848` differs from the
+    pinned `d96911d` only in website/server files and revision metadata;
+    the target and contribution rules are unchanged. No upstream comment,
+    edit, or PR accompanies this notebook batch. The tally remains 24.
+
+62. **17 October 2026 — Unfold the cyclic Fano triple point on the fixed target.**
+    Moved the evaluation point along the actual quotient curve
+    `[0:1:0:i:1+h:i(1+h)]`. Exact order-four implicit jets give
+    `h=(5/6+8i/35)b^3+O(b^4)`, proving a smooth local source curve,
+    ramification index three, and a three-cycle on nearby local sheets.
+    Three bounded second-direction attempts collectively test all four
+    target tangent directions; their first-order deformation image has
+    rank one, so the hoped-for miniversal two-parameter description fails.
+    Kept this limitation and the initial serialization error alongside
+    the successful cubic calculation. The visualization distinguishes
+    actual jets from analytic normal-form coordinates, and the local
+    evaluation monodromy from the original cyclic deck symmetry.
+    All three primary checks and a separate standard-library reconstruction
+    pass, including the fourth-order branch jet and fifteen mutation controls.
+    [Argument, exact checks, branch picture, and failed directions](notes/cyclic-fano-unfolding.md).
+    No quantitative convergence radius, full branch equation, supporting
+    divisor, certificate, or solve follows.
+
+63. **17 October 2026 — Apply the final Bourbaki character projector concretely.**
+    The supplied corpus ends with compact-group character averaging;
+    Chapter V, section 4, pages 465–466 supplies the finite-group projector
+    used here. On the fixed cyclic target, invariant degree-three
+    denominators admit a complete numerator reduction from 756 to 150
+    coefficients. Polynomial Piola identities transfer both physical
+    equations exactly to the weighted quotient. Tested three geometric
+    guesses: the cyclic branch `Z`, quadratic branch `2Z+Q`, and omitted
+    section power `X1^3`. All fail: each coefficient matrix has rank 150
+    and augmented rank 151, with a one- or two-term rational dual witness.
+    Primary and separate standard-library reconstructions verify all 450
+    basis transfers, all columns and dual pairings; the independent checker
+    rejects six mutations. The bounded search completed under one second.
+    [Actual-map visualization, exact reduction, failures, and reproduction](notes/cyclic-fano-transfer.md).
+    This excludes the displayed denominators, not their arbitrary powers,
+    products, all supports on these zero sets, or unrestricted certificates.
+    No new upstream post or accepted solve is counted.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
