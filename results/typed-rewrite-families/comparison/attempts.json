@@ -1,0 +1,74 @@
+[
+  {
+    "number": 3,
+    "mode": "untyped",
+    "replicate": 0,
+    "status": "completed",
+    "exit_code": 0,
+    "wall_seconds": 49.93803610000032,
+    "limit": 180
+  },
+  {
+    "number": 3,
+    "mode": "typed",
+    "replicate": 0,
+    "status": "completed",
+    "exit_code": 0,
+    "wall_seconds": 96.19514680000066,
+    "limit": 180
+  },
+  {
+    "number": 16,
+    "mode": "untyped",
+    "replicate": 0,
+    "status": "completed",
+    "exit_code": 0,
+    "wall_seconds": 135.46088719999898,
+    "limit": 180
+  },
+  {
+    "number": 16,
+    "mode": "typed",
+    "replicate": 0,
+    "status": "timeout",
+    "exit_code": null,
+    "wall_seconds": 180.04743400000007,
+    "limit": 180
+  },
+  {
+    "number": 3,
+    "mode": "typed",
+    "replicate": 1,
+    "status": "completed",
+    "exit_code": 0,
+    "wall_seconds": 100.34180750000087,
+    "limit": 180
+  },
+  {
+    "number": 3,
+    "mode": "untyped",
+    "replicate": 1,
+    "status": "completed",
+    "exit_code": 0,
+    "wall_seconds": 48.174798799998825,
+    "limit": 180
+  },
+  {
+    "number": 16,
+    "mode": "typed",
+    "replicate": 1,
+    "status": "timeout",
+    "exit_code": null,
+    "wall_seconds": 180.0389613999978,
+    "limit": 180
+  },
+  {
+    "number": 16,
+    "mode": "untyped",
+    "replicate": 1,
+    "status": "completed",
+    "exit_code": 0,
+    "wall_seconds": 129.50757640000302,
+    "limit": 180
+  }
+]

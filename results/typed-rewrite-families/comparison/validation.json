@@ -1,0 +1,311 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "records": [
+    {
+      "job": {
+        "number": 3,
+        "mode": "untyped",
+        "replicate": 0
+      },
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265,
+      "basis_sha256": "9e9a7ab7a43608f55125a7d6c63ebb6cf3993afcf1cb0ad6410ef001f1801d22",
+      "rank": 2795,
+      "baseline_relations": 18,
+      "additional_relations": 97,
+      "statistics": {
+        "pivot_tests": 142409,
+        "elimination_steps": 139614
+      },
+      "checks": {
+        "basis_coefficient_products": 106937,
+        "source_rows_reduced": 5265,
+        "used_rules": 0
+      },
+      "exact_proof_reused": false,
+      "proof_evidence_size": {
+        "basis_products": 106937,
+        "source_rows": 5265
+      },
+      "elimination_seconds": 31.276778699950228,
+      "wall_seconds": 49.93803610000032
+    },
+    {
+      "job": {
+        "number": 3,
+        "mode": "typed",
+        "replicate": 0
+      },
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265,
+      "basis_sha256": "9e9a7ab7a43608f55125a7d6c63ebb6cf3993afcf1cb0ad6410ef001f1801d22",
+      "rank": 2795,
+      "baseline_relations": 18,
+      "additional_relations": 97,
+      "statistics": {
+        "pivot_tests": 139557,
+        "cache_lookups": 136762,
+        "rules_created": 11315,
+        "peak_cache_entries": 256,
+        "peak_cache_terms": 50000,
+        "cache_hits": 1035,
+        "evictions": 11059,
+        "elimination_steps": 135727,
+        "retained_cache_entries": 256,
+        "retained_cache_terms": 39681
+      },
+      "checks": {
+        "basis_coefficient_products": 0,
+        "source_rows_reduced": 0,
+        "used_rules": 378,
+        "exact_proof_content_reused": 1,
+        "wrong_type_rejected": 1,
+        "altered_rule_rejected": 1
+      },
+      "exact_proof_reused": true,
+      "proof_evidence_size": {
+        "basis_products": 106937,
+        "source_rows": 5265
+      },
+      "elimination_seconds": 76.92874160002975,
+      "wall_seconds": 96.19514680000066
+    },
+    {
+      "job": {
+        "number": 16,
+        "mode": "untyped",
+        "replicate": 0
+      },
+      "completed": true,
+      "rows": 5902,
+      "requested_rows": 5902,
+      "basis_sha256": "6aea691052d885bcebb5b7b1aadecfba4e3614b8e4fb097fc87f3b910c047239",
+      "rank": 4471,
+      "baseline_relations": 18,
+      "additional_relations": 90,
+      "statistics": {
+        "pivot_tests": 271391,
+        "elimination_steps": 266920
+      },
+      "checks": {
+        "basis_coefficient_products": 227579,
+        "source_rows_reduced": 5902,
+        "used_rules": 0
+      },
+      "exact_proof_reused": false,
+      "proof_evidence_size": {
+        "basis_products": 227579,
+        "source_rows": 5902
+      },
+      "elimination_seconds": 86.80193919988596,
+      "wall_seconds": 135.46088719999898
+    },
+    {
+      "job": {
+        "number": 16,
+        "mode": "typed",
+        "replicate": 0
+      },
+      "completed": false,
+      "rows": 4994,
+      "requested_rows": 5902,
+      "basis_sha256": "7c4c317ae85c8e9f902324d7f29d1ccbfd6889cfdde0609d57dbd3a3195ee6c5",
+      "rank": 3949,
+      "baseline_relations": 18,
+      "additional_relations": 59,
+      "statistics": {
+        "pivot_tests": 160072,
+        "cache_lookups": 156123,
+        "rules_created": 6412,
+        "peak_cache_entries": 256,
+        "peak_cache_terms": 50000,
+        "cache_hits": 230,
+        "evictions": 6248,
+        "elimination_steps": 155893,
+        "retained_cache_entries": 164,
+        "retained_cache_terms": 49642
+      },
+      "checks": {
+        "basis_coefficient_products": 150732,
+        "source_rows_reduced": 4994,
+        "used_rules": 101,
+        "wrong_type_rejected": 1,
+        "altered_rule_rejected": 1
+      },
+      "exact_proof_reused": false,
+      "proof_evidence_size": {
+        "basis_products": 150732,
+        "source_rows": 4994
+      },
+      "elimination_seconds": 103.32308269982605,
+      "wall_seconds": 180.04743400000007
+    },
+    {
+      "job": {
+        "number": 3,
+        "mode": "typed",
+        "replicate": 1
+      },
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265,
+      "basis_sha256": "9e9a7ab7a43608f55125a7d6c63ebb6cf3993afcf1cb0ad6410ef001f1801d22",
+      "rank": 2795,
+      "baseline_relations": 18,
+      "additional_relations": 97,
+      "statistics": {
+        "pivot_tests": 139557,
+        "cache_lookups": 136762,
+        "rules_created": 11315,
+        "peak_cache_entries": 256,
+        "peak_cache_terms": 50000,
+        "cache_hits": 1035,
+        "evictions": 11059,
+        "elimination_steps": 135727,
+        "retained_cache_entries": 256,
+        "retained_cache_terms": 39681
+      },
+      "checks": {
+        "basis_coefficient_products": 0,
+        "source_rows_reduced": 0,
+        "used_rules": 378,
+        "exact_proof_content_reused": 1,
+        "wrong_type_rejected": 1,
+        "altered_rule_rejected": 1
+      },
+      "exact_proof_reused": true,
+      "proof_evidence_size": {
+        "basis_products": 106937,
+        "source_rows": 5265
+      },
+      "elimination_seconds": 79.9799838001345,
+      "wall_seconds": 100.34180750000087
+    },
+    {
+      "job": {
+        "number": 3,
+        "mode": "untyped",
+        "replicate": 1
+      },
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265,
+      "basis_sha256": "9e9a7ab7a43608f55125a7d6c63ebb6cf3993afcf1cb0ad6410ef001f1801d22",
+      "rank": 2795,
+      "baseline_relations": 18,
+      "additional_relations": 97,
+      "statistics": {
+        "pivot_tests": 142409,
+        "elimination_steps": 139614
+      },
+      "checks": {
+        "basis_coefficient_products": 0,
+        "source_rows_reduced": 0,
+        "used_rules": 0,
+        "exact_proof_content_reused": 1
+      },
+      "exact_proof_reused": true,
+      "proof_evidence_size": {
+        "basis_products": 106937,
+        "source_rows": 5265
+      },
+      "elimination_seconds": 29.531720400169434,
+      "wall_seconds": 48.174798799998825
+    },
+    {
+      "job": {
+        "number": 16,
+        "mode": "typed",
+        "replicate": 1
+      },
+      "completed": false,
+      "rows": 4994,
+      "requested_rows": 5902,
+      "basis_sha256": "7c4c317ae85c8e9f902324d7f29d1ccbfd6889cfdde0609d57dbd3a3195ee6c5",
+      "rank": 3949,
+      "baseline_relations": 18,
+      "additional_relations": 59,
+      "statistics": {
+        "pivot_tests": 160072,
+        "cache_lookups": 156123,
+        "rules_created": 6412,
+        "peak_cache_entries": 256,
+        "peak_cache_terms": 50000,
+        "cache_hits": 230,
+        "evictions": 6248,
+        "elimination_steps": 155893,
+        "retained_cache_entries": 164,
+        "retained_cache_terms": 49642
+      },
+      "checks": {
+        "basis_coefficient_products": 0,
+        "source_rows_reduced": 0,
+        "used_rules": 101,
+        "exact_proof_content_reused": 1,
+        "wrong_type_rejected": 1,
+        "altered_rule_rejected": 1
+      },
+      "exact_proof_reused": true,
+      "proof_evidence_size": {
+        "basis_products": 150732,
+        "source_rows": 4994
+      },
+      "elimination_seconds": 105.49658169996837,
+      "wall_seconds": 180.0389613999978
+    },
+    {
+      "job": {
+        "number": 16,
+        "mode": "untyped",
+        "replicate": 1
+      },
+      "completed": true,
+      "rows": 5902,
+      "requested_rows": 5902,
+      "basis_sha256": "6aea691052d885bcebb5b7b1aadecfba4e3614b8e4fb097fc87f3b910c047239",
+      "rank": 4471,
+      "baseline_relations": 18,
+      "additional_relations": 90,
+      "statistics": {
+        "pivot_tests": 271391,
+        "elimination_steps": 266920
+      },
+      "checks": {
+        "basis_coefficient_products": 0,
+        "source_rows_reduced": 0,
+        "used_rules": 0,
+        "exact_proof_content_reused": 1
+      },
+      "exact_proof_reused": true,
+      "proof_evidence_size": {
+        "basis_products": 227579,
+        "source_rows": 5902
+      },
+      "elimination_seconds": 82.46800940009416,
+      "wall_seconds": 129.50757640000302
+    }
+  ],
+  "matches": [
+    {
+      "number": 3,
+      "all_four_completed": true,
+      "equal_coefficient_basis": true,
+      "rows": 5265,
+      "rank": 2795
+    },
+    {
+      "number": 16,
+      "all_four_completed": false,
+      "limits": "No matched full-work timing or complete-span claim for interrupted runs."
+    }
+  ],
+  "cache_selftest": {
+    "zero_rule_survives_basis_growth": true,
+    "new_witness_context_adjusted": true,
+    "future_source_row_rejected": true
+  },
+  "scope": "Exact processed-prefix rowspaces and used zero rewrites; matched completed-work timing is exploratory, not a speed theorem or family exclusion."
+}

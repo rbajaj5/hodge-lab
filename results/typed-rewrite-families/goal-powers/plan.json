@@ -1,0 +1,17 @@
+{
+  "families": [
+    3,
+    16
+  ],
+  "comparison_plan_sha256": "eb8241ea0f93ed84be221195f4a4b92c1e5ebd62c8cdd5ddb9423acceee8c6f5",
+  "degrees": [
+    3,
+    4
+  ],
+  "seconds_per_family": 180,
+  "workers": 1,
+  "source_mode": "typed replicate 0 retained checkpoint",
+  "target": "Every retained coefficient in the added character; no anchor coefficients set to zero.",
+  "method": "Same complete mixed-degree Macaulay map, with exact target-character projection.",
+  "limits": "Coordinate-power queries only; no global rank equality, timing speedup, or full ideal claim."
+}

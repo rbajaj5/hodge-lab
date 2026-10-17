@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "completed": true,
+  "excluded": false,
+  "forced_raw_ids": [
+    56
+  ],
+  "remaining": [
+    6,
+    42,
+    88,
+    102,
+    111,
+    114,
+    135,
+    211,
+    235,
+    272,
+    289,
+    293
+  ],
+  "cycles": [
+    {
+      "before": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        135,
+        211,
+        235,
+        272,
+        289,
+        293
+      ],
+      "block_zeros": [],
+      "after_blocks": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        135,
+        211,
+        235,
+        272,
+        289,
+        293
+      ],
+      "charts": [
+        {
+          "raw": 6,
+          "excluded": false
+        },
+        {
+          "raw": 211,
+          "excluded": false
+        }
+      ],
+      "after": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        135,
+        211,
+        235,
+        272,
+        289,
+        293
+      ]
+    }
+  ],
+  "checks": {
+    "relation_products": 4692,
+    "graded_maps": 12,
+    "power_identities": 2,
+    "power_products": 2,
+    "altered_powers_rejected": 2,
+    "correction_pairings": 889,
+    "quadratic_pairings": 133,
+    "physical_duals": 9,
+    "chart_inferences": 97,
+    "charts": 2
+  },
+  "dependency": null,
+  "scope": "Separate T100 continuation; the primary bounded 131/132 checkpoint remains unchanged."
+}

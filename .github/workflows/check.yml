@@ -3,6 +3,32 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  typed-rewrite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/check_typed_rewrite_families.py --follow
+      - run: python -S experiments/check_typed_rewrite_families.py --follow --independent
+      - run: python -S experiments/typed100_continuation.py --check
+      - run: python -S experiments/typed100_continuation.py --check --independent
+      - run: python -S experiments/typed100_continuation.py --check-blocks
+      - run: python -S experiments/typed100_continuation.py --check-blocks --independent
+      - run: python -S experiments/typed100_continuation.py --check-closure
+      - run: python -S experiments/typed100_continuation.py --check-closure --independent
+      - run: python -S experiments/typed_rewrite_search.py --check
+      - run: python -S experiments/typed_rewrite_search.py --check --independent
+      - run: python -S experiments/typed_goal_powers.py --check
+      - run: python -S experiments/typed_goal_powers.py --check --independent
+      - run: python -S experiments/typed_goal_quartics.py --check
+      - run: python -S experiments/typed_goal_quartics.py --check --independent
+      - run: python -S experiments/plot_typed_rewrite.py --check
   added-character-homology:
     runs-on: ubuntu-latest
     timeout-minutes: 10

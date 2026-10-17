@@ -16,7 +16,17 @@ our homology ranking did not outperform its controls.
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** an exact search guided by the added character's
+**Latest exact result:** 131 of 132 fresh X0/Y1 three-character families
+are excluded, bringing the selected union to **811 triples**. T100 remains
+open after a separate exact reduction from thirteen to twelve directions.
+A frozen typed-cache comparison was slower than the existing method;
+target-character projection nevertheless gives smaller exact power queries.
+Timeouts, failed charts, actual matrix figures, and both physical replays
+are retained. [Results, figures, and limits](notes/typed-rewrite-search.md).
+
+![Exact type decomposition of the coefficient operator](results/typed-rewrite-families/typed-operator.png)
+
+**Preceding exact result:** an exact search guided by the added character's
 Koszul homology and a separate multiplier continuation exclude all
 **132 fresh X0/X1 extensions**, bringing the selected union to **680 triples**.
 The earlier 131/132 checkpoint and A100's failed charts are preserved.

@@ -1,0 +1,10171 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "baseline_excluded": 119,
+  "excluded": 119,
+  "unresolved": [
+    3,
+    16,
+    19,
+    30,
+    49,
+    55,
+    61,
+    72,
+    74,
+    83,
+    100,
+    113,
+    129
+  ],
+  "families": [
+    {
+      "batch_number": 1,
+      "global_number": 9440,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        2
+      ],
+      "basis_indices": [
+        38,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "e2a16e2433ea3d2d0a74419f0be396028556e1423aa99321bca9c1098ff90bed",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 2,
+      "global_number": 9574,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        193,
+        198,
+        227,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "eb1d150edf197df6723729a18a8edaa432d5c1b4b946f656f7aa542fcdff3e23",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 3,
+      "global_number": 9707,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        85,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        85,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "b1e42bba1aa76ca8b91e90e1e37b8cde884b005d8cfbe5bb74c560a345c8ae6e",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        85,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 4,
+      "global_number": 9839,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        5
+      ],
+      "basis_indices": [
+        24,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "02ef3199ec1d681705d2b4049a068ba11a3577667e15a665a258fc17de2588b1",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 5,
+      "global_number": 10100,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        87,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "319cbd84a1f16528f31ee51b947d589fd718c1947e2acc71d74565f44af546fb",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 6,
+      "global_number": 10229,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        176,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "83b2f3097d371950ff8e22c7eec93bcb37d71a38d4c73f47543d2429c0bec50d",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 7,
+      "global_number": 10357,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        60,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "9c113ce2807fca87c2dce1f4b1a638d06e4575c8d7da24d259e016a3ded6db82",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 8,
+      "global_number": 10484,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        5
+      ],
+      "basis_indices": [
+        13,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d97a65b08a8bff1b75f27908aa4e0566ad40964a7fe415111da690bbfc1e7481",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 9,
+      "global_number": 10610,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        152,
+        170,
+        179,
+        198,
+        201,
+        235,
+        247,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "eb534c589fffc9df4bb73d3ce97fc9276018d757133e9dd46c45826e2d54dda2",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 10,
+      "global_number": 10735,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        92,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "7356f922048d6c571e97267d6fe87eb4970bdff2adaf4524e2744d5690986eaa",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 11,
+      "global_number": 10859,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        143,
+        170,
+        198,
+        235,
+        239,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0edcb3ef01bc42cfe105db365d8c400166b835a655f87f453737aacf1edbb36c",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 12,
+      "global_number": 10982,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        4
+      ],
+      "basis_indices": [
+        42,
+        45,
+        56,
+        88,
+        89,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "2dedf0b8101d4631454044987e73cbff1fed9f2343960ebfcd3b5b39c199b8b1",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 13,
+      "global_number": 11104,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        5
+      ],
+      "basis_indices": [
+        8,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8a794759e3c177f2547fa6704f4c6072827721976f6ce4bc80f21e2af3cdfd9e",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 14,
+      "global_number": 11225,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        188,
+        198,
+        235,
+        269,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "bf7a150bebef3f691240d94655b79f8ec928df54ee00e9e96fdcf79e2b4a68de",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 15,
+      "global_number": 11345,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        127,
+        135,
+        170,
+        181,
+        198,
+        206,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "596d4635bcf318bc50f55e02fce4a2be4e256a4b15b030ff004fe87bdf87c2b2",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 16,
+      "global_number": 11464,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        4
+      ],
+      "basis_indices": [
+        40,
+        42,
+        56,
+        72,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        40,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6590f0b91e7172884b995b8d8d1ad86931f226eb42f2a785a4a581253f3526bc",
+      "initial_excluded": false,
+      "remaining": [
+        40,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 17,
+      "global_number": 11582,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        5
+      ],
+      "basis_indices": [
+        16,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "03258a7bc5e79288179ba227b3c66f89c596baa0e3c6012f4c3088614bff0b56",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 18,
+      "global_number": 11699,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        2
+      ],
+      "basis_indices": [
+        35,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "c5b4b4c6890a472587337ddf4872a0a161581fd10a0849fe1abe3438e3154fa5",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 19,
+      "global_number": 11815,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        3
+      ],
+      "basis_indices": [
+        7,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        119,
+        135,
+        159,
+        170,
+        198,
+        216,
+        235,
+        255,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        7,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        119,
+        135,
+        159,
+        216,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8dd0141592ccad8d9aea8455058a7740d73eefb83a09ba7d844e6f3670ab792b",
+      "initial_excluded": false,
+      "remaining": [
+        7,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        119,
+        135,
+        159,
+        216,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 20,
+      "global_number": 11930,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        50,
+        56,
+        88,
+        94,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "2b6c8f8901bd2551928f676d3e4e82559f3fe40ebf9e114b22d1179fa7dd32f2",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 21,
+      "global_number": 12044,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        164,
+        170,
+        198,
+        221,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "305ae35bed11a21a99921c979cce74ce5c92c8879c847a961112a1d087deeb54",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 22,
+      "global_number": 12157,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        53,
+        56,
+        80,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6cdc047f7c39e946affef29a3845dfdecf9d898b484ad421937d089e5b941c6e",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 23,
+      "global_number": 12269,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        2
+      ],
+      "basis_indices": [
+        10,
+        20,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "234ea445319890acb1c2553da64db6cd936e4e7bbbe7fcd5bf5d75caed26673c",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 24,
+      "global_number": 12380,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        132,
+        135,
+        170,
+        196,
+        198,
+        235,
+        272,
+        287,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "afad7e773c9603f6fa31e485db8c8ae67b69fbf8aa94f87c42e8b61b3e8c4daf",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 25,
+      "global_number": 12599,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        101,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "5f73719c055639b65cd613b9181218074a9c61006c6d087aae8fbd204a08f70c",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 26,
+      "global_number": 12707,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        207,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "36de27df018b708d5f4d98dff4350361c4f6fb63f9d11948a75c6508f7addbdd",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 27,
+      "global_number": 12814,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        73,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "2351352a0d64f04222fc00efb8139732f10ff257530ea8d96d4bada351ce4cf4",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 28,
+      "global_number": 12920,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        5
+      ],
+      "basis_indices": [
+        17,
+        33,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "2f73e31d52fd69fd594d9645800b822b5880a99f84a6b713c71c69b65047b261",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 29,
+      "global_number": 13025,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        209,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "95c44a97d63fbe171978b2f4ce27a896fa8fb6bb9892ad0bb7dd85f50fb9c355",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 30,
+      "global_number": 13129,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        120,
+        135,
+        160,
+        170,
+        198,
+        217,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        120,
+        135,
+        160,
+        217,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "1e95bca1fd2de335064064a174ef3434512151473022b244a01033e303d58767",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        120,
+        135,
+        160,
+        217,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 31,
+      "global_number": 13232,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        4
+      ],
+      "basis_indices": [
+        39,
+        42,
+        51,
+        56,
+        77,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "ac1b881c2237503c2f8c1de5d0d5428fbe9919baeb9e0f598ed0c9b26435ac14",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 32,
+      "global_number": 13334,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        5
+      ],
+      "basis_indices": [
+        9,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d317c3d8ca72d974e2bac49d0d99706ea5fe85076cae83befcec45ebd7f4d780",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 33,
+      "global_number": 13435,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        222,
+        235,
+        243,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d63b79bdccd324911a6dbc234af2026d410a90a8f3c109745312967257000fe0",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 34,
+      "global_number": 13535,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        81,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d82ee5847909ba25d2cc9a8dc73545785ec2faa911b70da8f7b37ee637d61bd7",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 35,
+      "global_number": 13634,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        2
+      ],
+      "basis_indices": [
+        21,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a9427511d8dad2c2f2f40fe5a56b26b516b35ecf7c1802fb117e9e78e9f5a0c3",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 36,
+      "global_number": 13829,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        4
+      ],
+      "basis_indices": [
+        41,
+        42,
+        56,
+        88,
+        102,
+        110,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0fdfe5628700a034f025f7174089d361e3f671c6dab3a59645e7d30a779e5b23",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 37,
+      "global_number": 13925,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        172,
+        198,
+        235,
+        272,
+        289,
+        291,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "44ae13fe89662ea61c73dd72259d27aa02e317e7399c23a660b6a97c6ed20cbf",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 38,
+      "global_number": 14020,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        57,
+        88,
+        102,
+        111,
+        112,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a27728fe38bf978d1bea8f914795e94d7413158505cb6cc510f574142d085b0b",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 39,
+      "global_number": 14114,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        2
+      ],
+      "basis_indices": [
+        11,
+        37,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "f05305cdd22648f8b901cebdb165f531c57393c05a89a74e503e4e75fb5f71a5",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 40,
+      "global_number": 14207,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        121,
+        135,
+        170,
+        194,
+        198,
+        228,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "cc76c69c2973d8d203bb5eae5b8ac3b0f6a4d71329d663b463db18fa9f5fc200",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 41,
+      "global_number": 14299,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        65,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "83d729ee710e8d3d384a1f4262a24406beb30df2a1e8557a25c9be9e8b785bfe",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 42,
+      "global_number": 14390,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        140,
+        170,
+        198,
+        230,
+        235,
+        237,
+        263,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "2593c84bb78230aacb0a9d25f12e2ed8476776ed68d74302235cfecf57412a82",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 43,
+      "global_number": 14480,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        1
+      ],
+      "basis_indices": [
+        42,
+        43,
+        56,
+        86,
+        88,
+        98,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "64599fad1f7b62f3a4aad64174bf6f82c078d9be30849835e6724ba81266058c",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 44,
+      "global_number": 14569,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        2
+      ],
+      "basis_indices": [
+        28,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "be542debc68804f56e236f612b0dc84cdf99705df69b4c19b763dfce626a5b9d",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 45,
+      "global_number": 14657,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        150,
+        170,
+        198,
+        235,
+        245,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0b51f360bc5ef18533ec06a66b5266b466bddf5f4b22280f1384b17870ced986",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 46,
+      "global_number": 14744,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        117,
+        125,
+        135,
+        153,
+        170,
+        177,
+        198,
+        202,
+        235,
+        272,
+        277,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "4c36d28b7fda46a69dce5f06642445bdbc2e4e8f4629ace1b21bbc629b06fab3",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 47,
+      "global_number": 14830,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        48,
+        56,
+        69,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "c725eb74b7253dcfbef880dbefd674ae52bbc34012179449d9366f89e1bcc5a2",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 48,
+      "global_number": 14915,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        252,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "e13ca11b2f6041ca8cac0d35b32764e6f11596bad9b202301c4a18934cd387cf",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 49,
+      "global_number": 14999,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        122,
+        135,
+        138,
+        170,
+        195,
+        198,
+        223,
+        235,
+        259,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        122,
+        135,
+        138,
+        170,
+        223,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "c7a01b7559e944422946d5687ef6f772af675c38a4024ca204ca26cb133b9c01",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        122,
+        135,
+        138,
+        170,
+        223,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 50,
+      "global_number": 15082,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        66,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "dc2765166f8ffdba5ab031eab16fdf5753586104f33e19e32b80278e7725c4d8",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 51,
+      "global_number": 15164,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        5
+      ],
+      "basis_indices": [
+        14,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0cf8b5ea36799b7f247059c86b05b2d812187c5a05cd7f7af3b278e089136452",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 52,
+      "global_number": 15245,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        264,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "2cb40ea88203433d99f3be809ea767935e26b77861e110f0ef3f331668cfd409",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 53,
+      "global_number": 15325,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        99,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6525035ceec7f0748abec81545e306e110575fc37ce04ea5d655b059b0bfa210",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 54,
+      "global_number": 15404,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        2
+      ],
+      "basis_indices": [
+        25,
+        29,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6dd291772ba339961817caec775a0fca408dd335abbe7ce36111e5a3ef4f0cec",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 55,
+      "global_number": 15482,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        116,
+        135,
+        151,
+        170,
+        198,
+        199,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        116,
+        135,
+        151,
+        199,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d65fb212031a55a8ee7cdeb3a4068989f146e5af9053ffaac610976736b40704",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        116,
+        135,
+        151,
+        199,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 56,
+      "global_number": 15559,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        4
+      ],
+      "basis_indices": [
+        42,
+        47,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8597c9243f4edaa484665794545a11801aee45e26150ee4039183718d0702451",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 57,
+      "global_number": 15635,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        178,
+        198,
+        203,
+        235,
+        272,
+        278,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "55dc01f0d992180ebf4c6e9246ea37a2776efb3019f7e5224c3cc34bfe3d9c79",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 58,
+      "global_number": 15710,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        61,
+        70,
+        88,
+        102,
+        105,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "f6e485ac006a6751e5f70158b2f3ccd9c41e89b52972188f2951bdf19b150ac9",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 59,
+      "global_number": 15784,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        2
+      ],
+      "basis_indices": [
+        15,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "b7dbad2ebe8d89e270cdfa13492319d03961b8d98ae5e4ff9f21a56769fa987d",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 60,
+      "global_number": 15857,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        129,
+        135,
+        170,
+        198,
+        235,
+        266,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0912b0fd4f23ac4f2428898c6b865a5ee437a002760a566e1d816f43e637f265",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 61,
+      "global_number": 15929,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        118,
+        135,
+        144,
+        157,
+        170,
+        198,
+        213,
+        235,
+        268,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        118,
+        135,
+        144,
+        157,
+        170,
+        198,
+        213,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "822f736d0bbc5d7bf700cadd58f4fec1fd351935b8db75702d6bc008cc1d5a89",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        118,
+        135,
+        144,
+        157,
+        170,
+        198,
+        213,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 62,
+      "global_number": 16000,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        49,
+        56,
+        88,
+        100,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "f21ba3594f3b6b4528248e9cabf90b278864b5af5aef015e5ab04d7b7d78a340",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 63,
+      "global_number": 16070,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        186,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d73e498574c07af8a53d3395babe8353a21e8cd2cfd45ae8ca51056bbfea614d",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 64,
+      "global_number": 16139,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        131,
+        135,
+        170,
+        198,
+        208,
+        235,
+        249,
+        272,
+        284,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "7b8158838b927b614f3af0107b1f9bf1f8010988040e2428047e8a69801ad36b",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 65,
+      "global_number": 16207,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        218,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "c576a655733929582ecec55c91bf497c064fb102e37a44c8d5ba7cf52266778e",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 66,
+      "global_number": 16274,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        78,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "aa8382dbc9b9b98b4e60c7c0a9731e39bb9cc4ca754911d077eae8d14e03d4ca",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 67,
+      "global_number": 16340,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        5
+      ],
+      "basis_indices": [
+        19,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "daaaffc421bc4b83fa1cc97c602e72f97cf24cf00e35f16cb9989b2e7b7e94f9",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 68,
+      "global_number": 16405,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        148,
+        170,
+        190,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "779b939ab200b0a75e5c31c7fcf2a3714e97b952aff687456ad6db1a844727e4",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 69,
+      "global_number": 16469,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        169,
+        170,
+        198,
+        235,
+        272,
+        286,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8f4b0b32e38760fe84d923bd6f7df4dd9a964d72dca55376e17f1b725ff7d516",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 70,
+      "global_number": 16532,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        4
+      ],
+      "basis_indices": [
+        42,
+        55,
+        56,
+        88,
+        102,
+        109,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "efd968ff42aa1bc6247d95bace3a12dd1c6e2fb2f7fc08b42918a0726abf94ec",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 71,
+      "global_number": 16594,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        145,
+        170,
+        198,
+        214,
+        235,
+        240,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a1c2e24ec3165571c045d3f76412b1e508512fa69cf8525d4a35127b5c383c18",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 72,
+      "global_number": 16655,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        1
+      ],
+      "basis_indices": [
+        42,
+        46,
+        56,
+        75,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        46,
+        56,
+        75,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "e1b2cb391d79a49014ea13fbc1a9d9a3ee6d091ae17a63fe3da3656d6c551fe9",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        46,
+        56,
+        75,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 73,
+      "global_number": 16715,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        187,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "41c694596e561f005be5f015e72d48771293d585585fc6582cae4a3b82ae716c",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 74,
+      "global_number": 16774,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        63,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        63,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a9a6299f0f4ae3193a3d4ec70612e222d08f0d5c6cf8e71184beb0596308c877",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        63,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 75,
+      "global_number": 16832,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        128,
+        135,
+        166,
+        170,
+        198,
+        235,
+        250,
+        272,
+        282,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "1211983d7d819be62c1219bae6caf84af3310d5fc8da15259958bdd2d7115b38",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 76,
+      "global_number": 16889,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        93,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "60d908bb5317d10b17d7100634737f7b85628bdf8d9f887b0ffc0c8395315e41",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 77,
+      "global_number": 16945,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        147,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "47a043b631acff3e695331fbc6dcec1e265188bd67b3e91764c63ceb15bff863",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 78,
+      "global_number": 17000,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        161,
+        170,
+        191,
+        198,
+        235,
+        256,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d9073cf83a02cba81c9afe876b4a517cccc168cbd763014d1085ad3a7b89a4c8",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 79,
+      "global_number": 17054,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        64,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "cc206c29a13b1fc68d03b860c011349dc0811225166044d63f3fedb2e750d2b7",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 80,
+      "global_number": 17107,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        5
+      ],
+      "basis_indices": [
+        36,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "e59f7390479fcdb3a9696435f546919083a8b4e7a1b1b1eb4d5f78533ff64b22",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 81,
+      "global_number": 17159,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        149,
+        170,
+        198,
+        235,
+        251,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "fb20d556ac94b64edd246c90d08854629ea9a6551f0bc4d3cc0e8079b3774840",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 82,
+      "global_number": 17210,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        224,
+        235,
+        260,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "ca7fde8f241dacc3448aa181b29f72a1d0d411877011a4865e37095683bd0199",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 83,
+      "global_number": 17260,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        82,
+        88,
+        97,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        82,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "43b6a0bef5f7c26dec54f96a339dca8ddd1de938cd8d495965a1612c7d5acd18",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        82,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 84,
+      "global_number": 17309,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        124,
+        135,
+        170,
+        173,
+        198,
+        200,
+        235,
+        272,
+        274,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "9a9f877ce2d136418d2c9869ef1be36d8b2a143d014f4e51b1c33498d6eca82c",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 85,
+      "global_number": 17357,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        68,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "dc0f8aeef1906d063bf18077f5a6f7d3e97181ced21f76e08be9f95255f03509",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 86,
+      "global_number": 17404,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        279,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6d02373b473ebcbcea5737dc6d7ff7221ca931815380b112d9a358f6ac5ee991",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 87,
+      "global_number": 17450,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        106,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "258d133f96031600a1bce8079d48f5f115b816fba618933ed99fcc00c819c79d",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 88,
+      "global_number": 17495,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          5,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        2
+      ],
+      "basis_indices": [
+        31,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "5b44982c32575d5da8d4c15895322273f6d55a10b64e6ae498f5a84f5a16aeb8",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 89,
+      "global_number": 17539,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        155,
+        170,
+        198,
+        235,
+        265,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8f94bfd9369afc671902a4c22f8740d75a54506fd5e0c6aaac2a535f3981fb0f",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 90,
+      "global_number": 17582,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        134,
+        135,
+        170,
+        197,
+        198,
+        235,
+        272,
+        289,
+        292,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "408dea00853e4e76fade2d53ad66aa6c59898b8598fd2c94e6c791efd1b6b5ed",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 91,
+      "global_number": 17624,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        184,
+        198,
+        225,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "e5dcc658a605e534c947cba46d374923bd9ec3a50fd6e31f4cf15b20cfb71192",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 92,
+      "global_number": 17665,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        83,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "093cd3fc9ae90016e6a3f8a0faa78591ed43d19f67456d16d57d2b556f3051b5",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 93,
+      "global_number": 17705,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        5
+      ],
+      "basis_indices": [
+        22,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "08310e34600b477080096329b86ffe3040c4c4287c5726973765c68df228b8f9",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 94,
+      "global_number": 17744,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        244,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "204b5dcfdb3df609657de084e33ad1c2024278ea9df3bcc14e65c9ba6705320a",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 95,
+      "global_number": 17782,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        174,
+        198,
+        235,
+        272,
+        275,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "92eaf7f5f4a468c2f5231f67bcfcb3a984421a56681d12cb240879e94a1f53e4",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 96,
+      "global_number": 17819,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        58,
+        88,
+        102,
+        103,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "31f63314dbcbc29491a2e4b5cfc2d981b2a94228bdc7a43f5b22e11914b42983",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 97,
+      "global_number": 17855,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        185,
+        198,
+        235,
+        272,
+        280,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "f73735fd3e2e81684f7b0c2a6eceecf9f9858b082af1f99abff96300d04317f8",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 98,
+      "global_number": 17890,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        107,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "979a01197f82953196d1513cf9735ceec73fe8fd319a58862fe2b53b4e90b642",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 99,
+      "global_number": 17924,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        2
+      ],
+      "basis_indices": [
+        32,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "5ce2cbb999a7b4783d7456b748fe6906a91d7e127ba9fe777dbc4ed83626d3c1",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 100,
+      "global_number": 17957,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        3
+      ],
+      "basis_indices": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        141,
+        170,
+        198,
+        211,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        211,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "174ee182ebbc6a23144ff260a273f1a79e305f42b88bb6abeb160bdd1fb0c5e6",
+      "initial_excluded": false,
+      "remaining": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        211,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 101,
+      "global_number": 17989,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        215,
+        235,
+        241,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "79103e634caee6eeecd4a15cd54cacd6d6e20dd24b59b261dcb9656c0572cc26",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 102,
+      "global_number": 18020,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        76,
+        88,
+        90,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "e1184fc638474791cb69f7a928940c600ea9922303f3c373dcf2ba7a78ac2b74",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 103,
+      "global_number": 18050,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        2
+      ],
+      "basis_indices": [
+        18,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "7af54f1e920234d51704910d8fa397d4bdc31c1ac853568716c5dec13ca60ab8",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 104,
+      "global_number": 18079,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        204,
+        235,
+        248,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a29272851b17e390d8e1eaa8b19ab79678f71b5539240c37a8eb93e88ec7c707",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 105,
+      "global_number": 18107,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        167,
+        170,
+        182,
+        198,
+        235,
+        272,
+        283,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "52db38d65d1c77f80efec65c98069d92bb188df5631b2b02e54312051d9a073d",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 106,
+      "global_number": 18134,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        1
+      ],
+      "basis_indices": [
+        42,
+        54,
+        56,
+        88,
+        102,
+        108,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "c54bf986d21a3974dbbe38789366a3d8d21173c1609e72f8fd5ba13c96864aae",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 107,
+      "global_number": 18160,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        189,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "f203d45af3a25f9517b5ff3ac91ec3e7a93f1b002b7efb1316e1999c8b26ff98",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 108,
+      "global_number": 18185,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        137,
+        162,
+        170,
+        192,
+        198,
+        219,
+        235,
+        257,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "35d40f3909e1c1ce5f931ca0b1df24cf76173d21d10fcdcb9e60e312e6a3fc34",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 109,
+      "global_number": 18209,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        95,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "5995110dad824426ce3bf950f93f74a12194953ea4e0a871d5d292ea87c31d6a",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 110,
+      "global_number": 18232,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        242,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0783ebcd5709035273d5109eb6829a93bcd8c801ba6c1c3e70e7386628ade3d7",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 111,
+      "global_number": 18254,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        91,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6ec4f5fa1518d08c1020f46bfcbd84b2268266334b9bb3b09251c34dc790f0d7",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 112,
+      "global_number": 18275,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        2
+      ],
+      "basis_indices": [
+        26,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8b389743a4c4195f2f4385a78451e352bb126b8b20f01af50c6f2ed078de9b73",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 113,
+      "global_number": 18295,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        126,
+        135,
+        165,
+        170,
+        198,
+        205,
+        235,
+        272,
+        281,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        165,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "ad804f56e18b87359ab5105de7c1b3ee2770895a45782d25a2c5ec8b5b39c579",
+      "initial_excluded": false,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        165,
+        170,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 114,
+      "global_number": 18314,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        71,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6e4a7e6c23734bf8df758cf4dbcbbefe00252195d03cd7c30295bd4765346cdc",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 115,
+      "global_number": 18332,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        183,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "3370103edefeb88f8a5892dd430d2cd6ecdf65aa2d8ecbe115ecfddf9eefecd5",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 116,
+      "global_number": 18349,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        62,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "504b9b17f447dde2022e8d03f865a54abb6225633c4faf0046ea89872c20f8c7",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 117,
+      "global_number": 18365,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        2
+      ],
+      "basis_indices": [
+        34,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "8066cecdf4482eed2421eaf476fbd86630bbce6bc22c5c1ae8ef76e6e70b5f97",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 118,
+      "global_number": 18380,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        158,
+        170,
+        198,
+        235,
+        254,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "d7197a806f97b75c1b141b8ce06c3cb31b68fe96c07bb01f1af0b8f4940c7772",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 119,
+      "global_number": 18394,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        146,
+        163,
+        170,
+        198,
+        220,
+        235,
+        258,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "9dec8862bb837e5942d04186b31224983d7b418926229909c3dad45250699273",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 120,
+      "global_number": 18407,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        52,
+        56,
+        79,
+        88,
+        96,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "3d0742ee6d4e638e2464799940c1ce238355562ad9415dd93b20204f4f974cc4",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 121,
+      "global_number": 18419,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        2
+      ],
+      "basis_indices": [
+        27,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a8bd79fd9653359e2ba06b0023f8365892a6d0c6eb1eeb0309010c28b091828b",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 122,
+      "global_number": 18431,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          1
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        67,
+        88,
+        102,
+        111,
+        113,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "a82958b4eb1bef327ead42246239aec448c5ebd72e5a28378927a0f61fa9e4f0",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 123,
+      "global_number": 18432,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        226,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "acf84629001ab47664c7831c31dc104327ebd296b174809f0938e966b46376e7",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 124,
+      "global_number": 18433,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        84,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "b1b0f8a693f01a1c595158454d1cdb503ce19adfbe919dde8c51b4969a998a21",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 125,
+      "global_number": 18434,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          5
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        5
+      ],
+      "basis_indices": [
+        23,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "abb299ba1c5633c672e639f02a1f4ec4fb16c1bc779b387095c5cdc0a010d783",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 126,
+      "global_number": 18435,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        154,
+        170,
+        198,
+        231,
+        235,
+        261,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "6d5cd1dfa4d50152888dec1d33f7974e4019110e76b4ed739e9d55cc45e53d3e",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 127,
+      "global_number": 18436,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        175,
+        198,
+        235,
+        272,
+        276,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "ca48eb844666dda21ca6413c1a7f295acd84acbcf03eca3dd75bcf14b4fe0252",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 128,
+      "global_number": 18437,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        59,
+        88,
+        102,
+        104,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "0719c83ad856b3811d53f29232550e8903323e7c1d685bc0cb53753a2c94a530",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 129,
+      "global_number": 18438,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          5
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        5
+      ],
+      "basis_indices": [
+        12,
+        30,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        12,
+        30,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "c6da76e6ca475525620588562bb51f77a2121b5483c4a9e1586bc22c001cf310",
+      "initial_excluded": false,
+      "remaining": [
+        12,
+        30,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": false,
+      "dependency": null,
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 130,
+      "global_number": 18439,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        246,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "7ac1cdc89dfa1aefef7789cabd4531b90515a98ad2fafd2faecbc6427ff47b63",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 131,
+      "global_number": 18440,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        142,
+        170,
+        198,
+        212,
+        235,
+        238,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "1e14f3fd6af478af168c54872a4694a62e6c85f56b6d4e8dc9a0fed9f391ab44",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    },
+    {
+      "batch_number": 132,
+      "global_number": 18441,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        4
+      ],
+      "basis_indices": [
+        42,
+        44,
+        56,
+        74,
+        88,
+        102,
+        111,
+        114,
+        135,
+        170,
+        198,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "baseline_packet_sha256": "52d44ca4e446c21ba72ff9c39102e352c44b6e4b2520b3776f657c99c882a62b",
+      "initial_excluded": true,
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true,
+      "dependency": "x0_y1_dependency",
+      "attempt": null,
+      "cycles": []
+    }
+  ],
+  "checks": {
+    "correction_pairings": 326177,
+    "quadratic_pairings": 86104,
+    "physical_duals": 3989,
+    "square_identities": 476,
+    "altered_squares_rejected": 168
+  },
+  "pair_checks": {
+    "correction_pairings": 2100,
+    "quadratic_pairings": 800,
+    "physical_duals": 34,
+    "square_identities": 2,
+    "mutations_rejected": 2,
+    "graded_maps": 7,
+    "chart_inferences": 104,
+    "charts": 11,
+    "altered_charts_rejected": 11,
+    "excluded_charts": 2,
+    "higher_power_identities": 4
+  },
+  "pair_dependency": {
+    "kind": "replayed_full_X0_Y1_pair",
+    "packet_sha256": "9b97667f01bf5666d38bf8124071e46d5629681a47b04306ece30a761e441dd8",
+    "full_pair_basis": [
+      42,
+      56,
+      88,
+      102,
+      111,
+      114,
+      135,
+      170,
+      198,
+      235,
+      272,
+      289,
+      293
+    ],
+    "cycles": [
+      {
+        "before": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          135,
+          170,
+          198,
+          235,
+          272,
+          289,
+          293
+        ],
+        "block_zeros": [
+          170,
+          198
+        ],
+        "after_blocks": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          135,
+          235,
+          272,
+          289,
+          293
+        ],
+        "charts": [
+          {
+            "raw": 42,
+            "excluded": false
+          },
+          {
+            "raw": 56,
+            "excluded": true
+          },
+          {
+            "raw": 88,
+            "excluded": false
+          },
+          {
+            "raw": 102,
+            "excluded": true
+          },
+          {
+            "raw": 111,
+            "excluded": false
+          },
+          {
+            "raw": 114,
+            "excluded": false
+          },
+          {
+            "raw": 135,
+            "excluded": false
+          },
+          {
+            "raw": 235,
+            "excluded": false
+          },
+          {
+            "raw": 272,
+            "excluded": false
+          },
+          {
+            "raw": 289,
+            "excluded": false
+          },
+          {
+            "raw": 293,
+            "excluded": false
+          }
+        ],
+        "after": [
+          42,
+          88,
+          111,
+          114,
+          135,
+          235,
+          272,
+          289,
+          293
+        ]
+      },
+      {
+        "before": [
+          42,
+          88,
+          111,
+          114,
+          135,
+          235,
+          272,
+          289,
+          293
+        ],
+        "block_zeros": [
+          42,
+          88,
+          111,
+          114
+        ],
+        "after_blocks": [
+          135,
+          235,
+          272,
+          289,
+          293
+        ],
+        "charts": [],
+        "after": [
+          135,
+          235,
+          272,
+          289,
+          293
+        ]
+      }
+    ],
+    "remaining": [
+      135,
+      235,
+      272,
+      289,
+      293
+    ],
+    "single_character": {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "charts": 7,
+      "inferences": 42
+    },
+    "scope": "Known two-character exclusion reconstructed from its complete retained anchor space."
+  },
+  "single_dependencies": [],
+  "seconds": 17.322182500000054,
+  "scope": "132 new complete retained X0/Y1 extensions; this report does not evaluate the separately frozen typed versus untyped comparison."
+}

@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "review_kind": "Separate Codex agent static review and read-back of both exact physical replay reports; not human or Lean review.",
+  "source_lf_sha256": {
+    "experiments/typed_goal_powers.py": "5f1115c05b94e34975343fdc587504990e9983464c99f2558eedd5c00fe46b1c",
+    "experiments/typed_goal_quartics.py": "4f2827a1f3496326fd1173a6c16e686a453c00c9cf26c824dbe8541c633816ec"
+  },
+  "findings": [
+    "Fresh physical equations and baseline reductions are reconstructed; every selected mixed-degree relation replays exactly against those equations.",
+    "Retained rewrite checkpoint requires whole multiplier blocks; each relation product label belongs to its processed prefix.",
+    "Raw/local denominator coordinates and actual character weights determine the target type.",
+    "Every generator is homogeneous; full map includes all monomial multiples to the requested degree.",
+    "Literal coefficient projection checks every excluded row has zero target component and every retained row has only target components.",
+    "This direct-sum statement preserves target membership, without requiring a completed full elimination.",
+    "Successful powers are multiplied back exactly and corrupted coefficients are rejected."
+  ],
+  "limits": [
+    "Original full quartic attempts remain timed out; projected follow-up is not a prospective runtime comparison.",
+    "Quartic full ranks are deliberately null, and full elimination is not claimed.",
+    "Finite necessary-relation spans do not establish a full ideal or a certificate of existence.",
+    "T3/T16 overlap ordinary family closure and must not be counted again."
+  ],
+  "quartic_summary": [
+    {
+      "family": 3,
+      "full_rows": 2568,
+      "typed_rows": 270,
+      "typed_rank": 148,
+      "queries": [
+        {
+          "raw": 85,
+          "power": 4,
+          "found": true
+        }
+      ]
+    },
+    {
+      "family": 16,
+      "full_rows": 2112,
+      "typed_rows": 270,
+      "typed_rank": 148,
+      "queries": [
+        {
+          "raw": 40,
+          "power": 4,
+          "found": true
+        }
+      ]
+    }
+  ],
+  "replay_reports": [
+    "goal-quartics/validation.json",
+    "goal-quartics/independent-validation.json"
+  ]
+}

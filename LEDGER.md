@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 15 discussion contributions (thirteen top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 16 discussion contributions (thirteen top-level comments and three replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -37,6 +37,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 14. **17 October 2026, 09:43 EDT / 13:43 UTC — [Holdout discussion #44: 132 Y0/Y1 extensions and a homology-ranking comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999145).** Shared one consolidated result completing 132 new full three-character families, giving 548 selected exclusions. A prospective comparison closes four high-homology and four low-homology cases alike; no ranking advantage is established. The post links [immutable proofs, figures, plans, failures, and corrections](https://github.com/rbajaj5/hodge-lab/blob/876a0cc913a059dd384f77451a9a59b1999d66df/notes/homology-guided-triples.md), retains the two initially failed charts, and explains the explicit fourteen-to-eleven-direction binding to the prior Y0/Y1 proof. Both physical polynomial implementations and figure-data checks pass. The post credits prior work and Yang/Eisenbud-Erman as motivation, without claiming their categorical or geometric theorems were applied. The current discussion and participation policy were reread; GitHub's mathematical Markdown preview was inspected. Published before the supporting Hodge Lab push. The complete body, author, permanent URL, and absence of a reply parent were read back and matched. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/homology-guided-triples/upstream-post.json).
 
 15. **17 October 2026, 09:57 EDT / 13:57 UTC — [Holdout discussion #44: added-character homology and 132 X0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999334).** Shared one consolidated exact partial result: 132 fresh full three-character families are excluded, bringing the selected union to **680**. The added-only homology ranking shows no advantage: both prospective groups close 4/4, with unmatched block sizes and empty controls explicitly disclosed. The post preserves the 131/132 checkpoint and explains A100's separate multiplier/power/rebuilding closure, including failed charts. It links [immutable proof, figures, credits, limits, and unsuccessful attempts](https://github.com/rbajaj5/hodge-lab/blob/718cf9a2e721b58782748ac90414dd7707f2a061/notes/added-character-homology.md), credits the prior mathematical work and Codex-assisted implementation, and distinguishes both physical replays from human review. The full body, author, URL, and absence of a reply parent were read back and verified; the proof commit was pushed immediately after posting. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/added-character-homology/upstream-post.json).
+
+16. **17 October 2026, 10:43 EDT / 14:43 UTC — [Holdout discussion #44: concrete reason for reading Yang](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999956).** Replied to contribution 15 with the distinction between Koszul H1 relations and H0/image information relevant to coordinate-power exclusions. The checked A19/A30/A61 examples show why equal H1 need not give equal constraint strength. The reply retains the negative ranking result, credits classical Koszul algebra separately from Yang's geometric interpretation, and explicitly says Yang's geometric hypotheses have not been established here. It links the public rationale and existing visualization; no new exclusion, solve, or GPU requirement is claimed. The complete existing thread was reread, Markdown preview inspected, and published body, author, URL, and reply parent read back and matched. [Publication receipt](results/yang-rationale/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -766,6 +768,45 @@ conversations or evidence of an accepted solve.
     is attributed to this paper. Kept the earlier deferral in the record.
     [Precise scope and connection to the existing map figures](notes/categorical-syzygies.md#revisiting-the-grammar-suggestion-17-october-2026).
     This reading adds no upstream contribution to the tally.
+
+48. **17 October 2026 — Implement typed rewrites and goal projection.**
+    Following the user's request, implemented an experiment motivated by
+    Vishnikin–Okhotin's conserved category counts. Derived auxiliary
+    degree/character types from the actual fixed physical polynomials.
+    Selected 132 fresh X0/Y1 extensions outside the preceding 680-family
+    union; the square pass excludes 119 with both physical replays passing.
+    Reconstructed the full thirteen-direction anchor dependency, retaining
+    its nine unsuccessful charts. Froze the first two survivors, T3/T16,
+    for sequential alternating typed-cache and existing-elimination runs
+    with equal row budgets and process limits. The cache reuses only exact
+    residual identities; matching types alone is not a proof. The prototype
+    also changes allocation and proof-bookkeeping costs, so this is not a
+    typing-only performance ablation. The cache is slower on T3 and times
+    out twice on T16; both physical replays pass the retained rowspaces.
+    Ordinary continuations close twelve more families, giving 131/132 and
+    811 selected triples. T100's separate bounded continuation supplies
+    nineteen necessary relations and raw56=0, but both rebuilt charts still
+    fail; no T100 exclusion is claimed. A separate goal projection gives
+    exact cubic and quartic coordinate powers in smaller character blocks.
+    T3's full quartic comparison times out; T16's completes. Both separate
+    projected-only quartic jobs complete, but add no new vanishings beyond
+    the cubes. These adaptive follow-ups are not a matched timing benchmark.
+    Five figures show the actual operator, cache outcome, query filtering,
+    and successful/failed family history. The grammar encoding theorem is
+    not being applied to the Hodge problem.
+    [Method, references, limits, and experimental record](notes/typed-rewrite-search.md).
+
+49. **17 October 2026 — Publish the concrete reason for reading Yang.**
+    Added a [public rationale with an existing checked visualization](notes/why-yang.md)
+    and linked it from the README at commit `5f267e4`. A19 and A30 both
+    have degree-four H1 dimension three but H0 dimensions eleven and zero;
+    A61 has H1=0 and H0=0. This distinguishes relations among equations
+    from the graded images needed for coordinate-power certificates.
+    The note retains the failed homology-ranking comparison and explicitly
+    identifies the implemented calculations as classical Koszul homology,
+    not an application of Yang's geometric theorem. It uses evidence already
+    returned in contribution 15. The requested rationale was then posted as
+    contribution 16; it adds no new mathematical exclusion.
 
 ## Keeping this current
 

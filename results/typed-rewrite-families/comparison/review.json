@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "review_kind": "Separate Codex agent static source review with direct cache selftest; not human or formal review.",
+  "source_lf_sha256": {
+    "experiments/typed_rewrite_search.py": "cbddd104141de1d0a015d4b6f96ef1e8dd4302681d01c7a0b29c8f3a584146df",
+    "experiments/typed_rewrite_families.py": "576b1adb29693c7588184e1ef29a24c296199079bc0843396ba71667a3af887d",
+    "experiments/check_typed_rewrite_families.py": "d0d91e2b898e04c1e3fbe2b5c02923e74de75121cb6ae49de6f961ccbdee0f10"
+  },
+  "cache_selftest": {
+    "zero_rule_survives_basis_growth": true,
+    "new_witness_context_adjusted": true,
+    "future_source_row_rejected": true
+  },
+  "validated_records": 8,
+  "complete_records": 6,
+  "physical_replay_reports": [
+    "validation.json",
+    "independent-validation.json"
+  ],
+  "findings": [
+    "Cached zero rules have exact normalized residual and source-product witness, with labels strictly preceding creation.",
+    "Rules remain valid after basis growth; cache hits update the current witness context.",
+    "Complete prefix rowspace checked in both directions: basis has source witnesses and every processed source row reduces to zero.",
+    "Reuse requires full proof-content equality and remains local to one physical model replay.",
+    "Physical grading checked from actual denominator and correction fields; no contragredient coefficient-action claim.",
+    "Frozen plans, eight job identities, typing/source binding, row budgets and attempt metadata checked."
+  ],
+  "limits": [
+    "Cache counts, elapsed time and reported operational ranks are telemetry, not a complete operation-by-operation trace replay.",
+    "Finite prefix spans and retained timeout checkpoints are not the full polynomial ideal.",
+    "Independent physical models share exact certificate helpers; this is not independent software provenance."
+  ],
+  "records": [
+    {
+      "family": 3,
+      "mode": "untyped",
+      "replicate": 0,
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265
+    },
+    {
+      "family": 3,
+      "mode": "typed",
+      "replicate": 0,
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265
+    },
+    {
+      "family": 16,
+      "mode": "untyped",
+      "replicate": 0,
+      "completed": true,
+      "rows": 5902,
+      "requested_rows": 5902
+    },
+    {
+      "family": 16,
+      "mode": "typed",
+      "replicate": 0,
+      "completed": false,
+      "rows": 4994,
+      "requested_rows": 5902
+    },
+    {
+      "family": 3,
+      "mode": "typed",
+      "replicate": 1,
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265
+    },
+    {
+      "family": 3,
+      "mode": "untyped",
+      "replicate": 1,
+      "completed": true,
+      "rows": 5265,
+      "requested_rows": 5265
+    },
+    {
+      "family": 16,
+      "mode": "typed",
+      "replicate": 1,
+      "completed": false,
+      "rows": 4994,
+      "requested_rows": 5902
+    },
+    {
+      "family": 16,
+      "mode": "untyped",
+      "replicate": 1,
+      "completed": true,
+      "rows": 5902,
+      "requested_rows": 5902
+    }
+  ]
+}

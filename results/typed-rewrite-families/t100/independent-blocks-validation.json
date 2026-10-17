@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "completed": true,
+  "forced_raw_ids": [
+    56
+  ],
+  "blocks": [
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "raw_ids": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114
+      ],
+      "equation_indices": [
+        3,
+        4,
+        14,
+        15,
+        16,
+        18,
+        24
+      ],
+      "maps": [
+        {
+          "degree": 3,
+          "domain": 17,
+          "codomain": 56,
+          "rank": 17,
+          "kernel": 0,
+          "quotient_dimension": 39
+        },
+        {
+          "degree": 4,
+          "domain": 72,
+          "codomain": 126,
+          "rank": 64,
+          "kernel": 8,
+          "quotient_dimension": 62
+        }
+      ],
+      "forced_raw_ids": [
+        56
+      ]
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "ids": [
+        0,
+        8
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "equation_indices": [
+        0
+      ],
+      "maps": [
+        {
+          "degree": 3,
+          "domain": 2,
+          "codomain": 4,
+          "rank": 2,
+          "kernel": 0,
+          "quotient_dimension": 2
+        },
+        {
+          "degree": 4,
+          "domain": 3,
+          "codomain": 5,
+          "rank": 3,
+          "kernel": 0,
+          "quotient_dimension": 2
+        }
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "ids": [
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "equation_indices": [
+        7,
+        8,
+        26,
+        27
+      ],
+      "maps": [
+        {
+          "degree": 3,
+          "domain": 12,
+          "codomain": 35,
+          "rank": 12,
+          "kernel": 0,
+          "quotient_dimension": 23
+        },
+        {
+          "degree": 4,
+          "domain": 40,
+          "codomain": 70,
+          "rank": 39,
+          "kernel": 1,
+          "quotient_dimension": 31
+        }
+      ],
+      "forced_raw_ids": []
+    }
+  ],
+  "checks": {
+    "relation_products": 4692,
+    "graded_maps": 6,
+    "power_identities": 2,
+    "power_products": 2,
+    "altered_powers_rejected": 2
+  },
+  "scope": "Exact coordinate-power consequences of the verified selected necessary relations; no family exclusion by this packet alone."
+}
