@@ -1,0 +1,110 @@
+{
+  "schema": "cyclic-fano-branch-products-v1",
+  "instance": "cyclic-triple-fano",
+  "candidate": {
+    "id": "T2",
+    "factor_order": [
+      "T",
+      "C",
+      "S",
+      "R",
+      "J"
+    ],
+    "exponents": [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "denominator": [
+      {
+        "powers": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": [
+          "0",
+          "2"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "-1",
+          "0"
+        ]
+      }
+    ],
+    "jacobian_cofactor": null
+  },
+  "producer_sha256": "baaadb5964891a91a249733ed65911af4c0ecc5b91fe1863da20844ae6e97d89",
+  "dependencies": {
+    "cyclic_fano_guided_denominators.py": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+    "cyclic_fano_branch_compact.py": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36"
+  },
+  "candidate_input_sha256": "4900bc9ef14f4cc310dbc457f4282df10317a6f10c39312e4a9fcf176ec49b02",
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "status": "excluded",
+  "obstruction_stage": "E1",
+  "dual": [
+    {
+      "powers": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        2
+      ],
+      "coefficient": [
+        "-3",
+        "0"
+      ]
+    }
+  ],
+  "particular": null,
+  "stages": [
+    {
+      "stage": "E1",
+      "rows": 162,
+      "columns": 61,
+      "rows_processed": 1,
+      "rank_lower_bound": 0
+    }
+  ],
+  "full_numerator_dimension": 61,
+  "complete_Koszul_directions": 0,
+  "quotient_dimension_eliminated": 0,
+  "exact_rank_claim": false,
+  "seconds": 0.014547200000379235,
+  "scope": "Only the displayed fixed product. A timeout is unresolved; arbitrary powers, linear combinations and general supports remain outside this batch."
+}

@@ -1152,6 +1152,60 @@ conversations or evidence of an accepted solve.
     both passed on Linux. This records the two targeted jobs, not a completed
     full-workflow result; the broader workflow was still running when checked.
 
+65. **17 October 2026 — Test higher powers and products on cyclic Fano.**
+    Continued the same fixed `(F,q,A)` with 26 explicitly listed products of
+    the tangent, centered cubic, leading branch sextic, rational tangent
+    norm, and Jacobian factor. Degrees range from two to twelve. Exactly
+    25 selected denominators are excluded: eleven fail the complete E1
+    equation and fourteen fail the complete E2 correction problem. The
+    degree-twelve square `S^2` hit its 120-second worker limit and remains
+    unresolved; no E1 success or obstruction was established for that run.
+    This is a finite product list, not an exclusion of all denominators or
+    all products through degree twelve.
+    The new reduction uses `t=2Z+Q`, `Delta=Q^2-4H`, reflection averaging,
+    complete Koszul corrections, and exact reduction modulo `t^2-Delta`.
+    Cancelling a common nonzero polynomial produces a five-variable system
+    while retaining the full allowed quotient freedom. For pure powers,
+    `J^(2m-1)` and `J^(2m)` share the same complete system. In this batch
+    `J^3` and `J^4` share one 630-column problem and a five-term obstruction;
+    the latter reuses and rechecks the former's witness, rather than counting
+    the two calculations as independent evidence.
+    Three additional raw six-variable controls agree with the compressed
+    tests. They cover 340 original Koszul directions and 336 quotient
+    coefficients and are not additional denominator candidates. Separate
+    verification passes all 33,695 physical columns across the completed
+    tests and controls, 560 first-order operator coefficient identities,
+    and 56 deliberately changed inputs. The source-bound timeout stays in
+    the final validation receipts and the coverage visualization.
+    [Exact reduction, product table, visualization, reproduction, and failed attempt](notes/cyclic-fano-branch-products.md).
+    This batch is prepared for notebook publication at the user's request.
+    No upstream comment, edit, PR, Lean proof, accepted solve, or leaderboard
+    point accompanies it. The upstream contribution tally remains 24.
+
+66. **17 October 2026 — Apply Dolgachev's first polars to the branch sextic.**
+    The supplied classical-geometry excerpts suggest an explicit new family,
+    `E_v = partial_v Delta`, where `Delta = Q^2 - 4H` is the actual branch
+    sextic. Direct differentiation gives a polynomial first-equation lift
+    for every constant base direction. Tested the five coordinate directions
+    and two specified sums, with separate 60-second bounds. All seven
+    completed in under 0.5 seconds each including startup and are excluded
+    by one-coefficient exact obstructions to the second equation.
+    No conclusion about arbitrary linear combinations follows from this
+    finite pilot. The field, target identities, complete sparse correction
+    maps, attempts, and witnesses are retained with source hashes.
+    Primary replay passes all seven. Independent reconstruction passes all
+    175 Koszul columns, 105 quotient columns, original-coordinate identities,
+    and 21 deliberately altered inputs. It also constructs independent
+    reflection-even coefficient obstructions. At this degree the relevant
+    reflection sector has no correction freedom; a nonzero even residual
+    therefore cannot be repaired. The figure shows an actual correction map
+    and the coefficient row responsible for one of these failures.
+    [Dolgachev connection, map visualization, exact tests, and limits](notes/cyclic-fano-branch-polars.md).
+    The plane-cubic and determinantal material is treated as further reading,
+    not as a theorem automatically applicable to this weighted cover.
+    This is notebook research; no upstream comment, edit, or PR accompanies
+    it. The contribution tally remains 24, with no certificate or solve claimed.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

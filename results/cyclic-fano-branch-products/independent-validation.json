@@ -1,0 +1,978 @@
+{
+  "schema": "cyclic-fano-branch-products-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "c4f49037ebc2ed72b041fb643c1cc9d1e4179e32e80c302fe9e310245d896768",
+  "independent_arithmetic_dependencies": {
+    "check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "candidate_input_lf_sha256": "4900bc9ef14f4cc310dbc457f4282df10317a6f10c39312e4a9fcf176ec49b02",
+  "checks": [
+    {
+      "id": "T2",
+      "attempt_id": "T2",
+      "degree": 2,
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "7f9359a547b3c4928535e0698b23be71d2129b4cefea95476e322bc1d0a0456f",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 61,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "T4",
+      "attempt_id": "T4",
+      "degree": 4,
+      "exponents": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "fd939c74a06b24ab883a60c0bacfff1706a13b9bc7b5564430b505472ab0117f",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 321,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "T8",
+      "attempt_id": "T8",
+      "degree": 8,
+      "exponents": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "37924899e1ed81ea58218d6fac92226c7f1baf41920fa65038b6f8ef2473bef7",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 2986,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "C2",
+      "attempt_id": "C2",
+      "degree": 6,
+      "exponents": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "ef90d73c576833209f0a61f5c2857eb9dd033b501cc68b5218a752ef88fd0298",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 1110,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "C3",
+      "attempt_id": "C3",
+      "degree": 9,
+      "exponents": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "2ea6cf546108ff9311c05d401000d0aee217a206397e17ed397b19b7a7b4d26d",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 4586,
+      "quotient_columns_checked": 0,
+      "dual_terms": 464,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "TC",
+      "attempt_id": "TC",
+      "degree": 4,
+      "exponents": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "8264a52bca675c9c5db7704f8c4a2a9b1d8d4ad971d2618ecb70ea6709146abb",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 321,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "TS",
+      "attempt_id": "TS",
+      "degree": 7,
+      "exponents": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "4d95c9c382fe27e60e0b1f55eadfe099e0d4f6bd36b28f4b55d2ebe45d04e8ec",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 1866,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "CS",
+      "attempt_id": "CS",
+      "degree": 9,
+      "exponents": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "8c4e58555fcfdd2f3853ddae046790cbaf51b687c2bac5e91dc5bf62a31c42ff",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 4586,
+      "quotient_columns_checked": 0,
+      "dual_terms": 464,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "RC",
+      "attempt_id": "RC",
+      "degree": 5,
+      "exponents": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet_lf_sha256": "31a1304a0e8fd0bc054b7fb5fdb2005aa977c804782ed3e44ef65a31593ff356",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 621,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "RS",
+      "attempt_id": "RS",
+      "degree": 8,
+      "exponents": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "packet_lf_sha256": "202b2c5b8f471d685e2a19cc07fec642f0a024de37dd4e7e7dc06e67e11f1d88",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 2986,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "R4",
+      "attempt_id": "R4",
+      "degree": 8,
+      "exponents": [
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "packet_lf_sha256": "b174817cc47e22f8d8b26c3458117e8f86db9018c315cd095a626641c9283dc9",
+      "status": "excluded",
+      "stage": "E1",
+      "physical_columns_checked": 2986,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "J2",
+      "attempt_id": "J2",
+      "degree": 6,
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "packet_lf_sha256": "e56c902efbed8d97639d8560ad372ea610e570f63036ef6b00682de292fc5087",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 0,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 2,
+        "epsilon": 0,
+        "row_degree": 4,
+        "base_base_multiplier_degree": 0,
+        "base_t_multiplier_degree": -1,
+        "base_base_columns": 0,
+        "base_t_columns": 0,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": true,
+        "raw_Koszul_directions_represented": 85,
+        "raw_quotient_directions_eliminated": 75,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J3",
+      "attempt_id": "J3",
+      "degree": 9,
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "packet_lf_sha256": "8b28593dd0edabf12e9ebb5fa55ab0102255b61b650fdf09c3c7d1340c808d97",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 630,
+      "quotient_columns_checked": 0,
+      "dual_terms": 5,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 3,
+        "epsilon": 1,
+        "row_degree": 10,
+        "base_base_multiplier_degree": 0,
+        "base_t_multiplier_degree": 5,
+        "base_base_columns": 0,
+        "base_t_columns": 630,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": true,
+        "raw_Koszul_directions_represented": 1065,
+        "raw_quotient_directions_eliminated": 1406,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J4",
+      "attempt_id": "J4",
+      "degree": 12,
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "packet_lf_sha256": "c329c8d0f5b2a41cbf8fe1c930ad679885615b69e9d093d86aef3b396f0fa230",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 630,
+      "quotient_columns_checked": 0,
+      "dual_terms": 5,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 4,
+        "epsilon": 0,
+        "row_degree": 10,
+        "base_base_multiplier_degree": 6,
+        "base_t_multiplier_degree": 5,
+        "base_base_columns": 0,
+        "base_t_columns": 630,
+        "cancelled_Delta_power": 2,
+        "pure_J_pair_shortcut": true,
+        "raw_Koszul_directions_represented": 5640,
+        "raw_quotient_directions_eliminated": 8631,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "JT2",
+      "attempt_id": "JT2",
+      "degree": 5,
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "c65f5fb64db6036813cb76636d17bed78ff1ac3eb3a848cf5e69fa0989a604b3",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 25,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 1,
+        "epsilon": 1,
+        "row_degree": 8,
+        "base_base_multiplier_degree": -4,
+        "base_t_multiplier_degree": 1,
+        "base_base_columns": 0,
+        "base_t_columns": 25,
+        "cancelled_Delta_power": 0,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 25,
+        "raw_quotient_directions_eliminated": 15,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "JTC",
+      "attempt_id": "JTC",
+      "degree": 7,
+      "exponents": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "ae0314229a693e37568987d8977b1276f2351917ffcc765ba930591eff360817",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 175,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 1,
+        "epsilon": 1,
+        "row_degree": 12,
+        "base_base_multiplier_degree": -2,
+        "base_t_multiplier_degree": 3,
+        "base_base_columns": 0,
+        "base_t_columns": 175,
+        "cancelled_Delta_power": 0,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 230,
+        "raw_quotient_directions_eliminated": 246,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "JC2",
+      "attempt_id": "JC2",
+      "degree": 9,
+      "exponents": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "4f10faa92c6daf823ae5b2d5a00203d2bab07cf19f9692463f4bc052e54d6f19",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 640,
+      "quotient_columns_checked": 0,
+      "dual_terms": 7,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 1,
+        "epsilon": 1,
+        "row_degree": 16,
+        "base_base_multiplier_degree": 0,
+        "base_t_multiplier_degree": 5,
+        "base_base_columns": 10,
+        "base_t_columns": 630,
+        "cancelled_Delta_power": 0,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 1065,
+        "raw_quotient_directions_eliminated": 1406,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "JS",
+      "attempt_id": "JS",
+      "degree": 9,
+      "exponents": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "39a5b1206c45429bac9d29b99345a9d9105ac451e6adc6911d712ab6768d124d",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 640,
+      "quotient_columns_checked": 0,
+      "dual_terms": 7,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 1,
+        "epsilon": 1,
+        "row_degree": 16,
+        "base_base_multiplier_degree": 0,
+        "base_t_multiplier_degree": 5,
+        "base_base_columns": 10,
+        "base_t_columns": 630,
+        "cancelled_Delta_power": 0,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 1065,
+        "raw_quotient_directions_eliminated": 1406,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "JR2",
+      "attempt_id": "JR2",
+      "degree": 7,
+      "exponents": [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "packet_lf_sha256": "0ddd74f5aaa3c110915d7b3a0ff936d8a3e5dd921c3674e07647857e502e87f4",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 175,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 1,
+        "epsilon": 1,
+        "row_degree": 12,
+        "base_base_multiplier_degree": -2,
+        "base_t_multiplier_degree": 3,
+        "base_base_columns": 0,
+        "base_t_columns": 175,
+        "cancelled_Delta_power": 0,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 230,
+        "raw_quotient_directions_eliminated": 246,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "JTS",
+      "attempt_id": "JTS",
+      "degree": 10,
+      "exponents": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "0c891c4adc2d4f4e61fcf6485819dd9b5453823ec5c13c09163b7df76c4ecd3a",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 1100,
+      "quotient_columns_checked": 0,
+      "dual_terms": 25,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 1,
+        "epsilon": 1,
+        "row_degree": 18,
+        "base_base_multiplier_degree": 1,
+        "base_t_multiplier_degree": 6,
+        "base_base_columns": 50,
+        "base_t_columns": 1050,
+        "cancelled_Delta_power": 0,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 1980,
+        "raw_quotient_directions_eliminated": 2781,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J2T2",
+      "attempt_id": "J2T2",
+      "degree": 8,
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "packet_lf_sha256": "72cb614c271320bca4f23ec48709d2fd39f7612ec2816175fafdfc4de28172d2",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 175,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 2,
+        "epsilon": 0,
+        "row_degree": 8,
+        "base_base_multiplier_degree": 2,
+        "base_t_multiplier_degree": 1,
+        "base_base_columns": 150,
+        "base_t_columns": 25,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 525,
+        "raw_quotient_directions_eliminated": 636,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J2C2",
+      "attempt_id": "J2C2",
+      "degree": 12,
+      "exponents": [
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "packet_lf_sha256": "49427186f4e24b16bbe9a9955c3fc61b27b26198c44d9ee605978764b5a9c7ae",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 2730,
+      "quotient_columns_checked": 0,
+      "dual_terms": 79,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 2,
+        "epsilon": 0,
+        "row_degree": 16,
+        "base_base_multiplier_degree": 6,
+        "base_t_multiplier_degree": 5,
+        "base_base_columns": 2100,
+        "base_t_columns": 630,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 5640,
+        "raw_quotient_directions_eliminated": 8631,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J2R",
+      "attempt_id": "J2R",
+      "degree": 8,
+      "exponents": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "packet_lf_sha256": "accd424c91741ba84833ee93d84dcc1e67b816ccbcd17bd5576bcb37b62adf9e",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 175,
+      "quotient_columns_checked": 0,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 2,
+        "epsilon": 0,
+        "row_degree": 8,
+        "base_base_multiplier_degree": 2,
+        "base_t_multiplier_degree": 1,
+        "base_base_columns": 150,
+        "base_t_columns": 25,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 525,
+        "raw_quotient_directions_eliminated": 636,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J3T",
+      "attempt_id": "J3T",
+      "degree": 10,
+      "exponents": [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "packet_lf_sha256": "3935ec4546ca6b6735ba649c46da265dc4526c950bb15a43eff39769e050c1ac",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 1100,
+      "quotient_columns_checked": 0,
+      "dual_terms": 10,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 3,
+        "epsilon": 1,
+        "row_degree": 12,
+        "base_base_multiplier_degree": 1,
+        "base_t_multiplier_degree": 6,
+        "base_base_columns": 50,
+        "base_t_columns": 1050,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 1980,
+        "raw_quotient_directions_eliminated": 2781,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J2S",
+      "attempt_id": "J2S",
+      "degree": 12,
+      "exponents": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "packet_lf_sha256": "bba873c4195068d89e4696c94967c6ba92e58bf959556fc3d5b24f97f10f0633",
+      "status": "excluded",
+      "stage": "E2_reflection_compact",
+      "physical_columns_checked": 2730,
+      "quotient_columns_checked": 0,
+      "dual_terms": 338,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 0,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit.",
+      "compact_reduction": {
+        "helper_lf_sha256": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36",
+        "a": 2,
+        "epsilon": 0,
+        "row_degree": 16,
+        "base_base_multiplier_degree": 6,
+        "base_t_multiplier_degree": 5,
+        "base_base_columns": 2100,
+        "base_t_columns": 630,
+        "cancelled_Delta_power": 1,
+        "pure_J_pair_shortcut": false,
+        "raw_Koszul_directions_represented": 5640,
+        "raw_quotient_directions_eliminated": 8631,
+        "first_order_operator_coefficient_checks": 40,
+        "argument": "The polynomial coordinate change t=2Z+Q has constant determinant2 and preserves divergence. Reflection averaging selects the required field parity. Reducing Koszul multipliers modulo t^2-Delta leaves E2 unchanged modulo that equation. Each retained E2 term has the common nonzero factor Delta^floor(a/2); cancellation takes place in a polynomial domain. For K=1, ordinary-pair directions lie in the mixed image by the curl identity, so paired exponents2m-1 and2m have identical complete systems."
+      }
+    },
+    {
+      "id": "J2",
+      "attempt_id": "raw-J2",
+      "degree": 6,
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "packet_lf_sha256": "97b73eb243c1aadc6abbbd8f86522540cc45f165f389f06321d87cfdb542fae7",
+      "status": "excluded",
+      "stage": "E2_mod_G",
+      "physical_columns_checked": 85,
+      "quotient_columns_checked": 75,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 1002,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "JT2",
+      "attempt_id": "raw-JT2",
+      "degree": 5,
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "efea44e221e8bd5477b3cb5b107c9aab7219be21f3d937905689e7c36660be3e",
+      "status": "excluded",
+      "stage": "E2_mod_G",
+      "physical_columns_checked": 25,
+      "quotient_columns_checked": 15,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 332,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    },
+    {
+      "id": "JTC",
+      "attempt_id": "raw-JTC",
+      "degree": 7,
+      "exponents": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "fc12ef8745f789d4c18ea4c8a2132a791faf59dd3390090fd3e864969f4bb367",
+      "status": "excluded",
+      "stage": "E2_mod_G",
+      "physical_columns_checked": 230,
+      "quotient_columns_checked": 246,
+      "dual_terms": 1,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "all_physical_column_pairings_zero": true,
+      "remainder_pullback_monomials_cached": 2655,
+      "negative_controls_rejected": 2,
+      "rank_claim": "No discovery rank or row-count claim is used in this proof audit."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "S2",
+      "status": "timeout",
+      "attempt_lf_sha256": "bd0ae91658b921e75e472126732059366f1d2b32867bf5e6851d37f2b316170a",
+      "conclusion": "No exclusion or solution follows from an unfinished/error attempt."
+    }
+  ],
+  "admissibility": "For E=J^a*K, the polynomial coordinate t=2Z+Q gives the unique remainder Delta^floor(a/2)*t^(a mod2)*K modulo t^2-Delta. Delta and K are nonzero base polynomials, so this remainder is nonzero; the a=0 case is K itself. Monic division and Z=X2^3 then give a nonzero remainder of X2-degree below6 modulo F. This proves admissibility at every tested degree, without a degree<6 assumption.",
+  "quotient_completeness": "Monic Z-division gives a unique remainder with Z-degree<2. B_E(P) has weight2d-2; a vanishing remainder is equivalent to an allowed G quotient of weight2d-8. Raw E2 cases check every raw Koszul and quotient monomial. Compact cases check every column in the complete reflection-reduced five-variable system, whose metadata identifies all represented raw directions.",
+  "normalization_and_syzygies": "The prior source-based checker verifies smoothness and the Piola character transformation. Euler normalization and regularity of the six weighted G partials hold at all degrees. Homogeneous syzygies are generated by all H_ij(G_j e_i-G_i e_j), with weight(H_ij)=d+w_i+w_j-8.",
+  "negative_controls_rejected": 56,
+  "limits": "Only these individually checked finite products are excluded. No universal exponent bound, global support statement, solution certificate or Lean proof is inferred."
+}

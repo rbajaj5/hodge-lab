@@ -1,0 +1,423 @@
+{
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "{\"status\": \"excluded\", \"stage\": \"E2_reflection_compact\", \"dual_terms\": 1, \"seconds\": 0.23151839999627555}\n",
+  "stderr": "",
+  "candidate": {
+    "id": "J2R",
+    "factor_order": [
+      "T",
+      "C",
+      "S",
+      "R",
+      "J"
+    ],
+    "exponents": [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "degree": 8,
+    "denominator": [
+      {
+        "powers": [
+          6,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "25/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "25/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          4,
+          2,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": [
+          "50/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          4,
+          0,
+          0,
+          0,
+          1,
+          3
+        ],
+        "coefficient": [
+          "50/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          3,
+          3,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": [
+          "50/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "20/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          3,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        "coefficient": [
+          "50/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          3,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "20/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          2,
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        "coefficient": [
+          "25/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          2,
+          0,
+          0,
+          0,
+          2,
+          4
+        ],
+        "coefficient": [
+          "25/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          1,
+          3,
+          0,
+          1,
+          2,
+          1
+        ],
+        "coefficient": [
+          "50/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": [
+          "20/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        "coefficient": [
+          "50/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          3
+        ],
+        "coefficient": [
+          "20/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          4,
+          0,
+          2,
+          2,
+          0
+        ],
+        "coefficient": [
+          "25/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          3,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": [
+          "20/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "4",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          2,
+          0,
+          2,
+          2,
+          2
+        ],
+        "coefficient": [
+          "25/49",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "coefficient": [
+          "20/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "4",
+          "0"
+        ]
+      }
+    ],
+    "jacobian_cofactor": [
+      {
+        "powers": [
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "5/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "5/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          1,
+          2,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": [
+          "5/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          3
+        ],
+        "coefficient": [
+          "5/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          3,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": [
+          "5/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "2",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        "coefficient": [
+          "5/7",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "2",
+          "0"
+        ]
+      }
+    ]
+  },
+  "time_limit_seconds": 120,
+  "elapsed_seconds": 0.6215500000034808,
+  "producer_sha256": "baaadb5964891a91a249733ed65911af4c0ecc5b91fe1863da20844ae6e97d89"
+}

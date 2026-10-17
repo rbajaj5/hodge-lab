@@ -68,6 +68,20 @@ the full Koszul correction and quotient spaces for the repaired candidates.
 [Local geometry and visualization](notes/cyclic-fano-higher-unfolding.md),
 [candidate tests, exact obstructions, and failures](notes/cyclic-fano-guided-denominators.md).
 
+The powers-and-products continuation excludes **25 of 26 specified
+denominators**, with degrees ranging from two to twelve. The degree-twelve
+square `S^2` remains unresolved after a 120-second search. A complete
+reflection reduction makes the larger tests smaller; the pure Jacobian
+powers `J^3` and `J^4` share the same 630-column system. These are selected
+products, not every denominator through degree twelve.
+[Proof reduction, coverage visualization, exact failures, and timeout](notes/cyclic-fano-branch-products.md).
+
+Dolgachev's first-polars construction gives a separate degree-five family
+with an explicit solution of the first equation. Seven fixed directions
+all fail the complete second equation, each with a one-coefficient exact
+obstruction. The remaining polar directions are untested.
+[Geometric derivation, actual Koszul-map visualization, and checked pilot](notes/cyclic-fano-branch-polars.md).
+
 A preceding bounded pilot examined `quadric-contact-broken`, another newly
 added target. A natural quartic denominator passes the first equation but fails
 the complete normalized correction test: one coefficient annihilates all

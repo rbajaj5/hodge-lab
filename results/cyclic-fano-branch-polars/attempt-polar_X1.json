@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "{\"id\": \"polar_X1\", \"status\": \"excluded\", \"dual_terms\": 1, \"seconds\": 0.020111500001803506}\n",
+  "stderr": "",
+  "id": "polar_X1",
+  "direction": [
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "bindings": {
+    "producer_sha256": "6b946df903c4d14e8164cbd1123ca0b874a5020b88c91c9d0b37e1c7e18073b8",
+    "dependencies": {
+      "cyclic_fano_branch_products.py": "baaadb5964891a91a249733ed65911af4c0ecc5b91fe1863da20844ae6e97d89",
+      "cyclic_fano_guided_denominators.py": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+      "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+      "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+      "cyclic_fano_branch_compact.py": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36"
+    },
+    "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "source_commit": "d96911d725077e66a8f10848908be01a643b1714"
+  },
+  "time_limit_seconds": 60,
+  "elapsed_seconds": 0.37537789999623783
+}

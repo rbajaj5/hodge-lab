@@ -1,0 +1,100 @@
+{
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "{\"status\": \"excluded\", \"stage\": \"E1\", \"dual_terms\": 1, \"seconds\": 0.032506600000488106}\n",
+  "stderr": "",
+  "candidate": {
+    "id": "T4",
+    "factor_order": [
+      "T",
+      "C",
+      "S",
+      "R",
+      "J"
+    ],
+    "exponents": [
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 4,
+    "denominator": [
+      {
+        "powers": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          3,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": [
+          "0",
+          "4"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          2
+        ],
+        "coefficient": [
+          "-6",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          3
+        ],
+        "coefficient": [
+          "0",
+          "-4"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "coefficient": [
+          "1",
+          "0"
+        ]
+      }
+    ],
+    "jacobian_cofactor": null
+  },
+  "time_limit_seconds": 120,
+  "elapsed_seconds": 0.33678769999824,
+  "producer_sha256": "baaadb5964891a91a249733ed65911af4c0ecc5b91fe1863da20844ae6e97d89"
+}

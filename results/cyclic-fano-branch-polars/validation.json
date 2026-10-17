@@ -1,0 +1,60 @@
+{
+  "schema": "cyclic-fano-branch-polars-validation-v1",
+  "status": "PASS",
+  "producer_sha256": "6b946df903c4d14e8164cbd1123ca0b874a5020b88c91c9d0b37e1c7e18073b8",
+  "dependencies": {
+    "cyclic_fano_branch_products.py": "baaadb5964891a91a249733ed65911af4c0ecc5b91fe1863da20844ae6e97d89",
+    "cyclic_fano_guided_denominators.py": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+    "cyclic_fano_branch_compact.py": "99ca8f8b88a278daba1b628e31d4f194a2c412629a3a3dbabe621d08cbf84a36"
+  },
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "source_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "checks": [
+    {
+      "id": "polar_X0",
+      "status": "excluded",
+      "packet_sha256": "a5bdc7fbe19077a29309243811d0d13307edd9617b73a1eacc7e154cf00cefa8",
+      "columns_checked": 25
+    },
+    {
+      "id": "polar_X1",
+      "status": "excluded",
+      "packet_sha256": "70d157217dd877f1cafb8a99387a4c26d8ebbc766a439ad5a298b46949c9497b",
+      "columns_checked": 25
+    },
+    {
+      "id": "polar_Y0",
+      "status": "excluded",
+      "packet_sha256": "82d861e9c44bff4f31526554b3ced7911ded09372f2bed571f48ca5fb326d74d",
+      "columns_checked": 25
+    },
+    {
+      "id": "polar_Y1",
+      "status": "excluded",
+      "packet_sha256": "ce8622d66f545af5b7c64de4eedddbb08997a7cb300bd449de955e6884d7313a",
+      "columns_checked": 25
+    },
+    {
+      "id": "polar_Y2",
+      "status": "excluded",
+      "packet_sha256": "6704b46c71abf67f62afc6e3e35ca08982a6ee9bb39579652bedac0fa82f00f9",
+      "columns_checked": 25
+    },
+    {
+      "id": "polar_X0_plus_Y0",
+      "status": "excluded",
+      "packet_sha256": "9c0170017d1a0db58c02e61aec7a02d2750ea0535b1dfee89dfd63973466acbb",
+      "columns_checked": 25
+    },
+    {
+      "id": "polar_X1_plus_Y1",
+      "status": "excluded",
+      "packet_sha256": "cd4e2c6238011af780d6a8137e317ab6fd6b90e9bfd4eacf72b4caa505a8644d",
+      "columns_checked": 25
+    }
+  ],
+  "unresolved": [],
+  "negative_controls_rejected": 14
+}

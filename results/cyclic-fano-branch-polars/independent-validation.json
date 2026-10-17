@@ -1,0 +1,1353 @@
+{
+  "schema": "cyclic-fano-branch-polars-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+  "independent_arithmetic_dependencies": {
+    "check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "checks": [
+    {
+      "id": "polar_X0",
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "a5bdc7fbe19077a29309243811d0d13307edd9617b73a1eacc7e154cf00cefa8",
+      "attempt_lf_sha256": "2350321ff7027ade642164850babc41b4e0a46f304f45bd28a1d1b9544666f06",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            3,
+            1
+          ],
+          "coefficient": [
+            "80/21",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            4,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-360/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": [
+            "1600/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-5472/49",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            4,
+            2,
+            1
+          ],
+          "coefficient": [
+            "147/200",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            2,
+            0,
+            1,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-35/10944",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "49/5472",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        5,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    },
+    {
+      "id": "polar_X1",
+      "direction": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "70d157217dd877f1cafb8a99387a4c26d8ebbc766a439ad5a298b46949c9497b",
+      "attempt_lf_sha256": "80a88a51e79d9381f815b967c07355b5ac18c207e0182b13f8e7492b77865a30",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            5,
+            2,
+            0
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            4,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            5,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-147/200",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            1,
+            4,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "1/160",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        1,
+        4,
+        0,
+        3,
+        0,
+        0
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    },
+    {
+      "id": "polar_Y0",
+      "direction": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "82d861e9c44bff4f31526554b3ced7911ded09372f2bed571f48ca5fb326d74d",
+      "attempt_lf_sha256": "d6f0c1c27a90f4ca707f6fe395e0c3f204d8d9113053b7a4afcf4335f7b2ffda",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-64",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-400/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-200/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            2,
+            1,
+            2
+          ],
+          "coefficient": [
+            "80/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "360/49",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          "coefficient": [
+            "1/64",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1/64",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            0
+          ],
+          "coefficient": [
+            "1/36",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "7/144",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "coefficient": [
+            "7/144",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-49/360",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        4,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    },
+    {
+      "id": "polar_Y1",
+      "direction": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "packet_lf_sha256": "ce8622d66f545af5b7c64de4eedddbb08997a7cb300bd449de955e6884d7313a",
+      "attempt_lf_sha256": "ae34ba3f981efbf86addce05eb93cf8b4dfc4cb22ef4fcfafb9f0544b4acfcea",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-160/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            0,
+            1
+          ],
+          "coefficient": [
+            "400/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "coefficient": [
+            "1/160",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            0,
+            0,
+            1,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "21/80",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-147/200",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        3,
+        0,
+        0,
+        3,
+        0,
+        2
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    },
+    {
+      "id": "polar_Y2",
+      "direction": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "packet_lf_sha256": "6704b46c71abf67f62afc6e3e35ca08982a6ee9bb39579652bedac0fa82f00f9",
+      "attempt_lf_sha256": "fc33788757eac00b5f713ff5e25cafc10f91607623e3e8b7add548ef41491123",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            4
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-160/21",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            4
+          ],
+          "coefficient": [
+            "1/160",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            0,
+            0,
+            1,
+            4,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-3/64",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": [
+            "21/160",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        3,
+        0,
+        0,
+        4,
+        1,
+        0
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    },
+    {
+      "id": "polar_X0_plus_Y0",
+      "direction": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "packet_lf_sha256": "9c0170017d1a0db58c02e61aec7a02d2750ea0535b1dfee89dfd63973466acbb",
+      "attempt_lf_sha256": "1567f41d304b6b6531bcc1c09bd50a70d7385815c02f0c9e98728cc49eeb9ba5",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          "coefficient": [
+            "32",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            3,
+            1
+          ],
+          "coefficient": [
+            "80/21",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            4,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            4,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-64",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            3,
+            1
+          ],
+          "coefficient": [
+            "80/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-400/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-400/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "coefficient": [
+            "-200/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            2
+          ],
+          "coefficient": [
+            "80/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-200/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-360/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            2,
+            1,
+            2
+          ],
+          "coefficient": [
+            "80/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": [
+            "1600/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            3,
+            1,
+            0
+          ],
+          "coefficient": [
+            "480/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            2,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-800/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": [
+            "360/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-5472/49",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            6,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "4104/49",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1/32",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "1/32",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "73/8208",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "35/8208",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            6,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-49/4104",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        6,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    },
+    {
+      "id": "polar_X1_plus_Y1",
+      "direction": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet_lf_sha256": "cd4e2c6238011af780d6a8137e317ab6fd6b90e9bfd4eacf72b4caa505a8644d",
+      "attempt_lf_sha256": "48cdc01d3244b12be9459e9f58473eae59466635cd0b012aaf6b2fd5070ce3d9",
+      "status": "excluded",
+      "degree": 5,
+      "E1_exact_lift_checked": true,
+      "Piola_identities_checked_on_original_target": true,
+      "particular_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            5,
+            2,
+            0
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            5,
+            1,
+            0
+          ],
+          "coefficient": [
+            "800/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            1,
+            4,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-160",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            2,
+            1
+          ],
+          "coefficient": [
+            "-160/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            4,
+            1,
+            1
+          ],
+          "coefficient": [
+            "800/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": [
+            "-160/7",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            0,
+            1
+          ],
+          "coefficient": [
+            "400/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "200/147",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-240/49",
+            "0"
+          ]
+        }
+      ],
+      "raw_Koszul_columns_checked": 25,
+      "raw_quotient_columns_checked": 15,
+      "producer_remainder_dual_terms": 1,
+      "producer_dual_on_full_physical_rows": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "coefficient": [
+            "1/160",
+            "0"
+          ]
+        }
+      ],
+      "independent_even_projection_dual": [
+        {
+          "powers": [
+            1,
+            0,
+            1,
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-7/96",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "49/240",
+            "0"
+          ]
+        }
+      ],
+      "selected_even_coefficient": [
+        4,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "all_40_columns_have_zero_even_projection": true,
+      "nonzero_even_residual_checked": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "negative_controls_rejected": 3,
+      "scope": "This fixed direction only; no claim about all projective polar directions."
+    }
+  ],
+  "complete_scope": "Smooth Fermat reduction of the original F proves the weighted G gradient regular. At degree5 every normal-equation correction is generated by the25 linear-multiplier Koszul fields. All15 degree2 G quotient directions are checked; no numerator or quotient direction is discarded.",
+  "reflection_explanation": "E=Delta_v and the particular residual are even in t=2Z+Q. The required even base/base Koszul multiplier would have degree-1. A matching mixed multiplier must be odd in t and would have base degree-2. Hence no compatible homogeneous correction survives reflection projection. Directly, for f=f0+Z*f1+Z^2*f2, the even remainder is f0-Q*f1/2+(Q^2/2-H)*f2. It annihilates every one of the40 physical columns, while each of the seven residuals has a nonzero coefficient.",
+  "negative_controls_rejected": 21,
+  "limits": "Seven fixed polar denominators are excluded over C. No statement about every polar direction, products/powers of polars, a global support divisor, certificate or Lean proof follows."
+}
