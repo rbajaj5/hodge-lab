@@ -1,0 +1,770 @@
+{
+  "status": "completed",
+  "active_raw_parameter_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7,
+    9,
+    16,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    45,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    54,
+    55,
+    57,
+    58,
+    60,
+    63,
+    64,
+    68,
+    71,
+    73,
+    74
+  ],
+  "identities": [
+    {
+      "parameter_index": 6,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 13,
+          "linear_variable": 6,
+          "coefficient": "-1512284256/11041195"
+        },
+        {
+          "equation_index": 13,
+          "linear_variable": 39,
+          "coefficient": "46040400/2208239"
+        },
+        {
+          "equation_index": 14,
+          "linear_variable": 6,
+          "coefficient": "-588110544/2208239"
+        },
+        {
+          "equation_index": 121,
+          "linear_variable": 6,
+          "coefficient": "14"
+        },
+        {
+          "equation_index": 131,
+          "linear_variable": 6,
+          "coefficient": "14"
+        },
+        {
+          "equation_index": 138,
+          "linear_variable": 6,
+          "coefficient": "196/5"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 4,
+          "coefficient": "-14"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 5,
+          "coefficient": "-196/5"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 11,
+          "coefficient": "14"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 24,
+          "coefficient": "-1722/367"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 26,
+          "coefficient": "23716/1835"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 37,
+          "coefficient": "6860/367"
+        },
+        {
+          "equation_index": 139,
+          "linear_variable": 44,
+          "coefficient": "-14"
+        },
+        {
+          "equation_index": 150,
+          "linear_variable": 6,
+          "coefficient": "350/367"
+        },
+        {
+          "equation_index": 157,
+          "linear_variable": 6,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 162,
+          "linear_variable": 0,
+          "coefficient": "1512284256/11041195"
+        },
+        {
+          "equation_index": 162,
+          "linear_variable": 7,
+          "coefficient": "-1512284256/11041195"
+        },
+        {
+          "equation_index": 163,
+          "linear_variable": 0,
+          "coefficient": "588110544/2208239"
+        },
+        {
+          "equation_index": 163,
+          "linear_variable": 7,
+          "coefficient": "-588110544/2208239"
+        },
+        {
+          "equation_index": 167,
+          "linear_variable": 5,
+          "coefficient": "1372/367"
+        },
+        {
+          "equation_index": 167,
+          "linear_variable": 11,
+          "coefficient": "980/367"
+        },
+        {
+          "equation_index": 167,
+          "linear_variable": 24,
+          "coefficient": "-1225/367"
+        },
+        {
+          "equation_index": 167,
+          "linear_variable": 37,
+          "coefficient": "245/367"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 4,
+          "coefficient": "-14"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 5,
+          "coefficient": "-33516/1835"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 11,
+          "coefficient": "10626/367"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 24,
+          "coefficient": "-8582/367"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 26,
+          "coefficient": "23716/1835"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 37,
+          "coefficient": "8232/367"
+        },
+        {
+          "equation_index": 169,
+          "linear_variable": 44,
+          "coefficient": "-14"
+        },
+        {
+          "equation_index": 174,
+          "linear_variable": 39,
+          "coefficient": "-41777400/2208239"
+        },
+        {
+          "equation_index": 180,
+          "linear_variable": 6,
+          "coefficient": "1512284256/11041195"
+        },
+        {
+          "equation_index": 180,
+          "linear_variable": 39,
+          "coefficient": "-46040400/2208239"
+        },
+        {
+          "equation_index": 181,
+          "linear_variable": 6,
+          "coefficient": "588110544/2208239"
+        },
+        {
+          "equation_index": 256,
+          "linear_variable": 0,
+          "coefficient": "-46040400/2208239"
+        },
+        {
+          "equation_index": 256,
+          "linear_variable": 7,
+          "coefficient": "46040400/2208239"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-64.json"
+    },
+    {
+      "parameter_index": 17,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 163,
+          "linear_variable": 17,
+          "coefficient": "45/1372"
+        },
+        {
+          "equation_index": 259,
+          "linear_variable": 6,
+          "coefficient": "-45/1372"
+        },
+        {
+          "equation_index": 264,
+          "linear_variable": 17,
+          "coefficient": "2"
+        },
+        {
+          "equation_index": 274,
+          "linear_variable": 15,
+          "coefficient": "-2"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-16.json"
+    },
+    {
+      "parameter_index": 19,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 281,
+          "linear_variable": 19,
+          "coefficient": "1"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-16.json"
+    },
+    {
+      "parameter_index": 27,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 32,
+          "linear_variable": 27,
+          "coefficient": "-18/5"
+        },
+        {
+          "equation_index": 67,
+          "linear_variable": 28,
+          "coefficient": "18/5"
+        },
+        {
+          "equation_index": 68,
+          "linear_variable": 27,
+          "coefficient": "-18/5"
+        },
+        {
+          "equation_index": 154,
+          "linear_variable": 28,
+          "coefficient": "261/25"
+        },
+        {
+          "equation_index": 193,
+          "linear_variable": 27,
+          "coefficient": "-18/5"
+        },
+        {
+          "equation_index": 213,
+          "linear_variable": 28,
+          "coefficient": "18/5"
+        },
+        {
+          "equation_index": 301,
+          "linear_variable": 27,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 303,
+          "linear_variable": 0,
+          "coefficient": "18/5"
+        },
+        {
+          "equation_index": 303,
+          "linear_variable": 7,
+          "coefficient": "18/5"
+        },
+        {
+          "equation_index": 303,
+          "linear_variable": 40,
+          "coefficient": "-36/5"
+        },
+        {
+          "equation_index": 305,
+          "linear_variable": 24,
+          "coefficient": "81/35"
+        },
+        {
+          "equation_index": 305,
+          "linear_variable": 37,
+          "coefficient": "-81/35"
+        },
+        {
+          "equation_index": 305,
+          "linear_variable": 44,
+          "coefficient": "-243/35"
+        },
+        {
+          "equation_index": 307,
+          "linear_variable": 5,
+          "coefficient": "-261/25"
+        },
+        {
+          "equation_index": 307,
+          "linear_variable": 44,
+          "coefficient": "621/35"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-16.json"
+    },
+    {
+      "parameter_index": 28,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 304,
+          "linear_variable": 28,
+          "coefficient": "2"
+        },
+        {
+          "equation_index": 308,
+          "linear_variable": 27,
+          "coefficient": "-2"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-16.json"
+    },
+    {
+      "parameter_index": 30,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 70,
+          "linear_variable": 32,
+          "coefficient": "-84/95"
+        },
+        {
+          "equation_index": 71,
+          "linear_variable": 34,
+          "coefficient": "1456/95"
+        },
+        {
+          "equation_index": 72,
+          "linear_variable": 30,
+          "coefficient": "812/95"
+        },
+        {
+          "equation_index": 72,
+          "linear_variable": 32,
+          "coefficient": "728/95"
+        },
+        {
+          "equation_index": 214,
+          "linear_variable": 32,
+          "coefficient": "14/5"
+        },
+        {
+          "equation_index": 215,
+          "linear_variable": 34,
+          "coefficient": "1736/95"
+        },
+        {
+          "equation_index": 216,
+          "linear_variable": 30,
+          "coefficient": "602/95"
+        },
+        {
+          "equation_index": 216,
+          "linear_variable": 32,
+          "coefficient": "868/95"
+        },
+        {
+          "equation_index": 226,
+          "linear_variable": 30,
+          "coefficient": "742/95"
+        },
+        {
+          "equation_index": 226,
+          "linear_variable": 32,
+          "coefficient": "868/95"
+        },
+        {
+          "equation_index": 281,
+          "linear_variable": 20,
+          "coefficient": "-8232/95"
+        },
+        {
+          "equation_index": 282,
+          "linear_variable": 19,
+          "coefficient": "8232/95"
+        },
+        {
+          "equation_index": 289,
+          "linear_variable": 34,
+          "coefficient": "28/19"
+        },
+        {
+          "equation_index": 295,
+          "linear_variable": 34,
+          "coefficient": "28/19"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 2,
+          "coefficient": "-812/95"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 9,
+          "coefficient": "-742/95"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 22,
+          "coefficient": "42/19"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 34,
+          "coefficient": "11"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 42,
+          "coefficient": "1134/95"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 1,
+          "coefficient": "-728/95"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 8,
+          "coefficient": "-868/95"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 20,
+          "coefficient": "-14/19"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 30,
+          "coefficient": "-5/2"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 32,
+          "coefficient": "11/2"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 41,
+          "coefficient": "1666/95"
+        },
+        {
+          "equation_index": 311,
+          "linear_variable": 19,
+          "coefficient": "-14/19"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 2,
+          "coefficient": "-728/95"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 9,
+          "coefficient": "-868/95"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 22,
+          "coefficient": "-14/19"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 38,
+          "coefficient": "-392/95"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 42,
+          "coefficient": "1666/95"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-32.json"
+    },
+    {
+      "parameter_index": 31,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 281,
+          "linear_variable": 31,
+          "coefficient": "784/25"
+        },
+        {
+          "equation_index": 288,
+          "linear_variable": 19,
+          "coefficient": "-784/25"
+        },
+        {
+          "equation_index": 288,
+          "linear_variable": 31,
+          "coefficient": "-28/5"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-16.json"
+    },
+    {
+      "parameter_index": 32,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 70,
+          "linear_variable": 32,
+          "coefficient": "84/95"
+        },
+        {
+          "equation_index": 71,
+          "linear_variable": 34,
+          "coefficient": "-392/95"
+        },
+        {
+          "equation_index": 72,
+          "linear_variable": 30,
+          "coefficient": "-56/19"
+        },
+        {
+          "equation_index": 72,
+          "linear_variable": 32,
+          "coefficient": "-196/95"
+        },
+        {
+          "equation_index": 214,
+          "linear_variable": 32,
+          "coefficient": "-14/5"
+        },
+        {
+          "equation_index": 215,
+          "linear_variable": 34,
+          "coefficient": "-672/95"
+        },
+        {
+          "equation_index": 216,
+          "linear_variable": 30,
+          "coefficient": "-14/19"
+        },
+        {
+          "equation_index": 216,
+          "linear_variable": 32,
+          "coefficient": "-336/95"
+        },
+        {
+          "equation_index": 226,
+          "linear_variable": 30,
+          "coefficient": "-42/19"
+        },
+        {
+          "equation_index": 226,
+          "linear_variable": 32,
+          "coefficient": "-336/95"
+        },
+        {
+          "equation_index": 281,
+          "linear_variable": 20,
+          "coefficient": "8232/95"
+        },
+        {
+          "equation_index": 282,
+          "linear_variable": 19,
+          "coefficient": "-8232/95"
+        },
+        {
+          "equation_index": 289,
+          "linear_variable": 34,
+          "coefficient": "-28/19"
+        },
+        {
+          "equation_index": 295,
+          "linear_variable": 34,
+          "coefficient": "-28/19"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 2,
+          "coefficient": "56/19"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 9,
+          "coefficient": "42/19"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 22,
+          "coefficient": "-42/19"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 34,
+          "coefficient": "-3"
+        },
+        {
+          "equation_index": 309,
+          "linear_variable": 42,
+          "coefficient": "-14/19"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 1,
+          "coefficient": "196/95"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 8,
+          "coefficient": "336/95"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 20,
+          "coefficient": "14/19"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 30,
+          "coefficient": "3/2"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 32,
+          "coefficient": "-3/2"
+        },
+        {
+          "equation_index": 310,
+          "linear_variable": 41,
+          "coefficient": "-602/95"
+        },
+        {
+          "equation_index": 311,
+          "linear_variable": 19,
+          "coefficient": "14/19"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 2,
+          "coefficient": "196/95"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 9,
+          "coefficient": "336/95"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 22,
+          "coefficient": "14/19"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 34,
+          "coefficient": "-2"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 38,
+          "coefficient": "392/95"
+        },
+        {
+          "equation_index": 312,
+          "linear_variable": 42,
+          "coefficient": "-602/95"
+        }
+      ],
+      "source_attempt": "stage-04-cubic-reduced-32.json"
+    }
+  ],
+  "remaining_local_parameters": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    29,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "basis": "reduced",
+  "stage": 4,
+  "scope": "Union of explicitly replayed powers; lower degree preferred, then fewer multiplier terms."
+}

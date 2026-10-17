@@ -1,0 +1,2010 @@
+{
+  "status": "completed",
+  "coefficient_field": "Q",
+  "term_threshold": 16,
+  "equation_indices": [
+    3,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    16,
+    18,
+    19,
+    20,
+    23,
+    27,
+    32,
+    39,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    55,
+    56,
+    57,
+    59,
+    60,
+    62,
+    63,
+    67,
+    69,
+    71,
+    72,
+    73,
+    75,
+    83,
+    90,
+    92,
+    94,
+    95,
+    97,
+    98,
+    99,
+    100,
+    101,
+    103,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117
+  ],
+  "active_raw_parameter_indices": [
+    0,
+    2,
+    3,
+    4,
+    16,
+    21,
+    22,
+    23,
+    32,
+    39,
+    40,
+    41,
+    42,
+    48,
+    55,
+    57,
+    58,
+    64,
+    71,
+    73,
+    74
+  ],
+  "columns": 1239,
+  "rank": 1019,
+  "identities": [
+    {
+      "parameter_index": 2,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 32,
+          "linear_variable": 2,
+          "coefficient": "9107966/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 6,
+          "coefficient": "-17680/9153"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 10,
+          "coefficient": "-22972/3051"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 15,
+          "coefficient": "-1077421/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 19,
+          "coefficient": "-371153/15255"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 2,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 6,
+          "coefficient": "-1449203/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 10,
+          "coefficient": "-26141732/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 15,
+          "coefficient": "32201909/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 19,
+          "coefficient": "861635/9153"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 2,
+          "coefficient": "1449203/228825"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 10,
+          "coefficient": "3536/3051"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 15,
+          "coefficient": "-265751/76275"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 19,
+          "coefficient": "-20156/9153"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 2,
+          "coefficient": "26141732/228825"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 6,
+          "coefficient": "-3536/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 10,
+          "coefficient": "-45944/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 15,
+          "coefficient": "-2312089/76275"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 19,
+          "coefficient": "-3139123/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 1,
+          "coefficient": "-9107966/228825"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 5,
+          "coefficient": "-10342/9153"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 9,
+          "coefficient": "-91888/3051"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 14,
+          "coefficient": "2432114/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 18,
+          "coefficient": "5541596/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 2,
+          "coefficient": "-32201909/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 6,
+          "coefficient": "265751/76275"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 10,
+          "coefficient": "30040507/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 15,
+          "coefficient": "-1002734/9153"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 2,
+          "coefficient": "-861635/9153"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 6,
+          "coefficient": "1637053/228825"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 10,
+          "coefficient": "9070769/76275"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 15,
+          "coefficient": "-22813679/228825"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 19,
+          "coefficient": "-225199/5085"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 2,
+          "coefficient": "10342/9153"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 6,
+          "coefficient": "6188/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 1,
+          "coefficient": "17680/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 5,
+          "coefficient": "-6188/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 14,
+          "coefficient": "-41548/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 18,
+          "coefficient": "-4420/9153"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 1,
+          "coefficient": "22972/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 14,
+          "coefficient": "-60088/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 18,
+          "coefficient": "10169/3051"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 1,
+          "coefficient": "1077421/228825"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 9,
+          "coefficient": "420616/9153"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 14,
+          "coefficient": "-1704491/45765"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 18,
+          "coefficient": "-6483241/228825"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 1,
+          "coefficient": "371153/15255"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 9,
+          "coefficient": "-46918/9153"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 14,
+          "coefficient": "87527/45765"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 18,
+          "coefficient": "-68072/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 2,
+          "coefficient": "1002734/9153"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 10,
+          "coefficient": "-705539/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 14,
+          "coefficient": "-382265/85428"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 18,
+          "coefficient": "382265/85428"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 19,
+          "coefficient": "-1596289/45765"
+        }
+      ]
+    },
+    {
+      "parameter_index": 3,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 54,
+          "linear_variable": 3,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 11,
+          "coefficient": "-553277/344655"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 16,
+          "coefficient": "139/1035"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 20,
+          "coefficient": "9082/14985"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 3,
+          "coefficient": "553277/344655"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 16,
+          "coefficient": "88969/114885"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 20,
+          "coefficient": "-446021/344655"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 3,
+          "coefficient": "-139/1035"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 11,
+          "coefficient": "553277/344655"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 16,
+          "coefficient": "-29726/114885"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 20,
+          "coefficient": "-479399/344655"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 3,
+          "coefficient": "-9082/14985"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 11,
+          "coefficient": "553277/344655"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 16,
+          "coefficient": "-78047/38295"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 3,
+          "coefficient": "29726/114885"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 11,
+          "coefficient": "-500171/344655"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 20,
+          "coefficient": "627053/344655"
+        }
+      ]
+    },
+    {
+      "parameter_index": 6,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 32,
+          "linear_variable": 2,
+          "coefficient": "-696707062/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 6,
+          "coefficient": "1390820/9153"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 10,
+          "coefficient": "1767956/3051"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 15,
+          "coefficient": "85753247/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 19,
+          "coefficient": "27908611/15255"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 6,
+          "coefficient": "115679371/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 10,
+          "coefficient": "2021361724/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 15,
+          "coefficient": "-2492657713/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 19,
+          "coefficient": "-66626359/9153"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 2,
+          "coefficient": "-115679371/228825"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 10,
+          "coefficient": "-290368/3051"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 15,
+          "coefficient": "22036357/76275"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 19,
+          "coefficient": "1382368/9153"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 2,
+          "coefficient": "-2021361724/228825"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 6,
+          "coefficient": "290368/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 10,
+          "coefficient": "3535912/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 15,
+          "coefficient": "181403723/76275"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 19,
+          "coefficient": "239923481/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 1,
+          "coefficient": "696707062/228825"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 5,
+          "coefficient": "975608/9153"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 9,
+          "coefficient": "7071824/3051"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 14,
+          "coefficient": "-181261288/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 18,
+          "coefficient": "-441415522/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 2,
+          "coefficient": "2492657713/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 6,
+          "coefficient": "-22036357/76275"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 10,
+          "coefficient": "-2323012049/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 15,
+          "coefficient": "77544190/9153"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 2,
+          "coefficient": "66626359/9153"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 6,
+          "coefficient": "-130800071/228825"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 10,
+          "coefficient": "-701032183/76275"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 15,
+          "coefficient": "1747788253/228825"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 19,
+          "coefficient": "17705993/5085"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 2,
+          "coefficient": "-975608/9153"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 6,
+          "coefficient": "-477634/9153"
+        },
+        {
+          "equation_index": 90,
+          "linear_variable": 6,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 1,
+          "coefficient": "-1390820/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 5,
+          "coefficient": "477634/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 14,
+          "coefficient": "3222662/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 18,
+          "coefficient": "338552/9153"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 1,
+          "coefficient": "-1767956/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 14,
+          "coefficient": "4697384/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 18,
+          "coefficient": "-779239/3051"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 1,
+          "coefficient": "-85753247/228825"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 9,
+          "coefficient": "-32881688/9153"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 14,
+          "coefficient": "131193217/45765"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 18,
+          "coefficient": "514251737/228825"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 1,
+          "coefficient": "-27908611/15255"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 9,
+          "coefficient": "3479138/9153"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 14,
+          "coefficient": "-9974869/45765"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 18,
+          "coefficient": "5094454/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 2,
+          "coefficient": "-77544190/9153"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 10,
+          "coefficient": "54231793/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 14,
+          "coefficient": "4279405/12204"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 18,
+          "coefficient": "-4279405/12204"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 19,
+          "coefficient": "125562443/45765"
+        }
+      ]
+    },
+    {
+      "parameter_index": 7,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 54,
+          "linear_variable": 7,
+          "coefficient": "328/83"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 11,
+          "coefficient": "51954922/22249395"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 16,
+          "coefficient": "2963119/601335"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 20,
+          "coefficient": "-311261/46065"
+        },
+        {
+          "equation_index": 56,
+          "linear_variable": 3,
+          "coefficient": "-328/83"
+        },
+        {
+          "equation_index": 56,
+          "linear_variable": 11,
+          "coefficient": "320/83"
+        },
+        {
+          "equation_index": 56,
+          "linear_variable": 16,
+          "coefficient": "-52/83"
+        },
+        {
+          "equation_index": 56,
+          "linear_variable": 20,
+          "coefficient": "284/83"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 3,
+          "coefficient": "-51954922/22249395"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 7,
+          "coefficient": "-320/83"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 16,
+          "coefficient": "-20747599/7416465"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 20,
+          "coefficient": "22993199/4449879"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 3,
+          "coefficient": "-2963119/601335"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 7,
+          "coefficient": "52/83"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 11,
+          "coefficient": "122854754/66748185"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 16,
+          "coefficient": "-375114857/66748185"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 20,
+          "coefficient": "734955/70633"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 3,
+          "coefficient": "311261/46065"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 7,
+          "coefficient": "-284/83"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 11,
+          "coefficient": "-507293726/66748185"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 16,
+          "coefficient": "-12114092/13349637"
+        },
+        {
+          "equation_index": 97,
+          "linear_variable": 7,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 3,
+          "coefficient": "375114857/66748185"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 11,
+          "coefficient": "73530008/66748185"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 20,
+          "coefficient": "-89087030/13349637"
+        }
+      ]
+    },
+    {
+      "parameter_index": 10,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 32,
+          "linear_variable": 2,
+          "coefficient": "-47926697/457650"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 6,
+          "coefficient": "43340/9153"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 10,
+          "coefficient": "57371/3051"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 15,
+          "coefficient": "12896939/915300"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 19,
+          "coefficient": "3858367/61020"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 6,
+          "coefficient": "15679177/915300"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 10,
+          "coefficient": "69290497/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 15,
+          "coefficient": "-341199931/915300"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 19,
+          "coefficient": "-9128665/36612"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 2,
+          "coefficient": "-15679177/915300"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 10,
+          "coefficient": "-8668/3051"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 15,
+          "coefficient": "3095509/305100"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 19,
+          "coefficient": "43915/9153"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 2,
+          "coefficient": "-69290497/228825"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 6,
+          "coefficient": "8668/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 10,
+          "coefficient": "120844/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 15,
+          "coefficient": "24893351/305100"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 19,
+          "coefficient": "33022397/183060"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 1,
+          "coefficient": "47926697/457650"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 5,
+          "coefficient": "32372/9153"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 9,
+          "coefficient": "241688/3051"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 14,
+          "coefficient": "-6287644/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 18,
+          "coefficient": "-30254807/457650"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 2,
+          "coefficient": "341199931/915300"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 6,
+          "coefficient": "-3095509/305100"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 10,
+          "coefficient": "-319256213/915300"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 15,
+          "coefficient": "5319983/18306"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 2,
+          "coefficient": "9128665/36612"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 6,
+          "coefficient": "-17521127/915300"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 10,
+          "coefficient": "-96494071/305100"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 15,
+          "coefficient": "239759461/915300"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 19,
+          "coefficient": "812747/6780"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 2,
+          "coefficient": "-32372/9153"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 6,
+          "coefficient": "-15169/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 1,
+          "coefficient": "-43340/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 5,
+          "coefficient": "15169/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 14,
+          "coefficient": "101849/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 18,
+          "coefficient": "10835/9153"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 1,
+          "coefficient": "-57371/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 9,
+          "coefficient": "-2"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 14,
+          "coefficient": "149414/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 18,
+          "coefficient": "-92551/12204"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 1,
+          "coefficient": "-12896939/915300"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 9,
+          "coefficient": "-1082510/9153"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 14,
+          "coefficient": "17517829/183060"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 18,
+          "coefficient": "68952119/915300"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 1,
+          "coefficient": "-3858367/61020"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 9,
+          "coefficient": "200077/18306"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 14,
+          "coefficient": "-151273/183060"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 18,
+          "coefficient": "169567/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 2,
+          "coefficient": "-5319983/18306"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 10,
+          "coefficient": "7213261/61020"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 14,
+          "coefficient": "3957655/341712"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 18,
+          "coefficient": "-3957655/341712"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 19,
+          "coefficient": "18298451/183060"
+        }
+      ]
+    },
+    {
+      "parameter_index": 11,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 54,
+          "linear_variable": 11,
+          "coefficient": "-51866/160839"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 16,
+          "coefficient": "-155/1449"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 20,
+          "coefficient": "49/999"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 3,
+          "coefficient": "51866/160839"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 16,
+          "coefficient": "17398/53613"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 20,
+          "coefficient": "-40559/160839"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 3,
+          "coefficient": "155/1449"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 11,
+          "coefficient": "-6002/160839"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 16,
+          "coefficient": "29863/160839"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 20,
+          "coefficient": "-9515/22977"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 3,
+          "coefficient": "-49/999"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 11,
+          "coefficient": "7654/17871"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 16,
+          "coefficient": "-52699/160839"
+        },
+        {
+          "equation_index": 106,
+          "linear_variable": 11,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 3,
+          "coefficient": "-29863/160839"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 11,
+          "coefficient": "-731/5957"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 20,
+          "coefficient": "52126/160839"
+        }
+      ]
+    },
+    {
+      "parameter_index": 12,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 108,
+          "linear_variable": 12,
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "parameter_index": 15,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 32,
+          "linear_variable": 2,
+          "coefficient": "-59869429/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 6,
+          "coefficient": "113720/9153"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 10,
+          "coefficient": "153824/3051"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 15,
+          "coefficient": "7581299/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 19,
+          "coefficient": "2409457/15255"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 6,
+          "coefficient": "19869389/457650"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 10,
+          "coefficient": "174049858/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 15,
+          "coefficient": "-429289517/457650"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 19,
+          "coefficient": "-11479973/18306"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 2,
+          "coefficient": "-19869389/457650"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 10,
+          "coefficient": "-22744/3051"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 15,
+          "coefficient": "3827513/152550"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 19,
+          "coefficient": "226007/18306"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 2,
+          "coefficient": "-174049858/228825"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 6,
+          "coefficient": "22744/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 10,
+          "coefficient": "307648/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 15,
+          "coefficient": "15662666/76275"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 19,
+          "coefficient": "20701382/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 1,
+          "coefficient": "59869429/228825"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 5,
+          "coefficient": "81638/9153"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 9,
+          "coefficient": "615296/3051"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 14,
+          "coefficient": "-15591826/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 18,
+          "coefficient": "-38172574/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 2,
+          "coefficient": "429289517/457650"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 6,
+          "coefficient": "-3827513/152550"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 10,
+          "coefficient": "-200074958/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 15,
+          "coefficient": "6668542/9153"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 2,
+          "coefficient": "11479973/18306"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 6,
+          "coefficient": "-22285939/457650"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 10,
+          "coefficient": "-60526786/76275"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 15,
+          "coefficient": "150736651/228825"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 19,
+          "coefficient": "1528456/5085"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 2,
+          "coefficient": "-81638/9153"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 6,
+          "coefficient": "-39802/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 1,
+          "coefficient": "-113720/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 5,
+          "coefficient": "39802/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 14,
+          "coefficient": "267242/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 18,
+          "coefficient": "28430/9153"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 1,
+          "coefficient": "-153824/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 14,
+          "coefficient": "398624/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 18,
+          "coefficient": "-63892/3051"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 1,
+          "coefficient": "-7581299/228825"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 9,
+          "coefficient": "-2790368/9153"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 14,
+          "coefficient": "11084104/45765"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 18,
+          "coefficient": "43752779/228825"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 1,
+          "coefficient": "-2409457/15255"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 9,
+          "coefficient": "268424/9153"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 14,
+          "coefficient": "-447928/45765"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 18,
+          "coefficient": "441928/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 2,
+          "coefficient": "-6668542/9153"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 10,
+          "coefficient": "4605736/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 14,
+          "coefficient": "632230/21357"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 15,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 18,
+          "coefficient": "-632230/21357"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 19,
+          "coefficient": "11150816/45765"
+        }
+      ]
+    },
+    {
+      "parameter_index": 16,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 54,
+          "linear_variable": 11,
+          "coefficient": "115187/68931"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 16,
+          "coefficient": "103/414"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 20,
+          "coefficient": "-14281/29970"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 3,
+          "coefficient": "-115187/68931"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 16,
+          "coefficient": "31795/45954"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 20,
+          "coefficient": "474491/689310"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 3,
+          "coefficient": "-103/414"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 11,
+          "coefficient": "-115187/68931"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 16,
+          "coefficient": "-291661/229770"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 20,
+          "coefficient": "1410569/689310"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 3,
+          "coefficient": "14281/29970"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 11,
+          "coefficient": "-115187/68931"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 16,
+          "coefficient": "74461/38295"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 3,
+          "coefficient": "291661/229770"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 11,
+          "coefficient": "119609/68931"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 16,
+          "coefficient": "1"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 20,
+          "coefficient": "-667534/344655"
+        }
+      ]
+    },
+    {
+      "parameter_index": 19,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 32,
+          "linear_variable": 2,
+          "coefficient": "8970671/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 6,
+          "coefficient": "-17680/9153"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 10,
+          "coefficient": "-22972/3051"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 15,
+          "coefficient": "-940126/228825"
+        },
+        {
+          "equation_index": 32,
+          "linear_variable": 19,
+          "coefficient": "-355898/15255"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 6,
+          "coefficient": "-2761111/457650"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 10,
+          "coefficient": "-25867142/228825"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 15,
+          "coefficient": "63534283/457650"
+        },
+        {
+          "equation_index": 39,
+          "linear_variable": 19,
+          "coefficient": "1695811/18306"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 2,
+          "coefficient": "2761111/457650"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 10,
+          "coefficient": "3536/3051"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 15,
+          "coefficient": "-485737/152550"
+        },
+        {
+          "equation_index": 42,
+          "linear_variable": 19,
+          "coefficient": "-31159/18306"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 2,
+          "coefficient": "25867142/228825"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 6,
+          "coefficient": "-3536/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 10,
+          "coefficient": "-45944/3051"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 15,
+          "coefficient": "-2220559/76275"
+        },
+        {
+          "equation_index": 46,
+          "linear_variable": 19,
+          "coefficient": "-3047593/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 1,
+          "coefficient": "-8970671/228825"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 5,
+          "coefficient": "-10342/9153"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 9,
+          "coefficient": "-91888/3051"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 14,
+          "coefficient": "2432114/45765"
+        },
+        {
+          "equation_index": 48,
+          "linear_variable": 18,
+          "coefficient": "5633126/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 2,
+          "coefficient": "-63534283/457650"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 6,
+          "coefficient": "485737/152550"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 10,
+          "coefficient": "29765917/228825"
+        },
+        {
+          "equation_index": 50,
+          "linear_variable": 15,
+          "coefficient": "-993581/9153"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 2,
+          "coefficient": "-1695811/18306"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 6,
+          "coefficient": "3136811/457650"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 10,
+          "coefficient": "8979239/76275"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 15,
+          "coefficient": "-22722149/228825"
+        },
+        {
+          "equation_index": 52,
+          "linear_variable": 19,
+          "coefficient": "-225199/5085"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 2,
+          "coefficient": "10342/9153"
+        },
+        {
+          "equation_index": 83,
+          "linear_variable": 6,
+          "coefficient": "6188/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 1,
+          "coefficient": "17680/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 5,
+          "coefficient": "-6188/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 14,
+          "coefficient": "-41548/9153"
+        },
+        {
+          "equation_index": 94,
+          "linear_variable": 18,
+          "coefficient": "-4420/9153"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 1,
+          "coefficient": "22972/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 14,
+          "coefficient": "-60088/3051"
+        },
+        {
+          "equation_index": 105,
+          "linear_variable": 18,
+          "coefficient": "10169/3051"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 1,
+          "coefficient": "940126/228825"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 9,
+          "coefficient": "420616/9153"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 14,
+          "coefficient": "-1704491/45765"
+        },
+        {
+          "equation_index": 110,
+          "linear_variable": 18,
+          "coefficient": "-6345946/228825"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 1,
+          "coefficient": "355898/15255"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 9,
+          "coefficient": "-46918/9153"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 14,
+          "coefficient": "87527/45765"
+        },
+        {
+          "equation_index": 113,
+          "linear_variable": 18,
+          "coefficient": "-68072/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 2,
+          "coefficient": "993581/9153"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 10,
+          "coefficient": "-705539/15255"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 14,
+          "coefficient": "-382265/85428"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 18,
+          "coefficient": "382265/85428"
+        },
+        {
+          "equation_index": 116,
+          "linear_variable": 19,
+          "coefficient": "-1550524/45765"
+        }
+      ]
+    },
+    {
+      "parameter_index": 20,
+      "power": 3,
+      "multipliers": [
+        {
+          "equation_index": 54,
+          "linear_variable": 11,
+          "coefficient": "22282/344655"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 16,
+          "coefficient": "-749/1035"
+        },
+        {
+          "equation_index": 54,
+          "linear_variable": 20,
+          "coefficient": "3007/14985"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 3,
+          "coefficient": "-22282/344655"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 16,
+          "coefficient": "57136/114885"
+        },
+        {
+          "equation_index": 59,
+          "linear_variable": 20,
+          "coefficient": "272017/344655"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 3,
+          "coefficient": "749/1035"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 11,
+          "coefficient": "-22282/344655"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 16,
+          "coefficient": "19001/22977"
+        },
+        {
+          "equation_index": 62,
+          "linear_variable": 20,
+          "coefficient": "-380957/344655"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 3,
+          "coefficient": "-3007/14985"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 11,
+          "coefficient": "-22282/344655"
+        },
+        {
+          "equation_index": 63,
+          "linear_variable": 16,
+          "coefficient": "-18641/38295"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 3,
+          "coefficient": "-19001/22977"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 11,
+          "coefficient": "-257684/344655"
+        },
+        {
+          "equation_index": 117,
+          "linear_variable": 20,
+          "coefficient": "647789/344655"
+        }
+      ]
+    }
+  ],
+  "remaining_local_parameters": [
+    0,
+    1,
+    4,
+    5,
+    8,
+    9,
+    13,
+    14,
+    17,
+    18
+  ],
+  "stage": 6,
+  "basis": "reduced",
+  "bound_seconds": 120,
+  "elapsed_seconds": 0.23663369999849238
+}

@@ -27,12 +27,26 @@ Click a figure to open its equations, reproducible code, checks, and limits.
 These pictures show actual calculations and failed candidates; the instance
 still has no certificate from this notebook.
 
-**Latest calculation — nine necessary vanishings in the full 75-parameter family.**
+**Latest calculation — the full 75-parameter quadratic-direction family is excluded.**
+Larger polynomial multipliers and repeated rebuilding reduce the previous
+66-parameter remainder through `65 → 60 → 53 → 45 → 37 → 21 → 10`.
+The final ten directions lie in the already excluded coordinate-divisible
+subfamily; its exact proof closes the chain. All numerator corrections remain
+allowed. This is a complete exclusion of this degree-seven polar family,
+not a solution of the instance or an exclusion of arbitrary degree-seven
+denominators. Unsuccessful searches and timeouts remain in the packet.
+
+[![Exact polynomial identities and rebuilding close the 66-parameter remainder of the full quadratic-direction polar family](results/cyclic-fano-remaining66-multipliers-figures/cyclic-fano-remaining66-multipliers.png)](notes/cyclic-fano-remaining66-multipliers.md)
+
+[Inspect the equivalent bases, larger multiplier maps, and rebuilding gains](results/cyclic-fano-remaining66-multipliers-figures/cyclic-fano-remaining66-multipliers-maps.png).
+
+**Previous checkpoint — nine necessary vanishings in the full 75-parameter family.**
 All five components of the direction field may now be arbitrary homogeneous
 quadratics. Eight exact cube identities force eight coefficients to zero;
 rebuilding supplies five extra independent quadratic constraints and a ninth
-cube identity. The remaining 66-parameter family is unresolved. Further
-sparse cubic searches and a small quartic search found no additional powers.
+cube identity. The 66-parameter remainder was unresolved at this checkpoint;
+the continuation above closes it. The earlier sparse cubic searches and
+small quartic search found no additional powers in their tested spaces.
 
 [![The full quadratic-direction parameter grid, its nine exact vanishings, and the unresolved 66-parameter remainder](results/cyclic-fano-full-quadratic-multipliers-figures/cyclic-fano-full-quadratic-multipliers.png)](notes/cyclic-fano-full-quadratic-multipliers.md)
 
@@ -42,8 +56,8 @@ sparse cubic searches and a small quartic search found no additional powers.
 For the degree-seven family with `v_i = x_i (M x)_i`, cubic identities force
 20 matrix entries to vanish. Rebuilding the complete correction equations
 then forces the five remaining entries to vanish. This excludes the entire
-stated family over the complex numbers. The unrestricted 75-parameter
-quadratic-direction family remains unresolved.
+stated family over the complex numbers. The continuation above uses this
+result to finish the unrestricted 75-parameter quadratic-direction family.
 
 [![Cubic multiplier identities reduce the coordinate-divisible direction matrix from 25 entries to its Y0 column, then to zero after rebuilding](results/cyclic-fano-divisible-multipliers-figures/cyclic-fano-divisible-multipliers.png)](notes/cyclic-fano-divisible-multipliers.md)
 
@@ -142,7 +156,8 @@ including five mixed types that first appear at this degree. Complete
 one-component families `v = f(x) partial_i`, with arbitrary homogeneous
 quadratic `f`, are excluded by two rounds of exact square identities.
 This permits extra support from `f`; it goes beyond taking powers of the
-old fixed polar. The 75-parameter family of general sums remains unresolved.
+old fixed polar. The 75-parameter family of general sums was unresolved at
+this checkpoint and is excluded in the latest continuation above.
 
 The [polynomial-multiplier follow-up](notes/cyclic-fano-divisible-multipliers.md)
 closes the previously unresolved 25-parameter subfamily `v_i = x_i (M x)_i`.
@@ -158,10 +173,20 @@ The [full-family continuation](notes/cyclic-fano-full-quadratic-multipliers.md)
 allows all 75 coefficients simultaneously. It proves nine necessary
 coefficient vanishings using two rounds of cubic identities, retaining all
 55 correction types. The first rebuild gains five independent quadrics;
-the second gains none. The remaining 66 parameters are unresolved. Four
+the second gains none. The remaining 66 parameters were unresolved. Four
 large modular block searches hit explicit work limits, and a restricted
 quartic search found no additional coordinate powers. These limits remain
 recorded alongside the rational proofs.
+
+The [larger-multiplier continuation](notes/cyclic-fano-remaining66-multipliers.md)
+now closes those 66 parameters. Exact changes of equation basis expose
+useful sparse subsystems; cubic and quartic identities force further zeros.
+Six physical rebuilds add respectively `1, 11, 7, 13, 26, 20` independent
+necessary quadrics beyond simply restricting the preceding equations.
+The final ten directions embed in the previously excluded 25-parameter
+subfamily. Both rational checkers replay the chain and the closure. A
+separate CUDA finite-field screen checks the factored identities and rejects
+deliberately altered coefficients; it supplements the exact proofs.
 
 A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
 shows why a successful-looking curve slice can mislead: one polar's residual

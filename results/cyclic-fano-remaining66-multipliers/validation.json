@@ -1,0 +1,251 @@
+{
+  "schema": "cyclic-fano-remaining66-multipliers-validation-v1",
+  "status": "PASS",
+  "producer_sha256": "57d5415a0700046a98cb8e622df3151c36484100f3075a7aaf593d1c4831b025",
+  "packet_sha256": "aaf4137566d535f8a3da753c175bde9b21230a439ad1b1dea430874934bca3d2",
+  "stages": [
+    {
+      "index": 0,
+      "physical": {
+        "physical_duals": 393,
+        "coefficient_pairings": 1428387,
+        "rank": 1728,
+        "mixed_rank": 1335,
+        "individual_squares_in_quadric_span": []
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 393,
+        "combination_terms": 10029,
+        "individual_squares": [],
+        "original_terms": 41288,
+        "reduced_terms": 47734
+      },
+      "coordinate_powers": 1,
+      "multiplier_terms": 131
+    },
+    {
+      "index": 1,
+      "physical": {
+        "physical_duals": 392,
+        "coefficient_pairings": 1370990,
+        "rank": 1726,
+        "mixed_rank": 1334,
+        "individual_squares_in_quadric_span": []
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 392,
+        "combination_terms": 9858,
+        "individual_squares": [],
+        "original_terms": 38982,
+        "reduced_terms": 45978
+      },
+      "coordinate_powers": 5,
+      "multiplier_terms": 543
+    },
+    {
+      "index": 2,
+      "physical": {
+        "physical_duals": 388,
+        "coefficient_pairings": 1102721,
+        "rank": 1677,
+        "mixed_rank": 1289,
+        "individual_squares_in_quadric_span": []
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 388,
+        "combination_terms": 9625,
+        "individual_squares": [],
+        "original_terms": 30070,
+        "reduced_terms": 36574
+      },
+      "coordinate_powers": 7,
+      "multiplier_terms": 264
+    },
+    {
+      "index": 3,
+      "physical": {
+        "physical_duals": 326,
+        "coefficient_pairings": 651094,
+        "rank": 1516,
+        "mixed_rank": 1190,
+        "individual_squares_in_quadric_span": []
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 326,
+        "combination_terms": 6082,
+        "individual_squares": [],
+        "original_terms": 18985,
+        "reduced_terms": 19504
+      },
+      "coordinate_powers": 8,
+      "multiplier_terms": 537
+    },
+    {
+      "index": 4,
+      "physical": {
+        "physical_duals": 314,
+        "coefficient_pairings": 507212,
+        "rank": 1434,
+        "mixed_rank": 1120,
+        "individual_squares_in_quadric_span": [
+          19
+        ]
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 314,
+        "combination_terms": 5571,
+        "individual_squares": [
+          35
+        ],
+        "original_terms": 13692,
+        "reduced_terms": 12716
+      },
+      "coordinate_powers": 8,
+      "multiplier_terms": 124
+    },
+    {
+      "index": 5,
+      "physical": {
+        "physical_duals": 254,
+        "coefficient_pairings": 293090,
+        "rank": 1232,
+        "mixed_rank": 978,
+        "individual_squares_in_quadric_span": [
+          11,
+          14,
+          23,
+          30,
+          31
+        ]
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 254,
+        "combination_terms": 3098,
+        "individual_squares": [
+          24,
+          30,
+          43,
+          60,
+          63
+        ],
+        "original_terms": 7208,
+        "reduced_terms": 8504
+      },
+      "coordinate_powers": 16,
+      "multiplier_terms": 501
+    },
+    {
+      "index": 6,
+      "physical": {
+        "physical_duals": 118,
+        "coefficient_pairings": 49069,
+        "rank": 774,
+        "mixed_rank": 656,
+        "individual_squares_in_quadric_span": [
+          12
+        ]
+      },
+      "equivalent_basis": {
+        "equivalent_basis_rank": 118,
+        "combination_terms": 973,
+        "individual_squares": [
+          42
+        ],
+        "original_terms": 1471,
+        "reduced_terms": 1799
+      },
+      "coordinate_powers": 11,
+      "multiplier_terms": 367
+    }
+  ],
+  "coordinate_divisible_closure": {
+    "status": "PASS",
+    "survivor_embedding": [
+      {
+        "raw_parameter_index": 0,
+        "old_local_parameter_index": 0
+      },
+      {
+        "raw_parameter_index": 2,
+        "old_local_parameter_index": 2
+      },
+      {
+        "raw_parameter_index": 16,
+        "old_local_parameter_index": 5
+      },
+      {
+        "raw_parameter_index": 21,
+        "old_local_parameter_index": 7
+      },
+      {
+        "raw_parameter_index": 32,
+        "old_local_parameter_index": 10
+      },
+      {
+        "raw_parameter_index": 39,
+        "old_local_parameter_index": 12
+      },
+      {
+        "raw_parameter_index": 48,
+        "old_local_parameter_index": 15
+      },
+      {
+        "raw_parameter_index": 55,
+        "old_local_parameter_index": 17
+      },
+      {
+        "raw_parameter_index": 64,
+        "old_local_parameter_index": 20
+      },
+      {
+        "raw_parameter_index": 71,
+        "old_local_parameter_index": 22
+      }
+    ],
+    "physical_stages": [
+      {
+        "physical_duals": 155,
+        "coefficient_pairings": 60381,
+        "rank": 833,
+        "mixed_rank": 678,
+        "individual_squares_in_quadric_span": []
+      },
+      {
+        "physical_duals": 12,
+        "coefficient_pairings": 550,
+        "rank": 232,
+        "mixed_rank": 220,
+        "individual_squares_in_quadric_span": []
+      }
+    ],
+    "physical_identities": 167,
+    "coordinate_cubes": 25,
+    "scope": "The surviving ten-parameter subspace is contained in the separately replayed excluded coordinate-divisible25 family."
+  },
+  "completed_attempts_replayed": [
+    "cubic-reduced-128.json",
+    "cubic-reduced-64.json",
+    "stage-01-cubic-reduced-128.json",
+    "stage-01-cubic-reduced-64.json",
+    "stage-01-quartic-proof-reduced-8.json",
+    "stage-01-quartic-reduced-8.json",
+    "stage-02-cubic-reduced-128.json",
+    "stage-02-cubic-reduced-64.json",
+    "stage-02-quartic-proof-reduced-8.json",
+    "stage-02-quartic-reduced-8.json",
+    "stage-03-cubic-reduced-64.json",
+    "stage-03-quartic-proof-reduced-8.json",
+    "stage-03-quartic-reduced-8.json",
+    "stage-04-cubic-reduced-16.json",
+    "stage-04-cubic-reduced-32.json",
+    "stage-04-cubic-reduced-64.json",
+    "stage-04-quartic-proof-reduced-8.json",
+    "stage-05-cubic-reduced-16.json",
+    "stage-05-cubic-reduced-32.json",
+    "stage-05-cubic-reduced-64.json",
+    "stage-05-quartic-proof-reduced-8.json",
+    "stage-06-cubic-reduced-16.json"
+  ],
+  "negative_controls_rejected": 18,
+  "scope": "Source maps, exact basis combinations and power multipliers replayed; incomplete discovery attempts retained without rerunning their timeout."
+}

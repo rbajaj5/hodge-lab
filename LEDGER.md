@@ -1629,7 +1629,88 @@ conversations or evidence of an accepted solve.
     The updated front-page text and feature image were inspected on live
     GitHub. Primary, independent and figure-generation checks pass locally;
     the [new CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39072395020)
-    was queued at this checkpoint, so a remote pass is not yet claimed.
+    was queued at this checkpoint. Its dedicated
+    [full-family Linux job](https://github.com/rbajaj5/hodge-lab/actions/runs/39072395020/job/117512514136)
+    subsequently passed the primary replay, independent reconstruction and
+    figure generator. This records that job, not the whole larger workflow.
+
+76. **17 October 2026 — Larger polynomial multipliers and rebuilding close the full quadratic-direction polar family.**
+    Continued the preceding 66-parameter remainder of the fixed
+    `cyclic-triple-fano` target. The exact reduction chain is
+    `66 → 65 → 60 → 53 → 45 → 37 → 21 → 10`. The last ten raw
+    directions embed explicitly in the already excluded coordinate-divisible
+    25-parameter family. Replaying that proof closes the chain to zero.
+    Together with the previous nine vanishings, this excludes the full
+    75-parameter homogeneous-quadratic direction family over the complex
+    numbers. It does not exclude arbitrary degree-seven denominators or
+    solve the instance. All 55 projected correction types, 230 raw Koszul
+    fields and 246 quotient directions remain accounted for; the protected
+    target and upstream files are unchanged.
+
+    The useful change was to combine exact equivalent equation bases,
+    larger multiplier spaces and repeated physical rebuilding. At the
+    initial stage, row reduction preserves the 393-dimensional equation
+    span. Its total term count increases from 41,288 to 47,734, while the
+    number of rows with at most four terms grows from 40 to 76. This helps
+    the selected sparse searches without adding mathematical constraints.
+    By contrast, the six physical rebuilds add respectively
+    `1, 11, 7, 13, 26, 20` independent necessary quadrics beyond restricting
+    the old equations. They eliminate correction variables again after
+    globally proved parameter vanishings, without a generic-rank assumption.
+
+    The new packet selects 44 cube identities and 12 fourth-power identities,
+    with 2,467 multiplier terms in total. It retains all 25 discovery-attempt
+    records, including the 22 completed multiplier calculations and three
+    timeouts. The original-basis cubic search and a later 53-parameter cubic
+    search each hit 120 seconds; a full-quadric Singular calculation over
+    the field with 1,009 elements hit 60 seconds. None supplies a completed
+    rank or nonmembership conclusion. A separate attempt to shorten the
+    initial cube proof also failed in four specified small multiplier spans;
+    that does not imply failure in the whole ideal. The 45-parameter system
+    already has a direct square for raw coefficient 35, so higher powers
+    are not claimed to be necessary for every individual vanishing.
+
+    At the user's request, the RTX 5070 Ti Laptop GPU additionally evaluated
+    the 56 new factored identities at 4,096 points in each of two finite
+    fields, with primes 65,521 and 65,519. All 458,752 evaluations agree.
+    Adding one to the first multiplier coefficient is detected for every
+    identity over each prime. Eight points per identity and prime also
+    match the CPU implementation, including the altered results. These
+    integer CUDA checks are supplementary; they do not establish identities
+    over the rationals or complex numbers. The inherited nine vanishings
+    and old 25-family closure belong to the rational replay, not this GPU
+    screen. No GPU speedup or new GPU-discovered theorem is claimed.
+    [GPU code](experiments/gpu_cyclic_fano_powers.py) and
+    [recorded device, inputs, results and limits](results/cyclic-fano-powers-gpu/report.json).
+
+    [Equations, exact witnesses, visualizations, failed searches and reproduction](notes/cyclic-fano-remaining66-multipliers.md).
+    The new front-page figure separates the inherited nine zeros, the 56
+    new power identities and the ten directions covered by the old
+    subfamily proof. The companion shows the actual basis changes,
+    multiplier maps, failed searches and rebuilding gains. Credit remains
+    with the upstream certificate framework, the preceding source-bound
+    Koszul/projection calculations and the Eisenbud-inspired use of graded
+    polynomial multipliers. Codex assisted construction, a separate arithmetic
+    implementation, visualizations and the auxiliary CUDA screen.
+
+    **Validation checkpoint:** both complete rational replays pass. The
+    primary replay took 298.14 seconds and rejected 18 altered-input controls;
+    the independent replay took approximately 289 seconds and rejected 29.
+    Both check the seven physical stages, their basis maps and powers,
+    the six rebuild gains, all completed attempt spaces and the old
+    25-parameter closure. The independent program also reconstructs the
+    source/projection/Euler data and records the failed simplification.
+    Its initial run stopped at a duplicate-key error while constructing a
+    report; that coding error was corrected before the complete replay.
+    Separate implementations are not external peer review or Lean acceptance.
+    Both new PNGs were visually inspected. The figure generator checks
+    74 source bindings; all 33 local gallery/note links resolve and all
+    32 note formulas pass local KaTeX parsing. GitHub's Markdown preview
+    returns all nine embedded gallery images.
+    The fully paginated discussion refresh at 22:09 UTC found no changes
+    in the thirteen monitored threads. No upstream comment or edit is part
+    of this notebook batch. The contribution tally remains **24**; discussion
+    updates remain reserved for a substantial batch.
 
 ## Keeping this current
 

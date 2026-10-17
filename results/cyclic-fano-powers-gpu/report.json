@@ -1,0 +1,506 @@
+{
+  "status": "PASS",
+  "created_at": "2026-10-17T22:09:28.153208+00:00",
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "cupy_version": "13.6.0",
+  "cuda_runtime_version": 12090,
+  "driver_version": 12090,
+  "seed": 20261017,
+  "identity_count": 56,
+  "referenced_quadrics": 342,
+  "identities": [
+    {
+      "stage": 0,
+      "raw_parameter": 46,
+      "power": 3,
+      "multiplier_terms": 131
+    },
+    {
+      "stage": 1,
+      "raw_parameter": 44,
+      "power": 4,
+      "multiplier_terms": 87
+    },
+    {
+      "stage": 1,
+      "raw_parameter": 59,
+      "power": 4,
+      "multiplier_terms": 144
+    },
+    {
+      "stage": 1,
+      "raw_parameter": 67,
+      "power": 4,
+      "multiplier_terms": 81
+    },
+    {
+      "stage": 1,
+      "raw_parameter": 69,
+      "power": 4,
+      "multiplier_terms": 87
+    },
+    {
+      "stage": 1,
+      "raw_parameter": 72,
+      "power": 4,
+      "multiplier_terms": 144
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 5,
+      "power": 4,
+      "multiplier_terms": 44
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 11,
+      "power": 3,
+      "multiplier_terms": 2
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 14,
+      "power": 3,
+      "multiplier_terms": 146
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 15,
+      "power": 4,
+      "multiplier_terms": 44
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 29,
+      "power": 4,
+      "multiplier_terms": 24
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 65,
+      "power": 3,
+      "multiplier_terms": 2
+    },
+    {
+      "stage": 2,
+      "raw_parameter": 70,
+      "power": 3,
+      "multiplier_terms": 2
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 6,
+      "power": 3,
+      "multiplier_terms": 3
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 10,
+      "power": 3,
+      "multiplier_terms": 7
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 12,
+      "power": 3,
+      "multiplier_terms": 5
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 17,
+      "power": 4,
+      "multiplier_terms": 6
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 18,
+      "power": 4,
+      "multiplier_terms": 435
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 19,
+      "power": 3,
+      "multiplier_terms": 72
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 31,
+      "power": 3,
+      "multiplier_terms": 6
+    },
+    {
+      "stage": 3,
+      "raw_parameter": 62,
+      "power": 4,
+      "multiplier_terms": 3
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 9,
+      "power": 3,
+      "multiplier_terms": 36
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 33,
+      "power": 3,
+      "multiplier_terms": 4
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 35,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 45,
+      "power": 3,
+      "multiplier_terms": 15
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 47,
+      "power": 3,
+      "multiplier_terms": 2
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 49,
+      "power": 3,
+      "multiplier_terms": 31
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 50,
+      "power": 3,
+      "multiplier_terms": 3
+    },
+    {
+      "stage": 4,
+      "raw_parameter": 51,
+      "power": 3,
+      "multiplier_terms": 32
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 1,
+      "power": 3,
+      "multiplier_terms": 89
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 7,
+      "power": 3,
+      "multiplier_terms": 4
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 20,
+      "power": 3,
+      "multiplier_terms": 89
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 24,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 25,
+      "power": 4,
+      "multiplier_terms": 15
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 27,
+      "power": 3,
+      "multiplier_terms": 5
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 30,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 34,
+      "power": 3,
+      "multiplier_terms": 7
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 36,
+      "power": 3,
+      "multiplier_terms": 89
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 37,
+      "power": 3,
+      "multiplier_terms": 5
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 43,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 52,
+      "power": 3,
+      "multiplier_terms": 88
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 54,
+      "power": 3,
+      "multiplier_terms": 17
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 60,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 63,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 5,
+      "raw_parameter": 68,
+      "power": 3,
+      "multiplier_terms": 88
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 3,
+      "power": 3,
+      "multiplier_terms": 55
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 4,
+      "power": 3,
+      "multiplier_terms": 17
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 22,
+      "power": 3,
+      "multiplier_terms": 55
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 23,
+      "power": 3,
+      "multiplier_terms": 25
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 40,
+      "power": 3,
+      "multiplier_terms": 55
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 41,
+      "power": 3,
+      "multiplier_terms": 17
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 42,
+      "power": 3,
+      "multiplier_terms": 1
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 57,
+      "power": 3,
+      "multiplier_terms": 55
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 58,
+      "power": 3,
+      "multiplier_terms": 17
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 73,
+      "power": 3,
+      "multiplier_terms": 54
+    },
+    {
+      "stage": 6,
+      "raw_parameter": 74,
+      "power": 3,
+      "multiplier_terms": 16
+    }
+  ],
+  "runs": [
+    {
+      "prime": 65521,
+      "samples_per_identity": 4096,
+      "valid_nonzero_residuals": 0,
+      "altered_identities_detected": 56,
+      "mutation_failures_per_identity": [
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4095,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4096,
+        4096,
+        4095,
+        4095,
+        4095,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4096,
+        4095,
+        4096,
+        4095,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4096,
+        4096,
+        4095,
+        4096,
+        4095
+      ],
+      "cpu_crosscheck_points_per_identity": 8,
+      "gpu_compute_seconds_excluding_compile_and_transfer": 0.001464799999666866
+    },
+    {
+      "prime": 65519,
+      "samples_per_identity": 4096,
+      "valid_nonzero_residuals": 0,
+      "altered_identities_detected": 56,
+      "mutation_failures_per_identity": [
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4095,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4095,
+        4096,
+        4096,
+        4096,
+        4095,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4095,
+        4096,
+        4096,
+        4096,
+        4096
+      ],
+      "cpu_crosscheck_points_per_identity": 8,
+      "gpu_compute_seconds_excluding_compile_and_transfer": 0.001519099998404272
+    }
+  ],
+  "source_bindings": {
+    "results\\cyclic-fano-remaining66-multipliers\\packet.json": "aaf4137566d535f8a3da753c175bde9b21230a439ad1b1dea430874934bca3d2",
+    "results\\cyclic-fano-remaining66-multipliers\\reduced-quadrics.json.gz": "74d2daaa957d4339ea6fde46b2580358aaefb32767ffaae79044f5e06b30a046",
+    "results\\cyclic-fano-remaining66-multipliers\\powers.json": "e752049cb6fee8606f5ba9189b7c4a6e40f53577345732918953b364a63f46c6",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-01-reduced-quadrics.json.gz": "e15b1ff57489def242a5ffc48a647d25a49768336b73f1586384734ea8b9f300",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-01-powers.json": "7a59d604e5705378bd20188956afb20097e743a3e146753f277e5b23c12ec7a0",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-02-reduced-quadrics.json.gz": "73cd2612fc8cc142f6b0695c16a526fda5c71a0f3af56028cae0112a40ff202c",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-02-powers.json": "33f489003ba0d333b41a9f89cdd5bc7b7800bba2b35609a00c83bcb332b3f012",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-03-reduced-quadrics.json.gz": "a8483852a93ed5a3b401144b1404ee258923103c026f7f0c210a54c253012b98",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-03-powers.json": "8c2d3bb4fab8e1850c5229127dced796e7bf7d05b5b1c68689c165a762963797",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-04-reduced-quadrics.json.gz": "2fdd91f162dd39f3d1f04b94f636aefa91abd771bf3d1705833c6cf6fc219f0f",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-04-powers.json": "95753afac252fda60b54ac1063ac6054ec13ee4afbf137f9e174fde6351636ba",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-05-reduced-quadrics.json.gz": "d2860dc2651f7d66312f46cdf32eff488b8ca26079b106d38e84cae1bc3cf828",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-05-powers.json": "c8b24f0d22ed2918ce690e408c10932aaddbbfdff14e2f61b7d48309853aa39a",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-06-reduced-quadrics.json.gz": "3ccef83e76ce3b49e1180cf006d3a202b4a185e960ad5f59f7a1f12cbcac4a0e",
+    "results\\cyclic-fano-remaining66-multipliers\\stage-06-powers.json": "68e2aa2ba0d64c6312b81b64caf4331e3b3a8b48189d7ec7b6e8bdb913aea711"
+  },
+  "script_sha256": "b3c4d7d1547935189e733c4862ca547b183136869d8eb2ee026cf5959421a8ad",
+  "loader_sha256": "327cf9cecbec19f7e90dada0b10db72771a871619dc393b03b5a04544fd9edd1",
+  "coverage": "Only the selected identities in this new reduction chain. The older nine vanishings and the inherited25-family closure are checked by the rational verifiers, not by this GPU run.",
+  "mutation": "Add one to the first multiplier coefficient in each identity.",
+  "arithmetic": "Integer modular products use signed64; each product is below prime squared. No floating-point rank test.",
+  "limits": "Finite evaluations are a supplementary error screen, not a proof over Q or C. The separately recorded rational coefficient checks prove the identities. No timing comparison or search speedup is claimed."
+}

@@ -1,0 +1,1377 @@
+{
+  "schema": "cyclic-fano-remaining66-multipliers-v1",
+  "status": "full_quadratic_direction_family_excluded",
+  "instance": "cyclic-triple-fano",
+  "q": 1,
+  "degree": 7,
+  "source_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "producer_sha256": "57d5415a0700046a98cb8e622df3151c36484100f3075a7aaf593d1c4831b025",
+  "dependencies": {
+    "cyclic_fano_full_quadratic_multipliers.py": "607f8f7ce30f30ce162c5dad189c09bded2bb7c97cd3a8eb0d4d8f064f06afc7",
+    "cyclic_fano_divisible_multipliers.py": "84afb3132ca8a9246403e891e23ae61b2e82b9594c1169f9c4e76e4282a1f1b5",
+    "cyclic_fano_quadratic_polars.py": "1944dab5fc5d7ad98b169362131ffba70ffe958c101b895334c0b83c8f7824f3",
+    "cyclic_fano_linear_polars.py": "1cfc495cba06111bdf873a701b3e20523396171464e86a58a01e3b29aac2e745",
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0"
+  },
+  "prior_proof": {
+    "packet": "results/cyclic-fano-full-quadratic-multipliers/packet.json",
+    "packet_sha256": "f8d9fbd76b830d966bcdf4173d24e5730cd41d7f137bd0148ed5b279c23990c4",
+    "independent_receipt_sha256": "bee4bb91d0ad3898a3db1fb4922a05385ac8ddb30ccf2303d33870e5f6b3f129",
+    "primary_receipt_sha256": "32dfabd02b9eb045edebc6ce0fb5d1016a4a89efc05fbc46b7862bf44937d23b",
+    "physical_file": "results/cyclic-fano-full-quadratic-multipliers/stage-02-quadrics.json.gz",
+    "physical_sha256": "a9aa1c9d1bf52678e4ea75aca126159f5b7802ece404567f5b233c4a6df772f2",
+    "initial_parameters": 66,
+    "prior_forced_raw_parameters": [
+      8,
+      13,
+      26,
+      28,
+      38,
+      53,
+      56,
+      61,
+      66
+    ]
+  },
+  "parameter_order": [
+    {
+      "component": 0,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 3
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 0
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 0
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 1
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 0
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 4
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 3
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 4
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 0
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 4
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 1
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 1
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 5
+    }
+  ],
+  "stages": [
+    {
+      "index": 0,
+      "physical_file": null,
+      "physical_sha256": "a9aa1c9d1bf52678e4ea75aca126159f5b7802ece404567f5b233c4a6df772f2",
+      "reduced_file": "reduced-quadrics.json.gz",
+      "reduced_sha256": "74d2daaa957d4339ea6fde46b2580358aaefb32767ffaae79044f5e06b30a046",
+      "power_proof_file": "powers.json",
+      "power_proof_sha256": "e752049cb6fee8606f5ba9189b7c4a6e40f53577345732918953b364a63f46c6",
+      "power_degree": 3,
+      "parameters": 66,
+      "physical_rows": 1792,
+      "physical_columns": 5841,
+      "rank": 1728,
+      "mixed_rank": 1335,
+      "necessary_quadrics": 393,
+      "newly_forced_raw_parameters": [
+        46
+      ]
+    },
+    {
+      "index": 1,
+      "physical_file": "stage-01-quadrics.json.gz",
+      "physical_sha256": "166f045d82a5583a78788eab1920ac0b7a6aa5ba42a4d968fb2303b34d1f4aa9",
+      "reduced_file": "stage-01-reduced-quadrics.json.gz",
+      "reduced_sha256": "e15b1ff57489def242a5ffc48a647d25a49768336b73f1586384734ea8b9f300",
+      "power_proof_file": "stage-01-powers.json",
+      "power_proof_sha256": "7a59d604e5705378bd20188956afb20097e743a3e146753f277e5b23c12ec7a0",
+      "power_degree": 4,
+      "parameters": 65,
+      "physical_rows": 1792,
+      "physical_columns": 5720,
+      "rank": 1726,
+      "mixed_rank": 1334,
+      "necessary_quadrics": 392,
+      "newly_forced_raw_parameters": [
+        44,
+        59,
+        67,
+        69,
+        72
+      ]
+    },
+    {
+      "index": 2,
+      "physical_file": "stage-02-quadrics.json.gz",
+      "physical_sha256": "ad541632e47fe26760e8caa83ab864a03c2d60c4419f868dcb02ceabc15bee0e",
+      "reduced_file": "stage-02-reduced-quadrics.json.gz",
+      "reduced_sha256": "73cd2612fc8cc142f6b0695c16a526fda5c71a0f3af56028cae0112a40ff202c",
+      "power_proof_file": "stage-02-powers.json",
+      "power_proof_sha256": "33f489003ba0d333b41a9f89cdd5bc7b7800bba2b35609a00c83bcb332b3f012",
+      "power_degree": "mixed",
+      "parameters": 60,
+      "physical_rows": 1778,
+      "physical_columns": 5130,
+      "rank": 1677,
+      "mixed_rank": 1289,
+      "necessary_quadrics": 388,
+      "newly_forced_raw_parameters": [
+        5,
+        11,
+        14,
+        15,
+        29,
+        65,
+        70
+      ]
+    },
+    {
+      "index": 3,
+      "physical_file": "stage-03-quadrics.json.gz",
+      "physical_sha256": "87b83de2883da882330e5597b3bef8dae573adcb563c28b0f99abd0fda3ac802",
+      "reduced_file": "stage-03-reduced-quadrics.json.gz",
+      "reduced_sha256": "a8483852a93ed5a3b401144b1404ee258923103c026f7f0c210a54c253012b98",
+      "power_proof_file": "stage-03-powers.json",
+      "power_proof_sha256": "8c2d3bb4fab8e1850c5229127dced796e7bf7d05b5b1c68689c165a762963797",
+      "power_degree": "mixed",
+      "parameters": 53,
+      "physical_rows": 1693,
+      "physical_columns": 4346,
+      "rank": 1516,
+      "mixed_rank": 1190,
+      "necessary_quadrics": 326,
+      "newly_forced_raw_parameters": [
+        6,
+        10,
+        12,
+        17,
+        18,
+        19,
+        31,
+        62
+      ]
+    },
+    {
+      "index": 4,
+      "physical_file": "stage-04-quadrics.json.gz",
+      "physical_sha256": "b210f0006b688ad4692c99b1a711650fe6a887156ea7cbc92961229e21a98e28",
+      "reduced_file": "stage-04-reduced-quadrics.json.gz",
+      "reduced_sha256": "2fdd91f162dd39f3d1f04b94f636aefa91abd771bf3d1705833c6cf6fc219f0f",
+      "power_proof_file": "stage-04-powers.json",
+      "power_proof_sha256": "95753afac252fda60b54ac1063ac6054ec13ee4afbf137f9e174fde6351636ba",
+      "power_degree": 3,
+      "parameters": 45,
+      "physical_rows": 1655,
+      "physical_columns": 3510,
+      "rank": 1434,
+      "mixed_rank": 1120,
+      "necessary_quadrics": 314,
+      "newly_forced_raw_parameters": [
+        9,
+        33,
+        35,
+        45,
+        47,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "index": 5,
+      "physical_file": "stage-05-quadrics.json.gz",
+      "physical_sha256": "6f40fe422c2695e656dd9fe6473e9a29915f2ab0da6b674e7f30fe4d2c5b7782",
+      "reduced_file": "stage-05-reduced-quadrics.json.gz",
+      "reduced_sha256": "d2860dc2651f7d66312f46cdf32eff488b8ca26079b106d38e84cae1bc3cf828",
+      "power_proof_file": "stage-05-powers.json",
+      "power_proof_sha256": "c8b24f0d22ed2918ce690e408c10932aaddbbfdff14e2f61b7d48309853aa39a",
+      "power_degree": "mixed",
+      "parameters": 37,
+      "physical_rows": 1510,
+      "physical_columns": 2738,
+      "rank": 1232,
+      "mixed_rank": 978,
+      "necessary_quadrics": 254,
+      "newly_forced_raw_parameters": [
+        1,
+        7,
+        20,
+        24,
+        25,
+        27,
+        30,
+        34,
+        36,
+        37,
+        43,
+        52,
+        54,
+        60,
+        63,
+        68
+      ]
+    },
+    {
+      "index": 6,
+      "physical_file": "stage-06-quadrics.json.gz",
+      "physical_sha256": "dab3b077ee7f571cf61e3ba45fb49526265553da08f14f3f330d4a6c34117c83",
+      "reduced_file": "stage-06-reduced-quadrics.json.gz",
+      "reduced_sha256": "3ccef83e76ce3b49e1180cf006d3a202b4a185e960ad5f59f7a1f12cbcac4a0e",
+      "power_proof_file": "stage-06-powers.json",
+      "power_proof_sha256": "68e2aa2ba0d64c6312b81b64caf4331e3b3a8b48189d7ec7b6e8bdb913aea711",
+      "power_degree": 3,
+      "parameters": 21,
+      "physical_rows": 1187,
+      "physical_columns": 1386,
+      "rank": 774,
+      "mixed_rank": 656,
+      "necessary_quadrics": 118,
+      "newly_forced_raw_parameters": [
+        3,
+        4,
+        22,
+        23,
+        40,
+        41,
+        42,
+        57,
+        58,
+        73,
+        74
+      ]
+    }
+  ],
+  "rebuild_diagnostics": [
+    {
+      "stage": 1,
+      "restricted_old_rank": 391,
+      "rebuilt_rank": 392,
+      "added_independent_quadrics": 1,
+      "span_inclusion": true
+    },
+    {
+      "stage": 2,
+      "restricted_old_rank": 377,
+      "rebuilt_rank": 388,
+      "added_independent_quadrics": 11,
+      "span_inclusion": true
+    },
+    {
+      "stage": 3,
+      "restricted_old_rank": 319,
+      "rebuilt_rank": 326,
+      "added_independent_quadrics": 7,
+      "span_inclusion": true
+    },
+    {
+      "stage": 4,
+      "restricted_old_rank": 301,
+      "rebuilt_rank": 314,
+      "added_independent_quadrics": 13,
+      "span_inclusion": true
+    },
+    {
+      "stage": 5,
+      "restricted_old_rank": 228,
+      "rebuilt_rank": 254,
+      "added_independent_quadrics": 26,
+      "span_inclusion": true
+    },
+    {
+      "stage": 6,
+      "restricted_old_rank": 98,
+      "rebuilt_rank": 118,
+      "added_independent_quadrics": 20,
+      "span_inclusion": true
+    }
+  ],
+  "attempts": [
+    {
+      "file": "cas-full-1009-degree3.json",
+      "sha256": "4c164cdf1e39cd820bc0cff6dfa944d698d30230ce7bdd3b1362dc33ff612a5f",
+      "status": "timeout"
+    },
+    {
+      "file": "cubic-original-128-timeout.json",
+      "sha256": "1ee14ff997dab555d71ba77a503b7bb86a5ce7b9efcdff1e34d5f254fb0da356",
+      "status": "timeout"
+    },
+    {
+      "file": "cubic-reduced-128.json",
+      "sha256": "e82827ce6ad263facd420e8d42bee00b772cb4c7d7d961490a36e088d0c5349b",
+      "status": "completed"
+    },
+    {
+      "file": "cubic-reduced-64.json",
+      "sha256": "195009780b0da0985e469d44a3865f274e482c33d93b3e22977c3a055e802ccc",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-cubic-reduced-128.json",
+      "sha256": "f4bc35b4715e477b8f71cab489177f34031ae2b94f4394c4bb40a80cc975ccce",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-cubic-reduced-64.json",
+      "sha256": "3568b0af4b0b7e0b23a09c1aa36809d729f7abd80279b871f0b0eb237960a166",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-quartic-proof-reduced-8.json",
+      "sha256": "5899c40cae4d84b664458f05dbf0b5ab03bbb545ac6e2dccb3915db867a5e182",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-quartic-reduced-8.json",
+      "sha256": "2fbfd342d52339f2dff687a726ecdf8d640e42853d160d8682363db4a9142788",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-cubic-reduced-128.json",
+      "sha256": "bc47053fb9ea941603d6e12857ff805f0608631ebdf1ca35e6d37fbef18d42b2",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-cubic-reduced-64.json",
+      "sha256": "1b3d275ce793ed18219c4e1b45269378eec07e47040c7b79c36440744ae18d0a",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-quartic-proof-reduced-8.json",
+      "sha256": "efb3ffdcc5fa0b5452108cc1c788949c531d1818a6702d2d276a0185eb5010bb",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-quartic-reduced-8.json",
+      "sha256": "8afe19b6aff7feac8d5548cf7c2e332bd51875ecf08afa6a1d3dc7e2eb77f93f",
+      "status": "completed"
+    },
+    {
+      "file": "stage-03-cubic-reduced-128-timeout.json",
+      "sha256": "f474e094cc9e6c3e301580abe31ec24dfd4ce942ba1481f20017402afbb1f250",
+      "status": "timeout"
+    },
+    {
+      "file": "stage-03-cubic-reduced-64.json",
+      "sha256": "23cb4e17a338f03f9e689bbe80c2cd367e0feb242987a66bd990e4d77c3e7d24",
+      "status": "completed"
+    },
+    {
+      "file": "stage-03-quartic-proof-reduced-8.json",
+      "sha256": "46b629938d76c40bf57d1a8e4523ad12b82aa4168beb472908b4d0480f69368b",
+      "status": "completed"
+    },
+    {
+      "file": "stage-03-quartic-reduced-8.json",
+      "sha256": "56f8baee224e554597885d57ec6bf3157f2d82c1d1cbdaed331cd568649aff97",
+      "status": "completed"
+    },
+    {
+      "file": "stage-04-cubic-reduced-16.json",
+      "sha256": "9749d3c7f3297592a0784232e2c91fbf12636d9318e39f888fa2a9fb758ba02d",
+      "status": "completed"
+    },
+    {
+      "file": "stage-04-cubic-reduced-32.json",
+      "sha256": "c99ad65f8b8d701e5a1d973bf7bc69fed6273f67d268249fc6a3e82cf70c3141",
+      "status": "completed"
+    },
+    {
+      "file": "stage-04-cubic-reduced-64.json",
+      "sha256": "4d9050f45ce5a57cbfb45a2ae07b8e879481f92eac94522c3cea7f2281e8cfe7",
+      "status": "completed"
+    },
+    {
+      "file": "stage-04-quartic-proof-reduced-8.json",
+      "sha256": "a583408de7f07e4e1dfb079d129ac777ecde87eab05c9e0c8a7cb46eb42b0b1a",
+      "status": "completed"
+    },
+    {
+      "file": "stage-05-cubic-reduced-16.json",
+      "sha256": "4fe88c288d81287ec91b492647f569e02f323d918f1efa6111d053d736b6bd91",
+      "status": "completed"
+    },
+    {
+      "file": "stage-05-cubic-reduced-32.json",
+      "sha256": "819c72139a0d3d330080c7f80e75a3e70c99aa4c92a1ef70c0345f4fa8825a4f",
+      "status": "completed"
+    },
+    {
+      "file": "stage-05-cubic-reduced-64.json",
+      "sha256": "cec9b34c13808e42704318744938ba150c9ea87b3617c151a5219e0f8f7be6c7",
+      "status": "completed"
+    },
+    {
+      "file": "stage-05-quartic-proof-reduced-8.json",
+      "sha256": "e315fb87950358faaf0bce92ab67f60b8df400f9545783e94fc1a0b41780f0c3",
+      "status": "completed"
+    },
+    {
+      "file": "stage-06-cubic-reduced-16.json",
+      "sha256": "6a0f8caef14b07071cc3d71445f4656183ce9b2f5d2288f9a9bbc4a6fb895486",
+      "status": "completed"
+    }
+  ],
+  "auxiliary_files": [
+    {
+      "file": "cas-full-1009-degree3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hash_mode": "LF-normalized text"
+    },
+    {
+      "file": "cas-full-1009-degree3.sing",
+      "sha256": "e16f77c5f55a96a9fb4f44d6bbd04e64bb6399f75b01f35ff2ae40e241b42b5a",
+      "hash_mode": "LF-normalized text"
+    }
+  ],
+  "remaining_raw_parameter_indices": [
+    0,
+    2,
+    16,
+    21,
+    32,
+    39,
+    48,
+    55,
+    64,
+    71
+  ],
+  "complete_correction_types": 55,
+  "complete_raw_Koszul_fields": 230,
+  "quotient_directions": 246,
+  "coordinate_divisible_closure": {
+    "packet": "results/cyclic-fano-divisible-multipliers/packet.json",
+    "packet_sha256": "aa1e6dbe561a54e3efece37169ff94348d481e95cd52659638d65849b3e9e1f0",
+    "primary_receipt_sha256": "da969bf7e1e63d7d8fd3cb5f7fda5196b4c3b498a29c790ab67f52a2a92b893f",
+    "independent_receipt_sha256": "39e2212d846d79cdcf7fa3ecabc60c22ce088e1bffc78893193dd6ea7c908e31",
+    "embedding": [
+      {
+        "raw_parameter_index": 0,
+        "old_local_parameter_index": 0
+      },
+      {
+        "raw_parameter_index": 2,
+        "old_local_parameter_index": 2
+      },
+      {
+        "raw_parameter_index": 16,
+        "old_local_parameter_index": 5
+      },
+      {
+        "raw_parameter_index": 21,
+        "old_local_parameter_index": 7
+      },
+      {
+        "raw_parameter_index": 32,
+        "old_local_parameter_index": 10
+      },
+      {
+        "raw_parameter_index": 39,
+        "old_local_parameter_index": 12
+      },
+      {
+        "raw_parameter_index": 48,
+        "old_local_parameter_index": 15
+      },
+      {
+        "raw_parameter_index": 55,
+        "old_local_parameter_index": 17
+      },
+      {
+        "raw_parameter_index": 64,
+        "old_local_parameter_index": 20
+      },
+      {
+        "raw_parameter_index": 71,
+        "old_local_parameter_index": 22
+      }
+    ]
+  },
+  "bounds": {
+    "individual_primary_attempt_seconds": 120,
+    "modular_Singular_seconds": 60,
+    "aggregate_primary_replay_seconds": 900
+  },
+  "conclusion": "Together with the bound prior75 reductions and the directly replayed coordinate-divisible25 exclusion, every nonzero homogeneous quadratic vector direction gives an excluded degree-seven polar denominator.",
+  "limits": "This excludes the75-parameter quadratic-direction polar family only, not arbitrary degree-seven denominators. No HasCertificate proof, solution, or upstream acceptance is claimed. Timeouts yield no rank or nonmembership result; selected multiplier spaces are not the full homogeneous ideal."
+}
