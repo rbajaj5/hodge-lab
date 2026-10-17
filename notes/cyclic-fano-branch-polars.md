@@ -8,7 +8,7 @@ The source is frozen at `d96911d725077e66a8f10848908be01a643b1714`, with the sam
 
 ## What the reading contributes
 
-Dolgachev, *Classical Algebraic Geometry: a modern view*, supplied excerpt §1.1.2, defines the first polar of a homogeneous polynomial by a constant directional derivative. At a smooth point of its zero set, this derivative detects whether the tangent hyperplane contains the specified direction. Here we apply that construction to an actual polynomial attached to the fixed target, rather than to a truncated local branch model.
+Dolgachev, *Classical Algebraic Geometry: a modern view*, supplied excerpt §1.1.2, defines the first polar of a homogeneous polynomial by a constant directional derivative. At a smooth point of its zero set, this derivative detects whether the tangent hyperplane contains the specified direction. The definition and tangent-incidence statement also appear in the [publisher's public excerpt, §1.1.2](https://assets.cambridge.org/97811070/17658/excerpt/9781107017658_excerpt.pdf). Here we apply that construction to an actual polynomial attached to the fixed target, rather than to a truncated local branch model.
 
 Write the quotient by the $X_2\mapsto\zeta_3X_2$ action as
 
@@ -84,6 +84,32 @@ The table gives one coefficient of $-B_{E_v}(P)\bmod G$. For each displayed mono
 The ambient reduced coefficient space has dimension 621. Active rows count monomials that actually occur, not a matrix rank. Each denominator is a nonzero base polynomial, hence has nonzero remainder under the monic quadratic relation; it is not identically zero on the hypersurface. The rational obstruction identities also remain valid over $\mathbb C$.
 
 All seven workers finished under 0.5 seconds including startup, against separate 60-second bounds. There were no timeouts or worker errors. The primary standard-library replay passed all seven tests and rejected 14 deliberately altered dual/right-side controls. Independent reconstruction also passed: it checked the original-source E1 and Piola identities, all 175 Koszul and 105 quotient columns across the seven tests, every saved obstruction, and separately constructed reflection-even projection obstructions. It rejected 21 mutation controls. This result records unsuccessful denominator choices, not a certificate, support construction, Lean proof or accepted solve. Arbitrary linear combinations of the five first polars and higher-degree products remain outside the seven fixed tests.
+
+## A curve slice for the hyperelliptic reading
+
+The subsequently supplied §5.2 material has a concrete setting here. Restrict the five base coordinates to the line
+
+$$
+(X_0,X_1,Y_0,Y_1,Y_2)=(s,u,s,0,0).
+$$
+
+Direct substitution in the pinned target, independently checked in two implementations, gives
+
+$$
+G_\ell=Z^2+\frac57s^3Z+2s^6+u^6,\qquad
+\Delta_\ell=-\frac{367}{49}s^6-4u^6,\qquad
+\beta_\ell=\frac{s^4}{3}.
+$$
+
+The six projective roots of $\Delta_\ell$ are simple. The double cover $t^2=\Delta_\ell$ in $\mathbb P(1,1,3)$ is therefore a smooth genus-two hyperelliptic curve. Its upstairs cyclic triple cover is the plane sextic
+
+$$
+w^6+\frac57s^3w^3+2s^6+u^6=0.
+$$
+
+This sextic is smooth: a critical point would have $u=0$; when $s,w$ are nonzero, the remaining equations are $4s^3+\frac57w^3=0$ and $\frac57s^3+2w^3=0$, whose coefficient determinant is $367/49\ne0$. The zero-coordinate cases also give no projective critical point. Its genus is consequently $(6-1)(6-2)/2=10$. Independently, the degree-three map has six branch points of index three, giving $2g-2=3(2\cdot2-2)+6(3-1)=18$.
+
+This supplies a positive-genus curve on which to explore the branch-point and theta-characteristic constructions, with nonzero restricted density. It is an algebraic slicing observation, not an additional denominator search. No extension of a curve divisor to a suitable fourfold support, nonzero target pairing, or certificate has been established. The plane-quartic and non-hyperelliptic constructions in the later excerpts require different hypotheses.
 
 ## Reproduction
 

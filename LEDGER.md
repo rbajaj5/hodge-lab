@@ -1178,7 +1178,12 @@ conversations or evidence of an accepted solve.
     and 56 deliberately changed inputs. The source-bound timeout stays in
     the final validation receipts and the coverage visualization.
     [Exact reduction, product table, visualization, reproduction, and failed attempt](notes/cyclic-fano-branch-products.md).
-    This batch is prepared for notebook publication at the user's request.
+    Published this batch and the polar pilot below as notebook commit
+    [`b424552`](https://github.com/rbajaj5/hodge-lab/commit/b4245527b033c099524cc784c810aa563fc6078a).
+    Its [dedicated Linux CI job](https://github.com/rbajaj5/hodge-lab/actions/runs/39064680185/job/117489722552)
+    passed the compact identities, both primary replays, both independent
+    checkers, and both visualization generators. This reports that targeted
+    job, not the completion state of every job in the larger workflow.
     No upstream comment, edit, PR, Lean proof, accepted solve, or leaderboard
     point accompanies it. The upstream contribution tally remains 24.
 
@@ -1203,6 +1208,13 @@ conversations or evidence of an accepted solve.
     [Dolgachev connection, map visualization, exact tests, and limits](notes/cyclic-fano-branch-polars.md).
     The plane-cubic and determinantal material is treated as further reading,
     not as a theorem automatically applicable to this weighted cover.
+    The subsequent hyperelliptic excerpt suggests a concrete future setting:
+    the line `(X0,X1,Y0,Y1,Y2)=(s,u,s,0,0)` yields a genus-two double
+    cover and a genus-ten cyclic triple cover above it, with nonzero
+    restricted density. Two source substitutions and the smoothness/genus
+    arguments agree. The note gives the equations and explicitly leaves
+    extension of divisors to fourfold support unproved; this is a slicing
+    observation, not another denominator experiment or solve.
     This is notebook research; no upstream comment, edit, or PR accompanies
     it. The contribution tally remains 24, with no certificate or solve claimed.
 
