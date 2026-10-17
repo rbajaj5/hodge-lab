@@ -94,14 +94,14 @@ Every component of such a correction $K$ belongs to $J$. Since $D\in J$,
 $B_D(K)\in J$. Also $F\in J$ by Euler's identity. For the initial lift,
 
 $$
-B_D(Aa)=D(a\cdot\nabla A)-A\,a^{\mathsf T}\operatorname{Hess}(F)a.
+B_D(Aa)=D(a\cdot\nabla A)-A\cdot a^{\mathsf T}\operatorname{Hess}(F)a.
 $$
 
 The first term belongs to $J$. Therefore the full second equation, including
 a possible nonzero quotient, necessarily implies
 
 $$
-[A\,a^{\mathsf T}\operatorname{Hess}(F)a]=0\quad\text{in }S_{10}/J_{10}.
+[A\cdot a^{\mathsf T}\operatorname{Hess}(F)a]=0\quad\text{in }S_{10}/J_{10}.
 $$
 
 The 21 columns indexed by $a_i a_j$, with the factor two on off-diagonal
