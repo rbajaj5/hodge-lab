@@ -60,6 +60,26 @@ eleven are fixed mixed candidates. The full 175-parameter family remains open.**
 · [Replay the independent CPU certificate](experiments/check_cyclic_fano_cubic_polars.py)
 · [Read the derivation and limits](notes/cyclic-fano-cubic-polars.md).
 
+## Lean proof map
+
+[![A source-linked proof map: external dimension bounds feed a Lean proof that an augmented rank gap rules out span membership, with the 150/151 specialization and no-correction corollary](results/lean-rank-gap/lean-rank-gap.png)](formal/README.md)
+
+The first Lean project formalizes the **generic rank-gap argument**. Its
+proof map follows the actual code: assuming the target is in the correction
+span makes the augmented span equal to it, contradicting the two dimension
+bounds. Three theorem statements cover the general argument, the 150/151
+specialization, and the absence of a correction solution.
+
+**Checked locally:** all three theorems compile in Lean 4.31.0, pass the
+axiom audit, and replay with the standalone kernel checker. The figure
+binds those records to the exact source files.
+
+The concrete matrices, 25 column relations, and sixteen minor calculations
+are checked by the Python programs above; their rank bounds are explicit
+hypotheses in Lean. They have not yet been formalized there.
+[Lean source](formal/HodgeLab/RankGap.lean)
+· [Build, axiom audit, and visual walkthrough](formal/README.md).
+
 ## A map of the ideas
 
 [![Seven research routes: high-genus fields, Dubédat-inspired determinants, Gram ranking, braids, typed relations, Koszul equations and classical geometry; each linked to its tested outcome and limits](results/idea-atlas/idea-atlas.png)](notes/idea-atlas.md)

@@ -1,0 +1,85 @@
+{
+  "schema": "hodge-lab-rank-gap-lean-v1",
+  "status": "PASS",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "HodgeLab.lean": "fb1780d5a82ac444f4bc4baddc0a4b45f8f99cfd355acf2d8cf7c1e536332988",
+    "HodgeLab/RankGap.lean": "d70dd8b9374dff04335cf6ab710a281c752e35a01fb53fcaf3f2284aa7f8a28a",
+    "Audit.lean": "cdc2782138727aa80939652c21b70bb898c8bd30e3e03213303582ee360b63d9",
+    "check.py": "30624288ccd37c3adc731c012cffc7e5a5d995be76fd78bb854458eb770f26dc"
+  },
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.695,
+      "bound_seconds": 300,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.239,
+      "bound_seconds": 300,
+      "log": "build.log",
+      "log_lf_sha256": "21848d782d3bfdb2b65ae078e99f674cd9113257e7c7389d918f69b77aaabba0"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.229,
+      "bound_seconds": 300,
+      "log": "axioms.log",
+      "log_lf_sha256": "468def0f16ab0a4d981897d4c3897298d25ede4d504dc0d9e5148d63aaefbb02"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "HodgeLab.RankGap"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.929,
+      "bound_seconds": 300,
+      "log": "kernel.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "theorem_axioms": {
+    "HodgeLab.not_mem_of_finrank_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.not_mem_of_finrank_150_151": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.no_correction_solution_of_finrank_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Generic rank-gap implication only; actual matrix bounds, modular-minor transfer, and HasCertificate are not formalized."
+}

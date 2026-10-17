@@ -1824,6 +1824,55 @@ conversations or evidence of an accepted solve.
     No upstream comment, edit, or PR belongs to this batch. The contribution
     tally remains **24**, with future comments held for a substantial batch.
 
+    **Publication checkpoint:** pushed this batch as
+    [`7acebc7`](https://github.com/rbajaj5/hodge-lab/commit/7acebc757f28ef274936205e68fbf732319fb17e).
+    The GPU feature and figure were inspected on live GitHub. The
+    [new CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39077401441)
+    was queued at this checkpoint; local exact and CUDA checks pass, and
+    remote success is not yet claimed.
+
+78. **17 October 2026 — Visualizing the first Lean bridge.**
+    At the user's request, added a standalone [Lean project](formal/README.md)
+    and a front-page [proof map](results/lean-rank-gap/lean-rank-gap.png).
+    The map follows the actual source: assume the target belongs to the
+    correction span; adjoining it then leaves the span equal; combine the
+    dimension bounds to obtain the impossible inequality `n + 1 ≤ n`.
+    Three declarations formalize the general implication, its `150 / 151`
+    specialization, and the consequence that no correction candidate can
+    equal the target.
+
+    The first two inputs in the diagram are explicit hypotheses, not
+    calculations performed in Lean. The 25 polynomial column relations,
+    sixteen concrete matrices, modular minors, and characteristic-zero
+    transfer remain checked by the Python experiments in entry 77.
+    This generic bridge is not a formal verification of those sixteen
+    certificates or a `HodgeComputer.HasCertificate` proof. The full mixed
+    175-parameter family remains open.
+
+    **Validation:** pinned Lean 4.31.0 and mathlib
+    `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`; actual compilation,
+    all three axiom audits, and standalone kernel replay pass.
+    The only reported dependencies are `propext`, `Classical.choice`,
+    and `Quot.sound`; there are no unfinished proofs or new axioms.
+    A separate review checked theorem scope and source/log hashes.
+    [Source-bound receipt](formal/results/rank-gap-validation.json)
+    and the four command logs are committed. The local cached toolchain
+    differs from upstream's 4.33.0 pin; compatibility is not claimed.
+
+    [Reproducible renderer](experiments/plot_lean_rank_gap.py) and
+    [plot data](results/lean-rank-gap/plot-data.json) bind 16 source/receipt/log
+    inputs. PNG and SVG were inspected for legibility. The map records
+    three compiled generic theorems, sixteen Python-only concrete cases,
+    and zero concrete cases formalized in Lean. A Mermaid version in the
+    formal README provides a second view. A dedicated CI workflow rebuilds
+    the pinned project and repeats its axiom and kernel checks without CUDA.
+    Codex assisted construction, documentation, visualization, and separate
+    statement review; mathlib supplies the span/dimension lemmas.
+
+    This is notebook work only. No upstream post, edit, or PR was made;
+    the contribution tally remains **24**. Publication is recorded after
+    pushing, and remote CI success is not inferred from the local pass.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
