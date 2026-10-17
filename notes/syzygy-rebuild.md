@@ -1,5 +1,8 @@
 # Rebuilding syzygies after proven vanishings
 
+Published as [our fifth contribution to holdout Discussion 44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755),
+with [full CI passing on the immutable proof commit](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164).
+
 **Family 115 is excluded.** Its characters are `(0,0,1)`, `(1,2,3)`,
 and `(4,2,3)` in the Hodge Lab triple convention. This raises coverage to
 **134/136** fixed-`X0/Y0` extensions, or **134/152** families in the original
@@ -133,6 +136,28 @@ and [archived inputs](../results/degree7-syzygy-rebuild/exploratory-inputs.zip):
   degree-five search was cancelled once the excluded chart-10 coordinate
   closed chart 0 directly. Cancellations are not counted as exhausted bounds.
 
+## Later small follow-up: two global family-16 zeros
+
+This paragraph and its files were added after the immutable family-115 proof
+commit `b366f33c5a9421532d452ec4d15588c5f9998b7f`; they are not part of the
+fifth upstream post's packet. On family 16, composing the two cube identities
+back to physical rows leaves multipliers of degree at most one. Homogenize
+each multiplier to degree one using `a13`, then evaluate against the original
+unnormalized quadratic equations. The results are exactly `a1^3` and `a9^3`,
+with ten and eight physical equation products, respectively. The final
+identities contain no factor of `a13`, so the conclusion is global in the
+first-pass reduced family, including `a13=0`.
+
+Both polynomial implementations check the 18 products directly and replay
+the first-pass dependency. A damaged coefficient is rejected. Thus
+`a1=a9=0` throughout family 16 at that stage. Family 16 is still unresolved;
+its five charts have not yet been rebuilt after these global zeros. This
+does not strengthen the separate family-137 chart result or add a sixth post.
+
+```sh
+python -S algebra/check_family16_global_cubes.py
+```
+
 ## Reproduce
 
 In a recursive checkout:
@@ -184,6 +209,14 @@ transport rule, and proof of compatibility; none is constructed here. Sorting
 equations or changing a basis is not by itself a braid-group calculation.
 The usual Hermitian Gram matrix has real eigenvalues; its spectrum does not
 automatically supply the complex eigenvalue braids of the Ginibre experiments.
+
+A more immediate connection is the braid toolkit's
+[block elimination and Schur-complement calculation](https://github.com/rbajaj5/ginibre-braid-dynamics-conjectures/blob/main/BLOCK_PAIR_WINDING_THEOREMS.md#5-weak-coupling-and-the-exact-schur-complement).
+We could eliminate an invertible block of `R(a)` while retaining its exact
+coupling to the remaining block. Because the block determinant may vanish,
+the singular locus must be handled separately; generic invertibility would
+not exclude the whole denominator family. This is a proposed use of standard
+block algebra, not an implemented braid-group action or a new result here.
 
 The Hodge-projection viewpoint remains useful: polynomial left syzygies are
 exact annihilators of the shared correction map. The heatmap shows their

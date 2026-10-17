@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 16 October 2026 (EDT):** 4 discussion comments; 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 16 October 2026 (EDT):** 5 discussion comments; 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -15,6 +15,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 3. **16 October 2026, 19:33 EDT / 23:33 UTC — [Holdout discussion #44: 132 three-character family exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710).** Shared the systematic test of all 136 third-character extensions of the `X0/Y0` pair: 112 exclusions via exact necessary-condition duals and 20 through shared-numerator chart covers. The post explicitly retains four unresolved extensions and the 16 additional coordinate triples that survived the relaxed pass. It links [immutable proofs, failed attempts, and explanation](https://github.com/rbajaj5/hodge-lab/blob/841cd0623c64d917a31ddf8433ddfbcc10c1260a/notes/three-character-families.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38981740498), credits fqlx and the prior mathematical framework, and discloses Codex assistance and the shared identity replayer. The purpose is to narrow a reproducible search region and make the four residual extensions available to collaborators. No Lean theorem, solution, improved unconditional degree bound, or leaderboard point is claimed. The body was previewed using GitHub's Markdown renderer; the published author and full body were independently read back and matched to the prepared text. [Publication receipt](results/degree7-triples/upstream-post.json).
 
 4. **16 October 2026, 20:00 EDT / 17 October 2026, 00:00 UTC — [Holdout discussion #44: polynomial-syzygy exclusion of triple family 87](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985544).** Shared one new complete exclusion, increasing the fixed-`X0/Y0` extension coverage to 133/136. Polynomial relations eliminate the shared numerator corrections; three cubic identities and a three-row physical identity finish the contradiction. The post includes the bounded method, the two unresolved family-115 charts, failed module searches and multiplier exports, and the limits of the literature connection. It links the [immutable proof and explanation](https://github.com/rbajaj5/hodge-lab/blob/cf75f3b67385c78769325db138104435ffa04b35/notes/polynomial-syzygies.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38983831725), credits prior work, and discloses Codex assistance and shared verification code. No Lean theorem, general three-character exclusion, solve submission, or leaderboard point is claimed. The draft was previewed through GitHub Markdown; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-syzygies/upstream-post.json).
+
+5. **16 October 2026, 20:24 EDT / 17 October 2026, 00:24 UTC � [Holdout discussion #44: rebuilt-syzygy exclusion of triple family 115](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755).** Shared the new complete exclusion, increasing fixed-`X0/Y0` extension coverage to 134/136. Rebuilding after the verified zeros and searching through degree five closes chart 10; its forced zero then closes chart 0. The post links [immutable proofs, visualization, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/b366f33c5a9421532d452ec4d15588c5f9998b7f/notes/syzygy-rebuild.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164). It records the ten larger-chart timeouts and two conditional chart improvements, credits prior work, and discloses Codex assistance and the shared identity replayer. The purpose is to supply another portable exclusion and reusable reductions while keeping the unresolved scope explicit. No Lean proof, solve submission, or leaderboard point is claimed. GitHub rendered the draft's four math blocks; the published author, URL, and full body were independently read back and matched exactly. [Publication receipt](results/degree7-syzygy-rebuild/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -264,7 +266,7 @@ conversations or evidence of an accepted solve.
     to 134/136 fixed-pair extensions. Both polynomial constructions replay
     the dependencies and reject corrupted or unjustified proof steps.
     [Proof and exact packets](notes/syzygy-rebuild.md).
-    The fifth upstream post is being prepared; this entry alone is not a post.
+    After the proof commit passed full CI, this was published as post 5 above.
 
 22. **16 October 2026 — Larger families and unsuccessful computations.** All
     ten remaining third-component charts of families 16 and 137 were attempted
@@ -297,6 +299,17 @@ conversations or evidence of an accepted solve.
     proof; no supercongruence theorem is transferred. The syzygy approach
     already produced another complete restricted-family result.
     [Sources and explicit limits](notes/syzygy-rebuild.md#braids-hodge-projection-and-arithmetic-as-research-tools).
+
+25. **16 October 2026 — A further family-16 lead after the fifth proof packet.**
+    Composing the two conditional chart identities back to physical equations
+    leaves only linear multipliers. Homogenizing these multipliers gives two
+    identities against the unnormalized family: `a1^3=a9^3=0`, with ten and
+    eight physical products. Both polynomial constructions replay them and
+    reject a corrupted coefficient. Thus these two zeros hold throughout
+    family 16 after its original first-pass reduction. The family remains
+    unresolved; rebuilding its five charts is the next unexecuted step.
+    This strengthening is recorded after the immutable fifth-post packet and
+    is not a sixth public post. [Small checker](algebra/check_family16_global_cubes.py).
 
 ## Keeping this current
 

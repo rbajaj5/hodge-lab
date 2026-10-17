@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "matched_fields": [
+    "system",
+    "maps",
+    "variables",
+    "baseline",
+    "relations",
+    "selected_new"
+  ],
+  "command": "python algebra/discover_syzygy_rebuild.py --family 115 --pivot 10 --power-degree 3 --timeout 60 --output <fresh-path>",
+  "scope": "Reproduced all saved cancellation data; intentionally stopped the power continuation at degree three. This bounded continuation remains unresolved, as expected."
+}

@@ -37,3 +37,4 @@ jobs:
       - run: python -S algebra/degree7_syzygies.py --check --independent
       - run: python -S algebra/degree7_syzygy_rebuild.py --check
       - run: python -S algebra/degree7_syzygy_rebuild.py --check --independent
+      - run: python -S algebra/check_family16_global_cubes.py

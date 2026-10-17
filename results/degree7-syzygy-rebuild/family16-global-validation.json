@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "constructor": "Model",
+      "physical_products": 18,
+      "first_pass_checks": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      },
+      "corruption_rejected": true
+    },
+    {
+      "constructor": "IndependentModel",
+      "physical_products": 18,
+      "first_pass_checks": {
+        "correction_pairings": 8061,
+        "quadratic_pairings": 2456,
+        "physical_duals": 69,
+        "power_identities": 2
+      },
+      "corruption_rejected": true
+    }
+  ],
+  "scope": "Global a1=a9=0 after the first-pass family-16 reduction; family 16 remains unresolved. Not part of the immutable fifth-post packet."
+}
