@@ -158,6 +158,11 @@ linear algebra. Local success is not a Lean or upstream acceptance receipt.
 The dedicated Linux job runs these same checks; remote status is recorded
 separately after publication.
 
+**Later CI receipt:** the [dedicated Linux job](https://github.com/rbajaj5/hodge-lab/actions/runs/39036721511/job/117407967073)
+passed every listed check at proof commit
+`840b88c22386687c745cf944c5c2a41c6b854d39`. Other workflow jobs were still
+running when the [receipt](../results/y0x1-extensions/ci-y0x1.json) was saved.
+
 ![Complete batch and nine continuation paths](../results/y0x1-extensions/y0x1-extensions.png)
 
 The image links every batch ID to its proof route and shows the successive

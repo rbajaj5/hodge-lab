@@ -27,6 +27,13 @@ with alternative sign palettes and relative coefficient strength. Exact
 ranks survive; apparent curves depend on ordering. The record includes the
 rejected first factorization for case 100 and its checked correction.
 
+**From the matrix to a complex:** the [Koszul homology companion](notes/categorical-syzygies.md)
+separates relations from boundaries in degrees two through six. At degree
+four, B19 has six relations, three Koszul boundaries, and three remaining
+homology classes. Thirty exact complexes pass checks in both bases. This
+also clarifies the distinct roles of Yang, Eisenbud-Erman, and Riehl; it
+does not assert a geometric cohomology identification or a new exclusion.
+
 **Preceding exact result:** 132 further three-character families around the
 `X1/Y1` pair are excluded, bringing our selected union to **284 triples**.
 Necessary block reductions close 123; full shared-numerator charts and

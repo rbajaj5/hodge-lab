@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 12 discussion contributions (ten top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 13 discussion contributions (eleven top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -31,6 +31,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 11. **17 October 2026, 08:34 EDT / 12:34 UTC — [Holdout discussion #44: polynomial multipliers close family 151](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998404).** Shared the exact exclusion of X1/Y0/Y1, completing 152/152 selected triples while leaving other triple supports, larger supports, higher degrees, and holdout open. Polynomial multipliers of the rebuilt shared-numerator equations produce 96 additional cubic relations; three correctly graded small blocks force thirteen fourth powers, and two direct residual charts contradict. The post links [immutable proof packets, visualizations, and failures](https://github.com/rbajaj5/hodge-lab/blob/a825be71140bb5c70327c2229c208df7d959e164/notes/family151-multipliers.md), credits the preceding framework and calculations, and discloses Codex assistance and shared verification code. Both physical reconstructions pass. Failed degree-three searches, three bounded timeouts, and a discarded mixed-degree pilot remain documented. The entire existing thread was reread, GitHub's mathematical preview inspected, and the result posted before the linked repository push. The complete published body, author, permanent URL, and lack of a reply parent were independently read back and matched. No Lean proof, solve PR, unconditional degree-bound improvement, or leaderboard point is claimed. Remote CI was still running at publication. [Publication receipt](results/family151-multipliers/upstream-post.json).
 
 12. **17 October 2026, 09:08 EDT / 13:08 UTC — [Holdout discussion #44: 132 further X1/Y1 triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998764).** Shared 132 new complete three-character exclusions, completing all 136 extensions of X1/Y1 and increasing our selected union to 284 triples. Necessary blocks close 123; shared-numerator charts and reconstruction finish nine. The post links [immutable proofs, exact graded-map visualizations, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/c126e8bbc6ccc3f4c37a14d6be20809bdbccef25/notes/x1y1-extensions.md), explicitly credits fqlx's reproduced pair-30 dependency, and discloses Codex assistance and shared verification code. Both physical constructions pass. Nine unsuccessful first-pass systems and two initially unresolved charts remain recorded, alongside their later closures. The thread and current participation policy were reread, and GitHub's mathematical preview was inspected. Posted before the linked Hodge Lab push; the complete body, author, permanent URL, and absence of a reply parent were read back and matched. The current thread confirms ten top-level contributions and two replies. Other triple supports, larger supports, higher degrees, and holdout remain open; no Lean proof, solve PR, degree-bound improvement, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/x1y1-extensions/upstream-post.json).
+
+13. **17 October 2026, 09:28 EDT / 13:28 UTC — [Holdout discussion #44: 132 Y0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998994).** Shared one consolidated result completing another 132 full three-character families, bringing our selected union to 416. The final family required 39 new cubic consequences, three quartic power identities, two rebuilt cubic power identities, and two chart contradictions before applying the prior pair-22 exclusion. The post links [immutable proof packets, figures, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/840b88c22386687c745cf944c5c2a41c6b854d39/notes/y0x1-extensions.md), credits preceding work and Eisenbud's viewpoint, discloses Codex assistance, and gives the exact checks and resource bounds. The current discussion and contribution policy were reread. The mathematical Markdown preview was inspected. Posted before the supporting Hodge Lab push; the full body, rbajaj5 author, permanent URL, and absent reply parent were read back and matched. No Lean proof, solve PR, improved degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/y0x1-extensions/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -632,6 +634,10 @@ conversations or evidence of an accepted solve.
     at the published proof commit. The [CI receipt](results/x1y1-extensions/ci-x1y1.json)
     preserves that success while other workflow jobs were still running.
 
+    A later check confirms the complete preceding workflow passed all nine
+    jobs at that proof commit. The [full-workflow receipt](results/x1y1-extensions/ci-complete-workflow.json)
+    records the update without a separate upstream status comment.
+
 42. **17 October 2026 — Curved bands and a corrected factorization.**
     The user noticed parabola-like bands in old X1/Y1 case B19 at degree
     four, compared B49 and B100, and asked for different colors. Added
@@ -662,6 +668,31 @@ conversations or evidence of an accepted solve.
     denote different families from the old B IDs in entry 42. Holdout remains
     unsolved; no Lean or leaderboard claim.
     [Proof, credit, visualizations, and failed attempts](notes/y0x1-extensions.md).
+    Shared one consolidated top-level result, recorded as contribution 13
+    above; the linked proof commit was then pushed to Hodge Lab.
+    The dedicated Linux job subsequently passed both physical replays,
+    both multiplier checks, the mixed-degree powers, both closure replays,
+    and the coverage and basis-comparison data checks at the proof commit.
+    The [CI receipt](results/y0x1-extensions/ci-y0x1.json) records that job's
+    success while other workflow jobs were still running.
+
+44. **17 October 2026 — Distinguish relations from Koszul homology.**
+    The user redirected the proposed grammar-inspired experiment toward
+    categorifications of syzygies, recalling David H. Yang and Emily Riehl.
+    Checked the primary references: Yang's equivariant-sheaf interpretation,
+    Eisenbud-Erman's categorical pairing, and Riehl's broader foundations.
+    The grammar-filter experiment was deferred without being run. As a
+    concrete first step, built the Koszul complexes of the three already
+    checked necessary-block ideals, at degrees two through six, in both
+    original and adapted bases. All thirty complexes pass exact checks,
+    including 92 zero-composition columns and basis-invariant homology.
+    At degree four B19 has six cycles but three boundaries, so H1 has
+    dimension three; B49 and B100 have zero H1 in this range. Added a
+    reproducible figure, quotient representatives, and the nonboundary
+    degree-three cycle `(-u,v,0)`. This is classical Koszul homology, not
+    yet an implementation of either categorical theorem, a full resolution,
+    or a new holdout exclusion. No extra upstream post was made for this
+    internal comparison. [References, exact data, and figure](notes/categorical-syzygies.md).
 
 ## Keeping this current
 
