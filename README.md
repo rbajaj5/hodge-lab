@@ -2,6 +2,10 @@
 
 A public lab notebook for [hodge.computer](https://hodge.computer/). We test geometric ideas for making better guesses at algebra problems, then check those guesses exactly. The code, pictures, results, and failed approaches stay visible.
 
+This is an independent learning and research notebook. It is not affiliated
+with Hodge Labs, hodge.computer, or the maintainers of
+`hodge-computer/sextics`; similar naming was unintentional.
+
 This is the **meta-repository for our work in [hodge-computer/sextics](https://github.com/hodge-computer/sextics)**: it records the motivation for our approaches, supporting experiments, and the purpose and outcome of each public contribution. The [contribution ledger](LEDGER.md) links to the actual upstream posts and submissions.
 
 **Current status: no new accepted Hodge solve.** The repository contains actual GPU runs, exact rejection certificates, independent checks, and the approaches that failed. Code and notes were developed with AI assistance; the recorded checks describe what was executed.
@@ -16,13 +20,23 @@ our homology ranking did not outperform its controls.
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** 131 of 132 fresh X0/Y1 three-character families
-are excluded, bringing the selected union to **811 triples**. T100 remains
-open after a separate exact reduction from thirteen to twelve directions.
-A frozen typed-cache comparison was slower than the existing method;
-target-character projection nevertheless gives smaller exact power queries.
-Timeouts, failed charts, actual matrix figures, and both physical replays
-are retained. [Results, figures, and limits](notes/typed-rewrite-search.md).
+**Latest exact result:** the rebuilt T100 multiplier search forces all five
+Y1 coefficients to vanish and makes both added-character charts contradictory.
+The separately replayed anchor dependency then closes the family. This
+completes **132 of 132** fresh X0/Y1 triples and brings the selected union to
+**812 triples**. Exact ranks agree modulo three primes, but all proof witnesses
+are rational; this is finite-field screening, not p-adic Hodge theory. The five
+failed rebuilt charts and unsupported BB/KZ/KPZ and VC-complexity suggestions
+remain visible. [Proof, visualization, checks, and limits](notes/t100-rebuilt-exclusion.md).
+
+![T100 rebuilt multiplier exclusion](results/typed-rewrite-families/t100-rebuilt-multipliers/t100-rebuilt.png)
+
+**Preceding exact result:** 131 of 132 fresh X0/Y1 three-character families
+were excluded, bringing the selected union to 811 triples at that checkpoint.
+T100 remained open after a separate exact reduction from thirteen to twelve
+directions. A frozen typed-cache comparison was slower than the existing
+method; target-character projection nevertheless gave smaller exact power
+queries. [Results, figures, and limits](notes/typed-rewrite-search.md).
 
 ![Exact type decomposition of the coefficient operator](results/typed-rewrite-families/typed-operator.png)
 

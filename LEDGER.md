@@ -830,6 +830,27 @@ conversations or evidence of an accepted solve.
     a separate T100 source-review receipt and a pending remote-CI snapshot.
     No new search, mathematical exclusion, or accepted solution is counted.
 
+51. **17 October 2026 — Close T100 locally with rebuilt multipliers.**
+    Preserved the earlier thirteen-direction timeout, the exact `a56=0`
+    reduction, and its two failed rebuilt charts. Rebuilt the physical system
+    on twelve directions and completed all constant/linear multiplier blocks
+    in 73.2 seconds, obtaining 39 additional necessary relations beyond the
+    finite baseline span. Exact degree-five identities then force all five Y1
+    coordinates to vanish. Rebuilding on seven directions makes the two
+    added-character charts, raw 6 and 211, contradictory; five X0 chart
+    attempts remain unsuccessful and are retained. The separately replayed
+    anchor dependency excludes the remaining X0 sector. Both physical
+    polynomial constructions pass the complete rational chain. Twelve exact
+    graded ranks also agree modulo 1009, 1013, and 1019, for 36 diagnostic
+    comparisons; those screens are not p-adic Hodge-theory proofs. This closes
+    T100, completes 132/132 in the fresh X0/Y1 batch, and raises the selected
+    union to **812**. Recorded unsupported Yang-geometric, Beilinson–Bernstein,
+    KZ/KPZ, and VC-complexity bridges as ideas not used by the proof. Added a
+    data-bound visualization, complete bounded-attempt logs, and exact
+    checkers. [Proof, figure, failures, and reproduction](notes/t100-rebuilt-exclusion.md).
+    No new upstream post, pull request, Lean proof, accepted solve, or
+    leaderboard point is counted; the contribution tally remains 19.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

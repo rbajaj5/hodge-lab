@@ -1,0 +1,532 @@
+{
+  "family": "T100",
+  "global_family": 17957,
+  "old_directions": 13,
+  "rebuilt_directions": 12,
+  "physical_equations": 706,
+  "relations": 156,
+  "additional_relations": 39,
+  "completed_multiplier_blocks": 13,
+  "strands": [
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "raw_ids": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "degree": 3,
+      "rank_Q": 15,
+      "codomain": 35,
+      "quotient_dimension_Q": 20,
+      "rank_mod_p": [
+        [
+          1009,
+          15
+        ],
+        [
+          1013,
+          15
+        ],
+        [
+          1019,
+          15
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "raw_ids": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "degree": 4,
+      "rank_Q": 47,
+      "codomain": 70,
+      "quotient_dimension_Q": 23,
+      "rank_mod_p": [
+        [
+          1009,
+          47
+        ],
+        [
+          1013,
+          47
+        ],
+        [
+          1019,
+          47
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "raw_ids": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "degree": 5,
+      "rank_Q": 102,
+      "codomain": 126,
+      "quotient_dimension_Q": 24,
+      "rank_mod_p": [
+        [
+          1009,
+          102
+        ],
+        [
+          1013,
+          102
+        ],
+        [
+          1019,
+          102
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "raw_ids": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "degree": 6,
+      "rank_Q": 186,
+      "codomain": 210,
+      "quotient_dimension_Q": 24,
+      "rank_mod_p": [
+        [
+          1009,
+          186
+        ],
+        [
+          1013,
+          186
+        ],
+        [
+          1019,
+          186
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "degree": 3,
+      "rank_Q": 2,
+      "codomain": 4,
+      "quotient_dimension_Q": 2,
+      "rank_mod_p": [
+        [
+          1009,
+          2
+        ],
+        [
+          1013,
+          2
+        ],
+        [
+          1019,
+          2
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "degree": 4,
+      "rank_Q": 3,
+      "codomain": 5,
+      "quotient_dimension_Q": 2,
+      "rank_mod_p": [
+        [
+          1009,
+          3
+        ],
+        [
+          1013,
+          3
+        ],
+        [
+          1019,
+          3
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "degree": 5,
+      "rank_Q": 4,
+      "codomain": 6,
+      "quotient_dimension_Q": 2,
+      "rank_mod_p": [
+        [
+          1009,
+          4
+        ],
+        [
+          1013,
+          4
+        ],
+        [
+          1019,
+          4
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "degree": 6,
+      "rank_Q": 5,
+      "codomain": 7,
+      "quotient_dimension_Q": 2,
+      "rank_mod_p": [
+        [
+          1009,
+          5
+        ],
+        [
+          1013,
+          5
+        ],
+        [
+          1019,
+          5
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "degree": 3,
+      "rank_Q": 17,
+      "codomain": 35,
+      "quotient_dimension_Q": 18,
+      "rank_mod_p": [
+        [
+          1009,
+          17
+        ],
+        [
+          1013,
+          17
+        ],
+        [
+          1019,
+          17
+        ]
+      ],
+      "forced_raw_ids": []
+    },
+    {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "degree": 4,
+      "rank_Q": 61,
+      "codomain": 70,
+      "quotient_dimension_Q": 9,
+      "rank_mod_p": [
+        [
+          1009,
+          61
+        ],
+        [
+          1013,
+          61
+        ],
+        [
+          1019,
+          61
+        ]
+      ],
+      "forced_raw_ids": [
+        135,
+        272,
+        289
+      ]
+    },
+    {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "degree": 5,
+      "rank_Q": 126,
+      "codomain": 126,
+      "quotient_dimension_Q": 0,
+      "rank_mod_p": [
+        [
+          1009,
+          126
+        ],
+        [
+          1013,
+          126
+        ],
+        [
+          1019,
+          126
+        ]
+      ],
+      "forced_raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ]
+    },
+    {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "degree": 6,
+      "rank_Q": 210,
+      "codomain": 210,
+      "quotient_dimension_Q": 0,
+      "rank_mod_p": [
+        [
+          1009,
+          210
+        ],
+        [
+          1013,
+          210
+        ],
+        [
+          1019,
+          210
+        ]
+      ],
+      "forced_raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ]
+    }
+  ],
+  "forced_raw_ids": [
+    135,
+    235,
+    272,
+    289,
+    293
+  ],
+  "closure_cycles": [
+    {
+      "before": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        211
+      ],
+      "block_zeros": [],
+      "after_blocks": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        211
+      ],
+      "charts": [
+        {
+          "raw": 6,
+          "excluded": true
+        },
+        {
+          "raw": 42,
+          "excluded": false
+        },
+        {
+          "raw": 88,
+          "excluded": false
+        },
+        {
+          "raw": 102,
+          "excluded": false
+        },
+        {
+          "raw": 111,
+          "excluded": false
+        },
+        {
+          "raw": 114,
+          "excluded": false
+        },
+        {
+          "raw": 211,
+          "excluded": true
+        }
+      ],
+      "after": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ]
+    },
+    {
+      "before": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "block_zeros": [],
+      "after_blocks": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "charts": [],
+      "after": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ]
+    }
+  ],
+  "ending": "x0_y1_dependency",
+  "excluded": true,
+  "checks": {
+    "relation_products": 9593,
+    "graded_maps": 23,
+    "finite_field_rank_comparisons": 36,
+    "power_identities": 13,
+    "power_products": 1725,
+    "correction_pairings": 2452,
+    "quadratic_pairings": 868,
+    "physical_duals": 40,
+    "chart_inferences": 121,
+    "charts": 18,
+    "excluded_charts": 4,
+    "square_identities": 2,
+    "mutations_rejected": 2,
+    "altered_charts_rejected": 11,
+    "higher_power_identities": 4
+  },
+  "hashes": {
+    "relations.json.gz": "14af6710ce53913bc7b023cbe749478af3c702f8f7e07ea71edb2b5add6beba1",
+    "blocks.json.gz": "8d5ac08be497b1f570fcbdd57cfbcac5e541efefb4205c9e9dc1b6f600ac6cb7",
+    "closure.json.gz": "88735d748f34056ce6115c057650e58bd6b82c975f339e0d9e1aed39c6373ae1",
+    "validation": "6b41c070cf3d7f692f92fcf289e977efde1505f4a739534b1445f7162fe749cf",
+    "blocks-validation": "a30eb8f38ed5c7e194b2cb3f1e035c7768192f4ca0fb6803b1806db6b76d252a",
+    "closure-validation": "1559bfffff928eb41433a1bc1bcd70209efcfa028b94f25dddb4a605c590af85"
+  },
+  "scope": "Exact Q-ranks and identities; ranks modulo 1009, 1013, and 1019 are consistency screens, not p-adic Hodge-theory proofs."
+}

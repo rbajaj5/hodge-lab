@@ -1,0 +1,288 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "completed": true,
+  "excluded": true,
+  "ending": "x0_y1_dependency",
+  "forced_raw_ids": [
+    135,
+    235,
+    272,
+    289,
+    293
+  ],
+  "remaining": [
+    42,
+    88,
+    102,
+    111,
+    114
+  ],
+  "cycles": [
+    {
+      "before": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        211
+      ],
+      "block_zeros": [],
+      "after_blocks": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        211
+      ],
+      "charts": [
+        {
+          "raw": 6,
+          "excluded": true
+        },
+        {
+          "raw": 42,
+          "excluded": false
+        },
+        {
+          "raw": 88,
+          "excluded": false
+        },
+        {
+          "raw": 102,
+          "excluded": false
+        },
+        {
+          "raw": 111,
+          "excluded": false
+        },
+        {
+          "raw": 114,
+          "excluded": false
+        },
+        {
+          "raw": 211,
+          "excluded": true
+        }
+      ],
+      "after": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ]
+    },
+    {
+      "before": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "block_zeros": [],
+      "after_blocks": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "charts": [],
+      "after": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ]
+    }
+  ],
+  "checks": {
+    "relation_products": 9593,
+    "graded_maps": 23,
+    "finite_field_rank_comparisons": 36,
+    "power_identities": 13,
+    "power_products": 1725,
+    "correction_pairings": 2452,
+    "quadratic_pairings": 868,
+    "physical_duals": 40,
+    "chart_inferences": 121,
+    "charts": 18,
+    "excluded_charts": 4,
+    "square_identities": 2,
+    "mutations_rejected": 2,
+    "altered_charts_rejected": 11,
+    "higher_power_identities": 4
+  },
+  "dependency": {
+    "kind": "replayed_full_X0_Y1_pair",
+    "packet_sha256": "9b97667f01bf5666d38bf8124071e46d5629681a47b04306ece30a761e441dd8",
+    "full_pair_basis": [
+      42,
+      56,
+      88,
+      102,
+      111,
+      114,
+      135,
+      170,
+      198,
+      235,
+      272,
+      289,
+      293
+    ],
+    "cycles": [
+      {
+        "before": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          135,
+          170,
+          198,
+          235,
+          272,
+          289,
+          293
+        ],
+        "block_zeros": [
+          170,
+          198
+        ],
+        "after_blocks": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          135,
+          235,
+          272,
+          289,
+          293
+        ],
+        "charts": [
+          {
+            "raw": 42,
+            "excluded": false
+          },
+          {
+            "raw": 56,
+            "excluded": true
+          },
+          {
+            "raw": 88,
+            "excluded": false
+          },
+          {
+            "raw": 102,
+            "excluded": true
+          },
+          {
+            "raw": 111,
+            "excluded": false
+          },
+          {
+            "raw": 114,
+            "excluded": false
+          },
+          {
+            "raw": 135,
+            "excluded": false
+          },
+          {
+            "raw": 235,
+            "excluded": false
+          },
+          {
+            "raw": 272,
+            "excluded": false
+          },
+          {
+            "raw": 289,
+            "excluded": false
+          },
+          {
+            "raw": 293,
+            "excluded": false
+          }
+        ],
+        "after": [
+          42,
+          88,
+          111,
+          114,
+          135,
+          235,
+          272,
+          289,
+          293
+        ]
+      },
+      {
+        "before": [
+          42,
+          88,
+          111,
+          114,
+          135,
+          235,
+          272,
+          289,
+          293
+        ],
+        "block_zeros": [
+          42,
+          88,
+          111,
+          114
+        ],
+        "after_blocks": [
+          135,
+          235,
+          272,
+          289,
+          293
+        ],
+        "charts": [],
+        "after": [
+          135,
+          235,
+          272,
+          289,
+          293
+        ]
+      }
+    ],
+    "remaining": [
+      135,
+      235,
+      272,
+      289,
+      293
+    ],
+    "single_character": {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "charts": 7,
+      "inferences": 42
+    },
+    "scope": "Known two-character exclusion reconstructed from its complete retained anchor space."
+  },
+  "seconds": 43.604315799995675,
+  "scope": "T100 only. Exact rational power identities and rebuilt chart proofs; finite-field ranks are diagnostics and are not used as exclusion witnesses."
+}
