@@ -42,7 +42,7 @@ $F=G_{5/7}(X_0,X_1,X_2^3,Y_0,Y_1,Y_2)$. The fixed target has $q=1$ and
 $A=X_0X_2^2Y_0^3$. Its density factor is exactly
 
 $$
-A=\det(d\Phi)\,\Phi^*(b),\qquad
+A=\det(d\Phi)\cdot\Phi^*(b),\qquad
 \Phi=(X_0,X_1,X_2^3,Y_0,Y_1,Y_2),\qquad
 b=X_0Y_0^3/3.
 $$
@@ -142,11 +142,11 @@ The resolvent is explicit:
 $$
 (zI-H)^{-1}=\frac{P_\lambda}{z-\lambda}
 +\frac{P_\mu}{z-\mu},\qquad
-\|(zI-H)^{-1}\|_2=\frac1{\min(|z-\lambda|,|z-\mu|)}.
+\lVert(zI-H)^{-1}\rVert_2=\frac1{\min(|z-\lambda|,|z-\mu|)}.
 $$
 
-Also $R^*R=H^{-1}$, so $\|R\|_2=7/5$. For a perturbation $E$ of the
-coefficient matrix with $\|E\|_2<5/7$, the Neumann-series criterion makes
+Also $R^*R=H^{-1}$, so $\lVert R\rVert_2=7/5$. For a perturbation $E$ of the
+coefficient matrix with $\lVert E\rVert_2<5/7$, the Neumann-series criterion makes
 $(M+E)R=I+ER$ invertible. Thus $R(I+ER)^{-1}$ is a right inverse for
 $M+E$. This is a precise stability statement in the chosen matrix norm;
 it does not assert that an arbitrary matrix perturbation comes from an
@@ -281,6 +281,13 @@ edits. The live-comment formatting issue is recorded here and remains
 uncorrected upstream; no further upstream action is taken. The checked
 mathematical data are unaffected. Further work and corrections stay in
 this notebook until the user explicitly changes that direction.
+
+The [Linux CI job for this packet](https://github.com/rbajaj5/hodge-lab/actions/runs/39058500295/job/117471299490)
+passed at proof commit `d846f781066534411c8ed7398430b2ff68f810e6`, including
+both exact implementations and figure generation. This reports that targeted
+job only. The live notebook inspection also prompted replacing punctuation
+escapes with explicit `\cdot`, `\lVert`, and `\rVert` commands so Markdown
+preserves multiplication and norm notation.
 
 - [Exact packet](../results/cyclic-fano-curve/cyclic-free-curve.json)
 - [Primary checks](../results/cyclic-fano-curve/validation.json)

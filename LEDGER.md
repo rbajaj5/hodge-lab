@@ -992,6 +992,10 @@ conversations or evidence of an accepted solve.
     The latest Fourier and invariant-subspace excerpts remain background
     reading; no application to another new target is asserted. Resuming
     upstream activity requires a new explicit direction from the user.
+    The [targeted Linux CI job](https://github.com/rbajaj5/hodge-lab/actions/runs/39058500295/job/117471299490)
+    passed for proof commit `d846f78`; this is not a full-workflow claim.
+    Further notebook-only typography fixes preserve the multiplication sign
+    and double-bar norm notation through GitHub Markdown.
 
 ## Keeping this current
 
