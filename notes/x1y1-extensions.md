@@ -23,6 +23,9 @@ degree-four search as a reason to abandon the entire family.
 
 The pair is `X1/Y1`, with characters `(0,1,0)` and `(5,3,0)`. Add each of
 the other 136 retained characters, using its **complete E1 eigenspace**.
+Here the retained E1 presentation uses the preceding verified,
+character-preserving six-direction gauge reduction; no further arbitrary
+eigenspace truncation is imposed in this batch.
 Exclude from the new batch the four triples already proved as old families
 7, 17, 150, and 151: their additional characters are respectively `(0,0,0)`,
 `(0,0,1)`, `(1,0,0)`, and `(1,2,3)`.
@@ -233,3 +236,18 @@ X0/Y0 and X1/Y1 pairs, plus the 20 coordinate-character triples, with eight
 overlaps removed: 284 in total. Other three-character supports, larger
 supports, and higher degrees are outside this result. The unconditional
 lower bound remains degree at least seven.
+
+Published as [upstream contribution 12](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998764)
+on 17 October 2026 at 13:08 UTC, immediately before pushing proof commit
+`c126e8bbc6ccc3f4c37a14d6be20809bdbccef25`. The full published body and author
+were read back and matched. The [publication receipt](../results/x1y1-extensions/upstream-post.json)
+records this check. Remote CI was not claimed at publication; the
+[workflow](https://github.com/rbajaj5/hodge-lab/actions/runs/39035333859)
+was started by the push.
+
+The dedicated Linux [x1y1-extensions job](https://github.com/rbajaj5/hodge-lab/actions/runs/39035333859/job/117403879725)
+subsequently **passed** the fresh dependency fetch/replay, all four exact
+physical reconstructions, and the visualization-data check at that proof
+commit. The [CI receipt](../results/x1y1-extensions/ci-x1y1.json) retains the
+complete snapshot. Other jobs in the broader workflow were still running
+when this receipt was saved; no complete-workflow success is claimed here.
