@@ -1,0 +1,131 @@
+{
+  "score": "dim H1 at total degree 4 of the added-character necessary block only; empty block contributes zero",
+  "ordering": "descending score, then ascending batch number",
+  "high": [
+    {
+      "number": 19,
+      "score": 3,
+      "profile_sha256": "8c6d72ad1f62a9486a2de43b5bdb1fb634b31eda7141517b21d0cab50ec28c6f"
+    },
+    {
+      "number": 30,
+      "score": 3,
+      "profile_sha256": "27f0e80b40885dcad3cc3df84daf7fd14054e6a2a4342b6b8445057b81b773d9"
+    },
+    {
+      "number": 31,
+      "score": 3,
+      "profile_sha256": "47ec93537292b972dee0dbbaf27aa3ab586c8f1b1b6b2fc63a02aea57a110494"
+    },
+    {
+      "number": 49,
+      "score": 3,
+      "profile_sha256": "50e39cb852aeea73c1c721adf8651a9aeeb4717429dfc39cc208e5c5d7912d4d"
+    }
+  ],
+  "low_control": [
+    {
+      "number": 3,
+      "score": 0,
+      "profile_sha256": "98ee5f515099d212f6fbd170b4b073a2f90fa473d6683a1bddd1e1994ad935c3"
+    },
+    {
+      "number": 16,
+      "score": 0,
+      "profile_sha256": "9b0d03efda17824ec2d23fe9c2c0f93cff4548f01d0eedcf81cc2eca1c1aa0f5"
+    },
+    {
+      "number": 61,
+      "score": 0,
+      "profile_sha256": "d03db098158ac312ee78985c946c45adeb4b1e7d70ec072044abdcb813278366"
+    },
+    {
+      "number": 72,
+      "score": 0,
+      "profile_sha256": "4970955f4ca5a2f3e0ee310c15a098efd064468a0f3c7addc24f7555b3a3a468"
+    }
+  ],
+  "all_profiles": [
+    {
+      "number": 19,
+      "score": 3,
+      "profile_sha256": "8c6d72ad1f62a9486a2de43b5bdb1fb634b31eda7141517b21d0cab50ec28c6f"
+    },
+    {
+      "number": 30,
+      "score": 3,
+      "profile_sha256": "27f0e80b40885dcad3cc3df84daf7fd14054e6a2a4342b6b8445057b81b773d9"
+    },
+    {
+      "number": 31,
+      "score": 3,
+      "profile_sha256": "47ec93537292b972dee0dbbaf27aa3ab586c8f1b1b6b2fc63a02aea57a110494"
+    },
+    {
+      "number": 49,
+      "score": 3,
+      "profile_sha256": "50e39cb852aeea73c1c721adf8651a9aeeb4717429dfc39cc208e5c5d7912d4d"
+    },
+    {
+      "number": 55,
+      "score": 3,
+      "profile_sha256": "b0b232ce9a01291a444e0fc7a74f53e4547e30b3f38ca43c0ba55c70353c2e0c"
+    },
+    {
+      "number": 84,
+      "score": 2,
+      "profile_sha256": "8ec2737fcce3127d1eed924bac2eccceb8009e2f4e964ade740d6ef3044f8845"
+    },
+    {
+      "number": 3,
+      "score": 0,
+      "profile_sha256": "98ee5f515099d212f6fbd170b4b073a2f90fa473d6683a1bddd1e1994ad935c3"
+    },
+    {
+      "number": 16,
+      "score": 0,
+      "profile_sha256": "9b0d03efda17824ec2d23fe9c2c0f93cff4548f01d0eedcf81cc2eca1c1aa0f5"
+    },
+    {
+      "number": 61,
+      "score": 0,
+      "profile_sha256": "d03db098158ac312ee78985c946c45adeb4b1e7d70ec072044abdcb813278366"
+    },
+    {
+      "number": 72,
+      "score": 0,
+      "profile_sha256": "4970955f4ca5a2f3e0ee310c15a098efd064468a0f3c7addc24f7555b3a3a468"
+    },
+    {
+      "number": 74,
+      "score": 0,
+      "profile_sha256": "104117be335d8d5c37deb765888ee1531c1e90a1efde448a56c8b5e70fb91a33"
+    },
+    {
+      "number": 75,
+      "score": 0,
+      "profile_sha256": "389b4e102e93b2140de537bbd09b9df88433d6caef95fef18b7078f82e075dad"
+    },
+    {
+      "number": 83,
+      "score": 0,
+      "profile_sha256": "1b00561706d844baf2861234fd0fcf32117033e774ea8893374b5ee5804b8d8b"
+    },
+    {
+      "number": 100,
+      "score": 0,
+      "profile_sha256": "fd21c0503474ab8a04c99c72faaf64059055b66927564a057d9502429754e57d"
+    },
+    {
+      "number": 129,
+      "score": 0,
+      "profile_sha256": "2a471371b284de9d8ccdde6f8481009ddf22f3518ce086af9065b74a6e0ef699"
+    }
+  ],
+  "group_size": 4,
+  "comparison_is_informative": true,
+  "strategy": "same degree 3/4 blocks, shared affine/square charts, and rebuilding for both groups",
+  "follow_seconds_per_family": 120,
+  "workers": 2,
+  "limits": "Prospective priority heuristic; not a randomized efficacy trial. No theorem equates H1 with new constraints."
+}

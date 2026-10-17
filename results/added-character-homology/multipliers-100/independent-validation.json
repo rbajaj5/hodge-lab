@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "completed": true,
+  "multiplier_blocks": 14,
+  "requested_blocks": 14,
+  "baseline_relations": 9,
+  "additional_relations": 52,
+  "coefficient_products": 22699,
+  "mutation_rejected": true,
+  "pure_blocks": [
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "variables": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "raw_ids": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114
+      ],
+      "relation_indices": [
+        3,
+        4,
+        26,
+        27,
+        28,
+        30,
+        31,
+        41
+      ]
+    },
+    {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "variables": [
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "raw_ids": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "relation_indices": [
+        7,
+        8,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "variables": [
+        0,
+        10
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "relation_indices": [
+        0
+      ]
+    }
+  ],
+  "seconds": 6.751684099999693,
+  "scope": "Necessary denominator relations verified over Q; no A100 exclusion or full projected ideal claim."
+}

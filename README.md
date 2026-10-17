@@ -10,7 +10,19 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** 132 additional complete three-character families
+**Latest exact result:** an exact search guided by the added character's
+Koszul homology and a separate multiplier continuation exclude all
+**132 fresh X0/X1 extensions**, bringing the selected union to **680 triples**.
+The earlier 131/132 checkpoint and A100's failed charts are preserved.
+High-score and low-score groups both close 4/4. The figures
+separate empty blocks from computed zero homology and compare H1 with H0,
+which directly detects full graded images. Both physical reconstructions
+pass; failed charts and the reproduced full-pair dependency are retained.
+[Results, visualizations, and limits](notes/added-character-homology.md).
+
+![Added-character Koszul maps and the H0 comparison](results/added-character-homology/added-character-koszul-map.png)
+
+**Preceding exact result:** 132 additional complete three-character families
 around `Y0/Y1` are excluded, bringing the selected union to **548 triples**.
 Koszul homology guided a prospective comparison, but high- and low-score
 groups both closed 4/4; no ranking advantage was established. All seven

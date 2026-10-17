@@ -3,6 +3,27 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  added-character-homology:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/check_added_character_homology.py
+      - run: python -S experiments/check_added_character_homology.py --independent
+      - run: python -S experiments/plot_added_character_homology.py --check
+      - run: python -S experiments/added100_multipliers.py --check
+      - run: python -S experiments/added100_multipliers.py --check --independent
+      - run: python -S experiments/added100_multipliers.py --check-blocks
+      - run: python -S experiments/added100_multipliers.py --check-blocks --independent
+      - run: python -S experiments/added100_multipliers.py --check-closure
+      - run: python -S experiments/added100_multipliers.py --check-closure --independent
+      - run: python -S experiments/plot_added100_continuation.py --check
   homology-guided-triples:
     runs-on: ubuntu-latest
     timeout-minutes: 10

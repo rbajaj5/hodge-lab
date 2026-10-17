@@ -1,0 +1,47 @@
+{
+  "review_type": "AI subagent source review and isolated checker exercises; not human independent review",
+  "reviewer_role": "Separate review agent for producer/checker. This same agent implemented the pair dependency, so its inspection of that module is not independent authorship review.",
+  "status": "No blocking soundness issue found in reviewed paths",
+  "reviewed_source_sha256_lf": {
+    "experiments/added_character_homology.py": "d405e29015d0a60c645bcfed3bd72ee4ce637569acc1aa6499b1dfe4ca9ede3d",
+    "experiments/check_added_character_homology.py": "6bc45bb52514b79ba6aec78a774fdc767ad3dadaae107f3af1ae35ece3d45b90",
+    "experiments/added_homology_pair.py": "b24c7d3a0ab05e21945be28f83babdc42e5fe72b5d1819bb9f12597f01ef1115",
+    "experiments/necessary_koszul_complex.py": "f2e56a36b49f982f7f9bd718c44216685ca37c78605fb1b470d3697f2469f622",
+    "algebra/degree7_triple_shared.py": "ed8de9b8d62025abea92d136e7b2a3dc77160428997142c27a419ca3fc1a6cfa",
+    "experiments/check_x1y1_extensions.py": "d93832ef77fb6b61f93ccb19071a900716602a9853259c97cdbc9e5ca8baf8eb",
+    "experiments/check_quartic_exclusions.py": "65e8396f7bfc319f3687af23aa38bc8988bd4269853445fefb952e745ff70f3d"
+  },
+  "checks": [
+    "Fresh selection is all X0/X1 coordinate-anchor triples minus the exact preceding 548-triple union; 132 disjoint complete retained families.",
+    "The homology profile contains only the added character and total degrees 3 and 4. Physical pure rows are selected without setting the other coefficients to zero.",
+    "For nonempty blocks, exact rational ranks, kernels, boundaries, quotient representatives and d squared zero are reconstructed; a distinct elimination routine checks the first map rank.",
+    "Empty blocks contain no homology records and receive score zero by declared convention; this supplies no evidence that a family is easy or its full Koszul complex exact.",
+    "Ranking and follow plans are preserved, ties use the predeclared family order, and both comparison groups use the same 120-second continuation method.",
+    "Baseline and rebuilt zero coordinates are removed only after explicit square or higher-power rational identities. Shared charts retain the complete stabilizer-allowed numerator correction space.",
+    "All expected chart pivots must be present when completed or when removals are applied. A timeout may retain a correct prefix without claiming the untested charts.",
+    "Only terminal dependency reduction gives family exclusion; a positive homology score or failed normalized chart does not.",
+    "Full X0/X1 pair binding includes all 13 retained directions, checks 11 charts, records 9 failed charts, and invokes the explicit one-character proof only after reduction to X1."
+  ],
+  "isolated_checker_exercises": {
+    "family": 19,
+    "valid_timeout_prefix_accepted": true,
+    "incomplete_cover_marked_complete_rejected": true,
+    "nonprefix_chart_rejected": true,
+    "method": "Copies substituted in memory for one follow packet; no proof or experiment packet changed."
+  },
+  "pair_validation": {
+    "normal": "full-pair-validation.json",
+    "opposite_polynomial_division": "full-pair-independent-validation.json",
+    "both_status": "PASS",
+    "packet_sha256": "bf93fc843b770f29354d4f2c728ade1cfefdff1463c97a834d51834e8ffd0fd0"
+  },
+  "comparison_caveats": [
+    "High group 19,30,31,49 has added-block variable/generator counts (4,3),(3,4),(3,4),(3,4). Low group 3,16,61,72 has (1,0),(1,0),(3,3),(1,0): the groups are not matched.",
+    "Three of the four zero-score controls have no selected pure equations. Depict them separately from nonempty blocks whose H1 vanishes.",
+    "The selected pure rows generate a necessary subideal. They are not asserted to exhaust pure-character consequences obtainable by combining mixed rows, so the score is not an intrinsic invariant of the full family.",
+    "No randomized or causal efficacy conclusion follows from this small deterministic selection; score separation alone is not demonstrated predictive utility.",
+    "Finite Koszul homology is not a full free resolution or an application of the geometric theorems of Yang or the Eisenbud-Erman pairing.",
+    "The two physical reconstructions share the identity-replay and finite-complex algorithms. This is not a wholly independently implemented theorem prover or a Lean HasCertificate proof."
+  ],
+  "fixed_target": "Existing upstream files and F,q,A are outside this reviewer edit scope."
+}

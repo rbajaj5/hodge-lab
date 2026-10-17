@@ -1,0 +1,283 @@
+{
+  "family": 100,
+  "multiplier_blocks": 14,
+  "baseline_generators": 9,
+  "baseline_multiple_rank": 126,
+  "combined_rank": 178,
+  "additional_generators": 52,
+  "new_generator_degrees": {
+    "3": 52
+  },
+  "relation_products_checked": 22699,
+  "blocks": [
+    {
+      "character": [
+        0,
+        0,
+        1
+      ],
+      "ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "raw_ids": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114
+      ],
+      "equation_indices": [
+        3,
+        4,
+        26,
+        27,
+        28,
+        30,
+        31,
+        41
+      ],
+      "maps": [
+        {
+          "degree": 3,
+          "domain": 18,
+          "codomain": 56,
+          "rank": 18,
+          "kernel": 0,
+          "quotient_dimension": 38
+        },
+        {
+          "degree": 4,
+          "domain": 78,
+          "codomain": 126,
+          "rank": 70,
+          "kernel": 8,
+          "quotient_dimension": 56
+        }
+      ],
+      "forced_raw_ids": [
+        56
+      ]
+    },
+    {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "ids": [
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "raw_ids": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "equation_indices": [
+        7,
+        8,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "maps": [
+        {
+          "degree": 3,
+          "domain": 17,
+          "codomain": 35,
+          "rank": 17,
+          "kernel": 0,
+          "quotient_dimension": 18
+        },
+        {
+          "degree": 4,
+          "domain": 65,
+          "codomain": 70,
+          "rank": 61,
+          "kernel": 4,
+          "quotient_dimension": 9
+        }
+      ],
+      "forced_raw_ids": [
+        123,
+        210,
+        229
+      ]
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "ids": [
+        0,
+        10
+      ],
+      "raw_ids": [
+        6,
+        211
+      ],
+      "equation_indices": [
+        0
+      ],
+      "maps": [
+        {
+          "degree": 3,
+          "domain": 2,
+          "codomain": 4,
+          "rank": 2,
+          "kernel": 0,
+          "quotient_dimension": 2
+        },
+        {
+          "degree": 4,
+          "domain": 3,
+          "codomain": 5,
+          "rank": 3,
+          "kernel": 0,
+          "quotient_dimension": 2
+        }
+      ],
+      "forced_raw_ids": []
+    }
+  ],
+  "forced_raw_ids": [
+    56,
+    123,
+    210,
+    229
+  ],
+  "stages": [
+    {
+      "name": "Before continuation",
+      "ids": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        211,
+        229,
+        232
+      ],
+      "cause": ""
+    },
+    {
+      "name": "New coordinate powers",
+      "ids": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        180,
+        211,
+        232
+      ],
+      "cause": "56, 123, 210, 229"
+    },
+    {
+      "name": "Rebuilt necessary equations",
+      "ids": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        211
+      ],
+      "cause": "180, 232"
+    },
+    {
+      "name": "Rebuilt shared-numerator charts",
+      "ids": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "cause": "6, 211"
+    }
+  ],
+  "original_unresolved_charts": 2,
+  "continuation_charts": [
+    {
+      "raw": 6,
+      "excluded": true
+    },
+    {
+      "raw": 42,
+      "excluded": false
+    },
+    {
+      "raw": 88,
+      "excluded": false
+    },
+    {
+      "raw": 102,
+      "excluded": false
+    },
+    {
+      "raw": 111,
+      "excluded": false
+    },
+    {
+      "raw": 114,
+      "excluded": false
+    },
+    {
+      "raw": 211,
+      "excluded": true
+    }
+  ],
+  "excluded": true,
+  "terminal_kind": "x0_x1_dependency",
+  "remaining_characters": [
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "original_batch_excluded": 131,
+  "combined_batch_excluded": 132,
+  "source_hashes": {
+    "closure.json.gz": "6460c462b722ca9a9abc12503c5084fac03300a589da4e674cbfce728e5882fe",
+    "global.json.gz": "e0a568341555856bce43a46917be86b23f83c3275700f5fd1fffd3a34a602d63",
+    "power-rebuilt-0.json.gz": "b34a3f6b75c0f8bdb932d7687598467d149a6f70e04ee0a8f44df03a3f76afc7",
+    "power-rebuilt-1.json.gz": "3584b79ba5a331b7ef3076ce2dac307b86e0edc3831684079eac3b280cb85b01",
+    "pure-blocks.json.gz": "a5e5d1b5ef31a5d65d1edde1c699d3071d858b35605ef20ff563746ae68c2312",
+    "attempt.json": "9898c6012f55451a50898337ae798de44d471b8cf00ebfe3cb99ed4a70f71c1d",
+    "blocks-attempt.json": "849bca0d4cb9de7f129031ce1700eced665608d1a880cdad7453a0cbd2594987",
+    "blocks-plan.json": "c0ca8cb24bd1f941d2dd084b763fb99e773ec4876e58f4a1ece336cab4129b43",
+    "closure-attempt.json": "4e25455b3afe99a89fe929816ca3aa234644794c0cb88b6e98dbe0010fb96818",
+    "closure-plan.json": "025f67c318d90a891aa4a7354ee11aba84a957afb3071fac309b2a532966b9d7",
+    "plan.json": "ea860a15c103b517076540d5bb81ee9d77e6ae11c6344cab2311bb8044298f0c"
+  },
+  "hash_format": "SHA256: gzip as bytes; JSON plans and attempts as sorted compact JSON.",
+  "scope": "Selected necessary relations and a separate checked A100 continuation; no full elimination ideal or holdout solution."
+}

@@ -1,0 +1,10828 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "checks": {
+    "correction_pairings": 341648,
+    "quadratic_pairings": 129142,
+    "physical_duals": 5450,
+    "square_identities": 476,
+    "mutations_rejected": 7,
+    "graded_maps": 52,
+    "pair_chart_inferences": 75,
+    "pair_charts": 11,
+    "pair_excluded_charts": 2,
+    "higher_power_identities": 16,
+    "altered_squares_rejected": 168,
+    "homology_complexes": 18,
+    "chart_inferences": 130,
+    "charts": 7,
+    "altered_charts_rejected": 7,
+    "excluded_charts": 6
+  },
+  "baseline_excluded": 117,
+  "excluded": 125,
+  "unresolved": [
+    55,
+    74,
+    75,
+    83,
+    84,
+    100,
+    129
+  ],
+  "families": [
+    {
+      "batch_number": 1,
+      "global_number": 9320,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        2
+      ],
+      "basis_indices": [
+        38,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 2,
+      "global_number": 9454,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        193,
+        210,
+        227,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 3,
+      "global_number": 9587,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        85,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        85,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": {
+        "job": 3,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 0.7050201000020024,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            42,
+            56,
+            85,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            42,
+            56,
+            85,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [
+            {
+              "raw": 85,
+              "excluded": true
+            }
+          ],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        },
+        {
+          "before": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 4,
+      "global_number": 9719,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        5
+      ],
+      "basis_indices": [
+        24,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 5,
+      "global_number": 9851,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        87,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 6,
+      "global_number": 9852,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        176,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 7,
+      "global_number": 9853,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        60,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 8,
+      "global_number": 9854,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        5
+      ],
+      "basis_indices": [
+        13,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 9,
+      "global_number": 9855,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        152,
+        179,
+        180,
+        201,
+        210,
+        229,
+        232,
+        247,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 10,
+      "global_number": 9856,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        92,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 11,
+      "global_number": 9857,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        143,
+        180,
+        210,
+        229,
+        232,
+        239,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 12,
+      "global_number": 9858,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          4
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        4
+      ],
+      "basis_indices": [
+        42,
+        45,
+        56,
+        88,
+        89,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 13,
+      "global_number": 9859,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          5
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        5
+      ],
+      "basis_indices": [
+        8,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 14,
+      "global_number": 9860,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        188,
+        210,
+        229,
+        232,
+        262,
+        269
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 15,
+      "global_number": 9861,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        127,
+        139,
+        180,
+        181,
+        206,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 16,
+      "global_number": 9862,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          4
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        4
+      ],
+      "basis_indices": [
+        40,
+        42,
+        56,
+        72,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        40,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": {
+        "job": 16,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 0.6915533999999752,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            40,
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            40,
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [
+            {
+              "raw": 40,
+              "excluded": true
+            }
+          ],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        },
+        {
+          "before": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 17,
+      "global_number": 9863,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          5
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        5
+      ],
+      "basis_indices": [
+        16,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 18,
+      "global_number": 9864,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          2
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        2
+      ],
+      "basis_indices": [
+        35,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 19,
+      "global_number": 9865,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        3
+      ],
+      "basis_indices": [
+        7,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        119,
+        123,
+        139,
+        159,
+        180,
+        210,
+        216,
+        229,
+        232,
+        255,
+        262
+      ],
+      "baseline_remaining": [
+        7,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        119,
+        123,
+        139,
+        159,
+        180,
+        210,
+        216,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 3,
+      "attempt": {
+        "job": 19,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 2.68290590000106,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            7,
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            119,
+            123,
+            139,
+            159,
+            180,
+            210,
+            216,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            7,
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            119,
+            123,
+            139,
+            159,
+            180,
+            210,
+            216,
+            229,
+            232
+          ],
+          "charts": [
+            {
+              "raw": 7,
+              "excluded": false
+            },
+            {
+              "raw": 119,
+              "excluded": true
+            },
+            {
+              "raw": 159,
+              "excluded": true
+            },
+            {
+              "raw": 216,
+              "excluded": true
+            }
+          ],
+          "after": [
+            7,
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            139,
+            180,
+            210,
+            229,
+            232
+          ]
+        },
+        {
+          "before": [
+            7,
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            139,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [
+            7,
+            139
+          ],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 20,
+      "global_number": 9866,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          4
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        50,
+        56,
+        88,
+        94,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 21,
+      "global_number": 9867,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        164,
+        180,
+        210,
+        221,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 22,
+      "global_number": 9868,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          1
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        53,
+        56,
+        80,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 23,
+      "global_number": 9869,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          2
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        2
+      ],
+      "basis_indices": [
+        10,
+        20,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 24,
+      "global_number": 9870,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          3
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        132,
+        139,
+        180,
+        196,
+        210,
+        229,
+        232,
+        262,
+        287
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 25,
+      "global_number": 9872,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        101,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 26,
+      "global_number": 9873,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          3
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        207,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 27,
+      "global_number": 9874,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        73,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 28,
+      "global_number": 9875,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          5
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        5
+      ],
+      "basis_indices": [
+        17,
+        33,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 29,
+      "global_number": 9876,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        209,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 30,
+      "global_number": 9877,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          3
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        120,
+        123,
+        139,
+        160,
+        180,
+        210,
+        217,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        120,
+        123,
+        160,
+        180,
+        210,
+        217,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 3,
+      "attempt": {
+        "job": 30,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 0.7920976999994309,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            120,
+            123,
+            160,
+            180,
+            210,
+            217,
+            229,
+            232
+          ],
+          "block_zeros": [
+            120,
+            160,
+            217
+          ],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 31,
+      "global_number": 9878,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        4
+      ],
+      "basis_indices": [
+        39,
+        42,
+        51,
+        56,
+        77,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        39,
+        42,
+        51,
+        56,
+        77,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 3,
+      "attempt": {
+        "job": 31,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 0.6336340000016207,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            39,
+            42,
+            51,
+            56,
+            77,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [
+            39,
+            51,
+            77
+          ],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 32,
+      "global_number": 9879,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        5
+      ],
+      "basis_indices": [
+        9,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 33,
+      "global_number": 9880,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        222,
+        229,
+        232,
+        243,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 34,
+      "global_number": 9881,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        81,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 35,
+      "global_number": 9882,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        2
+      ],
+      "basis_indices": [
+        21,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 36,
+      "global_number": 9884,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        4
+      ],
+      "basis_indices": [
+        41,
+        42,
+        56,
+        88,
+        102,
+        110,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 37,
+      "global_number": 9885,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        172,
+        180,
+        210,
+        229,
+        232,
+        262,
+        291
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 38,
+      "global_number": 9886,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          1
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        57,
+        88,
+        102,
+        111,
+        112,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 39,
+      "global_number": 9887,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        2
+      ],
+      "basis_indices": [
+        11,
+        37,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 40,
+      "global_number": 9888,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        121,
+        123,
+        139,
+        180,
+        194,
+        210,
+        228,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 41,
+      "global_number": 9889,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        65,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 42,
+      "global_number": 9890,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        140,
+        180,
+        210,
+        229,
+        230,
+        232,
+        237,
+        262,
+        263
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 43,
+      "global_number": 9891,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        1
+      ],
+      "basis_indices": [
+        42,
+        43,
+        56,
+        86,
+        88,
+        98,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 44,
+      "global_number": 9892,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          2
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        2
+      ],
+      "basis_indices": [
+        28,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 45,
+      "global_number": 9893,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        150,
+        180,
+        210,
+        229,
+        232,
+        245,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 46,
+      "global_number": 9894,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        117,
+        123,
+        125,
+        139,
+        153,
+        177,
+        180,
+        202,
+        210,
+        229,
+        232,
+        262,
+        277
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 47,
+      "global_number": 9895,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "third_character": [
+        1,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        48,
+        56,
+        69,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 48,
+      "global_number": 9896,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        252,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 49,
+      "global_number": 9897,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          3
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        122,
+        123,
+        138,
+        139,
+        180,
+        195,
+        210,
+        223,
+        229,
+        232,
+        259,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        122,
+        123,
+        138,
+        180,
+        210,
+        223,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 3,
+      "attempt": {
+        "job": 49,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 0.9827985000010813,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            122,
+            123,
+            138,
+            180,
+            210,
+            223,
+            229,
+            232
+          ],
+          "block_zeros": [
+            122,
+            138,
+            223
+          ],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 50,
+      "global_number": 9898,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          4
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        66,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 51,
+      "global_number": 9899,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          5
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        5
+      ],
+      "basis_indices": [
+        14,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 52,
+      "global_number": 9900,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262,
+        264
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 53,
+      "global_number": 9901,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        99,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 54,
+      "global_number": 9902,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        2
+      ],
+      "basis_indices": [
+        25,
+        29,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 55,
+      "global_number": 9903,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          3
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        116,
+        123,
+        139,
+        151,
+        180,
+        199,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        116,
+        123,
+        151,
+        180,
+        199,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 3,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        116,
+        123,
+        151,
+        180,
+        199,
+        210,
+        229,
+        232
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 56,
+      "global_number": 9904,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          4
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        4
+      ],
+      "basis_indices": [
+        42,
+        47,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 57,
+      "global_number": 9905,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        178,
+        180,
+        203,
+        210,
+        229,
+        232,
+        262,
+        278
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 58,
+      "global_number": 9906,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        61,
+        70,
+        88,
+        102,
+        105,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 59,
+      "global_number": 9907,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        2
+      ],
+      "basis_indices": [
+        15,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 60,
+      "global_number": 9908,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        129,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262,
+        266
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 61,
+      "global_number": 9909,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        118,
+        123,
+        139,
+        144,
+        157,
+        180,
+        210,
+        213,
+        229,
+        232,
+        262,
+        268
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        118,
+        123,
+        157,
+        180,
+        210,
+        213,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": {
+        "job": 61,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 0.8046772000016063,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            118,
+            123,
+            157,
+            180,
+            210,
+            213,
+            229,
+            232
+          ],
+          "block_zeros": [
+            118,
+            157,
+            213
+          ],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 62,
+      "global_number": 9910,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        49,
+        56,
+        88,
+        100,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 63,
+      "global_number": 9911,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        186,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 64,
+      "global_number": 9912,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        131,
+        139,
+        180,
+        208,
+        210,
+        229,
+        232,
+        249,
+        262,
+        284
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 65,
+      "global_number": 9913,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        218,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 66,
+      "global_number": 9914,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          4
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        78,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 67,
+      "global_number": 9915,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        5
+      ],
+      "basis_indices": [
+        19,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 68,
+      "global_number": 9916,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        148,
+        180,
+        190,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 69,
+      "global_number": 9917,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          3
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        169,
+        180,
+        210,
+        229,
+        232,
+        262,
+        286
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 70,
+      "global_number": 9918,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          4
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        4
+      ],
+      "basis_indices": [
+        42,
+        55,
+        56,
+        88,
+        102,
+        109,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 71,
+      "global_number": 9919,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        145,
+        180,
+        210,
+        214,
+        229,
+        232,
+        240,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 72,
+      "global_number": 9920,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        1
+      ],
+      "basis_indices": [
+        42,
+        46,
+        56,
+        75,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        75,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": {
+        "job": 72,
+        "status": "completed",
+        "exit_code": 0,
+        "seconds": 1.7505176999984542,
+        "limit": 120
+      },
+      "cycles": [
+        {
+          "before": [
+            42,
+            56,
+            75,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            42,
+            56,
+            75,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [
+            {
+              "raw": 75,
+              "excluded": true
+            }
+          ],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        },
+        {
+          "before": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "block_zeros": [],
+          "after_blocks": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ],
+          "charts": [],
+          "after": [
+            42,
+            56,
+            88,
+            102,
+            111,
+            114,
+            123,
+            180,
+            210,
+            229,
+            232
+          ]
+        }
+      ],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 73,
+      "global_number": 9921,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          3
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        187,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 74,
+      "global_number": 9922,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          4
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        63,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        63,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        63,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 75,
+      "global_number": 9923,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        128,
+        139,
+        166,
+        180,
+        210,
+        229,
+        232,
+        250,
+        262,
+        282
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        166,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        166,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 76,
+      "global_number": 9924,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        93,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 77,
+      "global_number": 9925,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          3
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        147,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 78,
+      "global_number": 9926,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        161,
+        180,
+        191,
+        210,
+        229,
+        232,
+        256,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 79,
+      "global_number": 9927,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        64,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 80,
+      "global_number": 9928,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          5
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        5
+      ],
+      "basis_indices": [
+        36,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 81,
+      "global_number": 9929,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        149,
+        180,
+        210,
+        229,
+        232,
+        251,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 82,
+      "global_number": 9930,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        224,
+        229,
+        232,
+        260,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 83,
+      "global_number": 9931,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          4
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        82,
+        88,
+        97,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        82,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        82,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 84,
+      "global_number": 9932,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        3,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        124,
+        139,
+        173,
+        180,
+        200,
+        210,
+        229,
+        232,
+        262,
+        274
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        124,
+        180,
+        200,
+        210,
+        229,
+        232,
+        274
+      ],
+      "initial_excluded": false,
+      "score": 2,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        124,
+        180,
+        200,
+        210,
+        229,
+        232,
+        274
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 85,
+      "global_number": 9933,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          4
+        ]
+      ],
+      "third_character": [
+        3,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        68,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 86,
+      "global_number": 9934,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262,
+        279
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 87,
+      "global_number": 9935,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          1
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        106,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 88,
+      "global_number": 9936,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          2
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        2
+      ],
+      "basis_indices": [
+        31,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 89,
+      "global_number": 9937,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          3
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        155,
+        180,
+        210,
+        229,
+        232,
+        262,
+        265
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 90,
+      "global_number": 9938,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        134,
+        139,
+        180,
+        197,
+        210,
+        229,
+        232,
+        262,
+        292
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 91,
+      "global_number": 9939,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          3
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        184,
+        210,
+        225,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 92,
+      "global_number": 9940,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          4
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        83,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 93,
+      "global_number": 9941,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          5
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        5
+      ],
+      "basis_indices": [
+        22,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 94,
+      "global_number": 9942,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        244,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 95,
+      "global_number": 9943,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          3
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        174,
+        180,
+        210,
+        229,
+        232,
+        262,
+        275
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 96,
+      "global_number": 9944,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          4
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        58,
+        88,
+        102,
+        103,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 97,
+      "global_number": 9945,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        185,
+        210,
+        229,
+        232,
+        262,
+        280
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 98,
+      "global_number": 9946,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          1
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        107,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 99,
+      "global_number": 9947,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          2
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        2
+      ],
+      "basis_indices": [
+        32,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 100,
+      "global_number": 9948,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        3
+      ],
+      "basis_indices": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        141,
+        180,
+        210,
+        211,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        211,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        6,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        211,
+        229,
+        232
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 101,
+      "global_number": 9949,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        215,
+        229,
+        232,
+        241,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 102,
+      "global_number": 9950,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          1
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        76,
+        88,
+        90,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 103,
+      "global_number": 9951,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          2
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        2
+      ],
+      "basis_indices": [
+        18,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 104,
+      "global_number": 9952,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        204,
+        210,
+        229,
+        232,
+        248,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 105,
+      "global_number": 9953,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        167,
+        180,
+        182,
+        210,
+        229,
+        232,
+        262,
+        283
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 106,
+      "global_number": 9954,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          1
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        1
+      ],
+      "basis_indices": [
+        42,
+        54,
+        56,
+        88,
+        102,
+        108,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 107,
+      "global_number": 9955,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        189,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 108,
+      "global_number": 9956,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        137,
+        139,
+        162,
+        180,
+        192,
+        210,
+        219,
+        229,
+        232,
+        257,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 109,
+      "global_number": 9957,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          5,
+          1
+        ]
+      ],
+      "third_character": [
+        4,
+        5,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        95,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 110,
+      "global_number": 9958,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        242,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 111,
+      "global_number": 9959,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          1
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        91,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 112,
+      "global_number": 9960,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          2
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        2
+      ],
+      "basis_indices": [
+        26,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 113,
+      "global_number": 9961,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        126,
+        139,
+        165,
+        180,
+        205,
+        210,
+        229,
+        232,
+        262,
+        281
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 114,
+      "global_number": 9962,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        71,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 115,
+      "global_number": 9963,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        183,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 116,
+      "global_number": 9964,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          1
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        62,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 117,
+      "global_number": 9965,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          2
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        2
+      ],
+      "basis_indices": [
+        34,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 118,
+      "global_number": 9966,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        158,
+        180,
+        210,
+        229,
+        232,
+        254,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 119,
+      "global_number": 9967,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        146,
+        163,
+        180,
+        210,
+        220,
+        229,
+        232,
+        258,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 120,
+      "global_number": 9968,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          1
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        1
+      ],
+      "basis_indices": [
+        42,
+        52,
+        56,
+        79,
+        88,
+        96,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 121,
+      "global_number": 9969,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          2
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        2
+      ],
+      "basis_indices": [
+        27,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 122,
+      "global_number": 9971,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          1
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        1
+      ],
+      "basis_indices": [
+        42,
+        56,
+        67,
+        88,
+        102,
+        111,
+        113,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 123,
+      "global_number": 9972,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        226,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 124,
+      "global_number": 9973,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        84,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 125,
+      "global_number": 9974,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          5
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        5
+      ],
+      "basis_indices": [
+        23,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 126,
+      "global_number": 9975,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        154,
+        180,
+        210,
+        229,
+        231,
+        232,
+        261,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 127,
+      "global_number": 9976,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        175,
+        180,
+        210,
+        229,
+        232,
+        262,
+        276
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 128,
+      "global_number": 9977,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        4
+      ],
+      "basis_indices": [
+        42,
+        56,
+        59,
+        88,
+        102,
+        104,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 129,
+      "global_number": 9978,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          5
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        5
+      ],
+      "basis_indices": [
+        12,
+        30,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        12,
+        30,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": false,
+      "score": 0,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        12,
+        30,
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": false,
+      "dependency": null
+    },
+    {
+      "batch_number": 130,
+      "global_number": 9979,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        0
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        246,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 131,
+      "global_number": 9980,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          5,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        3
+      ],
+      "basis_indices": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        142,
+        180,
+        210,
+        212,
+        229,
+        232,
+        238,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    },
+    {
+      "batch_number": 132,
+      "global_number": 9981,
+      "characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          5,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        4
+      ],
+      "basis_indices": [
+        42,
+        44,
+        56,
+        74,
+        88,
+        102,
+        111,
+        114,
+        123,
+        139,
+        180,
+        210,
+        229,
+        232,
+        262
+      ],
+      "baseline_remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "initial_excluded": true,
+      "score": null,
+      "attempt": null,
+      "cycles": [],
+      "remaining": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "excluded": true,
+      "dependency": "x0_x1_dependency"
+    }
+  ],
+  "comparison": {
+    "high": {
+      "families": [
+        19,
+        30,
+        31,
+        49
+      ],
+      "excluded": 4
+    },
+    "low_control": {
+      "families": [
+        3,
+        16,
+        61,
+        72
+      ],
+      "excluded": 4
+    }
+  },
+  "pair_dependency": {
+    "kind": "replayed_full_X0_X1_pair",
+    "packet_sha256": "bf93fc843b770f29354d4f2c728ade1cfefdff1463c97a834d51834e8ffd0fd0",
+    "full_pair_basis": [
+      42,
+      56,
+      88,
+      102,
+      111,
+      114,
+      123,
+      139,
+      180,
+      210,
+      229,
+      232,
+      262
+    ],
+    "cycles": [
+      {
+        "before": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          123,
+          139,
+          180,
+          210,
+          229,
+          232,
+          262
+        ],
+        "block_zeros": [
+          139,
+          262
+        ],
+        "after_blocks": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "charts": [
+          {
+            "raw": 42,
+            "excluded": false
+          },
+          {
+            "raw": 56,
+            "excluded": true
+          },
+          {
+            "raw": 88,
+            "excluded": false
+          },
+          {
+            "raw": 102,
+            "excluded": true
+          },
+          {
+            "raw": 111,
+            "excluded": false
+          },
+          {
+            "raw": 114,
+            "excluded": false
+          },
+          {
+            "raw": 123,
+            "excluded": false
+          },
+          {
+            "raw": 180,
+            "excluded": false
+          },
+          {
+            "raw": 210,
+            "excluded": false
+          },
+          {
+            "raw": 229,
+            "excluded": false
+          },
+          {
+            "raw": 232,
+            "excluded": false
+          }
+        ],
+        "after": [
+          42,
+          88,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ]
+      },
+      {
+        "before": [
+          42,
+          88,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "block_zeros": [
+          42,
+          88,
+          111,
+          114
+        ],
+        "after_blocks": [
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "charts": [],
+        "after": [
+          123,
+          180,
+          210,
+          229,
+          232
+        ]
+      }
+    ],
+    "remaining": [
+      123,
+      180,
+      210,
+      229,
+      232
+    ],
+    "single_character": {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "charts": 7,
+      "inferences": 22
+    },
+    "scope": "Known two-character exclusion, explicitly rebound to all thirteen retained directions."
+  },
+  "comparison_is_informative": true,
+  "single_dependencies": [],
+  "comparison_checkpoint_excluded": null,
+  "seconds": 14.798216899998806,
+  "scope": "132 new complete retained X0/X1 extensions; added-character finite Koszul homology ranking, not a causal efficacy proof or HasCertificate."
+}

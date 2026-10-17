@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "checks": {
+    "correction_pairings": 1748,
+    "quadratic_pairings": 1087,
+    "physical_duals": 43,
+    "square_identities": 2,
+    "mutations_rejected": 2,
+    "graded_maps": 7,
+    "pair_chart_inferences": 75,
+    "pair_charts": 11,
+    "pair_excluded_charts": 2,
+    "higher_power_identities": 4
+  },
+  "dependency": {
+    "kind": "replayed_full_X0_X1_pair",
+    "packet_sha256": "bf93fc843b770f29354d4f2c728ade1cfefdff1463c97a834d51834e8ffd0fd0",
+    "full_pair_basis": [
+      42,
+      56,
+      88,
+      102,
+      111,
+      114,
+      123,
+      139,
+      180,
+      210,
+      229,
+      232,
+      262
+    ],
+    "cycles": [
+      {
+        "before": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          123,
+          139,
+          180,
+          210,
+          229,
+          232,
+          262
+        ],
+        "block_zeros": [
+          139,
+          262
+        ],
+        "after_blocks": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "charts": [
+          {
+            "raw": 42,
+            "excluded": false
+          },
+          {
+            "raw": 56,
+            "excluded": true
+          },
+          {
+            "raw": 88,
+            "excluded": false
+          },
+          {
+            "raw": 102,
+            "excluded": true
+          },
+          {
+            "raw": 111,
+            "excluded": false
+          },
+          {
+            "raw": 114,
+            "excluded": false
+          },
+          {
+            "raw": 123,
+            "excluded": false
+          },
+          {
+            "raw": 180,
+            "excluded": false
+          },
+          {
+            "raw": 210,
+            "excluded": false
+          },
+          {
+            "raw": 229,
+            "excluded": false
+          },
+          {
+            "raw": 232,
+            "excluded": false
+          }
+        ],
+        "after": [
+          42,
+          88,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ]
+      },
+      {
+        "before": [
+          42,
+          88,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "block_zeros": [
+          42,
+          88,
+          111,
+          114
+        ],
+        "after_blocks": [
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "charts": [],
+        "after": [
+          123,
+          180,
+          210,
+          229,
+          232
+        ]
+      }
+    ],
+    "remaining": [
+      123,
+      180,
+      210,
+      229,
+      232
+    ],
+    "single_character": {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "charts": 7,
+      "inferences": 22
+    },
+    "scope": "Known two-character exclusion, explicitly rebound to all thirteen retained directions."
+  },
+  "seconds": 1.3313736000018253
+}

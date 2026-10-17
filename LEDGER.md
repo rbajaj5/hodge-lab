@@ -722,6 +722,43 @@ conversations or evidence of an accepted solve.
     subsequently confirmed both physical replays and the figure-data check
     passed at the proof commit; other workflow jobs were still running.
 
+46. **17 October 2026 — Rank only the added-character homology.**
+    Chose 132 fresh X0/X1 extensions, disjoint from the preceding 548.
+    Square identities close 117. Computed the added-character block alone
+    for fifteen survivors and froze high-score and low-score groups before
+    continuation. Both groups close 4/4; preserved the 125/132 checkpoint.
+    Six of seven later continuations close, leaving A100 unresolved and
+    giving **679 selected exclusions** at the primary checkpoint. Three
+    low controls have empty blocks, and variable/generator counts differ;
+    no efficacy advantage is established. The score is for a selected
+    necessary subideal, not an intrinsic invariant of the full family.
+    New figures compare the ranking, actual Koszul maps, H0 versus H1,
+    and successful/failed chart histories. A19's failed chart is resolved
+    by rebuilding; A100's two failed charts remain. Reconstructed the full
+    thirteen-direction X0/X1 pair dependency, preserving nine failed pair
+    charts. Both physical implementations pass, along with altered-witness
+    rejection and a separate AI source review of chart-prefix handling.
+    A separate bounded follow-up then supplies 52 additional necessary
+    relations, cubic/quartic powers removing four coordinates, two more
+    powers after rebuilding, and contradictions in A100's two formerly
+    failed charts. All 132 new families now close, giving **680 selected
+    exclusions**. Both physical reconstructions replay the full chain.
+    Five unsuccessful charts in the rebuilt system are retained too.
+    This is not human review, Lean acceptance, or a solve.
+    [Evidence, motivation, figures, and failed attempts](notes/added-character-homology.md).
+
+47. **17 October 2026 — Revisit unique-category grammars.**
+    Read the supplied Vishnikin–Okhotin paper while continuing the
+    added-character experiment. Its encoding theorem and preservation of
+    primitive-category counts suggest an analogy with typed composition
+    and degree/character filters. Unique lexical typing does not remove
+    parse ambiguity. Recorded a possible future cache of typed identity
+    compositions, with a matched-budget comparison still required. No
+    grammar solver or speedup was implemented, and no current exclusion
+    is attributed to this paper. Kept the earlier deferral in the record.
+    [Precise scope and connection to the existing map figures](notes/categorical-syzygies.md#revisiting-the-grammar-suggestion-17-october-2026).
+    This reading adds no upstream contribution to the tally.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "completed": true,
+  "excluded": true,
+  "forced_raw_ids": [
+    56,
+    123,
+    210,
+    229
+  ],
+  "remaining": [
+    42,
+    88,
+    102,
+    111,
+    114
+  ],
+  "cycles": [
+    {
+      "before": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        180,
+        211,
+        232
+      ],
+      "block_zeros": [
+        180,
+        232
+      ],
+      "after_blocks": [
+        6,
+        42,
+        88,
+        102,
+        111,
+        114,
+        211
+      ],
+      "charts": [
+        {
+          "raw": 6,
+          "excluded": true
+        },
+        {
+          "raw": 42,
+          "excluded": false
+        },
+        {
+          "raw": 88,
+          "excluded": false
+        },
+        {
+          "raw": 102,
+          "excluded": false
+        },
+        {
+          "raw": 111,
+          "excluded": false
+        },
+        {
+          "raw": 114,
+          "excluded": false
+        },
+        {
+          "raw": 211,
+          "excluded": true
+        }
+      ],
+      "after": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ]
+    },
+    {
+      "before": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "block_zeros": [],
+      "after_blocks": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "charts": [],
+      "after": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ]
+    }
+  ],
+  "checks": {
+    "relation_products": 11707,
+    "graded_maps": 22,
+    "power_identities": 5,
+    "power_products": 180,
+    "altered_powers_rejected": 5,
+    "correction_pairings": 2792,
+    "quadratic_pairings": 1253,
+    "physical_duals": 60,
+    "higher_power_identities": 6,
+    "mutations_rejected": 3,
+    "chart_inferences": 17,
+    "charts": 7,
+    "excluded_charts": 2,
+    "square_identities": 2,
+    "pair_chart_inferences": 75,
+    "pair_charts": 11,
+    "pair_excluded_charts": 2
+  },
+  "dependency": {
+    "kind": "replayed_full_X0_X1_pair",
+    "packet_sha256": "bf93fc843b770f29354d4f2c728ade1cfefdff1463c97a834d51834e8ffd0fd0",
+    "full_pair_basis": [
+      42,
+      56,
+      88,
+      102,
+      111,
+      114,
+      123,
+      139,
+      180,
+      210,
+      229,
+      232,
+      262
+    ],
+    "cycles": [
+      {
+        "before": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          123,
+          139,
+          180,
+          210,
+          229,
+          232,
+          262
+        ],
+        "block_zeros": [
+          139,
+          262
+        ],
+        "after_blocks": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "charts": [
+          {
+            "raw": 42,
+            "excluded": false
+          },
+          {
+            "raw": 56,
+            "excluded": true
+          },
+          {
+            "raw": 88,
+            "excluded": false
+          },
+          {
+            "raw": 102,
+            "excluded": true
+          },
+          {
+            "raw": 111,
+            "excluded": false
+          },
+          {
+            "raw": 114,
+            "excluded": false
+          },
+          {
+            "raw": 123,
+            "excluded": false
+          },
+          {
+            "raw": 180,
+            "excluded": false
+          },
+          {
+            "raw": 210,
+            "excluded": false
+          },
+          {
+            "raw": 229,
+            "excluded": false
+          },
+          {
+            "raw": 232,
+            "excluded": false
+          }
+        ],
+        "after": [
+          42,
+          88,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ]
+      },
+      {
+        "before": [
+          42,
+          88,
+          111,
+          114,
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "block_zeros": [
+          42,
+          88,
+          111,
+          114
+        ],
+        "after_blocks": [
+          123,
+          180,
+          210,
+          229,
+          232
+        ],
+        "charts": [],
+        "after": [
+          123,
+          180,
+          210,
+          229,
+          232
+        ]
+      }
+    ],
+    "remaining": [
+      123,
+      180,
+      210,
+      229,
+      232
+    ],
+    "single_character": {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "charts": 7,
+      "inferences": 22
+    },
+    "scope": "Known two-character exclusion, explicitly rebound to all thirteen retained directions."
+  },
+  "scope": "Separate A100 continuation; the original 131/132 comparison batch remains unchanged."
+}

@@ -112,3 +112,42 @@ necessities. This internal visual companion adds no upstream post to the tally.
 **Later CI receipt:** all eleven Linux workflow jobs passed at commit
 `cf2a569a56e43a56cda1469f64f36acc85337673`, including the new finite-complex
 check. [Full receipt](../results/necessary-koszul-complex/ci-complete-workflow.json).
+
+## Revisiting the grammar suggestion, 17 October 2026
+
+The user supplied the text of Vishnikin and Okhotin's paper again during
+the [added-character experiment](added-character-homology.md). Its precise
+claim is about expressive power under encoding: every context-free
+language of nonempty strings has a non-erasing homomorphic encoding whose
+membership is recognized by a categorial grammar with one category per
+symbol. It does not say that these grammars directly describe every
+context-free language without that encoding. Unique lexical categories
+also do not imply unique parses; their Corollary 2 allows inherently
+ambiguous languages.
+
+One useful analogy is to attach a type to each proposed algebraic
+operation. A homogeneous equation has a degree and character; multiplying
+it by a homogeneous monomial adds the degree and character. Only terms
+with matching output types can cancel. For quadratic generators of equal
+degree, the degree-d first Koszul differential has the typed form
+`S_(d-2)^r -> S_d`. This bookkeeping already underlies the character
+blocks and graded maps used here. With mixed-degree generators, each
+summand instead has its own degree shift.
+
+The paper's primitive-category count is preserved by its reduction rules.
+Degree/character accounting provides a similar early rejection test for
+our proposals, but this is an analogy between invariants, not an
+identification of its grammar with our polynomial ideal. Matching types
+does not ensure the required coefficient cancellation, power membership,
+or existence of a Hodge certificate. The exact rational checks remain
+necessary. Nor does the paper's encoding theorem establish a search
+speedup: branching can remain in the reduction order after lexical choices
+have been removed.
+
+A possible future experiment would cache well-typed compositions of
+known algebraic identities and compare the resulting search with the
+existing monomial-multiplier enumeration under the same budget. That
+experiment has not been implemented or benchmarked. No grammar-based
+result is credited for the current exclusions. The existing Koszul-map
+figures above and in the added-character note illustrate the algebraic
+operators, not a new grammar correspondence.
