@@ -3,6 +3,26 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  y0x1-extensions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/check_y0x1_extensions.py
+      - run: python -S experiments/check_y0x1_extensions.py --independent
+      - run: python -S experiments/y100_multipliers.py --check
+      - run: python -S experiments/y100_multipliers.py --check --independent
+      - run: python -S experiments/y100_multipliers.py --blocks --check
+      - run: python -S experiments/y100_after_powers.py --check
+      - run: python -S experiments/y100_after_powers.py --check --independent
+      - run: python -S experiments/plot_y0x1_extensions.py --check
+      - run: python -S experiments/graded_map_patterns.py --check
   x1y1-extensions:
     runs-on: ubuntu-latest
     timeout-minutes: 10

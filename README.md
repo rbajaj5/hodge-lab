@@ -10,7 +10,24 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** 132 further three-character families around the
+**Latest exact result:** another 132 complete three-character families around
+`Y0/X1` are excluded, bringing our selected union to **416 triples**.
+Small-block reductions close 123; shared equations and rebuilding close
+eight more. The last family needs 39 additional cubic consequences,
+quartic power identities, and a further rebuild. Both physical polynomial
+implementations pass the exact chain. This completes all 136 third-character
+extensions of Y0/X1; holdout remains unsolved.
+[Proof, visual record, and unsuccessful attempts](notes/y0x1-extensions.md).
+
+![Y0/X1 extension exclusions and rebuilding](results/y0x1-extensions/y0x1-extensions.png)
+
+**What do the curved matrix bands mean?** Compare old X1/Y1 cases 19, 49,
+and 100 in [original, factor-adapted, and reordered bases](notes/graded-map-patterns.md),
+with alternative sign palettes and relative coefficient strength. Exact
+ranks survive; apparent curves depend on ordering. The record includes the
+rejected first factorization for case 100 and its checked correction.
+
+**Preceding exact result:** 132 further three-character families around the
 `X1/Y1` pair are excluded, bringing our selected union to **284 triples**.
 Necessary block reductions close 123; full shared-numerator charts and
 rebuilding finish the remaining nine. Both physical polynomial

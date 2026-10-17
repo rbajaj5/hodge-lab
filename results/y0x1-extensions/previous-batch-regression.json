@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "checks": {
+    "correction_pairings": 660743,
+    "quadratic_pairings": 160903,
+    "physical_duals": 5911,
+    "square_identities": 739,
+    "mutations_rejected": 132,
+    "graded_maps": 69,
+    "higher_power_identities": 9
+  },
+  "statuses": {
+    "pair30_dependency": 123,
+    "unresolved_bounded_search": 9
+  },
+  "excluded": 123,
+  "unresolved": [
+    19,
+    49,
+    61,
+    72,
+    75,
+    84,
+    100,
+    113,
+    132
+  ],
+  "pair30_binding": {
+    "kind": "fqlx_pair30",
+    "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+    "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+    "basis_pairs_matched": 10,
+    "target_F_A_matched": true,
+    "source_files_hash_checked": 20,
+    "replay": "pair30/replay.json"
+  },
+  "single_character_bindings": [],
+  "seconds": 26.466607999998814,
+  "scope": "132 additional full three-character eigenspace families, disjoint from the preceding 152. Holdout remains unsolved."
+}

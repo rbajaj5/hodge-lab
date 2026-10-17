@@ -632,6 +632,37 @@ conversations or evidence of an accepted solve.
     at the published proof commit. The [CI receipt](results/x1y1-extensions/ci-x1y1.json)
     preserves that success while other workflow jobs were still running.
 
+42. **17 October 2026 — Curved bands and a corrected factorization.**
+    The user noticed parabola-like bands in old X1/Y1 case B19 at degree
+    four, compared B49 and B100, and asked for different colors. Added
+    original, adapted, and reordered matrix views with two sign palettes
+    and optional relative strength. Exact invertible basis changes give
+    B19 generators `v^2, uv, w^2-4vw`, B49 `u^2`, and B100 `u^2+v^2`.
+    The first proposed B100 factorization was rejected by the exact check
+    before figure generation and corrected in the conversation; the rejected
+    identity is retained. The matrices' apparent curves are ordering
+    dependent, while ranks and kernel dimensions agree in both bases.
+    No new exclusion, full resolution, or phase transition follows from
+    these pictures. Twelve maps, six ordering controls, the source physical
+    necessities, and 162 browser layouts pass checks.
+    [Equations, visual comparison, and correction](notes/graded-map-patterns.md).
+
+43. **17 October 2026 — Complete the new Y0/X1 extension batch.**
+    Extended the same rebuild strategy to 132 families disjoint from the
+    previous 284. First-pass blocks close 123, shared equations and rebuilding
+    close eight, and Y100 needs a global polynomial-multiplier continuation.
+    It supplies 39 new cubic consequences; a small mixed-degree quartic map
+    forces three X1 coordinates to vanish. Rebuilding forces the remaining
+    two X1 coordinates, and two shared-system charts remove the third
+    character. The prior Y0/X1 exclusion closes the residual support.
+    Both physical implementations pass the chain, giving **416 selected
+    triple exclusions**. Kept the 131/132 checkpoint, failed strands and
+    charts, all bounds, logs, and explicit witness dependencies. A new
+    coverage/rebuilding figure is checked against the packets. These Y IDs
+    denote different families from the old B IDs in entry 42. Holdout remains
+    unsolved; no Lean or leaderboard claim.
+    [Proof, credit, visualizations, and failed attempts](notes/y0x1-extensions.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

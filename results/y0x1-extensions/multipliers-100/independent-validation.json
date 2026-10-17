@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "completed": true,
+  "multiplier_blocks": 14,
+  "requested_blocks": 14,
+  "baseline_relations": 13,
+  "additional_relations": 39,
+  "coefficient_products": 29910,
+  "mutation_rejected": true,
+  "pure_blocks": [
+    {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "variables": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "relation_indices": [
+        11,
+        12,
+        32,
+        37,
+        40,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "character": [
+        1,
+        2,
+        3
+      ],
+      "variables": [
+        1,
+        3,
+        9,
+        10,
+        11,
+        12
+      ],
+      "relation_indices": [
+        3,
+        5,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "character": [
+        4,
+        2,
+        3
+      ],
+      "variables": [
+        0,
+        6
+      ],
+      "relation_indices": []
+    }
+  ],
+  "scope": "Verified necessary relations only; no family exclusion is asserted by this probe."
+}

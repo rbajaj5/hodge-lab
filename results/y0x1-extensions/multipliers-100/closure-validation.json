@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "excluded": true,
+  "remaining": [
+    115,
+    133,
+    234,
+    271,
+    285,
+    288
+  ],
+  "forced_by_cubics_and_quartics": [
+    123,
+    210,
+    229
+  ],
+  "checks": {
+    "correction_pairings": 2588,
+    "quadratic_pairings": 442,
+    "physical_duals": 26,
+    "graded_maps": 9,
+    "higher_power_identities": 2,
+    "mutations_rejected": 1,
+    "chart_inferences": 21
+  },
+  "dependency": {
+    "kind": "previous_Y0_X1_pair",
+    "pair_inferences": 196,
+    "single_character": {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "charts": 7,
+      "inferences": 22
+    }
+  }
+}

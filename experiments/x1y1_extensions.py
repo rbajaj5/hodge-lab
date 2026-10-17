@@ -31,14 +31,15 @@ def terminal(model,ids):
     return None
 
 
-def family(model,item,initial=None,destination=None):
+def family(model,item,initial=None,destination=None,finish=None):
+    finish=terminal if finish is None else finish
     start=time.perf_counter();ids=(item['basis_indices'] if initial is None else initial)[:]
     packet={**item,'sources':e.source_hashes(),'stages':[],'completed':False,
         'status':'running','remaining':ids}
     if initial is not None:packet['starting_indices']=ids[:]
     path=destination or OUT/f"family-{item['batch_number']:03d}.json.gz";q.save(path,packet)
     for iteration in range(len(ids)+1):
-        ending=terminal(model,ids)
+        ending=finish(model,ids)
         if ending:packet['status']=ending;break
         necessary,ranks=model.necessities(ids);eq=[cert.decode(r['polynomial']) for r in necessary]
         assert all(all(len(m)==2 for m in p) for p in eq)

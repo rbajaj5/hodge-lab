@@ -8,10 +8,11 @@ from check_quartic_exclusions import single_character
 e=x.e;q=x.q;t=x.t;cert=x.cert
 
 
-def replay_stages(model,row,starting):
+def replay_stages(model,row,starting,finish=None):
+    finish=x.terminal if finish is None else finish
     counts=Counter();ids=starting[:];zeros=[];charts=[];mutated=False
     for stage in row['stages']:
-        assert stage['active']==ids and not x.terminal(model,ids)
+        assert stage['active']==ids and not finish(model,ids)
         counts.update(e.check_physical(model,stage));eq=[cert.decode(r['polynomial']) for r in stage['necessary']]
         span=t.base.Elimination()
         for p in eq:span.insert(dict(p))

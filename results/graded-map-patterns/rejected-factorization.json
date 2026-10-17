@@ -1,0 +1,10 @@
+{
+  "status": "REJECTED_BY_EXACT_CHECK",
+  "case": "X1/Y1 B100",
+  "incorrect_claim": "-12 P8 = (a6-a211)(a6-5a211)",
+  "actual": "-12 P8 = a6^2 - 4 a6 a211 + 5 a211^2",
+  "claimed_minus_actual": "-2 a6 a211",
+  "correct_rational_coordinates": "u=a6-2a211, v=a211",
+  "correct_normal_form": "-12 P8 = u^2+v^2",
+  "impact": "The first proposed basis comparison failed before any figure was generated. Corrected in the conversation before publication. No family exclusion used the rejected factorization."
+}
