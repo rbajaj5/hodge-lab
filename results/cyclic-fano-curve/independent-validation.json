@@ -1,0 +1,772 @@
+{
+  "schema": "new-atlas-cyclic-free-line-independent-v1",
+  "status": "PASS",
+  "source_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "source_file": "data/cyclic-triple-fano/instance.rec",
+  "source_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "checker_lf_sha256": "2f85e6932fb1eb80247465b9fdcdaca8b27bfb22917ac614f8a3173afc021e20",
+  "primary_packet_lf_sha256": "a1a67db6e117bc2ff39f997db176401f1b7a762f63d9c26176eac399c842220a",
+  "frozen_target_lf_sha256": "7d540fcd1d98b54ff44ab2c5b97c511276c3b90403b384d0f3240694f8d1a9bb",
+  "source_bindings_F_A_q_verified": true,
+  "primary_packet_exact_comparisons": [
+    "target F,A,q",
+    "quotient and curve",
+    "twisted derivative",
+    "Hermitian Gram and projectors",
+    "Gram inverse and right inverse",
+    "untwisted derivative and full kernel",
+    "marked evaluation",
+    "all seven local-family equations",
+    "dependent and free Jacobians",
+    "implicit tangent matrix",
+    "local marked evaluation matrix and minor"
+  ],
+  "smooth_reduction_prime": 5,
+  "smooth_reduction_partials": [
+    "X0**5",
+    "X1**5",
+    "X2**5",
+    "Y0**5",
+    "Y1**5",
+    "Y2**5"
+  ],
+  "field": "Q(i), i^2=-1; exact SymPy arithmetic",
+  "quotient_coordinates": [
+    "X0",
+    "X1",
+    "Z",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "quotient_weights": [
+    1,
+    1,
+    3,
+    1,
+    1,
+    1
+  ],
+  "G": "X0**6 + 5*X0**3*X1*Y0*Y1/7 + 5*X0**3*Z/7 + 5*X0**2*Y0*Y1*Y2**2/7 + 5*X0*X1*Y1**3*Y2/7 + 5*X0*Y1*Y2*Z/7 + X1**6 + 5*X1*Y0*Y1*Z/7 + Y0**6 + Y1**6 + Y2**6 + Z**2",
+  "density": "X0*Y0**3/3",
+  "density_pullback_verified": true,
+  "curve": [
+    "0",
+    "s",
+    "0",
+    "I*s",
+    "t",
+    "I*t"
+  ],
+  "restricted_partials": [
+    "5*I*s*t**4/7",
+    "6*s**5",
+    "5*I*s**2*t/7",
+    "6*I*s**5",
+    "6*t**5",
+    "6*I*t**5"
+  ],
+  "basepoint_free_reason": "X1=s and Y1=t have no common projective zero",
+  "ambient_vertex_avoided": true,
+  "twisted_derivative": {
+    "source": "H0(O^5 plus O(2))",
+    "target": "H0(O(5))",
+    "row_basis": [
+      "s**5",
+      "s**4*t",
+      "s**3*t**2",
+      "s**2*t**3",
+      "s*t**4",
+      "t**5"
+    ],
+    "column_basis": [
+      "dX0",
+      "dX1",
+      "dY0",
+      "dY1",
+      "dY2",
+      "s^2 dZ",
+      "s t dZ",
+      "t^2 dZ"
+    ],
+    "matrix": [
+      [
+        "0",
+        "6",
+        "6*I",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5*I/7",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5*I/7",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5*I/7"
+      ],
+      [
+        "5*I/7",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "6",
+        "6*I",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "rank": 6,
+    "minor_columns": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      7
+    ],
+    "minor": "-22500/2401",
+    "hermitian_gram": [
+      [
+        "72",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "25/49",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "25/49",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "25/49",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "25/49",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "72"
+      ]
+    ],
+    "gram_eigenvalues": [
+      [
+        "72",
+        2
+      ],
+      [
+        "25/49",
+        4
+      ]
+    ],
+    "spectral_projector_small": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "spectral_projector_large": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "projector_ranks": [
+      4,
+      2
+    ],
+    "gram_inverse": [
+      [
+        "1/72",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "49/25",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "49/25",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "49/25",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "49/25",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/72"
+      ]
+    ],
+    "right_inverse_our_column_order": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-7*I/5",
+        "0"
+      ],
+      [
+        "1/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-I/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/12"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-I/12"
+      ],
+      [
+        "0",
+        "-7*I/5",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-7*I/5",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-7*I/5",
+        "0",
+        "0"
+      ]
+    ],
+    "exact_projector_and_right_inverse_identities_verified": true,
+    "lower_bound_remainder": [
+      [
+        "3503/49",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3503/49"
+      ]
+    ],
+    "right_inverse_gram": [
+      [
+        "1/72",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "49/25",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "49/25",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "49/25",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "49/25",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/72"
+      ]
+    ],
+    "right_inverse_operator_norm": "7/5",
+    "matrix_perturbation_sufficient_radius": "5/7",
+    "gram_perturbation_sufficient_radius": "25/49",
+    "perturbation_scope": "For coefficient operator 2-norm: ||E||<5/7 implies ||ER||<1, so R(I+ER)^-1 is a right inverse of M+E. This does not assert that perturbed coefficients describe a curve on the fixed hypersurface.",
+    "spectral_scope": "Coefficient Gram matrix in these monomial bases; not an intrinsic geometric spectrum"
+  },
+  "untwisted_incidence": {
+    "shape": [
+      7,
+      14
+    ],
+    "rank": 7,
+    "complete_kernel_rank": 7,
+    "evaluation_rank": 4
+  },
+  "auxiliary_coupling_diagnostic": {
+    "gram_diagonal": [
+      "72",
+      "coupling^2",
+      "coupling^2",
+      "coupling^2",
+      "coupling^2",
+      "72"
+    ],
+    "rank_at_zero": 2,
+    "fixed_target_coupling": "5/7",
+    "scope": "A separate family varying F; no alteration of the protected target"
+  },
+  "three_parameter_family": {
+    "coordinates": [
+      "a*s + b*t",
+      "s",
+      "f*s**3 + g*s**2*t + h*s*t**2 + j*t**3",
+      "c*t + s*y",
+      "t",
+      "d*s + e*t"
+    ],
+    "parameters": [
+      "a",
+      "b",
+      "c"
+    ],
+    "unknowns": [
+      "y",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "j"
+    ],
+    "equations_s6_to_t6": [
+      "a**6 + 5*a**3*f/7 + d**6 + f**2 + y**6 + 1",
+      "6*a**5*b + 5*a**3*g/7 + 5*a**3*y/7 + 15*a**2*b*f/7 + 5*a**2*d**2*y/7 + 5*a*d*f/7 + 6*c*y**5 + 6*d**5*e + 2*f*g + 5*f*y/7",
+      "15*a**4*b**2 + 5*a**3*c/7 + 5*a**3*h/7 + 15*a**2*b*g/7 + 15*a**2*b*y/7 + 5*a**2*c*d**2/7 + 10*a**2*d*e*y/7 + 15*a*b**2*f/7 + 10*a*b*d**2*y/7 + 5*a*d*g/7 + 5*a*e*f/7 + 5*b*d*f/7 + 15*c**2*y**4 + 5*c*f/7 + 15*d**4*e**2 + 2*f*h + g**2 + 5*g*y/7",
+      "20*a**3*b**3 + 5*a**3*j/7 + 15*a**2*b*c/7 + 15*a**2*b*h/7 + 10*a**2*c*d*e/7 + 5*a**2*e**2*y/7 + 15*a*b**2*g/7 + 15*a*b**2*y/7 + 10*a*b*c*d**2/7 + 20*a*b*d*e*y/7 + 5*a*d*h/7 + 5*a*d/7 + 5*a*e*g/7 + 5*b**3*f/7 + 5*b**2*d**2*y/7 + 5*b*d*g/7 + 5*b*e*f/7 + 20*c**3*y**3 + 5*c*g/7 + 20*d**3*e**3 + 2*f*j + 2*g*h + 5*h*y/7",
+      "15*a**2*b**4 + 15*a**2*b*j/7 + 5*a**2*c*e**2/7 + 15*a*b**2*c/7 + 15*a*b**2*h/7 + 20*a*b*c*d*e/7 + 10*a*b*e**2*y/7 + 5*a*d*j/7 + 5*a*e*h/7 + 5*a*e/7 + 5*b**3*g/7 + 5*b**3*y/7 + 5*b**2*c*d**2/7 + 10*b**2*d*e*y/7 + 5*b*d*h/7 + 5*b*d/7 + 5*b*e*g/7 + 15*c**4*y**2 + 5*c*h/7 + 15*d**2*e**4 + 2*g*j + h**2 + 5*j*y/7",
+      "6*a*b**5 + 15*a*b**2*j/7 + 10*a*b*c*e**2/7 + 5*a*e*j/7 + 5*b**3*c/7 + 5*b**3*h/7 + 10*b**2*c*d*e/7 + 5*b**2*e**2*y/7 + 5*b*d*j/7 + 5*b*e*h/7 + 5*b*e/7 + 6*c**5*y + 5*c*j/7 + 6*d*e**5 + 2*h*j",
+      "b**6 + 5*b**3*j/7 + 5*b**2*c*e**2/7 + 5*b*e*j/7 + c**6 + e**6 + j**2 + 1"
+    ],
+    "basepoint": {
+      "a": "0",
+      "b": "0",
+      "c": "0",
+      "y": "I",
+      "d": "0",
+      "e": "I",
+      "f": "0",
+      "g": "0",
+      "h": "0",
+      "j": "0"
+    },
+    "unknown_jacobian": [
+      [
+        "6*I",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "5*I/7",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "5*I/7",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5*I/7",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5*I/7"
+      ],
+      [
+        "0",
+        "6*I",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "6*I",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "unknown_jacobian_determinant": "-135000*I/2401",
+    "implicit_first_derivatives": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-5/42",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-42/5"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ]
+    ],
+    "evaluation_jacobian_at_s_t_1": [
+      [
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "-42/5",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "-5/42",
+        "0",
+        "I"
+      ]
+    ],
+    "evaluation_rank": 4,
+    "evaluation_minor_rows": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "evaluation_minor": "1",
+    "density_first_variation_in_a": "-I*s**4/3",
+    "scope": "A smooth local algebraic incidence component with dominant generically finite marked evaluation; graph boundaries and support equation are not yet computed"
+  },
+  "geometric_reason": [
+    "The quotient avoids the sole weighted ambient vertex because G=Z^2 there; smoothness follows from the source smoothness and the finite cover.",
+    "The weighted Euler sequence twisted by O(-1) identifies its tangent global sections with H0(O^5 plus O(2)), since H0 and H1 of O(-1) vanish.",
+    "The displayed rank-six normal derivative implies H1(phi^*T_W(-1))=0. The splitting theorem on P1 then makes phi free.",
+    "After fixing X1=s and Y1=t, the seven coefficient equations have an invertible unknown Jacobian. Their component through the displayed point is smooth of dimension three.",
+    "The marked evaluation derivative has rank four, so this component supplies a dominant, generically finite family after taking a suitable smooth affine open.",
+    "No support equation, rational primitive, cleared certificate, or Lean proof has been constructed."
+  ],
+  "negative_controls_rejected": 6
+}

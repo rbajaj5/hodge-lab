@@ -1,0 +1,29 @@
+{
+  "schema": "cyclic-fano-free-curve-validation-v1",
+  "status": "PASS",
+  "instance": "cyclic-triple-fano",
+  "packet_sha256": "a1a67db6e117bc2ff39f997db176401f1b7a762f63d9c26176eac399c842220a",
+  "producer_sha256": "9aaa6a137be24fba08f09fb214a10c502d7a0ab86781c2e39577374f142ea9c5",
+  "twisted_rank": 6,
+  "untwisted_rank": 7,
+  "local_family_dimension": 3,
+  "marked_evaluation_rank": 4,
+  "exact_Gram_eigenvalues": {
+    "72": 2,
+    "25/49": 4
+  },
+  "mutations_rejected": [
+    "twisted_map.matrix",
+    "spectral.gram_matrix",
+    "spectral.gram_inverse",
+    "spectral.right_inverse",
+    "spectral.lower_bound_remainder",
+    "spectral.right_inverse_gram",
+    "spectral.small_eigenspace_projector",
+    "local_family.dependent_Jacobian",
+    "local_family.dependent_tangent_matrix",
+    "local_family.evaluation_matrix_at_base_r_1"
+  ],
+  "certificate_found": false,
+  "seconds": 0.6172483000045759
+}

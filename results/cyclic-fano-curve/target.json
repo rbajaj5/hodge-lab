@@ -1,0 +1,31 @@
+{
+  "instance": "cyclic-triple-fano",
+  "upstream_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "variables": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "target": {
+    "q": "1",
+    "F": "X0**6 + 5*X0**3*X1*Y0*Y1/7 + 5*X0**3*X2**3/7 + 5*X0**2*Y0*Y1*Y2**2/7 + 5*X0*X1*Y1**3*Y2/7 + 5*X0*X2**3*Y1*Y2/7 + X1**6 + 5*X1*X2**3*Y0*Y1/7 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0*X2**2*Y0**3"
+  },
+  "upstream_source_sha256": {
+    "data/cyclic-triple-fano/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "data/cyclic-triple-fano/why.md": "72987eaf65ac78518f43d82aa441c45097f9751c94b5ec40b614a015b271f100",
+    "data/cyclic-triple-fano/provenance.json": "2f58537d9ac0f4c378483c196f1a4d0bee2931ff8c99ad44df394cb23370bed1",
+    "docs/03-geometric-support.md": "378076d43af2bab8c030721bede21048c7147ce201953746a7569029ca720bb7",
+    "formal/README.md": "7eba0f0812f65ab69e17b97d4733c2bb7c72221c356ae1a75a6b2328dd8933fa"
+  },
+  "upstream_source_urls": {
+    "data/cyclic-triple-fano/instance.rec": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/data/cyclic-triple-fano/instance.rec",
+    "data/cyclic-triple-fano/why.md": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/data/cyclic-triple-fano/why.md",
+    "data/cyclic-triple-fano/provenance.json": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/data/cyclic-triple-fano/provenance.json",
+    "docs/03-geometric-support.md": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/docs/03-geometric-support.md",
+    "formal/README.md": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/formal/README.md"
+  }
+}

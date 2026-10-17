@@ -18,7 +18,17 @@ Equal Koszul H1 dimensions can accompany very different H0 dimensions;
 our homology ranking did not outperform its controls.
 [Concrete mathematical rationale, figure, evidence, and limits](notes/why-yang.md).
 
-**Current direction:** work on `cycle-three` and `mixed-biweight`, with
+**Current direction: Diamond's ten newly added targets only.** On
+`cyclic-triple-fano`, an explicit free rational curve and a checked
+three-parameter incidence family give dominant marked evaluation on the
+weighted quotient. Its deformation map has an exact positive Gram matrix;
+Bourbaki's spectral projectors give a checked right inverse. The support
+divisor and certificate remain unconstructed.
+[Curve, spectral visualizations, checks, and limits](notes/cyclic-fano-curve.md).
+
+![Exact deformation map for the new cyclic Fano target](results/cyclic-fano-curve-figures/cyclic-fano-map.png)
+
+**Preceding checkpoint:** work on `cycle-three` and `mixed-biweight`, with
 different fixed hypersurface equations from holdout. Exact calculations now
 exclude every denominator of **degree zero through six for both targets**.
 All coefficients and numerator corrections are included; nonzero quotients

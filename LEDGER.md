@@ -948,6 +948,34 @@ conversations or evidence of an accepted solve.
     Shared as the single verified contribution 23 above and pushed the
     supporting proof packet. Four figures retain the support, quotient,
     failed-search, and final three-coefficient views.
+    The subsequent [Linux CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39057001593)
+    passed the `mixed-degree6-extra` job. This records that targeted job,
+    not a result for every unrelated workflow job.
+
+56. **17 October 2026 — Switch to Diamond's ten new targets; explicit cyclic Fano curve.**
+    Following the user's direction to work only on the newly added targets,
+    inspected commit `d96911d725077e66a8f10848908be01a643b1714`, all ten new
+    discussions, current guides, and open PRs. All ten discussions were
+    initially empty and the open-PR list was empty. Selected
+    `cyclic-triple-fano`, whose geometric existence was already known by
+    the cited upstream weighted-Fano theorem. Constructed the explicit
+    quotient curve `[0:s:0:is:t:it]` and verified its full twisted
+    deformation map has rank six. Its coefficient Gram spectrum is
+    `72` twice and `25/49` four times. The supplied Bourbaki excerpts have
+    a concrete role: exact spectral projectors, positivity, an exact
+    right inverse, and a coefficient-norm stability bound.
+    Seven polynomial incidence equations define a smooth three-dimensional
+    component through the curve; the marked evaluation has an exact
+    nonzero four-by-four minor. The initial density-zero curve and its
+    nonzero density deformation are both recorded. The auxiliary zero
+    coupling gives a failed freeness test for this particular curve on a
+    different sextic, not a failure of the protected target. Boundary and
+    branch elimination, support extraction, and numerator construction
+    remain unattempted. No witness, Lean proof, solve PR, or point is claimed.
+    [Argument, actual-map visualizations, bounds, checks, and limits](notes/cyclic-fano-curve.md).
+    The unfinished mixed-biweight degree-seven batch is retained locally
+    and is outside this publication. Public contribution accounting is
+    updated only after the new result is posted and read back.
 
 ## Keeping this current
 
