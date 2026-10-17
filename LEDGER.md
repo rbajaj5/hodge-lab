@@ -1303,6 +1303,12 @@ conversations or evidence of an accepted solve.
     correction checks, five original-coordinate Piola lifts, 180 Euler
     normalization identities, and eight altered-input rejection controls.
     [Complete proof, coefficient-map visualization, exact packet, and limits](notes/cyclic-fano-polar-family.md).
+    Published this proof and the blowup audit above in notebook commit
+    [`97f0318`](https://github.com/rbajaj5/hodge-lab/commit/97f03189c2d22a698bde953e18410dcb71a5c374).
+    Its [dedicated Linux CI job](https://github.com/rbajaj5/hodge-lab/actions/runs/39066917738/job/117496404893)
+    passed the primary and independent checkers and visualization generators
+    for the slice audit, blowup audit, and full polar-family proof. This
+    records that completed job, not every job in the larger workflow.
     This rules out this constant first-polar family only. Polynomial
     directions, products, powers, and other degree-five denominators are
     outside the result. No successful certificate, Lean proof, accepted solve
