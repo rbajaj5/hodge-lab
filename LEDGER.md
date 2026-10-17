@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 16 October 2026 (EDT):** 6 discussion comments; 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 7 discussion contributions (six top-level comments and one reply); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -19,6 +19,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 5. **16 October 2026, 20:24 EDT / 17 October 2026, 00:24 UTC — [Holdout discussion #44: rebuilt-syzygy exclusion of triple family 115](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755).** Shared the new complete exclusion, increasing fixed-`X0/Y0` extension coverage to 134/136. Rebuilding after the verified zeros and searching through degree five closes chart 10; its forced zero then closes chart 0. The post links [immutable proofs, visualization, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/b366f33c5a9421532d452ec4d15588c5f9998b7f/notes/syzygy-rebuild.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164). It records the ten larger-chart timeouts and two conditional chart improvements, credits prior work, and discloses Codex assistance and the shared identity replayer. The purpose is to supply another portable exclusion and reusable reductions while keeping the unresolved scope explicit. No Lean proof, solve submission, or leaderboard point is claimed. GitHub rendered the draft's four math blocks; the published author, URL, and full body were independently read back and matched exactly. [Publication receipt](results/degree7-syzygy-rebuild/upstream-post.json).
 
 6. **16 October 2026, 21:08 EDT / 17 October 2026, 01:08 UTC — [Holdout discussion #44: the last two fixed-pair triple extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986224).** Shared the exact exclusions of families 16 and 137, completing 136/136 third-character extensions of the fixed `X0/Y0` pair and 136/152 selected triples. Two-row global identities and rebuilt Koszul syzygies close all ten charts. The post links [immutable proofs, dependencies, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/17799c6c210373d4e7d2e9dcab837097161f8bfc/notes/koszul-rank-continuation.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38988964935). It records exceptional-rank handling, bounded timeouts, two polynomial reconstructions, and the shared identity replayer; it credits prior work and discloses Codex assistance. Sixteen other selected triples and the full holdout remain unresolved. No Lean theorem, general degree-seven exclusion, solve submission, or leaderboard point is claimed. GitHub rendered the three math blocks and chart table before publication; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-rank-strata/upstream-post.json).
+
+7. **17 October 2026, 07:10 EDT / 11:10 UTC — [Reply to post six: degree-three necessary ideals](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997300).** Shared eleven family-coordinate vanishings across families 6, 8, 10, 149, and 152, with a pinned exact packet and cancellation visualizations. Six cubic identities and five rebuilt square identities reduce parameter spaces; no additional family is excluded and all sixteen remain open. The reply links [immutable code, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/6d478ea5b8896935ebabf1ffd323afc66c26cd0e/notes/eisenbud-linear-strand.md), states the bounded degree-three search and the relaxed correction-space assumption, credits prior work, and discloses Codex assistance and shared verification code. It reports both local exact replays passing without claiming full CI, independent human review, a full resolution, a Lean proof, or solve credit. The existing thread was reread; GitHub's Markdown preview was inspected before posting. The published author, permanent URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-linear-strand/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -488,6 +490,11 @@ conversations or evidence of an accepted solve.
     mathematical payload. The failed run remains linked in the note.
     No full resolution, phase transition, new family exclusion, or solve is
     claimed. [Result, visualizations, rationale, failures, and checks](notes/eisenbud-linear-strand.md).
+    Shared one consolidated reply in the existing holdout thread, recorded as
+    upstream contribution 7 above; the earlier numerical and visual notebooks
+    were not posted as additional discussion messages.
+    The corrected Linux `eisenbud-strand` job subsequently passed both exact
+    replays and the visualization-data check at the linked publication commit.
 
 ## Keeping this current
 

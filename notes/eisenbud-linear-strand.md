@@ -6,6 +6,10 @@ sixteen remaining selected triples**. All sixteen families still remain
 unresolved. The global selected-family exclusion count stays **136/152**;
 there is no new holdout certificate, Lean proof, or improved degree bound.
 
+Shared as a [single reply to our preceding holdout post](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997300).
+The [ledger](../LEDGER.md) records this as contribution seven, with the exact
+publication receipt. The discussion is not a solve submission.
+
 The same raw coordinate can occur in more than one family: eleven counts
 family-coordinate pairs, not eleven distinct indices. The indices involved
 are 156, 168, and 171. No parameter is normalized or divided out, so these
@@ -194,6 +198,11 @@ LF line endings; binary proof packets are still hashed byte for byte. The
 source file, equations, multipliers, and rank claims are unchanged. Both
 local replays were rerun after this correction; the initial failure remains
 visible in [CI](https://github.com/rbajaj5/hodge-lab/actions/runs/39027567283).
+The corrected `eisenbud-strand` job then **passed on Linux** at the pinned
+publication commit `6d478ea5b8896935ebabf1ffd323afc66c26cd0e`, including both
+exact replays and the source-to-visualization check.
+[Corrected run](https://github.com/rbajaj5/hodge-lab/actions/runs/39027682772).
+This records that job's result, not the status of unrelated jobs in the run.
 
 This extends our previous E1/physical-dual calculations, building on the
 repository authors' certificate framework, the bridge attributed there to
