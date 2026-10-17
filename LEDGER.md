@@ -1545,6 +1545,15 @@ conversations or evidence of an accepted solve.
     this notebook batch. The historical contribution tally remains **24**;
     upstream comments are still held for a substantial batch.
 
+    Published in commit
+    [`a4af517`](https://github.com/rbajaj5/hodge-lab/commit/a4af517a87e979a4ed6b296f9743275a3c56b311),
+    including the exact packet, both checkers, intermediate attempts, two
+    figures with SVG companions, the front-page gallery and this ledger.
+    The updated README and feature image were inspected on live GitHub.
+    Local primary, independent and visualization checks pass. The dedicated
+    [Linux multiplier job](https://github.com/rbajaj5/hodge-lab/actions/runs/39070751025/job/117507664483)
+    was running at this publication checkpoint; a CI pass is not yet claimed.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
