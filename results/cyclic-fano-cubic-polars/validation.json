@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "producer_sha256": "f43b0d9c99f46e6e7edc74f6b98d3954e289e26c6386f504cf74be01673ba144",
+  "packet_sha256": "f3a2b94431a82cf9dec7c9b469d1e2f495ee2a4e9478fbf96408d5ca6eeaa132",
+  "components": [
+    {
+      "component": 0,
+      "stages": [
+        {
+          "physical_duals": 208,
+          "coefficient_pairings": 346879,
+          "rank": 1687,
+          "mixed_rank": 1479,
+          "square_query_hits": [],
+          "cube_identities": 25,
+          "multiplier_terms": 62
+        },
+        {
+          "physical_duals": 45,
+          "coefficient_pairings": 8118,
+          "rank": 1019,
+          "mixed_rank": 974,
+          "square_query_hits": [
+            6,
+            7,
+            8,
+            10,
+            11,
+            13,
+            20,
+            21,
+            23,
+            29
+          ],
+          "cube_identities": 10,
+          "multiplier_terms": 10
+        }
+      ],
+      "remaining_parameters": []
+    },
+    {
+      "component": 1,
+      "stages": [
+        {
+          "physical_duals": 209,
+          "coefficient_pairings": 206874,
+          "rank": 1699,
+          "mixed_rank": 1490,
+          "square_query_hits": [],
+          "cube_identities": 25,
+          "multiplier_terms": 58
+        },
+        {
+          "physical_duals": 45,
+          "coefficient_pairings": 2671,
+          "rank": 1017,
+          "mixed_rank": 972,
+          "square_query_hits": [
+            41,
+            42,
+            43,
+            45,
+            46,
+            48,
+            55,
+            56,
+            58,
+            64
+          ],
+          "cube_identities": 10,
+          "multiplier_terms": 10
+        }
+      ],
+      "remaining_parameters": []
+    },
+    {
+      "component": 3,
+      "stages": [
+        {
+          "physical_duals": 209,
+          "coefficient_pairings": 251067,
+          "rank": 1697,
+          "mixed_rank": 1488,
+          "square_query_hits": [],
+          "cube_identities": 25,
+          "multiplier_terms": 58
+        },
+        {
+          "physical_duals": 45,
+          "coefficient_pairings": 9435,
+          "rank": 1013,
+          "mixed_rank": 968,
+          "square_query_hits": [
+            76,
+            77,
+            78,
+            80,
+            81,
+            83,
+            90,
+            91,
+            93,
+            99
+          ],
+          "cube_identities": 10,
+          "multiplier_terms": 10
+        }
+      ],
+      "remaining_parameters": []
+    },
+    {
+      "component": 4,
+      "stages": [
+        {
+          "physical_duals": 209,
+          "coefficient_pairings": 376295,
+          "rank": 1745,
+          "mixed_rank": 1536,
+          "square_query_hits": [],
+          "cube_identities": 25,
+          "multiplier_terms": 58
+        },
+        {
+          "physical_duals": 45,
+          "coefficient_pairings": 3134,
+          "rank": 1029,
+          "mixed_rank": 984,
+          "square_query_hits": [
+            111,
+            112,
+            113,
+            115,
+            116,
+            118,
+            125,
+            126,
+            128,
+            134
+          ],
+          "cube_identities": 10,
+          "multiplier_terms": 10
+        }
+      ],
+      "remaining_parameters": []
+    },
+    {
+      "component": 5,
+      "stages": [
+        {
+          "physical_duals": 209,
+          "coefficient_pairings": 291545,
+          "rank": 1675,
+          "mixed_rank": 1466,
+          "square_query_hits": [],
+          "cube_identities": 25,
+          "multiplier_terms": 58
+        },
+        {
+          "physical_duals": 45,
+          "coefficient_pairings": 4237,
+          "rank": 1024,
+          "mixed_rank": 979,
+          "square_query_hits": [
+            146,
+            147,
+            148,
+            150,
+            151,
+            153,
+            160,
+            161,
+            163,
+            169
+          ],
+          "cube_identities": 10,
+          "multiplier_terms": 10
+        }
+      ],
+      "remaining_parameters": []
+    }
+  ],
+  "negative_controls_rejected": 14,
+  "projection_operator_checks": 3150,
+  "universal_correction_relations": 25,
+  "full_family_remaining_open": true
+}

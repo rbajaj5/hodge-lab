@@ -1720,6 +1720,110 @@ conversations or evidence of an accepted solve.
     [new CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39074557879),
     which was queued at this checkpoint; remote success is not yet claimed.
 
+    **Later verification, 17 October 2026:** that workflow completed with
+    success, including the dedicated
+    [remaining-66 Linux replay](https://github.com/rbajaj5/hodge-lab/actions/runs/39074557879/job/117518914412).
+    This updates the CI status without changing the mathematical scope or
+    counting an additional upstream contribution.
+
+77. **17 October 2026 — An idea atlas and the degree-eight cubic-direction continuation.**
+    At the user's request, reorganized the front page as an independent
+    companion notebook with seven linked mathematical routes: high-genus
+    Hodge/Gaussian fields, Dubédat-inspired determinants, anisotropic Gram
+    ranking, braids and random matrices, Yang and typed relations,
+    Eisenbud/Koszul calculations, and classical geometry. The
+    [idea atlas](notes/idea-atlas.md) connects each motivation to its actual
+    experiment and limits. Its source-bound figure distinguishes analogies,
+    tested heuristics, and exact results. The front gallery brings the
+    genus-48 surface, field textures, braid strands, and correction-map
+    geometry together. It does not claim affiliation or endorsement.
+    Unimplemented interests remain explicitly listed as questions; private
+    conversations are not part of the published mathematical account.
+
+    Continued `cyclic-triple-fano` with homogeneous cubic direction fields,
+    giving degree-eight denominators and 175 parameters. The complete
+    source derivation accounts for 525 raw Koszul fields, 175 projected
+    correction types, 636 quotient directions, and 246 Euler gauges. The
+    mixed correction includes its essential derivative term; it cannot be
+    obtained by simply copying the preceding degree-seven test. The target
+    `(F,q,A)` and existing upstream files remain unchanged.
+
+    Five separate one-component families are excluded over the complex
+    numbers. Each allows an arbitrary cubic in that component and fixes
+    the other four components to zero. All five initial square queries
+    finish without isolating a coordinate square. Equivalent equation
+    bases and linear polynomial multipliers then prove 25 coordinate
+    cubes; the ten squarefree cubic directions remain. After rebuilding,
+    the reduced equations already contain their ten individual squares.
+    The saved final cube identities are one-term multiples of these squares,
+    so a higher multiplier degree is not needed at that step.
+    Thus each conditional family has
+    the chain `35 → 10 → 0`. All five rebuild gains are zero: in this batch,
+    rebuilding simplifies the computation without enlarging the restricted
+    necessary quadratic span. These five results do not exclude arbitrary
+    sums across components; the full 175-parameter family remains open.
+
+    The RTX 5070 Ti Laptop GPU screens 16 fixed directions using all 175
+    correction columns. They comprise five monomial controls, five
+    two-component directions, three seeded eight-term directions, and
+    three seeded dense directions. Each correction rank is 150 and each
+    augmented rank is 151 modulo 65,521. All 16 constructed consistent
+    controls have equal correction and augmented rank; an independent
+    NumPy implementation agrees on all 32 matrices, and three small rank
+    controls pass. These ranks initially served only as modular evidence.
+
+    A further exact calculation supplies 25 universal column relations:
+    every mixed correction lies in the span of the 150 base-pair columns.
+    The resulting characteristic-zero rank upper bound, together with a
+    nonzero exported 151-by-151 minor modulo the prime for each candidate,
+    provides exact rejection certificates. This additional argument is
+    essential; modular inconsistency by itself is not sufficient. The five
+    monomial cases are controls already covered by earlier support results.
+    The eleven mixed directions are finite tests, not exclusions of their
+    surrounding families. No instance solution or Lean acceptance is claimed.
+
+    [Cubic derivation, proof packets, visualizations, failed square searches,
+    GPU checks, and reproduction](notes/cyclic-fano-cubic-polars.md).
+    [GPU implementation](experiments/gpu_cyclic_fano_cubic_screen.py) and
+    [device, timings, directions, ranks, controls, and minors](results/cyclic-fano-cubic-gpu/report.json).
+    GPU timing excludes matrix construction, compilation, upload, and minor
+    extraction; it is not an end-to-end performance claim. Credit remains
+    with the upstream certificate framework and the source works linked
+    in the notes. Codex assisted construction, separate reconstruction,
+    visualization, and the CUDA screen.
+
+    The user's follow-up requested a front-page explanation of what the
+    GPU actually did. A dedicated feature now shows the rank calculation,
+    the 175-to-150 exact rank bound, consistent controls, CPU replay, and
+    certificate minors. It reports 0.192 seconds for CUDA elimination,
+    14.175 seconds for the NumPy comparison, and 16.894 seconds separately
+    for matrix construction. It explicitly distinguishes the GPU arithmetic,
+    exact CPU checks, and AI assistance. The saved CUDA run uses the full
+    175 correction columns; no timed compressed-matrix speedup is claimed.
+
+    **Validation checkpoint:** the primary rational replay passes in
+    103.24 seconds and rejects 14 altered inputs. The separate reconstruction
+    passes in 162.963 seconds and rejects 53 altered inputs. It checks all
+    1,269 physical consequences, 175 saved cube identities, 344 multiplier
+    terms, 50 simpler final square rows, all 26 completed attempt records,
+    all sixteen physical matrix hashes and augmented minors, and the exact
+    correction relations. Its coefficient-pairing inventory is 7,458,345.
+    The independent attempt-inventory check initially stopped because it
+    conflated component indices with physical variable indices; that
+    metadata bug was fixed before the full pass.
+    The atlas and all three new scientific figures were visually inspected;
+    their generators bind the recorded inputs. All 84 local links in the
+    new opening and notes resolve, and all 45 mathematical expressions in
+    the two notes pass KaTeX parsing. GitHub's Markdown preview preserves
+    the gallery tables and image embeds. The new dedicated Linux CI job
+    replays both arithmetic implementations and regenerates the figures.
+
+    The fully paginated 22:49 UTC refresh compared all thirteen monitored
+    discussions with the 22:09 UTC snapshot, including comment/reply bodies,
+    IDs, timestamps, locks, and answers; only retrieval timestamps changed.
+    No upstream comment, edit, or PR belongs to this batch. The contribution
+    tally remains **24**, with future comments held for a substantial batch.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

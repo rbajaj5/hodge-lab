@@ -1,6 +1,12 @@
-# Hodge lab
+# Hodge Lab
 
-A public lab notebook for [hodge.computer](https://hodge.computer/). We test geometric ideas for making better guesses at algebra problems, then check those guesses exactly. The code, pictures, results, and failed approaches stay visible.
+**From random surfaces and flowing fields to exact polynomial identities.**
+
+An independent mathematical notebook by [rbajaj5](https://github.com/rbajaj5),
+exploring problems from [hodge.computer](https://hodge.computer/). Geometric
+intuition suggests a candidate; computation tests it; exact algebra decides
+whether the proposed identity holds. This repository keeps the pictures,
+source code, checks, and failed approaches together.
 
 This is an independent learning and research notebook. It is not affiliated
 with Hodge Labs, hodge.computer, or the maintainers of
@@ -10,16 +16,69 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current status: no new accepted Hodge solve.** The repository contains actual GPU runs, exact rejection certificates, independent checks, and the approaches that failed. Code and notes were developed with AI assistance; the recorded checks describe what was executed.
 
-**Batched publication, 17 October 2026:** useful contributions on the new
-targets may continue, consolidated into fewer substantive comments. Small
-attempts, diagnostics, and failures stay in this notebook. The ledger retains
-the earlier stand-down and the subsequent direction to resume in batches.
-The latest direction is to keep pushing checked notebook work while holding
-upstream comments for a substantial batch. The fiber/spectral consolidation
-and this continuation therefore appear here before the next discussion
-update. The ledger distinguishes notebook publication from upstream activity.
+**Publication:** new experiments appear here first. Upstream discussion
+updates are reserved for infrequent, substantial batches; the
+[ledger](LEDGER.md) distinguishes notebook work from actual contributions.
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
+
+## GPU spotlight: a rank gap becomes a proof
+
+**175 correction columns. 25 exact relations. Rank at most 150.**
+The RTX 5070 Ti Laptop GPU finds rank **151** when the target column is
+added for each of 16 tested cubic-direction denominators. An exact upper
+bound makes that gap decisive: the target cannot lie in the correction image.
+
+Each correction column is an allowed change to the numerator. The added
+column is the error the candidate must cancel. If it increases the rank,
+no combination of allowed corrections can reach it. The reusable exact
+bound lets small finite-field witnesses certify that failure in characteristic zero.
+
+[![The actual GPU rank calculation, the exact 175-to-150 correction shortcut, CPU checks, and the sixteen fixed-denominator exclusion certificates](results/cyclic-fano-cubic-polars-figures/cyclic-fano-cubic-gpu-shortcut.png)](notes/cyclic-fano-cubic-polars.md)
+
+| What ran | Recorded result |
+| --- | --- |
+| **CUDA integer elimination**, modulo 65,521, on the complete coefficient matrices | All 16 candidates: correction rank **150**, augmented rank **151**. |
+| **GPU controls** with a target constructed inside each correction image | All 16 controls: **150 / 150**. Three small rank controls also pass. |
+| **Independent NumPy elimination** on all 32 candidate/control matrices | Every rank agrees with CUDA. |
+| **Exact CPU algebra** | 25 universal column relations prove rank ≤150 over the rationals; 16 nonzero 151×151 minors prove augmented rank ≥151. This certifies the fixed exclusions over the complex numbers. |
+
+**Measured elimination time:** CUDA **0.192 s**; NumPy **14.175 s**.
+Matrix construction took **16.894 s** separately. These are timings for this
+batch and these implementations; CUDA compilation, upload and minor
+extraction are outside the elimination timing. The GPU run uses all 175
+columns. The algebraic shortcut makes the modular rank result a proof;
+it is not a measured column-compression speedup.
+
+The GPU performed the arithmetic screen. CPU code reconstructed the
+polynomials and checked the exact proof. AI assisted experiment design,
+code, mathematical reasoning and documentation. **Five cases are controls;
+eleven are fixed mixed candidates. The full 175-parameter family remains open.**
+
+[Run the CUDA code](experiments/gpu_cyclic_fano_cubic_screen.py)
+· [Inspect the device, directions, timings and minors](results/cyclic-fano-cubic-gpu/report.json)
+· [Replay the independent CPU certificate](experiments/check_cyclic_fano_cubic_polars.py)
+· [Read the derivation and limits](notes/cyclic-fano-cubic-polars.md).
+
+## A map of the ideas
+
+[![Seven research routes: high-genus fields, Dubédat-inspired determinants, Gram ranking, braids, typed relations, Koszul equations and classical geometry; each linked to its tested outcome and limits](results/idea-atlas/idea-atlas.png)](notes/idea-atlas.md)
+
+The connections are research motivations, not claimed theorem implications.
+[Open the idea atlas](notes/idea-atlas.md) for the question behind each route,
+what was actually computed, and what would make the next experiment useful.
+
+| See the geometry | Inspect the algebra |
+| --- | --- |
+| [![A computed Gaussian field and flow on a surface with 48 handles](results/high-genus-flow/genus48-K-0.2.png)](notes/high-genus-flow.md) | [![The actual Koszul operator drawn as correction directions and an obstruction](results/koszul-geometry/operator-geometry.png)](notes/koszul-geometric-map.md) |
+| **48 handles, 96 harmonic directions.** A finite Gaussian model shows a smooth coherence crossover. [Fields, topology and phase-response measurements](notes/high-genus-flow.md). | **What can a correction change?** A geometric picture of the actual linear map helps separate its image from an obstruction. [Construction and limits](notes/koszul-geometric-map.md). |
+| [![Flow textures for three angles of the same smoothed Gaussian field](results/imaginary-geometry/angle-triptych.png)](notes/imaginary-geometry-gallery.md) | [![Numerical eigenvalue strands in a smooth random-matrix loop](results/source-bridges/ginibre-braid.png)](notes/idea-atlas.md#braids-random-matrices-and-moving-roots) |
+| **Imaginary-geometry intuition.** CUDA-generated field textures make angle and anisotropy visible. These are regularized finite models. | **Braids and moving roots.** Follow the winding of random-matrix eigenvalues, then compare it with the exact local three-sheet geometry on cyclic Fano. |
+
+Choose a route: [visual intuition](notes/idea-atlas.md#fields-handles-and-imaginary-geometry)
+· [candidate design](notes/dubedat-cycles.md)
+· [exact syzygy calculations](notes/cyclic-fano-remaining66-multipliers.md)
+· [negative results worth keeping](notes/idea-atlas.md#what-the-failures-taught-us).
 
 ## Visual notebook: cyclic Fano
 
@@ -27,7 +86,22 @@ Click a figure to open its equations, reproducible code, checks, and limits.
 These pictures show actual calculations and failed candidates; the instance
 still has no certificate from this notebook.
 
-**Latest calculation — the full 75-parameter quadratic-direction family is excluded.**
+**Latest calculation — cubic directions, degree eight.** Five separate
+35-parameter families are excluded: allow any homogeneous cubic in one
+vector component, with the other four components zero. In each family,
+exact cubes give `35 → 10`, then squares in the reduced equations finish
+the exclusion. The initial square searches failed. These are five
+conditional family exclusions. The full mixed 175-parameter family remains open.
+
+[![Five separate cubic-direction families reduce from 35 parameters to 10 and then zero, with the full mixed family still open](results/cyclic-fano-cubic-polars-figures/cyclic-fano-cubic-polars.png)](notes/cyclic-fano-cubic-polars.md)
+
+The GPU also screens 16 fixed candidates. Exact relations bound the
+correction rank by 150, and explicit nonzero augmented minors give rank
+151. Independent CPU reconstruction turns these particular rank failures
+into exact exclusions, including eleven mixed candidates and five controls.
+[Actual maps, correction-space growth, and the rank checks](results/cyclic-fano-cubic-polars-figures/cyclic-fano-cubic-polars-maps.png).
+
+**Previous complete family — all 75 quadratic-direction parameters excluded.**
 Larger polynomial multipliers and repeated rebuilding reduce the previous
 66-parameter remainder through `65 → 60 → 53 → 45 → 37 → 21 → 10`.
 The final ten directions lie in the already excluded coordinate-divisible
