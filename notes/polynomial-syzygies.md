@@ -1,5 +1,8 @@
 # Polynomial syzygies of the shared correction map
 
+Published in [holdout Discussion 44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985544),
+with [full CI passing on the immutable proof commit](https://github.com/rbajaj5/hodge-lab/actions/runs/38983831725).
+
 **One further complete degree-seven family is excluded:**
 `{(0,0,1), (1,2,3), (3,0,1)}`, family **87** in our preceding triple packet.
 The fixed-pair coverage is now **133 of 136** `X0/Y0` extensions. Three remain:

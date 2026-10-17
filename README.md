@@ -10,7 +10,7 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Systematic three-character continuation:** of all 136 extensions of the `X0/Y0` pair by a third character, **132 complete families are excluded and four remain unresolved**. Including all coordinate-character triples gives 152 tested families and 20 unresolved. Exact duals and shared-numerator chart proofs are replayed by two polynomial constructions. [Coverage, failed charts, and reproducible proofs](notes/three-character-families.md).
+**Original systematic three-character batch:** of all 136 extensions of the `X0/Y0` pair by a third character, **132 complete families were excluded and four remained unresolved at that checkpoint**. Including all coordinate-character triples gave 152 tested families and 20 unresolved. Exact duals and shared-numerator chart proofs are replayed by two polynomial constructions. [Coverage, failed charts, and reproducible proofs](notes/three-character-families.md).
 
 **Polynomial-syzygy follow-up:** one of those four residual families is now
 excluded, giving **133/136 fixed-pair extensions excluded** (133/152 in the
