@@ -1145,6 +1145,12 @@ conversations or evidence of an accepted solve.
     failed plotting because SymPy was not installed in that job. This batch
     adds the missing dependency and a dedicated higher-unfolding CI job;
     the prior plotting failure is not recorded as a mathematical failure.
+    Published the full batch as notebook commit
+    [`3504189`](https://github.com/rbajaj5/hodge-lab/commit/35041890bcb93753dd9402d5eea29c87b4ad66d0).
+    Its [higher-unfolding replay and visualization job](https://github.com/rbajaj5/hodge-lab/actions/runs/39063156844/job/117485140998)
+    and [repaired quadric plotting job](https://github.com/rbajaj5/hodge-lab/actions/runs/39063156844/job/117485141302)
+    both passed on Linux. This records the two targeted jobs, not a completed
+    full-workflow result; the broader workflow was still running when checked.
 
 ## Keeping this current
 
