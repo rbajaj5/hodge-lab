@@ -176,7 +176,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--check',action='store_true')
     args=parser.parse_args()
     data,proof=derive()
-    sources={str(p.relative_to(ROOT)):digest(p) for p in [t.e1.BASIS,t.OUT/'certificates.json.gz',ROOT/'sources/sextics/data/holdout/instance.rec']}
+    sources={p.relative_to(ROOT).as_posix():digest(p) for p in [t.e1.BASIS,t.OUT/'certificates.json.gz',ROOT/'sources/sextics/data/holdout/instance.rec']}
     if args.check:
         saved=json.loads((OUT/'sweep.json').read_text());close(data,saved);data=saved
         report=json.loads((OUT/'validation.json').read_text());assert report['sources']==sources

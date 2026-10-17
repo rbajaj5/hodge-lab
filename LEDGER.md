@@ -452,6 +452,22 @@ conversations or evidence of an accepted solve.
     was posted; the public contribution tally remains six.
     [Derivation, visualizations, failed attempts, and reproduction](notes/koszul-denominator-sweep.md).
 
+35. **17 October 2026 — Read the expanded discussion; repair CI portability.**
+    Checked the thread inventory (15 top-level posts and five replies) and
+    read the six newer updates, including the corrected closing edit.
+    Recorded the reported new character
+    exclusion, support obstruction, conditional geometric limitations, and
+    still-missing target image. The new character triple is outside our
+    152-family selection, so our sixteen remaining selected families are
+    unchanged. This coverage comparison is checked; the newly linked proof
+    packets have not been independently replayed here. Also recorded the new
+    upstream participation policy. Our preceding CI run failed on Windows
+    versus Linux path separators in a source-manifest key after completing
+    the arithmetic checks. Standardized those keys without changing source
+    hashes, mathematical data, or tolerances, and reran the sweep check.
+    No upstream message or solve submission; our contribution tally remains six.
+    [Discussion sources, implications, and CI correction](notes/discussion-checkpoint-2026-10-17.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
