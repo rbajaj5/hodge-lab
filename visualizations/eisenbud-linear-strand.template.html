@@ -1,0 +1,96 @@
+<div id="eisenbud-linear-strand">
+  <h2>How the polynomial identity cancels</h2>
+  <div class="viz-controls">
+    <label class="form-label">Family<select class="form-select" data-family></select></label>
+    <label class="form-label">Rebuilding stage<select class="form-select" data-stage></select></label>
+    <label class="form-label">Exact identity<select class="form-select" data-example></select></label>
+    <label class="form-label">Monomial<select class="form-select" data-monomial></select></label>
+  </div>
+  <div class="text-small tabular-nums" data-dimensions></div>
+  <svg class="strand-chart" role="img" aria-label="Exact contributions of grouped equation multiples to a chosen monomial"></svg>
+  <div class="tabular-nums" data-sum aria-live="polite"></div>
+  <div class="text-small" data-detail aria-live="polite"></div>
+  <div class="tooltip" role="tooltip" data-tip hidden></div>
+</div>
+<style>
+#eisenbud-linear-strand {position:relative;}
+#eisenbud-linear-strand .strand-chart {display:block;width:100%;overflow:visible;}
+#eisenbud-linear-strand .strand-chart text {fill:var(--foreground);font-size:12px;}
+#eisenbud-linear-strand .strand-chart .domain, #eisenbud-linear-strand .strand-chart .tick line {stroke:var(--border);}
+#eisenbud-linear-strand [data-tip] {position:absolute;pointer-events:none;background:var(--popover);color:var(--popover-foreground);max-width:220px;}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(()=>{
+ const data=__DATA__,root=document.getElementById('eisenbud-linear-strand'),svg=d3.select(root.querySelector('svg'));
+ const controls=Object.fromEntries(['family','stage','example','monomial'].map(k=>[k,root.querySelector('[data-'+k+']')]));
+ const tip=root.querySelector('[data-tip]');
+ let state={family:6,stage:0,example:0,monomial:-1};
+ const number=s=>{const parts=String(s).split('/');return Number(parts[0])/(Number(parts[1])||1);};
+ const options=(control,items,value)=>{control.replaceChildren(...items.map(([v,label])=>{const o=document.createElement('option');o.value=v;o.textContent=label;return o;}));control.value=String(value);control.disabled=!items.length;};
+ function selection(){
+  let f=data.families.find(f=>f.number===Number(state.family))||data.families[0];state.family=f.number;
+  state.stage=Math.max(0,Math.min(f.stages.length-1,Number(state.stage)||0));let s=f.stages[state.stage];
+  state.example=Math.max(0,Math.min(s.examples.length-1,Number(state.example)||0));let ex=s.examples[state.example];
+  if(ex)state.monomial=state.monomial<0||state.monomial>=ex.monomials.length?ex.defaultMonomial:Number(state.monomial);
+  return {f,s,ex};
+ }
+ function draw(){
+  const {f,s,ex}=selection();tip.hidden=true;
+  options(controls.family,data.families.map(f=>[f.number,'Family '+f.number]),f.number);
+  options(controls.stage,f.stages.map((s,i)=>[i,'Stage '+s.number+' · '+s.variables+' variables']),state.stage);
+  options(controls.example,s.examples.map((e,i)=>[i,e.label]),state.example);
+  options(controls.monomial,ex?ex.monomials.map((m,i)=>[i,m]):[],state.monomial);
+  root.querySelector('[data-dimensions]').textContent='Degree-three map: '+s.domain+' multiplier columns · rank '+s.rank+' · '+s.kernel+' linear syzygies';
+  const w=root.getBoundingClientRect().width,h=ex?Math.max(280,ex.groups.length*34+120):220;
+  svg.attr('viewBox',`0 0 ${w} ${h}`).attr('height',h);svg.selectAll('*').remove();
+  svg.append('title').text(ex?ex.label:'No linear syzygy in this degree');
+  if(!ex){
+   svg.append('text').attr('x',w/2).attr('y',90).attr('text-anchor','middle').text('No linear syzygy found');
+   svg.append('text').attr('x',w/2).attr('y',118).attr('text-anchor','middle').text('No coordinate square or cube forced');
+   root.querySelector('[data-sum]').textContent='Family remains unresolved.';
+   root.querySelector('[data-detail]').textContent='Search bound: total degree three.';return;
+  }
+  const k=state.monomial,rows=ex.groups.map(g=>({label:g.label,value:number(g.values[k]),exact:g.values[k]}));
+  rows.push({label:'Sum',value:number(ex.sums[k]),exact:ex.sums[k]});
+  const margin={left:76,right:18,top:22,bottom:66},bottom=h-margin.bottom;
+  const extent=d3.extent([...rows.map(r=>r.value),0]);let pad=(extent[1]-extent[0])*.12||1;
+  const x=d3.scaleLinear().domain([extent[0]-pad,extent[1]+pad]).range([margin.left+4,w-margin.right-4]);
+  const y=d3.scaleBand().domain(rows.map(r=>r.label)).range([margin.top+4,bottom-4]).padding(.3);
+  svg.append('rect').attr('data-chart-frame','').attr('x',margin.left).attr('y',margin.top).attr('width',w-margin.left-margin.right).attr('height',bottom-margin.top).attr('fill','none').attr('stroke','var(--border)');
+  svg.append('g').attr('transform',`translate(0,${bottom})`).call(d3.axisBottom(x).ticks(w<400?3:5).tickFormat(d3.format('.3~g')));
+  svg.append('g').attr('transform',`translate(${margin.left},0)`).call(d3.axisLeft(y).tickSize(0));
+  svg.append('line').attr('x1',x(0)).attr('x2',x(0)).attr('y1',margin.top).attr('y2',bottom).attr('stroke','var(--border)');
+  svg.selectAll('rect.contribution').data(rows).join('rect').attr('class','contribution')
+    .attr('x',d=>x(Math.min(0,d.value))).attr('y',d=>y(d.label)).attr('width',d=>Math.abs(x(d.value)-x(0)))
+    .attr('height',y.bandwidth()).attr('fill',d=>d.label==='Sum'?'var(--viz-series-2)':'var(--viz-series-1)');
+  svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(margin.left+w-margin.right)/2).attr('y',h-16).attr('text-anchor','middle').text('Coefficient');
+  svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(16,${(margin.top+bottom)/2}) rotate(-90)`).attr('text-anchor','middle').text('Equation contribution');
+  const detail=root.querySelector('[data-detail]');
+  function inspect(event,d){
+   tip.textContent=d.label+': '+d.exact;tip.hidden=false;
+   const bounds=root.getBoundingClientRect();tip.style.left=Math.min(w-180,Math.max(0,event.clientX-bounds.left+10))+'px';tip.style.top=(event.clientY-bounds.top+14)+'px';
+   detail.textContent=d.label+' contributes exactly '+d.exact+' to '+ex.monomials[k]+'.';
+  }
+  svg.selectAll('rect.hit').data(rows).join('rect').attr('class','hit').attr('data-chart-hit','')
+   .attr('x',margin.left).attr('y',d=>y(d.label)-4).attr('width',w-margin.left-margin.right).attr('height',y.bandwidth()+8).attr('fill','transparent')
+   .on('pointermove',inspect).on('click',inspect).on('pointerleave',()=>tip.hidden=true);
+  root.querySelector('[data-sum]').textContent=ex.monomials[k]+' · exact sum = '+ex.sums[k];
+  detail.textContent=s.removed.length?'Forced zero at this stage: '+s.removed.map(i=>'a['+i+']').join(', ')+'.':'No coordinate zero forced at this stage.';
+  // Remove optional edge ticks if their labels would cross the frame boundary.
+  const ticks=[...root.querySelectorAll('.tick text')];
+  for(const el of ticks){const b=el.getBoundingClientRect(),r=root.getBoundingClientRect();if(b.left<r.left||b.right>r.right)el.remove();}
+ }
+ function save(){window.openai?.setWidgetState?.({modelContent:{...state},privateContent:null})?.catch(()=>{});}
+ for(const [key,el] of Object.entries(controls))el.addEventListener('change',()=>{
+  state[key]=Number(el.value);if(key==='family'){state.stage=0;state.example=0;state.monomial=-1;}
+  if(key==='stage'){state.example=0;state.monomial=-1;}if(key==='example')state.monomial=-1;
+  draw();save();
+ });
+ function restore(saved){if(saved?.modelContent){state={...state,...saved.modelContent};draw();}}
+ root.strandSnapshot=()=>{const {f,s,ex}=selection();return {...state,rank:s.rank,kernel:s.kernel,sum:ex?.sums[state.monomial]??null,familyRemaining:f.remaining};};
+ window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState)restore(e.detail.globals.widgetState);});
+ if(window.openai?.widgetState?.modelContent)state={...state,...window.openai.widgetState.modelContent};
+ new ResizeObserver(draw).observe(root);draw();
+})();
+</script>

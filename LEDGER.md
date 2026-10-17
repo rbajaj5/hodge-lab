@@ -468,6 +468,24 @@ conversations or evidence of an accepted solve.
     No upstream message or solve submission; our contribution tally remains six.
     [Discussion sources, implications, and CI correction](notes/discussion-checkpoint-2026-10-17.md).
 
+36. **17 October 2026 — Eisenbud linear strands, with inspectable cancellation.**
+    Extended the necessary-ideal power search from degree two to degree three
+    in all sixteen remaining selected triples. Six cubic identities force
+    zeros in families 6, 8, 10, 149, and 152; rebuilding yields five more
+    square-zero coordinates. These are eleven family-coordinate vanishings
+    using three raw indices, not eleven distinct raw indices. All sixteen
+    families remain unresolved and the selected-family exclusion count stays
+    136/152. Retained all 26 stages, 1,149 syzygy vectors, sixteen power
+    identities (five are redundant cubes), and every bounded failure.
+    Exact replay and a separate physical polynomial reconstruction pass;
+    52 rational and modular ranks agree. The interactive explorer exposes
+    each identity's monomial cancellation, including empty relation spaces;
+    the static figure includes all families. All 111 browser layout/state
+    checks pass. Recorded the standing visualization requirement in AGENTS.md.
+    Corrected a preliminary chat miscount of seven initial vanishings to six.
+    No full resolution, phase transition, new family exclusion, or solve is
+    claimed. [Result, visualizations, rationale, failures, and checks](notes/eisenbud-linear-strand.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

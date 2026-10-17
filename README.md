@@ -45,6 +45,15 @@ Koszul correction equations then closes all ten third-component charts.
 Sixteen other selected triples remain open. [Exact proof, dependencies,
 and retained failed searches](notes/koszul-rank-continuation.md).
 
+**Eisenbud follow-up:** degree-three maps of the necessary ideals force
+eleven family-specific coordinate zeros in five of those sixteen triples.
+All sixteen remain unresolved. The [new calculation and cancellation explorer](notes/eisenbud-linear-strand.md)
+show the actual polynomial identities, 1,149 checked relation vectors, and
+where the bounded search fails. Every substantive research batch now includes
+a reproducible internal visualization and a ledger entry.
+
+![Linear syzygies, forced zeros, and unsuccessful families](results/eisenbud-linear-strand/linear-strand.png)
+
 **See the correction map:** [three views of post six](notes/koszul-map-visualizations.md)
 show its actual polynomial support, the syzygies cancelling corrections, and
 the chart dependencies. The two-row example explains how a weighted numerical
