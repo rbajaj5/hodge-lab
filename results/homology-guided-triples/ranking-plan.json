@@ -1,0 +1,129 @@
+{
+  "score": "sum of dim H1 at total degree 4 over pure-character necessary blocks",
+  "ordering": "descending score, then ascending batch number",
+  "high": [
+    {
+      "number": 19,
+      "score": 60,
+      "profile_sha256": "023278fa9fd1a068706339d08c71fd95d0b7d61c8d7a1736e1be50c3bd0ba894"
+    },
+    {
+      "number": 49,
+      "score": 50,
+      "profile_sha256": "d1d1bc6a17f3eea41808bb22563b4d7bc0221e795feb6103159a7b9a1f0030e2"
+    },
+    {
+      "number": 96,
+      "score": 50,
+      "profile_sha256": "e1c5fa156c26fcbe4d36c511f2b6f3f01e5c20c5e49df04cc9eaff74b4b912ba"
+    },
+    {
+      "number": 108,
+      "score": 50,
+      "profile_sha256": "dc40573df594c9b89a128ce86d3ea582770aad72ecc37bb306b78edb5a8f928a"
+    }
+  ],
+  "low_control": [
+    {
+      "number": 61,
+      "score": 0,
+      "profile_sha256": "2bbf388b8092f0a0dc83f34a873cd602ba8e97203d9f63c7144ea91289b151fc"
+    },
+    {
+      "number": 113,
+      "score": 0,
+      "profile_sha256": "f021f680ff001963a5e5434bed6d5ad3f2409ad78ce70e040a672a4fcca923d0"
+    },
+    {
+      "number": 84,
+      "score": 3,
+      "profile_sha256": "8f1049dc73328c424e21f48e487b215cf8971ef85ae4a3feb14115d60b01fe8e"
+    },
+    {
+      "number": 46,
+      "score": 6,
+      "profile_sha256": "c1b3fe8e1f29075957b36d1b0a252a2b3d0bfa8fd2239f7c54e36a28bb122af6"
+    }
+  ],
+  "all_profiles": [
+    {
+      "number": 19,
+      "score": 60,
+      "profile_sha256": "023278fa9fd1a068706339d08c71fd95d0b7d61c8d7a1736e1be50c3bd0ba894"
+    },
+    {
+      "number": 49,
+      "score": 50,
+      "profile_sha256": "d1d1bc6a17f3eea41808bb22563b4d7bc0221e795feb6103159a7b9a1f0030e2"
+    },
+    {
+      "number": 96,
+      "score": 50,
+      "profile_sha256": "e1c5fa156c26fcbe4d36c511f2b6f3f01e5c20c5e49df04cc9eaff74b4b912ba"
+    },
+    {
+      "number": 108,
+      "score": 50,
+      "profile_sha256": "dc40573df594c9b89a128ce86d3ea582770aad72ecc37bb306b78edb5a8f928a"
+    },
+    {
+      "number": 33,
+      "score": 40,
+      "profile_sha256": "17d899e93acc9f722e3f3f8927dbe09f16da6277ed4c007690e8c6cf01b2f565"
+    },
+    {
+      "number": 97,
+      "score": 40,
+      "profile_sha256": "f693a47ba5731ae6dfc5a7da3304745b5ec44d9df678fbd4691bc3a4ba24b9bb"
+    },
+    {
+      "number": 30,
+      "score": 35,
+      "profile_sha256": "654b05116e7882385d25d6153620a09acb204d1ac08e78f91e09836fbc1fd67b"
+    },
+    {
+      "number": 55,
+      "score": 35,
+      "profile_sha256": "858dac4295dfc65e4105276b8eec5010d848fa49e7b734e4542357f17aaac8c1"
+    },
+    {
+      "number": 72,
+      "score": 32,
+      "profile_sha256": "9599635bcd15611e099f7c6bd43d775b96db68226af04dfbd404a2be59681b5b"
+    },
+    {
+      "number": 132,
+      "score": 32,
+      "profile_sha256": "a60ff28ad8e8a2aa17f505ca9c0aa4c79de8a79abd7107511123878cc797a8db"
+    },
+    {
+      "number": 100,
+      "score": 26,
+      "profile_sha256": "5f25e8917068c47c45dc93cbf255b6124204e39dce496d7dc65cabc5611d36bb"
+    },
+    {
+      "number": 46,
+      "score": 6,
+      "profile_sha256": "c1b3fe8e1f29075957b36d1b0a252a2b3d0bfa8fd2239f7c54e36a28bb122af6"
+    },
+    {
+      "number": 84,
+      "score": 3,
+      "profile_sha256": "8f1049dc73328c424e21f48e487b215cf8971ef85ae4a3feb14115d60b01fe8e"
+    },
+    {
+      "number": 61,
+      "score": 0,
+      "profile_sha256": "2bbf388b8092f0a0dc83f34a873cd602ba8e97203d9f63c7144ea91289b151fc"
+    },
+    {
+      "number": 113,
+      "score": 0,
+      "profile_sha256": "f021f680ff001963a5e5434bed6d5ad3f2409ad78ce70e040a672a4fcca923d0"
+    }
+  ],
+  "strategy": "same degree 3/4 blocks, shared affine/square charts, and rebuilding for both groups",
+  "follow_seconds_per_family": 120,
+  "workers": 2,
+  "limits": "Prospective priority heuristic; not a randomized efficacy trial. No theorem equates H1 with new constraints."
+}

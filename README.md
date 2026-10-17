@@ -10,7 +10,18 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** another 132 complete three-character families around
+**Latest exact result:** 132 additional complete three-character families
+around `Y0/Y1` are excluded, bringing the selected union to **548 triples**.
+Koszul homology guided a prospective comparison, but high- and low-score
+groups both closed 4/4; no ranking advantage was established. All seven
+later continuations closed too. Both physical polynomial implementations
+pass. The record keeps the unsuccessful charts, an explicit pair-dependency
+correction, actual Koszul-map figures, and the rebuild history.
+[Proofs, homology experiment, visualizations, and failed attempts](notes/homology-guided-triples.md).
+
+![Homology-guided search and its control](results/homology-guided-triples/homology-guided-triples.png)
+
+**Preceding exact result:** another 132 complete three-character families around
 `Y0/X1` are excluded, bringing our selected union to **416 triples**.
 Small-block reductions close 123; shared equations and rebuilding close
 eight more. The last family needs 39 additional cubic consequences,

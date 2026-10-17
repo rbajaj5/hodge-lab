@@ -694,6 +694,25 @@ conversations or evidence of an accepted solve.
     or a new holdout exclusion. No extra upstream post was made for this
     internal comparison. [References, exact data, and figure](notes/categorical-syzygies.md).
 
+45. **17 October 2026 — Use finite Koszul homology to choose continuations.**
+    Selected 132 previously uncovered full Y0/Y1 extensions. Square identities
+    close 117. Computed 70 finite complexes for the fifteen survivors, then
+    froze a ranking before testing four high-score families and four low-score
+    controls with the same bounded method. Both groups close 4/4, so the
+    ranking has no demonstrated advantage. Preserved that 125/132 checkpoint;
+    all seven later continuations also close, giving **548 selected triples**.
+    High scores largely come from Y0 anchor blocks. Retained two initially
+    unsuccessful charts and their later rebuilding closures. An audit caught
+    the full pair's fourteen directions versus the archived proof's eleven;
+    an explicit reduction now binds them. Corrected a checker that mutated
+    equations during rank computation, without changing witness packets.
+    Both physical reconstructions pass. Added score-composition, actual
+    Koszul-differential, and H100 rebuilding figures with exact data checks.
+    This implements classical finite Koszul homology, not Yang's geometric
+    theorem or the Eisenbud-Erman categorical pairing. No solve or improved
+    unconditional degree bound is claimed.
+    [Method, references, checks, figures, corrections, and failures](notes/homology-guided-triples.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-17",
+  "corrections_before_publication": [
+    {"issue": "The archived Y0/Y1 closure starts with eleven directions, while the full retained pair has fourteen.", "resolution": "Added exact full-pair-binding.json.gz, removing raw directions 170, 198, then 168 before replaying the archived proof.", "published_incorrect_claim": false},
+    {"issue": "Both first checker runs failed a square identity because rank elimination mutated the local equation dictionaries.", "resolution": "Pass copied dictionaries to the mutating elimination; the original proof packets were unchanged. Both complete physical replays subsequently passed.", "published_incorrect_claim": false}
+  ],
+  "initially_unsuccessful_charts": [
+    {"family": 61, "raw_coordinate": 213, "outcome": "Other chart zeros and rebuilding later removed the third character."},
+    {"family": 100, "raw_coordinate": 6, "outcome": "After forcing raw 211 to zero, the rebuilt raw-6 chart contradicted."}
+  ],
+  "ranking_result": "High-score and low-score groups each excluded 4/4; all seven later continuations also closed. No ranking advantage established.",
+  "limits": "Necessary-ideal Koszul homology only; no Yang theorem or Eisenbud-Erman categorical pairing applied, no Lean HasCertificate, no phase transition or solve."
+}

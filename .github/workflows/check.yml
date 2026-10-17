@@ -3,6 +3,20 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  homology-guided-triples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/check_homology_guided_triples.py
+      - run: python -S experiments/check_homology_guided_triples.py --independent
+      - run: python -S experiments/plot_homology_guided_triples.py --check
   necessary-koszul-complex:
     runs-on: ubuntu-latest
     timeout-minutes: 5
