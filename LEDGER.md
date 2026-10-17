@@ -358,6 +358,23 @@ conversations or evidence of an accepted solve.
     proofs; no GPU, braid, optical, or imaginary-geometry advantage is
     asserted. [Logs and retained discovery inputs](results/degree7-rank-strata/).
 
+30. **16 October 2026 — Visualizing the actual Koszul correction map.**
+    Added three companions to post six: polynomial support of the correction
+    map and its selected left syzygies, the exact two-row image/cokernel
+    obstruction, and the dependencies closing all ten charts. The displayed
+    173 identities replay 29,031 physical products against stored equations.
+    Twenty rational checks verify a local weighted-projection formula,
+    including its zero-rank branch. In this block, changing equation weights
+    can reduce the residual fraction from 97.3% to 0.36% without removing
+    the exact obstruction. This clarifies a limitation of our Gram-ranking
+    intuition; it is not a new search benchmark. Dubedat motivates the
+    operator viewpoint, while genus and Chatterjee's stochastic frameworks
+    would require further constructions. No such identification is claimed.
+    The ten unresolved initial rank searches and four later timeouts remain
+    visible in the proof history. No new family exclusion or upstream post;
+    the contribution tally remains six. [Figures, sources, and reproducible
+    checks](notes/koszul-map-visualizations.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

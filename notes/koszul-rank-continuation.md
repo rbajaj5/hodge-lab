@@ -14,6 +14,9 @@ The fixed target and all existing upstream files remain unchanged at
 `A=X0^3 Y0^3`, and the exact eight-term `F` in `instance.rec`.
 All calculations use rational identities valid over the complex numbers.
 
+[Visual companion: the actual correction maps, a two-row obstruction,
+and the ten-chart dependency diagram](koszul-map-visualizations.md).
+
 ## What the Koszul calculation means here
 
 Let `S=Q[X0,X1,X2,Y0,Y1,Y2]` and `Fi=partial_i F`, of degree five.

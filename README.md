@@ -33,6 +33,13 @@ Koszul correction equations then closes all ten third-component charts.
 Sixteen other selected triples remain open. [Exact proof, dependencies,
 and retained failed searches](notes/koszul-rank-continuation.md).
 
+**See the correction map:** [three views of post six](notes/koszul-map-visualizations.md)
+show its actual polynomial support, the syzygies cancelling corrections, and
+the chart dependencies. The two-row example explains how a weighted numerical
+score can improve while the exact obstruction stays nonzero.
+
+![Koszul correction-map support and cancelling syzygies](results/degree7-rank-strata/koszul-map-support.png)
+
 ![How syzygies close family 115](results/degree7-syzygy-rebuild/syzygy-proof-map.png)
 
 ![Coverage of all X0/Y0 three-character extensions](results/degree7-triples/character-atlas.png)
@@ -69,6 +76,7 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Koszul-map visual companion | 173 displayed cancellation identities replayed; exact two-row obstruction and weighting diagnostic | [Three figures, interpretation, and checks](notes/koszul-map-visualizations.md) |
 | Koszul continuation after local rank identities | Families 16 and 137 excluded; 136/136 fixed-pair extensions covered; 16 other selected triples still open | [Exact chart covers and failed searches](notes/koszul-rank-continuation.md) |
 | Rebuilt polynomial syzygies | Family 115 excluded; 134/136 fixed-pair extensions covered; two remain unresolved | [Exact proof, dependencies, and visualization](notes/syzygy-rebuild.md) |
 | Polynomial syzygies of the shared correction map | One further complete family excluded; 133/136 X0/Y0 extensions now excluded; two next-family charts still unresolved | [Exact identities, literature, and failures](notes/polynomial-syzygies.md) |
@@ -126,6 +134,7 @@ python -S algebra/degree7_rank_strata.py --check-all
 python -S algebra/degree7_rank_strata.py --check-all --independent
 python -S algebra/degree7_koszul_continuation.py
 python -S algebra/degree7_koszul_continuation.py --independent
+python experiments/plot_koszul_continuation.py --check
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.
@@ -146,6 +155,7 @@ python -S experiments/dubedat_cycle_search.py --workers 3
 python experiments/plot_dubedat_cycles.py
 python experiments/hodge_projected_search.py
 python experiments/plot_hodge_search.py
+python experiments/plot_koszul_continuation.py
 ```
 
 For an NVIDIA GPU with a compatible CUDA 12 environment:

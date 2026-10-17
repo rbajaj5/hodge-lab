@@ -1,0 +1,172 @@
+{
+  "data": {
+    "proof_commit": "17799c6c210373d4e7d2e9dcab837097161f8bfc",
+    "charts": [
+      {
+        "family": 16,
+        "pivot": 11,
+        "method": "unit identity",
+        "relations": 88,
+        "baseline": 16,
+        "physical_products": 12289,
+        "power_products": 69,
+        "dependency": null
+      },
+      {
+        "family": 16,
+        "pivot": 7,
+        "method": "syzygy closure",
+        "relations": 89,
+        "baseline": 17,
+        "physical_products": 13350,
+        "power_products": 0,
+        "dependency": 11
+      },
+      {
+        "family": 16,
+        "pivot": 10,
+        "method": "unit identity",
+        "relations": 87,
+        "baseline": 16,
+        "physical_products": 14010,
+        "power_products": 20,
+        "dependency": 11
+      },
+      {
+        "family": 16,
+        "pivot": 12,
+        "method": "physical closure",
+        "relations": 0,
+        "baseline": 0,
+        "physical_products": 0,
+        "power_products": 0,
+        "dependency": 11
+      },
+      {
+        "family": 16,
+        "pivot": 13,
+        "method": "powers + closure",
+        "relations": 87,
+        "baseline": 16,
+        "physical_products": 13926,
+        "power_products": 17,
+        "dependency": 11
+      },
+      {
+        "family": 137,
+        "pivot": 13,
+        "method": "unit identity",
+        "relations": 85,
+        "baseline": 16,
+        "physical_products": 16742,
+        "power_products": 65,
+        "dependency": null
+      },
+      {
+        "family": 137,
+        "pivot": 8,
+        "method": "physical closure",
+        "relations": 0,
+        "baseline": 0,
+        "physical_products": 0,
+        "power_products": 0,
+        "dependency": 13
+      },
+      {
+        "family": 137,
+        "pivot": 11,
+        "method": "powers + closure",
+        "relations": 83,
+        "baseline": 16,
+        "physical_products": 16841,
+        "power_products": 30,
+        "dependency": 13
+      },
+      {
+        "family": 137,
+        "pivot": 16,
+        "method": "unit identity",
+        "relations": 83,
+        "baseline": 16,
+        "physical_products": 17086,
+        "power_products": 16,
+        "dependency": 13
+      },
+      {
+        "family": 137,
+        "pivot": 17,
+        "method": "powers + closure",
+        "relations": 83,
+        "baseline": 16,
+        "physical_products": 18720,
+        "power_products": 30,
+        "dependency": 13
+      }
+    ],
+    "sources_sha256": {
+      "koszul-manifest.json": "b117fee1e054ceb8663775db7451d5875076fcee20a912f37d3ef4eaad9ad346",
+      "koszul-validation.json": "a341614c1295aead3b10998392c255495baf14ab9b8d42c921be443aa8698d2a",
+      "koszul-independent-validation.json": "4ae0cdf79b878bee60b9662a9240db9259561838ddb2943bda6241268c2875e8",
+      "koszul-16-11.json.gz": "d5484734a846ac54e19b1ab5219c302917f4c1d19bb8eb948d01eaca10940af2",
+      "koszul-16-7-refined.json.gz": "4ca383fffc45610b81f25ccedf32397ceb1dedad34f665a046a213cef04437e0",
+      "koszul-16-10-refined.json.gz": "64c3aa48d43f6516bc6bf9b8a13f7f215fc18bb60c3d6d54368149fb88b08f5d",
+      "koszul-16-12-refined.json.gz": "994751539be25a5fb30497302493a52c1b2f7a1279cf37d1fc0eb2b86d075d50",
+      "koszul-16-13-refined.json.gz": "fc951e11f8b573b6103e5a373ddc97755def81fc4ecddee3b97ec268ffffc1c8",
+      "koszul-137-13.json.gz": "7834d73856b50c6b081358acbf3da7bfdbdcd613e42e3c3db5de7bab6ac8f7e0",
+      "koszul-137-8-refined.json.gz": "4a7dca6d5b02d03a194fb0b0a3f1da4da0e5a668abf8e60d2c5ab38524cdec81",
+      "koszul-137-11-refined.json.gz": "67177915e1c591cdbb6a058e502a515edd226f8712b499148c8864b2278a819b",
+      "koszul-137-16-refined.json.gz": "82d5ca1478a1301f9811673a963ac8522cf00a64eb63a58887c2f22f71e20e0a",
+      "koszul-137-17-refined.json.gz": "1105554908e58d81445f6bc09228e0ff6c8b8d676595dfcc122695054eb956a6",
+      "global-linear-identities.json": "3a924cdd24e0882b49b2427d25e2406ae9ec116bbb8ad8daca8aba805298cea8",
+      "attempts.json": "82810865de823aec58b0d84d36df0cebb4ba2c0c90a30918b2247556480812db",
+      "followup-attempts.json": "32f919c25477b39ce40d5188bf02523c2145cefdb124ecb67701997d1c59cdac",
+      "family137-attempts.json": "be3a4f895f2f32c68ac15b80816fa2d88342060169ae06c0c7d42df4d9bab585",
+      "refinement-attempts.json": "8cd01b810877786ba93e64e2ae58cd0fa7ac934ef5803449cea0c110ee72d64e",
+      "family137-refinement-attempts.json": "f1d0f75dcfc981360de0ee2b4db31fc7f14705b7b18425229ce67240c7edea60",
+      "chart-16-7.json.gz": "d7652e5fe8d3be120bd16e8c794061e2f91a2cab476800e665b1861656d4607b",
+      "chart-16-10.json.gz": "ee3412e2787c01eb4a0eed7078b2d14b9341630cecaad442fb3e40951914de3f",
+      "chart-16-11.json.gz": "1f38507ed0c7632539339c81940c7328a85d5e1e5f23d43aeefbb7f4fc5bc243",
+      "chart-16-12.json.gz": "32145cf367156c314f5fa5a77b9ab46d404702bd4953407b89b970704ecb1472",
+      "chart-16-13.json.gz": "7750ef7ec55132cfe5864060dfc5a1be23ce4dd9b0372a2671950b433548d63a",
+      "chart-137-8.json.gz": "99dccd28bf8546033b0bda4435ed84c1c3b4b064222c766889579594c2c903b7",
+      "chart-137-11.json.gz": "c9c655d7101ba0f86b3e5d571faf49c325b44fee6684655f3014959166271bf7",
+      "chart-137-13.json.gz": "73d4d383104b67ab45c10b3b186aae86219ef6268c6702649846aaf46545a2b6",
+      "chart-137-16.json.gz": "7d2d1188c1e0e2e76400bd5085aed37288a1e9933a7afffbd00b873ec23553af",
+      "chart-137-17.json.gz": "d1f961fa1ee676c8386e81386e7f6a6614c111c0205c19ac45c16f562c922283"
+    },
+    "displayed_cancellation_identities_replayed": 173,
+    "displayed_physical_products_replayed": 29031,
+    "local_block_rational_checks": 20,
+    "timeouts": [
+      {
+        "family": 137,
+        "pivot": 8,
+        "limit_seconds": 120
+      },
+      {
+        "family": 16,
+        "pivot": 13,
+        "limit_seconds": 120
+      },
+      {
+        "family": 137,
+        "pivot": 11,
+        "limit_seconds": 120
+      },
+      {
+        "family": 137,
+        "pivot": 8,
+        "limit_seconds": 150
+      }
+    ],
+    "scope": "Visual companion only; stored physical rows and passed prior reconstructions are inputs. No new family exclusion or geometric identification."
+  },
+  "figures_sha256": {
+    "koszul-map-support.png": "c5649c24f8e8b4e21ab726494c202f1ec29b375b71f27355188642c3e3a16002",
+    "koszul-map-support.svg": "4f7237b43aa87b822a5e8f37965c4da0f1b34eaeaf5260cbd904a6737bf4dd17",
+    "koszul-operator-obstruction.png": "65cea8e7800b0f02f96dfc8c28326bfc18d67ebd9eae9e7acd32736943fc801b",
+    "koszul-operator-obstruction.svg": "e6fc21fcf044d58439d489960409641195e1c5b98e97f613738e82b3e5b3ad9b",
+    "koszul-proof-dependencies.png": "7c69406259d9f5740c60a94425f01cec413c03af7344d0b08538ada8541110b3",
+    "koszul-proof-dependencies.svg": "ece5c638f5ea79ebacc01d9dce50c4c04aecb533eb4e0bf5075437eb7ae65b9e"
+  }
+}
