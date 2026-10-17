@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "scope": "eisenbud-quartic job only",
+  "commit": "f131c2f9649fe5eb08f1a36caff7cc87162f5ad9",
+  "run_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39029073460",
+  "job": {
+    "completedAt": "2026-10-17T11:35:41Z",
+    "conclusion": "success",
+    "databaseId": 117385719478,
+    "name": "eisenbud-quartic",
+    "startedAt": "2026-10-17T11:32:14Z",
+    "status": "completed",
+    "steps": [
+      {
+        "completedAt": "2026-10-17T11:32:15Z",
+        "conclusion": "success",
+        "name": "Set up job",
+        "number": 1,
+        "startedAt": "2026-10-17T11:32:14Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:32:30Z",
+        "conclusion": "success",
+        "name": "Run actions/checkout@v4",
+        "number": 2,
+        "startedAt": "2026-10-17T11:32:15Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:32:30Z",
+        "conclusion": "success",
+        "name": "Run actions/setup-python@v5",
+        "number": 3,
+        "startedAt": "2026-10-17T11:32:30Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:32:31Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/quartic_pure_blocks.py --check",
+        "number": 4,
+        "startedAt": "2026-10-17T11:32:30Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:32:39Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_quartic_exclusions.py",
+        "number": 5,
+        "startedAt": "2026-10-17T11:32:31Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:32:47Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_quartic_exclusions.py --independent",
+        "number": 6,
+        "startedAt": "2026-10-17T11:32:39Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:35:28Z",
+        "conclusion": "success",
+        "name": "Run for family in 6 8 10 149 152; do",
+        "number": 7,
+        "startedAt": "2026-10-17T11:32:47Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:35:38Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/quartic_auxiliary.py",
+        "number": 8,
+        "startedAt": "2026-10-17T11:35:28Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:35:39Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/plot_quartic_strand.py --check",
+        "number": 9,
+        "startedAt": "2026-10-17T11:35:38Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:35:39Z",
+        "conclusion": "success",
+        "name": "Post Run actions/setup-python@v5",
+        "number": 17,
+        "startedAt": "2026-10-17T11:35:39Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:35:39Z",
+        "conclusion": "success",
+        "name": "Post Run actions/checkout@v4",
+        "number": 18,
+        "startedAt": "2026-10-17T11:35:39Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:35:39Z",
+        "conclusion": "success",
+        "name": "Complete job",
+        "number": 19,
+        "startedAt": "2026-10-17T11:35:39Z",
+        "status": "completed"
+      }
+    ],
+    "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39029073460/job/117385719478"
+  }
+}

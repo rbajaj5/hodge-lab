@@ -10,6 +10,8 @@ there is no existence certificate, Lean `HasCertificate` proof, accepted solve,
 or improved unconditional degree bound. Keep `(F,q,A)` and the upstream files
 at `b8c4edeb80a82395ec07164caf445cfa43bbbd56` unchanged.
 
+Shared as [one consolidated reply in holdout discussion #44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997670), recorded as contribution eight in the [ledger](../LEDGER.md). The [publication receipt](../results/eisenbud-quartic-strand/upstream-post.json) includes the verified body and immutable source commit.
+
 [Interactive exact-cancellation view](../visualizations/eisenbud-quartic-strand-standalone.html)
 (download and open; GitHub displays source),
 [editable view](../visualizations/eisenbud-quartic-strand.html),
@@ -205,6 +207,13 @@ for importing the original scratch runs; published checks do not need scratch
 files. To regenerate figures, run the plot script without `--check` with
 Matplotlib installed. Browser QA uses `node experiments/check_quartic_strand.cjs`
 with Playwright available.
+
+The Linux `eisenbud-quartic` CI job **passed** at publication commit
+`f131c2f9649fe5eb08f1a36caff7cc87162f5ad9`: small blocks, both complete
+exclusion replays, all five large maps, the auxiliary failures, and the
+source-to-visualization check. [CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39029073460),
+[saved job receipt](../results/eisenbud-quartic-strand/linux-ci.json).
+This records that job's outcome; it does not assert the outcome of unrelated jobs.
 
 ## What the visualization establishes
 
