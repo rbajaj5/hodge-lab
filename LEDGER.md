@@ -1712,6 +1712,14 @@ conversations or evidence of an accepted solve.
     of this notebook batch. The contribution tally remains **24**; discussion
     updates remain reserved for a substantial batch.
 
+    **Publication checkpoint:** pushed the complete batch as
+    [`0f668a5`](https://github.com/rbajaj5/hodge-lab/commit/0f668a518e31908955729a56b3428f315666bc5c).
+    The updated front-page explanation and new figure were inspected on
+    live GitHub. Both rational replays, figure generation and the CUDA
+    screen pass locally. The dedicated Linux replay is included in the
+    [new CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39074557879),
+    which was queued at this checkpoint; remote success is not yet claimed.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
