@@ -8,6 +8,12 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
+**Why read Yang?** The checked examples distinguish relations among equations
+from the graded images that force denominator coefficients to vanish.
+Equal Koszul H1 dimensions can accompany very different H0 dimensions;
+our homology ranking did not outperform its controls.
+[Concrete mathematical rationale, figure, evidence, and limits](notes/why-yang.md).
+
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
 **Latest exact result:** an exact search guided by the added character's
