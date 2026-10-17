@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "review_kind": "Separate Codex agent static source review and read-back of six local exact replay reports; not human or Lean review.",
+  "source_lf_sha256": {
+    "experiments/typed100_continuation.py": "5c682149f3d17e516eb290abf4cdfdae420d58a2a3c0107b901ad509ba9f7426"
+  },
+  "proof_packet_sha256": {
+    "global.json.gz": "5426e8a1dd32c88b30c80eb9c14e29807668d3aee9d4607ca352f48f8e4add10",
+    "pure-blocks.json.gz": "3e67e2a78a611de2b66e0c4ca160070dd001d43f57e93c000334710cf7355ac9",
+    "closure.json.gz": "9eb26b8d0f84a7fa8acdefaee5cb00882c41212c7540515152702c866a8698e3"
+  },
+  "replay_reports": [
+    "validation.json",
+    "independent-validation.json",
+    "blocks-validation.json",
+    "independent-blocks-validation.json",
+    "closure-validation.json",
+    "independent-closure-validation.json"
+  ],
+  "findings": [
+    "Fresh X0/Y1 family is selected from typed_rewrite_families; added-character pivot positions are derived from actual characters and checked against raw indices 6 and 211.",
+    "Shared construction retains every stabilizer-compatible Koszul correction direction.",
+    "Exported multiplier relations are multiplied back against exact physical equations; additional relations are independent modulo only the finite baseline-plus-linear-multiples span.",
+    "Coordinate-power identities are replayed, and rebuilt charts cover the derived pivot prefix before any removal is applied.",
+    "Terminal pair closure is connected to the complete X0/Y1 dependency, although this attempt does not reach it."
+  ],
+  "prerequisite": [
+    "Run python -S experiments/check_typed_rewrite_families.py --follow and its --independent variant before the T100 checks. This module binds follow-100 by SHA but does not itself replay all preceding baseline and follow reductions."
+  ],
+  "limits": [
+    "Global discovery timed out after 13 of 14 complete multiplier blocks; the interrupted block is not included.",
+    "No full projected-ideal claim or family exclusion follows.",
+    "Primary 131/132 checkpoint is unchanged."
+  ],
+  "summary": {
+    "completed_multiplier_blocks": 13,
+    "requested_multiplier_blocks": 14,
+    "additional_relations": 19,
+    "forced_raw_ids": [
+      56
+    ],
+    "remaining": [
+      6,
+      42,
+      88,
+      102,
+      111,
+      114,
+      135,
+      211,
+      235,
+      272,
+      289,
+      293
+    ],
+    "excluded": false
+  }
+}

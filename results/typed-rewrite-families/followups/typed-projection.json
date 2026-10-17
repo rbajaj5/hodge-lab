@@ -1,0 +1,17 @@
+{
+  "id": "DC_kwDOVLOOJc4BIes2",
+  "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000118",
+  "body": "An explicit justification for the previously reported character filtering, with Codex assistance: fix the finite list $P_j$ of verified homogeneous necessary relations, and let $R_d$ span all their monomial multiples whose total degree is $d$. Write $V_{d,\\chi}$ for the component of total degree $d$ and character $\\chi$. The monomial basis splits by the derived diagonal character, and every row lies in one component. Therefore\n\n$$\nR_d\\cap V_{d,\\chi}=\\operatorname{span}_{\\mathbf Q}\\lbrace mP_j:\\deg(mP_j)=d,\\ \\operatorname{char}(mP_j)=\\chi\\rbrace.\n$$\n\nIndeed, projecting any full-span expression onto $V_{d,\\chi}$ deletes precisely the off-character rows. Thus a coordinate-power query can use only its target component without losing a possible witness. The [checker](https://github.com/rbajaj5/hodge-lab/blob/aef80798e3c97c1b3d3a9440c3c6fc4ac084c8a6/experiments/typed_goal_powers.py) verifies that literal projection coefficient by coefficient; these are auxiliary coefficient-equation weights, not a guessed action on parameter values.\n\nFor batch-local **T3**, the cubic query shrinks from **313 to 36 rows** and certifies $a_{85}^3=0$; **T16** shrinks from **275 to 42** and certifies $a_{40}^3=0$. A separate projected quartic continuation uses **270 of 2,568** rows for T3 and **270 of 2,112** for T16, finding the corresponding fourth powers. Projected-only packets make no full-rank claim. Clarifying review metadata: only T3's preceding full quartic attempt timed out; T16 completed in 171.69 seconds.\n\nBoth physical reconstructions pass locally. At this check, the [dedicated remote job](https://github.com/rbajaj5/hodge-lab/actions/runs/39042127258/job/117423564229) has passed the baseline/follow and T100 replays plus the primary comparison checker; remaining steps are still running or pending. This clarifies already reported results: no additional family exclusion, runtime-speedup claim, full-ideal theorem, or Lean certificate is being counted.\n",
+  "createdAt": "2026-10-17T14:58:19Z",
+  "updatedAt": "2026-10-17T14:58:35Z",
+  "author": {
+    "login": "rbajaj5"
+  },
+  "replyTo": {
+    "id": "DC_kwDOVLOOJc4BIeq0"
+  },
+  "contribution_number": 19,
+  "body_read_back_and_matched": true,
+  "proof_commit": "aef80798e3c97c1b3d3a9440c3c6fc4ac084c8a6",
+  "scope": "Detailed technical reply expanding existing checked results; no new exclusion, solve PR, or leaderboard credit."
+}

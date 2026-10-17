@@ -1,0 +1,17 @@
+{
+  "id": "DC_kwDOVLOOJc4BIes1",
+  "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000117",
+  "body": "A concrete handoff for the still-unresolved **T100**: one denominator coefficient vanishes by a short physical-equation identity.\r\n\r\nWrite $D=\\sum_i a_iD_i$ using raw E1 indices. Let $E_0,\\ldots,E_{710}$ be the zero-based equations returned by [`typed100_continuation.build(model)`](https://github.com/rbajaj5/hodge-lab/blob/aef80798e3c97c1b3d3a9440c3c6fc4ac084c8a6/experiments/typed100_continuation.py), before removing raw 56. Then\r\n\r\n$$\r\n\\begin{aligned}\r\na_{56}^{3}={}&a_6\\left(\\frac{E_{22}}{12}-\\frac{E_{93}+E_{94}+E_{112}}2+3E_{98}-\\frac32E_{161}\\right)\\\\\r\n&+9a_{272}(E_{121}-E_{118})\\\\\r\n&+a_{56}\\left(\\frac56E_{371}-5E_{416}-5E_{417}+3E_{421}-5E_{430}-15E_{459}+27E_{695}\\right).\r\n\\end{aligned}\r\n$$\r\n\r\nThis is `relations[107]` in the [immutable global packet](https://github.com/rbajaj5/hodge-lab/blob/aef80798e3c97c1b3d3a9440c3c6fc4ac084c8a6/results/typed-rewrite-families/t100/global.json.gz): zero-based selected generator 24, or generator 6 in its pure $X_0$ block. Local denominator coordinates 0, 2, 10 mean raw 6, 56, 272. I re-expanded all 15 products using both physical reconstructions: **1,075 coefficient products per reconstruction**, exact `Fraction` arithmetic, PASS. Hence $a_{56}=0$ over $\\mathbb C$.\r\n\r\nThe [rebuilt packet](https://github.com/rbajaj5/hodge-lab/blob/aef80798e3c97c1b3d3a9440c3c6fc4ac084c8a6/results/typed-rewrite-families/t100/closure.json.gz) retains raw support $\\lbrace6,42,88,102,111,114,135,211,235,272,289,293\\rbrace$: 706 equations with all 128 stabilizer-compatible Koszul corrections. Both normalized charts $a_6=1$ and $a_{211}=1$ remain unexcluded.\r\n\r\nThe 180-second multiplier search retained 13/14 complete blocks, omitting the interrupted $a_{293}$ block. Its 19 additional relations are independent modulo the finite baseline-plus-linear-multiple span, not the full ideal. Degree 3/4 block checks yielded no other vanishing; rebuilding finished within its 180-second bound without closing either chart.\r\n\r\nCredit to the repository authors and prior E1/Koszul work, including `fqlx`; prepared with OpenAI Codex assistance for `rbajaj5`. This supplies a reproducible residual search target, not a solve or Lean certificate.\r\n",
+  "createdAt": "2026-10-17T14:58:18Z",
+  "updatedAt": "2026-10-17T14:58:18Z",
+  "author": {
+    "login": "rbajaj5"
+  },
+  "replyTo": {
+    "id": "DC_kwDOVLOOJc4BIeq0"
+  },
+  "contribution_number": 18,
+  "body_read_back_and_matched": true,
+  "proof_commit": "aef80798e3c97c1b3d3a9440c3c6fc4ac084c8a6",
+  "scope": "Detailed technical reply expanding existing checked results; no new exclusion, solve PR, or leaderboard credit."
+}

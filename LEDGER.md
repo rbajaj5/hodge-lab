@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 17 discussion contributions (fourteen top-level comments and three replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 19 discussion contributions (fourteen top-level comments and five replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -41,6 +41,10 @@ Our intent is to understand the fixed problems, share reproducible results and u
 16. **17 October 2026, 10:43 EDT / 14:43 UTC — [Holdout discussion #44: concrete reason for reading Yang](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999956).** Replied to contribution 15 with the distinction between Koszul H1 relations and H0/image information relevant to coordinate-power exclusions. The checked A19/A30/A61 examples show why equal H1 need not give equal constraint strength. The reply retains the negative ranking result, credits classical Koszul algebra separately from Yang's geometric interpretation, and explicitly says Yang's geometric hypotheses have not been established here. It links the public rationale and existing visualization; no new exclusion, solve, or GPU requirement is claimed. The complete existing thread was reread, Markdown preview inspected, and published body, author, URL, and reply parent read back and matched. [Publication receipt](results/yang-rationale/upstream-post.json).
 
 17. **17 October 2026, 10:45 EDT / 14:45 UTC — [Holdout discussion #44: 131 fresh X0/Y1 triple exclusions and typed-search comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999988).** Shared the checked 131/132 batch, bringing selected coverage to 811 triples. T100's additional nineteen necessary relations and raw56 vanishing are explicitly partial; both rebuilt charts remain unsuccessful. The post reports the negative frozen cache experiment and the separate exact target-character projection, preserving timeouts and distinguishing their evidence. It links the immutable proof commit, five actual-operator/history figures, credits, bounds, and fifteen passing local checks. The current thread was reread and Markdown preview inspected; the complete published body, author, URL, and absence of a reply parent were read back and matched. The proof commit was pushed immediately after posting. Remote CI is pending, not claimed successful. No Lean proof, solve PR, improved degree bound, or leaderboard point is claimed. [Publication receipt](results/typed-rewrite-families/upstream-post.json).
+
+18. **17 October 2026, 10:58 EDT / 14:58 UTC — [Holdout discussion #44: explicit T100 cubic identity and residual system](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000117).** Replied to contribution 17 with the displayed fifteen-product physical-equation identity for raw coefficient 56 cubed, exact equation/generator indices, and the twelve-direction residual support. Both physical reconstructions re-expanded the displayed identity exactly (1,075 coefficient products each). The reply specifies the missing multiplier block, all 128 remaining compatible corrections, and the two still-unresolved charts. It unpacks an existing checked reduction, adding no new family exclusion. The complete current thread and unchanged contribution policy were read; mathematical Markdown was previewed. Published author, complete body, permanent URL, and reply parent were read back and matched. [Receipt](results/typed-rewrite-families/followups/t100-detail.json).
+
+19. **17 October 2026, 10:58 EDT / 14:58 UTC — [Holdout discussion #44: exact character-projection argument](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000118).** Replied to contribution 17 with the direct-sum argument preserving finite coordinate-power membership when off-character rows are omitted. The reply links the checker, gives exact T3/T16 row counts, and distinguishes projected-only computations from completed full elimination. It clarifies stale review metadata: T3's full quartic attempt timed out, whereas T16's completed. The remote job had passed the family/T100 checks and primary comparison checker; remaining steps were running or pending. No full CI success, new family exclusion, speedup, or solve is claimed. The complete body, author, URL, and reply parent were independently read back and matched after a small math-formatting edit. [Receipt](results/typed-rewrite-families/followups/typed-projection.json), [CI snapshot](results/typed-rewrite-families/followups/ci-snapshot.json).
 
 ## Research intuition and experiments
 
@@ -811,6 +815,20 @@ conversations or evidence of an accepted solve.
     not an application of Yang's geometric theorem. It uses evidence already
     returned in contribution 15. The requested rationale was then posted as
     contribution 16; it adds no new mathematical exclusion.
+
+50. **17 October 2026 — Make two existing results easier to inspect.**
+    Expanded the exact T100 cubic identity into physical equations and
+    explained the target-character projection lemma in contributions 18–19.
+    The [T100 continuation figure](results/typed-rewrite-families/typed100-continuation.png)
+    and [projection figure](results/typed-rewrite-families/typed-goal-powers.png)
+    remain the corresponding visualizations. Corrected two stale scope
+    sentences in the quartic review metadata: only the original T3 full
+    comparison timed out; the separate projected-only packets do not claim
+    full ranks, while the original T16 comparison computed its full rank.
+    The prior wording is retained in the dated correction record. Proof
+    packets, code, actual result note, and figures are unchanged. Recorded
+    a separate T100 source-review receipt and a pending remote-CI snapshot.
+    No new search, mathematical exclusion, or accepted solution is counted.
 
 ## Keeping this current
 

@@ -15,8 +15,8 @@
     "Successful powers are multiplied back exactly and corrupted coefficients are rejected."
   ],
   "limits": [
-    "Original full quartic attempts remain timed out; projected follow-up is not a prospective runtime comparison.",
-    "Quartic full ranks are deliberately null, and full elimination is not claimed.",
+    "The original T3 full quartic comparison timed out; the original T16 full comparison completed in 171.69 seconds. The separate projected follow-up is not a prospective runtime comparison.",
+    "The projected-only quartic follow-up records full ranks as null and performs no full elimination. The original T16 comparison separately computed its full quartic rank.",
     "Finite necessary-relation spans do not establish a full ideal or a certificate of existence.",
     "T3/T16 overlap ordinary family closure and must not be counted again."
   ],
@@ -51,5 +51,13 @@
   "replay_reports": [
     "goal-quartics/validation.json",
     "goal-quartics/independent-validation.json"
-  ]
+  ],
+  "wording_correction": {
+    "recorded_at_utc": "2026-10-17T14:57:05.675996+00:00",
+    "previous_limits": [
+      "Original full quartic attempts remain timed out; projected follow-up is not a prospective runtime comparison.",
+      "Quartic full ranks are deliberately null, and full elimination is not claimed."
+    ],
+    "reason": "Narrow the stale plural timeout wording to T3 and distinguish the projected-only follow-up from the original T16 full comparison; proof packets, ranks, and earlier result note/figures unchanged."
+  }
 }
