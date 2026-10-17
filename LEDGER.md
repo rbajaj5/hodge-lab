@@ -1479,8 +1479,71 @@ conversations or evidence of an accepted solve.
     The updated README and feature image were inspected on the live GitHub
     page. Local primary, independent and figure replays pass.
     The [new Linux CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39069918534)
-    was queued at this publication checkpoint; no completed CI result is
-    claimed here.
+    was queued at this publication checkpoint. Its dedicated
+    [quadratic-polar job](https://github.com/rbajaj5/hodge-lab/actions/runs/39069918534/job/117505213129)
+    subsequently passed the primary replay, independent reconstruction and
+    figure generator. This records that completed job rather than every
+    job in the larger workflow.
+
+74. **17 October 2026 — Use polynomial multipliers to exclude the coordinate-divisible quadratic family.**
+    Continued precisely the 25-parameter family left unresolved in checkpoint
+    73: `v_i = x_i sum_j M_ij x_j`, with degree-seven denominator
+    `E = v . grad(Delta)`. The complete 55 projected correction types and
+    all 246 quotient directions remain allowed. The target and source pin
+    are unchanged. A refreshed, fully paginated read of the monitored
+    discussion threads found no new comments or edits to incorporate.
+
+    Exact correction elimination gives 155 necessary quadrics from the
+    1,228-by-1,700 physical coefficient map. Its rational rank is 833,
+    including 678 correction pivots. Individual parameter squares are not
+    in the resulting quadratic span. Multiplying the quadrics by linear
+    parameters gives a 2,925-by-3,875 cubic map of exact rank 2,892. Twenty
+    rational identities, containing 588 linear multiplier terms, force all
+    entries outside the `Y0` column of `M` to vanish over the complex numbers.
+
+    Rebuilding with the five surviving entries gives an 851-by-290 physical
+    map of rank 232, including 220 correction pivots, and twelve necessary
+    quadrics. Merely restricting the old quadrics gives rank nine; the fresh
+    rebuild supplies three additional independent quadratic conditions.
+    Another square-only attempt fails. Their linear multiples
+    span all 35 cubic monomials, giving five final cube identities. The
+    rebuilt step is conditional on the twenty already proved vanishings;
+    no generic-rank assumption or correction specialization is made.
+    Consequently every nonzero denominator in this entire 25-parameter
+    family is excluded. This does not exclude the unrestricted 75-parameter
+    quadratic-direction family or arbitrary degree-seven denominators.
+
+    The failed square queries and the incomplete first cubic stage remain
+    recorded. A degree-four search was not run because the rebuilt cubic
+    proof already closes the family. The standalone discovery commands have
+    120-second bounds; aggregate production and replay have 300-second
+    bounds to allow slower machines. The original modular probe remains
+    discovery evidence, with rational identities supplying the proof.
+
+    Primary and independent exact replays pass. Together the two stages
+    supply 167 physical coefficient functionals and 25 cube identities with
+    700 linear multiplier terms. The independent implementation checks
+    266,980 coefficient pairings, both physical and both cubic ranks, the
+    nine-to-twelve span inclusion, and all 30 unsuccessful square queries.
+    It freshly replays 17,250 raw projection identities, 246 quotient checks
+    and 10,575 Euler identities. The primary checker rejects eight altered
+    inputs; the independent checker rejects thirteen. Production took 57.49
+    seconds and primary replay 20.63 seconds locally, without a timeout.
+
+    [Proof, multiplier and correction-map figures, failed steps, checks and reproduction](notes/cyclic-fano-divisible-multipliers.md).
+    The front-page gallery now features the 25-to-5-to-zero reduction.
+    Two new figures show the actual cubic maps, the physical correction map
+    and the three constraints gained by rebuilding. Both PNGs were visually
+    inspected. Their generator validates 18 file bindings, all 167 physical
+    functionals, all 25 cube identities and the exact rebuild span gain.
+    All 24 gallery/note link occurrences resolve, and GitHub's Markdown
+    renderer accepts the seven-image gallery and comparison table.
+    Earlier linear and quadratic figures remain as labeled historical
+    checkpoints; the preceding quadratic note links forward to this result.
+    A dedicated Linux CI job is configured for the new replay and figures.
+    No certificate, Lean proof, accepted solve or upstream comment accompanies
+    this notebook batch. The historical contribution tally remains **24**;
+    upstream comments are still held for a substantial batch.
 
 ## Keeping this current
 

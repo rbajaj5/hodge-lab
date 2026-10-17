@@ -1,0 +1,13 @@
+{
+  "schema": "cyclic-fano-divisible-multipliers-validation-v1",
+  "status": "PASS",
+  "producer_sha256": "84afb3132ca8a9246403e891e23ae61b2e82b9594c1169f9c4e76e4282a1f1b5",
+  "packet_sha256": "aa1e6dbe561a54e3efece37169ff94348d481e95cd52659638d65849b3e9e1f0",
+  "initial_physical_duals": 155,
+  "initial_cube_identities": 20,
+  "rebuild_physical_duals": 12,
+  "final_cube_identities": 5,
+  "compact_corrections_retained": 55,
+  "negative_controls_rejected": 8,
+  "scope": "Reconstructs both physical maps and replays every multiplier; recomputes exact Macaulay rank without rediscovering tracked multipliers."
+}

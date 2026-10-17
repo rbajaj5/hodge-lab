@@ -1,0 +1,99 @@
+{
+  "schema": "cyclic-fano-divisible-multipliers-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "aac660c66efea0f18adf5ba8a81daafb5fa4d0fb1baefd34f7cae029d7201cb3",
+  "packet_lf_sha256": "aa1e6dbe561a54e3efece37169ff94348d481e95cd52659638d65849b3e9e1f0",
+  "primary_validation_lf_sha256": "da969bf7e1e63d7d8fd3cb5f7fda5196b4c3b498a29c790ab67f52a2a92b893f",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "independent_arithmetic_dependencies": {
+    "check_cyclic_fano_quadratic_polars.py": "9e1aafc28aea7a4ce816a298aa9f9848ffa9209d7fb6831ad767101d3055fd12",
+    "check_cyclic_fano_linear_polars.py": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58",
+    "check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "full_source_E1_and_Piola_lifts_replayed": 75,
+  "family_parameters": 25,
+  "full_raw_Koszul_fields": 230,
+  "full_raw_projection_identities_replayed": 17250,
+  "retained_correction_types": 55,
+  "quotient_directions_replayed": 246,
+  "Euler_normalization_identities_replayed": 10575,
+  "initial_physical_map": {
+    "rows": 1228,
+    "columns": 1700,
+    "rank": 833,
+    "rank_mod_1009": 833,
+    "mixed_rank": 678,
+    "pure_columns": 325,
+    "mixed_columns": 1375,
+    "necessary_quadrics": 155,
+    "coefficient_sha256": "dde1944740e571e55699afca5ba4569b6b2de846cb932067049ec205c997b84f"
+  },
+  "initial_cubic_map": {
+    "rank": 2892,
+    "rows": 2925,
+    "columns": 3875,
+    "remaining_parameter_indices": [
+      2,
+      7,
+      12,
+      17,
+      22
+    ],
+    "isolated_squares": [],
+    "rank_mod_1009": 2892,
+    "remaining_parameter_indices_mod_1009": [
+      2,
+      7,
+      12,
+      17,
+      22
+    ]
+  },
+  "rebuilt_physical_map": {
+    "rows": 851,
+    "columns": 290,
+    "rank": 232,
+    "rank_mod_1009": 232,
+    "mixed_rank": 220,
+    "pure_columns": 15,
+    "mixed_columns": 275,
+    "necessary_quadrics": 12,
+    "active_raw_parameter_indices": [
+      2,
+      21,
+      39,
+      55,
+      71
+    ],
+    "coefficient_sha256": "89a2ba4de65ac9b5da7d4e4de503edc4f78d80c4d37157ee9614771d260744da"
+  },
+  "final_cubic_map": {
+    "rank": 35,
+    "rows": 35,
+    "columns": 60,
+    "remaining_parameter_indices": [],
+    "isolated_squares": [],
+    "rank_mod_1009": 35,
+    "remaining_parameter_indices_mod_1009": []
+  },
+  "rebuilding_gain": {
+    "restricted_old_rank": 9,
+    "rebuilt_rank": 12,
+    "added_independent_constraints": 3,
+    "span_inclusion": true
+  },
+  "necessary_quadric_identities": 167,
+  "physical_coefficient_pairings": 266980,
+  "exact_failed_square_queries": 30,
+  "negative_controls_rejected": 13,
+  "initial_cube_identities": 20,
+  "initial_multiplier_terms": 588,
+  "final_cube_identities": 5,
+  "final_multiplier_terms": 112,
+  "initial_dual_terms": 3614,
+  "rebuilt_dual_terms": 107,
+  "conclusion": "Every nonzero complex coordinate-divisible quadratic vector field v_i=x_i*sum_j M_ij*x_j produces an excluded degree-seven polar denominator. Twenty rational cubic identities force every column except Y0 to zero; five further cubic identities in the rebuilt system force the remaining coefficients to zero. All55 correction types and the full246-dimensional quotient freedom were retained.",
+  "limits": "This excludes the25-parameter subfamily, not the full75-parameter quadratic direction family, arbitrary degree-seven denominators or unions of separately excluded supports. The original modular probes were discovery evidence; the conclusion here uses rational physical duals and polynomial identities. No degree-four multiplier search was needed or run, and no certificate, formal Lean proof or solve is claimed. The separate q=1 support theorem, not this arithmetic checker, supplies any extension to powers of a fixed rejected denominator."
+}

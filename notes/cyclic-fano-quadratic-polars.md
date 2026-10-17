@@ -1,5 +1,10 @@
 # Quadratic-direction polars: five complete subfamilies excluded
 
+**Later continuation:** the [polynomial-multiplier follow-up](cyclic-fano-divisible-multipliers.md)
+excludes the coordinate-divisible 25-parameter family that remained open in
+this checkpoint. The unrestricted 75-parameter family remains unresolved.
+The original failed screens and figures below are preserved.
+
 For each of the five base coordinates $x_i$, every nonzero denominator
 
 $$E=f(x)\,\partial_i\Delta,$$

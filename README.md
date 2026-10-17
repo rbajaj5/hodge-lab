@@ -27,28 +27,21 @@ Click a figure to open its equations, reproducible code, checks, and limits.
 These pictures show actual calculations and failed candidates; the instance
 still has no certificate from this notebook.
 
-**Latest calculation — quadratic directions, with a clear boundary.** For
-each of five coordinate directions, exact identities exclude every quadratic
-multiple of that direction's polar: five separate 15-parameter families.
-Each calculation sets the other four direction components to zero. The
-full 75-parameter mixed-direction family remains unresolved, and its failed
-modular square screen is retained.
+**Latest calculation — polynomial multipliers close a 25-parameter gap.**
+For the degree-seven family with `v_i = x_i (M x)_i`, cubic identities force
+20 matrix entries to vanish. Rebuilding the complete correction equations
+then forces the five remaining entries to vanish. This excludes the entire
+stated family over the complex numbers. The unrestricted 75-parameter
+quadratic-direction family remains unresolved.
 
-[![Five separate quadratic-direction families, their two exact elimination rounds, and the unresolved mixed-direction search](results/cyclic-fano-quadratic-polars-figures/cyclic-fano-quadratic-polars.png)](notes/cyclic-fano-quadratic-polars.md)
+[![Cubic multiplier identities reduce the coordinate-divisible direction matrix from 25 entries to its Y0 column, then to zero after rebuilding](results/cyclic-fano-divisible-multipliers-figures/cyclic-fano-divisible-multipliers.png)](notes/cyclic-fano-divisible-multipliers.md)
 
-[Inspect the quadratic coefficient maps and correction-space growth](results/cyclic-fano-quadratic-polars-figures/cyclic-fano-quadratic-polars-maps.png).
+[Inspect the necessary equations and multiplier maps](results/cyclic-fano-divisible-multipliers-figures/cyclic-fano-divisible-multipliers-maps.png).
 
-**Previous complete family — linear directions.** Exact square identities
-remove the 20 off-diagonal entries of a direction matrix; cubic identities
-then remove its five diagonal entries. This excludes the degree-six
-linear-polar family with the full numerator correction space.
-
-[![The linear-polar coefficient map: 25 matrix parameters reduced to five diagonal entries and then zero](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars.png)](notes/cyclic-fano-linear-polars.md)
-
-[Inspect the full coefficient maps](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars-maps.png).
-
-| Reuse what the theorem already rules out | See the geometry behind a failed candidate |
+| Follow the algebraic reductions | Compare earlier calculations |
 | --- | --- |
+| [![The preceding quadratic-polar checkpoint: five separate component families excluded](results/cyclic-fano-quadratic-polars-figures/cyclic-fano-quadratic-polars.png)](notes/cyclic-fano-quadratic-polars.md) | [![The degree-six linear-polar map and its exact reduction from 25 parameters to zero](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars.png)](notes/cyclic-fano-linear-polars.md) |
+| **Earlier quadratic screen.** Five separate component families were excluded. The 25-parameter gap marked open in this historical figure is closed above. [Coefficient maps](results/cyclic-fano-quadratic-polars-figures/cyclic-fano-quadratic-polars-maps.png). | **Linear directions, degree six.** Square and cubic identities exclude every nonzero `v = M x`. [Coefficient maps](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars-maps.png). |
 | [![The 26 tested products grouped by formal factor labels, with direct exclusions distinguished from the support-theorem deduction for S squared](results/cyclic-fano-support-audit-figures/cyclic-fano-support-audit.png)](notes/cyclic-fano-support-audit.md) | [![The denominator curve before and after blowing up a transverse plane](results/cyclic-fano-blowup-audit-figures/cyclic-fano-blowup-audit.png)](notes/cyclic-fano-blowup-audit.md) |
 | **Support versus multiplicity.** The `q=1` theorem closes the `S²` timeout from the checked `S` obstruction. The failed run remains recorded. | **Blowup charts.** A pole order of five separates into one exceptional factor and four orders of contact. The pole persists. |
 | [![Exact deformation matrix of a complex rational curve on the weighted cyclic quotient](results/cyclic-fano-curve-figures/cyclic-fano-map.png)](notes/cyclic-fano-curve.md) | [![Higher local branch jets, two contacting branches, and nine rejected denominator guesses](results/cyclic-fano-higher-unfolding-figures/cyclic-fano-higher-unfolding.png)](notes/cyclic-fano-higher-unfolding.md) |
@@ -138,8 +131,17 @@ including five mixed types that first appear at this degree. Complete
 one-component families `v = f(x) partial_i`, with arbitrary homogeneous
 quadratic `f`, are excluded by two rounds of exact square identities.
 This permits extra support from `f`; it goes beyond taking powers of the
-old fixed polar. General sums of these directions, including the tested
-25-parameter coordinate-divisible subfamily, remain unresolved.
+old fixed polar. The 75-parameter family of general sums remains unresolved.
+
+The [polynomial-multiplier follow-up](notes/cyclic-fano-divisible-multipliers.md)
+closes the previously unresolved 25-parameter subfamily `v_i = x_i (M x)_i`.
+Eliminating corrections gives 155 exact necessary quadrics. Linear
+multipliers force cubes of 20 entries outside the `Y0` column. Rebuilding
+with the five remaining entries yields 12 necessary quadrics whose linear
+multiples force the last five cubes. Both unsuccessful square tests remain
+recorded; a degree-four search was unnecessary. This is a complete exclusion
+of that subfamily, with all numerator corrections allowed. The instance
+remains unsolved by this notebook.
 
 A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
 shows why a successful-looking curve slice can mislead: one polar's residual
