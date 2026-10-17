@@ -1,5 +1,7 @@
 # Testing the higher-order denominator guesses
 
+**Later scope clarification (17 October):** the [prescribed-support audit](cyclic-fano-support-audit.md) applies the repository's `q=1` theorem to exclude every higher power of each failed support. The original computations below remain unchanged; wording leaving those powers open describes the earlier computational scope.
+
 **Result: nine fixed denominators are excluded exactly.** The higher-order
 local geometry gives more specific guesses, but none passes the full
 certificate equations. Three guesses come directly from the local jets;

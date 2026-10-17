@@ -1,0 +1,1591 @@
+{
+  "schema": "cyclic-fano-support-audit-plot-v1",
+  "instance": "cyclic-triple-fano",
+  "discussion_number": 112,
+  "sha256_policy": "File bytes with CRLF normalized to LF",
+  "source_sha256": {
+    "results/cyclic-fano-support-audit/packet.json": "b9cad633013eae18b2502d5a66d7c6b406d89e80a1c14b344139128fbd86c61a",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "experiments/cyclic_fano_support_audit.py": "0ba4026d430e45cac26c3e2ca71a93fcf37f5723cbe09d8bf3345f72d8cde349",
+    "experiments/cyclic_fano_branch_products.py": "baaadb5964891a91a249733ed65911af4c0ecc5b91fe1863da20844ae6e97d89",
+    "experiments/cyclic_fano_guided_denominators.py": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+    "experiments/cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "experiments/quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+    "experiments/check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+    "results/cyclic-fano-branch-products/independent-validation.json": "772ed054eb34c6f84f5b4b0b6fad644249b59ada556db77108377088ece1e82e",
+    "results/cyclic-fano-guided-denominators/independent-validation.json": "ce5eac7db7fa42465a7f3bafd204cd382ebcc2a076376a08ca40cae5a5b31dc6",
+    "results/cyclic-fano-polar-family/independent-validation.json": "12810b046539c6dbd5435aeeae60757019b7117f7eb9808cc644408c26705866",
+    "experiments/check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "experiments/check_cyclic_fano_branch_products.py": "c4f49037ebc2ed72b041fb643c1cc9d1e4179e32e80c302fe9e310245d896768",
+    "experiments/check_cyclic_fano_polar_family.py": "ce1fcb1ca3895f68c00804f95457f86a73c61a2c8058b1104a1f5446f6f08253",
+    "results/cyclic-fano-polar-family/packet.json": "2601470e85f1b0c7023f48dd5ee1541fbde68f23d53e9723c97076c0303f7b85",
+    "results/cyclic-fano-higher-unfolding/candidates.json": "4900bc9ef14f4cc310dbc457f4282df10317a6f10c39312e4a9fcf176ec49b02",
+    "results/cyclic-fano-branch-products/T2.json": "7f9359a547b3c4928535e0698b23be71d2129b4cefea95476e322bc1d0a0456f",
+    "results/cyclic-fano-branch-products/attempt-T2.json": "aa2f28b0c777ac14283de8c0eceba7f69a259ca6daa7cb12766f72971d755671",
+    "results/cyclic-fano-branch-products/T4.json": "fd939c74a06b24ab883a60c0bacfff1706a13b9bc7b5564430b505472ab0117f",
+    "results/cyclic-fano-branch-products/attempt-T4.json": "9e626309d6bbda0c3c9299fd81af2bb5f5daa03ece5218ef1f3ad83470198855",
+    "results/cyclic-fano-branch-products/T8.json": "37924899e1ed81ea58218d6fac92226c7f1baf41920fa65038b6f8ef2473bef7",
+    "results/cyclic-fano-branch-products/attempt-T8.json": "3dc0b781ade369571e6355b97bda3d6e39afe37546f41307490ca47ed777d16c",
+    "results/cyclic-fano-branch-products/C2.json": "ef90d73c576833209f0a61f5c2857eb9dd033b501cc68b5218a752ef88fd0298",
+    "results/cyclic-fano-branch-products/attempt-C2.json": "a48aaa1ffea8ba678db02cdc7323214b1ddffd9ddd3a096d3a7818274b79e57a",
+    "results/cyclic-fano-branch-products/C3.json": "2ea6cf546108ff9311c05d401000d0aee217a206397e17ed397b19b7a7b4d26d",
+    "results/cyclic-fano-branch-products/attempt-C3.json": "1aec21e48d82548d3ef35cd3defd2bedc510eab2dbfdd6b99112bceb7ca7ba79",
+    "results/cyclic-fano-guided-denominators/Y0-leading-branch-sextic.json": "bd0a8566676555e4aeb50aab8a16a799d2b019c438604c7e6602f3f90a25a50d",
+    "results/cyclic-fano-branch-products/attempt-S2.json": "bd0ae91658b921e75e472126732059366f1d2b32867bf5e6851d37f2b316170a",
+    "results/cyclic-fano-branch-products/TC.json": "8264a52bca675c9c5db7704f8c4a2a9b1d8d4ad971d2618ecb70ea6709146abb",
+    "results/cyclic-fano-branch-products/attempt-TC.json": "86e19f7e81fe0a723d0fcb7d8c102c91e88474f43b474ed459eaeaf240d10cf1",
+    "results/cyclic-fano-branch-products/TS.json": "4d95c9c382fe27e60e0b1f55eadfe099e0d4f6bd36b28f4b55d2ebe45d04e8ec",
+    "results/cyclic-fano-branch-products/attempt-TS.json": "07836baabedc9db885cbde0ba24c2ab51320f39afd295eee0a6d4bb22e7e1214",
+    "results/cyclic-fano-branch-products/CS.json": "8c4e58555fcfdd2f3853ddae046790cbaf51b687c2bac5e91dc5bf62a31c42ff",
+    "results/cyclic-fano-branch-products/attempt-CS.json": "6e8c46f52cdfa0c0a902d49ee10466a611cd6cb45f8119fd8bc10cb837f8179b",
+    "results/cyclic-fano-branch-products/RC.json": "31a1304a0e8fd0bc054b7fb5fdb2005aa977c804782ed3e44ef65a31593ff356",
+    "results/cyclic-fano-branch-products/attempt-RC.json": "e81cb776e563c2798b0627fb50547283483d70d79fa0afc80791622a5a3b8aa4",
+    "results/cyclic-fano-branch-products/RS.json": "202b2c5b8f471d685e2a19cc07fec642f0a024de37dd4e7e7dc06e67e11f1d88",
+    "results/cyclic-fano-branch-products/attempt-RS.json": "b9f83d5058461ad3417f7b814c808c433c2590e2520001896886bbda717606d1",
+    "results/cyclic-fano-branch-products/R4.json": "b174817cc47e22f8d8b26c3458117e8f86db9018c315cd095a626641c9283dc9",
+    "results/cyclic-fano-branch-products/attempt-R4.json": "ba57a3f01d3c5369db96d62bdd5715f3faaddfe403532405b09d6fec97927fef",
+    "results/cyclic-fano-branch-products/J2.json": "e56c902efbed8d97639d8560ad372ea610e570f63036ef6b00682de292fc5087",
+    "results/cyclic-fano-branch-products/attempt-J2.json": "10b86ad32258c100c6d85b8ac38f0df2e080d6b08376897a6a5d09d9fc0b94ab",
+    "results/cyclic-fano-branch-products/J3.json": "8b28593dd0edabf12e9ebb5fa55ab0102255b61b650fdf09c3c7d1340c808d97",
+    "results/cyclic-fano-branch-products/attempt-J3.json": "63b406ed0da6afec2679b3d35164e6054d2f9f632866b04f38748e9dfa7bba72",
+    "results/cyclic-fano-branch-products/J4.json": "c329c8d0f5b2a41cbf8fe1c930ad679885615b69e9d093d86aef3b396f0fa230",
+    "results/cyclic-fano-branch-products/attempt-J4.json": "bac6c201855cb60154378f1984623b63b4ea744e32b6383fd66f74ee559ac8e7",
+    "results/cyclic-fano-branch-products/JT2.json": "c65f5fb64db6036813cb76636d17bed78ff1ac3eb3a848cf5e69fa0989a604b3",
+    "results/cyclic-fano-branch-products/attempt-JT2.json": "f6013e1a7ab5fd833597a4e75722c5eda401f604b4b8ad614361dea1e4e0f923",
+    "results/cyclic-fano-branch-products/JTC.json": "ae0314229a693e37568987d8977b1276f2351917ffcc765ba930591eff360817",
+    "results/cyclic-fano-branch-products/attempt-JTC.json": "1bf88db3f8c3a205fab2a6185c9339b3a8960defe95aae9b359913dfdf1ee942",
+    "results/cyclic-fano-branch-products/JC2.json": "4f10faa92c6daf823ae5b2d5a00203d2bab07cf19f9692463f4bc052e54d6f19",
+    "results/cyclic-fano-branch-products/attempt-JC2.json": "0a9c9d1594cdbc2ffea41f45504f5c1525323dbd2106593218c7d794831724e4",
+    "results/cyclic-fano-branch-products/JS.json": "39a5b1206c45429bac9d29b99345a9d9105ac451e6adc6911d712ab6768d124d",
+    "results/cyclic-fano-branch-products/attempt-JS.json": "9bc3b4192891a1dd84c08784afea0a9bdbf3a685186b097f77ec8b2cf5691a6d",
+    "results/cyclic-fano-branch-products/JR2.json": "0ddd74f5aaa3c110915d7b3a0ff936d8a3e5dd921c3674e07647857e502e87f4",
+    "results/cyclic-fano-branch-products/attempt-JR2.json": "0fc76acd7f18429612ddf7f787ecafa2227932598cc2cabba6d3049e6fd51eab",
+    "results/cyclic-fano-branch-products/JTS.json": "0c891c4adc2d4f4e61fcf6485819dd9b5453823ec5c13c09163b7df76c4ecd3a",
+    "results/cyclic-fano-branch-products/attempt-JTS.json": "ab42e9f77c5cc28dfd7e1a6338aede42ebfc3ff667b0d58ffc9ebe0880ea9b11",
+    "results/cyclic-fano-branch-products/J2T2.json": "72cb614c271320bca4f23ec48709d2fd39f7612ec2816175fafdfc4de28172d2",
+    "results/cyclic-fano-branch-products/attempt-J2T2.json": "1d5848918bb0b8638d643776c7d77e70ec4f8ddcf2f4b7ade43bf924e4a8a5eb",
+    "results/cyclic-fano-branch-products/J2C2.json": "49427186f4e24b16bbe9a9955c3fc61b27b26198c44d9ee605978764b5a9c7ae",
+    "results/cyclic-fano-branch-products/attempt-J2C2.json": "938d909cea746d2b7e943d588b11cdd516f3bd5025b32120b9aabf219964a097",
+    "results/cyclic-fano-branch-products/J2R.json": "accd424c91741ba84833ee93d84dcc1e67b816ccbcd17bd5576bcb37b62adf9e",
+    "results/cyclic-fano-branch-products/attempt-J2R.json": "c4aeceec2fe2e73a22555ef9878e4152484255e273b3426431d23b7b6ee49d8e",
+    "results/cyclic-fano-branch-products/J3T.json": "3935ec4546ca6b6735ba649c46da265dc4526c950bb15a43eff39769e050c1ac",
+    "results/cyclic-fano-branch-products/attempt-J3T.json": "1448f59881f442f8ec68c659c3fc7615dbae807f856f45559b61a3d507ab6670",
+    "results/cyclic-fano-branch-products/J2S.json": "bba873c4195068d89e4696c94967c6ba92e58bf959556fc3d5b24f97f10f0633",
+    "results/cyclic-fano-branch-products/attempt-J2S.json": "851dccbff31e5378acbe38e29dcf7f1c401e9be9425600f55589b58f385360cf"
+  },
+  "plot_source_sha256": "9d9da44bd7c5dbcad1395b825595a10b2cd8443da9a4ab79f33f95abfe9712f0",
+  "records": [
+    {
+      "id": "T2",
+      "degree": 2,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "T"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "T2",
+      "cover_exponents": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/T2.json",
+        "lf_sha256": "7f9359a547b3c4928535e0698b23be71d2129b4cefea95476e322bc1d0a0456f"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "T4",
+      "degree": 4,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "T"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "T4",
+      "cover_exponents": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/T4.json",
+        "lf_sha256": "fd939c74a06b24ab883a60c0bacfff1706a13b9bc7b5564430b505472ab0117f"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "T8",
+      "degree": 8,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "T"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "T8",
+      "cover_exponents": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/T8.json",
+        "lf_sha256": "37924899e1ed81ea58218d6fac92226c7f1baf41920fa65038b6f8ef2473bef7"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "C2",
+      "degree": 6,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "C"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "C2",
+      "cover_exponents": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/C2.json",
+        "lf_sha256": "ef90d73c576833209f0a61f5c2857eb9dd033b501cc68b5218a752ef88fd0298"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "C3",
+      "degree": 9,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "C"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "C3",
+      "cover_exponents": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/C3.json",
+        "lf_sha256": "2ea6cf546108ff9311c05d401000d0aee217a206397e17ed397b19b7a7b4d26d"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "S2",
+      "degree": 12,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "S"
+      ],
+      "direct_status": "timeout",
+      "direct_stage": null,
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "S",
+      "cover_exponents": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 2,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-guided-denominators/Y0-leading-branch-sextic.json",
+        "lf_sha256": "bd0a8566676555e4aeb50aab8a16a799d2b019c438604c7e6602f3f90a25a50d"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "TC",
+      "degree": 4,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "T",
+        "C"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "TC",
+      "cover_exponents": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/TC.json",
+        "lf_sha256": "8264a52bca675c9c5db7704f8c4a2a9b1d8d4ad971d2618ecb70ea6709146abb"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "TS",
+      "degree": 7,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "T",
+        "S"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "TS",
+      "cover_exponents": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/TS.json",
+        "lf_sha256": "4d95c9c382fe27e60e0b1f55eadfe099e0d4f6bd36b28f4b55d2ebe45d04e8ec"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "CS",
+      "degree": 9,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "formal_factor_set": [
+        "C",
+        "S"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "CS",
+      "cover_exponents": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/CS.json",
+        "lf_sha256": "8c4e58555fcfdd2f3853ddae046790cbaf51b687c2bac5e91dc5bf62a31c42ff"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "RC",
+      "degree": 5,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "formal_factor_set": [
+        "C",
+        "R"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "RC",
+      "cover_exponents": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/RC.json",
+        "lf_sha256": "31a1304a0e8fd0bc054b7fb5fdb2005aa977c804782ed3e44ef65a31593ff356"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "RS",
+      "degree": 8,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "formal_factor_set": [
+        "S",
+        "R"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "RS",
+      "cover_exponents": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/RS.json",
+        "lf_sha256": "202b2c5b8f471d685e2a19cc07fec642f0a024de37dd4e7e7dc06e67e11f1d88"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "R4",
+      "degree": 8,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "formal_factor_set": [
+        "R"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E1",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "R4",
+      "cover_exponents": [
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/R4.json",
+        "lf_sha256": "b174817cc47e22f8d8b26c3458117e8f86db9018c315cd095a626641c9283dc9"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J2",
+      "degree": 6,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "formal_factor_set": [
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J2",
+      "cover_exponents": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J2.json",
+        "lf_sha256": "e56c902efbed8d97639d8560ad372ea610e570f63036ef6b00682de292fc5087"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J3",
+      "degree": 9,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "formal_factor_set": [
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J3",
+      "cover_exponents": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J3.json",
+        "lf_sha256": "8b28593dd0edabf12e9ebb5fa55ab0102255b61b650fdf09c3c7d1340c808d97"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J4",
+      "degree": 12,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "formal_factor_set": [
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J4",
+      "cover_exponents": [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J4.json",
+        "lf_sha256": "c329c8d0f5b2a41cbf8fe1c930ad679885615b69e9d093d86aef3b396f0fa230"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "JT2",
+      "degree": 5,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "formal_factor_set": [
+        "T",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "JT2",
+      "cover_exponents": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/JT2.json",
+        "lf_sha256": "c65f5fb64db6036813cb76636d17bed78ff1ac3eb3a848cf5e69fa0989a604b3"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "JTC",
+      "degree": 7,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "formal_factor_set": [
+        "T",
+        "C",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "JTC",
+      "cover_exponents": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/JTC.json",
+        "lf_sha256": "ae0314229a693e37568987d8977b1276f2351917ffcc765ba930591eff360817"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "JC2",
+      "degree": 9,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "formal_factor_set": [
+        "C",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "JC2",
+      "cover_exponents": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/JC2.json",
+        "lf_sha256": "4f10faa92c6daf823ae5b2d5a00203d2bab07cf19f9692463f4bc052e54d6f19"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "JS",
+      "degree": 9,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "formal_factor_set": [
+        "S",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "JS",
+      "cover_exponents": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/JS.json",
+        "lf_sha256": "39a5b1206c45429bac9d29b99345a9d9105ac451e6adc6911d712ab6768d124d"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "JR2",
+      "degree": 7,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "formal_factor_set": [
+        "R",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "JR2",
+      "cover_exponents": [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/JR2.json",
+        "lf_sha256": "0ddd74f5aaa3c110915d7b3a0ff936d8a3e5dd921c3674e07647857e502e87f4"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "JTS",
+      "degree": 10,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "formal_factor_set": [
+        "T",
+        "S",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "JTS",
+      "cover_exponents": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/JTS.json",
+        "lf_sha256": "0c891c4adc2d4f4e61fcf6485819dd9b5453823ec5c13c09163b7df76c4ecd3a"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J2T2",
+      "degree": 8,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "formal_factor_set": [
+        "T",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J2T2",
+      "cover_exponents": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J2T2.json",
+        "lf_sha256": "72cb614c271320bca4f23ec48709d2fd39f7612ec2816175fafdfc4de28172d2"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J2C2",
+      "degree": 12,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "formal_factor_set": [
+        "C",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J2C2",
+      "cover_exponents": [
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J2C2.json",
+        "lf_sha256": "49427186f4e24b16bbe9a9955c3fc61b27b26198c44d9ee605978764b5a9c7ae"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J2R",
+      "degree": 8,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "formal_factor_set": [
+        "R",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J2R",
+      "cover_exponents": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J2R.json",
+        "lf_sha256": "accd424c91741ba84833ee93d84dcc1e67b816ccbcd17bd5576bcb37b62adf9e"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J3T",
+      "degree": 10,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "formal_factor_set": [
+        "T",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J3T",
+      "cover_exponents": [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J3T.json",
+        "lf_sha256": "3935ec4546ca6b6735ba649c46da265dc4526c950bb15a43eff39769e050c1ac"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    },
+    {
+      "id": "J2S",
+      "degree": 12,
+      "factor_order": [
+        "T",
+        "C",
+        "S",
+        "R",
+        "J"
+      ],
+      "exponents": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "formal_factor_set": [
+        "S",
+        "J"
+      ],
+      "direct_status": "excluded",
+      "direct_stage": "E2_reflection_compact",
+      "current_status": "excluded_using_prescribed_support_theorem",
+      "cover_id": "J2S",
+      "cover_exponents": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "support_containment": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "same_support_reverse": {
+        "power_of_cover": 1,
+        "cofactor_exponents": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "prior_obstruction": {
+        "path": "results/cyclic-fano-branch-products/J2S.json",
+        "lf_sha256": "bba873c4195068d89e4696c94967c6ba92e58bf959556fc3d5b24f97f10f0633"
+      },
+      "conclusion": "No certificate with poles contained in this support; every positive power is excluded using the cited q=1 theorem."
+    }
+  ],
+  "theorem_url": "https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/docs/01-certificates.md#prescribed-support-and-pole-multiplicity",
+  "theorem_dependency": "Mathematical application of the repository prescribed-support theorem; not a machine-checked proof of that theorem.",
+  "historical_S2_timeout_seconds": 120.05562610000197,
+  "S_fixed_denominator_columns_replayed": 1185,
+  "formal_factor_set_count": 16,
+  "scope": [
+    "Formal factor labels are not irreducible factors; distinct label sets need not define distinct geometric supports.",
+    "Separate failures on two supports do not exclude their union.",
+    "No new degree12 dual, successful timed-out search, certificate, Lean proof, or solve is claimed.",
+    "The other 25 stored exclusions are bound and their candidate polynomials checked; their full dual checks are recorded in the unchanged prior validation packets."
+  ]
+}

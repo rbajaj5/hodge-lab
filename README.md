@@ -21,6 +21,28 @@ update. The ledger distinguishes notebook publication from upstream activity.
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
+## Visual notebook: cyclic Fano
+
+Click a figure to open its equations, reproducible code, checks, and limits.
+These pictures show actual calculations and failed candidates; the instance
+still has no certificate from this notebook.
+
+**Latest calculation — a 25-parameter denominator family.** Exact square
+identities remove the 20 off-diagonal entries of a direction matrix; cubic
+identities then remove its five diagonal entries. This excludes the
+degree-six linear-polar family with the full numerator correction space.
+
+[![The linear-polar coefficient map: 25 matrix parameters reduced to five diagonal entries and then zero](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars.png)](notes/cyclic-fano-linear-polars.md)
+
+[Inspect the full coefficient maps](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars-maps.png).
+
+| Reuse what the theorem already rules out | See the geometry behind a failed candidate |
+| --- | --- |
+| [![The 26 tested products grouped by formal factor labels, with direct exclusions distinguished from the support-theorem deduction for S squared](results/cyclic-fano-support-audit-figures/cyclic-fano-support-audit.png)](notes/cyclic-fano-support-audit.md) | [![The denominator curve before and after blowing up a transverse plane](results/cyclic-fano-blowup-audit-figures/cyclic-fano-blowup-audit.png)](notes/cyclic-fano-blowup-audit.md) |
+| **Support versus multiplicity.** The `q=1` theorem closes the `S²` timeout from the checked `S` obstruction. The failed run remains recorded. | **Blowup charts.** A pole order of five separates into one exceptional factor and four orders of contact. The pole persists. |
+| [![Exact deformation matrix of a complex rational curve on the weighted cyclic quotient](results/cyclic-fano-curve-figures/cyclic-fano-map.png)](notes/cyclic-fano-curve.md) | [![Higher local branch jets, two contacting branches, and nine rejected denominator guesses](results/cyclic-fano-higher-unfolding-figures/cyclic-fano-higher-unfolding.png)](notes/cyclic-fano-higher-unfolding.md) |
+| **A curve we can deform.** An exact rank-six matrix supplies a free rational curve on the quotient. A global support equation is still missing. | **Local branches to global guesses.** Higher jets suggest nine candidates; complete exact tests reject all nine. The displayed curves are leading-term approximations. |
+
 **Why read Yang?** The checked examples distinguish relations among equations
 from the graded images that force denominator coefficients to vanish.
 Equal Koszul H1 dimensions can accompany very different H0 dimensions;
@@ -68,9 +90,13 @@ the full Koszul correction and quotient spaces for the repaired candidates.
 [Local geometry and visualization](notes/cyclic-fano-higher-unfolding.md),
 [candidate tests, exact obstructions, and failures](notes/cyclic-fano-guided-denominators.md).
 
-The powers-and-products continuation excludes **25 of 26 specified
+The powers-and-products continuation directly excludes **25 of 26 specified
 denominators**, with degrees ranging from two to twelve. The degree-twelve
-square `S^2` remains unresolved after a 120-second search. A complete
+square `S^2` timed out after a 120-second search. A later
+[support audit](notes/cyclic-fano-support-audit.md) closes it using the exact
+`S` obstruction and the repository's prescribed-support theorem at `q=1`.
+All 26 are now covered with that theorem; the timeout remains recorded.
+Higher powers of each excluded support are also ruled out. A complete
 reflection reduction makes the larger tests smaller; the pure Jacobian
 powers `J^3` and `J^4` share the same 630-column system. These are selected
 products, not every denominator through degree twelve.
@@ -88,6 +114,12 @@ exact coefficient equations force all five direction parameters to vanish;
 the complete correction and quotient spaces cannot change those equations
 after reflection averaging. This excludes this degree-five family, not
 arbitrary degree-five denominators or products of polars.
+
+The [degree-six continuation](notes/cyclic-fano-linear-polars.md) lets the
+direction vary linearly as `v = M x`. Twenty exact square identities and
+five cubic identities exclude every nonzero matrix `M`, with all permitted
+corrections retained. This excludes that 25-parameter family; other
+degree-six denominators remain open.
 
 A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
 shows why a successful-looking curve slice can mislead: one polar's residual

@@ -1,5 +1,7 @@
 # Excluding every constant first polar of the branch sextic
 
+**Later scope clarification (17 October):** the [prescribed-support audit](cyclic-fano-support-audit.md) extends this result to every positive power of each fixed nonzero constant polar, using the repository's `q=1` theorem. The direct coefficient proof below is unchanged; products introducing new support and polynomial-direction polars still require separate work.
+
 For the unchanged `cyclic-triple-fano` target, the complete family
 
 $$

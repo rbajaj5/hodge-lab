@@ -1,5 +1,7 @@
 # Higher powers and products of the branch-inspired guesses
 
+**Later scope clarification (17 October):** the [prescribed-support audit](cyclic-fano-support-audit.md) excludes `S2` using the earlier exact `S` obstruction and the repository's `q=1` theorem. It also rules out further powers of each failed support. The direct-search results and timeout below are preserved as historical computations; no new degree-twelve dual was generated.
+
 This batch tests 26 specified products on the same protected `cyclic-triple-fano` instance. It follows the [nine fixed-denominator failures](cyclic-fano-guided-denominators.md) and the [higher local unfolding](cyclic-fano-higher-unfolding.md). Higher powers can admit additional numerator corrections, so the earlier failures are not silently propagated to them. The original $(F,q,A)$, with $q=1$, remains unchanged.
 
 **Result: 25 of the 26 fixed products are excluded exactly; one remains unresolved.** Eleven fail E1 and fourteen fail complete E2 tests. The degree-twelve candidate `S2` reached its 120-second limit without a completed obstruction or an E1-success checkpoint. No solution was found, and the timeout is not counted as a failure of that denominator.

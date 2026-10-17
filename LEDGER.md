@@ -1351,6 +1351,64 @@ conversations or evidence of an accepted solve.
     accompanies this checkpoint; the historical contribution tally stays
     **24**. [Compact public metadata receipt](results/discussion-watch/2026-10-17.json).
 
+71. **17 October 2026 — Apply the prescribed-support theorem before repeating power searches.**
+    The refreshed full discussions are unchanged since checkpoint 70.
+    Applied the reduced-support observation in fqlx / Ben Burns's holdout
+    continuation to the separate fixed cyclic-Fano target. The applicable
+    input is the repository's prescribed-support theorem at `q=1`, not
+    holdout's instance-specific lower bound. A complete fixed-denominator
+    failure therefore excludes every positive power and every certificate
+    with poles confined to that support.
+    Fresh independent reconstruction replays the earlier `S` obstruction
+    against all 1,185 numerator and quotient columns, including two mutation
+    controls. Two polynomial implementations verify that the previously
+    timed-out `S2` is exactly `S*S`. Thus the theorem closes that entry:
+    the original experiment remains 25 direct exclusions plus one timeout,
+    while theorem-assisted coverage is 26 of those 26 specified products.
+    The 120.0556-second timeout and original packets are preserved; no new
+    degree-twelve dual or completed degree-twelve search is claimed.
+    The same argument extends the complete constant-polar family exclusion
+    to all powers of each fixed polar. Separate failures do not automatically
+    exclude a union of supports. The checked exponent-containment records
+    use formal generator labels, without claiming irreducible factorization
+    or distinct geometric supports. The visualization shows both the direct
+    evidence and the theorem-dependent conclusions.
+    [Deduction, visualization, exact bindings, fresh replay and limits](notes/cyclic-fano-support-audit.md).
+    This corrects earlier wording that higher powers remained open. The
+    Hodge-filtration theorem is a cited mathematical input, not formalized
+    by the Python audit. No upstream comment, solve or Lean proof accompanies
+    this notebook continuation. The historical contribution tally stays 24.
+
+72. **17 October 2026 — Exclude every degree-six linear-direction polar and expand the front-page gallery.**
+    Tested the complete 25-parameter family `E_M = (M x) . grad(Delta)`
+    over the complex numbers. Each direction has an explicit first-equation
+    lift. Reflection projection retains ten correction constants from the
+    complete 85 Koszul fields; all 75 quotient directions remain allowed.
+    Exact coefficient identities force the twenty off-diagonal matrix
+    entries to vanish. Rebuilding leaves twelve necessary quadrics in five
+    diagonal entries. The degree-two attempt cannot isolate their squares;
+    linear polynomial multipliers produce five cubic identities that force
+    the remaining entries to vanish. An invertible 25-row minor rules out
+    a hidden nonzero parameter choice representing the zero denominator.
+    This excludes the entire stated family, including exceptional choices,
+    rather than a sampled list of matrices.
+    Primary replay passes 2,125 raw projection identities, 75 quotient
+    identities and nine mutation controls. Separate source reconstruction
+    additionally checks 1,875 Euler identities and 12,280 dual pairings,
+    verifies exact ranks 414, 52 and 35, and rejects eleven mutations.
+    The initial modular screen is recorded as discovery only. The initial
+    projection helper's inability to handle five valid cubic-in-Z quotient
+    images was caught and corrected before proof publication. The unsuccessful
+    diagonal square screen is retained alongside the successful cubic step.
+    [Exact proof, coefficient-map visualizations, attempts and reproduction](notes/cyclic-fano-linear-polars.md).
+    Added a prominent README gallery featuring this proof and the support
+    audit, normal-plane blowup, curve deformation map and higher branch jets,
+    each linked to its evidence and limitations. Detailed operator images
+    remain available at full resolution. Added a dedicated CI job for this
+    batch. No arbitrary-degree-six exclusion, certificate or Lean solve is
+    claimed. Upstream comments are held for a substantial batch; the
+    historical contribution tally remains 24.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
