@@ -31,7 +31,11 @@ def original():
 def source_hashes():
     paths = ['results/degree7-triples/certificates.json.gz',
              'algebra/degree7_e1_basis.json', 'sources/sextics/data/holdout/instance.rec']
-    return {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in paths}
+    # Git may check out instance.rec as CRLF on Windows. Preserve every byte
+    # except text line endings; the compressed upstream proof packet is binary.
+    return {p: hashlib.sha256((ROOT / p).read_bytes() if p.endswith('.gz') else
+                              (ROOT / p).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+            for p in paths}
 
 
 def mac_map(equations, ids, degree):

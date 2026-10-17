@@ -39,9 +39,9 @@ The earlier numerical searches can miss these exact polynomial consequences.
 Keep the pinned holdout target, `q = 1`, and the raw E1 basis unchanged.
 Write the denominator and its particular numerator lift as
 
-\[
+$$
 D(a)=\sum_i a_iD_i,\qquad N_a=\sum_i a_iN_i,\qquad N_a(F)=AD(a).
-\]
+$$
 
 The complete numerator correction uses the 840 cubic-coefficient Koszul
 fields. For each family, archived physical functionals annihilate every
@@ -55,10 +55,10 @@ satisfy. Their vanishing is not sufficient for a certificate.
 For `S = Q[a_i : i active]` and `I = (P_0,...,P_(m-1))`, the displayed
 degree-three map is
 
-\[
+$$
 M_3:\bigoplus_{j=0}^{m-1} S_1\longrightarrow S_3,
 \qquad (L_j)_j\longmapsto\sum_j L_jP_j.
-\]
+$$
 
 Its columns are all products `a_i P_j`. Its kernel consists of linear
 syzygies among these particular quadratic necessities. Its image is `I_3`;
@@ -186,6 +186,14 @@ not retroactively relabeled as searches of the smaller spaces.
 A preliminary chat update mistakenly counted seven first-stage vanishings.
 The checked count is six first-stage cubes plus five later squares: eleven
 family-coordinate zeros. The packet and figure use the corrected counts.
+
+The first Linux CI run stopped at a source-fingerprint comparison: the pinned
+`instance.rec` was checked out with CRLF on Windows and LF on Linux. Its bytes
+match Git exactly after CRLF-to-LF normalization. Text fingerprints now use
+LF line endings; binary proof packets are still hashed byte for byte. The
+source file, equations, multipliers, and rank claims are unchanged. Both
+local replays were rerun after this correction; the initial failure remains
+visible in [CI](https://github.com/rbajaj5/hodge-lab/actions/runs/39027567283).
 
 This extends our previous E1/physical-dual calculations, building on the
 repository authors' certificate framework, the bridge attributed there to

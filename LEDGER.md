@@ -483,6 +483,9 @@ conversations or evidence of an accepted solve.
     the static figure includes all families. All 111 browser layout/state
     checks pass. Recorded the standing visualization requirement in AGENTS.md.
     Corrected a preliminary chat miscount of seven initial vanishings to six.
+    The first Linux CI job stopped on a CRLF/LF target-file fingerprint;
+    normalized text hashing and replayed both checks without changing any
+    mathematical payload. The failed run remains linked in the note.
     No full resolution, phase transition, new family exclusion, or solve is
     claimed. [Result, visualizations, rationale, failures, and checks](notes/eisenbud-linear-strand.md).
 
