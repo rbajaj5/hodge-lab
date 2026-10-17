@@ -1,0 +1,77 @@
+<div id="family151-multipliers">
+  <h2>Cancel the shared numerator</h2>
+  <div class="viz-controls">
+    <label class="form-label">Equations<select class="form-select" data-case></select></label>
+    <label class="form-label">Exact relation<select class="form-select" data-example></select></label>
+    <label class="form-label">Coefficient to inspect<select class="form-select" data-monomial></select></label>
+  </div>
+  <div class="text-small tabular-nums" data-counts></div>
+  <svg class="cancellation-chart" role="img" aria-label="Exact equation contributions that cancel numerator coefficients or yield a denominator constraint"></svg>
+  <div class="tabular-nums" data-sum aria-live="polite"></div>
+  <div class="text-small" data-detail aria-live="polite"></div>
+  <div class="tooltip" role="tooltip" data-tip hidden></div>
+</div>
+<style>
+#family151-multipliers {position:relative;}
+#family151-multipliers .cancellation-chart {display:block;width:100%;overflow:visible;}
+#family151-multipliers .cancellation-chart text {fill:var(--foreground);font-size:12px;}
+#family151-multipliers .cancellation-chart .domain, #family151-multipliers .cancellation-chart .tick line {stroke:var(--border);}
+#family151-multipliers [data-tip] {position:absolute;pointer-events:none;background:var(--popover);color:var(--popover-foreground);max-width:220px;overflow-wrap:anywhere;}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(()=>{
+ const data=__DATA__,root=document.getElementById('family151-multipliers'),svg=d3.select(root.querySelector('svg'));
+ const controls=Object.fromEntries(['case','example','monomial'].map(k=>[k,root.querySelector('[data-'+k+']')]));
+ const tip=root.querySelector('[data-tip]');let state={case:'global',example:0,monomial:-1};
+ const number=s=>{const p=String(s).split('/');return Number(p[0])/(Number(p[1])||1);};
+ const options=(el,items,value)=>{el.replaceChildren(...items.map(([v,label])=>{const o=document.createElement('option');o.value=v;o.textContent=label;return o;}));el.value=String(value);};
+ function selection(){
+  const c=data.cases.find(c=>c.key===String(state.case))||data.cases[0];state.case=c.key;
+  state.example=Math.max(0,Math.min(c.examples.length-1,Number(state.example)||0));const ex=c.examples[state.example];
+  state.monomial=state.monomial<0||state.monomial>=ex.monomials.length?ex.defaultMonomial:Number(state.monomial);
+  return {c,ex,m:ex.monomials[state.monomial]};
+ }
+ function draw(){
+  const {c,ex,m}=selection();tip.hidden=true;
+  options(controls.case,data.cases.map(c=>[c.key,c.name+(c.completed?'':' · partial search')]),state.case);
+  options(controls.example,c.examples.map((e,i)=>[i,e.label]),state.example);
+  options(controls.monomial,ex.monomials.map((m,i)=>[i,m.label+(m.numerator?' · numerator':' · denominator')]),state.monomial);
+  root.querySelector('[data-counts]').textContent=c.newRelations+' additional relations · '+c.completedBlocks+'/'+c.requestedBlocks+' multiplier blocks completed · '+ex.products+' products in this identity';
+  const rows=m.rows.map(r=>({...r,value:number(r.exact)}));rows.push({label:'Sum',exact:m.sum,value:number(m.sum)});
+  const w=root.getBoundingClientRect().width,h=Math.max(300,rows.length*40+108),left=86,right=18,top=22,bottom=h-66;
+  svg.attr('viewBox',`0 0 ${w} ${h}`).attr('height',h);svg.selectAll('*').remove();
+  svg.append('title').text(m.label+': exact sum '+m.sum);
+  const extent=d3.extent([...rows.map(r=>r.value),0]),pad=(extent[1]-extent[0])*.12||1;
+  const x=d3.scaleLinear().domain([extent[0]-pad,extent[1]+pad]).range([left+4,w-right-4]);
+  const y=d3.scaleBand().domain(rows.map(r=>r.label)).range([top+4,bottom-4]).padding(.3);
+  svg.append('rect').attr('data-chart-frame','').attr('x',left).attr('y',top).attr('width',w-left-right).attr('height',bottom-top).attr('fill','none').attr('stroke','var(--border)');
+  svg.append('g').attr('transform',`translate(0,${bottom})`).call(d3.axisBottom(x).ticks(w<400?3:5).tickFormat(d3.format('.3~g')));
+  svg.append('g').attr('transform',`translate(${left},0)`).call(d3.axisLeft(y).tickSize(0));
+  svg.append('line').attr('x1',x(0)).attr('x2',x(0)).attr('y1',top).attr('y2',bottom).attr('stroke','var(--border)');
+  svg.selectAll('rect.contribution').data(rows).join('rect').attr('class','contribution').attr('x',d=>x(Math.min(0,d.value))).attr('y',d=>y(d.label))
+    .attr('width',d=>Math.abs(x(d.value)-x(0))).attr('height',y.bandwidth()).attr('fill',d=>d.label==='Sum'?'var(--viz-series-2)':'var(--viz-series-1)');
+  svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(left+w-right)/2).attr('y',h-16).attr('text-anchor','middle').text('Coefficient');
+  svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(16,${(top+bottom)/2}) rotate(-90)`).attr('text-anchor','middle').text('Equation contribution');
+  function inspect(event,d){
+   tip.textContent=d.label+': '+d.exact;tip.hidden=false;const b=root.getBoundingClientRect();
+   tip.style.left=Math.min(w-180,Math.max(0,event.clientX-b.left+10))+'px';tip.style.top=(event.clientY-b.top+14)+'px';
+   root.querySelector('[data-detail]').textContent=d.label+' contributes exactly '+d.exact+'.';
+  }
+  svg.selectAll('rect.hit').data(rows).join('rect').attr('class','hit').attr('data-chart-hit','').attr('x',left).attr('y',d=>y(d.label)-5)
+   .attr('width',w-left-right).attr('height',y.bandwidth()+10).attr('fill','transparent').on('pointermove',inspect).on('click',inspect).on('pointerleave',()=>tip.hidden=true);
+  root.querySelector('[data-sum]').textContent=m.label+' · exact sum = '+m.sum;
+  root.querySelector('[data-detail]').textContent=(m.numerator?'Shared numerator cancels.':'Denominator constraint survives.')+' The global small-block proof excludes family 151.';
+  for(const el of root.querySelectorAll('.tick text')){const b=el.getBoundingClientRect(),r=root.getBoundingClientRect();if(b.left<r.left||b.right>r.right)el.remove();}
+ }
+ for(const [key,el] of Object.entries(controls))el.addEventListener('change',()=>{
+  state[key]=key==='case'?el.value:Number(el.value);if(key==='case'){state.example=0;state.monomial=-1;}if(key==='example')state.monomial=-1;
+  draw();window.openai?.setWidgetState?.({modelContent:{...state},privateContent:null})?.catch(()=>{});
+ });
+ const restore=saved=>{if(saved?.modelContent){state={...state,...saved.modelContent};draw();}};
+ window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState)restore(e.detail.globals.widgetState);});
+ if(window.openai?.widgetState?.modelContent)state={...state,...window.openai.widgetState.modelContent};
+ root.multiplierSnapshot=()=>{const {c,ex,m}=selection();return {...state,newRelations:c.newRelations,sum:m.sum,numerator:m.numerator,products:ex.products};};
+ let observedWidth=0;new ResizeObserver(entries=>{const w=entries[0].contentRect.width;if(w!==observedWidth){observedWidth=w;draw();}}).observe(root);draw();
+})();
+</script>

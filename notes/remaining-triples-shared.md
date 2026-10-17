@@ -210,3 +210,7 @@ The next selected target is the rebuilt family 151. Polynomial multipliers
 that eliminate its shared numerator coefficients are a concrete next test;
 that follow-up has not been counted as completed. Larger character supports
 and higher denominator degrees remain outside this selected-family result.
+
+**Later follow-up:** the [polynomial-multiplier packet](family151-multipliers.md)
+completes this proposed test and excludes family 151. The failed searches
+reported above remain the outcomes of this earlier checkpoint.

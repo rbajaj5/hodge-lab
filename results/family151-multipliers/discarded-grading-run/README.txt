@@ -1,0 +1,1 @@
+The first block pilot called a quadratic-only strand constructor on mixed quadratic/cubic generators. It was stopped before using any output. Its degree labels/rank ratios are invalid and are not mathematical evidence. Retained files document the implementation mistake; the replacement uses degree-dependent multipliers and verifies homogeneous output degrees explicitly.

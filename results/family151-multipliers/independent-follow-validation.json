@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "checks": {
+    "correction_pairings": 19586,
+    "quadratic_pairings": 3257,
+    "physical_duals": 107,
+    "power_identities": 5,
+    "relation_products": 121496,
+    "chart_inferences": 53,
+    "power_or_constant_identities": 12
+  },
+  "cases": [
+    {
+      "raw_pivot": 115,
+      "completed": true,
+      "excluded": true,
+      "coordinate_zeros": [],
+      "completed_degrees": [
+        3,
+        4
+      ]
+    },
+    {
+      "raw_pivot": 234,
+      "completed": false,
+      "excluded": false,
+      "coordinate_zeros": [],
+      "completed_degrees": [
+        3
+      ]
+    },
+    {
+      "raw_pivot": 271,
+      "completed": true,
+      "excluded": true,
+      "coordinate_zeros": [],
+      "completed_degrees": [
+        3,
+        4
+      ]
+    },
+    {
+      "raw_pivot": 285,
+      "completed": true,
+      "excluded": false,
+      "coordinate_zeros": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "completed_degrees": [
+        3,
+        4
+      ]
+    },
+    {
+      "raw_pivot": 288,
+      "completed": true,
+      "excluded": false,
+      "coordinate_zeros": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "completed_degrees": [
+        3,
+        4
+      ]
+    }
+  ],
+  "seconds": 47.26753159999862,
+  "scope": "Verified consequences only; a failed bounded search is not a proof of consistency."
+}

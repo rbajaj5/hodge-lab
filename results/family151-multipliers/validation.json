@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "checks": {
+    "correction_pairings": 19586,
+    "quadratic_pairings": 3257,
+    "physical_duals": 107,
+    "power_identities": 5,
+    "equation_products": 298341,
+    "identities": 1652,
+    "mutations_rejected": 6
+  },
+  "cases": [
+    {
+      "raw_pivot": null,
+      "completed": true,
+      "completed_multiplier_blocks": 16,
+      "requested_multiplier_blocks": 16,
+      "constant_relations": 12,
+      "exported_relation_rank": 288,
+      "baseline_multiple_rank": 192,
+      "new_relation_rank": 96,
+      "combined_relation_rank": 288
+    },
+    {
+      "raw_pivot": 115,
+      "completed": true,
+      "completed_multiplier_blocks": 15,
+      "requested_multiplier_blocks": 15,
+      "constant_relations": 12,
+      "exported_relation_rank": 276,
+      "baseline_multiple_rank": 180,
+      "new_relation_rank": 96,
+      "combined_relation_rank": 276
+    },
+    {
+      "raw_pivot": 234,
+      "completed": true,
+      "completed_multiplier_blocks": 15,
+      "requested_multiplier_blocks": 15,
+      "constant_relations": 12,
+      "exported_relation_rank": 276,
+      "baseline_multiple_rank": 180,
+      "new_relation_rank": 96,
+      "combined_relation_rank": 276
+    },
+    {
+      "raw_pivot": 271,
+      "completed": true,
+      "completed_multiplier_blocks": 15,
+      "requested_multiplier_blocks": 15,
+      "constant_relations": 12,
+      "exported_relation_rank": 276,
+      "baseline_multiple_rank": 180,
+      "new_relation_rank": 96,
+      "combined_relation_rank": 276
+    },
+    {
+      "raw_pivot": 285,
+      "completed": false,
+      "completed_multiplier_blocks": 14,
+      "requested_multiplier_blocks": 15,
+      "constant_relations": 12,
+      "exported_relation_rank": 232,
+      "baseline_multiple_rank": 180,
+      "new_relation_rank": 64,
+      "combined_relation_rank": 244
+    },
+    {
+      "raw_pivot": 288,
+      "completed": false,
+      "completed_multiplier_blocks": 14,
+      "requested_multiplier_blocks": 15,
+      "constant_relations": 12,
+      "exported_relation_rank": 232,
+      "baseline_multiple_rank": 180,
+      "new_relation_rank": 64,
+      "combined_relation_rank": 244
+    }
+  ],
+  "source_sha256": "ddbf4fc73a0e95dc53726031d5b7ff3ff46b320093a55b960b1b33b43d70d801",
+  "seconds": 107.54292259999784,
+  "limits": "Exact identities and independence are replayed; expanded equation ranks and intermediate checkpoint counts are discovery telemetry. No completeness or family exclusion follows from a timeout."
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "family151_excluded": true,
+  "blocks": [
+    {
+      "character": [
+        0,
+        1,
+        0
+      ],
+      "raw_ids": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "equation_count": 13,
+      "ranks": [
+        21,
+        70
+      ],
+      "codomains": [
+        35,
+        70
+      ],
+      "zeros": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ]
+    },
+    {
+      "character": [
+        1,
+        2,
+        3
+      ],
+      "raw_ids": [
+        115,
+        234,
+        271,
+        285,
+        288
+      ],
+      "equation_count": 15,
+      "ranks": [
+        23,
+        70
+      ],
+      "codomains": [
+        35,
+        70
+      ],
+      "zeros": [
+        115,
+        234,
+        271,
+        285,
+        288
+      ]
+    },
+    {
+      "character": [
+        5,
+        3,
+        0
+      ],
+      "raw_ids": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "equation_count": 12,
+      "ranks": [
+        20,
+        67
+      ],
+      "codomains": [
+        35,
+        70
+      ],
+      "zeros": [
+        135,
+        272,
+        289
+      ]
+    }
+  ],
+  "residual_raw_ids": [
+    235,
+    293
+  ],
+  "checks": {
+    "correction_pairings": 19586,
+    "quadratic_pairings": 3257,
+    "physical_duals": 107,
+    "power_identities": 5,
+    "relation_products": 29777,
+    "graded_maps": 6,
+    "fourth_powers": 13,
+    "power_products": 862,
+    "mutations_rejected": 13,
+    "residual_inferences": 2
+  },
+  "seconds": 13.95201459999953,
+  "scope": "Family 151 only; combined with the preceding checked results, all 152 selected triples are excluded. Holdout remains unsolved."
+}

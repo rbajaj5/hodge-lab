@@ -3,6 +3,24 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  family151-multipliers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/check_family151_multipliers.py
+      - run: python -S experiments/check_family151_multipliers.py --independent
+      - run: python -S experiments/family151_cubic_blocks.py --check
+      - run: python -S experiments/family151_cubic_blocks.py --check --independent
+      - run: python -S experiments/check_family151_multipliers.py --follow
+      - run: python -S experiments/check_family151_multipliers.py --follow --independent
+      - run: python -S experiments/plot_family151_multipliers.py --check
   remaining-triples:
     runs-on: ubuntu-latest
     timeout-minutes: 10

@@ -580,6 +580,22 @@ conversations or evidence of an accepted solve.
     commit. Its receipt is retained; other workflow jobs were still running
     when that receipt was recorded.
 
+40. **17 October 2026 — Polynomial multipliers close family 151.**
+    Rebuilt the shared equations after the checked linear constraint and
+    searched global and normalized-chart multipliers of degree at most one.
+    The global calculation supplies 96 cubic relations independent of linear
+    multiples of the twelve old quadratics. Inspection revealed small pure
+    character blocks. Their quartic maps force thirteen coordinate powers;
+    two direct residual charts complete the exclusion. All 152 selected
+    triples are now excluded, without a holdout solution or unrestricted
+    three-character theorem. Both physical polynomial implementations pass
+    the exclusion replay, and thirteen altered power witnesses are rejected.
+    Retained unsuccessful degree-three searches, bounded chart timeouts,
+    and an invalid mixed-degree pilot that was stopped and replaced with
+    correctly graded maps. The visualization exposes actual numerator
+    cancellation and the small-block proof; no phase transition or full
+    resolution is claimed. [Proof, visual record, checks, and failures](notes/family151-multipliers.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

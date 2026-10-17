@@ -10,14 +10,20 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** keeping the shared numerator coefficients and
-rebuilding closes **family 17**, bringing selected coverage to **151/152**.
-A normalized-chart contradiction removes one coordinate; five sixth-power
-identities remove the remaining X0 component, and fqlx's residual-pair proof
-is replayed. **Family 151 remains open**, with one new exact linear reduction.
-[Proof, before/after visualizations, and failures](notes/remaining-triples-shared.md).
+**Latest exact result:** polynomial multipliers close **family 151**,
+bringing selected coverage to **152/152 triples excluded**. The rebuilt
+shared-numerator equations yield 96 additional cubic constraints. Three
+small blocks force thirteen fourth powers to vanish, and two residual
+charts contradict. Both physical polynomial implementations replay the
+proof. Other triple supports, larger supports, and higher degrees remain
+open; holdout is unsolved.
+[Proof, cancellation visualization, and failed attempts](notes/family151-multipliers.md).
 
-![Rebuild after a shared-numerator constraint](results/remaining-triples-shared/remaining-triples.png)
+![Polynomial multipliers finish the selected triple scan](results/family151-multipliers/family151-multipliers.png)
+
+The [preceding shared-numerator batch](notes/remaining-triples-shared.md)
+closed family 17 and supplied the linear constraint used to rebuild 151,
+giving 151/152 at that checkpoint.
 
 The [eleven-family quartic batch](notes/eleven-quartic.md) closed families
 1, 2, 4, 5, 7, 9, 15, 39, and 150, giving 150/152 at that checkpoint.
