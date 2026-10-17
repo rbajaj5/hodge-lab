@@ -3,6 +3,26 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  eisenbud-quartic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/quartic_pure_blocks.py --check
+      - run: python -S experiments/check_quartic_exclusions.py
+      - run: python -S experiments/check_quartic_exclusions.py --independent
+      - run: |
+          for family in 6 8 10 149 152; do
+            python -S experiments/eisenbud_quartic_strand.py --family "$family" --check
+          done
+      - run: python -S experiments/quartic_auxiliary.py
+      - run: python -S experiments/plot_quartic_strand.py --check
   eisenbud-strand:
     runs-on: ubuntu-latest
     timeout-minutes: 5

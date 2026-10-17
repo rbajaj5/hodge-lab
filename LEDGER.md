@@ -496,6 +496,28 @@ conversations or evidence of an accepted solve.
     The corrected Linux `eisenbud-strand` job subsequently passed both exact
     replays and the visualization-data check at the linked publication commit.
 
+37. **17 October 2026 — Degree-four blocks close five selected triples.**
+    Tested families 6, 8, 10, 149, and 152 after the preceding reductions.
+    Full degree-four maps found thirty family-coordinate fourth-power
+    identities; inspection reduced their proof to six blocks of six
+    quadratics in five variables. Each block has ranks 6, 30, and 70 in
+    degrees two, three, and four, with a full quartic image. Replayed the
+    original physical necessities, inherited zeros, and all residual pair
+    and single-character proofs using two polynomial constructions. All
+    five complete triples are excluded, increasing selected coverage to
+    141/152. Eleven selected triples and holdout remain unresolved.
+    Retained the 300-second family-8 timeout, its completed 600-second-bound
+    sparse-order retry, an invertible equation-basis experiment that did not
+    improve the observed runtime, and the failed necessary-ideal search
+    through degree four on Y0/Y1. Its shared-numerator closure reproduces
+    fqlx's earlier pair result and is credited as a dependency.
+    Added a scientific figure and an interactive view of forty exact
+    identities; all 120 browser layouts pass. A presentation-test assumption
+    about monomial ordering was corrected and is recorded. The small-block
+    proof emerged after the larger calculations; no universal block theorem
+    or phase transition is claimed. No Lean proof or accepted solve.
+    [Proof, rationale, visualizations, checks, and unsuccessful attempts](notes/eisenbud-quartic-strand.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

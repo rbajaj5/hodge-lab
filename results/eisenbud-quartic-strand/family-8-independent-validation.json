@@ -1,0 +1,58 @@
+{
+  "number": 8,
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "physical_checks": {
+    "correction_pairings": 19136,
+    "quadratic_pairings": 6131,
+    "physical_duals": 209
+  },
+  "variables": 16,
+  "quadratics": 45,
+  "quartic": {
+    "domain": 6120,
+    "codomain": 3876,
+    "rank": 3741,
+    "kernel": 2379,
+    "quotient_dimension": 135
+  },
+  "layers": {
+    "linear_multiple_generators": 1760,
+    "linear_multiple_rank": 1474,
+    "koszul_boundary_dimension": 990,
+    "linear_plus_koszul_rank": 2048,
+    "quadratic_minimal_generators": 905,
+    "new_beyond_linear_and_koszul": 331,
+    "koszul_H1_degree4": 1389
+  },
+  "forced_zero": [
+    130,
+    136,
+    233,
+    236,
+    253,
+    267,
+    270,
+    273,
+    290,
+    294
+  ],
+  "remaining": [
+    115,
+    133,
+    234,
+    271,
+    285,
+    288
+  ],
+  "remaining_characters": [
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "corrupted_identity_rejected": true,
+  "seconds": 82.58635759999925,
+  "source_sha256": "6fb3224ef9ad6dbb7a726d56b9c53ffa39ecdd10f2ba58fba320e7c521ad37b7"
+}

@@ -10,8 +10,17 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Parameter optimization:** two L-BFGS-B starts in each of the 16 remaining
-selected triple spans beat an equal-evaluation uniform-random comparator on
+**Latest exact result:** degree four closes five more selected triples
+(families 6, 8, 10, 149, and 152), bringing coverage to **141/152**.
+Six small blocks of six quadratics in five variables force thirty
+family-coordinate zeros. The residual pair/single-character proofs are
+replayed explicitly. Eleven selected triples remain open.
+[Proof, visualizations, and retained failures](notes/eisenbud-quartic-strand.md).
+
+![Degree-four maps and five complete family exclusions](results/eisenbud-quartic-strand/quartic-strand.png)
+
+**Earlier parameter optimization:** two L-BFGS-B starts in each of the 16
+then-remaining selected triple spans beat an equal-evaluation uniform-random comparator on
 the numerical score (median reduction 91.9%). All 32 rounded finalists fail
 exact checks; ten optimized winners round into previously excluded one- or
 two-character sectors. [Search history, visualization, checks, and limits](notes/koszul-parameter-optimization.md).
@@ -38,16 +47,16 @@ closes one chart; its forced zero closes the other. The two larger families
 remained unresolved at that checkpoint, with checked conditional progress and ten timed-out
 searches retained. [Proof, visualization, and failed attempts](notes/syzygy-rebuild.md).
 
-**Latest Koszul continuation:** families 16 and 137 are now excluded, completing
+**Earlier Koszul continuation:** families 16 and 137 are now excluded, completing
 **136/136 fixed-pair extensions** (136/152 in the original combined selection).
 Two-row square identities force global linear vanishings; rebuilding the
 Koszul correction equations then closes all ten third-component charts.
-Sixteen other selected triples remain open. [Exact proof, dependencies,
+Sixteen other selected triples remained open at that checkpoint. [Exact proof, dependencies,
 and retained failed searches](notes/koszul-rank-continuation.md).
 
 **Eisenbud follow-up:** degree-three maps of the necessary ideals force
 eleven family-specific coordinate zeros in five of those sixteen triples.
-All sixteen remain unresolved. The [new calculation and cancellation explorer](notes/eisenbud-linear-strand.md)
+All sixteen remained unresolved at that checkpoint. The [calculation and cancellation explorer](notes/eisenbud-linear-strand.md)
 show the actual polynomial identities, 1,149 checked relation vectors, and
 where the bounded search fails. Every substantive research batch now includes
 a reproducible internal visualization and a ledger entry.

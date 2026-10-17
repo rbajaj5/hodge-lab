@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "families": [
+    {
+      "number": 6,
+      "excluded": true,
+      "quartic_zeros": [
+        136,
+        236,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        115,
+        123,
+        133,
+        180,
+        210,
+        229,
+        232,
+        234,
+        271,
+        285,
+        288
+      ],
+      "remaining_characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "closure": {
+        "kind": "previous_Y0_X1_pair",
+        "pair_inferences": 196,
+        "single_character": {
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "charts": 7,
+          "inferences": 22
+        }
+      }
+    },
+    {
+      "number": 8,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        136,
+        233,
+        236,
+        253,
+        267,
+        270,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        115,
+        133,
+        234,
+        271,
+        285,
+        288
+      ],
+      "remaining_characters": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "closure": {
+        "kind": "single_character",
+        "proof": {
+          "character": [
+            1,
+            2,
+            3
+          ],
+          "charts": 7,
+          "inferences": 52
+        }
+      }
+    },
+    {
+      "number": 10,
+      "excluded": true,
+      "quartic_zeros": [
+        136,
+        236,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        115,
+        133,
+        135,
+        234,
+        235,
+        271,
+        272,
+        285,
+        288,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "replayed_Y0_Y1_pair",
+        "forced_in_pair": [
+          115,
+          133,
+          234,
+          271,
+          285,
+          288
+        ],
+        "chart_inferences": 340,
+        "single_character": {
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "charts": 7,
+          "inferences": 42
+        }
+      }
+    },
+    {
+      "number": 149,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        233,
+        253,
+        267,
+        270
+      ],
+      "remaining_after_quartics": [
+        115,
+        123,
+        133,
+        180,
+        210,
+        229,
+        232,
+        234,
+        271,
+        285,
+        288
+      ],
+      "remaining_characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "closure": {
+        "kind": "previous_Y0_X1_pair",
+        "pair_inferences": 196,
+        "single_character": {
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "charts": 7,
+          "inferences": 22
+        }
+      }
+    },
+    {
+      "number": 152,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        233,
+        253,
+        267,
+        270
+      ],
+      "remaining_after_quartics": [
+        115,
+        133,
+        135,
+        234,
+        235,
+        271,
+        272,
+        285,
+        288,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "replayed_Y0_Y1_pair",
+        "forced_in_pair": [
+          115,
+          133,
+          234,
+          271,
+          285,
+          288
+        ],
+        "chart_inferences": 340,
+        "single_character": {
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "charts": 7,
+          "inferences": 42
+        }
+      }
+    }
+  ],
+  "checks": {
+    "correction_pairings": 104430,
+    "quadratic_pairings": 26017,
+    "physical_duals": 881,
+    "power_identities": 8,
+    "inherited_power_identities": 16,
+    "quartic_power_identities": 30
+  },
+  "source_sha256": "6fb3224ef9ad6dbb7a726d56b9c53ffa39ecdd10f2ba58fba320e7c521ad37b7",
+  "seconds": 7.951245799999015,
+  "scope": "Five complete selected triple families modulo the established F*S1 gauge; holdout remains unsolved."
+}
