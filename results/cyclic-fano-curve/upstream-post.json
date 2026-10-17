@@ -1,0 +1,42 @@
+{
+  "schema": "hodge-lab-upstream-post-v1",
+  "instance": "cyclic-triple-fano",
+  "proof_commit": "d846f781066534411c8ed7398430b2ff68f810e6",
+  "comment": {
+    "id": "DC_kwDOVLOOJc4BIfTt",
+    "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605",
+    "body": "**Exact geometric partial result for `cyclic-triple-fano` (#112): a free curve and a local covering family on its weighted quotient.** This concerns only this new target. Its fixed $(F,q,A)$ and all existing upstream files remain unchanged at `d96911d725077e66a8f10848908be01a643b1714`.\n\nPut $Z=X_2^3$. The quotient $W$ lies in weighted projective space with coordinates $(X_0,X_1,Z,Y_0,Y_1,Y_2)$ and weights $(1,1,3,1,1,1)$. Over $\\mathbb Q(i)$ the curve\n\n$$\n\\phi([s:t])=[0:s:0:is:t:it]\n$$\n\nlies on $W$. The fixed coordinates $X_1=s$, $Y_1=t$ have no common projective zero. Two partial derivatives along the curve are $6s^5$ and $6t^5$, so the curve lies in the smooth locus and avoids the weighted ambient vertex.\n\n**Freeness, checked exactly.** The twisted Euler and hypersurface normal sequences give the coefficient map\n\n$$\nM\\colon H^0(\\mathcal O^5\\oplus\\mathcal O(2))\n\\longrightarrow H^0(\\mathcal O(5)).\n$$\n\nThis is an explicit $6\\times8$ matrix. A six-column minor is $-22500/2401$. Declaring the recorded monomial bases orthonormal gives\n\n$$\n\\begin{gathered}\nH=MM^*,\\qquad \\lambda=25/49,\\\\\nH=\\operatorname{diag}(72,\\lambda,\\lambda,\\lambda,\\lambda,72).\n\\end{gathered}\n$$\n\nThe packet verifies the spectral projectors and the right inverse $R=M^*H^{-1}$, with $MR=I_6$. Surjectivity gives $H^1(\\phi^*T_W(-1))=0$, hence freeness by splitting on $\\mathbb P^1$. This is a curve on the **quotient**; no freeness upstairs is asserted.\n\n**An explicit three-parameter family.** Keep $X_1=s,Y_1=t$ and set\n\n$$\n\\begin{aligned}\nX_0&=as+bt,\\\\\nY_0&=ys+ct,\\\\\nY_2&=ds+et,\\\\\nZ&=fs^3+gs^2t+hst^2+jt^3.\n\\end{aligned}\n$$\n\nHere $c$ is a curve parameter; the sextic's coupling remains $5/7$. Substitution gives seven polynomial coefficient equations. At $y=e=i$ with every other coefficient zero, their Jacobian in $(y,d,e,f,g,h,j)$ has determinant $-135000i/2401$. Thus $(a,b,c)$ are local etale coordinates on a smooth three-dimensional incidence component, not a claimed rational parametrization.\n\nThe packet gives three tangent directions. Together with the marked-point parameter at $s=t=1$, their evaluation derivative has a $4\\times4$ minor equal to **one**. Therefore, after restricting to a smooth affine open $S$, evaluation from $\\mathbb P^1\\times S$ to $W$ is dominant and generically finite. This supplies explicit data for the support construction in [the repository's geometric framework, Section 3.2](https://github.com/hodge-computer/sextics/blob/d96911d725077e66a8f10848908be01a643b1714/docs/03-geometric-support.md#32-a-family-of-rational-curves-computes-a-support).\n\n**Visual record and reproduction.** [Full argument, exact matrices, source bindings, three figures, and code in Hodge Lab](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/notes/cyclic-fano-curve.md). The figure below displays the actual deformation map; it is a complex-curve schematic, not a real surface rendering.\n\n![cyclic-triple-fano: quotient curve and exact deformation map](https://raw.githubusercontent.com/rbajaj5/hodge-lab/d846f781066534411c8ed7398430b2ff68f810e6/results/cyclic-fano-curve-figures/cyclic-fano-map.png)\n\n[Open the figure](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/results/cyclic-fano-curve-figures/cyclic-fano-map.png) (the hodge.computer discussion view presents images as links).\n\nFrom that Hodge Lab commit, with Python 3.11, SymPy and Matplotlib:\n\n```sh\npython experiments/cyclic_fano_curve.py verify\npython experiments/check_cyclic_fano_curve.py work/cyclic-independent.json\npython experiments/plot_cyclic_fano_curve.py\n```\n\nAll pass locally in exact arithmetic over $\\mathbb Q(i)$. The separate checker reconstructs the equations and verifies smooth reduction at five; the two implementations reject ten and six altered witnesses, respectively. Figure generation checks its source bindings and operator identities.\n\n**Limits and credit.** Geometric existence was already established in the upstream weighted-Fano framework. The new contribution is explicit curve/family data. The initial curve has zero density $b=X_0Y_0^3/3$; its $a$ deformation has $\\delta b=-is^4/3$, but this is not a Gysin-image computation. Boundary, branch and exceptional-image elimination, a supporting divisor, and a certificate remain unconstructed. A rank-two comparison in the notebook varies the sextic's coupling to zero: it is a failed freeness test for that auxiliary curve, not an obstruction for this fixed target. No Lean proof or solve PR is submitted.\n\nThis builds on the repository authors' support framework, its bridge attributed to Benjamin E. Diamond and Griffiths's residue theory, and classical rational-curve deformation theory. Bourbaki's *Theories spectrales*, Chapter I, supplies the spectral-projector and positivity viewpoint used on the actual matrix. Prepared for `rbajaj5` with OpenAI Codex assistance, including separate construction, reconstruction and visualization agents; this is not independent human review.\n",
+    "createdAt": "2026-10-17T18:31:44Z",
+    "updatedAt": "2026-10-17T18:31:44Z",
+    "author": {
+      "login": "rbajaj5"
+    },
+    "replyTo": null,
+    "discussion": {
+      "number": 112
+    }
+  },
+  "body_sha256": "dcc0659f734153117c1cc6e3a02e8911ce01f9d4d8b603786ab6a42746b428eb",
+  "body_characters": 5002,
+  "readback": {
+    "author_body_url_thread_and_parent_match": true,
+    "source": "separate GitHub GraphQL read before stand-down"
+  },
+  "preview": {
+    "site_renderer_upstream_commit": "d96911d725077e66a8f10848908be01a643b1714",
+    "github_markdown_api_and_local_katex": "37 math expressions and four display equations rendered",
+    "narrow_content_width_pixels": 360,
+    "site_formula_fix_before_posting": "M: replaced with M\\colon",
+    "live_github_finding": "Gram display rejected operatorname; local preview had not detected this restriction",
+    "upstream_formatting_corrected": false,
+    "internal_note_correction": "Use \\mathrm{diag}"
+  },
+  "publication_pause": {
+    "recorded_at_utc": "2026-10-17T18:33:01Z",
+    "instruction": "Further changes only in Hodge Lab; no upstream posts or edits",
+    "post_preceded_instruction": true
+  },
+  "certificate_found": false,
+  "lean_proof_submitted": false,
+  "accepted_solve": false
+}

@@ -3,6 +3,14 @@
 This repository records the motivation, experiments, and contributions to
 hodge-computer/sextics. Keep its fixed targets and existing upstream files intact.
 
+## Publication pause — 17 October 2026
+
+The user has directed further work to this notebook only. Do not create or
+edit upstream discussion comments, issues, pull requests, or submissions,
+including formatting-only changes, unless the user explicitly lifts this
+pause. Continue recording results, visualizations, failures, and corrections
+in Hodge Lab. This supersedes earlier requests to share useful results upstream.
+
 For every substantive research batch, include a reproducible internal
 visualization and link it from the result note and LEDGER.md. Prefer actual
 operators, equations, parameter histories, and proof dependencies over generic

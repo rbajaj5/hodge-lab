@@ -109,7 +109,7 @@ evaluation map checked below.
 Declare the displayed coefficient bases orthonormal. For real $c$,
 
 $$
-H_c=M_cM_c^*=\operatorname{diag}(72,c^2,c^2,c^2,c^2,72).
+H_c=M_cM_c^*=\mathrm{diag}(72,c^2,c^2,c^2,c^2,72).
 $$
 
 At the protected target, the spectrum is $\lambda=25/49$ with multiplicity
@@ -266,10 +266,21 @@ Final local checks pass: the primary verifier rejects ten altered witnesses,
 the separate reconstruction rejects six, and figure generation validates its
 input hashes and exact identities. The discussion draft was checked with
 GitHub's Markdown API and the pinned website renderer, including a
-360-pixel-wide content layout. All 37 math expressions, including four
-display equations, render. A literal `M:` caused the website sanitizer to
-drop one formula; the equivalent `M\colon` avoids that issue. Images are
-embedded on GitHub and linked by the website renderer.
+360-pixel-wide content layout. A literal `M:` caused the website sanitizer to
+drop one formula; the equivalent `M\colon` avoids that issue. All 37 math
+expressions, including four display equations, rendered in the local previews.
+However, the subsequent live GitHub inspection rejected `\operatorname` in
+the Gram display. The Markdown API plus local KaTeX preview did not catch
+that live-renderer restriction. This notebook now uses `\mathrm{diag}`.
+Images are embedded on GitHub and linked by the website renderer.
+
+The result was shared in [discussion #112](https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605)
+at 18:31:44 UTC on 17 October 2026, before the user's instruction to stop
+upstream activity. That instruction now applies to all upstream posts and
+edits. The live-comment formatting issue is recorded here and remains
+uncorrected upstream; no further upstream action is taken. The checked
+mathematical data are unaffected. Further work and corrections stay in
+this notebook until the user explicitly changes that direction.
 
 - [Exact packet](../results/cyclic-fano-curve/cyclic-free-curve.json)
 - [Primary checks](../results/cyclic-fano-curve/validation.json)
