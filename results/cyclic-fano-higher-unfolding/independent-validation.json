@@ -1,0 +1,599 @@
+{
+  "schema": "cyclic-fano-higher-unfolding-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "0834ee7eb73876308e3f9eea625bb423da4642fe24ac308bc5df91b1810f5939",
+  "independent_arithmetic_dependency_lf_sha256": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "axes": [
+    {
+      "parameter_direction": "X0",
+      "packet_lf_sha256": "4f2544a4fc4e997f77dd6ab71f28ea6be8960374cf9ddb57305d82e942635d58",
+      "jet_order": 12,
+      "all_seven_physical_incidence_equations_zero": true,
+      "constant_implicit_jacobian_determinant": [
+        "-135000/2401",
+        "0"
+      ],
+      "jet_uniqueness": "The nonsingular constant7x7 Jacobian and exact truncated substitution identify the unique implicit formal solution through this order.",
+      "inflection_center": [
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            6,
+            0
+          ],
+          "coefficient": [
+            "-15975/461006",
+            "985/32929"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            7,
+            0
+          ],
+          "coefficient": [
+            "17324137/101882326",
+            "-1746945/101882326"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            8,
+            0
+          ],
+          "coefficient": [
+            "-704508444/11257997023",
+            "-651873121079/1013219732070"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            9,
+            0
+          ],
+          "coefficient": [
+            "-1351263107423459/373202601312450",
+            "72838300498882/22392156078747"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            10,
+            0
+          ],
+          "coefficient": [
+            "786640466986252679/27492591630017150",
+            "2610300667908531493/176738089050110250"
+          ]
+        }
+      ],
+      "center_valid_order": 10,
+      "center_height": [],
+      "height_valid_order": 12,
+      "centered_linear": [],
+      "linear_valid_order": 11,
+      "centered_cubic": [
+        {
+          "powers": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "5/6",
+            "8/35"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-97/50",
+            "-1199/105"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-2411/25",
+            "55884/875"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "1623419/1875",
+            "482022/875"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "942191/750",
+            "-110834356/13125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": [
+            "-7184592736/109375",
+            "111910548/6125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            6,
+            0
+          ],
+          "coefficient": [
+            "101979144827712011/302535187500",
+            "88209619452762973/216096562500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            7,
+            0
+          ],
+          "coefficient": [
+            "999080426979080487089/557168970312500",
+            "-3615583764129212436077/1002904146562500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            8,
+            0
+          ],
+          "coefficient": [
+            "-100133639657592478887343691/3324627245854687500",
+            "-2370258794282164075103833/1847015136585937500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            9,
+            0
+          ],
+          "coefficient": [
+            "301013779650188879081421942817/3673713106669429687500",
+            "38080491955844657362697701933/183685655333471484375"
+          ]
+        }
+      ],
+      "cubic_valid_order": 9,
+      "precision_argument": "If the true inflection center differs by O(U^(n-1)), stationarity of Hb makes its centered value accurate through n-1. Since H has no terms below degree3, Hb at the center is O(U^2), so the height error begins at n+1. Three derivatives of H give its cubic coefficient only through n-3.",
+      "negative_controls_rejected": 3,
+      "conclusion": "Centered height vanishes through12 and linear coefficient through11. These finite vanishings do not establish exact persistent ramification or a branch/support equation."
+    },
+    {
+      "parameter_direction": "Y0",
+      "packet_lf_sha256": "dd009d127c0999c95511bd8b0b676a818300a04af6aaca0d5e72b12d0d4f05da",
+      "jet_order": 8,
+      "all_seven_physical_incidence_equations_zero": true,
+      "constant_implicit_jacobian_determinant": [
+        "-135000/2401",
+        "0"
+      ],
+      "jet_uniqueness": "The nonsingular constant7x7 Jacobian and exact truncated substitution identify the unique implicit formal solution through this order.",
+      "inflection_center": [
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-13790/98787",
+            "-5325/32929"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-196494146036606/107116625103267",
+            "2528880652452121/1606749376549005"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "203619098608876919022632932943/5488021170786939721978245750",
+            "8500066646379162203538275813/235200907319440273799067675"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "27747038630905922611654228428531723451841/26778446338029262625971161245260465875",
+            "-98583225507145021527962307769567904147213/89261487793430875419903870817534886250"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": [
+            "-11944953873486477952266599038759549337905083255156446371/326659266593120833655964651620068434218923791093750",
+            "-10345845715670101594207607759954906163125151186807736009/304881982153579444745567008178730538604328871687500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            6,
+            0
+          ],
+          "coefficient": [
+            "-2477233071824166189380020337813716829063697124843854575134975649527/2066183365668427364023910670685001588855371003730012823046875",
+            "1449636930062622053254730833989469568759668539259005329831046798227477/1115739017460950776572911762169900857981900342014206924445312500"
+          ]
+        }
+      ],
+      "center_valid_order": 6,
+      "center_height": [
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "3866303375/1229617792494",
+            "-341757500/29276614107"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "-274010723647681991575/666648992776815539127",
+            "-220744115166014715055/1999946978330446617381"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": [
+            "-102184032873796958480800748873621/32528708843911764858903897774315",
+            "7822902569839255253449567420452473/546482308577717649629585482608492"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            6,
+            0
+          ],
+          "coefficient": [
+            "13908893557753902866242592789964283219047558217/26665252774220559411680676107830300075327740",
+            "5528453403691553929586753494568055218738124889/55552609946292832107668075224646458490266125"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            7,
+            0
+          ],
+          "coefficient": [
+            "781965814815167080348054779949773062722941163508008499140271/227694925364802733717087279959359038101320122030291552500",
+            "-35634365143878566223566953077967730686826055941560927014391/1807102582260339156484819682217135223026350174843583750"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            8,
+            0
+          ],
+          "coefficient": [
+            "-3158521962257405060355989168372168807736221934571934352280699325653949663/4114899051868824589638174078647178519478431592564811819286685875000",
+            "-860022689479232335589154114480333300553330524223620861351231949208419343/6858165086448040982730290131078630865797385987608019698811143125000"
+          ]
+        }
+      ],
+      "height_valid_order": 8,
+      "centered_linear": [
+        {
+          "powers": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": [
+            "28225/592722",
+            "4955/461006"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "2407305488282933/9640496259294030",
+            "-44613400996335191/40490084289034926"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "-315706122277234749620816946149/9219875566922058732923452860",
+            "-86164164579851492155368571363/19756876214832982999121684700"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": [
+            "-5812308210745672110740469494644390637055473/56234737309861451514539438615046978337500",
+            "615542433160819745990299028498996114445331/535568926760585252519423224905209317500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            6,
+            0
+          ],
+          "coefficient": [
+            "676761717075443574057595445382669363582857322037718135873/16463627036293290016260618441651449084633759071125000",
+            "69945868092012813113988766090999313422196321188436628122/24009456094594381273713401894075029915090898645390625"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            7,
+            0
+          ],
+          "coefficient": [
+            "178210008410873108620235979776111395480047542259687438842026833679544/1952543280556663859002595583797326501468325598524862117779296875",
+            "-14413474264818466673577895498280542509774117184084235866248635666792797/9372207746671986523212458802227167207047962872919338165340625000"
+          ]
+        }
+      ],
+      "linear_valid_order": 7,
+      "centered_cubic": [
+        {
+          "powers": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "5/6",
+            "8/35"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": [
+            "-7409684/3457545",
+            "2701411/4149054"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": [
+            "-40912426246550202563/472384316705407470",
+            "-1101160160728590170497/10122521072258731500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0
+          ],
+          "coefficient": [
+            "-32113117467962245900325563612503263/17287266687978860124231474112500",
+            "227847434975508684953969071547831/115248444586525734161543160750"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0
+          ],
+          "coefficient": [
+            "3993420085815467214222295789758695739583242139/67481684771833741817447326338056374005000",
+            "139751609421346998995973105587065462493681418251/1968215805845150803008880351526644241812500"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": [
+            "109907364411015864879141627545905963437831240152548743182171/44461955730730335692061855359398203546464627121093750",
+            "-388399800879441330301741326391525190393295690683188663386461/192075648756755050189707215152600239320727189163125000"
+          ]
+        }
+      ],
+      "cubic_valid_order": 5,
+      "precision_argument": "If the true inflection center differs by O(U^(n-1)), stationarity of Hb makes its centered value accurate through n-1. Since H has no terms below degree3, Hb at the center is O(U^2), so the height error begins at n+1. Three derivatives of H give its cubic coefficient only through n-3.",
+      "negative_controls_rejected": 3,
+      "leading_cubic": {
+        "H3": [
+          {
+            "powers": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": [
+              "0",
+              "5/42"
+            ]
+          },
+          {
+            "powers": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "5/21",
+              "1/2"
+            ]
+          },
+          {
+            "powers": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": [
+              "5/6",
+              "8/35"
+            ]
+          }
+        ],
+        "a": [
+          "5/6",
+          "8/35"
+        ],
+        "centering_slope": [
+          "-13790/98787",
+          "-5325/32929"
+        ],
+        "lambda2": [
+          "28225/592722",
+          "4955/461006"
+        ],
+        "mu3": [
+          "3866303375/1229617792494",
+          "-341757500/29276614107"
+        ],
+        "model_discriminant_monomials": [
+          "h^2",
+          "h*U^3",
+          "U^6"
+        ],
+        "model_discriminant_coefficients": [
+          [
+            "-45/2",
+            "-216/35"
+          ],
+          [
+            "1184875/4149054",
+            "-2354900/4840563"
+          ],
+          [
+            "705625/348520536",
+            "653875/304955469"
+          ]
+        ],
+        "equation": "-27*a*(h-mu3*U^3)^2-4*lambda2^3*U^6",
+        "critical_quadratic_discriminant": [
+          "-197/441",
+          "-5/21"
+        ]
+      },
+      "local_geometric_consequence": "Put b=U*t. The critical equation Hb/U^2 has two simple roots at U=0, since lambda2 is nonzero. The implicit function theorem gives two actual analytic critical branches. Their target images are h=c_plus*U^3+O(U^4) and h=c_minus*U^3+O(U^4), with c_plus!=c_minus, hence contact order3. This conclusion concerns the selected local Y0 surface.",
+      "limits": "The displayed discriminant is only the leading weighted branch equation. Its extension/homogenization off this target surface is a candidate construction, not a proof of global support."
+    }
+  ],
+  "candidate_construction": {
+    "packet_lf_sha256": "4900bc9ef14f4cc310dbc457f4282df10317a6f10c39312e4a9fcf176ec49b02",
+    "prior_full_T1_packet_lf_sha256": "0b83b684e4f259286485a8992acc2f90861701b8a8b431298e8805edd3dac7e0",
+    "leading_graph_coefficients_checked": true,
+    "ordinary_cubic_discriminant_reconstructed": true,
+    "leading_branch_gamma": [
+      "6949129255757198750/377989978904454410685009",
+      "139233888165381250/17999522804974019556429"
+    ],
+    "full_target_covector_checked": "h-iW",
+    "homogeneous_candidate_degrees": [
+      1,
+      3,
+      6
+    ],
+    "three_exact_surface_restrictions_checked": true,
+    "negative_controls_rejected": 3,
+    "geometric_scope": "Two genuine analytic critical-value curves have contact order3 on the chosen target surface. The displayed polynomial is their leading weighted equation only. Off-surface extension and homogenization define guesses, not proved branch/support divisors."
+  },
+  "arithmetic": "Python standard-library Fraction pairs and independent raw-source physical composition; no producer or CAS import",
+  "negative_controls_rejected": 9,
+  "limits": "No exact global branch polynomial, support divisor, rational primitive or Lean certificate is established."
+}

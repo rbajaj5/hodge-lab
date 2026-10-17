@@ -1,0 +1,6 @@
+{
+  "status": "implementation_error_corrected",
+  "stage": "leading discriminant equality",
+  "error": "A global expand(complex=True) introduced re(V), im(V), re(h), im(h) into a polynomial equality; the unsimplified assertion failed. Corrected to polynomial arithmetic over QQ(i).",
+  "mathematical_limit": "This was a representation/comparison error, not a failed discriminant identity or a new obstruction."
+}

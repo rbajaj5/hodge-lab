@@ -1,0 +1,441 @@
+{
+  "schema": "cyclic-fano-higher-unfolding-candidates-v1",
+  "producer_sha256": "0f07d7f203d6db063ba081b6899fc3a2a3777ea3e5e3c0e7d40f745b9e7666cc",
+  "arithmetic_dependency_sha256": "a93f0c4ede4cc29a765a9f2054d889f0e4238aea8e77edfc54aa35eae40330f8",
+  "source_jet_packet_sha256": {
+    "X0": "4f2544a4fc4e997f77dd6ab71f28ea6be8960374cf9ddb57305d82e942635d58",
+    "Y0": "dd009d127c0999c95511bd8b0b676a818300a04af6aaca0d5e72b12d0d4f05da"
+  },
+  "prior_full_T1_packet_sha256": "0b83b684e4f259286485a8992acc2f90861701b8a8b431298e8805edd3dac7e0",
+  "fixed_target_manifest_sha256": "7d540fcd1d98b54ff44ab2c5b97c511276c3b90403b384d0f3240694f8d1a9bb",
+  "variables": [
+    "X0",
+    "X1",
+    "Z",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "weights": [
+    1,
+    1,
+    3,
+    1,
+    1,
+    1
+  ],
+  "leading_graph_variables": [
+    "b",
+    "V"
+  ],
+  "leading_graph_cubic": [
+    {
+      "powers": [
+        3,
+        0
+      ],
+      "coefficient": [
+        "5/6",
+        "8/35"
+      ]
+    },
+    {
+      "powers": [
+        2,
+        1
+      ],
+      "coefficient": [
+        "5/21",
+        "1/2"
+      ]
+    },
+    {
+      "powers": [
+        1,
+        2
+      ],
+      "coefficient": [
+        "0",
+        "5/42"
+      ]
+    }
+  ],
+  "leading_graph_coefficient_order": [
+    "b^3",
+    "b^2*V",
+    "b*V^2",
+    "V^3"
+  ],
+  "leading_graph_coefficients": [
+    [
+      "5/6",
+      "8/35"
+    ],
+    [
+      "5/21",
+      "1/2"
+    ],
+    [
+      "0",
+      "5/42"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "inflection_shift_linear": [
+    "-13790/98787",
+    "-5325/32929"
+  ],
+  "centered_linear_leading": [
+    "28225/592722",
+    "4955/461006"
+  ],
+  "center_height_leading": [
+    "3866303375/1229617792494",
+    "-341757500/29276614107"
+  ],
+  "leading_branch_gamma": [
+    "6949129255757198750/377989978904454410685009",
+    "139233888165381250/17999522804974019556429"
+  ],
+  "leading_branch_variables": [
+    "V",
+    "h"
+  ],
+  "leading_branch_equation": [
+    {
+      "powers": [
+        6,
+        0
+      ],
+      "coefficient": [
+        "-5577393125/51643947284748",
+        "-121131250/1844426688741"
+      ]
+    },
+    {
+      "powers": [
+        3,
+        1
+      ],
+      "coefficient": [
+        "-3866303375/614808896247",
+        "683515000/29276614107"
+      ]
+    },
+    {
+      "powers": [
+        0,
+        2
+      ],
+      "coefficient": [
+        "1",
+        "0"
+      ]
+    }
+  ],
+  "critical_branch_justification": "The graph has no terms below degree3. Substitute b=V*t in H_b and divide by V^2. Its constant quadratic in t has two distinct roots because lambda2 is nonzero. The analytic implicit-function theorem gives two critical branches with distinct slopes. Their images are h=c_plus*V^3+O(V^4) and h=c_minus*V^3+O(V^4), with (c\u2212mu3)^2+gamma=0 and gamma nonzero. Thus the two local branch images have contact order3. The displayed degree6 equation is only their leading weighted equation, with weights wt(V)=1, wt(h)=3.",
+  "local_branch_contact_order": 3,
+  "critical_value_leading_coefficients_are_distinct": true,
+  "X0_negative_result": {
+    "center_height_zero_through_order": 12,
+    "centered_linear_zero_through_order": 11,
+    "verified": true,
+    "limit": "No exact vanishing or global branch equality follows from these finite jets."
+  },
+  "candidates": [
+    {
+      "id": "full-tangent-linear",
+      "degree": 1,
+      "quotient_denominator": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "rationale": "The full first-order target deformation covector is h\u2212iW=\u2212iY2/X1\u22121. This is the uncorrected tangent control.",
+      "scope": "A homogeneous guess over Q(i), obtained by extending data from the specified Y0 target surface using the verified full-target tangent covector. The extension away from that surface is a choice. It is not a proved global branch divisor or certificate; exact fixed-D checks are separate."
+    },
+    {
+      "id": "Y0-center-cubic",
+      "degree": 3,
+      "quotient_denominator": [
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-29618371607/29276614107",
+            "-3866303375/1229617792494"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": [
+            "3866303375/409872597498",
+            "-341757500/9758871369"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "341757500/9758871369",
+            "3866303375/409872597498"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-3866303375/1229617792494",
+            "341757500/29276614107"
+          ]
+        }
+      ],
+      "rationale": "Homogenize h\u2212mu3*V^3 from the centered critical value of the actual Y0 surface through its first nonzero transverse order.",
+      "scope": "A homogeneous guess over Q(i), obtained by extending data from the specified Y0 target surface using the verified full-target tangent covector. The extension away from that surface is a choice. It is not a proved global branch divisor or certificate; exact fixed-D checks are separate."
+    },
+    {
+      "id": "Y0-leading-branch-sextic",
+      "degree": 6,
+      "quotient_denominator": [
+        {
+          "powers": [
+            0,
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": [
+            "52855245137873/51643947284748",
+            "1674291625/263489526963"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-11841172625/614808896247",
+            "608437623125/8607324547458"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": [
+            "-3866303375/614808896247",
+            "59236743214/29276614107"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-1233607425625/17214649094916",
+            "-12204566375/614808896247"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0,
+            1,
+            0,
+            1
+          ],
+          "coefficient": [
+            "-683515000/9758871369",
+            "-3866303375/204936298749"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            4,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-1",
+            "0"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": [
+            "1078579625/141878976057",
+            "-25332083125/993152832399"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            2,
+            0,
+            1
+          ],
+          "coefficient": [
+            "3866303375/204936298749",
+            "-683515000/9758871369"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            4,
+            0,
+            0
+          ],
+          "coefficient": [
+            "27886965625/17214649094916",
+            "605656250/614808896247"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            3,
+            0,
+            1
+          ],
+          "coefficient": [
+            "683515000/29276614107",
+            "3866303375/614808896247"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-242262500/614808896247",
+            "5577393125/8607324547458"
+          ]
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-5577393125/51643947284748",
+            "-121131250/1844426688741"
+          ]
+        }
+      ],
+      "rationale": "Homogenize the leading local branch equation (h\u2212mu3*V^3)^2+gamma*V^6. It retains both local critical-value branches.",
+      "scope": "A homogeneous guess over Q(i), obtained by extending data from the specified Y0 target surface using the verified full-target tangent covector. The extension away from that surface is a choice. It is not a proved global branch divisor or certificate; exact fixed-D checks are separate."
+    }
+  ],
+  "limits": "The cubic preparation here concerns the leading homogeneous graph, not the full Weierstrass polynomial. Exact fixed-denominator searches must decide whether any heuristic extension yields a certificate."
+}

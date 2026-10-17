@@ -1108,6 +1108,44 @@ conversations or evidence of an accepted solve.
     products, all supports on these zero sets, or unrestricted certificates.
     No new upstream post or accepted solve is counted.
 
+64. **17 October 2026 — Use higher unfolding terms to make and test denominator guesses.**
+    Continued only `cyclic-triple-fano`. Solved all seven physical incidence
+    coefficients for the actual local evaluation map through degree twelve
+    in the X0 direction and degree eight in Y0. X0 gives no centered height
+    through order twelve or centered linear term through eleven; these are
+    finite-order negative results. Y0 has a nonzero quadratic centered-linear
+    coefficient. The exact leading cubic proves two local critical-value
+    branches with contact order three. It does not supply a global branch
+    equation or a supporting divisor. The local geometry generates three
+    explicit homogeneous guesses of degrees one, three and six.
+    [Derivation, branch visualization, precision limits, and failed direction](notes/cyclic-fano-higher-unfolding.md).
+    Tested these three, three rational tangent-norm powers, and three
+    Jacobian-multiplied repairs. All nine fixed denominators are excluded:
+    six fail E1; three satisfy E1 by construction but fail E2 with the full
+    weighted Koszul correction and quotient spaces. Eight obstructions
+    use one coefficient; the repaired cubic uses eleven. No full matrix
+    ranks are claimed from the early-stopping discovery algorithm.
+    [Complete tests, exact witnesses, bounded attempts, and limits](notes/cyclic-fano-guided-denominators.md).
+    All workers completed within their 120-second bounds. Retained the
+    initial symbolic-comparison implementation failure and the unsuccessful
+    geometric choices. The primary and independent jet checks pass,
+    including nine independent mutation controls. Candidate replay passes
+    all nine obstructions; the independent implementation checks 3,129
+    physical columns, Piola and Euler identities, and eighteen mutations.
+    The visualization separates leading local branch jets from the global
+    candidate failures and binds the exact packets and validation receipts.
+    This batch is for Hodge Lab; no upstream comment, comment edit, or PR
+    accompanies it. The contribution tally remains 24. Discussion 112
+    still had only our original contribution when read before this batch.
+    Upstream main `83e952f` changed website/server files, metadata, and
+    one-reflection explanatory files; the cyclic target and relevant
+    contribution rules remain unchanged from pinned source `d96911d`.
+    Previous push `efb819b` passed its cyclic unfolding/transfer and cyclic
+    continuation CI jobs. Its quadric pilot passed both exact checkers but
+    failed plotting because SymPy was not installed in that job. This batch
+    adds the missing dependency and a dedicated higher-unfolding CI job;
+    the prior plotting failure is not recorded as a mathematical failure.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

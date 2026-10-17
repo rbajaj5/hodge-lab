@@ -1,0 +1,926 @@
+{
+  "schema": "cyclic-fano-guided-denominator-v1",
+  "candidate": {
+    "id": "full-tangent-linear",
+    "degree": 1,
+    "quotient_denominator": [
+      {
+        "powers": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": [
+          "-1",
+          "0"
+        ]
+      },
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": [
+          "0",
+          "-1"
+        ]
+      }
+    ],
+    "rationale": "The full first-order target deformation covector is h\u2212iW=\u2212iY2/X1\u22121. This is the uncorrected tangent control.",
+    "scope": "A homogeneous guess over Q(i), obtained by extending data from the specified Y0 target surface using the verified full-target tangent covector. The extension away from that surface is a choice. It is not a proved global branch divisor or certificate; exact fixed-D checks are separate."
+  },
+  "producer_sha256": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+  "candidate_input_sha256": "4900bc9ef14f4cc310dbc457f4282df10317a6f10c39312e4a9fcf176ec49b02",
+  "arithmetic_dependencies": {
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0"
+  },
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "matrix_shape": [
+    68,
+    20
+  ],
+  "numerator_parameterization": "full_coefficient_basis",
+  "numerator_parameters": 20,
+  "full_numerator_coefficients": 20,
+  "quotient_coefficients": 0,
+  "coefficient_rows": [
+    [
+      "E1",
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      "E1",
+      0,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      "E1",
+      0,
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      "E1",
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    [
+      "E1",
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      "E1",
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    [
+      "E1",
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      "E1",
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      "E1",
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      0,
+      3,
+      1
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      1,
+      3,
+      0
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      2,
+      1,
+      1
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      2,
+      2,
+      0
+    ],
+    [
+      "E1",
+      0,
+      1,
+      0,
+      3,
+      1,
+      0
+    ],
+    [
+      "E1",
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      "E1",
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      "E1",
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      "E1",
+      0,
+      2,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      "E1",
+      0,
+      2,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      "E1",
+      0,
+      2,
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      "E1",
+      0,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      "E1",
+      0,
+      3,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      "E1",
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      0,
+      1,
+      3
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      0,
+      2,
+      2
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      0,
+      3,
+      1
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      1,
+      2,
+      1
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      2,
+      1,
+      1
+    ],
+    [
+      "E1",
+      1,
+      0,
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      "E1",
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      "E1",
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      "E1",
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      0,
+      3,
+      0
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      "E1",
+      1,
+      1,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      "E1",
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      "E1",
+      1,
+      2,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      "E1",
+      1,
+      2,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      "E1",
+      2,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      "E1",
+      2,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      "E1",
+      2,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      "E1",
+      2,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      "E1",
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      "E1",
+      2,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      "E1",
+      2,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      "E1",
+      3,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      "E1",
+      3,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      "E1",
+      3,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      "E1",
+      3,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      "E1",
+      3,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      "E1",
+      3,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      "E1",
+      3,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      "E1",
+      3,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      "E1",
+      3,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      "E1",
+      3,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "E1",
+      4,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      "E1",
+      4,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      "E1",
+      4,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      "E1",
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "E1",
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "E2",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "column_labels": [
+    {
+      "kind": "numerator",
+      "coordinate": 0,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 1,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 2,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 3,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 4,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "numerator",
+      "coordinate": 5,
+      "powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "obstruction_functional": [
+    [
+      31,
+      [
+        "0",
+        "3"
+      ]
+    ]
+  ],
+  "rows_processed": 32,
+  "coefficient_rank_lower_bound": 15,
+  "exact_rank_computed": false,
+  "status": "excluded",
+  "solution_coefficients": null,
+  "scope": "This fixed homogeneous invariant denominator only, with complete weighted numerator and allowed quotient freedom. No global support or arbitrary-degree exclusion.",
+  "seconds": 0.007687000004807487
+}

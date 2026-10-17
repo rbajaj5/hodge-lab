@@ -60,6 +60,14 @@ Piola transfer preserves the physical equations. Three denominators suggested
 by the branch and boundary geometry all fail, each with a short rational
 obstruction. [Character maps, proof, and failed guesses](notes/cyclic-fano-transfer.md).
 
+Higher-order unfolding reveals two local critical-value branches with
+contact order three in the `Y0` direction. The `X0` direction remains zero
+at the tested centered orders. The more specific geometry generates nine
+denominator guesses and repairs; **all nine fail exact tests**, including
+the full Koszul correction and quotient spaces for the repaired candidates.
+[Local geometry and visualization](notes/cyclic-fano-higher-unfolding.md),
+[candidate tests, exact obstructions, and failures](notes/cyclic-fano-guided-denominators.md).
+
 A preceding bounded pilot examined `quadric-contact-broken`, another newly
 added target. A natural quartic denominator passes the first equation but fails
 the complete normalized correction test: one coefficient annihilates all

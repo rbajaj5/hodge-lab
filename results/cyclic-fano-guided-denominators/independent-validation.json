@@ -1,0 +1,516 @@
+{
+  "schema": "cyclic-fano-guided-denominators-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+  "independent_arithmetic_dependency_lf_sha256": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "candidate_input_lf_sha256": "4900bc9ef14f4cc310dbc457f4282df10317a6f10c39312e4a9fcf176ec49b02",
+  "checks": [
+    {
+      "id": "full-tangent-linear",
+      "packet_lf_sha256": "82a77958809175a3e2e09fbe91810cae9b16889ef08363122bab46cb1f3607e8",
+      "degree": 1,
+      "matrix_shape": [
+        68,
+        20
+      ],
+      "numerator_parameterization": "full_coefficient_basis",
+      "full_numerator_coefficients": 20,
+      "complete_numerator_or_correction_columns": 20,
+      "quotient_columns": 0,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "3"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 20,
+      "Euler_normalization_basis_checks": 0,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "Y0-center-cubic",
+      "packet_lf_sha256": "2d5111e629e65985a2c8f9bd7b41174cf4dec85f6948dc12be200cad18d4989b",
+      "degree": 3,
+      "matrix_shape": [
+        365,
+        150
+      ],
+      "numerator_parameterization": "full_coefficient_basis",
+      "full_numerator_coefficients": 150,
+      "complete_numerator_or_correction_columns": 150,
+      "quotient_columns": 0,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            2,
+            0,
+            3,
+            0,
+            1
+          ],
+          "coefficient": [
+            "0",
+            "3"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 150,
+      "Euler_normalization_basis_checks": 5,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "Y0-leading-branch-sextic",
+      "packet_lf_sha256": "bd0a8566676555e4aeb50aab8a16a799d2b019c438604c7e6602f3f90a25a50d",
+      "degree": 6,
+      "matrix_shape": [
+        2539,
+        1185
+      ],
+      "numerator_parameterization": "full_coefficient_basis",
+      "full_numerator_coefficients": 1110,
+      "complete_numerator_or_correction_columns": 1110,
+      "quotient_columns": 75,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            4,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-3",
+            "0"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 1110,
+      "Euler_normalization_basis_checks": 75,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "tangent_norm_power_1",
+      "packet_lf_sha256": "c1a73ddaad641fe161a6974ad4b75ab0eed45b03941fbdd34e149f2cc160a842",
+      "degree": 2,
+      "matrix_shape": [
+        170,
+        61
+      ],
+      "numerator_parameterization": "full_coefficient_basis",
+      "full_numerator_coefficients": 61,
+      "complete_numerator_or_correction_columns": 61,
+      "quotient_columns": 0,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "3",
+            "0"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 61,
+      "Euler_normalization_basis_checks": 1,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "tangent_norm_power_2",
+      "packet_lf_sha256": "0a215e20ba9ad4c17a1c604d05c8a253a2832a8e1509c6f1932db2f59fe49b87",
+      "degree": 4,
+      "matrix_shape": [
+        679,
+        322
+      ],
+      "numerator_parameterization": "full_coefficient_basis",
+      "full_numerator_coefficients": 321,
+      "complete_numerator_or_correction_columns": 321,
+      "quotient_columns": 1,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            4
+          ],
+          "coefficient": [
+            "3",
+            "0"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 321,
+      "Euler_normalization_basis_checks": 15,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "tangent_norm_power_3",
+      "packet_lf_sha256": "d3e1fd8ed55b3610c9b4c4bc822dfeb918e437f1900e60d3a7d64d390124d786",
+      "degree": 6,
+      "matrix_shape": [
+        2451,
+        1185
+      ],
+      "numerator_parameterization": "full_coefficient_basis",
+      "full_numerator_coefficients": 1110,
+      "complete_numerator_or_correction_columns": 1110,
+      "quotient_columns": 75,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E1",
+          "powers": [
+            1,
+            2,
+            0,
+            3,
+            0,
+            4
+          ],
+          "coefficient": [
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 1110,
+      "Euler_normalization_basis_checks": 75,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "jacobian_tangent",
+      "packet_lf_sha256": "0cb24eff6c8e8716d2ca402fb78209e4782a70eb56ab824aae0ffac6aabe0179",
+      "degree": 4,
+      "matrix_shape": [
+        61,
+        6
+      ],
+      "numerator_parameterization": "complete_Koszul",
+      "full_numerator_coefficients": 321,
+      "complete_numerator_or_correction_columns": 5,
+      "quotient_columns": 1,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": [
+            "-3/2",
+            "0"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 5,
+      "Euler_normalization_basis_checks": 15,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "jacobian_center_cubic",
+      "packet_lf_sha256": "6c7fe723b31c1f9bcec9e3f5d2e206d27b663e7c793320c2bd0666f276d193f4",
+      "degree": 6,
+      "matrix_shape": [
+        1160,
+        160
+      ],
+      "numerator_parameterization": "complete_Koszul",
+      "full_numerator_coefficients": 1110,
+      "complete_numerator_or_correction_columns": 85,
+      "quotient_columns": 75,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 11,
+      "physical_dual": [
+        {
+          "equation": "E2",
+          "powers": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            5
+          ],
+          "coefficient": [
+            "10961767789357654152576/531622001046753125",
+            "94358490131718841865256/2658110005233765625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            0,
+            1,
+            0,
+            4,
+            0,
+            5
+          ],
+          "coefficient": [
+            "23589622532929710466314/2658110005233765625",
+            "-2740441947339413538144/531622001046753125"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            6
+          ],
+          "coefficient": [
+            "-141537735197578262797884/2658110005233765625",
+            "16442651684036481228864/531622001046753125"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            6,
+            0
+          ],
+          "coefficient": [
+            "23589622532929710466314/2658110005233765625",
+            "-2740441947339413538144/531622001046753125"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          "coefficient": [
+            "23589622532929710466314/531622001046753125",
+            "-2740441947339413538144/106324400209350625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            6
+          ],
+          "coefficient": [
+            "-6445519460142300641714688/13290550026168828125",
+            "-55482792197450679016770528/66452750130844140625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            6
+          ],
+          "coefficient": [
+            "5480883894678827076288/531622001046753125",
+            "47179245065859420932628/2658110005233765625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            1,
+            0,
+            6,
+            2,
+            0
+          ],
+          "coefficient": [
+            "6445519460142300641714688/13290550026168828125",
+            "55482792197450679016770528/66452750130844140625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            1,
+            0,
+            8,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-2740441947339413538144/531622001046753125",
+            "-23589622532929710466314/2658110005233765625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            1,
+            2,
+            2,
+            0,
+            0
+          ],
+          "coefficient": [
+            "-2740441947339413538144/531622001046753125",
+            "-23589622532929710466314/2658110005233765625"
+          ]
+        },
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            2,
+            0,
+            5,
+            2,
+            0
+          ],
+          "coefficient": [
+            "13870698049362669754192632/66452750130844140625",
+            "-1611379865035575160428672/13290550026168828125"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 85,
+      "Euler_normalization_basis_checks": 75,
+      "negative_controls_rejected": 2
+    },
+    {
+      "id": "jacobian_tangent_norm",
+      "packet_lf_sha256": "c46b02e0470485a1251035d0d9b4a17c4eeb8170b050e066fd0b43ec9b681a42",
+      "degree": 5,
+      "matrix_shape": [
+        327,
+        40
+      ],
+      "numerator_parameterization": "complete_Koszul",
+      "full_numerator_coefficients": 621,
+      "complete_numerator_or_correction_columns": 25,
+      "quotient_columns": 15,
+      "all_column_pairings_zero": true,
+      "rhs_pairing": [
+        "1",
+        "0"
+      ],
+      "dual_terms": 1,
+      "physical_dual": [
+        {
+          "equation": "E2",
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            4
+          ],
+          "coefficient": [
+            "3/2",
+            "0"
+          ]
+        }
+      ],
+      "Piola_basis_checks": 25,
+      "Euler_normalization_basis_checks": 36,
+      "negative_controls_rejected": 2
+    }
+  ],
+  "arithmetic": "Python standard-library Fraction pairs; independent physical columns; no producer or CAS import",
+  "source_and_gradient_mod5_Fermat_checked": true,
+  "completeness_argument": "Character averaging preserves a certificate at each fixed invariant denominator. Weighted Euler normalization makes P(G)=beta*E exactly. All homogeneous numerator monomials and all G-multiple E2 quotient columns are checked. Smooth Fermat reduction proves F smooth in characteristic zero. Any nonzero common zero of the weighted G partials would lift under Z=X2^3 to a nonzero common zero of the F partials. Thus the weighted partials form a regular sequence; their syzygies are generated by the Koszul fields with homogeneous multiplier weights d+w_i+w_j-8.",
+  "negative_controls_rejected": 18,
+  "limits": "Only the individually displayed fixed denominators are excluded over C. No exact full matrix ranks, arbitrary-degree exclusion, global support divisor, certificate or Lean proof is claimed."
+}
