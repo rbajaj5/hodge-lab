@@ -200,6 +200,12 @@ on hardware. The verifier checks identities, not timing-dependent completeness.
 
 ## Braids, Hodge projection, and arithmetic as research tools
 
+A later [literature assessment](syzygy-literature-map.md) connects the
+polynomial matrix to Eisenbud's module and determinantal methods, and records
+why the supplied geometric vanishing and bundle-stability papers do not yet
+apply directly. It proposes rank-stratified elimination; no new computation
+or family exclusion is claimed there.
+
 The existing [braid toolkit](https://github.com/rbajaj5/ginibre-braid-dynamics-conjectures)
 tracks collision-free complex eigenvalue paths, and distinguishes full braid
 information from scalar winding. A possible future experiment would continue

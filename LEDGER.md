@@ -16,7 +16,7 @@ Our intent is to understand the fixed problems, share reproducible results and u
 
 4. **16 October 2026, 20:00 EDT / 17 October 2026, 00:00 UTC — [Holdout discussion #44: polynomial-syzygy exclusion of triple family 87](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985544).** Shared one new complete exclusion, increasing the fixed-`X0/Y0` extension coverage to 133/136. Polynomial relations eliminate the shared numerator corrections; three cubic identities and a three-row physical identity finish the contradiction. The post includes the bounded method, the two unresolved family-115 charts, failed module searches and multiplier exports, and the limits of the literature connection. It links the [immutable proof and explanation](https://github.com/rbajaj5/hodge-lab/blob/cf75f3b67385c78769325db138104435ffa04b35/notes/polynomial-syzygies.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38983831725), credits prior work, and discloses Codex assistance and shared verification code. No Lean theorem, general three-character exclusion, solve submission, or leaderboard point is claimed. The draft was previewed through GitHub Markdown; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-syzygies/upstream-post.json).
 
-5. **16 October 2026, 20:24 EDT / 17 October 2026, 00:24 UTC � [Holdout discussion #44: rebuilt-syzygy exclusion of triple family 115](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755).** Shared the new complete exclusion, increasing fixed-`X0/Y0` extension coverage to 134/136. Rebuilding after the verified zeros and searching through degree five closes chart 10; its forced zero then closes chart 0. The post links [immutable proofs, visualization, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/b366f33c5a9421532d452ec4d15588c5f9998b7f/notes/syzygy-rebuild.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164). It records the ten larger-chart timeouts and two conditional chart improvements, credits prior work, and discloses Codex assistance and the shared identity replayer. The purpose is to supply another portable exclusion and reusable reductions while keeping the unresolved scope explicit. No Lean proof, solve submission, or leaderboard point is claimed. GitHub rendered the draft's four math blocks; the published author, URL, and full body were independently read back and matched exactly. [Publication receipt](results/degree7-syzygy-rebuild/upstream-post.json).
+5. **16 October 2026, 20:24 EDT / 17 October 2026, 00:24 UTC — [Holdout discussion #44: rebuilt-syzygy exclusion of triple family 115](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755).** Shared the new complete exclusion, increasing fixed-`X0/Y0` extension coverage to 134/136. Rebuilding after the verified zeros and searching through degree five closes chart 10; its forced zero then closes chart 0. The post links [immutable proofs, visualization, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/b366f33c5a9421532d452ec4d15588c5f9998b7f/notes/syzygy-rebuild.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164). It records the ten larger-chart timeouts and two conditional chart improvements, credits prior work, and discloses Codex assistance and the shared identity replayer. The purpose is to supply another portable exclusion and reusable reductions while keeping the unresolved scope explicit. No Lean proof, solve submission, or leaderboard point is claimed. GitHub rendered the draft's four math blocks; the published author, URL, and full body were independently read back and matched exactly. [Publication receipt](results/degree7-syzygy-rebuild/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -310,6 +310,18 @@ conversations or evidence of an accepted solve.
     unresolved; rebuilding its five charts is the next unexecuted step.
     This strengthening is recorded after the immutable fifth-post packet and
     is not a sixth public post. [Small checker](algebra/check_family16_global_cubes.py).
+
+26. **16 October 2026 — Three syzygy sources and a precise next question.**
+    Read the relevant definitions and theorem statements in the user's
+    Eisenbud, Ein--Lazarsfeld--Yang, and Caucci--Lahoz links. The polynomial
+    matrix viewpoint fits our existing equations directly; the geometric
+    vanishing and bundle-stability theorems require identifications and
+    hypotheses we have not established. The proposed next experiment is to
+    compare bounded syzygies with exact elimination on rank strata, retaining
+    every exceptional branch. This assessment reuses the previously recorded
+    specialization counterexample; it is not a new obstruction, an executed
+    rank-stratification experiment, or a sixth upstream post.
+    [Sources, assumptions, and proposed calculation](notes/syzygy-literature-map.md).
 
 ## Keeping this current
 
