@@ -27,10 +27,21 @@ Click a figure to open its equations, reproducible code, checks, and limits.
 These pictures show actual calculations and failed candidates; the instance
 still has no certificate from this notebook.
 
-**Latest calculation — a 25-parameter denominator family.** Exact square
-identities remove the 20 off-diagonal entries of a direction matrix; cubic
-identities then remove its five diagonal entries. This excludes the
-degree-six linear-polar family with the full numerator correction space.
+**Latest calculation — quadratic directions, with a clear boundary.** For
+each of five coordinate directions, exact identities exclude every quadratic
+multiple of that direction's polar: five separate 15-parameter families.
+Each calculation sets the other four direction components to zero. The
+full 75-parameter mixed-direction family remains unresolved, and its failed
+modular square screen is retained.
+
+[![Five separate quadratic-direction families, their two exact elimination rounds, and the unresolved mixed-direction search](results/cyclic-fano-quadratic-polars-figures/cyclic-fano-quadratic-polars.png)](notes/cyclic-fano-quadratic-polars.md)
+
+[Inspect the quadratic coefficient maps and correction-space growth](results/cyclic-fano-quadratic-polars-figures/cyclic-fano-quadratic-polars-maps.png).
+
+**Previous complete family — linear directions.** Exact square identities
+remove the 20 off-diagonal entries of a direction matrix; cubic identities
+then remove its five diagonal entries. This excludes the degree-six
+linear-polar family with the full numerator correction space.
 
 [![The linear-polar coefficient map: 25 matrix parameters reduced to five diagonal entries and then zero](results/cyclic-fano-linear-polars-figures/cyclic-fano-linear-polars.png)](notes/cyclic-fano-linear-polars.md)
 
@@ -120,6 +131,15 @@ direction vary linearly as `v = M x`. Twenty exact square identities and
 five cubic identities exclude every nonzero matrix `M`, with all permitted
 corrections retained. This excludes that 25-parameter family; other
 degree-six denominators remain open.
+
+The [quadratic-direction continuation](notes/cyclic-fano-quadratic-polars.md)
+raises the denominator degree to seven and retains 55 correction types,
+including five mixed types that first appear at this degree. Complete
+one-component families `v = f(x) partial_i`, with arbitrary homogeneous
+quadratic `f`, are excluded by two rounds of exact square identities.
+This permits extra support from `f`; it goes beyond taking powers of the
+old fixed polar. General sums of these directions, including the tested
+25-parameter coordinate-divisible subfamily, remain unresolved.
 
 A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
 shows why a successful-looking curve slice can mislead: one polar's residual

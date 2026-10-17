@@ -1,0 +1,371 @@
+{
+  "schema": "cyclic-fano-quadratic-polars-independent-v1",
+  "status": "PASS",
+  "checker_lf_sha256": "9e1aafc28aea7a4ce816a298aa9f9848ffa9209d7fb6831ad767101d3055fd12",
+  "packet_lf_sha256": "6c6b979056da2cac736b0c5ac7702470b8a9bda8efc868fed25ac126631d1389",
+  "primary_validation_lf_sha256": "7fe89dc0fa59ce0ca163cee869f4a743d6abff388639302d95ec5ed165a20b21",
+  "source_instance_lf_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "independent_arithmetic_dependencies": {
+    "check_cyclic_fano_linear_polars.py": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58",
+    "check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+  },
+  "exact_E1_and_upstairs_Piola_lifts": 75,
+  "Euler_normalization_identities": 10575,
+  "component_residual_rescaling_identities": 600,
+  "parameter_quadratic_coefficients_reconstructed": 2850,
+  "compact_mixed_columns_reconstructed": 4125,
+  "coefficient_sha256": "9450fa226032b08d6d1490a327f8a55608d180c60ef0b3edfdf9ac70bfde3320",
+  "complete_raw_Koszul_fields": 230,
+  "full_Koszul_projection_checks": 17250,
+  "surviving_correction_types": 55,
+  "quotient_columns": 246,
+  "component_family_count": 5,
+  "component_parameter_dimension": 15,
+  "negative_controls_rejected": 9,
+  "square_duals": 75,
+  "dual_nonzero_terms": 296,
+  "dual_coefficient_pairings": 53875,
+  "exact_component_stages": [
+    {
+      "component": 0,
+      "base_name": "X0",
+      "stages": [
+        {
+          "active_parameters": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "rows": 1477,
+          "columns": 945,
+          "exact_rank": 489,
+          "forced_square_indices": [
+            0,
+            5,
+            9,
+            12,
+            14
+          ]
+        },
+        {
+          "active_parameters": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            10,
+            11,
+            13
+          ],
+          "rows": 1325,
+          "columns": 605,
+          "exact_rank": 395,
+          "forced_square_indices": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            10,
+            11,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "component": 1,
+      "base_name": "X1",
+      "stages": [
+        {
+          "active_parameters": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "rows": 1359,
+          "columns": 945,
+          "exact_rank": 493,
+          "forced_square_indices": [
+            15,
+            20,
+            24,
+            27,
+            29
+          ]
+        },
+        {
+          "active_parameters": [
+            16,
+            17,
+            18,
+            19,
+            21,
+            22,
+            23,
+            25,
+            26,
+            28
+          ],
+          "rows": 1240,
+          "columns": 605,
+          "exact_rank": 395,
+          "forced_square_indices": [
+            16,
+            17,
+            18,
+            19,
+            21,
+            22,
+            23,
+            25,
+            26,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "component": 3,
+      "base_name": "Y0",
+      "stages": [
+        {
+          "active_parameters": [
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44
+          ],
+          "rows": 1426,
+          "columns": 945,
+          "exact_rank": 493,
+          "forced_square_indices": [
+            30,
+            35,
+            39,
+            42,
+            44
+          ]
+        },
+        {
+          "active_parameters": [
+            31,
+            32,
+            33,
+            34,
+            36,
+            37,
+            38,
+            40,
+            41,
+            43
+          ],
+          "rows": 1289,
+          "columns": 605,
+          "exact_rank": 395,
+          "forced_square_indices": [
+            31,
+            32,
+            33,
+            34,
+            36,
+            37,
+            38,
+            40,
+            41,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "component": 4,
+      "base_name": "Y1",
+      "stages": [
+        {
+          "active_parameters": [
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "rows": 1572,
+          "columns": 945,
+          "exact_rank": 495,
+          "forced_square_indices": [
+            45,
+            50,
+            54,
+            57,
+            59
+          ]
+        },
+        {
+          "active_parameters": [
+            46,
+            47,
+            48,
+            49,
+            51,
+            52,
+            53,
+            55,
+            56,
+            58
+          ],
+          "rows": 1446,
+          "columns": 605,
+          "exact_rank": 395,
+          "forced_square_indices": [
+            46,
+            47,
+            48,
+            49,
+            51,
+            52,
+            53,
+            55,
+            56,
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "component": 5,
+      "base_name": "Y2",
+      "stages": [
+        {
+          "active_parameters": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74
+          ],
+          "rows": 1383,
+          "columns": 945,
+          "exact_rank": 491,
+          "forced_square_indices": [
+            60,
+            65,
+            69,
+            72,
+            74
+          ]
+        },
+        {
+          "active_parameters": [
+            61,
+            62,
+            63,
+            64,
+            66,
+            67,
+            68,
+            70,
+            71,
+            73
+          ],
+          "rows": 1268,
+          "columns": 605,
+          "exact_rank": 395,
+          "forced_square_indices": [
+            61,
+            62,
+            63,
+            64,
+            66,
+            67,
+            68,
+            70,
+            71,
+            73
+          ]
+        }
+      ]
+    }
+  ],
+  "modular_only_unresolved_screens": {
+    "full75": {
+      "prime": 1009,
+      "rows": 1799,
+      "columns": 6975,
+      "rank": 1759,
+      "square_indices": []
+    },
+    "coordinate_divisible25": {
+      "prime": 1009,
+      "rows": 1228,
+      "columns": 1700,
+      "rank": 833,
+      "square_indices": []
+    }
+  },
+  "modular_limit": "The absence of individual square consequences was checked only modulo1009 for the full75 and coordinate-divisible25 screens. No characteristic-zero nonmembership or family exclusion follows from those observations.",
+  "conclusion": "For each fixed base coordinate i, every nonzero homogeneous quadratic f gives an excluded denominator E=f*partial_i(Delta), retaining all55 compatible correction types and246 quotient directions. Each complete15-parameter family is excluded by two exact square-identity rounds.",
+  "limits": "The five family exclusions do not exclude sums of different component directions, the full75-dimensional family, the coordinate-divisible25 subfamily, arbitrary degree-seven denominators, or unions of separately excluded supports. No certificate, Lean acceptance or solution is claimed. Powers of each fixed excluded denominator are also excluded by the separately cited q=1 support theorem, whose geometric proof is not formalized here."
+}

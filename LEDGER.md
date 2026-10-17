@@ -1417,7 +1417,61 @@ conversations or evidence of an accepted solve.
     all eleven local figure/note destinations exist. The published README
     was visually inspected on GitHub, including its linked gallery cards.
     The [CI run for this commit](https://github.com/rbajaj5/hodge-lab/actions/runs/39067834403)
-    is queued at this checkpoint; no remote success is claimed yet.
+    was queued at publication. The dedicated
+    [support and linear-polar Linux job](https://github.com/rbajaj5/hodge-lab/actions/runs/39067834403/job/117499070549)
+    subsequently passed both result replays, the independent checker and
+    both figure generators. This records that completed job, not every
+    job in the larger workflow.
+
+73. **17 October 2026 — Test quadratic-direction polars and separate five exact exclusions from the unresolved mixed family.**
+    Extended the fixed cyclic-Fano construction to `E_v = v . grad(Delta)`
+    with five homogeneous quadratic direction components: 75 parameters
+    and degree-seven denominators. The first equation still has an explicit
+    lift. The complete correction space now has 230 raw Koszul fields;
+    reflection projection retains 55 types, including five new mixed types.
+    All 246 quotient directions remain allowed. The divergence term is
+    retained because the direction depends on the coordinates.
+
+    The full coefficient map has 1,799 active rows and 6,975 formal product
+    columns. A screen modulo 1009 gives rank 1,759 but isolates no individual
+    parameter square. The 25-parameter coordinate-divisible subfamily
+    `v_i = x_i l_i` also yields no squares in that screen. These are retained
+    unsuccessful finite-field searches, not characteristic-zero nonmembership
+    theorems, existence results, or exact exclusions of those families.
+
+    Restricting to one nonzero component at a time gives five separate
+    families `v = f(x) partial_i`, each allowing an arbitrary homogeneous
+    quadratic `f` with 15 coefficients. In each family exact rational
+    coefficient identities first force the five square-monomial coefficients
+    to vanish. Rebuilding then forces the ten cross-monomial coefficients
+    to vanish. All 55 correction types are retained throughout. The 75
+    supplied square identities exclude every nonzero `f` in each of these
+    five families over the complex numbers. They do not combine into an
+    exclusion of general sums across different direction components.
+    Allowing arbitrary `f` can add support beyond the old fixed polar, so
+    this is additional information beyond the previous power exclusion.
+
+    Primary and separate source-based replays pass. The independent checker
+    reconstructs all 6,975 columns, checks 17,250 raw projection identities,
+    246 quotient directions, 10,575 Euler identities and 600 component
+    rescaling identities. It verifies the ten exact restricted-stage ranks
+    and all 75 square witnesses, with 296 nonzero witness entries and 53,875
+    coefficient pairings. Each implementation rejects nine altered inputs.
+    The primary commands have a 120-second bound; production and replay
+    completed in about twelve seconds, with no timeout. A separate Linux
+    CI job is configured to replay this packet and regenerate its figures.
+
+    [Equations, exact proof packet, visualizations, failed screens and reproduction](notes/cyclic-fano-quadratic-polars.md).
+    The new front-page figure shows the five conditional eliminations and
+    keeps the unresolved mixed-direction search separate. Its companion
+    shows the actual full and rebuilt coefficient maps, with explicit
+    aggregation sizes and correction counts. The renderer checks 17 source
+    bindings, all 53,875 witness pairings and 128,214 nonzero map entries.
+    Both PNGs were visually inspected; all 22 local gallery/note destinations
+    exist. GitHub's Markdown renderer accepts the six-image front-page gallery.
+    The source target remains unchanged. No certificate, Lean proof or accepted solve is
+    claimed. No upstream comment or edit accompanies this notebook batch;
+    the historical contribution tally remains **24**.
 
 ## Keeping this current
 
