@@ -1,0 +1,26 @@
+{
+  "contribution": 22,
+  "discussion": {
+    "number": 55
+  },
+  "id": "DC_kwDOVLOOJc4BIfNv",
+  "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002223",
+  "body": "Degree-six continuation of the preceding calculation: **every certificate for `cycle-three` must have denominator degree at least seven.** This excludes degree six over $\\mathbb C$, allowing the complete numerator space and a nonzero quotient; it does not establish existence or solve the instance.\n\nFor $J=(\\partial_iF)$, the complete first-equation map $D\\mapsto[AD]$ has kernel exactly $J_6$, of dimension 36. Its numerator and augmented ranks are 4437 and 4863. Thus\n\n$$\nD=L(F),\\qquad N=A L+K,\\qquad L=MZ.\n$$\n\nAll 315 quadratic Koszul corrections are independent and exhaust the numerator kernel. The Euler change $M\\mapsto M-M_{55}I$ preserves the equation modulo $F$ and denominator admissibility, leaving 35 parameters. Thirty exact rational functionals on the necessary Hessian quotient isolate the off-diagonal squares $M_{ij}^2$. Only five diagonal parameters $a_0,\\ldots,a_4$ remain, with $a_5=0$.\n\n**The weaker test stalled here.** Its diagonal restriction has rank three, and a real positivity argument would not justify a complex-coefficient exclusion. We therefore used the full second equation $B_D(N)=D\\operatorname{div}N-N(D)\\equiv0\\pmod F$.\n\nPut $D_i=Z_i\\partial_iF$. Eliminate the enlarged correction space\n\n$$\nF S_6+\\operatorname{span}\\lbrace B_{D_i}(K_k):0\\le i<6,\\ 0\\le k<315\\rbrace.\n$$\n\nIts 2352 columns have exact rank 1451. Seven exported rational duals give necessary quadratics $Q_1,\\ldots,Q_7$ in the five diagonal parameters. The quadratic-multiplier map has rank 70 of 70 in degree four, and the packet supplies explicit identities\n\n$$\na_i^4=\\sum_{r=1}^7 C_{ir}Q_r\\qquad(0\\le i<5).\n$$\n\nHence all five parameters vanish. The original denominator is a multiple of $F$, contradicting coprimality. The enlarged correction space treats coefficient products independently; this is a relaxation, so its contradiction remains necessary for the original problem.\n\n**Companion limit:** `mixed-biweight` has degree-six kernel dimension 39, including three directions outside $J_6$. This cyclic proof does not cover it; its established lower bound remains six.\n\n[Immutable explanation, exact packets, coefficient-map visualizations, failed weaker tests, and checks](https://github.com/rbajaj5/hodge-lab/blob/55083fa4f98e29831d02ca1c6302508dc467ea5c/notes/fresh-instance-degree6.md). With the pinned submodule initialized:\n\n```sh\npython3 -S experiments/fresh_instance_degree6.py verify-all\npython3 experiments/check_fresh_instance_degree6_independent.py . work/fresh-degree6-independent.json\n```\n\nThe primary replay uses standard-library rational arithmetic. The separate implementation reconstructs the physical equations and checks the rational obstructions; its modular probes are identified separately. Local checks pass; remote CI is not claimed here. The protected targets and existing upstream files are unchanged. No Lean theorem, solve PR, or leaderboard credit is claimed.\n\nCredit to the sextics authors' certificate, Euler, and Jacobian/Koszul framework, the geometric bridge attributed there to Benjamin E. Diamond, and Griffiths's residue theory. Prepared with OpenAI Codex assistance for `rbajaj5`, including separate construction, review, and visualization agents.\n",
+  "createdAt": "2026-10-17T17:59:34Z",
+  "updatedAt": "2026-10-17T17:59:34Z",
+  "author": {
+    "login": "rbajaj5"
+  },
+  "replyTo": {
+    "id": "DC_kwDOVLOOJc4BIfLz"
+  },
+  "proofCommit": "55083fa4f98e29831d02ca1c6302508dc467ea5c",
+  "body_sha256": "1a7a10ea9d12db79eee78f1152b264e5a954132c06c5476852799d22bb43273d",
+  "readback_verified": true,
+  "comparison": "LF-normalized full body matched prepared draft after trimming surrounding whitespace",
+  "preview": {
+    "display_math_blocks": 3,
+    "inline_math_blocks": 14
+  },
+  "scope": "One reply in cycle-three, with mixed-biweight limit; no holdout post, Lean proof, solve PR, or acceptance."
+}
