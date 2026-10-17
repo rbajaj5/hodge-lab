@@ -180,9 +180,12 @@ Local checks **PASS**:
 - All 110 displayed identities are expanded exactly; 330 browser layouts
   pass at widths 736, 360, and 320, with control, tooltip, state, and theme checks.
 
-The new Linux `eleven-quartic` CI job repeats all arithmetic and figure-data
-checks. Its remote result is recorded after it runs; local PASS does not
-assert that remote CI has already passed.
+The new Linux [`eleven-quartic` CI job passed](https://github.com/rbajaj5/hodge-lab/actions/runs/39029941684/job/117388204798)
+at proof commit `d44f72a44a36d7f58b623b8c905bd2f0f8e6c8a0`, repeating every
+new arithmetic and figure-data check, including the fresh pinned-packet fetch.
+The [receipt](../results/eleven-quartic/ci-eleven-quartic.json) records that
+job's successful steps. Other workflow jobs were still running at this
+checkpoint; no full-workflow success is asserted here.
 
 Presentation failures were also retained in this account: the first payload
 exceeded the inline size limit because it duplicated proof polynomials. The

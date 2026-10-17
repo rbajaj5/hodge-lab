@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 8 discussion contributions (six top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 9 discussion contributions (seven top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -23,6 +23,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 7. **17 October 2026, 07:10 EDT / 11:10 UTC — [Reply to post six: degree-three necessary ideals](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997300).** Shared eleven family-coordinate vanishings across families 6, 8, 10, 149, and 152, with a pinned exact packet and cancellation visualizations. Six cubic identities and five rebuilt square identities reduce parameter spaces; no additional family is excluded and all sixteen remain open. The reply links [immutable code, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/6d478ea5b8896935ebabf1ffd323afc66c26cd0e/notes/eisenbud-linear-strand.md), states the bounded degree-three search and the relaxed correction-space assumption, credits prior work, and discloses Codex assistance and shared verification code. It reports both local exact replays passing without claiming full CI, independent human review, a full resolution, a Lean proof, or solve credit. The existing thread was reread; GitHub's Markdown preview was inspected before posting. The published author, permanent URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-linear-strand/upstream-post.json).
 
 8. **17 October 2026, 07:32 EDT / 11:32 UTC — [Reply to post six: degree-four blocks close five triples](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997670).** Shared exact exclusions of families 6, 8, 10, 149, and 152, increasing selected coverage to 141/152. Six blocks of six quadratics in five variables have a full quartic image; thirty fourth-power identities and replayed residual-sector proofs close the five triples. The reply links [immutable proof packets, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/f131c2f9649fe5eb08f1a36caff7cc87162f5ad9/notes/eisenbud-quartic-strand.md), credits fqlx's pre-existing Y0/Y1 pair exclusion and the prior framework, and discloses Codex assistance and shared verification code. Both local physical reconstructions pass. It retains the timeout, slower alternative basis, and failed relaxed pair search, while leaving eleven selected triples and holdout open. No Lean proof, full resolution, improved unconditional degree bound, or solve credit is claimed. The full thread was reread and GitHub's mathematical Markdown preview inspected. Publication preceded the linked Hodge Lab push; the author, URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-quartic-strand/upstream-post.json).
+
+9. **17 October 2026, 07:45 EDT / 11:45 UTC — [Holdout discussion #44: nine more quartic triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997810).** Shared exact exclusions of families 1, 2, 4, 5, 7, 9, 15, 39, and 150, increasing selected coverage to 150/152. All 33 small blocks were tested; 62 fourth-power identities and explicit residual-sector replays close the nine triples. The full quartic maps for 17 and 151 fail to force coordinate fourth powers, and those families remain open. The post links [immutable proofs, visualizations, and failures](https://github.com/rbajaj5/hodge-lab/blob/d44f72a44a36d7f58b623b8c905bd2f0f8e6c8a0/notes/eleven-quartic.md), credits fqlx's existing family-30 proof as a reproduced dependency, and discloses Codex assistance and shared verification code. Both local physical reconstructions and 330 presentation checks pass. The existing discussion was reread; GitHub's mathematical Markdown preview was inspected. Posted as a self-contained top-level result, followed immediately by the linked repository push. The author, body, URL, and absence of a reply parent were read back and matched. No remote CI result was claimed before it ran, and no Lean proof, improved degree bound, solve submission, or leaderboard point is claimed. [Publication receipt](results/eleven-quartic/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -543,6 +545,13 @@ conversations or evidence of an accepted solve.
     Read Bright's argument about the mixed effects of credit incentives and
     updated the [publication rationale and current milestones](notes/research-milestones.md).
     Post counts record activity, not scientific quality.
+    Shared one consolidated top-level result, recorded as upstream
+    contribution 9 above; the ledger distinguishes the eight earlier posts
+    and replies from this new publication.
+    The Linux `eleven-quartic` job subsequently passed all new arithmetic,
+    pinned-dependency fetch, and visualization-data checks at the linked
+    proof commit. Its receipt is retained; the other workflow jobs were
+    still running at that checkpoint.
 
 ## Keeping this current
 

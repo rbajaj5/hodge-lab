@@ -1,0 +1,105 @@
+{
+  "head_sha": "d44f72a44a36d7f58b623b8c905bd2f0f8e6c8a0",
+  "run_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39029941684",
+  "run_status_at_check": "in_progress",
+  "target_job": {
+    "completedAt": "2026-10-17T11:47:08Z",
+    "conclusion": "success",
+    "databaseId": 117388204798,
+    "name": "eleven-quartic",
+    "startedAt": "2026-10-17T11:45:59Z",
+    "status": "completed",
+    "steps": [
+      {
+        "completedAt": "2026-10-17T11:46:01Z",
+        "conclusion": "success",
+        "name": "Set up job",
+        "number": 1,
+        "startedAt": "2026-10-17T11:46:00Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:46:15Z",
+        "conclusion": "success",
+        "name": "Run actions/checkout@v4",
+        "number": 2,
+        "startedAt": "2026-10-17T11:46:01Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:46:15Z",
+        "conclusion": "success",
+        "name": "Run actions/setup-python@v5",
+        "number": 3,
+        "startedAt": "2026-10-17T11:46:15Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:46:24Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/eleven_quartic.py --check-blocks",
+        "number": 4,
+        "startedAt": "2026-10-17T11:46:15Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:46:33Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/reproduce_pair30.py --fetch --output-directory results/eleven-quartic/pair30",
+        "number": 5,
+        "startedAt": "2026-10-17T11:46:24Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:46:48Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_eleven_quartic.py",
+        "number": 6,
+        "startedAt": "2026-10-17T11:46:33Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:47:03Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/check_eleven_quartic.py --independent",
+        "number": 7,
+        "startedAt": "2026-10-17T11:46:48Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:47:06Z",
+        "conclusion": "success",
+        "name": "Run python -S experiments/plot_eleven_quartic.py --check",
+        "number": 8,
+        "startedAt": "2026-10-17T11:47:03Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:47:06Z",
+        "conclusion": "success",
+        "name": "Post Run actions/setup-python@v5",
+        "number": 15,
+        "startedAt": "2026-10-17T11:47:06Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:47:06Z",
+        "conclusion": "success",
+        "name": "Post Run actions/checkout@v4",
+        "number": 16,
+        "startedAt": "2026-10-17T11:47:06Z",
+        "status": "completed"
+      },
+      {
+        "completedAt": "2026-10-17T11:47:06Z",
+        "conclusion": "success",
+        "name": "Complete job",
+        "number": 17,
+        "startedAt": "2026-10-17T11:47:06Z",
+        "status": "completed"
+      }
+    ],
+    "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39029941684/job/117388204798"
+  },
+  "scope": "New eleven-quartic job passed. This receipt does not assert completion of the other workflow jobs."
+}
