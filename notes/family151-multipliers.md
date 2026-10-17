@@ -246,3 +246,8 @@ commit `a825be71140bb5c70327c2229c208df7d959e164`. The complete body and author
 were read back and matched. The [publication receipt](../results/family151-multipliers/upstream-post.json)
 records this check. The [remote workflow](https://github.com/rbajaj5/hodge-lab/actions/runs/39033064675)
 was still running at publication; no remote success was claimed then.
+
+The complete workflow subsequently **passed all eight jobs**, including the
+[family-151 job](https://github.com/rbajaj5/hodge-lab/actions/runs/39033064675/job/117397284050).
+The later [CI receipt](../results/family151-multipliers/ci-family151.json)
+is retained separately from the publication-time status above.

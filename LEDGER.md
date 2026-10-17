@@ -602,6 +602,29 @@ conversations or evidence of an accepted solve.
     sums; all 42 desktop/mobile layouts pass. Shared one consolidated
     top-level result, recorded as upstream contribution 11 above.
 
+    The complete Linux workflow subsequently passed all eight jobs; the
+    [receipt](results/family151-multipliers/ci-family151.json) records that
+    later success separately from the publication-time status.
+
+41. **17 October 2026 — Complete the X1/Y1 extension batch.**
+    Chose all 132 extensions not already in the preceding 152-family
+    selection, with complete character eigenspaces and no transferred
+    family-specific constraint. Necessary block equations and powers through
+    degree four reduce 123 to the previously proved pair. Nine first-pass
+    failures require full shared-numerator charts: 20 of 22 contradict.
+    Retaining those partial zeros and rebuilding finishes the two stalled
+    charts and removes extra anchor directions. All 132 new families reduce
+    to the explicitly matched, reproduced fqlx pair-30 proof, giving 284
+    selected triple exclusions. Both physical polynomial implementations
+    pass; changed witnesses are rejected. Holdout is still unsolved.
+    Kept all failed degree-three/four searches, both originally unresolved
+    charts, explicit resource bounds, logs, and the checker syntax correction.
+    The new static figure shows all 132 outcomes and the nine reductions;
+    the interactive view exposes 18 actual failed graded maps, with 294
+    exact nonzero entries and all 54 desktop/mobile layouts checked.
+    [Proof, motivation, visualizations, and unsuccessful attempts](notes/x1y1-extensions.md).
+    This is finite graded algebra, not a full resolution or phase transition.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

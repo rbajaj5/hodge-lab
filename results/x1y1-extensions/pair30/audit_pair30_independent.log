@@ -1,0 +1,23 @@
+{
+  "d": 7,
+  "prime": 1000003,
+  "numeratorColumns": 7722,
+  "jacobianRank": 6882,
+  "completeKoszulKernel": 840,
+  "denominatorColumns": 792,
+  "augmentedRank": 7379,
+  "completeDenominatorSpace": 295,
+  "gaugeDimension": 6,
+  "removedZeroBasedRawIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "gaugeComplementDimension": 289,
+  "characterSectors": 138
+}
+PASS: exact E1 completeness over C, six character-preserving gauges, and 138 denominator sectors.
+{"compatibleKoszul": 68, "fullPhysicalRows": 291, "patches": [{"affineTrace": [{"linear": [180, 1182, 1421, 1599, 1714], "rank": 37, "round": 0}, {"linear": [], "rank": 23, "round": 1}], "coefficientProducts": 3718, "pivot": 123, "rows": 23, "variables": 16}, {"affineTrace": [{"linear": [123, 1182], "rank": 37, "round": 0}, {"linear": [], "rank": 33, "round": 1}], "coefficientProducts": 23550, "pivot": 180, "rows": 33, "variables": 20}, {"affineTrace": [{"linear": [123, 1182], "rank": 37, "round": 0}, {"linear": [], "rank": 33, "round": 1}], "coefficientProducts": 3333, "pivot": 210, "rows": 33, "variables": 20}, {"affineTrace": [{"linear": [123, 1182, 1421, 1599, 1714], "rank": 37, "round": 0}, {"linear": [], "rank": 23, "round": 1}], "coefficientProducts": 3690, "pivot": 229, "rows": 23, "variables": 16}, {"affineTrace": [{"linear": [123, 1182], "rank": 37, "round": 0}, {"linear": [], "rank": 33, "round": 1}], "coefficientProducts": 10390, "pivot": 232, "rows": 33, "variables": 20}], "result": "PASS", "scope": "Every pair30 mixed-character point excluded. Other D7 families unaffected.", "selectedPhysicalRows": 41, "subgroupOrder": 36}

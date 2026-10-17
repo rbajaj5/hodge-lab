@@ -27,10 +27,11 @@ def selected(rows):
             and ANCHOR <= {tuple(c) for c in r['characters']}]
 
 
-def construct(model, family):
+def construct(model, family, anchor=None):
+    anchor=ANCHOR if anchor is None else set(anchor)
     ids = family['remaining']; nD = len(ids)
     chars = sorted({model.dc[i] for i in ids}); w = chars[0]
-    assert len(chars) == 3 and ANCHOR <= set(chars)
+    assert len(chars) == 3 and anchor <= set(chars)
     group = list(product(range(6), repeat=3))
     H = [g for g in group if all(sum(a*b for a, b in zip(triples.minus(c, w), g)) % 6 == 0 for c in chars)]
     ann = [c for c in group if all(sum(a*b for a, b in zip(c, g)) % 6 == 0 for g in H)]
@@ -54,7 +55,7 @@ def construct(model, family):
                 assert k in lookup
                 add(p, (i, nD + lookup[k]))
     mons = sorted(physical); equations = [physical[m] for m in mons]
-    third = set(chars) - ANCHOR
+    third = set(chars) - anchor
     pivots = [i for i, index in enumerate(ids) if model.dc[index] in third]
     encoded = {'physical': [list(m) for m in mons], 'equations': [cert.encode(p) for p in equations]}
     digest = hashlib.sha256(json.dumps(encoded, sort_keys=True, separators=(',', ':')).encode()).hexdigest()

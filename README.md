@@ -10,16 +10,21 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** polynomial multipliers close **family 151**,
-bringing selected coverage to **152/152 triples excluded**. The rebuilt
-shared-numerator equations yield 96 additional cubic constraints. Three
-small blocks force thirteen fourth powers to vanish, and two residual
-charts contradict. Both physical polynomial implementations replay the
-proof. Other triple supports, larger supports, and higher degrees remain
-open; holdout is unsolved.
-[Proof, cancellation visualization, and failed attempts](notes/family151-multipliers.md).
+**Latest exact result:** 132 further three-character families around the
+`X1/Y1` pair are excluded, bringing our selected union to **284 triples**.
+Necessary block reductions close 123; full shared-numerator charts and
+rebuilding finish the remaining nine. Both physical polynomial
+implementations replay the proofs, including the explicitly reproduced
+fqlx pair-30 dependency. This completes all 136 third-character extensions
+of X1/Y1, with four already covered previously. Other triples among the
+428,536 possible supports, larger supports, and higher degrees remain open.
+[Proofs, graded-map visualization, and failed searches](notes/x1y1-extensions.md).
 
-![Polynomial multipliers finish the selected triple scan](results/family151-multipliers/family151-multipliers.png)
+![New triple exclusions and the nine rebuilt families](results/x1y1-extensions/x1y1-extensions.png)
+
+The [preceding polynomial-multiplier result](notes/family151-multipliers.md)
+closed family 151, completing the original 152 selected triples. Its full
+Linux workflow subsequently passed all eight jobs.
 
 The [preceding shared-numerator batch](notes/remaining-triples-shared.md)
 closed family 17 and supplied the linear constraint used to rebuild 151,

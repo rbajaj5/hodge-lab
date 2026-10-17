@@ -1,0 +1,483 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "checks": {
+    "correction_pairings": 90124,
+    "quadratic_pairings": 17330,
+    "physical_duals": 622,
+    "square_identities": 50,
+    "mutations_rejected": 16,
+    "graded_maps": 54,
+    "chart_inferences": 745,
+    "charts": 22,
+    "excluded_charts": 20,
+    "chart_mutations_rejected": 9
+  },
+  "families": [
+    {
+      "batch_number": 19,
+      "global_number": 55710,
+      "third_character": [
+        0,
+        4,
+        3
+      ],
+      "initial": 19,
+      "after_blocks": 15,
+      "numerator_parameters": 125,
+      "stabilizer_order": 18,
+      "physical_equations": 669,
+      "charts": [
+        {
+          "raw_pivot": 7,
+          "excluded": true,
+          "remaining_variables": 119
+        },
+        {
+          "raw_pivot": 119,
+          "excluded": false,
+          "remaining_variables": 132
+        },
+        {
+          "raw_pivot": 159,
+          "excluded": true,
+          "remaining_variables": 125
+        },
+        {
+          "raw_pivot": 216,
+          "excluded": true,
+          "remaining_variables": 88
+        }
+      ],
+      "shared_removed": [
+        7,
+        159,
+        216
+      ],
+      "after_shared": 12,
+      "rebuilt_removed": [
+        119,
+        139
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 49,
+      "global_number": 58894,
+      "third_character": [
+        2,
+        0,
+        3
+      ],
+      "initial": 19,
+      "after_blocks": 14,
+      "numerator_parameters": 125,
+      "stabilizer_order": 18,
+      "physical_equations": 641,
+      "charts": [
+        {
+          "raw_pivot": 122,
+          "excluded": true,
+          "remaining_variables": 105
+        },
+        {
+          "raw_pivot": 138,
+          "excluded": true,
+          "remaining_variables": 114
+        },
+        {
+          "raw_pivot": 223,
+          "excluded": true,
+          "remaining_variables": 113
+        }
+      ],
+      "shared_removed": [
+        122,
+        138,
+        223
+      ],
+      "after_shared": 11,
+      "rebuilt_removed": [
+        170
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 61,
+      "global_number": 59824,
+      "third_character": [
+        2,
+        3,
+        0
+      ],
+      "initial": 19,
+      "after_blocks": 16,
+      "numerator_parameters": 68,
+      "stabilizer_order": 36,
+      "physical_equations": 363,
+      "charts": [
+        {
+          "raw_pivot": 118,
+          "excluded": true,
+          "remaining_variables": 61
+        },
+        {
+          "raw_pivot": 144,
+          "excluded": true,
+          "remaining_variables": 74
+        },
+        {
+          "raw_pivot": 157,
+          "excluded": true,
+          "remaining_variables": 62
+        },
+        {
+          "raw_pivot": 213,
+          "excluded": true,
+          "remaining_variables": 62
+        }
+      ],
+      "shared_removed": [
+        118,
+        144,
+        157,
+        213
+      ],
+      "after_shared": 12,
+      "rebuilt_removed": [
+        170,
+        198
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 72,
+      "global_number": 60550,
+      "third_character": [
+        3,
+        0,
+        1
+      ],
+      "initial": 16,
+      "after_blocks": 14,
+      "numerator_parameters": 256,
+      "stabilizer_order": 6,
+      "physical_equations": 1490,
+      "charts": [
+        {
+          "raw_pivot": 46,
+          "excluded": true,
+          "remaining_variables": 209
+        },
+        {
+          "raw_pivot": 75,
+          "excluded": true,
+          "remaining_variables": 190
+        }
+      ],
+      "shared_removed": [
+        46,
+        75
+      ],
+      "after_shared": 12,
+      "rebuilt_removed": [
+        139,
+        170
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 75,
+      "global_number": 60727,
+      "third_character": [
+        3,
+        1,
+        0
+      ],
+      "initial": 18,
+      "after_blocks": 11,
+      "numerator_parameters": 68,
+      "stabilizer_order": 36,
+      "physical_equations": 338,
+      "charts": [
+        {
+          "raw_pivot": 282,
+          "excluded": true,
+          "remaining_variables": 48
+        }
+      ],
+      "shared_removed": [
+        282
+      ],
+      "after_shared": 10,
+      "rebuilt_removed": [],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 84,
+      "global_number": 61204,
+      "third_character": [
+        3,
+        4,
+        3
+      ],
+      "initial": 18,
+      "after_blocks": 13,
+      "numerator_parameters": 125,
+      "stabilizer_order": 18,
+      "physical_equations": 704,
+      "charts": [
+        {
+          "raw_pivot": 124,
+          "excluded": true,
+          "remaining_variables": 93
+        },
+        {
+          "raw_pivot": 200,
+          "excluded": true,
+          "remaining_variables": 85
+        },
+        {
+          "raw_pivot": 274,
+          "excluded": true,
+          "remaining_variables": 112
+        }
+      ],
+      "shared_removed": [
+        124,
+        200,
+        274
+      ],
+      "after_shared": 10,
+      "rebuilt_removed": [],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 100,
+      "global_number": 61852,
+      "third_character": [
+        4,
+        2,
+        3
+      ],
+      "initial": 17,
+      "after_blocks": 12,
+      "numerator_parameters": 125,
+      "stabilizer_order": 18,
+      "physical_equations": 634,
+      "charts": [
+        {
+          "raw_pivot": 6,
+          "excluded": false,
+          "remaining_variables": 104
+        },
+        {
+          "raw_pivot": 211,
+          "excluded": true,
+          "remaining_variables": 87
+        }
+      ],
+      "shared_removed": [
+        211
+      ],
+      "after_shared": 11,
+      "rebuilt_removed": [
+        6
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 113,
+      "global_number": 62190,
+      "third_character": [
+        5,
+        0,
+        3
+      ],
+      "initial": 18,
+      "after_blocks": 12,
+      "numerator_parameters": 125,
+      "stabilizer_order": 18,
+      "physical_equations": 612,
+      "charts": [
+        {
+          "raw_pivot": 165,
+          "excluded": true,
+          "remaining_variables": 110
+        }
+      ],
+      "shared_removed": [
+        165
+      ],
+      "after_shared": 11,
+      "rebuilt_removed": [
+        170
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    },
+    {
+      "batch_number": 132,
+      "global_number": 62336,
+      "third_character": [
+        5,
+        5,
+        4
+      ],
+      "initial": 16,
+      "after_blocks": 13,
+      "numerator_parameters": 128,
+      "stabilizer_order": 12,
+      "physical_equations": 692,
+      "charts": [
+        {
+          "raw_pivot": 44,
+          "excluded": true,
+          "remaining_variables": 113
+        },
+        {
+          "raw_pivot": 74,
+          "excluded": true,
+          "remaining_variables": 86
+        }
+      ],
+      "shared_removed": [
+        44,
+        74
+      ],
+      "after_shared": 11,
+      "rebuilt_removed": [
+        170
+      ],
+      "rebuilt_blocks": [],
+      "final": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "excluded": true
+    }
+  ],
+  "new_shared_exclusions": 9,
+  "pair30_binding": {
+    "kind": "fqlx_pair30",
+    "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+    "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+    "basis_pairs_matched": 10,
+    "target_F_A_matched": true,
+    "source_files_hash_checked": 20,
+    "replay": "pair30/replay.json"
+  },
+  "seconds": 7.236600199998065,
+  "scope": "Nine closures after the separately replayed first pass. All 132 new triples are excluded; 284 selected triples including the preceding 152. Not all 428536 triples."
+}

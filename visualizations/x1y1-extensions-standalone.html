@@ -1,0 +1,2725 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>X1y1 Extensions</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="X1y1 Extensions" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;X1y1 Extensions&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 16px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans:
+    -apple-system-body, ui-sans-serif, -apple-system, system-ui, &quot;Segoe UI&quot;,
+    Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;,
+    &quot;Segoe UI Symbol&quot;;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 8px);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-weight: var(--font-weight-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+  text-underline-offset: 2px;
+  font-weight: inherit;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+.table {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: calc(var(--font-size-base) * 1.5);
+  line-height: 1.3333333333;
+}
+
+h2 {
+  font-size: calc(var(--font-size-base) * 1.25);
+  line-height: 1.4;
+}
+h3 {
+  font-size: calc(var(--font-size-base) * 1.125);
+  line-height: 1.5555555556;
+}
+h4 {
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+h5,
+h6 {
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+pre,
+pre code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: calc(var(--font-size-base) * 0.875);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-family: var(--font-sans);
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+.table :is(th, td):not(:last-child) {
+  padding-inline-end: calc(var(--font-size-base) * 1.5);
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead :is(th, td) {
+  border-bottom-color: var(--border-strong, var(--input));
+  padding-block: calc(var(--font-size-base) / 2);
+  line-height: var(--font-size-base);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+.table tbody :is(th, td) {
+  padding-block: calc(var(--font-size-base) * 0.625);
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 8px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+.widget {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  box-shadow: 0 0 0 0.5px var(--border-strong, var(--border));
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#widget &gt; :not(.card, .widget, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  border: 1px solid var(--border);
+  corner-shape: var(--corner-shape);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-sans);
+  padding: 5px 12px;
+  border-color: color-mix(
+    in oklab,
+    light-dark(var(--primary-foreground), var(--foreground)) 5%,
+    transparent
+  );
+  border-radius: var(--radius-2xl);
+  color: light-dark(var(--primary-foreground), var(--foreground));
+  background: light-dark(var(--foreground), var(--popover));
+  box-shadow: 0 8px 18px rgb(15 23 42 / 20%);
+  letter-spacing: -0.15px;
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: color-mix(in srgb, var(--foreground) 40%, var(--muted-foreground));
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1;
+}
+
+small,
+.text-small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+/* Match inline alignment without overriding a containing flex or grid layout. */
+.btn,
+.nav-link,
+.form-control,
+.form-select,
+.form-range,
+.form-check {
+  vertical-align: middle;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: inherit;
+  font-family: var(--font-sans);
+  height: fit-content;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding-inline: var(--control-spacing, 12px);
+  border-color: transparent;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.btn {
+  border-color: var(--border);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
+}
+
+.btn-primary {
+  border-color: var(--border);
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: border-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: border-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--muted-foreground);
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Shared preview chrome; product styles stay inside each variant. */
+.viz-dotted-background {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 0.8px,
+    transparent 0.8px
+  );
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.viz-carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.viz-carousel:has(&gt; .viz-carousel-controls) {
+  min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
+  padding-bottom: 60px;
+}
+
+.viz-carousel &gt; [data-variant][hidden] {
+  display: none !important;
+}
+
+.viz-carousel &gt; [data-variant] {
+  isolation: isolate;
+}
+
+.viz-carousel-controls {
+  --viz-carousel-hover: light-dark(
+    color-mix(in srgb, var(--foreground) 5.4%, transparent),
+    color-mix(in srgb, var(--foreground) 7.8%, transparent)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 50%;
+  display: flex;
+  width: max-content;
+  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  max-width: calc(100% - 96px);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  /* Match the settings dropdown chrome independently of the content font size. */
+  font-size: 13px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+/* Keep authored mockup button styles out of the shared carousel chrome. */
+.viz-carousel-controls button,
+.viz-carousel-picker &gt; summary {
+  display: flex !important;
+  height: auto !important;
+  min-height: 30px;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px;
+  padding: 0 6px !important;
+  -webkit-app-region: no-drag;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: inherit !important;
+  background: transparent !important;
+  font: inherit !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-picker &gt; summary {
+  position: relative;
+  isolation: isolate;
+}
+
+.viz-carousel-controls &gt; button {
+  --icon-size: 16px;
+  width: 30px !important;
+  padding: 0 !important;
+}
+
+.viz-carousel-picker &gt; summary {
+  padding-inline: 12px !important;
+}
+
+.viz-carousel-controls .viz-carousel-caret {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin: 0;
+  color: inherit;
+  transform: rotate(180deg);
+}
+
+.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls .viz-carousel-caret,
+.viz-carousel-count {
+  opacity: 0.5;
+}
+
+.viz-carousel-controls &gt; button::before,
+.viz-carousel-picker &gt; summary::before {
+  position: absolute;
+  z-index: -1;
+  inset: 3px;
+  border-radius: 12px;
+  content: &quot;&quot;;
+  pointer-events: none;
+}
+
+.viz-carousel-controls &gt; button:hover::before,
+.viz-carousel-picker &gt; summary:hover::before {
+  background: var(--viz-carousel-hover);
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-controls [data-lucide],
+.viz-carousel-controls .lucide {
+  flex-shrink: 0;
+}
+
+.viz-carousel-picker {
+  min-width: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  min-width: 0;
+  list-style: none;
+}
+
+.viz-carousel-picker &gt; summary::-webkit-details-marker {
+  display: none;
+}
+
+.viz-carousel-count {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.viz-carousel-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-carousel-options {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background);
+  box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
+}
+
+.viz-carousel-options &gt; button {
+  border-radius: max(0px, calc(var(--radius-lg) - 5px)) !important;
+  width: 100% !important;
+  min-height: 28px;
+  justify-content: flex-start !important;
+  padding: 4px 8px !important;
+  font-size: var(--font-size-small) !important;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
+.viz-carousel-options &gt; button:hover {
+  background: var(--viz-carousel-hover) !important;
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding-inline: calc(4px + var(--control-spacing, 12px) / 2);
+  border-color: var(--input);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--popover) 96%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.4285714286;
+}
+.form-control:is(
+  [type=&quot;file&quot;],
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;],
+  [type=&quot;color&quot;]
+) {
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  line-height: 18px;
+}
+.form-control:is(
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;]
+) {
+  padding-inline: var(--control-spacing, 12px);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+  padding: 0;
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+  min-height: calc(10px + 2 * var(--control-spacing, 12px));
+  padding-inline: var(--control-spacing, 12px);
+  margin-inline-end: var(--control-spacing, 12px);
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  resize: vertical;
+  min-height: 96px;
+  padding: 8px 10px;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: none;
+}
+.form-control:disabled {
+  color: var(--muted-foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  opacity: 1;
+}
+.form-control[aria-invalid=&quot;true&quot;] {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: fit-content;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  margin: 0;
+  /* The secondary icon role is 14px at compact density and 16px at web density. */
+  --icon-size: calc(10px + var(--control-spacing, 12px) / 2);
+  /* Settings dropdowns retain a 12px inset and a 4px text-to-chevron gap. */
+  padding: 0 calc(16px + var(--icon-size)) 0 12px;
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    ),
+    linear-gradient(
+      135deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    );
+  background-position:
+    calc(100% - 12px - var(--icon-size) / 2) 50%,
+    calc(100% - 12px - var(--icon-size) * 0.18) 50%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--icon-size) * 0.32) calc(var(--icon-size) * 0.32);
+  cursor: var(--cursor-interaction, default);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.form-select option {
+  color: var(--popover-foreground);
+  background-color: var(--popover);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.form-select:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+.form-select:disabled {
+  opacity: 0.4;
+}
+
+.form-check {
+  display: flex;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  corner-shape: round;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  width: calc(10px + var(--control-spacing, 12px) / 2);
+  height: calc(10px + var(--control-spacing, 12px) / 2);
+  border-color: var(--border-strong, var(--input));
+  border-radius: calc(var(--radius-sm) / 2);
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:is(:checked, :indeterminate) {
+  border-color: var(--border-strong, var(--input));
+  background-color: color-mix(in srgb, var(--popover) 96%, transparent);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+  background-color: var(--foreground);
+}
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:indeterminate::before {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 65%;
+  height: 6.65%;
+  margin: auto;
+  border-radius: var(--radius-full);
+  background: var(--foreground);
+  mask: none;
+  content: &quot;&quot;;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  border-radius: var(--radius-full);
+  width: 16px;
+  height: 16px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--input);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 0;
+  background: radial-gradient(
+    circle,
+    var(--primary-foreground) 0 3px,
+    var(--foreground) 3px
+  );
+  box-shadow: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:focus-visible {
+  border-color: var(--ring);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;radio&quot;]:disabled,
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;radio&quot;]:disabled
+  + .form-check-label {
+  opacity: 0.5;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+  border-color: #fff;
+  background: #fff;
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--blue);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+  outline: none;
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  accent-color: var(--primary);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  outline: none;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: transparent;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  margin-top: -9px;
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Outline the native track and thumb, preserving the larger input hit area. */
+.form-range:focus-visible::-webkit-slider-runnable-track {
+  outline: 2px auto Highlight;
+  outline-color: -webkit-focus-ring-color;
+}
+
+.form-range::-moz-range-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+.form-range:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--blue);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.viz-carousel-controls :is(button, summary):focus-visible {
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* Web recipes are the default, including on renderers without inline style queries. */
+@supports (border-radius: if(style(--corner-shape: round): 1px; else: 2px)) {
+  /* Match the host&#x27;s proportional text-sm scale at every text preference. */
+  .tooltip,
+  .viz-badge,
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    font-size: if(
+      style(--corner-shape: round): round(
+          nearest,
+          calc(var(--font-size-base) * 14 / 16),
+          1px
+        );
+        else: round(nearest, calc(var(--font-size-base) * 13 / 14), 1px)
+    );
+  }
+
+  .btn,
+  .nav-link,
+  .form-select {
+    border-radius: if(
+      style(--corner-shape: round): var(--radius-full); else: var(--radius-lg)
+    );
+  }
+
+  .form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+    border-radius: if(
+      style(--corner-shape: round): calc(var(--radius-sm) / 2);
+        else: calc(var(--radius-lg) * 0.4)
+    );
+  }
+
+  .tooltip {
+    font-weight: if(
+      style(--corner-shape: round): 600; else: var(--font-weight-normal)
+    );
+  }
+}
+
+@media (pointer: coarse) {
+  .viz-carousel:has(&gt; .viz-carousel-controls) {
+    min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
+    padding-bottom: 76px;
+  }
+
+  .btn,
+  .nav-link,
+  .viz-carousel-controls button,
+  .viz-carousel-picker &gt; summary,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+  .form-control:is(
+    [type=&quot;file&quot;],
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;week&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;color&quot;]
+  ) {
+    height: 44px;
+    min-height: 44px;
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;x1y1-extensions&quot;&gt;
+  &lt;h2&gt;Where the first graded maps stalled&lt;/h2&gt;
+  &lt;div class=&quot;viz-controls&quot;&gt;
+    &lt;label class=&quot;form-label&quot;&gt;Added character&lt;select class=&quot;form-select&quot; data-family&gt;&lt;/select&gt;&lt;/label&gt;
+    &lt;label class=&quot;form-label&quot;&gt;Total degree&lt;select class=&quot;form-select&quot; data-degree&gt;&lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;&lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tabular-nums&quot; data-rank aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+  &lt;svg class=&quot;matrix-chart&quot; role=&quot;img&quot; aria-label=&quot;Exact coefficient matrix of a graded multiplication map&quot;&gt;&lt;/svg&gt;
+  &lt;div class=&quot;viz-row text-small&quot;&gt;&lt;span&gt;Coefficient sign:&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;positive&quot;&gt;+&lt;/b&gt; positive&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;negative&quot;&gt;−&lt;/b&gt; negative&lt;/span&gt;&lt;span&gt;blank = zero&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;text-small tabular-nums&quot; data-detail aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;text-small&quot; data-route&gt;&lt;/div&gt;
+  &lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot; data-tip hidden&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+#x1y1-extensions {position:relative;}
+#x1y1-extensions .matrix-chart {display:block;width:100%;}
+#x1y1-extensions .matrix-chart text {fill:var(--foreground);font-size:12px;}
+#x1y1-extensions .matrix-chart .domain,#x1y1-extensions .matrix-chart .tick line {stroke:var(--border);}
+#x1y1-extensions .positive {color:var(--viz-series-1);}
+#x1y1-extensions .negative {color:var(--viz-series-2);}
+#x1y1-extensions [data-tip] {position:absolute;pointer-events:none;background:var(--popover);color:var(--popover-foreground);max-width:220px;overflow-wrap:anywhere;}
+&lt;/style&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(()=&gt;{
+ const data={&quot;excluded&quot;:132,&quot;previous&quot;:152,&quot;selected_total&quot;:284,&quot;all_possible_triples&quot;:428536,&quot;families&quot;:[{&quot;batch_number&quot;:1,&quot;third_character&quot;:[0,0,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:2,&quot;third_character&quot;:[0,0,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:3,&quot;third_character&quot;:[0,0,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:4,&quot;third_character&quot;:[0,0,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:5,&quot;third_character&quot;:[0,1,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:6,&quot;third_character&quot;:[0,1,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:7,&quot;third_character&quot;:[0,1,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:8,&quot;third_character&quot;:[0,1,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:9,&quot;third_character&quot;:[0,2,0],&quot;initial&quot;:18,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:10,&quot;third_character&quot;:[0,2,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:11,&quot;third_character&quot;:[0,2,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:12,&quot;third_character&quot;:[0,2,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:13,&quot;third_character&quot;:[0,2,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:14,&quot;third_character&quot;:[0,3,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:15,&quot;third_character&quot;:[0,3,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:16,&quot;third_character&quot;:[0,3,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:17,&quot;third_character&quot;:[0,3,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:18,&quot;third_character&quot;:[0,4,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:19,&quot;third_character&quot;:[0,4,3],&quot;initial&quot;:19,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:20,&quot;third_character&quot;:[0,4,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:21,&quot;third_character&quot;:[0,5,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:22,&quot;third_character&quot;:[0,5,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:23,&quot;third_character&quot;:[0,5,2],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:24,&quot;third_character&quot;:[0,5,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:25,&quot;third_character&quot;:[1,0,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:26,&quot;third_character&quot;:[1,0,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:27,&quot;third_character&quot;:[1,0,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:28,&quot;third_character&quot;:[1,0,5],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:29,&quot;third_character&quot;:[1,1,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:30,&quot;third_character&quot;:[1,1,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:31,&quot;third_character&quot;:[1,1,4],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:32,&quot;third_character&quot;:[1,1,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:33,&quot;third_character&quot;:[1,2,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:34,&quot;third_character&quot;:[1,2,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:35,&quot;third_character&quot;:[1,2,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:36,&quot;third_character&quot;:[1,2,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:37,&quot;third_character&quot;:[1,3,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:38,&quot;third_character&quot;:[1,3,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:39,&quot;third_character&quot;:[1,3,2],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:40,&quot;third_character&quot;:[1,3,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:41,&quot;third_character&quot;:[1,3,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:42,&quot;third_character&quot;:[1,4,0],&quot;initial&quot;:18,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:43,&quot;third_character&quot;:[1,4,1],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:44,&quot;third_character&quot;:[1,4,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:45,&quot;third_character&quot;:[1,4,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:46,&quot;third_character&quot;:[1,5,0],&quot;initial&quot;:20,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:47,&quot;third_character&quot;:[1,5,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:48,&quot;third_character&quot;:[2,0,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:49,&quot;third_character&quot;:[2,0,3],&quot;initial&quot;:19,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:50,&quot;third_character&quot;:[2,0,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:51,&quot;third_character&quot;:[2,0,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:52,&quot;third_character&quot;:[2,1,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:53,&quot;third_character&quot;:[2,1,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:54,&quot;third_character&quot;:[2,1,2],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:55,&quot;third_character&quot;:[2,1,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:56,&quot;third_character&quot;:[2,1,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:57,&quot;third_character&quot;:[2,2,0],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:58,&quot;third_character&quot;:[2,2,1],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:59,&quot;third_character&quot;:[2,2,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:60,&quot;third_character&quot;:[2,2,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:61,&quot;third_character&quot;:[2,3,0],&quot;initial&quot;:19,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:62,&quot;third_character&quot;:[2,3,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:63,&quot;third_character&quot;:[2,3,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:64,&quot;third_character&quot;:[2,4,0],&quot;initial&quot;:18,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:65,&quot;third_character&quot;:[2,4,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:66,&quot;third_character&quot;:[2,4,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:67,&quot;third_character&quot;:[2,4,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:68,&quot;third_character&quot;:[2,5,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:69,&quot;third_character&quot;:[2,5,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:70,&quot;third_character&quot;:[2,5,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:71,&quot;third_character&quot;:[3,0,0],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:72,&quot;third_character&quot;:[3,0,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:73,&quot;third_character&quot;:[3,0,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:74,&quot;third_character&quot;:[3,0,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:75,&quot;third_character&quot;:[3,1,0],&quot;initial&quot;:18,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:76,&quot;third_character&quot;:[3,1,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:77,&quot;third_character&quot;:[3,1,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:78,&quot;third_character&quot;:[3,2,0],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:79,&quot;third_character&quot;:[3,2,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:80,&quot;third_character&quot;:[3,2,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:81,&quot;third_character&quot;:[3,3,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:82,&quot;third_character&quot;:[3,3,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:83,&quot;third_character&quot;:[3,3,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:84,&quot;third_character&quot;:[3,4,3],&quot;initial&quot;:18,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:85,&quot;third_character&quot;:[3,4,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:86,&quot;third_character&quot;:[3,5,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:87,&quot;third_character&quot;:[3,5,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:88,&quot;third_character&quot;:[3,5,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:89,&quot;third_character&quot;:[3,5,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:90,&quot;third_character&quot;:[4,0,0],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:91,&quot;third_character&quot;:[4,0,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:92,&quot;third_character&quot;:[4,0,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:93,&quot;third_character&quot;:[4,0,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:94,&quot;third_character&quot;:[4,1,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:95,&quot;third_character&quot;:[4,1,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:96,&quot;third_character&quot;:[4,1,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:97,&quot;third_character&quot;:[4,2,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:98,&quot;third_character&quot;:[4,2,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:99,&quot;third_character&quot;:[4,2,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:100,&quot;third_character&quot;:[4,2,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:101,&quot;third_character&quot;:[4,3,0],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:102,&quot;third_character&quot;:[4,3,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:103,&quot;third_character&quot;:[4,3,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:104,&quot;third_character&quot;:[4,3,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:105,&quot;third_character&quot;:[4,4,0],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:106,&quot;third_character&quot;:[4,4,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:107,&quot;third_character&quot;:[4,4,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:108,&quot;third_character&quot;:[4,5,0],&quot;initial&quot;:19,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:109,&quot;third_character&quot;:[4,5,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:110,&quot;third_character&quot;:[5,0,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:111,&quot;third_character&quot;:[5,0,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:112,&quot;third_character&quot;:[5,0,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:113,&quot;third_character&quot;:[5,0,3],&quot;initial&quot;:18,&quot;shared_needed&quot;:true},{&quot;batch_number&quot;:114,&quot;third_character&quot;:[5,0,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:115,&quot;third_character&quot;:[5,1,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:116,&quot;third_character&quot;:[5,1,1],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:117,&quot;third_character&quot;:[5,1,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:118,&quot;third_character&quot;:[5,1,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:119,&quot;third_character&quot;:[5,2,0],&quot;initial&quot;:18,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:120,&quot;third_character&quot;:[5,2,1],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:121,&quot;third_character&quot;:[5,2,2],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:122,&quot;third_character&quot;:[5,3,1],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:123,&quot;third_character&quot;:[5,3,3],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:124,&quot;third_character&quot;:[5,3,4],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:125,&quot;third_character&quot;:[5,3,5],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:126,&quot;third_character&quot;:[5,4,0],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:127,&quot;third_character&quot;:[5,4,3],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:128,&quot;third_character&quot;:[5,4,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:129,&quot;third_character&quot;:[5,4,5],&quot;initial&quot;:16,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:130,&quot;third_character&quot;:[5,5,0],&quot;initial&quot;:15,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:131,&quot;third_character&quot;:[5,5,3],&quot;initial&quot;:17,&quot;shared_needed&quot;:false},{&quot;batch_number&quot;:132,&quot;third_character&quot;:[5,5,4],&quot;initial&quot;:16,&quot;shared_needed&quot;:true}],&quot;cases&quot;:[{&quot;batch_number&quot;:19,&quot;global_number&quot;:55710,&quot;third_character&quot;:[0,4,3],&quot;initial&quot;:19,&quot;after_blocks&quot;:15,&quot;numerator_parameters&quot;:125,&quot;stabilizer_order&quot;:18,&quot;physical_equations&quot;:669,&quot;charts&quot;:[{&quot;raw_pivot&quot;:7,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:119},{&quot;raw_pivot&quot;:119,&quot;excluded&quot;:false,&quot;remaining_variables&quot;:132},{&quot;raw_pivot&quot;:159,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:125},{&quot;raw_pivot&quot;:216,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:88}],&quot;shared_removed&quot;:[7,159,216],&quot;after_shared&quot;:12,&quot;rebuilt_removed&quot;:[119,139],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:12,&quot;codomain&quot;:20,&quot;rank&quot;:11,&quot;kernel&quot;:1,&quot;quotient_dimension&quot;:9,&quot;columns&quot;:[&quot;P6 * a7&quot;,&quot;P6 * a119&quot;,&quot;P6 * a159&quot;,&quot;P6 * a216&quot;,&quot;P7 * a7&quot;,&quot;P7 * a119&quot;,&quot;P7 * a159&quot;,&quot;P7 * a216&quot;,&quot;P8 * a7&quot;,&quot;P8 * a119&quot;,&quot;P8 * a159&quot;,&quot;P8 * a216&quot;],&quot;rows&quot;:[&quot;a7^3&quot;,&quot;a7^2 a119&quot;,&quot;a7^2 a159&quot;,&quot;a7^2 a216&quot;,&quot;a7 a119^2&quot;,&quot;a7 a119 a159&quot;,&quot;a7 a119 a216&quot;,&quot;a7 a159^2&quot;,&quot;a7 a159 a216&quot;,&quot;a7 a216^2&quot;,&quot;a119^3&quot;,&quot;a119^2 a159&quot;,&quot;a119^2 a216&quot;,&quot;a119 a159^2&quot;,&quot;a119 a159 a216&quot;,&quot;a119 a216^2&quot;,&quot;a159^3&quot;,&quot;a159^2 a216&quot;,&quot;a159 a216^2&quot;,&quot;a216^3&quot;],&quot;cells&quot;:[{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:7,&quot;column&quot;:0,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:8,&quot;column&quot;:0,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:5,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:13,&quot;column&quot;:1,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:1,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:7,&quot;column&quot;:2,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:16,&quot;column&quot;:2,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:17,&quot;column&quot;:2,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:8,&quot;column&quot;:3,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:17,&quot;column&quot;:3,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:18,&quot;column&quot;:3,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:2,&quot;column&quot;:4,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:4,&quot;column&quot;:4,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:5,&quot;column&quot;:4,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:8,&quot;column&quot;:4,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:5,&quot;column&quot;:5,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:10,&quot;column&quot;:5,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:11,&quot;column&quot;:5,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:5,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:7,&quot;column&quot;:6,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:11,&quot;column&quot;:6,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:13,&quot;column&quot;:6,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:17,&quot;column&quot;:6,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:8,&quot;column&quot;:7,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:12,&quot;column&quot;:7,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:7,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:18,&quot;column&quot;:7,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:0,&quot;column&quot;:8,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:2,&quot;column&quot;:8,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:3,&quot;column&quot;:8,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:8,&quot;column&quot;:8,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:9,&quot;column&quot;:8,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:1,&quot;column&quot;:9,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:5,&quot;column&quot;:9,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:6,&quot;column&quot;:9,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:14,&quot;column&quot;:9,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:15,&quot;column&quot;:9,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:2,&quot;column&quot;:10,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:7,&quot;column&quot;:10,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:8,&quot;column&quot;:10,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:17,&quot;column&quot;:10,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:18,&quot;column&quot;:10,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:3,&quot;column&quot;:11,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:8,&quot;column&quot;:11,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:9,&quot;column&quot;:11,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:18,&quot;column&quot;:11,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:19,&quot;column&quot;:11,&quot;exact&quot;:&quot;-432&quot;}]},{&quot;degree&quot;:4,&quot;domain&quot;:30,&quot;codomain&quot;:35,&quot;rank&quot;:24,&quot;kernel&quot;:6,&quot;quotient_dimension&quot;:11,&quot;columns&quot;:[&quot;P6 * a7^2&quot;,&quot;P6 * a7 a119&quot;,&quot;P6 * a7 a159&quot;,&quot;P6 * a7 a216&quot;,&quot;P6 * a119^2&quot;,&quot;P6 * a119 a159&quot;,&quot;P6 * a119 a216&quot;,&quot;P6 * a159^2&quot;,&quot;P6 * a159 a216&quot;,&quot;P6 * a216^2&quot;,&quot;P7 * a7^2&quot;,&quot;P7 * a7 a119&quot;,&quot;P7 * a7 a159&quot;,&quot;P7 * a7 a216&quot;,&quot;P7 * a119^2&quot;,&quot;P7 * a119 a159&quot;,&quot;P7 * a119 a216&quot;,&quot;P7 * a159^2&quot;,&quot;P7 * a159 a216&quot;,&quot;P7 * a216^2&quot;,&quot;P8 * a7^2&quot;,&quot;P8 * a7 a119&quot;,&quot;P8 * a7 a159&quot;,&quot;P8 * a7 a216&quot;,&quot;P8 * a119^2&quot;,&quot;P8 * a119 a159&quot;,&quot;P8 * a119 a216&quot;,&quot;P8 * a159^2&quot;,&quot;P8 * a159 a216&quot;,&quot;P8 * a216^2&quot;],&quot;rows&quot;:[&quot;a7^4&quot;,&quot;a7^3 a119&quot;,&quot;a7^3 a159&quot;,&quot;a7^3 a216&quot;,&quot;a7^2 a119^2&quot;,&quot;a7^2 a119 a159&quot;,&quot;a7^2 a119 a216&quot;,&quot;a7^2 a159^2&quot;,&quot;a7^2 a159 a216&quot;,&quot;a7^2 a216^2&quot;,&quot;a7 a119^3&quot;,&quot;a7 a119^2 a159&quot;,&quot;a7 a119^2 a216&quot;,&quot;a7 a119 a159^2&quot;,&quot;a7 a119 a159 a216&quot;,&quot;a7 a119 a216^2&quot;,&quot;a7 a159^3&quot;,&quot;a7 a159^2 a216&quot;,&quot;a7 a159 a216^2&quot;,&quot;a7 a216^3&quot;,&quot;a119^4&quot;,&quot;a119^3 a159&quot;,&quot;a119^3 a216&quot;,&quot;a119^2 a159^2&quot;,&quot;a119^2 a159 a216&quot;,&quot;a119^2 a216^2&quot;,&quot;a119 a159^3&quot;,&quot;a119 a159^2 a216&quot;,&quot;a119 a159 a216^2&quot;,&quot;a119 a216^3&quot;,&quot;a159^4&quot;,&quot;a159^3 a216&quot;,&quot;a159^2 a216^2&quot;,&quot;a159 a216^3&quot;,&quot;a216^4&quot;],&quot;cells&quot;:[{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:7,&quot;column&quot;:0,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:8,&quot;column&quot;:0,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:5,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:13,&quot;column&quot;:1,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:1,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:7,&quot;column&quot;:2,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:16,&quot;column&quot;:2,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:17,&quot;column&quot;:2,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:8,&quot;column&quot;:3,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:17,&quot;column&quot;:3,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:18,&quot;column&quot;:3,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:11,&quot;column&quot;:4,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:23,&quot;column&quot;:4,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:24,&quot;column&quot;:4,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:13,&quot;column&quot;:5,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:26,&quot;column&quot;:5,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:27,&quot;column&quot;:5,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:14,&quot;column&quot;:6,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:27,&quot;column&quot;:6,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:28,&quot;column&quot;:6,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:16,&quot;column&quot;:7,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:30,&quot;column&quot;:7,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:31,&quot;column&quot;:7,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:17,&quot;column&quot;:8,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:31,&quot;column&quot;:8,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:32,&quot;column&quot;:8,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:18,&quot;column&quot;:9,&quot;exact&quot;:&quot;-1&quot;},{&quot;row&quot;:32,&quot;column&quot;:9,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:33,&quot;column&quot;:9,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:2,&quot;column&quot;:10,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:4,&quot;column&quot;:10,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:5,&quot;column&quot;:10,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:8,&quot;column&quot;:10,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:5,&quot;column&quot;:11,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:10,&quot;column&quot;:11,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:11,&quot;column&quot;:11,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:11,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:7,&quot;column&quot;:12,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:11,&quot;column&quot;:12,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:13,&quot;column&quot;:12,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:17,&quot;column&quot;:12,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:8,&quot;column&quot;:13,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:12,&quot;column&quot;:13,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:13,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:18,&quot;column&quot;:13,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:11,&quot;column&quot;:14,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:20,&quot;column&quot;:14,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:21,&quot;column&quot;:14,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:24,&quot;column&quot;:14,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:13,&quot;column&quot;:15,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:21,&quot;column&quot;:15,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:23,&quot;column&quot;:15,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:27,&quot;column&quot;:15,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:14,&quot;column&quot;:16,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:22,&quot;column&quot;:16,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:24,&quot;column&quot;:16,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:28,&quot;column&quot;:16,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:16,&quot;column&quot;:17,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:23,&quot;column&quot;:17,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:26,&quot;column&quot;:17,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:31,&quot;column&quot;:17,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:17,&quot;column&quot;:18,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:24,&quot;column&quot;:18,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:27,&quot;column&quot;:18,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:32,&quot;column&quot;:18,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:18,&quot;column&quot;:19,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:25,&quot;column&quot;:19,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:28,&quot;column&quot;:19,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:33,&quot;column&quot;:19,&quot;exact&quot;:&quot;-8&quot;},{&quot;row&quot;:0,&quot;column&quot;:20,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:2,&quot;column&quot;:20,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:3,&quot;column&quot;:20,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:8,&quot;column&quot;:20,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:9,&quot;column&quot;:20,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:1,&quot;column&quot;:21,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:5,&quot;column&quot;:21,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:6,&quot;column&quot;:21,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:14,&quot;column&quot;:21,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:15,&quot;column&quot;:21,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:2,&quot;column&quot;:22,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:7,&quot;column&quot;:22,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:8,&quot;column&quot;:22,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:17,&quot;column&quot;:22,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:18,&quot;column&quot;:22,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:3,&quot;column&quot;:23,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:8,&quot;column&quot;:23,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:9,&quot;column&quot;:23,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:18,&quot;column&quot;:23,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:19,&quot;column&quot;:23,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:4,&quot;column&quot;:24,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:11,&quot;column&quot;:24,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:12,&quot;column&quot;:24,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:24,&quot;column&quot;:24,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:25,&quot;column&quot;:24,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:5,&quot;column&quot;:25,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:13,&quot;column&quot;:25,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:14,&quot;column&quot;:25,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:27,&quot;column&quot;:25,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:28,&quot;column&quot;:25,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:6,&quot;column&quot;:26,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:14,&quot;column&quot;:26,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:15,&quot;column&quot;:26,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:28,&quot;column&quot;:26,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:29,&quot;column&quot;:26,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:7,&quot;column&quot;:27,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:16,&quot;column&quot;:27,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:17,&quot;column&quot;:27,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:31,&quot;column&quot;:27,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:32,&quot;column&quot;:27,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:8,&quot;column&quot;:28,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:17,&quot;column&quot;:28,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:18,&quot;column&quot;:28,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:32,&quot;column&quot;:28,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:33,&quot;column&quot;:28,&quot;exact&quot;:&quot;-432&quot;},{&quot;row&quot;:9,&quot;column&quot;:29,&quot;exact&quot;:&quot;-108&quot;},{&quot;row&quot;:18,&quot;column&quot;:29,&quot;exact&quot;:&quot;36&quot;},{&quot;row&quot;:19,&quot;column&quot;:29,&quot;exact&quot;:&quot;432&quot;},{&quot;row&quot;:33,&quot;column&quot;:29,&quot;exact&quot;:&quot;-72&quot;},{&quot;row&quot;:34,&quot;column&quot;:29,&quot;exact&quot;:&quot;-432&quot;}]}]},{&quot;batch_number&quot;:49,&quot;global_number&quot;:58894,&quot;third_character&quot;:[2,0,3],&quot;initial&quot;:19,&quot;after_blocks&quot;:14,&quot;numerator_parameters&quot;:125,&quot;stabilizer_order&quot;:18,&quot;physical_equations&quot;:641,&quot;charts&quot;:[{&quot;raw_pivot&quot;:122,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:105},{&quot;raw_pivot&quot;:138,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:114},{&quot;raw_pivot&quot;:223,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:113}],&quot;shared_removed&quot;:[122,138,223],&quot;after_shared&quot;:11,&quot;rebuilt_removed&quot;:[170],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:3,&quot;codomain&quot;:10,&quot;rank&quot;:3,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:7,&quot;columns&quot;:[&quot;P0 * a122&quot;,&quot;P0 * a138&quot;,&quot;P0 * a223&quot;],&quot;rows&quot;:[&quot;a122^3&quot;,&quot;a122^2 a138&quot;,&quot;a122^2 a223&quot;,&quot;a122 a138^2&quot;,&quot;a122 a138 a223&quot;,&quot;a122 a223^2&quot;,&quot;a138^3&quot;,&quot;a138^2 a223&quot;,&quot;a138 a223^2&quot;,&quot;a223^3&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:5,&quot;column&quot;:0,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:4,&quot;column&quot;:1,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:8,&quot;column&quot;:1,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:5,&quot;column&quot;:2,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:9,&quot;column&quot;:2,&quot;exact&quot;:&quot;1/9&quot;}]},{&quot;degree&quot;:4,&quot;domain&quot;:6,&quot;codomain&quot;:15,&quot;rank&quot;:6,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:9,&quot;columns&quot;:[&quot;P0 * a122^2&quot;,&quot;P0 * a122 a138&quot;,&quot;P0 * a122 a223&quot;,&quot;P0 * a138^2&quot;,&quot;P0 * a138 a223&quot;,&quot;P0 * a223^2&quot;],&quot;rows&quot;:[&quot;a122^4&quot;,&quot;a122^3 a138&quot;,&quot;a122^3 a223&quot;,&quot;a122^2 a138^2&quot;,&quot;a122^2 a138 a223&quot;,&quot;a122^2 a223^2&quot;,&quot;a122 a138^3&quot;,&quot;a122 a138^2 a223&quot;,&quot;a122 a138 a223^2&quot;,&quot;a122 a223^3&quot;,&quot;a138^4&quot;,&quot;a138^3 a223&quot;,&quot;a138^2 a223^2&quot;,&quot;a138 a223^3&quot;,&quot;a223^4&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:5,&quot;column&quot;:0,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:4,&quot;column&quot;:1,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:8,&quot;column&quot;:1,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:5,&quot;column&quot;:2,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:9,&quot;column&quot;:2,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:3,&quot;column&quot;:3,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:7,&quot;column&quot;:3,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:12,&quot;column&quot;:3,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:4,&quot;column&quot;:4,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:8,&quot;column&quot;:4,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:13,&quot;column&quot;:4,&quot;exact&quot;:&quot;1/9&quot;},{&quot;row&quot;:5,&quot;column&quot;:5,&quot;exact&quot;:&quot;4&quot;},{&quot;row&quot;:9,&quot;column&quot;:5,&quot;exact&quot;:&quot;-4/3&quot;},{&quot;row&quot;:14,&quot;column&quot;:5,&quot;exact&quot;:&quot;1/9&quot;}]}]},{&quot;batch_number&quot;:61,&quot;global_number&quot;:59824,&quot;third_character&quot;:[2,3,0],&quot;initial&quot;:19,&quot;after_blocks&quot;:16,&quot;numerator_parameters&quot;:68,&quot;stabilizer_order&quot;:36,&quot;physical_equations&quot;:363,&quot;charts&quot;:[{&quot;raw_pivot&quot;:118,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:61},{&quot;raw_pivot&quot;:144,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:74},{&quot;raw_pivot&quot;:157,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:62},{&quot;raw_pivot&quot;:213,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:62}],&quot;shared_removed&quot;:[118,144,157,213],&quot;after_shared&quot;:12,&quot;rebuilt_removed&quot;:[170,198],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:0,&quot;codomain&quot;:20,&quot;rank&quot;:0,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:20,&quot;columns&quot;:[],&quot;rows&quot;:[&quot;a118^3&quot;,&quot;a118^2 a144&quot;,&quot;a118^2 a157&quot;,&quot;a118^2 a213&quot;,&quot;a118 a144^2&quot;,&quot;a118 a144 a157&quot;,&quot;a118 a144 a213&quot;,&quot;a118 a157^2&quot;,&quot;a118 a157 a213&quot;,&quot;a118 a213^2&quot;,&quot;a144^3&quot;,&quot;a144^2 a157&quot;,&quot;a144^2 a213&quot;,&quot;a144 a157^2&quot;,&quot;a144 a157 a213&quot;,&quot;a144 a213^2&quot;,&quot;a157^3&quot;,&quot;a157^2 a213&quot;,&quot;a157 a213^2&quot;,&quot;a213^3&quot;],&quot;cells&quot;:[]},{&quot;degree&quot;:4,&quot;domain&quot;:0,&quot;codomain&quot;:35,&quot;rank&quot;:0,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:35,&quot;columns&quot;:[],&quot;rows&quot;:[&quot;a118^4&quot;,&quot;a118^3 a144&quot;,&quot;a118^3 a157&quot;,&quot;a118^3 a213&quot;,&quot;a118^2 a144^2&quot;,&quot;a118^2 a144 a157&quot;,&quot;a118^2 a144 a213&quot;,&quot;a118^2 a157^2&quot;,&quot;a118^2 a157 a213&quot;,&quot;a118^2 a213^2&quot;,&quot;a118 a144^3&quot;,&quot;a118 a144^2 a157&quot;,&quot;a118 a144^2 a213&quot;,&quot;a118 a144 a157^2&quot;,&quot;a118 a144 a157 a213&quot;,&quot;a118 a144 a213^2&quot;,&quot;a118 a157^3&quot;,&quot;a118 a157^2 a213&quot;,&quot;a118 a157 a213^2&quot;,&quot;a118 a213^3&quot;,&quot;a144^4&quot;,&quot;a144^3 a157&quot;,&quot;a144^3 a213&quot;,&quot;a144^2 a157^2&quot;,&quot;a144^2 a157 a213&quot;,&quot;a144^2 a213^2&quot;,&quot;a144 a157^3&quot;,&quot;a144 a157^2 a213&quot;,&quot;a144 a157 a213^2&quot;,&quot;a144 a213^3&quot;,&quot;a157^4&quot;,&quot;a157^3 a213&quot;,&quot;a157^2 a213^2&quot;,&quot;a157 a213^3&quot;,&quot;a213^4&quot;],&quot;cells&quot;:[]}]},{&quot;batch_number&quot;:72,&quot;global_number&quot;:60550,&quot;third_character&quot;:[3,0,1],&quot;initial&quot;:16,&quot;after_blocks&quot;:14,&quot;numerator_parameters&quot;:256,&quot;stabilizer_order&quot;:6,&quot;physical_equations&quot;:1490,&quot;charts&quot;:[{&quot;raw_pivot&quot;:46,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:209},{&quot;raw_pivot&quot;:75,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:190}],&quot;shared_removed&quot;:[46,75],&quot;after_shared&quot;:12,&quot;rebuilt_removed&quot;:[139,170],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:2,&quot;codomain&quot;:4,&quot;rank&quot;:2,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:2,&quot;columns&quot;:[&quot;P7 * a46&quot;,&quot;P7 * a75&quot;],&quot;rows&quot;:[&quot;a46^3&quot;,&quot;a46^2 a75&quot;,&quot;a46 a75^2&quot;,&quot;a75^3&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;-10&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1/3&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1/72&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;-10&quot;},{&quot;row&quot;:2,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1/3&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1/72&quot;}]},{&quot;degree&quot;:4,&quot;domain&quot;:3,&quot;codomain&quot;:5,&quot;rank&quot;:3,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:2,&quot;columns&quot;:[&quot;P7 * a46^2&quot;,&quot;P7 * a46 a75&quot;,&quot;P7 * a75^2&quot;],&quot;rows&quot;:[&quot;a46^4&quot;,&quot;a46^3 a75&quot;,&quot;a46^2 a75^2&quot;,&quot;a46 a75^3&quot;,&quot;a75^4&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;-10&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1/3&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1/72&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;-10&quot;},{&quot;row&quot;:2,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1/3&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1/72&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;-10&quot;},{&quot;row&quot;:3,&quot;column&quot;:2,&quot;exact&quot;:&quot;-1/3&quot;},{&quot;row&quot;:4,&quot;column&quot;:2,&quot;exact&quot;:&quot;-1/72&quot;}]}]},{&quot;batch_number&quot;:75,&quot;global_number&quot;:60727,&quot;third_character&quot;:[3,1,0],&quot;initial&quot;:18,&quot;after_blocks&quot;:11,&quot;numerator_parameters&quot;:68,&quot;stabilizer_order&quot;:36,&quot;physical_equations&quot;:338,&quot;charts&quot;:[{&quot;raw_pivot&quot;:282,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:48}],&quot;shared_removed&quot;:[282],&quot;after_shared&quot;:10,&quot;rebuilt_removed&quot;:[],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:0,&quot;codomain&quot;:1,&quot;rank&quot;:0,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:1,&quot;columns&quot;:[],&quot;rows&quot;:[&quot;a282^3&quot;],&quot;cells&quot;:[]},{&quot;degree&quot;:4,&quot;domain&quot;:0,&quot;codomain&quot;:1,&quot;rank&quot;:0,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:1,&quot;columns&quot;:[],&quot;rows&quot;:[&quot;a282^4&quot;],&quot;cells&quot;:[]}]},{&quot;batch_number&quot;:84,&quot;global_number&quot;:61204,&quot;third_character&quot;:[3,4,3],&quot;initial&quot;:18,&quot;after_blocks&quot;:13,&quot;numerator_parameters&quot;:125,&quot;stabilizer_order&quot;:18,&quot;physical_equations&quot;:704,&quot;charts&quot;:[{&quot;raw_pivot&quot;:124,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:93},{&quot;raw_pivot&quot;:200,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:85},{&quot;raw_pivot&quot;:274,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:112}],&quot;shared_removed&quot;:[124,200,274],&quot;after_shared&quot;:10,&quot;rebuilt_removed&quot;:[],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:6,&quot;codomain&quot;:10,&quot;rank&quot;:5,&quot;kernel&quot;:1,&quot;quotient_dimension&quot;:5,&quot;columns&quot;:[&quot;P6 * a124&quot;,&quot;P6 * a200&quot;,&quot;P6 * a274&quot;,&quot;P7 * a124&quot;,&quot;P7 * a200&quot;,&quot;P7 * a274&quot;],&quot;rows&quot;:[&quot;a124^3&quot;,&quot;a124^2 a200&quot;,&quot;a124^2 a274&quot;,&quot;a124 a200^2&quot;,&quot;a124 a200 a274&quot;,&quot;a124 a274^2&quot;,&quot;a200^3&quot;,&quot;a200^2 a274&quot;,&quot;a200 a274^2&quot;,&quot;a274^3&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:3,&quot;column&quot;:0,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:6,&quot;column&quot;:1,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:4,&quot;column&quot;:2,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:7,&quot;column&quot;:2,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:0,&quot;column&quot;:3,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:1,&quot;column&quot;:3,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:3,&quot;column&quot;:3,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:1,&quot;column&quot;:4,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:3,&quot;column&quot;:4,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:6,&quot;column&quot;:4,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:2,&quot;column&quot;:5,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:4,&quot;column&quot;:5,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:7,&quot;column&quot;:5,&quot;exact&quot;:&quot;2&quot;}]},{&quot;degree&quot;:4,&quot;domain&quot;:12,&quot;codomain&quot;:15,&quot;rank&quot;:9,&quot;kernel&quot;:3,&quot;quotient_dimension&quot;:6,&quot;columns&quot;:[&quot;P6 * a124^2&quot;,&quot;P6 * a124 a200&quot;,&quot;P6 * a124 a274&quot;,&quot;P6 * a200^2&quot;,&quot;P6 * a200 a274&quot;,&quot;P6 * a274^2&quot;,&quot;P7 * a124^2&quot;,&quot;P7 * a124 a200&quot;,&quot;P7 * a124 a274&quot;,&quot;P7 * a200^2&quot;,&quot;P7 * a200 a274&quot;,&quot;P7 * a274^2&quot;],&quot;rows&quot;:[&quot;a124^4&quot;,&quot;a124^3 a200&quot;,&quot;a124^3 a274&quot;,&quot;a124^2 a200^2&quot;,&quot;a124^2 a200 a274&quot;,&quot;a124^2 a274^2&quot;,&quot;a124 a200^3&quot;,&quot;a124 a200^2 a274&quot;,&quot;a124 a200 a274^2&quot;,&quot;a124 a274^3&quot;,&quot;a200^4&quot;,&quot;a200^3 a274&quot;,&quot;a200^2 a274^2&quot;,&quot;a200 a274^3&quot;,&quot;a274^4&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:3,&quot;column&quot;:0,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:6,&quot;column&quot;:1,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:4,&quot;column&quot;:2,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:7,&quot;column&quot;:2,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:3,&quot;column&quot;:3,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:6,&quot;column&quot;:3,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:10,&quot;column&quot;:3,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:4,&quot;column&quot;:4,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:7,&quot;column&quot;:4,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:11,&quot;column&quot;:4,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:5,&quot;column&quot;:5,&quot;exact&quot;:&quot;3/2&quot;},{&quot;row&quot;:8,&quot;column&quot;:5,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:12,&quot;column&quot;:5,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:0,&quot;column&quot;:6,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:1,&quot;column&quot;:6,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:3,&quot;column&quot;:6,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:1,&quot;column&quot;:7,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:3,&quot;column&quot;:7,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:6,&quot;column&quot;:7,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:2,&quot;column&quot;:8,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:4,&quot;column&quot;:8,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:7,&quot;column&quot;:8,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:3,&quot;column&quot;:9,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:6,&quot;column&quot;:9,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:10,&quot;column&quot;:9,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:4,&quot;column&quot;:10,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:7,&quot;column&quot;:10,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:11,&quot;column&quot;:10,&quot;exact&quot;:&quot;2&quot;},{&quot;row&quot;:5,&quot;column&quot;:11,&quot;exact&quot;:&quot;-1/6&quot;},{&quot;row&quot;:8,&quot;column&quot;:11,&quot;exact&quot;:&quot;-2/3&quot;},{&quot;row&quot;:12,&quot;column&quot;:11,&quot;exact&quot;:&quot;2&quot;}]}]},{&quot;batch_number&quot;:100,&quot;global_number&quot;:61852,&quot;third_character&quot;:[4,2,3],&quot;initial&quot;:17,&quot;after_blocks&quot;:12,&quot;numerator_parameters&quot;:125,&quot;stabilizer_order&quot;:18,&quot;physical_equations&quot;:634,&quot;charts&quot;:[{&quot;raw_pivot&quot;:6,&quot;excluded&quot;:false,&quot;remaining_variables&quot;:104},{&quot;raw_pivot&quot;:211,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:87}],&quot;shared_removed&quot;:[211],&quot;after_shared&quot;:11,&quot;rebuilt_removed&quot;:[6],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:2,&quot;codomain&quot;:4,&quot;rank&quot;:2,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:2,&quot;columns&quot;:[&quot;P8 * a6&quot;,&quot;P8 * a211&quot;],&quot;rows&quot;:[&quot;a6^3&quot;,&quot;a6^2 a211&quot;,&quot;a6 a211^2&quot;,&quot;a211^3&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1/12&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-5/12&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1/12&quot;},{&quot;row&quot;:2,&quot;column&quot;:1,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-5/12&quot;}]},{&quot;degree&quot;:4,&quot;domain&quot;:3,&quot;codomain&quot;:5,&quot;rank&quot;:3,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:2,&quot;columns&quot;:[&quot;P8 * a6^2&quot;,&quot;P8 * a6 a211&quot;,&quot;P8 * a211^2&quot;],&quot;rows&quot;:[&quot;a6^4&quot;,&quot;a6^3 a211&quot;,&quot;a6^2 a211^2&quot;,&quot;a6 a211^3&quot;,&quot;a211^4&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;-1/12&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-5/12&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;-1/12&quot;},{&quot;row&quot;:2,&quot;column&quot;:1,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-5/12&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;-1/12&quot;},{&quot;row&quot;:3,&quot;column&quot;:2,&quot;exact&quot;:&quot;1/3&quot;},{&quot;row&quot;:4,&quot;column&quot;:2,&quot;exact&quot;:&quot;-5/12&quot;}]}]},{&quot;batch_number&quot;:113,&quot;global_number&quot;:62190,&quot;third_character&quot;:[5,0,3],&quot;initial&quot;:18,&quot;after_blocks&quot;:12,&quot;numerator_parameters&quot;:125,&quot;stabilizer_order&quot;:18,&quot;physical_equations&quot;:612,&quot;charts&quot;:[{&quot;raw_pivot&quot;:165,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:110}],&quot;shared_removed&quot;:[165],&quot;after_shared&quot;:11,&quot;rebuilt_removed&quot;:[170],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:0,&quot;codomain&quot;:1,&quot;rank&quot;:0,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:1,&quot;columns&quot;:[],&quot;rows&quot;:[&quot;a165^3&quot;],&quot;cells&quot;:[]},{&quot;degree&quot;:4,&quot;domain&quot;:0,&quot;codomain&quot;:1,&quot;rank&quot;:0,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:1,&quot;columns&quot;:[],&quot;rows&quot;:[&quot;a165^4&quot;],&quot;cells&quot;:[]}]},{&quot;batch_number&quot;:132,&quot;global_number&quot;:62336,&quot;third_character&quot;:[5,5,4],&quot;initial&quot;:16,&quot;after_blocks&quot;:13,&quot;numerator_parameters&quot;:128,&quot;stabilizer_order&quot;:12,&quot;physical_equations&quot;:692,&quot;charts&quot;:[{&quot;raw_pivot&quot;:44,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:113},{&quot;raw_pivot&quot;:74,&quot;excluded&quot;:true,&quot;remaining_variables&quot;:86}],&quot;shared_removed&quot;:[44,74],&quot;after_shared&quot;:11,&quot;rebuilt_removed&quot;:[170],&quot;rebuilt_blocks&quot;:[],&quot;final&quot;:[123,135,180,210,229,232,235,272,289,293],&quot;excluded&quot;:true,&quot;maps&quot;:[{&quot;degree&quot;:3,&quot;domain&quot;:2,&quot;codomain&quot;:4,&quot;rank&quot;:2,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:2,&quot;columns&quot;:[&quot;P4 * a44&quot;,&quot;P4 * a74&quot;],&quot;rows&quot;:[&quot;a44^3&quot;,&quot;a44^2 a74&quot;,&quot;a44 a74^2&quot;,&quot;a74^3&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;-12&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-5/12&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;-12&quot;},{&quot;row&quot;:2,&quot;column&quot;:1,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-5/12&quot;}]},{&quot;degree&quot;:4,&quot;domain&quot;:3,&quot;codomain&quot;:5,&quot;rank&quot;:3,&quot;kernel&quot;:0,&quot;quotient_dimension&quot;:2,&quot;columns&quot;:[&quot;P4 * a44^2&quot;,&quot;P4 * a44 a74&quot;,&quot;P4 * a74^2&quot;],&quot;rows&quot;:[&quot;a44^4&quot;,&quot;a44^3 a74&quot;,&quot;a44^2 a74^2&quot;,&quot;a44 a74^3&quot;,&quot;a74^4&quot;],&quot;cells&quot;:[{&quot;row&quot;:0,&quot;column&quot;:0,&quot;exact&quot;:&quot;-12&quot;},{&quot;row&quot;:1,&quot;column&quot;:0,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:2,&quot;column&quot;:0,&quot;exact&quot;:&quot;-5/12&quot;},{&quot;row&quot;:1,&quot;column&quot;:1,&quot;exact&quot;:&quot;-12&quot;},{&quot;row&quot;:2,&quot;column&quot;:1,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:3,&quot;column&quot;:1,&quot;exact&quot;:&quot;-5/12&quot;},{&quot;row&quot;:2,&quot;column&quot;:2,&quot;exact&quot;:&quot;-12&quot;},{&quot;row&quot;:3,&quot;column&quot;:2,&quot;exact&quot;:&quot;-2&quot;},{&quot;row&quot;:4,&quot;column&quot;:2,&quot;exact&quot;:&quot;-5/12&quot;}]}]}],&quot;packetHashes&quot;:{&quot;continued-019.json.gz&quot;:&quot;b33e9fbca8a56eefe224410885282f53ec4bc5b42a38c3df2a68df82b51ecdb8&quot;,&quot;continued-049.json.gz&quot;:&quot;789806b5fa7e5f0c134c72fd04a8cabba9bc5972001bb417c906be386f70deba&quot;,&quot;continued-061.json.gz&quot;:&quot;fa206409ca5c4a78e7c6f4de66121392ab7d0245242ca036c3dc9e5e8bc8ad09&quot;,&quot;continued-072.json.gz&quot;:&quot;bd136feed0604e36af55db82d6036d2b45371bb2766569559901de0961c59f49&quot;,&quot;continued-075.json.gz&quot;:&quot;e7c4f945503ed7adb2387f6a3e7936b3376a21497f7af31a9c7f1c20fdd2d00c&quot;,&quot;continued-084.json.gz&quot;:&quot;e107951d24b5c6e1530017ebebf113a8789bcb2eeb411f58c8949d22fa4843fd&quot;,&quot;continued-100.json.gz&quot;:&quot;b63f508d4d70e6a37870cbbbf2ed80a1f3be01b58425cc831a2c6c380fafc7b9&quot;,&quot;continued-113.json.gz&quot;:&quot;7bfff072be75cd6afa89a4754700023ff9b4d6f3024e4da243c4954311148523&quot;,&quot;continued-132.json.gz&quot;:&quot;4feeb78b1ea392d5b46d504ed252eececed7cd086730d6a38c088d5997052b39&quot;,&quot;family-001.json.gz&quot;:&quot;b1c61b351fbfcac41709d633841f3088c41bdafda12ed070d0e48ed7f3a2eb32&quot;,&quot;family-002.json.gz&quot;:&quot;9124332ea0e9787099965dd5721ff41833f4fb89b9e37d7c8c285e2255d3671f&quot;,&quot;family-003.json.gz&quot;:&quot;764ed2a5cc73913b44ee98cce21927b378ecc00a6caf0e2eaf281962aa9c7c9f&quot;,&quot;family-004.json.gz&quot;:&quot;9c240c11edb1994f9842f2040fdd299399f1215b48b2ea6ef8ba26725c28fcc8&quot;,&quot;family-005.json.gz&quot;:&quot;e4b5b46bffec960f382f18e94f3559c0280c9310db3249c07ad802b98e9a5e9b&quot;,&quot;family-006.json.gz&quot;:&quot;8789329c8d486890ef6976a0f2057d2f3ba42e184a906abe9a87746424741666&quot;,&quot;family-007.json.gz&quot;:&quot;194512e3528e6604da959b94624f8b48831c17cf61dfc8adce484e1b32216678&quot;,&quot;family-008.json.gz&quot;:&quot;83d397591f29662fd0ab9fb45b5ce6516fbfb49a43dddeb694a20234d2863542&quot;,&quot;family-009.json.gz&quot;:&quot;0b5c8bee51ea475584acb9f307fc446298ec319823858654443e90afef380810&quot;,&quot;family-010.json.gz&quot;:&quot;d9b3219a0a2483d14f843f2e31bfb7eb2fb3ee9e3128183afefbace5e85a18e0&quot;,&quot;family-011.json.gz&quot;:&quot;ed9f458fc6ba2eff1f908b356499f5954cb1dfdb9b18532c03c4c734c6bace6e&quot;,&quot;family-012.json.gz&quot;:&quot;0b943970154e673a81b60a86d6628c7a1caf7b33f1bcbdd5e2a5e4700fcefae5&quot;,&quot;family-013.json.gz&quot;:&quot;cbc99989f505cb6a63ca9053321773a4bbae1dce52410098eb3ccd5c7b28af85&quot;,&quot;family-014.json.gz&quot;:&quot;82a3bd5b44200e5d5be09d488b36db90acf0565689440622a38d051afec09d54&quot;,&quot;family-015.json.gz&quot;:&quot;f44543cc23de6172c496295fa28e4becef7b356f7b42346b267e4540db982703&quot;,&quot;family-016.json.gz&quot;:&quot;74f73b6c186b7ebb9a325de32062ebf20e6d79f6f300470b25e352440cd853ac&quot;,&quot;family-017.json.gz&quot;:&quot;f316b6e3800029e5201f011b075c45b9fb39418a3d40dd9f95fb784307c57e27&quot;,&quot;family-018.json.gz&quot;:&quot;25b2fa32f827619acd6fbf41635fab56efc5ee084a17a746e0c77e749a0ddb53&quot;,&quot;family-019.json.gz&quot;:&quot;11d2e50a32ec6d3b3bf208f2c5ef2bdd5052a30a4ab748440f70daa8e4889674&quot;,&quot;family-020.json.gz&quot;:&quot;7aca20b4e99b120d9f87ce332f5d1b1e5020837b0d85c2d9966fb2e7e2eb997e&quot;,&quot;family-021.json.gz&quot;:&quot;f1eace62f9e46ff3b44ad80ee5244726a0b589deb0c4ea2f60951232cb03fd1e&quot;,&quot;family-022.json.gz&quot;:&quot;f3b1950af1a428c0bea188c8e6f9c2b1a41667213e74922a01cecdda477f5154&quot;,&quot;family-023.json.gz&quot;:&quot;92334847ae706be8283cf5b40f6383dc13872ed9ab704a1856f2857cf49e715e&quot;,&quot;family-024.json.gz&quot;:&quot;bf53e3b4bc0435f64d57fc40a8d8c925c6de73e31bc05b72406e5ea64542c671&quot;,&quot;family-025.json.gz&quot;:&quot;150e32267d938f372cc425e9f665097ace1b0065dc011cd2742b4cf80dbe010c&quot;,&quot;family-026.json.gz&quot;:&quot;f3965fdee91d1392274436d2ef9fc2414326a634b216a39389e2f0cf8c4b43db&quot;,&quot;family-027.json.gz&quot;:&quot;2351c8a061ab59b14ffa722359cbd0c1e0e500054d4278abe20f0598afde995e&quot;,&quot;family-028.json.gz&quot;:&quot;3eed47061747a8d2644f7f396b6407f7df40f7d7eafdfeea099f235d340c168f&quot;,&quot;family-029.json.gz&quot;:&quot;d1ba4f52ee1dd5f87d69bdbaf4bfe1dcacad462ae96fdf790cf8aa1d3e4ce69f&quot;,&quot;family-030.json.gz&quot;:&quot;a598c8b33f036f6c4aa33670cb6dac4f2e2e52d872ac7cc3d0872003eb9b925b&quot;,&quot;family-031.json.gz&quot;:&quot;c3cf08e2e64686afc79f35d47539ca28c2cc66b0b39ea27f5c31da82d248e012&quot;,&quot;family-032.json.gz&quot;:&quot;8c7bf34878075d30613513591a1b55cebdf82974e4822559e5e58f64b6d567ad&quot;,&quot;family-033.json.gz&quot;:&quot;daa2f3b60f88ddd29138933261aa4902d9e8f032bd815d7f1d763620a86321da&quot;,&quot;family-034.json.gz&quot;:&quot;31ce56db82167b9dd05441adc87f90eebce5fb72a346dc92f83c4e3e12c2767b&quot;,&quot;family-035.json.gz&quot;:&quot;3f6488eba7210275eb4fcdccbee831d5f716c49802c519ea0571d611d544d3f5&quot;,&quot;family-036.json.gz&quot;:&quot;bcfe683e541111b9c6412f7a65dfb0f2c022a0f6c9ef8b14fcc982fb8b9c6d6c&quot;,&quot;family-037.json.gz&quot;:&quot;cdafdd451aa2aaf9da8b040680cca2f2f5500380330a91816e0ffd472932da96&quot;,&quot;family-038.json.gz&quot;:&quot;8d4d00fc67c9a911e2cb3dadac8ac5225d2c92c4fea47c3f577e4cb9a0c7b024&quot;,&quot;family-039.json.gz&quot;:&quot;b99ea3becc745b2e569c283265ad8f0fc965e1577745af0b512402fcd94e22da&quot;,&quot;family-040.json.gz&quot;:&quot;f6492b158e5790c43ba503d591e0d16307e59f76e58484c722df7892f7bc9960&quot;,&quot;family-041.json.gz&quot;:&quot;926485aba1eaf63a90bed93532654d665af156a6d5e01846ee85581539e09bfc&quot;,&quot;family-042.json.gz&quot;:&quot;d0fe63d25e4c5e21e0f7e439ba4291deb61d1f688b0b2f4a36705ee7521ac484&quot;,&quot;family-043.json.gz&quot;:&quot;e8bd33bb05d139f765d531eedea6b64d094f9c4d0a145572d28a48dc7ce16153&quot;,&quot;family-044.json.gz&quot;:&quot;065dc0b60f918f12e2b1a1f7f9e6a7a060a7266c7f848fa858799196e6f9b0ab&quot;,&quot;family-045.json.gz&quot;:&quot;327550d852a261276963082bb8a1ed53c310ac0b0feee6918168356d3e00eff2&quot;,&quot;family-046.json.gz&quot;:&quot;dbbf8f6fcedb2cee16440b2faef9701d71aa338d6f760bcd8572d98de0b7ca22&quot;,&quot;family-047.json.gz&quot;:&quot;34f7e4fca5940a4a09cc9961852f14da66bcc5fe8ac67282c9ce70fd7e621733&quot;,&quot;family-048.json.gz&quot;:&quot;7c188d4fd8486487fce17366afaac5e6edba117f8e59a025280ee2ffee563c90&quot;,&quot;family-049.json.gz&quot;:&quot;19b85d266b4b666eb2973e7c3ca0e1d56d61eec84779adb582cc35042d3b0b32&quot;,&quot;family-050.json.gz&quot;:&quot;dde380e1eac8ea2f467aae54f9d136e5de1ea16d941d11dbac7602342b68d092&quot;,&quot;family-051.json.gz&quot;:&quot;2829a79491c730920451833c0f81cc1fb919bd8865f45b03df4a33b1015bccac&quot;,&quot;family-052.json.gz&quot;:&quot;cd60a7f3456b0a73d39be97dae470784e932a7a539fafa3b7bddcd70b965cc04&quot;,&quot;family-053.json.gz&quot;:&quot;7084797759ed3f93c9df80a436bc59cef931ed63774142968e14fd1bc4566efd&quot;,&quot;family-054.json.gz&quot;:&quot;45e53d3661d900a59cdaf3e2de5a6183db04f745f5d772f862fbfa3de4b55adf&quot;,&quot;family-055.json.gz&quot;:&quot;dfd25e34a9be97a7b4363570661023ebd960ead2e33dc7bba802a9ff3ec59c45&quot;,&quot;family-056.json.gz&quot;:&quot;858bb9038e841334dcceabff47464fbb8907f33c775e01b5ddb4669cc2a4f343&quot;,&quot;family-057.json.gz&quot;:&quot;d6393f4b87e800592a1398fd150c0651edcc0eb54b4ab5a925143d835a7378e8&quot;,&quot;family-058.json.gz&quot;:&quot;8fb90e32d9084fdfb4a2930215104d960e9a3902e9fe76aae01d4299ad239676&quot;,&quot;family-059.json.gz&quot;:&quot;d0849c76f4acbf80c45057dfd25415cb269058192a93864ffffac31bc6b546ef&quot;,&quot;family-060.json.gz&quot;:&quot;810f61221180531058adeeed5ea605d00c38f046a60c80eb457ee1812a03d7b3&quot;,&quot;family-061.json.gz&quot;:&quot;1d891d6668ca4c96b565849783d71613b67eb235b6cd2c344a7bf3dc0cf8abfd&quot;,&quot;family-062.json.gz&quot;:&quot;d6b49278f45ad3e59849a27b220b2c0a9ab30cf4db24ce4e502db272370947a7&quot;,&quot;family-063.json.gz&quot;:&quot;91f1d219d25b882ea1e632ee17cc4803bcf588a4dcd3255ff309a97fa65b7300&quot;,&quot;family-064.json.gz&quot;:&quot;ad3601c94dc16b8cf71ec93a384ab97ac23827e193a4e7de192b28d31a8caebe&quot;,&quot;family-065.json.gz&quot;:&quot;402cd7fc6d58a1e36513607b891a0717893475a528da764aa237593f99e02225&quot;,&quot;family-066.json.gz&quot;:&quot;02633f1b20346bb0ae27f2a5be2930caa6f63bbfa4a24df1b97478a7e7a1ed21&quot;,&quot;family-067.json.gz&quot;:&quot;20e3abb3bc65fdaff031a3d6323a158bf775c902b8276ec2cd69e09b88bfb934&quot;,&quot;family-068.json.gz&quot;:&quot;7724894b8d2200c36b5adae2b7d5041a76b58b5f8526129b330cd42fb4fc2fba&quot;,&quot;family-069.json.gz&quot;:&quot;0996a08b164fa0aff0a77a808494ce80d7a9dabd75eb31de834b143d71268b75&quot;,&quot;family-070.json.gz&quot;:&quot;c0c28f2039baedf4894843c475085852c1a571846b05d14ced2647aa25762e87&quot;,&quot;family-071.json.gz&quot;:&quot;bc489f30b6add72689abb3cebffd14c63d49db2fc58c1a9bfd0ea85eef5fb61c&quot;,&quot;family-072.json.gz&quot;:&quot;e0c90062fd6a1d387da24339a4dd03b84f69c04a332d13317a465497b08b4d7d&quot;,&quot;family-073.json.gz&quot;:&quot;02bd4f9f7b5413301c21dc86b4d2ed884231a27989101c5801efaa322dbb7dab&quot;,&quot;family-074.json.gz&quot;:&quot;c55d27a7514b53dc564156b89f5da1160f1635a39674d9a48fcfcc3d362dc2d2&quot;,&quot;family-075.json.gz&quot;:&quot;ad459834f3f098d6c979516062eff495d99a4ecfabcb3cc1edd97adc52073a4b&quot;,&quot;family-076.json.gz&quot;:&quot;4a2227e60287a53d0a95afe0289d99806fbb2c8c61009862fe7ac8fa98fc4df7&quot;,&quot;family-077.json.gz&quot;:&quot;f2bdaa6ffc17945b8dd86f0c50869f6604bfe967fb9f5f0c68815ea2666f454a&quot;,&quot;family-078.json.gz&quot;:&quot;ecad5c3ab8b9075bd254c31a520c99f5e1ba42c29f314f7051e54889a3261eca&quot;,&quot;family-079.json.gz&quot;:&quot;d7eada7923dd4974c3c16a55a2ab2971ae2c4c424c3bc872bc1845dc59ec347c&quot;,&quot;family-080.json.gz&quot;:&quot;9d52dcd1d7bd9784a31afaa5ef67a94c54ab1f80653f915e380b815da57f34f0&quot;,&quot;family-081.json.gz&quot;:&quot;17137dbfc3109f1cebf34dae11f0843c52733b0e6588c107b0f0f18bf896dae5&quot;,&quot;family-082.json.gz&quot;:&quot;a8b2e7d04f49da4b3aa683f640e803df1acdb5e4d791b25fab9fe91615b4a065&quot;,&quot;family-083.json.gz&quot;:&quot;bc4b7f7dfe4a85c66744b0c4d7d4451b9fda44c3509f677c830c4d23d5249218&quot;,&quot;family-084.json.gz&quot;:&quot;59d15d351f4d0f8a1fde8332654c4bb4e52a270c5feeb550c3e816a6719bd017&quot;,&quot;family-085.json.gz&quot;:&quot;f78c1de3c716952339ef13a7cf479e35fe15b372eb1c089640aa4788b543b122&quot;,&quot;family-086.json.gz&quot;:&quot;409fcb965162ae49ebbb38f8acb2959b426dad9886449d49373888da25457221&quot;,&quot;family-087.json.gz&quot;:&quot;b23c444a2921c2909576b84644a7af69150546fdedfe47a1d7b5679fb7346cb5&quot;,&quot;family-088.json.gz&quot;:&quot;389934d465f7725e78818f0126cbddf28ddbedbcd563903fa9dde48d8757b9a6&quot;,&quot;family-089.json.gz&quot;:&quot;8f8f0e8e0335ac66b7d5f5dd0412be2af81e7f3b36eaea8f2da0b8cab554e7f8&quot;,&quot;family-090.json.gz&quot;:&quot;a3c56916dfa34783c2eee09706e1eab2cd7e0d0ed01b184af2853211e866e77e&quot;,&quot;family-091.json.gz&quot;:&quot;ea661c223977e0132d186b10bc13f9c7f14f826d5a3603069e32698f79927eda&quot;,&quot;family-092.json.gz&quot;:&quot;eb1ab9d1f17a9b6d484dd0d9a63a93854ee4b6b9ae2fde1c3c078cfa21d9b70c&quot;,&quot;family-093.json.gz&quot;:&quot;4504c40ac06f4daf3fba0659a390eb598f5c2eb6a511e60bad930fb8308f4bb3&quot;,&quot;family-094.json.gz&quot;:&quot;1d620b320bd8c2ab8a520f071926d1ae90af3fe39092603fc60ab9ad391a3133&quot;,&quot;family-095.json.gz&quot;:&quot;03d2855688c568afb2f31a5f1de2795954416c0c5a17ce081f3980bbdfcfba0b&quot;,&quot;family-096.json.gz&quot;:&quot;0ca8ed394ac453439feaa51e9ac1f019344db03178366826d173243823df7e47&quot;,&quot;family-097.json.gz&quot;:&quot;3837a8bb388f9969c673addc9f31c7d863dac88e8ec666847a3ae5848853285f&quot;,&quot;family-098.json.gz&quot;:&quot;8874efdd832f1577f8acd67f4853ffeebb737e21c033f5ad1db37a9fb614e668&quot;,&quot;family-099.json.gz&quot;:&quot;9d872dcb18e6c61e9384ffd631bd315e42c0a42f7b52e819f27b8cb42ab5ffa0&quot;,&quot;family-100.json.gz&quot;:&quot;29471266d298da6de6d3613aa48a0c45670b72fa31fefb18789331d5d86cc73a&quot;,&quot;family-101.json.gz&quot;:&quot;c832eb5a2313cd46201a79c278987e9ccd5932c08c6be7ecc92f0141f928a323&quot;,&quot;family-102.json.gz&quot;:&quot;7450b82d994035c65532d69f8389af090be919ff6502b0dc2256ec01b2b70df4&quot;,&quot;family-103.json.gz&quot;:&quot;ed0805f2a5555d7476d39a6ce2205e65f322fddc6e0b59622726fb4d96500bd4&quot;,&quot;family-104.json.gz&quot;:&quot;ad1a251d2738af2659b57291bfc46caca98374b894737d3d640b7ab97fb7944d&quot;,&quot;family-105.json.gz&quot;:&quot;c109acbd40652924b4892404f633b602a1386a4ad4ea88a269feedfed7f1c5c7&quot;,&quot;family-106.json.gz&quot;:&quot;7dc9a6d6ea0e1ea4232fd0afb82630253a9ab51cea36ce556f33954b0c4908de&quot;,&quot;family-107.json.gz&quot;:&quot;42e5ad9039ca5282f169d0ccda5d671314be0fcac8246ef3b9efee7c2a653309&quot;,&quot;family-108.json.gz&quot;:&quot;bc216db4206da166c46017e055a8d92066b897300339fcab4aa46684af563923&quot;,&quot;family-109.json.gz&quot;:&quot;6fb54191f10242f67ea69629f13e3610bc9402895385efa7eb9bf1bac6aad1a8&quot;,&quot;family-110.json.gz&quot;:&quot;a2e375f8f517c1ddfc14a83ebab4bd8e76b1dd52f5e16600cc79b667823244c9&quot;,&quot;family-111.json.gz&quot;:&quot;765a92fa9ad5237d9f7566799958fda7db03ae6ea64832a2a2e2c0946e74baa9&quot;,&quot;family-112.json.gz&quot;:&quot;fb54ab3888747e1aa08eb2b1e7474cee779e87ce5d7545dc2f2d107174287d7d&quot;,&quot;family-113.json.gz&quot;:&quot;729501221ae5bfd077427f4e5d6b5389f735e4f3c86f4fc16afeb43de9b94960&quot;,&quot;family-114.json.gz&quot;:&quot;1ec8cb26e5c4e88fec8bd638335fe934d642a21dcfe253a6c4ff23369ef9b457&quot;,&quot;family-115.json.gz&quot;:&quot;1a17b22e73abe4ca45635cb2f71dfc66b52d59362e243f12e9a9fb35245723f0&quot;,&quot;family-116.json.gz&quot;:&quot;8c102c2de6ec909e9e9ff47302e94a313cfb4fd3df50b32b794d3f4504dfcc96&quot;,&quot;family-117.json.gz&quot;:&quot;ccb7f07362cb24919df8866d85e7e9afb2e5aff50418f3673aaccbccbbaa5b5a&quot;,&quot;family-118.json.gz&quot;:&quot;115a10e29ef3a03ade7a7a18686be3447c550aeae088bd13f82fc9d8883b2d97&quot;,&quot;family-119.json.gz&quot;:&quot;ae5a1109ea245e7d647b24e1a0e5fdecbfd5ec6a976a0d04923ce4ac22d33d8b&quot;,&quot;family-120.json.gz&quot;:&quot;6759cf3282ce7b77b3624f58a868faf1ca577d60473149479a852ecefd4acd53&quot;,&quot;family-121.json.gz&quot;:&quot;7eb4cd693893b7911dbea6336aeebac714ba59cf365c02b57ed331d46e36ac72&quot;,&quot;family-122.json.gz&quot;:&quot;7c51c542bbd6ba5ed5e063907f117fce9d32aa31eec9870290b689bddf7d2280&quot;,&quot;family-123.json.gz&quot;:&quot;226692b24595d93c9651a3c86596fbcea4b76cdb19fae00b23410d7992961797&quot;,&quot;family-124.json.gz&quot;:&quot;64333aa0ceb217bff5d6e7bbc2d8fe13debed9ddf477fe83b9c94375d3ce3205&quot;,&quot;family-125.json.gz&quot;:&quot;b7673ee657fb78e1b54cd652e4411e94e2f8fe2dba430b02f4d0e339c908adf7&quot;,&quot;family-126.json.gz&quot;:&quot;9be4c438c2de082c2632933e61cc6f413eeb62db321cd32bb0022c2fb23b1856&quot;,&quot;family-127.json.gz&quot;:&quot;85cf9ba997d1beb90a9211d55a8018e74a88aac1e5c9c8c8807354ba4dbe7ec0&quot;,&quot;family-128.json.gz&quot;:&quot;87c6f7ced0b6ccc96f202d429d66c27ed2eaf5f5593d074897b5a6dc928649ca&quot;,&quot;family-129.json.gz&quot;:&quot;1013cf9124db246f8f4f5836492b1c260dc419b176f11c1b2abd3d70239dcb45&quot;,&quot;family-130.json.gz&quot;:&quot;85b3b18cb1b7ae22d70b0e35c82d4421736ce0f40f034ec76b9b048f9ab68103&quot;,&quot;family-131.json.gz&quot;:&quot;81bddc70b6bae3db9842c68e08aa04a62bd0ce4d701acf8d0737f93980a601f9&quot;,&quot;family-132.json.gz&quot;:&quot;3599788983ea65772291a846ca8082fe0c8d6f74cdd7822818a08bbd12852f23&quot;,&quot;shared-019.json.gz&quot;:&quot;6935bad616e528171bcfdf461be7372c893acdd9674e218a8020cfef6dd98dd6&quot;,&quot;shared-049.json.gz&quot;:&quot;fc83e127780da2082893aeb3df2895bfc25304a23414df1a5d76b9c89208dbfd&quot;,&quot;shared-061.json.gz&quot;:&quot;b04cd6e398482d6acd04bfe0ada2d217f8f105af0de581616e3685b43924b1f1&quot;,&quot;shared-072.json.gz&quot;:&quot;0dc3c7f0690af747f70ba7d64fbea4714828bb01ba00e98f8843f67f3a70e5d7&quot;,&quot;shared-075.json.gz&quot;:&quot;cd55b3afbb27d0eaaf801ba0e17b662b767e774654073e093131dc052694177b&quot;,&quot;shared-084.json.gz&quot;:&quot;de3c6de2ec383525045115d9aee83df8ddf06cfd8100f10c292e338a93728a8c&quot;,&quot;shared-100.json.gz&quot;:&quot;6698acf462888d324d175dc17bb5acec92144b7663eedc312f80861316855e39&quot;,&quot;shared-113.json.gz&quot;:&quot;60849b2a303973fb7ce2177749d6c00a1df15aa2500958de6da4854e37cbe37b&quot;,&quot;shared-132.json.gz&quot;:&quot;83734c59a2a8a0762673cbc8ad0feef09345966b6842fcab88c5f3e0ace8c01f&quot;}},root=document.getElementById(&#x27;x1y1-extensions&#x27;),svg=d3.select(root.querySelector(&#x27;svg&#x27;));
+ const family=root.querySelector(&#x27;[data-family]&#x27;),degree=root.querySelector(&#x27;[data-degree]&#x27;),tip=root.querySelector(&#x27;[data-tip]&#x27;);
+ let state={family:19,degree:4};
+ family.replaceChildren(...data.cases.map(c=&gt;{const o=document.createElement(&#x27;option&#x27;);o.value=c.batch_number;o.textContent=c.batch_number+&#x27; · (&#x27;+c.third_character.join(&#x27;, &#x27;)+&#x27;)&#x27;;return o;}));
+ const select=()=&gt;{const c=data.cases.find(c=&gt;c.batch_number===Number(state.family))||data.cases[0];state.family=c.batch_number;state.degree=Number(state.degree)===3?3:4;return {c,m:c.maps.find(m=&gt;m.degree===state.degree)};};
+ function draw(){
+  const {c,m}=select();family.value=state.family;degree.value=state.degree;tip.hidden=true;
+  const w=root.getBoundingClientRect().width,h=380,left=68,right=18,top=20,bottom=h-68;
+  svg.attr(&#x27;viewBox&#x27;,`0 0 ${w} ${h}`).attr(&#x27;height&#x27;,h);svg.selectAll(&#x27;*&#x27;).remove();
+  svg.append(&#x27;title&#x27;).text(&#x27;Family &#x27;+c.batch_number+&#x27;: rank &#x27;+m.rank+&#x27;, kernel &#x27;+m.kernel);
+  const cols=Math.max(1,m.domain),x=d3.scaleLinear().domain([0,cols]).range([left,w-right]),y=d3.scaleLinear().domain([0,m.codomain]).range([top,bottom]);
+  svg.append(&#x27;rect&#x27;).attr(&#x27;data-chart-frame&#x27;,&#x27;&#x27;).attr(&#x27;x&#x27;,left).attr(&#x27;y&#x27;,top).attr(&#x27;width&#x27;,w-left-right).attr(&#x27;height&#x27;,bottom-top).attr(&#x27;fill&#x27;,&#x27;none&#x27;).attr(&#x27;stroke&#x27;,&#x27;var(--border)&#x27;);
+  const ticks=(n,max)=&gt;Array.from(new Set(d3.range(Math.min(n,max)).map(i=&gt;Math.round(i*(n-1)/Math.max(1,Math.min(n,max)-1)))));
+  if(m.domain)svg.append(&#x27;g&#x27;).attr(&#x27;transform&#x27;,`translate(0,${bottom})`).call(d3.axisBottom(x).tickValues(ticks(m.domain,w&lt;400?3:5).map(i=&gt;i+.5)).tickFormat(v=&gt;String(v-.5)));
+  svg.append(&#x27;g&#x27;).attr(&#x27;transform&#x27;,`translate(${left},0)`).call(d3.axisLeft(y).tickValues(ticks(m.codomain,5).map(i=&gt;i+.5)).tickFormat(v=&gt;String(v-.5)));
+  svg.selectAll(&#x27;rect.entry&#x27;).data(m.cells).join(&#x27;rect&#x27;).attr(&#x27;class&#x27;,&#x27;entry&#x27;)
+   .attr(&#x27;x&#x27;,d=&gt;x(d.column)+.4).attr(&#x27;y&#x27;,d=&gt;y(d.row)+.4).attr(&#x27;width&#x27;,Math.max(.2,x(1)-x(0)-.8)).attr(&#x27;height&#x27;,Math.max(.2,y(1)-y(0)-.8))
+   .attr(&#x27;fill&#x27;,d=&gt;d.exact.startsWith(&#x27;-&#x27;)?&#x27;var(--viz-series-2)&#x27;:&#x27;var(--viz-series-1)&#x27;);
+  svg.append(&#x27;text&#x27;).attr(&#x27;class&#x27;,&#x27;axis-title&#x27;).attr(&#x27;data-axis&#x27;,&#x27;x&#x27;).attr(&#x27;x&#x27;,(left+w-right)/2).attr(&#x27;y&#x27;,h-18).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(&#x27;Equation × monomial column&#x27;);
+  svg.append(&#x27;text&#x27;).attr(&#x27;class&#x27;,&#x27;axis-title&#x27;).attr(&#x27;data-axis&#x27;,&#x27;y&#x27;).attr(&#x27;transform&#x27;,`translate(17,${(top+bottom)/2}) rotate(-90)`).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(&#x27;Output monomial row&#x27;);
+  if(!m.domain)svg.append(&#x27;text&#x27;).attr(&#x27;x&#x27;,(left+w-right)/2).attr(&#x27;y&#x27;,(top+bottom)/2).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(&#x27;No generators&#x27;);
+  function inspect(event){
+   if(!m.domain)return;
+   const point=d3.pointer(event,svg.node()),col=Math.min(m.domain-1,Math.max(0,Math.floor(x.invert(point[0])))),row=Math.min(m.codomain-1,Math.max(0,Math.floor(y.invert(point[1]))));
+   const exact=m.cells.find(d=&gt;d.column===col&amp;&amp;d.row===row)?.exact||&#x27;0&#x27;;
+   const text=m.columns[col]+&#x27; → &#x27;+m.rows[row]+&#x27; : &#x27;+exact;
+   tip.textContent=text;tip.hidden=false;const box=root.getBoundingClientRect();
+   tip.style.left=Math.max(0,Math.min(w-220,event.clientX-box.left+12))+&#x27;px&#x27;;tip.style.top=(event.clientY-box.top+12)+&#x27;px&#x27;;root.querySelector(&#x27;[data-detail]&#x27;).textContent=text;
+  }
+  svg.append(&#x27;rect&#x27;).attr(&#x27;data-chart-hit&#x27;,&#x27;&#x27;).attr(&#x27;x&#x27;,left).attr(&#x27;y&#x27;,top).attr(&#x27;width&#x27;,w-left-right).attr(&#x27;height&#x27;,bottom-top).attr(&#x27;fill&#x27;,&#x27;transparent&#x27;).on(&#x27;pointermove&#x27;,inspect).on(&#x27;click&#x27;,inspect).on(&#x27;pointerleave&#x27;,()=&gt;tip.hidden=true);
+  root.querySelector(&#x27;[data-rank]&#x27;).textContent=m.domain+&#x27; → &#x27;+m.codomain+&#x27; monomials · exact rank &#x27;+m.rank+&#x27; · kernel &#x27;+m.kernel;
+  root.querySelector(&#x27;[data-detail]&#x27;).textContent=&#x27;No coordinate power found in this map. All coefficients are exact rational numbers.&#x27;;
+  root.querySelector(&#x27;[data-route]&#x27;).textContent=&#x27;Later reduction: &#x27;+c.after_blocks+&#x27; → &#x27;+c.after_shared+&#x27; → &#x27;+c.final.length+&#x27; retained coefficients; residual pair excluded.&#x27;;
+  const labels=[...svg.node().querySelectorAll(&#x27;text&#x27;)];for(const el of labels){const b=el.getBoundingClientRect(),r=root.getBoundingClientRect();if((b.left&lt;r.left||b.right&gt;r.right)&amp;&amp;el.closest(&#x27;.tick&#x27;))el.remove();}
+ }
+ for(const [key,el] of [[&#x27;family&#x27;,family],[&#x27;degree&#x27;,degree]])el.addEventListener(&#x27;change&#x27;,()=&gt;{state[key]=Number(el.value);draw();window.openai?.setWidgetState?.({modelContent:{...state},privateContent:null})?.catch(()=&gt;{});});
+ window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{const s=e.detail?.globals?.widgetState?.modelContent;if(s){state={...state,...s};draw();}});
+ if(window.openai?.widgetState?.modelContent)state={...state,...window.openai.widgetState.modelContent};
+ root.mapSnapshot=()=&gt;{const {c,m}=select();return {...state,rank:m.rank,domain:m.domain,codomain:m.codomain,entries:m.cells.length,final:c.final.length};};
+ let width=0;new ResizeObserver(entries=&gt;{const w=entries[0].contentRect.width;if(w!==width){width=w;draw();}}).observe(root);draw();
+})();
+&lt;/script&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
+  (() =&gt; {
+    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+      const panels = Array.from(
+        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+      );
+      if (panels.length === 0) {
+        continue;
+      }
+      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
+      panels.forEach((panel, index) =&gt; {
+        panel.hidden = index !== 0;
+        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
+        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
+          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        }
+      });
+      root.dataset.activeVariant = panels[0].dataset.variant;
+      if (panels.length === 1) {
+        continue;
+      }
+
+      const controls = document.createElement(&quot;div&quot;);
+      controls.className = &quot;viz-carousel-controls&quot;;
+      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
+      controls.innerHTML = `
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
+        &lt;summary class=&quot;cursor-interaction&quot;&gt;
+          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
+          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
+          &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
+      &lt;/details&gt;
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
+      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
+      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
+      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
+      const summary = picker.querySelector(&quot;summary&quot;);
+      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
+      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
+      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
+      const status = document.createElement(&quot;span&quot;);
+      status.className = &quot;sr-only&quot;;
+      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
+      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
+      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      previous.setAttribute(
+        &quot;aria-label&quot;,
+        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+      );
+      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+
+      let active = 0;
+      let mousePointerId = null;
+      let summaryPointerHandled = false;
+      summary.addEventListener(&quot;pointerdown&quot;, (event) =&gt; {
+        summaryPointerHandled =
+          event.pointerType === &quot;mouse&quot; &amp;&amp; event.button === 0 &amp;&amp; !event.ctrlKey;
+        if (!summaryPointerHandled) {
+          return;
+        }
+        event.preventDefault();
+        summary.focus({ preventScroll: true });
+        picker.open = !picker.open;
+        mousePointerId = picker.open ? event.pointerId : null;
+      });
+      summary.addEventListener(&quot;click&quot;, (event) =&gt; {
+        if (summaryPointerHandled &amp;&amp; event.detail &gt; 0) {
+          event.preventDefault();
+        }
+      });
+      const choices = panels.map((panel, index) =&gt; {
+        const choice = document.createElement(&quot;button&quot;);
+        choice.type = &quot;button&quot;;
+        choice.className = &quot;cursor-interaction&quot;;
+        choice.textContent = panel.dataset.variant;
+        choice.addEventListener(&quot;click&quot;, () =&gt; {
+          select(index);
+          summary.focus();
+        });
+        choice.addEventListener(&quot;pointerup&quot;, (event) =&gt; {
+          if (
+            picker.open &amp;&amp;
+            event.pointerType === &quot;mouse&quot; &amp;&amp;
+            event.button === 0 &amp;&amp;
+            event.pointerId === mousePointerId
+          ) {
+            choice.click();
+          }
+        });
+        options.appendChild(choice);
+        return choice;
+      });
+      const select = (index) =&gt; {
+        const changed = active !== index;
+        active = index;
+        panels.forEach((panel, position) =&gt; {
+          panel.hidden = position !== active;
+          choices[position].setAttribute(
+            &quot;aria-current&quot;,
+            String(position === active),
+          );
+        });
+        root.dataset.activeVariant = panels[active].dataset.variant;
+        count.textContent = `${active + 1} / ${panels.length}`;
+        name.textContent = panels[active].dataset.variant;
+        picker.open = false;
+        mousePointerId = null;
+        if (changed) {
+          status.textContent = `${count.textContent}: ${name.textContent}`;
+        }
+      };
+      previous.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + panels.length - 1) % panels.length),
+      );
+      next.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + 1) % panels.length),
+      );
+      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+          event.preventDefault();
+          picker.open = false;
+          mousePointerId = null;
+          summary.focus();
+          return;
+        }
+        if (event.altKey || event.ctrlKey || event.metaKey) {
+          return;
+        }
+        const index = choices.indexOf(document.activeElement);
+        let nextIndex;
+        if (event.key === &quot;ArrowDown&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + 1) % choices.length;
+        } else if (event.key === &quot;ArrowUp&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + choices.length - 1) % choices.length;
+        } else if (picker.open &amp;&amp; event.key === &quot;Home&quot;) {
+          nextIndex = 0;
+        } else if (picker.open &amp;&amp; event.key === &quot;End&quot;) {
+          nextIndex = choices.length - 1;
+        } else {
+          return;
+        }
+        event.preventDefault();
+        picker.open = true;
+        choices[nextIndex].focus();
+      });
+      picker.addEventListener(&quot;focusout&quot;, (event) =&gt; {
+        if (!picker.contains(event.relatedTarget)) {
+          picker.open = false;
+          mousePointerId = null;
+        }
+      });
+      const dismiss = (event) =&gt; {
+        if (!summary.contains(event.target)) {
+          mousePointerId = null;
+        }
+        if (!picker.contains(event.target)) {
+          picker.open = false;
+        }
+      };
+      const endPointerSelection = () =&gt; {
+        mousePointerId = null;
+      };
+      const sizePicker = () =&gt; {
+        root.style.setProperty(
+          &quot;--viz-carousel-picker-height&quot;,
+          `${picker.open ? options.offsetHeight : 0}px`,
+        );
+      };
+      picker.addEventListener(&quot;toggle&quot;, sizePicker);
+      window.addEventListener(&quot;resize&quot;, sizePicker);
+      document.addEventListener(&quot;pointerdown&quot;, dismiss);
+      document.addEventListener(&quot;pointerup&quot;, endPointerSelection);
+      document.addEventListener(&quot;pointercancel&quot;, endPointerSelection);
+      window.addEventListener(&quot;blur&quot;, endPointerSelection);
+      window.addEventListener(
+        &quot;pagehide&quot;,
+        () =&gt; {
+          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
+          document.removeEventListener(&quot;pointerup&quot;, endPointerSelection);
+          document.removeEventListener(&quot;pointercancel&quot;, endPointerSelection);
+          window.removeEventListener(&quot;blur&quot;, endPointerSelection);
+          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        },
+        { once: true },
+      );
+      root.append(controls, status);
+      select(0);
+    }
+  })();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  const isShare = document.documentElement.classList.contains(
+    "visualization-share-root",
+  );
+  let viewportHeight = globalThis.innerHeight;
+  let sizeFingerprint = null;
+  let sizeWriteTimeout;
+  let lastSize = null;
+  let pendingSize = null;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const sizeStorageKey = `${storageKey}:share-size-v1`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const persistSize = () => {
+    globalThis.clearTimeout(sizeWriteTimeout);
+    if (pendingSize == null) {
+      return;
+    }
+    try {
+      storage?.setItem(sizeStorageKey, pendingSize);
+    } catch {
+      // A denied or full cache must not affect the visualization.
+    }
+    pendingSize = null;
+  };
+  if (isShare) {
+    globalThis.addEventListener("pagehide", persistSize);
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height !== "number" ||
+        !Number.isFinite(height) ||
+        height < 0
+      ) {
+        return;
+      }
+      if (height <= 10_000) {
+        const width = isShare && storage != null ? frame.clientWidth : null;
+        frame.style.height = Math.ceil(height) + "px";
+        if (isShare && storage != null) {
+          const size = JSON.stringify({
+            fingerprint: sizeFingerprint,
+            width,
+            viewportHeight: globalThis.innerHeight,
+            dark: globalThis.matchMedia("(prefers-color-scheme: dark)").matches,
+            scale: globalThis.devicePixelRatio,
+            height: Math.ceil(height),
+          });
+          if (size !== lastSize) {
+            lastSize = size;
+            pendingSize = size;
+            globalThis.clearTimeout(sizeWriteTimeout);
+            sizeWriteTimeout = globalThis.setTimeout(persistSize, 100);
+          }
+        }
+      }
+      if (isShare) {
+        // Keep unusually tall content accessible without accepting an unbounded height.
+        if (height > 10_000 && Number.parseFloat(frame.style.height) === 0) {
+          frame.style.removeProperty("height");
+        }
+        frame.scrolling = height > 10_000 ? "auto" : "no";
+        document.documentElement.classList.add("visualization-share-ready");
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!isShare && (!Number.isFinite(height) || height <= viewportHeight)) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  const frameHtml = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  if (isShare && storage != null) {
+    // Fingerprint the rendered document, including restored widget state, without
+    // storing its content. This is a layout cache, not a security identity.
+    let hash = 5381;
+    for (let index = 0; index < frameHtml.length; index += 1) {
+      hash = (hash * 33 + frameHtml.charCodeAt(index)) % 4_294_967_296;
+    }
+    sizeFingerprint = hash.toString(36);
+    try {
+      const size = JSON.parse(storage.getItem(sizeStorageKey) ?? "null");
+      if (
+        size?.fingerprint === sizeFingerprint &&
+        size.width === frame.clientWidth &&
+        size.viewportHeight === globalThis.innerHeight &&
+        size.dark ===
+          globalThis.matchMedia("(prefers-color-scheme: dark)").matches &&
+        size.scale === globalThis.devicePixelRatio &&
+        typeof size.height === "number" &&
+        Number.isFinite(size.height) &&
+        size.height >= 0 &&
+        size.height <= 10_000
+      ) {
+        frame.style.height = size.height + "px";
+      }
+    } catch {
+      // Ignore missing or invalid cache entries and measure the live frame.
+    }
+  }
+  frame.srcdoc = frameHtml;
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>

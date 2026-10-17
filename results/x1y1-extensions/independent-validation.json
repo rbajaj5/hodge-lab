@@ -1,0 +1,10431 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": true,
+  "checks": {
+    "correction_pairings": 660743,
+    "quadratic_pairings": 160903,
+    "physical_duals": 5911,
+    "square_identities": 739,
+    "mutations_rejected": 132,
+    "graded_maps": 69,
+    "higher_power_identities": 9
+  },
+  "families": [
+    {
+      "batch_number": 1,
+      "global_number": 19015,
+      "characters": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        2
+      ],
+      "basis_indices": [
+        38,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        38,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.285684600003151
+    },
+    {
+      "batch_number": 2,
+      "global_number": 27926,
+      "characters": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        193,
+        198,
+        210,
+        227,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        193,
+        198,
+        227,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.46081279999998515
+    },
+    {
+      "batch_number": 3,
+      "global_number": 36704,
+      "characters": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        4
+      ],
+      "basis_indices": [
+        85,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        85,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.18056889999934356
+    },
+    {
+      "batch_number": 4,
+      "global_number": 45350,
+      "characters": [
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        0,
+        5
+      ],
+      "basis_indices": [
+        24,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        24,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.1896022000000812
+    },
+    {
+      "batch_number": 5,
+      "global_number": 53995,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        1
+      ],
+      "basis_indices": [
+        87,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        87,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22568349999710335
+    },
+    {
+      "batch_number": 6,
+      "global_number": 54124,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        176,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        262,
+        139,
+        176
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.29716019999978016
+    },
+    {
+      "batch_number": 7,
+      "global_number": 54252,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        4
+      ],
+      "basis_indices": [
+        60,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        60,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2182174000008672
+    },
+    {
+      "batch_number": 8,
+      "global_number": 54379,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        1,
+        5
+      ],
+      "basis_indices": [
+        13,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        13,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22761389999868697
+    },
+    {
+      "batch_number": 9,
+      "global_number": 54505,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        152,
+        170,
+        179,
+        180,
+        198,
+        201,
+        210,
+        229,
+        232,
+        235,
+        247,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        152,
+        170,
+        179,
+        198,
+        201,
+        247,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.44212619999962044
+    },
+    {
+      "batch_number": 10,
+      "global_number": 54630,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        1
+      ],
+      "basis_indices": [
+        92,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        92,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2974848000012571
+    },
+    {
+      "batch_number": 11,
+      "global_number": 54754,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        143,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        239,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        143,
+        170,
+        198,
+        239,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.23356390000117244
+    },
+    {
+      "batch_number": 12,
+      "global_number": 54877,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        4
+      ],
+      "basis_indices": [
+        45,
+        89,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        45,
+        89,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21319869999933871
+    },
+    {
+      "batch_number": 13,
+      "global_number": 54999,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        2,
+        5
+      ],
+      "basis_indices": [
+        8,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        8,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.24137429999973392
+    },
+    {
+      "batch_number": 14,
+      "global_number": 55120,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        188,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        269,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        188,
+        198,
+        262,
+        269,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3534534000027634
+    },
+    {
+      "batch_number": 15,
+      "global_number": 55240,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        3
+      ],
+      "basis_indices": [
+        123,
+        127,
+        135,
+        139,
+        170,
+        180,
+        181,
+        198,
+        206,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        181,
+        198,
+        206,
+        262,
+        127,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4063358999992488
+    },
+    {
+      "batch_number": 16,
+      "global_number": 55359,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        4
+      ],
+      "basis_indices": [
+        40,
+        72,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        40,
+        72,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21809529999882216
+    },
+    {
+      "batch_number": 17,
+      "global_number": 55477,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        3,
+        5
+      ],
+      "basis_indices": [
+        16,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        16,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2527378000013414
+    },
+    {
+      "batch_number": 18,
+      "global_number": 55594,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        2
+      ],
+      "basis_indices": [
+        35,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        35,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.24462909999783733
+    },
+    {
+      "batch_number": 19,
+      "global_number": 55710,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        3
+      ],
+      "basis_indices": [
+        7,
+        119,
+        123,
+        135,
+        139,
+        159,
+        170,
+        180,
+        198,
+        210,
+        216,
+        229,
+        232,
+        235,
+        255,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        7,
+        119,
+        123,
+        135,
+        139,
+        159,
+        180,
+        210,
+        216,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        255,
+        262
+      ],
+      "stages": 2,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 6,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 56,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 56
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 126,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 126
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            0,
+            4,
+            3
+          ],
+          "variables": 4,
+          "equations": 3,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 20,
+              "rank": 11,
+              "kernel": 1,
+              "quotient_dimension": 9
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 35,
+              "rank": 24,
+              "kernel": 6,
+              "quotient_dimension": 11
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 0.8748878999977023
+    },
+    {
+      "batch_number": 20,
+      "global_number": 55825,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        4,
+        4
+      ],
+      "basis_indices": [
+        50,
+        94,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        50,
+        94,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.19671220000236644
+    },
+    {
+      "batch_number": 21,
+      "global_number": 55939,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        164,
+        170,
+        180,
+        198,
+        210,
+        221,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        164,
+        170,
+        198,
+        221,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.26176269999996293
+    },
+    {
+      "batch_number": 22,
+      "global_number": 56052,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        1
+      ],
+      "basis_indices": [
+        53,
+        80,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        53,
+        80,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3872391000004427
+    },
+    {
+      "batch_number": 23,
+      "global_number": 56164,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        2
+      ],
+      "basis_indices": [
+        10,
+        20,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        10,
+        139,
+        170,
+        198,
+        262,
+        20
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.37815910000063013
+    },
+    {
+      "batch_number": 24,
+      "global_number": 56275,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        0,
+        5,
+        3
+      ],
+      "basis_indices": [
+        123,
+        132,
+        135,
+        139,
+        170,
+        180,
+        196,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        287,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        198,
+        262,
+        287,
+        132,
+        139,
+        196,
+        170
+      ],
+      "stages": 4,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.8278473999998823
+    },
+    {
+      "batch_number": 25,
+      "global_number": 56494,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        1
+      ],
+      "basis_indices": [
+        101,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        101,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.19043520000195713
+    },
+    {
+      "batch_number": 26,
+      "global_number": 56602,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        207,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        207,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2093206999998074
+    },
+    {
+      "batch_number": 27,
+      "global_number": 56709,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        4
+      ],
+      "basis_indices": [
+        73,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        73,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22790099999838276
+    },
+    {
+      "batch_number": 28,
+      "global_number": 56815,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        0,
+        5
+      ],
+      "basis_indices": [
+        17,
+        33,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        17,
+        33,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.29973859999881824
+    },
+    {
+      "batch_number": 29,
+      "global_number": 56920,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        209,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        209,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21195009999792092
+    },
+    {
+      "batch_number": 30,
+      "global_number": 57024,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        3
+      ],
+      "basis_indices": [
+        120,
+        123,
+        135,
+        139,
+        160,
+        170,
+        180,
+        198,
+        210,
+        217,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        262,
+        139,
+        120,
+        160,
+        217
+      ],
+      "stages": 3,
+      "dependency": "fqlx_pair30",
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 3,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 15,
+              "codomain": 35,
+              "rank": 15,
+              "kernel": 0,
+              "quotient_dimension": 20
+            },
+            {
+              "degree": 4,
+              "domain": 45,
+              "codomain": 70,
+              "rank": 42,
+              "kernel": 3,
+              "quotient_dimension": 28
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            1,
+            1,
+            3
+          ],
+          "variables": 3,
+          "equations": 4,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 10,
+              "rank": 10,
+              "kernel": 2,
+              "quotient_dimension": 0
+            }
+          ],
+          "zeros": [
+            120,
+            160,
+            217
+          ]
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.0398448999985703
+    },
+    {
+      "batch_number": 31,
+      "global_number": 57127,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        4
+      ],
+      "basis_indices": [
+        39,
+        51,
+        77,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        39,
+        51,
+        77
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 3,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 15,
+              "codomain": 35,
+              "rank": 15,
+              "kernel": 0,
+              "quotient_dimension": 20
+            },
+            {
+              "degree": 4,
+              "domain": 45,
+              "codomain": 70,
+              "rank": 42,
+              "kernel": 3,
+              "quotient_dimension": 28
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            1,
+            1,
+            4
+          ],
+          "variables": 3,
+          "equations": 4,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 10,
+              "rank": 10,
+              "kernel": 2,
+              "quotient_dimension": 0
+            }
+          ],
+          "zeros": [
+            39,
+            51,
+            77
+          ]
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 0.6658051999984309
+    },
+    {
+      "batch_number": 32,
+      "global_number": 57229,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        1,
+        5
+      ],
+      "basis_indices": [
+        9,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        9,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21700979999877745
+    },
+    {
+      "batch_number": 33,
+      "global_number": 57330,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        222,
+        229,
+        232,
+        235,
+        243,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        222,
+        243,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3747287999976834
+    },
+    {
+      "batch_number": 34,
+      "global_number": 57430,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        1
+      ],
+      "basis_indices": [
+        81,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        81,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22238950000246405
+    },
+    {
+      "batch_number": 35,
+      "global_number": 57529,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        2
+      ],
+      "basis_indices": [
+        21,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        21,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.25610190000224975
+    },
+    {
+      "batch_number": 36,
+      "global_number": 57724,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        2,
+        4
+      ],
+      "basis_indices": [
+        41,
+        110,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        41,
+        110,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.24754609999945387
+    },
+    {
+      "batch_number": 37,
+      "global_number": 57820,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        172,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        291,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        172,
+        198,
+        262,
+        291
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.26432479999857605
+    },
+    {
+      "batch_number": 38,
+      "global_number": 57915,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        1
+      ],
+      "basis_indices": [
+        57,
+        112,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        112,
+        139,
+        170,
+        198,
+        262,
+        57
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3771089999972901
+    },
+    {
+      "batch_number": 39,
+      "global_number": 58009,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        2
+      ],
+      "basis_indices": [
+        11,
+        37,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        37,
+        139,
+        198,
+        262,
+        11,
+        170
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4301607999987027
+    },
+    {
+      "batch_number": 40,
+      "global_number": 58102,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        3
+      ],
+      "basis_indices": [
+        121,
+        123,
+        135,
+        139,
+        170,
+        180,
+        194,
+        198,
+        210,
+        228,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        194,
+        198,
+        228,
+        262,
+        121,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.42566900000019814
+    },
+    {
+      "batch_number": 41,
+      "global_number": 58194,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        3,
+        4
+      ],
+      "basis_indices": [
+        65,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        65,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.20062360000156332
+    },
+    {
+      "batch_number": 42,
+      "global_number": 58285,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        140,
+        170,
+        180,
+        198,
+        210,
+        229,
+        230,
+        232,
+        235,
+        237,
+        262,
+        263,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        230,
+        237,
+        262,
+        263,
+        139,
+        140
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.5774898999989091
+    },
+    {
+      "batch_number": 43,
+      "global_number": 58375,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        1
+      ],
+      "basis_indices": [
+        43,
+        86,
+        98,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        86,
+        98,
+        139,
+        198,
+        262,
+        43,
+        170
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4807732999979635
+    },
+    {
+      "batch_number": 44,
+      "global_number": 58464,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        2
+      ],
+      "basis_indices": [
+        28,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        28,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.261074699999881
+    },
+    {
+      "batch_number": 45,
+      "global_number": 58552,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        4,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        150,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        245,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        150,
+        170,
+        198,
+        245,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3472590000019409
+    },
+    {
+      "batch_number": 46,
+      "global_number": 58639,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        5,
+        0
+      ],
+      "basis_indices": [
+        117,
+        123,
+        125,
+        135,
+        139,
+        153,
+        170,
+        177,
+        180,
+        198,
+        202,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        277,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        153,
+        198,
+        262,
+        202,
+        125,
+        277,
+        117,
+        139,
+        177,
+        170
+      ],
+      "stages": 6,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 2.7781039999972563
+    },
+    {
+      "batch_number": 47,
+      "global_number": 58725,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        1,
+        5,
+        1
+      ],
+      "basis_indices": [
+        48,
+        69,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        48,
+        69,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3979384999984177
+    },
+    {
+      "batch_number": 48,
+      "global_number": 58810,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        252,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        252,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22757139999885112
+    },
+    {
+      "batch_number": 49,
+      "global_number": 58894,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        3
+      ],
+      "basis_indices": [
+        122,
+        123,
+        135,
+        138,
+        139,
+        170,
+        180,
+        195,
+        198,
+        210,
+        223,
+        229,
+        232,
+        235,
+        259,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        122,
+        123,
+        135,
+        138,
+        170,
+        180,
+        210,
+        223,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        195,
+        198,
+        259,
+        262,
+        139
+      ],
+      "stages": 3,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            2,
+            0,
+            3
+          ],
+          "variables": 3,
+          "equations": 1,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 3,
+              "codomain": 10,
+              "rank": 3,
+              "kernel": 0,
+              "quotient_dimension": 7
+            },
+            {
+              "degree": 4,
+              "domain": 6,
+              "codomain": 15,
+              "rank": 6,
+              "kernel": 0,
+              "quotient_dimension": 9
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 6,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 56,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 56
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 126,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 126
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.176483700000972
+    },
+    {
+      "batch_number": 50,
+      "global_number": 58977,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        4
+      ],
+      "basis_indices": [
+        66,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        66,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.25529720000122325
+    },
+    {
+      "batch_number": 51,
+      "global_number": 59059,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        0,
+        5
+      ],
+      "basis_indices": [
+        14,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        14,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2193267000002379
+    },
+    {
+      "batch_number": 52,
+      "global_number": 59140,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        264,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        264
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.25326090000089607
+    },
+    {
+      "batch_number": 53,
+      "global_number": 59220,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        1
+      ],
+      "basis_indices": [
+        99,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        99,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3637870999991719
+    },
+    {
+      "batch_number": 54,
+      "global_number": 59299,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        2
+      ],
+      "basis_indices": [
+        25,
+        29,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        25,
+        29,
+        139,
+        198,
+        262,
+        170
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.5076221999988775
+    },
+    {
+      "batch_number": 55,
+      "global_number": 59377,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        3
+      ],
+      "basis_indices": [
+        116,
+        123,
+        135,
+        139,
+        151,
+        170,
+        180,
+        198,
+        199,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        262,
+        139,
+        116,
+        151,
+        199
+      ],
+      "stages": 3,
+      "dependency": "fqlx_pair30",
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 3,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 15,
+              "codomain": 35,
+              "rank": 15,
+              "kernel": 0,
+              "quotient_dimension": 20
+            },
+            {
+              "degree": 4,
+              "domain": 45,
+              "codomain": 70,
+              "rank": 42,
+              "kernel": 3,
+              "quotient_dimension": 28
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            2,
+            1,
+            3
+          ],
+          "variables": 3,
+          "equations": 4,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 10,
+              "rank": 10,
+              "kernel": 2,
+              "quotient_dimension": 0
+            }
+          ],
+          "zeros": [
+            116,
+            151,
+            199
+          ]
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.0259893000002194
+    },
+    {
+      "batch_number": 56,
+      "global_number": 59454,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        1,
+        4
+      ],
+      "basis_indices": [
+        47,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        47,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.1982849999985774
+    },
+    {
+      "batch_number": 57,
+      "global_number": 59530,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        178,
+        180,
+        198,
+        203,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        278,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        178,
+        198,
+        203,
+        262,
+        278,
+        139,
+        170
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.6821688999989419
+    },
+    {
+      "batch_number": 58,
+      "global_number": 59605,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        1
+      ],
+      "basis_indices": [
+        61,
+        70,
+        105,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        70,
+        198,
+        262,
+        61,
+        105,
+        139,
+        170
+      ],
+      "stages": 3,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 1.109707100000378
+    },
+    {
+      "batch_number": 59,
+      "global_number": 59679,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        2
+      ],
+      "basis_indices": [
+        15,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        15,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.24554750000243075
+    },
+    {
+      "batch_number": 60,
+      "global_number": 59752,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        2,
+        3
+      ],
+      "basis_indices": [
+        123,
+        129,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        266,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        129,
+        139,
+        170,
+        198,
+        262,
+        266
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22793599999931757
+    },
+    {
+      "batch_number": 61,
+      "global_number": 59824,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        0
+      ],
+      "basis_indices": [
+        118,
+        123,
+        135,
+        139,
+        144,
+        157,
+        170,
+        180,
+        198,
+        210,
+        213,
+        229,
+        232,
+        235,
+        262,
+        268,
+        272,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        118,
+        123,
+        135,
+        144,
+        157,
+        170,
+        180,
+        198,
+        210,
+        213,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        262,
+        268,
+        139
+      ],
+      "stages": 3,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            2,
+            3,
+            0
+          ],
+          "variables": 4,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 20,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 20
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 35,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 35
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 7,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 84,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 84
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 210,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 210
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.6711680000007618
+    },
+    {
+      "batch_number": 62,
+      "global_number": 59895,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        1
+      ],
+      "basis_indices": [
+        49,
+        100,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        100,
+        139,
+        170,
+        198,
+        262,
+        49
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3463556000024255
+    },
+    {
+      "batch_number": 63,
+      "global_number": 59965,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        3,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        186,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        186
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.28669190000073286
+    },
+    {
+      "batch_number": 64,
+      "global_number": 60034,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        0
+      ],
+      "basis_indices": [
+        123,
+        131,
+        135,
+        139,
+        170,
+        180,
+        198,
+        208,
+        210,
+        229,
+        232,
+        235,
+        249,
+        262,
+        272,
+        284,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        208,
+        249,
+        262,
+        284,
+        131,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4950613000000885
+    },
+    {
+      "batch_number": 65,
+      "global_number": 60102,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        218,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        218,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.24264339999717777
+    },
+    {
+      "batch_number": 66,
+      "global_number": 60169,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        4
+      ],
+      "basis_indices": [
+        78,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        78,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.25389179999910994
+    },
+    {
+      "batch_number": 67,
+      "global_number": 60235,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        4,
+        5
+      ],
+      "basis_indices": [
+        19,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        19,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3128236999982619
+    },
+    {
+      "batch_number": 68,
+      "global_number": 60300,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        148,
+        170,
+        180,
+        190,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        148,
+        170,
+        190,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.26559350000025006
+    },
+    {
+      "batch_number": 69,
+      "global_number": 60364,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        169,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        286,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        286,
+        169
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.44245999999839114
+    },
+    {
+      "batch_number": 70,
+      "global_number": 60427,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        2,
+        5,
+        4
+      ],
+      "basis_indices": [
+        55,
+        109,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        109,
+        139,
+        170,
+        198,
+        262,
+        55
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.47488650000013877
+    },
+    {
+      "batch_number": 71,
+      "global_number": 60489,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        145,
+        170,
+        180,
+        198,
+        210,
+        214,
+        229,
+        232,
+        235,
+        240,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        214,
+        240,
+        262,
+        139,
+        145
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.7026334000001953
+    },
+    {
+      "batch_number": 72,
+      "global_number": 60550,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        1
+      ],
+      "basis_indices": [
+        46,
+        75,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        46,
+        75,
+        123,
+        135,
+        139,
+        170,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        198,
+        262
+      ],
+      "stages": 2,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 6,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 56,
+              "rank": 12,
+              "kernel": 0,
+              "quotient_dimension": 44
+            },
+            {
+              "degree": 4,
+              "domain": 42,
+              "codomain": 126,
+              "rank": 41,
+              "kernel": 1,
+              "quotient_dimension": 85
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            3,
+            0,
+            1
+          ],
+          "variables": 2,
+          "equations": 1,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 2,
+              "codomain": 4,
+              "rank": 2,
+              "kernel": 0,
+              "quotient_dimension": 2
+            },
+            {
+              "degree": 4,
+              "domain": 3,
+              "codomain": 5,
+              "rank": 3,
+              "kernel": 0,
+              "quotient_dimension": 2
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 6,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 56,
+              "rank": 12,
+              "kernel": 0,
+              "quotient_dimension": 44
+            },
+            {
+              "degree": 4,
+              "domain": 42,
+              "codomain": 126,
+              "rank": 41,
+              "kernel": 1,
+              "quotient_dimension": 85
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 0.7879610999989382
+    },
+    {
+      "batch_number": 73,
+      "global_number": 60610,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        187,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        187,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21244239999941783
+    },
+    {
+      "batch_number": 74,
+      "global_number": 60669,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        0,
+        4
+      ],
+      "basis_indices": [
+        63,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        63,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.19937869999921531
+    },
+    {
+      "batch_number": 75,
+      "global_number": 60727,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        0
+      ],
+      "basis_indices": [
+        123,
+        128,
+        135,
+        139,
+        166,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        250,
+        262,
+        272,
+        282,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        282,
+        289,
+        293
+      ],
+      "zeros": [
+        128,
+        170,
+        198,
+        250,
+        262,
+        139,
+        166
+      ],
+      "stages": 4,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 35,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 35
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 70,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 70
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            3,
+            1,
+            0
+          ],
+          "variables": 1,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 1,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 1
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 1,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 1
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 3,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 15,
+              "codomain": 35,
+              "rank": 15,
+              "kernel": 0,
+              "quotient_dimension": 20
+            },
+            {
+              "degree": 4,
+              "domain": 45,
+              "codomain": 70,
+              "rank": 42,
+              "kernel": 3,
+              "quotient_dimension": 28
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.4343651000017417
+    },
+    {
+      "batch_number": 76,
+      "global_number": 60784,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        1
+      ],
+      "basis_indices": [
+        93,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        93,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3298800000011397
+    },
+    {
+      "batch_number": 77,
+      "global_number": 60840,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        1,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        147,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        262,
+        139,
+        147
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.34123369999724673
+    },
+    {
+      "batch_number": 78,
+      "global_number": 60895,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        161,
+        170,
+        180,
+        191,
+        198,
+        210,
+        229,
+        232,
+        235,
+        256,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        161,
+        191,
+        198,
+        256,
+        262,
+        139,
+        170
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.6644515999978466
+    },
+    {
+      "batch_number": 79,
+      "global_number": 60949,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        1
+      ],
+      "basis_indices": [
+        64,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        64,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21894460000112304
+    },
+    {
+      "batch_number": 80,
+      "global_number": 61002,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        2,
+        5
+      ],
+      "basis_indices": [
+        36,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        36,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2959815000031085
+    },
+    {
+      "batch_number": 81,
+      "global_number": 61054,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        149,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        251,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        149,
+        170,
+        198,
+        251,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2503155999984301
+    },
+    {
+      "batch_number": 82,
+      "global_number": 61105,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        224,
+        229,
+        232,
+        235,
+        260,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        224,
+        260,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.42233480000140844
+    },
+    {
+      "batch_number": 83,
+      "global_number": 61155,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        3,
+        4
+      ],
+      "basis_indices": [
+        82,
+        97,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        82,
+        97,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.34417930000199703
+    },
+    {
+      "batch_number": 84,
+      "global_number": 61204,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        4,
+        3
+      ],
+      "basis_indices": [
+        123,
+        124,
+        135,
+        139,
+        170,
+        173,
+        180,
+        198,
+        200,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        274,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        123,
+        124,
+        135,
+        180,
+        200,
+        210,
+        229,
+        232,
+        235,
+        272,
+        274,
+        289,
+        293
+      ],
+      "zeros": [
+        198,
+        262,
+        173,
+        139,
+        170
+      ],
+      "stages": 4,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 35,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 35
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 70,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 70
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            3,
+            4,
+            3
+          ],
+          "variables": 3,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 6,
+              "codomain": 10,
+              "rank": 5,
+              "kernel": 1,
+              "quotient_dimension": 5
+            },
+            {
+              "degree": 4,
+              "domain": 12,
+              "codomain": 15,
+              "rank": 9,
+              "kernel": 3,
+              "quotient_dimension": 6
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.8672259999984817
+    },
+    {
+      "batch_number": 85,
+      "global_number": 61252,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        4,
+        4
+      ],
+      "basis_indices": [
+        68,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        68,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2741964000015287
+    },
+    {
+      "batch_number": 86,
+      "global_number": 61299,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        279,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        262,
+        279,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.37816599999860046
+    },
+    {
+      "batch_number": 87,
+      "global_number": 61345,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        1
+      ],
+      "basis_indices": [
+        106,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        106,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.45919290000165347
+    },
+    {
+      "batch_number": 88,
+      "global_number": 61390,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        2
+      ],
+      "basis_indices": [
+        31,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        31,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.34207579999929294
+    },
+    {
+      "batch_number": 89,
+      "global_number": 61434,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        3,
+        5,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        155,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        265,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        265,
+        155
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4658170999973663
+    },
+    {
+      "batch_number": 90,
+      "global_number": 61477,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        0
+      ],
+      "basis_indices": [
+        123,
+        134,
+        135,
+        139,
+        170,
+        180,
+        197,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        292,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        197,
+        198,
+        262,
+        292,
+        134,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.7758771000007982
+    },
+    {
+      "batch_number": 91,
+      "global_number": 61519,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        184,
+        198,
+        210,
+        225,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        184,
+        198,
+        225,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.33459399999992456
+    },
+    {
+      "batch_number": 92,
+      "global_number": 61560,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        4
+      ],
+      "basis_indices": [
+        83,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        83,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.21564610000132234
+    },
+    {
+      "batch_number": 93,
+      "global_number": 61600,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        0,
+        5
+      ],
+      "basis_indices": [
+        22,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        22,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2717893000008189
+    },
+    {
+      "batch_number": 94,
+      "global_number": 61639,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        244,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        244,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2401361000011093
+    },
+    {
+      "batch_number": 95,
+      "global_number": 61677,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        174,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        275,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        174,
+        198,
+        262,
+        139,
+        275
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.47001040000031935
+    },
+    {
+      "batch_number": 96,
+      "global_number": 61714,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        1,
+        4
+      ],
+      "basis_indices": [
+        58,
+        103,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        58,
+        103
+      ],
+      "stages": 3,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.6215834000031464
+    },
+    {
+      "batch_number": 97,
+      "global_number": 61750,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        185,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        280,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        185,
+        198,
+        262,
+        280
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.35807540000314475
+    },
+    {
+      "batch_number": 98,
+      "global_number": 61785,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        1
+      ],
+      "basis_indices": [
+        107,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        107,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3462954999995418
+    },
+    {
+      "batch_number": 99,
+      "global_number": 61819,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        2
+      ],
+      "basis_indices": [
+        32,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        32,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.26771670000016456
+    },
+    {
+      "batch_number": 100,
+      "global_number": 61852,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        2,
+        3
+      ],
+      "basis_indices": [
+        6,
+        123,
+        135,
+        139,
+        141,
+        170,
+        180,
+        198,
+        210,
+        211,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        6,
+        123,
+        135,
+        180,
+        210,
+        211,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        141,
+        198,
+        262,
+        139,
+        170
+      ],
+      "stages": 3,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            4,
+            2,
+            3
+          ],
+          "variables": 2,
+          "equations": 1,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 2,
+              "codomain": 4,
+              "rank": 2,
+              "kernel": 0,
+              "quotient_dimension": 2
+            },
+            {
+              "degree": 4,
+              "domain": 3,
+              "codomain": 5,
+              "rank": 3,
+              "kernel": 0,
+              "quotient_dimension": 2
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.4287652999992133
+    },
+    {
+      "batch_number": 101,
+      "global_number": 61884,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        215,
+        229,
+        232,
+        235,
+        241,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        215,
+        241,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3788624000007985
+    },
+    {
+      "batch_number": 102,
+      "global_number": 61915,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        1
+      ],
+      "basis_indices": [
+        76,
+        90,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        76,
+        90,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.38005229999907897
+    },
+    {
+      "batch_number": 103,
+      "global_number": 61945,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        2
+      ],
+      "basis_indices": [
+        18,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        18,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.32346569999936037
+    },
+    {
+      "batch_number": 104,
+      "global_number": 61974,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        3,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        204,
+        210,
+        229,
+        232,
+        235,
+        248,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        204,
+        248,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.5096058000017365
+    },
+    {
+      "batch_number": 105,
+      "global_number": 62002,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        167,
+        170,
+        180,
+        182,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        283,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        167,
+        170,
+        182,
+        198,
+        262,
+        283,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.5338640000009036
+    },
+    {
+      "batch_number": 106,
+      "global_number": 62029,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        1
+      ],
+      "basis_indices": [
+        54,
+        108,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        54,
+        108,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.6062659999988682
+    },
+    {
+      "batch_number": 107,
+      "global_number": 62055,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        4,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        189,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        189,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22401230000104988
+    },
+    {
+      "batch_number": 108,
+      "global_number": 62080,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          5,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        5,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        137,
+        139,
+        162,
+        170,
+        180,
+        192,
+        198,
+        210,
+        219,
+        229,
+        232,
+        235,
+        257,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        192,
+        257,
+        262,
+        137,
+        162,
+        198,
+        139,
+        219,
+        170
+      ],
+      "stages": 4,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 1.4258442999998806
+    },
+    {
+      "batch_number": 109,
+      "global_number": 62104,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        4,
+        5,
+        1
+      ],
+      "basis_indices": [
+        95,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        95,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4006575999992492
+    },
+    {
+      "batch_number": 110,
+      "global_number": 62127,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        242,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        242,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2167100999977265
+    },
+    {
+      "batch_number": 111,
+      "global_number": 62149,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        1
+      ],
+      "basis_indices": [
+        91,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        91,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.1927998999999545
+    },
+    {
+      "batch_number": 112,
+      "global_number": 62170,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        2
+      ],
+      "basis_indices": [
+        26,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        26,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.19324710000000778
+    },
+    {
+      "batch_number": 113,
+      "global_number": 62190,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        3
+      ],
+      "basis_indices": [
+        123,
+        126,
+        135,
+        139,
+        165,
+        170,
+        180,
+        198,
+        205,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        281,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        123,
+        135,
+        165,
+        170,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        198,
+        205,
+        262,
+        281,
+        126,
+        139
+      ],
+      "stages": 4,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            5,
+            0,
+            3
+          ],
+          "variables": 1,
+          "equations": 0,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 0,
+              "codomain": 1,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 1
+            },
+            {
+              "degree": 4,
+              "domain": 0,
+              "codomain": 1,
+              "rank": 0,
+              "kernel": 0,
+              "quotient_dimension": 1
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 6,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 56,
+              "rank": 12,
+              "kernel": 0,
+              "quotient_dimension": 44
+            },
+            {
+              "degree": 4,
+              "domain": 42,
+              "codomain": 126,
+              "rank": 41,
+              "kernel": 1,
+              "quotient_dimension": 85
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 1.2446006999998644
+    },
+    {
+      "batch_number": 114,
+      "global_number": 62209,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        0,
+        4
+      ],
+      "basis_indices": [
+        71,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        71,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2196436000012909
+    },
+    {
+      "batch_number": 115,
+      "global_number": 62227,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        183,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        183,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.1960532000011881
+    },
+    {
+      "batch_number": 116,
+      "global_number": 62244,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        1
+      ],
+      "basis_indices": [
+        62,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        62,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.17695670000102837
+    },
+    {
+      "batch_number": 117,
+      "global_number": 62260,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        2
+      ],
+      "basis_indices": [
+        34,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        34,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.27589410000291537
+    },
+    {
+      "batch_number": 118,
+      "global_number": 62275,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        1,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        158,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        254,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        158,
+        170,
+        198,
+        262,
+        139,
+        254
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4440305999996781
+    },
+    {
+      "batch_number": 119,
+      "global_number": 62289,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        146,
+        163,
+        170,
+        180,
+        198,
+        210,
+        220,
+        229,
+        232,
+        235,
+        258,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        146,
+        163,
+        170,
+        198,
+        220,
+        258,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.48327579999750014
+    },
+    {
+      "batch_number": 120,
+      "global_number": 62302,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        1
+      ],
+      "basis_indices": [
+        52,
+        79,
+        96,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        96,
+        170,
+        198,
+        262,
+        52,
+        79,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.6087388999985706
+    },
+    {
+      "batch_number": 121,
+      "global_number": 62314,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        2,
+        2
+      ],
+      "basis_indices": [
+        27,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        27,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.24444379999840748
+    },
+    {
+      "batch_number": 122,
+      "global_number": 62326,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          1
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        1
+      ],
+      "basis_indices": [
+        67,
+        113,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        67,
+        113,
+        170,
+        198,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.44653269999980694
+    },
+    {
+      "batch_number": 123,
+      "global_number": 62327,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        226,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        226
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.36146630000075675
+    },
+    {
+      "batch_number": 124,
+      "global_number": 62328,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        4
+      ],
+      "basis_indices": [
+        84,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        84,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.27532200000132434
+    },
+    {
+      "batch_number": 125,
+      "global_number": 62329,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          5
+        ]
+      ],
+      "third_character": [
+        5,
+        3,
+        5
+      ],
+      "basis_indices": [
+        23,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        23,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.22852309999871068
+    },
+    {
+      "batch_number": 126,
+      "global_number": 62330,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        154,
+        170,
+        180,
+        198,
+        210,
+        229,
+        231,
+        232,
+        235,
+        261,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        154,
+        170,
+        198,
+        231,
+        261,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.5572988999992958
+    },
+    {
+      "batch_number": 127,
+      "global_number": 62331,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        175,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        276,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        175,
+        198,
+        262,
+        276,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3394114000002446
+    },
+    {
+      "batch_number": 128,
+      "global_number": 62332,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        4
+      ],
+      "basis_indices": [
+        59,
+        104,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        59,
+        104,
+        139,
+        170,
+        198,
+        262
+      ],
+      "stages": 1,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.2266840999982378
+    },
+    {
+      "batch_number": 129,
+      "global_number": 62333,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          4,
+          5
+        ]
+      ],
+      "third_character": [
+        5,
+        4,
+        5
+      ],
+      "basis_indices": [
+        12,
+        30,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        170,
+        198,
+        262,
+        12,
+        30
+      ],
+      "stages": 3,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.4999089999982971
+    },
+    {
+      "batch_number": 130,
+      "global_number": 62334,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          0
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        0
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        246,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        170,
+        198,
+        246,
+        262,
+        139
+      ],
+      "stages": 2,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.3694900999980746
+    },
+    {
+      "batch_number": 131,
+      "global_number": 62335,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          3
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        3
+      ],
+      "basis_indices": [
+        123,
+        135,
+        139,
+        142,
+        170,
+        180,
+        198,
+        210,
+        212,
+        229,
+        232,
+        235,
+        238,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "pair30_dependency",
+      "completed": true,
+      "excluded": true,
+      "remaining": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        198,
+        238,
+        262,
+        139,
+        142,
+        212,
+        170
+      ],
+      "stages": 4,
+      "dependency": "fqlx_pair30",
+      "blocks": [],
+      "seconds": 0.8475560000006226
+    },
+    {
+      "batch_number": 132,
+      "global_number": 62336,
+      "characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          4
+        ]
+      ],
+      "third_character": [
+        5,
+        5,
+        4
+      ],
+      "basis_indices": [
+        44,
+        74,
+        123,
+        135,
+        139,
+        170,
+        180,
+        198,
+        210,
+        229,
+        232,
+        235,
+        262,
+        272,
+        289,
+        293
+      ],
+      "status": "unresolved_bounded_search",
+      "completed": true,
+      "excluded": false,
+      "remaining": [
+        44,
+        74,
+        123,
+        135,
+        170,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "zeros": [
+        139,
+        198,
+        262
+      ],
+      "stages": 2,
+      "dependency": null,
+      "blocks": [
+        {
+          "stage": 0,
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "variables": 5,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 10,
+              "codomain": 35,
+              "rank": 10,
+              "kernel": 0,
+              "quotient_dimension": 25
+            },
+            {
+              "degree": 4,
+              "domain": 30,
+              "codomain": 70,
+              "rank": 29,
+              "kernel": 1,
+              "quotient_dimension": 41
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 1,
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "variables": 6,
+          "equations": 2,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 12,
+              "codomain": 56,
+              "rank": 12,
+              "kernel": 0,
+              "quotient_dimension": 44
+            },
+            {
+              "degree": 4,
+              "domain": 42,
+              "codomain": 126,
+              "rank": 41,
+              "kernel": 1,
+              "quotient_dimension": 85
+            }
+          ],
+          "zeros": []
+        },
+        {
+          "stage": 2,
+          "character": [
+            5,
+            5,
+            4
+          ],
+          "variables": 2,
+          "equations": 1,
+          "maps": [
+            {
+              "degree": 3,
+              "domain": 2,
+              "codomain": 4,
+              "rank": 2,
+              "kernel": 0,
+              "quotient_dimension": 2
+            },
+            {
+              "degree": 4,
+              "domain": 3,
+              "codomain": 5,
+              "rank": 3,
+              "kernel": 0,
+              "quotient_dimension": 2
+            }
+          ],
+          "zeros": []
+        }
+      ],
+      "seconds": 0.6122601000024588
+    }
+  ],
+  "statuses": {
+    "pair30_dependency": 123,
+    "unresolved_bounded_search": 9
+  },
+  "excluded": 123,
+  "unresolved": [
+    19,
+    49,
+    61,
+    72,
+    75,
+    84,
+    100,
+    113,
+    132
+  ],
+  "pair30_binding": {
+    "kind": "fqlx_pair30",
+    "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+    "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+    "basis_pairs_matched": 10,
+    "target_F_A_matched": true,
+    "source_files_hash_checked": 20,
+    "replay": "pair30/replay.json"
+  },
+  "single_character_bindings": [],
+  "seconds": 27.50508159999663,
+  "scope": "132 additional full three-character eigenspace families, disjoint from the preceding 152. Holdout remains unsolved."
+}

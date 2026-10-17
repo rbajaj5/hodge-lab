@@ -3,6 +3,23 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  x1y1-extensions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/reproduce_pair30.py --fetch --output-directory results/x1y1-extensions/pair30
+      - run: python -S experiments/check_x1y1_extensions.py
+      - run: python -S experiments/check_x1y1_extensions.py --independent
+      - run: python -S experiments/check_x1y1_shared.py
+      - run: python -S experiments/check_x1y1_shared.py --independent
+      - run: python -S experiments/plot_x1y1_extensions.py --check
   family151-multipliers:
     runs-on: ubuntu-latest
     timeout-minutes: 15
