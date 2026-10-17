@@ -50,6 +50,14 @@ show its actual polynomial support, the syzygies cancelling corrections, and
 the chart dependencies. The two-row example explains how a weighted numerical
 score can improve while the exact obstruction stays nonzero.
 
+**A geometric operator view:** [move a circle through the Koszul correction
+map](notes/koszul-geometric-map.md). Three actual denominators give response
+ellipses, while their exact syzygies keep the target off the image plane.
+The interactive version links correction coefficients to their image and
+lets you fit the projected target, rotate the view, and compare the examples.
+
+![Response ellipses and their exact target obstructions](results/koszul-geometry/operator-geometry.png)
+
 ![Koszul correction-map support and cancelling syzygies](results/degree7-rank-strata/koszul-map-support.png)
 
 ![How syzygies close family 115](results/degree7-syzygy-rebuild/syzygy-proof-map.png)

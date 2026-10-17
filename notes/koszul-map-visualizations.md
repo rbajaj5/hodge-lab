@@ -8,6 +8,11 @@ close the charts. The [proof and failed searches](koszul-rank-continuation.md)
 remain the source of the family exclusions. This adds no new exclusion or
 upstream post.
 
+For a geometric rather than support-count view, see the later
+[interactive response ellipses and exact syzygy height](koszul-geometric-map.md).
+Those use three fixed denominators from the optimization packet, with all
+840 correction directions checked in each example.
+
 ## Which map are we drawing?
 
 The gradient Koszul differential is

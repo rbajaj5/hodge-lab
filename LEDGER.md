@@ -413,6 +413,23 @@ conversations or evidence of an accepted solve.
     flag. The score tolerance and exact certificate checks are unchanged.
     [Explorer, interpretation, and checks](notes/koszul-parameter-optimization.md#interactive-view-of-character-concentration).
 
+33. **16 October 2026 — Geometry of the Koszul-induced operator.**
+    Built a circle-to-ellipse view of three previously rejected rational
+    denominators: the first optimized endpoints with one, two, and three
+    characters, from families 1, 2, and 4. Two response observables and an
+    exact left syzygy make a three-dimensional coefficient-space picture.
+    All 2,520 columns are reconstructed and checked with two polynomial
+    APIs. The fit button matches the two displayed response coordinates;
+    the syzygy height remains nonzero for every correction. A nearly round
+    response ellipse therefore still fails to certify a solution.
+    Dubedat motivates the operator, inverse-Gram, and Gaussian-covariance
+    viewpoint; no dimer/GFF or genus identification is asserted. The failed
+    finalists remain in their original packet. Browser label-spacing failures
+    were repaired; 126 layout/state combinations pass. Added an interactive
+    explorer and static PNG/SVG companion, with source and checks. No new
+    search or upstream post; the contribution tally remains six.
+    [Derivation, limits, and visualizations](notes/koszul-geometric-map.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

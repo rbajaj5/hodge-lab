@@ -1,0 +1,126 @@
+<div id="koszul-geometric-map">
+  <style>
+    #koszul-geometric-map { position: relative; }
+    #koszul-geometric-map .map-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+    #koszul-geometric-map .map-svg { width: 100%; display: block; overflow: visible; }
+    #koszul-geometric-map .map-svg text { fill: var(--foreground); font-size: 12px; }
+    #koszul-geometric-map .map-detail { margin: 4px 0; }
+  </style>
+  <h2>A geometric view of the Koszul map</h2>
+  <div class="viz-controls">
+    <label class="form-label">Recorded denominator
+      <select class="form-select" data-case aria-label="Recorded denominator"></select>
+    </label>
+    <label class="form-label">Probe angle <output data-angle-value class="tabular-nums"></output>
+      <input type="range" min="0" max="360" step="1" value="35" class="form-range" data-angle aria-label="Correction probe angle">
+    </label>
+  </div>
+  <div class="map-actions">
+    <button class="btn" type="button" data-fit aria-pressed="false">Fit target in plane</button>
+    <button class="btn btn-ghost" type="button" data-turn="-1">Turn left</button>
+    <button class="btn btn-ghost" type="button" data-turn="1">Turn right</button>
+  </div>
+  <svg class="map-svg" data-scene role="img" aria-label="A circle of correction coefficients maps to an ellipse in a plane. The target lies above the plane in a direction that no correction can change."></svg>
+  <div class="text-small text-muted map-detail" data-detail aria-live="polite"></div>
+  <script type="application/json" data-geometry>__KOSZUL_GEOMETRY__</script>
+</div>
+<script>
+(() => {
+  const root=document.getElementById('koszul-geometric-map');
+  const data=JSON.parse(root.querySelector('[data-geometry]').textContent);
+  const select=root.querySelector('[data-case]'),slider=root.querySelector('[data-angle]'),svg=root.querySelector('[data-scene]');
+  const NS='http://www.w3.org/2000/svg',motion=matchMedia('(prefers-reduced-motion: reduce)');
+  let chosen=data.cases.find(c=>c.characters===3),angle=35,yaw=-24,fitted=false,frame=0,last=null;
+  const colors={line:'var(--border)',muted:'var(--muted-foreground)',map:'var(--viz-series-1)',target:'var(--viz-series-3)',gap:'var(--viz-series-2)'};
+  for(const c of data.cases){const o=document.createElement('option');o.value=c.family;o.textContent=`Family ${c.family} · ${c.characters} character${c.characters===1?'':'s'}`;select.append(o);}
+  function restore(s){
+    if(!s||typeof s!=='object')return;
+    chosen=data.cases.find(c=>c.family===Number(s.family))||chosen;
+    if(Number.isFinite(s.angle))angle=Math.max(0,Math.min(360,s.angle));
+    if(Number.isFinite(s.yaw))yaw=s.yaw%360;
+    fitted=s.fitted===true;
+  }
+  restore(window.openai?.widgetState?.modelContent);
+  function state(){return {family:chosen.family,characters:chosen.characters,angle,yaw,fitted,exactObstruction:1,interpretation:'Two response modes of the actual Koszul-induced correction map plus its exact dual; coefficient-space projection, separate horizontal and vertical scales.'};}
+  function save(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:state(),privateContent:null}).catch(()=>{});}
+  function node(tag,attrs={},text){const n=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;svg.append(n);return n;}
+  function path(points,attrs={}){return node('path',{d:points.map((p,i)=>`${i?'L':'M'}${p[0]},${p[1]}`).join(' '),fill:'none',...attrs});}
+  function label(text,x,y,anchor='middle',extra={}){return node('text',{x,y,'text-anchor':anchor,...extra},text);}
+  function circle(x,y,r,fill,extra={}){return node('circle',{cx:x,cy:y,r,fill,...extra});}
+  function arrow(a,b,color,width=2){
+    path([a,b],{stroke:color,'stroke-width':width});
+    const dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy);if(length<8)return;
+    const ux=dx/length,uy=dy/length;
+    path([b,[b[0]-8*ux+3*uy,b[1]-8*uy-3*ux],[b[0]-8*ux-3*uy,b[1]-8*uy+3*ux],b],{fill:color});
+  }
+  function desired(){const a=angle*Math.PI/180;return {source:fitted?[...chosen.fit]:[Math.cos(a),Math.sin(a)],yaw,ratio:chosen.axisRatio,target:[chosen.target[0]/chosen.axes[0],chosen.target[1]/chosen.axes[0],1]};}
+  function paint(s){
+    const w=root.getBoundingClientRect().width,mobile=w<620,h=mobile?580:380;
+    svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.setAttribute('height',h);svg.replaceChildren();
+    node('title',{},`Family ${chosen.family}: the exact syzygy separates the target from the image of all 840 corrections.`);
+    const origin=mobile?[w/2,108]:[w*.16,210],radius=mobile?55:62;
+    const center=mobile?[w/2,455]:[w*.68,260],scale=mobile?Math.min(112,(w-32)/3.4):Math.min(151,(w-center[0]-12)/1.65);
+    const a=s.yaw*Math.PI/180,cs=Math.cos(a),sn=Math.sin(a),elevation=.48;
+    const project=p=>[center[0]+scale*(cs*p[0]-sn*p[1]),center[1]+scale*(elevation*(sn*p[0]+cs*p[1])-.96*p[2])];
+    const ground=[[-1.15,-1.15,0],[1.15,-1.15,0],[1.15,1.15,0],[-1.15,1.15,0],[-1.15,-1.15,0]].map(project);
+    path(ground,{fill:'var(--muted)','fill-opacity':.22,stroke:colors.line,'stroke-width':1});
+    for(let k=-1;k<=1.001;k+=.25){
+      path([project([k,-1.15,0]),project([k,1.15,0])],{stroke:colors.line,'stroke-width':1});
+      path([project([-1.15,k,0]),project([1.15,k,0])],{stroke:colors.line,'stroke-width':1});
+    }
+    const ring=r=>Array.from({length:129},(_,i)=>project([r*Math.cos(2*Math.PI*i/128),r*s.ratio*Math.sin(2*Math.PI*i/128),0]));
+    path(ring(1),{fill:colors.map,'fill-opacity':.10,stroke:colors.map,'stroke-width':1.8});
+    for(const r of [.25,.5,.75])path(ring(r),{stroke:colors.map,'stroke-opacity':.25,'stroke-width':1});
+    path([project([-1,0,0]),project([1,0,0])],{stroke:colors.map,'stroke-opacity':.35,'stroke-width':1});
+    path([project([0,-s.ratio,0]),project([0,s.ratio,0])],{stroke:colors.map,'stroke-opacity':.35,'stroke-width':1});
+    // The selected two right modes are orthonormal in all 840 coordinates.
+    const source=[origin[0]+radius*s.source[0],origin[1]-radius*s.source[1]];
+    const image=project([s.source[0],s.ratio*s.source[1],0]);
+    const target=project(s.target),foot=project([s.target[0],s.target[1],0]);
+    circle(...origin,radius,'none',{stroke:colors.muted,'stroke-width':1.2});
+    for(const r of [.25,.5,.75])circle(...origin,radius*r,'none',{stroke:colors.line,'stroke-width':1});
+    path([[origin[0]-radius,origin[1]],[origin[0]+radius,origin[1]]],{stroke:colors.line,'stroke-width':1});
+    path([[origin[0],origin[1]-radius],[origin[0],origin[1]+radius]],{stroke:colors.line,'stroke-width':1});
+    arrow(origin,source,colors.map);circle(...source,4.5,colors.map);
+    label('z',source[0]+10,source[1]+(source[1]<origin[1]?16:-10),'start');
+    arrow(project([0,0,0]),image,colors.map,2.3);circle(...image,5,colors.map);
+    path([image,target],{stroke:colors.target,'stroke-width':1.5,'stroke-opacity':.55});
+    path([foot,target],{stroke:colors.gap,'stroke-width':2,'stroke-dasharray':'4 4'});
+    circle(...foot,4,'none',{stroke:colors.gap,'stroke-width':1.5});
+    path([[target[0],target[1]-7],[target[0]+7,target[1]],[target[0],target[1]+7],[target[0]-7,target[1]],[target[0],target[1]-7]],{fill:colors.target});
+    circle(...project([0,0,0]),2.5,colors.muted);
+    label('Target −b',target[0],target[1]-17);
+    const gapLabel=label('Exact gap 1',Math.min(w-5,foot[0]+16),(foot[1]+target[1])/2,'start',{'data-gap-label':''});
+    label('Correction coefficients',origin[0],mobile?24:109);
+    label('Two response modes',origin[0],mobile?45:131);
+    label('Projected equation space',center[0],mobile?253:14);
+    label(`Ellipse axis ratio ${s.ratio.toFixed(3)}`,center[0],mobile?275:36);
+    if(mobile){arrow([w/2,184],[w/2,226],colors.muted,1.3);label('R_D',w/2+16,214,'start');}
+    else {arrow([origin[0]+radius+20,210],[center[0]-scale-20,210],colors.muted,1.3);label('R_D',(origin[0]+radius+center[0]-scale)/2,197);}
+    label(fitted?'Projected fit R_D z':'Mapped correction R_D z',center[0],mobile?549:359);
+    label(`Source radius R₀ = ${chosen.correctionRadius.toExponential(2)}`,origin[0],mobile?173:305);
+    // Keep the exact-gap label inside the available width as the camera turns.
+    const bounds=gapLabel.getBBox();if(bounds.x+bounds.width>w-4){gapLabel.setAttribute('x',Math.max(4,foot[0]-16));gapLabel.setAttribute('text-anchor','end');}
+    last=s;
+  }
+  function render(animate=true){
+    select.value=chosen.family;slider.value=angle;slider.disabled=fitted;
+    root.querySelector('[data-angle-value]').textContent=fitted?'projected fit':`${Math.round(angle)}°`;
+    const button=root.querySelector('[data-fit]');button.setAttribute('aria-pressed',String(fitted));button.textContent=fitted?'Return to circle probe':'Fit target in plane';
+    root.querySelector('[data-detail]').textContent='All 840 corrections have zero syzygy height · horizontal scale R₀σ₁; vertical coordinate −λ(v)';
+    const end=desired(),start=last;cancelAnimationFrame(frame);
+    if(!animate||!start||motion.matches){paint(end);return;}
+    const now=performance.now();
+    function tick(t){const u=Math.min(1,(t-now)/220),v=u*u*(3-2*u);paint({source:end.source.map((x,i)=>start.source[i]*(1-v)+x*v),yaw:start.yaw*(1-v)+end.yaw*v,ratio:start.ratio*(1-v)+end.ratio*v,target:end.target.map((x,i)=>start.target[i]*(1-v)+x*v)});if(u<1)frame=requestAnimationFrame(tick);}
+    frame=requestAnimationFrame(tick);
+  }
+  select.addEventListener('change',()=>{chosen=data.cases.find(c=>c.family===Number(select.value));render();save();});
+  slider.addEventListener('input',()=>{angle=Number(slider.value);render();});slider.addEventListener('change',save);
+  root.querySelector('[data-fit]').addEventListener('click',()=>{fitted=!fitted;render();save();});
+  root.querySelectorAll('[data-turn]').forEach(b=>b.addEventListener('click',()=>{yaw+=Number(b.dataset.turn)*20;render();save();}));
+  window.addEventListener('openai:set_globals',e=>{const s=e.detail?.globals?.widgetState;if(s){restore(s.modelContent);render(false);}});
+  new ResizeObserver(()=>render(false)).observe(root);
+  root.geometrySnapshot=()=>{const s=desired();return {...state(),source:s.source,image:[s.source[0],s.ratio*s.source[1],0],target:s.target,gap:1};};
+  render(false);
+})();
+</script>

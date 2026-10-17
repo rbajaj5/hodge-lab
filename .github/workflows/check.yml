@@ -21,6 +21,8 @@ jobs:
       - run: python experiments/optimize_koszul_parameters.py --check --independent --numerics
       - run: python experiments/plot_parameter_optimization.py --check
       - run: python experiments/build_search_explorer.py --check
+      - run: python experiments/build_koszul_geometry.py --check
+      - run: python experiments/plot_koszul_geometry.py --check
       - run: python experiments/check_transfer_packet.py
       - run: python algebra/degree6_verify_all_coefficients.py
       - run: python algebra/fixed_denominator_search.py --check

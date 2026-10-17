@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "sources_sha256": {
+    "packet": "05a30fd6cfe457aa5be8e502739570909cc217d968aadfda4eada5cf29b74161",
+    "basis": "95e2a9b264634de30cf049a885dd6977207a4080f276c9d8edeec2bb516214df",
+    "instance": "59a5f8470eca127eb7ec4d20aea7c349c5069c71fc89a3bb86df931d9c48a6e2"
+  },
+  "cases": [
+    {
+      "family": 1,
+      "character_count": 1,
+      "exact_columns_checked": 840,
+      "independently_reconstructed_columns": 840,
+      "target_pairing": "1",
+      "second_axis_column": 36,
+      "orthonormal_error": 0.0,
+      "right_modes_error": 0.0,
+      "map_error": 0.0,
+      "dual_float_error": 0.0
+    },
+    {
+      "family": 2,
+      "character_count": 2,
+      "exact_columns_checked": 840,
+      "independently_reconstructed_columns": 840,
+      "target_pairing": "1",
+      "second_axis_column": 230,
+      "orthonormal_error": 2.220446049250313e-16,
+      "right_modes_error": 1.1102230246251565e-16,
+      "map_error": 0.0,
+      "dual_float_error": 0.0
+    },
+    {
+      "family": 4,
+      "character_count": 3,
+      "exact_columns_checked": 840,
+      "independently_reconstructed_columns": 840,
+      "target_pairing": "1",
+      "second_axis_column": 36,
+      "orthonormal_error": 4.440892098500626e-16,
+      "right_modes_error": 0.0,
+      "map_error": 2.111680078792359e-16,
+      "dual_float_error": 3.1498437111348886e-19
+    }
+  ],
+  "scope": "Three archived fixed-denominator rejections. Two response modes and an exact dual define a quotient-space view. No full rank claim, new search, or genus identification."
+}

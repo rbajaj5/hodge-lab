@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "family": 1,
+      "characters": 1,
+      "method": "optimized",
+      "axes": [
+        1.9659194361585768,
+        0.1776425271403507
+      ],
+      "target": [
+        0.0,
+        0.14211402171228055,
+        1.0
+      ],
+      "fit": [
+        0.0,
+        0.7999999999999999
+      ],
+      "correctionRadius": 0.0009429251916762567,
+      "rowCount": 4622,
+      "axisRatio": 0.0903610411866448,
+      "dualTarget": "-1",
+      "displayGap": "1",
+      "sourceCommit": "13ed038b1740c6a35203d395910340ae1d36afb8"
+    },
+    {
+      "family": 2,
+      "characters": 2,
+      "method": "optimized",
+      "axes": [
+        0.13675245082778575,
+        0.05727490051983185
+      ],
+      "target": [
+        0.0,
+        0.045819920415865474,
+        1.0
+      ],
+      "fit": [
+        0.0,
+        0.7999999999999999
+      ],
+      "correctionRadius": 0.0014596516564041448,
+      "rowCount": 5154,
+      "axisRatio": 0.4188217481524986,
+      "dualTarget": "-1",
+      "displayGap": "1",
+      "sourceCommit": "13ed038b1740c6a35203d395910340ae1d36afb8"
+    },
+    {
+      "family": 4,
+      "characters": 3,
+      "method": "optimized",
+      "axes": [
+        0.13015771751470528,
+        0.12838027698489243
+      ],
+      "target": [
+        0.10412617401176423,
+        0.0,
+        1.0
+      ],
+      "fit": [
+        0.8,
+        0.0
+      ],
+      "correctionRadius": 7.4891953646592e-05,
+      "rowCount": 5631,
+      "axisRatio": 0.986343948221034,
+      "dualTarget": "-1",
+      "displayGap": "1",
+      "sourceCommit": "13ed038b1740c6a35203d395910340ae1d36afb8"
+    }
+  ]
+}
