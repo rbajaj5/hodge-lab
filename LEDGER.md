@@ -1473,6 +1473,15 @@ conversations or evidence of an accepted solve.
     claimed. No upstream comment or edit accompanies this notebook batch;
     the historical contribution tally remains **24**.
 
+    Published the result, two figures with SVG companions, intermediate
+    attempts, exact packet and gallery in commit
+    [`1f0e80d`](https://github.com/rbajaj5/hodge-lab/commit/1f0e80d1b3b03122fbe84cd67404f5838c829592).
+    The updated README and feature image were inspected on the live GitHub
+    page. Local primary, independent and figure replays pass.
+    The [new Linux CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39069918534)
+    was queued at this publication checkpoint; no completed CI result is
+    claimed here.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
