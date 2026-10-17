@@ -6,6 +6,10 @@ zero through five**, over the complex numbers, with the full numerator space
 and an unrestricted quotient. Neither instance is solved. Degrees six and
 higher have not been searched in this batch.
 
+**Later continuation:** [the degree-six batch](fresh-instance-degree6.md)
+excludes degree six for `cycle-three`; `mixed-biweight` remains open there.
+The original batch and its bounds below are preserved as a dated checkpoint.
+
 These use different fixed hypersurface equations from the holdout experiment. At the selection
 check on 17 October 2026, upstream main was
 `0768616c9b70b318011b7c421abdd640322ccbfc`. Neither target had a proof or

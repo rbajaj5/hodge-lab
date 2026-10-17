@@ -1,0 +1,1217 @@
+{
+  "status": "PASS",
+  "method": "Independent degree-six reconstruction from SymPy-parsed protected targets.\n\nNo project algebra modules are imported. Finite-field elimination uses the\nlargest exponent tuple as pivot. Exact exported identities are checked with\nstandard-library Fraction arithmetic; modular observations alone are not\nreported as characteristic-zero exclusions.\n",
+  "modular_audits": [
+    {
+      "instance": "cycle-three",
+      "prime": 1009,
+      "source_sha256": {
+        "sources/sextics/data/cycle-three/instance.rec": "746f950104e7ea421fb03e9cb3a59f24c91e7b0471e3ee1ed6165e4d423bc6d7",
+        "sources/sextics/data/cycle-three/why.md": "065750e5ed69e23fbe58d295de824ddc2ce6bd6de2e987f5b7adf98b44b37a74",
+        "sources/sextics/data/cycle-three/provenance.json": "9c8055698504d5174362ba78486c51baa4ceccfa8a03fa0ad832572e61cb45ac"
+      },
+      "numerator_columns": 4752,
+      "denominator_columns": 462,
+      "rank_n_mod_p": 4437,
+      "rank_augmented_mod_p": 4863,
+      "denominator_projection_dimension_mod_p": 36,
+      "quadratic_koszul_rank": 315,
+      "J6_rank": 36,
+      "exact_koszul_identities": 315,
+      "rank_n_characteristic_zero_reason": "315 independent exact Koszul kernel fields give the matching upper bound 4752-315=4437.",
+      "projection_characteristic_zero_reason": "36 independent exact gradient denominator lifts and the Koszul fields give the matching augmented upper bound 5214-315-36=4863.",
+      "restricted_hessian_probe": {
+        "parameters": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "columns": 630,
+        "rank_mod_p": 291,
+        "isolatable_squares_mod_p": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "scope": "Complete E1 family only for cycle-three; restricted J6 subfamily for mixed-biweight."
+      },
+      "seconds": 0.6725465999988955
+    },
+    {
+      "instance": "mixed-biweight",
+      "prime": 1009,
+      "source_sha256": {
+        "sources/sextics/data/mixed-biweight/instance.rec": "d684c414f66ab7e0ee131d6224c6b7ac46c772c44ed44a57b968470c1531c42e",
+        "sources/sextics/data/mixed-biweight/why.md": "771b0e82c736d20af44ad64030009bc006eea50a44f3e29b60cd90dd3be510a2",
+        "sources/sextics/data/mixed-biweight/provenance.json": "0ca0e5cc643beee21229d63c64e528bc92d24229671f578371183030cdc7226d"
+      },
+      "numerator_columns": 4752,
+      "denominator_columns": 462,
+      "rank_n_mod_p": 4437,
+      "rank_augmented_mod_p": 4860,
+      "denominator_projection_dimension_mod_p": 39,
+      "quadratic_koszul_rank": 315,
+      "J6_rank": 36,
+      "exact_koszul_identities": 315,
+      "rank_n_characteristic_zero_reason": "315 independent exact Koszul kernel fields give the matching upper bound 4752-315=4437.",
+      "projection_characteristic_zero_reason": "Modular observation only here; the three extra characteristic-zero directions require the separate exact packet.",
+      "restricted_hessian_probe": {
+        "parameters": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "columns": 630,
+        "rank_mod_p": 291,
+        "isolatable_squares_mod_p": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "scope": "Complete E1 family only for cycle-three; restricted J6 subfamily for mixed-biweight."
+      },
+      "seconds": 0.7356266999995569
+    }
+  ],
+  "exact_E1_audits": [
+    {
+      "instance": "cycle-three",
+      "status": "PASS",
+      "packet_sha256": "76f84d5d053a3e63551255b7be5c4601e0cde4bdd2321a015e70af123c9e1090",
+      "kernel_lifts_checked": 36,
+      "dual_constraints_checked": 426,
+      "exact_jacobian_pairings": 2024352,
+      "exact_AD_pairings": 196812,
+      "dimensions": {
+        "coefficient_rows": 6188,
+        "denominator_columns": 462,
+        "numerator_columns": 4752,
+        "jacobian_rank": 4437,
+        "augmented_rank": 4863,
+        "denominator_image_rank": 426,
+        "denominator_kernel_dimension": 36
+      }
+    },
+    {
+      "instance": "mixed-biweight",
+      "status": "PASS",
+      "packet_sha256": "6a44dbdaf3cb5f4f33af2109cadcb78c4b8b072331618ee05682efadff749bf7",
+      "kernel_lifts_checked": 39,
+      "dual_constraints_checked": 423,
+      "exact_jacobian_pairings": 2010096,
+      "exact_AD_pairings": 195426,
+      "dimensions": {
+        "coefficient_rows": 6188,
+        "denominator_columns": 462,
+        "numerator_columns": 4752,
+        "jacobian_rank": 4437,
+        "augmented_rank": 4860,
+        "denominator_image_rank": 423,
+        "denominator_kernel_dimension": 39
+      }
+    }
+  ],
+  "exact_hessian_audit": {
+    "instance": "cycle-three",
+    "status": "PASS",
+    "packet_sha256": "d967275ef015709ccc2167b51612dbaba93d92300b1d9fc5e6c882713118e371",
+    "squares_checked": 30,
+    "exact_J12_pairings": 142560,
+    "exact_hessian_pairings": 18900,
+    "mutations_rejected": 30,
+    "remaining_diagonal_parameters": 5
+  },
+  "exact_diagonal_audit": {
+    "instance": "cycle-three",
+    "status": "PASS",
+    "packet_sha256": "c8f1737eb9dc69e489b4e9f3332f9102092691942fbd22b02d0695c7cdde9a62",
+    "full_E2_consequences": 7,
+    "correction_columns": 2352,
+    "exact_correction_pairings": 16464,
+    "exact_quadratic_pairings": 147,
+    "quartic_identities_checked": 5,
+    "quartic_coefficient_products": 2275,
+    "multiplier_monomials": 326,
+    "quartic_rank_mod_p": 70,
+    "quartic_multiplier_rows": 105,
+    "quartic_coefficient_columns": 70,
+    "quartic_characteristic_zero_rank_reason": "The independently reconstructed 105-by-70 rational Macaulay matrix has rank70 modulo1009, matching its70-column upper bound; hence its rank overQ andC is70.",
+    "mutations_rejected": 12,
+    "conclusion": "All five Euler-gauged diagonal coefficients vanish over C. Together with the full E1 kernel and 30 off-diagonal square checks, only inadmissible D proportional to F survives at degree six."
+  },
+  "mixed_restricted_failed_probe": {
+    "instance": "mixed-biweight",
+    "prime": 1009,
+    "status": "bounded_power_search_unsuccessful",
+    "scope": "Only the diagonal part of the 36-dimensional J6 subfamily after the exploratory off-diagonal screen. The full E1 kernel has three additional directions; they are not tested here.",
+    "correction_columns": 2352,
+    "correction_rank_mod_p": 1451,
+    "quadratic_columns": 21,
+    "necessary_quadratic_rank_mod_p": 5,
+    "quadratic_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "rowbasis_mod_p": [
+      [
+        [
+          1,
+          505
+        ],
+        [
+          2,
+          505
+        ],
+        [
+          3,
+          1007
+        ],
+        [
+          4,
+          505
+        ],
+        [
+          5,
+          505
+        ],
+        [
+          6,
+          505
+        ],
+        [
+          7,
+          504
+        ],
+        [
+          9,
+          504
+        ],
+        [
+          10,
+          504
+        ],
+        [
+          15,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1008
+        ],
+        [
+          2,
+          1008
+        ],
+        [
+          4,
+          1008
+        ],
+        [
+          5,
+          1008
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          15,
+          1007
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          204
+        ],
+        [
+          1,
+          604
+        ],
+        [
+          2,
+          807
+        ],
+        [
+          3,
+          806
+        ],
+        [
+          4,
+          604
+        ],
+        [
+          5,
+          807
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          8,
+          807
+        ],
+        [
+          9,
+          605
+        ],
+        [
+          12,
+          202
+        ],
+        [
+          15,
+          606
+        ],
+        [
+          16,
+          807
+        ],
+        [
+          17,
+          202
+        ],
+        [
+          18,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          15
+        ],
+        [
+          1,
+          1004
+        ],
+        [
+          2,
+          1006
+        ],
+        [
+          3,
+          995
+        ],
+        [
+          4,
+          1004
+        ],
+        [
+          5,
+          1006
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          201
+        ],
+        [
+          1,
+          404
+        ],
+        [
+          2,
+          605
+        ],
+        [
+          3,
+          607
+        ],
+        [
+          4,
+          404
+        ],
+        [
+          5,
+          605
+        ],
+        [
+          7,
+          807
+        ],
+        [
+          10,
+          807
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          201
+        ],
+        [
+          13,
+          807
+        ],
+        [
+          14,
+          605
+        ],
+        [
+          17,
+          201
+        ],
+        [
+          19,
+          807
+        ],
+        [
+          20,
+          1
+        ]
+      ]
+    ],
+    "gauge": "Set a5=0 after the degree-six Euler/F gauge.",
+    "groebner_basis_mod_p": [
+      "a0*a4**4 - a4**5",
+      "a1*a4**4 - a4**5",
+      "a3*a4**4 - a4**5",
+      "-86*a0*a4**3 + 51*a1*a4**3 + a2**2*a4**2 + 402*a2*a4**3 - 381*a3*a4**3 + 14*a4**4",
+      "a0*a3*a4**2 + 71*a0*a4**3 + 319*a1*a4**3 - 136*a3*a4**3 - 255*a4**4",
+      "187*a0*a4**3 + a1*a3*a4**2 + 164*a1*a4**3 + 247*a3*a4**3 + 410*a4**4",
+      "398*a0*a4**3 - 55*a1*a4**3 + a2*a3*a4**2 - a2*a4**3 - 7*a3*a4**3 - 336*a4**4",
+      "499*a0*a4**3 - 23*a1*a4**3 + a3**2*a4**2 + 115*a3*a4**3 + 417*a4**4",
+      "283*a0*a3*a4 + 363*a0*a4**2 + 82*a1*a3*a4 + 300*a1*a4**2 + a2**3 + 186*a2**2*a4 + 311*a2*a3*a4 + 238*a2*a4**2 - 321*a3**2*a4 + 373*a3*a4**2 - 13*a4**3",
+      "246*a0*a3*a4 - 123*a0*a4**2 - 3*a1*a3*a4 - 171*a1*a4**2 + a2**2*a3 - 196*a2**2*a4 - 311*a2*a3*a4 - 386*a2*a4**2 + 368*a3**2*a4 - 180*a3*a4**2 - 449*a4**3",
+      "a0*a3**2 - 350*a0*a3*a4 + 175*a0*a4**2 - 298*a1*a3*a4 + 54*a1*a4**2 + 73*a2**2*a4 - 284*a2*a3*a4 + 369*a2*a4**2 - 317*a3**2*a4 - 233*a3*a4**2 - 126*a4**3",
+      "-484*a0*a3*a4 + 242*a0*a4**2 + a1*a3**2 + 467*a1*a3*a4 + 441*a1*a4**2 + 107*a2**2*a4 - 301*a2*a3*a4 - 72*a2*a4**2 - 316*a3**2*a4 - 149*a3*a4**2 + 171*a4**3",
+      "-164*a0*a3*a4 + 82*a0*a4**2 - 226*a1*a3*a4 + 111*a1*a4**2 + 47*a2**2*a4 + a2*a3**2 - 104*a2*a3*a4 - 174*a2*a4**2 + 229*a3**2*a4 - 43*a3*a4**2 + 288*a4**3",
+      "-68*a0*a3*a4 + 34*a0*a4**2 - 114*a1*a3*a4 - 484*a1*a4**2 - 215*a2**2*a4 - 418*a2*a3*a4 - 247*a2*a4**2 + a3**3 + 480*a3**2*a4 - 28*a3*a4**2 - 165*a4**3",
+      "a0**2 - 2*a0*a3 - 63*a1*a3 + 63*a1*a4 - 210*a2**2 + 441*a2*a3 - 105*a2*a4 - 377*a3**2 - 63*a3*a4 + 105*a4**2",
+      "a0*a1 - 2*a0*a3 + a0*a4 - 474*a1*a3 + 473*a1*a4 - 397*a2**2 + 280*a2*a3 - 452*a2*a4 + 195*a3**2 - 474*a3*a4 + 452*a4**2",
+      "a1**2 - 254*a1*a3 + 252*a1*a4 - 502*a2**2 - 256*a2*a3 + 252*a2*a4 - 499*a3**2 - 254*a3*a4 - 251*a4**2",
+      "a0*a2 - 2*a0*a3 + 347*a1*a3 - 347*a1*a4 - 23*a2**2 - 408*a2*a3 + 242*a2*a4 + 62*a3**2 + 347*a3*a4 - 242*a4**2",
+      "a1*a2 - 381*a1*a3 + 379*a1*a4 + 87*a2**2 - 384*a2*a3 + 42*a2*a4 - 244*a3**2 - 381*a3*a4 - 41*a4**2"
+    ],
+    "groebner_order": "grevlex",
+    "coordinate_power_checks": [
+      {
+        "parameter": 0,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 4,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 5,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 6,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 7,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 8,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 4,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 5,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 6,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 7,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 8,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 4,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 5,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 6,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 7,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 2,
+        "power": 8,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 4,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 5,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 6,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 7,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 8,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 4,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 5,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 6,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 7,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 4,
+        "power": 8,
+        "zero_remainder": false
+      }
+    ],
+    "powers_found": [],
+    "limits": "Powers 2 through 8 were tested. No time limit was imposed on this small completed modular Groebner computation. Failure to find powers does not establish existence, nonexistence, or a characteristic-zero conclusion.",
+    "seconds": 0.7537827999985893
+  }
+}

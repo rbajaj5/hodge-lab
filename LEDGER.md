@@ -898,6 +898,26 @@ conversations or evidence of an accepted solve.
     both verifiers and the plot generator. Other jobs in the full workflow
     were still running; no full-workflow success is claimed.
 
+54. **17 October 2026 — Full second equation closes cyclic degree six.**
+    Upstream main remained `0768616c9b70b318011b7c421abdd640322ccbfc`;
+    the announced additional instances had not appeared. Continued
+    `cycle-three` and `mixed-biweight`, with fixed targets and all existing
+    upstream files intact. The complete degree-six kernels have dimensions
+    36 and 39, respectively. For the cyclic target the kernel equals $J_6$.
+    Euler gauge leaves 35 parameters, and 30 rational square functionals
+    remove every off-diagonal matrix entry. The weaker Jacobian-quotient
+    test stalls on five diagonal parameters. Eliminating the full relaxed
+    numerator-correction space instead gives seven necessary quadratics;
+    their quartic multiplier map has rank 70/70 and supplies five exact
+    fourth-power identities. Hence cyclic denominators of degree six are
+    excluded over the complex numbers, raising its lower bound to seven.
+    Mixed degree six remains open, including three directions outside $J_6$.
+    Kept the unsuccessful weaker tests, bounded-attempt logs, rational
+    witnesses, separate equation reconstruction, and two actual-map figures.
+    [Argument, visualizations, failures, and reproduction](notes/fresh-instance-degree6.md).
+    No existence proof, Lean proof, accepted solve, or leaderboard point
+    follows. Publication will be recorded separately only after readback.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

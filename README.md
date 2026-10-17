@@ -19,14 +19,18 @@ our homology ranking did not outperform its controls.
 [Concrete mathematical rationale, figure, evidence, and limits](notes/why-yang.md).
 
 **Current direction:** work on `cycle-three` and `mixed-biweight`, with
-different fixed hypersurface equations from holdout. The first complete
-bounded test excludes every denominator of **degree zero through five** for
-both targets. All coefficients and numerator corrections are included;
-nonzero quotients are allowed. Degree six and higher remain open, and neither
-instance is solved. [Argument, exact packets, figures, and reproduction](notes/fresh-instance-baselines.md).
+different fixed hypersurface equations from holdout. Exact calculations now
+exclude every denominator of **degree zero through six for cycle-three** and
+**zero through five for mixed-biweight**. All coefficients and numerator
+corrections are included; nonzero quotients are allowed. The new cyclic
+argument uses 30 square identities and five quartic identities after the full
+second equation supplies seven necessary quadratics. Mixed degree six and
+higher cyclic degrees remain open; neither instance is solved.
+[New argument, packets, figures, and failures](notes/fresh-instance-degree6.md),
+[preceding degree-five bounds](notes/fresh-instance-baselines.md).
 Further holdout discussion posts remain paused.
 
-![Degree-five necessary maps for the two fresh targets](results/fresh-instance-e1-figures/fresh-instance-e2.png)
+![Degree-six necessary maps and the complete quartic obstruction](results/fresh-instance-degree6-figures/degree-six-exclusion.png)
 
 **Holdout checkpoint: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 

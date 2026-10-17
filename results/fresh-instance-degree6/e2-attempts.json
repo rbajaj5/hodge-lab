@@ -1,0 +1,24 @@
+[
+  {
+    "instance": "cycle-three",
+    "degree": 6,
+    "stage": "e2-worker",
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"cycle-three\", \"E2_step\": 1, \"allowed\": 35, \"rank\": 291, \"forced_squares\": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34]}\n{\"instance\": \"cycle-three\", \"E2_step\": 2, \"allowed\": 5, \"rank\": 3, \"forced_squares\": []}\n",
+    "stderr": "",
+    "time_limit_seconds": 120.0,
+    "elapsed_seconds": 2.817228100000648
+  },
+  {
+    "instance": "cycle-three",
+    "degree": 6,
+    "stage": "diagonal-worker",
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"cycle-three\", \"full_diagonal_correction_rank\": 1451, \"seconds\": 0.550168500005384}\n{\"instance\": \"cycle-three\", \"diagonal_dimensions\": {\"coefficient_rows\": 6188, \"correction_columns\": 2352, \"correction_rank\": 1451, \"quadratic_columns\": 21, \"necessary_quadratic_rank\": 7}, \"quartic_search\": {\"degree\": 4, \"coefficient_columns\": 70, \"multiplier_rows\": 105, \"row_rank\": 70, \"unresolved_parameters\": []}, \"power_identities\": 5, \"seconds\": 1.2958367000028375}\n",
+    "stderr": "",
+    "time_limit_seconds": 120.0,
+    "elapsed_seconds": 1.4391042999995989
+  }
+]

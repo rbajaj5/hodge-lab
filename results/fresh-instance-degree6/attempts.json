@@ -1,0 +1,46 @@
+[
+  {
+    "instance": "cycle-three",
+    "stage": "complete-E1",
+    "degree": 6,
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"cycle-three\", \"degree\": 6, \"status\": \"complete\", \"dimensions\": {\"coefficient_rows\": 6188, \"denominator_columns\": 462, \"numerator_columns\": 4752, \"jacobian_rank\": 4437, \"augmented_rank\": 4863, \"denominator_image_rank\": 426, \"denominator_kernel_dimension\": 36}, \"seconds\": 12.984835700000986}\n",
+    "stderr": "",
+    "time_limit_seconds": 120.0,
+    "elapsed_seconds": 13.155298100005894
+  },
+  {
+    "instance": "mixed-biweight",
+    "stage": "complete-E1",
+    "degree": 6,
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"mixed-biweight\", \"degree\": 6, \"status\": \"complete\", \"dimensions\": {\"coefficient_rows\": 6188, \"denominator_columns\": 462, \"numerator_columns\": 4752, \"jacobian_rank\": 4437, \"augmented_rank\": 4860, \"denominator_image_rank\": 423, \"denominator_kernel_dimension\": 39}, \"seconds\": 14.639284199998656}\n",
+    "stderr": "",
+    "time_limit_seconds": 120.0,
+    "elapsed_seconds": 14.822666799998842
+  },
+  {
+    "instance": "cycle-three",
+    "stage": "complete-E1",
+    "degree": 6,
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"cycle-three\", \"degree\": 6, \"status\": \"complete\", \"dimensions\": {\"coefficient_rows\": 6188, \"denominator_columns\": 462, \"numerator_columns\": 4752, \"jacobian_rank\": 4437, \"augmented_rank\": 4863, \"denominator_image_rank\": 426, \"denominator_kernel_dimension\": 36}, \"seconds\": 13.68163839999761}\n",
+    "stderr": "",
+    "time_limit_seconds": 120.0,
+    "elapsed_seconds": 13.889898099994753
+  },
+  {
+    "instance": "mixed-biweight",
+    "stage": "complete-E1",
+    "degree": 6,
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"mixed-biweight\", \"degree\": 6, \"status\": \"complete\", \"dimensions\": {\"coefficient_rows\": 6188, \"denominator_columns\": 462, \"numerator_columns\": 4752, \"jacobian_rank\": 4437, \"augmented_rank\": 4860, \"denominator_image_rank\": 423, \"denominator_kernel_dimension\": 39}, \"seconds\": 12.654464999999618}\n",
+    "stderr": "",
+    "time_limit_seconds": 120.0,
+    "elapsed_seconds": 12.848738000000594
+  }
+]

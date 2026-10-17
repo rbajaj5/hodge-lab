@@ -3,6 +3,21 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  fresh-instance-degree6:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install "sympy>=1.13,<2" "matplotlib>=3.9,<4"
+      - run: python -S experiments/fresh_instance_degree6.py verify-all
+      - run: python experiments/check_fresh_instance_degree6_independent.py . work/fresh-degree6-independent.json
+      - run: python experiments/plot_fresh_instance_degree6.py
   fresh-instance-baselines:
     runs-on: ubuntu-latest
     timeout-minutes: 10

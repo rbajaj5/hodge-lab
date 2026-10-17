@@ -1,0 +1,50 @@
+[
+  {
+    "instance": "cycle-three",
+    "degree": 6,
+    "status": "PASS",
+    "dimensions": {
+      "coefficient_rows": 6188,
+      "denominator_columns": 462,
+      "numerator_columns": 4752,
+      "jacobian_rank": 4437,
+      "augmented_rank": 4863,
+      "denominator_image_rank": 426,
+      "denominator_kernel_dimension": 36
+    },
+    "exact_jacobian_annihilation_pairings": 2024352,
+    "jacobian_denominator_subspace_dimension": 36,
+    "kernel_equals_jacobian_degree_piece": true,
+    "kernel_identities": 36,
+    "mutations_rejected": 2,
+    "packet_sha256": "76f84d5d053a3e63551255b7be5c4601e0cde4bdd2321a015e70af123c9e1090",
+    "seconds": 13.946673099999316,
+    "F_gauge_dimension": 1,
+    "denominator_kernel_mod_F_dimension": 35,
+    "non_J6_denominator_dimension": 0
+  },
+  {
+    "instance": "mixed-biweight",
+    "degree": 6,
+    "status": "PASS",
+    "dimensions": {
+      "coefficient_rows": 6188,
+      "denominator_columns": 462,
+      "numerator_columns": 4752,
+      "jacobian_rank": 4437,
+      "augmented_rank": 4860,
+      "denominator_image_rank": 423,
+      "denominator_kernel_dimension": 39
+    },
+    "exact_jacobian_annihilation_pairings": 2010096,
+    "jacobian_denominator_subspace_dimension": 36,
+    "kernel_equals_jacobian_degree_piece": false,
+    "kernel_identities": 39,
+    "mutations_rejected": 2,
+    "packet_sha256": "6a44dbdaf3cb5f4f33af2109cadcb78c4b8b072331618ee05682efadff749bf7",
+    "seconds": 14.865847500004747,
+    "F_gauge_dimension": 1,
+    "denominator_kernel_mod_F_dimension": 38,
+    "non_J6_denominator_dimension": 3
+  }
+]
