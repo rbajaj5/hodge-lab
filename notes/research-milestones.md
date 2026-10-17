@@ -13,7 +13,7 @@ The aim is to reduce uncertainty about the fixed holdout problem. A useful resul
 | Obtain external mathematical review | Pending; no such review is claimed here | Public availability and passing CI are not substitutes for this milestone |
 | Follow the published mixed-character frontier | fqlx's pair scan was reproduced and the [Y0/X1 pair was subsequently excluded](degree-seven-pair.md) | A complete exclusion of degree seven or a certificate of existence |
 
-## Next experiments
+## Earlier plan: two-character frontier
 
 1. **Work on the remaining two-character families.** The first pilot has now closed the `{chi_Y0,chi_X1}` pair from fqlx's published residual list. Focus next on `{chi_X0,chi_Y0}` and `{chi_X1,chi_Y1}`, or explicitly declare a broader search. Retain every numerator character allowed by the subgroup preserving the selected pair, every cross term, and the unrestricted quotient. Reconstruct equations using the second polynomial API before interpreting solver output. The existing single-character constructor deliberately rejects mixed input.
 2. **Evaluate computational tractability.** Record equation sizes, elapsed time, and the declared resource limit. Classify each chart as exactly excluded, supplied with an exactly verified witness, or unresolved. A timeout is unresolved. A pilot does not cover every mixed-character denominator.
@@ -22,4 +22,28 @@ The aim is to reduce uncertainty about the fixed holdout problem. A useful resul
 
 Each experiment should record its question, target revision, assumptions, baseline, resource budget, success criterion, stopping criterion, outcome, and the next decision. Fix these before execution when possible; label later changes as exploratory. Report failed candidates and exclusions with the same care as positive results. Do not award progress merely for more GPU time, more candidates, or a better-looking plot.
 
-The immediate decision is to continue from the two remaining pairs. Degree-six sampling is no longer an active search for this holdout, and the current evidence does not justify preferring anisotropic weighting to its simpler uniform baseline.
+At that checkpoint the decision was to continue from the two remaining pairs.
+Both have since been excluded. Degree-six sampling is no longer an active
+search for this holdout, and the evidence does not justify preferring
+anisotropic weighting to its simpler uniform baseline.
+
+## 17 October 2026: Bright and publication choices
+
+Liam Kofi Bright's [*Why Do Scientists Lie?* (2021)](https://doi.org/10.1017/S1358246121000102)
+examines a structural tension: competition for credit can encourage haste
+and deception, while also promoting prompt sharing and methodological
+diversity. Removing that incentive is therefore not an established remedy;
+the institutional tradeoff remains unresolved.
+
+Our application is to judge contributions by their content and support.
+Seeking recognition is a legitimate motivation. Substantial self-contained
+results can receive top-level discussion posts; direct continuations and
+corrections can be replies. This is an organizational convention, not a
+response to a moderator complaint or spam warning. The ledger records
+publication history; its post count is not a measure of research quality.
+
+The current [eleven-family continuation](eleven-quartic.md) gives nine exact
+exclusions and two bounded failures, bringing selected coverage to 150/152.
+Families 17 and 151 are the next selected targets. Keep their unsuccessful
+quartic calculations available when choosing between higher-degree
+relations and the stricter shared-numerator equations.

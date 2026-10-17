@@ -1,0 +1,550 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "families": [
+    {
+      "number": 1,
+      "excluded": true,
+      "quartic_zeros": [
+        136,
+        236,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "remaining_characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "shared_numerator_pair",
+        "charts": 25,
+        "inferences": 192,
+        "forced_raw_ids": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114
+        ],
+        "single_character": {
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "charts": 7,
+          "inferences": 22
+        }
+      }
+    },
+    {
+      "number": 2,
+      "excluded": true,
+      "quartic_zeros": [
+        102,
+        111,
+        130,
+        136,
+        233,
+        236,
+        253,
+        267,
+        270,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        42,
+        88,
+        114
+      ],
+      "remaining_characters": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "closure": {
+        "kind": "single_character",
+        "proof": {
+          "character": [
+            0,
+            0,
+            1
+          ],
+          "charts": 6,
+          "inferences": 19
+        }
+      }
+    },
+    {
+      "number": 4,
+      "excluded": true,
+      "quartic_zeros": [
+        136,
+        236,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "shared_numerator_pair",
+        "charts": 25,
+        "inferences": 268,
+        "forced_raw_ids": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114
+        ],
+        "single_character": {
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "charts": 7,
+          "inferences": 42
+        }
+      }
+    },
+    {
+      "number": 5,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        136,
+        233,
+        236,
+        253,
+        267,
+        270,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "remaining_characters": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "single_character",
+        "proof": {
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "charts": 7,
+          "inferences": 22
+        }
+      }
+    },
+    {
+      "number": 7,
+      "excluded": true,
+      "quartic_zeros": [
+        136,
+        236,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "fqlx_pair30",
+        "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+        "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+        "basis_pairs_matched": 10,
+        "target_F_A_matched": true,
+        "source_files_hash_checked": 20,
+        "replay": "pair30/replay.json"
+      }
+    },
+    {
+      "number": 9,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        136,
+        233,
+        236,
+        253,
+        267,
+        270,
+        273,
+        290,
+        294
+      ],
+      "remaining_after_quartics": [
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "single_character",
+        "proof": {
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "charts": 7,
+          "inferences": 42
+        }
+      }
+    },
+    {
+      "number": 15,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        233,
+        253,
+        267,
+        270
+      ],
+      "remaining_after_quartics": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        180,
+        210,
+        229,
+        232
+      ],
+      "remaining_characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "shared_numerator_pair",
+        "charts": 25,
+        "inferences": 192,
+        "forced_raw_ids": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114
+        ],
+        "single_character": {
+          "character": [
+            0,
+            1,
+            0
+          ],
+          "charts": 7,
+          "inferences": 22
+        }
+      }
+    },
+    {
+      "number": 17,
+      "excluded": false,
+      "quartic_zeros": [],
+      "remaining_after_quartics": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": null
+    },
+    {
+      "number": 39,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        233,
+        253,
+        267,
+        270
+      ],
+      "remaining_after_quartics": [
+        42,
+        56,
+        88,
+        102,
+        111,
+        114,
+        135,
+        235,
+        272,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "shared_numerator_pair",
+        "charts": 25,
+        "inferences": 268,
+        "forced_raw_ids": [
+          42,
+          56,
+          88,
+          102,
+          111,
+          114
+        ],
+        "single_character": {
+          "character": [
+            5,
+            3,
+            0
+          ],
+          "charts": 7,
+          "inferences": 42
+        }
+      }
+    },
+    {
+      "number": 150,
+      "excluded": true,
+      "quartic_zeros": [
+        130,
+        233,
+        253,
+        267,
+        270
+      ],
+      "remaining_after_quartics": [
+        123,
+        135,
+        180,
+        210,
+        229,
+        232,
+        235,
+        272,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": {
+        "kind": "fqlx_pair30",
+        "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+        "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+        "basis_pairs_matched": 10,
+        "target_F_A_matched": true,
+        "source_files_hash_checked": 20,
+        "replay": "pair30/replay.json"
+      }
+    },
+    {
+      "number": 151,
+      "excluded": false,
+      "quartic_zeros": [],
+      "remaining_after_quartics": [
+        115,
+        123,
+        133,
+        135,
+        180,
+        210,
+        229,
+        232,
+        234,
+        235,
+        271,
+        272,
+        285,
+        288,
+        289,
+        293
+      ],
+      "remaining_characters": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "closure": null
+    }
+  ],
+  "checks": {
+    "correction_pairings": 108117,
+    "quadratic_pairings": 30181,
+    "physical_duals": 1126,
+    "power_identities": 42,
+    "quartic_power_identities": 62,
+    "corrupted_identities_rejected": 62
+  },
+  "excluded": 9,
+  "unresolved": [
+    17,
+    151
+  ],
+  "source_sha256": "6fb3224ef9ad6dbb7a726d56b9c53ffa39ecdd10f2ba58fba320e7c521ad37b7",
+  "seconds": 10.405768299999181,
+  "scope": "Eleven complete selected degree-seven triple families modulo the established F*S1 gauge; holdout remains unsolved."
+}

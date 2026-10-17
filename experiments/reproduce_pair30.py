@@ -9,6 +9,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--fetch',action='store_true')
     parser.add_argument('--directory',type=Path,default=ROOT/'work/upstream-pair30')
+    parser.add_argument('--output-directory',type=Path,default=ROOT/'results/upstream-pair30')
     args=parser.parse_args();manifest=json.loads(MANIFEST.read_text());directory=args.directory.resolve()
     if args.fetch:
         request=urllib.request.Request('https://api.github.com/gists/'+manifest['gist']+'/'+manifest['revision'],
@@ -24,7 +25,7 @@ def main():
             (directory/name).write_bytes(raw)
     for name,digest in manifest['sha256'].items():
         assert hashlib.sha256((directory/name).read_bytes()).hexdigest()==digest,name
-    out=ROOT/'results/upstream-pair30';out.mkdir(parents=True,exist_ok=True)
+    out=args.output_directory.resolve();out.mkdir(parents=True,exist_ok=True)
     records=[];env=dict(os.environ,PYTHONUTF8='1')
     # The independent audit rewrites a JSON report. Run on a disposable copy
     # so that downloaded source/artifact hashes remain stable for later replay.

@@ -523,6 +523,27 @@ conversations or evidence of an accepted solve.
     The Linux `eisenbud-quartic` job passed every new arithmetic and figure-data
     check at the pinned publication commit; its receipt is retained in the note.
 
+38. **17 October 2026 — Degree four on the eleven remaining triples.**
+    Tested all 33 pure-character blocks and the two surviving full maps.
+    Twelve blocks fill their quartic target and force sixty family-coordinate
+    zeros; a rank-65/70 block in family 2 forces two more. After replaying
+    all residual sectors, families 1, 2, 4, 5, 7, 9, 15, 39, and 150 are
+    excluded, increasing selected coverage to 150/152. Families 17 and 151
+    remain unresolved: their completed 300-second-bound full-map searches
+    find no coordinate fourth powers. Both physical polynomial constructions
+    pass; all 62 altered-identity checks reject the corruption.
+    Families 7 and 150 depend on fqlx's existing family-30 proof, reproduced
+    from its hash-pinned packet and bound to our target and basis. This is
+    credited reproduction, not a new pair result. Added a static figure and
+    110 exact cancellation examples across 35 block/full-map views; all 330
+    browser layouts pass. Retained failed searches and corrected presentation
+    size/redraw issues. No full resolution, phase transition, Lean proof,
+    or holdout solution is claimed.
+    [Proof, visualizations, checks, and failed attempts](notes/eleven-quartic.md).
+    Read Bright's argument about the mixed effects of credit incentives and
+    updated the [publication rationale and current milestones](notes/research-milestones.md).
+    Post counts record activity, not scientific quality.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

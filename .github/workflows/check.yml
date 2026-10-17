@@ -3,6 +3,22 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  eleven-quartic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/eleven_quartic.py --check-blocks
+      - run: python -S experiments/reproduce_pair30.py --fetch --output-directory results/eleven-quartic/pair30
+      - run: python -S experiments/check_eleven_quartic.py
+      - run: python -S experiments/check_eleven_quartic.py --independent
+      - run: python -S experiments/plot_eleven_quartic.py --check
   eisenbud-quartic:
     runs-on: ubuntu-latest
     timeout-minutes: 15
