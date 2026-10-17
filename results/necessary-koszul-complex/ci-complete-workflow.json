@@ -1,0 +1,1297 @@
+{
+  "conclusion": "success",
+  "headSha": "cf2a569a56e43a56cda1469f64f36acc85337673",
+  "jobs": [
+    {
+      "completedAt": "2026-10-17T13:34:39Z",
+      "conclusion": "success",
+      "databaseId": 117408625959,
+      "name": "y0x1-extensions",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:19Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:19Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:08Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_y0x1_extensions.py",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:00Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_y0x1_extensions.py --independent",
+          "number": 5,
+          "startedAt": "2026-10-17T13:33:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:13Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/y100_multipliers.py --check",
+          "number": 6,
+          "startedAt": "2026-10-17T13:34:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:26Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/y100_multipliers.py --check --independent",
+          "number": 7,
+          "startedAt": "2026-10-17T13:34:13Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:26Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/y100_multipliers.py --blocks --check",
+          "number": 8,
+          "startedAt": "2026-10-17T13:34:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:30Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/y100_after_powers.py --check",
+          "number": 9,
+          "startedAt": "2026-10-17T13:34:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:33Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/y100_after_powers.py --check --independent",
+          "number": 10,
+          "startedAt": "2026-10-17T13:34:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:33Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_y0x1_extensions.py --check",
+          "number": 11,
+          "startedAt": "2026-10-17T13:34:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:36Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/graded_map_patterns.py --check",
+          "number": 12,
+          "startedAt": "2026-10-17T13:34:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:37Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 23,
+          "startedAt": "2026-10-17T13:34:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:37Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 24,
+          "startedAt": "2026-10-17T13:34:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:37Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 25,
+          "startedAt": "2026-10-17T13:34:37Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408625959"
+    },
+    {
+      "completedAt": "2026-10-17T13:37:41Z",
+      "conclusion": "success",
+      "databaseId": 117408626019,
+      "name": "koszul-continuation",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:07Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:26Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:26Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:16Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_rank_strata.py --check-all",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:06Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_rank_strata.py --check-all --independent",
+          "number": 5,
+          "startedAt": "2026-10-17T13:33:16Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:35:51Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_koszul_continuation.py",
+          "number": 6,
+          "startedAt": "2026-10-17T13:34:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:38Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_koszul_continuation.py --independent",
+          "number": 7,
+          "startedAt": "2026-10-17T13:35:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:38Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 13,
+          "startedAt": "2026-10-17T13:37:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:38Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 14,
+          "startedAt": "2026-10-17T13:37:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:38Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "startedAt": "2026-10-17T13:37:38Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626019"
+    },
+    {
+      "completedAt": "2026-10-17T13:32:23Z",
+      "conclusion": "success",
+      "databaseId": 117408626061,
+      "name": "necessary-koszul-complex",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:07Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:18Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:18Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:21Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/necessary_koszul_complex.py --check",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:21Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 7,
+          "startedAt": "2026-10-17T13:32:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:21Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 8,
+          "startedAt": "2026-10-17T13:32:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:21Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 9,
+          "startedAt": "2026-10-17T13:32:21Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626061"
+    },
+    {
+      "completedAt": "2026-10-17T13:38:56Z",
+      "conclusion": "success",
+      "databaseId": 117408626069,
+      "name": "verify",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:18Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:18Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:28Z",
+          "conclusion": "success",
+          "name": "Run python -m pip install -r requirements.txt",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:32Z",
+          "conclusion": "success",
+          "name": "Run python -m unittest discover -s tests -v",
+          "number": 5,
+          "startedAt": "2026-10-17T13:32:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:43Z",
+          "conclusion": "success",
+          "name": "Run python experiments/plot_koszul_continuation.py --check",
+          "number": 6,
+          "startedAt": "2026-10-17T13:32:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:05Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/optimize_koszul_parameters.py --check",
+          "number": 7,
+          "startedAt": "2026-10-17T13:32:43Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:29Z",
+          "conclusion": "success",
+          "name": "Run python experiments/optimize_koszul_parameters.py --check --independent --numerics",
+          "number": 8,
+          "startedAt": "2026-10-17T13:33:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:30Z",
+          "conclusion": "success",
+          "name": "Run python experiments/plot_parameter_optimization.py --check",
+          "number": 9,
+          "startedAt": "2026-10-17T13:33:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:30Z",
+          "conclusion": "success",
+          "name": "Run python experiments/build_search_explorer.py --check",
+          "number": 10,
+          "startedAt": "2026-10-17T13:33:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:33Z",
+          "conclusion": "success",
+          "name": "Run python experiments/build_koszul_geometry.py --check",
+          "number": 11,
+          "startedAt": "2026-10-17T13:33:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:34Z",
+          "conclusion": "success",
+          "name": "Run python experiments/plot_koszul_geometry.py --check",
+          "number": 12,
+          "startedAt": "2026-10-17T13:33:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:36Z",
+          "conclusion": "success",
+          "name": "Run python experiments/check_transfer_packet.py",
+          "number": 13,
+          "startedAt": "2026-10-17T13:33:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:40Z",
+          "conclusion": "success",
+          "name": "Run python algebra/degree6_verify_all_coefficients.py",
+          "number": 14,
+          "startedAt": "2026-10-17T13:33:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:46Z",
+          "conclusion": "success",
+          "name": "Run python algebra/fixed_denominator_search.py --check",
+          "number": 15,
+          "startedAt": "2026-10-17T13:33:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:02Z",
+          "conclusion": "success",
+          "name": "Run python experiments/denominator_gram_search.py --check",
+          "number": 16,
+          "startedAt": "2026-10-17T13:33:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:03Z",
+          "conclusion": "success",
+          "name": "Run python algebra/degree7_e1.py --check",
+          "number": 17,
+          "startedAt": "2026-10-17T13:34:02Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:04Z",
+          "conclusion": "success",
+          "name": "Run python algebra/degree7_verify_polynomials.py",
+          "number": 18,
+          "startedAt": "2026-10-17T13:34:03Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:06Z",
+          "conclusion": "success",
+          "name": "Run python algebra/degree7_character_search.py --check",
+          "number": 19,
+          "startedAt": "2026-10-17T13:34:04Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:10Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_y0_x1.py --check",
+          "number": 20,
+          "startedAt": "2026-10-17T13:34:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:28Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_x0_y0.py --check",
+          "number": 21,
+          "startedAt": "2026-10-17T13:34:10Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:55Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/dubedat_cycle_search.py --check",
+          "number": 22,
+          "startedAt": "2026-10-17T13:34:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:35:06Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/hodge_projected_search.py --check",
+          "number": 23,
+          "startedAt": "2026-10-17T13:34:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:35:16Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_hodge_projected_search.py",
+          "number": 24,
+          "startedAt": "2026-10-17T13:35:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:35:18Z",
+          "conclusion": "success",
+          "name": "Run python experiments/check_high_genus_flow.py",
+          "number": 25,
+          "startedAt": "2026-10-17T13:35:16Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:35:40Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_triples.py --check",
+          "number": 26,
+          "startedAt": "2026-10-17T13:35:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:36:04Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/check_degree7_triples.py",
+          "number": 27,
+          "startedAt": "2026-10-17T13:35:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:36:11Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_triple_shared.py --check",
+          "number": 28,
+          "startedAt": "2026-10-17T13:36:04Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:36:20Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_triple_shared.py --check --independent",
+          "number": 29,
+          "startedAt": "2026-10-17T13:36:11Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:36:54Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_syzygies.py --check",
+          "number": 30,
+          "startedAt": "2026-10-17T13:36:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:28Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_syzygies.py --check --independent",
+          "number": 31,
+          "startedAt": "2026-10-17T13:36:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:09Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_syzygy_rebuild.py --check",
+          "number": 32,
+          "startedAt": "2026-10-17T13:37:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:50Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/degree7_syzygy_rebuild.py --check --independent",
+          "number": 33,
+          "startedAt": "2026-10-17T13:38:09Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:54Z",
+          "conclusion": "success",
+          "name": "Run python -S algebra/check_family16_global_cubes.py",
+          "number": 34,
+          "startedAt": "2026-10-17T13:38:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:54Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 67,
+          "startedAt": "2026-10-17T13:38:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:54Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 68,
+          "startedAt": "2026-10-17T13:38:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:54Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 69,
+          "startedAt": "2026-10-17T13:38:54Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626069"
+    },
+    {
+      "completedAt": "2026-10-17T13:37:55Z",
+      "conclusion": "success",
+      "databaseId": 117408626080,
+      "name": "eisenbud-quartic",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:22Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:22Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:23Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/quartic_pure_blocks.py --check",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:38Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_quartic_exclusions.py",
+          "number": 5,
+          "startedAt": "2026-10-17T13:32:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:52Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_quartic_exclusions.py --independent",
+          "number": 6,
+          "startedAt": "2026-10-17T13:32:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:33Z",
+          "conclusion": "success",
+          "name": "Run for family in 6 8 10 149 152; do",
+          "number": 7,
+          "startedAt": "2026-10-17T13:32:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:51Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/quartic_auxiliary.py",
+          "number": 8,
+          "startedAt": "2026-10-17T13:37:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:52Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_quartic_strand.py --check",
+          "number": 9,
+          "startedAt": "2026-10-17T13:37:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:52Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 17,
+          "startedAt": "2026-10-17T13:37:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:53Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 18,
+          "startedAt": "2026-10-17T13:37:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:53Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 19,
+          "startedAt": "2026-10-17T13:37:53Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626080"
+    },
+    {
+      "completedAt": "2026-10-17T13:34:42Z",
+      "conclusion": "success",
+      "databaseId": 117408626118,
+      "name": "x1y1-extensions",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:23Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:23Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:34Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/reproduce_pair30.py --fetch --output-directory results/x1y1-extensions/pair30",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:21Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_x1y1_extensions.py",
+          "number": 5,
+          "startedAt": "2026-10-17T13:32:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:12Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_x1y1_extensions.py --independent",
+          "number": 6,
+          "startedAt": "2026-10-17T13:33:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:25Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_x1y1_shared.py",
+          "number": 7,
+          "startedAt": "2026-10-17T13:34:12Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:38Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_x1y1_shared.py --independent",
+          "number": 8,
+          "startedAt": "2026-10-17T13:34:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:38Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_x1y1_extensions.py --check",
+          "number": 9,
+          "startedAt": "2026-10-17T13:34:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:38Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 17,
+          "startedAt": "2026-10-17T13:34:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:39Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 18,
+          "startedAt": "2026-10-17T13:34:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:39Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 19,
+          "startedAt": "2026-10-17T13:34:39Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626118"
+    },
+    {
+      "completedAt": "2026-10-17T13:33:37Z",
+      "conclusion": "success",
+      "databaseId": 117408626121,
+      "name": "koszul-sweep",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:07Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:22Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:22Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:31Z",
+          "conclusion": "success",
+          "name": "Run python -m pip install -r requirements.txt",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:26Z",
+          "conclusion": "success",
+          "name": "Run python experiments/sweep_koszul_map.py --check",
+          "number": 5,
+          "startedAt": "2026-10-17T13:32:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:34Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/search_koszul_interior.py --check",
+          "number": 6,
+          "startedAt": "2026-10-17T13:33:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:34Z",
+          "conclusion": "success",
+          "name": "Run python experiments/plot_koszul_sweep.py --check",
+          "number": 7,
+          "startedAt": "2026-10-17T13:33:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:34Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 13,
+          "startedAt": "2026-10-17T13:33:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:35Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 14,
+          "startedAt": "2026-10-17T13:33:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:35Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "startedAt": "2026-10-17T13:33:35Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626121"
+    },
+    {
+      "completedAt": "2026-10-17T13:33:51Z",
+      "conclusion": "success",
+      "databaseId": 117408626122,
+      "name": "eisenbud-strand",
+      "startedAt": "2026-10-17T13:32:15Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:17Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:16Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:33Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:17Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:33Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:10Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/eisenbud_linear_strand.py --check",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:46Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/eisenbud_linear_strand.py --check --independent",
+          "number": 5,
+          "startedAt": "2026-10-17T13:33:10Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:47Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_eisenbud_strand.py --check",
+          "number": 6,
+          "startedAt": "2026-10-17T13:33:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:48Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 11,
+          "startedAt": "2026-10-17T13:33:48Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:48Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 12,
+          "startedAt": "2026-10-17T13:33:48Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:48Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 13,
+          "startedAt": "2026-10-17T13:33:48Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626122"
+    },
+    {
+      "completedAt": "2026-10-17T13:39:47Z",
+      "conclusion": "success",
+      "databaseId": 117408626142,
+      "name": "family151-multipliers",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:22Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:22Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:43Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_family151_multipliers.py",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:03Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_family151_multipliers.py --independent",
+          "number": 5,
+          "startedAt": "2026-10-17T13:34:43Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:21Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/family151_cubic_blocks.py --check",
+          "number": 6,
+          "startedAt": "2026-10-17T13:37:03Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:37:39Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/family151_cubic_blocks.py --check --independent",
+          "number": 7,
+          "startedAt": "2026-10-17T13:37:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:38:40Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_family151_multipliers.py --follow",
+          "number": 8,
+          "startedAt": "2026-10-17T13:37:39Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:39:41Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_family151_multipliers.py --follow --independent",
+          "number": 9,
+          "startedAt": "2026-10-17T13:38:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:39:44Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_family151_multipliers.py --check",
+          "number": 10,
+          "startedAt": "2026-10-17T13:39:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:39:45Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 19,
+          "startedAt": "2026-10-17T13:39:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:39:45Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 20,
+          "startedAt": "2026-10-17T13:39:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:39:45Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 21,
+          "startedAt": "2026-10-17T13:39:45Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626142"
+    },
+    {
+      "completedAt": "2026-10-17T13:34:11Z",
+      "conclusion": "success",
+      "databaseId": 117408626152,
+      "name": "remaining-triples",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:21Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:21Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:31Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/reproduce_pair30.py --fetch --output-directory results/remaining-triples-shared/pair30",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:18Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_remaining_triples.py",
+          "number": 5,
+          "startedAt": "2026-10-17T13:32:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:07Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_remaining_triples.py --independent",
+          "number": 6,
+          "startedAt": "2026-10-17T13:33:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:07Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_remaining_triples.py --check",
+          "number": 7,
+          "startedAt": "2026-10-17T13:34:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:07Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 13,
+          "startedAt": "2026-10-17T13:34:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:08Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 14,
+          "startedAt": "2026-10-17T13:34:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:34:08Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "startedAt": "2026-10-17T13:34:08Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626152"
+    },
+    {
+      "completedAt": "2026-10-17T13:33:23Z",
+      "conclusion": "success",
+      "databaseId": 117408626167,
+      "name": "eleven-quartic",
+      "startedAt": "2026-10-17T13:32:06Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-17T13:32:08Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-17T13:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:24Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-17T13:32:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:24Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-python@v5",
+          "number": 3,
+          "startedAt": "2026-10-17T13:32:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:34Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/eleven_quartic.py --check-blocks",
+          "number": 4,
+          "startedAt": "2026-10-17T13:32:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:32:44Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/reproduce_pair30.py --fetch --output-directory results/eleven-quartic/pair30",
+          "number": 5,
+          "startedAt": "2026-10-17T13:32:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:01Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_eleven_quartic.py",
+          "number": 6,
+          "startedAt": "2026-10-17T13:32:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:18Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/check_eleven_quartic.py --independent",
+          "number": 7,
+          "startedAt": "2026-10-17T13:33:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:21Z",
+          "conclusion": "success",
+          "name": "Run python -S experiments/plot_eleven_quartic.py --check",
+          "number": 8,
+          "startedAt": "2026-10-17T13:33:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:21Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-python@v5",
+          "number": 15,
+          "startedAt": "2026-10-17T13:33:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:21Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 16,
+          "startedAt": "2026-10-17T13:33:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-17T13:33:22Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-10-17T13:33:21Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916/job/117408626167"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39036956916"
+}

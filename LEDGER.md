@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 13 discussion contributions (eleven top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 14 discussion contributions (twelve top-level comments and two replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -33,6 +33,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 12. **17 October 2026, 09:08 EDT / 13:08 UTC — [Holdout discussion #44: 132 further X1/Y1 triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998764).** Shared 132 new complete three-character exclusions, completing all 136 extensions of X1/Y1 and increasing our selected union to 284 triples. Necessary blocks close 123; shared-numerator charts and reconstruction finish nine. The post links [immutable proofs, exact graded-map visualizations, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/c126e8bbc6ccc3f4c37a14d6be20809bdbccef25/notes/x1y1-extensions.md), explicitly credits fqlx's reproduced pair-30 dependency, and discloses Codex assistance and shared verification code. Both physical constructions pass. Nine unsuccessful first-pass systems and two initially unresolved charts remain recorded, alongside their later closures. The thread and current participation policy were reread, and GitHub's mathematical preview was inspected. Posted before the linked Hodge Lab push; the complete body, author, permanent URL, and absence of a reply parent were read back and matched. The current thread confirms ten top-level contributions and two replies. Other triple supports, larger supports, higher degrees, and holdout remain open; no Lean proof, solve PR, degree-bound improvement, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/x1y1-extensions/upstream-post.json).
 
 13. **17 October 2026, 09:28 EDT / 13:28 UTC — [Holdout discussion #44: 132 Y0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998994).** Shared one consolidated result completing another 132 full three-character families, bringing our selected union to 416. The final family required 39 new cubic consequences, three quartic power identities, two rebuilt cubic power identities, and two chart contradictions before applying the prior pair-22 exclusion. The post links [immutable proof packets, figures, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/840b88c22386687c745cf944c5c2a41c6b854d39/notes/y0x1-extensions.md), credits preceding work and Eisenbud's viewpoint, discloses Codex assistance, and gives the exact checks and resource bounds. The current discussion and contribution policy were reread. The mathematical Markdown preview was inspected. Posted before the supporting Hodge Lab push; the full body, rbajaj5 author, permanent URL, and absent reply parent were read back and matched. No Lean proof, solve PR, improved degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/y0x1-extensions/upstream-post.json).
+
+14. **17 October 2026, 09:43 EDT / 13:43 UTC — [Holdout discussion #44: 132 Y0/Y1 extensions and a homology-ranking comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999145).** Shared one consolidated result completing 132 new full three-character families, giving 548 selected exclusions. A prospective comparison closes four high-homology and four low-homology cases alike; no ranking advantage is established. The post links [immutable proofs, figures, plans, failures, and corrections](https://github.com/rbajaj5/hodge-lab/blob/876a0cc913a059dd384f77451a9a59b1999d66df/notes/homology-guided-triples.md), retains the two initially failed charts, and explains the explicit fourteen-to-eleven-direction binding to the prior Y0/Y1 proof. Both physical polynomial implementations and figure-data checks pass. The post credits prior work and Yang/Eisenbud-Erman as motivation, without claiming their categorical or geometric theorems were applied. The current discussion and participation policy were reread; GitHub's mathematical Markdown preview was inspected. Published before the supporting Hodge Lab push. The complete body, author, permanent URL, and absence of a reply parent were read back and matched. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/homology-guided-triples/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -693,6 +695,8 @@ conversations or evidence of an accepted solve.
     yet an implementation of either categorical theorem, a full resolution,
     or a new holdout exclusion. No extra upstream post was made for this
     internal comparison. [References, exact data, and figure](notes/categorical-syzygies.md).
+    The [later full Linux receipt](results/necessary-koszul-complex/ci-complete-workflow.json)
+    confirms all eleven workflow jobs passed at the published commit.
 
 45. **17 October 2026 — Use finite Koszul homology to choose continuations.**
     Selected 132 previously uncovered full Y0/Y1 extensions. Square identities
@@ -712,6 +716,11 @@ conversations or evidence of an accepted solve.
     theorem or the Eisenbud-Erman categorical pairing. No solve or improved
     unconditional degree bound is claimed.
     [Method, references, checks, figures, corrections, and failures](notes/homology-guided-triples.md).
+    Shared one consolidated top-level result, recorded as contribution 14
+    above, and pushed the linked proof commit to Hodge Lab.
+    The [dedicated Linux job receipt](results/homology-guided-triples/ci-homology.json)
+    subsequently confirmed both physical replays and the figure-data check
+    passed at the proof commit; other workflow jobs were still running.
 
 ## Keeping this current
 

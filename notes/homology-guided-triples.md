@@ -163,6 +163,16 @@ the packets. Static figures were visually inspected and label overlaps
 corrected. Dedicated Linux CI runs the three checking commands; its status
 is recorded separately after publication.
 
+**Later CI receipt:** the [dedicated Linux job](https://github.com/rbajaj5/hodge-lab/actions/runs/39037752863/job/117410898313)
+passed both physical replays and the figure-data check at proof commit
+`876a0cc913a059dd384f77451a9a59b1999d66df`.
+The [saved receipt](../results/homology-guided-triples/ci-homology.json)
+records that job's success while the broader workflow was still running.
+
+The consolidated result was shared as [upstream contribution 14](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999145).
+The [publication receipt](../results/homology-guided-triples/upstream-post.json)
+records the matching full body, author, permanent URL, and proof commit.
+
 ## Attribution
 
 Prepared with OpenAI Codex assistance for rbajaj5. Credit the project

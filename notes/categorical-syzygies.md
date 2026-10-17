@@ -108,3 +108,7 @@ Prepared with OpenAI Codex assistance for rbajaj5. Credit Eisenbud for the
 graded-syzygy framework, the authors above for their distinct categorical
 and geometric results, and the prior holdout calculations for the source
 necessities. This internal visual companion adds no upstream post to the tally.
+
+**Later CI receipt:** all eleven Linux workflow jobs passed at commit
+`cf2a569a56e43a56cda1469f64f36acc85337673`, including the new finite-complex
+check. [Full receipt](../results/necessary-koszul-complex/ci-complete-workflow.json).
