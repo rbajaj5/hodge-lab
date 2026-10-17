@@ -1,0 +1,427 @@
+{
+  "schema": "cyclic-fano-slice-audit-plot-v1",
+  "instance": "cyclic-triple-fano",
+  "discussion_number": 112,
+  "sha256_policy": "File bytes with CRLF normalized to LF",
+  "source_sha256": {
+    "results/cyclic-fano-slice-audit/validation.json": "0510df80dd11c0dec143c2c587d6f701258a012968697ca57cb75d3abc2c6330",
+    "results/cyclic-fano-slice-audit/independent-validation.json": "a926610cfbfbed73edfd980ee6c6721e1cc1e1ccdd986b91ae3ffa1bbb231acb",
+    "experiments/cyclic_fano_slice_audit.py": "1a6a5b2b5bdecaa8dd8fd65a74856b0e0504ea96bc5edc5dad2c2c90f8eeb99a",
+    "experiments/check_cyclic_fano_slice_audit.py": "f834a2dd9bac80d93a4cb24603b8590876bc90c36c476024a5d39d263646fce1",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "experiments/cyclic_fano_guided_denominators.py": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+    "experiments/cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "experiments/quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0",
+    "experiments/check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "experiments/check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+    "results/cyclic-fano-branch-polars/validation.json": "442e9502ceaffe489b5871794ca329dc32f82aeddaee0c917c81e0c09c249c76",
+    "results/cyclic-fano-branch-polars/independent-validation.json": "b8118fbe342384236705bb81adc18897c4310b0ccc85834eeb661869f2cc07fb",
+    "results/cyclic-fano-branch-polars/polar_X0.json": "a5bdc7fbe19077a29309243811d0d13307edd9617b73a1eacc7e154cf00cefa8",
+    "results/cyclic-fano-branch-polars/polar_X1.json": "70d157217dd877f1cafb8a99387a4c26d8ebbc766a439ad5a298b46949c9497b",
+    "results/cyclic-fano-branch-polars/polar_Y0.json": "82d861e9c44bff4f31526554b3ced7911ded09372f2bed571f48ca5fb326d74d",
+    "results/cyclic-fano-branch-polars/polar_Y1.json": "ce8622d66f545af5b7c64de4eedddbb08997a7cb300bd449de955e6884d7313a",
+    "results/cyclic-fano-branch-polars/polar_Y2.json": "6704b46c71abf67f62afc6e3e35ca08982a6ee9bb39579652bedac0fa82f00f9",
+    "results/cyclic-fano-branch-polars/polar_X0_plus_Y0.json": "9c0170017d1a0db58c02e61aec7a02d2750ea0535b1dfee89dfd63973466acbb",
+    "results/cyclic-fano-branch-polars/polar_X1_plus_Y1.json": "cd4e2c6238011af780d6a8137e317ab6fd6b90e9bfd4eacf72b4caa505a8644d"
+  },
+  "plot_source_sha256": "5dd1cd03d5599f7b5f1161510dfe2ed4fe2788a5b7004e78ce82198169dafa1c",
+  "cases": [
+    {
+      "id": "polar_X0",
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [
+        {
+          "powers": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-1026/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-5472/49"
+        }
+      ],
+      "witness_monomial_restriction": [],
+      "witness_monomial_lost": true,
+      "preserves_full_slice_ideal": false
+    },
+    {
+      "id": "polar_X1",
+      "direction": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            4,
+            4,
+            0
+          ],
+          "coefficient": "-160"
+        }
+      ],
+      "witness_monomial_restriction": [],
+      "witness_monomial_lost": true,
+      "preserves_full_slice_ideal": false
+    },
+    {
+      "id": "polar_Y0",
+      "direction": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [
+        {
+          "powers": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-64"
+        }
+      ],
+      "witness_monomial_restriction": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "witness_monomial_lost": false,
+      "preserves_full_slice_ideal": false
+    },
+    {
+      "id": "polar_Y1",
+      "direction": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [
+        {
+          "powers": [
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            6,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        }
+      ],
+      "witness_monomial_restriction": [],
+      "witness_monomial_lost": true,
+      "preserves_full_slice_ideal": false
+    },
+    {
+      "id": "polar_Y2",
+      "direction": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [],
+      "restricted_residual": [],
+      "witness_monomial_restriction": [],
+      "witness_monomial_lost": true,
+      "preserves_full_slice_ideal": false
+    },
+    {
+      "id": "polar_X0_plus_Y0",
+      "direction": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [
+        {
+          "powers": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-2202/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-2936/49"
+        }
+      ],
+      "witness_monomial_restriction": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "witness_monomial_lost": false,
+      "preserves_full_slice_ideal": false
+    },
+    {
+      "id": "polar_X1_plus_Y1",
+      "direction": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "global_denominator_nonzero": true,
+      "restricted_denominator": [
+        {
+          "powers": [
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-240/49"
+        },
+        {
+          "powers": [
+            6,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            4,
+            4,
+            0
+          ],
+          "coefficient": "-160"
+        }
+      ],
+      "witness_monomial_restriction": [],
+      "witness_monomial_lost": true,
+      "preserves_full_slice_ideal": false
+    }
+  ],
+  "arcs": [
+    {
+      "axis": "Y1",
+      "denominator": [
+        {
+          "powers": [
+            4,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            3
+          ],
+          "coefficient": "-20/7"
+        }
+      ],
+      "numerator": [
+        {
+          "powers": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": "-4/3"
+        }
+      ],
+      "denominator_order_in_epsilon": 1,
+      "generic_field_pole_order": 1,
+      "generic_condition": "s != 0"
+    },
+    {
+      "axis": "Y2",
+      "denominator": [
+        {
+          "powers": [
+            0,
+            0,
+            5
+          ],
+          "coefficient": "-24"
+        }
+      ],
+      "numerator": [
+        {
+          "powers": [
+            4,
+            0,
+            0
+          ],
+          "coefficient": "-4/3"
+        }
+      ],
+      "denominator_order_in_epsilon": 5,
+      "generic_field_pole_order": 5,
+      "generic_condition": "s != 0"
+    }
+  ],
+  "restricted_G": [
+    {
+      "powers": [
+        0,
+        0,
+        2
+      ],
+      "coefficient": "1"
+    },
+    {
+      "powers": [
+        0,
+        6,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "powers": [
+        3,
+        0,
+        1
+      ],
+      "coefficient": "5/7"
+    },
+    {
+      "powers": [
+        6,
+        0,
+        0
+      ],
+      "coefficient": "2"
+    }
+  ],
+  "restricted_Delta": [
+    {
+      "powers": [
+        0,
+        6,
+        0
+      ],
+      "coefficient": "-4"
+    },
+    {
+      "powers": [
+        6,
+        0,
+        0
+      ],
+      "coefficient": "-367/49"
+    }
+  ],
+  "noncancellation_numerator": [
+    {
+      "powers": [
+        4,
+        0,
+        0
+      ],
+      "coefficient": "-4/3"
+    }
+  ],
+  "local_lift_condition": "Delta_slice(s,u) != 0 at the chosen root of G_slice",
+  "scope": "Exact polynomial restrictions and two selected base-arc orders. Original global exclusions remain intact; no descended vector field, slice solution, full polar-family exclusion or target certificate."
+}

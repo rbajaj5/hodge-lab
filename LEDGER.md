@@ -1218,6 +1218,37 @@ conversations or evidence of an accepted solve.
     This is notebook research; no upstream comment, edit, or PR accompanies
     it. The contribution tally remains 24, with no certificate or solve claimed.
 
+67. **17 October 2026 — Audit curve restrictions using Shafarevich.**
+    Applied the supplied introductory chapters on coordinate rings, rational
+    functions, dominant rational maps, and tangent spaces to the same seven
+    already excluded cyclic-Fano polars. This is an exact restriction audit,
+    not a new denominator search. On the closed base line
+    `(X0,X1,Y0,Y1,Y2)=(s,u,s,0,0)`, the `Y2` polar has both denominator
+    and particular E2 residual zero. Its field numerator component is
+    `-4*s^4/3`, so the rational component does not acquire a regular
+    restriction. The apparent zero residual is not a success. The other six
+    denominators and particular residuals remain nonzero on the slice.
+    The explicit control `Y1` is nonzero modulo the full target and zero on
+    the slice, illustrating that restriction to a closed curve loses
+    information. No universal pullback of ambient rational functions to
+    the slice follows from the function-field theorem for dominant maps.
+    The audit also tests the linear slice equations and the target equation
+    separately; none of these particular fields descends to a curve
+    derivation. Derivatives are taken before restriction.
+    The subsequent blowup excerpt motivates two transverse arcs. Exact
+    substitution gives denominator orders one and five, with the same
+    nonzero numerator, hence pole orders one and five. These are local
+    directional data, not a phase transition or a performed blowup. Formal
+    lifts to the target require a chosen point away from the branch locus.
+    Primary replay and independent reconstruction pass all seven cases,
+    both arcs, and the tangency and noncancellation controls. The independent
+    checker rejects nine mutated inputs. The visualization binds these
+    receipts and shows the exact polynomial restrictions.
+    [Exact restricted polynomials, visualization, checks, and interpretation](notes/cyclic-fano-slice-audit.md).
+    All previous exclusions, target files, and prior packets are preserved.
+    No upstream comment or PR accompanies this notebook audit. The
+    contribution tally remains 24; no new solve or Lean proof is claimed.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

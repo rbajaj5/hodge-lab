@@ -1,0 +1,2739 @@
+{
+  "schema": "cyclic-fano-slice-audit-v1",
+  "status": "PASS",
+  "instance": "cyclic-triple-fano",
+  "source_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "producer_sha256": "1a6a5b2b5bdecaa8dd8fd65a74856b0e0504ea96bc5edc5dad2c2c90f8eeb99a",
+  "arithmetic_dependencies": {
+    "cyclic_fano_guided_denominators.py": "f8e42046672be8aaa4ac4ecfa156ea3e23e8ba1ea0509b4d42b48e482837ce08",
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0"
+  },
+  "prior_polar_validation_sha256": "442e9502ceaffe489b5871794ca329dc32f82aeddaee0c917c81e0c09c249c76",
+  "prior_polar_independent_validation_sha256": "b8118fbe342384236705bb81adc18897c4310b0ccc85834eeb661869f2cc07fb",
+  "global_variables": [
+    "X0",
+    "X1",
+    "Z",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "slice_variables": [
+    "s",
+    "u",
+    "Z"
+  ],
+  "slice_substitution": [
+    "s",
+    "u",
+    "Z",
+    "s",
+    "0",
+    "0"
+  ],
+  "restricted_G": [
+    {
+      "powers": [
+        0,
+        0,
+        2
+      ],
+      "coefficient": "1"
+    },
+    {
+      "powers": [
+        0,
+        6,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "powers": [
+        3,
+        0,
+        1
+      ],
+      "coefficient": "5/7"
+    },
+    {
+      "powers": [
+        6,
+        0,
+        0
+      ],
+      "coefficient": "2"
+    }
+  ],
+  "restricted_Delta": [
+    {
+      "powers": [
+        0,
+        6,
+        0
+      ],
+      "coefficient": "-4"
+    },
+    {
+      "powers": [
+        6,
+        0,
+        0
+      ],
+      "coefficient": "-367/49"
+    }
+  ],
+  "restricted_beta": [
+    {
+      "powers": [
+        4,
+        0,
+        0
+      ],
+      "coefficient": "1/3"
+    }
+  ],
+  "linear_slice_ideal_generators": [
+    "Y0-X0",
+    "Y1",
+    "Y2"
+  ],
+  "cases": [
+    {
+      "id": "polar_X0",
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prior_packet_sha256": "a5bdc7fbe19077a29309243811d0d13307edd9617b73a1eacc7e154cf00cefa8",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-270/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "200/49"
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1026/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-270/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "200/49"
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1026/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            3,
+            1
+          ],
+          "coefficient": "80/21"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            4,
+            2,
+            1
+          ],
+          "coefficient": "-200/147"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-360/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": "1600/147"
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-5472/49"
+        }
+      ],
+      "restricted_denominator": [
+        {
+          "powers": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-1026/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-5472/49"
+        }
+      ],
+      "restricted_field": [
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [],
+        [
+          {
+            "powers": [
+              6,
+              0,
+              0
+            ],
+            "coefficient": "10/7"
+          }
+        ],
+        [],
+        [],
+        []
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": true,
+      "restricted_residual_zero": false,
+      "restriction_status": "nonzero_denominator_only",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            0,
+            1,
+            0,
+            4,
+            2,
+            1
+          ],
+          "dual_coefficient": [
+            "147/200",
+            "0"
+          ],
+          "restricted_monomial": [],
+          "vanishes_on_slice": true
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "4/3"
+          }
+        ],
+        [],
+        []
+      ],
+      "preserves_linear_slice_ideal": false,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    },
+    {
+      "id": "polar_X1",
+      "direction": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prior_packet_sha256": "70d157217dd877f1cafb8a99387a4c26d8ebbc766a439ad5a298b46949c9497b",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            5,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            1,
+            4,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-160"
+        }
+      ],
+      "restricted_denominator": [
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            4,
+            4,
+            0
+          ],
+          "coefficient": "-160"
+        }
+      ],
+      "restricted_field": [
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": true,
+      "restricted_residual_zero": false,
+      "restriction_status": "nonzero_denominator_only",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            1,
+            0,
+            0,
+            5,
+            2,
+            0
+          ],
+          "dual_coefficient": [
+            "-147/200",
+            "0"
+          ],
+          "restricted_monomial": [],
+          "vanishes_on_slice": true
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [],
+        [],
+        []
+      ],
+      "preserves_linear_slice_ideal": true,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    },
+    {
+      "id": "polar_Y0",
+      "direction": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "prior_packet_sha256": "82d861e9c44bff4f31526554b3ced7911ded09372f2bed571f48ca5fb326d74d",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          "coefficient": "-64"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "-400/147"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            2,
+            1
+          ],
+          "coefficient": "-200/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            2,
+            1,
+            2
+          ],
+          "coefficient": "80/7"
+        },
+        {
+          "powers": [
+            4,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "360/49"
+        }
+      ],
+      "restricted_denominator": [
+        {
+          "powers": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-64"
+        }
+      ],
+      "restricted_field": [
+        [],
+        [],
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [],
+        []
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": true,
+      "restricted_residual_zero": false,
+      "restriction_status": "nonzero_denominator_only",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          "dual_coefficient": [
+            "1/64",
+            "0"
+          ],
+          "restricted_monomial": [
+            {
+              "powers": [
+                8,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ],
+          "vanishes_on_slice": false
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [],
+        []
+      ],
+      "preserves_linear_slice_ideal": false,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    },
+    {
+      "id": "polar_Y1",
+      "direction": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "prior_packet_sha256": "ce8622d66f545af5b7c64de4eedddbb08997a7cb300bd449de955e6884d7313a",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-60/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "100/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-60/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "100/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "coefficient": "-160"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": "-160/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            0,
+            1
+          ],
+          "coefficient": "400/147"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": "200/147"
+        }
+      ],
+      "restricted_denominator": [
+        {
+          "powers": [
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            6,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        }
+      ],
+      "restricted_field": [
+        [],
+        [],
+        [
+          {
+            "powers": [
+              5,
+              1,
+              0
+            ],
+            "coefficient": "10/21"
+          }
+        ],
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        []
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": true,
+      "restricted_residual_zero": false,
+      "restriction_status": "nonzero_denominator_only",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "dual_coefficient": [
+            "1/160",
+            "0"
+          ],
+          "restricted_monomial": [],
+          "vanishes_on_slice": true
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        []
+      ],
+      "preserves_linear_slice_ideal": false,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    },
+    {
+      "id": "polar_Y2",
+      "direction": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "prior_packet_sha256": "6704b46c71abf67f62afc6e3e35ca08982a6ee9bb39579652bedac0fa82f00f9",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            4
+          ],
+          "coefficient": "-160"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-160/21"
+        }
+      ],
+      "restricted_denominator": [],
+      "restricted_residual": [],
+      "restricted_field": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ]
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": false,
+      "restricted_residual_zero": true,
+      "restriction_status": "denominator_vanishes_identically",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            4
+          ],
+          "dual_coefficient": [
+            "1/160",
+            "0"
+          ],
+          "restricted_monomial": [],
+          "vanishes_on_slice": true
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [],
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ]
+      ],
+      "preserves_linear_slice_ideal": false,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    },
+    {
+      "id": "polar_X0_plus_Y0",
+      "direction": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "prior_packet_sha256": "9c0170017d1a0db58c02e61aec7a02d2750ea0535b1dfee89dfd63973466acbb",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-270/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "200/49"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1026/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "coefficient": "-40/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-270/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "200/49"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1026/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          "coefficient": "32"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            3,
+            1
+          ],
+          "coefficient": "80/21"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            4,
+            2,
+            1
+          ],
+          "coefficient": "-200/147"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            4,
+            2,
+            0
+          ],
+          "coefficient": "-200/147"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          "coefficient": "-64"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            3,
+            1
+          ],
+          "coefficient": "80/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            2,
+            1
+          ],
+          "coefficient": "-400/147"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "-400/147"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "coefficient": "-200/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            2
+          ],
+          "coefficient": "80/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            2,
+            1
+          ],
+          "coefficient": "-200/49"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-360/49"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            2,
+            1,
+            2
+          ],
+          "coefficient": "80/7"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": "1600/147"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            3,
+            1,
+            0
+          ],
+          "coefficient": "480/49"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            2,
+            1,
+            1
+          ],
+          "coefficient": "-800/49"
+        },
+        {
+          "powers": [
+            4,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "360/49"
+        },
+        {
+          "powers": [
+            5,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-5472/49"
+        },
+        {
+          "powers": [
+            6,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "4104/49"
+        }
+      ],
+      "restricted_denominator": [
+        {
+          "powers": [
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-2202/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-2936/49"
+        }
+      ],
+      "restricted_field": [
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [],
+        [
+          {
+            "powers": [
+              6,
+              0,
+              0
+            ],
+            "coefficient": "10/7"
+          }
+        ],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [],
+        []
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": true,
+      "restricted_residual_zero": false,
+      "restriction_status": "nonzero_denominator_only",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          "dual_coefficient": [
+            "-1/32",
+            "0"
+          ],
+          "restricted_monomial": [
+            {
+              "powers": [
+                8,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ],
+          "vanishes_on_slice": false
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [],
+        [],
+        []
+      ],
+      "preserves_linear_slice_ideal": true,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    },
+    {
+      "id": "polar_X1_plus_Y1",
+      "direction": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prior_packet_sha256": "cd4e2c6238011af780d6a8137e317ab6fd6b90e9bfd4eacf72b4caa505a8644d",
+      "global_denominator": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-60/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "100/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "global_monic_remainder": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-60/7"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "100/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "50/49"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "coefficient": "-20/7"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-90/49"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "50/49"
+        }
+      ],
+      "global_residual": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "coefficient": "-160"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            5,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            5,
+            1,
+            0
+          ],
+          "coefficient": "800/147"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            1,
+            4,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-160"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            2,
+            1
+          ],
+          "coefficient": "-160/7"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            4,
+            1,
+            1
+          ],
+          "coefficient": "800/147"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            1
+          ],
+          "coefficient": "-160/7"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            4,
+            0,
+            1
+          ],
+          "coefficient": "400/147"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            4,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          "coefficient": "-240/49"
+        }
+      ],
+      "restricted_denominator": [
+        {
+          "powers": [
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "powers": [
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-90/49"
+        }
+      ],
+      "restricted_residual": [
+        {
+          "powers": [
+            4,
+            4,
+            0
+          ],
+          "coefficient": "-160"
+        },
+        {
+          "powers": [
+            6,
+            2,
+            0
+          ],
+          "coefficient": "200/147"
+        },
+        {
+          "powers": [
+            8,
+            0,
+            0
+          ],
+          "coefficient": "-240/49"
+        }
+      ],
+      "restricted_field": [
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        [
+          {
+            "powers": [
+              5,
+              1,
+              0
+            ],
+            "coefficient": "10/21"
+          }
+        ],
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        []
+      ],
+      "global_denominator_nonzero_mod_G": true,
+      "restricted_denominator_nonzero": true,
+      "restricted_residual_zero": false,
+      "restriction_status": "nonzero_denominator_only",
+      "saved_obstruction_monomials": [
+        {
+          "global_powers": [
+            1,
+            0,
+            0,
+            3,
+            4,
+            0
+          ],
+          "dual_coefficient": [
+            "1/160",
+            "0"
+          ],
+          "restricted_monomial": [],
+          "vanishes_on_slice": true
+        }
+      ],
+      "linear_slice_ideal_defects": [
+        [],
+        [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        []
+      ],
+      "preserves_linear_slice_ideal": false,
+      "curve_vector_field_established": false,
+      "slice_certificate_established": false
+    }
+  ],
+  "noninjectivity_control": {
+    "polynomial": "Y1",
+    "global_monic_remainder": [
+      {
+        "powers": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "restricted_polynomial": [],
+    "meaning": "A globally nonzero polynomial can vanish on this closed slice."
+  },
+  "no_cancellation_control": {
+    "id": "polar_Y2",
+    "field_component": "P_Y2/E",
+    "restricted_numerator": [
+      {
+        "powers": [
+          4,
+          0,
+          0
+        ],
+        "coefficient": "-4/3"
+      }
+    ],
+    "restricted_denominator": [],
+    "regular_at_generic_slice_point": false,
+    "meaning": "The numerator is generically nonzero on the slice while E vanishes there; vanishing of the residual does not regularize this rational field component."
+  },
+  "transverse_arcs": {
+    "variables": [
+      "s",
+      "u",
+      "epsilon"
+    ],
+    "base_variables": [
+      "X0",
+      "X1",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "cases": [
+      {
+        "id": "Y1_arc",
+        "base_substitution": [
+          "s",
+          "u",
+          "s",
+          "epsilon",
+          "0"
+        ],
+        "denominator": [
+          {
+            "powers": [
+              1,
+              1,
+              3
+            ],
+            "coefficient": "-20/7"
+          },
+          {
+            "powers": [
+              2,
+              1,
+              2
+            ],
+            "coefficient": "50/49"
+          },
+          {
+            "powers": [
+              4,
+              0,
+              1
+            ],
+            "coefficient": "50/49"
+          }
+        ],
+        "numerator_P_Y2": [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        "denominator_vanishing_order": 1,
+        "numerator_vanishing_order": 0,
+        "rational_component_pole_order": 1
+      },
+      {
+        "id": "Y2_arc",
+        "base_substitution": [
+          "s",
+          "u",
+          "s",
+          "0",
+          "epsilon"
+        ],
+        "denominator": [
+          {
+            "powers": [
+              0,
+              0,
+              5
+            ],
+            "coefficient": "-24"
+          }
+        ],
+        "numerator_P_Y2": [
+          {
+            "powers": [
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-4/3"
+          }
+        ],
+        "denominator_vanishing_order": 5,
+        "numerator_vanishing_order": 0,
+        "rational_component_pole_order": 5
+      }
+    ],
+    "generic_nonzero_assumptions": [
+      "s != 0",
+      "Delta_slice(s,u) != 0 for an unramified lift to G=0"
+    ],
+    "lift_scope": "These are exact base arcs. At a chosen root Z0 of G_slice with G_Z != 0, the formal implicit theorem supplies a local lift. No explicit global Z-parameterization is asserted.",
+    "meaning": "Orders one and five are directional pole orders of the same rational component, not a phase transition or a proof that blowing up removes the pole."
+  },
+  "scope": "Restriction audit of seven previously excluded fixed polars. No new candidate solve, curve-field descent, full polar-family exclusion or fourfold certificate.",
+  "reading": "Shafarevich, Basic Algebraic Geometry 1, third edition, Ch.1 \u00a7\u00a73.1\u20133.3: irreducibility, rational functions and rational maps."
+}

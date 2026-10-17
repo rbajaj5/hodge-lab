@@ -82,6 +82,11 @@ all fail the complete second equation, each with a one-coefficient exact
 obstruction. The remaining polar directions are untested.
 [Geometric derivation, actual Koszul-map visualization, and checked pilot](notes/cyclic-fano-branch-polars.md).
 
+A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
+shows why a successful-looking curve slice can mislead: one polar's residual
+and denominator both vanish on the slice, while a numerator component stays
+nonzero. The rational field has a pole; this is no new certificate.
+
 A preceding bounded pilot examined `quadric-contact-broken`, another newly
 added target. A natural quartic denominator passes the first equation but fails
 the complete normalized correction test: one coefficient annihilates all
