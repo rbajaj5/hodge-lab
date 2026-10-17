@@ -893,6 +893,10 @@ conversations or evidence of an accepted solve.
     [Result, figures, limits, credits, and reproduction](notes/fresh-instance-baselines.md).
     Shared as the single consolidated contribution 21 above and pushed the
     supporting notebook. The pause on additional holdout posts remains in effect.
+    Subsequent [Linux CI](https://github.com/rbajaj5/hodge-lab/actions/runs/39055352335)
+    passed the `fresh-instance-baselines` job at commit `02026b3`, including
+    both verifiers and the plot generator. Other jobs in the full workflow
+    were still running; no full-workflow success is claimed.
 
 ## Keeping this current
 
