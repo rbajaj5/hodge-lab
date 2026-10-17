@@ -921,6 +921,29 @@ conversations or evidence of an accepted solve.
     follows. Shared as the single contribution 22 above, with verified
     readback, then pushed the supporting proof packet. The pause on further
     holdout posts remains in effect.
+    The subsequent [Linux CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39056144747)
+    passed the `fresh-instance-degree6` job, including both implementations
+    and figure generation. This records that targeted job, not a claim
+    about every unrelated job in the workflow.
+
+55. **17 October 2026 — Include all three mixed extra directions and close degree six.**
+    Rebuilt the actual mixed-biweight $B_D(N_0)$ map on all 38 parameters
+    after Euler gauge. Two rounds of rational square identities eliminate
+    the three extra E1 directions and all 30 off-diagonal matrix entries.
+    Five full-E2 consequences then reduce the diagonal family: failed
+    degree-two and degree-three searches are retained; the degree-four
+    image has rank 65/70 and gives three fourth-power identities for linear
+    differences. The reduced family has two complex points, explaining why
+    the preceding individual-coordinate-power search failed. Keeping one
+    shared set of 315 numerator corrections rejects both points: an exact
+    three-term coefficient functional annihilates all 777 correction and
+    quotient columns but evaluates to one on the target. Complete primary
+    and separate rational reconstructions pass. This excludes all degree-six
+    denominators and raises mixed-biweight's lower bound to seven; it does
+    not establish existence. Kept exact proof packets, bounded runs, failed
+    multiplier degrees, and the modular exploration as diagnostic evidence.
+    [Argument, actual-map visualizations, checks, failures, and reproduction](notes/mixed-degree6-extra.md).
+    Upstream publication will be counted only after its actual readback.
 
 ## Keeping this current
 

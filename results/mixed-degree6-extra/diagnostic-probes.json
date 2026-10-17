@@ -1,0 +1,160 @@
+{
+  "status": "completed_diagnostics",
+  "source_sha256": {
+    "sources/sextics/data/mixed-biweight/instance.rec": "d684c414f66ab7e0ee131d6224c6b7ac46c772c44ed44a57b968470c1531c42e",
+    "sources/sextics/data/mixed-biweight/why.md": "771b0e82c736d20af44ad64030009bc006eea50a44f3e29b60cd90dd3be510a2",
+    "sources/sextics/data/mixed-biweight/provenance.json": "0ca0e5cc643beee21229d63c64e528bc92d24229671f578371183030cdc7226d"
+  },
+  "target": {
+    "q": "1",
+    "F": "X0**6 + X0**3*X1*Y0*Y1/2 + X0*X2*Y0**3*Y2/3 + X1**6 + X1**3*X2*Y1*Y2/2 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*Y0**3"
+  },
+  "relaxed_diagonal_ideal": {
+    "scope": "Five necessary diagonal equations after independent-product relaxation; not the full shared-correction equation.",
+    "equations": [
+      "a0**2 - 2*a0*a3 + 5*a1*a2/18 - 2*a1*a3/3 + a1*a4/9 + 55*a2**2/54 - 2*a2*a3 + 5*a2*a4/54 + 11*a3**2/3 - 2*a3*a4/3 + 5*a4**2/27",
+      "a0*a1 - 2*a0*a3 + a0*a4 - a1**2/2 - a1*a2/4 + a1*a3/2 + 5*a2**2/12 - a2*a3/2 + a2*a4/12 + a3**2 + a3*a4/2 - 5*a4**2/6",
+      "a0*a2 - 2*a0*a3 + a1*a2/4 - a1*a3/2 - 5*a2**2/4 + a2*a3/2 + a2*a4/4 + a3**2 - a3*a4/2",
+      "a1**2 - 2*a1*a2/3 - 2*a1*a4/3 + 5*a2**2/9 - 2*a2*a4/9 + 5*a4**2/9",
+      "a1*a2 - 21*a1*a3/8 + 5*a1*a4/8 + 35*a2**2/12 - 45*a2*a3/8 - a2*a4/24 + 33*a3**2/4 - 21*a3*a4/8 + 25*a4**2/24"
+    ],
+    "groebner_order": "grevlex",
+    "groebner_basis": [
+      "a0*a4**4 - a4**5",
+      "a1*a4**4 - a4**5",
+      "a3*a4**4 - a4**5",
+      "4626*a0*a4**3/10177 - 6067*a1*a4**3/50885 + a2**2*a4**2 - 8*a2*a4**3/5 + 45146*a3*a4**3/50885 + 19207*a4**4/50885",
+      "a0*a3*a4**2 - 78358*a0*a4**3/111947 + 8758*a1*a4**3/335841 - 283502*a3*a4**3/335841 + 173977*a4**4/335841",
+      "5295*a0*a4**3/20354 + a1*a3*a4**2 - 89263*a1*a4**3/183186 - 201445*a3*a4**3/183186 + 59867*a4**4/183186",
+      "-369*a0*a4**3/20354 - 5503*a1*a4**3/61062 + a2*a3*a4**2 - a2*a4**3 - 34933*a3*a4**3/61062 + 41543*a4**4/61062",
+      "-18599*a0*a4**3/223894 - 15805*a1*a4**3/2015046 + a3**2*a4**2 - 2784517*a3*a4**3/2015046 + 952667*a4**4/2015046",
+      "1482*a0*a3*a4/565 - 741*a0*a4**2/565 + 30609*a1*a3*a4/18080 - 17537*a1*a4**2/18080 + a2**3 - 84427*a2**2*a4/27120 + 62281*a2*a3*a4/18080 + 31253*a2*a4**2/54240 - 8265*a3**2*a4/1808 - 3343*a3*a4**2/18080 + 3263*a4**3/10848",
+      "101*a0*a3*a4/226 - 101*a0*a4**2/452 + 32283*a1*a3*a4/14464 - 59377*a1*a4**2/43392 + a2**2*a3 - 200243*a2**2*a4/65088 + 155849*a2*a3*a4/43392 - 35051*a2*a4**2/130176 - 49807*a3**2*a4/7232 + 133297*a3*a4**2/43392 - 77365*a4**3/130176",
+      "a0*a3**2 - 12125*a0*a3*a4/7458 + 12125*a0*a4**2/14916 - 43469*a1*a3*a4/159104 + 258133*a1*a4**2/1431936 + 125245*a2**2*a4/195264 - 838925*a2*a3*a4/1431936 - 1891849*a2*a4**2/4295808 - 8213*a3**2*a4/238656 + 2052203*a3*a4**2/1431936 - 182245*a4**3/390528",
+      "9611*a0*a3*a4/7458 - 9611*a0*a4**2/14916 + a1*a3**2 - 107137*a1*a3*a4/159104 + 310889*a1*a4**2/1431936 - 60655*a2**2*a4/195264 + 2210495*a2*a3*a4/1431936 - 4496429*a2*a4**2/4295808 - 1145833*a3**2*a4/238656 + 5173783*a3*a4**2/1431936 - 194105*a4**3/390528",
+      "-1213*a0*a3*a4/7458 + 1213*a0*a4**2/14916 + 179831*a1*a3*a4/159104 - 1008847*a1*a4**2/1431936 - 273895*a2**2*a4/195264 + a2*a3**2 + 2742455*a2*a3*a4/1431936 - 2882069*a2*a4**2/4295808 - 1336177*a3**2*a4/238656 + 5391055*a3*a4**2/1431936 - 294785*a4**3/390528",
+      "-313*a0*a3*a4/3729 + 313*a0*a4**2/7458 - 21225*a1*a3*a4/79552 + 116465*a1*a4**2/715968 + 21545*a2**2*a4/97632 + 106775*a2*a3*a4/715968 - 1078709*a2*a4**2/2147904 + a3**3 - 260785*a3**2*a4/119328 + 1487983*a3*a4**2/715968 - 76865*a4**3/195264",
+      "a0**2 - 2*a0*a3 + a1*a3/16 - a1*a4/16 + 5*a2**2/24 - 7*a2*a3/16 + 5*a2*a4/48 + 11*a3**2/8 + a3*a4/16 - 5*a4**2/48",
+      "a0*a1 - 2*a0*a3 + a0*a4 - 33*a1*a3/32 + a1*a4/32 + 115*a2**2/48 - 121*a2*a3/32 - 5*a2*a4/96 + 93*a3**2/16 - 33*a3*a4/32 + 5*a4**2/96",
+      "a1**2 - 7*a1*a3/4 - a1*a4/4 + 5*a2**2/2 - 15*a2*a3/4 - a2*a4/4 + 11*a3**2/2 - 7*a3*a4/4 + 5*a4**2/4",
+      "a0*a2 - 2*a0*a3 + 5*a1*a3/32 - 5*a1*a4/32 - 95*a2**2/48 + 61*a2*a3/32 + 25*a2*a4/96 - 17*a3**2/16 + 5*a3*a4/32 - 25*a4**2/96",
+      "a1*a2 - 21*a1*a3/8 + 5*a1*a4/8 + 35*a2**2/12 - 45*a2*a3/8 - a2*a4/24 + 33*a3**2/4 - 21*a3*a4/8 + 25*a4**2/24"
+    ],
+    "difference_power_attempts": [
+      {
+        "parameter": 0,
+        "power": 1,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 0,
+        "power": 4,
+        "zero_remainder": true
+      },
+      {
+        "parameter": 1,
+        "power": 1,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 1,
+        "power": 4,
+        "zero_remainder": true
+      },
+      {
+        "parameter": 3,
+        "power": 1,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 2,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 3,
+        "zero_remainder": false
+      },
+      {
+        "parameter": 3,
+        "power": 4,
+        "zero_remainder": true
+      }
+    ],
+    "normalized_roots": "(4 +/- 2*sqrt(-6))/5"
+  },
+  "fixed_denominator_modular_tests": [
+    {
+      "prime": 1009,
+      "root": 50,
+      "columns": 777,
+      "rank_mod_p": 742,
+      "consistent_mod_p": false,
+      "remainder_terms": 4
+    },
+    {
+      "prime": 1009,
+      "root": 557,
+      "columns": 777,
+      "rank_mod_p": 742,
+      "consistent_mod_p": false,
+      "remainder_terms": 4
+    },
+    {
+      "prime": 1013,
+      "root": 15,
+      "columns": 777,
+      "rank_mod_p": 742,
+      "consistent_mod_p": false,
+      "remainder_terms": 4
+    },
+    {
+      "prime": 1013,
+      "root": 797,
+      "columns": 777,
+      "rank_mod_p": 742,
+      "consistent_mod_p": false,
+      "remainder_terms": 4
+    },
+    {
+      "prime": 1019,
+      "root": 282,
+      "columns": 777,
+      "rank_mod_p": 742,
+      "consistent_mod_p": false,
+      "remainder_terms": 4
+    },
+    {
+      "prime": 1019,
+      "root": 331,
+      "columns": 777,
+      "rank_mod_p": 742,
+      "consistent_mod_p": false,
+      "remainder_terms": 4
+    }
+  ],
+  "scope": "Exploratory evidence. Rational exported polynomial identities and the quadratic-field functional provide the proof separately.",
+  "seconds": 1.144634700001916
+}

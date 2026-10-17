@@ -8,7 +8,11 @@ This is a lower bound, not an existence proof or a solution of the instance.
 Complex coefficients, all numerator corrections, and nonzero quotients are
 included.
 
-The companion `mixed-biweight` calculation remains open in degree six. Its
+**Later continuation:** [the complete mixed-biweight calculation](mixed-degree6-extra.md)
+now excludes degree six there too, including all three extra directions.
+The original checkpoint below retains what was established in this batch.
+
+The companion `mixed-biweight` calculation remained open in degree six. Its
 first-equation kernel is larger, and the cyclic argument cannot simply be
 transferred to it.
 

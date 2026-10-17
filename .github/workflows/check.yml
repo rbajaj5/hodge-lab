@@ -3,6 +3,22 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  mixed-degree6-extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install "sympy>=1.13,<2" "matplotlib>=3.9,<4"
+      - run: python -S experiments/mixed_degree6_extra.py verify-all
+      - run: python -S experiments/mixed_degree6_quadratic_field.py verify
+      - run: python experiments/check_mixed_degree6_extra.py . work/mixed-degree6-independent.json
+      - run: python experiments/plot_mixed_degree6_extra.py
   fresh-instance-degree6:
     runs-on: ubuntu-latest
     timeout-minutes: 10
