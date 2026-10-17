@@ -1,0 +1,1195 @@
+{
+  "schema": "cyclic-fano-full-quadratic-multipliers-v1",
+  "status": "checked_partial_progress",
+  "instance": "cyclic-triple-fano",
+  "q": 1,
+  "degree": 7,
+  "source_commit": "d96911d725077e66a8f10848908be01a643b1714",
+  "source_instance_sha256": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+  "producer_sha256": "607f8f7ce30f30ce162c5dad189c09bded2bb7c97cd3a8eb0d4d8f064f06afc7",
+  "dependencies": {
+    "cyclic_fano_divisible_multipliers.py": "84afb3132ca8a9246403e891e23ae61b2e82b9594c1169f9c4e76e4282a1f1b5",
+    "cyclic_fano_quadratic_polars.py": "1944dab5fc5d7ad98b169362131ffba70ffe958c101b895334c0b83c8f7824f3",
+    "cyclic_fano_linear_polars.py": "1cfc495cba06111bdf873a701b3e20523396171464e86a58a01e3b29aac2e745",
+    "cyclic_fano_transfer.py": "0b091f764770a503c1d381814961be792f539a1b637e23feb58e153e87b76340",
+    "quadric_contact_pilot.py": "38b874ab6c211c89295f006af663fdcfa1f7022ae247c1641c2491371c4246f0"
+  },
+  "prior_projection_proof": {
+    "packet": "results/cyclic-fano-quadratic-polars/packet.json",
+    "packet_sha256": "6c6b979056da2cac736b0c5ac7702470b8a9bda8efc868fed25ac126631d1389",
+    "primary_receipt_sha256": "7fe89dc0fa59ce0ca163cee869f4a743d6abff388639302d95ec5ed165a20b21",
+    "independent_receipt_sha256": "f6aee7bd7588733b03eba0e12a4788098d5430caa1fa17530f83367b1dee3ac2",
+    "raw_Koszul_fields": 230,
+    "compact_correction_types": 55,
+    "quotient_directions": 246
+  },
+  "parameter_order": [
+    {
+      "component": 0,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 3
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 0
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 0
+    },
+    {
+      "component": 0,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 1
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 1,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 0
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 4
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 3,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 3
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 4
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 4
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 2
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 5
+    },
+    {
+      "component": 4,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 1
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 5
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 2
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 0
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "charge": 0
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "charge": 4
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "charge": 1
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "charge": 3
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "charge": 1
+    },
+    {
+      "component": 5,
+      "quadratic_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "charge": 5
+    }
+  ],
+  "base_variables": [
+    "X0",
+    "X1",
+    "Z",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "symmetry": {
+    "modulus": 6,
+    "spatial_weights": [
+      0,
+      4,
+      0,
+      1,
+      1,
+      5
+    ],
+    "beta_and_A_charge": 3,
+    "parameter_charge_rule": "weight(quadratic monomial)-weight(component)",
+    "physical_row_to_quadric_charge_shift": -3,
+    "scope": "Equivariant grading: F and Delta invariant; A has character3 and is not fixed pointwise.",
+    "target_cube_charges": [
+      0,
+      3
+    ]
+  },
+  "stages": [
+    {
+      "index": 0,
+      "quadrics_file": "necessary-quadrics.json.gz",
+      "quadrics_sha256": "f2ec1136dd49d541ac901ca5d17dacfd59e4908cbe40a069167d4781666c9e02",
+      "quadrics_uncompressed_sha256": "d2b6d0a59ce4fbb33381120fed610a9a61b9a78c36f4cf2bc3d29212f2705884",
+      "cube_proof_file": "stage-00-small-64.json",
+      "cube_proof_sha256": "2e2e8058d5ded9e8a1d515dc44cc0ea4c50178cee9176cff382daa2a661999b3",
+      "parameters": 75,
+      "physical_rows": 1799,
+      "physical_columns": 6975,
+      "rank": 1759,
+      "mixed_rank": 1348,
+      "necessary_quadrics": 411,
+      "newly_forced_raw_parameters": [
+        8,
+        13,
+        26,
+        28,
+        38,
+        53,
+        56,
+        61
+      ]
+    },
+    {
+      "index": 1,
+      "quadrics_file": "stage-01-quadrics.json.gz",
+      "quadrics_sha256": "c5273bfde44e64e553be969591fb6989f1338b71ae504fcb057f0de0d96931d4",
+      "quadrics_uncompressed_sha256": "c149fcc670bf621ffb1dbe18a9ef062f8feaba14ca65bdd59137a75c7b91dc2f",
+      "cube_proof_file": "stage-01-small-64.json",
+      "cube_proof_sha256": "987351f5e47894e076e9ee253edd215bae3f1eca89fd6423138c34d568a11693",
+      "parameters": 67,
+      "physical_rows": 1793,
+      "physical_columns": 5963,
+      "rank": 1732,
+      "mixed_rank": 1336,
+      "necessary_quadrics": 396,
+      "newly_forced_raw_parameters": [
+        66
+      ]
+    },
+    {
+      "index": 2,
+      "quadrics_file": "stage-02-quadrics.json.gz",
+      "quadrics_sha256": "a9aa1c9d1bf52678e4ea75aca126159f5b7802ece404567f5b233c4a6df772f2",
+      "quadrics_uncompressed_sha256": "4383d45e719fabb912b9b17784b19081093c088341d2f14ae9a28e889a626e20",
+      "cube_proof_file": "stage-02-small-64.json",
+      "cube_proof_sha256": "2bd8d1c50ca5544917bc6a8ed93d0d04bd6993a5f2014374abb97fc79be978d0",
+      "parameters": 66,
+      "physical_rows": 1792,
+      "physical_columns": 5841,
+      "rank": 1728,
+      "mixed_rank": 1335,
+      "necessary_quadrics": 393,
+      "newly_forced_raw_parameters": []
+    }
+  ],
+  "rebuild_diagnostics": [
+    {
+      "stage": 1,
+      "restricted_old_rank": 391,
+      "rebuilt_rank": 396,
+      "added_independent_quadrics": 5,
+      "span_inclusion": true
+    },
+    {
+      "stage": 2,
+      "restricted_old_rank": 393,
+      "rebuilt_rank": 393,
+      "added_independent_quadrics": 0,
+      "span_inclusion": true
+    }
+  ],
+  "attempts": [
+    {
+      "file": "charge0-forward-probe.json",
+      "sha256": "89076e263698aa0045ce639e8349dd1881fe8e1498119c063975f985ae89bed6",
+      "status": "sparse_fill_limit"
+    },
+    {
+      "file": "charge0-probe.json",
+      "sha256": "dd0413ef04500db9d0104ef3e2809557c33518fc80d6beff6f2c19a5c3bf2be5",
+      "status": "sparse_fill_limit"
+    },
+    {
+      "file": "charge3-forward-probe.json",
+      "sha256": "186cc8fb526f585796c9d029f27f6ebf3db4440a3371ee6e2f5563268d3524be",
+      "status": "sparse_fill_limit"
+    },
+    {
+      "file": "charge3-probe.json",
+      "sha256": "32e2cd1b7e2a42edabf3d650944f9875a46842703381d9446aff92c5b9896bc8",
+      "status": "sparse_fill_limit"
+    },
+    {
+      "file": "stage-00-small-128.json",
+      "sha256": "ff2f1460df4616094965436d88c7f5f0821e5301933e57a4c0f91d4de69815ff",
+      "status": "completed"
+    },
+    {
+      "file": "stage-00-small-16.json",
+      "sha256": "a7858c4836b44700e0aac377706ac5392d34dd05fbd53be7fb1fab40a1155a5b",
+      "status": "completed"
+    },
+    {
+      "file": "stage-00-small-4.json",
+      "sha256": "11be9e973fac273470b93150d4f0064702269a614d0527877d7c921a28928d68",
+      "status": "completed"
+    },
+    {
+      "file": "stage-00-small-64.json",
+      "sha256": "2e2e8058d5ded9e8a1d515dc44cc0ea4c50178cee9176cff382daa2a661999b3",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-small-128.json",
+      "sha256": "59809f58e9a0e70b3ecceb3d85cb6340194f2365a42599627e54b4fa123ccb1a",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-small-16.json",
+      "sha256": "3f777f01b4d964c3635effdfd3af0710d019c75cfb6bc93e84270ba4bfd43773",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-small-4.json",
+      "sha256": "35e3ad03d7678c79422537255ceb1f68cd232680844daed80ff7e0d15ef0a5dd",
+      "status": "completed"
+    },
+    {
+      "file": "stage-01-small-64.json",
+      "sha256": "987351f5e47894e076e9ee253edd215bae3f1eca89fd6423138c34d568a11693",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-small-16.json",
+      "sha256": "f8312d5308fdc87dd4405c9aada69aa9bded2277bb446c9437a7a40189df592d",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-small-4.json",
+      "sha256": "5addf6fd832077de7bef17b95c058d04a75b52a1e303a198bdf221bcf58f5e49",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-small-64.json",
+      "sha256": "2bd8d1c50ca5544917bc6a8ed93d0d04bd6993a5f2014374abb97fc79be978d0",
+      "status": "completed"
+    },
+    {
+      "file": "stage-02-quartic-4.json",
+      "sha256": "872bc173f0d1aa4773c4a5979349e07cdccb561c5e328431edee89f9757a6159",
+      "status": "completed"
+    },
+    {
+      "file": "replay-unsorted-attempt.json",
+      "sha256": "17f895a262b5bddf919f1c15b2af493025b40818a38ddf7c935bb291f032c646",
+      "status": "interrupted"
+    }
+  ],
+  "remaining_raw_parameter_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    54,
+    55,
+    57,
+    58,
+    59,
+    60,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74
+  ],
+  "bounds": {
+    "necessary_and_rebuild_seconds": 120,
+    "sparse_exact_cubic_seconds": 120,
+    "modular_block_seconds": 180,
+    "modular_pivot_entry_cap": 3000000,
+    "modular_update_cap": 100000000,
+    "small_quartic_seconds": 30,
+    "aggregate_primary_replay_seconds": 600
+  },
+  "conclusion": "Exact coordinate-cube identities force the listed parameters to vanish; fresh complete physical rebuilds retain all55 correction types. The remaining parameter family is unresolved.",
+  "limits": "Selected sparse-cubic plateaus and incomplete modular prefixes are not tests of the whole cubic ideal. No full75-family exclusion, support construction, HasCertificate proof or solve is claimed."
+}

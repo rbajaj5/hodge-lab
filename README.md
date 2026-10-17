@@ -27,7 +27,18 @@ Click a figure to open its equations, reproducible code, checks, and limits.
 These pictures show actual calculations and failed candidates; the instance
 still has no certificate from this notebook.
 
-**Latest calculation — polynomial multipliers close a 25-parameter gap.**
+**Latest calculation — nine necessary vanishings in the full 75-parameter family.**
+All five components of the direction field may now be arbitrary homogeneous
+quadratics. Eight exact cube identities force eight coefficients to zero;
+rebuilding supplies five extra independent quadratic constraints and a ninth
+cube identity. The remaining 66-parameter family is unresolved. Further
+sparse cubic searches and a small quartic search found no additional powers.
+
+[![The full quadratic-direction parameter grid, its nine exact vanishings, and the unresolved 66-parameter remainder](results/cyclic-fano-full-quadratic-multipliers-figures/cyclic-fano-full-quadratic-multipliers.png)](notes/cyclic-fano-full-quadratic-multipliers.md)
+
+[Inspect the full-family coefficient blocks and bounded searches](results/cyclic-fano-full-quadratic-multipliers-figures/cyclic-fano-full-quadratic-multipliers-maps.png).
+
+**Previous complete subfamily — polynomial multipliers close a 25-parameter gap.**
 For the degree-seven family with `v_i = x_i (M x)_i`, cubic identities force
 20 matrix entries to vanish. Rebuilding the complete correction equations
 then forces the five remaining entries to vanish. This excludes the entire
@@ -142,6 +153,15 @@ multiples force the last five cubes. Both unsuccessful square tests remain
 recorded; a degree-four search was unnecessary. This is a complete exclusion
 of that subfamily, with all numerator corrections allowed. The instance
 remains unsolved by this notebook.
+
+The [full-family continuation](notes/cyclic-fano-full-quadratic-multipliers.md)
+allows all 75 coefficients simultaneously. It proves nine necessary
+coefficient vanishings using two rounds of cubic identities, retaining all
+55 correction types. The first rebuild gains five independent quadrics;
+the second gains none. The remaining 66 parameters are unresolved. Four
+large modular block searches hit explicit work limits, and a restricted
+quartic search found no additional coordinate powers. These limits remain
+recorded alongside the rational proofs.
 
 A Shafarevich-inspired [restriction audit](notes/cyclic-fano-slice-audit.md)
 shows why a successful-looking curve slice can mislead: one polar's residual

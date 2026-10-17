@@ -1552,7 +1552,77 @@ conversations or evidence of an accepted solve.
     The updated README and feature image were inspected on live GitHub.
     Local primary, independent and visualization checks pass. The dedicated
     [Linux multiplier job](https://github.com/rbajaj5/hodge-lab/actions/runs/39070751025/job/117507664483)
-    was running at this publication checkpoint; a CI pass is not yet claimed.
+    was running at this publication checkpoint and subsequently passed its
+    primary replay, independent reconstruction and figure generator. This
+    records that completed job, not every job in the larger workflow.
+
+75. **17 October 2026 — Reduce the full quadratic-direction family from 75 to 66 parameters.**
+    Allowed all 75 quadratic-direction coefficients simultaneously, keeping
+    the fixed cyclic-Fano target, all 55 projected correction types and all
+    246 quotient directions. This makes no coordinate-divisibility or
+    single-component assumption. A refreshed, fully paginated read of the
+    monitored discussions found no new comments or edits. The target folder
+    still contained no permitted solution files when checked.
+
+    Exact elimination of correction variables yields 411 necessary quadrics
+    from the 1,799-by-6,975 physical map, of rank 1,759 with correction rank
+    1,348. An equivariant grading modulo six divides the cubic multiplier
+    map into blocks. Only charges zero and three can contain individual
+    coordinate cubes. This is a grading of the equations: the target
+    numerator has character three, so the action is not claimed to fix
+    every member of the protected triple pointwise.
+
+    Both monomial orders tried on both large modular blocks reached explicit
+    fill or coefficient-update budgets before completing. Their recorded
+    ranks belong only to the processed prefixes. Every cube candidate found
+    there was subsequently proved by rational identities in a smaller
+    subsystem. Eight cube identities with 106 linear multiplier terms force
+    raw coefficients `8, 13, 26, 28, 38, 53, 56, 61` to vanish globally,
+    even when all other coefficients and corrections are unrestricted.
+
+    Rebuilding the remaining 67 parameters gives 396 necessary quadrics,
+    from a 1,793-by-5,963 map of rank 1,732 with correction rank 1,336.
+    The old restricted span has rank 391 and lies in this fresh span:
+    rebuilding adds five independent quadratic conditions. A further cube
+    identity with 24 multiplier terms forces raw coefficient `66` to zero.
+    The second rebuild has 66 active parameters and 393 quadrics, from a
+    1,792-by-5,841 map of rank 1,728 with correction rank 1,335. The old
+    restricted span already has rank 393, so this rebuild adds no new
+    independent quadratic conditions.
+
+    The exact square-only tests fail at all three stages. Successively
+    larger sparse cubic subsystems are retained, including searches that
+    found no additional powers. The final small quartic attempt uses only
+    forty quadrics with at most four terms: its 88,440 quadratic multiples
+    have exact rank 85,051 and isolate no individual fourth power. It
+    completed in 2.344 seconds within its 30-second limit. This does not
+    exhaust the full degree-four multiplier space. The full family remains
+    unresolved; there is no new certificate, Lean proof or accepted solve.
+    An initial development replay was interrupted after unsorted rational
+    elimination caused excessive fill. The completed implementation orders
+    rows by sparsity; the interrupted run supplies no mathematical result.
+
+    The final primary replay passes all 1,200 rational physical functionals,
+    nine cube identities with 130 multiplier terms, the selected exact
+    multiplier spaces and eight altered-input controls. A separate arithmetic
+    implementation also passes the full source/projection reconstruction,
+    all 208 square queries, both rebuild inclusions, all eleven retained
+    sparse cubic searches, all four modular prefixes and the small quartic
+    calculation; it rejects thirteen altered-input controls. These are
+    independent implementations, not external peer review or Lean acceptance.
+
+    [Equations, exact witnesses, visualizations, failed searches and reproduction](notes/cyclic-fano-full-quadratic-multipliers.md).
+    The new front-page parameter grid distinguishes global forced zeros
+    from the 66 unresolved coefficients. Its companion displays the actual
+    cubic blocks and the bounded searches. The earlier 25-parameter
+    exclusion remains separately labeled as a restricted-family result.
+    Both new PNGs were visually inspected; their generator checks forty
+    source bindings and the saved identities. All 26 local gallery/note
+    links resolve, all 35 note formulas pass local KaTeX parsing, and
+    GitHub's Markdown preview returns all eight embedded gallery images.
+    No upstream comment or edit accompanies this notebook batch. The
+    contribution tally remains **24**, with discussion updates held for
+    a substantial batch.
 
 ## Keeping this current
 

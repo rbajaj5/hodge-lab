@@ -1,0 +1,6 @@
+{
+  "status": "interrupted",
+  "operation": "initial primary replay development",
+  "reason": "An untracked rational rank replay used unsorted rows and caused excessive fill; interrupted before a validation receipt. Replay now orders rows by sparsity.",
+  "scope": "Implementation performance failure; no mathematical result inferred."
+}

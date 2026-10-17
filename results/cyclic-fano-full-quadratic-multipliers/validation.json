@@ -1,0 +1,65 @@
+{
+  "schema": "cyclic-fano-full-quadratic-multipliers-validation-v1",
+  "status": "PASS",
+  "producer_sha256": "607f8f7ce30f30ce162c5dad189c09bded2bb7c97cd3a8eb0d4d8f064f06afc7",
+  "packet_sha256": "f8d9fbd76b830d966bcdf4173d24e5730cd41d7f137bd0148ed5b279c23990c4",
+  "stage_checks": [
+    {
+      "physical_duals": 411,
+      "coefficient_pairings": 1837720,
+      "rank": 1759,
+      "mixed_rank": 1348,
+      "individual_squares_in_quadric_span": [],
+      "selected_cubic_space": {
+        "rank": 10450,
+        "columns": 10500,
+        "exact_cube_indices": [
+          8,
+          13,
+          26,
+          28,
+          38,
+          53,
+          56,
+          61
+        ]
+      }
+    },
+    {
+      "physical_duals": 396,
+      "coefficient_pairings": 1451383,
+      "rank": 1732,
+      "mixed_rank": 1336,
+      "individual_squares_in_quadric_span": [],
+      "selected_cubic_space": {
+        "rank": 9744,
+        "columns": 9849,
+        "exact_cube_indices": [
+          58
+        ]
+      }
+    },
+    {
+      "physical_duals": 393,
+      "coefficient_pairings": 1428387,
+      "rank": 1728,
+      "mixed_rank": 1335,
+      "individual_squares_in_quadric_span": [],
+      "selected_cubic_space": {
+        "rank": 9336,
+        "columns": 9438,
+        "exact_cube_indices": []
+      }
+    }
+  ],
+  "quartic_checks": [
+    {
+      "file": "stage-02-quartic-4.json",
+      "rank": 85051,
+      "columns": 88440,
+      "coordinate_fourth_powers_found": []
+    }
+  ],
+  "negative_controls_rejected": 8,
+  "scope": "Exact source-map, all physical-dual, selected-cubic rank/query and identity replay; failed modular discovery is retained without rerunning it."
+}
