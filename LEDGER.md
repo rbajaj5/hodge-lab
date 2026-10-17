@@ -1624,6 +1624,13 @@ conversations or evidence of an accepted solve.
     contribution tally remains **24**, with discussion updates held for
     a substantial batch.
 
+    **Publication checkpoint:** pushed as
+    [`a2ad249`](https://github.com/rbajaj5/hodge-lab/commit/a2ad249eaa87e587a4808545f05a060b4dfeba91).
+    The updated front-page text and feature image were inspected on live
+    GitHub. Primary, independent and figure-generation checks pass locally;
+    the [new CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39072395020)
+    was queued at this checkpoint, so a remote pass is not yet claimed.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
