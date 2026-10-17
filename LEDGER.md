@@ -255,6 +255,49 @@ conversations or evidence of an accepted solve.
     degree-three stopping rule. The source PDFs and private conversations
     are not republished here. [Sources and interpretation](notes/polynomial-syzygies.md#how-the-papers-guided-the-experiment).
 
+21. **16 October 2026 — Rebuild after the proven zeros.** The proposed
+    family-115 rebuild was executed. Affine syzygies alone and power searches
+    through degree four still failed. A degree-five search on chart `a10=1`
+    supplied two square identities; a subsequent fourth-power identity and
+    physical contradiction closed that chart. Setting its coefficient to
+    zero then closed chart `a0=1`. Family 115 is excluded, raising coverage
+    to 134/136 fixed-pair extensions. Both polynomial constructions replay
+    the dependencies and reject corrupted or unjustified proof steps.
+    [Proof and exact packets](notes/syzygy-rebuild.md).
+    The fifth upstream post is being prepared; this entry alone is not a post.
+
+22. **16 October 2026 — Larger families and unsuccessful computations.** All
+    ten remaining third-component charts of families 16 and 137 were attempted
+    with full shared numerator corrections and affine polynomial multipliers.
+    Every full search reached its 120-second limit. Six later runs retained
+    partial checkpoints after checkpoint export was added; the earlier four
+    exported none. Two checkpoints give new cubic vanishings on their
+    respective charts, but neither closes through the tested degree-four
+    continuation. They are not global family vanishings. Larger CAS exports
+    timed out, and two quadratic syzygy searches were cancelled after a more
+    economical lead emerged. An unused 39 MB CAS unit export was superseded
+    by the smaller checked proof. [Bounds, logs, and retained failures](results/degree7-syzygy-rebuild/experiments.json).
+
+23. **16 October 2026 — Visualizing the algebra rather than substituting a picture for it.**
+    The new figure shows the actual cancellation-support matrix and the
+    dependency chain from syzygies to powers, chart exclusion, and refinement.
+    Its colors count multiplier monomials; they do not represent conditioning
+    or a physical field. The Hodge intuition is the annihilator of the
+    correction map. No phase transition or new geometric theorem is inferred
+    from this figure. [Reproducible visualization](results/degree7-syzygy-rebuild/syzygy-proof-map.png).
+
+24. **16 October 2026 — Braids and arithmetic: possible next tools.** The user
+    asked whether the braid and supercongruence projects could help. A kernel
+    bundle around rank-drop loci could motivate a monodromy experiment, but
+    no braid action or compatible transport on this certificate system has
+    been constructed. Ordinary Hermitian Gram spectra do not automatically
+    produce Ginibre eigenvalue braids. Modular pilot elimination followed by
+    rational reconstruction and exact replay is a more immediate proposed
+    computational improvement. Neither proposal was used in the family-115
+    proof; no supercongruence theorem is transferred. The syzygy approach
+    already produced another complete restricted-family result.
+    [Sources and explicit limits](notes/syzygy-rebuild.md#braids-hodge-projection-and-arithmetic-as-research-tools).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,78 @@
+{
+  "newly_excluded_family": 115,
+  "third_character": [
+    4,
+    2,
+    3
+  ],
+  "proof_order": [
+    10,
+    0
+  ],
+  "basis_indices": [
+    6,
+    42,
+    56,
+    88,
+    102,
+    111,
+    114,
+    115,
+    133,
+    168,
+    211,
+    234,
+    271,
+    285,
+    288
+  ],
+  "numerator_corrections": 58,
+  "physical_equations": 255,
+  "rebuilt_chart10_constant_relations": 9,
+  "rebuilt_chart10_selected_affine_relations": 13,
+  "new_power_claims": [
+    {
+      "coordinate": 4,
+      "power": 2,
+      "degree_bound": 5,
+      "multiplier_terms": 419
+    },
+    {
+      "coordinate": 5,
+      "power": 2,
+      "degree_bound": 5,
+      "multiplier_terms": 430
+    },
+    {
+      "coordinate": 1,
+      "power": 4,
+      "degree_bound": 4,
+      "multiplier_terms": 56
+    }
+  ],
+  "coverage": {
+    "excluded_anchor_extensions": 134,
+    "total_anchor_extensions": 136,
+    "remaining_anchor_families": [
+      16,
+      137
+    ],
+    "excluded_in_original_selection": 134,
+    "original_selection_size": 152,
+    "unresolved_in_original_selection": 18,
+    "all_possible_three_character_families": 428536
+  },
+  "large_chart_attempts": 10,
+  "large_chart_timeouts": 10,
+  "checked_conditional_chart_progress": [
+    [
+      16,
+      13
+    ],
+    [
+      137,
+      8
+    ]
+  ],
+  "scope": "Restricted degree-seven nonexistence only. Unconditional degree bound remains at least seven; no certificate of existence or Lean HasCertificate proof."
+}

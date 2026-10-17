@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "independent_polynomials": true,
+  "family": 115,
+  "excluded_pivots_in_proof_order": [
+    10,
+    0
+  ],
+  "new_checks": {
+    "new_syzygy_products": 12080,
+    "new_syzygy_identities": 130,
+    "chart_inferences": 17,
+    "power_equation_products": 905,
+    "power_identities": 3,
+    "excluded_charts": 1,
+    "refined_chart_inferences": 10
+  },
+  "prior_syzygy_checks": {
+    "equation_products": 51452,
+    "identities": 562,
+    "new_independent_relations": 62,
+    "chart_inferences": 16,
+    "power_equation_products": 23,
+    "power_identities": 4,
+    "excluded_charts": 0
+  },
+  "first_pass_checks": {
+    "correction_pairings": 5058,
+    "quadratic_pairings": 1130,
+    "physical_duals": 37,
+    "power_identities": 1
+  },
+  "corrupt_map_rejected": true,
+  "unproved_chart_dependency_rejected": true,
+  "corrupt_power_rejected": true,
+  "unresolved_chart_progress": [
+    {
+      "family": 16,
+      "pivot": 13,
+      "syzygy_products": 8883,
+      "syzygy_identities": 60,
+      "chart_inferences": 0,
+      "power_equation_products": 20,
+      "power_identities": 2,
+      "excluded_charts": 0,
+      "scope": "Conditional chart consequences only; no global coordinate vanishing or family exclusion."
+    },
+    {
+      "family": 137,
+      "pivot": 8,
+      "syzygy_products": 7522,
+      "syzygy_identities": 54,
+      "chart_inferences": 4,
+      "power_equation_products": 20,
+      "power_identities": 2,
+      "excluded_charts": 0,
+      "scope": "Conditional chart consequences only; no global coordinate vanishing or family exclusion."
+    }
+  ],
+  "seconds": 32.275823000003584,
+  "scope": "Family 115 only, with the prior X0/Y0 exclusion as an explicit closure dependency; no HasCertificate proof."
+}

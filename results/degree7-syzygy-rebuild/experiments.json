@@ -1,0 +1,297 @@
+[
+  {
+    "name": "rebuilt-ideal-115-0.attempt",
+    "family": 115,
+    "pivot": 0,
+    "timeout_seconds": 90,
+    "returncode": 0,
+    "seconds": 15.003649500002211
+  },
+  {
+    "name": "rebuilt-ideal-115-0.lift.attempt",
+    "family": 115,
+    "pivot": 0,
+    "timeout_seconds": 120,
+    "returncode": 124,
+    "seconds": 123.48105339999893
+  },
+  {
+    "name": "rebuilt-ideal-115-10.attempt",
+    "family": 115,
+    "pivot": 10,
+    "timeout_seconds": 90,
+    "returncode": 0,
+    "seconds": 13.384923699995852
+  },
+  {
+    "name": "rebuilt-ideal-115-10.lift.attempt",
+    "family": 115,
+    "pivot": 10,
+    "timeout_seconds": 120,
+    "returncode": 124,
+    "seconds": 120.14312349999818
+  },
+  {
+    "name": "rebuilt-subsystem-115-0.attempt",
+    "returncode": 0,
+    "seconds": 4.35950280000543,
+    "timeout_seconds": 60
+  },
+  {
+    "name": "rebuilt-subsystem-115-0.lift.attempt",
+    "family": 115,
+    "pivot": 0,
+    "timeout_seconds": 120,
+    "returncode": 0,
+    "seconds": 32.26888209999743
+  },
+  {
+    "name": "rebuilt-subsystem-115-10.attempt",
+    "returncode": 0,
+    "seconds": 0.1610034999976051,
+    "timeout_seconds": 60
+  },
+  {
+    "name": "unused-complete-CAS-unit-export",
+    "bytes": 39476262,
+    "sha256": "08fd0ea70784f98e41ad8cb37f03aaec968ad074b175c749b58ceccd9861abf7",
+    "status": "Complete 39 MB CAS export retained locally; not replayed or used by the proof. Input is archived. The smaller chart-10-first argument supersedes it."
+  },
+  {
+    "name": "quadratic-multiplier-search-115-0",
+    "status": "cancelled",
+    "reason": "Stopped after the smaller affine necessary ideal gave a unit; no proof packet exported.",
+    "last_progress": "start 115 0 2 D [1, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14] terms 15193\nmultiplier 1 of 91 rank 199 relations 15 seconds 0.034\nmultiplier 6 of 91 rank 1192 relations 90 seconds 0.787\nmultiplier 11 of 91 rank 2166 relations 163 seconds 3.607\nmultiplier 16 of 91 rank 3096 relations 249 seconds 7.991\nmultiplier 21 of 91 rank 4081 relations 326 seconds 9.926\nmultiplier 26 of 91 rank 4993 relations 405 seconds 19.885\nmultiplier 31 of 91 rank 5984 relations 480 seconds 30.402\nmultiplier 36 of 91 rank 6895 relations 564 seconds 67.147\nmultiplier 41 of 91 rank 7886 relations 639 seconds 104.181\n"
+  },
+  {
+    "name": "quadratic-multiplier-search-115-10",
+    "status": "cancelled",
+    "reason": "Stopped after the smaller affine necessary ideal gave a unit; no proof packet exported.",
+    "last_progress": "start 115 10 2 D [0, 1, 3, 4, 5, 6, 8, 11, 12, 13, 14] terms 13445\nmultiplier 1 of 78 rank 151 relations 10 seconds 0.027\nmultiplier 6 of 78 rank 905 relations 65 seconds 0.477\nmultiplier 11 of 78 rank 1653 relations 124 seconds 2.939\nmultiplier 16 of 78 rank 2387 relations 207 seconds 5.054\nmultiplier 21 of 78 rank 3129 relations 275 seconds 7.141\nmultiplier 26 of 78 rank 3855 relations 361 seconds 13.702\nmultiplier 31 of 78 rank 4600 relations 425 seconds 23.019\nmultiplier 36 of 78 rank 5327 relations 504 seconds 41.577\nmultiplier 41 of 78 rank 6073 relations 568 seconds 73.232\n"
+  },
+  {
+    "name": "full-degree-five-power-search-115-0",
+    "status": "cancelled",
+    "reason": "Stopped after chart 10 was proved impossible and its forced zero closed chart 0 directly; no complete power packet exported."
+  },
+  {
+    "name": "seven-variable-subsystem-coordinate-search",
+    "status": "inconclusive",
+    "details": {
+      "linear_square": {
+        "polynomial": [
+          [
+            [
+              7,
+              7
+            ],
+            "9"
+          ],
+          [
+            [
+              7,
+              8
+            ],
+            "-36"
+          ],
+          [
+            [
+              7,
+              11
+            ],
+            "6"
+          ],
+          [
+            [
+              7,
+              13
+            ],
+            "6"
+          ],
+          [
+            [
+              7,
+              14
+            ],
+            "6"
+          ],
+          [
+            [
+              8,
+              8
+            ],
+            "36"
+          ],
+          [
+            [
+              8,
+              11
+            ],
+            "-12"
+          ],
+          [
+            [
+              8,
+              13
+            ],
+            "-12"
+          ],
+          [
+            [
+              8,
+              14
+            ],
+            "-12"
+          ],
+          [
+            [
+              11,
+              11
+            ],
+            "1"
+          ],
+          [
+            [
+              11,
+              13
+            ],
+            "2"
+          ],
+          [
+            [
+              11,
+              14
+            ],
+            "2"
+          ],
+          [
+            [
+              13,
+              13
+            ],
+            "1"
+          ],
+          [
+            [
+              13,
+              14
+            ],
+            "2"
+          ],
+          [
+            [
+              14,
+              14
+            ],
+            "1"
+          ]
+        ],
+        "equation_weights": [
+          [
+            2,
+            "9"
+          ],
+          [
+            3,
+            "-18"
+          ],
+          [
+            5,
+            "3"
+          ]
+        ]
+      },
+      "linear_form": [
+        [
+          [
+            7
+          ],
+          "3"
+        ],
+        [
+          [
+            8
+          ],
+          "-6"
+        ],
+        [
+          [
+            11
+          ],
+          "1"
+        ],
+        [
+          [
+            13
+          ],
+          "1"
+        ],
+        [
+          [
+            14
+          ],
+          "1"
+        ]
+      ],
+      "maps": {
+        "7": [
+          [
+            [
+              8
+            ],
+            "2"
+          ],
+          [
+            [
+              11
+            ],
+            "-1/3"
+          ],
+          [
+            [
+              13
+            ],
+            "-1/3"
+          ],
+          [
+            [
+              14
+            ],
+            "-1/3"
+          ]
+        ]
+      },
+      "stages": [],
+      "attempts": [
+        {
+          "iteration": 0,
+          "degree": 3,
+          "rows": 28,
+          "rank": 25,
+          "seconds": 0.0015700000003562309
+        },
+        {
+          "iteration": 0,
+          "degree": 4,
+          "rows": 133,
+          "rank": 109,
+          "seconds": 0.02227169999969192
+        },
+        {
+          "iteration": 0,
+          "degree": 5,
+          "rows": 448,
+          "rank": 331,
+          "seconds": 0.604027599998517
+        },
+        {
+          "iteration": 0,
+          "degree": 6,
+          "rows": 1218,
+          "rank": 792,
+          "seconds": 13.312918700001319
+        }
+      ]
+    }
+  }
+]

@@ -1,5 +1,9 @@
 # Polynomial syzygies of the shared correction map
 
+**Later continuation:** rebuilding family 115 closes that family and raises
+coverage to 134/136. This note preserves the earlier checkpoint;
+see [the new proof, visualization, and failures](syzygy-rebuild.md).
+
 Published in [holdout Discussion 44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985544),
 with [full CI passing on the immutable proof commit](https://github.com/rbajaj5/hodge-lab/actions/runs/38983831725).
 
