@@ -56,6 +56,16 @@ ellipses, while their exact syzygies keep the target off the image plane.
 The interactive version links correction coefficients to their image and
 lets you fit the projected target, rotate the view, and compare the examples.
 
+**Now vary the denominator:** an [interactive two-parameter sweep](notes/koszul-denominator-sweep.md)
+shows exact full-map ranks of 720, 713, and 690 at 81 rational samples. One
+projection also collapses where the full rank stays unchanged. A common exact
+syzygy rejects the entire restricted slice. Six additional searches constrained
+to retain three characters produce six new exact rejections; all reach their
+iteration limit. These finite rank changes do not establish a statistical
+phase transition or solve holdout.
+
+![Denominator parameters, exact ranks, and the persistent obstruction](results/koszul-map-sweep/rank-sweep.png)
+
 ![Response ellipses and their exact target obstructions](results/koszul-geometry/operator-geometry.png)
 
 ![Koszul correction-map support and cancelling syzygies](results/degree7-rank-strata/koszul-map-support.png)

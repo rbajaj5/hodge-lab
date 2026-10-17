@@ -45,6 +45,21 @@ jobs:
       - run: python -S algebra/degree7_syzygy_rebuild.py --check
       - run: python -S algebra/degree7_syzygy_rebuild.py --check --independent
       - run: python -S algebra/check_family16_global_cubes.py
+  koszul-sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python experiments/sweep_koszul_map.py --check
+      - run: python -S experiments/search_koszul_interior.py --check
+      - run: python experiments/plot_koszul_sweep.py --check
   koszul-continuation:
     runs-on: ubuntu-latest
     timeout-minutes: 10

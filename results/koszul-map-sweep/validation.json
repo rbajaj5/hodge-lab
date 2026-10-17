@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "sources": {
+    "algebra\\degree7_e1_basis.json": "95e2a9b264634de30cf049a885dd6977207a4080f276c9d8edeec2bb516214df",
+    "results\\degree7-triples\\certificates.json.gz": "79d0474e6afd8fb39040fb56a110cb351bec9588e97890fca7be63e4e530045c",
+    "sources\\sextics\\data\\holdout\\instance.rec": "59a5f8470eca127eb7ec4d20aea7c349c5069c71fc89a3bb86df931d9c48a6e2"
+  },
+  "proof": {
+    "basis": [
+      42,
+      272,
+      294
+    ],
+    "family": 4,
+    "necessityIndex": 24,
+    "dual": [
+      [
+        "108/5",
+        [
+          5,
+          2,
+          0,
+          5,
+          2,
+          0
+        ]
+      ],
+      [
+        "9",
+        [
+          5,
+          0,
+          0,
+          9,
+          0,
+          0
+        ]
+      ],
+      [
+        "-9/10",
+        [
+          5,
+          0,
+          0,
+          3,
+          0,
+          6
+        ]
+      ],
+      [
+        "-216/5",
+        [
+          2,
+          3,
+          0,
+          6,
+          3,
+          0
+        ]
+      ],
+      [
+        "864/5",
+        [
+          2,
+          3,
+          0,
+          0,
+          9,
+          0
+        ]
+      ],
+      [
+        "-18",
+        [
+          2,
+          1,
+          0,
+          10,
+          1,
+          0
+        ]
+      ],
+      [
+        "9/5",
+        [
+          2,
+          1,
+          0,
+          4,
+          1,
+          6
+        ]
+      ]
+    ],
+    "targetQuadraticPairings": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "conclusion": "Every D_42+s D_272+t D_294 fails E2 for all complex s,t. This follows by restricting a previously archived family-4 necessary condition; it does not exclude the full family.",
+    "independentColumns": 2520,
+    "independentQuadraticTerms": 6,
+    "exactRanks": 81,
+    "modularRanks": 81,
+    "sensitiveRows": [
+      [
+        5,
+        1,
+        0,
+        5,
+        3,
+        0
+      ],
+      [
+        5,
+        5,
+        1,
+        0,
+        0,
+        3
+      ]
+    ],
+    "sensitiveGramAtOne": [
+      [
+        "2308",
+        "0"
+      ],
+      [
+        "0",
+        "2308/9"
+      ]
+    ],
+    "sensitiveTargetIdenticallyZero": true,
+    "seconds": 45.815129000002344
+  }
+}

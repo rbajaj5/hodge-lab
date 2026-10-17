@@ -430,6 +430,28 @@ conversations or evidence of an accepted solve.
     search or upstream post; the contribution tally remains six.
     [Derivation, limits, and visualizations](notes/koszul-geometric-map.md).
 
+34. **16 October 2026 — Denominator sweep and an interior-character search.**
+    Varied `D_42 + s D_272 + t D_294` in a fixed pair of viewing frames. All
+    81 sampled rational full-map ranks are checked by rational elimination
+    and separate modular elimination: 72 have rank 720, eight rank 713, and
+    the origin rank 690. The two-row projection can also collapse while the
+    full rank remains 720. Restricting an archived family-4 necessity yields
+    a common exact dual that rejects the entire complex parameter plane;
+    this does not exclude family 4. A separate bounded SLSQP follow-up uses
+    two balanced starts in each of families 1, 4, and 149, retaining at least
+    10% character energy during feasible evaluations. All six runs reach
+    their iteration limit; all six distinct rounded, three-character
+    finalists are rejected exactly. The 493 evaluations, rejected candidates,
+    stop reasons, and implementation corrections remain recorded. Two
+    polynomial assemblies check the physical equations; no fresh independent
+    agent or human review is claimed. Added a live denominator explorer,
+    static PNG/SVG, exact replay, and 72 desktop/mobile presentation checks.
+    Dubedat supplies an operator/covariance motivation; no imaginary-geometry
+    identification, statistical phase transition, Lean proof, or holdout
+    solve is claimed. Upstream files remain unchanged and no upstream comment
+    was posted; the public contribution tally remains six.
+    [Derivation, visualizations, failed attempts, and reproduction](notes/koszul-denominator-sweep.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,153 @@
+<div id="koszul-denominator-sweep">
+  <style>
+    #koszul-denominator-sweep { position: relative; }
+    #koszul-denominator-sweep .sweep-svg { width: 100%; display: block; }
+    #koszul-denominator-sweep .sweep-svg text { fill: var(--foreground); font-size: 12px; }
+    #koszul-denominator-sweep .sweep-readout { margin: 8px 0; }
+    #koszul-denominator-sweep .sweep-legend { display:flex; flex-wrap:wrap; gap:16px; margin:8px 0; }
+    #koszul-denominator-sweep .sweep-legend span { display:inline-flex; align-items:center; gap:6px; }
+    #koszul-denominator-sweep .sweep-swatch { width:12px; height:12px; background:var(--viz-series-1); }
+    #koszul-denominator-sweep [data-tooltip-box] { position:absolute; pointer-events:none; max-width:235px; z-index:2; }
+  </style>
+  <h2>Vary the denominator</h2>
+  <div class="text-small text-muted">Family 4 · D₄₂ + sD₂₇₂ + tD₂₉₄ · 840 correction columns</div>
+  <div class="viz-controls">
+    <label class="form-label">s <output data-s-value class="tabular-nums"></output>
+      <input class="form-range" data-s aria-label="Denominator coefficient s" type="range" min="-2" max="2" step="0.5" value="1">
+    </label>
+    <label class="form-label">t <output data-t-value class="tabular-nums"></output>
+      <input class="form-range" data-t aria-label="Denominator coefficient t" type="range" min="-2" max="2" step="0.5" value="1">
+    </label>
+  </div>
+  <label class="form-label">Fixed viewing coordinates
+    <select class="form-select" data-frame aria-label="Fixed viewing coordinates">
+      <option value="1">Parameter-sensitive coefficient rows</option>
+      <option value="0">Overall response at the reference point</option>
+    </select>
+  </label>
+  <svg class="sweep-svg" data-geometry role="img" aria-label="The projected correction image changes with the denominator, while an exact obstruction keeps the target above its plane."></svg>
+  <div class="sweep-readout tabular-nums" data-readout aria-live="polite"></div>
+  <div class="nav nav-pills" role="tablist" aria-label="Rank or singular value view">
+    <button type="button" class="nav-link active" role="tab" aria-selected="true" aria-controls="sweep-chart-panel" id="sweep-rank-tab" data-chart-kind="rank">Exact rank grid</button>
+    <button type="button" class="nav-link" role="tab" aria-selected="false" aria-controls="sweep-chart-panel" id="sweep-spectrum-tab" data-chart-kind="spectrum">Small singular value</button>
+  </div>
+  <div id="sweep-chart-panel" role="tabpanel" aria-labelledby="sweep-rank-tab">
+    <div class="sweep-legend text-small" data-legend>
+      <span><i class="sweep-swatch" style="opacity:.25"></i>690</span>
+      <span><i class="sweep-swatch" style="opacity:.55"></i>713</span>
+      <span><i class="sweep-swatch"></i>720</span>
+    </div>
+    <svg class="sweep-svg" data-chart role="img" aria-label="Exact ranks at 81 rational parameter points. Select a point to change the denominator."></svg>
+  </div>
+  <div class="text-small text-muted" data-caption></div>
+  <div class="tooltip" data-tooltip-box role="tooltip" hidden></div>
+  <script type="application/json" data-sweep>__SWEEP_DATA__</script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root=document.getElementById('koszul-denominator-sweep'),data=JSON.parse(root.querySelector('[data-sweep]').textContent);
+  const scene=root.querySelector('[data-geometry]'),chart=root.querySelector('[data-chart]'),tip=root.querySelector('[data-tooltip-box]');
+  const NS='http://www.w3.org/2000/svg',reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  let s=1,t=1,frame=1,kind='rank',raf=0,last=null;
+  const snap=v=>Math.round(Math.max(-2,Math.min(2,v))*2)/2;
+  function restore(v){if(!v)return;if(Number.isFinite(v.s))s=snap(v.s);if(Number.isFinite(v.t))t=snap(v.t);if(v.frame===0||v.frame===1)frame=v.frame;if(v.kind==='rank'||v.kind==='spectrum')kind=v.kind;}
+  restore(window.openai?.widgetState?.modelContent);
+  function record(){return data.samples.find(p=>p.s===s&&p.t===t);}
+  function state(){return {s,t,frame,kind,fullRank:record().rank,exactObstruction:1,scope:'81 exact rational samples in one restricted denominator plane; no phase transition or full-family solve.'};}
+  function save(){window.openai?.setWidgetState?.({modelContent:state(),privateContent:null}).catch(()=>{});}
+  function response(x,y,f=frame){
+    const a=[1,x,y],v=data.quadraticPairs.map(([i,j])=>a[i]*a[j]),d=data.frames[f];
+    const H=[[0,0],[0,0]],target=[0,0,1];
+    for(let k=0;k<6;k++){for(let i=0;i<2;i++){target[i]+=v[k]*d.targetCoefficients[i][k];for(let j=0;j<2;j++)H[i][j]+=v[k]*d.gramCoefficients[k][i][j];}}
+    const tr=H[0][0]+H[1][1],disc=Math.hypot(H[0][0]-H[1][1],2*H[0][1]);
+    const ev=[Math.max(0,(tr+disc)/2),Math.max(0,(tr-disc)/2)],theta=.5*Math.atan2(2*H[0][1],H[0][0]-H[1][1]);
+    return {H,target,axes:ev.map(Math.sqrt),theta,projectionRank:ev.filter(x=>x>1e-11).length};
+  }
+  // Each view has a fixed numerical scale; both use a fixed screen extent.
+  const extent=Math.max(...data.samples.flatMap(p=>data.frames.flatMap((_,f)=>{const r=response(p.s,p.t,f);return [...r.axes,...r.target.slice(0,2).map(Math.abs)];})))*1.12;
+  function node(tag,attrs={},text){const n=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;scene.append(n);return n;}
+  function path(points,attrs={}){return node('path',{d:points.map((p,i)=>`${i?'L':'M'}${p[0]},${p[1]}`).join(' '),fill:'none',...attrs});}
+  function paint(x,y){
+    last={s:x,t:y};const r=response(x,y),w=root.getBoundingClientRect().width,h=w<620?290:350;
+    scene.setAttribute('viewBox',`0 0 ${w} ${h}`);scene.setAttribute('height',h);scene.replaceChildren();
+    node('title',{},'A fixed projection of the full 840-column map. Every correction has syzygy height zero, and the target has height one.');
+    const scale=(w-40)/(2*extent*1.35),cx=w/2,cy=w<620?185:220,ca=Math.cos(-.38),sa=Math.sin(-.38);
+    const project=p=>[cx+scale*(ca*p[0]-sa*p[1]),cy+.32*scale*(sa*p[0]+ca*p[1])-104*p[2]];
+    const ground=[[-extent,-extent,0],[extent,-extent,0],[extent,extent,0],[-extent,extent,0],[-extent,-extent,0]].map(project);
+    path(ground,{fill:'var(--muted)','fill-opacity':.2,stroke:'var(--border)','stroke-width':1});
+    for(let i=-2;i<=2;i++){const c=i*extent/2;path([project([c,-extent,0]),project([c,extent,0])],{stroke:'var(--border)','stroke-width':1});path([project([-extent,c,0]),project([extent,c,0])],{stroke:'var(--border)','stroke-width':1});}
+    const ellipse=q=>Array.from({length:129},(_,i)=>{const a=i*Math.PI/64,u=q*r.axes[0]*Math.cos(a),v=q*r.axes[1]*Math.sin(a),ct=Math.cos(r.theta),st=Math.sin(r.theta);return project([ct*u-st*v,st*u+ct*v,0]);});
+    path(ellipse(1),{fill:'var(--viz-series-1)','fill-opacity':.13,stroke:'var(--viz-series-1)','stroke-width':2});
+    for(const q of [.25,.5,.75])path(ellipse(q),{stroke:'var(--viz-series-1)','stroke-opacity':.3,'stroke-width':1});
+    const target=project(r.target),foot=project([r.target[0],r.target[1],0]),origin=project([0,0,0]);
+    path([foot,target],{stroke:'var(--viz-series-2)','stroke-width':2,'stroke-dasharray':'4 4'});
+    node('circle',{cx:foot[0],cy:foot[1],r:4,fill:'none',stroke:'var(--viz-series-2)'});
+    node('circle',{cx:origin[0],cy:origin[1],r:3,fill:'var(--viz-series-1)'});
+    path([[target[0],target[1]-6],[target[0]+6,target[1]],[target[0],target[1]+6],[target[0]-6,target[1]],[target[0],target[1]-6]],{fill:'var(--viz-series-3)'});
+    node('text',{x:target[0],y:target[1]-16,'text-anchor':'middle'},'Target −b');
+    node('text',{x:8,y:24},'Exact syzygy gap: 1');
+    node('text',{x:w/2,y:h-12,'text-anchor':'middle'},`Projected response rank ${r.projectionRank} of 2`);
+  }
+  function tooltip(event,text){
+    tip.textContent=text;tip.hidden=false;const rect=root.getBoundingClientRect();
+    const left=Math.max(4,Math.min(event.clientX-rect.left+12,rect.width-tip.offsetWidth-4));
+    tip.style.left=`${left}px`;tip.style.top=`${event.clientY-rect.top-tip.offsetHeight-12}px`;
+  }
+  function drawChart(){
+    const w=root.getBoundingClientRect().width,h=300,m={l:70,r:16,t:16,b:57},sw=w-m.l-m.r,sh=h-m.t-m.b;
+    const svg=d3.select(chart);svg.selectAll('*').remove();svg.attr('viewBox',`0 0 ${w} ${h}`).attr('height',h);
+    svg.append('title').text(kind==='rank'?'Exact full ranks at 81 rational points':'The 720th singular value, divided by the largest, along the selected t row.');
+    const x=d3.scaleLinear().domain([-2.25,2.25]).range([m.l,m.l+sw]);
+    let y;
+    if(kind==='rank')y=d3.scaleLinear().domain([-2.25,2.25]).range([m.t+sh,m.t]);
+    else {const vals=data.samples.filter(p=>p.t===t),hi=d3.extent(vals,p=>p.trackedRatio)[1];y=d3.scaleLinear().domain([0,hi*1.12||1]).range([m.t+sh-5,m.t+5]);}
+    svg.append('rect').attr('data-chart-frame','').attr('x',m.l).attr('y',m.t).attr('width',sw).attr('height',sh).attr('fill','none').attr('stroke','var(--border)');
+    svg.append('g').attr('transform',`translate(0,${m.t+sh})`).call(d3.axisBottom(x).tickValues(w<400?[-2,0,2]:[-2,-1,0,1,2]).tickSizeOuter(0));
+    svg.append('g').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickSizeOuter(0).tickFormat(kind==='rank'?d3.format('~g'):d3.format('.2g')));
+    svg.selectAll('.domain,.tick line').attr('stroke','var(--border)');
+    svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',m.l+sw/2).attr('y',h-10).attr('text-anchor','middle').text('s · denominator coefficient');
+    svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(16,${m.t+sh/2}) rotate(-90)`).attr('text-anchor','middle').text(kind==='rank'?'t · denominator coefficient':'σ₇₂₀ / σ₁ · ratio');
+    if(kind==='rank'){
+      svg.selectAll('.rank-cell').data(data.samples).join('rect').attr('class','rank-cell').attr('x',p=>x(p.s-.25)).attr('y',p=>y(p.t+.25)).attr('width',sw/9).attr('height',sh/9).attr('fill','var(--viz-series-1)').attr('opacity',p=>p.rank===690?.25:p.rank===713?.55:1);
+      svg.append('circle').attr('cx',x(s)).attr('cy',y(t)).attr('r',6).attr('fill','var(--background)').attr('stroke','var(--foreground)').attr('stroke-width',1.5);
+      svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',sw).attr('height',sh).attr('fill','transparent').attr('data-chart-hit','').attr('class','cursor-interaction')
+        .on('pointermove',event=>{const [px,py]=d3.pointer(event,chart),ss=snap(x.invert(px)),tt=snap(y.invert(py)),p=data.samples.find(p=>p.s===ss&&p.t===tt);tooltip(event,`s ${ss}, t ${tt} · exact rank ${p.rank} · kernel ${p.nullity}`);})
+        .on('pointerleave',()=>tip.hidden=true).on('click',event=>{const [px,py]=d3.pointer(event,chart);s=snap(x.invert(px));t=snap(y.invert(py));render();save();});
+    }else{
+      const vals=data.samples.filter(p=>p.t===t);
+      svg.append('path').datum(vals).attr('d',d3.line().x(p=>x(p.s)).y(p=>y(p.trackedRatio))).attr('fill','none').attr('stroke','var(--viz-series-1)').attr('stroke-width',1.8);
+      svg.selectAll('.spectral-point').data(vals).join('circle').attr('class','spectral-point').attr('cx',p=>x(p.s)).attr('cy',p=>y(p.trackedRatio)).attr('r',3).attr('fill','var(--viz-series-1)');
+      const guide=svg.append('line').attr('data-chart-hover-guide','').attr('y1',m.t).attr('y2',m.t+sh).attr('stroke','var(--border)').attr('visibility','hidden');
+      const marker=svg.append('circle').attr('data-chart-hover-marker','').attr('r',4).attr('fill','var(--viz-series-1)').attr('visibility','hidden');
+      function hover(event){const [px]=d3.pointer(event,chart),xx=Math.max(-2,Math.min(2,x.invert(px))),i=d3.bisector(p=>p.s).left(vals,xx),a=vals[Math.max(0,i-1)],b=vals[Math.min(vals.length-1,i)],v=a.s===b.s?a.trackedRatio:a.trackedRatio+(b.trackedRatio-a.trackedRatio)*(xx-a.s)/(b.s-a.s);guide.attr('x1',px).attr('x2',px).attr('visibility','visible');marker.attr('cx',x(xx)).attr('cy',y(v)).attr('visibility','visible');tooltip(event,`s ${xx.toFixed(2)}, t ${t} · ratio ${v.toExponential(3)} (linear interpolation)`);}
+      svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',sw).attr('height',sh).attr('fill','transparent').attr('data-chart-hit','').on('pointermove',hover).on('click',hover).on('pointerleave',()=>{tip.hidden=true;guide.attr('visibility','hidden');marker.attr('visibility','hidden');});
+    }
+    // All axis/tick labels are measured after drawing; optional ticks are removed if needed.
+    const labels=Array.from(chart.querySelectorAll('.tick text,.axis-title'));
+    for(let i=0;i<labels.length;i++)for(let j=i+1;j<labels.length;j++){
+      const a=labels[i].getBoundingClientRect(),b=labels[j].getBoundingClientRect();
+      if(a.x<b.right+4&&a.right+4>b.x&&a.y<b.bottom+4&&a.bottom+4>b.y){if(labels[j].closest('.tick'))labels[j].closest('.tick').remove();else if(labels[i].closest('.tick'))labels[i].closest('.tick').remove();}
+    }
+  }
+  function render(animate=true){
+    tip.hidden=true;root.querySelector('[data-s]').value=s;root.querySelector('[data-t]').value=t;
+    root.querySelector('[data-s-value]').textContent=s.toFixed(1);root.querySelector('[data-t-value]').textContent=t.toFixed(1);root.querySelector('[data-frame]').value=frame;
+    const p=record();root.querySelector('[data-readout]').textContent=`Full map: rank ${p.rank} / 840 · kernel dimension ${p.nullity}`;
+    root.querySelector('[data-legend]').hidden=kind!=='rank';
+    root.querySelector('[data-caption]').textContent=kind==='rank'?'81 exact rational ranks · select a cell · common obstruction at every parameter value':'Tracked singular value σ₇₂₀ · zero when exact rank < 720 · lines interpolate sampled values';
+    root.querySelectorAll('[data-chart-kind]').forEach(b=>{const active=b.dataset.chartKind===kind;b.setAttribute('aria-selected',String(active));b.classList.toggle('active',active);});
+    root.querySelector('#sweep-chart-panel').hidden=false;root.querySelector('#sweep-chart-panel').setAttribute('aria-labelledby',kind==='rank'?'sweep-rank-tab':'sweep-spectrum-tab');
+    drawChart();cancelAnimationFrame(raf);
+    if(!animate||!last||reduced.matches){paint(s,t);return;}
+    const start=last,now=performance.now();function tick(tm){const u=Math.min(1,(tm-now)/180),v=u*u*(3-2*u);paint(start.s+(s-start.s)*v,start.t+(t-start.t)*v);if(u<1)raf=requestAnimationFrame(tick);}raf=requestAnimationFrame(tick);
+  }
+  for(const key of ['s','t']){const el=root.querySelector(`[data-${key}]`);el.addEventListener('input',()=>{if(key==='s')s=Number(el.value);else t=Number(el.value);render();});el.addEventListener('change',save);}
+  root.querySelector('[data-frame]').addEventListener('change',e=>{frame=Number(e.target.value);render(false);save();});
+  root.querySelectorAll('[data-chart-kind]').forEach(b=>b.addEventListener('click',()=>{kind=b.dataset.chartKind;render(false);save();}));
+  window.addEventListener('openai:set_globals',e=>{const v=e.detail?.globals?.widgetState;if(v){restore(v.modelContent);render(false);}});
+  new ResizeObserver(()=>render(false)).observe(root);
+  root.sweepSnapshot=()=>({...state(),...response(s,t),sample:record()});
+  render(false);
+})();
+</script>

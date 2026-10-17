@@ -1,0 +1,1377 @@
+{
+  "version": 1,
+  "family": 4,
+  "basis": [
+    42,
+    272,
+    294
+  ],
+  "grid": [
+    -2.0,
+    -1.5,
+    -1.0,
+    -0.5,
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "quadraticPairs": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "gramCoefficients": [
+    [
+      [
+        0.8949747692145629,
+        0.0
+      ],
+      [
+        0.0,
+        0.844228390576862
+      ]
+    ],
+    [
+      [
+        0.05440524885866911,
+        0.0
+      ],
+      [
+        0.0,
+        0.004148537014876883
+      ]
+    ],
+    [
+      [
+        0.043770697033762164,
+        0.0
+      ],
+      [
+        0.0,
+        0.00580617894176145
+      ]
+    ],
+    [
+      [
+        0.0017998259069963772,
+        0.0
+      ],
+      [
+        0.0,
+        0.0007650250261119109
+      ]
+    ],
+    [
+      [
+        0.0015112100889504347,
+        0.0
+      ],
+      [
+        0.0,
+        1.4265777201852507e-05
+      ]
+    ],
+    [
+      [
+        0.0035382488970588824,
+        0.0
+      ],
+      [
+        0.0,
+        0.003450592440075573
+      ]
+    ]
+  ],
+  "targetCoefficients": [
+    [
+      0.05588476018197742,
+      0.6657504236363889,
+      0.015862925378862698,
+      0.05677722360567978,
+      0.005567992529342581,
+      0.00015667466774850917
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "sourceRadius": 0.002980213607784202,
+  "horizontalScale": 0.9409576724656408,
+  "samples": [
+    {
+      "s": -2.0,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.027033203021342905,
+      "trackedRatio": 0.027033203021342905,
+      "score": 0.1498082300326837,
+      "normalResidual": 8.271180039412447e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02829118413381409,
+      "trackedRatio": 0.02829118413381409,
+      "score": 0.14163527857344652,
+      "normalResidual": 7.23264371160912e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.029358368167649345,
+      "trackedRatio": 0.029358368167649345,
+      "score": 0.13803731058817065,
+      "normalResidual": 8.347890158611894e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.024926029598244675,
+      "trackedRatio": 0.024926029598244675,
+      "score": 0.13714778920457607,
+      "normalResidual": 7.63832472354978e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0006970256531935279,
+      "trackedRatio": 0.0006970256531935279,
+      "score": 0.13711235899850946,
+      "normalResidual": 1.1681354485084384e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.024926029598244675,
+      "trackedRatio": 0.024926029598244675,
+      "score": 0.13714778920457607,
+      "normalResidual": 7.63832472354978e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.029358368167649345,
+      "trackedRatio": 0.029358368167649345,
+      "score": 0.13803731058817065,
+      "normalResidual": 8.347890158611894e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02829118413381409,
+      "trackedRatio": 0.02829118413381409,
+      "score": 0.14163527857344652,
+      "normalResidual": 7.23264371160912e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -2.0,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.027033203021342905,
+      "trackedRatio": 0.027033203021342905,
+      "score": 0.1498082300326837,
+      "normalResidual": 8.271180039412447e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.020558379899094956,
+      "trackedRatio": 0.020558379899094956,
+      "score": 0.15707615733855565,
+      "normalResidual": 5.673495574402861e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0214815981016096,
+      "trackedRatio": 0.0214815981016096,
+      "score": 0.1430896917979892,
+      "normalResidual": 8.579101788398226e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02216374145885127,
+      "trackedRatio": 0.02216374145885127,
+      "score": 0.13540420634888345,
+      "normalResidual": 8.16934942270504e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02239277526775815,
+      "trackedRatio": 0.02239277526775815,
+      "score": 0.1322793376150777,
+      "normalResidual": 7.225473901556874e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.000771353872336682,
+      "trackedRatio": 0.000771353872336682,
+      "score": 0.13156571994486585,
+      "normalResidual": 5.840512680894276e-14,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02239277526775815,
+      "trackedRatio": 0.02239277526775815,
+      "score": 0.1322793376150777,
+      "normalResidual": 7.225473901556874e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02216374145885127,
+      "trackedRatio": 0.02216374145885127,
+      "score": 0.13540420634888345,
+      "normalResidual": 8.16934942270504e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0214815981016096,
+      "trackedRatio": 0.0214815981016096,
+      "score": 0.1430896917979892,
+      "normalResidual": 8.579101788398226e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.5,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.020558379899094956,
+      "trackedRatio": 0.020558379899094956,
+      "score": 0.15707615733855565,
+      "normalResidual": 5.673495574402861e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014323473488910565,
+      "trackedRatio": 0.014323473488910565,
+      "score": 0.166153998014052,
+      "normalResidual": 4.872971900291653e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014931614770551195,
+      "trackedRatio": 0.014931614770551195,
+      "score": 0.14513517637004,
+      "normalResidual": 6.862812265705584e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0153451393664428,
+      "trackedRatio": 0.0153451393664428,
+      "score": 0.13195130002451996,
+      "normalResidual": 8.128710415242477e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.015544960683823104,
+      "trackedRatio": 0.015544960683823104,
+      "score": 0.12551600828179696,
+      "normalResidual": 8.361497486460076e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0006164227902780847,
+      "trackedRatio": 0.0006164227902780847,
+      "score": 0.12373210659740407,
+      "normalResidual": 1.7554109532659136e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.015544960683823104,
+      "trackedRatio": 0.015544960683823104,
+      "score": 0.12551600828179696,
+      "normalResidual": 8.361497486460076e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0153451393664428,
+      "trackedRatio": 0.0153451393664428,
+      "score": 0.13195130002451996,
+      "normalResidual": 8.128710415242477e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014931614770551195,
+      "trackedRatio": 0.014931614770551195,
+      "score": 0.14513517637004,
+      "normalResidual": 6.862812265705584e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -1.0,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014323473488910565,
+      "trackedRatio": 0.014323473488910565,
+      "score": 0.166153998014052,
+      "normalResidual": 4.872971900291653e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.00842503370917238,
+      "trackedRatio": 0.00842503370917238,
+      "score": 0.17455810668258484,
+      "normalResidual": 8.991245552300602e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008797734592178948,
+      "trackedRatio": 0.008797734592178948,
+      "score": 0.1473086680102567,
+      "normalResidual": 8.308459949550634e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.009063981496753547,
+      "trackedRatio": 0.009063981496753547,
+      "score": 0.1287999419021948,
+      "normalResidual": 8.5028569543007e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008838984753486302,
+      "trackedRatio": 0.008838984753486302,
+      "score": 0.11890147678257708,
+      "normalResidual": 6.743383955937845e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0002671596273680717,
+      "trackedRatio": 0.0002671596273680717,
+      "score": 0.11594409257086016,
+      "normalResidual": 1.49669016202284e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008838984753486302,
+      "trackedRatio": 0.008838984753486302,
+      "score": 0.11890147678257708,
+      "normalResidual": 6.743383955937845e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.009063981496753547,
+      "trackedRatio": 0.009063981496753547,
+      "score": 0.1287999419021948,
+      "normalResidual": 8.5028569543007e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008797734592178948,
+      "trackedRatio": 0.008797734592178948,
+      "score": 0.1473086680102567,
+      "normalResidual": 8.308459949550634e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": -0.5,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.00842503370917238,
+      "trackedRatio": 0.00842503370917238,
+      "score": 0.17455810668258484,
+      "normalResidual": 8.991245552300602e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": -2.0,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.00356630270011999,
+      "trackedRatio": 0.0,
+      "score": 0.1780799628433519,
+      "normalResidual": 5.1927971538938193e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": -1.5,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.0030075312329364175,
+      "trackedRatio": 0.0,
+      "score": 0.14826267316686206,
+      "normalResidual": 5.139546188844821e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": -1.0,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.002122194111619294,
+      "trackedRatio": 0.0,
+      "score": 0.12744052782798473,
+      "normalResidual": 2.6095756883398787e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": -0.5,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.0010958654891569878,
+      "trackedRatio": 0.0,
+      "score": 0.11596745048639436,
+      "normalResidual": 3.0218218118746245e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": 0.0,
+      "rank": 690,
+      "nullity": 150,
+      "modularRank": 690,
+      "prime": 1000003,
+      "sigmaRatio": 0.00406688906041965,
+      "trackedRatio": 0.0,
+      "score": 0.11245357328448946,
+      "normalResidual": 8.103271843139513e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": 0.5,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.0010958654891569878,
+      "trackedRatio": 0.0,
+      "score": 0.11596745048639436,
+      "normalResidual": 3.0218218118746245e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": 1.0,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.002122194111619294,
+      "trackedRatio": 0.0,
+      "score": 0.12744052782798473,
+      "normalResidual": 2.6095756883398787e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": 1.5,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.0030075312329364175,
+      "trackedRatio": 0.0,
+      "score": 0.14826267316686206,
+      "normalResidual": 5.139546188844821e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.0,
+      "t": 2.0,
+      "rank": 713,
+      "nullity": 127,
+      "modularRank": 713,
+      "prime": 1000003,
+      "sigmaRatio": 0.00356630270011999,
+      "trackedRatio": 0.0,
+      "score": 0.1780799628433519,
+      "normalResidual": 5.1927971538938193e-17,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.00842503370917238,
+      "trackedRatio": 0.00842503370917238,
+      "score": 0.17455810668258484,
+      "normalResidual": 8.991245552300602e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008797734592178948,
+      "trackedRatio": 0.008797734592178948,
+      "score": 0.1473086680102567,
+      "normalResidual": 8.308459949550634e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.009063981496753547,
+      "trackedRatio": 0.009063981496753547,
+      "score": 0.1287999419021948,
+      "normalResidual": 8.5028569543007e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008838984753486302,
+      "trackedRatio": 0.008838984753486302,
+      "score": 0.11890147678257708,
+      "normalResidual": 6.743383955937845e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0002671596273680717,
+      "trackedRatio": 0.0002671596273680717,
+      "score": 0.11594409257086016,
+      "normalResidual": 1.49669016202284e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008838984753486302,
+      "trackedRatio": 0.008838984753486302,
+      "score": 0.11890147678257708,
+      "normalResidual": 6.743383955937845e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.009063981496753547,
+      "trackedRatio": 0.009063981496753547,
+      "score": 0.1287999419021948,
+      "normalResidual": 8.5028569543007e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.008797734592178948,
+      "trackedRatio": 0.008797734592178948,
+      "score": 0.1473086680102567,
+      "normalResidual": 8.308459949550634e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 0.5,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.00842503370917238,
+      "trackedRatio": 0.00842503370917238,
+      "score": 0.17455810668258484,
+      "normalResidual": 8.991245552300602e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014323473488910565,
+      "trackedRatio": 0.014323473488910565,
+      "score": 0.166153998014052,
+      "normalResidual": 4.872971900291653e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014931614770551195,
+      "trackedRatio": 0.014931614770551195,
+      "score": 0.14513517637004,
+      "normalResidual": 6.862812265705584e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0153451393664428,
+      "trackedRatio": 0.0153451393664428,
+      "score": 0.13195130002451996,
+      "normalResidual": 8.128710415242477e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.015544960683823104,
+      "trackedRatio": 0.015544960683823104,
+      "score": 0.12551600828179696,
+      "normalResidual": 8.361497486460076e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0006164227902780847,
+      "trackedRatio": 0.0006164227902780847,
+      "score": 0.12373210659740407,
+      "normalResidual": 1.7554109532659136e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.015544960683823104,
+      "trackedRatio": 0.015544960683823104,
+      "score": 0.12551600828179696,
+      "normalResidual": 8.361497486460076e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0153451393664428,
+      "trackedRatio": 0.0153451393664428,
+      "score": 0.13195130002451996,
+      "normalResidual": 8.128710415242477e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014931614770551195,
+      "trackedRatio": 0.014931614770551195,
+      "score": 0.14513517637004,
+      "normalResidual": 6.862812265705584e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.0,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.014323473488910565,
+      "trackedRatio": 0.014323473488910565,
+      "score": 0.166153998014052,
+      "normalResidual": 4.872971900291653e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.020558379899094956,
+      "trackedRatio": 0.020558379899094956,
+      "score": 0.15707615733855565,
+      "normalResidual": 5.673495574402861e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0214815981016096,
+      "trackedRatio": 0.0214815981016096,
+      "score": 0.1430896917979892,
+      "normalResidual": 8.579101788398226e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02216374145885127,
+      "trackedRatio": 0.02216374145885127,
+      "score": 0.13540420634888345,
+      "normalResidual": 8.16934942270504e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02239277526775815,
+      "trackedRatio": 0.02239277526775815,
+      "score": 0.1322793376150777,
+      "normalResidual": 7.225473901556874e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.000771353872336682,
+      "trackedRatio": 0.000771353872336682,
+      "score": 0.13156571994486585,
+      "normalResidual": 5.840512680894276e-14,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02239277526775815,
+      "trackedRatio": 0.02239277526775815,
+      "score": 0.1322793376150777,
+      "normalResidual": 7.225473901556874e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02216374145885127,
+      "trackedRatio": 0.02216374145885127,
+      "score": 0.13540420634888345,
+      "normalResidual": 8.16934942270504e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0214815981016096,
+      "trackedRatio": 0.0214815981016096,
+      "score": 0.1430896917979892,
+      "normalResidual": 8.579101788398226e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 1.5,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.020558379899094956,
+      "trackedRatio": 0.020558379899094956,
+      "score": 0.15707615733855565,
+      "normalResidual": 5.673495574402861e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": -2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.027033203021342905,
+      "trackedRatio": 0.027033203021342905,
+      "score": 0.1498082300326837,
+      "normalResidual": 8.271180039412447e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": -1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02829118413381409,
+      "trackedRatio": 0.02829118413381409,
+      "score": 0.14163527857344652,
+      "normalResidual": 7.23264371160912e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": -1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.029358368167649345,
+      "trackedRatio": 0.029358368167649345,
+      "score": 0.13803731058817065,
+      "normalResidual": 8.347890158611894e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": -0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.024926029598244675,
+      "trackedRatio": 0.024926029598244675,
+      "score": 0.13714778920457607,
+      "normalResidual": 7.63832472354978e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": 0.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.0006970256531935279,
+      "trackedRatio": 0.0006970256531935279,
+      "score": 0.13711235899850946,
+      "normalResidual": 1.1681354485084384e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": 0.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.024926029598244675,
+      "trackedRatio": 0.024926029598244675,
+      "score": 0.13714778920457607,
+      "normalResidual": 7.63832472354978e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": 1.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.029358368167649345,
+      "trackedRatio": 0.029358368167649345,
+      "score": 0.13803731058817065,
+      "normalResidual": 8.347890158611894e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": 1.5,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.02829118413381409,
+      "trackedRatio": 0.02829118413381409,
+      "score": 0.14163527857344652,
+      "normalResidual": 7.23264371160912e-13,
+      "exactTargetPairing": "1"
+    },
+    {
+      "s": 2.0,
+      "t": 2.0,
+      "rank": 720,
+      "nullity": 120,
+      "modularRank": 720,
+      "prime": 1000003,
+      "sigmaRatio": 0.027033203021342905,
+      "trackedRatio": 0.027033203021342905,
+      "score": 0.1498082300326837,
+      "normalResidual": 8.271180039412447e-13,
+      "exactTargetPairing": "1"
+    }
+  ],
+  "rows": 4922,
+  "frameReference": [
+    1,
+    1
+  ],
+  "secondAxisColumn": 36,
+  "frames": [
+    {
+      "name": "Overall response",
+      "gramCoefficients": [
+        [
+          [
+            0.8949747692145629,
+            0.0
+          ],
+          [
+            0.0,
+            0.844228390576862
+          ]
+        ],
+        [
+          [
+            0.05440524885866911,
+            0.0
+          ],
+          [
+            0.0,
+            0.004148537014876883
+          ]
+        ],
+        [
+          [
+            0.043770697033762164,
+            0.0
+          ],
+          [
+            0.0,
+            0.00580617894176145
+          ]
+        ],
+        [
+          [
+            0.0017998259069963772,
+            0.0
+          ],
+          [
+            0.0,
+            0.0007650250261119109
+          ]
+        ],
+        [
+          [
+            0.0015112100889504347,
+            0.0
+          ],
+          [
+            0.0,
+            1.4265777201852507e-05
+          ]
+        ],
+        [
+          [
+            0.0035382488970588824,
+            0.0
+          ],
+          [
+            0.0,
+            0.003450592440075573
+          ]
+        ]
+      ],
+      "targetCoefficients": [
+        [
+          0.05588476018197742,
+          0.6657504236363889,
+          0.015862925378862698,
+          0.05677722360567978,
+          0.005567992529342581,
+          0.00015667466774850917
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "horizontalScale": 0.9409576724656408
+    },
+    {
+      "name": "Parameter-sensitive rows",
+      "gramCoefficients": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.11111111111111112
+          ]
+        ]
+      ],
+      "targetCoefficients": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "horizontalScale": 0.14317437489172102,
+      "rowMonomials": [
+        [
+          5,
+          1,
+          0,
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          1,
+          0,
+          0,
+          3
+        ]
+      ]
+    }
+  ]
+}
