@@ -10,6 +10,12 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
+**Parameter optimization:** two L-BFGS-B starts in each of the 16 remaining
+selected triple spans beat an equal-evaluation uniform-random comparator on
+the numerical score (median reduction 91.9%). All 32 rounded finalists fail
+exact checks; ten optimized winners round into previously excluded one- or
+two-character sectors. [Search history, visualization, checks, and limits](notes/koszul-parameter-optimization.md).
+
 **Original systematic three-character batch:** of all 136 extensions of the `X0/Y0` pair by a third character, **132 complete families were excluded and four remained unresolved at that checkpoint**. Including all coordinate-character triples gave 152 tested families and 20 unresolved. Exact duals and shared-numerator chart proofs are replayed by two polynomial constructions. [Coverage, failed charts, and reproducible proofs](notes/three-character-families.md).
 
 **First polynomial-syzygy follow-up:** one of those four residual families was
@@ -76,6 +82,7 @@ The flow experiment uses the holdout polynomial's directional variation to const
 
 | Experiment | Recorded result | Evidence |
 |---|---|---|
+| Standard parameter optimization | 16 bounded triple spans; 2,078 evaluations per strategy; 32 exact rejections, no new family exclusion | [Methods, comparison, and failures](notes/koszul-parameter-optimization.md) |
 | Koszul-map visual companion | 173 displayed cancellation identities replayed; exact two-row obstruction and weighting diagnostic | [Three figures, interpretation, and checks](notes/koszul-map-visualizations.md) |
 | Koszul continuation after local rank identities | Families 16 and 137 excluded; 136/136 fixed-pair extensions covered; 16 other selected triples still open | [Exact chart covers and failed searches](notes/koszul-rank-continuation.md) |
 | Rebuilt polynomial syzygies | Family 115 excluded; 134/136 fixed-pair extensions covered; two remain unresolved | [Exact proof, dependencies, and visualization](notes/syzygy-rebuild.md) |
@@ -135,6 +142,9 @@ python -S algebra/degree7_rank_strata.py --check-all --independent
 python -S algebra/degree7_koszul_continuation.py
 python -S algebra/degree7_koszul_continuation.py --independent
 python experiments/plot_koszul_continuation.py --check
+python -S experiments/optimize_koszul_parameters.py --check
+python experiments/optimize_koszul_parameters.py --check --independent --numerics
+python experiments/plot_parameter_optimization.py --check
 ```
 
 These checks run on a CPU. They use exact rational arithmetic for algebraic certificates; floating-point tolerances are confined to numerical experiments. Do not run verification scripts with Python's `-O` option.

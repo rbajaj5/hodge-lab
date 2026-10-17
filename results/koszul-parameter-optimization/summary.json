@@ -1,0 +1,39 @@
+{
+  "families": 16,
+  "optimizer_evaluations": 2078,
+  "random_evaluations": 2078,
+  "optimized_beats_random": 16,
+  "median_score_reduction": 0.9194030175712682,
+  "relative_reduction_range": [
+    0.7428517377483556,
+    0.9589729645457249
+  ],
+  "exact_cases": 32,
+  "distinct_projective_directions": 32,
+  "exact_rejected": 32,
+  "optimizer_stopping_reasons": {
+    "evaluation cap": 8,
+    "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH": 13,
+    "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT": 11
+  },
+  "rounded_optimized_character_counts": {
+    "1": 5,
+    "2": 5,
+    "3": 6
+  },
+  "optimized_winners_at_box_boundary": 7,
+  "gradient_checks": 48,
+  "max_gradient_scaled_error": 1.3448381297465062e-11,
+  "max_inner_normal_residual": 2.4469588264792442e-11,
+  "independent_rounded_score_rechecks": 32,
+  "max_independent_score_relative_difference": 1.284643965656046e-15,
+  "float_minimum_score": 0.002193664706346556,
+  "source_sha256": {
+    "report.json": "11d51f4db0eb768673ef3d20abb85c9525d99f29d65df62eba3082d0af2f45e0",
+    "certificates.json.gz": "05a30fd6cfe457aa5be8e502739570909cc217d968aadfda4eada5cf29b74161",
+    "validation.json": "ab282ee3b935a312df6aa54de3b44476ece487e8ea5be8178d5dcc2b35954750",
+    "independent-validation.json": "a0e67470a16e8183daf7a31ccd7500a4bb26da6ff7b7b3e2ac4fa096febc93a0",
+    "numerical-validation.json": "97e6de7eeed38d69144ffd8419af589f150a2b0f1aa019d32612ea53ed5ff6fe"
+  },
+  "limits": "One fixed seed; bounded real charts; central optimizer starts versus full-box uniform random draws; equal evaluation counts, not a time comparison. Exact rejections apply to rounded fixed directions only."
+}

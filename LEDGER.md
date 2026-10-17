@@ -375,6 +375,25 @@ conversations or evidence of an accepted solve.
     the contribution tally remains six. [Figures, sources, and reproducible
     checks](notes/koszul-map-visualizations.md).
 
+31. **16 October 2026 — Standard parameter optimization with exact follow-up.**
+    Optimized the surviving coefficients in each of the 16 other selected
+    holdout triple families. Two L-BFGS-B starts per bounded real chart use
+    the full 840-column correction map and fixed equation weights. The
+    optimizer and uniform-random comparator each use 2,078 objective
+    evaluations; their starting distributions differ as recorded. The median
+    best-score reduction is 91.9%, but all 32 distinct rationalized finalists
+    fail exact checks. Ten of the 16 optimized winners round into one- or
+    two-character sectors already excluded; seven float winners touch the
+    parameter box boundary. Nineteen starts hit iteration/evaluation limits.
+    Both polynomial assemblies verify all 26,880 correction pairings, and
+    separately assembled numerical scores agree to relative error below
+    1.29e-15. No new family exclusion, solution, or upstream post follows.
+    [Complete history, figure, checks, and proposed next tests](notes/koszul-parameter-optimization.md).
+    The contribution policy welcomes reproducible partial results and failed
+    searches but asks for substantive updates instead of a running transcript.
+    This batch stays in Hodge Lab; the upstream tally remains six, reconfirmed
+    against discussion #44.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
