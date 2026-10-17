@@ -1870,8 +1870,17 @@ conversations or evidence of an accepted solve.
     statement review; mathlib supplies the span/dimension lemmas.
 
     This is notebook work only. No upstream post, edit, or PR was made;
-    the contribution tally remains **24**. Publication is recorded after
-    pushing, and remote CI success is not inferred from the local pass.
+    the contribution tally remains **24**. Remote CI success is not
+    inferred from the local pass.
+
+    **Publication checkpoint:** pushed the Lean project, proof map, and
+    front-page explanation as
+    [`0cce7de`](https://github.com/rbajaj5/hodge-lab/commit/0cce7dead26d23c127438b420787afa8123d542d).
+    The live GitHub section and image render correctly; 91 local links in
+    the new opening and related notes resolve. The
+    [dedicated Lean CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39077688314)
+    is in progress, fetching its pinned dependencies at this checkpoint.
+    The local build, axiom audit, kernel replay, and figure checks pass.
 
 ## Keeping this current
 
