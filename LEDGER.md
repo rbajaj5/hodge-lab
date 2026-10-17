@@ -872,6 +872,24 @@ conversations or evidence of an accepted solve.
     remain unchanged. No upstream comment was made, and the public tally
     remains 20 contributions, with no solve submission or accepted solve.
 
+53. **17 October 2026 — Begin two different fixed targets.**
+    Selected `cycle-three` and `mixed-biweight` after checking their exact
+    targets, context, provenance, current proof/acceptance files, open PRs,
+    and complete discussion threads. Both threads had no research comments.
+    The complete rational E1 denominator kernels vanish in degrees zero
+    through four. At degree five, each kernel is exactly the six-dimensional
+    gradient span. All 90 linear Koszul numerator syzygies are retained;
+    the necessary Hessian map has rank 21 and rational duals force all six
+    coefficient squares to vanish. Thus both fixed targets exclude every
+    denominator of degree at most five, including complex coefficients and
+    nonzero quotients. Degree six is unattempted. Preserved all bounded
+    failed searches, exported identities, exact checks, two coefficient-map
+    visualizations, and a separate implementation's rank and rational-dual
+    checks. Fixed a Windows line-ending portability issue before publication
+    and replayed both checkers on LF copies. No existence proof, Lean proof,
+    accepted solution, or leaderboard point follows.
+    [Result, figures, limits, credits, and reproduction](notes/fresh-instance-baselines.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -3,6 +3,21 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  fresh-instance-baselines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install "sympy>=1.13,<2" "matplotlib>=3.9,<4"
+      - run: python -S experiments/fresh_instance_e1.py verify
+      - run: python experiments/check_fresh_instance_e1_independent.py . 5 work/fresh-independent.json
+      - run: python experiments/plot_fresh_instance_e1.py
   typed-rewrite:
     runs-on: ubuntu-latest
     timeout-minutes: 30

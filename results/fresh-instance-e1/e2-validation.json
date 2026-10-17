@@ -1,0 +1,42 @@
+[
+  {
+    "instance": "cycle-three",
+    "degree": 5,
+    "stage": "E2",
+    "status": "PASS",
+    "packet_sha256": "d3cb472fedf1e6543f67f17621124a2beaef1b70dc190c288d1d434079051edc",
+    "square_obstructions": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "degree5_excluded": true,
+    "koszul_syzygies_checked": 90,
+    "exact_jacobian_annihilation_pairings": 9072,
+    "mutations_rejected": 6,
+    "seconds": 4.06975919999968
+  },
+  {
+    "instance": "mixed-biweight",
+    "degree": 5,
+    "stage": "E2",
+    "status": "PASS",
+    "packet_sha256": "821770f91b2a120dd53adbad5e11e8817f5eef73de3dc3e8483ad62458cdeb69",
+    "square_obstructions": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "degree5_excluded": true,
+    "koszul_syzygies_checked": 90,
+    "exact_jacobian_annihilation_pairings": 9072,
+    "mutations_rejected": 6,
+    "seconds": 4.293261499995424
+  }
+]

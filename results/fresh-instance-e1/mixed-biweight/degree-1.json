@@ -1,0 +1,179 @@
+{
+  "schema": "fresh-instance-e1-v1",
+  "instance": "mixed-biweight",
+  "degree": 1,
+  "q": 1,
+  "target": {
+    "q": "1",
+    "F": "X0**6 + X0**3*X1*Y0*Y1/2 + X0*X2*Y0**3*Y2/3 + X1**6 + X1**3*X2*Y1*Y2/2 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*Y0**3"
+  },
+  "source_sha256": {
+    "sources/sextics/data/mixed-biweight/instance.rec": "d684c414f66ab7e0ee131d6224c6b7ac46c772c44ed44a57b968470c1531c42e",
+    "sources/sextics/data/mixed-biweight/why.md": "771b0e82c736d20af44ad64030009bc006eea50a44f3e29b60cd90dd3be510a2",
+    "sources/sextics/data/mixed-biweight/provenance.json": "0ca0e5cc643beee21229d63c64e528bc92d24229671f578371183030cdc7226d"
+  },
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "monomial_order": "ascending lexicographic exponent tuple; X0,X1,X2,Y0,Y1,Y2",
+  "numerator_column_order": "component i, then homogeneous monomial degree d+1",
+  "dimensions": {
+    "coefficient_rows": 792,
+    "denominator_columns": 6,
+    "numerator_columns": 126,
+    "jacobian_rank": 126,
+    "augmented_rank": 132,
+    "denominator_image_rank": 6,
+    "denominator_kernel_dimension": 0
+  },
+  "jacobian_denominator_subspace_dimension": 0,
+  "sparsity": {
+    "jacobian_nonzeros": 378,
+    "AD_nonzeros": 6,
+    "reduced_AD_nonzeros": 6
+  },
+  "dual_obstructions": [
+    {
+      "output_row": 678,
+      "functional": [
+        [
+          595,
+          "-1/18"
+        ],
+        [
+          678,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 679,
+      "functional": [
+        [
+          235,
+          "-1/3"
+        ],
+        [
+          679,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          1,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 680,
+      "functional": [
+        [
+          680,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          2,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 690,
+      "functional": [
+        [
+          540,
+          "-1/18"
+        ],
+        [
+          690,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          3,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 710,
+      "functional": [
+        [
+          20,
+          "-1/12"
+        ],
+        [
+          710,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          4,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 745,
+      "functional": [
+        [
+          745,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          5,
+          "1"
+        ]
+      ]
+    }
+  ],
+  "kernel_lifts": [],
+  "matrix_plot": {
+    "residual_entries": [
+      [
+        678,
+        0,
+        "1"
+      ],
+      [
+        679,
+        1,
+        "1"
+      ],
+      [
+        680,
+        2,
+        "1"
+      ],
+      [
+        690,
+        3,
+        "1"
+      ],
+      [
+        710,
+        4,
+        "1"
+      ],
+      [
+        745,
+        5,
+        "1"
+      ]
+    ]
+  },
+  "elapsed_seconds": 0.005328400002326816,
+  "scope": "Complete degree-d necessary E1 condition only; nonlinear divergence, coprimality, and full certificate not established."
+}

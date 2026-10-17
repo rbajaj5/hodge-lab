@@ -1,0 +1,456 @@
+{
+  "schema": "fresh-instance-e2-v1",
+  "instance": "cycle-three",
+  "degree": 5,
+  "target": {
+    "q": "1",
+    "F": "X0**6 + X0**3*X1*Y0*Y1/2 + X0*X2**3*Y0*Y2/2 + X1**6 + X1**3*X2*Y1*Y2/2 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*Y0**3"
+  },
+  "source_sha256": {
+    "sources/sextics/data/cycle-three/instance.rec": "746f950104e7ea421fb03e9cb3a59f24c91e7b0471e3ee1ed6165e4d423bc6d7",
+    "sources/sextics/data/cycle-three/why.md": "065750e5ed69e23fbe58d295de824ddc2ce6bd6de2e987f5b7adf98b44b37a74",
+    "sources/sextics/data/cycle-three/provenance.json": "9c8055698504d5174362ba78486c51baa4ceccfa8a03fa0ad832572e61cb45ac"
+  },
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "degree5_e1_sha256": "319701458825cd159eb53abb36335655e0cebba34b465d5f5b392c6600044c8e",
+  "quadratic_column_pairs": [
+    [
+      "X0",
+      "X0"
+    ],
+    [
+      "X0",
+      "X1"
+    ],
+    [
+      "X0",
+      "X2"
+    ],
+    [
+      "X0",
+      "Y0"
+    ],
+    [
+      "X0",
+      "Y1"
+    ],
+    [
+      "X0",
+      "Y2"
+    ],
+    [
+      "X1",
+      "X1"
+    ],
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "Y0"
+    ],
+    [
+      "X1",
+      "Y1"
+    ],
+    [
+      "X1",
+      "Y2"
+    ],
+    [
+      "X2",
+      "X2"
+    ],
+    [
+      "X2",
+      "Y0"
+    ],
+    [
+      "X2",
+      "Y1"
+    ],
+    [
+      "X2",
+      "Y2"
+    ],
+    [
+      "Y0",
+      "Y0"
+    ],
+    [
+      "Y0",
+      "Y1"
+    ],
+    [
+      "Y0",
+      "Y2"
+    ],
+    [
+      "Y1",
+      "Y1"
+    ],
+    [
+      "Y1",
+      "Y2"
+    ],
+    [
+      "Y2",
+      "Y2"
+    ]
+  ],
+  "dimensions": {
+    "degree10_coefficient_rows": 3003,
+    "jacobian_rank": 1497,
+    "quadratic_columns": 21,
+    "quotient_quadratic_rank": 21,
+    "degree6_numerator_syzygy_dimension": 90,
+    "degree6_koszul_span_dimension": 90
+  },
+  "square_obstructions": [
+    {
+      "coordinate": "X0",
+      "quadratic_column": 0,
+      "functional": [
+        [
+          779,
+          "-7/27"
+        ],
+        [
+          1028,
+          "5/54"
+        ],
+        [
+          1034,
+          "-1/54"
+        ],
+        [
+          1055,
+          "1/18"
+        ],
+        [
+          1210,
+          "7/27"
+        ],
+        [
+          1550,
+          "-1/9"
+        ],
+        [
+          1843,
+          "-1"
+        ],
+        [
+          2644,
+          "1/3"
+        ]
+      ]
+    },
+    {
+      "coordinate": "X1",
+      "quadratic_column": 6,
+      "functional": [
+        [
+          85,
+          "-1/6"
+        ],
+        [
+          91,
+          "-5/18"
+        ],
+        [
+          118,
+          "1/18"
+        ],
+        [
+          691,
+          "7/108"
+        ],
+        [
+          747,
+          "3"
+        ],
+        [
+          953,
+          "-7/9"
+        ],
+        [
+          1180,
+          "-1"
+        ],
+        [
+          2375,
+          "1/3"
+        ]
+      ]
+    },
+    {
+      "coordinate": "X2",
+      "quadratic_column": 11,
+      "functional": [
+        [
+          1776,
+          "-1/360"
+        ],
+        [
+          2320,
+          "1/30"
+        ]
+      ]
+    },
+    {
+      "coordinate": "Y0",
+      "quadratic_column": 15,
+      "functional": [
+        [
+          306,
+          "1/5"
+        ],
+        [
+          339,
+          "1/5"
+        ],
+        [
+          494,
+          "3/5"
+        ],
+        [
+          551,
+          "-1/54"
+        ],
+        [
+          557,
+          "1/270"
+        ],
+        [
+          584,
+          "-1/90"
+        ],
+        [
+          617,
+          "-4/45"
+        ],
+        [
+          667,
+          "-7/135"
+        ],
+        [
+          912,
+          "1/45"
+        ],
+        [
+          1041,
+          "7/6480"
+        ],
+        [
+          1346,
+          "-12/5"
+        ],
+        [
+          1490,
+          "1/5"
+        ],
+        [
+          1825,
+          "-7/540"
+        ],
+        [
+          2219,
+          "1/18"
+        ],
+        [
+          2225,
+          "-1/90"
+        ],
+        [
+          2246,
+          "1/30"
+        ],
+        [
+          2329,
+          "7/45"
+        ],
+        [
+          2491,
+          "-1/15"
+        ],
+        [
+          2612,
+          "-3/5"
+        ],
+        [
+          2920,
+          "1/5"
+        ]
+      ]
+    },
+    {
+      "coordinate": "Y1",
+      "quadratic_column": 18,
+      "functional": [
+        [
+          570,
+          "-1/90"
+        ],
+        [
+          2236,
+          "1/30"
+        ]
+      ]
+    },
+    {
+      "coordinate": "Y2",
+      "quadratic_column": 20,
+      "functional": [
+        [
+          2232,
+          "1/30"
+        ]
+      ]
+    }
+  ],
+  "unresolved_squares": [],
+  "degree5_excluded": true,
+  "matrix_plot": {
+    "residual_entries": [
+      [
+        2644,
+        0,
+        "3"
+      ],
+      [
+        2956,
+        0,
+        "30"
+      ],
+      [
+        2770,
+        1,
+        "3"
+      ],
+      [
+        2293,
+        2,
+        "3"
+      ],
+      [
+        2987,
+        3,
+        "-12"
+      ],
+      [
+        2821,
+        4,
+        "3"
+      ],
+      [
+        2310,
+        5,
+        "1"
+      ],
+      [
+        2375,
+        6,
+        "3"
+      ],
+      [
+        2515,
+        6,
+        "30"
+      ],
+      [
+        2431,
+        7,
+        "3"
+      ],
+      [
+        2890,
+        8,
+        "1"
+      ],
+      [
+        2448,
+        9,
+        "3"
+      ],
+      [
+        2891,
+        9,
+        "1"
+      ],
+      [
+        2449,
+        10,
+        "3"
+      ],
+      [
+        2320,
+        11,
+        "30"
+      ],
+      [
+        2587,
+        11,
+        "3"
+      ],
+      [
+        2602,
+        12,
+        "3"
+      ],
+      [
+        2483,
+        13,
+        "1"
+      ],
+      [
+        2484,
+        14,
+        "1"
+      ],
+      [
+        2604,
+        14,
+        "3"
+      ],
+      [
+        2920,
+        15,
+        "5"
+      ],
+      [
+        2999,
+        15,
+        "30"
+      ],
+      [
+        2921,
+        16,
+        "1"
+      ],
+      [
+        2614,
+        17,
+        "1"
+      ],
+      [
+        2236,
+        18,
+        "30"
+      ],
+      [
+        2495,
+        19,
+        "1"
+      ],
+      [
+        2232,
+        20,
+        "30"
+      ]
+    ]
+  },
+  "elapsed_seconds": 0.3658847999977297,
+  "scope": "Necessary E2 quotient only. All six square obstructions imply degree-five exclusion; this is not a certificate or higher-degree exclusion."
+}

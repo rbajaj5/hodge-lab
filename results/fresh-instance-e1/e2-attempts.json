@@ -1,0 +1,24 @@
+[
+  {
+    "instance": "cycle-three",
+    "degree": 5,
+    "stage": "E2",
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"cycle-three\", \"E2\": {\"degree10_coefficient_rows\": 3003, \"jacobian_rank\": 1497, \"quadratic_columns\": 21, \"quotient_quadratic_rank\": 21, \"degree6_numerator_syzygy_dimension\": 90, \"degree6_koszul_span_dimension\": 90}, \"squares\": [\"X0\", \"X1\", \"X2\", \"Y0\", \"Y1\", \"Y2\"], \"unresolved_squares\": [], \"seconds\": 0.3658847999977297}\n",
+    "stderr": "",
+    "time_limit_seconds": 60.0,
+    "elapsed_seconds": 0.48624289999861503
+  },
+  {
+    "instance": "mixed-biweight",
+    "degree": 5,
+    "stage": "E2",
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "{\"instance\": \"mixed-biweight\", \"E2\": {\"degree10_coefficient_rows\": 3003, \"jacobian_rank\": 1497, \"quadratic_columns\": 21, \"quotient_quadratic_rank\": 21, \"degree6_numerator_syzygy_dimension\": 90, \"degree6_koszul_span_dimension\": 90}, \"squares\": [\"X0\", \"X1\", \"X2\", \"Y0\", \"Y1\", \"Y2\"], \"unresolved_squares\": [], \"seconds\": 0.35692529999505496}\n",
+    "stderr": "",
+    "time_limit_seconds": 60.0,
+    "elapsed_seconds": 0.48976670000411104
+  }
+]

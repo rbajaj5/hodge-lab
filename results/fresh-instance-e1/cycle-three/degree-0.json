@@ -1,0 +1,63 @@
+{
+  "schema": "fresh-instance-e1-v1",
+  "instance": "cycle-three",
+  "degree": 0,
+  "q": 1,
+  "target": {
+    "q": "1",
+    "F": "X0**6 + X0**3*X1*Y0*Y1/2 + X0*X2**3*Y0*Y2/2 + X1**6 + X1**3*X2*Y1*Y2/2 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*Y0**3"
+  },
+  "source_sha256": {
+    "sources/sextics/data/cycle-three/instance.rec": "746f950104e7ea421fb03e9cb3a59f24c91e7b0471e3ee1ed6165e4d423bc6d7",
+    "sources/sextics/data/cycle-three/why.md": "065750e5ed69e23fbe58d295de824ddc2ce6bd6de2e987f5b7adf98b44b37a74",
+    "sources/sextics/data/cycle-three/provenance.json": "9c8055698504d5174362ba78486c51baa4ceccfa8a03fa0ad832572e61cb45ac"
+  },
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "monomial_order": "ascending lexicographic exponent tuple; X0,X1,X2,Y0,Y1,Y2",
+  "numerator_column_order": "component i, then homogeneous monomial degree d+1",
+  "dimensions": {
+    "coefficient_rows": 462,
+    "denominator_columns": 1,
+    "numerator_columns": 36,
+    "jacobian_rank": 36,
+    "augmented_rank": 37,
+    "denominator_image_rank": 1,
+    "denominator_kernel_dimension": 0
+  },
+  "jacobian_denominator_subspace_dimension": 0,
+  "sparsity": {
+    "jacobian_nonzeros": 108,
+    "AD_nonzeros": 1,
+    "reduced_AD_nonzeros": 1
+  },
+  "dual_obstructions": [
+    {
+      "output_row": 415,
+      "functional": [
+        [
+          415,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    }
+  ],
+  "kernel_lifts": [],
+  "matrix_plot": {
+    "residual_entries": [
+      [
+        415,
+        0,
+        "1"
+      ]
+    ]
+  },
+  "elapsed_seconds": 0.002120400000421796,
+  "scope": "Complete degree-d necessary E1 condition only; nonlinear divergence, coprimality, and full certificate not established."
+}

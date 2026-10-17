@@ -18,15 +18,19 @@ Equal Koszul H1 dimensions can accompany very different H0 dimensions;
 our homology ranking did not outperform its controls.
 [Concrete mathematical rationale, figure, evidence, and limits](notes/why-yang.md).
 
-**Current direction:** pause further holdout discussion posts and select a
-different unsolved instance after the announced catalogue expansion appears.
-At the 17 October 2026, 17:37 UTC check, upstream still listed the same 61
-instances as our pinned checkout. This is a recorded snapshot, not a live
-monitor. See research entry 52 in the [ledger](LEDGER.md).
+**Current direction:** work on `cycle-three` and `mixed-biweight`, with
+different fixed hypersurface equations from holdout. The first complete
+bounded test excludes every denominator of **degree zero through five** for
+both targets. All coefficients and numerator corrections are included;
+nonzero quotients are allowed. Degree six and higher remain open, and neither
+instance is solved. [Argument, exact packets, figures, and reproduction](notes/fresh-instance-baselines.md).
+Further holdout discussion posts remain paused.
+
+![Degree-five necessary maps for the two fresh targets](results/fresh-instance-e1-figures/fresh-instance-e2.png)
 
 **Holdout checkpoint: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** the rebuilt T100 multiplier search forces all five
+**Latest holdout result:** the rebuilt T100 multiplier search forces all five
 Y1 coefficients to vanish and makes both added-character charts contradictory.
 The separately replayed anchor dependency then closes the family. This
 completes **132 of 132** fresh X0/Y1 triples and brings the selected union to

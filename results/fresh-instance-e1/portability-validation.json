@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "method": "Copy both implementations, six source files, and fourteen packets to an isolated tree with LF line endings, then run both verifiers.",
+  "files_normalized": 22,
+  "e1_packets": 12,
+  "e2_packets": 2,
+  "all_e1_pass": true,
+  "all_e2_pass": true,
+  "independent_checker_pass": true,
+  "original_source_files_modified": false,
+  "execution_platform": "win32",
+  "limit": "Windows execution with LF files; not a claim of a Linux or remote CI run."
+}

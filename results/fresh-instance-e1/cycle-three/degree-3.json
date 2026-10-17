@@ -1,0 +1,1625 @@
+{
+  "schema": "fresh-instance-e1-v1",
+  "instance": "cycle-three",
+  "degree": 3,
+  "q": 1,
+  "target": {
+    "q": "1",
+    "F": "X0**6 + X0**3*X1*Y0*Y1/2 + X0*X2**3*Y0*Y2/2 + X1**6 + X1**3*X2*Y1*Y2/2 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*Y0**3"
+  },
+  "source_sha256": {
+    "sources/sextics/data/cycle-three/instance.rec": "746f950104e7ea421fb03e9cb3a59f24c91e7b0471e3ee1ed6165e4d423bc6d7",
+    "sources/sextics/data/cycle-three/why.md": "065750e5ed69e23fbe58d295de824ddc2ce6bd6de2e987f5b7adf98b44b37a74",
+    "sources/sextics/data/cycle-three/provenance.json": "9c8055698504d5174362ba78486c51baa4ceccfa8a03fa0ad832572e61cb45ac"
+  },
+  "sha256_policy": "UTF-8 bytes with CRLF normalized to LF",
+  "monomial_order": "ascending lexicographic exponent tuple; X0,X1,X2,Y0,Y1,Y2",
+  "numerator_column_order": "component i, then homogeneous monomial degree d+1",
+  "dimensions": {
+    "coefficient_rows": 2002,
+    "denominator_columns": 56,
+    "numerator_columns": 756,
+    "jacobian_rank": 756,
+    "augmented_rank": 812,
+    "denominator_image_rank": 56,
+    "denominator_kernel_dimension": 0
+  },
+  "jacobian_denominator_subspace_dimension": 0,
+  "sparsity": {
+    "jacobian_nonzeros": 2268,
+    "AD_nonzeros": 56,
+    "reduced_AD_nonzeros": 62
+  },
+  "dual_obstructions": [
+    {
+      "output_row": 1558,
+      "functional": [
+        [
+          1558,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1559,
+      "functional": [
+        [
+          435,
+          "-1/3"
+        ],
+        [
+          1559,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          1,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1560,
+      "functional": [
+        [
+          436,
+          "-1/3"
+        ],
+        [
+          1560,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          2,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1561,
+      "functional": [
+        [
+          437,
+          "-1/3"
+        ],
+        [
+          1561,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          3,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1562,
+      "functional": [
+        [
+          1562,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          4,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1563,
+      "functional": [
+        [
+          440,
+          "-1/3"
+        ],
+        [
+          1563,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          5,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1564,
+      "functional": [
+        [
+          441,
+          "-1/3"
+        ],
+        [
+          1564,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          6,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1583,
+      "functional": [
+        [
+          1583,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          10,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1584,
+      "functional": [
+        [
+          461,
+          "-1/3"
+        ],
+        [
+          1584,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          11,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1585,
+      "functional": [
+        [
+          462,
+          "-1/3"
+        ],
+        [
+          1585,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          12,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1586,
+      "functional": [
+        [
+          1586,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          13,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1587,
+      "functional": [
+        [
+          465,
+          "-1/3"
+        ],
+        [
+          1587,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          14,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1601,
+      "functional": [
+        [
+          185,
+          "-1/192"
+        ],
+        [
+          803,
+          "1/48"
+        ],
+        [
+          1325,
+          "-1/4"
+        ],
+        [
+          1601,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          16,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1602,
+      "functional": [
+        [
+          675,
+          "-1/12"
+        ],
+        [
+          1602,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          17,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1603,
+      "functional": [
+        [
+          1603,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          18,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1613,
+      "functional": [
+        [
+          1225,
+          "-1/12"
+        ],
+        [
+          1613,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          19,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1639,
+      "functional": [
+        [
+          24,
+          "-1/12"
+        ],
+        [
+          1639,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          20,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1640,
+      "functional": [
+        [
+          19,
+          "-1/2"
+        ],
+        [
+          25,
+          "-5/6"
+        ],
+        [
+          52,
+          "1/6"
+        ],
+        [
+          545,
+          "9"
+        ],
+        [
+          687,
+          "-7/3"
+        ],
+        [
+          839,
+          "-3"
+        ],
+        [
+          1640,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          21,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1641,
+      "functional": [
+        [
+          20,
+          "5/18"
+        ],
+        [
+          26,
+          "-1/18"
+        ],
+        [
+          53,
+          "1/6"
+        ],
+        [
+          208,
+          "7/9"
+        ],
+        [
+          546,
+          "-1/3"
+        ],
+        [
+          840,
+          "-3"
+        ],
+        [
+          1641,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          22,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1642,
+      "functional": [
+        [
+          32,
+          "-1/12"
+        ],
+        [
+          1642,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          23,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1643,
+      "functional": [
+        [
+          27,
+          "5/18"
+        ],
+        [
+          33,
+          "-1/18"
+        ],
+        [
+          54,
+          "1/6"
+        ],
+        [
+          209,
+          "7/9"
+        ],
+        [
+          549,
+          "-1/3"
+        ],
+        [
+          842,
+          "-3"
+        ],
+        [
+          1643,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          24,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1657,
+      "functional": [
+        [
+          77,
+          "-1/12"
+        ],
+        [
+          1657,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          26,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1658,
+      "functional": [
+        [
+          72,
+          "5/18"
+        ],
+        [
+          78,
+          "-1/18"
+        ],
+        [
+          99,
+          "1/6"
+        ],
+        [
+          215,
+          "7/9"
+        ],
+        [
+          564,
+          "-1/3"
+        ],
+        [
+          857,
+          "-3"
+        ],
+        [
+          1658,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          27,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1659,
+      "functional": [
+        [
+          84,
+          "-1/12"
+        ],
+        [
+          1659,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          28,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1669,
+      "functional": [
+        [
+          120,
+          "-1/12"
+        ],
+        [
+          1669,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          29,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1692,
+      "functional": [
+        [
+          242,
+          "-1/12"
+        ],
+        [
+          1692,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          30,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1693,
+      "functional": [
+        [
+          237,
+          "5/18"
+        ],
+        [
+          243,
+          "-1/18"
+        ],
+        [
+          264,
+          "1/6"
+        ],
+        [
+          380,
+          "7/9"
+        ],
+        [
+          620,
+          "-1/3"
+        ],
+        [
+          977,
+          "-3"
+        ],
+        [
+          1693,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          31,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1694,
+      "functional": [
+        [
+          249,
+          "-1/12"
+        ],
+        [
+          1694,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          32,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1704,
+      "functional": [
+        [
+          285,
+          "-1/12"
+        ],
+        [
+          1704,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          33,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1724,
+      "functional": [
+        [
+          405,
+          "-1/12"
+        ],
+        [
+          1724,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          34,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1765,
+      "functional": [
+        [
+          1765,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          35,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1766,
+      "functional": [
+        [
+          1040,
+          "-1/3"
+        ],
+        [
+          1766,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          36,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1767,
+      "functional": [
+        [
+          1041,
+          "-1/3"
+        ],
+        [
+          1767,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          37,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1768,
+      "functional": [
+        [
+          1768,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          38,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1769,
+      "functional": [
+        [
+          1044,
+          "-1/3"
+        ],
+        [
+          1769,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          39,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1783,
+      "functional": [
+        [
+          1783,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          41,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1784,
+      "functional": [
+        [
+          499,
+          "1/12"
+        ],
+        [
+          1059,
+          "-1/3"
+        ],
+        [
+          1784,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          42,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1785,
+      "functional": [
+        [
+          1785,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          43,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1795,
+      "functional": [
+        [
+          1795,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          44,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1796,
+      "functional": [
+        [
+          1565,
+          "-1/12"
+        ],
+        [
+          1796,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          7,
+          "-1/12"
+        ]
+      ]
+    },
+    {
+      "output_row": 1797,
+      "functional": [
+        [
+          444,
+          "1/36"
+        ],
+        [
+          1566,
+          "-1/12"
+        ],
+        [
+          1797,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          8,
+          "-1/12"
+        ]
+      ]
+    },
+    {
+      "output_row": 1802,
+      "functional": [
+        [
+          1588,
+          "-1/12"
+        ],
+        [
+          1802,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          15,
+          "-1/12"
+        ]
+      ]
+    },
+    {
+      "output_row": 1818,
+      "functional": [
+        [
+          737,
+          "-1/12"
+        ],
+        [
+          1818,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          45,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1819,
+      "functional": [
+        [
+          583,
+          "-7/9"
+        ],
+        [
+          732,
+          "5/18"
+        ],
+        [
+          738,
+          "-1/18"
+        ],
+        [
+          759,
+          "1/6"
+        ],
+        [
+          875,
+          "7/9"
+        ],
+        [
+          1115,
+          "-1/3"
+        ],
+        [
+          1307,
+          "-3"
+        ],
+        [
+          1819,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          46,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1820,
+      "functional": [
+        [
+          744,
+          "-1/12"
+        ],
+        [
+          1820,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          47,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1830,
+      "functional": [
+        [
+          780,
+          "-1/12"
+        ],
+        [
+          1830,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          48,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1837,
+      "functional": [
+        [
+          39,
+          "1/144"
+        ],
+        [
+          1644,
+          "-1/12"
+        ],
+        [
+          1837,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          25,
+          "-1/12"
+        ]
+      ]
+    },
+    {
+      "output_row": 1850,
+      "functional": [
+        [
+          900,
+          "-1/12"
+        ],
+        [
+          1850,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          49,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1888,
+      "functional": [
+        [
+          158,
+          "-12"
+        ],
+        [
+          1888,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          50,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1889,
+      "functional": [
+        [
+          159,
+          "-12"
+        ],
+        [
+          359,
+          "1"
+        ],
+        [
+          1445,
+          "-1/3"
+        ],
+        [
+          1889,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          51,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1890,
+      "functional": [
+        [
+          161,
+          "-12"
+        ],
+        [
+          715,
+          "144"
+        ],
+        [
+          721,
+          "144"
+        ],
+        [
+          870,
+          "144"
+        ],
+        [
+          1106,
+          "-1728"
+        ],
+        [
+          1195,
+          "432"
+        ],
+        [
+          1890,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          52,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1900,
+      "functional": [
+        [
+          182,
+          "-12"
+        ],
+        [
+          1900,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          53,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1907,
+      "functional": [
+        [
+          10,
+          "-12"
+        ],
+        [
+          16,
+          "-12"
+        ],
+        [
+          204,
+          "-12"
+        ],
+        [
+          540,
+          "144"
+        ],
+        [
+          684,
+          "-36"
+        ],
+        [
+          1770,
+          "-1/12"
+        ],
+        [
+          1907,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          40,
+          "-1/12"
+        ]
+      ]
+    },
+    {
+      "output_row": 1920,
+      "functional": [
+        [
+          347,
+          "-12"
+        ],
+        [
+          1230,
+          "-1/12"
+        ],
+        [
+          1920,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          54,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1955,
+      "functional": [
+        [
+          27,
+          "1"
+        ],
+        [
+          54,
+          "1"
+        ],
+        [
+          209,
+          "3"
+        ],
+        [
+          842,
+          "-12"
+        ],
+        [
+          1955,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          55,
+          "1"
+        ]
+      ]
+    },
+    {
+      "output_row": 1970,
+      "functional": [
+        [
+          230,
+          "1"
+        ],
+        [
+          263,
+          "1"
+        ],
+        [
+          379,
+          "3"
+        ],
+        [
+          446,
+          "1/36"
+        ],
+        [
+          975,
+          "-12"
+        ],
+        [
+          1540,
+          "5/18"
+        ],
+        [
+          1546,
+          "-1/18"
+        ],
+        [
+          1567,
+          "1/6"
+        ],
+        [
+          1623,
+          "7/9"
+        ],
+        [
+          1726,
+          "-1/3"
+        ],
+        [
+          1799,
+          "-3"
+        ],
+        [
+          1970,
+          "1"
+        ]
+      ],
+      "denominator_constraint": [
+        [
+          9,
+          "1/6"
+        ]
+      ]
+    }
+  ],
+  "kernel_lifts": [],
+  "matrix_plot": {
+    "residual_entries": [
+      [
+        1558,
+        0,
+        "1"
+      ],
+      [
+        1559,
+        1,
+        "1"
+      ],
+      [
+        1560,
+        2,
+        "1"
+      ],
+      [
+        1561,
+        3,
+        "1"
+      ],
+      [
+        1562,
+        4,
+        "1"
+      ],
+      [
+        1563,
+        5,
+        "1"
+      ],
+      [
+        1564,
+        6,
+        "1"
+      ],
+      [
+        1796,
+        7,
+        "-1/12"
+      ],
+      [
+        1967,
+        7,
+        "-1/12"
+      ],
+      [
+        1797,
+        8,
+        "-1/12"
+      ],
+      [
+        1968,
+        8,
+        "-1/12"
+      ],
+      [
+        1970,
+        9,
+        "1/6"
+      ],
+      [
+        2001,
+        9,
+        "1"
+      ],
+      [
+        1583,
+        10,
+        "1"
+      ],
+      [
+        1584,
+        11,
+        "1"
+      ],
+      [
+        1585,
+        12,
+        "1"
+      ],
+      [
+        1586,
+        13,
+        "1"
+      ],
+      [
+        1587,
+        14,
+        "1"
+      ],
+      [
+        1802,
+        15,
+        "-1/12"
+      ],
+      [
+        1973,
+        15,
+        "-1/12"
+      ],
+      [
+        1601,
+        16,
+        "1"
+      ],
+      [
+        1602,
+        17,
+        "1"
+      ],
+      [
+        1603,
+        18,
+        "1"
+      ],
+      [
+        1613,
+        19,
+        "1"
+      ],
+      [
+        1639,
+        20,
+        "1"
+      ],
+      [
+        1640,
+        21,
+        "1"
+      ],
+      [
+        1641,
+        22,
+        "1"
+      ],
+      [
+        1642,
+        23,
+        "1"
+      ],
+      [
+        1643,
+        24,
+        "1"
+      ],
+      [
+        1837,
+        25,
+        "-1/12"
+      ],
+      [
+        1977,
+        25,
+        "-1/12"
+      ],
+      [
+        1657,
+        26,
+        "1"
+      ],
+      [
+        1658,
+        27,
+        "1"
+      ],
+      [
+        1659,
+        28,
+        "1"
+      ],
+      [
+        1669,
+        29,
+        "1"
+      ],
+      [
+        1692,
+        30,
+        "1"
+      ],
+      [
+        1693,
+        31,
+        "1"
+      ],
+      [
+        1694,
+        32,
+        "1"
+      ],
+      [
+        1704,
+        33,
+        "1"
+      ],
+      [
+        1724,
+        34,
+        "1"
+      ],
+      [
+        1765,
+        35,
+        "1"
+      ],
+      [
+        1766,
+        36,
+        "1"
+      ],
+      [
+        1767,
+        37,
+        "1"
+      ],
+      [
+        1768,
+        38,
+        "1"
+      ],
+      [
+        1769,
+        39,
+        "1"
+      ],
+      [
+        1907,
+        40,
+        "-1/12"
+      ],
+      [
+        1992,
+        40,
+        "-1/12"
+      ],
+      [
+        1783,
+        41,
+        "1"
+      ],
+      [
+        1784,
+        42,
+        "1"
+      ],
+      [
+        1785,
+        43,
+        "1"
+      ],
+      [
+        1795,
+        44,
+        "1"
+      ],
+      [
+        1818,
+        45,
+        "1"
+      ],
+      [
+        1819,
+        46,
+        "1"
+      ],
+      [
+        1820,
+        47,
+        "1"
+      ],
+      [
+        1830,
+        48,
+        "1"
+      ],
+      [
+        1850,
+        49,
+        "1"
+      ],
+      [
+        1888,
+        50,
+        "1"
+      ],
+      [
+        1889,
+        51,
+        "1"
+      ],
+      [
+        1890,
+        52,
+        "1"
+      ],
+      [
+        1900,
+        53,
+        "1"
+      ],
+      [
+        1920,
+        54,
+        "1"
+      ],
+      [
+        1955,
+        55,
+        "1"
+      ]
+    ]
+  },
+  "elapsed_seconds": 0.15523989999928745,
+  "scope": "Complete degree-d necessary E1 condition only; nonlinear divergence, coprimality, and full certificate not established."
+}
