@@ -853,6 +853,25 @@ conversations or evidence of an accepted solve.
     Shared the consolidated exact result as contribution 20 above. No pull
     request, Lean proof, accepted solve, or leaderboard point is counted.
 
+52. **17 October 2026 — Pause holdout posts and prepare to change instances.**
+    Retain the T100 checkpoint and stop adding holdout discussion posts while
+    waiting for the announced new instances. At 17:37 UTC, upstream main was
+    `0768616c9b70b318011b7c421abdd640322ccbfc`; its
+    [catalogue](https://github.com/hodge-computer/sextics/blob/0768616c9b70b318011b7c421abdd640322ccbfc/data/catalogue.json)
+    contained the same 61 instance IDs as our pinned checkout, with no added
+    or removed IDs. The open-PR query returned no entries. A later instance
+    choice must recheck its current acceptance status, discussion, fixed
+    target, and contribution requirements. This check is not ongoing
+    monitoring. The existing [T100 CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39053416474)
+    was still in progress, so no full remote-CI success is claimed here.
+    Preliminary reading of Yi Sun's *Quantum intertwiners and integrable
+    systems* (MIT thesis, 2016) remains exploratory: no theorem from it has
+    been applied to holdout, the proposed symmetry review did not finish,
+    and no new experiment or mathematical result is counted. This is a
+    workflow checkpoint; the existing T100 visualization and proof packet
+    remain unchanged. No upstream comment was made, and the public tally
+    remains 20 contributions, with no solve submission or accepted solve.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
