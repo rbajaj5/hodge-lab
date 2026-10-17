@@ -1409,6 +1409,16 @@ conversations or evidence of an accepted solve.
     claimed. Upstream comments are held for a substantial batch; the
     historical contribution tally remains 24.
 
+    Published checkpoints 71–72, their three new figures, exact packets,
+    failed steps and front-page gallery in commit
+    [`a1c1375`](https://github.com/rbajaj5/hodge-lab/commit/a1c1375ec34ec9ba90cc908a1bda4c69b17cc254).
+    Local primary and independent replays, figure-data checks and whitespace
+    checks pass. GitHub's Markdown renderer accepted the five-image gallery;
+    all eleven local figure/note destinations exist. The published README
+    was visually inspected on GitHub, including its linked gallery cards.
+    The [CI run for this commit](https://github.com/rbajaj5/hodge-lab/actions/runs/39067834403)
+    is queued at this checkpoint; no remote success is claimed yet.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
