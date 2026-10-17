@@ -553,6 +553,25 @@ conversations or evidence of an accepted solve.
     proof commit. Its receipt is retained; the other workflow jobs were
     still running at that checkpoint.
 
+39. **17 October 2026 — Shared numerators close family 17; reduce family 151.**
+    Followed the failed quartic searches with bounded shared-numerator chart
+    tests and pure-block powers through degree six. The original blocks
+    force no coordinate powers. The full family-17 system excludes the
+    a56=1 chart; after that global zero, rebuilding gives five quadratics in
+    five variables with full degree-six image. Five explicit sixth-power
+    identities remove X0, and the reproduced fqlx X1/Y1 proof finishes the
+    family. Selected coverage increases to 151/152. In family 151, a checked
+    three-row identity forces a linear combination to vanish; an explicit
+    denominator/lift basis change removes a133. All five rebuilt charts and
+    the reduced block's powers through degree six remain unresolved.
+    Retained initial failed charts, unsuccessful higher-degree packets,
+    declared bounds, exploratory factorization/Groebner motivation, and the
+    successful reconstruction. Both polynomial implementations replay the
+    proof; seven corrupted identities are rejected. Added a before/after
+    figure and seven exact cancellation examples, with 21 browser layouts
+    passing. No Lean proof, accepted solve, full resolution, or unrestricted
+    degree-seven exclusion. [Proof, intuition, visualizations, and failures](notes/remaining-triples-shared.md).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,20 @@
+{
+  "author": "fqlx",
+  "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+  "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+  "source_files_hash_checked": 20,
+  "runs": [
+    {
+      "script": "verify_pair30.py",
+      "exit_code": 0,
+      "seconds": 3.396666299999197
+    },
+    {
+      "script": "audit_pair30_independent.py",
+      "exit_code": 0,
+      "seconds": 1.518560599999546
+    }
+  ],
+  "status": "PASS",
+  "scope": "Reproduction of fqlx's existing pair30 exclusion; no claim of original discovery or Lean verification."
+}

@@ -3,6 +3,21 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  remaining-triples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S experiments/reproduce_pair30.py --fetch --output-directory results/remaining-triples-shared/pair30
+      - run: python -S experiments/check_remaining_triples.py
+      - run: python -S experiments/check_remaining_triples.py --independent
+      - run: python -S experiments/plot_remaining_triples.py --check
   eleven-quartic:
     runs-on: ubuntu-latest
     timeout-minutes: 10

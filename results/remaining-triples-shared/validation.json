@@ -1,0 +1,391 @@
+{
+  "status": "PASS",
+  "independent_physical_polynomials": false,
+  "families": [
+    {
+      "number": 17,
+      "excluded": true,
+      "original_shared": {
+        "inferences": 136,
+        "equations": 1345,
+        "numerator_parameters": 256,
+        "stabilizer_order": 6,
+        "charts": [
+          {
+            "pivot_raw": 42,
+            "excluded": false,
+            "retained_coordinates": 237,
+            "stage_retained_coordinates": [
+              271,
+              253,
+              246,
+              242,
+              240,
+              237,
+              237
+            ]
+          },
+          {
+            "pivot_raw": 56,
+            "excluded": true,
+            "retained_coordinates": 191,
+            "stage_retained_coordinates": [
+              271,
+              191,
+              191
+            ]
+          },
+          {
+            "pivot_raw": 88,
+            "excluded": false,
+            "retained_coordinates": 271,
+            "stage_retained_coordinates": [
+              271,
+              271
+            ]
+          },
+          {
+            "pivot_raw": 102,
+            "excluded": false,
+            "retained_coordinates": 267,
+            "stage_retained_coordinates": [
+              271,
+              268,
+              267,
+              267
+            ]
+          },
+          {
+            "pivot_raw": 111,
+            "excluded": false,
+            "retained_coordinates": 254,
+            "stage_retained_coordinates": [
+              271,
+              260,
+              256,
+              254,
+              254
+            ]
+          },
+          {
+            "pivot_raw": 114,
+            "excluded": false,
+            "retained_coordinates": 271,
+            "stage_retained_coordinates": [
+              271,
+              271
+            ]
+          }
+        ]
+      },
+      "original_complementary_block": [
+        {
+          "degree": 5,
+          "domain": 280,
+          "codomain": 252,
+          "rank": 220,
+          "kernel": 60,
+          "quotient_dimension": 32
+        },
+        {
+          "degree": 6,
+          "domain": 630,
+          "codomain": 462,
+          "rank": 430,
+          "kernel": 200,
+          "quotient_dimension": 32
+        }
+      ],
+      "eliminated_coordinate": 56,
+      "replacement": [],
+      "rebuilt_variables": 15,
+      "rebuilt_quadratics": 15,
+      "block_variables": 5,
+      "block_quadratics": 5,
+      "rebuilt_block": [
+        {
+          "degree": 2,
+          "domain": 5,
+          "codomain": 15,
+          "rank": 5,
+          "kernel": 0,
+          "quotient_dimension": 10
+        },
+        {
+          "degree": 3,
+          "domain": 25,
+          "codomain": 35,
+          "rank": 25,
+          "kernel": 0,
+          "quotient_dimension": 10
+        },
+        {
+          "degree": 4,
+          "domain": 75,
+          "codomain": 70,
+          "rank": 65,
+          "kernel": 10,
+          "quotient_dimension": 5
+        },
+        {
+          "degree": 5,
+          "domain": 175,
+          "codomain": 126,
+          "rank": 125,
+          "kernel": 50,
+          "quotient_dimension": 1
+        },
+        {
+          "degree": 6,
+          "domain": 350,
+          "codomain": 210,
+          "rank": 210,
+          "kernel": 140,
+          "quotient_dimension": 0
+        }
+      ],
+      "power_zeros": [
+        42,
+        88,
+        102,
+        111,
+        114
+      ],
+      "closure": {
+        "kind": "fqlx_pair30",
+        "revision": "d69313fe578843f8341e6ed557c425bc7755c1d7",
+        "source": "https://gist.github.com/fqlx/58c0183e1fdbfc5d42a78d005e1d9bab/d69313fe578843f8341e6ed557c425bc7755c1d7",
+        "basis_pairs_matched": 10,
+        "target_F_A_matched": true,
+        "source_files_hash_checked": 20,
+        "replay": "pair30/replay.json"
+      },
+      "rebuilt_shared": null
+    },
+    {
+      "number": 151,
+      "excluded": false,
+      "original_shared": {
+        "inferences": 18,
+        "equations": 625,
+        "numerator_parameters": 125,
+        "stabilizer_order": 18,
+        "charts": [
+          {
+            "pivot_raw": 115,
+            "excluded": false,
+            "retained_coordinates": 137,
+            "stage_retained_coordinates": [
+              140,
+              137,
+              137
+            ]
+          },
+          {
+            "pivot_raw": 133,
+            "excluded": false,
+            "retained_coordinates": 130,
+            "stage_retained_coordinates": [
+              140,
+              132,
+              130,
+              130
+            ]
+          },
+          {
+            "pivot_raw": 234,
+            "excluded": false,
+            "retained_coordinates": 140,
+            "stage_retained_coordinates": [
+              140,
+              140
+            ]
+          },
+          {
+            "pivot_raw": 271,
+            "excluded": false,
+            "retained_coordinates": 140,
+            "stage_retained_coordinates": [
+              140,
+              140
+            ]
+          },
+          {
+            "pivot_raw": 285,
+            "excluded": false,
+            "retained_coordinates": 135,
+            "stage_retained_coordinates": [
+              140,
+              137,
+              135,
+              135
+            ]
+          },
+          {
+            "pivot_raw": 288,
+            "excluded": false,
+            "retained_coordinates": 140,
+            "stage_retained_coordinates": [
+              140,
+              140
+            ]
+          }
+        ]
+      },
+      "original_complementary_block": [
+        {
+          "degree": 5,
+          "domain": 392,
+          "codomain": 252,
+          "rank": 191,
+          "kernel": 201,
+          "quotient_dimension": 61
+        },
+        {
+          "degree": 6,
+          "domain": 882,
+          "codomain": 462,
+          "rank": 377,
+          "kernel": 505,
+          "quotient_dimension": 85
+        }
+      ],
+      "eliminated_coordinate": 133,
+      "replacement": [
+        [
+          115,
+          "1/2"
+        ],
+        [
+          234,
+          "1/6"
+        ],
+        [
+          285,
+          "1/6"
+        ],
+        [
+          288,
+          "1/6"
+        ]
+      ],
+      "rebuilt_variables": 15,
+      "rebuilt_quadratics": 12,
+      "block_variables": 5,
+      "block_quadratics": 2,
+      "rebuilt_block": [
+        {
+          "degree": 2,
+          "domain": 2,
+          "codomain": 15,
+          "rank": 2,
+          "kernel": 0,
+          "quotient_dimension": 13
+        },
+        {
+          "degree": 3,
+          "domain": 10,
+          "codomain": 35,
+          "rank": 10,
+          "kernel": 0,
+          "quotient_dimension": 25
+        },
+        {
+          "degree": 4,
+          "domain": 30,
+          "codomain": 70,
+          "rank": 29,
+          "kernel": 1,
+          "quotient_dimension": 41
+        },
+        {
+          "degree": 5,
+          "domain": 70,
+          "codomain": 126,
+          "rank": 65,
+          "kernel": 5,
+          "quotient_dimension": 61
+        },
+        {
+          "degree": 6,
+          "domain": 140,
+          "codomain": 210,
+          "rank": 125,
+          "kernel": 15,
+          "quotient_dimension": 85
+        }
+      ],
+      "power_zeros": [],
+      "closure": null,
+      "rebuilt_shared": {
+        "inferences": 13,
+        "equations": 599,
+        "numerator_parameters": 125,
+        "stabilizer_order": 18,
+        "charts": [
+          {
+            "pivot_raw": 115,
+            "excluded": false,
+            "retained_coordinates": 135,
+            "stage_retained_coordinates": [
+              139,
+              136,
+              135,
+              135
+            ]
+          },
+          {
+            "pivot_raw": 234,
+            "excluded": false,
+            "retained_coordinates": 139,
+            "stage_retained_coordinates": [
+              139,
+              139
+            ]
+          },
+          {
+            "pivot_raw": 271,
+            "excluded": false,
+            "retained_coordinates": 139,
+            "stage_retained_coordinates": [
+              139,
+              139
+            ]
+          },
+          {
+            "pivot_raw": 285,
+            "excluded": false,
+            "retained_coordinates": 130,
+            "stage_retained_coordinates": [
+              139,
+              132,
+              130,
+              130
+            ]
+          },
+          {
+            "pivot_raw": 288,
+            "excluded": false,
+            "retained_coordinates": 139,
+            "stage_retained_coordinates": [
+              139,
+              139
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "correction_pairings": 30523,
+    "quadratic_pairings": 6365,
+    "physical_duals": 222,
+    "power_identities": 9,
+    "sixth_power_identities": 5,
+    "mutations_rejected": 7,
+    "linear_square_identities": 1
+  },
+  "source_sha256": "6fb3224ef9ad6dbb7a726d56b9c53ffa39ecdd10f2ba58fba320e7c521ad37b7",
+  "seconds": 30.844517599998653,
+  "scope": "Family 17 excluded; family 151 reduced by one linear relation, still unresolved. Selected coverage 151/152; holdout unsolved."
+}

@@ -10,14 +10,17 @@ This is the **meta-repository for our work in [hodge-computer/sextics](https://g
 
 **Current search: degree seven.** Our exact **{chi_X0, chi_Y0}** exclusion, our earlier **{chi_Y0, chi_X1}** result, and fqlx's reproduced **{chi_X1, chi_Y1}** proof complete **9,453 of 9,453 two-character families** in the preceding scan. Denominators with three or more characters and higher degrees remain open. [Combined coverage, attribution, and checks](notes/x0-y0-exclusion.md).
 
-**Latest exact result:** degree four on the eleven remaining families closes
-nine more triples, bringing selected coverage to **150/152**. All 33 small
-blocks were tested; 62 fourth-power identities and replayed residual-sector
-proofs close families 1, 2, 4, 5, 7, 9, 15, 39, and 150. The full quartic maps
-for **17 and 151** produce no coordinate vanishings; those families remain
-open. [Proof, visualizations, and retained failures](notes/eleven-quartic.md).
+**Latest exact result:** keeping the shared numerator coefficients and
+rebuilding closes **family 17**, bringing selected coverage to **151/152**.
+A normalized-chart contradiction removes one coordinate; five sixth-power
+identities remove the remaining X0 component, and fqlx's residual-pair proof
+is replayed. **Family 151 remains open**, with one new exact linear reduction.
+[Proof, before/after visualizations, and failures](notes/remaining-triples-shared.md).
 
-![Small blocks and the two remaining selected families](results/eleven-quartic/eleven-quartic.png)
+![Rebuild after a shared-numerator constraint](results/remaining-triples-shared/remaining-triples.png)
+
+The [eleven-family quartic batch](notes/eleven-quartic.md) closed families
+1, 2, 4, 5, 7, 9, 15, 39, and 150, giving 150/152 at that checkpoint.
 
 The [preceding degree-four batch](notes/eisenbud-quartic-strand.md) closed
 families 6, 8, 10, 149, and 152, giving 141/152 at that checkpoint.

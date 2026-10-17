@@ -1,0 +1,31 @@
+{
+  "d": 7,
+  "prime": 1000003,
+  "numeratorColumns": 7722,
+  "jacobianRank": 6882,
+  "completeKoszulKernel": 840,
+  "denominatorColumns": 792,
+  "augmentedRank": 7379,
+  "completeDenominatorSpace": 295,
+  "gaugeDimension": 6,
+  "removedZeroBasedRawIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "gaugeComplementDimension": 289,
+  "characterSectors": 138
+}
+PASS: exact E1 completeness over C, six character-preserving gauges, and 138 denominator sectors.
+PASS: all four preceding square-zero consequences reconstructed from complete initial14D/68K system.
+PASS: all41 A-only equations regenerated as row consequences of fresh complete actual E2.
+PASS: chart a123=1, exact affine replay and 3718 coefficient products.
+PASS: chart a180=1, exact affine replay and 23550 coefficient products.
+PASS: chart a210=1, exact affine replay and 3333 coefficient products.
+PASS: chart a229=1, exact affine replay and 3690 coefficient products.
+PASS: chart a232=1, exact affine replay and 10390 coefficient products.
+PASS: every A coordinate is zero over C; 44681 coefficient products.
+PASS: remaining pure-B sector also excluded by exact square/cube consequences; full pair30 excluded. 3.302s.

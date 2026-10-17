@@ -42,8 +42,9 @@ corrections can be replies. This is an organizational convention, not a
 response to a moderator complaint or spam warning. The ledger records
 publication history; its post count is not a measure of research quality.
 
-The current [eleven-family continuation](eleven-quartic.md) gives nine exact
-exclusions and two bounded failures, bringing selected coverage to 150/152.
-Families 17 and 151 are the next selected targets. Keep their unsuccessful
-quartic calculations available when choosing between higher-degree
-relations and the stricter shared-numerator equations.
+The [eleven-family continuation](eleven-quartic.md) gave nine exact exclusions
+and two bounded failures, bringing selected coverage to 150/152. The
+[shared-numerator follow-up](remaining-triples-shared.md) now excludes family
+17 and reduces family 151, giving 151/152. Keep the unsuccessful calculations
+available when choosing polynomial multipliers for the remaining family's
+shared-numerator equations.

@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "kind": "charts",
+      "number": 17,
+      "limit_seconds": 300
+    },
+    {
+      "kind": "charts",
+      "number": 151,
+      "limit_seconds": 300
+    },
+    {
+      "kind": "blocks",
+      "number": 17,
+      "limit_seconds": 60
+    },
+    {
+      "kind": "blocks",
+      "number": 151,
+      "limit_seconds": 60
+    }
+  ],
+  "workers": 2,
+  "source_sha256": "6fb3224ef9ad6dbb7a726d56b9c53ffa39ecdd10f2ba58fba320e7c521ad37b7",
+  "chart_search": "exact affine and square-zero propagation; no polynomial multiplier follow-up in this first pass",
+  "block_search": "pure complementary-character block, degrees five and six; all other characters unrestricted"
+}

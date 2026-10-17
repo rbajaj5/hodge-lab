@@ -10,12 +10,12 @@ import eleven_quartic as x
 e=x.e;q=x.q;c=x.c
 
 
-def pair30_binding(model,remaining):
+def pair30_binding(model,remaining,replay_directory=None):
     manifest=json.loads((e.ROOT/'references/fqlx-pair30.json').read_text())
     directory=e.ROOT/'work/upstream-pair30'
     for name,digest in manifest['sha256'].items():
         assert hashlib.sha256((directory/name).read_bytes()).hexdigest()==digest
-    replay=json.loads((x.OUT/'pair30/replay.json').read_text())
+    replay=json.loads(((x.OUT/'pair30' if replay_directory is None else replay_directory)/'replay.json').read_text())
     assert replay['status']=='PASS' and replay['revision']==manifest['revision']
     assert [r['script'] for r in replay['runs']]==['verify_pair30.py','audit_pair30_independent.py']
     assert all(r['exit_code']==0 for r in replay['runs'])
