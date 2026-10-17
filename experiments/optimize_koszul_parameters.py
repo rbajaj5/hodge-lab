@@ -226,10 +226,10 @@ def run(limit=None):
         report['families'].append(record);save(report,cases)
         print('DONE',family['number'],{k:(v['float_recheck']['score'],v['rounded_recheck']['score']) for k,v in record['finalists'].items()},
               'evaluations',len(record['optimizer_evaluations']),'seconds',round(record['seconds'],2),flush=True)
-    report['complete']=True;save(report,cases);check()
+    report['complete']=True;save(report,cases);check(write_reports=True)
 
 
-def check(independent=False,numerics=False):
+def check(independent=False,numerics=False,write_reports=False):
     assert not numerics or independent
     report=json.loads((OUT/'report.json').read_text(encoding='utf-8'))
     with gzip.open(OUT/'certificates.json.gz','rt',encoding='utf-8') as f:packet=json.load(f)
@@ -316,10 +316,16 @@ def check(independent=False,numerics=False):
             'rejected':sum(c['status']=='rejected' for c in packet['cases']),
             'independent_polynomial_api':independent,'correction_columns_checked':840*len(packet['cases'])}
     print(json.dumps(result),flush=True)
-    (OUT/('independent-validation.json' if independent else 'validation.json')).write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    # Verification must not replace archived floating-point results with a
+    # different platform's last-bit values before their hashes are checked.
+    if write_reports:
+        (OUT/('independent-validation.json' if independent else 'validation.json')).write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     if numerics:
         result['numerical_rechecks']=numerical_rechecks
-        (OUT/'numerical-validation.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+        print(json.dumps({'numerical_rechecks':len(numerical_rechecks),
+              'max_relative_score_difference':max(v['relative_score_difference'] for v in numerical_rechecks)}),flush=True)
+        if write_reports:
+            (OUT/'numerical-validation.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
 
 
 if __name__=='__main__':
@@ -327,7 +333,9 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check',action='store_true');parser.add_argument('--independent',action='store_true')
     parser.add_argument('--numerics',action='store_true',help='Recheck rounded scores with the independent polynomial assembly.')
+    parser.add_argument('--write-reports',action='store_true',help='Explicitly replace archived validation reports after checking.')
     parser.add_argument('--limit',type=int)
     args=parser.parse_args()
-    if args.check:check(args.independent,args.numerics)
+    if args.write_reports and not args.check:parser.error('--write-reports requires --check')
+    if args.check:check(args.independent,args.numerics,args.write_reports)
     else:run(args.limit)

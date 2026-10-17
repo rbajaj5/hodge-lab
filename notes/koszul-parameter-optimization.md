@@ -215,9 +215,17 @@ python experiments/optimize_koszul_parameters.py --check --independent --numeric
 python experiments/plot_parameter_optimization.py --check
 # Regenerate the bounded search and figure:
 python experiments/optimize_koszul_parameters.py
-python experiments/optimize_koszul_parameters.py --check --independent --numerics
+python experiments/optimize_koszul_parameters.py --check --independent --numerics --write-reports
 python experiments/plot_parameter_optimization.py
 ```
+
+Verification is read-only by default. Use `--write-reports` only when explicitly
+regenerating the archived validation outputs, then regenerate the summary.
+An earlier CI run failed because rechecking the numerical scores overwrote
+that archive before its hashes were compared. Floating-point recomputation
+can differ in the last bits across platforms while passing the numerical
+tolerance. The fix preserves the original record and still performs all
+exact pairings and numerical comparisons.
 
 [Full search history](../results/koszul-parameter-optimization/report.json),
 [exact packet](../results/koszul-parameter-optimization/certificates.json.gz),

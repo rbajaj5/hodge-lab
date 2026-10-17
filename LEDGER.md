@@ -407,6 +407,10 @@ conversations or evidence of an accepted solve.
     exclusion, phase transition, or imaginary-geometry identification. The
     user's current priority is visual understanding; no new upstream post
     was made and the tally remains six.
+    Publication checks exposed an earlier reporting bug: numeric verification
+    overwrote archived values before the figure checked their hashes. Check
+    mode now preserves those reports; replacing them requires an explicit
+    flag. The score tolerance and exact certificate checks are unchanged.
     [Explorer, interpretation, and checks](notes/koszul-parameter-optimization.md#interactive-view-of-character-concentration).
 
 ## Keeping this current
