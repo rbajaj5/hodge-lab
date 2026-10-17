@@ -117,9 +117,10 @@ the PNG/SVG figure. The proof packets, plans, bounded-attempt logs, validation
 reports, figure data, and five unsuccessful rebuilt charts are all retained in
 [`results/typed-rewrite-families/t100-rebuilt-multipliers`](../results/typed-rewrite-families/t100-rebuilt-multipliers/).
 
-At the time of this notebook record, no new upstream discussion post, pull
-request, Lean proof, accepted solve, or leaderboard credit is claimed. The
-upstream-contribution tally therefore remains unchanged.
+The checked result was subsequently shared as one reply to the existing T100
+thread: [discussion comment 19001784](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19001784).
+It is a mathematical-progress comment, not a pull request, Lean proof,
+accepted solve, or leaderboard claim.
 
 Prepared with OpenAI Codex assistance for rbajaj5. Credit the hodge.computer
 authors' certificate and geometric-support framework, the bridge attributed

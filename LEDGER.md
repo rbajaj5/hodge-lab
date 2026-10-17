@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Tally, checked against GitHub on 17 October 2026 (EDT):** 19 discussion contributions (fourteen top-level comments and five replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
+**Tally, checked against GitHub on 17 October 2026 (EDT):** 20 discussion contributions (fourteen top-level comments and six replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally.
 
 ## Posts
 
@@ -45,6 +45,8 @@ Our intent is to understand the fixed problems, share reproducible results and u
 18. **17 October 2026, 10:58 EDT / 14:58 UTC — [Holdout discussion #44: explicit T100 cubic identity and residual system](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000117).** Replied to contribution 17 with the displayed fifteen-product physical-equation identity for raw coefficient 56 cubed, exact equation/generator indices, and the twelve-direction residual support. Both physical reconstructions re-expanded the displayed identity exactly (1,075 coefficient products each). The reply specifies the missing multiplier block, all 128 remaining compatible corrections, and the two still-unresolved charts. It unpacks an existing checked reduction, adding no new family exclusion. The complete current thread and unchanged contribution policy were read; mathematical Markdown was previewed. Published author, complete body, permanent URL, and reply parent were read back and matched. [Receipt](results/typed-rewrite-families/followups/t100-detail.json).
 
 19. **17 October 2026, 10:58 EDT / 14:58 UTC — [Holdout discussion #44: exact character-projection argument](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000118).** Replied to contribution 17 with the direct-sum argument preserving finite coordinate-power membership when off-character rows are omitted. The reply links the checker, gives exact T3/T16 row counts, and distinguishes projected-only computations from completed full elimination. It clarifies stale review metadata: T3's full quartic attempt timed out, whereas T16's completed. The remote job had passed the family/T100 checks and primary comparison checker; remaining steps were running or pending. No full CI success, new family exclusion, speedup, or solve is claimed. The complete body, author, URL, and reply parent were independently read back and matched after a small math-formatting edit. [Receipt](results/typed-rewrite-families/followups/typed-projection.json), [CI snapshot](results/typed-rewrite-families/followups/ci-snapshot.json).
+
+20. **17 October 2026, 13:22 EDT / 17:22 UTC — [Reply to contribution 17: exact T100 exclusion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19001784).** Shared the rebuilt T100 result after checking that the thread was unlocked and contained no newer T100 solution. Starting from the previously published `a56=0`, the complete twelve-direction constant/linear multiplier pass yields 39 additional necessary relations. Exact degree-five identities force all five Y1 coefficients to vanish; rebuilt charts for raw 6 and 211 contradict, while five X0 chart failures remain recorded. The reproduced anchor dependency closes the residual sector, completing 132/132 in this fresh batch and raising the selected union to 812 triples. The reply links immutable commit `c50638e`, gives seven reproduction commands, reports two physical replays, and labels 36 three-prime rank comparisons as diagnostic rather than p-adic Hodge theory. It credits prior work and discloses Codex assistance. Holdout remains unsolved; no Lean proof, solve PR, improved unconditional degree bound, accepted solve, or leaderboard point is claimed. GitHub's Markdown renderer was inspected before publication. The published author, permanent URL, complete 4,159-character body, and reply parent were read back and matched exactly. [Publication receipt](results/typed-rewrite-families/t100-rebuilt-multipliers/upstream-post.json).
 
 ## Research intuition and experiments
 
@@ -848,8 +850,8 @@ conversations or evidence of an accepted solve.
     KZ/KPZ, and VC-complexity bridges as ideas not used by the proof. Added a
     data-bound visualization, complete bounded-attempt logs, and exact
     checkers. [Proof, figure, failures, and reproduction](notes/t100-rebuilt-exclusion.md).
-    No new upstream post, pull request, Lean proof, accepted solve, or
-    leaderboard point is counted; the contribution tally remains 19.
+    Shared the consolidated exact result as contribution 20 above. No pull
+    request, Lean proof, accepted solve, or leaderboard point is counted.
 
 ## Keeping this current
 
