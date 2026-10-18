@@ -9,8 +9,15 @@ URLs. The source copies also match the earlier notebook proposal archive.
 
 The required toolchain is final **Lean 4.33.0**, with mathlib commit
 `db584cd6d46c92f209a44c0f1c829460d327499d`. Lean 4.31 results and 4.33 release
-candidates do not satisfy this check. No 4.33 success is asserted until the
-new workflow produces a `PASS` receipt.
+candidates do not satisfy this check.
+
+**Status: PASS.** The [fresh Linux run](https://github.com/rbajaj5/hodge-lab/actions/runs/39084143971)
+completed both builds and replays, all five declaration audits, and both
+invalid-certificate controls. The exact
+[receipt](../../results/upstream433-ci/39084143971/validation.json) and
+[18 command logs](../../results/upstream433-ci/39084143971/metadata.json)
+are archived with verified source bindings. This is compatibility evidence
+for the draft PR, not an upstream acceptance decision.
 
 From a fresh checkout with Elan available:
 

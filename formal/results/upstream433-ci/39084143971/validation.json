@@ -1,0 +1,415 @@
+{
+  "schema": "hodge-lab-upstream-lean433-compatibility-v1",
+  "status": "PASS",
+  "upstream_proposal_head": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "modules": [
+    "HodgeTestbed.RowCertificate",
+    "HodgeTestbed.RowCertificateExample"
+  ],
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 46.399,
+      "log": "results/version.log",
+      "log_lf_sha256": "d16e16b7566b912216a87af2b6fc93bab30924c584826e7e8ab2e0785b2fb9e8"
+    },
+    {
+      "label": "dependency-cache",
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 600,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 43.78,
+      "log": "results/dependency-cache.log",
+      "log_lf_sha256": "1e9bb0974261e1cf770fe4ae6e4d86dfed9961285d673479923a89b26a0b7f98"
+    },
+    {
+      "label": "dependency-mathlib",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.002,
+      "log": "results/dependency-mathlib.log",
+      "log_lf_sha256": "076d2b7106570246bbf17ed01d37856c4be15aef549c823ddcd95e94559cc9dc"
+    },
+    {
+      "label": "dependency-plausible",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.001,
+      "log": "results/dependency-plausible.log",
+      "log_lf_sha256": "805ea619fc405904b6e9ac21504fad9d1b144b97838b0ea93a6c5bacf0f9d917"
+    },
+    {
+      "label": "dependency-LeanSearchClient",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.001,
+      "log": "results/dependency-LeanSearchClient.log",
+      "log_lf_sha256": "4d0336c7ba0fcd5eb2f72acfcbc62d27a785c823fdd5e7e21a77ed3f529ba9b8"
+    },
+    {
+      "label": "dependency-importGraph",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.001,
+      "log": "results/dependency-importGraph.log",
+      "log_lf_sha256": "1c21dc61032d91e32449c4295a2a30bf8c68c4b8d984bf0f46a73d53d180ce2e"
+    },
+    {
+      "label": "dependency-proofwidgets",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.006,
+      "log": "results/dependency-proofwidgets.log",
+      "log_lf_sha256": "d9c675d1d0b71316cbd8bced943dd9983f09a32dc9a229039acc3afdfe2375b6"
+    },
+    {
+      "label": "dependency-aesop",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.003,
+      "log": "results/dependency-aesop.log",
+      "log_lf_sha256": "4c072408d27377ff5b35ed2858b23f6f83466a241898fe2c4c4a215ba2128652"
+    },
+    {
+      "label": "dependency-Qq",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.001,
+      "log": "results/dependency-Qq.log",
+      "log_lf_sha256": "2d7411c117d0e100d30993222f71939f4200b1982179b5c8651c332382e48655"
+    },
+    {
+      "label": "dependency-batteries",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.001,
+      "log": "results/dependency-batteries.log",
+      "log_lf_sha256": "f11675294ae9a5b8bd697f96d60b337c9aa0ffa5ed7cc89b8acfd5103044b82d"
+    },
+    {
+      "label": "dependency-Cli",
+      "command": [
+        "git",
+        "-C",
+        "/home/runner/work/hodge-lab/hodge-lab/formal/compatibility/upstream433/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.001,
+      "log": "results/dependency-Cli.log",
+      "log_lf_sha256": "300616b42565e3af8371bcac27ec8e33232d8bd511b3abc74ce438ace7a7ed4b"
+    },
+    {
+      "label": "build-00",
+      "command": [
+        "lake",
+        "build",
+        "HodgeTestbed.RowCertificate"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 1.613,
+      "log": "results/build-00.log",
+      "log_lf_sha256": "1fdd17bb014554752fa940238c266460f5986dcbc695027e988c79a3dd9c9660",
+      "artifact_raw_sha256": {
+        ".lake/build/lib/lean/HodgeTestbed/RowCertificate.olean": "102001e85e5e8c3275e10d783236d1656682908af71405b0405f20d590a22950"
+      }
+    },
+    {
+      "label": "build-01",
+      "command": [
+        "lake",
+        "build",
+        "HodgeTestbed.RowCertificateExample"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 2.523,
+      "log": "results/build-01.log",
+      "log_lf_sha256": "ab9b997369273e57ad2320992db58988d5af399e650386f2c585e8db8973bc6a",
+      "artifact_raw_sha256": {
+        ".lake/build/lib/lean/HodgeTestbed/RowCertificateExample.olean": "5f3e51f2c3592627129b35b38d155061507708fa4fe8f7763f37ade27ea04a1f"
+      }
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 1.728,
+      "log": "results/axioms.log",
+      "log_lf_sha256": "fbea3028a7b1215b01d4fd291f38538ad1628a73d1e3ebb8bf41917a7f24399f"
+    },
+    {
+      "label": "kernel-00",
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "HodgeTestbed.RowCertificate"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 6.818,
+      "log": "results/kernel-00.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "artifact_raw_sha256": {
+        ".lake/build/lib/lean/HodgeTestbed/RowCertificate.olean": "102001e85e5e8c3275e10d783236d1656682908af71405b0405f20d590a22950"
+      }
+    },
+    {
+      "label": "kernel-01",
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "HodgeTestbed.RowCertificateExample"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": false,
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 6.845,
+      "log": "results/kernel-01.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "artifact_raw_sha256": {
+        ".lake/build/lib/lean/HodgeTestbed/RowCertificateExample.olean": "5f3e51f2c3592627129b35b38d155061507708fa4fe8f7763f37ade27ea04a1f"
+      }
+    },
+    {
+      "label": "negative-entry",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/compatibility-negative/entry.lean"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": true,
+      "status": "PASS",
+      "exit_code": 1,
+      "elapsed_seconds": 2.327,
+      "log": "results/negative-entry.log",
+      "log_lf_sha256": "db1475fcc97c2ba84c26caad7b5a0cec759b9dbad273a6817bd9dbd6c7ed1126",
+      "mutated_source_lf_sha256": "c3091fcd710a1149b870b38105c2c2a7dee8234cfb1d568fb640a5c5988ee778"
+    },
+    {
+      "label": "negative-target",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/compatibility-negative/target.lean"
+      ],
+      "cwd": "formal/compatibility/upstream433",
+      "bound_seconds": 300,
+      "expected_failure": true,
+      "status": "PASS",
+      "exit_code": 1,
+      "elapsed_seconds": 2.218,
+      "log": "results/negative-target.log",
+      "log_lf_sha256": "73e843bc2879ebe4c708171c6827c9fa20a2b8486e9e385e935cd58ac1c97922",
+      "mutated_source_lf_sha256": "802a615c0a71c2a0ae7ea81e64442e3787e51ad5dbd1363049e96da8f8cb5127"
+    }
+  ],
+  "negative_controls": [
+    {
+      "label": "entry",
+      "command_label": "negative-entry",
+      "before": "| 1, 119 => -756",
+      "after": "| 1, 119 => -755",
+      "mutated_source_lf_sha256": "c3091fcd710a1149b870b38105c2c2a7dee8234cfb1d568fb640a5c5988ee778"
+    },
+    {
+      "label": "target",
+      "command_label": "negative-target",
+      "before": "| 1 => -5",
+      "after": "| 1 => 0",
+      "mutated_source_lf_sha256": "802a615c0a71c2a0ae7ea81e64442e3787e51ad5dbd1363049e96da8f8cb5127"
+    }
+  ],
+  "scope": "Only the two exact proposed maintenance modules: generic finite-row obstruction and literal mixed case05 over characteristic-zero fields. No full-upstream build, polynomial-to-row formalization, or HasCertificate claim.",
+  "replay_scope": "Official leanchecker default replay of each target module, sequentially; imported dependencies are trusted, not recursively replayed with --fresh.",
+  "source_lf_sha256": {
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a6dedaa688411e2bbccf6a8a16524b1026a7dfc57ed53067fbec41e555ec5551",
+    "lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+    "HodgeTestbed/RowCertificate.lean": "4282fbc32a9faabf9a4c7c98df88ae458e7a5c22bb189086c26c290ac74aff96",
+    "HodgeTestbed/RowCertificateExample.lean": "3580b40fda29371e78e844f4b67cb57f19e7df60be0f22b4c20a8233624a54c5",
+    "bindings.json": "80987164466596dd78b6dc0247962f7ad9e3e35e916fe7c83f0bdd7a3a6fedf6",
+    "Audit.lean": "97098e3be90773c0e55d76d7fdac10dadaa0405d55baf7c89eb4e9d8b5196379",
+    "check.py": "742049f2915b756889dad8b1a8f227b1cdf68d2b04651b51eeea23db23ec2b23"
+  },
+  "proposal_source_lf_sha256": {
+    "results/cyclic-fano-lean/upstream-maintenance/source/HodgeTestbed/RowCertificate.lean": "4282fbc32a9faabf9a4c7c98df88ae458e7a5c22bb189086c26c290ac74aff96",
+    "results/cyclic-fano-lean/upstream-maintenance/source/HodgeTestbed/RowCertificateExample.lean": "3580b40fda29371e78e844f4b67cb57f19e7df60be0f22b4c20a8233624a54c5"
+  },
+  "workflow_lf_sha256": "d54217b70665c70c142813ccf4c740e7ef5185925db8701b4c38dd68cffaa4fa",
+  "github_run_id": "39084143971",
+  "github_sha": "ff4f1c42a5b997d9a325cdd88e5b9360a4a91f43",
+  "lean_version": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)\ninfo: downloading https://releases.lean-lang.org/lean4/v4.33.0/lean-4.33.0-linux.tar.zst\ninfo: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.33.0\ninfo: mathlib: cloning https://github.com/leanprover-community/mathlib4.git\ninfo: mathlib: checking out revision 'db584cd6d46c92f209a44c0f1c829460d327499d'\ninfo: plausible: cloning https://github.com/leanprover-community/plausible\ninfo: plausible: checking out revision 'b7eb3304aeae834b12dda98993a37f6a41f6f0bb'\ninfo: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient\ninfo: LeanSearchClient: checking out revision '5f4d51b81cbd3f6b32b156bfad9056621a040404'\ninfo: importGraph: cloning https://github.com/leanprover-community/import-graph\ninfo: importGraph: checking out revision '16f02aa7642864af59f1ff0e384a015994db9118'\ninfo: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4\ninfo: proofwidgets: checking out revision '4be2e3d5087eeb272cf5a8853b8f9dd025ef5957'\ninfo: aesop: cloning https://github.com/leanprover-community/aesop\ninfo: aesop: checking out revision '3448c0bcc5ce01b2d1546e483ec3620e32df3d0e'\ninfo: Qq: cloning https://github.com/leanprover-community/quote4\ninfo: Qq: checking out revision '92c15be17b7caf78c2ad767ec40f89052d908d81'\ninfo: batteries: cloning https://github.com/leanprover-community/batteries\ninfo: batteries: checking out revision '4488d40d070b9700d4d5a6aa342f0d40c31b2a2d'\ninfo: Cli: cloning https://github.com/leanprover/lean4-cli\ninfo: Cli: checking out revision '6130a47896ce867c6a4a55373441e59e565bad0f'",
+  "dependency_commits": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "theorem_axioms": {
+    "HodgeTestbed.no_solution_of_row_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.no_solution_of_integer_row_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.RowCertificateExample.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.RowCertificateExample.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.RowCertificateExample.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "kernel_replay": "PASS",
+  "negative_control_count": 2,
+  "theorems_audited": 5
+}

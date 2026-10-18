@@ -1,0 +1,45 @@
+{
+  "schema": "hodge-lab-archived-upstream433-ci-v1",
+  "run": {
+    "id": 39084143971,
+    "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39084143971",
+    "head_sha": "ff4f1c42a5b997d9a325cdd88e5b9360a4a91f43",
+    "event": "workflow_dispatch",
+    "run_attempt": 1,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T00:48:45Z",
+    "updated_at": "2026-10-18T00:50:54Z"
+  },
+  "artifact": {
+    "id": 12119762831,
+    "name": "upstream-lean433-compatibility",
+    "github_reported_archive_digest": "sha256:ba9677280e308eb16c9946bcfbe98142a8c2df33d1fa255fa4298cd3d4397f0a",
+    "size_in_bytes": 8448,
+    "created_at": "2026-10-18T00:50:52Z"
+  },
+  "retrieval": "gh run download; run and artifact metadata independently read through GitHub API",
+  "file_lf_sha256": {
+    "axioms.log": "fbea3028a7b1215b01d4fd291f38538ad1628a73d1e3ebb8bf41917a7f24399f",
+    "build-00.log": "1fdd17bb014554752fa940238c266460f5986dcbc695027e988c79a3dd9c9660",
+    "build-01.log": "ab9b997369273e57ad2320992db58988d5af399e650386f2c585e8db8973bc6a",
+    "dependency-Cli.log": "300616b42565e3af8371bcac27ec8e33232d8bd511b3abc74ce438ace7a7ed4b",
+    "dependency-LeanSearchClient.log": "4d0336c7ba0fcd5eb2f72acfcbc62d27a785c823fdd5e7e21a77ed3f529ba9b8",
+    "dependency-Qq.log": "2d7411c117d0e100d30993222f71939f4200b1982179b5c8651c332382e48655",
+    "dependency-aesop.log": "4c072408d27377ff5b35ed2858b23f6f83466a241898fe2c4c4a215ba2128652",
+    "dependency-batteries.log": "f11675294ae9a5b8bd697f96d60b337c9aa0ffa5ed7cc89b8acfd5103044b82d",
+    "dependency-cache.log": "1e9bb0974261e1cf770fe4ae6e4d86dfed9961285d673479923a89b26a0b7f98",
+    "dependency-importGraph.log": "1c21dc61032d91e32449c4295a2a30bf8c68c4b8d984bf0f46a73d53d180ce2e",
+    "dependency-mathlib.log": "076d2b7106570246bbf17ed01d37856c4be15aef549c823ddcd95e94559cc9dc",
+    "dependency-plausible.log": "805ea619fc405904b6e9ac21504fad9d1b144b97838b0ea93a6c5bacf0f9d917",
+    "dependency-proofwidgets.log": "d9c675d1d0b71316cbd8bced943dd9983f09a32dc9a229039acc3afdfe2375b6",
+    "kernel-00.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kernel-01.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "negative-entry.log": "db1475fcc97c2ba84c26caad7b5a0cec759b9dbad273a6817bd9dbd6c7ed1126",
+    "negative-target.log": "73e843bc2879ebe4c708171c6827c9fa20a2b8486e9e385e935cd58ac1c97922",
+    "validation.json": "bbe552a11b65eaf194a444cfeab9290838e0418d09dff2b2a4aea52d34d74dd3",
+    "version.log": "d16e16b7566b912216a87af2b6fc93bab30924c584826e7e8ab2e0785b2fb9e8"
+  },
+  "upstream_proposal_head": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "scope": "Compatibility of the two exact proposed files under upstream Lean4.33.0 and pinned dependencies. Not protected upstream acceptance, a whole-repository build, or HasCertificate."
+}

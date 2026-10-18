@@ -2048,6 +2048,40 @@ conversations or evidence of an accepted solve.
     check or acceptance is inferred from that status. The contribution
     tally remains 24 discussion posts and one draft maintenance PR.
 
+    **Publication checkpoint:** the completed audit, updated proof map,
+    archived logs, and separate compatibility checker were pushed as
+    [`ff4f1c4`](https://github.com/rbajaj5/hodge-lab/commit/ff4f1c42a5b997d9a325cdd88e5b9360a4a91f43).
+    The live GitHub proof map and PASS text were inspected.
+
+82. **17 October 2026, 20:50 EDT — Exact upstream Lean 4.33 compatibility passes.**
+    [Own-repository CI run 39084143971](https://github.com/rbajaj5/hodge-lab/actions/runs/39084143971)
+    tested the exact two files proposed at PR head
+    `84b1c1584b7615ec7189e896df2734a0833e84e1`, with upstream's copied
+    toolchain, Lake configuration and dependency manifest. Final Lean
+    4.33.0 ran, rather than a release candidate; all nine dependency
+    commits match the pins. Both modules compiled and passed sequential
+    official kernel replay, all five expected theorem reports used only
+    the allowed standard axioms, and both altered certificates failed
+    on their false arithmetic propositions.
+
+    [Archived receipt and logs](formal/results/upstream433-ci/39084143971/metadata.json).
+    A separate audit checked all eight source bindings, both proposal
+    source bindings, all eighteen command logs, and the recorded
+    build/replay artifact-part hashes. The copied inputs were also
+    compared directly with the PR commit. Both mutated source hashes
+    were reconstructed. The nineteen archived receipt/log files match
+    the download byte for byte. Compiled binaries were not uploaded,
+    so their recorded hash consistency is not an independent byte audit.
+
+    This is compatibility of two maintenance modules, not a build of
+    every upstream module, a protected upstream acceptance decision,
+    a new exclusion, or a `HasCertificate` proof. The original notebook
+    environment remains Lean 4.31.0. The initial Windows input scanner's
+    Unicode decoding failure was repaired before CI and retained in
+    [the setup record](formal/compatibility/upstream433/development.json).
+    No discussion comment or new PR belongs to this batch; the existing
+    draft PR's validation description will be updated with this evidence.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

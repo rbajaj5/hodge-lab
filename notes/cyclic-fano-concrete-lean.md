@@ -181,9 +181,15 @@ The smaller two-file upstream maintenance proposal was checked separately:
 both exact proposed modules compiled, all five axiom reports passed, and
 the official replay routine completed for both modules under Lean 4.31.0.
 Its [receipt and command logs](../results/cyclic-fano-lean/upstream-maintenance/receipt.json)
-bind the actual proposed source files. Upstream's pinned Lean 4.33.0
-environment remains untested; the proposal is a draft, not an accepted
-solution or a claim of target-toolchain compatibility.
+bind the actual proposed source files. A later isolated
+[Linux run](https://github.com/rbajaj5/hodge-lab/actions/runs/39084143971)
+also checks those exact two files against upstream's final Lean 4.33.0
+and all nine pinned dependencies. Both modules compile and replay, all
+five declaration reports pass, and both altered-certificate controls are
+rejected. The [source-bound receipt and logs](../formal/results/upstream433-ci/39084143971/metadata.json)
+were downloaded and independently audited. This establishes compatibility
+of those two maintenance modules; the PR remains a draft, with no protected
+upstream acceptance or `HasCertificate` proof claimed.
 
 The [development record](../formal/results/concrete-development.json)
 retains the failure and subsequent outcome. The comparison with the older

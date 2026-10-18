@@ -126,9 +126,10 @@ the contradiction hypothesis the two spans are literally equal, hence their
 
 This standalone notebook project pins Lean **4.31.0** and mathlib commit
 `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`. It uses the already available local
-cache. The upstream challenge currently pins Lean 4.33.0 and a different mathlib
-commit; compatibility with that environment has not been tested. Nothing here
-changes upstream formal files.
+cache. The upstream challenge pins Lean 4.33.0 and a different mathlib commit.
+The two proposed maintenance modules now also pass the isolated upstream
+compatibility audit described below. This does not migrate or validate all
+sixteen notebook cases under that newer toolchain.
 
 With Elan installed, run from `formal/`:
 
@@ -171,6 +172,17 @@ python3 formal/compatibility/upstream433/check.py --fetch-cache
 The separate `Upstream Lean 4.33 compatibility` workflow runs this same
 command. Its result must be read separately from the notebook's Lean
 4.31.0 audit and from any protected upstream acceptance decision.
+
+**Upstream-toolchain compatibility: PASS.**
+[Run 39084143971](https://github.com/rbajaj5/hodge-lab/actions/runs/39084143971)
+completed on final Lean 4.33.0 with all nine pinned dependencies. Both
+exact proposed modules compiled and replayed, all five axiom reports
+passed, and both altered certificates were rejected. The downloaded
+[receipt](results/upstream433-ci/39084143971/validation.json) and
+[all 18 command logs](results/upstream433-ci/39084143971/metadata.json)
+were independently checked against PR head `84b1c158` and the tested
+notebook commit. PR #121 remains a draft for maintainer review; this is
+our compatibility CI, not protected upstream acceptance.
 
 The Lean workflow uploads its actual receipts and command logs as
 `concrete-lean-verification`, including diagnostic logs on failure.

@@ -82,6 +82,8 @@ remains open.
 were rejected. The earlier local timeout remains recorded.
 [Actual receipt and logs](formal/results/concrete-ci/39082400121/metadata.json)
 · [CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121).
+The two-file upstream helper also passes the separate
+[Lean 4.33 compatibility audit](formal/compatibility/upstream433/README.md).
 
 [Concrete Lean source](formal/HodgeLab/CyclicFano/Case05.lean)
 · [Reusable row-certificate lemmas](formal/HodgeLab/RowCertificate.lean)
