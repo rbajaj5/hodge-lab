@@ -62,6 +62,28 @@ eleven are fixed mixed candidates. The full 175-parameter family remains open.**
 
 ## Lean proof map
 
+[![Polynomial operators, two selected coefficient rows, and their contradiction for the existing Case05 obstruction](results/cyclic-fano-polynomial-bridge-figures/polynomial-bridge.png)](notes/cyclic-fano-polynomial-bridge.md)
+
+**Case05 now starts from polynomial operations.** The new Lean code constructs
+the discriminant, fixed denominator and all 175 correction polynomials,
+then checks 352 coefficients to recover the two-row contradiction below.
+Its statement applies over every characteristic-zero field. This formalizes
+one previously excluded candidate; it does not add a new exclusion.
+
+**Polynomial-bridge audit: PASS on fresh Linux CI.** Five modules built
+and replayed, 30 declaration audits passed, and both altered-input tests
+passed, including separate proofs that their altered equations are false.
+[Actual receipt and logs](formal/results/polynomial-bridge-ci/39089131101/metadata.json)
+· [CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39089131101).
+
+[Polynomial bridge, checks and failed attempts](notes/cyclic-fano-polynomial-bridge.md)
+· [Polynomial source](formal/HodgeLab/CyclicFano/Case05Polynomial.lean)
+· [Extension to characteristic-zero fields](formal/HodgeLab/CyclicFano/Case05PolynomialField.lean).
+
+The original instance-to-model identification and completeness of the
+normalized numerator/correction space remain outside Lean. The full
+cyclic-Fano family remains open, and no `HasCertificate` is claimed.
+
 [![The actual two-row cyclic-Fano matrix, its integer row functional, and the concrete Lean verification boundary](results/cyclic-fano-lean-figures/concrete-lean.png)](notes/cyclic-fano-concrete-lean.md)
 
 **From assumed rank bounds to literal matrix coefficients.** The new Lean
@@ -72,12 +94,13 @@ For the first mixed example, the equations are simply `x₁₁₉ = 0` and
 
 The concrete theorems have no rank-bound hypotheses and apply over every
 characteristic-zero field. Python independently reconstructs the rows
-from the polynomial equations and compares them with the Lean literals;
-that source-to-matrix correspondence remains outside Lean. These are
+from the polynomial equations and compares them with the Lean literals.
+The new polynomial bridge covers Case05; for the other fifteen cases,
+that polynomial-to-matrix correspondence remains outside Lean. These are
 formal checks of previously excluded fixed candidates. The full family
 remains open.
 
-**Full Lean audit: PASS on fresh Linux CI.** All 17 modules replayed,
+**Sixteen-case literal-matrix audit: PASS on fresh Linux CI.** All 17 modules replayed,
 50 declaration audits passed, and both deliberately corrupted certificates
 were rejected. The earlier local timeout remains recorded.
 [Actual receipt and logs](formal/results/concrete-ci/39082400121/metadata.json)

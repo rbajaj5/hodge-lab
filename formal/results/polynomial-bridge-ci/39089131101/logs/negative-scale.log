@@ -1,0 +1,33 @@
+/home/runner/work/hodge-lab/hodge-lab/formal/.lake/polynomial-bridge-negative/scale.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨119, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨119, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨119, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨119, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+Reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨119, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨119, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+/home/runner/work/hodge-lab/hodge-lab/formal/.lake/polynomial-bridge-negative/scale.lean:320:32: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_assoc, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,279 @@
+{
+  "schema": "cyclic-fano-polynomial-bridge-independent-v1",
+  "status": "PASS",
+  "projected_coefficient_audit": {
+    "status": "PASS",
+    "physical_coefficients": 352,
+    "correction_columns": 175,
+    "particular_weighted_E1_identity": true,
+    "particular_original_E1_identity": true,
+    "particular_Piola_E2_identity": true,
+    "only_nonzero_column": 119,
+    "exact_unscaled_rows": [
+      "2400/49",
+      "-1440/7"
+    ],
+    "exact_unscaled_target": [
+      "0",
+      "-200/147"
+    ],
+    "integer_target_pairing": -5
+  },
+  "raw_next_step_evidence": {
+    "status": "PASS",
+    "functional": [
+      {
+        "powers": [
+          0,
+          0,
+          1,
+          5,
+          1,
+          5
+        ],
+        "coefficient": "-25/14"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          1,
+          6,
+          0,
+          5
+        ],
+        "coefficient": "-15/2"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          3,
+          0,
+          0,
+          5
+        ],
+        "coefficient": "45/2"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0,
+          7,
+          1,
+          5
+        ],
+        "coefficient": "21"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          5
+        ],
+        "coefficient": "-21"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          0,
+          5,
+          2,
+          6
+        ],
+        "coefficient": "5"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          2,
+          5,
+          2,
+          0
+        ],
+        "coefficient": "-5"
+      }
+    ],
+    "functional_support": 7,
+    "raw_Koszul_columns": 525,
+    "retained_projection_types": 175,
+    "quotient_columns": 636,
+    "target_pairing": "-1000/147",
+    "projection": "Half trace after reduction modulo G, applied after differentiation",
+    "scope": "Additional independent exact Python check, not part of the Lean theorem. This does not formalize regular-sequence completeness, Euler normalization or Piola transfer."
+  },
+  "altered_inputs_rejected": [
+    "entry",
+    "target",
+    "scale",
+    "monomial",
+    "dual",
+    "column_count",
+    "missing_mixed_multiplier_derivative",
+    "residual_sign",
+    "missing_E1_component",
+    "source_coefficient",
+    "source_direction",
+    "source_row_scale",
+    "source_correction_label",
+    "source_mixed_derivative",
+    "source_sparse_derivative",
+    "source_sparse_derivative_filter",
+    "source_sparse_coefficient_branch",
+    "source_coefficient_semantic_statement",
+    "source_scalar_extension_target"
+  ],
+  "source_lf_sha256": {
+    "experiments/check_cyclic_fano_polynomial_bridge.py": "4810b5d3a7242e9e889b1eaee4336b78f3af940161f7ebdbfaf67d3ef55a7c20",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "results/cyclic-fano-lean/case-05.json": "903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c",
+    "experiments/check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "experiments/check_cyclic_fano_cubic_polars.py": "e2b768adaae6ad97345110cfd65114f3c645f348d34c051d3ea215e321ae2453",
+    "experiments/check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "experiments/check_cyclic_fano_lean.py": "6310ce44d138a3e7b76b5a3670af9efc5e6712b55f753fedd9be20204316f7e8",
+    "experiments/check_cyclic_fano_linear_polars.py": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+    "formal/generate_polynomial_bridge.py": "4e651d608f66aa94933e89ca2fa8b86406a37f10cc9a103e9a2235dff697873c",
+    "formal/HodgeLab/CyclicFano/Case05.lean": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884",
+    "formal/HodgeLab/CyclicFano/Case05Polynomial.lean": "b279007cb6667ef52cc2718c708effffee5596e154b265d70968c557f0f08c1d",
+    "formal/HodgeLab/CyclicFano/Case05PolynomialField.lean": "2a0733ff74011ddaff87bffbcb7cecf2f766607a9441e98dc8c9a7274e428c41",
+    "formal/HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "formal/HodgeLab/SparsePolynomial.lean": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+    "formal/results/polynomial-bridge-export.json": "fe856ce695a0d0bffab3b911f4a772f234f4a36750dd33dc59043becae9479ae"
+  },
+  "elapsed_seconds": 1.351,
+  "lean_source_audit": {
+    "status": "PASS",
+    "literal_polynomials": 5,
+    "operational_definitions": 12,
+    "correction_labels": 175,
+    "base_variable_order": [
+      "X0",
+      "X1",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "method": "Parse literal polynomials and all correction labels; match each computational expression to an independently reconstructed polynomial operation. Lean execution is separate."
+  },
+  "sparse_operation_audit": {
+    "status": "PASS",
+    "representation": "Finite lists interpreted in MvPolynomial (Fin 5) Q",
+    "checked_computational_operations": [
+      "exponent",
+      "scale",
+      "subtract",
+      "multiply",
+      "derivative",
+      "eval",
+      "coefficient"
+    ],
+    "semantic_lemmas": [
+      "coefficient_eval",
+      "eval_append",
+      "eval_scale",
+      "eval_subtract",
+      "eval_multiply",
+      "eval_derivative"
+    ],
+    "scope": "Operation definitions and proof statements reviewed; compilation and kernel replay are established only by the separate Lean receipt."
+  },
+  "finite_matrix_literal_audit": {
+    "status": "PASS",
+    "encoded_rows": 2,
+    "encoded_columns": 175,
+    "encoded_dual": [
+      756,
+      1
+    ],
+    "encoded_target": [
+      0,
+      -5
+    ]
+  },
+  "field_extension_audit": {
+    "status": "PASS",
+    "theorem": "HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution_over",
+    "field_scope": "Every characteristic-zero field K; coefficients c are scalar elements of K.",
+    "scalar_extension": "MvPolynomial.map (Rat.castHom K) of the explicitly computed rational polynomials.",
+    "checked_statements": [
+      "column_coefficients_over",
+      "target_coefficients_over",
+      "polynomial_equation_implies_matrix_over",
+      "no_polynomial_solution_over",
+      "no_polynomial_solution"
+    ],
+    "boundary": "This is an explicit 175-operator polynomial equation obstruction. General certificate normalization, correction-space completeness, and quotient/Piola transfer remain outside these Lean statements."
+  },
+  "lean_negative_control_expectations": {
+    "status": "PASS",
+    "controls": [
+      {
+        "label": "scale",
+        "row": 0,
+        "column": 119,
+        "changed_left_side": "2400/2401",
+        "expected_right_side": "1"
+      },
+      {
+        "label": "density",
+        "row": 1,
+        "target": true,
+        "changed_left_side": "-15/4",
+        "expected_right_side": "-5"
+      }
+    ],
+    "scope": "Exact falsity of the two mutated coefficient equalities. Actual Lean rejection and its diagnostic wording belong to the separate compiler receipt."
+  },
+  "formal_export_manifest_audit": {
+    "status": "PASS",
+    "modules": [
+      "HodgeLab.RowCertificate",
+      "HodgeLab.CyclicFano.Case05",
+      "HodgeLab.SparsePolynomial",
+      "HodgeLab.CyclicFano.Case05Polynomial",
+      "HodgeLab.CyclicFano.Case05PolynomialField"
+    ],
+    "theorem_names": [
+      "HodgeLab.no_solution_of_row_certificate",
+      "HodgeLab.no_solution_of_integer_row_certificate",
+      "HodgeLab.CyclicFano.Case05.annihilates",
+      "HodgeLab.CyclicFano.Case05.separates",
+      "HodgeLab.CyclicFano.Case05.no_solution",
+      "HodgeLab.SparsePolynomial.exponent_apply",
+      "HodgeLab.SparsePolynomial.exponent_eq",
+      "HodgeLab.SparsePolynomial.exponent_add",
+      "HodgeLab.SparsePolynomial.exponent_sub",
+      "HodgeLab.SparsePolynomial.eval_append",
+      "HodgeLab.SparsePolynomial.coefficient_eval",
+      "HodgeLab.SparsePolynomial.eval_scale",
+      "HodgeLab.SparsePolynomial.eval_subtract",
+      "HodgeLab.SparsePolynomial.eval_monomial_product",
+      "HodgeLab.SparsePolynomial.eval_multiply",
+      "HodgeLab.SparsePolynomial.eval_derivative",
+      "HodgeLab.CyclicFano.Case05Polynomial.computed_column_coefficients",
+      "HodgeLab.CyclicFano.Case05Polynomial.computed_target_coefficients",
+      "HodgeLab.CyclicFano.Case05Polynomial.column_coefficients",
+      "HodgeLab.CyclicFano.Case05Polynomial.target_coefficients",
+      "HodgeLab.CyclicFano.Case05Polynomial.delta_formula",
+      "HodgeLab.CyclicFano.Case05Polynomial.denominator_formula",
+      "HodgeLab.CyclicFano.Case05Polynomial.rhs_formula",
+      "HodgeLab.CyclicFano.Case05Polynomial.column_formula",
+      "HodgeLab.CyclicFano.Case05Polynomial.polynomial_equation_implies_matrix",
+      "HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution",
+      "HodgeLab.CyclicFano.Case05Polynomial.column_coefficients_over",
+      "HodgeLab.CyclicFano.Case05Polynomial.target_coefficients_over",
+      "HodgeLab.CyclicFano.Case05Polynomial.polynomial_equation_implies_matrix_over",
+      "HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution_over"
+    ],
+    "source_bindings": 15,
+    "scope": "Hashes and theorem/definition scope checked here. Lean compilation and kernel replay require the separate formal receipt."
+  },
+  "lean_execution_claimed": false
+}

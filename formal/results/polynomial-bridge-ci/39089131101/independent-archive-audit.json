@@ -1,0 +1,59 @@
+{
+  "schema": "hodge-lab-polynomial-bridge-ci-independent-audit-v1",
+  "status": "PASS",
+  "run_id": 39089131101,
+  "tested_commit": "b96230ed63911e7bf4b23d31e85e86d9a42fe347",
+  "archive_metadata_raw_sha256": "ac994fd339cc0033e9ff33dad4de4c274cac649838ed999c404c6e34866de9da",
+  "formal_receipt_raw_sha256": "44a369ba10018b8bb156ba9e2667c50ebf32add12e6ab46f9311f4f0507bd40e",
+  "independent_receipt_raw_sha256": "7356871f54c2e5c9e47c11ab59413226a597963589e8b9e352a6fdff0b2c3460",
+  "downloaded_files_byte_identical": 28,
+  "formal_source_bindings_matched_to_commit": 20,
+  "independent_source_bindings_matched_to_commit": 16,
+  "distinct_source_bindings_matched_to_commit": 21,
+  "command_logs_checked": 26,
+  "pinned_dependency_commits": 9,
+  "modules_built_and_replayed": 5,
+  "main_declaration_reports": 30,
+  "positive_negation_declaration_reports": 2,
+  "mutation_controls": [
+    {
+      "label": "scale",
+      "positive_negation_compiled": true,
+      "altered_full_module_exit_code": 1,
+      "rejection_diagnostic": "Decision reduction failed; falsity established by separately compiled negation."
+    },
+    {
+      "label": "density",
+      "positive_negation_compiled": true,
+      "altered_full_module_exit_code": 1,
+      "rejection_diagnostic": "Decision reduction failed; falsity established by separately compiled negation."
+    }
+  ],
+  "build_replay_artifact_pairs": {
+    "HodgeLab.RowCertificate": {
+      ".lake/build/lib/lean/HodgeLab/RowCertificate.olean": "ccba8a9bff376389ab74e57265fa9841386bd58b52958bc079c1fad94a7a9218"
+    },
+    "HodgeLab.CyclicFano.Case05": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05.olean": "c98015046e583b26e4b24aa15a4010296030cb77c96255a43e1131afd79abb6c"
+    },
+    "HodgeLab.SparsePolynomial": {
+      ".lake/build/lib/lean/HodgeLab/SparsePolynomial.olean": "f55d769733e9e311802bee7c05e23150dae257a275977051161403a68dfe64e2"
+    },
+    "HodgeLab.CyclicFano.Case05Polynomial": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05Polynomial.olean": "9cfec4f5ef06a14886e39460b14ae8fe282dc4ce11281070c2320a799348fd5c"
+    },
+    "HodgeLab.CyclicFano.Case05PolynomialField": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05PolynomialField.olean": "c5d9089ae76f384dc49d27605426c94296f06d9b7c9d8e060c715a5c6b582236"
+    }
+  },
+  "kernel_elapsed_seconds": 87.371,
+  "source_model_reconstruction_controls": 19,
+  "limitations": [
+    "Compiled binaries were not downloaded; recorded build/replay artifact hashes agree but were not rehashed from binary files.",
+    "Official replay trusts the imported environment; this is not a fresh replay of mathlib or a second kernel.",
+    "The formal result excludes the explicit Case05 projected polynomial equation over every characteristic-zero field.",
+    "Fixed-source identification, completeness for arbitrary normalized numerators, and quotient/Piola transport remain outside Lean.",
+    "The525 raw Koszul and636 quotient-column checks remain exact Python evidence; no HasCertificate or new denominator exclusion is claimed."
+  ],
+  "issues": []
+}

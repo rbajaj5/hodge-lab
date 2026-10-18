@@ -1,5 +1,10 @@
 # From a GPU rank gap to a concrete Lean obstruction
 
+**Continuation:** the [Case05 polynomial bridge](cyclic-fano-polynomial-bridge.md)
+now formalizes the polynomial-to-matrix step for this one fixed candidate.
+This note retains the original sixteen-case literal-matrix audit and its
+limits; the new work does not change those sources or add a new exclusion.
+
 The [cubic-direction experiment](cyclic-fano-cubic-polars.md) tested sixteen
 fixed denominators for `cyclic-triple-fano`. Its rational correction matrix
 has 175 columns. The GPU found a rank gap modulo 65,521, and the separate
@@ -217,9 +222,11 @@ nonzero target pairing; an imported claim of success is insufficient.
 The separate Python reconstruction checks that the exported integer
 coefficients really are scaled rows of the polynomial correction system,
 with the target, denominator direction, row monomials, and all correction
-columns fixed. Until that reconstruction is formalized too, the Lean
-theorem is about the literal exported matrices. This boundary remains
-visible in the documentation and figure.
+columns fixed. For the other fifteen cases, that reconstruction is still
+outside Lean, and their theorems concern the literal exported matrices.
+The new Case05 continuation formally connects its displayed polynomial
+operators to the matrix; the geometric completeness boundary remains.
+The original figure records the earlier literal-matrix stage.
 
 The sixteen directions are a finite sample already excluded by the
 preceding exact calculation. Formalizing their certificates strengthens

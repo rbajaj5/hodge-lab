@@ -1,22 +1,59 @@
 # Lean proofs for the rank shortcut and concrete obstructions
 
-The notebook has two stages of formalization. The original rank-gap theorem
+The notebook has three stages of formalization. The original rank-gap theorem
 accepts dimension bounds as hypotheses. The new concrete project encodes
 integer coefficient rows for all sixteen fixed cubic-direction candidates
 and checks a separating row functional for each one. Its final theorems
 have **no rank-bound hypotheses**: they rule out solutions to the literal
-encoded equations over every characteristic-zero field.
+encoded equations over every characteristic-zero field. The latest stage
+constructs the polynomial operators for Case05 and proves that their
+selected coefficients give the existing matrix.
 
 [Concrete experiment and limits](../notes/cyclic-fano-concrete-lean.md)
 · [Concrete proof visualization](../results/cyclic-fano-lean-figures/concrete-lean.png)
 · [Case 05 source](HodgeLab/CyclicFano/Case05.lean)
 · [Reusable row-certificate lemmas](HodgeLab/RowCertificate.lean).
 
-The polynomial-to-matrix reconstruction and completeness of the correction
-space remain independently checked in Python. The Lean theorems do not
-establish that geometric correspondence or `HodgeComputer.HasCertificate`.
+For Case05, the polynomial-to-matrix step is now formalized in Lean. For the
+other fifteen cases, it remains an independent Python check. Identification
+with the original geometric problem and completeness of the correction
+space remain outside the Lean theorems. No `HodgeComputer.HasCertificate`
+is established.
 They also do not compute the exact ranks 150 and 151: an exact row
 obstruction is enough to prove the required inconsistency.
+
+## Case05 polynomial-to-matrix bridge
+
+[`SparsePolynomial.lean`](HodgeLab/SparsePolynomial.lean) proves that finite
+list operations for scaling, multiplication, differentiation and coefficient
+extraction agree with mathlib's `MvPolynomial` operations. The
+[`Case05Polynomial` module](HodgeLab/CyclicFano/Case05Polynomial.lean) constructs
+the fixed denominator and 175 correction polynomials from the displayed
+`Q`, `H` and density. Lean computes the 352 selected coefficients using
+kernel reduction and derives the original matrix equation.
+
+[`Case05PolynomialField`](HodgeLab/CyclicFano/Case05PolynomialField.lean)
+maps rational coefficients into any characteristic-zero field and proves
+the corresponding polynomial equation has no solution. This strengthens
+the formal verification of an existing fixed exclusion; it is not a new
+denominator search or a proof of correction-space completeness.
+
+[Full derivation and reproduction](../notes/cyclic-fano-polynomial-bridge.md)
+· [New proof diagram](../results/cyclic-fano-polynomial-bridge-figures/polynomial-bridge.png)
+· [Independent reconstruction](../results/cyclic-fano-polynomial-bridge/independent-validation.json)
+· [Bounded development attempts](results/polynomial-bridge-development/README.md).
+
+Run `python3 -S check_polynomial_bridge.py --fetch-cache` here for the
+separate five-module audit. The previous sixteen-case sources and their
+receipts remain unchanged.
+
+**Fresh CI: PASS.** All five modules compiled and replayed, all 30 listed
+declaration reports used only the allowed standard axioms, and both altered
+inputs were rejected. Separate kernel-checked proofs establish that the
+altered coefficient equations are false. The archive binds the exact
+tested sources and all 26 command logs.
+[Receipt and metadata](results/polynomial-bridge-ci/39089131101/metadata.json)
+· [CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39089131101).
 
 ## Concrete integer row certificates
 

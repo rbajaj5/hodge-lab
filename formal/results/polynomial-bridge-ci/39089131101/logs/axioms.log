@@ -1,0 +1,44 @@
+'HodgeLab.no_solution_of_row_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.no_solution_of_integer_row_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05.annihilates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05.separates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05.no_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.exponent_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.exponent_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.exponent_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.exponent_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.eval_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.coefficient_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.eval_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.eval_subtract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.eval_monomial_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.eval_multiply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.SparsePolynomial.eval_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.computed_column_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.computed_target_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.column_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.target_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.delta_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.denominator_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.rhs_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.column_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.polynomial_equation_implies_matrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.column_coefficients_over' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.target_coefficients_over' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.polynomial_equation_implies_matrix_over' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution_over' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

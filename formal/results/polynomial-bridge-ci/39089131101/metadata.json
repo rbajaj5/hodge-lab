@@ -1,0 +1,156 @@
+{
+  "schema": "hodge-lab-polynomial-bridge-ci-archive-v1",
+  "status": "PASS",
+  "run": {
+    "conclusion": "success",
+    "createdAt": "2026-10-18T02:10:19Z",
+    "event": "workflow_dispatch",
+    "headSha": "b96230ed63911e7bf4b23d31e85e86d9a42fe347",
+    "jobs": [
+      {
+        "completedAt": "2026-10-18T02:17:02Z",
+        "conclusion": "success",
+        "databaseId": 117561873837,
+        "name": "case05-polynomial-bridge",
+        "startedAt": "2026-10-18T02:10:22Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-18T02:10:23Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-18T02:10:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:10:29Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "number": 2,
+            "startedAt": "2026-10-18T02:10:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:10:30Z",
+            "conclusion": "success",
+            "name": "Install pinned Elan bootstrap",
+            "number": 3,
+            "startedAt": "2026-10-18T02:10:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:10:32Z",
+            "conclusion": "success",
+            "name": "Reconstruct polynomial bridge independently",
+            "number": 4,
+            "startedAt": "2026-10-18T02:10:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:17:00Z",
+            "conclusion": "success",
+            "name": "Compile, audit and replay the polynomial bridge",
+            "number": 5,
+            "startedAt": "2026-10-18T02:10:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:17:01Z",
+            "conclusion": "success",
+            "name": "Preserve actual receipts and logs",
+            "number": 6,
+            "startedAt": "2026-10-18T02:17:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:17:01Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "number": 12,
+            "startedAt": "2026-10-18T02:17:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-18T02:17:01Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-10-18T02:17:01Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39089131101/job/117561873837"
+      }
+    ],
+    "status": "completed",
+    "updatedAt": "2026-10-18T02:17:03Z",
+    "url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39089131101"
+  },
+  "source_bindings_checked": 20,
+  "command_logs_checked": 26,
+  "modules_built_and_replayed": 5,
+  "declaration_audits": 30,
+  "negative_controls": 2,
+  "archived_files_raw_sha256": {
+    "validation.json": "44a369ba10018b8bb156ba9e2667c50ebf32add12e6ab46f9311f4f0507bd40e",
+    "logs/version.log": "d8f3656f8f1cfd3ccc8fb217edd5bd191cb6836d492c045aabe5e3fd34771ba9",
+    "logs/dependency-cache.log": "f01963f372d7e3aa31a7fea65469eb31fd5dc43f4383a7aca22bf1d248fbe7ec",
+    "logs/dependency-mathlib.log": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "logs/dependency-plausible.log": "eb4ec09eed2bb418fa959f580ae123ba925cf478911605d05d0338dfff7e5109",
+    "logs/dependency-LeanSearchClient.log": "2f23612cfb656f77475dd72b6fef961ef026cc564e4255e8888522b0c64e145e",
+    "logs/dependency-importGraph.log": "9fa0e5f41ede66798c7b6cc50805e6eacf5083d816a0f4377cb4e594c1b72c86",
+    "logs/dependency-proofwidgets.log": "30d94c60b954d9eca4f225a124c79a430faa3f0fac636555662a53340d389c46",
+    "logs/dependency-aesop.log": "293905827145d67569da0681b785f1ecc719b8c96f1a2cadaa90b6cb862ff893",
+    "logs/dependency-Qq.log": "9ef9878894434ff1e3d2b8c7733eac45e8fee7da537c165cccbc2619cc2239fd",
+    "logs/dependency-batteries.log": "96a7d1426766466732ec36683930306f4c28f6acc835cc4e45f04ddbc84a4eb3",
+    "logs/dependency-Cli.log": "a3209fe94c28ff67a45eec97807065ca08798197e1d43918d129b89527c7b39f",
+    "logs/build-00.log": "b565ae85d77598221abe6e79c36b7fd2048ada0167223f3b87c8d1eac4d04e93",
+    "logs/build-01.log": "ecdf0abb833ac4bd3a6dcb3830d6cd649710de1e6c7f184b751eed52e9f679aa",
+    "logs/build-02.log": "875d96d634b6bd863030fca937089e4c3ef40f3e0a20b2a7a6b02bae5baebd64",
+    "logs/build-03.log": "6dcdb3355ef0735180cf91b072747071c18b2be79c24e81ce9b1ece961afeeee",
+    "logs/build-04.log": "f8442f1902a6315a05939c40b222374eb817d89963b41ef83616719523adeab6",
+    "logs/axioms.log": "f22609f9bd901f0930080551f77f622c3d61435d79b95a87165ab74e3b567008",
+    "logs/kernel-00.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/kernel-01.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/kernel-02.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/kernel-03.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/kernel-04.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/negative-proof-scale.log": "92b0fbe4442256cf93ffcbdf717adca8c149a66a1103d6f226cf855172860501",
+    "logs/negative-scale.log": "7430f2fb2aa82e2c408ddcb94325c05c8b2c638a804a2f2efae8de257577596d",
+    "logs/negative-proof-density.log": "03f9ee391b01a1f3f37abf4f87c3384e5be84837831a7c91a81128da3c77048d",
+    "logs/negative-density.log": "eccc745b09b6fed7895700d0548182df5fe3d53a42ed11fc76a4f87d4ff133a8",
+    "independent-validation.json": "7356871f54c2e5c9e47c11ab59413226a597963589e8b9e352a6fdff0b2c3460"
+  },
+  "command_log_archive_paths": {
+    "results/polynomial-bridge-check/version.log": "logs/version.log",
+    "results/polynomial-bridge-check/dependency-cache.log": "logs/dependency-cache.log",
+    "results/polynomial-bridge-check/dependency-mathlib.log": "logs/dependency-mathlib.log",
+    "results/polynomial-bridge-check/dependency-plausible.log": "logs/dependency-plausible.log",
+    "results/polynomial-bridge-check/dependency-LeanSearchClient.log": "logs/dependency-LeanSearchClient.log",
+    "results/polynomial-bridge-check/dependency-importGraph.log": "logs/dependency-importGraph.log",
+    "results/polynomial-bridge-check/dependency-proofwidgets.log": "logs/dependency-proofwidgets.log",
+    "results/polynomial-bridge-check/dependency-aesop.log": "logs/dependency-aesop.log",
+    "results/polynomial-bridge-check/dependency-Qq.log": "logs/dependency-Qq.log",
+    "results/polynomial-bridge-check/dependency-batteries.log": "logs/dependency-batteries.log",
+    "results/polynomial-bridge-check/dependency-Cli.log": "logs/dependency-Cli.log",
+    "results/polynomial-bridge-check/build-00.log": "logs/build-00.log",
+    "results/polynomial-bridge-check/build-01.log": "logs/build-01.log",
+    "results/polynomial-bridge-check/build-02.log": "logs/build-02.log",
+    "results/polynomial-bridge-check/build-03.log": "logs/build-03.log",
+    "results/polynomial-bridge-check/build-04.log": "logs/build-04.log",
+    "results/polynomial-bridge-check/axioms.log": "logs/axioms.log",
+    "results/polynomial-bridge-check/kernel-00.log": "logs/kernel-00.log",
+    "results/polynomial-bridge-check/kernel-01.log": "logs/kernel-01.log",
+    "results/polynomial-bridge-check/kernel-02.log": "logs/kernel-02.log",
+    "results/polynomial-bridge-check/kernel-03.log": "logs/kernel-03.log",
+    "results/polynomial-bridge-check/kernel-04.log": "logs/kernel-04.log",
+    "results/polynomial-bridge-check/negative-proof-scale.log": "logs/negative-proof-scale.log",
+    "results/polynomial-bridge-check/negative-scale.log": "logs/negative-scale.log",
+    "results/polynomial-bridge-check/negative-proof-density.log": "logs/negative-proof-density.log",
+    "results/polynomial-bridge-check/negative-density.log": "logs/negative-density.log"
+  },
+  "scope": "Specifies explicit Case05 rational polynomial operators, sparse MvPolynomial semantics and352 coefficient identities, with statements deriving the existing2x175 matrix equation and impossibility over every characteristic-zero field after mapping rational coefficients. Use the separate validation receipt for completed compilation and replay status. Identification with the fixed source record and completeness of the projected correction family remain external exact checks; no HasCertificate claim.",
+  "binary_limit": "Compiled binaries were not downloaded; recorded build/replay hashes were compared, not independently rehashed from binaries.",
+  "upstream_writes": 0
+}

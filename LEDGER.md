@@ -2113,6 +2113,57 @@ conversations or evidence of an accepted solve.
     one maintenance PR and zero accepted solves. The polynomial bridge
     continues in Hodge Lab; upstream updates remain batched.
 
+84. **17 October 2026, 22:17 EDT — Case05 polynomial-to-matrix Lean continuation.**
+    Formalized the polynomial arithmetic behind one existing fixed cyclic-Fano
+    obstruction, raw direction `0 + 69`. A sparse-list implementation is proved
+    to agree with mathlib's multivariate polynomials. Lean constructs all 175
+    correction polynomials and checks 352 selected coefficients, derives the
+    existing two matrix rows, and rules out the explicit polynomial equation
+    over every characteristic-zero field. This adds no new denominator exclusion.
+
+    [Explanation and reproduction](notes/cyclic-fano-polynomial-bridge.md)
+    · [Polynomial proof diagram](results/cyclic-fano-polynomial-bridge-figures/polynomial-bridge.png)
+    · [Formal source](formal/HodgeLab/CyclicFano/Case05Polynomial.lean)
+    · [Field extension](formal/HodgeLab/CyclicFano/Case05PolynomialField.lean).
+    The source checkpoint and local attempts were pushed as
+    [`b96230e`](https://github.com/rbajaj5/hodge-lab/commit/b96230ed63911e7bf4b23d31e85e86d9a42fe347).
+
+    Independent standard-library reconstruction checks all 352 coefficients,
+    the generated operator and theorem statements, and 19 altered-input
+    controls. Its seven-term pullback functional also annihilates all 525 raw
+    Koszul columns and 636 weighted-degree-eight quotient columns and pairs
+    the target to `−1000/147`. That raw-column extension is Python evidence,
+    not part of the new Lean theorem.
+    [Independent receipt](results/cyclic-fano-polynomial-bridge/independent-validation.json).
+
+    [Fresh CI run 39089131101](https://github.com/rbajaj5/hodge-lab/actions/runs/39089131101)
+    passed: five modules built and replayed, 30 declaration reports checked,
+    all nine dependency pins matched, and both altered-input modules rejected.
+    Separate compiled negations establish that their changed coefficients
+    really are wrong. The archive verifies 20 source bindings against the
+    tested commit, all 26 command logs and the recorded build/replay hash
+    agreement for five modules. Compiled binaries were not downloaded.
+    [Permanent receipt and logs](formal/results/polynomial-bridge-ci/39089131101/metadata.json).
+    An [independent archive audit](formal/results/polynomial-bridge-ci/39089131101/independent-archive-audit.json)
+    verified all 28 downloaded artifact files byte for byte and reconstructed
+    both mutation probes; no compiled-binary or full-mathlib replay is claimed.
+    The [development record](formal/results/polynomial-bridge-development/README.md)
+    retains fifteen bounded attempts, including missing-cache and proof-rewrite
+    failures, rational-reduction failures and two 180-second timeouts.
+    Omitting zero derivative terms preserved the proved semantics and reduced
+    the complete polynomial module's successful local compile to 79.8 seconds.
+    Negative tests distinguish a failed tactic from a proved false equality.
+
+    Credits: the upstream authors' certificate framework, the notebook's
+    earlier cyclic quotient and Koszul calculations, mathlib's polynomial
+    theory, and AI-assisted construction and independent checking. The new
+    figure shows actual operators and coefficient extraction. It does not
+    establish geometric completeness. Source-to-model identification and
+    coverage of all normalized numerators remain outside the Lean result;
+    the other fifteen cases still use externally reconstructed matrix rows.
+    No `HasCertificate`, accepted solve, new upstream comment or PR is claimed.
+    The upstream tally remains unchanged; useful updates remain batched.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
