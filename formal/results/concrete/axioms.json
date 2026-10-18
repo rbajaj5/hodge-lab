@@ -1,0 +1,22 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "AuditConcrete.lean"
+  ],
+  "execution_command": [
+    "wsl.exe",
+    "-e",
+    "sh",
+    "-lc",
+    "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake env lean AuditConcrete.lean"
+  ],
+  "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+  "exit_code": 0,
+  "elapsed_seconds": 5.08,
+  "bound_seconds": 600,
+  "log": "results/concrete/axioms.log",
+  "log_lf_sha256": "0ed41161680122b1950d46787065fca09e12c513561c3ac39fd273381ae5d59c",
+  "expected_failure": false
+}

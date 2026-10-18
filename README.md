@@ -62,23 +62,26 @@ eleven are fixed mixed candidates. The full 175-parameter family remains open.**
 
 ## Lean proof map
 
-[![A source-linked proof map: external dimension bounds feed a Lean proof that an augmented rank gap rules out span membership, with the 150/151 specialization and no-correction corollary](results/lean-rank-gap/lean-rank-gap.png)](formal/README.md)
+[![The actual two-row cyclic-Fano matrix, its integer row functional, and the concrete Lean verification boundary](results/cyclic-fano-lean-figures/concrete-lean.png)](notes/cyclic-fano-concrete-lean.md)
 
-The first Lean project formalizes the **generic rank-gap argument**. Its
-proof map follows the actual code: assuming the target is in the correction
-span makes the augmented span equal to it, contradicting the two dimension
-bounds. Three theorem statements cover the general argument, the 150/151
-specialization, and the absence of a correction solution.
+**From assumed rank bounds to literal matrix coefficients.** The new Lean
+modules encode selected rows for all sixteen fixed candidates. A row
+functional cancels all 175 correction columns but leaves a nonzero target.
+For the first mixed example, the equations are simply `x₁₁₉ = 0` and
+`−756x₁₁₉ = −5`: multiplying the first by 756 and adding gives `0 = −5`.
 
-**Checked locally:** all three theorems compile in Lean 4.31.0, pass the
-axiom audit, and replay with the standalone kernel checker. The figure
-binds those records to the exact source files.
+The concrete theorems have no rank-bound hypotheses and apply over every
+characteristic-zero field. Python independently reconstructs the rows
+from the polynomial equations and compares them with the Lean literals;
+that source-to-matrix correspondence remains outside Lean. These are
+formal checks of previously excluded fixed candidates. The full family
+remains open.
 
-The concrete matrices, 25 column relations, and sixteen minor calculations
-are checked by the Python programs above; their rank bounds are explicit
-hypotheses in Lean. They have not yet been formalized there.
-[Lean source](formal/HodgeLab/RankGap.lean)
-· [Build, axiom audit, and visual walkthrough](formal/README.md).
+[Concrete Lean source](formal/HodgeLab/CyclicFano/Case05.lean)
+· [Reusable row-certificate lemmas](formal/HodgeLab/RowCertificate.lean)
+· [Checks, limits, and the failed parallel replay](notes/cyclic-fano-concrete-lean.md)
+· [Earlier generic rank-gap map](results/lean-rank-gap/lean-rank-gap.png)
+· [Build and axiom audit](formal/README.md).
 
 ## A map of the ideas
 

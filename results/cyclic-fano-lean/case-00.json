@@ -1,0 +1,181 @@
+{
+  "schema": "cyclic-fano-lean-row-certificate-v1",
+  "case_index": 0,
+  "kind": "monomial-control",
+  "direction": [
+    [
+      0,
+      "1"
+    ]
+  ],
+  "denominator": [
+    {
+      "powers": [
+        3,
+        1,
+        0,
+        0,
+        3,
+        1
+      ],
+      "coefficient": "-20/7"
+    },
+    {
+      "powers": [
+        3,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        4,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "coefficient": "50/49"
+    },
+    {
+      "powers": [
+        4,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "coefficient": "-40/7"
+    },
+    {
+      "powers": [
+        5,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": "-270/49"
+    },
+    {
+      "powers": [
+        6,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": "200/49"
+    },
+    {
+      "powers": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "-1026/49"
+    }
+  ],
+  "columns": 175,
+  "rows": [
+    {
+      "powers": [
+        2,
+        1,
+        0,
+        3,
+        2,
+        6
+      ],
+      "entries": [
+        [
+          54,
+          -1
+        ]
+      ],
+      "target": 0,
+      "row_scale": "49/3600"
+    },
+    {
+      "powers": [
+        3,
+        0,
+        0,
+        3,
+        7,
+        1
+      ],
+      "entries": [
+        [
+          84,
+          -1
+        ]
+      ],
+      "target": 0,
+      "row_scale": "49/1200"
+    },
+    {
+      "powers": [
+        6,
+        1,
+        0,
+        4,
+        2,
+        1
+      ],
+      "entries": [
+        [
+          54,
+          3402
+        ],
+        [
+          84,
+          -285
+        ]
+      ],
+      "target": 49,
+      "row_scale": "7203/200"
+    }
+  ],
+  "dual": [
+    3402,
+    -285,
+    1
+  ],
+  "target_pairing": 49,
+  "attempts": [
+    {
+      "status": "found",
+      "rows_processed": 433,
+      "pivot_count": 100,
+      "nonzero_rows_only": true,
+      "elapsed_seconds": 0.004919
+    }
+  ],
+  "row_definition": "Each selected row equals row_scale times the coefficient row of the frozen polynomial map, including rhs=-B_E(P0).",
+  "validation": {
+    "status": "PASS",
+    "selected_rows": 3,
+    "matrix_nonzero_entries": 4,
+    "columns_checked": 175,
+    "target_pairing": 49,
+    "largest_integer_bits": 12,
+    "altered_inputs_rejected": [
+      "dual",
+      "target",
+      "entry"
+    ]
+  },
+  "elapsed_seconds": 0.134118
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "HodgeLab.CyclicFano.Case04"
+  ],
+  "execution_command": [
+    "wsl.exe",
+    "-e",
+    "sh",
+    "-lc",
+    "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case04"
+  ],
+  "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+  "exit_code": 0,
+  "elapsed_seconds": 0.847,
+  "bound_seconds": 600,
+  "log": "results/concrete/build-05.log",
+  "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+  "expected_failure": false,
+  "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case04.olean",
+  "artifact_sha256": "780676cb8480e96072b07d3dffde71cfe21e5ee6b2d826b8ff8dcdffcf6e0c5d"
+}

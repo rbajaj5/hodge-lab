@@ -1,0 +1,132 @@
+{
+  "schema": "lean-concrete-development-v1",
+  "attempts": [
+    {
+      "stage": "generic-row-lemma-first-build",
+      "status": "compile_failed",
+      "issues": [
+        "Missing import for Finset.sum_comm",
+        "Field typeclass not imported by initial narrow imports"
+      ],
+      "correction": "Added finite-sum interchange and Field definition imports; theorem statement unchanged."
+    },
+    {
+      "stage": "generic-row-lemma-repaired-build",
+      "status": "PASS",
+      "statement_changes": false
+    },
+    {
+      "stage": "concrete-case05-build-and-axiom-audit",
+      "status": "PASS",
+      "kernel_decide_used": true,
+      "native_decide_used": false,
+      "theorem": "HodgeLab.CyclicFano.Case05.no_solution",
+      "field_scope": "Any characteristic-zero field"
+    },
+    {
+      "stage": "all16-aggregate-kernel-replay",
+      "status": "resource_failure",
+      "compiled_cases": 16,
+      "axiom_reports_passed": 50,
+      "final_receipt_written": false,
+      "evidence": "WSL dmesg: Out of memory: Killed process 4887 (leanchecker), anon-rss 14238844kB; WSL then ended the Python driver without a receipt.",
+      "cause": "Lean4.31 LeanChecker.lean launches one IO.asTask for each supplied module;17 target modules were replayed concurrently.",
+      "correction": "Run one module per kernel-checker process sequentially, preserving all proof and witness data."
+    },
+    {
+      "stage": "sequential-kernel-driver-inside-WSL",
+      "status": "environment_interrupted",
+      "completed_kernel_modules": 5,
+      "final_receipt_written": false,
+      "evidence": "The WSL-hosted Python process ended with exit1 without traceback after generic,Case00,Case01,Case02,Case03 replays; dmesg showed no additional OOM event, but the distribution unmounted.",
+      "correction": "Run the audit Python driver on Windows, with each bounded WSL command checkpointed separately; preserve all Lean proof and data sources."
+    },
+    {
+      "stage": "windows-hosted-sequential-original-decide",
+      "status": "kernel_process_failure",
+      "completed_kernel_modules": 5,
+      "failed_module": "HodgeLab.CyclicFano.Case04",
+      "exit_code": 1,
+      "output": "",
+      "source_data_unchanged": true,
+      "final_receipt_written": false,
+      "checkpoints": "results/concrete-failed-sequential/",
+      "correction": "Split the forall-column decidability proof into175 finite cases, keeping all integer data identical. No claim that this establishes the failure cause."
+    },
+    {
+      "stage": "per-column-case04-isolation",
+      "status": "PASS",
+      "module": "HodgeLab.CyclicFano.Case04",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0,
+      "proof_change": "Closed forall decide replaced by Fin175 case split and decide for each column",
+      "integer_data_changed": false
+    },
+    {
+      "stage": "per-column-all16-parallel-build",
+      "status": "environment_failure",
+      "error": "Wsl/Service/E_UNEXPECTED; no Lean error diagnostic",
+      "final_receipt_written": false,
+      "recovery": "Terminated and restarted only Ubuntu after all agents confirmed no active WSL jobs",
+      "correction": "Compile one module per bounded WSL process, in addition to sequential kernel replay"
+    },
+    {
+      "stage": "sequential-refactored-build-first-run",
+      "status": "process_failure",
+      "failed_module": "HodgeLab.CyclicFano.Case12",
+      "completed_module_count": 13,
+      "exit_code": 1,
+      "output": "",
+      "final_receipt_written": false,
+      "cause": "Not established; root measured low available host commit memory",
+      "correction": "Short invocations with successful records reusable only under identical complete source, input, export and command bindings"
+    },
+    {
+      "stage": "short-refactored-build-phase",
+      "status": "process_failure",
+      "failed_module": "HodgeLab.CyclicFano.Case15",
+      "completed_cases": "00 through14",
+      "exit_code": 1,
+      "output": "",
+      "final_receipt_written": false,
+      "correction": "Keep completed source-bound builds; retry remaining single module. Version is always rerun and raw olean hashes now bind every build/kernel checkpoint."
+    },
+    {
+      "stage": "source-and-artifact-bound-WSL-replay",
+      "status": "environment_failure",
+      "failed_module": "HodgeLab.CyclicFano.Case00",
+      "generic_replay_exit": 0,
+      "case_replay_exit": 1,
+      "case_output": "",
+      "subsequent_readonly_diagnostic": "Wsl/Service/E_UNEXPECTED",
+      "final_receipt_written": false
+    },
+    {
+      "stage": "native-whole-cache-enumeration",
+      "status": "stopped",
+      "scope": "Windows leanchecker CLI enumerating all package .olean files over UNC",
+      "reason": "Slow search-path traversal; stopped owned process without claiming replay",
+      "replacement": "Direct official replayFromImports audit harness, default trusted-import semantics"
+    },
+    {
+      "stage": "native-direct-case00-pilot",
+      "status": "PASS",
+      "module": "HodgeLab.CyclicFano.Case00",
+      "exit_code": 0,
+      "result": "PASS direct official replay: Case00",
+      "proof_source_changed": false,
+      "api": "Lean4.31 official replayFromImports"
+    },
+    {
+      "stage": "native-direct-sequential17",
+      "status": "INCOMPLETE",
+      "bound_seconds": 420,
+      "elapsed_seconds": 420.349,
+      "timed_out": true,
+      "confirmed_modules_in_aggregate_log": [],
+      "limits": "Output was captured by #eval until completion; no unprinted module replay is counted. All17 source-bound builds and50 axiom audits remain checked separately.",
+      "executed_runner_archive": "results/ReplayConcrete.executed.txt",
+      "local_lean_mutation_controls": "not run; required by portable CI"
+    }
+  ]
+}

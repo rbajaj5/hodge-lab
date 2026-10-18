@@ -1,0 +1,770 @@
+{
+  "schema": "hodge-lab-concrete-compilation-v1",
+  "status": "PASS",
+  "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+  "sources": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "AuditConcrete.lean": "16dbecaee3a933358400e45e54a223e306c97409303039b2ae7ae3b4f932c29d",
+    "generate_concrete.py": "dc8f1c86bc5fc839ae2c6246bf3cce2d0a5ab41ef1426ec9046a1b40bfea435b",
+    "check_concrete.py": "46f6c82d5e1a3d641c2c37561287da30e3b86dea9600d3bd92c06bc32848544d",
+    "HodgeLab/CyclicFano/Case00.lean": "3633efd55b6e1f46aef453191456eab16d2e7ea0fd22e43d6334c1d8020fb2e5",
+    "HodgeLab/CyclicFano/Case01.lean": "19d1f70f8e3e357703b19b964562eaac406f0067c83a347702aec86523d1f195",
+    "HodgeLab/CyclicFano/Case02.lean": "f1360602a82313f80d594f2f39ef293111d1521d796d5deb7f2402353051df6c",
+    "HodgeLab/CyclicFano/Case03.lean": "2ff56826de43a66e58d22d59818a138723e51e487a1f6f2de846d742b5cf0746",
+    "HodgeLab/CyclicFano/Case04.lean": "27baad4b76777a3768978b56b4f2e5c8c47250699dfd4c0d14a34977ca094e6f",
+    "HodgeLab/CyclicFano/Case05.lean": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884",
+    "HodgeLab/CyclicFano/Case06.lean": "590a9a473333b137f8c52e326e4b8e888d608e43b9f818da16b5aebd16fee3fb",
+    "HodgeLab/CyclicFano/Case07.lean": "9ab7327fdfe430d42a0bbf2f8f68d7fb824beccd1be46f107fed5340602c7111",
+    "HodgeLab/CyclicFano/Case08.lean": "0ffa961499f98e810126bc5a5a5d8dae70e13e4a19047ce4c6e125c7954d8ffb",
+    "HodgeLab/CyclicFano/Case09.lean": "1eea6193c9494de3c0b74835f81a06f2b8a6e1a9a99c1e644ae2947a296f1e11",
+    "HodgeLab/CyclicFano/Case10.lean": "ed1c91e7e096801cb2bf7a4175cad21b268e99ad60f5a2bf2f504fc4c099c236",
+    "HodgeLab/CyclicFano/Case11.lean": "c47d38fc0158c9ad88b132d6a0d05ae3c0c600e72d0bc4c52780445665eb46cd",
+    "HodgeLab/CyclicFano/Case12.lean": "c8d341091200f6a66bd7870d69d8f0156a2d449bac547cd90d587badd611cbf4",
+    "HodgeLab/CyclicFano/Case13.lean": "97bff6dcac91cf41763ba51b1d8a8a12bc6d7fd327f0cbafe5470c2b8c1b9d3a",
+    "HodgeLab/CyclicFano/Case14.lean": "55911fcae0753eaeecfac6260fa875c8148dd2310af43769e412225229eca930",
+    "HodgeLab/CyclicFano/Case15.lean": "de03e0556c5473a500999d4fc91005ca620a258e828282652424ce3a368b7b5e"
+  },
+  "inputs": {
+    "results/cyclic-fano-lean/case-00.json": "32f3a6f9e9b4a1c5d553990742612ee5ebdc8eba90e0815bf88826b75a17c43c",
+    "results/cyclic-fano-lean/case-01.json": "481bc5d05b96404361dbd65ea9ba53c1ca9b423a737e24a68c139001e19ff3d5",
+    "results/cyclic-fano-lean/case-02.json": "d9ebd3c4231d0759c36ef9965734eb49149d0389ca3c98f40a376c537281279f",
+    "results/cyclic-fano-lean/case-03.json": "6e72d9f1dc8be24ca08247b2bf4b9789ca1dfca6dfdd5a420a56ce3290325a4d",
+    "results/cyclic-fano-lean/case-04.json": "63a7686ea869fdded115efdc30b5efd0cc02e7acf5cf8850af3bb680d0df4820",
+    "results/cyclic-fano-lean/case-05.json": "903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c",
+    "results/cyclic-fano-lean/case-06.json": "fe8cb3bd2b902c76f654e446e03c365593342dfd4e77efeb04acfd169bd68426",
+    "results/cyclic-fano-lean/case-07.json": "d4f0efb76a71577adcf4fdc947b567e88eacbbc28b769850f3696d99e70d5bf4",
+    "results/cyclic-fano-lean/case-08.json": "b2b04c06f8cd47d9b38e68d542b01d596a9b521c165ad351e0bed3e9e54f9215",
+    "results/cyclic-fano-lean/case-09.json": "cdf0b76c3b1f7c02557ce7cb93b3bb7a8a1f0c704689aeafa246018a2df013e2",
+    "results/cyclic-fano-lean/case-10.json": "229d7dacce5c9bd6c5bc25d0806ff3ec498329f8307e7867472cd056693b6ba7",
+    "results/cyclic-fano-lean/case-11.json": "556f242c86619ff129bc427e30716b5c6a875e1dc1491cc415bc059dcc23055b",
+    "results/cyclic-fano-lean/case-12.json": "7fe2acaa3dc9eb7f034905f3c4f8769f4e117ff7cae105bbb5d3c2e8d8e02ea7",
+    "results/cyclic-fano-lean/case-13.json": "84a00751d556cbfbac2100d8802868d0c6330a9d830fc6ee878affbedb32c682",
+    "results/cyclic-fano-lean/case-14.json": "a028a520ca4b3cb2d90f197de707f6705791c7248ca0a1447caf04c4986db25a",
+    "results/cyclic-fano-lean/case-15.json": "3094add23c595fc14ebc90395b8b0a9ed39ab93a523a0c4c728367cf77703dd3"
+  },
+  "export": "10e22a9389c166a05754dd670baa0c50210cc46441b9615e6b018c69218807f8",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.RowCertificate"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.RowCertificate"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 1.097,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-00.log",
+      "log_lf_sha256": "5fe47c0ff89e8eeba767965169d1f68979fbaeae677397de4a9287a996b9b3e6",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/RowCertificate.olean",
+      "artifact_sha256": "ccba8a9bff376389ab74e57265fa9841386bd58b52958bc079c1fad94a7a9218"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case00"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case00"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.857,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-01.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case00.olean",
+      "artifact_sha256": "3c9f5a65fd6b663087c2d2ad00ffc67874e6e1ee1ce9d77b1bbdfdfe22c6fc73"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case01"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case01"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.851,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-02.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case01.olean",
+      "artifact_sha256": "37696ba09af7ae1523982a89bbf7041b05483dcb36db238abf8675776fe2998a"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case02"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case02"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.849,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-03.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case02.olean",
+      "artifact_sha256": "dda4f02069f5ddfb7d87629bfa8bfaa56565793b538632b867125e980d629d2c"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case03"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case03"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.86,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-04.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case03.olean",
+      "artifact_sha256": "2330fdf1c0609fd7b171becee192614547ecc81fe321631f122eb751ed96f947"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case04"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case04"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.847,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-05.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case04.olean",
+      "artifact_sha256": "780676cb8480e96072b07d3dffde71cfe21e5ee6b2d826b8ff8dcdffcf6e0c5d"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case05"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case05"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.865,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-06.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05.olean",
+      "artifact_sha256": "c98015046e583b26e4b24aa15a4010296030cb77c96255a43e1131afd79abb6c"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case06"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case06"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.912,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-07.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case06.olean",
+      "artifact_sha256": "ba4a5c1c1ae559d97158d6068b796b9f74f1cbc4ccf3e1e207b1b2e8eb6a2cc1"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case07"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case07"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 1.008,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-08.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case07.olean",
+      "artifact_sha256": "2f28c3fd5d0035794faf1d8bff680e7efbffd8714d0b189dced02e891c533f2f"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case08"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case08"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 1.006,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-09.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case08.olean",
+      "artifact_sha256": "7eb56265b54db1c0f54d6f1041e48829e0fc7c9937192849678f1053f52a74f6"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case09"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case09"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 1.007,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-10.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case09.olean",
+      "artifact_sha256": "ce66c4fc2e46805429a5216d6239145d0a5cc499a4e3062147b91b47c7c1ea90"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case10"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case10"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.889,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-11.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case10.olean",
+      "artifact_sha256": "e0be7782055d317e497099c8b9491f5ee42f9ff26270d43f434e9c15dce50462"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case11"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case11"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.946,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-12.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case11.olean",
+      "artifact_sha256": "61b0c972833105c1097da7c0b35cfa9e86866480f2abd47bcbacbeb9a12ff5ba"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case12"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case12"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.921,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-13.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case12.olean",
+      "artifact_sha256": "0bd14f7d66aa396ebfa429a18583bf6acdde333666ba3d423245284fc010cdc4"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case13"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case13"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 1.041,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-14.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case13.olean",
+      "artifact_sha256": "73cd524413f39457997d28f8c15c55c499317a459f35df4275f5f541c24aca00"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case14"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case14"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 0.923,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-15.log",
+      "log_lf_sha256": "8d5f202df79db92ba8127734de6d5a5918a554924dc98d14a9645623ab1d4474",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case14.olean",
+      "artifact_sha256": "70482b6756a57899345513afa203402e20ee5ee2c98974f866efea355cc0636a"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.CyclicFano.Case15"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.CyclicFano.Case15"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 17.858,
+      "bound_seconds": 600,
+      "log": "results/concrete/build-16.log",
+      "log_lf_sha256": "46e47c1111b820855c8ff16b8c07b0a8af59e8d66e5c4c11c319b67f3ce47011",
+      "expected_failure": false,
+      "artifact_file": ".lake/build/lib/lean/HodgeLab/CyclicFano/Case15.olean",
+      "artifact_sha256": "e40c093e5e6327d2184fcf2c64c6113211f1333688cf456ba6e8cab3ecd3a58f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditConcrete.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "-e",
+        "sh",
+        "-lc",
+        "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake env lean AuditConcrete.lean"
+      ],
+      "source_fingerprint": "a1e7c6926bc85646690f64da34f1173b6ccdd9b191eac7b398be331c5e07860f",
+      "exit_code": 0,
+      "elapsed_seconds": 5.08,
+      "bound_seconds": 600,
+      "log": "results/concrete/axioms.log",
+      "log_lf_sha256": "0ed41161680122b1950d46787065fca09e12c513561c3ac39fd273381ae5d59c",
+      "expected_failure": false
+    }
+  ],
+  "artifacts": {
+    "HodgeLab.RowCertificate": {
+      ".lake/build/lib/lean/HodgeLab/RowCertificate.olean": "ccba8a9bff376389ab74e57265fa9841386bd58b52958bc079c1fad94a7a9218"
+    },
+    "HodgeLab.CyclicFano.Case00": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case00.olean": "3c9f5a65fd6b663087c2d2ad00ffc67874e6e1ee1ce9d77b1bbdfdfe22c6fc73"
+    },
+    "HodgeLab.CyclicFano.Case01": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case01.olean": "37696ba09af7ae1523982a89bbf7041b05483dcb36db238abf8675776fe2998a"
+    },
+    "HodgeLab.CyclicFano.Case02": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case02.olean": "dda4f02069f5ddfb7d87629bfa8bfaa56565793b538632b867125e980d629d2c"
+    },
+    "HodgeLab.CyclicFano.Case03": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case03.olean": "2330fdf1c0609fd7b171becee192614547ecc81fe321631f122eb751ed96f947"
+    },
+    "HodgeLab.CyclicFano.Case04": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case04.olean": "780676cb8480e96072b07d3dffde71cfe21e5ee6b2d826b8ff8dcdffcf6e0c5d"
+    },
+    "HodgeLab.CyclicFano.Case05": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05.olean": "c98015046e583b26e4b24aa15a4010296030cb77c96255a43e1131afd79abb6c"
+    },
+    "HodgeLab.CyclicFano.Case06": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case06.olean": "ba4a5c1c1ae559d97158d6068b796b9f74f1cbc4ccf3e1e207b1b2e8eb6a2cc1"
+    },
+    "HodgeLab.CyclicFano.Case07": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case07.olean": "2f28c3fd5d0035794faf1d8bff680e7efbffd8714d0b189dced02e891c533f2f"
+    },
+    "HodgeLab.CyclicFano.Case08": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case08.olean": "7eb56265b54db1c0f54d6f1041e48829e0fc7c9937192849678f1053f52a74f6"
+    },
+    "HodgeLab.CyclicFano.Case09": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case09.olean": "ce66c4fc2e46805429a5216d6239145d0a5cc499a4e3062147b91b47c7c1ea90"
+    },
+    "HodgeLab.CyclicFano.Case10": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case10.olean": "e0be7782055d317e497099c8b9491f5ee42f9ff26270d43f434e9c15dce50462"
+    },
+    "HodgeLab.CyclicFano.Case11": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case11.olean": "61b0c972833105c1097da7c0b35cfa9e86866480f2abd47bcbacbeb9a12ff5ba"
+    },
+    "HodgeLab.CyclicFano.Case12": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case12.olean": "0bd14f7d66aa396ebfa429a18583bf6acdde333666ba3d423245284fc010cdc4"
+    },
+    "HodgeLab.CyclicFano.Case13": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case13.olean": "73cd524413f39457997d28f8c15c55c499317a459f35df4275f5f541c24aca00"
+    },
+    "HodgeLab.CyclicFano.Case14": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case14.olean": "70482b6756a57899345513afa203402e20ee5ee2c98974f866efea355cc0636a"
+    },
+    "HodgeLab.CyclicFano.Case15": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case15.olean": "e40c093e5e6327d2184fcf2c64c6113211f1333688cf456ba6e8cab3ecd3a58f"
+    }
+  },
+  "theorem_axioms": {
+    "HodgeLab.no_solution_of_row_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.no_solution_of_integer_row_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case00.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case00.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case00.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case01.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case01.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case01.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case02.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case02.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case02.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case03.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case03.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case03.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case04.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case04.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case04.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case05.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case05.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case05.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case06.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case06.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case06.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case07.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case07.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case07.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case08.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case08.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case08.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case09.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case09.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case09.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case10.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case10.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case10.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case11.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case11.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case11.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case12.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case12.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case12.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case13.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case13.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case13.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case14.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case14.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case14.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case15.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case15.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.CyclicFano.Case15.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "All16 case modules and generic helper compile;50 axiom reports checked. Standalone replay is recorded separately."
+}

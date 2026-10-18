@@ -1,0 +1,99 @@
+{
+  "schema": "hodge-lab-direct-official-replay-v1",
+  "status": "INCOMPLETE",
+  "compiler": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "command": [
+    "C:/Users/anaxe/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lean.exe",
+    "ReplayConcrete.lean"
+  ],
+  "lean_path": "\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;\\\\wsl.localhost\\Ubuntu\\home\\anaxe\\qrcert-aeneas-20260805b\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\outputs\\hodge-lab\\formal\\.lake\\build\\lib\\lean",
+  "lean_executable_sha256": "9b216deb50d37c32c829d1efaaa5bafd5560417d382df35a815489e31a31593f",
+  "runner_lf_sha256": "ef40aaecf0368d16182e4178f9b1f10ca44523d9dbf6b1b30d3d9316f96dc34b",
+  "driver_lf_sha256": "03a965b453d059cf04bf4b3d1c48db55bd2591ba875bf3b2b3b71575dcf9cad6",
+  "compilation_receipt_lf_sha256": "977c9fc3ffb6e7353aaaa57569113fa75496daea351b6fceb916cb03cfadef26",
+  "bound_seconds": 420,
+  "elapsed_seconds": 420.349,
+  "exit_code": null,
+  "timed_out": true,
+  "expected_modules": [
+    "HodgeLab.RowCertificate",
+    "HodgeLab.CyclicFano.Case00",
+    "HodgeLab.CyclicFano.Case01",
+    "HodgeLab.CyclicFano.Case02",
+    "HodgeLab.CyclicFano.Case03",
+    "HodgeLab.CyclicFano.Case04",
+    "HodgeLab.CyclicFano.Case05",
+    "HodgeLab.CyclicFano.Case06",
+    "HodgeLab.CyclicFano.Case07",
+    "HodgeLab.CyclicFano.Case08",
+    "HodgeLab.CyclicFano.Case09",
+    "HodgeLab.CyclicFano.Case10",
+    "HodgeLab.CyclicFano.Case11",
+    "HodgeLab.CyclicFano.Case12",
+    "HodgeLab.CyclicFano.Case13",
+    "HodgeLab.CyclicFano.Case14",
+    "HodgeLab.CyclicFano.Case15"
+  ],
+  "replayed_modules": [],
+  "artifacts": {
+    "HodgeLab.RowCertificate": {
+      ".lake/build/lib/lean/HodgeLab/RowCertificate.olean": "ccba8a9bff376389ab74e57265fa9841386bd58b52958bc079c1fad94a7a9218"
+    },
+    "HodgeLab.CyclicFano.Case00": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case00.olean": "3c9f5a65fd6b663087c2d2ad00ffc67874e6e1ee1ce9d77b1bbdfdfe22c6fc73"
+    },
+    "HodgeLab.CyclicFano.Case01": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case01.olean": "37696ba09af7ae1523982a89bbf7041b05483dcb36db238abf8675776fe2998a"
+    },
+    "HodgeLab.CyclicFano.Case02": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case02.olean": "dda4f02069f5ddfb7d87629bfa8bfaa56565793b538632b867125e980d629d2c"
+    },
+    "HodgeLab.CyclicFano.Case03": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case03.olean": "2330fdf1c0609fd7b171becee192614547ecc81fe321631f122eb751ed96f947"
+    },
+    "HodgeLab.CyclicFano.Case04": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case04.olean": "780676cb8480e96072b07d3dffde71cfe21e5ee6b2d826b8ff8dcdffcf6e0c5d"
+    },
+    "HodgeLab.CyclicFano.Case05": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05.olean": "c98015046e583b26e4b24aa15a4010296030cb77c96255a43e1131afd79abb6c"
+    },
+    "HodgeLab.CyclicFano.Case06": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case06.olean": "ba4a5c1c1ae559d97158d6068b796b9f74f1cbc4ccf3e1e207b1b2e8eb6a2cc1"
+    },
+    "HodgeLab.CyclicFano.Case07": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case07.olean": "2f28c3fd5d0035794faf1d8bff680e7efbffd8714d0b189dced02e891c533f2f"
+    },
+    "HodgeLab.CyclicFano.Case08": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case08.olean": "7eb56265b54db1c0f54d6f1041e48829e0fc7c9937192849678f1053f52a74f6"
+    },
+    "HodgeLab.CyclicFano.Case09": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case09.olean": "ce66c4fc2e46805429a5216d6239145d0a5cc499a4e3062147b91b47c7c1ea90"
+    },
+    "HodgeLab.CyclicFano.Case10": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case10.olean": "e0be7782055d317e497099c8b9491f5ee42f9ff26270d43f434e9c15dce50462"
+    },
+    "HodgeLab.CyclicFano.Case11": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case11.olean": "61b0c972833105c1097da7c0b35cfa9e86866480f2abd47bcbacbeb9a12ff5ba"
+    },
+    "HodgeLab.CyclicFano.Case12": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case12.olean": "0bd14f7d66aa396ebfa429a18583bf6acdde333666ba3d423245284fc010cdc4"
+    },
+    "HodgeLab.CyclicFano.Case13": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case13.olean": "73cd524413f39457997d28f8c15c55c499317a459f35df4275f5f541c24aca00"
+    },
+    "HodgeLab.CyclicFano.Case14": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case14.olean": "70482b6756a57899345513afa203402e20ee5ee2c98974f866efea355cc0636a"
+    },
+    "HodgeLab.CyclicFano.Case15": {
+      ".lake/build/lib/lean/HodgeLab/CyclicFano/Case15.olean": "e40c093e5e6327d2184fcf2c64c6113211f1333688cf456ba6e8cab3ecd3a58f"
+    }
+  },
+  "log": "results/concrete/native-replay.log",
+  "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Official default replayFromImports; imported declarations trusted, not --fresh. No proof or integer data changed.",
+  "executed_runner_file": "results/ReplayConcrete.executed.txt",
+  "current_runner_file": "ReplayConcrete.lean",
+  "current_runner_lf_sha256": "389089f4e92e551543459afbad3406a7de07bd77b7d276159d5a222708d34d20",
+  "comment_only_current_runner_change": "Removed a forbidden-token-scanner false positive in an explanatory comment; exact executed runner is archived with its original hash.",
+  "local_lean_mutation_controls": "Not run in this environment; the portable CI driver requires both altered-certificate rejections."
+}

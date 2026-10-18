@@ -1831,6 +1831,9 @@ conversations or evidence of an accepted solve.
     was queued at this checkpoint; local exact and CUDA checks pass, and
     remote success is not yet claimed.
 
+    **Later verification, 17 October:** that CPU CI run completed
+    successfully, including the dedicated cubic-polar replay and figures.
+
 78. **17 October 2026 — Visualizing the first Lean bridge.**
     At the user's request, added a standalone [Lean project](formal/README.md)
     and a front-page [proof map](results/lean-rank-gap/lean-rank-gap.png).
@@ -1881,6 +1884,71 @@ conversations or evidence of an accepted solve.
     [dedicated Lean CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39077688314)
     is in progress, fetching its pinned dependencies at this checkpoint.
     The local build, axiom audit, kernel replay, and figure checks pass.
+
+    **Later verification, 17 October:** that dedicated Lean CI run
+    completed successfully. This confirms the original generic bridge;
+    the subsequent concrete-matrix work has its own checks below.
+
+79. **17 October 2026 — Concrete Lean row certificates for cyclic Fano.**
+    Continued the user's request to move actual matrix arithmetic into
+    Lean. The sixteen fixed cubic-direction candidates from entry 77
+    all admit exact integer row certificates: 100 selected rows and 611
+    nonzero entries, retaining every one of the 175 correction columns.
+    Every certificate was found on the first bounded search; no search
+    timed out or used the zero-row fallback. The scope is the same
+    sixteen candidates already excluded by the prior exact calculation.
+
+    The reusable lemma says that a row functional which annihilates
+    every correction column and has nonzero target pairing rules out
+    a solution. Its integer wrapper transfers the argument to any
+    characteristic-zero field. The first mixed case reduces to
+    `x_119 = 0` and `-756*x_119 = -5`, with row weights `(756, 1)`.
+    This replaces rank-bound hypotheses with literal matrix data;
+    it does not compute the exact ranks 150 and 151 in Lean.
+
+    [Explanation, failed attempts, and reproduction](notes/cyclic-fano-concrete-lean.md),
+    [reusable Lean lemma](formal/HodgeLab/RowCertificate.lean),
+    [concrete example](formal/HodgeLab/CyclicFano/Case05.lean), and
+    [actual-matrix proof map](results/cyclic-fano-lean-figures/concrete-lean.png).
+    The map displays the selected polynomial coefficient rows, their
+    active Koszul correction column, and the exact cancellation.
+
+    **Exact source checks:** the primary replay rejects 48 corrupted
+    inputs. The separate implementation reconstructs 17,600 physical
+    coefficients, compares all Lean matrix/target/dual literals, checks
+    all 2,800 column pairings, and rejects 112 corrupted inputs. Its
+    final proof-source refresh passes in 49.247 seconds. Polynomial
+    provenance and completeness of the correction space remain outside
+    the Lean theorem and are checked by these Python implementations.
+
+    **Formal checkpoint:** all seventeen final modules compile and
+    pass fifty axiom audits. A seventeen-module parallel kernel replay
+    exhausted WSL memory. Two sequential attempts then stopped at
+    case 04 without a diagnostic; their exact cause remains unconfirmed.
+    Splitting each universal arithmetic proof into 175 finite column
+    cases repaired that isolated replay without changing any data or
+    theorem statements. Later WSL interruptions required a native
+    Windows replay route. Its aggregate seventeen-module run timed out
+    at 420 seconds with no captured completion markers; the separate
+    replay receipt is **INCOMPLETE**, while compilation and axiom checks
+    remain **PASS**. The two Lean mutation controls are not locally
+    executed; fresh Linux CI requires them and the full replay.
+    The development record preserves the failed attempts.
+
+    Separately, both exact files for a small reusable upstream proposal
+    compiled and completed official replay under Lean 4.31.0, with five
+    passing axiom reports. Its
+    [source-bound receipt](results/cyclic-fano-lean/upstream-maintenance/receipt.json)
+    and command logs are retained. Upstream's Lean 4.33.0 pin has not
+    been checked, so this remains a draft maintenance proposal.
+
+    This is formalization of standard finite-dimensional linear
+    algebra, with Codex assistance and mathlib's finite-sum and integer
+    cast lemmas. It supplies neither a new Hodge theorem nor a
+    `HasCertificate` proof, and leaves the full 175-parameter family
+    open. No discussion post belongs to this batch. A reusable
+    two-file maintenance proposal is being prepared separately;
+    no PR is counted until publication.
 
 ## Keeping this current
 

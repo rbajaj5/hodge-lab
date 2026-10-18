@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "source_lf_sha256": {
+    "HodgeTestbed/RowCertificate.lean": "4282fbc32a9faabf9a4c7c98df88ae458e7a5c22bb189086c26c290ac74aff96",
+    "HodgeTestbed/RowCertificateExample.lean": "3580b40fda29371e78e844f4b67cb57f19e7df60be0f22b4c20a8233624a54c5"
+  },
+  "theorem_axioms": {
+    "HodgeTestbed.no_solution_of_row_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.no_solution_of_integer_row_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.RowCertificateExample.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.RowCertificateExample.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeTestbed.RowCertificateExample.no_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "version.log",
+      "log_lf_sha256": "3786e94dc241478d2e13cd024164e380820ad3c4b1f8312aa3ea432eb5df0d0a",
+      "elapsed_seconds": 0.072
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+        "--root=C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\sextics-lean-row-certificates\\formal\\lean",
+        "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\sextics-lean-row-certificates\\formal\\lean\\HodgeTestbed\\RowCertificate.lean",
+        "-o",
+        "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\upstream-row-certificate-replay\\build\\HodgeTestbed\\RowCertificate.olean"
+      ],
+      "exit_code": 0,
+      "log": "RowCertificate.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 55.042
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+        "--root=C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\sextics-lean-row-certificates\\formal\\lean",
+        "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\sextics-lean-row-certificates\\formal\\lean\\HodgeTestbed\\RowCertificateExample.lean",
+        "-o",
+        "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\upstream-row-certificate-replay\\build\\HodgeTestbed\\RowCertificateExample.olean"
+      ],
+      "exit_code": 0,
+      "log": "RowCertificateExample.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 75.877
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+        "--root=C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\upstream-row-certificate-replay",
+        "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\upstream-row-certificate-replay\\Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "axioms.log",
+      "log_lf_sha256": "fbea3028a7b1215b01d4fd291f38538ad1628a73d1e3ebb8bf41917a7f24399f",
+      "elapsed_seconds": 69.175
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+        "--root=C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\upstream-row-certificate-replay",
+        "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\upstream-row-certificate-replay\\Replay.lean"
+      ],
+      "exit_code": 0,
+      "log": "kernel-direct.log",
+      "log_lf_sha256": "f8465de57afd47bb561560cec9e15f8abeb500037aaadb774cae527a1c200925",
+      "elapsed_seconds": 102.436
+    }
+  ],
+  "audit_runner_lf_sha256": "633c236aba3a5e2f187e962eacececbc148a236f9a4d7be7644de5974bed953c",
+  "official_checker_lf_sha256": "eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f",
+  "compiled_artifact_sha256": {
+    "HodgeTestbed/RowCertificate.olean": "97eb047fc4f7a478a8f4a11b02a56c84349ca1a04b5c351fc370096d9f28f450",
+    "HodgeTestbed/RowCertificateExample.olean": "c1bbc8e50c76f0866e38e5d944bb9236a80ad36c5e2a8207bdc570881aebdffc"
+  },
+  "kernel_method": "Native Lean invokes official LeanChecker.replayFromImports sequentially for the two explicit modules, with standard trusted imports; this is not --fresh or an independent kernel implementation.",
+  "earlier_attempts": [
+    "The first isolated-source compile required an explicit package root.",
+    "A two-module kernel replay was interrupted when the concurrent main batch exhausted WSL memory; final replay is sequential."
+  ],
+  "scope": "Exact maintenance sources checked with cached Lean4.31.0/mathlib fabf563a; upstream Lean4.33.0 compatibility remains untested."
+}

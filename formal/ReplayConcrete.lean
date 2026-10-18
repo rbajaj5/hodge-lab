@@ -1,0 +1,24 @@
+import LeanChecker
+
+/-!
+Audit harness only. This calls the official default single-module replay
+routine sequentially, omitting the CLI's whole-search-path enumeration.
+Imported declarations have the same trusted status as in default leanchecker;
+this is not the --fresh mode and adds no proof declaration.
+-/
+
+#eval do
+  Lean.initSearchPath (← Lean.findSysroot)
+  for module in [
+      `HodgeLab.RowCertificate,
+      `HodgeLab.CyclicFano.Case00, `HodgeLab.CyclicFano.Case01,
+      `HodgeLab.CyclicFano.Case02, `HodgeLab.CyclicFano.Case03,
+      `HodgeLab.CyclicFano.Case04, `HodgeLab.CyclicFano.Case05,
+      `HodgeLab.CyclicFano.Case06, `HodgeLab.CyclicFano.Case07,
+      `HodgeLab.CyclicFano.Case08, `HodgeLab.CyclicFano.Case09,
+      `HodgeLab.CyclicFano.Case10, `HodgeLab.CyclicFano.Case11,
+      `HodgeLab.CyclicFano.Case12, `HodgeLab.CyclicFano.Case13,
+      `HodgeLab.CyclicFano.Case14, `HodgeLab.CyclicFano.Case15] do
+    replayFromImports module
+    IO.println s!"PASS {module}"
+    (← IO.getStdout).flush

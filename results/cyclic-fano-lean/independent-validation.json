@@ -1,0 +1,354 @@
+{
+  "schema": "cyclic-fano-lean-independent-v1",
+  "status": "PASS",
+  "cases": [
+    {
+      "case_index": 0,
+      "selected_rows": 3,
+      "physical_coefficients_checked": 528,
+      "columns_annihilated": 175,
+      "target_pairing": 49,
+      "matrix_nonzero_entries": 4,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "32f3a6f9e9b4a1c5d553990742612ee5ebdc8eba90e0815bf88826b75a17c43c",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "3633efd55b6e1f46aef453191456eab16d2e7ea0fd22e43d6334c1d8020fb2e5"
+    },
+    {
+      "case_index": 1,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": 98,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "481bc5d05b96404361dbd65ea9ba53c1ca9b423a737e24a68c139001e19ff3d5",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "19d1f70f8e3e357703b19b964562eaac406f0067c83a347702aec86523d1f195"
+    },
+    {
+      "case_index": 2,
+      "selected_rows": 3,
+      "physical_coefficients_checked": 528,
+      "columns_annihilated": 175,
+      "target_pairing": -49,
+      "matrix_nonzero_entries": 4,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "d9ebd3c4231d0759c36ef9965734eb49149d0389ca3c98f40a376c537281279f",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "f1360602a82313f80d594f2f39ef293111d1521d796d5deb7f2402353051df6c"
+    },
+    {
+      "case_index": 3,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": 98,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "6e72d9f1dc8be24ca08247b2bf4b9789ca1dfca6dfdd5a420a56ce3290325a4d",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "2ff56826de43a66e58d22d59818a138723e51e487a1f6f2de846d742b5cf0746"
+    },
+    {
+      "case_index": 4,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -98,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "63a7686ea869fdded115efdc30b5efd0cc02e7acf5cf8850af3bb680d0df4820",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "27baad4b76777a3768978b56b4f2e5c8c47250699dfd4c0d14a34977ca094e6f"
+    },
+    {
+      "case_index": 5,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -5,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884"
+    },
+    {
+      "case_index": 6,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -98,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "fe8cb3bd2b902c76f654e446e03c365593342dfd4e77efeb04acfd169bd68426",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "590a9a473333b137f8c52e326e4b8e888d608e43b9f818da16b5aebd16fee3fb"
+    },
+    {
+      "case_index": 7,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -392,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "d4f0efb76a71577adcf4fdc947b567e88eacbbc28b769850f3696d99e70d5bf4",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "9ab7327fdfe430d42a0bbf2f8f68d7fb824beccd1be46f107fed5340602c7111"
+    },
+    {
+      "case_index": 8,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -196,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "b2b04c06f8cd47d9b38e68d542b01d596a9b521c165ad351e0bed3e9e54f9215",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "0ffa961499f98e810126bc5a5a5d8dae70e13e4a19047ce4c6e125c7954d8ffb"
+    },
+    {
+      "case_index": 9,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -49,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "cdf0b76c3b1f7c02557ce7cb93b3bb7a8a1f0c704689aeafa246018a2df013e2",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "1eea6193c9494de3c0b74835f81a06f2b8a6e1a9a99c1e644ae2947a296f1e11"
+    },
+    {
+      "case_index": 10,
+      "selected_rows": 3,
+      "physical_coefficients_checked": 528,
+      "columns_annihilated": 175,
+      "target_pairing": 5,
+      "matrix_nonzero_entries": 4,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "229d7dacce5c9bd6c5bc25d0806ff3ec498329f8307e7867472cd056693b6ba7",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "ed1c91e7e096801cb2bf7a4175cad21b268e99ad60f5a2bf2f504fc4c099c236"
+    },
+    {
+      "case_index": 11,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": -1,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "556f242c86619ff129bc427e30716b5c6a875e1dc1491cc415bc059dcc23055b",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "c47d38fc0158c9ad88b132d6a0d05ae3c0c600e72d0bc4c52780445665eb46cd"
+    },
+    {
+      "case_index": 12,
+      "selected_rows": 2,
+      "physical_coefficients_checked": 352,
+      "columns_annihilated": 175,
+      "target_pairing": 1,
+      "matrix_nonzero_entries": 2,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "7fe2acaa3dc9eb7f034905f3c4f8769f4e117ff7cae105bbb5d3c2e8d8e02ea7",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "c8d341091200f6a66bd7870d69d8f0156a2d449bac547cd90d587badd611cbf4"
+    },
+    {
+      "case_index": 13,
+      "selected_rows": 16,
+      "physical_coefficients_checked": 2816,
+      "columns_annihilated": 175,
+      "target_pairing": -143223894266048,
+      "matrix_nonzero_entries": 136,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "84a00751d556cbfbac2100d8802868d0c6330a9d830fc6ee878affbedb32c682",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "97bff6dcac91cf41763ba51b1d8a8a12bc6d7fd327f0cbafe5470c2b8c1b9d3a"
+    },
+    {
+      "case_index": 14,
+      "selected_rows": 39,
+      "physical_coefficients_checked": 6864,
+      "columns_annihilated": 175,
+      "target_pairing": 124884085550152069802,
+      "matrix_nonzero_entries": 307,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "a028a520ca4b3cb2d90f197de707f6705791c7248ca0a1447caf04c4986db25a",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "55911fcae0753eaeecfac6260fa875c8148dd2310af43769e412225229eca930"
+    },
+    {
+      "case_index": 15,
+      "selected_rows": 16,
+      "physical_coefficients_checked": 2816,
+      "columns_annihilated": 175,
+      "target_pairing": -448189806355721,
+      "matrix_nonzero_entries": 136,
+      "altered_inputs_rejected": [
+        "weight",
+        "target",
+        "entry",
+        "scale",
+        "monomial",
+        "column_count",
+        "missing_row"
+      ],
+      "certificate_lf_sha256": "3094add23c595fc14ebc90395b8b0a9ed39ab93a523a0c4c728367cf77703dd3",
+      "lean_literal_data_match": true,
+      "lean_source_lf_sha256": "de03e0556c5473a500999d4fc91005ca620a258e828282652424ce3a368b7b5e"
+    }
+  ],
+  "source_lf_sha256": {
+    "experiments/check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "experiments/check_cyclic_fano_cubic_polars.py": "e2b768adaae6ad97345110cfd65114f3c645f348d34c051d3ea215e321ae2453",
+    "experiments/check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "experiments/check_cyclic_fano_lean.py": "6310ce44d138a3e7b76b5a3670af9efc5e6712b55f753fedd9be20204316f7e8",
+    "experiments/check_cyclic_fano_linear_polars.py": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+    "formal/HodgeLab/CyclicFano/Case00.lean": "3633efd55b6e1f46aef453191456eab16d2e7ea0fd22e43d6334c1d8020fb2e5",
+    "formal/HodgeLab/CyclicFano/Case01.lean": "19d1f70f8e3e357703b19b964562eaac406f0067c83a347702aec86523d1f195",
+    "formal/HodgeLab/CyclicFano/Case02.lean": "f1360602a82313f80d594f2f39ef293111d1521d796d5deb7f2402353051df6c",
+    "formal/HodgeLab/CyclicFano/Case03.lean": "2ff56826de43a66e58d22d59818a138723e51e487a1f6f2de846d742b5cf0746",
+    "formal/HodgeLab/CyclicFano/Case04.lean": "27baad4b76777a3768978b56b4f2e5c8c47250699dfd4c0d14a34977ca094e6f",
+    "formal/HodgeLab/CyclicFano/Case05.lean": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884",
+    "formal/HodgeLab/CyclicFano/Case06.lean": "590a9a473333b137f8c52e326e4b8e888d608e43b9f818da16b5aebd16fee3fb",
+    "formal/HodgeLab/CyclicFano/Case07.lean": "9ab7327fdfe430d42a0bbf2f8f68d7fb824beccd1be46f107fed5340602c7111",
+    "formal/HodgeLab/CyclicFano/Case08.lean": "0ffa961499f98e810126bc5a5a5d8dae70e13e4a19047ce4c6e125c7954d8ffb",
+    "formal/HodgeLab/CyclicFano/Case09.lean": "1eea6193c9494de3c0b74835f81a06f2b8a6e1a9a99c1e644ae2947a296f1e11",
+    "formal/HodgeLab/CyclicFano/Case10.lean": "ed1c91e7e096801cb2bf7a4175cad21b268e99ad60f5a2bf2f504fc4c099c236",
+    "formal/HodgeLab/CyclicFano/Case11.lean": "c47d38fc0158c9ad88b132d6a0d05ae3c0c600e72d0bc4c52780445665eb46cd",
+    "formal/HodgeLab/CyclicFano/Case12.lean": "c8d341091200f6a66bd7870d69d8f0156a2d449bac547cd90d587badd611cbf4",
+    "formal/HodgeLab/CyclicFano/Case13.lean": "97bff6dcac91cf41763ba51b1d8a8a12bc6d7fd327f0cbafe5470c2b8c1b9d3a",
+    "formal/HodgeLab/CyclicFano/Case14.lean": "55911fcae0753eaeecfac6260fa875c8148dd2310af43769e412225229eca930",
+    "formal/HodgeLab/CyclicFano/Case15.lean": "de03e0556c5473a500999d4fc91005ca620a258e828282652424ce3a368b7b5e",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "results/cyclic-fano-lean/packet.json": "16e532120af0a7bdf11eb742e61d1de91124fa90046c5cb735da1ccf11ca030c"
+  },
+  "elapsed_seconds": 49.247,
+  "scope": "Independent polynomial reconstruction of selected integer rows and exact dual cancellations. This script is not a Lean checker or a HasCertificate proof."
+}

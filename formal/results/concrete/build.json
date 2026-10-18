@@ -1,0 +1,36 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "HodgeLab.RowCertificate",
+    "HodgeLab.CyclicFano.Case00",
+    "HodgeLab.CyclicFano.Case01",
+    "HodgeLab.CyclicFano.Case02",
+    "HodgeLab.CyclicFano.Case03",
+    "HodgeLab.CyclicFano.Case04",
+    "HodgeLab.CyclicFano.Case05",
+    "HodgeLab.CyclicFano.Case06",
+    "HodgeLab.CyclicFano.Case07",
+    "HodgeLab.CyclicFano.Case08",
+    "HodgeLab.CyclicFano.Case09",
+    "HodgeLab.CyclicFano.Case10",
+    "HodgeLab.CyclicFano.Case11",
+    "HodgeLab.CyclicFano.Case12",
+    "HodgeLab.CyclicFano.Case13",
+    "HodgeLab.CyclicFano.Case14",
+    "HodgeLab.CyclicFano.Case15"
+  ],
+  "execution_command": [
+    "wsl.exe",
+    "-e",
+    "sh",
+    "-lc",
+    "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake build HodgeLab.RowCertificate HodgeLab.CyclicFano.Case00 HodgeLab.CyclicFano.Case01 HodgeLab.CyclicFano.Case02 HodgeLab.CyclicFano.Case03 HodgeLab.CyclicFano.Case04 HodgeLab.CyclicFano.Case05 HodgeLab.CyclicFano.Case06 HodgeLab.CyclicFano.Case07 HodgeLab.CyclicFano.Case08 HodgeLab.CyclicFano.Case09 HodgeLab.CyclicFano.Case10 HodgeLab.CyclicFano.Case11 HodgeLab.CyclicFano.Case12 HodgeLab.CyclicFano.Case13 HodgeLab.CyclicFano.Case14 HodgeLab.CyclicFano.Case15"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.107,
+  "bound_seconds": 600,
+  "log": "results/concrete/build.log",
+  "log_lf_sha256": "c2daf6e97b3e5d031d69d1041b9b4136585fd6f1e50ca013f32e2fd999601c9a",
+  "expected_failure": false
+}

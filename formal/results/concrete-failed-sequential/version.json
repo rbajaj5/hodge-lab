@@ -1,0 +1,21 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "--version"
+  ],
+  "execution_command": [
+    "wsl.exe",
+    "-e",
+    "sh",
+    "-lc",
+    "cd /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal && lake env lean --version"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 7.364,
+  "bound_seconds": 600,
+  "log": "results/concrete/version.log",
+  "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+  "expected_failure": false
+}
