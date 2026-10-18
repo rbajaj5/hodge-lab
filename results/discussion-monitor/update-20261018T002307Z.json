@@ -1,0 +1,85 @@
+{
+  "schema": "hodge-lab-discussion-observation-v1",
+  "before_utc": "2026-10-17T23:07:31.254532+00:00",
+  "retrieved_utc": "2026-10-18T00:23:07.986484+00:00",
+  "all_pages_fetched": true,
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "new_comments": [
+    {
+      "id": "DC_kwDOVLOOJc4BIgq0",
+      "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19008180",
+      "parent_id": "DC_kwDOVLOOJc4BIcDA",
+      "author": {
+        "login": "fqlx",
+        "name": "Ben Burns"
+      },
+      "createdAt": "2026-10-17T23:34:16Z",
+      "updatedAt": "2026-10-17T23:34:16Z",
+      "body_sha256": "65266b1c2989918e6c324679e9270d2697649e4cd532f367e843d0ec77bc3ce6"
+    }
+  ],
+  "edited_comments": [
+    {
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIcDA",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18989248",
+        "parent_id": null,
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "createdAt": "2026-10-17T05:40:33Z",
+        "updatedAt": "2026-10-17T19:10:32Z",
+        "body_sha256": "3e4afb5fea46cc4e4a57a05c680a93df2843228dcb6af657a75f6a325da73c95"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIcDA",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18989248",
+        "parent_id": null,
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "createdAt": "2026-10-17T05:40:33Z",
+        "updatedAt": "2026-10-17T23:34:40Z",
+        "body_sha256": "adb02a14410fb0e244dd4d398eb654941c45b58bd8a6e42062a4e2876ed4bf57"
+      },
+      "change": "Prepended latest-continuation pointer and research-run-stopped statement; prior body unchanged"
+    }
+  ],
+  "removed_comments": [],
+  "unchanged_threads": [
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "answer_or_lock_changes": false,
+  "reported_proof_checks_replayed_here": false,
+  "prior_T100_credit_changed": false,
+  "maintainer_summary_changed": false,
+  "upstream_writes": 0,
+  "scope": "Reported exclusion of one four-coefficient degree-12 elliptic span; no solve or unconditional degree-bound improvement claimed."
+}

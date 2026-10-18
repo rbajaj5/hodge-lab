@@ -1980,6 +1980,46 @@ conversations or evidence of an accepted solve.
     verified. The historical discussion tally stays at **24**; the PR
     tally is now **one draft**, with zero accepted solves.
 
+80. **17 October 2026, 20:23 EDT / 18 October, 00:23 UTC — New reported holdout obstruction observed.**
+    The scheduled read-only refresh fetched every comment and reply page
+    in discussions #44, #55, #56, and #111–120. Against the 23:07 UTC
+    baseline it found one new reply and one linked parent edit in #44;
+    all twelve other threads, including cyclic Fano #112, were unchanged.
+
+    In [reply 19008180](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19008180),
+    `fqlx` (Ben Burns) reports an exact exclusion of the four-dimensional
+    degree-twelve span obtained from the coefficients of an elliptic
+    denominator polynomial `D(ell)`. Three rational duals reportedly
+    annihilate 51,408 Jacobian columns and force three coordinates to
+    vanish. A fourth dual rejects the surviving direction using its
+    complete reduced 357-column correction system, retaining all 50
+    correction monomials and a possibly nonzero quotient. The stated
+    scope differs from the earlier degree-twelve conic span; it does
+    not exclude other degree-twelve supports or improve the unconditional
+    degree bound. The post also records function-field identities and
+    twenty distinct ordinary inverse points over the algebraic closure
+    of the field with 139 elements, without claiming generic inverse
+    degree twenty, boundary regularity, or the missing target Gysin image.
+
+    The author reports successful standard-library and optional SymPy
+    replays, source-hash checks, and rejection of a corrupted dual. This
+    monitoring run **did not download or execute that proof packet**;
+    these are the author's reported checks, not our independent replay.
+    [Pinned proof packet](https://gist.github.com/fqlx/a717e0766ddcde9353e1c48079b7571f/abfea63a44994af0e8534110dad61a49af848b27).
+    The post expressly leaves holdout unsolved, with no certificate,
+    Lean proof, or solve PR. Its general credit to `rbajaj5` acknowledges
+    earlier work; it is not a new reproduction of our T100 result. The
+    previously recorded T100 credit and maintainer summary are unchanged.
+
+    The [parent comment](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18989248)
+    adds a pointer to this continuation and says that research run is
+    stopped; the previous mathematical text is unchanged. No monitored
+    thread changed its answer or lock state. Research here remains on
+    the new targets. [Comparison receipt](results/discussion-monitor/update-20261018T002307Z.json)
+    retains IDs, timestamps, body hashes and scope. No upstream write
+    was made: the tally remains **24 discussion contributions, one draft
+    maintenance PR, and zero accepted solves**.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
