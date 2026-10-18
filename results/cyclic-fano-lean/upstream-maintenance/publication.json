@@ -1,0 +1,36 @@
+{
+  "schema": "hodge-lab-upstream-maintenance-publication-v1",
+  "verified_utc": "2026-10-18T00:21:48.393722+00:00",
+  "method": "GitHub CLI readback; exact body, author, draft state, head and two added files checked",
+  "number": 121,
+  "url": "https://github.com/hodge-computer/sextics/pull/121",
+  "title": "Maintenance: add finite-row obstruction lemmas",
+  "created_utc": "2026-10-18T00:20:52Z",
+  "author": "rbajaj5",
+  "draft": true,
+  "state_at_readback": "OPEN",
+  "base_branch": "main",
+  "head_commit": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "head_branch": "lean-row-certificates-20261017",
+  "files": [
+    {
+      "path": "formal/lean/HodgeTestbed/RowCertificate.lean",
+      "additions": 61,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "formal/lean/HodgeTestbed/RowCertificateExample.lean",
+      "additions": 64,
+      "deletions": 0,
+      "changeType": "ADDED"
+    }
+  ],
+  "proposal_body_lf_sha256": "94f917d8224c9153fbe22eab1a394cf570c035f1f0bee586f385f09cb7a42363",
+  "notebook_commit": "7fe139a725339afd1a45caf801dbee27f7d97417",
+  "tested_environment": "Lean 4.31.0; mathlib fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "checks": "Two modules compile and replay; five axiom reports pass. See receipt.json.",
+  "upstream_environment": "Lean 4.33.0 untested; draft maintenance proposal awaiting review",
+  "discussion_comments_added": 0,
+  "accepted_solve_claimed": false
+}

@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Historical publication tally, through 17 October 2026 (EDT):** 24 discussion contributions (originally seventeen top-level comments and seven replies); 0 authored issues; 0 pull requests; 0 reviews or review comments; 0 authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
+**Historical publication tally, through 17 October 2026 (EDT):** 24 discussion contributions (originally seventeen top-level comments and seven replies); 0 authored issues; 1 draft maintenance pull request; 0 reviews or review comments; 0 merged authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
 
 ## Posts
 
@@ -55,6 +55,25 @@ Our intent is to understand the fixed problems, share reproducible results and u
 23. **17 October 2026, 14:10 EDT / 18:10 UTC — [Mixed-biweight discussion #56: complete degree-six exclusion](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359).** Shared the exact degree-six obstruction including all three extra E1 directions, raising this fixed target's denominator lower bound to seven. The post explains why correction elimination modulo the Jacobian ideal applies outside the Jacobian denominator subspace, the two rounds of square identities, the failed lower multiplier degrees, and the two remaining complex points. It displays the three-term coefficient functional that rejects both points while retaining all 315 shared Koszul corrections and an unrestricted quotient. The post links immutable proof commit `b5d294e`, four actual-map/support/root visualizations, rational checks, the separate reconstruction, and retained exploratory probes. The separate checker rejects 50 altered witnesses. The current discussion was reread and empty; upstream main was unchanged and no open PR existed. GitHub's mathematical preview was inspected. The full 4,059-character body, author, permanent URL, discussion, and absence of a reply parent were independently read back and matched. The linked repository push succeeded after one transient SSH connection failure. This is the only upstream post in the batch; no holdout post, existence certificate, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/mixed-degree6-extra/upstream-post.json). Remote CI was not claimed in the post.
 
 24. **17 October 2026, 14:31 EDT / 18:31 UTC — [Cyclic-triple-fano discussion #112: explicit free curve and local covering family](https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605).** Shared one checked geometric partial result for this new target only. The quotient curve's twisted deformation map has rank six; seven incidence equations give a smooth three-parameter component, and marked evaluation has a four-by-four minor equal to one. The post links [immutable code, exact checks, three figures, and limits](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/notes/cyclic-fano-curve.md), credits the upstream framework and classical methods, and discloses Codex assistance. The two implementations reject ten and six altered witnesses. No supporting divisor, certificate, Lean proof, solution PR, or accepted solve is claimed. The thread was read and empty before posting. The author, complete 5,002-character body, URL, discussion, and absence of a reply parent were read back and matched. The supporting Hodge Lab commit was pushed immediately afterward. Local previews rendered all math, but live GitHub inspection found that the Gram display rejected `\operatorname`; the internal note uses `\mathrm{diag}`. **The post preceded the user's stand-down instruction. Further upstream posts and edits are now paused, so that live-comment formatting issue remains uncorrected upstream.** [Publication receipt and rendering limitation](results/cyclic-fano-curve/upstream-post.json).
+
+## Pull requests
+
+1. **17 October 2026, 20:20 EDT / 18 October, 00:20 UTC — [Draft maintenance PR #121: finite-row obstruction lemmas](https://github.com/hodge-computer/sextics/pull/121).**
+   Submitted the reusable row-functional lemma and a literal two-row,
+   175-column worked example, following the user's request to contribute
+   reusable Lean work. Only two new files under `formal/lean/HodgeTestbed/`
+   are proposed; no existing upstream file changed. Author `rbajaj5`,
+   draft status, base `main`, and head
+   `84b1c1584b7615ec7189e896df2734a0833e84e1` were read back and verified.
+   Both files compiled, all five axiom reports passed, and the official
+   replay routine completed under Lean 4.31.0. Upstream's pinned 4.33.0
+   environment remains untested. The polynomial-to-matrix correspondence
+   remains checked separately in Python. The proposal credits the project
+   authors, standard finite-sum algebra and mathlib, and discloses Codex
+   assistance. It is not a `HasCertificate` proof, an accepted solution,
+   or a claim to solve points. No discussion comment was added.
+   [Publication receipt](results/cyclic-fano-lean/upstream-maintenance/publication.json)
+   · [immutable notebook](https://github.com/rbajaj5/hodge-lab/blob/7fe139a725339afd1a45caf801dbee27f7d97417/notes/cyclic-fano-concrete-lean.md).
 
 ## Research intuition and experiments
 
@@ -1947,8 +1966,19 @@ conversations or evidence of an accepted solve.
     cast lemmas. It supplies neither a new Hodge theorem nor a
     `HasCertificate` proof, and leaves the full 175-parameter family
     open. No discussion post belongs to this batch. A reusable
-    two-file maintenance proposal is being prepared separately;
-    no PR is counted until publication.
+    two-file maintenance proposal was prepared separately; no PR was
+    counted until publication.
+
+    **Publication checkpoint:** pushed this batch, including the
+    whack-a-mole paragraph about the formalization experience, as
+    [`7fe139a`](https://github.com/rbajaj5/hodge-lab/commit/7fe139a725339afd1a45caf801dbee27f7d97417).
+    The [fresh Lean CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121)
+    is in progress and the
+    [CPU data replay](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400120)
+    is queued at this checkpoint; remote success is not claimed.
+    The separate draft maintenance PR #121 above was then published and
+    verified. The historical discussion tally stays at **24**; the PR
+    tally is now **one draft**, with zero accepted solves.
 
 ## Keeping this current
 
