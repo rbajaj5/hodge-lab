@@ -75,6 +75,13 @@ Our intent is to understand the fixed problems, share reproducible results and u
    [Publication receipt](results/cyclic-fano-lean/upstream-maintenance/publication.json)
    · [immutable notebook](https://github.com/rbajaj5/hodge-lab/blob/7fe139a725339afd1a45caf801dbee27f7d97417/notes/cyclic-fano-concrete-lean.md).
 
+   **Later validation update, 17 October 2026:** upstream's pinned Lean
+   4.33.0 compatibility check subsequently passed for both proposed modules.
+   The same draft PR's description now links the archived evidence; its
+   head and two-file scope are unchanged. See research checkpoint 82 and
+   [the update receipt](results/cyclic-fano-lean/upstream-maintenance/validation-update.json).
+   This does not change the historical submission tally or acceptance status.
+
 ## Research intuition and experiments
 
 These entries record our reasoning even when it has not been posted upstream.
@@ -2079,8 +2086,15 @@ conversations or evidence of an accepted solve.
     environment remains Lean 4.31.0. The initial Windows input scanner's
     Unicode decoding failure was repaired before CI and retained in
     [the setup record](formal/compatibility/upstream433/development.json).
-    No discussion comment or new PR belongs to this batch; the existing
-    draft PR's validation description will be updated with this evidence.
+    Updated only the existing draft PR #121 description at
+    `2026-10-18T00:54:34Z`, linking the immutable evidence checkpoint
+    [`197dafb`](https://github.com/rbajaj5/hodge-lab/commit/197dafba1322efbf50621dfa2358a55cb14552d1).
+    The published body, author, draft state, unchanged proposed head and
+    two-file scope were read back and verified.
+    [Description-update receipt](results/cyclic-fano-lean/upstream-maintenance/validation-update.json).
+    No discussion comment or new PR was added. The tally remains 24
+    discussion contributions, one draft maintenance PR, and zero accepted
+    solves; maintainer authorization and acceptance remain pending.
 
 ## Keeping this current
 
