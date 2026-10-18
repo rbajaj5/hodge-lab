@@ -1,0 +1,7 @@
+def HodgeLab.SparsePolynomial.coefficient : Exponent → Sparse → ℚ :=
+fun m x => List.brecOn x (coefficient._f m)
+{ num := Int.ofNat 1, den_nz := ⋯, reduced := ⋯ }
+{ num := Int.ofNat 49, den := 2400, den_nz := ⋯, reduced := ⋯ }
+HodgeLab/PolynomialProbe.lean:253:0: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

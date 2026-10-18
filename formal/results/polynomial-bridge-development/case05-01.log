@@ -1,0 +1,2601 @@
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨0, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨0, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨0, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨0, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨0, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨0, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨1, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨1, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨1, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨1, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨1, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨1, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨2, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨2, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨2, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨2, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨2, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨2, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨3, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨3, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨3, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨3, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨3, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨3, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨4, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨4, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨4, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨4, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨4, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨4, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨5, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨5, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨5, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨5, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨5, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨5, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨6, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨6, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨6, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨6, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨6, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨6, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨7, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨7, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨7, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨7, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨7, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨7, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨8, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨8, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨8, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨8, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨8, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨8, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨9, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨9, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨9, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨9, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨9, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨9, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨10, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨10, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨10, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨10, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨10, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨10, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨11, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨11, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨11, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨11, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨11, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨11, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨12, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨12, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨12, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨12, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨12, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨12, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨13, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨13, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨13, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨13, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨13, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨13, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨14, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨14, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨14, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨14, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨14, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨14, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨15, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨15, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨15, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨15, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨15, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨15, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨16, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨16, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨16, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨16, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨16, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨16, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨17, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨17, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨17, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨17, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨17, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨17, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨18, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨18, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨18, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨18, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨18, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨18, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨19, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨19, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨19, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨19, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨19, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨19, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨20, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨20, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨20, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨20, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨20, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨20, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨21, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨21, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨21, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨21, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨21, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨21, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨22, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨22, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨22, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨22, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨22, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨22, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨23, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨23, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨23, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨23, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨23, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨23, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨24, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨24, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨24, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨24, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨24, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨24, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨25, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨25, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨25, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨25, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨25, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨25, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨26, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨26, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨26, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨26, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨26, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨26, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨27, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨27, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨27, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨27, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨27, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨27, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨28, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨28, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨28, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨28, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨28, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨28, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨29, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨29, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨29, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨29, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨29, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨29, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨30, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨30, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨30, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨30, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨30, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨30, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨31, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨31, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨31, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨31, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨31, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨31, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨32, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨32, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨32, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨32, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨32, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨32, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨33, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨33, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨33, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨33, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨33, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨33, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨34, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨34, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨34, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨34, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨34, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨34, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨35, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨35, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨35, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨35, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨35, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨35, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨36, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨36, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨36, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨36, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨36, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨36, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨37, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨37, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨37, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨37, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨37, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨37, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨38, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨38, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨38, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨38, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨38, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨38, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨39, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨39, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨39, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨39, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨39, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨39, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨40, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨40, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨40, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨40, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨40, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨40, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨41, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨41, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨41, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨41, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨41, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨41, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨42, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨42, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨42, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨42, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨42, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨42, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨43, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨43, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨43, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨43, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨43, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨43, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨44, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨44, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨44, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨44, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨44, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨44, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨45, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨45, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨45, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨45, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨45, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨45, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨46, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨46, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨46, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨46, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨46, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨46, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨47, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨47, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨47, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨47, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨47, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨47, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨48, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨48, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨48, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨48, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨48, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨48, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨49, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨49, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨49, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨49, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨49, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨49, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨50, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨50, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨50, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨50, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨50, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨50, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨51, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨51, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨51, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨51, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨51, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨51, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨52, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨52, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨52, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨52, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨52, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨52, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨53, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨53, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨53, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨53, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨53, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨53, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨54, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨54, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨54, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨54, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨54, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨54, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨55, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨55, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨55, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨55, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨55, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨55, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨56, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨56, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨56, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨56, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨56, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨56, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨57, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨57, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨57, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨57, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨57, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨57, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨58, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨58, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨58, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨58, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨58, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨58, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨59, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨59, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨59, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨59, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨59, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨59, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨60, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨60, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨60, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨60, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨60, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨60, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨61, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨61, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨61, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨61, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨61, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨61, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨62, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨62, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨62, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨62, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨62, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨62, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨63, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨63, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨63, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨63, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨63, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨63, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨64, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨64, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨64, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨64, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨64, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨64, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨65, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨65, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨65, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨65, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨65, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨65, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨66, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨66, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨66, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨66, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨66, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨66, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨67, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨67, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨67, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨67, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨67, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨67, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨68, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨68, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨68, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨68, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨68, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨68, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨69, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨69, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨69, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨69, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨69, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨69, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨70, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨70, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨70, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨70, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨70, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨70, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨71, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨71, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨71, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨71, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨71, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨71, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨72, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨72, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨72, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨72, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨72, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨72, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨73, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨73, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨73, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨73, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨73, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨73, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨74, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨74, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨74, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨74, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨74, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨74, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨75, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨75, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨75, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨75, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨75, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨75, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨76, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨76, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨76, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨76, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨76, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨76, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨77, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨77, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨77, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨77, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨77, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨77, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨78, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨78, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨78, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨78, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨78, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨78, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨79, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨79, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨79, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨79, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨79, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨79, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨80, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨80, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨80, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨80, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨80, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨80, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨81, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨81, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨81, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨81, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨81, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨81, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨82, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨82, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨82, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨82, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨82, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨82, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨83, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨83, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨83, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨83, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨83, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨83, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨84, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨84, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨84, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨84, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨84, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨84, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨85, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨85, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨85, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨85, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨85, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨85, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨86, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨86, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨86, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨86, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨86, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨86, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨87, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨87, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨87, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨87, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨87, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨87, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨88, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨88, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨88, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨88, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨88, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨88, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨89, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨89, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨89, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨89, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨89, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨89, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨90, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨90, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨90, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨90, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨90, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨90, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨91, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨91, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨91, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨91, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨91, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨91, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨92, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨92, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨92, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨92, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨92, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨92, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨93, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨93, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨93, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨93, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨93, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨93, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨94, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨94, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨94, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨94, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨94, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨94, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨95, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨95, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨95, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨95, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨95, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨95, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨96, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨96, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨96, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨96, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨96, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨96, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨97, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨97, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨97, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨97, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨97, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨97, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨98, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨98, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨98, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨98, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨98, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨98, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: Tactic `decide` failed for proposition
+  rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨99, ⋯⟩)) =
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨99, ⋯⟩))
+because its `Decidable` instance
+  instDecidableEqRat
+    (rowScale ((fun i => i) ⟨0, ⋯⟩) *
+      coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨99, ⋯⟩)))
+    ↑(Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨99, ⋯⟩))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((rowScale ((fun i => i) ⟨0, ⋯⟩)).mul
+        (coefficient (rowExponent ((fun i => i) ⟨0, ⋯⟩)) (columnSparse ((fun i => i) ⟨99, ⋯⟩)))).num,
+    Case05.matrix ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨99, ⋯⟩) with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+HodgeLab/CyclicFano/Case05Polynomial.lean:255:36: error: maximum number of errors (100; from option `maxErrors`) reached, exiting

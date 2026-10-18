@@ -1,0 +1,23 @@
+{
+  "command": [
+    "wsl.exe",
+    "--cd",
+    "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal",
+    "-e",
+    "timeout",
+    "120",
+    "/home/anaxe/.elan/bin/lake",
+    "env",
+    "lean",
+    "-o",
+    ".lake/build/lib/lean/HodgeLab/CyclicFano/Case05PolynomialField.olean",
+    "HodgeLab/CyclicFano/Case05PolynomialField.lean"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 8.957984300002863,
+  "bound_seconds": 120,
+  "source_lf_sha256": "12a7c42a91497f7b738ea579905919e2194a50f60d09d3b048b40441694e463d",
+  "source_snapshot": "field-01.lean.txt",
+  "sparse_dependency_lf_sha256": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+  "sparse_dependency_snapshot": "sparse-d94557bc849a.lean.txt"
+}

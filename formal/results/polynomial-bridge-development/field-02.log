@@ -1,0 +1,7 @@
+HodgeLab/CyclicFano/Case05PolynomialField.lean:42:32: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_assoc, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

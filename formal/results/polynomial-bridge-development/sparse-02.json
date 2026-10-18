@@ -1,0 +1,20 @@
+{
+  "command": [
+    "wsl.exe",
+    "--cd",
+    "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal",
+    "-e",
+    "timeout",
+    "120",
+    "/home/anaxe/.elan/bin/lake",
+    "env",
+    "lean",
+    "-o",
+    ".lake/build/lib/lean/HodgeLab/SparsePolynomial.olean",
+    "HodgeLab/SparsePolynomial.lean"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 21.154414899996482,
+  "bound_seconds": 120,
+  "source_lf_sha256": "af2949a2f8c6f0e29dbefed003837bbc0608db3624590e838e93058bb03b5dad"
+}

@@ -1,0 +1,9 @@
+import HodgeLab.CyclicFano.Case05Polynomial
+open HodgeLab.SparsePolynomial
+open HodgeLab.CyclicFano.Case05Polynomial
+set_option maxRecDepth 100000
+set_option maxHeartbeats 4000000
+example : (49 / 2401 : ℚ) * coefficient (rowExponent 0) (columnSparse 119) = 1 := by
+  decide +kernel
+example : ¬ ((49 / 2401 : ℚ) * coefficient (rowExponent 0) (columnSparse 119) = 1) := by
+  decide +kernel

@@ -1,0 +1,31 @@
+HodgeLab/SparsePolynomial.lean:62:22: error: unsolved goals
+case cons
+c : ℚ
+tail : List (Exponent × ℚ)
+ih : eval (scale c tail) = MvPolynomial.C c * eval tail
+m : Exponent
+a : ℚ
+⊢ eval (List.map (fun term => (term.1, c * term.2)) tail) = MvPolynomial.C c * eval tail
+HodgeLab/SparsePolynomial.lean:64:23: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  simp [scale, eval, i̵h̵,̵ ̵mul_add, MvPolynomial.C_mul_monomial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/SparsePolynomial.lean:92:22: error: unsolved goals
+case cons
+i : Fin 5
+tail : List (Exponent × ℚ)
+ih : eval (derivative i tail) = (MvPolynomial.pderiv i) (eval tail)
+m : Exponent
+c : ℚ
+⊢ eval (List.map (fun term => (fun j => term.1 j - if j = i then 1 else 0, term.2 * ↑(term.1 i))) tail) =
+    (MvPolynomial.pderiv i) (eval tail)
+HodgeLab/SparsePolynomial.lean:94:28: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  simp [derivative, eval, i̵h̵,̵ ̵MvPolynomial.pderiv_monomial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

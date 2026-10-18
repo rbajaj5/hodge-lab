@@ -1,0 +1,22 @@
+HodgeLab/CyclicFano/Case05PolynomialField.lean:20:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq K (↑(rowScale row) * ↑(MvPolynomial.coeff (exponent (rowExponent row)) (column j))) ↑(Case05.matrix row j)
+but is expected to have type
+  @Eq K
+    (↑(rowScale row) * MvPolynomial.coeff (exponent (rowExponent row)) ((MvPolynomial.map (Rat.castHom K)) (column j)))
+    ↑(Case05.matrix row j)
+HodgeLab/CyclicFano/Case05PolynomialField.lean:26:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq K (↑(rowScale row) * ↑(MvPolynomial.coeff (exponent (rowExponent row)) rhs)) ↑(Case05.target row)
+but is expected to have type
+  @Eq K (↑(rowScale row) * MvPolynomial.coeff (exponent (rowExponent row)) ((MvPolynomial.map (Rat.castHom K)) rhs))
+    ↑(Case05.target row)
+HodgeLab/CyclicFano/Case05PolynomialField.lean:42:32: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_assoc, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

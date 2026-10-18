@@ -1,0 +1,52 @@
+import HodgeLab.CyclicFano.Case05Polynomial
+
+/-! Scalar extension of the explicit polynomial obstruction to characteristic-zero fields. -/
+
+open scoped BigOperators
+namespace HodgeLab.CyclicFano.Case05Polynomial
+open HodgeLab.SparsePolynomial
+
+noncomputable def columnOver (K : Type*) [Field K] [CharZero K] (j : Fin 175) :
+    MvPolynomial (Fin 5) K := MvPolynomial.map (Rat.castHom K) (column j)
+
+noncomputable def rhsOver (K : Type*) [Field K] [CharZero K] :
+    MvPolynomial (Fin 5) K := MvPolynomial.map (Rat.castHom K) rhs
+
+theorem column_coefficients_over (K : Type*) [Field K] [CharZero K]
+    (row : Fin 2) (j : Fin 175) :
+    (rowScale row : K) * MvPolynomial.coeff (exponent (rowExponent row)) (columnOver K j) =
+      (Case05.matrix row j : K) := by
+  have h := congrArg (Rat.castHom K) (column_coefficients row j)
+  simpa [columnOver, MvPolynomial.coeff_map] using h
+
+theorem target_coefficients_over (K : Type*) [Field K] [CharZero K] (row : Fin 2) :
+    (rowScale row : K) * MvPolynomial.coeff (exponent (rowExponent row)) (rhsOver K) =
+      (Case05.target row : K) := by
+  have h := congrArg (Rat.castHom K) (target_coefficients row)
+  simpa [rhsOver, MvPolynomial.coeff_map] using h
+
+theorem polynomial_equation_implies_matrix_over (K : Type*) [Field K] [CharZero K]
+    (c : Fin 175 → K)
+    (equation : ∑ j, MvPolynomial.C (c j) * columnOver K j = rhsOver K) :
+    ∀ row : Fin 2, ∑ j, (Case05.matrix row j : K) * c j = (Case05.target row : K) := by
+  intro row
+  calc
+    ∑ j, (Case05.matrix row j : K) * c j =
+        ∑ j, ((rowScale row : K) * MvPolynomial.coeff (exponent (rowExponent row))
+          (columnOver K j)) * c j := by simp only [column_coefficients_over]
+    _ = (rowScale row : K) * MvPolynomial.coeff (exponent (rowExponent row))
+          (∑ j, MvPolynomial.C (c j) * columnOver K j) := by
+          simp only [MvPolynomial.coeff_sum, MvPolynomial.coeff_C_mul, Finset.mul_sum]
+          apply Finset.sum_congr rfl
+          intro j hj
+          simp only [mul_assoc, mul_left_comm, mul_comm]
+    _ = (rowScale row : K) * MvPolynomial.coeff (exponent (rowExponent row)) (rhsOver K) := by
+          rw [equation]
+    _ = (Case05.target row : K) := target_coefficients_over K row
+
+theorem no_polynomial_solution_over (K : Type*) [Field K] [CharZero K] :
+    ¬ ∃ c : Fin 175 → K, ∑ j, MvPolynomial.C (c j) * columnOver K j = rhsOver K := by
+  rintro ⟨c, equation⟩
+  exact Case05.no_solution (K := K) ⟨c, polynomial_equation_implies_matrix_over K c equation⟩
+
+end HodgeLab.CyclicFano.Case05Polynomial

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "wsl.exe",
+    "--cd",
+    "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/outputs/hodge-lab/formal",
+    "-e",
+    "timeout",
+    "120",
+    "/home/anaxe/.elan/bin/lake",
+    "env",
+    "lean",
+    "-o",
+    ".lake/build/lib/lean/HodgeLab/PolynomialNegativeProbe.olean",
+    "HodgeLab/PolynomialNegativeProbe.lean"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 15.753723199988599,
+  "bound_seconds": 120,
+  "source_lf_sha256": "ecb2a0b75d5374b512061e2f999e27e6fd6235adec5a379a08f2b2a39d1ad39b",
+  "source_snapshot": "negative-coefficient-01.lean.txt",
+  "sparse_dependency_lf_sha256": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+  "sparse_dependency_snapshot": "sparse-d94557bc849a.lean.txt"
+}

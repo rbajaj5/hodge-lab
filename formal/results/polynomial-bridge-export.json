@@ -1,0 +1,112 @@
+{
+  "schema": "hodge-lab-case05-polynomial-export-v1",
+  "modules": [
+    "HodgeLab.RowCertificate",
+    "HodgeLab.CyclicFano.Case05",
+    "HodgeLab.SparsePolynomial",
+    "HodgeLab.CyclicFano.Case05Polynomial",
+    "HodgeLab.CyclicFano.Case05PolynomialField"
+  ],
+  "theorem_names": [
+    "HodgeLab.no_solution_of_row_certificate",
+    "HodgeLab.no_solution_of_integer_row_certificate",
+    "HodgeLab.CyclicFano.Case05.annihilates",
+    "HodgeLab.CyclicFano.Case05.separates",
+    "HodgeLab.CyclicFano.Case05.no_solution",
+    "HodgeLab.SparsePolynomial.exponent_apply",
+    "HodgeLab.SparsePolynomial.exponent_eq",
+    "HodgeLab.SparsePolynomial.exponent_add",
+    "HodgeLab.SparsePolynomial.exponent_sub",
+    "HodgeLab.SparsePolynomial.eval_append",
+    "HodgeLab.SparsePolynomial.coefficient_eval",
+    "HodgeLab.SparsePolynomial.eval_scale",
+    "HodgeLab.SparsePolynomial.eval_subtract",
+    "HodgeLab.SparsePolynomial.eval_monomial_product",
+    "HodgeLab.SparsePolynomial.eval_multiply",
+    "HodgeLab.SparsePolynomial.eval_derivative",
+    "HodgeLab.CyclicFano.Case05Polynomial.computed_column_coefficients",
+    "HodgeLab.CyclicFano.Case05Polynomial.computed_target_coefficients",
+    "HodgeLab.CyclicFano.Case05Polynomial.column_coefficients",
+    "HodgeLab.CyclicFano.Case05Polynomial.target_coefficients",
+    "HodgeLab.CyclicFano.Case05Polynomial.delta_formula",
+    "HodgeLab.CyclicFano.Case05Polynomial.denominator_formula",
+    "HodgeLab.CyclicFano.Case05Polynomial.rhs_formula",
+    "HodgeLab.CyclicFano.Case05Polynomial.column_formula",
+    "HodgeLab.CyclicFano.Case05Polynomial.polynomial_equation_implies_matrix",
+    "HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution",
+    "HodgeLab.CyclicFano.Case05Polynomial.column_coefficients_over",
+    "HodgeLab.CyclicFano.Case05Polynomial.target_coefficients_over",
+    "HodgeLab.CyclicFano.Case05Polynomial.polynomial_equation_implies_matrix_over",
+    "HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution_over"
+  ],
+  "source_lf_sha256": {
+    "experiments/check_cyclic_fano_branch_polars.py": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+    "experiments/check_cyclic_fano_cubic_polars.py": "e2b768adaae6ad97345110cfd65114f3c645f348d34c051d3ea215e321ae2453",
+    "experiments/check_cyclic_fano_guided_denominators.py": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+    "experiments/check_cyclic_fano_lean.py": "6310ce44d138a3e7b76b5a3670af9efc5e6712b55f753fedd9be20204316f7e8",
+    "experiments/check_cyclic_fano_linear_polars.py": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58",
+    "experiments/check_cyclic_fano_unfolding.py": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+    "formal/generate_polynomial_bridge.py": "4e651d608f66aa94933e89ca2fa8b86406a37f10cc9a103e9a2235dff697873c",
+    "formal/HodgeLab/CyclicFano/Case05.lean": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884",
+    "formal/HodgeLab/CyclicFano/Case05Polynomial.lean": "b279007cb6667ef52cc2718c708effffee5596e154b265d70968c557f0f08c1d",
+    "formal/HodgeLab/CyclicFano/Case05PolynomialField.lean": "2a0733ff74011ddaff87bffbcb7cecf2f766607a9441e98dc8c9a7274e428c41",
+    "formal/HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "formal/HodgeLab/SparsePolynomial.lean": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+    "results/cyclic-fano-curve/source/instance.rec": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+    "results/cyclic-fano-lean/case-05.json": "903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c"
+  },
+  "variable_order": [
+    "X0",
+    "X1",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "direction": [
+    [
+      0,
+      "1"
+    ],
+    [
+      69,
+      "1"
+    ]
+  ],
+  "correction_count": 175,
+  "selected_rows": [
+    [
+      0,
+      1,
+      7,
+      1,
+      5
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      6
+    ]
+  ],
+  "row_scales": [
+    "49/2400",
+    "147/40"
+  ],
+  "coefficient_checks": 352,
+  "negative_controls": [
+    {
+      "label": "scale",
+      "file": "formal/HodgeLab/CyclicFano/Case05Polynomial.lean",
+      "before": "then 49 / 2400 else",
+      "after": "then 49 / 2401 else"
+    },
+    {
+      "label": "density",
+      "file": "formal/HodgeLab/CyclicFano/Case05Polynomial.lean",
+      "before": "def betaSparse : Sparse := [(exp 1 0 3 0 0, (1 / 3))]",
+      "after": "def betaSparse : Sparse := [(exp 1 0 3 0 0, (1 / 4))]"
+    }
+  ],
+  "scope": "Specifies explicit Case05 rational polynomial operators, sparse MvPolynomial semantics and352 coefficient identities, with statements deriving the existing2x175 matrix equation and impossibility over every characteristic-zero field after mapping rational coefficients. Use the separate validation receipt for completed compilation and replay status. Identification with the fixed source record and completeness of the projected correction family remain external exact checks; no HasCertificate claim."
+}

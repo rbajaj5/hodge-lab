@@ -1,0 +1,100 @@
+import Mathlib.Algebra.MvPolynomial.PDeriv
+import Mathlib.Data.Rat.Defs
+import Mathlib.Tactic.FinCases
+
+/-! Computable finite lists with a proved interpretation as multivariate polynomials. -/
+
+namespace HodgeLab.SparsePolynomial
+
+abbrev Exponent := Fin 5 → ℕ
+abbrev Sparse := List (Exponent × ℚ)
+
+noncomputable def exponent (m : Exponent) : Fin 5 →₀ ℕ :=
+  Finsupp.equivFunOnFinite.symm m
+
+@[simp] theorem exponent_apply (m : Exponent) (i : Fin 5) : exponent m i = m i := rfl
+
+@[simp] theorem exponent_eq (m n : Exponent) : exponent m = exponent n ↔ m = n :=
+  Finsupp.equivFunOnFinite.symm.injective.eq_iff
+
+@[simp] theorem exponent_add (m n : Exponent) :
+    exponent (fun i => m i + n i) = exponent m + exponent n := by ext i; rfl
+
+@[simp] theorem exponent_sub (m : Exponent) (i : Fin 5) :
+    exponent (fun j => m j - if j = i then 1 else 0) = exponent m - Finsupp.single i 1 := by
+  ext j
+  simp [Finsupp.single_apply, eq_comm]
+
+noncomputable def eval : Sparse → MvPolynomial (Fin 5) ℚ
+  | [] => 0
+  | (m, c) :: tail => MvPolynomial.monomial (exponent m) c + eval tail
+
+def coefficient (m : Exponent) : Sparse → ℚ
+  | [] => 0
+  | (n, c) :: tail => if n = m then c + coefficient m tail else coefficient m tail
+
+def scale (c : ℚ) (p : Sparse) : Sparse := p.map fun term => (term.1, c * term.2)
+
+def subtract (p q : Sparse) : Sparse := p ++ scale (-1) q
+
+def multiply (p q : Sparse) : Sparse :=
+  p.flatMap fun a => q.map fun b => (fun i => a.1 i + b.1 i, a.2 * b.2)
+
+def derivative (i : Fin 5) (p : Sparse) : Sparse :=
+  p.map fun term => (fun j => term.1 j - if j = i then 1 else 0,
+                     term.2 * term.1 i)
+
+@[simp] theorem eval_append (p q : Sparse) : eval (p ++ q) = eval p + eval q := by
+  induction p with
+  | nil => simp [eval]
+  | cons term tail ih => rcases term with ⟨m, c⟩; simp [eval, ih, add_assoc]
+
+theorem coefficient_eval (m : Exponent) (p : Sparse) :
+    MvPolynomial.coeff (exponent m) (eval p) = coefficient m p := by
+  induction p with
+  | nil => simp [eval, coefficient]
+  | cons term tail ih =>
+    rcases term with ⟨n, c⟩
+    by_cases h : n = m <;> simp [eval, coefficient, ih, h]
+
+@[simp] theorem eval_scale (c : ℚ) (p : Sparse) :
+    eval (scale c p) = MvPolynomial.C c * eval p := by
+  induction p with
+  | nil => simp [eval, scale]
+  | cons term tail ih =>
+    rcases term with ⟨m, a⟩
+    simp only [scale] at ih
+    simp [scale, eval, ih, mul_add, MvPolynomial.C_mul_monomial]
+
+@[simp] theorem eval_subtract (p q : Sparse) : eval (subtract p q) = eval p - eval q := by
+  simp [subtract, sub_eq_add_neg]
+
+theorem eval_monomial_product (a : Exponent × ℚ) (q : Sparse) :
+    eval (q.map fun b => (fun i => a.1 i + b.1 i, a.2 * b.2)) =
+      MvPolynomial.monomial (exponent a.1) a.2 * eval q := by
+  induction q with
+  | nil => simp [eval]
+  | cons term tail ih =>
+    rcases term with ⟨m, c⟩
+    simp [eval, ih, mul_add, MvPolynomial.monomial_mul]
+
+@[simp] theorem eval_multiply (p q : Sparse) : eval (multiply p q) = eval p * eval q := by
+  induction p with
+  | nil => simp [multiply, eval]
+  | cons term tail ih =>
+    simp only [multiply, List.flatMap_cons, eval_append, eval_monomial_product]
+    change MvPolynomial.monomial (exponent term.1) term.2 * eval q + eval (multiply tail q) = _
+    rw [ih]
+    cases term
+    simp [eval, add_mul]
+
+@[simp] theorem eval_derivative (i : Fin 5) (p : Sparse) :
+    eval (derivative i p) = MvPolynomial.pderiv i (eval p) := by
+  induction p with
+  | nil => simp [derivative, eval]
+  | cons term tail ih =>
+    rcases term with ⟨m, c⟩
+    simp only [derivative] at ih
+    simp [derivative, eval, ih, MvPolynomial.pderiv_monomial]
+
+end HodgeLab.SparsePolynomial

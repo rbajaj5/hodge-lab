@@ -1,0 +1,329 @@
+import HodgeLab.SparsePolynomial
+import HodgeLab.CyclicFano.Case05
+import Mathlib.Data.Fin.VecNotation
+
+/-!
+The explicit five-variable polynomial equation for mixed cubic case05.
+Variable order is X0,X1,Y0,Y1,Y2. Source-to-model identification and
+completeness of the projected correction space remain separate checks.
+-/
+
+open scoped BigOperators
+namespace HodgeLab.CyclicFano.Case05Polynomial
+open HodgeLab.SparsePolynomial
+
+def exp (a b c d e : ℕ) : Exponent := ![a,b,c,d,e]
+def qSparse : Sparse := [(exp 3 0 0 0 0, (5 / 7)),
+    (exp 1 0 0 1 1, (5 / 7)),
+    (exp 0 1 1 1 0, (5 / 7))]
+def hSparse : Sparse := [(exp 6 0 0 0 0, 1),
+    (exp 3 1 1 1 0, (5 / 7)),
+    (exp 2 0 1 1 2, (5 / 7)),
+    (exp 1 1 0 3 1, (5 / 7)),
+    (exp 0 6 0 0 0, 1),
+    (exp 0 0 6 0 0, 1),
+    (exp 0 0 0 6 0, 1),
+    (exp 0 0 0 0 6, 1)]
+def betaSparse : Sparse := [(exp 1 0 3 0 0, (1 / 3))]
+def v0 : Sparse := [(exp 3 0 0 0 0, 1)]
+def v1 : Sparse := [(exp 0 0 0 0 3, 1)]
+def deltaSparse : Sparse := subtract (multiply qSparse qSparse) (scale 4 hSparse)
+def denominatorSparse : Sparse :=
+  multiply v0 (derivative 0 deltaSparse) ++ multiply v1 (derivative 1 deltaSparse)
+def rhsSparse : Sparse := scale 4 (subtract
+  (multiply (derivative 0 (multiply betaSparse v0) ++
+             derivative 1 (multiply betaSparse v1)) denominatorSparse)
+  (multiply betaSparse (multiply v0 (derivative 0 denominatorSparse) ++
+                       multiply v1 (derivative 1 denominatorSparse))))
+
+inductive Correction where
+  | base (i j : Fin 5) (h : Exponent)
+  | mixed (i k : Fin 5)
+
+def correction (column : Fin 175) : Correction :=
+  match column.val with
+  | 0 => .base 0 1 (exp 2 0 0 0 0)
+  | 1 => .base 0 1 (exp 1 1 0 0 0)
+  | 2 => .base 0 1 (exp 1 0 1 0 0)
+  | 3 => .base 0 1 (exp 1 0 0 1 0)
+  | 4 => .base 0 1 (exp 1 0 0 0 1)
+  | 5 => .base 0 1 (exp 0 2 0 0 0)
+  | 6 => .base 0 1 (exp 0 1 1 0 0)
+  | 7 => .base 0 1 (exp 0 1 0 1 0)
+  | 8 => .base 0 1 (exp 0 1 0 0 1)
+  | 9 => .base 0 1 (exp 0 0 2 0 0)
+  | 10 => .base 0 1 (exp 0 0 1 1 0)
+  | 11 => .base 0 1 (exp 0 0 1 0 1)
+  | 12 => .base 0 1 (exp 0 0 0 2 0)
+  | 13 => .base 0 1 (exp 0 0 0 1 1)
+  | 14 => .base 0 1 (exp 0 0 0 0 2)
+  | 15 => .base 0 2 (exp 2 0 0 0 0)
+  | 16 => .base 0 2 (exp 1 1 0 0 0)
+  | 17 => .base 0 2 (exp 1 0 1 0 0)
+  | 18 => .base 0 2 (exp 1 0 0 1 0)
+  | 19 => .base 0 2 (exp 1 0 0 0 1)
+  | 20 => .base 0 2 (exp 0 2 0 0 0)
+  | 21 => .base 0 2 (exp 0 1 1 0 0)
+  | 22 => .base 0 2 (exp 0 1 0 1 0)
+  | 23 => .base 0 2 (exp 0 1 0 0 1)
+  | 24 => .base 0 2 (exp 0 0 2 0 0)
+  | 25 => .base 0 2 (exp 0 0 1 1 0)
+  | 26 => .base 0 2 (exp 0 0 1 0 1)
+  | 27 => .base 0 2 (exp 0 0 0 2 0)
+  | 28 => .base 0 2 (exp 0 0 0 1 1)
+  | 29 => .base 0 2 (exp 0 0 0 0 2)
+  | 30 => .base 0 3 (exp 2 0 0 0 0)
+  | 31 => .base 0 3 (exp 1 1 0 0 0)
+  | 32 => .base 0 3 (exp 1 0 1 0 0)
+  | 33 => .base 0 3 (exp 1 0 0 1 0)
+  | 34 => .base 0 3 (exp 1 0 0 0 1)
+  | 35 => .base 0 3 (exp 0 2 0 0 0)
+  | 36 => .base 0 3 (exp 0 1 1 0 0)
+  | 37 => .base 0 3 (exp 0 1 0 1 0)
+  | 38 => .base 0 3 (exp 0 1 0 0 1)
+  | 39 => .base 0 3 (exp 0 0 2 0 0)
+  | 40 => .base 0 3 (exp 0 0 1 1 0)
+  | 41 => .base 0 3 (exp 0 0 1 0 1)
+  | 42 => .base 0 3 (exp 0 0 0 2 0)
+  | 43 => .base 0 3 (exp 0 0 0 1 1)
+  | 44 => .base 0 3 (exp 0 0 0 0 2)
+  | 45 => .base 0 4 (exp 2 0 0 0 0)
+  | 46 => .base 0 4 (exp 1 1 0 0 0)
+  | 47 => .base 0 4 (exp 1 0 1 0 0)
+  | 48 => .base 0 4 (exp 1 0 0 1 0)
+  | 49 => .base 0 4 (exp 1 0 0 0 1)
+  | 50 => .base 0 4 (exp 0 2 0 0 0)
+  | 51 => .base 0 4 (exp 0 1 1 0 0)
+  | 52 => .base 0 4 (exp 0 1 0 1 0)
+  | 53 => .base 0 4 (exp 0 1 0 0 1)
+  | 54 => .base 0 4 (exp 0 0 2 0 0)
+  | 55 => .base 0 4 (exp 0 0 1 1 0)
+  | 56 => .base 0 4 (exp 0 0 1 0 1)
+  | 57 => .base 0 4 (exp 0 0 0 2 0)
+  | 58 => .base 0 4 (exp 0 0 0 1 1)
+  | 59 => .base 0 4 (exp 0 0 0 0 2)
+  | 60 => .base 1 2 (exp 2 0 0 0 0)
+  | 61 => .base 1 2 (exp 1 1 0 0 0)
+  | 62 => .base 1 2 (exp 1 0 1 0 0)
+  | 63 => .base 1 2 (exp 1 0 0 1 0)
+  | 64 => .base 1 2 (exp 1 0 0 0 1)
+  | 65 => .base 1 2 (exp 0 2 0 0 0)
+  | 66 => .base 1 2 (exp 0 1 1 0 0)
+  | 67 => .base 1 2 (exp 0 1 0 1 0)
+  | 68 => .base 1 2 (exp 0 1 0 0 1)
+  | 69 => .base 1 2 (exp 0 0 2 0 0)
+  | 70 => .base 1 2 (exp 0 0 1 1 0)
+  | 71 => .base 1 2 (exp 0 0 1 0 1)
+  | 72 => .base 1 2 (exp 0 0 0 2 0)
+  | 73 => .base 1 2 (exp 0 0 0 1 1)
+  | 74 => .base 1 2 (exp 0 0 0 0 2)
+  | 75 => .base 1 3 (exp 2 0 0 0 0)
+  | 76 => .base 1 3 (exp 1 1 0 0 0)
+  | 77 => .base 1 3 (exp 1 0 1 0 0)
+  | 78 => .base 1 3 (exp 1 0 0 1 0)
+  | 79 => .base 1 3 (exp 1 0 0 0 1)
+  | 80 => .base 1 3 (exp 0 2 0 0 0)
+  | 81 => .base 1 3 (exp 0 1 1 0 0)
+  | 82 => .base 1 3 (exp 0 1 0 1 0)
+  | 83 => .base 1 3 (exp 0 1 0 0 1)
+  | 84 => .base 1 3 (exp 0 0 2 0 0)
+  | 85 => .base 1 3 (exp 0 0 1 1 0)
+  | 86 => .base 1 3 (exp 0 0 1 0 1)
+  | 87 => .base 1 3 (exp 0 0 0 2 0)
+  | 88 => .base 1 3 (exp 0 0 0 1 1)
+  | 89 => .base 1 3 (exp 0 0 0 0 2)
+  | 90 => .base 1 4 (exp 2 0 0 0 0)
+  | 91 => .base 1 4 (exp 1 1 0 0 0)
+  | 92 => .base 1 4 (exp 1 0 1 0 0)
+  | 93 => .base 1 4 (exp 1 0 0 1 0)
+  | 94 => .base 1 4 (exp 1 0 0 0 1)
+  | 95 => .base 1 4 (exp 0 2 0 0 0)
+  | 96 => .base 1 4 (exp 0 1 1 0 0)
+  | 97 => .base 1 4 (exp 0 1 0 1 0)
+  | 98 => .base 1 4 (exp 0 1 0 0 1)
+  | 99 => .base 1 4 (exp 0 0 2 0 0)
+  | 100 => .base 1 4 (exp 0 0 1 1 0)
+  | 101 => .base 1 4 (exp 0 0 1 0 1)
+  | 102 => .base 1 4 (exp 0 0 0 2 0)
+  | 103 => .base 1 4 (exp 0 0 0 1 1)
+  | 104 => .base 1 4 (exp 0 0 0 0 2)
+  | 105 => .base 2 3 (exp 2 0 0 0 0)
+  | 106 => .base 2 3 (exp 1 1 0 0 0)
+  | 107 => .base 2 3 (exp 1 0 1 0 0)
+  | 108 => .base 2 3 (exp 1 0 0 1 0)
+  | 109 => .base 2 3 (exp 1 0 0 0 1)
+  | 110 => .base 2 3 (exp 0 2 0 0 0)
+  | 111 => .base 2 3 (exp 0 1 1 0 0)
+  | 112 => .base 2 3 (exp 0 1 0 1 0)
+  | 113 => .base 2 3 (exp 0 1 0 0 1)
+  | 114 => .base 2 3 (exp 0 0 2 0 0)
+  | 115 => .base 2 3 (exp 0 0 1 1 0)
+  | 116 => .base 2 3 (exp 0 0 1 0 1)
+  | 117 => .base 2 3 (exp 0 0 0 2 0)
+  | 118 => .base 2 3 (exp 0 0 0 1 1)
+  | 119 => .base 2 3 (exp 0 0 0 0 2)
+  | 120 => .base 2 4 (exp 2 0 0 0 0)
+  | 121 => .base 2 4 (exp 1 1 0 0 0)
+  | 122 => .base 2 4 (exp 1 0 1 0 0)
+  | 123 => .base 2 4 (exp 1 0 0 1 0)
+  | 124 => .base 2 4 (exp 1 0 0 0 1)
+  | 125 => .base 2 4 (exp 0 2 0 0 0)
+  | 126 => .base 2 4 (exp 0 1 1 0 0)
+  | 127 => .base 2 4 (exp 0 1 0 1 0)
+  | 128 => .base 2 4 (exp 0 1 0 0 1)
+  | 129 => .base 2 4 (exp 0 0 2 0 0)
+  | 130 => .base 2 4 (exp 0 0 1 1 0)
+  | 131 => .base 2 4 (exp 0 0 1 0 1)
+  | 132 => .base 2 4 (exp 0 0 0 2 0)
+  | 133 => .base 2 4 (exp 0 0 0 1 1)
+  | 134 => .base 2 4 (exp 0 0 0 0 2)
+  | 135 => .base 3 4 (exp 2 0 0 0 0)
+  | 136 => .base 3 4 (exp 1 1 0 0 0)
+  | 137 => .base 3 4 (exp 1 0 1 0 0)
+  | 138 => .base 3 4 (exp 1 0 0 1 0)
+  | 139 => .base 3 4 (exp 1 0 0 0 1)
+  | 140 => .base 3 4 (exp 0 2 0 0 0)
+  | 141 => .base 3 4 (exp 0 1 1 0 0)
+  | 142 => .base 3 4 (exp 0 1 0 1 0)
+  | 143 => .base 3 4 (exp 0 1 0 0 1)
+  | 144 => .base 3 4 (exp 0 0 2 0 0)
+  | 145 => .base 3 4 (exp 0 0 1 1 0)
+  | 146 => .base 3 4 (exp 0 0 1 0 1)
+  | 147 => .base 3 4 (exp 0 0 0 2 0)
+  | 148 => .base 3 4 (exp 0 0 0 1 1)
+  | 149 => .base 3 4 (exp 0 0 0 0 2)
+  | 150 => .mixed 0 0
+  | 151 => .mixed 0 1
+  | 152 => .mixed 0 2
+  | 153 => .mixed 0 3
+  | 154 => .mixed 0 4
+  | 155 => .mixed 1 0
+  | 156 => .mixed 1 1
+  | 157 => .mixed 1 2
+  | 158 => .mixed 1 3
+  | 159 => .mixed 1 4
+  | 160 => .mixed 2 0
+  | 161 => .mixed 2 1
+  | 162 => .mixed 2 2
+  | 163 => .mixed 2 3
+  | 164 => .mixed 2 4
+  | 165 => .mixed 3 0
+  | 166 => .mixed 3 1
+  | 167 => .mixed 3 2
+  | 168 => .mixed 3 3
+  | 169 => .mixed 3 4
+  | 170 => .mixed 4 0
+  | 171 => .mixed 4 1
+  | 172 => .mixed 4 2
+  | 173 => .mixed 4 3
+  | 174 => .mixed 4 4
+  | _ => .base 0 1 (exp 2 0 0 0 0)
+
+def xSparse (i : Fin 5) : Sparse := [(fun j => if j = i then 1 else 0, 1)]
+def columnSparse (column : Fin 175) : Sparse :=
+  match correction column with
+  | .base i j h =>
+    let f : Sparse := [(h, 1)]
+    subtract
+      (multiply denominatorSparse (subtract
+        (multiply (derivative i deltaSparse) (derivative j f))
+        (multiply (derivative j deltaSparse) (derivative i f))))
+      (multiply f (subtract
+        (multiply (derivative i deltaSparse) (derivative j denominatorSparse))
+        (multiply (derivative j deltaSparse) (derivative i denominatorSparse))))
+  | .mixed i k =>
+    multiply (xSparse k) (subtract
+      (multiply denominatorSparse (derivative i deltaSparse))
+      (scale 2 (multiply deltaSparse (derivative i denominatorSparse)))) ++
+    scale 2 (multiply (multiply deltaSparse denominatorSparse) (derivative i (xSparse k)))
+
+noncomputable def delta : MvPolynomial (Fin 5) ℚ := eval deltaSparse
+noncomputable def denominator : MvPolynomial (Fin 5) ℚ := eval denominatorSparse
+noncomputable def rhs : MvPolynomial (Fin 5) ℚ := eval rhsSparse
+noncomputable def column (j : Fin 175) : MvPolynomial (Fin 5) ℚ := eval (columnSparse j)
+
+def rowExponent (row : Fin 2) : Exponent :=
+  if row.val = 0 then exp 0 1 7 1 5 else exp 1 0 5 2 6
+def rowScale (row : Fin 2) : ℚ := if row.val = 0 then 49 / 2400 else 147 / 40
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 4000000 in
+theorem computed_column_coefficients : ∀ row : Fin 2, ∀ j : Fin 175,
+    rowScale row * coefficient (rowExponent row) (columnSparse j) =
+      (Case05.matrix row j : ℚ) := by
+  intro row j
+  fin_cases row <;> fin_cases j <;> decide
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 4000000 in
+theorem computed_target_coefficients : ∀ row : Fin 2,
+    rowScale row * coefficient (rowExponent row) rhsSparse = (Case05.target row : ℚ) := by
+  intro row
+  fin_cases row <;> decide
+
+theorem column_coefficients (row : Fin 2) (j : Fin 175) :
+    rowScale row * MvPolynomial.coeff (exponent (rowExponent row)) (column j) =
+      (Case05.matrix row j : ℚ) := by
+  exact (coefficient_eval (rowExponent row) (columnSparse j)).symm ▸
+    computed_column_coefficients row j
+
+theorem target_coefficients (row : Fin 2) :
+    rowScale row * MvPolynomial.coeff (exponent (rowExponent row)) rhs =
+      (Case05.target row : ℚ) := by
+  exact (coefficient_eval (rowExponent row) rhsSparse).symm ▸ computed_target_coefficients row
+
+theorem delta_formula : delta = eval qSparse * eval qSparse -
+    MvPolynomial.C 4 * eval hSparse := by
+  simp [delta, deltaSparse]
+
+theorem denominator_formula : denominator =
+    eval v0 * MvPolynomial.pderiv 0 delta + eval v1 * MvPolynomial.pderiv 1 delta := by
+  simp [denominator, denominatorSparse, delta]
+
+theorem rhs_formula : rhs = MvPolynomial.C 4 *
+    ((MvPolynomial.pderiv 0 (eval betaSparse * eval v0) +
+      MvPolynomial.pderiv 1 (eval betaSparse * eval v1)) * denominator -
+     eval betaSparse * (eval v0 * MvPolynomial.pderiv 0 denominator +
+                       eval v1 * MvPolynomial.pderiv 1 denominator)) := by
+  simp [rhs, rhsSparse, denominator]
+
+noncomputable def columnFormula (j : Fin 175) : MvPolynomial (Fin 5) ℚ :=
+  match correction j with
+  | .base i k h =>
+    let f := eval [(h, 1)]
+    denominator * (MvPolynomial.pderiv i delta * MvPolynomial.pderiv k f -
+                   MvPolynomial.pderiv k delta * MvPolynomial.pderiv i f) -
+    f * (MvPolynomial.pderiv i delta * MvPolynomial.pderiv k denominator -
+         MvPolynomial.pderiv k delta * MvPolynomial.pderiv i denominator)
+  | .mixed i k =>
+    eval (xSparse k) * (denominator * MvPolynomial.pderiv i delta -
+      MvPolynomial.C 2 * (delta * MvPolynomial.pderiv i denominator)) +
+    MvPolynomial.C 2 * ((delta * denominator) * MvPolynomial.pderiv i (eval (xSparse k)))
+
+theorem column_formula (j : Fin 175) : column j = columnFormula j := by
+  cases h : correction j <;>
+    simp [column, columnSparse, columnFormula, h, denominator, delta]
+
+theorem polynomial_equation_implies_matrix (c : Fin 175 → ℚ)
+    (equation : ∑ j, MvPolynomial.C (c j) * column j = rhs) :
+    ∀ row : Fin 2, ∑ j, (Case05.matrix row j : ℚ) * c j = (Case05.target row : ℚ) := by
+  intro row
+  calc
+    ∑ j, (Case05.matrix row j : ℚ) * c j =
+        ∑ j, (rowScale row * MvPolynomial.coeff (exponent (rowExponent row)) (column j)) * c j := by
+          simp only [column_coefficients]
+    _ = rowScale row * MvPolynomial.coeff (exponent (rowExponent row))
+          (∑ j, MvPolynomial.C (c j) * column j) := by
+          simp only [MvPolynomial.coeff_sum, MvPolynomial.coeff_C_mul, Finset.mul_sum]
+          apply Finset.sum_congr rfl
+          intro j hj
+          simp only [mul_assoc, mul_left_comm, mul_comm]
+    _ = rowScale row * MvPolynomial.coeff (exponent (rowExponent row)) rhs := by rw [equation]
+    _ = (Case05.target row : ℚ) := target_coefficients row
+
+theorem no_polynomial_solution :
+    ¬ ∃ c : Fin 175 → ℚ, ∑ j, MvPolynomial.C (c j) * column j = rhs := by
+  rintro ⟨c, equation⟩
+  exact Case05.no_solution (K := ℚ) ⟨c, polynomial_equation_implies_matrix c equation⟩
+
+end HodgeLab.CyclicFano.Case05Polynomial
