@@ -159,7 +159,7 @@ coefficient obstruction, and an accepted instance solution are distinct.
 
 The separate [compatibility runner](compatibility/upstream433/check.py)
 uses an isolated copy of upstream's final Lean 4.33.0 toolchain, exact
-mathlib manifest, and the two files proposed in draft PR #121. It checks
+mathlib manifest, and the two files proposed in PR #121. It checks
 the source bindings, actual dependency revisions, five declaration
 reports, two module replays, and two deliberately altered certificates.
 It checks those two proposed modules, not a build of the whole upstream
@@ -181,8 +181,10 @@ passed, and both altered certificates were rejected. The downloaded
 [receipt](results/upstream433-ci/39084143971/validation.json) and
 [all 18 command logs](results/upstream433-ci/39084143971/metadata.json)
 were independently checked against PR head `84b1c158` and the tested
-notebook commit. PR #121 remains a draft for maintainer review; this is
-our compatibility CI, not protected upstream acceptance.
+notebook commit. PR #121 is now ready for maintainer review; this is
+our compatibility CI, not protected upstream acceptance. On 17 October
+at 21:52 EDT, upstream's check stopped at missing owner authorization
+and skipped Lean. [Observed run and diagnostic](../results/cyclic-fano-lean/upstream-maintenance/owner-gate-39087992575/observation.json).
 
 The Lean workflow uploads its actual receipts and command logs as
 `concrete-lean-verification`, including diagnostic logs on failure.

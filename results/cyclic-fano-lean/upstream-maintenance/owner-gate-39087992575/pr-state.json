@@ -1,0 +1,38 @@
+{
+  "comments": [],
+  "headRefOid": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "isDraft": false,
+  "reviews": [],
+  "state": "OPEN",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-18T01:52:03Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/hodge-computer/sextics/actions/runs/39087992575/job/117558500449",
+      "name": "Protected Lean proposal checks",
+      "startedAt": "2026-10-18T01:51:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Solve proposal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-18T00:20:56Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/hodge-computer/sextics/actions/runs/39082427874/job/117541969361",
+      "name": "Protected Lean proposal checks",
+      "startedAt": "2026-10-18T00:20:56Z",
+      "status": "COMPLETED",
+      "workflowName": "Solve proposal"
+    },
+    {
+      "__typename": "StatusContext",
+      "context": "solve/lean",
+      "startedAt": "2026-10-18T01:52:00Z",
+      "state": "FAILURE",
+      "targetUrl": "https://github.com/hodge-computer/sextics/actions/runs/39087992575"
+    }
+  ],
+  "updatedAt": "2026-10-18T01:51:35Z",
+  "url": "https://github.com/hodge-computer/sextics/pull/121"
+}

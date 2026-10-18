@@ -4,7 +4,7 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Historical publication tally, through 17 October 2026 (EDT):** 24 discussion contributions (originally seventeen top-level comments and seven replies); 0 authored issues; 1 draft maintenance pull request; 0 reviews or review comments; 0 merged authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
+**Historical publication tally, through 17 October 2026 (EDT):** 24 discussion contributions (originally seventeen top-level comments and seven replies); 0 authored issues; 1 maintenance pull request (now ready for review); 0 reviews or review comments; 0 merged authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
 
 ## Posts
 
@@ -2095,6 +2095,23 @@ conversations or evidence of an accepted solve.
     No discussion comment or new PR was added. The tally remains 24
     discussion contributions, one draft maintenance PR, and zero accepted
     solves; maintainer authorization and acceptance remain pending.
+
+83. **17 October 2026, 21:52 EDT — Upstream owner-authorization check fails before Lean.**
+    The user supplied a failure notification for
+    [run 39087992575](https://github.com/hodge-computer/sextics/actions/runs/39087992575).
+    Read the actual run and PR state: head `84b1c158` is unchanged, PR #121
+    is now ready for review rather than draft, and no reviews are recorded.
+    The failed step requires the owner's authorization of the exact commit.
+    The Lean installation and theorem/replay/axiom steps were skipped.
+    Consequently this run provides no Lean failure or new mathematical result.
+    The separate successful Lean 4.33 compatibility audit remains valid for
+    the same two sources. Owner authorization and acceptance are outstanding.
+
+    [Observed metadata and exact diagnostic](results/cyclic-fano-lean/upstream-maintenance/owner-gate-39087992575/observation.json).
+    No upstream edit, rerun, comment, review or submission was made in
+    response. The historical tally remains 24 discussion contributions,
+    one maintenance PR and zero accepted solves. The polynomial bridge
+    continues in Hodge Lab; upstream updates remain batched.
 
 ## Keeping this current
 

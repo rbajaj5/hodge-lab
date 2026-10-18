@@ -1,0 +1,190 @@
+{
+  "conclusion": "failure",
+  "createdAt": "2026-10-18T01:51:37Z",
+  "event": "pull_request_target",
+  "headSha": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "jobs": [
+    {
+      "completedAt": "2026-10-18T01:52:03Z",
+      "conclusion": "failure",
+      "databaseId": 117558500449,
+      "name": "Protected Lean proposal checks",
+      "startedAt": "2026-10-18T01:51:41Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-18T01:51:43Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-18T01:51:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:45Z",
+          "conclusion": "success",
+          "name": "Resolve current immutable PR commits",
+          "number": 2,
+          "startedAt": "2026-10-18T01:51:43Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:51Z",
+          "conclusion": "success",
+          "name": "Check out the trusted base",
+          "number": 3,
+          "startedAt": "2026-10-18T01:51:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:51Z",
+          "conclusion": "success",
+          "name": "Fetch proposal and identify solve changes",
+          "number": 4,
+          "startedAt": "2026-10-18T01:51:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:52Z",
+          "conclusion": "success",
+          "name": "Mark this exact commit pending",
+          "number": 5,
+          "startedAt": "2026-10-18T01:51:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:52Z",
+          "conclusion": "success",
+          "name": "Prepare Python",
+          "number": 6,
+          "startedAt": "2026-10-18T01:51:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "success",
+          "name": "Install trusted Python dependencies",
+          "number": 7,
+          "startedAt": "2026-10-18T01:51:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "skipped",
+          "name": "Check proposal structure before preparing Lean",
+          "number": 8,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "skipped",
+          "name": "Make room for Lean and its dependency cache",
+          "number": 9,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "skipped",
+          "name": "Install pinned Lean toolchain",
+          "number": 10,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "skipped",
+          "name": "Reuse pinned protected Lean dependencies",
+          "number": 11,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "skipped",
+          "name": "Prepare protected dependencies",
+          "number": 12,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:51:59Z",
+          "conclusion": "skipped",
+          "name": "Verify exact statement, kernel replay, and axioms",
+          "number": 13,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:00Z",
+          "conclusion": "failure",
+          "name": "Require owner authorization for maintenance or live solves",
+          "number": 14,
+          "startedAt": "2026-10-18T01:51:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:00Z",
+          "conclusion": "skipped",
+          "name": "Preserve check receipts",
+          "number": 15,
+          "startedAt": "2026-10-18T01:52:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:00Z",
+          "conclusion": "skipped",
+          "name": "Reject a result for a superseded PR or base",
+          "number": 16,
+          "startedAt": "2026-10-18T01:52:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:01Z",
+          "conclusion": "success",
+          "name": "Record result on the submitted commit",
+          "number": 17,
+          "startedAt": "2026-10-18T01:52:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:01Z",
+          "conclusion": "skipped",
+          "name": "Explain the review boundary",
+          "number": 18,
+          "startedAt": "2026-10-18T01:52:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:01Z",
+          "conclusion": "skipped",
+          "name": "Post Prepare Python",
+          "number": 35,
+          "startedAt": "2026-10-18T01:52:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:01Z",
+          "conclusion": "success",
+          "name": "Post Check out the trusted base",
+          "number": 36,
+          "startedAt": "2026-10-18T01:52:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-18T01:52:01Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 37,
+          "startedAt": "2026-10-18T01:52:01Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/hodge-computer/sextics/actions/runs/39087992575/job/117558500449"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-10-18T01:52:04Z",
+  "url": "https://github.com/hodge-computer/sextics/actions/runs/39087992575"
+}

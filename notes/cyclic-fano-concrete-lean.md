@@ -188,8 +188,10 @@ and all nine pinned dependencies. Both modules compile and replay, all
 five declaration reports pass, and both altered-certificate controls are
 rejected. The [source-bound receipt and logs](../formal/results/upstream433-ci/39084143971/metadata.json)
 were downloaded and independently audited. This establishes compatibility
-of those two maintenance modules; the PR remains a draft, with no protected
-upstream acceptance or `HasCertificate` proof claimed.
+of those two maintenance modules. The PR is now ready for review; upstream's
+17 October, 21:52 EDT run stopped at missing owner authorization and skipped
+Lean. [Observed diagnostic](../results/cyclic-fano-lean/upstream-maintenance/owner-gate-39087992575/observation.json).
+No protected upstream acceptance or `HasCertificate` proof is claimed.
 
 The [development record](../formal/results/concrete-development.json)
 retains the failure and subsequent outcome. The comparison with the older

@@ -17,7 +17,10 @@ invalid-certificate controls. The exact
 [receipt](../../results/upstream433-ci/39084143971/validation.json) and
 [18 command logs](../../results/upstream433-ci/39084143971/metadata.json)
 are archived with verified source bindings. This is compatibility evidence
-for the draft PR, not an upstream acceptance decision.
+for the maintenance PR, not an upstream acceptance decision. The PR is
+now ready for review. Its 17 October, 21:52 EDT upstream run stopped at
+the owner-authorization check and skipped Lean; see the
+[observed diagnostic](../../../results/cyclic-fano-lean/upstream-maintenance/owner-gate-39087992575/observation.json).
 
 From a fresh checkout with Elan available:
 

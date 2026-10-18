@@ -1,0 +1,17 @@
+{
+  "schema": "hodge-lab-upstream-owner-gate-observation-v1",
+  "retrieved_utc": "2026-10-18T01:55:11.455117+00:00",
+  "workflow_url": "https://github.com/hodge-computer/sextics/actions/runs/39087992575",
+  "head": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "failed_step": "Require owner authorization for maintenance or live solves",
+  "exact_diagnostic": "The owner must authorize this exact commit by approving review or explicit workflow sign-off. New commits invalidate approval.",
+  "lean_verification_ran": false,
+  "pr_state": "OPEN; ready for review; no recorded reviews",
+  "upstream_writes_this_observation": 0,
+  "acceptance_claimed": false,
+  "scope": "Owner authorization is missing. This run skipped Lean and does not contradict the separate successful compatibility audit.",
+  "recorded_files_sha256": {
+    "pr-state.json": "0cc88c4a1c7e788f4e505da587dc637e88881f8e971a1736d85e7a878ce0b4a3",
+    "run.json": "15150bcc2a80f1011f28f282d23a98ef2a75302216bdff29c0502278555a0e07"
+  }
+}
