@@ -1,0 +1,13 @@
+{
+  "schema": "hodge-lab-upstream433-development-v1",
+  "attempts": [
+    {
+      "command": "python -S formal/compatibility/upstream433/check.py --check-inputs-only",
+      "status": "FAIL",
+      "reason": "The first Windows input-only check used the locale default encoding when scanning Unicode Lean sources and raised UnicodeDecodeError before any Lean invocation.",
+      "correction": "All source reads now explicitly use UTF-8. The isolated exact source copies were unchanged.",
+      "lean_executed": false
+    }
+  ],
+  "scope": "Local runner development only; Lean4.33 compilation and replay remain pending CI."
+}

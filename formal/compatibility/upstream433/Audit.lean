@@ -1,0 +1,7 @@
+import HodgeTestbed.RowCertificateExample
+
+#print axioms HodgeTestbed.no_solution_of_row_certificate
+#print axioms HodgeTestbed.no_solution_of_integer_row_certificate
+#print axioms HodgeTestbed.RowCertificateExample.annihilates
+#print axioms HodgeTestbed.RowCertificateExample.separates
+#print axioms HodgeTestbed.RowCertificateExample.no_solution

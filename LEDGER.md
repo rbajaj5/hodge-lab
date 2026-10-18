@@ -2020,6 +2020,34 @@ conversations or evidence of an accepted solve.
     was made: the tally remains **24 discussion contributions, one draft
     maintenance PR, and zero accepted solves**.
 
+81. **17 October 2026 — Full concrete Lean replay completes on fresh Linux.**
+    Continued the user's request to focus on Lean. The
+    [Linux audit](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121)
+    of exact commit `7fe139a725339afd1a45caf801dbee27f7d97417` completed
+    successfully at 20:26 EDT. All seventeen modules compiled and
+    replayed, all fifty expected axiom reports used only the permitted
+    standard axioms, and both altered Case05 certificates were rejected
+    by their false arithmetic propositions. The replay commands took
+    135.321 seconds in total, excluding builds and other checks.
+
+    Downloaded the actual receipt and logs, rather than inferring their
+    contents from the green workflow badge. A separate audit checked
+    all 23 source bindings, 16 input bindings, the export manifest,
+    38 command logs, and the matching recorded build/replay artifact
+    hashes. Compiled binaries are not included in the downloaded
+    archive, so their bytes were not independently rehashed here.
+    [Permanent archive](formal/results/concrete-ci/39082400121/metadata.json).
+    The historical Windows/WSL interruptions and 420-second timeout
+    remain unchanged. This completes the formal checks for the same
+    sixteen fixed encoded systems; it adds no new denominator exclusion
+    and leaves the polynomial-to-matrix correspondence outside Lean.
+
+    The next check targets the exact two-file draft PR #121 under
+    upstream's pinned Lean 4.33.0 environment. Its protected upstream
+    workflow is skipped while the PR is draft; no successful upstream
+    check or acceptance is inferred from that status. The contribution
+    tally remains 24 discussion posts and one draft maintenance PR.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

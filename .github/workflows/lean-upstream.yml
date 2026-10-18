@@ -1,0 +1,42 @@
+name: Upstream Lean 4.33 compatibility
+
+on:
+  push:
+    paths:
+      - 'formal/compatibility/upstream433/**'
+      - 'results/cyclic-fano-lean/upstream-maintenance/source/**'
+      - '.github/workflows/lean-upstream.yml'
+  pull_request:
+    paths:
+      - 'formal/compatibility/upstream433/**'
+      - 'results/cyclic-fano-lean/upstream-maintenance/source/**'
+      - '.github/workflows/lean-upstream.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-proposed-files:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Install pinned Elan bootstrap
+        run: |
+          set -euo pipefail
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/v4.2.0/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Validate exact upstream sources with final Lean 4.33.0
+        working-directory: formal/compatibility/upstream433
+        run: python3 -S check.py --fetch-cache
+      - name: Preserve compatibility receipts and logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: upstream-lean433-compatibility
+          path: formal/compatibility/upstream433/results/
+          if-no-files-found: error

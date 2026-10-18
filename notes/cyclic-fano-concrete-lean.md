@@ -163,6 +163,20 @@ compilations and fifty axiom audits are recorded separately as **PASS**.
 The two deliberate Lean mutation controls have not run locally; the
 portable CI driver requires them along with a fresh full replay.
 
+The later [fresh Linux CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121)
+completed that full audit successfully: seventeen builds, seventeen
+standalone module replays, fifty expected axiom reports, and two rejected
+corrupted certificates. Its
+[actual receipt](../formal/results/concrete-ci/39082400121/concrete-coefficient-validation.json)
+and [archived logs and metadata](../formal/results/concrete-ci/39082400121/metadata.json)
+were downloaded and checked against the tested commit. The seventeen
+replays took 135.321 seconds. The two negative controls fail because
+`decide` establishes that their altered propositions are false, rather
+than because of a missing import. The original local timeout is preserved
+as a separate historical outcome. The successful CI establishes the
+encoded matrix obstruction; it does not move the polynomial identification
+inside Lean or prove a `HasCertificate` statement.
+
 The smaller two-file upstream maintenance proposal was checked separately:
 both exact proposed modules compiled, all five axiom reports passed, and
 the official replay routine completed for both modules under Lean 4.31.0.

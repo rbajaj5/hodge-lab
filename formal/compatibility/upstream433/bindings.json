@@ -1,0 +1,27 @@
+{
+  "schema": "hodge-lab-upstream433-inputs-v1",
+  "upstream_repository": "https://github.com/hodge-computer/sextics",
+  "upstream_pull_request": 121,
+  "upstream_head": "84b1c1584b7615ec7189e896df2734a0833e84e1",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "copied_lf_sha256": {
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a6dedaa688411e2bbccf6a8a16524b1026a7dfc57ed53067fbec41e555ec5551",
+    "lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+    "HodgeTestbed/RowCertificate.lean": "4282fbc32a9faabf9a4c7c98df88ae458e7a5c22bb189086c26c290ac74aff96",
+    "HodgeTestbed/RowCertificateExample.lean": "3580b40fda29371e78e844f4b67cb57f19e7df60be0f22b4c20a8233624a54c5"
+  },
+  "proposal_source_files": {
+    "HodgeTestbed/RowCertificate.lean": "results/cyclic-fano-lean/upstream-maintenance/source/HodgeTestbed/RowCertificate.lean",
+    "HodgeTestbed/RowCertificateExample.lean": "results/cyclic-fano-lean/upstream-maintenance/source/HodgeTestbed/RowCertificateExample.lean"
+  },
+  "normalization": "SHA256 of UTF-8 source bytes with CRLF normalized to LF; no other changes",
+  "upstream_source_urls": {
+    "lean-toolchain": "https://github.com/hodge-computer/sextics/blob/84b1c1584b7615ec7189e896df2734a0833e84e1/formal/lean/lean-toolchain",
+    "lakefile.toml": "https://github.com/hodge-computer/sextics/blob/84b1c1584b7615ec7189e896df2734a0833e84e1/formal/lean/lakefile.toml",
+    "lake-manifest.json": "https://github.com/hodge-computer/sextics/blob/84b1c1584b7615ec7189e896df2734a0833e84e1/formal/lean/lake-manifest.json",
+    "HodgeTestbed/RowCertificate.lean": "https://github.com/hodge-computer/sextics/blob/84b1c1584b7615ec7189e896df2734a0833e84e1/formal/lean/HodgeTestbed/RowCertificate.lean",
+    "HodgeTestbed/RowCertificateExample.lean": "https://github.com/hodge-computer/sextics/blob/84b1c1584b7615ec7189e896df2734a0833e84e1/formal/lean/HodgeTestbed/RowCertificateExample.lean"
+  }
+}

@@ -56,10 +56,23 @@ implementation. The native receipt records the actual completed modules
 and must be read separately from the compilation receipt. Its result
 does not claim execution of the portable driver's two mutation controls.
 
-**Concrete local status:** all seventeen modules compiled and all fifty
+**Complete Linux audit: PASS.** The fresh
+[CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121)
+compiled and replayed all seventeen modules, checked all fifty expected
+declaration reports, and rejected both deliberately corrupted Case05
+certificates. The
+[archived receipt](results/concrete-ci/39082400121/concrete-coefficient-validation.json)
+and [run metadata with all command-log hashes](results/concrete-ci/39082400121/metadata.json)
+bind the exact tested sources and inputs. A separate audit compared those
+bindings with commit `7fe139a` and checked all 38 command logs. The recorded
+build and replay artifact hashes match pairwise; compiled binaries are not
+included in this archive. The seventeen kernel replays took 135.321 seconds
+in that run, excluding compilation and other checks.
+
+**Earlier local status:** all seventeen modules compiled and all fifty
 axiom audits passed. The additional aggregate native replay is
 **INCOMPLETE** after its 420-second bound. The two Lean mutation controls
-remain pending locally. Fresh Linux CI runs the full portable audit.
+were not executed locally; the later Linux run above completed them.
 
 ## Earlier generic rank-gap bridge
 
@@ -142,6 +155,22 @@ The local cache link inside `.lake/` is ignored; it is not a portable dependency
 The committed Lake manifest pins the dependencies needed by a fresh checkout.
 CI repeats both builds and audits without CUDA. Local compilation, a concrete
 coefficient obstruction, and an accepted instance solution are distinct.
+
+The separate [compatibility runner](compatibility/upstream433/check.py)
+uses an isolated copy of upstream's final Lean 4.33.0 toolchain, exact
+mathlib manifest, and the two files proposed in draft PR #121. It checks
+the source bindings, actual dependency revisions, five declaration
+reports, two module replays, and two deliberately altered certificates.
+It checks those two proposed modules, not a build of the whole upstream
+repository. Run it from a fresh checkout with:
+
+```sh
+python3 formal/compatibility/upstream433/check.py --fetch-cache
+```
+
+The separate `Upstream Lean 4.33 compatibility` workflow runs this same
+command. Its result must be read separately from the notebook's Lean
+4.31.0 audit and from any protected upstream acceptance decision.
 
 The Lean workflow uploads its actual receipts and command logs as
 `concrete-lean-verification`, including diagnostic logs on failure.

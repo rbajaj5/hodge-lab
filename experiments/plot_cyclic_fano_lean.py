@@ -173,12 +173,86 @@ def check_formal(bind,packet,cases):
     complete=replay['exit_code']==0 and replay['replayed_modules']==modules
     assert (replay['status']=='PASS')==complete
     if complete:assert not replay['timed_out']
+    ci=check_ci(bind,receipt,modules,names)
     return {'concrete_case_indices':list(range(16)),'declarations':50,
             'compilation':'PASS','direct_replay':replay['status'],
             'replayed_modules':len(replay['replayed_modules']),
             'replay_scope':'Official default replayFromImports; imported declarations trusted, not fresh mode.',
+            'linux_ci':ci,
             'display_theorem':'HodgeLab.CyclicFano.Case05.no_solution',
             'scope':receipt['scope']}
+
+
+def check_ci(bind,local,modules,names):
+    """Check archived CI evidence while retaining the separate local timeout.
+
+    The archive contains logs and recorded build/replay artifact digests, not
+    the .olean bytes. Matching digests are not an independent binary audit.
+    """
+    prefix='formal/results/concrete-ci/39082400121/'
+    metadata=load(bind(prefix+'metadata.json'))
+    assert metadata['schema']=='hodge-lab-archived-lean-ci-v1'
+    run=metadata['run']
+    assert run['id']==39082400121 and run['status']=='completed' and run['conclusion']=='success'
+    assert run['head_sha']=='7fe139a725339afd1a45caf801dbee27f7d97417'
+    assert metadata['prior_local_timeout_preserved']
+    files=metadata['file_lf_sha256']
+    assert len(files)==39
+    for name,digest in files.items():
+        assert not Path(name).is_absolute() and '..' not in Path(name).parts
+        assert sha(bind(prefix+name))==digest
+    receipt=load(ROOT/prefix/'concrete-coefficient-validation.json')
+    assert receipt['schema']=='hodge-lab-concrete-coefficient-lean-v1' and receipt['status']=='PASS'
+    assert receipt['source_lf_sha256']==local['sources']
+    assert receipt['input_lf_sha256']==local['inputs']
+    assert receipt['export_lf_sha256']==local['export']
+    assert receipt['source_fingerprint']==local['source_fingerprint']
+    assert receipt['concrete_cases']==list(range(16))
+    assert 'version 4.31.0,' in receipt['lean_version']
+    commands=receipt['commands'];controls=receipt['negative_controls']
+    expected=[['lake','env','lean','--version']]
+    expected += [['lake','build',module] for module in modules]
+    expected += [['lake','env','lean','AuditConcrete.lean']]
+    expected += [['lake','env','leanchecker',module] for module in modules]
+    assert [record['command'] for record in commands]==expected
+    assert len(commands)==36 and len(controls)==2
+    assert [record['command'] for record in controls]==[
+        ['lake','env','lean','.lake/concrete-negative/'+name+'.lean']
+        for name in ['entry','target']]
+    log_text={}
+    referenced={'concrete-coefficient-validation.json'}
+    for record in commands+controls:
+        assert record['source_fingerprint']==receipt['source_fingerprint']
+        assert record['execution_command']==record['command']
+        assert record['log'].startswith('results/concrete/')
+        relative=record['log'][len('results/'):]
+        referenced.add(relative)
+        assert files[relative]==record['log_lf_sha256']
+        log_text[relative]=(ROOT/prefix/relative).read_text(encoding='utf-8')
+        if record in controls:
+            assert record['expected_failure'] and record['exit_code']!=0
+            assert 'error:' in log_text[relative]
+            assert 'false' in log_text[relative] and 'decide' in log_text[relative]
+        else:
+            assert not record['expected_failure'] and record['exit_code']==0
+    assert referenced==set(files)
+    parsed={name:[a.strip() for a in axioms.split(',') if a.strip()]
+            for name,axioms in re.findall(
+                r"'([^']+)' depends on axioms: \[([^\]]*)\]",log_text['concrete/axioms.log'])}
+    assert parsed==receipt['theorem_axioms']==local['theorem_axioms']
+    assert set(parsed)==names and len(parsed)==50
+    builds=commands[1:18];kernels=commands[19:36]
+    for module,build,kernel in zip(modules,builds,kernels):
+        assert build['artifact_file']==kernel['artifact_file']==(
+            '.lake/build/lib/lean/'+module.replace('.','/')+'.olean')
+        assert build['artifact_sha256']==kernel['artifact_sha256']
+    return {'status':'PASS','run_id':run['id'],'run_url':run['url'],
+            'head_sha':run['head_sha'],'kernel_modules':len(kernels),
+            'axiom_declarations':len(parsed),'rejected_controls':len(controls),
+            'kernel_seconds':round(sum(record['elapsed_seconds'] for record in kernels),3),
+            'recorded_artifact_digest_pairs_checked':len(kernels),
+            'binary_artifacts_independently_audited':False,
+            'archived_files_checked':len(files)}
 
 
 def box(fig,x,y,w,h,color):
@@ -260,14 +334,14 @@ def draw(data):
     fig.text(.05,.273,'HodgeLab.CyclicFano.Case05.no_solution  ·  HodgeLab.no_solution_of_integer_row_certificate',
              fontsize=10.8,family='DejaVu Sans Mono',color=MUTED)
 
-    box(fig,.05,.179,.9,.078,'#EEEBF4')
+    box(fig,.05,.167,.9,.090,'#EEEBF4')
     fig.text(.065,.229,f"{len(data['cases'])} concrete finite systems compiled in Lean over any characteristic-zero field, including ℂ.",
              fontsize=13.5,weight='bold',color=PURPLE)
-    replay=data['formal']
-    replay_detail = '17 modules confirmed' if replay['direct_replay']=='PASS' else '420 s timeout'
-    fig.text(.065,.198,'100 selected rows · 611 nonzero entries · 50 declarations · '
-             f"Official default replay: {replay['direct_replay']} ({replay_detail}).",
-             fontsize=11.5,color=TEAL if replay['direct_replay']=='PASS' else CORAL)
+    replay=data['formal'];ci=replay['linux_ci']
+    fig.text(.065,.204,f"Linux CI {ci['run_id']}: 17 kernel replays · 50 axiom reports · 2 altered certificates rejected · PASS",
+             fontsize=11.8,color=TEAL)
+    fig.text(.065,.181,'100 selected rows · 611 nonzero entries. Earlier local replay timed out at 420 s; its record is preserved.',
+             fontsize=10.5,color=MUTED)
     fig.text(.05,.125,'Python source reconstruction',fontsize=14,weight='bold')
     fig.text(.407,.125,'Encoded integer rows',fontsize=14,weight='bold')
     fig.text(.730,.125,'Lean arithmetic + proof',fontsize=14,weight='bold')
@@ -296,7 +370,8 @@ def main():
     assert all(sha(ROOT/name)==digest for name,digest in data['source_sha256'].items())
     print(json.dumps({'status':'PASS','source_bindings':len(data['source_sha256']),
                       'concrete_Lean_cases':len(data['cases']),
-                      'separate_official_replay':data['formal']['direct_replay'],
+                      'historical_local_replay':data['formal']['direct_replay'],
+                      'linux_ci':data['formal']['linux_ci']['status'],
                       'display_rows':len(data['display_case']['matrix']),
                       'plot_data_bytes':(OUT/'plot-data.json').stat().st_size}))
 

@@ -77,6 +77,12 @@ that source-to-matrix correspondence remains outside Lean. These are
 formal checks of previously excluded fixed candidates. The full family
 remains open.
 
+**Full Lean audit: PASS on fresh Linux CI.** All 17 modules replayed,
+50 declaration audits passed, and both deliberately corrupted certificates
+were rejected. The earlier local timeout remains recorded.
+[Actual receipt and logs](formal/results/concrete-ci/39082400121/metadata.json)
+· [CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121).
+
 [Concrete Lean source](formal/HodgeLab/CyclicFano/Case05.lean)
 · [Reusable row-certificate lemmas](formal/HodgeLab/RowCertificate.lean)
 · [Checks, limits, and the failed parallel replay](notes/cyclic-fano-concrete-lean.md)
