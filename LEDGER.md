@@ -6,6 +6,45 @@ Our intent is to understand the fixed problems, share reproducible results and u
 
 **Historical publication tally, through 19 October 2026 (EDT):** 25 discussion contributions (originally eighteen top-level comments and seven replies); 0 authored issues; 1 maintenance pull request (closed); 0 reviews or review comments; 0 merged authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
 
+## Visual Frontier Dashboard (October 2026)
+
+| Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 6$) | Degree-6 $E_2$ Quotient Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **28+2** Hessian square cascade + **rank-9** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (cubic $35/35$, quartic $70/70$) | Order-4 Kramers quartet $(Y_0,Y_1)\mapsto(iY_1,-iY_0)$; deformed Nambu/Casimir Cramer syzygy; positive-definite node Casimir $Q_{\text{node}}$ | **CP 85–86** · [`one-reflection-skew-degree6.md`](notes/one-reflection-skew-degree6.md) |
+| **`cycle-three`** | [Discussion #55](https://github.com/hodge-computer/sextics/discussions/55) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **30** Hessian squares + **rank-7** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (quartic $70/70$) | $\mathbb{Z}_3$ cyclic transport; 7-equation diagonal quotient | **CP 71–72** · [`fresh-instance-degree6.md`](notes/fresh-instance-degree6.md) |
+| **`mixed-biweight`** | [Discussion #56](https://github.com/hodge-computer/sextics/discussions/56) | `(0, 0, 0, 0, 0, 6, 39)` ($J_6 \oplus \mathbb{Q}^3$) | **26+10** square cascade + 2-point residual functional | **$\deg D \le 6$ excluded over $\mathbb{C}$** | Non-Jacobian $E_1$ excess ($+3$ dims); three-term coefficient functional kills both residual points | **CP 73** · [`mixed-degree6-extra.md`](notes/mixed-degree6-extra.md) |
+| **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.33 row-functional bridge | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16-module polynomial-to-matrix Lean 4 bridge | **CP 74–84** · [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
+
+```mermaid
+flowchart LR
+    subgraph target["Target: one-reflection-skew (#127)"]
+        F["F = sum Z_i^6 + X0^3 X1 Y0 Y1 + X1^3 X2 Y0 Y1 + (1/7) X0 X1 Y0 Y1 (Y0^2 - Y1^2)<br/>A = X0^3 Y0^3,  q = 1"]
+    end
+    subgraph cp85["Checkpoint 85 & Post #25 (d <= 5 + Casimir Flow)"]
+        E1_5["Complete E1 (d=1..4): ker = 0<br/>d=5: ker = J_5 (dim 6)<br/>Hessian E2 rank 16/21 => a_i^2 = 0"]
+        NAMBU["Kramers Quartet (Y0,Y1)->(iY1,-iY0)<br/>Deformed Nambu/Casimir Cramer Identity<br/>Caustic on X1 Y1 = 0"]
+    end
+    subgraph cp86["Checkpoint 86 (Complete d = 6 Exclusion over C)"]
+        E1_6["Stage 1: Complete E1 at d=6<br/>rank(J_12)=4437, rank([J_12|AS_6])=4863<br/>dim ker(E1)_6 = 36 = dim J_6 (0 extra)"]
+        E2_H["Stage 2: Hessian E2 in S_12/J_12<br/>Step 1 (rank 236): 28 off-diagonals = 0<br/>Step 2 (rank 15): Kramers bridge M_13=M_14=0"]
+        E2_D["Stage 3: Full Diagonal E2 (315 Koszul)<br/>Rank 9/15 quadrics Q_1..Q_9<br/>Cubic Macaulay 35/35 & Quartic 70/70 => a_i = 0"]
+    end
+    F --> E1_5
+    F --> NAMBU
+    E1_5 --> E1_6
+    E1_6 --> E2_H --> E2_D
+```
+
+### Latest Visual Checkpoints (`one-reflection-skew`, Discussion #127)
+
+![one-reflection-skew degree-6 E1+E2 exclusion](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
+
+*Checkpoint 86 (`results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png`): Complete degree-6 $E_1 + E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew` (`dim ker(E1)_6 = 36 = dim J_6(F)`, 28+2 two-step Hessian square cascade isolating the Kramers-bridge doublet $(X_1, Y_0), (X_1, Y_1)$, rank-9 diagonal $E_2$ system with factored Casimir/Kramers modes, and full-rank cubic $35/35$ + quartic $70/70$ Macaulay elimination).*
+
+![one-reflection-skew degree <= 5 audit and Nambu/Casimir flow](results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
+
+*Checkpoint 85 & Upstream Post #25 (`results/one-reflection-skew-pilot/one-reflection-skew-audit.png`): Complete degree $\le 5$ $E_1 + E_2$ exclusion, Kramers quartet & $\mathbb{Z}_2^3$ parity audit, and deformed binary-cubic Nambu/Casimir phase-space portrait.*
+
 ## Posts
 
 1. **16 October 2026, 17:20 EDT / 21:20 UTC — [Holdout discussion #44: exact partial result](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983276).** Shared an exact exclusion of the degree-seven `{chi_Y0, chi_X1}` denominator family, with reproducible code and certificate checks. The purpose was to contribute a checkable partial result and narrow the remaining search. The post credits fqlx's preceding calculations and the project's mathematical framework, and discloses Codex assistance. It reports 9,451 of 9,453 two-character families excluded **at the time of posting**, while explicitly leaving the full holdout unresolved. No Lean `HasCertificate` proof or solve submission was claimed. Evidence: [pinned explanation and code links](https://github.com/rbajaj5/hodge-lab/blob/dc2756300cbfa7a54d4735c60b852cd38ca8725e/notes/degree-seven-pair.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38968484482).
@@ -2195,11 +2234,75 @@ conversations or evidence of an accepted solve.
     $\operatorname{Res}_\beta(c_1, c_2) = 0$ identically on $r(1+r^2 w) = 0$
     and $h_{vv}$ vanishes on $X_1 Y_1 = 0$.
     [Analysis, exact checks, and limits](notes/one-reflection-skew-pilot.md)
-    · [Audit figure](results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
+    · [Audit figure (PNG)](results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
+    · [Audit figure (SVG)](results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
     · [Verification script](experiments/one_reflection_skew_pilot.py)
     · [JSON receipt](results/one-reflection-skew-pilot/report.json).
-    No upstream comment, PR, Lean proof, or accepted solve accompanies this
-    notebook checkpoint; the upstream contribution tally remains 24.
+    Subsequently published as upstream contribution #25 on Discussion #127
+    ([receipt](results/one-reflection-skew-pilot/upstream-post.json)).
+
+    ![one-reflection-skew degree <= 5 audit](results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
+
+86. **19 October 2026, 16:54 EDT — Complete degree-six $E_1 + E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew` (Kramers-bridge cascade, factored Casimir modes, and rank-9 diagonal quotient).**
+    Executed the complete degree-six $E_1$ and $E_2$ elimination pipeline on
+    `one-reflection-skew` (`experiments/one_reflection_skew_degree6.py`):
+
+    - **Stage 1 (Complete $E_1$ at $d=6$):** In $S_{12}$ ($\dim = 6{,}188$),
+      the Jacobian multiplication map $J_{12}: (S_7)^6 \to S_{12}$ ($4{,}752$
+      columns) has exact rank $4{,}437$ and $[J_{12} \mid A S_6]$ ($462$
+      denominator columns) has rank $4{,}863$. Thus $\dim\ker(E_1)_6 = 462 - 426 = 36 = \dim J_6(F)$
+      (`non_J6_denominator_dimension = 0`; all $2{,}024{,}352$ exact Jacobian
+      annihilation pairings verified). Unlike `cyclic` and `fano`
+      ($\dim\ker(E_1)_6 = 38$), the reflection-breaking term
+      $\frac{1}{7}X_0 X_1 Y_0 Y_1(Y_0^2 - Y_1^2)$ coupled to the cubic chain
+      closes all non-Jacobian $E_1$ channels at degree six.
+    - **Stage 2 (Two-step Hessian $E_2$ cascade in $S_{12}/J_{12}$):** After
+      Verify-checking that the $315$ quadratic multiples of the elementary
+      Koszul fields span $\ker(J_{12})$ ($315 = 4{,}752 - 4{,}437$) and fixing
+      the Euler/$F$ gauge $M_{55} = 0$ ($35$ parameters, $630$ quadratic
+      columns):
+      - **Step 1 (`rank = 236` on $630$ columns):** Exports $28$ exact rational
+        dual functionals isolating $M_{ij}^2 = 0$ for $28$ of the $30$
+        off-diagonal entries, leaving only the $5$ diagonal parameters
+        $a_0,\dots,a_4$ and the **Kramers-bridge doublet**
+        $M_{13} = (X_1, Y_0)$, $M_{14} = (X_1, Y_1)$.
+      - **Step 2 (`rank = 15` on $28$ columns):** Restricting to the $7$
+        surviving parameters isolates $M_{13}^2 = 0$ and $M_{14}^2 = 0$,
+        reducing $M$ to the diagonal ansatz $\mathrm{diag}(a_0,a_1,a_2,a_3,a_4,0)$
+        ($142{,}560$ exact Jacobian annihilation pairings and $30$ mutation
+        rejections verified).
+      - **Step 3 (`rank = 4` on $15$ diagonal columns in $S_{12}/J_{12}$):**
+        Yields three factored algebraic/physical modes plus one anchor quadric:
+        $$9\,Q_{\text{node}} = (3 a_1 - a_2 - a_3 - a_4)^2 + 2\big[(a_2 - a_3)^2 + (a_3 - a_4)^2 + (a_4 - a_2)^2\big] = 0,$$
+        $$Q_{\text{Kramers}} = (a_3 - a_4)(a_0 + a_1 - a_3 - a_4) = 0, \qquad Q_{\text{bridge}} = (a_0 - a_3)(a_0 - a_1 + a_3 - a_4) = 0.$$
+    - **Stage 3 (Full diagonal $E_2$ with $315$ Koszul corrections and $462$ $F$-multiples):**
+      In $S_{12}$, the $2{,}352$ correction columns have rank $1{,}486$, and the
+      $21$ diagonal quadratic columns reduce to **9** independent RREF equations
+      $Q_1,\dots,Q_9$ in $(a_0,a_1,a_2,a_3,a_4)$ ($21{,}168$ correction
+      annihilation pairings verified), including the factored Koszul-lift
+      relations $a_2(4a_0+a_1-5a_2+4a_3+a_4)=0$,
+      $a_3(4a_0+a_1+a_2-2a_3+a_4)=0$, and $(a_3-a_4)(3a_1-a_2-2a_3+a_4)=0$.
+      Bounded Macaulay elimination achieves **full cubic rank $35/35$** ($45$
+      rows $\implies a_0^3=\dots=a_4^3=0$) and **full quartic rank $70/70$**
+      ($135$ rows $\implies a_0^4=\dots=a_4^4=0$, $2{,}240$ rational multiplier
+      products verified), excluding degree $d=6$ unconditionally over $\mathbb{C}$
+      and raising the coprime denominator degree lower bound for
+      `one-reflection-skew` to $\deg D \ge 7$.
+
+    | Stage | Ambient Space | Columns | Rank | Result / Obstruction | Packet Digest (`sha256[:16]`) |
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+    | **Complete $E_1$ ($d=6$)** | $S_{12}$ ($6{,}188$) | $4{,}752 + 462$ | $4{,}437 \to 4{,}863$ | $\dim\ker(E_1)_6 = 36 = \dim J_6(F)$ ($0$ extra) | `e9bd6e4ebdb4f159` |
+    | **Hessian $E_2$ Steps 1–3** | $S_{12}/J_{12}$ | $630 \to 28 \to 15$ | $236 \to 15 \to 4$ | $28 + 2$ off-diagonal squares $= 0$; $4$ Hessian quadrics | `5760378eb0b37575` |
+    | **Full Diagonal $E_2$** | $S_{12}$ ($6{,}188$) | $2{,}352$ corr $+ 21$ quad | $1{,}486$ (corr) | **$9$** RREF quadrics $Q_1,\dots,Q_9$ in $(a_0,\dots,a_4)$ | `55a86e93759ddb83` |
+    | **Cubic / Quartic Macaulay** | $\mathrm{Sym}^{3,4}(\mathbb{Q}^5)$ | $35$ / $70$ monos | **$35/35$** & **$70/70$** | $a_i^3 = a_i^4 = 0 \implies \deg D = 6$ excluded over $\mathbb{C}$ | `2418b9b6a05227c7` |
+
+    [Complete note and RREF equations](notes/one-reflection-skew-degree6.md)
+    · [Exclusion figure (PNG)](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
+    · [Exclusion figure (SVG)](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.svg)
+    · [Verification script](experiments/one_reflection_skew_degree6.py)
+    · [Summary JSON](results/one-reflection-skew-degree6/summary.json).
+
+    ![one-reflection-skew degree-6 exclusion](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
 
 ## Keeping this current
 
