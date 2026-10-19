@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="540" viewBox="0 0 980 540">
+  <rect width="980" height="540" fill="#f8fafc"/>
+  <rect x="24" y="20" width="932" height="76" rx="8" fill="#0f172a"/>
+  <text x="44" y="52" fill="#f8fafc" font-family="monospace" font-size="20" font-weight="bold">
+    one-reflection-skew · Exact Baseline, Parity Audit &amp; Binary-Cubic Obstruction
+  </text>
+  <text x="44" y="78" fill="#cbd5e1" font-family="monospace" font-size="13">
+    F = F0 + X0^3 X1 Y0 Y1 + X1^3 X2 Y0 Y1 + (1/7) X0 X1 Y0 Y1 (Y0^2 - Y1^2)   |   q = 1, A = X0^3 Y0^3
+  </text>
+
+  <!-- Panel 1: E1 & E2 degree <= 5 exclusion -->
+  <rect x="24" y="114" width="450" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="42" y="142" fill="#0f172a" font-family="monospace" font-size="15" font-weight="bold">
+    1. Complete Degree &lt;= 5 Exclusion (E1 + Hessian E2)
+  </text>
+  <text x="42" y="170" fill="#334155" font-family="monospace" font-size="13">
+    deg D = 1..4 : dim ker E1 = (0, 0, 0, 0) -&gt; 0 solutions
+  </text>
+  <text x="42" y="194" fill="#334155" font-family="monospace" font-size="13">
+    deg D = 5    : dim ker E1 = 6 = dim J5(F) (gradient span)
+  </text>
+  <text x="42" y="218" fill="#334155" font-family="monospace" font-size="13">
+    deg 5 E2 map : quotient quadratic rank = 15/21 mod J(F)_10
+  </text>
+  <text x="42" y="242" fill="#047857" font-family="monospace" font-size="13" font-weight="bold">
+    Result       : All 6 diagonal squares c_i^2 = 0 isolated (deg &lt;= 5 excluded)
+  </text>
+  <text x="42" y="268" fill="#475569" font-family="monospace" font-size="12">
+    Jacobian deg-6 rank: 36 (augmented with A: 37)
+  </text>
+  <text x="42" y="290" fill="#475569" font-family="monospace" font-size="12">
+    Smoothness mixed-partial l1 loads: (23/7, 30/7, 1, 18/7, 18/7, 0) &lt; 6
+  </text>
+
+  <!-- Panel 2: Symmetry comparison with one-reflection -->
+  <rect x="506" y="114" width="450" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="524" y="142" fill="#0f172a" font-family="monospace" font-size="15" font-weight="bold">
+    2. Symmetry Audit vs. Unperturbed one-reflection
+  </text>
+  <text x="524" y="170" fill="#b91c1c" font-family="monospace" font-size="13">
+    Y0 &lt;-&gt; Y1   : F(Y1,Y0) - F = -2/7 X0 X1 Y0 Y1 (Y0^2 - Y1^2) != 0
+  </text>
+  <text x="524" y="194" fill="#b91c1c" font-family="monospace" font-size="13">
+    Y0 &lt;-&gt; -Y1  : F(-Y1,-Y0) - F = -2/7 X0 X1 Y0 Y1 (Y0^2 - Y1^2) != 0
+  </text>
+  <text x="524" y="220" fill="#334155" font-family="monospace" font-size="13">
+    Surviving sign-flip blocks: tau1=(X0,X2), tau2=(X1), tau3=(Y0), tau4=(Y1)
+  </text>
+  <text x="524" y="244" fill="#334155" font-family="monospace" font-size="13">
+    Every mixed term has parity (-1,-1,-1,-1) on (tau1,tau2,tau3,tau4)
+  </text>
+  <text x="524" y="268" fill="#1e40af" font-family="monospace" font-size="12">
+    (Y0,Y1) -&gt; (i Y1, -i Y0) fixes Y0*Y1 and Y0^2-Y1^2, negates Y0^6+Y1^6
+  </text>
+  <text x="524" y="290" fill="#475569" font-family="monospace" font-size="12">
+    Y2 -&gt; -Y2 fixes F and fixes A = X0^3 Y0^3 (does not serve target directly)
+  </text>
+
+  <!-- Panel 3: Binary-cubic Hessian identity and degeneration locus -->
+  <rect x="24" y="328" width="932" height="190" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="42" y="356" fill="#0f172a" font-family="monospace" font-size="15" font-weight="bold">
+    3. Passive-Ratio Binary Cubic f(u,v) = c0 u^3 + c1 u^2 v + c2 u v^2 + c3 v^3  (u=X0^2, v=Y0^2)
+  </text>
+  <text x="42" y="382" fill="#334155" font-family="monospace" font-size="13">
+    c0 = 1 + r^6 + w^6,   c1 = beta (r + r^3 w),   c2 = (1/7) r beta (1 - beta^2),   c3 = 1 + beta^6
+  </text>
+  <text x="42" y="406" fill="#334155" font-family="monospace" font-size="13">
+    Universal Hessian identity: disc(h) * u^2 = (a1 u + a2 v) f_u + (a3 u + a4 v) f_v - 9 c2 c3 h(u,v)
+  </text>
+  <text x="42" y="430" fill="#b91c1c" font-family="monospace" font-size="13">
+    Obstruction to 3-passive-ratio Hessian transport: h_vv = 3 c1 c3 - c2^2 vanishes at beta = 0 and r = 0
+  </text>
+  <text x="42" y="454" fill="#334155" font-family="monospace" font-size="13">
+    Res_beta(c1, c2) = 0 identically on r(1+r^2 w) = 0; unlike one-reflection (c2 = 0, p = Y0 Y1),
+  </text>
+  <text x="42" y="478" fill="#334155" font-family="monospace" font-size="13">
+    here v = Y0^2 cannot absorb the Y1 = 0 locus into p = Y0 Y1 without introducing q2 = Y0^2 - Y1^2.
+  </text>
+  <text x="42" y="502" fill="#475569" font-family="monospace" font-size="12">
+    Scope: establishes E1 kernel baseline (deg 1..5) and passive-(r,w,beta) binary-cubic obstruction; higher degrees/covers remain open.
+  </text>
+</svg>

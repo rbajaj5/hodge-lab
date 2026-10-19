@@ -1,0 +1,145 @@
+{
+  "instance": "one-reflection-skew",
+  "q": 1,
+  "F": "X0**6 + X0**3*X1*Y0*Y1 + X0*X1*Y0**3*Y1/7 - X0*X1*Y0*Y1**3/7 + X1**6 + X1**3*X2*Y0*Y1 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+  "A": "X0**3*Y0**3",
+  "curationAndSmoothness": {
+    "jacobianRank": 36,
+    "augmentedRank": 37,
+    "mixedDerivativeBounds": [
+      "23/7",
+      "30/7",
+      "1",
+      "18/7",
+      "18/7",
+      "0"
+    ],
+    "pureSixthDerivativeCoeff": 6
+  },
+  "symmetryAndBinaryCubicAudit": {
+    "hiddenExchangeResidualPlus": "-2*X0*X1*Y0**3*Y1/7 + 2*X0*X1*Y0*Y1**3/7",
+    "hiddenExchangeResidualMinus": "-2*X0*X1*Y0**3*Y1/7 + 2*X0*X1*Y0*Y1**3/7",
+    "survivingTwoBlockSignSymmetries": [
+      {
+        "pair": [
+          "tau_X0X2",
+          "tau_X1"
+        ],
+        "variablesFlipped": [
+          "X0",
+          "X1",
+          "X2"
+        ],
+        "preservesF": true,
+        "targetParity": -1,
+        "jacobianSign": -1,
+        "topFormParity": 1
+      },
+      {
+        "pair": [
+          "tau_X0X2",
+          "tau_Y0"
+        ],
+        "variablesFlipped": [
+          "X0",
+          "X2",
+          "Y0"
+        ],
+        "preservesF": true,
+        "targetParity": 1,
+        "jacobianSign": -1,
+        "topFormParity": -1
+      },
+      {
+        "pair": [
+          "tau_X0X2",
+          "tau_Y1"
+        ],
+        "variablesFlipped": [
+          "X0",
+          "X2",
+          "Y1"
+        ],
+        "preservesF": true,
+        "targetParity": -1,
+        "jacobianSign": -1,
+        "topFormParity": 1
+      },
+      {
+        "pair": [
+          "tau_X1",
+          "tau_Y0"
+        ],
+        "variablesFlipped": [
+          "X1",
+          "Y0"
+        ],
+        "preservesF": true,
+        "targetParity": -1,
+        "jacobianSign": 1,
+        "topFormParity": -1
+      },
+      {
+        "pair": [
+          "tau_X1",
+          "tau_Y1"
+        ],
+        "variablesFlipped": [
+          "X1",
+          "Y1"
+        ],
+        "preservesF": true,
+        "targetParity": 1,
+        "jacobianSign": 1,
+        "topFormParity": 1
+      },
+      {
+        "pair": [
+          "tau_Y0",
+          "tau_Y1"
+        ],
+        "variablesFlipped": [
+          "Y0",
+          "Y1"
+        ],
+        "preservesF": true,
+        "targetParity": -1,
+        "jacobianSign": 1,
+        "topFormParity": -1
+      }
+    ],
+    "binaryCubicDiscriminantIdentity": {
+      "universalIdentityVerified": true,
+      "cayleySyzygyVerified": true,
+      "L_u": "27*c0*c3**2 - 9*c1*c2*c3 + 2*c2**3",
+      "L_v": "-9*c0*c2*c3 + 6*c1**2*c3 - c1*c2**2",
+      "L_h": "-6*c1*c3 + 2*c2**2",
+      "c0": "r**6 + w**6 + 1",
+      "c1": "beta*(r**3*w + r)",
+      "c2": "beta*r*(1 - beta**2)/7",
+      "c3": "beta**6 + 1",
+      "h_vv_factored": "beta*r*(147*beta**6*r**2*w + 147*beta**6 - beta**5*r + 2*beta**3*r - beta*r + 147*r**2*w + 147)/49",
+      "resultant_beta_c1_c2": "0"
+    }
+  },
+  "lowDegreeBaseline": {
+    "e1KernelDimsDegrees1To5": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 6
+    },
+    "degree5QuotientQuadraticRank": 15,
+    "degree5IsolatedSquares": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "degreeAtMost5Excluded": true,
+    "elapsedSeconds": 0.673
+  }
+}

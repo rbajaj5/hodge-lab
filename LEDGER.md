@@ -2164,6 +2164,41 @@ conversations or evidence of an accepted solve.
     No `HasCertificate`, accepted solve, new upstream comment or PR is claimed.
     The upstream tally remains unchanged; useful updates remain batched.
 
+85. **19 October 2026, 16:16 EDT — Begin `one-reflection-skew` frontier target; baseline and binary-cubic audit.**
+    Inspected upstream commit `b56894e` (*Extend cubic-surface methods and add
+    three frontier targets*: `one-reflection-skew`, `one-reflection-y2-sector`,
+    and `quadric-contact-residual`), the accepted degree-60 strict Hessian
+    solution of `one-reflection` (`3cfd50d`, PR #123 by `fqlx`), the accepted
+    Fermat-cover + moving-conic holdout solutions (`bfb1391`, `07a0f66`,
+    `dc13685`, PRs #128 and #134–#138 by `fqlx`), and open PR #144 (`DiamondJM`
+    on `one-reflection-y2-sector`). Selected `one-reflection-skew`, which has
+    no open PR.
+
+    Verified exact curation invariants (smoothness $\ell_1$ mixed-derivative
+    loads $(23/7, 30/7, 1, 18/7, 18/7, 0) < 6$ and degree-six Jacobian ranks
+    $36, 37$). Complete rational $E_1$ elimination gives $\dim\ker(E_1) = 0$
+    for degrees $1$ through $4$ and $\dim\ker(E_1) = 6 = \dim J_5(F)$ at degree
+    $5$. Modulo $J(F)_{10}$, the $21$ quadratic Hessian columns have quotient
+    rank $16/21$ (the five mixed second partials with $Y_2$ vanish) and isolate
+    all six diagonal squares $c_i^2 = 0$, excluding all denominators of degree
+    at most five over $\mathbb{C}$.
+
+    Audited the surviving two-block sign-flip symmetries on
+    $(\tau_{X_0,X_2}, \tau_{X_1}, \tau_{Y_0}, \tau_{Y_1})$ and derived the
+    universal constant-coefficient Cramer identity
+    $\operatorname{disc}(h) u^2 = L_u f_u + L_v f_v + L_h h(u,v)$ and Cayley
+    syzygy for a general binary cubic $f(u,v) = c_0 u^3 + c_1 u^2 v + c_2 u v^2 + c_3 v^3$.
+    For the 3-passive-ratio reduction $(r,w,\beta) = (X_1/X_0, X_2/X_0, Y_1/Y_0)$
+    with $(u,v) = (X_0^2, Y_0^2)$, $c_1$ and $c_2$ share the factor $r\beta$, so
+    $\operatorname{Res}_\beta(c_1, c_2) = 0$ identically on $r(1+r^2 w) = 0$
+    and $h_{vv}$ vanishes on $X_1 Y_1 = 0$.
+    [Analysis, exact checks, and limits](notes/one-reflection-skew-pilot.md)
+    · [Audit figure](results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
+    · [Verification script](experiments/one_reflection_skew_pilot.py)
+    · [JSON receipt](results/one-reflection-skew-pilot/report.json).
+    No upstream comment, PR, Lean proof, or accepted solve accompanies this
+    notebook checkpoint; the upstream contribution tally remains 24.
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
