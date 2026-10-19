@@ -8,9 +8,9 @@ Our intent is to understand the fixed problems, share reproducible results and u
 
 ## Visual Frontier Dashboard (October 2026)
 
-| Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 6$) | Degree-6 $E_2$ Quotient Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
+| Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 7$) | Degree-6 & Degree-7 $E_2$ Quotient Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **28+2** Hessian square cascade + **rank-9** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (cubic $35/35$, quartic $70/70$) | Order-4 Kramers quartet $(Y_0,Y_1)\mapsto(iY_1,-iY_0)$; deformed Nambu/Casimir Cramer syzygy; positive-definite node Casimir $Q_{\text{node}}$ | **CP 85–86 (Posts #25–26)** · [`one-reflection-skew-degree6.md`](notes/one-reflection-skew-degree6.md) |
+| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$<br/>**$d=7$:** 8 $\mathbb{Z}_2^4$ sectors; **4/4 $Y_2$-odd excluded**; 4/4 $Y_2$-even surject ($44/44$) | **$\deg D \le 6$ + all 4 $Y_2$-odd $d=7$ sectors excluded over $\mathbb{C}$** | Order-4 Kramers quartet; deformed Nambu/Casimir Cramer syzygy; $\mathbb{Z}_2^4$ superselection focusing; $Y_2$-covariant scaling $B_{Y_2 D_6}(Y_2 N_6)=Y_2^2 B_{D_6}(N_6)$ | **CP 85–87 (Posts #25–27)** · [`one-reflection-skew-degree7.md`](notes/one-reflection-skew-degree7.md) |
 | **`cycle-three`** | [Discussion #55](https://github.com/hodge-computer/sextics/discussions/55) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **30** Hessian squares + **rank-7** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (quartic $70/70$) | $\mathbb{Z}_3$ cyclic transport; 7-equation diagonal quotient | **CP 71–72** · [`fresh-instance-degree6.md`](notes/fresh-instance-degree6.md) |
 | **`mixed-biweight`** | [Discussion #56](https://github.com/hodge-computer/sextics/discussions/56) | `(0, 0, 0, 0, 0, 6, 39)` ($J_6 \oplus \mathbb{Q}^3$) | **26+10** square cascade + 2-point residual functional | **$\deg D \le 6$ excluded over $\mathbb{C}$** | Non-Jacobian $E_1$ excess ($+3$ dims); three-term coefficient functional kills both residual points | **CP 73** · [`mixed-degree6-extra.md`](notes/mixed-degree6-extra.md) |
 | **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.33 row-functional bridge | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16-module polynomial-to-matrix Lean 4 bridge | **CP 74–84** · [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
@@ -29,13 +29,21 @@ flowchart LR
         E2_H["Stage 2: Hessian E2 in S_12/J_12<br/>Step 1 (rank 236): 28 off-diagonals = 0<br/>Step 2 (rank 15): Kramers bridge M_13=M_14=0"]
         E2_D["Stage 3: Full Diagonal E2 (315 Koszul)<br/>Rank 9/15 quadrics Q_1..Q_9<br/>Cubic Macaulay 35/35 & Quartic 70/70 => a_i = 0"]
     end
+    subgraph cp87["Checkpoint 87 & Post #27 (d = 7 Z2^4 Sectors)"]
+        E1_7["Complete d=7 E1 across 8 Sectors (792 cols)<br/>rank(J_13)=6882, Koszul=840<br/>dim ker(E1)_7 = 135 = 126 (J_7) + 9 (extra)"]
+        E2_7["Superselection Focusing to S_14[(1,0,1,0)]<br/>All 4 Y2-Odd Sectors EXCLUDED over C (41/135)<br/>All 4 Y2-Even Decoupled to Y2=0 (rk 44/44)"]
+    end
     F --> E1_5
     F --> NAMBU
     E1_5 --> E1_6
-    E1_6 --> E2_H --> E2_D
+    E1_6 --> E2_H --> E2_D --> E1_7 --> E2_7
 ```
 
 ### Latest Visual Checkpoints (`one-reflection-skew`, Discussion #127)
+
+![one-reflection-skew degree-7 Z2^4 superselection sectors](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
+
+*Checkpoint 87 (`results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png`): Complete degree-7 $\mathbb{Z}_2^4$ superselection sector decomposition across all $792$ monomials of $S_7$ and $8{,}568$ rows of $S_{13}$ (`dim ker(E1)_7 = 135 = 126 + 9`), $\mathbb{Z}_2^4$ Superselection Focusing into $S_{14}[(1,0,1,0)]$, complete exclusion over $\mathbb{C}$ of all four $Y_2$-odd sectors ($41$ $E_1$ dimensions, $296$ monomials of $S_7$), and $Y_2$-decoupling + $44/44$ base-quotient surjectivity across all four $Y_2$-even sectors.*
 
 ![one-reflection-skew degree-6 E1+E2 exclusion](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
 
@@ -2305,6 +2313,68 @@ conversations or evidence of an accepted solve.
     · [Summary JSON](results/one-reflection-skew-degree6/summary.json).
 
     ![one-reflection-skew degree-6 exclusion](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
+
+87. **19 October 2026, 17:34 EDT — Complete degree-seven $\mathbb{Z}_2^4$ charge-parity superselection decomposition, $Y_2$-odd exclusion over $\mathbb{C}$, and $44/44$ base-quotient surjectivity for `one-reflection-skew`.**
+    Decomposed the complete, untruncated degree-seven $E_1$ and $E_2$ systems
+    ($S_7$ of dimension $792$, $(S_8)^6$ of dimension $7{,}722$, $S_{13}$ of
+    dimension $8{,}568$) into **eight exact superselection sectors** under the
+    order-16 real diagonal parity group $G_{\text{parity}} \cong \mathbb{Z}_2^4$
+    (`experiments/one_reflection_skew_degree7.py`):
+
+    - **Complete Degree-7 $E_1$ Kernel ($135 = 126 + 9$):** Across all eight
+      sectors, $\mathrm{rank}(J_{13}) = 6{,}882$, the degree-eight numerator
+      kernel has exact dimension $7{,}722 - 6{,}882 = 840 = 15 \times 56$
+      (spanned by the cubic multiples of the $15$ elementary Koszul fields),
+      $\dim J_7(F) = 126 = 6 \times 21$, and $\dim\ker(E_1)_7 = 135$. Five of
+      the eight sectors (all four $Y_2$-odd sectors plus `[0,1,0,0]`) have zero
+      extra non-Jacobian directions ($\ker(E_1)_{7,\chi} = J_7(F)_\chi$); the
+      $9$ extra non-$J_7$ directions live purely on $Y_2=0$ in `[0,0,1,0]`
+      ($+1$), `[1,0,0,0]` ($+1$), and `[1,1,1,0]` ($+7$).
+    - **$\mathbb{Z}_2^4$ Superselection Focusing Theorem:** Because $B_D(N_0)$
+      is quadratic in $D \in S_7[\chi]$, its parity character is
+      $2\chi + \chi(A) \equiv \chi(A) = (1,0,1,0) \pmod 2$ for every pure-parity
+      sector $\chi$, focusing all eight degree-seven $E_2$ maps into the single
+      sector $S_{14}[(1,0,1,0)]$ ($1{,}638$ rows out of $\dim S_{14} = 11{,}628$;
+      quotient dimension $213$ modulo $J_{14}(F) + F S_8$).
+    - **Complete Exclusion of All Four $Y_2$-Odd Sectors ($41/135$ $E_1$ dims, $296/792$ $S_7$ monomials):**
+      Sectors `[0,1,1,1]`, `[1,0,1,1]`, and `[1,1,0,1]` ($9$ parameters each)
+      are eliminated in a single Hessian $E_2$ pass (`rank = 26` on $45$
+      quadratic columns $\implies 9/9$ diagonal squares $= 0$ in each sector).
+      Sector `[0,0,0,1]` ($14$ parameters, containing the $Y_2 F$ gauge) reduces
+      in two Hessian $E_2$ steps (`13 -> 6 -> 5`) to the $5$ $Y_2$-twisted Euler
+      generators $a_i Y_2 Z_i \partial_i F$, which satisfy the exact
+      $Y_2$-covariant scaling identity $B_{Y_2 D_6}(Y_2 N_{6,0}) = Y_2^2 B_{D_6}(N_{6,0})$
+      and (with all $91$ sector Koszul syzygies retained) reproduce the exact
+      degree-six rank-$9$ RREF system $Q_1,\dots,Q_9$ (cubic Macaulay rank
+      $35/35$, quartic rank $70/70$).
+    - **Complete $Y_2$-Decoupling & $44/44$ Surjectivity in All Four $Y_2$-Even Sectors:**
+      In `[0,1,0,0]`, `[0,0,1,0]`, `[1,0,0,0]`, and `[1,1,1,0]`, all $10$
+      $Y_2$-dependent generators ($Z_k Y_2 \partial_{Y_2} F$ and
+      $Y_2^2 \partial_{Z_k} F$) are eliminated by the $Z_k F$ gauge ($5$) and
+      Step-1 square functionals ($5$), reducing every sector to the $5$-variable
+      base space $\mathbb{P}^4_{(X_0,X_1,X_2,Y_0,Y_1)}$ ($18, 19, 19, 28$
+      parameters) with **exact quadratic image rank $44/44$** onto
+      $\big(S_{14}^{(5)}/(J_{14}^{(5)}(F_5)+F_5 S_8^{(5)})\big)[(1,0,1)]$.
+
+    | Sector $\chi(D)$ | $Y_2$ | $\dim S_7$ | $\dim S_{13}$ | $\mathrm{rank}(J_{13})$ | $\dim\ker(E_1)_7$ | $\dim J_7$ | Extra | $E_2$ Cascade & Quotient Status |
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+    | **`[0,0,0,1]`** | odd | $89$ | $882$ | $713$ | $14$ | $14$ | $0$ | **EXCLUDED over $\mathbb{C}$** ($Y_2 F$ gauge $\to 5 \to 0$, cubic $35/35$, quartic $70/70$) |
+    | **`[0,1,1,1]`** | odd | $69$ | $882$ | $713$ | $9$ | $9$ | $0$ | **EXCLUDED over $\mathbb{C}$** (1-step Hessian $E_2$ rank $26/45 \implies 9/9$ squares $=0$) |
+    | **`[1,0,1,1]`** | odd | $69$ | $966$ | $772$ | $9$ | $9$ | $0$ | **EXCLUDED over $\mathbb{C}$** (1-step Hessian $E_2$ rank $26/45 \implies 9/9$ squares $=0$) |
+    | **`[1,1,0,1]`** | odd | $69$ | $882$ | $713$ | $9$ | $9$ | $0$ | **EXCLUDED over $\mathbb{C}$** (1-step Hessian $E_2$ rank $26/45 \implies 9/9$ squares $=0$) |
+    | **`[0,1,0,0]`** | even | $119$ | $1{,}302$ | $1{,}037$ | $20$ | $20$ | $0$ | $Y_2=0$ base ($18$ params, surjects **rank $44/44$**) |
+    | **`[0,0,1,0]`** | even | $119$ | $1{,}218$ | $978$ | $21$ | $20$ | $+1$ | $Y_2=0$ base ($19$ params, surjects **rank $44/44$**) |
+    | **`[1,0,0,0]`** | even | $119$ | $1{,}218$ | $978$ | $21$ | $20$ | $+1$ | $Y_2=0$ base ($19$ params, surjects **rank $44/44$**) |
+    | **`[1,1,1,0]`** | even | $139$ | $1{,}218$ | $978$ | $32$ | $25$ | $+7$ | $Y_2=0$ base ($28$ params, surjects **rank $44/44$**) |
+    | **Total ($S_7$)** | **all** | **$792$** | **$8{,}568$** | **$6{,}882$** | **$135$** | **$126$** | **$+9$** | **4/8 Excluded ($41/135$) + $Y_2=0$ Decoupling (`dda75a2b1a2987c7`)** |
+
+    [Complete note and theorems](notes/one-reflection-skew-degree7.md)
+    · [Sector figure (PNG)](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
+    · [Sector figure (SVG)](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.svg)
+    · [Verification script](experiments/one_reflection_skew_degree7.py)
+    · [Summary JSON](results/one-reflection-skew-degree7/summary.json).
+
+    ![one-reflection-skew degree-7 Z2^4 superselection sectors](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
 
 ## Keeping this current
 
