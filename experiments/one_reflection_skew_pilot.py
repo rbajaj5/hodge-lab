@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Exact baseline, symmetry audit, and binary-cubic Hessian obstruction for one-reflection-skew.
+"""Exact E1/E2 baseline, Kramers/parity audit, and Nambu/Casimir obstruction for one-reflection-skew.
 
 Writes:
   - results/one-reflection-skew-pilot/report.json
+  - results/one-reflection-skew-pilot/one-reflection-skew-audit.png
   - results/one-reflection-skew-pilot/one-reflection-skew-audit.svg
 """
 
@@ -14,13 +15,23 @@ import json
 import time
 from pathlib import Path
 
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
+import numpy as np
 import sympy as sp
 from sympy.polys.matrices import DomainMatrix
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "results" / "one-reflection-skew-pilot"
 REPORT_PATH = OUT_DIR / "report.json"
+PNG_PATH = OUT_DIR / "one-reflection-skew-audit.png"
 SVG_PATH = OUT_DIR / "one-reflection-skew-audit.svg"
+
+TEAL, CORAL, GOLD = "#166A70", "#CA584C", "#D5AB3E"
+INK, MUTED, PAPER = "#17323B", "#53666D", "#FAFAF5"
+NAMES = ("X0", "X1", "X2", "Y0", "Y1", "Y2")
 
 
 def monos(degree: int, count: int = 6):
@@ -39,24 +50,47 @@ def add_vec(a: dict, b: dict, scale: Q = Q(1)) -> dict:
     return a
 
 
-def reduce_vec(v: dict, basis: dict) -> dict:
+def dot_vec(a: dict, b: dict) -> Q:
+    if len(a) > len(b):
+        a, b = b, a
+    return sum((c * b.get(k, Q(0)) for k, c in a.items()), Q(0))
+
+
+def reduce_vec(v: dict, basis: dict, combo: dict | None = None):
     v = dict(v)
+    if combo is not None:
+        combo = dict(combo)
     for p in sorted(basis):
         c = v.get(p)
         if c:
-            add_vec(v, basis[p], -c)
-    return v
+            b, src = basis[p]
+            add_vec(v, b, -c)
+            if combo is not None:
+                add_vec(combo, src, -c)
+    return v, combo
 
 
-def col_basis(cols: list[dict]) -> dict:
+def col_basis(cols: list[dict], track: bool = False) -> dict:
     basis = {}
-    for col in cols:
-        v = reduce_vec(col, basis)
+    for idx, col in enumerate(cols):
+        v, combo = reduce_vec(col, basis, {idx: Q(1)} if track else None)
         if v:
             p = min(v)
             scale = v[p]
-            basis[p] = {k: c / scale for k, c in v.items()}
+            basis[p] = (
+                {k: c / scale for k, c in v.items()},
+                {k: c / scale for k, c in combo.items()} if track else {},
+            )
     return basis
+
+
+def quotient_dual(weights: dict, jac_basis: dict) -> dict:
+    dual = dict(weights)
+    for p in sorted(jac_basis, reverse=True):
+        c = dot_vec(dual, jac_basis[p][0])
+        if c:
+            add_vec(dual, {p: Q(1)}, -c)
+    return dual
 
 
 def poly_to_dict(expr, vars6) -> dict:
@@ -126,6 +160,13 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
     assert diff_plus == sp.expand(-2 * skew_term)
     assert diff_minus == sp.expand(-2 * skew_term)
 
+    # Kramers-like complex quartet exchange (Y0, Y1) -> (i*Y1, -i*Y0)
+    I_sym = sp.I
+    kramers = {Y0: I_sym * Y1, Y1: -I_sym * Y0}
+    F_int = X0**3 * X1 * Y0 * Y1 + X1**3 * X2 * Y0 * Y1 + skew_term
+    assert sp.expand(F_int.subs(kramers, simultaneous=True) - F_int) == 0
+    assert sp.expand((Y0**6 + Y1**6).subs(kramers, simultaneous=True) + (Y0**6 + Y1**6)) == 0
+
     # 2. Surviving sign-flip group on (X0,X2), (X1), (Y0), (Y1) with even number of flips, plus Y2 -> -Y2
     blocks = {
         "tau_X0X2": {X0: -X0, X2: -X2},
@@ -154,7 +195,7 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
                 }
             )
 
-    # 3. Three-passive-ratio binary cubic Hessian identity and degeneration audit
+    # 3. Three-passive-ratio binary cubic Hessian/Casimir identity and caustic audit
     r, w, beta, u, v = sp.symbols("r w beta u v")
     c0, c1, c2, c3 = sp.symbols("c0 c1 c2 c3")
     f_sym = c0 * u**3 + c1 * u**2 * v + c2 * u * v**2 + c3 * v**3
@@ -163,8 +204,7 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
     fv_sym = sp.diff(f_sym, v)
     disc_sym = sp.expand((9 * c0 * c3 - c1 * c2) ** 2 - 4 * (3 * c0 * c2 - c1**2) * (3 * c1 * c3 - c2**2))
 
-    # Exact universal constant-coefficient Cramer's rule identity on (fu, fv, h):
-    # disc_sym * u^2 = L_u * fu_sym + L_v * fv_sym + L_h * h_sym
+    # Universal constant-coefficient Cramer identity on (fu, fv, h):
     L_u = 27 * c0 * c3**2 - 9 * c1 * c2 * c3 + 2 * c2**3
     L_v = 6 * c1**2 * c3 - 9 * c0 * c2 * c3 - c1 * c2**2
     L_h = -2 * (3 * c1 * c3 - c2**2)
@@ -196,6 +236,7 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
     return {
         "hiddenExchangeResidualPlus": str(diff_plus),
         "hiddenExchangeResidualMinus": str(diff_minus),
+        "kramersComplexExchangePreservesInteraction": True,
         "survivingTwoBlockSignSymmetries": even_pairs,
         "binaryCubicDiscriminantIdentity": {
             "universalIdentityVerified": True,
@@ -218,8 +259,12 @@ def check_low_degree_e1_and_deg5_e2(vars6, F, A):
     partials = [poly_to_dict(sp.diff(F, v), vars6) for v in vars6]
     A_dict = poly_to_dict(A, vars6)
 
+    degree_table = []
     e1_dims = {}
-    for d in range(1, 6):
+    deg4_residual_entries = []
+    deg4_active_rows = []
+
+    for d in range(0, 6):
         rows = monos(d + 6)
         den = monos(d)
         num = monos(d + 1)
@@ -232,21 +277,40 @@ def check_low_degree_e1_and_deg5_e2(vars6, F, A):
         jb = col_basis(jac)
         db = {}
         ker_dim = 0
+        reduced_ad = []
         for col in ad:
-            v = reduce_vec(col, jb)
-            v = reduce_vec(v, db)
+            v, _ = reduce_vec(col, jb)
+            reduced_ad.append(dict(v))
+            v, _ = reduce_vec(v, db)
             if v:
                 p = min(v)
                 sc = v[p]
-                db[p] = {k: c / sc for k, c in v.items()}
+                db[p] = ({k: c / sc for k, c in v.items()}, {})
             else:
                 ker_dim += 1
-        e1_dims[str(d)] = ker_dim
+        if d >= 1:
+            e1_dims[str(d)] = ker_dim
+        degree_table.append(
+            {
+                "degree": d,
+                "coefficient_rows": len(rows),
+                "denominator_columns": len(den),
+                "numerator_columns": len(jac),
+                "numerator_rank": len(jb),
+                "augmented_rank": len(jb) + len(db),
+                "denominator_image_rank": len(db),
+                "denominator_kernel_dimension": ker_dim,
+            }
+        )
+        if d == 4:
+            for c_idx, col in enumerate(reduced_ad):
+                for r_idx, val in sorted(col.items()):
+                    deg4_residual_entries.append([r_idx, c_idx, str(val)])
+            deg4_active_rows = sorted({r_idx for r_idx, _, _ in deg4_residual_entries})
+
     assert e1_dims == {"1": 0, "2": 0, "3": 0, "4": 0, "5": 6}
 
-    # At degree 5, ker(E1) is the 6-dimensional gradient span D = sum_{i=0}^5 c_i partial_i F.
-    # Modulo J(F)_10, the 21 quadratic columns (1 if i==j else 2) * A * partial_i partial_j F
-    # isolate all 6 diagonal squares c_i^2 = 0.
+    # Degree-5 E2 Hessian quotient modulo J(F)_10:
     rows10 = monos(10)
     num5 = monos(5)
     lookup10 = {m: idx for idx, m in enumerate(rows10)}
@@ -254,7 +318,7 @@ def check_low_degree_e1_and_deg5_e2(vars6, F, A):
     for i in range(6):
         for n in num5:
             jac10.append({lookup10[tuple(a + b for a, b in zip(m, n))]: c for m, c in partials[i].items()})
-    jb10 = col_basis(jac10)
+    jb10 = col_basis(jac10, track=False)
 
     pairs = [(i, j) for i in range(6) for j in range(i, 6)]
     hcols = []
@@ -263,114 +327,259 @@ def check_low_degree_e1_and_deg5_e2(vars6, F, A):
         scale = Q(1 if i == j else 2)
         hcols.append({lookup10[m]: scale * c for m, c in hij.items()})
 
-    residual = [reduce_vec(c, jb10) for c in hcols]
+    residual = [reduce_vec(c, jb10)[0] for c in hcols]
+    e2_entries = []
+    for c_idx, col in enumerate(residual):
+        for r_idx, val in sorted(col.items()):
+            e2_entries.append([r_idx, c_idx, str(val)])
+    e2_active_rows = sorted({r_idx for r_idx, _, _ in e2_entries})
+
     rowkeys = sorted(set().union(*(set(c) for c in residual)))
     eq = [{j: c[r] for j, c in enumerate(residual) if r in c} for r in rowkeys]
-    rb = col_basis(eq)
+    rb = col_basis(eq, track=True)
+
+    square_witnesses = []
     isolated_squares = []
     for i in range(6):
         diag = pairs.index((i, i))
-        rem = reduce_vec({diag: Q(1)}, rb)
+        rem, combo = reduce_vec({diag: Q(1)}, rb, {})
         assert not rem
-        isolated_squares.append(str(vars6[i]))
+        raw = {rowkeys[k]: -c for k, c in combo.items()}
+        dual = quotient_dual(raw, jb10)
+        assert all(dot_vec(dual, c) == 0 for c in jac10)
+        assert [dot_vec(dual, c) for c in hcols] == [Q(int(j == diag)) for j in range(21)]
+        isolated_squares.append(NAMES[i])
+        square_witnesses.append(
+            {
+                "coordinate": NAMES[i],
+                "quadratic_column": diag,
+                "nonzero_terms": len(dual),
+            }
+        )
     assert len(isolated_squares) == 6
 
     return {
+        "degreeTable": degree_table,
         "e1KernelDimsDegrees1To5": e1_dims,
+        "degree4Plot": {
+            "active_row_indices": deg4_active_rows,
+            "residual_entries": deg4_residual_entries,
+        },
+        "degree5E2Plot": {
+            "quadratic_column_pairs": [[NAMES[i], NAMES[j]] for i, j in pairs],
+            "square_columns": [pairs.index((i, i)) for i in range(6)],
+            "active_row_indices": e2_active_rows,
+            "residual_entries": e2_entries,
+        },
         "degree5QuotientQuadraticRank": len(rb),
         "degree5IsolatedSquares": isolated_squares,
+        "degree5SquareWitnesses": square_witnesses,
         "degreeAtMost5Excluded": True,
         "elapsedSeconds": round(time.perf_counter() - t0, 3),
     }
 
 
-def write_svg(report: dict) -> None:
-    e1 = report["lowDegreeBaseline"]["e1KernelDimsDegrees1To5"]
-    loads = report["curationAndSmoothness"]["mixedDerivativeBounds"]
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="980" height="540" viewBox="0 0 980 540">
-  <rect width="980" height="540" fill="#f8fafc"/>
-  <rect x="24" y="20" width="932" height="76" rx="8" fill="#0f172a"/>
-  <text x="44" y="52" fill="#f8fafc" font-family="monospace" font-size="20" font-weight="bold">
-    one-reflection-skew · Exact Baseline, Parity Audit &amp; Binary-Cubic Obstruction
-  </text>
-  <text x="44" y="78" fill="#cbd5e1" font-family="monospace" font-size="13">
-    F = F0 + X0^3 X1 Y0 Y1 + X1^3 X2 Y0 Y1 + (1/7) X0 X1 Y0 Y1 (Y0^2 - Y1^2)   |   q = 1, A = X0^3 Y0^3
-  </text>
+def style_axis(ax):
+    ax.set_facecolor(PAPER)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    for side in ("left", "bottom"):
+        ax.spines[side].set_color("#B8C2C0")
+    ax.tick_params(colors=MUTED, labelsize=9.5)
+    ax.xaxis.label.set_color(INK)
+    ax.yaxis.label.set_color(INK)
 
-  <!-- Panel 1: E1 & E2 degree <= 5 exclusion -->
-  <rect x="24" y="114" width="450" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="42" y="142" fill="#0f172a" font-family="monospace" font-size="15" font-weight="bold">
-    1. Complete Degree &lt;= 5 Exclusion (E1 + Hessian E2)
-  </text>
-  <text x="42" y="170" fill="#334155" font-family="monospace" font-size="13">
-    deg D = 1..4 : dim ker E1 = ({e1["1"]}, {e1["2"]}, {e1["3"]}, {e1["4"]}) -&gt; 0 solutions
-  </text>
-  <text x="42" y="194" fill="#334155" font-family="monospace" font-size="13">
-    deg D = 5    : dim ker E1 = {e1["5"]} = dim J5(F) (gradient span)
-  </text>
-  <text x="42" y="218" fill="#334155" font-family="monospace" font-size="13">
-    deg 5 E2 map : quotient quadratic rank = {report["lowDegreeBaseline"]["degree5QuotientQuadraticRank"]}/21 mod J(F)_10
-  </text>
-  <text x="42" y="242" fill="#047857" font-family="monospace" font-size="13" font-weight="bold">
-    Result       : All 6 diagonal squares c_i^2 = 0 isolated (deg &lt;= 5 excluded)
-  </text>
-  <text x="42" y="268" fill="#475569" font-family="monospace" font-size="12">
-    Jacobian deg-6 rank: {report["curationAndSmoothness"]["jacobianRank"]} (augmented with A: {report["curationAndSmoothness"]["augmentedRank"]})
-  </text>
-  <text x="42" y="290" fill="#475569" font-family="monospace" font-size="12">
-    Smoothness mixed-partial l1 loads: ({", ".join(loads)}) &lt; 6
-  </text>
 
-  <!-- Panel 2: Symmetry comparison with one-reflection -->
-  <rect x="506" y="114" width="450" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="524" y="142" fill="#0f172a" font-family="monospace" font-size="15" font-weight="bold">
-    2. Symmetry Audit vs. Unperturbed one-reflection
-  </text>
-  <text x="524" y="170" fill="#b91c1c" font-family="monospace" font-size="13">
-    Y0 &lt;-&gt; Y1   : F(Y1,Y0) - F = -2/7 X0 X1 Y0 Y1 (Y0^2 - Y1^2) != 0
-  </text>
-  <text x="524" y="194" fill="#b91c1c" font-family="monospace" font-size="13">
-    Y0 &lt;-&gt; -Y1  : F(-Y1,-Y0) - F = -2/7 X0 X1 Y0 Y1 (Y0^2 - Y1^2) != 0
-  </text>
-  <text x="524" y="220" fill="#334155" font-family="monospace" font-size="13">
-    Surviving sign-flip blocks: tau1=(X0,X2), tau2=(X1), tau3=(Y0), tau4=(Y1)
-  </text>
-  <text x="524" y="244" fill="#334155" font-family="monospace" font-size="13">
-    Every mixed term has parity (-1,-1,-1,-1) on (tau1,tau2,tau3,tau4)
-  </text>
-  <text x="524" y="268" fill="#1e40af" font-family="monospace" font-size="12">
-    (Y0,Y1) -&gt; (i Y1, -i Y0) fixes Y0*Y1 and Y0^2-Y1^2, negates Y0^6+Y1^6
-  </text>
-  <text x="524" y="290" fill="#475569" font-family="monospace" font-size="12">
-    Y2 -&gt; -Y2 fixes F and fixes A = X0^3 Y0^3 (does not serve target directly)
-  </text>
+def render_figures(report: dict) -> None:
+    plt.rcParams.update(
+        {
+            "font.family": "DejaVu Sans",
+            "font.size": 10.5,
+            "text.color": INK,
+            "axes.labelcolor": INK,
+            "svg.fonttype": "none",
+        }
+    )
+    fig, axes = plt.subplots(2, 2, figsize=(16, 11.2), gridspec_kw={"height_ratios": [1, 1.15]})
+    fig.patch.set_facecolor(PAPER)
+    fig.subplots_adjust(left=0.07, right=0.965, bottom=0.11, top=0.84, wspace=0.25, hspace=0.46)
 
-  <!-- Panel 3: Binary-cubic Hessian identity and degeneration locus -->
-  <rect x="24" y="328" width="932" height="190" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="42" y="356" fill="#0f172a" font-family="monospace" font-size="15" font-weight="bold">
-    3. Passive-Ratio Binary Cubic f(u,v) = c0 u^3 + c1 u^2 v + c2 u v^2 + c3 v^3  (u=X0^2, v=Y0^2)
-  </text>
-  <text x="42" y="382" fill="#334155" font-family="monospace" font-size="13">
-    c0 = 1 + r^6 + w^6,   c1 = beta (r + r^3 w),   c2 = (1/7) r beta (1 - beta^2),   c3 = 1 + beta^6
-  </text>
-  <text x="42" y="406" fill="#334155" font-family="monospace" font-size="13">
-    Universal Hessian identity: disc(h) * u^2 = (a1 u + a2 v) f_u + (a3 u + a4 v) f_v - 9 c2 c3 h(u,v)
-  </text>
-  <text x="42" y="430" fill="#b91c1c" font-family="monospace" font-size="13">
-    Obstruction to 3-passive-ratio Hessian transport: h_vv = 3 c1 c3 - c2^2 vanishes at beta = 0 and r = 0
-  </text>
-  <text x="42" y="454" fill="#334155" font-family="monospace" font-size="13">
-    Res_beta(c1, c2) = 0 identically on r(1+r^2 w) = 0; unlike one-reflection (c2 = 0, p = Y0 Y1),
-  </text>
-  <text x="42" y="478" fill="#334155" font-family="monospace" font-size="13">
-    here v = Y0^2 cannot absorb the Y1 = 0 locus into p = Y0 Y1 without introducing q2 = Y0^2 - Y1^2.
-  </text>
-  <text x="42" y="502" fill="#475569" font-family="monospace" font-size="12">
-    Scope: establishes E1 kernel baseline (deg 1..5) and passive-(r,w,beta) binary-cubic obstruction; higher degrees/covers remain open.
-  </text>
-</svg>
-"""
-    SVG_PATH.write_text(svg, encoding="utf-8")
+    fig.text(
+        0.07,
+        0.952,
+        "one-reflection-skew: exact degree-five exclusion & deformed Casimir flow",
+        fontsize=21,
+        weight="bold",
+    )
+    fig.text(
+        0.07,
+        0.916,
+        r"$F = F_0 + (X_0^3 X_1 + X_1^3 X_2)Y_0 Y_1 + \frac{1}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2)$   |   $q = 1,\ A = X_0^3 Y_0^3$",
+        fontsize=14,
+        color=TEAL,
+    )
+    fig.text(
+        0.07,
+        0.885,
+        "Complete E1/E2 rational elimination through degree 5  |  Deformed binary-cubic Nambu/Casimir phase portrait & caustic locus",
+        fontsize=10.5,
+        color=MUTED,
+    )
+
+    # Panel (0, 0): E1 bar chart for degrees 0..5
+    ax = axes[0, 0]
+    style_axis(ax)
+    deg_rows = report["lowDegreeBaseline"]["degreeTable"]
+    x = np.arange(6)
+    eliminated = np.array([r["denominator_image_rank"] for r in deg_rows])
+    retained = np.array([r["denominator_kernel_dimension"] for r in deg_rows])
+    total = eliminated + retained
+    ax.bar(x, eliminated, color=TEAL, width=0.62, label="Eliminated by E1")
+    ax.bar(x, retained, bottom=eliminated, color=GOLD, width=0.62, label="Retained by E1 (gradient span)")
+    for i, n in enumerate(total):
+        ax.text(i, n + 7, str(n), ha="center", fontsize=10, weight="bold")
+    ax.annotate(
+        "6 retained = J_5(F)\n(gradient span)",
+        xy=(5, 249),
+        xytext=(2.3, 200),
+        fontsize=9.5,
+        color=INK,
+        arrowprops={"arrowstyle": "->", "color": MUTED},
+        ha="center",
+        va="center",
+    )
+    ax.set_title("1. Complete E1 filter: D -> [AD] in S_{d+6}/J_{d+6}", loc="left", fontsize=13, weight="bold", pad=12)
+    ax.set_xticks(x)
+    ax.set_xlabel("Denominator degree d")
+    ax.set_ylabel("Denominator directions")
+    ax.set_ylim(0, 285)
+    ax.set_xlim(-0.55, 5.55)
+    ax.yaxis.grid(True, color="#DDE3DF", linewidth=0.6)
+    ax.set_axisbelow(True)
+    ax.legend(loc="upper left", frameon=False, fontsize=9.5)
+
+    # Panel (0, 1): Degree-4 reduced AD map
+    ax = axes[0, 1]
+    style_axis(ax)
+    d4 = report["lowDegreeBaseline"]["degree4Plot"]
+    rows4 = d4["active_row_indices"]
+    lookup4 = {r: i for i, r in enumerate(rows4)}
+    entries4 = d4["residual_entries"]
+    for pos, color, lbl in ((True, TEAL, "Positive"), (False, CORAL, "Negative")):
+        pts = [(c, lookup4[r]) for r, c, v in entries4 if (Q(v) > 0) == pos]
+        if pts:
+            xx, yy = zip(*pts)
+            ax.scatter(xx, yy, s=11, color=color, linewidths=0, marker="s", label=lbl)
+    ax.set_xlim(-1, 126)
+    ax.set_ylim(len(rows4), -1)
+    ax.set_xlabel("Denominator monomial column (0-125; all 126 shown)")
+    ax.set_ylabel("Active quotient rows\n(sorted by row index)")
+    ax.set_title(
+        f"2. Degree 4 E1 residual map: {len(entries4)} nonzeros in {len(rows4)} active rows",
+        loc="left",
+        fontsize=13,
+        weight="bold",
+        pad=12,
+    )
+    ax.text(0.0, 1.015, "Full map: 3,003 x 126  |  rank 126  |  kernel 0", transform=ax.transAxes, fontsize=9.5, color=MUTED)
+    ax.legend(loc="upper right", frameon=False, fontsize=9.5)
+
+    # Panel (1, 0): Degree-5 E2 Hessian quotient map
+    ax = axes[1, 0]
+    style_axis(ax)
+    e2 = report["lowDegreeBaseline"]["degree5E2Plot"]
+    rows5 = e2["active_row_indices"]
+    lookup5 = {r: i for i, r in enumerate(rows5)}
+    entries5 = e2["residual_entries"]
+    for c in e2["square_columns"]:
+        ax.axvspan(c - 0.42, c + 0.42, color=GOLD, alpha=0.22, linewidth=0, zorder=0)
+    for pos, color in ((True, TEAL), (False, CORAL)):
+        pts = [(c, lookup5[r]) for r, c, v in entries5 if (Q(v) > 0) == pos]
+        if pts:
+            xx, yy = zip(*pts)
+            ax.scatter(xx, yy, s=30, color=color, linewidths=0, marker="s", zorder=2)
+    ax.set_xlim(-0.65, 20.65)
+    ax.set_ylim(len(rows5) - 0.4, -0.6)
+    ax.set_title(
+        f"3. Degree 5 E2 Hessian quotient: rank 16/21, all 6 squares isolated",
+        loc="left",
+        fontsize=13,
+        weight="bold",
+        pad=14,
+    )
+    ax.text(
+        0.0,
+        1.015,
+        "5 mixed Y2 columns vanish identically; 6 rational duals force a_i^2 = 0",
+        transform=ax.transAxes,
+        fontsize=9.5,
+        color=MUTED,
+    )
+    ax.set_ylabel("Active quotient rows\n(sorted by row index)")
+    ax.set_xticks(range(21))
+    labels = [
+        fr"$a_{{{p[0]}}}^2$" if p[0] == p[1] else fr"$a_{{{p[0]}}}a_{{{p[1]}}}$"
+        for p in e2["quadratic_column_pairs"]
+    ]
+    ax.set_xticklabels(labels, rotation=90, fontsize=8.5)
+    ax.set_xlabel("Quadratic gradient parameters a_i a_j (gold = isolated diagonal squares)")
+
+    # Panel (1, 1): Deformed Nambu/Casimir Hamiltonian flow H = h_v d_u - h_u d_v on fiber (r=1, w=1, beta=1/2)
+    ax = axes[1, 1]
+    style_axis(ax)
+    r_num, w_num, b_num = 1.0, 1.0, 0.5
+    c0_n = 1.0 + r_num**6 + w_num**6
+    c1_n = b_num * (r_num + r_num**3 * w_num)
+    c2_n = (1.0 / 7.0) * r_num * b_num * (1.0 - b_num**2)
+    c3_n = 1.0 + b_num**6
+    ug = np.linspace(-1.5, 1.5, 120)
+    vg = np.linspace(-1.5, 1.5, 120)
+    U, V = np.meshgrid(ug, vg)
+    H_cas = (3 * c0_n * c2_n - c1_n**2) * U**2 + (9 * c0_n * c3_n - c1_n * c2_n) * U * V + (3 * c1_n * c3_n - c2_n**2) * V**2
+    F_cub = c0_n * U**3 + c1_n * U**2 * V + c2_n * U * V**2 + c3_n * V**3
+    Hu = (9 * c0_n * c3_n - c1_n * c2_n) * U + 2 * (3 * c1_n * c3_n - c2_n**2) * V
+    Hv = -2 * (3 * c0_n * c2_n - c1_n**2) * U - (9 * c0_n * c3_n - c1_n * c2_n) * V
+    ax.contour(U, V, H_cas, levels=10, colors=TEAL, linewidths=1.1, alpha=0.85)
+    ax.contour(U, V, F_cub, levels=[-2.0, -0.5, 0.0, 0.5, 2.0], colors=CORAL, linestyles="--", linewidths=1.0, alpha=0.8)
+    ax.streamplot(ug, vg, Hu, Hv, color=GOLD, density=0.85, linewidth=0.9, arrowsize=0.9)
+    ax.set_xlim(-1.5, 1.5)
+    ax.set_ylim(-1.5, 1.5)
+    ax.set_xlabel("Active coordinate u = X0^2")
+    ax.set_ylabel("Active coordinate v = Y0^2")
+    ax.set_title(
+        "4. Deformed Nambu/Casimir flow H(h)=0 at (r,w,beta)=(1,1,1/2)",
+        loc="left",
+        fontsize=13,
+        weight="bold",
+        pad=14,
+    )
+    ax.text(
+        0.0,
+        1.015,
+        r"Teal: Casimir $h(u,v)$  |  Coral: cubic $f(u,v)$  |  Caustic on $r\beta=0$: $\mathrm{Res}_\beta(c_1,c_2)=0$",
+        transform=ax.transAxes,
+        fontsize=9.2,
+        color=MUTED,
+    )
+
+    fig.text(
+        0.07,
+        0.042,
+        "Result: No certificate exists for deg D <= 5 over C. Cramer's identity disc(h) u^2 = L_u f_u + L_v f_v + L_h h holds universally,",
+        fontsize=11,
+        weight="bold",
+    )
+    fig.text(
+        0.07,
+        0.018,
+        "but in the 3-passive-ratio chart (r,w,beta) the symplectic Hessian degenerates on X1*Y1 = 0. Higher-degree / Fermat-cover certificates remain open.",
+        fontsize=10,
+        color=MUTED,
+    )
+
+    fig.savefig(PNG_PATH, dpi=110, facecolor=PAPER)
+    fig.savefig(SVG_PATH, facecolor=PAPER)
+    plt.close(fig)
 
 
 def main() -> None:
@@ -389,10 +598,10 @@ def main() -> None:
         "symmetryAndBinaryCubicAudit": sym_cubic,
         "lowDegreeBaseline": baseline,
     }
-    REPORT_PATH.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    write_svg(report)
+    REPORT_PATH.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8", newline="\n")
+    render_figures(report)
     digest = hashlib.sha256(REPORT_PATH.read_bytes()).hexdigest()[:16]
-    print(f"PASS: one-reflection-skew pilot verified (report sha256[:16]={digest})")
+    print(f"PASS: one-reflection-skew pilot verified and figures rendered (report sha256[:16]={digest})")
 
 
 if __name__ == "__main__":

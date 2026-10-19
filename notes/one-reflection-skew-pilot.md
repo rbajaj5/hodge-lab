@@ -1,45 +1,79 @@
-# `one-reflection-skew`: Low-Degree Baseline, Parity Audit, and Binary-Cubic Hessian Obstruction
+# `one-reflection-skew`: denominators must have degree at least six, and why the 3-passive-ratio Casimir flow degenerates
 
-**Date:** 19 October 2026  
-**Instance:** `one-reflection-skew` ($q = 1$, $A = X_0^3 Y_0^3$)  
-**Equation:**
-$$F = X_0^6 + X_1^6 + X_2^6 + Y_0^6 + Y_1^6 + Y_2^6 + X_0^3 X_1 Y_0 Y_1 + X_1^3 X_2 Y_0 Y_1 + \frac{1}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2).$$
+For the fixed `one-reflection-skew` frontier target ($q = 1$, $A = X_0^3 Y_0^3$), the calculations below exclude **every nonzero homogeneous denominator of degree zero through five** over the complex numbers, including the complete numerator space and an unrestricted quotient $Q$. We also record the exact Kramers-like complex exchange symmetry of the interaction polynomial, the universal constant-coefficient Cramer identity for the deformed binary-cubic Nambu/Casimir flow, and the phase-space caustic along $X_1 Y_1 = 0$ that obstructs naive 3-passive-ratio Hessian transport. Degrees six and higher remain open; the instance is not solved.
 
-![Exact baseline, parity audit, and binary-cubic obstruction for one-reflection-skew](../results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
+![Exact E1/E2 exclusion through degree five and deformed Nambu/Casimir phase portrait for one-reflection-skew](../results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
 
-## 1. Motivation and Curation Audit
+## 1. Fixed target and symmetry breaking
 
-Upstream commit `b56894e` introduced three cubic-transfer frontier targets (`one-reflection-skew`, `one-reflection-y2-sector`, and `quadric-contact-residual`). While `one-reflection` was solved at degree $60$ (`3cfd50d`, PR #123) by combining a binary-cubic Hessian construction on $(u, p) = (X_0^2, Y_0 Y_1)$ with the two hidden exchanges $(Y_0, Y_1) \mapsto (\pm Y_1, \pm Y_0)$, the skew perturbation $\frac{1}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2)$ is odd under both $Y_0 \leftrightarrow Y_1$ and $Y_0 \leftrightarrow -Y_1$.
+Write $F_0 = \sum_{i=0}^2 (X_i^6 + Y_i^6)$. The target has $q = 1$, $A = X_0^3 Y_0^3$, and sextic
 
-In [experiments/one_reflection_skew_pilot.py](../experiments/one_reflection_skew_pilot.py) we verify:
-- **Smoothness and non-triviality:** the mixed-derivative $\ell_1$ coefficient loads are $(23/7, 30/7, 1, 18/7, 18/7, 0) < 6$, the degree-6 Jacobian span $\operatorname{Span}(Z_i \partial_j F)$ has rank $36$, and adjoining $A = X_0^3 Y_0^3$ raises the rank to $37$.
-- **Surviving parity group:** every mixed term of $F$ has parity $(-1, -1, -1, -1)$ under the four sign-flip blocks $\tau_1: (X_0, X_2) \mapsto (-X_0, -X_2)$, $\tau_2: X_1 \mapsto -X_1$, $\tau_3: Y_0 \mapsto -Y_0$, $\tau_4: Y_1 \mapsto -Y_1$. Any product of two of these blocks preserves $F$, as does $\tau_{Y_2}: Y_2 \mapsto -Y_2$. Moreover, the complex exchange $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ fixes both $Y_0 Y_1$ and $Y_0^2 - Y_1^2$ while negating $Y_0^6 + Y_1^6$.
+$$F = F_0 + (X_0^3 X_1 + X_1^3 X_2) Y_0 Y_1 + \frac{1}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2).$$
 
-## 2. Complete Exclusion of Denominators of Degree $\le 5$
+In the unperturbed companion target `one-reflection` (solved at degree $60$ in PR #123), the two hidden involutions $(Y_0, Y_1) \mapsto (\pm Y_1, \pm Y_0)$ act as a real parity doublet, splitting the density $X_0^3 Y_0^3$ into two half-targets $\frac{1}{2} X_0^3 (Y_0^3 \pm Y_1^3)$ served by a binary-cubic Hessian construction on $(u, p) = (X_0^2, Y_0 Y_1)$. Adding the skew quadrupole coupling $S = \frac{1}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2)$ breaks both real exchanges:
 
-Using exact rational elimination over $\mathbb{Q}$:
-- For $\deg D \in \{1, 2, 3, 4\}$, the necessary first-equation kernel $\ker(D \mapsto A D \bmod J(F))$ has dimension $0$.
-- For $\deg D = 5$, $\dim \ker(E_1) = 6$, spanned by the six partial derivatives $\partial_i F$.
-- Modulo $J(F)_{10}$, the $21$ quadratic Hessian columns $(1 \text{ if } i=j \text{ else } 2) A \partial_i \partial_j F$ have quotient rank $16/21$ (the five mixed second partials involving $Y_2$ vanish identically because $Y_2$ enters only through $Y_2^6$), and exact row reduction isolates all six diagonal squares $c_i^2 = 0$ ($i = 0, \dots, 5$).
+$$F(\pm Y_1, \pm Y_0) - F = -\frac{2}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2) \ne 0.$$
 
-Thus no certificate exists with $\deg D \le 5$ over $\mathbb{C}$, even allowing arbitrary Koszul numerator corrections and nonzero quotient $Q$.
+Two exact symmetry structures survive:
+- **Discrete $\mathbb{Z}_2^3$ charge-parity subgroup:** Every mixed term of $F$ has parity $(-1, -1, -1, -1)$ on the four coordinate blocks $\tau_1: (X_0, X_2) \mapsto (-X_0, -X_2)$, $\tau_2: X_1 \mapsto -X_1$, $\tau_3: Y_0 \mapsto -Y_0$, and $\tau_4: Y_1 \mapsto -Y_1$. Every product of two of these blocks preserves $F$, alongside the decoupled reflection $\tau_{Y_2}: Y_2 \mapsto -Y_2$.
+- **Kramers-like order-four complex exchange:** The transformation $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ preserves both $Y_0 Y_1$ and $Y_0^2 - Y_1^2$, hence leaves the entire interaction Hamiltonian $F - F_0$ invariant while inverting the Fermat kinetic block $Y_0^6 + Y_1^6 \mapsto -(Y_0^6 + Y_1^6)$.
 
-## 3. Universal Binary-Cubic Cramer Identity and 3-Passive-Ratio Obstruction
+## 2. Complete first-equation and degree-five Hessian exclusion
 
-For any general binary cubic $f(u, v) = c_0 u^3 + c_1 u^2 v + c_2 u v^2 + c_3 v^3$ with Hessian quadratic
+Let $J = (\partial_0 F, \dots, \partial_5 F)$ be the Jacobian ideal. Under Euler normalization, every certificate with denominator $D \in S_d$ satisfies $N(F) = A D$ with $\deg N_i = d + 1$, so $D$ must lie in the kernel of $D \mapsto [A D] \in S_{d+6} / J_{d+6}$.
+
+| Degree $d$ | Denominator coefficients | Numerator coefficients | Numerator-map rank | Augmented rank | Denominator kernel |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 0 | 1 | 36 | 36 | 37 | 0 |
+| 1 | 6 | 126 | 126 | 132 | 0 |
+| 2 | 21 | 336 | 336 | 357 | 0 |
+| 3 | 56 | 756 | 756 | 812 | 0 |
+| 4 | 126 | 1512 | 1497 | 1623 | 0 |
+| 5 | 252 | 2772 | 2682 | 2928 | 6 |
+
+At degree five, the six-dimensional $E_1$ kernel is the gradient span $D = a \cdot \nabla F$, with $N = A a + K$ where $K$ ranges over the $90$-dimensional span of linear multiples of the $15$ Koszul fields $\partial_j F \partial_i - \partial_i F \partial_j$. Reducing the second equation $B_D(N) = D \operatorname{div} N - N(D) \equiv 0 \pmod F$ modulo $J_{10}$ gives
+
+$$B_D(A a + K) \equiv -A \cdot a^{\mathsf{T}} \operatorname{Hess}(F) a \pmod{J_{10}}.$$
+
+Unlike `cycle-three` and `mixed-biweight` (where the $21$-column quadratic Hessian map in $S_{10}/J_{10}$ has full rank $21$), here $Y_2$ enters $F$ only through $Y_2^6$, so the five mixed second partials $\partial_i \partial_{Y_2} F$ ($i < 5$) vanish identically and the $21$-column map has exact quotient rank **$16$ of $21$** ($49$ active rows). Nevertheless, all six diagonal square columns $a_i^2$ remain linearly independent of the off-diagonal columns in $S_{10}/J_{10}$: six exported rational dual functionals annihilate $J_{10}$ and isolate $a_0^2, \dots, a_5^2$ one at a time, forcing $a = 0$ and $D = 0$.
+
+## 3. Deformed Nambu/Casimir flow and the 3-passive-ratio caustic
+
+For any general binary cubic $f(u, v) = c_0 u^3 + c_1 u^2 v + c_2 u v^2 + c_3 v^3$ with quadratic Casimir (scaled Hessian)
+
 $$h(u, v) = \frac{1}{36}(f_{uu} f_{vv} - f_{uv}^2) = (3 c_0 c_2 - c_1^2) u^2 + (9 c_0 c_3 - c_1 c_2) u v + (3 c_1 c_3 - c_2^2) v^2,$$
-the three quadratics $(f_u, f_v, h)$ have $3 \times 3$ coefficient determinant $-\operatorname{disc}(h)$ in the basis $(u^2, u v, v^2)$. Cramer's rule supplies a universal identity with coefficients constant in $(u, v)$:
-$$\operatorname{disc}(h)\, u^2 = L_u f_u + L_v f_v + L_h h(u, v),$$
-where
-$$L_u = 27 c_0 c_3^2 - 9 c_1 c_2 c_3 + 2 c_2^3, \quad L_v = 6 c_1^2 c_3 - 9 c_0 c_2 c_3 - c_1 c_2^2, \quad L_h = -2(3 c_1 c_3 - c_2^2),$$
-alongside Cayley's syzygy $\operatorname{disc}(h) f^2 - k^2 = \frac{4}{9} h^3$ for $H = h_v \partial_u - h_u \partial_v$ and $k = H(f)/3$.
 
-Setting passive ratios $r = X_1/X_0$, $w = X_2/X_0$, $\beta = Y_1/Y_0$ and active $(u, v) = (X_0^2, Y_0^2)$ writes $F = f(u, v) + Y_2^6$ with
+the divergence-free Hamiltonian / Nambu vector field $H = h_v \partial_u - h_u \partial_v$ and cubic covariant $k = H(f)/3$ obey the exact identities
+
+$$H(h) = 0, \qquad H(k) = 3\,\mathrm{disc}(h)\, f, \qquad \mathrm{disc}(h)\, f^2 - k^2 = \frac{4}{9} h^3,$$
+
+where $\mathrm{disc}(h) = (9 c_0 c_3 - c_1 c_2)^2 - 4(3 c_0 c_2 - c_1^2)(3 c_1 c_3 - c_2^2)$. Moreover, the $3 \times 3$ coefficient matrix of the three homogeneous quadratics $(f_u, f_v, h)$ in the basis $(u^2, u v, v^2)$ has determinant $-\mathrm{disc}(h)$, so Cramer's rule supplies a universal identity with coefficients **constant in $(u, v)$**:
+
+$$\mathrm{disc}(h)\, u^2 = L_u f_u + L_v f_v + L_h h(u, v),$$
+
+$$L_u = 27 c_0 c_3^2 - 9 c_1 c_2 c_3 + 2 c_2^3, \quad L_v = 6 c_1^2 c_3 - 9 c_0 c_2 c_3 - c_1 c_2^2, \quad L_h = -2(3 c_1 c_3 - c_2^2).$$
+
+At $c_2 = 0, c_3 = 2$, this specializes directly to the target decomposition $\delta u^2 = 108 \alpha f_u + 12 \beta^2 f_p - 12 \beta h$ used in `one-reflection`.
+
+In the 3-passive-ratio chart $r = X_1/X_0$, $w = X_2/X_0$, $\beta = Y_1/Y_0$ with active $(u, v) = (X_0^2, Y_0^2)$, the sextic becomes $F = f(u, v) + Y_2^6$ with
+
 $$c_0 = 1 + r^6 + w^6, \quad c_1 = \beta(r + r^3 w), \quad c_2 = \frac{1}{7} r \beta (1 - \beta^2), \quad c_3 = 1 + \beta^6.$$
-Unlike `one-reflection` (where $p = Y_0 Y_1$ absorbs $\beta$ so $c_3 = 2$ is constant), here $c_1$ and $c_2$ share the common factor $r \beta$, so $\operatorname{Res}_\beta(c_1, c_2) = 0$ identically on $r(1 + r^2 w) = 0$ and $h_{vv} = 3 c_1 c_3 - c_2^2$ vanishes on both $X_1 = 0$ and $Y_1 = 0$.
 
-## 4. Scope and Reproduction
+Whereas `one-reflection` absorbed $\beta$ into $p = Y_0 Y_1$ so that $c_3 = 2$ was constant, the skew factor $Y_0^2 - Y_1^2$ prevents absorbing $\beta$ into a single active coordinate. Consequently $c_1$ and $c_2$ share the common factor $r \beta$, their $\beta$-resultant $\mathrm{Res}_\beta(c_1, c_2) = 0$ vanishes identically on $r(1 + r^2 w) = 0$, and $L_h = -2(3 c_1 c_3 - c_2^2)$ vanishes along the caustic locus $X_1 Y_1 = 0$.
+
+## 4. Physics analogies considered vs. what proves the bound
+
+- **Symplectic / Nambu flow and Casimir invariants:** Interpreting $H = h_v \partial_u - h_u \partial_v$ as an incompressible phase-space flow with Casimir $h(u, v)$ and action-angle cubes $f_\pm = \frac{1}{2}(f \pm k/\sqrt{\mathrm{disc}(h)})$ clarifies why $c_2 \ne 0$ preserves the algebraic integrable structure on generic fibers while failing at the boundary caustic $r \beta = 0$.
+- **Kramers quartet vs. parity doublet:** The complex exchange $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ explains the $\mathbb{Z}_4$ symmetry of the interaction terms, but because it negates $Y_0^6 + Y_1^6$, it does not directly supply a real projective quotient of $F$.
+- **What actually proves the bound:** Neither the Nambu/Casimir interpretation nor the Kramers analogy is used as an axiom. The degree $\le 5$ exclusion is proved entirely by exact rational linear algebra over `Fraction` ($E_1$ kernels in degrees $0$–$5$ and the six exported rational dual witnesses in $S_{10}/J_{10}$).
+
+## 5. Reproduce and attribution
+
+```sh
+python3 experiments/one_reflection_skew_pilot.py
+```
 
 - **Script:** [experiments/one_reflection_skew_pilot.py](../experiments/one_reflection_skew_pilot.py)
 - **Receipt:** [results/one-reflection-skew-pilot/report.json](../results/one-reflection-skew-pilot/report.json)
-- **Limits:** This checkpoint establishes the degree $\le 5$ exclusion and records the 3-passive-ratio binary-cubic degeneration on $X_1 Y_1 = 0$. It does not exclude higher-degree denominators or Fermat-cover constructions.
+- **Figures:** [one-reflection-skew-audit.png](../results/one-reflection-skew-pilot/one-reflection-skew-audit.png) · [one-reflection-skew-audit.svg](../results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
+- **Credits:** Builds on the `hodge-computer/sextics` certificate and cubic-transfer framework (Chapters 1, 2, 4, and 5), `fringewidth`'s hidden-reflection observation, and `fqlx`'s accepted binary-cubic Hessian certificate for `one-reflection` (PR #123). Prepared with AI assistance for `rbajaj5`.
