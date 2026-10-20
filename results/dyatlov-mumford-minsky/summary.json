@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "instance": "one-reflection-skew",
+  "discussion": 127,
+  "framework": "Visual Chaos & Hyperbolic Geometry Bridge: Mumford-Series-Wright Indra's Pearls Schottky uniformization, Semyon Dyatlov's Pollicott-Ruelle resonances & Fractal Uncertainty Principle (FUP), Yair Minsky's curve-complex subsurface hierarchy collar pinches, and David Mumford's Pattern-Theory Gibbs energy landscape.",
+  "indras_pearls_schottky": {
+    "max_depth": 5,
+    "circle_counts_by_depth": {
+      "1": 4,
+      "2": 12,
+      "3": 36,
+      "4": 108,
+      "5": 324
+    },
+    "total_circles": 484,
+    "estimated_limit_set_dimension_delta": 0.3,
+    "fup_exponent_lower_bound": 0.285
+  },
+  "dyatlov_scattering_fup": {
+    "num_primitive_length_clusters": 23,
+    "num_detected_resonances_in_window": 49,
+    "leading_resonances": [
+      [
+        -0.1179,
+        1.8065
+      ],
+      [
+        -0.0343,
+        1.8065
+      ],
+      [
+        0.0538,
+        2.0072
+      ],
+      [
+        0.0097,
+        2.1075
+      ],
+      [
+        -0.1223,
+        3.6129
+      ],
+      [
+        -0.0343,
+        3.6129
+      ],
+      [
+        0.0538,
+        3.7133
+      ],
+      [
+        0.0582,
+        4.0143
+      ],
+      [
+        0.0053,
+        4.3154
+      ],
+      [
+        -0.0343,
+        5.4194
+      ],
+      [
+        0.0538,
+        5.5197
+      ],
+      [
+        0.0318,
+        6.5233
+      ]
+    ],
+    "algebraic_fup_density_ratios": {
+      "degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "P_Cas_survival_ratio": [
+        1.0,
+        0.8,
+        0.5714,
+        0.4,
+        0.2857,
+        0.2095
+      ],
+      "P_Hess_survival_ratio": [
+        1.0,
+        0.7333,
+        0.4571,
+        0.2286,
+        0.127,
+        0.0762
+      ],
+      "P_full_survival_ratio": [
+        1.0,
+        0.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "minsky_subsurface_hierarchy": [
+    {
+      "step": 0,
+      "subsurface": "S_{6-var}(X0, X1, X2, Y0, Y1, Y2)",
+      "pinched_curve": "Initial ambient marking mu_0",
+      "deg6_surviving_params": 35,
+      "deg7_1110_surviving_params": 34,
+      "h0_deg3_dim": 35
+    },
+    {
+      "step": 1,
+      "subsurface": "S_{5-var}(X0, X1, X2, Y0, Y1) [Y2=0 collar]",
+      "pinched_curve": "Pinch alpha_{Y2}: Step-1 E2 Y2-decoupling",
+      "deg6_surviving_params": 5,
+      "deg7_1110_surviving_params": 21,
+      "h0_deg3_dim": 20
+    },
+    {
+      "step": 2,
+      "subsurface": "S_{4-var}(a1, a2, a3, a4) [Anchor collar]",
+      "pinched_curve": "Pinch alpha_{a0}: Linear-anchor quadrics Q_1..Q_5",
+      "deg6_surviving_params": 4,
+      "deg7_1110_surviving_params": 4,
+      "h0_deg3_dim": 4
+    },
+    {
+      "step": 3,
+      "subsurface": "nu_end = {0} [Terminal ending lamination]",
+      "pinched_curve": "Pinch alpha_{a3-a4}: Kramers Q_8 + Core CI (Q_6..Q_9)",
+      "deg6_surviving_params": 0,
+      "deg7_1110_surviving_params": 0,
+      "h0_deg3_dim": 0
+    }
+  ],
+  "mumford_pattern_energy": {
+    "false_template_direction": "(1, 1, 1, 1, 1) / sqrt(5)",
+    "E_Cas_at_diagonal": 0.0,
+    "E_Hess_at_diagonal": 0.0625,
+    "E_full_at_diagonal": 4.724444,
+    "min_E_full_on_sphere_sample": 0.502907,
+    "min_E_Cas_on_sphere_sample": 0.000202
+  },
+  "elapsed_seconds": 0.502,
+  "scope": "Visual and quantitative synthesis of Mumford's Indra's Pearls / Pattern Theory, Dyatlov's Fractal Uncertainty Principle, and Minsky's subsurface hierarchy with the exact rational E1/E2/Koszul exclusion pipeline on one-reflection-skew. The Schottky limit set and Pollicott-Ruelle resonance spectrum are finite-depth hyperbolic models motivating the algebraic FUP and collar-pinch elimination."
+}

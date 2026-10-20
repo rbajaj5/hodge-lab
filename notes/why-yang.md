@@ -87,3 +87,11 @@ geometric interpretation, Eisenbud for the syzygy viewpoint, and the
 Sextics authors, Benjamin E. Diamond's attributed bridge, Griffiths,
 fqlx, and preceding contributors for the certificate framework and
 physical reductions used in the experiment. Holdout remains unsolved.
+
+## Update (19 October 2026): Visual Categorification & Chain Maps on `one-reflection-skew`
+
+We extended the Yang/Eisenbud Koszul homology diagnostic and implemented
+explicit functorial chain maps on `one-reflection-skew` ([Discussion #127](https://github.com/hodge-computer/sextics/discussions/127)):
+- **Graded Koszul homology ($H_0, H_1, H_2$) across the 5-ideal hierarchy:** [`notes/one-reflection-skew-koszul-homology.md`](one-reflection-skew-koszul-homology.md) · [`one-reflection-skew-koszul-homology.png`](../results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
+- **Spivak operadic wiring & exterior-power chain maps $\Lambda^k(T)$, Yang $\mathbb{Z}_2^{\text{Kramers}}$ channels, and Buehler 2-head bilinear attention $\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$:** [`notes/categorified-koszul-network.md`](categorified-koszul-network.md) · [`categorified-koszul-network.png`](../results/categorified-koszul-network/categorified-koszul-network.png)
+- **Mumford (*Indra's Pearls* & *Pattern Theory*), Dyatlov (Fractal Uncertainty Principle & Pollicott–Ruelle resonances), and Minsky (curve-complex subsurface hierarchy):** [`notes/dyatlov-mumford-minsky-chaos-ag.md`](dyatlov-mumford-minsky-chaos-ag.md) · [`dyatlov-mumford-minsky-chaos-ag.png`](../results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)

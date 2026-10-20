@@ -99,9 +99,16 @@ relations, not missing computations.
 No new family exclusion or higher-degree theorem follows from this bounded
 calculation. We have not proved a full resolution, an all-degree Hilbert
 series, or an eventual polynomial formula from five sampled degrees.
-The unimplemented next step is to construct chain maps relating rebuilt
-families and check what they preserve, rather than transferring a relation
-merely because two pictures look alike. Any useful new obstruction must
+The unimplemented next step at the time of that initial holdout run was to
+construct chain maps relating rebuilt families and check what they preserve,
+rather than transferring a relation merely because two pictures look alike.
+**Update (19 October 2026):** That explicit chain-map construction is now
+implemented and verified across **1,408 commutative columns** ($d'_k \circ \Lambda^k(T) = \Lambda^{k-1}(T) \circ d_k$)
+on `one-reflection-skew` in [`experiments/categorified_koszul_network.py`](../experiments/categorified_koszul_network.py)
+and documented in [`notes/categorified-koszul-network.md`](categorified-koszul-network.md),
+alongside David Spivak's operadic wiring diagrams, David H. Yang's $\mathbb{Z}_2^{\text{Kramers}}$-equivariant
+isotypic channels, and Markus J. Buehler's 2-head bilinear attention decomposition
+$\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$. Any useful new obstruction must
 still return to the fixed physical coefficient equations for exact checking.
 
 Prepared with OpenAI Codex assistance for rbajaj5. Credit Eisenbud for the

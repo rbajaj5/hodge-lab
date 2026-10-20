@@ -22,6 +22,67 @@ updates are reserved for infrequent, substantial batches; the
 
 **How we judge progress:** a useful exclusion, a simpler baseline that performs equally well, and a corrected claim all count as results. Numerical ranking, exact certificates, and external review are separate milestones. [Evidence standards and next experiments](notes/research-milestones.md).
 
+## Visual Categorification, Chaos & Hyperbolic Geometry on `one-reflection-skew`
+
+### 1. Beyond the Snake Lemma: Yang Equivariant Channels, Spivak Chain Maps & Buehler 2-Head Bilinear Attention
+
+A static homological table (`dim ker d₁ = dim im d₂ + dim H₁`) only counts vector-space dimensions inside isolated complexes. To make **David H. Yang's** Koszul cohomology framework ([*$S_n$-equivariant sheaves and Koszul cohomology*, 2014](https://link.springer.com/article/10.1186/s40687-014-0010-9)) genuinely categorical and visual on `one-reflection-skew` ([Discussion #127](https://github.com/hodge-computer/sextics/discussions/127)), we combine three ingredients:
+
+- **David Spivak (*Applied Category Theory* / Polynomial Functors $\mathbf{Poly}$):** Operadic wiring diagrams whose boxes are graded Koszul complexes $K_\bullet(P; S)$ and whose wires are **explicit exterior-power chain maps** $f_k = \Lambda^k(T) \otimes \mathrm{id}_S : K_k(P; S) \to K_k(P'; S)$ satisfying $d'_k \circ f_k = f_{k-1} \circ d_k$ across **1,408 verified basis columns** over $\mathbb{Q}$, transporting actual syzygy cycles (such as the degree-3 Kramers factor cycle in $H_1(K(P_{\text{factored}}))_3$) into $H_1(K(P_{\text{full}}))_3$.
+- **David H. Yang (Equivariant Isotypic Channels):** Decomposition of the ambient ring $S_d = \mathbb{Q}[a_0, a_1, a_2, a_3, a_4]_d = S_d^{(+)} \oplus S_d^{(-)}$ under the Kramers reflection $\sigma_{34}: a_3 \leftrightarrow a_4$, isolating the shared factor $(a_3 - a_4)$ in the Kramers-odd channel $S_2^{(-)}$.
+- **Markus J. Buehler (Categorified Transformer Bilinear Attention):** Exact splitting of the second-order Hodge obstruction profunctor $\mathcal{B}: \mathcal{E}_1 \times \mathcal{E}_1 \to S_{14}/(J_{14} + F S_8)$ into **two coupled bilinear attention heads**:
+  $$\mathcal{B}(e_a, e_b) = \underbrace{\bigl(D_a\,\operatorname{div}(N_b) + D_b\,\operatorname{div}(N_a)\bigr)}_{\text{Head 1: Divergence-Gauge Attention }\mathcal{A}_{\text{div}}(e_a, e_b)} \;+\; \underbrace{\bigl(-N_b \cdot \nabla D_a - N_a \cdot \nabla D_b\bigr)}_{\text{Head 2: Lie-Curvature Attention }\mathcal{A}_{\text{Lie}}(e_a, e_b)}.$$
+  Because $D_a \in J_7(F)$ for every Jacobian anchor token, **Head 1 ($\mathcal{A}_{\text{div}}$) has quotient rank $0/44$ on all Jacobian–Jacobian pairs $J_7 \times J_7$** and lights up (**rank $15/44$**) *exclusively* on the non-Jacobian ("added") E1 syzygy lifts $U_i \notin J_7(F)$, while **Head 2 ($\mathcal{A}_{\text{Lie}}$)** carries the Kähler–Hessian curvature $\partial_i \partial_j F$ (**rank $39/44$**).
+
+[![Visual Categorification on one-reflection-skew — Spivak Chain Maps, Yang Equivariant Channels & Buehler 2-Head Attention](results/categorified-koszul-network/categorified-koszul-network.png)](notes/categorified-koszul-network.md)
+
+[Read the visual categorification note](notes/categorified-koszul-network.md) · [Run the chain-map & 2-head attention verifier](experiments/categorified_koszul_network.py) · [Inspect the JSON receipt (`5ae2d057249eacc7`)](results/categorified-koszul-network/summary.json) · [Graded Koszul homology ($H_0, H_1, H_2$) across the 5-ideal hierarchy](notes/one-reflection-skew-koszul-homology.md) · [Complete degree-7 8-sector analysis](notes/one-reflection-skew-degree7.md).
+
+---
+
+### 2. Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry: Dyatlov, Mumford & Minsky
+
+Visual structures from chaotic hyperbolic scattering, Kleinian groups, and compositional pattern theory provide concrete geometric blueprints for our algebraic elimination cascades:
+
+- **David Mumford, Caroline Series & David Wright (*Indra's Pearls*, 2002):** Schottky uniformization $C = (\widehat{\mathbb{C}} \setminus \Lambda(\Gamma_{\text{skew}}))/\Gamma_{\text{skew}}$ via a 2-generator / 4-disk Möbius Schottky group calibrated by the Casimir and $1/7$ Kramers skew couplings of `one-reflection-skew` (484 nested Schottky circles up to word depth $L=5$, Kleinian fractal limit set $\Lambda(\Gamma_{\text{skew}})$ of Hausdorff dimension $\delta \approx 0.30$).
+- **Semyon Dyatlov (Bourgain–Dyatlov 2018; Dyatlov–Zworski 2019):** Pollicott–Ruelle scattering resonances $s_j = \sigma_j + i t_j$ and the **Fractal Uncertainty Principle (FUP)** resonance-free strip $\operatorname{Re}(s) \le \delta - \beta_{\text{FUP}}$, paired with its exact algebraic analogue on `one-reflection-skew`: the Koszul survival density $\rho_d(P) = \dim H_0(P)_d / \dim S_d$ decays slowly for $P_{\text{Cas}}$ ($8d-4$), plateaus at $16/\binom{d+4}{4}$ for $P_{\text{Hess}}$, and exhibits a **sharp FUP collapse to strictly $0$ at degree $d=3$** for $P_{\text{full}}$ ($a_i^3 = 0 \implies a_i = 0$).
+- **Yair Minsky (Masur–Minsky 2000; *Ending Lamination Theorem*, 2010):** Curve-complex subsurface hierarchy paths and hyperbolic collar pinches mapping 1-to-1 onto our elimination cascade: **Pinch $\alpha_{Y_2}$** (Step-1 E2 decoupling $35 \to 5$ at $d=6$ and $34 \to 21$ at $d=7$, isolating the $Y_2=0$ 5-variable subsurface) $\to$ **Pinch $\alpha_{a_0}$** (anchor quadrics $Q_1\dots Q_5$ isolating the 4-variable core $a_1\dots a_4$) $\to$ **Pinch $\alpha_{34}$** (Kramers seam $a_3 - a_4$ and complete intersection $P_{\text{core}}$ collapsing to the ending lamination $\nu_{\text{end}} = \{0\}$).
+- **David Mumford & Agnès Desolneux (*Pattern Theory*, 2010):** Compositional Gibbs energy functional $E_P(a) = \sum_{Q \in P} |Q(a)|^2$ on the unit sphere $\mathbb{S}^4 \subset \mathbb{R}^5$, showing how the false-template diagonal ray $v_0 = \frac{1}{\sqrt{5}}(1,1,1,1,1)$ sits in a zero-energy valley of the Casimir grammar ($E_{\text{Cas}}(v_0) = 0$) before being lifted to $E_{\text{Hess}}(v_0) = \frac{1}{16} = 0.0625$ and $E_{\text{full}}(v_0) = \frac{4252}{900} \approx 4.7244 > 0$.
+
+[![Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry — Mumford, Dyatlov & Minsky on one-reflection-skew](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)](notes/dyatlov-mumford-minsky-chaos-ag.md)
+
+[Read the Dyatlov–Mumford–Minsky synthesis note](notes/dyatlov-mumford-minsky-chaos-ag.md) · [Run the Schottky / FUP / Minsky / Pattern-Theory script](experiments/dyatlov_mumford_minsky_chaos_ag.py) · [Inspect the JSON receipt (`bed45067ed484513`)](results/dyatlov-mumford-minsky/summary.json).
+
+---
+
+### 3. What a Kähler Manifold Is in the Sense of Conformal Field Theory
+
+Why do the polynomial Jacobian ring $S / J(F)$ and the Hessian curvature $\partial_i \partial_j F$ appear simultaneously in classical Hodge theory and in 2D conformal field theory? At the most foundational level:
+
+1. **Classical Geometry vs. $\mathcal{N}=(2,2)$ Worldsheet Supersymmetry (Zumino 1979; Alvarez-Gaumé–Freedman 1981):**  
+   A complex manifold $(M, g)$ with local holomorphic coordinates $(Z^1, \dots, Z^n)$ is **Kähler** if its metric comes from the mixed second derivatives of a single real scalar function, the **Kähler potential** $K(Z, \bar Z)$:
+   $$g_{i\bar\jmath}(Z, \bar Z) = \frac{\partial^2 K(Z, \bar Z)}{\partial Z^i \, \partial \bar Z^{\bar\jmath}}, \qquad \omega = \frac{i}{2} g_{i\bar\jmath}\, dZ^i \wedge d\bar Z^{\bar\jmath}, \qquad d\omega = 0.$$
+   In a two-dimensional nonlinear sigma model mapping a string worldsheet $\Sigma$ into $M$, **target-space Kähler geometry is equivalent to $\mathcal{N}=(2,2)$ extended worldsheet supersymmetry**. In $\mathcal{N}=(2,2)$ superspace $(z, \bar z, \theta^\pm, \bar\theta^\pm)$, the **Kähler potential $K(\Phi, \bar\Phi)$ is literally the Lagrangian density itself**:
+   $$S_{\text{sigma}}[\Phi, \bar\Phi] = \int_\Sigma d^2z \, d^4\theta \; K(\Phi, \bar\Phi).$$
+   Performing the four Grassmann integrations $\int d^4\theta$ automatically takes two derivatives of $K(\Phi, \bar\Phi)$, generating the Kähler metric $g_{i\bar\jmath} = \partial_i \partial_{\bar\jmath} K$ for the bosonic kinetic term and the Riemann curvature tensor for the four-fermion interaction.
+
+2. **Hodge $(p,q)$-Bi-Grading as Left/Right $U(1)_L \times U(1)_R$ Worldsheet R-Charges (Witten 1982):**  
+   An $\mathcal{N}=(2,2)$ superconformal field theory (SCFT) possesses a conserved left-moving $U(1)_L$ R-current and right-moving $U(1)_R$ R-current. Identifying holomorphic worldsheet fermions with $(1,0)$-forms ($\psi^i \leftrightarrow dZ^i$) and antiholomorphic fermions with $(0,1)$-forms ($\bar\psi^{\bar\jmath} \leftrightarrow d\bar Z^{\bar\jmath}$):
+   - Every differential $(p,q)$-form $\alpha \in \Omega^{p,q}(M)$ is a quantum state with **$(U(1)_L, U(1)_R)$ R-charges $(q_L, q_R) = (p, q)$**.
+   - The supercharges act as the Dolbeault operators ($\bar\partial, \bar\partial^\dagger, \partial, \partial^\dagger$), and the supersymmetric Hamiltonian is the **Kähler–Hodge Laplacian** $H = \{Q, Q^\dagger\} = \Delta_{\bar\partial} = \frac{1}{2}\Delta_d$.
+   - The **Hodge cohomology groups $H^{p,q}(M)$ are the zero-energy supersymmetric ground states (harmonic forms / Ramond vacua)** of the CFT, bigraded by their left and right $U(1)$ R-charges.
+
+3. **Landau–Ginzburg Superpotential $W(Z) = F(Z)$ and the Chiral Primary Ring (Lerche–Vafa–Warner 1989; Griffiths 1969):**  
+   For a projective hypersurface $X = \{F(Z_0, \dots, Z_5) = 0\} \subset \mathbb{P}^5$ (such as our fourfold sextics), the Kähler sigma model sits on the same moduli space as a 2D $\mathcal{N}=(2,2)$ **Landau–Ginzburg theory** with holomorphic superpotential $W(Z) = F(Z)$:
+   $$S_{\text{LG}} = \int d^2z \, d^4\theta \, K(Z, \bar Z) + \left( \int d^2z \, d^2\theta \, F(Z) + \text{c.c.} \right).$$
+   Because $\bar Q_+ \Phi^i = 0$ and $\{\bar Q_+, \dots\} = \partial_i F(Z)$, all partial derivatives $\partial_i F$ are $Q$-exact in the quantum theory. The ring of **chiral primary operators** surviving $Q$-cohomology is therefore the **Jacobian (Milnor) ring**:
+   $$\mathcal{R}_{\text{chiral}} = \frac{\mathbb{C}[Z_0, \dots, Z_5]}{\bigl(\partial_0 F, \dots, \partial_5 F\bigr)} = \frac{S}{J(F)},$$
+   whose graded pieces parameterize primitive Hodge classes via **Phillip Griffiths' residue calculus**, and whose second-order deformations are governed by the Hessian $\partial_i \partial_j F$!
+
+| `one-reflection-skew` Graded Koszul Homology ($H_0, H_1, H_2$) | Complete Degree-7 8-Sector $\mathbb{Z}_2^4$ Decomposition |
+| :---: | :---: |
+| [![Graded Koszul homology across the 5-ideal hierarchy on one-reflection-skew](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)](notes/one-reflection-skew-koszul-homology.md) | [![Degree-7 8-sector E1 + E2 analysis on one-reflection-skew](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)](notes/one-reflection-skew-degree7.md) |
+
 ## GPU spotlight: a rank gap becomes a proof
 
 **175 correction columns. 25 exact relations. Rank at most 150.**

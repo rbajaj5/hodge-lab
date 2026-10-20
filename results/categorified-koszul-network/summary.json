@@ -1,0 +1,967 @@
+{
+  "status": "PASS",
+  "instance": "one-reflection-skew",
+  "discussion": 127,
+  "framework": "Visual Categorification combining David H. Yang's equivariant Koszul channels, David Spivak's polynomial-functor wiring diagrams & explicit chain maps f_*: K_*(P) -> K_*(P'), and Markus J. Buehler's 2-head bilinear attention decomposition B = A_Lie + A_Hess.",
+  "spivak_chain_maps": {
+    "total_verified_commutative_columns": 1408,
+    "functorial_composition_verified": "Psi_Hess_to_full o iota_Cas_to_Hess == iota_Cas_to_full (exact over Q)",
+    "y2_twist_monoidal_equivalence": "T_{Y2}: K_*(P_{deg 6}) ->~ K_*(P_{[0,0,0,1]}) via B_{Y2 D6}(Y2 N6) = Y2^2 B_{D6}(N6)",
+    "chain_maps": {
+      "iota_Cas_to_Hess": {
+        "transition_matrix_shape": [
+          4,
+          3
+        ],
+        "transition_matrix": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "degrees": [
+          {
+            "degree": 2,
+            "src_dims": [
+              15,
+              3,
+              0,
+              0
+            ],
+            "dst_dims": [
+              15,
+              4,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 3,
+            "f1_rank": 3,
+            "f2_rank": 0
+          },
+          {
+            "degree": 3,
+            "src_dims": [
+              35,
+              15,
+              0,
+              0
+            ],
+            "dst_dims": [
+              35,
+              20,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 15,
+            "f1_rank": 15,
+            "f2_rank": 0
+          },
+          {
+            "degree": 4,
+            "src_dims": [
+              70,
+              45,
+              3,
+              0
+            ],
+            "dst_dims": [
+              70,
+              60,
+              6,
+              0
+            ],
+            "checked_commutative_columns": 48,
+            "f1_rank": 45,
+            "f2_rank": 3
+          },
+          {
+            "degree": 5,
+            "src_dims": [
+              126,
+              105,
+              15,
+              0
+            ],
+            "dst_dims": [
+              126,
+              140,
+              30,
+              0
+            ],
+            "checked_commutative_columns": 120,
+            "f1_rank": 105,
+            "f2_rank": 15
+          },
+          {
+            "degree": 6,
+            "src_dims": [
+              210,
+              210,
+              45,
+              1
+            ],
+            "dst_dims": [
+              210,
+              280,
+              90,
+              4
+            ],
+            "checked_commutative_columns": 256,
+            "f1_rank": 210,
+            "f2_rank": 45
+          }
+        ]
+      },
+      "Phi_factored_to_full": {
+        "transition_matrix_shape": [
+          9,
+          4
+        ],
+        "transition_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "degrees": [
+          {
+            "degree": 2,
+            "src_dims": [
+              15,
+              4,
+              0,
+              0
+            ],
+            "dst_dims": [
+              15,
+              9,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 4,
+            "f1_rank": 4,
+            "f2_rank": 0
+          },
+          {
+            "degree": 3,
+            "src_dims": [
+              35,
+              20,
+              0,
+              0
+            ],
+            "dst_dims": [
+              35,
+              45,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 20,
+            "f1_rank": 20,
+            "f2_rank": 0
+          },
+          {
+            "degree": 4,
+            "src_dims": [
+              70,
+              60,
+              6,
+              0
+            ],
+            "dst_dims": [
+              70,
+              135,
+              36,
+              0
+            ],
+            "checked_commutative_columns": 66,
+            "f1_rank": 60,
+            "f2_rank": 6
+          },
+          {
+            "degree": 5,
+            "src_dims": [
+              126,
+              140,
+              30,
+              0
+            ],
+            "dst_dims": [
+              126,
+              315,
+              180,
+              0
+            ],
+            "checked_commutative_columns": 170,
+            "f1_rank": 140,
+            "f2_rank": 30
+          }
+        ]
+      },
+      "iota_core_to_full": {
+        "transition_matrix_shape": [
+          9,
+          4
+        ],
+        "transition_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "degrees": [
+          {
+            "degree": 2,
+            "src_dims": [
+              15,
+              4,
+              0,
+              0
+            ],
+            "dst_dims": [
+              15,
+              9,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 4,
+            "f1_rank": 4,
+            "f2_rank": 0
+          },
+          {
+            "degree": 3,
+            "src_dims": [
+              35,
+              20,
+              0,
+              0
+            ],
+            "dst_dims": [
+              35,
+              45,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 20,
+            "f1_rank": 20,
+            "f2_rank": 0
+          },
+          {
+            "degree": 4,
+            "src_dims": [
+              70,
+              60,
+              6,
+              0
+            ],
+            "dst_dims": [
+              70,
+              135,
+              36,
+              0
+            ],
+            "checked_commutative_columns": 66,
+            "f1_rank": 60,
+            "f2_rank": 6
+          },
+          {
+            "degree": 5,
+            "src_dims": [
+              126,
+              140,
+              30,
+              0
+            ],
+            "dst_dims": [
+              126,
+              315,
+              180,
+              0
+            ],
+            "checked_commutative_columns": 170,
+            "f1_rank": 140,
+            "f2_rank": 30
+          }
+        ]
+      },
+      "Psi_Hess_to_full": {
+        "transition_matrix_shape": [
+          9,
+          4
+        ],
+        "transition_matrix": [
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "4/3",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-17/12",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "11/6",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1/4",
+            "0"
+          ]
+        ],
+        "degrees": [
+          {
+            "degree": 2,
+            "src_dims": [
+              15,
+              4,
+              0,
+              0
+            ],
+            "dst_dims": [
+              15,
+              9,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 4,
+            "f1_rank": 4,
+            "f2_rank": 0
+          },
+          {
+            "degree": 3,
+            "src_dims": [
+              35,
+              20,
+              0,
+              0
+            ],
+            "dst_dims": [
+              35,
+              45,
+              0,
+              0
+            ],
+            "checked_commutative_columns": 20,
+            "f1_rank": 20,
+            "f2_rank": 0
+          },
+          {
+            "degree": 4,
+            "src_dims": [
+              70,
+              60,
+              6,
+              0
+            ],
+            "dst_dims": [
+              70,
+              135,
+              36,
+              0
+            ],
+            "checked_commutative_columns": 66,
+            "f1_rank": 60,
+            "f2_rank": 6
+          },
+          {
+            "degree": 5,
+            "src_dims": [
+              126,
+              140,
+              30,
+              0
+            ],
+            "dst_dims": [
+              126,
+              315,
+              180,
+              0
+            ],
+            "checked_commutative_columns": 170,
+            "f1_rank": 140,
+            "f2_rank": 30
+          }
+        ]
+      }
+    }
+  },
+  "yang_kramers_isotypic_decomposition": [
+    {
+      "degree": 1,
+      "total_dim": 5,
+      "kramers_even_dim": 4,
+      "kramers_odd_dim": 1
+    },
+    {
+      "degree": 2,
+      "total_dim": 15,
+      "kramers_even_dim": 11,
+      "kramers_odd_dim": 4
+    },
+    {
+      "degree": 3,
+      "total_dim": 35,
+      "kramers_even_dim": 24,
+      "kramers_odd_dim": 11
+    },
+    {
+      "degree": 4,
+      "total_dim": 70,
+      "kramers_even_dim": 46,
+      "kramers_odd_dim": 24
+    },
+    {
+      "degree": 5,
+      "total_dim": 126,
+      "kramers_even_dim": 80,
+      "kramers_odd_dim": 46
+    },
+    {
+      "degree": 6,
+      "total_dim": 210,
+      "kramers_even_dim": 130,
+      "kramers_odd_dim": 80
+    }
+  ],
+  "buehler_two_head_attention_10_tokens": {
+    "token_labels": [
+      "X0E_0",
+      "X0E_1",
+      "X0E_2",
+      "X0E_3",
+      "X0E_4",
+      "U_0",
+      "U_1",
+      "U_2",
+      "U_3",
+      "U_4"
+    ],
+    "num_tokens": 10,
+    "num_quadratic_pairs": 55,
+    "exact_identity_verified": "B(e_a, e_b) == A_div(e_a, e_b) + A_Lie(e_a, e_b) across all 55 token pairs in Q[X0..Y2]_14",
+    "head1_lie_transport_rank_in_quotient": 15,
+    "head2_hessian_curvature_rank_in_quotient": 39,
+    "combined_attention_rank_in_quotient": 39,
+    "lie_support_matrix": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ]
+    ],
+    "hess_support_matrix": [
+      [
+        2.0,
+        1.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        1.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ]
+    ],
+    "combined_support_matrix": [
+      [
+        2.0,
+        1.0,
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        1.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        0.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ],
+      [
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0,
+        44.0
+      ]
+    ]
+  },
+  "elapsed_seconds": 37.772,
+  "scope": "Exact categorical chain maps f_*: K_*(P) -> K_*(P') (resolving the unimplemented chain-map step in notes/categorical-syzygies.md), Kramers Z2-equivariant channel splitting, and 2-head bilinear attention decomposition B = A_div + A_Lie on one-reflection-skew. Does not claim Yang's geometric Hilbert-scheme theorem or an existence certificate."
+}
