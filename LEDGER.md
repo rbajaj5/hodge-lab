@@ -2877,6 +2877,50 @@ conversations or evidence of an accepted solve.
     (closed), zero accepted authored solves**.
     [Snapshot, acceptance, attribution and verification-scope receipt](results/discussion-monitor/update-20261020T214337Z.json).
 
+99. **20 October 2026, 19:43 EDT / 23:43 UTC — Cycle-three certificate submitted; protected verification pending.**
+    All pages of the 13 monitored discussions were compared with the 22:48 UTC
+    snapshot. One existing reply was edited, with no additions or removals;
+    the total remains 26 comments and 16 replies. The
+    [edited reply in #55](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999)
+    now announces [PR165](https://github.com/hodge-computer/sextics/pull/165),
+    prepared for hodgepodgeconjecture with Codex assistance. Its earlier
+    unfinished 31-module checkpoint is retained in a collapsed historical
+    section. Checkpoints 95–97 above preserve what was reported at those times.
+
+    The author now claims the exact cycle-three q=1 HasCertificate theorem
+    with no additional hypotheses or placeholders. The universal cubic
+    syzygy, physical tangent identities and dual-number first variations,
+    field embedding, volume determinant and assembled primitive are reported
+    complete. The [pinned explanation](https://github.com/hodgepodgeconjecture/sextics/blob/39a846e695aa8584693f711d333789abde2dbfea/data/cycle-three/solution.md)
+    describes an existential homogeneous certificate permitting nonzero Q;
+    it supplies no expanded witness or numerical denominator-degree bound,
+    and makes no claim for the separate cycle-q2 target.
+
+    **Submitted is not accepted.** At the 23:44 UTC status check, PR165 was
+    open and unmerged at head 39a846e695aa8584693f711d333789abde2dbfea.
+    [Protected verification](https://github.com/hodge-computer/sextics/actions/runs/39516661290)
+    was in progress: structure and explanation checks passed, dependencies
+    were being prepared, and exact-statement/kernel/axiom verification was
+    still pending. The author reports compilation of all 60 modules and
+    generated wrappers with pinned Lean at trustLevel=0 and standard axioms.
+    Local independent replay was still in progress; an initial combined
+    replay hit an approximately 8 GB limit, and the full local OS sandbox
+    was unavailable. That interrupted run is not recorded as a pass.
+
+    The explanation gives a more specific research-direction acknowledgment:
+    rbajaj5's earlier bounded exclusions informed the decision to pursue an
+    existence construction. It explicitly says they are **not proof premises**.
+    This is neither an independent replay of our exclusions nor solve
+    authorship. We read the thread, explanation, PR body, manifest and final
+    wrapper, and inspected the workflow status; we did not compile, replay,
+    or audit the full Lean proof. At pinned main
+    deddb63a44f14e3e4ea3c897557b6ddf936a82d7, the monitored acceptance records
+    remain unchanged: **six accepted/published, seven open**, including
+    cycle-three. No upstream action was taken. Our tally remains **27
+    discussion contributions, one maintenance PR (closed), zero accepted
+    authored solves**.
+    [Edit, proposal, attribution and verification-scope receipt](results/discussion-monitor/update-20261020T234335Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

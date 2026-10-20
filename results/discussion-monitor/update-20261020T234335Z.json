@@ -1,0 +1,383 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T23:43:35.366472+00:00",
+  "baseline_snapshot": "20261020T224805Z",
+  "snapshot": "20261020T234335Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 16,
+    "records": 42,
+    "new_records": 0,
+    "edited_records": 1,
+    "removed_records": 0
+  },
+  "edited_record": {
+    "before": {
+      "id": "DC_kwDOVLOOJc4BIycn",
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999",
+      "parent_id": "DC_kwDOVLOOJc4BIxeY",
+      "author": {
+        "login": "hodgepodgeconjecture",
+        "name": null
+      },
+      "createdAt": "2026-10-20T20:18:13Z",
+      "updatedAt": "2026-10-20T20:18:13Z",
+      "body_sha256": "f8bd87022da144449d12207e940e113a2639e0f797f7102752797146d0554c8c"
+    },
+    "after": {
+      "id": "DC_kwDOVLOOJc4BIycn",
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999",
+      "parent_id": "DC_kwDOVLOOJc4BIxeY",
+      "author": {
+        "login": "hodgepodgeconjecture",
+        "name": null
+      },
+      "createdAt": "2026-10-20T20:18:13Z",
+      "updatedAt": "2026-10-20T23:43:00Z",
+      "body_sha256": "ad8d04200338d877da1407604bdfff73908871a57f9d37a2cc0d9e8b11e90e8e"
+    }
+  },
+  "prior_body_preserved_in_edited_comment": true,
+  "upstream_commit": "deddb63a44f14e3e4ea3c897557b6ddf936a82d7",
+  "proof_record_changes": [],
+  "publication_status": {
+    "accepted_monitored_instances": 6,
+    "open_monitored_instances": 7,
+    "cycle_three": "open, proposal pending"
+  },
+  "proposal": {
+    "head": "39a846e695aa8584693f711d333789abde2dbfea",
+    "metadata": {
+      "number": 165,
+      "html_url": "https://github.com/hodge-computer/sextics/pull/165",
+      "title": "Solve cycle-three: paired-sign cubic and Jacobian residue transport",
+      "created_at": "2026-10-20T23:41:28Z",
+      "updated_at": "2026-10-20T23:41:29Z",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "merged_at": null
+    },
+    "author": "hodgepodgeconjecture",
+    "observed_at_utc": "2026-10-20T23:44:21.315446+00:00",
+    "observed_status": {
+      "pr_state": "open",
+      "merged": false,
+      "draft": false,
+      "protected_check_status": "in_progress",
+      "protected_check_conclusion": null,
+      "solve_lean_status": "pending",
+      "protected_run_url": "https://github.com/hodge-computer/sextics/actions/runs/39516661290",
+      "acceptance": "No merged or accepted solve established. Same-checkpoint pinned-main status audit has no cycle-three proof/acceptance record.",
+      "snapshot_only_not_polled": true
+    },
+    "scope": {
+      "exact_target": "cycle-three, q=1, A=X0^3Y0^3, all three cyclic coupling coefficients 1/2",
+      "author_claim": "Complete exact HasCertificate theorem with original fixed target, no extra hypotheses/placeholders.",
+      "new_claims_since_prior_comment": "Full universal cubic covariant syzygy, physical tangent identity and dual-number first variations, physical function-field embedding, residue-volume determinant, and assembled primitive are now claimed proved. Earlier unfinished 31-module checkpoint remains archived as superseded.",
+      "construction": "Paired-sign cubic to auxiliary Jacobian primitive, arithmetic lifting, polynomial integration and finite trace, physical Piola pullback and two corrections, legal clearing and homogeneous extraction.",
+      "certificate_mode": "Existential homogeneous polynomial certificate over the original sextic function field; quotient Q may be nonzero. No expanded D,N,Q and no numerical denominator-degree bound.",
+      "excluded_claims": [
+        "No separate cycle-q2 or degree-twelve companion solve",
+        "No general Hodge-conjecture solution",
+        "No accepted solve or finished protected CI yet"
+      ]
+    },
+    "verification_boundary": {
+      "all_60_proposal_modules_compile": "Author reported with pinned Lean 4.33.0 trustLevel=0; not replayed by this audit.",
+      "generated_wrappers_compile": "Author reported.",
+      "axioms": "Author reports propext, Classical.choice, Quot.sound for final theorem.",
+      "local_official_replay": "In progress according to PR body; combined attempt killed near 8 GB ceiling, not a pass.",
+      "local_full_os_sandbox": "Unavailable without Docker in author runtime; relies on protected CI.",
+      "protected_ci": "In progress in directly fetched GitHub checks; no successful result observed.",
+      "fresh_code_or_lean_execution_by_monitor": false
+    },
+    "source_files": {
+      "solution": {
+        "blob_sha": "5343d0ea4f3cb308d68b93729094a1c15abde0e8",
+        "sha256": "dbfbc4921721673e8f11b8411dee5fc1c3a2aa697de933de87626344dd8402bd",
+        "url": "https://github.com/hodgepodgeconjecture/sextics/blob/39a846e695aa8584693f711d333789abde2dbfea/data/cycle-three/solution.md"
+      },
+      "proof": {
+        "blob_sha": "71d75efca9b84b5057a2975127cb97553c47c2af",
+        "sha256": "bd47d6ecdcf819a89ad886cca65e6dafd750c934330e51da28c052fa7938e4f9",
+        "url": "https://github.com/hodgepodgeconjecture/sextics/blob/39a846e695aa8584693f711d333789abde2dbfea/data/cycle-three/proof.json"
+      },
+      "wrapper": {
+        "blob_sha": "2cca62e060e94cbcb8453e6a88704d8eab080896",
+        "sha256": "1dfb7debf172c26d9f130b66ebe88fc4ce2bfcc67a89953cd244fd33385eba47",
+        "url": "https://github.com/hodgepodgeconjecture/sextics/blob/39a846e695aa8584693f711d333789abde2dbfea/data/cycle-three/Solution.lean"
+      }
+    },
+    "protected_jobs": [
+      {
+        "id": 118950337241,
+        "name": "Protected proposal verification",
+        "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39516661290/job/118950337241",
+        "status": "in_progress",
+        "conclusion": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-20T23:41:37Z",
+            "completed_at": "2026-10-20T23:41:38Z"
+          },
+          {
+            "name": "Resolve current immutable PR commits",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-20T23:41:38Z",
+            "completed_at": "2026-10-20T23:41:39Z"
+          },
+          {
+            "name": "Check out the trusted base",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-20T23:41:39Z",
+            "completed_at": "2026-10-20T23:41:52Z"
+          },
+          {
+            "name": "Fetch proposal and identify solve changes",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-20T23:41:52Z",
+            "completed_at": "2026-10-20T23:41:53Z"
+          },
+          {
+            "name": "Mark this exact commit pending",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-20T23:41:53Z",
+            "completed_at": "2026-10-20T23:41:54Z"
+          },
+          {
+            "name": "Prepare Python",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-20T23:41:54Z",
+            "completed_at": "2026-10-20T23:41:54Z"
+          },
+          {
+            "name": "Install trusted Python dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-20T23:41:54Z",
+            "completed_at": "2026-10-20T23:42:01Z"
+          },
+          {
+            "name": "Check proposal structure before preparing Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-20T23:42:01Z",
+            "completed_at": "2026-10-20T23:42:02Z"
+          },
+          {
+            "name": "Validate explanation links and displayed mathematics",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-20T23:42:02Z",
+            "completed_at": "2026-10-20T23:42:03Z"
+          },
+          {
+            "name": "Make room for Lean and its dependency cache",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-10-20T23:42:03Z",
+            "completed_at": "2026-10-20T23:44:09Z"
+          },
+          {
+            "name": "Install pinned Lean toolchain",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-10-20T23:44:09Z",
+            "completed_at": "2026-10-20T23:44:09Z"
+          },
+          {
+            "name": "Reuse pinned protected Lean dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-10-20T23:44:09Z",
+            "completed_at": "2026-10-20T23:44:10Z"
+          },
+          {
+            "name": "Prepare protected dependencies",
+            "status": "in_progress",
+            "conclusion": null,
+            "number": 13,
+            "started_at": "2026-10-20T23:44:10Z",
+            "completed_at": null
+          },
+          {
+            "name": "Verify exact statement, kernel replay, and axioms",
+            "status": "pending",
+            "conclusion": null,
+            "number": 14,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Report readiness for owner merge or require maintenance authorization",
+            "status": "pending",
+            "conclusion": null,
+            "number": 15,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Preserve check receipts",
+            "status": "pending",
+            "conclusion": null,
+            "number": 16,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Reject a result for a superseded PR or base",
+            "status": "pending",
+            "conclusion": null,
+            "number": 17,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Explain a failed check",
+            "status": "pending",
+            "conclusion": null,
+            "number": 18,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Record result on the submitted commit",
+            "status": "pending",
+            "conclusion": null,
+            "number": 19,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Post Reuse pinned protected Lean dependencies",
+            "status": "pending",
+            "conclusion": null,
+            "number": 36,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Post Prepare Python",
+            "status": "pending",
+            "conclusion": null,
+            "number": 37,
+            "started_at": null,
+            "completed_at": null
+          },
+          {
+            "name": "Post Check out the trusted base",
+            "status": "pending",
+            "conclusion": null,
+            "number": 38,
+            "started_at": null,
+            "completed_at": null
+          }
+        ]
+      }
+    ]
+  },
+  "attribution": {
+    "author_login": "hodgepodgeconjecture",
+    "offline_identity_inferred": false,
+    "rbajaj5_mention_in_solution": true,
+    "exact_scope": "The solution says the earlier bounded denominator exclusion by rbajaj5 informed the choice to pursue an existence construction; it is explicitly not a premise of the proof. PR body and edited discussion retain context-not-premises wording.",
+    "proof_dependency_or_authored_solve_credit_to_rbajaj5": false,
+    "other_credits": [
+      "Benjamin E. Diamond and project contributors",
+      "fqlx and acknowledged shared-construction authors",
+      "classical ternary-cubic invariant theory, Fisher and SageMath normalization",
+      "Lean/mathlib",
+      "OpenAI Codex assistance"
+    ]
+  },
+  "new_attribution_precision": "The pinned explanation explicitly says rbajaj5 bounded exclusions informed the choice to pursue an existence construction. This makes prior context credit more specific; it is not an independent replay, a proof dependency, or solve authorship.",
+  "checks_performed_here": [
+    "Fetched and compared all comment/reply pages, IDs, timestamps, body hashes and metadata.",
+    "Read the edited reply in the complete cycle-three thread and read its pinned explanation, PR body, proof manifest and final wrapper.",
+    "Read PR and protected workflow/job status once; acceptance audit found no main-branch status or credit changes."
+  ],
+  "checks_not_performed_here": [
+    "No proposal code executed, full proof-source audit, Lean compilation or kernel replay.",
+    "No independent reproduction of the author-reported local compilation and checks."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "85fd44ed9a8acff2758ddb2aa39e93e5b9c91202c900f8b11264632661dad385",
+    "accepted-records.json": "93e299ea42829415d20fdbe0b1a4e9dfe7b9ef5bb3f35922cdc8597a98c7c0ca",
+    "comparison.json": "45fc2f74cb95b10cbb0d09bf61ae0233c5782c3e068ecfc2b2140e2086f71370",
+    "cycle-three-proposal165-solution.md": "dbfbc4921721673e8f11b8411dee5fc1c3a2aa697de933de87626344dd8402bd",
+    "cycle-three-proposal165.json": "a7d5d1ab35e13ad554c811be1f318a61ef49a7bf35721c4d60b1cc629c933804",
+    "discussion-111.json": "de55158768a104b99697f144c518359812487adca7ea05d4d498bf7010b715b0",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "4f7ff18cf8643dc18f8693dd8306518cae78f9e6421cd60fb7825e2aad18a7b2",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "14e433a17a70e88201c666020fb8da2966bc989fa7d6b1e07194fd364b0c98d7",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "15ca09460892804938264203c51a04f0ac56fc64669366dbc606d8971d64031f",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "30f5385dbdbedeecca70dd809f852ee7f15b803514fa0ed2a89db6f6c781be97",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "7cc1910ecd9c8fb5cb396a990c4c443fa4062eca29c4b5a4c885e8803937ac61",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "7fad13c96ef9b6884050ee850a75bc12f790ed7642fb95ed403bd683bfe6f62a",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "6c7e703670e1bbfb85885d9a9bf084dbfcbd76f4dce3d130d10a598c33b1c6a6",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "bfb48316e5ec58fd1997fbd1d8168985de5df68ae74f1b066a8a06f73213a08c",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "5a19b0ec8b1364a9d80883296790a2d014e6dd6b8dbdd58f9a2144cb3050c282",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-44.json": "154265c985864a5ecd347791a0e6bd6f9818c2b207f2964d22d6beab99586dfb",
+    "discussion-44.md": "415d0e977e3e0d6921a448dddc338d804dcf80ff1ef4fe0ab5d84527d8539fbb",
+    "discussion-55.json": "6d4ea210a150c1fa8da9efa68c815865be3fea31578baa2c3d664a2c99f268e1",
+    "discussion-55.md": "23cf68ee426abc1f96f5e1b4ffe83a01d74a30e5aca8ad7c21f1246d5d169125",
+    "discussion-56.json": "b5076ad107e2f587d5360de543393372186ebaf421bbca855712d184f7b6b2e5",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "manifest.json": "9100b99153384f3996c644c191cb3ad702e9268a5510df44cc3434ec910859a0",
+    "publication-status.json": "ffd4fecf8272416a4c9683316c4728317fc8ffdd6b978b13e5ee90b48f56f8a5"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "The author now claims a closed exact certificate, superseding the earlier unfinished checkpoint. This monitor observed an open proposal with protected verification in progress, not an accepted solution. The reported memory-limited combined local replay is not counted as a pass."
+}
