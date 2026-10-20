@@ -1,0 +1,476 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T15:01:20.052024+00:00",
+  "baseline_snapshot": "20261020T135840Z",
+  "snapshot": "20261020T150120Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 25,
+    "replies": 12,
+    "records": 37,
+    "new_records": 0,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "discussion_changes": [],
+  "proof_record_changes": [],
+  "publication_status_change": {
+    "instance": "cyclic-triple-fano",
+    "before": "merged_lean_checked_publication_pending",
+    "after": "accepted_and_published_in_repository",
+    "acceptedAt": "2026-10-20T13:19:48Z",
+    "publishedAt": "2026-10-20T14:09:51.374830+00:00",
+    "scope": "Previously recorded proof and input credit; new publication outcome only."
+  },
+  "publication_evidence": {
+    "schema": "cyclic-fano-publication-followup-v1",
+    "checked_at_utc": "2026-10-20T15:02:56.839235+00:00",
+    "scheduled_checkpoint": "2026-10-20T15:00:00Z",
+    "repository": "hodge-computer/sextics",
+    "pinned_main_commit": "55d7489d8578e3cb3c9cbf785ff9864fd4adc269",
+    "previous_snapshot": "work/discussion-monitor/20261020T135840Z",
+    "status": "accepted_and_published_in_repository",
+    "observation": "A later publication workflow succeeded; acceptance.json, generated atlas records, and the solver-credit entry are now present at the pinned main commit. The earlier failed run remains historical.",
+    "proposal": {
+      "author": {
+        "id": "MDQ6VXNlcjMwMzU2MjUy",
+        "is_bot": false,
+        "login": "benediamond",
+        "name": "Benjamin Diamond"
+      },
+      "headRefOid": "92325b22a74d803302e659dcada056cb5cae59b3",
+      "mergeCommit": {
+        "oid": "d5881c13a7e785b6328cd823133f5245937b93e9"
+      },
+      "mergedAt": "2026-10-20T13:19:48Z",
+      "number": 153,
+      "state": "MERGED",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T13:20:17Z",
+          "conclusion": "FAILURE",
+          "detailsUrl": "https://github.com/hodge-computer/sextics/actions/runs/39429460905/job/118650396315",
+          "name": "publish",
+          "startedAt": "2026-10-20T13:19:55Z",
+          "status": "COMPLETED",
+          "workflowName": "Publish accepted solve"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T12:48:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/hodge-computer/sextics/actions/runs/39424035208/job/118631930796",
+          "name": "Protected proposal verification",
+          "startedAt": "2026-10-20T12:40:07Z",
+          "status": "COMPLETED",
+          "workflowName": "Solve proposal"
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "solve/lean",
+          "startedAt": "2026-10-20T12:47:46Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://github.com/hodge-computer/sextics/actions/runs/39424035208"
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "solve/publication",
+          "startedAt": "2026-10-20T14:09:58Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://github.com/hodge-computer/sextics/actions/runs/39435988176"
+        }
+      ],
+      "url": "https://github.com/hodge-computer/sextics/pull/153"
+    },
+    "publication_run": {
+      "conclusion": "success",
+      "createdAt": "2026-10-20T14:04:37Z",
+      "databaseId": 39435988176,
+      "event": "workflow_dispatch",
+      "headSha": "59bbfda19d5452fe166fbeeaf351540b99ae8fb2",
+      "jobs": [
+        {
+          "completedAt": "2026-10-20T14:10:27Z",
+          "conclusion": "success",
+          "databaseId": 118675460158,
+          "name": "publish",
+          "startedAt": "2026-10-20T14:09:33Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-10-20T14:09:34Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "startedAt": "2026-10-20T14:09:33Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:41Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "number": 2,
+              "startedAt": "2026-10-20T14:09:34Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:41Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 3,
+              "startedAt": "2026-10-20T14:09:41Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:46Z",
+              "conclusion": "success",
+              "name": "Run python3 -m pip install -r scripts/requirements-content.txt",
+              "number": 4,
+              "startedAt": "2026-10-20T14:09:41Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:47Z",
+              "conclusion": "success",
+              "name": "Identify the merged solve for publication status",
+              "number": 5,
+              "startedAt": "2026-10-20T14:09:46Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:48Z",
+              "conclusion": "success",
+              "name": "Show publication progress on the solve PR",
+              "number": 6,
+              "startedAt": "2026-10-20T14:09:47Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:56Z",
+              "conclusion": "success",
+              "name": "Authenticate the merged PR and protected Lean receipt",
+              "number": 7,
+              "startedAt": "2026-10-20T14:09:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:58Z",
+              "conclusion": "success",
+              "name": "Commit the derived acceptance, atlas, and leaderboard",
+              "number": 8,
+              "startedAt": "2026-10-20T14:09:56Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:59Z",
+              "conclusion": "success",
+              "name": "Report publication outcome on the solve PR",
+              "number": 9,
+              "startedAt": "2026-10-20T14:09:58Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:59Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "number": 17,
+              "startedAt": "2026-10-20T14:09:59Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:59Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "number": 18,
+              "startedAt": "2026-10-20T14:09:59Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-10-20T14:09:59Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 19,
+              "startedAt": "2026-10-20T14:09:59Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/hodge-computer/sextics/actions/runs/39435988176/job/118675460158"
+        }
+      ],
+      "status": "completed",
+      "updatedAt": "2026-10-20T14:10:27Z",
+      "url": "https://github.com/hodge-computer/sextics/actions/runs/39435988176",
+      "workflowName": "Publish accepted solve"
+    },
+    "acceptance_receipt": {
+      "schemaVersion": 1,
+      "formalAcceptance": true,
+      "repository": "hodge-computer/sextics",
+      "instanceId": "cyclic-triple-fano",
+      "githubLogin": "benediamond",
+      "submittedAt": "2026-10-20T12:39:59Z",
+      "acceptedAt": "2026-10-20T13:19:48Z",
+      "publishedAt": "2026-10-20T14:09:51.374830+00:00",
+      "pullRequest": {
+        "number": 153,
+        "url": "https://github.com/hodge-computer/sextics/pull/153",
+        "headCommit": "92325b22a74d803302e659dcada056cb5cae59b3",
+        "baseCommit": "e001627f2c3bb63219eb3f9c7007d9ba01fa49c4",
+        "mergeCommit": "d5881c13a7e785b6328cd823133f5245937b93e9"
+      },
+      "run": {
+        "id": 39424035208,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39424035208",
+        "workflowPath": ".github/workflows/solve-proposal.yml",
+        "conclusion": "success"
+      },
+      "verification": {
+        "schemaVersion": 2,
+        "mode": "live",
+        "instanceId": "cyclic-triple-fano",
+        "pullRequest": 153,
+        "githubLogin": "benediamond",
+        "baseCommit": "e001627f2c3bb63219eb3f9c7007d9ba01fa49c4",
+        "headCommit": "92325b22a74d803302e659dcada056cb5cae59b3",
+        "checkedAt": "2026-10-20T12:43:17.348856+00:00",
+        "formalAcceptance": false,
+        "requiresOwnerMerge": true,
+        "verifierSha256": {
+          "scripts/proposals/check.py": "9d7af1c8a30c50ce6bca3c42c6d75d3a547b6a82516bc5581c784cd569158338",
+          "scripts/proposals/sandbox.py": "c8a1febc230b57b5666667ba82da588e912c3b6262ea3d8299bb5f53031b71d9",
+          "scripts/proposals/Audit.lean": "d1a381c70025c6de519e0b0e5e4da0db72eeba0881b843d9b9cd0e9dd459ed9f",
+          "scripts/proposals/review.py": "a22926e73d25d86018f716558b8f1b2d5ab9d3e27a7e6000509f688abe03f5b0",
+          "formal/lean/HodgeComputer/Verify.lean": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3",
+          "formal/lean/lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+          ".github/solve-policy.json": "bbf4a6375356cf722a70f353445290d2f7649a63ceae11f509f056ca91d96408",
+          ".github/workflows/solve-proposal.yml": "449776177b1a3e7f45eaf5e24b024a1d5fa402417258e5bf984cf2705fc4280f"
+        },
+        "statementSha256": "ca5f913bf984c2891454afe8585b82b5d5f2acefb3420fa964008883ef3db223",
+        "sourceHashes": {
+          "Certificate.lean": "816931f78b348807089d1f44e2443be529071d9cdf105099a2b05eaf9659ea6d",
+          "CoordinateOrder.lean": "42db182a03812fc84d7579ddcc19eaa0bf2997b1f3df51c8a7385270884bc943",
+          "CubicLift.lean": "e7f814306b755bdf678fdbaf58846d9074629253655a1fe6ed71b9de812a8527",
+          "CyclicDomain.lean": "88c6bf4426863709876e8cfd1b3543bdf6d3d893d950e865cc79dd87b259d40f",
+          "LineClosure.lean": "334f843db6f66907b2ec82719eb185320ee886f4690359adc3f082d5f69d429e",
+          "LineEmbedding.lean": "fd2c0cc69d4b9cf38a3038393e41e922b243b60d055c60a8ba0681c84938affc",
+          "LineEndpoint.lean": "b4e9b21464f3d568d4db16c27c60a5ea29fba57b3ec509897b03c4412172887c",
+          "LineFamily.lean": "c8b2615a088f56829132b3d0336298b0e45ffdc6ca79b3dc57097fecff48042f",
+          "LineIncidence.lean": "4c94b827d7efdd4455b14607610715a568d9776c82cb0f9097436d4929ba88e6",
+          "LineLifting.lean": "1e46651fee3a96a15ded0cbc41941f147a3f683dd9b623ecf5a8f94f929c14ac",
+          "LineNormal.lean": "2ce6aa867bb6e53130a6404d3d5dbcf221d6984da3c8d3c285d4a90b8cc1d390",
+          "LineSeed.lean": "31c1cfa87e18cf7af4718261fd483fac274337f05a7873d88c78be34de0eeec7",
+          "LineSource.lean": "577aee9318ea698c766188c7539e07922729a5c93d847097c5175466ec3291f3",
+          "QuotientGradient.lean": "807c13ce3fbab96289f2d8d940dcc1a1f3382681bdcc27316fab06fcbe60115f",
+          "Solution.lean": "d07de2c75a3585028ca950e6f9517ac46e9d87cdfe8b3ae3f4e6f1ec51628bb1",
+          "proof.json": "43d7cee1b80c5a9f0d8b882dacddbc7c771ae46d65c71a142fcad239e7673e71",
+          "solution.md": "07c4c77a25ba3f9568f2069a0c28c01da4376f738988cbca2bda1dcf035515cc"
+        },
+        "leanVersion": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+        "kernelReplay": true,
+        "axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "witnessChecked": false,
+        "theorem": "Submission.certificate",
+        "sandbox": "docker-no-network",
+        "toolchain": "leanprover/lean4:v4.33.0",
+        "result": "lean-checked-awaiting-owner",
+        "ownerAuthorization": null
+      },
+      "ownerAuthorization": {
+        "method": "owner_merge",
+        "githubLogin": "benediamond",
+        "headCommit": "92325b22a74d803302e659dcada056cb5cae59b3",
+        "mergeCommit": "d5881c13a7e785b6328cd823133f5245937b93e9"
+      }
+    },
+    "generated_case_record": {
+      "id": "cyclic-triple-fano",
+      "q": 1,
+      "formalStatus": "proved",
+      "status": "solved",
+      "evidenceKind": "existence-proof",
+      "certificateAvailable": true,
+      "witnessAvailability": "lean-source",
+      "leanVerification": {
+        "formalStatus": "proved",
+        "status": "accepted",
+        "proofFile": "data/cyclic-triple-fano/Solution.lean",
+        "receipt": "data/cyclic-triple-fano/acceptance.json",
+        "theorem": "Submission.certificate",
+        "checker": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)"
+      },
+      "credit": {
+        "githubLogin": "benediamond",
+        "origin": "contribution",
+        "awardedAt": "2026-10-20T12:39:59Z"
+      },
+      "pullRequest": {
+        "number": 153,
+        "url": "https://github.com/hodge-computer/sextics/pull/153",
+        "headCommit": "92325b22a74d803302e659dcada056cb5cae59b3",
+        "baseCommit": "e001627f2c3bb63219eb3f9c7007d9ba01fa49c4",
+        "mergeCommit": "d5881c13a7e785b6328cd823133f5245937b93e9"
+      }
+    },
+    "generated_solution": {
+      "schemaVersion": 2,
+      "instanceId": "cyclic-triple-fano",
+      "solver": {
+        "githubLogin": "benediamond"
+      },
+      "evidenceStatus": "lean-accepted",
+      "creditOrigin": "contribution",
+      "submittedAt": "2026-10-20T12:39:59Z",
+      "acceptedAt": "2026-10-20T13:19:48Z",
+      "witnessAvailability": "lean-source",
+      "witness": {
+        "proofSource": "data/cyclic-triple-fano/Solution.lean"
+      },
+      "explanation": "solution.md",
+      "pullRequest": {
+        "number": 153,
+        "url": "https://github.com/hodge-computer/sextics/pull/153",
+        "headCommit": "92325b22a74d803302e659dcada056cb5cae59b3",
+        "baseCommit": "e001627f2c3bb63219eb3f9c7007d9ba01fa49c4",
+        "mergeCommit": "d5881c13a7e785b6328cd823133f5245937b93e9"
+      },
+      "proof": {
+        "formalStatus": "proved",
+        "status": "accepted",
+        "proofFile": "data/cyclic-triple-fano/Solution.lean",
+        "receipt": "data/cyclic-triple-fano/acceptance.json",
+        "theorem": "Submission.certificate",
+        "checker": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)"
+      }
+    },
+    "aggregate_atlas_entries": [
+      {
+        "id": "cyclic-triple-fano",
+        "title": "Cyclic triple cover · Fano density",
+        "status": "solved",
+        "formalStatus": "proved",
+        "evidenceKind": "existence-proof",
+        "certificateAvailable": true,
+        "visibility": "navigation",
+        "draftDisplayStatus": "solved",
+        "category": "Challenge instances",
+        "q": 1,
+        "path": "data/cyclic-triple-fano/record.json",
+        "credit": {
+          "githubLogin": "benediamond",
+          "origin": "contribution",
+          "awardedAt": "2026-10-20T12:39:59Z"
+        }
+      }
+    ],
+    "leaderboard_credit_entries": [
+      {
+        "instanceId": "cyclic-triple-fano",
+        "githubLogin": "benediamond",
+        "origin": "contribution",
+        "awardedAt": "2026-10-20T12:39:59Z",
+        "acceptedAt": "2026-10-20T13:19:48Z"
+      }
+    ],
+    "source_files": {
+      "data/cyclic-triple-fano/acceptance.json": {
+        "url": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/cyclic-triple-fano/acceptance.json",
+        "gh_stdout_sha256": "6f5cb1f199fc7bfc0e50230cf26d2ff48351d6d0a20a28a95eadf0fb9aefa770"
+      },
+      "data/cyclic-triple-fano/record.json": {
+        "url": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/cyclic-triple-fano/record.json",
+        "gh_stdout_sha256": "c3bb4c30b267365945ea6563d365b48bb754794ba87c774362ceb41869f718fb"
+      },
+      "data/cyclic-triple-fano/solution.json": {
+        "url": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/cyclic-triple-fano/solution.json",
+        "gh_stdout_sha256": "40e8be2aea4e2e4c06f65999ecee49b3a34bf8fac2665fbbee45d75dfb92e6dd"
+      },
+      "data/index.json": {
+        "url": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/index.json",
+        "gh_stdout_sha256": "17d391ba879ff699db734b1bc3fa2730726053fdb83509500aa8a2ff9fce0833"
+      },
+      "leaderboard/credits.json": {
+        "url": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/leaderboard/credits.json",
+        "gh_stdout_sha256": "dc52f9152e1bf577a17b2042c1851173ef2aaee97cf407fe25c9a092d7d4abf1"
+      }
+    },
+    "api_output_sha256": {
+      "pr153": "fa94fd27eb16f85074e6feba5187332bf3fefc59417d17805df70ab580603d87",
+      "publication_run39435988176": "09ccb4b9eb5158eebc27a4729158c0701266fef1ddc75e5c767b3d3429d27c2b"
+    },
+    "permanent_links": {
+      "proposal": "https://github.com/hodge-computer/sextics/pull/153",
+      "successful_publication": "https://github.com/hodge-computer/sextics/actions/runs/39435988176",
+      "protected_lean_verification": "https://github.com/hodge-computer/sextics/actions/runs/39424035208",
+      "acceptance_receipt": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/cyclic-triple-fano/acceptance.json",
+      "atlas_record": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/cyclic-triple-fano/record.json",
+      "leaderboard_credits": "https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/leaderboard/credits.json"
+    },
+    "attribution_scope": "The formal solver/leaderboard credit belongs to benediamond. Prior direct credit to rbajaj5 for the free weighted line and normal-map input is not authorship of this solve.",
+    "limits": [
+      "Read-only GitHub observations; no local Lean build or independent kernel replay.",
+      "The receipt reports protected Lean 4.33.0 kernelReplay=true and standard axioms; these are upstream verification claims, not newly replayed by this monitor.",
+      "Generated repository publication is confirmed. The live hodge.computer browser view/CDN was not tested."
+    ],
+    "upstream_mutations": []
+  },
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "774d38bef5f135442bbd6c68e5f80fbc1151dee07f33624e2ebd40a69bc8e5cf",
+    "accepted-records.json": "743c5197d585db1a9e693556fe1ee33b20efa73381efa71b2f776fd7701d2df5",
+    "comparison.json": "c89f071c9be9f2b3bd9c92a9e3bfc8a3299ceee46902476568b6f8e0dd6667cb",
+    "discussion-111.json": "485b8aee4475d54e3bd2525bfae4d206f7c1e108f121b2cbe84e16db4169d2d0",
+    "discussion-112.json": "6226aa2469bc5b03df1d1778eb38a1d9f29cee872a80d8ae3659b397d5d32ced",
+    "discussion-113.json": "e05e401a2d70df55569cac0400015c96dc50e8259693e04db39b699b610174db",
+    "discussion-114.json": "8a05aa3d40c96b8100758b108e03a5b21f485365479afde63ae2e3cfa7375cbf",
+    "discussion-115.json": "37bd524ac09205e426c17c3ac18b656ad2bbc7fc65ec99ccdd0d16c3ec20a34d",
+    "discussion-116.json": "73d41c7677e5ae9ba3466d1f0bfc3e40471799c86b0316bf2d1d1496ba9fee6e",
+    "discussion-117.json": "6071673041647ad5daf4196d9ff1ef9d18aab55ebbafb87821aac8b939090900",
+    "discussion-118.json": "dc55ca1daefc45d627dbb7e4a9b2bf7bf82011a2d2ad9019997385bb3368b4c2",
+    "discussion-119.json": "fe9d0e3184a94cf51ba29542793708ab03a543d86b7021d23c6794a155916a3b",
+    "discussion-120.json": "eb2d0f03e77dbcfc5e79812d6dfe4066ea90964ea4d6ca2a358a3b1224322c91",
+    "discussion-44.json": "00f9ce1f502ae19419b262ccbbbc3f7775f5012929508ef713881909f0d079aa",
+    "discussion-55.json": "e4e315fdf18d7ba6126e6ec1e28cf10d634623c76be603bb4b465a21aceb973a",
+    "discussion-56.json": "07b12f4911c17a4700e7bcee8f5147c207b6ac180efd8a7785b86b5bcb97144b",
+    "manifest.json": "2de6ba40c17ec0c0df4a3d66af1f6c149dd42084674bc688507e4e43a2313730",
+    "publication-status.json": "147684ddc1e8e85f3ead74098f9344f1646ae0d635a3b5c094f6ffecdf018acf"
+  },
+  "new_rbajaj5_attribution": [],
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "checks_performed_here": [
+    "Fetched every comment and reply page in all 13 monitored threads.",
+    "Compared record IDs, timestamps, text hashes and discussion metadata.",
+    "Read all monitored proof records at a pinned upstream main commit.",
+    "Read the successful publication run, acceptance receipt, generated atlas and solver credit.",
+    "Checked evidence consistency and preserved the prior ledger history."
+  ],
+  "checks_not_performed_here": [
+    "No local Lean build or fresh kernel replay.",
+    "No new mathematical reconstruction or proof-packet execution.",
+    "No live rendered website/CDN inspection."
+  ]
+}

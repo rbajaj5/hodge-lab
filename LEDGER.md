@@ -2621,6 +2621,35 @@ conversations or evidence of an accepted solve.
     solution. No upstream comment, edit, message or PR was made.
     [Snapshot, proof-status and attribution receipt](results/discussion-monitor/update-20261020T135840Z.json).
 
+93. **20 October 2026, 11:01 EDT / 15:01 UTC — Cyclic-Fano publication completed.**
+    The publication issue recorded in checkpoint 92 is resolved:
+    [publication run 39435988176](https://github.com/hodge-computer/sextics/actions/runs/39435988176)
+    succeeded. At pinned upstream main
+    `55d7489d8578e3cb3c9cbf785ff9864fd4adc269`,
+    [the acceptance receipt](https://github.com/hodge-computer/sextics/blob/55d7489d8578e3cb3c9cbf785ff9864fd4adc269/data/cyclic-triple-fano/acceptance.json)
+    records `formalAcceptance: true`, publication at
+    **14:09:51 UTC**, and owner authorization by `owner_merge`.
+    The generated target record reports `solved` / `proved` and accepted
+    Lean verification. This is a new publication/acceptance outcome for
+    Diamond's already-merged PR153, not a new mathematical result or proof
+    replay by this monitor.
+
+    All pages of discussions #44, #55, #56 and #111–120 were fetched again.
+    Their 25 comments and 12 replies are unchanged from checkpoint 92;
+    IDs, timestamps, body hashes and discussion metadata match.
+    The 13 monitored targets' proof files also have no changes. The
+    geometric-input credit to `rbajaj5` remains the credit already
+    recorded in checkpoint 92; it is not counted again as new attribution.
+    The solve is credited upstream to `benediamond`.
+
+    Historical entries are preserved. The tally remains **27 discussion
+    contributions, one maintenance PR (closed), zero accepted authored
+    solves**. No upstream comment, edit, message, PR or workflow action was
+    made. This checkpoint reads repository acceptance and publication
+    evidence; it does not claim a fresh Lean replay or inspection of the
+    rendered website.
+    [Discussion comparison and publication-status receipt](results/discussion-monitor/update-20261020T150120Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
