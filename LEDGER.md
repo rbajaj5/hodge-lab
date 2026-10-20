@@ -2500,6 +2500,81 @@ conversations or evidence of an accepted solve.
 
     ![Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry — Mumford, Dyatlov & Minsky on one-reflection-skew](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
 
+91. **20 October 2026, 09:01 EDT / 13:01 UTC — New cyclic-Fano credit and changed upstream acceptance status.**
+    The read-only monitor fetched all comment and reply pages in discussions
+    #44, #55, #56 and #111–120, comparing against the last successful saved
+    snapshot of 18 October, 02:21 UTC. The 13 threads now contain 37 records,
+    up from 24: 13 additions, eight edited records, and no removals.
+    IDs, timestamps and body hashes were checked, together with opening
+    bodies, marked answers and lock status. No activity is inferred for
+    the gap between these snapshots.
+
+    **New substantive credit:** [Benjamin Diamond's cyclic-Fano update](https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19044552)
+    credits `rbajaj5`'s explicit free curve and covering family as a
+    constructive starting point. He reports independently reconstructing
+    the curve substitution and the normal map, obtaining
+    `MM* = diag(72,25/49,25/49,25/49,25/49,72)` and rank six.
+    His check expressly covers this geometric input, not the whole packet
+    or a target certificate. This monitoring run did not replay that
+    calculation. His proposed continuation is to construct the boundary,
+    branch and exceptional images, then obtain a field for the fixed
+    density; a deformation of the density alone does not establish the
+    needed global Gysin image.
+
+    **Acceptance checked directly:** at upstream main
+    `e001627f2c3bb63219eb3f9c7007d9ba01fa49c4`, GitHub reports the following
+    merged proposals and each target has its accepted `proof.json`:
+    [holdout, PR128 (`fqlx`)](https://github.com/hodge-computer/sextics/pull/128),
+    [reflection-coupled-fano, PR150 (`fqlx`)](https://github.com/hodge-computer/sextics/pull/150),
+    [crossed-ternary-asymmetric, PR149 (`1337isnot1337`)](https://github.com/hodge-computer/sextics/pull/149),
+    and [quadric-contact-broken, PR122 (`HeadOfNaps`)](https://github.com/hodge-computer/sextics/pull/122).
+    The related [holdout-q2 PR124](https://github.com/hodge-computer/sextics/pull/124)
+    and [reusable holdout machinery PR134](https://github.com/hodge-computer/sextics/pull/134)
+    are also merged. The first four are other contributors' accepted
+    solutions, not authored solves for this notebook. Cyclic Fano has no
+    accepted proof record at this checkpoint. Repository acceptance was
+    observed; no Lean build or kernel replay was performed here.
+
+    The older holdout summary still says the instance is open; that text
+    predates PR128's merge and must not be used as current status.
+    [The E1-ideal update](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19012517)
+    reports 38 minimal generators and quotient length 4,460.
+    [The support/sector update](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046211)
+    distinguishes exact rational support exclusions from single-prime
+    evidence and withdraws an earlier internal Gauss–Manin calculation.
+    [The moving-conic extension table](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046728)
+    supplies data for nine additional monomial targets; its posting-time
+    compilation claims are not themselves acceptance records.
+    [The explicit-denominator continuation](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19054721)
+    reports an unexpanded resultant recipe of degree 29,658, with reduced
+    support degree 4,944, and says complete physical numerators remain
+    unexported. These are attributed reports, not checks performed by this
+    monitor or minimal-degree claims.
+
+    [Split-ternary-q2](https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838)
+    now has a reported corrected 24-parameter, 65-equation quartic system;
+    its finite-field chart failures are not a complex nonexistence proof.
+    [Polarized K3](https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19045988)
+    reports a degree-at-least-eight obstruction, an undecided and nonempty
+    degree-eight relaxation, and geometric restrictions.
+    [Its follow-up](https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19054284)
+    adds bounded geometry exclusions. Neither target has an accepted
+    proof record at the checked commit. No linked proof packets were run.
+
+    The edited `rbajaj5` comments in #44, #55, #56 and #112 retain the
+    previously reported results with shorter explanations; no new
+    contribution is counted for those observed edits.
+    [Ben Burns's T100 acknowledgment](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003434)
+    is unchanged and was already recorded. New holdout posts also credit
+    preceding work by `rbajaj5`; this is distinct from the new explicit
+    cyclic-Fano replay acknowledgment.
+    The current notebook ledger already records **27 discussion contributions,
+    one maintenance PR (closed), zero accepted authored solves**. Those
+    three additional contributions were recorded by another session in
+    discussion #127; this monitor preserves them and adds zero.
+    No upstream comment, edit, message or PR was made by this monitoring run.
+    [Snapshot comparison, attribution and acceptance receipt](results/discussion-monitor/update-20261020T130126Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
