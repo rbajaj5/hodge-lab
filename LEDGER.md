@@ -2776,6 +2776,59 @@ conversations or evidence of an accepted solve.
     contributions, one maintenance PR (closed), zero accepted authored
     solves**. [Snapshot, reported-verification scope and attribution receipt](results/discussion-monitor/update-20261020T194433Z.json).
 
+97. **20 October 2026, 16:43 EDT / 20:43 UTC — Split-ternary-q2 accepted; further conditional cycle-three Lean progress.**
+    All pages of the 13 monitored discussions were compared with the
+    19:44 UTC snapshot. One new reply in #55 brings the total to
+    26 comments and 16 replies, with no edits or removals. A separate
+    acceptance check found a newly published solution for split-ternary-q2.
+
+    **New accepted solution:** [PR159](https://github.com/hodge-computer/sextics/pull/159),
+    authored and credited to fqlx, merged at **20:26:11 UTC** and was
+    published at **20:26:37 UTC**. At upstream
+    c9735b7910b562a8aef677686aabb9448e0c7f9e,
+    [the acceptance receipt](https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/split-ternary-q2/acceptance.json)
+    has formalAcceptance=true, and the generated atlas and solver-credit
+    entries agree. [Protected verification](https://github.com/hodge-computer/sextics/actions/runs/39489658983)
+    and [publication](https://github.com/hodge-computer/sextics/actions/runs/39491950779)
+    succeeded. This changes the monitored totals to **six accepted/published
+    and seven open**. Pre-acceptance wording retained in the PR explanation
+    does not supersede these current repository records.
+
+    The [pinned explanation](https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/split-ternary-q2/solution.md)
+    constructs the exact q=2 certificate with strict quotient Q=0 using
+    companion curves, higher normal residues, trace, radial descent and
+    elliptic contraction. Its 27 Lean modules give an existential
+    homogeneous certificate, without an expanded denominator or witness
+    vector. It credits the elliptic work of 1337isnot1337 and the shared
+    constructions of fqlx, HeadOfNaps and other contributors, together with
+    Lean/mathlib and Codex assistance. This is another contributor's
+    accepted solve; no new attribution to rbajaj5 was found in that explanation.
+    We read the explanation and acceptance evidence, but did not replay Lean.
+
+    **Cycle-three remains partial:** [the new reply](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999)
+    by hodgepodgeconjecture reports 14 additional compiled and kernel-replayed
+    helpers, bringing the total to 31; the earlier 17-module replay is
+    unchanged. Reported advances include nonvanishing in the exact physical
+    function field and compact moving-map/Piola formulas. Those formulas
+    retain explicit compatibility hypotheses. PhysicalClearing proves
+    that a specified physical residue-divergence solution would imply the
+    fixed certificate, **not that the required solution has been constructed**.
+    The full cubic-to-Weierstrass syzygy, field embedding, first-variation
+    compatibility and assembled primitive remain unfinished.
+
+    The author also records terminated proof-checking strategies with
+    peak child memory around 7.7 GiB and other 180–300 second time limits.
+    These are unsuccessful verification strategies, not counterexamples
+    or nonexistence results. We did not execute or inspect the fork code
+    or its logs; these remain author-reported development checks, not a
+    protected cycle-three solve. The reference to rbajaj5's exclusions
+    again says context, not assumptions; no new replay credit is inferred.
+
+    No upstream comment, edit, message, PR or workflow action was taken.
+    The tally stays **27 discussion contributions, one maintenance PR
+    (closed), zero accepted authored solves**.
+    [Discussion, acceptance and scope receipt](results/discussion-monitor/update-20261020T204303Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

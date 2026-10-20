@@ -1,0 +1,618 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T20:43:03.611394+00:00",
+  "baseline_snapshot": "20261020T194433Z",
+  "snapshot": "20261020T204303Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 16,
+    "records": 42,
+    "new_records": 1,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "new_records": [
+    {
+      "id": "DC_kwDOVLOOJc4BIycn",
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999",
+      "parent_id": "DC_kwDOVLOOJc4BIxeY",
+      "author": {
+        "login": "hodgepodgeconjecture",
+        "name": null
+      },
+      "createdAt": "2026-10-20T20:18:13Z",
+      "updatedAt": "2026-10-20T20:18:13Z",
+      "body_sha256": "f8bd87022da144449d12207e940e113a2639e0f797f7102752797146d0554c8c"
+    }
+  ],
+  "discussion_metadata_changes": {
+    "updatedAt": {
+      "before": "2026-10-20T18:45:52Z",
+      "after": "2026-10-20T20:18:14Z"
+    }
+  },
+  "upstream_commit": "c9735b7910b562a8aef677686aabb9448e0c7f9e",
+  "proof_record_changes": [
+    {
+      "instance": "split-ternary-q2",
+      "before": null,
+      "after": {
+        "schemaVersion": 2,
+        "instanceId": "split-ternary-q2",
+        "theorem": "Submission.certificate"
+      }
+    }
+  ],
+  "publication_status_changes": [
+    {
+      "instance": "split-ternary-q2",
+      "before": "open_without_acceptance_record",
+      "after": "accepted_and_published",
+      "solver": "fqlx",
+      "pull_request": 159,
+      "accepted_at": "2026-10-20T20:26:11Z",
+      "published_at": "2026-10-20T20:26:37.386652+00:00"
+    }
+  ],
+  "accepted_solution": {
+    "instance": "split-ternary-q2",
+    "solver": "fqlx",
+    "q": 2,
+    "quotient_Q": 0,
+    "proposal": {
+      "number": 159,
+      "title": "Solve split-ternary-q2: companion curves and higher residues",
+      "url": "https://github.com/hodge-computer/sextics/pull/159",
+      "author": {
+        "id": "MDQ6VXNlcjE1NjI4NDk=",
+        "is_bot": false,
+        "login": "fqlx",
+        "name": "Ben Burns"
+      },
+      "mergedAt": "2026-10-20T20:26:11Z",
+      "mergeCommit": {
+        "oid": "3a2079d2bd32982fbc2c290e6e2a46ce0df10506"
+      },
+      "headRefOid": "7c447e295958c7cef0d07641af7def1c5f4a5f5d"
+    },
+    "acceptance_receipt": {
+      "schemaVersion": 1,
+      "formalAcceptance": true,
+      "repository": "hodge-computer/sextics",
+      "instanceId": "split-ternary-q2",
+      "githubLogin": "fqlx",
+      "submittedAt": "2026-10-20T19:37:28Z",
+      "acceptedAt": "2026-10-20T20:26:11Z",
+      "publishedAt": "2026-10-20T20:26:37.386652+00:00",
+      "pullRequest": {
+        "number": 159,
+        "url": "https://github.com/hodge-computer/sextics/pull/159",
+        "headCommit": "7c447e295958c7cef0d07641af7def1c5f4a5f5d",
+        "baseCommit": "30e4f211c26ad2dc7aa3a14fb0cb951ea7cfaf88",
+        "mergeCommit": "3a2079d2bd32982fbc2c290e6e2a46ce0df10506"
+      },
+      "run": {
+        "id": 39489658983,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39489658983",
+        "workflowPath": ".github/workflows/solve-proposal.yml",
+        "conclusion": "success"
+      },
+      "verification": {
+        "schemaVersion": 2,
+        "mode": "live",
+        "instanceId": "split-ternary-q2",
+        "pullRequest": 159,
+        "githubLogin": "fqlx",
+        "baseCommit": "30e4f211c26ad2dc7aa3a14fb0cb951ea7cfaf88",
+        "headCommit": "7c447e295958c7cef0d07641af7def1c5f4a5f5d",
+        "checkedAt": "2026-10-20T20:14:07.771460+00:00",
+        "formalAcceptance": false,
+        "requiresOwnerMerge": true,
+        "verifierSha256": {
+          "scripts/proposals/check.py": "9d7af1c8a30c50ce6bca3c42c6d75d3a547b6a82516bc5581c784cd569158338",
+          "scripts/proposals/sandbox.py": "c8a1febc230b57b5666667ba82da588e912c3b6262ea3d8299bb5f53031b71d9",
+          "scripts/proposals/Audit.lean": "d1a381c70025c6de519e0b0e5e4da0db72eeba0881b843d9b9cd0e9dd459ed9f",
+          "scripts/proposals/review.py": "732b72f6799a4ead1827eeb0a22589578d2a2d208d018579fedde60530b1070d",
+          "formal/lean/HodgeComputer/Verify.lean": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3",
+          "formal/lean/lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+          ".github/solve-policy.json": "bbf4a6375356cf722a70f353445290d2f7649a63ceae11f509f056ca91d96408",
+          ".github/workflows/solve-proposal.yml": "04ecf2cbdc3a41abf699decd62f7fe2ed3ee5daa022e7b9c5be1ad0afdaff68c"
+        },
+        "statementSha256": "9502566e1b83caa180848559d27e4cba5b6505cd71127441b50e35b9c1865e07",
+        "sourceHashes": {
+          "CertificateClearing.lean": "5e9d82c0cdfeedc716d1badf8fb71adc691311cf5d3743f1b99c53151880f6a8",
+          "CompanionAssembly.lean": "c5be41f765880303b4562679cc0dc744ff846f7f376bfacb41865a3d53feafb1",
+          "CompanionElliptic.lean": "a00b06f0366e079e2de0776762b47c84990f6d4cedee3d44f1b1b99290382093",
+          "CompanionGeometry.lean": "fdc7652803dba457f92de182004b7144fe46893aef79c654b229b36954e89052",
+          "CompanionPoleTwo.lean": "1f91738be28db57327334d7f9ef126bb63827b70f0298cbd3b4860dc595c1073",
+          "CompanionPoleTwoFamily.lean": "7fb9e60fb515bdf33777e3532374ec88e1b8c0b7c1360a024a0b2fc8a5c0a635",
+          "CompanionPrimitives.lean": "31fe0f2209e9829aba8f5f9ab88d956cd1a963f08a85b26bf90f4ad2c4a3ac72",
+          "CompanionResidue.lean": "8740f85e79fde32d070c97dcd16a866e0f242e97ff3d41efdd1a2e9cb4e9f77c",
+          "CompanionScalar.lean": "e002272f25af8243a9023d21db53ec3f0f9419d53fcd57ad68cececf4e8c42ba",
+          "CompanionSeeds.lean": "244318031c2ffb3ae254f2677b6dbb6e88ebd98e5ad122c18b94394f2f1b1383",
+          "CompanionTheta.lean": "c3acb95d949a99626e68fb565e96e68f203ed6dd954c6f28d3cd0f139fcad7c1",
+          "CompanionThetaBridge.lean": "bddf3d4e715df0db0f9763b99ea03c53a0647640260ca0f1170a8b038e288dd7",
+          "CompanionThetaExistence.lean": "78b87681a68c20b8c880dae217c32d0aa8d25fd3dc107bfe9dfa1467446e5ee8",
+          "CompanionThetaScalar.lean": "8a7ac892badab6161533e8460b85c21ed41028d8b05b0541b49be6790ae11253",
+          "EllipticSource.lean": "afd1700afbfcaa6f832d2463f4b950814fc1fb2d32efafd8c274a46677e104c6",
+          "HigherCurve.lean": "93f5ac8486c64eb4f9d76106b83ccf910d7e7ec8f7b0d9451591bed20f05c0c9",
+          "HigherPoleTransport.lean": "1ef4a1a27c834252dcf96b9fa97ed80f7191fdadacc4004345b154035b27d0e7",
+          "HigherResidue.lean": "235fd1fc88e8bf4b8d6341467f49cba75cc6a8e55c0a16e265a14bec563f71a7",
+          "JacobianJets.lean": "4c6a033a8fe893a38b3ae6453115e42ec6bf98d17a28d8918df0bd38cc68748f",
+          "NormalJetBinding.lean": "0764220611a737208baa271447de6db0c1197632978c7171c0af05f8f7573f48",
+          "NormalRowJets.lean": "1c064f3d0b800dae41e3ae02701b2acd7ed9e2a29af22dde0bbaafbd545e302f",
+          "NormalTaylor.lean": "e14ebb03aa42617eb604bc0abc3a55175b32ebbe9c9c7ebd87d32769469a522f",
+          "PhysicalTransport.lean": "ad69b080dcb217992124533cb71ebd19749d2981ca228168e7abcf1954c03b3e",
+          "ProductDivergence.lean": "368139a2da910da9b9fdb1b5e8de0fa5efe55902ea142cc0271197fa57cd1fea",
+          "RationalAmbient.lean": "6b837358e19aa911a5b9e3505f516ab2476dcb6e0419d991b5121a01b5d69f3d",
+          "Solution.lean": "7dffd7dd9179584f9c5c5febefcfd64edba73f3c1c71fa68438586c0b4f9ff8c",
+          "SourceDensityAlgebra.lean": "4a686acd4aeb7d6c903c905e82d1044da9e7491a9c30a99a32ac7b314c931a64",
+          "proof.json": "beac74755b2bd3359e232d856f9af3a594024c58df68ce985308c01037698d72",
+          "solution.md": "687a00de51433667defb76257f1c6144aa865d56d3b2a7b66b22b9b9c7880c34"
+        },
+        "leanVersion": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+        "kernelReplay": true,
+        "axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "witnessChecked": false,
+        "theorem": "Submission.certificate",
+        "sandbox": "docker-no-network",
+        "toolchain": "leanprover/lean4:v4.33.0",
+        "result": "lean-checked-awaiting-owner",
+        "ownerAuthorization": null
+      },
+      "ownerAuthorization": {
+        "method": "owner_merge",
+        "githubLogin": "benediamond",
+        "headCommit": "7c447e295958c7cef0d07641af7def1c5f4a5f5d",
+        "mergeCommit": "3a2079d2bd32982fbc2c290e6e2a46ce0df10506"
+      }
+    },
+    "workflow_results": [
+      {
+        "conclusion": "success",
+        "createdAt": "2026-10-20T20:10:06Z",
+        "databaseId": 39489658983,
+        "event": "pull_request_target",
+        "headSha": "7c447e295958c7cef0d07641af7def1c5f4a5f5d",
+        "jobs": [
+          {
+            "completedAt": "2026-10-20T20:25:35Z",
+            "conclusion": "success",
+            "databaseId": 118859214700,
+            "name": "Protected proposal verification",
+            "startedAt": "2026-10-20T20:10:18Z",
+            "status": "completed",
+            "steps": [
+              {
+                "completedAt": "2026-10-20T20:10:21Z",
+                "conclusion": "success",
+                "name": "Set up job",
+                "number": 1,
+                "startedAt": "2026-10-20T20:10:19Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:22Z",
+                "conclusion": "success",
+                "name": "Resolve current immutable PR commits",
+                "number": 2,
+                "startedAt": "2026-10-20T20:10:21Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:28Z",
+                "conclusion": "success",
+                "name": "Check out the trusted base",
+                "number": 3,
+                "startedAt": "2026-10-20T20:10:22Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:29Z",
+                "conclusion": "success",
+                "name": "Fetch proposal and identify solve changes",
+                "number": 4,
+                "startedAt": "2026-10-20T20:10:28Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:29Z",
+                "conclusion": "success",
+                "name": "Mark this exact commit pending",
+                "number": 5,
+                "startedAt": "2026-10-20T20:10:29Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:29Z",
+                "conclusion": "success",
+                "name": "Prepare Python",
+                "number": 6,
+                "startedAt": "2026-10-20T20:10:29Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:35Z",
+                "conclusion": "success",
+                "name": "Install trusted Python dependencies",
+                "number": 7,
+                "startedAt": "2026-10-20T20:10:30Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:35Z",
+                "conclusion": "success",
+                "name": "Check proposal structure before preparing Lean",
+                "number": 8,
+                "startedAt": "2026-10-20T20:10:35Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:10:36Z",
+                "conclusion": "success",
+                "name": "Validate explanation links and displayed mathematics",
+                "number": 9,
+                "startedAt": "2026-10-20T20:10:35Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:12:16Z",
+                "conclusion": "success",
+                "name": "Make room for Lean and its dependency cache",
+                "number": 10,
+                "startedAt": "2026-10-20T20:10:36Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:12:17Z",
+                "conclusion": "success",
+                "name": "Install pinned Lean toolchain",
+                "number": 11,
+                "startedAt": "2026-10-20T20:12:16Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:12:17Z",
+                "conclusion": "success",
+                "name": "Reuse pinned protected Lean dependencies",
+                "number": 12,
+                "startedAt": "2026-10-20T20:12:17Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:14:07Z",
+                "conclusion": "success",
+                "name": "Prepare protected dependencies",
+                "number": 13,
+                "startedAt": "2026-10-20T20:12:17Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:24:37Z",
+                "conclusion": "success",
+                "name": "Verify exact statement, kernel replay, and axioms",
+                "number": 14,
+                "startedAt": "2026-10-20T20:14:07Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:24:38Z",
+                "conclusion": "success",
+                "name": "Report readiness for owner merge or require maintenance authorization",
+                "number": 15,
+                "startedAt": "2026-10-20T20:24:37Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:24:39Z",
+                "conclusion": "success",
+                "name": "Preserve check receipts",
+                "number": 16,
+                "startedAt": "2026-10-20T20:24:38Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:24:40Z",
+                "conclusion": "success",
+                "name": "Reject a result for a superseded PR or base",
+                "number": 17,
+                "startedAt": "2026-10-20T20:24:39Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:24:40Z",
+                "conclusion": "skipped",
+                "name": "Explain a failed check",
+                "number": 18,
+                "startedAt": "2026-10-20T20:24:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:24:41Z",
+                "conclusion": "success",
+                "name": "Record result on the submitted commit",
+                "number": 19,
+                "startedAt": "2026-10-20T20:24:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:25:33Z",
+                "conclusion": "success",
+                "name": "Post Reuse pinned protected Lean dependencies",
+                "number": 36,
+                "startedAt": "2026-10-20T20:24:41Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:25:33Z",
+                "conclusion": "success",
+                "name": "Post Prepare Python",
+                "number": 37,
+                "startedAt": "2026-10-20T20:25:33Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:25:33Z",
+                "conclusion": "success",
+                "name": "Post Check out the trusted base",
+                "number": 38,
+                "startedAt": "2026-10-20T20:25:33Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:25:33Z",
+                "conclusion": "success",
+                "name": "Complete job",
+                "number": 39,
+                "startedAt": "2026-10-20T20:25:33Z",
+                "status": "completed"
+              }
+            ],
+            "url": "https://github.com/hodge-computer/sextics/actions/runs/39489658983/job/118859214700"
+          }
+        ],
+        "status": "completed",
+        "updatedAt": "2026-10-20T20:25:36Z",
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39489658983",
+        "workflowName": "Solve proposal"
+      },
+      {
+        "conclusion": "success",
+        "createdAt": "2026-10-20T20:26:14Z",
+        "databaseId": 39491950779,
+        "event": "pull_request_target",
+        "headSha": "7c447e295958c7cef0d07641af7def1c5f4a5f5d",
+        "jobs": [
+          {
+            "completedAt": "2026-10-20T20:26:47Z",
+            "conclusion": "success",
+            "databaseId": 118867111643,
+            "name": "publish",
+            "startedAt": "2026-10-20T20:26:17Z",
+            "status": "completed",
+            "steps": [
+              {
+                "completedAt": "2026-10-20T20:26:19Z",
+                "conclusion": "success",
+                "name": "Set up job",
+                "number": 1,
+                "startedAt": "2026-10-20T20:26:18Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:25Z",
+                "conclusion": "success",
+                "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+                "number": 2,
+                "startedAt": "2026-10-20T20:26:19Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:25Z",
+                "conclusion": "success",
+                "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+                "number": 3,
+                "startedAt": "2026-10-20T20:26:25Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:32Z",
+                "conclusion": "success",
+                "name": "Run python3 -m pip install -r scripts/requirements-content.txt",
+                "number": 4,
+                "startedAt": "2026-10-20T20:26:25Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:33Z",
+                "conclusion": "success",
+                "name": "Identify the merged solve for publication status",
+                "number": 5,
+                "startedAt": "2026-10-20T20:26:32Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:34Z",
+                "conclusion": "success",
+                "name": "Show publication progress on the solve PR",
+                "number": 6,
+                "startedAt": "2026-10-20T20:26:33Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:42Z",
+                "conclusion": "success",
+                "name": "Authenticate the merged PR and protected Lean receipt",
+                "number": 7,
+                "startedAt": "2026-10-20T20:26:34Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:44Z",
+                "conclusion": "success",
+                "name": "Commit the derived acceptance, atlas, and leaderboard",
+                "number": 8,
+                "startedAt": "2026-10-20T20:26:42Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:45Z",
+                "conclusion": "success",
+                "name": "Report publication outcome on the solve PR",
+                "number": 9,
+                "startedAt": "2026-10-20T20:26:44Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:45Z",
+                "conclusion": "success",
+                "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+                "number": 17,
+                "startedAt": "2026-10-20T20:26:45Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:45Z",
+                "conclusion": "success",
+                "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+                "number": 18,
+                "startedAt": "2026-10-20T20:26:45Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-10-20T20:26:45Z",
+                "conclusion": "success",
+                "name": "Complete job",
+                "number": 19,
+                "startedAt": "2026-10-20T20:26:45Z",
+                "status": "completed"
+              }
+            ],
+            "url": "https://github.com/hodge-computer/sextics/actions/runs/39491950779/job/118867111643"
+          }
+        ],
+        "status": "completed",
+        "updatedAt": "2026-10-20T20:26:49Z",
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39491950779",
+        "workflowName": "Publish accepted solve"
+      }
+    ],
+    "source_urls": {
+      "data/split-ternary-q2/proof.json": "https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/split-ternary-q2/proof.json",
+      "data/split-ternary-q2/acceptance.json": "https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/split-ternary-q2/acceptance.json",
+      "data/split-ternary-q2/record.json": "https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/split-ternary-q2/record.json",
+      "data/split-ternary-q2/solution.json": "https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/split-ternary-q2/solution.json",
+      "data/index.json": "https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/data/index.json",
+      "leaderboard/credits.json": "https://github.com/hodge-computer/sextics/blob/c9735b7910b562a8aef677686aabb9448e0c7f9e/leaderboard/credits.json"
+    },
+    "description": "Existential homogeneous certificate for the exact target, via companion curves, higher residues, trace, radial descent, elliptic contraction and legal clearing.",
+    "lean_modules": 27,
+    "expanded_witness_provided": false,
+    "attribution": "The explanation credits 1337isnot1337 elliptic work, fqlx, HeadOfNaps and shared-library contributors, Lean/mathlib and Codex assistance. No new rbajaj5 attribution found.",
+    "fresh_replay_by_monitor": false
+  },
+  "reported_cycle_three_progress": {
+    "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999",
+    "fork_commit": "https://github.com/hodgepodgeconjecture/sextics/commit/9b325459b55d7b8652d810d2a958fa4723b9b998",
+    "new_modules_reportedly_compiled_and_replayed": 14,
+    "total_helpers": 31,
+    "earlier_17_module_replay": "unchanged, not rerun in this batch",
+    "summary": "Reported physical-function-field nonvanishing and compact moving-map/Piola formulas, with conditional physical clearing.",
+    "conditional_scope": "Compatibility and first-variation hypotheses remain. PhysicalClearing is an implication from a physical residue-divergence solution to HasCertificate, not construction of that solution.",
+    "remaining": [
+      "Full cubic-to-Weierstrass syzygy",
+      "Physical field embedding",
+      "First-variation compatibility",
+      "Assembled primitive and closed protected theorem"
+    ],
+    "reported_failed_strategies": {
+      "peak_child_rss_GiB_approximately": 7.7,
+      "timeout_seconds_range": [
+        180,
+        300
+      ],
+      "meaning": "Terminated proof-checking strategies, not counterexamples or nonexistence results."
+    },
+    "verification_scope": "Author-reported development verification; no protected solve or acceptance for cycle-three.",
+    "fresh_replay_by_monitor": false
+  },
+  "attribution_scope": "The cycle-three author again calls rbajaj5 bounded exclusions context, not assumptions; this is not new validation or solve credit.",
+  "new_substantive_rbajaj5_credit": [],
+  "status": {
+    "accepted_published_monitored_instances": 6,
+    "open_monitored_instances": 7,
+    "cycle_three": "open"
+  },
+  "checks_performed_here": [
+    "Fetched and compared all discussion/reply pages, IDs, timestamps and body hashes.",
+    "Read new reply in thread context; separate review agent checked conditional scope.",
+    "Read full accepted solution and PR159 metadata; independently checked acceptance/atlas/solver records and successful workflow outcomes."
+  ],
+  "checks_not_performed_here": [
+    "No fork code or build-log inspection for cycle-three, or packet execution.",
+    "No fresh Lean build, independent kernel replay, or mathematical reconstruction of either result."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "0cda24f44b76b9158be1da46fd738c0966d9e24e95d21a5f51db3ba64444f52a",
+    "accepted-records.json": "0fecfd184e79bce5cf740dfc8db9d0cc77db3bd39f19d2e6fd58dfdc22365ad5",
+    "comparison.json": "fbbfe77d8d2b8e1ad9221693aefaf5ab895080dab04bb424ec9757d6e0efe794",
+    "discussion-111.json": "56286cd613668b40706bec3090d439f635bfb2fe49c049b177ac6ed97cce76f1",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "b1dfd7daeadf26a865e0c9ef170d2f10d1eff1607f6ca4643bae8e9927ccaf30",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "3050c82232262b1e2289059f4b36d1a3553c1261b93c005c450c74331cea557d",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "911bcb96b1637fdf4fbe1193167dfea2846b42ad6d7e42beb9013e2821a943a8",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "9e7566155d3767f50b621ead8ba750dae4773669d074b1a742e31b97eab6d488",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "607bfba26843f8a3f2a0ea5faecaf9186a562c7174f138d5f3411a0401ea109c",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "f5a4b60e5ca35ddd004a1d5d739b3559c5129ad8d6e8cea391f2ce814e56217e",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "a3e00741639da32574db534babd6cb26f902ce6fca5d3ff4400e77a56731faad",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "7a534e8573d90e4c5e61f4ca8485f1bce5e3cac5e6768ee5b4cd37f731e4a651",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "21881f001830b12e7d603eccde9f2c9695b352f5189e6673f689bbf2d05b31a9",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-44.json": "6fb93e8ede206e0fedcb09b55b57304f3d09ab145b6610bc898e0abdfa8087cc",
+    "discussion-44.md": "415d0e977e3e0d6921a448dddc338d804dcf80ff1ef4fe0ab5d84527d8539fbb",
+    "discussion-55.json": "3bb9f4183a77c09589c5b294a314eed68728f70c2f7c459f6bebaf83fb040136",
+    "discussion-55.md": "9c01411acf21d65186df7cca16571e92c31bbd5a6b1dffb8d5c87ee0051c1789",
+    "discussion-56.json": "a68a34431418b121152f7152dd17ee5d2bcfa281968da25439d5e692066bea93",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "manifest.json": "e3af700dc665f9c9c0d7606f81d1f6c3809f92cb5b5086aeeec27fd6dcb83623",
+    "pr159.json": "5cc123076bf89e013bbe4487abb3ef06f3e48775eb28a88f5568c96f5774d500",
+    "publication-status.json": "670ee0080a3910cf5aaa91f1a6beb6085b6ddfea0d7bd96077f9e0e9183aa429",
+    "split-ternary-q2-solution.md": "0c1e36b7505465bbc730ccc83df9f2336aaf405225b1ab24f4a420e0c77ce73c"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "Accepted split-ternary status is observed in repository receipts; cycle-three checks are author reports. Pre-merge acceptance disclaimers in explanations are historical. Neither is a fresh proof replay by this monitor."
+}
