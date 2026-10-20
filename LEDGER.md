@@ -2829,6 +2829,54 @@ conversations or evidence of an accepted solve.
     (closed), zero accepted authored solves**.
     [Discussion, acceptance and scope receipt](results/discussion-monitor/update-20261020T204303Z.json).
 
+98. **20 October 2026, 17:43 EDT / 21:43 UTC — Holdout-bundle accepted; monitored discussion threads unchanged.**
+    All comment and reply pages in the 13 monitored discussions were compared
+    with the 20:43 UTC snapshot: the same 26 comments and 16 replies, with
+    no additions, edits or removals. Their acceptance status is also unchanged:
+    **six accepted/published and seven open**. Four case records changed only
+    rendering metadata. The global atlas additionally revealed a new accepted
+    solve for holdout-bundle, outside that fixed set of 13 targets.
+
+    [PR161](https://github.com/hodge-computer/sextics/pull/161), authored and
+    credited to **fqlx (Ben Burns)**, merged at **21:29:12 UTC** and was
+    published at **21:29:36 UTC**. At pinned upstream
+    5718828cd2733bd29b1f1dc20f507e0918aa4f47,
+    [the acceptance receipt](https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/acceptance.json)
+    has formalAcceptance=true; atlas and solver-credit records agree.
+    [Protected verification](https://github.com/hodge-computer/sextics/actions/runs/39498189089)
+    and [publication](https://github.com/hodge-computer/sextics/actions/runs/39500745207)
+    succeeded for the submitted head. No acceptance or proof record existed
+    for this bundle at the preceding checkpoint's pinned commit.
+
+    The [accepted explanation](https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/solution.md)
+    handles the exact q=1 numerator X0^3*Y0^3 + X0^3*Y0*Y1^2. The second
+    summand was the explicit boundary of the earlier
+    [monomial-extension observation in #44](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046728).
+    A complementary diagonal quotient, polynomial-curve incidence, arithmetic
+    lift, trace and full physical transport now supply its certificate;
+    product-denominator assembly combines it with the accepted first-summand
+    construction. Geometric existence was already known. This contribution
+    is the closed Lean certificate over complex coefficients, with unrestricted
+    finite denominator degree and quotient Q. It supplies no expanded witness
+    or numerical denominator-degree bound.
+
+    We read the explanation and acceptance evidence, checked proof.json and
+    solution.md hashes against the protected receipt, and checked both workflow
+    outcomes. The receipt records kernel replay and 29 Lean source hashes;
+    **we did not compile or replay those Lean sources**. The author's earlier
+    development audit hit a memory limit before a native run passed; the PR
+    separately reports an unmodified interpreted sandbox audit, and the
+    protected workflow subsequently succeeded. These distinct checks are
+    retained in the evidence rather than treated as fresh checks by us.
+
+    The inspected PR and explanation credit fqlx, shared work including
+    hodgepodgeconjecture, and collaborators. Neither names rbajaj5; no new
+    attribution or direct dependency on our bounded exclusions is inferred.
+    No upstream comment, edit, message, PR or workflow action was taken.
+    Our tally remains **27 discussion contributions, one maintenance PR
+    (closed), zero accepted authored solves**.
+    [Snapshot, acceptance, attribution and verification-scope receipt](results/discussion-monitor/update-20261020T214337Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

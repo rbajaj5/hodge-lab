@@ -1,0 +1,441 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T21:43:37.428812+00:00",
+  "baseline_snapshot": "20261020T204303Z",
+  "snapshot": "20261020T214337Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 16,
+    "records": 42,
+    "new_records": 0,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "discussion_changes": [],
+  "proof_record_changes_in_monitored_targets": [],
+  "proof_snapshot_commit": "deddb63a44f14e3e4ea3c897557b6ddf936a82d7",
+  "publication_audit_commit": "5718828cd2733bd29b1f1dc20f507e0918aa4f47",
+  "monitored_status": {
+    "accepted_and_published": 6,
+    "open": 7
+  },
+  "non_substantive_record_changes": [
+    {
+      "path": "data/holdout/record.json",
+      "before_gh_stdout_sha256": "e564f6e80e80bbf0e9f8bb316cad79c4f6b38b519a6d2b40dd8ae63d7af4b42b",
+      "differences": {
+        "changed_fields": [
+          "render"
+        ],
+        "render_before": {
+          "seed": 2976837066,
+          "resolution": 192,
+          "mesh": "meshes/holdout-family-2976837066-192.json",
+          "triangleCount": 657860
+        },
+        "render_after": {
+          "seed": 100129,
+          "resolution": 128,
+          "mesh": "meshes/slice-holdout-100129-rriiir.json",
+          "triangleCount": 256900
+        },
+        "acceptance_and_credit_fields_unchanged": true
+      }
+    },
+    {
+      "path": "data/reflection-coupled-fano/record.json",
+      "before_gh_stdout_sha256": "5b2848d2ab1e3a65ed1fd5507772da1b3eeca8c5c245488a48da075d0d339e35",
+      "differences": {
+        "changed_fields": [
+          "render"
+        ],
+        "render_before": {
+          "seed": 202610213,
+          "resolution": 144,
+          "mesh": "meshes/slice-reflection-coupled-fano-202610213.json",
+          "triangleCount": 307516
+        },
+        "render_after": {
+          "seed": 100053,
+          "resolution": 128,
+          "mesh": "meshes/slice-reflection-coupled-fano-100053-rrriii.json",
+          "triangleCount": 202836
+        },
+        "acceptance_and_credit_fields_unchanged": true
+      }
+    },
+    {
+      "path": "data/cyclic-triple-fano/record.json",
+      "before_gh_stdout_sha256": "c3bb4c30b267365945ea6563d365b48bb754794ba87c774362ceb41869f718fb",
+      "differences": {
+        "changed_fields": [
+          "render"
+        ],
+        "render_before": {
+          "seed": 202610416,
+          "resolution": 144,
+          "mesh": "meshes/slice-cyclic-triple-fano-202610416.json",
+          "triangleCount": 293508
+        },
+        "render_after": {
+          "seed": 100103,
+          "resolution": 128,
+          "mesh": "meshes/slice-cyclic-triple-fano-100103-rrriii.json",
+          "triangleCount": 217280
+        },
+        "acceptance_and_credit_fields_unchanged": true
+      }
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/record.json",
+      "before_gh_stdout_sha256": "f6b3e67276b13a2e3d9f2f1a9f317b60a8477d83d7256284fedff263cd779056",
+      "differences": {
+        "changed_fields": [
+          "render"
+        ],
+        "render_before": {
+          "seed": 202610205,
+          "resolution": 144,
+          "mesh": "meshes/slice-crossed-ternary-asymmetric-202610205.json",
+          "triangleCount": 347228
+        },
+        "render_after": {
+          "seed": 100130,
+          "resolution": 128,
+          "mesh": "meshes/slice-crossed-ternary-asymmetric-100130-rrriii.json",
+          "triangleCount": 228788
+        },
+        "acceptance_and_credit_fields_unchanged": true
+      }
+    },
+    {
+      "path": "data/index.json",
+      "before_gh_stdout_sha256": "1855a3abd18d4342c95d24acdcc6c686bc57e09650cb306ecded347496f1c824",
+      "differences": [
+        {
+          "id": "holdout-bundle",
+          "changes": {
+            "credit": {
+              "before": null,
+              "after": {
+                "githubLogin": "fqlx",
+                "origin": "contribution",
+                "awardedAt": "2026-10-20T20:49:04Z"
+              }
+            },
+            "draftDisplayStatus": {
+              "before": "open",
+              "after": "solved"
+            },
+            "evidenceKind": {
+              "before": "none",
+              "after": "existence-proof"
+            },
+            "certificateAvailable": {
+              "before": false,
+              "after": true
+            },
+            "formalStatus": {
+              "before": "unproved",
+              "after": "proved"
+            },
+            "status": {
+              "before": "open",
+              "after": "solved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "leaderboard/credits.json",
+      "before_gh_stdout_sha256": "ebc69831f1df5f6984780272549b48441aff8ef69ce34a7f9bf60a1e9b532c97",
+      "differences": [
+        {
+          "id": "holdout-bundle",
+          "before": null,
+          "after": {
+            "instanceId": "holdout-bundle",
+            "githubLogin": "fqlx",
+            "origin": "contribution",
+            "awardedAt": "2026-10-20T20:49:04Z",
+            "acceptedAt": "2026-10-20T21:29:12Z"
+          }
+        }
+      ]
+    }
+  ],
+  "incidental_acceptance_outside_fixed_13_target_set": {
+    "instance": "holdout-bundle",
+    "scope_reason": "The global atlas changed, and the bundle missing-summand boundary is discussed in monitored thread #44.",
+    "context_url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046728",
+    "new_since_baseline": true,
+    "acceptance_receipt": {
+      "schemaVersion": 1,
+      "formalAcceptance": true,
+      "repository": "hodge-computer/sextics",
+      "instanceId": "holdout-bundle",
+      "githubLogin": "fqlx",
+      "submittedAt": "2026-10-20T20:49:04Z",
+      "acceptedAt": "2026-10-20T21:29:12Z",
+      "publishedAt": "2026-10-20T21:29:36.538614+00:00",
+      "pullRequest": {
+        "number": 161,
+        "url": "https://github.com/hodge-computer/sextics/pull/161",
+        "headCommit": "b1e9ebd923048c7fabf50ecbc8e7ddb995ad2302",
+        "baseCommit": "f76a09c85766cee67affa303a35ddd40f3778f9a",
+        "mergeCommit": "dc4b8993ae4e03700836e4163a9bcea1759d86e7"
+      },
+      "run": {
+        "id": 39498189089,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39498189089",
+        "workflowPath": ".github/workflows/solve-proposal.yml",
+        "conclusion": "success"
+      },
+      "verification": {
+        "schemaVersion": 2,
+        "mode": "live",
+        "instanceId": "holdout-bundle",
+        "pullRequest": 161,
+        "githubLogin": "fqlx",
+        "baseCommit": "f76a09c85766cee67affa303a35ddd40f3778f9a",
+        "headCommit": "b1e9ebd923048c7fabf50ecbc8e7ddb995ad2302",
+        "checkedAt": "2026-10-20T21:15:16.344710+00:00",
+        "formalAcceptance": false,
+        "requiresOwnerMerge": true,
+        "verifierSha256": {
+          "scripts/proposals/check.py": "9d7af1c8a30c50ce6bca3c42c6d75d3a547b6a82516bc5581c784cd569158338",
+          "scripts/proposals/sandbox.py": "c8a1febc230b57b5666667ba82da588e912c3b6262ea3d8299bb5f53031b71d9",
+          "scripts/proposals/Audit.lean": "d1a381c70025c6de519e0b0e5e4da0db72eeba0881b843d9b9cd0e9dd459ed9f",
+          "scripts/proposals/review.py": "732b72f6799a4ead1827eeb0a22589578d2a2d208d018579fedde60530b1070d",
+          "formal/lean/HodgeComputer/Verify.lean": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3",
+          "formal/lean/lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+          ".github/solve-policy.json": "bbf4a6375356cf722a70f353445290d2f7649a63ceae11f509f056ca91d96408",
+          ".github/workflows/solve-proposal.yml": "04ecf2cbdc3a41abf699decd62f7fe2ed3ee5daa022e7b9c5be1ad0afdaff68c"
+        },
+        "statementSha256": "2631a16f219afa71350d0db9166f226d5187b1ce1a2888e74896034903f80e32",
+        "sourceHashes": {
+          "BundleAssembly.lean": "d53a986c5f3ddd38ecf4e663ef7af2b3c13423e012b88eb23f859c61059675b5",
+          "BundleBase.lean": "02aca3be48514ec3c8c4a6057f927b5675e20bcef7cc0a01dfc21991f2647d2e",
+          "BundleCalculus.lean": "44b650c03fbb4e28ddfdfcb4abffb0ab0f70b1a6cfcb8df0d93be558dcb24efb",
+          "BundleCertificate.lean": "5416264546dd0829c0623a45b6fa960a452fd21f68a9478186a6ddf83d240c4b",
+          "BundleCoefficientBase.lean": "fc49e981ff7eae78bd4dd54e23f81426ac5ab1e11d70644264ccaf5ee0dbf507",
+          "BundleCoefficientDerivations.lean": "22f31ebc2393039891539773972a2eb4a3eb87851dd14042d9574b6d3a658c18",
+          "BundleCompatibility.lean": "e5e3222db720cfaec02c3bb4dbc7ded0eb121a1bb590d8ddb29ccbb50cdf8029",
+          "BundleConic.lean": "ab08a9000780065619884752f54f1dbb003413d032f564e489b523b8ca1ba17f",
+          "BundleConicEmbedding.lean": "6d44c3decd87dc813342169f0ccd5934e118180f4c7d215c934baf271e29f68d",
+          "BundleConicLift.lean": "cfe5c24edc7fcd44d0df56c41dfac469e078e073e469e39fd486da35dff5d108",
+          "BundleConicSeed.lean": "16c0c7010950ebabdb6d83d536ba6b8577ef40490f0e4a1f5071d98bb22813a9",
+          "BundleCoordinates.lean": "46c2b1eb978770d256d30b6f1b0e905038aa67002522f67604e9e1f2e1e661fa",
+          "BundleEndpointDerivations.lean": "723410b73db6b43707bd06ac9d5e4d471c4d0d55f9e3ee945850d07edf85a9bb",
+          "BundleFamily.lean": "b0e8d46daeb010dc73225698b56a1f9ad1552910cb0deb09675170fe5e1eb682",
+          "BundleFields.lean": "60c38159ca0cb92695eccd22319324c845446b76fddf74c8b9f44b502e53c1fd",
+          "BundleFlow.lean": "71839687160233ba1b64cdc21327a1806d0f96d04a827b3fb9e09e7d5959c70c",
+          "BundleIncidence.lean": "76c94de2ef3e53db45bfb8b7d881c0eef106e86be17193bc03cbccc3659e0806",
+          "BundleIntegration.lean": "fa56d0aa5c51b1bf8e64a3a3fc9041952f459fc43f3a42b93a9fd9d92916d294",
+          "BundleNormal.lean": "e10a0383708fe0df6e8ddaee4d6dba55bcbdaf3fcb2ecbe31829221ca88898c1",
+          "BundlePhysical.lean": "18c3a39c2ebc0ea18b669d20774183b5e8ae96037657dd1cfe6e0c50bcafd766",
+          "BundlePhysicalCoordinates.lean": "9531008008a72930250b2ef05eab5e53bc138566f5f32337a045101f098be1c9",
+          "BundlePhysicalDominance.lean": "df302d3208c7fb8bc59a3cdeee5df4439dda9a13d92d28967e3b3dcc1cdd8818",
+          "BundlePhysicalMap.lean": "d617d8f5f1f5a64de4db30573b2a60db69b76a55ebc1e4f8a8149a3c73b57508",
+          "BundlePhysicalTransport.lean": "f5b31370fd7967b0f87f922221c4fdbcf12a12bd6b6cbefdc9551ffb3b436eb1",
+          "BundleQuotientModel.lean": "2432701bf578248a8a1ac2b9c64cf5016716ae8d1a1283ae57ad8692cca7ecf4",
+          "BundleQuotientPrimitive.lean": "41e4b586f2f139ac517c84a882825b1a602b0fbd2e202b93027fbf79fb5c3f04",
+          "BundleResidueClosure.lean": "96b4ccbf50d7484bbb9d06901fe7809840c0dabfb11e2390d02a8e863196c444",
+          "BundleTarget.lean": "802853e908e8ef633f0b865edaecee06353b4c85e3c80c23cd31a643e0e6f09e",
+          "Solution.lean": "b1350e3f485a2020b79b3cbc2560214532612d55e3e37b72296343ee5a28c3b9",
+          "proof.json": "8c4885346c189999d3f892d9c2227e0877b77e241030163e71b42214c1ccf92d",
+          "solution.md": "99a545a68f6aea9188e1390ba3c28e0c85d82a0d475481af89b7f28f002823d0"
+        },
+        "leanVersion": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+        "kernelReplay": true,
+        "axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "witnessChecked": false,
+        "theorem": "Submission.certificate",
+        "sandbox": "docker-no-network",
+        "toolchain": "leanprover/lean4:v4.33.0",
+        "result": "lean-checked-awaiting-owner",
+        "ownerAuthorization": null
+      },
+      "ownerAuthorization": {
+        "method": "owner_merge",
+        "githubLogin": "benediamond",
+        "headCommit": "b1e9ebd923048c7fabf50ecbc8e7ddb995ad2302",
+        "mergeCommit": "dc4b8993ae4e03700836e4163a9bcea1759d86e7"
+      }
+    },
+    "proposal": {
+      "number": 161,
+      "title": "Solve holdout-bundle: complementary quotient and polynomial curves",
+      "html_url": "https://github.com/hodge-computer/sextics/pull/161",
+      "merged_at": "2026-10-20T21:29:12Z",
+      "merge_commit_sha": "dc4b8993ae4e03700836e4163a9bcea1759d86e7"
+    },
+    "workflows": {
+      "protected_run": {
+        "id": 39498189089,
+        "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39498189089",
+        "head_sha": "b1e9ebd923048c7fabf50ecbc8e7ddb995ad2302",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "publication_run": {
+        "id": 39500745207,
+        "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39500745207",
+        "head_sha": "b1e9ebd923048c7fabf50ecbc8e7ddb995ad2302",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    },
+    "source_files": {
+      "acceptance": {
+        "blob_sha": "4e808e897a5e53b237faf3f66b2d7b16ef120104",
+        "sha256": "74dc67148aea1b343c062320c74f1a155ae9a5f3b1c7be6e5ac5e37e2d9484a3",
+        "url": "https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/acceptance.json"
+      },
+      "proof": {
+        "blob_sha": "89c660dba82b70ff5aa994963109511878600420",
+        "sha256": "8c4885346c189999d3f892d9c2227e0877b77e241030163e71b42214c1ccf92d",
+        "url": "https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/proof.json"
+      },
+      "solution": {
+        "blob_sha": "17bec0a38f2739290afd92199831d1731f385b3f",
+        "sha256": "99a545a68f6aea9188e1390ba3c28e0c85d82a0d475481af89b7f28f002823d0",
+        "url": "https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/solution.md"
+      },
+      "record": {
+        "blob_sha": "fd0e93c6d3744aeb8902a5355c924469e8c1b1e2",
+        "sha256": "00be20a82da9496df9c32cd5c3b8fce6412c4d739f4d469c93b2e2e2c6d42491",
+        "url": "https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/record.json"
+      },
+      "solution_record": {
+        "blob_sha": "832144c3f54715d84647ca96d2817b97190aec07",
+        "sha256": "392d088bc51297d46995d55929f552cec689baf8e4de7af404705b951260fdf2",
+        "url": "https://github.com/hodge-computer/sextics/blob/5718828cd2733bd29b1f1dc20f507e0918aa4f47/data/holdout-bundle/solution.json"
+      }
+    },
+    "attribution": {
+      "submitter_login": "fqlx",
+      "public_name": "Ben Burns",
+      "rbajaj5_mentioned_in_solution": false,
+      "rbajaj5_mentioned_in_pr_body": false,
+      "new_authored_solve_credit_to_rbajaj5": false,
+      "interpretation": "The accepted solution and PR directly credit fqlx and shared work including hodgepodgeconjecture and collaborators. Neither inspected text names rbajaj5. Earlier bounded holdout work is not stated as a direct mathematical dependency here."
+    },
+    "mathematical_scope": {
+      "fixed_target_q": 1,
+      "fixed_target_A": "X0^3*Y0^3 + X0^3*Y0*Y1^2",
+      "certificate_type": "Complex-coefficient existential homogeneous certificate with unrestricted finite denominator degree and unrestricted quotient remainder Q.",
+      "new_missing_summand": "X0^3*Y0*Y1^2",
+      "construction": "Complementary diagonal quotient, moving-conic incidence, arithmetic lift, polynomial normal, residue primitive and normalized trace, physical Piola transport, legal clearing, homogeneous extraction; combine with the first-summand Fermat-cover certificate using a product denominator.",
+      "expanded_polynomial_witness_supplied": false,
+      "no_numerical_denominator_degree_claim": true,
+      "geometric_existence_previously_known": true
+    },
+    "audit_checks": {
+      "acceptance_pr_head_merge_and_owner_consistent": true,
+      "both_workflow_runs_success_at_exact_proposal_head": true,
+      "both_jobs_complete_and_success": true,
+      "proof_and_explanation_hashes_match_protected_receipt": [
+        {
+          "file": "proof.json",
+          "actual_sha256": "8c4885346c189999d3f892d9c2227e0877b77e241030163e71b42214c1ccf92d",
+          "receipt_sha256": "8c4885346c189999d3f892d9c2227e0877b77e241030163e71b42214c1ccf92d",
+          "matches": true
+        },
+        {
+          "file": "solution.md",
+          "actual_sha256": "99a545a68f6aea9188e1390ba3c28e0c85d82a0d475481af89b7f28f002823d0",
+          "receipt_sha256": "99a545a68f6aea9188e1390ba3c28e0c85d82a0d475481af89b7f28f002823d0",
+          "matches": true
+        }
+      ],
+      "atlas_and_solution_records_accepted_consistent": true,
+      "proposal_lean_source_hash_count": 29,
+      "lean_sources_downloaded_or_rehashed_by_this_followup": false,
+      "source_hash_scope": "Only proof.json and solution.md were freshly compared to the protected receipt; recorded Lean source hashes and kernel replay status are evidence read from that receipt, not a fresh verification."
+    },
+    "replay_limits": {
+      "fresh_lean_replay_by_this_audit": false,
+      "packet_or_fork_code_executed": false,
+      "protected_workflow_status_read": true,
+      "publication_workflow_status_read": true,
+      "author_local_29_module_checks_are_reported_not_replayed_here": true,
+      "nested_lean_checked_awaiting_owner_is_historical": true,
+      "no_live_website_CDN_fetch": true
+    }
+  },
+  "checks_performed_here": [
+    "Fetched all pages and compared complete discussion records, IDs, timestamps, body hashes and thread metadata.",
+    "Read the earlier bundle boundary in #44 and the full accepted bundle explanation.",
+    "Reviewed receipt, PR, atlas and workflow evidence; checked proof.json and solution.md hashes against the protected receipt."
+  ],
+  "checks_not_performed_here": [
+    "No Lean build, independent kernel replay, or packet execution.",
+    "No live website/CDN test; publication status is established from repository receipts and workflows."
+  ],
+  "new_substantive_rbajaj5_credit": [],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "998be8274d261d65dcff0c0154714ea8a1db6ba8e4f9183ccb1087f1f6ecf0c3",
+    "accepted-records.json": "6d1d3248febe8eab184a15b8930fcfcb372a9dbfde51b65cfbe4db385e137da6",
+    "comparison.json": "a238ebd3e5e518c1c9d2a4eb90e2696d2c867ce24cf5c5c8fc4c31db4a9e3569",
+    "discussion-111.json": "68571b7dd872f38aaed2a04c05ec93217f4771d85de7cca177ffcf7bf53a82a2",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "fda35677c66288b20152bdccbfe5a98b653b283e801046868d9c6f2920fb4ccc",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "48170726ada16b7b3fb268ed781734d3ada4bee53ae8dd20dbae48b874cdacb0",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "63f95c5dc23185f7de7411b69fd2728b312792d766d20bb158c11bd1db3e27e4",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "e2ee9c41b124a310cca759fd93405b5c71e8c2be1160c0964501afcc70a44e9a",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "c47ef1a81dbaab29666b1af0acf9c43464b6215a4932bc13061eabaf94ae5fbe",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "259b20761a41e690f8f867b14c55ad7e7588f809df688695d64a2520ad1a08db",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "05664daab1b1c8d44c2a8451ad4ef4ac44a3f0bfe7dba5572bdd323634ce76af",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "b33ba60fc7abd0a0d4d0aa7b2ee4dc27eb68ad59bc26ee57fa6d5e9920f67c04",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "60672293e6c2af99e425e2d79f23e1bba632bc96ed455308d5177921ed289b6b",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-44.json": "3251a808155d0c941a58c6d49df3ba611825d663e5a85f5d7f0fb4206caae5ff",
+    "discussion-44.md": "415d0e977e3e0d6921a448dddc338d804dcf80ff1ef4fe0ab5d84527d8539fbb",
+    "discussion-55.json": "2c4ad2a3fc36f518ba2b522b8fa048d5d4e0141b58b449d06e767db41b8d4e6d",
+    "discussion-55.md": "9c01411acf21d65186df7cca16571e92c31bbd5a6b1dffb8d5c87ee0051c1789",
+    "discussion-56.json": "2167a6a6069aeeb2a474f3c2bdc2ddf6a678e6505ac713664271add8a433cfcf",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "holdout-bundle-publication.json": "25b3628025b82ddfb5ae7c8b3ef5801a29fd30d0b6509e685fd1ea96a669fc7f",
+    "holdout-bundle-solution.md": "99a545a68f6aea9188e1390ba3c28e0c85d82a0d475481af89b7f28f002823d0",
+    "manifest.json": "6d9cff22db02a017b86c6cf296ce64d6c0344811c334c489ee2196775ae70488",
+    "publication-status.json": "b5c7ae41799f9efdb719971ab934aa48530fcf58c8cde4ea72daec201047d155"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "This is another contributor's accepted fixed-instance certificate. Geometric existence was already known; no expanded polynomial witness or numerical denominator degree is supplied. The 13 monitored targets retain their prior status."
+}
