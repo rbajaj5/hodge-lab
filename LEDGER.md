@@ -2695,6 +2695,45 @@ conversations or evidence of an accepted solve.
     contribution to that tally.
     [Snapshot comparison, attribution and scope receipt](results/discussion-monitor/update-20261020T174550Z.json).
 
+95. **20 October 2026, 14:40 EDT / 18:40 UTC — Reported cycle-three source transport and a nonsingular modular conic seed.**
+    All pages in the 13 monitored threads were compared with the 17:45 UTC
+    snapshot. There is one new reply in discussion #55, with no edits or
+    removals: [the Jacobian-transport continuation](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19078438)
+    by `hodgepodgeconjecture`, posted at 17:50:51 UTC. The complete snapshot
+    now contains 26 comments and 14 replies; all other threads are unchanged.
+
+    The author reports universal rational-polynomial checks of cubic
+    covariant and differential identities, followed by exact transport
+    of the pole-two source with a correction for the moving map. The
+    reported denominator-cleared identity has zero remainder modulo the
+    cubic, with a 24,743-term quotient. The resulting weighted Jacobian
+    source is polynomial, but its transport also includes the exact
+    correction; it is not simply a bare coordinate substitution.
+
+    A more concrete geometric input is a conic at `(c1,c2)=(2,3)` over
+    the field of five elements. The author reports thirteen coefficient
+    equations with Jacobian determinant one modulo five, together with
+    an inverse matrix and a separate symbolic differentiation check.
+    This is a nonsingular seed at one finite-field specialization,
+    **not an already constructed characteristic-zero lift or certificate**.
+    Arithmetic lifting, ring/field embeddings, normal–tangent
+    compatibility, primitive transport and legal homogeneous clearing
+    remain unfinished. The two Lean helpers linked in the post are
+    explicitly **uncompiled**; the author reports a runtime startup
+    problem. No `HasCertificate` proof or solve PR is claimed.
+
+    This monitor read the post and its thread context and reviewed the
+    scope independently, but did not download/run the packet, inspect
+    the fork's code, or replay any algebra or Lean. The parent's earlier
+    acknowledgment of `rbajaj5` is unchanged; this reply adds no new
+    attribution. Proof and publication status remain unchanged at
+    `a27594117baa30dbd39b2b62066d5b55a8a00dc3`: five monitored instances
+    are accepted/published and eight, including `cycle-three`, remain open.
+
+    No upstream action was taken. The tally remains **27 discussion
+    contributions, one maintenance PR (closed), zero accepted authored
+    solves**. [Snapshot comparison and scope receipt](results/discussion-monitor/update-20261020T184058Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
