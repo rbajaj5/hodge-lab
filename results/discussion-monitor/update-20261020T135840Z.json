@@ -1,0 +1,145 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T13:58:40.741855+00:00",
+  "baseline_snapshot": "20261020T130126Z",
+  "snapshot": "20261020T135840Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 25,
+    "replies": 12,
+    "records": 37,
+    "new_records": 0,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "discussion_changes": [],
+  "upstream_commit": "d5881c13a7e785b6328cd823133f5245937b93e9",
+  "proof_record_changes": [
+    {
+      "instance": "cyclic-triple-fano",
+      "before": null,
+      "after": {
+        "schemaVersion": 2,
+        "instanceId": "cyclic-triple-fano",
+        "theorem": "Submission.certificate"
+      }
+    }
+  ],
+  "status_interpretation": "PR153 merged; protected Lean workflow succeeded and proof.json is on main. Post-merge publication failed its exact-commit owner-approval gate. A merged proof record is not evidence that website/leaderboard publication completed.",
+  "proposal": {
+    "number": 153,
+    "title": "Solve cyclic-triple-fano: free weighted line and cubic pullback",
+    "url": "https://github.com/hodge-computer/sextics/pull/153",
+    "author": {
+      "id": "MDQ6VXNlcjMwMzU2MjUy",
+      "is_bot": false,
+      "login": "benediamond",
+      "name": "Benjamin Diamond"
+    },
+    "mergedAt": "2026-10-20T13:19:48Z",
+    "mergeCommit": {
+      "oid": "d5881c13a7e785b6328cd823133f5245937b93e9"
+    },
+    "headRefOid": "92325b22a74d803302e659dcada056cb5cae59b3"
+  },
+  "workflow_results": [
+    {
+      "workflowName": "Solve proposal",
+      "url": "https://github.com/hodge-computer/sextics/actions/runs/39424035208",
+      "headSha": "92325b22a74d803302e659dcada056cb5cae59b3",
+      "status": "completed",
+      "conclusion": "success",
+      "updatedAt": "2026-10-20T12:48:50Z"
+    },
+    {
+      "workflowName": "Publish accepted solve",
+      "url": "https://github.com/hodge-computer/sextics/actions/runs/39429460905",
+      "headSha": "92325b22a74d803302e659dcada056cb5cae59b3",
+      "status": "completed",
+      "conclusion": "failure",
+      "updatedAt": "2026-10-20T13:20:18Z"
+    }
+  ],
+  "publication_failure": {
+    "step": "Authenticate the merged PR and protected Lean receipt",
+    "reason": "Lean passed, but the owner has not approved this exact commit.",
+    "log_instruction": "Approve the PR, then retry publication; an unchanged proof and base do not need another Lean run.",
+    "monitor_action": "Observed only; no approval, rerun or upstream change attempted."
+  },
+  "new_substantive_attribution": {
+    "source": "https://github.com/hodge-computer/sextics/blob/d5881c13a7e785b6328cd823133f5245937b93e9/data/cyclic-triple-fano/solution.md",
+    "proposal_author": "benediamond",
+    "credited_contributor": "rbajaj5",
+    "scope": "The merged solution credits rbajaj5's explicit free weighted line and normal-map calculation; its six-variable anchored deformation directly refines that input.",
+    "original_contribution": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605",
+    "limits": "Credit for an input to Diamond's proof, not authorship of PR153. Other credited work includes fqlx's moving-family and trace/clearing machinery, HeadOfNaps's fraction derivations, the problem framework, Lean/mathlib, and Codex assistance."
+  },
+  "mathematical_scope_reported_by_merged_solution": {
+    "target": "cyclic-triple-fano",
+    "q": 1,
+    "theorem": "Submission.certificate",
+    "description": "Existence of a finite polynomial certificate for the fixed target through weighted-line deformation, finite trace, legal clearing and cubic pullback.",
+    "expanded_denominator_provided": false,
+    "denominator_degree_bound_provided": false,
+    "witness_json_provided": false,
+    "fresh_lean_replay_by_monitor": false
+  },
+  "checks_performed_here": [
+    "Fetched and compared all pages, IDs, timestamps, body hashes and discussion metadata.",
+    "Read the pinned proof record, PR metadata and full merged solution in context.",
+    "Read both workflow outcomes and the failing publication step.",
+    "Verified snapshot counts and evidence consistency while packaging this receipt."
+  ],
+  "checks_not_performed_here": [
+    "No Lean compilation or independent kernel replay.",
+    "No independent reconstruction of the certificate or line/Jacobian calculation.",
+    "No assertion that website publication or leaderboard credit has completed."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "3051c56fe6f5877c69ccad53428ce33d21103d9eea23d29d919e4b88da7142a5",
+    "accepted-records.json": "f03c9132f9c6a46a1417b0efcfab7732577814116ed4587716b3de44621871b0",
+    "comparison.json": "d72c1da233b800e076a6cfc3a3b9099e94fc283ace51e792a3f7e655b22a8078",
+    "cyclic-fano-solution.md": "fdadcd63aaa78310f5d44e26ad8e7a11d2a488e70e9fa19b7ba72a3a4d440fc9",
+    "discussion-111.json": "fe10cc04ce85771c4aa1a5c7ed7bbdbf9a072676349c180d83b150e373f267dd",
+    "discussion-112.json": "a3a89d5a0a148ed7a8aafa40dbaef091abe9a62e427098357cb25a7033062fc9",
+    "discussion-113.json": "7426cebff23d8c52c6c271eb912afbc697b8529bbef0798d44f468e26604d0b4",
+    "discussion-114.json": "3dbcac842b74309a56059fb40cf17f69f28a6473aa7303b64533f9e0fa7e0db7",
+    "discussion-115.json": "56fa3c82734aa1ed30f43d6658efef4ee57b0361a071bebd849fc9a577baaebe",
+    "discussion-116.json": "0ff8fb857d998b0a80a8dfe72b2794cec1340daa76acaf60d8db561d94c65722",
+    "discussion-117.json": "a0aa1bcf2ef6a249c3a5cbfce77a3b3e8382af504e065d7cf3e2cd0cfa07d7e6",
+    "discussion-118.json": "0500fe87d315eda2d3803300a46d21041c0030f69c725fb3bd2098d1344ae3ca",
+    "discussion-119.json": "de5a3dda5bdf2a349eeb274ec4e646a2f32f9a29f23bbee47f7599b5a5c81aef",
+    "discussion-120.json": "aac3ba796840ca8d0b26a0e84dc7fb7fa4726c853b8190bcc6ee70b8ad72dcc0",
+    "discussion-44.json": "b2cf11eec11ea90a8bce08c6328394cc52f46dc5828896107c2aec470e7943da",
+    "discussion-55.json": "7d8f7f8b9f356bef719f159cf22d977906a8758b094af677d80a1aec8c34ec7b",
+    "discussion-56.json": "7aa9ed7bf19ac1ffb2b71588e25e04d6b63733a5fb72784eb784a5cdfee16ec7",
+    "manifest.json": "e577cb32e5e163d8ecf0d0f0dac766267741bbec4a5c2cf1a9ffcbefad52cc01",
+    "pr153.json": "cdd82db727cc696f9918243ae7c6d6c7e511f2d581047e87f62ac550e6eaac8e",
+    "protected-lean-run.json": "cfaf987204245eff1574913f0e6de231d48bbadc428081559f7ca04603d8b822",
+    "publication-failure.log": "7de27cdd9b907775d503994f49f00442c886c003d22aea2c72806ca14452483e",
+    "publication-run.json": "db346aafb27343b70bde56bdcad53e074dcb238b040f557838f55c538ce0dc33"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "No new discussion activity or new contribution by this monitor. Earlier checkpoint91 predates this merge; it is preserved as historical status. Accepted-records.json is a historical filename: a proof file alone does not certify publication."
+}

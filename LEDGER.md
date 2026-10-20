@@ -2575,6 +2575,52 @@ conversations or evidence of an accepted solve.
     No upstream comment, edit, message or PR was made by this monitoring run.
     [Snapshot comparison, attribution and acceptance receipt](results/discussion-monitor/update-20261020T130126Z.json).
 
+92. **20 October 2026, 09:58 EDT / 13:58 UTC — Cyclic-Fano proof merged, with direct credit for our geometric input; publication pending.**
+    All 13 monitored threads (#44, #55, #56 and #111–120) are unchanged
+    from checkpoint 91: all pages were fetched, and the same 25 comments
+    and 12 replies have unchanged IDs, timestamps and body hashes.
+    The new result is in the solution proposal, not a new discussion post.
+
+    **New substantive attribution:** Benjamin Diamond's
+    [PR153](https://github.com/hodge-computer/sextics/pull/153) merged at
+    **13:19:48 UTC**. Its [pinned solution explanation](https://github.com/hodge-computer/sextics/blob/d5881c13a7e785b6328cd823133f5245937b93e9/data/cyclic-triple-fano/solution.md)
+    explicitly credits `rbajaj5` with the free weighted line and normal-map
+    calculation, and describes its six-variable anchored deformation as
+    a direct refinement of that input. This goes beyond the preceding
+    discussion acknowledgment: the input is now used in the merged
+    construction. Diamond authored the proposal; the explanation also
+    credits `fqlx`, `HeadOfNaps`, the certificate framework, Lean/mathlib,
+    and Codex assistance. This is shared mathematical progress, not an
+    authored solve by this notebook.
+
+    **Proof and publication have different statuses.** The
+    [protected Lean proposal workflow](https://github.com/hodge-computer/sextics/actions/runs/39424035208) succeeded for
+    head `92325b22a74d803302e659dcada056cb5cae59b3`. Main at
+    `d5881c13a7e785b6328cd823133f5245937b93e9` contains `proof.json` naming
+    `Submission.certificate`. However,
+    [Publish accepted solve](https://github.com/hodge-computer/sextics/actions/runs/39429460905) failed its
+    owner-authorization step: the exact commit lacked the required owner
+    approval. Its log explicitly says Lean passed and that unchanged proof
+    and base do not need another Lean run. We therefore record a **merged,
+    Lean-checked proposal with publication pending**, not a confirmed
+    website or leaderboard update. No rerun or upstream intervention was
+    attempted. Checkpoint 91's earlier open status is retained because it
+    predates this merge.
+
+    The merged explanation constructs the fixed pole-order-one target
+    through weighted-line deformation, finite trace, legal clearing and
+    cubic pullback. It proves existence of a finite polynomial certificate;
+    it does not expand the denominator, give a denominator-degree bound,
+    or supply `witness.json`. This monitor read the solution, pinned proof
+    record, workflow results and failure log; **it did not compile Lean or
+    independently replay the mathematical construction**.
+
+    The tally stays **27 discussion contributions, one maintenance PR
+    (closed), zero accepted authored solves**. Credit for a mathematical
+    input is recorded here without counting it as a new post or authored
+    solution. No upstream comment, edit, message or PR was made.
+    [Snapshot, proof-status and attribution receipt](results/discussion-monitor/update-20261020T135840Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
