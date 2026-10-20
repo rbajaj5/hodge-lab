@@ -8,9 +8,9 @@ Our intent is to understand the fixed problems, share reproducible results and u
 
 ## Visual Frontier Dashboard (October 2026)
 
-| Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 7$) | Degree-6 & Degree-7 $E_2$ Quotient Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
+| Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 7$) | Degree-6 & Degree-7 $E_2$ Quotient & Koszul Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$<br/>**$d=7$:** 8 $\mathbb{Z}_2^4$ sectors; **4/4 $Y_2$-odd excluded**; 4/4 $Y_2$-even surject ($44/44$) | **$\deg D \le 6$ + all 4 $Y_2$-odd $d=7$ sectors excluded over $\mathbb{C}$** | Order-4 Kramers quartet; deformed Nambu/Casimir Cramer syzygy; $\mathbb{Z}_2^4$ superselection focusing; $Y_2$-covariant scaling $B_{Y_2 D_6}(Y_2 N_6)=Y_2^2 B_{D_6}(N_6)$ | **CP 85–87 (Posts #25–27)** · [`one-reflection-skew-degree7.md`](notes/one-reflection-skew-degree7.md) |
+| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$ ($H_0=0$ at $d=3,4$; $P_{\text{core}}$ $\binom{4}{d}$ complete intersection)<br/>**$d=7$:** **4/4 $Y_2$-odd excluded**; 9/9 pure added $E_1$ squares $=0$ ($H_0=0$ at $d=2$) | **$\deg D \le 6$ + all 4 $Y_2$-odd $d=7$ sectors + all 9 pure added $E_1$ blocks excluded over $\mathbb{C}$** | Order-4 Kramers quartet; deformed Nambu/Casimir Cramer syzygy; $\mathbb{Z}_2^4$ superselection focusing; Eisenbud/Yang finite Koszul homology ($H_0$ vs. $H_1$ contrast; degree-3 Kramers $H_1$ cycle) | **CP 85–88 (Posts #25–27)** · [`one-reflection-skew-koszul-homology.md`](notes/one-reflection-skew-koszul-homology.md) |
 | **`cycle-three`** | [Discussion #55](https://github.com/hodge-computer/sextics/discussions/55) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **30** Hessian squares + **rank-7** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (quartic $70/70$) | $\mathbb{Z}_3$ cyclic transport; 7-equation diagonal quotient | **CP 71–72** · [`fresh-instance-degree6.md`](notes/fresh-instance-degree6.md) |
 | **`mixed-biweight`** | [Discussion #56](https://github.com/hodge-computer/sextics/discussions/56) | `(0, 0, 0, 0, 0, 6, 39)` ($J_6 \oplus \mathbb{Q}^3$) | **26+10** square cascade + 2-point residual functional | **$\deg D \le 6$ excluded over $\mathbb{C}$** | Non-Jacobian $E_1$ excess ($+3$ dims); three-term coefficient functional kills both residual points | **CP 73** · [`mixed-degree6-extra.md`](notes/mixed-degree6-extra.md) |
 | **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.33 row-functional bridge | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16-module polynomial-to-matrix Lean 4 bridge | **CP 74–84** · [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
@@ -33,13 +33,20 @@ flowchart LR
         E1_7["Complete d=7 E1 across 8 Sectors (792 cols)<br/>rank(J_13)=6882, Koszul=840<br/>dim ker(E1)_7 = 135 = 126 (J_7) + 9 (extra)"]
         E2_7["Superselection Focusing to S_14[(1,0,1,0)]<br/>All 4 Y2-Odd Sectors EXCLUDED over C (41/135)<br/>All 4 Y2-Even Decoupled to Y2=0 (rk 44/44)"]
     end
+    subgraph cp88["Checkpoint 88 (Eisenbud Strands & Yang/Erman Koszul Homology)"]
+        KH["26 Finite Koszul Complexes K_k(P; S) (709 d^2=0 cols)<br/>P_Hess & Z_k-Euler: length-4 reg seq (H0 -> 2^4=16)<br/>P_core=(Q6..Q9): 4-var complete intersection C(4,d)<br/>P_fac: deg-3 Kramers H1 cycle; Pure added E1: rk 1/1, 28/28"]
+    end
     F --> E1_5
     F --> NAMBU
     E1_5 --> E1_6
-    E1_6 --> E2_H --> E2_D --> E1_7 --> E2_7
+    E1_6 --> E2_H --> E2_D --> E1_7 --> E2_7 --> KH
 ```
 
 ### Latest Visual Checkpoints (`one-reflection-skew`, Discussion #127)
+
+![one-reflection-skew Eisenbud graded strands and finite Koszul homology](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
+
+*Checkpoint 88 (`results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png`): Eisenbud graded-syzygy strands and Yang / Eisenbud–Erman finite Koszul homology ($H_0$ vs. $H_1$ contrast) across $26$ verified Koszul complexes ($709$ $d_{k-1}\circ d_k = 0$ composition columns): $P_{\text{Hess}}$ and all five degree-7 $Z_k$-twisted Euler families form length-$4$ regular sequences in $\mathbb{P}^4$ ($\dim H_0 \to 2^4 = 16$, $H_1 = 0$); the $a_0$-eliminated sub-block $P_{\text{core}} = (Q_6,Q_7,Q_8,Q_9)$ is an exact $4$-variable complete intersection ($\dim H_0 = \binom{4}{d} \to 0$ at $d=5$); the shared Kramers factor $(a_3-a_4)$ between $Q_{\text{Kramers}}$ and $Q_8$ generates an explicit degree-$3$ non-boundary cycle in $H_1(K(P_{\text{factored}}))_3$; $P_{\text{full}}$ splits $\ker(d_1)_4 = 65 = 36\text{ boundaries} + 29\text{ } H_1$ with $\dim H_0 = 0$ at $d=3,4,5$; and all three degree-7 non-Jacobian ("added") $E_1$ sub-blocks achieve full rank at $d=2$ (`1/1`, `1/1`, `28/28`), forcing all $9$ pure added squares to vanish.*
 
 ![one-reflection-skew degree-7 Z2^4 superselection sectors](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
 
@@ -2379,6 +2386,81 @@ conversations or evidence of an accepted solve.
     · [Publication receipt](results/one-reflection-skew-degree7/upstream-post.json).
 
     ![one-reflection-skew degree-7 Z2^4 superselection sectors](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
+
+88. **19 October 2026 — `one-reflection-skew` (#127): Eisenbud graded-syzygy strands and Yang / Eisenbud–Erman finite Koszul homology ($H_0$ vs. $H_1$ contrast across degree-6 and degree-7 $E_2$ ideals, pushed to Hodge Lab only).**
+    Applied the finite Koszul complex engine
+    [`experiments/necessary_koszul_complex.py`](experiments/necessary_koszul_complex.py)
+    (`complex_at`) and the Eisenbud / Eisenbud–Erman / David H. Yang diagnostic
+    framework ([`notes/categorical-syzygies.md`](notes/categorical-syzygies.md),
+    [`notes/added-character-homology.md`](notes/added-character-homology.md)) to
+    `one-reflection-skew` via
+    [`experiments/one_reflection_skew_koszul_homology.py`](experiments/one_reflection_skew_koszul_homology.py)
+    (`26` verified finite Koszul complexes $K_\bullet(P; S)_d$, `709` verified
+    $d_{k-1} \circ d_k = 0$ composition columns, certificate digest
+    `sha256[:16] = c226ddb123d4307e`):
+
+    - **Why Pure Hessian Elimination Stops at $\dim H_0 = 16$ (`P_Hess` & Universal Degree-7 $Z_k$-Twisted Euler Regular Sequences):**
+      For `P_Hess` $= (Q_{\text{node}}, Q_{\text{Kramers}}, Q_{\text{bridge}}, Q_3)$
+      in degree $6$ and for every one of the five degree-$7$ $Z_k$-twisted Euler
+      sub-blocks $\{Z_k Z_i \partial_i F\}_{i=0}^4$ ($Z_k \in \{X_0, X_1, X_2, Y_0, Y_1\}$)
+      in the $44$-dimensional base quotient $S_{14}^{(5)}/(J_{14}^{(5)}(F_5)+F_5 S_8^{(5)})[(1,0,1)]$,
+      all higher Koszul homology vanishes ($H_1 = H_2 = H_3 = H_4 = 0$, with
+      $\ker d_1 = 0, 0, 6, 30, 86 = \mathrm{im}\, d_2$) and
+      $\dim H_0(K)_d = (11, 15, 16, 16, 16)$ stabilizes at $2^4 = 16$. By
+      Eisenbud's Koszul regularity theorem, these $4$ quadrics form an **exact
+      regular sequence of length $4$ in $5$ variables** ($16$ projective points
+      with multiplicity in $\mathbb{P}^4_{\mathbb{C}}$), proving why retaining
+      the full $E_2$ quotient with Koszul syzygies is required to close the
+      diagonal sector.
+    - **Exact 4-Variable Complete Intersection on the $a_0$-Eliminated Core (`P_core = (Q_6, Q_7, Q_8, Q_9)`):**
+      Eliminating the anchor variable $a_0$ from the $9$-quadric RREF diagonal
+      system isolates $P_{\text{core}} = (Q_6, Q_7, Q_8, Q_9) \subset \mathbb{Q}[a_1,a_2,a_3,a_4]$,
+      which has $H_1 = H_2 = H_3 = H_4 = 0$ and Hilbert function
+      $\dim H_0(K(P_{\text{core}}))_d = \binom{4}{d} = (6, 4, 1, 0, 0)$ for
+      $d = 2,\dots,6$, reaching $\dim H_0 = 0$ (`rank(d1) = 56/56`) at degree
+      $d = 5$ and forcing $a_1^5 = a_2^5 = a_3^5 = a_4^5 = 0$ on the $4$-variable
+      core alone.
+    - **Explicit Degree-3 Kramers Reflection-Breaking $H_1$ Cycle vs. $H_0 = 0$ Power Obstruction:**
+      In $P_{\text{factored}} = (Q_{\text{Kramers}}, Q_8, Q_3, Q_4)$, the shared
+      Kramers reflection-breaking factor $(a_3 - a_4)$ between
+      $Q_{\text{Kramers}} = (a_3 - a_4)(a_0 + a_1 - a_3 - a_4)$ and
+      $Q_8 = \frac{1}{3}(a_3 - a_4)(3 a_1 - a_2 - 2 a_3 + a_4)$ generates an
+      explicit degree-$3$ non-boundary Koszul cycle ($\dim H_1 = 1$, $K_{2,3}=0$):
+      $$\Big(a_1 - \frac{1}{3}a_2 - \frac{2}{3}a_3 + \frac{1}{3}a_4\Big) Q_{\text{Kramers}} - (a_0 + a_1 - a_3 - a_4) Q_8 = 0,$$
+      with $\dim H_1 = (0, 1, 4, 8, 12)$ while $\dim H_0 = (11, 16, 20, 24, 28) > 0$.
+      In contrast, adjoining $Q_1,\dots,Q_5$ in $P_{\text{full}} = (Q_1,\dots,Q_9)$
+      collapses $\dim H_0 \to 0$ at $d = 3$ (`rank 35/35`, $H_1 = 10$), $d = 4$
+      (`rank 70/70`, $\ker d_1 = 65 = 36\text{ boundaries} + 29\text{ } H_1$),
+      and $d = 5$ (`rank 126/126`, $\ker d_1 = 189 = 179\text{ boundaries} + 10\text{ } H_1$,
+      $\dim H_2 = 1$).
+    - **Full-Rank Degree-2 Obstruction on All Three Degree-7 Non-Jacobian ("Added") $E_1$ Sub-Blocks:**
+      On the pure non-Jacobian ("added") $E_1$ subspaces in `[0,0,1,0]` ($1$ var),
+      `[1,0,0,0]` ($1$ var), and `[1,1,1,0]` ($7$ vars, $28$ quadratic cols), the
+      quadratic $E_2$ map into the $44$-dimensional $Y_2=0$ base quotient has
+      **full rank at $d = 2$** (`1/1`, `1/1`, and `28/28`), giving
+      $\dim H_0 = 0, \dim H_1 = 0$ at $d = 2$ and forcing all $1 + 1 + 7 = 9$
+      pure non-Jacobian squares to vanish. Per the user's instruction, this
+      checkpoint is pushed to `rbajaj5/hodge-lab` without an upstream post on
+      `hodge-computer/sextics`.
+
+    | Ideal / Sub-Block | Sector $\chi(D)$ | Vars / Gens | $\dim H_0(K)_d$ ($d=2\dots 5$) | $\dim \mathrm{im}(d_2)_d$ ($d=2\dots 5$) | $\dim H_1(K)_d$ ($d=2\dots 5$) | Algebraic & Obstruction Meaning |
+    | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+    | **`P_Cas`** | $d=6$ & `[0,0,0,1]` | $5$v, $3$g | $(12, 20, 28, 36)$ | $(0, 0, 3, 15)$ | $(0, 0, 0, 0)$ | Length-$3$ regular sequence in $\mathbb{P}^4$ (degree-$8$ curve) |
+    | **`P_Hess` & $Z_k$-Euler** | All $5$ $Z_k$ sectors | $5$v, $4$g | $(11, 15, 16, 16)$ | $(0, 0, 6, 30)$ | $(0, 0, 0, 0)$ | **Length-$4$ regular sequence in $\mathbb{P}^4$** ($2^4 = 16$ points) |
+    | **`P_factored`** | $d=6$ & `[0,0,0,1]` | $5$v, $4$g | $(11, 16, 20, 24)$ | $(0, 0, 6, 30)$ | **$(0, 1, 4, 8)$** | Shared $(a_3-a_4)$ factor $\implies$ **explicit degree-$3$ $H_1$ cycle** |
+    | **`P_core = (Q_6..Q_9)`** | $d=6$ & `[0,0,0,1]` | $4$v, $4$g | **$(6, 4, 1, 0)$** | $(0, 0, 6, 24)$ | $(0, 0, 0, 0)$ | **$4$-var complete intersection** ($\dim H_0 = \binom{4}{d} \to 0$ at $d=5$) |
+    | **`P_full = (Q_1..Q_9)`** | $d=6$ & `[0,0,0,1]` | $5$v, $9$g | **$(6, 0, 0, 0)$** | $(0, 0, 36, 179)$ | **$(0, 10, 29, 10)$** | **Full exclusion at $d=3,4$** ($\dim H_0 = 0$; $\dim H_2 = 1$ at $d=5$) |
+    | **Added $E_1$ `[0,0,1,0]`** | `[0,0,1,0]` | $1$v, $1$g | **$(0, 0, 0, 0)$** | $(0, 0, 0, 0)$ | $(0, 0, 0, 0)$ | Rank $1/1$ in base quotient $\implies e_0^2 = 0$ at $d=2$ |
+    | **Added $E_1$ `[1,0,0,0]`** | `[1,0,0,0]` | $1$v, $1$g | **$(0, 0, 0, 0)$** | $(0, 0, 0, 0)$ | $(0, 0, 0, 0)$ | Rank $1/1$ in base quotient $\implies e_0^2 = 0$ at $d=2$ |
+    | **Added $E_1$ `[1,1,1,0]`** | `[1,1,1,0]` | $7$v, $28$g | **$(0, 0, 0, 0)$** | $(0, 0, 0, 0)$ | $(0, 0, 0, 0)$ | **Full rank $28/28$ in $\mathrm{Sym}^2(\mathbb{Q}^7) \implies e_a^2 = 0$ at $d=2$** |
+
+    [Complete note and theorems](notes/one-reflection-skew-koszul-homology.md)
+    · [Koszul homology figure (PNG)](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
+    · [Koszul homology figure (SVG)](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.svg)
+    · [Verification script](experiments/one_reflection_skew_koszul_homology.py)
+    · [Summary JSON (`c226ddb123d4307e`)](results/one-reflection-skew-koszul/summary.json).
+
+    ![one-reflection-skew Eisenbud graded strands and finite Koszul homology](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
 
 ## Keeping this current
 
