@@ -2734,6 +2734,48 @@ conversations or evidence of an accepted solve.
     contributions, one maintenance PR (closed), zero accepted authored
     solves**. [Snapshot comparison and scope receipt](results/discussion-monitor/update-20261020T184058Z.json).
 
+96. **20 October 2026, 15:44 EDT / 19:44 UTC — Reported Lean verification on the auxiliary cycle-three Jacobian.**
+    The complete 13-thread comparison found one new reply in #55 and no
+    edits or removals, bringing the snapshot to 26 comments and 15 replies.
+    [The residue-exactness and clearing update](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378)
+    by hodgepodgeconjecture reports that 17 Lean helpers at
+    [fork commit 3d183b1](https://github.com/hodgepodgeconjecture/sextics/commit/3d183b1f8c75a0545bd3cb7af905632950574c0e)
+    now compile with pinned Lean 4.33.0 and pass official leanchecker replay
+    and standard-axiom audits. This advances the previously uncompiled
+    helpers; checkpoint 95 is retained as the earlier reported status.
+
+    The stated results concern the **auxiliary Jacobian V**.
+    CycleJacobianResidue.target_residue_solution gives a rational residue
+    primitive for each polynomial numerator on that hypersurface, and
+    CycleJacobianClearing.polynomial_clearing supplies the cleared defect
+    with a nonzero denominator coprime to V. The author reports discharging
+    the modular seed binding, arithmetic lift, normal/tangent and finite
+    field-extension inputs needed for those auxiliary results, followed
+    by shared integration and normalized trace. The claim that no
+    generic-existence assumption remains is scoped to these theorems.
+
+    **The fixed sextic certificate is still unfinished.** Covariant-map
+    transport with its moving-map differential correction, physical field
+    and nonvanishing compatibilities, ordinary homogeneous clearing, and
+    the exact protected HasCertificate statement remain to be formalized.
+    The post explicitly distinguishes its development checks from the
+    protected sandbox solve workflow and an acceptance receipt. No solve
+    PR or solution is claimed. These are the author's verification reports;
+    this monitor did not inspect the fork's code or logs, run its helpers,
+    or independently replay Lean.
+
+    The author continues to acknowledge rbajaj5's bounded exclusions but
+    explicitly calls them useful context, **not premises of this existence
+    argument**. This is not independent verification of those exclusions
+    or new solve credit. All other monitored discussion content is unchanged.
+    At upstream a27594117baa30dbd39b2b62066d5b55a8a00dc3, all monitored proof
+    and publication records remain unchanged: five accepted/published and
+    eight open, including cycle-three.
+
+    No upstream action was taken. The tally remains **27 discussion
+    contributions, one maintenance PR (closed), zero accepted authored
+    solves**. [Snapshot, reported-verification scope and attribution receipt](results/discussion-monitor/update-20261020T194433Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,136 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T19:44:33.216446+00:00",
+  "baseline_snapshot": "20261020T184058Z",
+  "snapshot": "20261020T194433Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 15,
+    "records": 41,
+    "new_records": 1,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "new_records": [
+    {
+      "id": "DC_kwDOVLOOJc4BIyDS",
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378",
+      "parent_id": "DC_kwDOVLOOJc4BIxeY",
+      "author": {
+        "login": "hodgepodgeconjecture",
+        "name": null
+      },
+      "createdAt": "2026-10-20T18:45:52Z",
+      "updatedAt": "2026-10-20T18:45:52Z",
+      "body_sha256": "6890132a26d43188b709bd989e8f3534997b0c0e5852f1b836d1f81605e5959f"
+    }
+  ],
+  "discussion_metadata_changes": {
+    "updatedAt": {
+      "before": "2026-10-20T17:50:51Z",
+      "after": "2026-10-20T18:45:52Z"
+    }
+  },
+  "reported_auxiliary_result": {
+    "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378",
+    "fork_commit": "https://github.com/hodgepodgeconjecture/sextics/commit/3d183b1f8c75a0545bd3cb7af905632950574c0e",
+    "scope": "Exact auxiliary Jacobian V, not the immutable physical sextic F.",
+    "theorems": [
+      "CycleJacobianResidue.target_residue_solution",
+      "CycleJacobianClearing.polynomial_clearing"
+    ],
+    "summary": "Reported rational residue primitives for all polynomial numerators on V, plus polynomial clearing with a nonzero denominator coprime to V.",
+    "existence_inputs": "Author reports discharging the modular seed binding, arithmetic lift, normal/tangent, integrality and finite-field-extension inputs for the auxiliary theorems.",
+    "development_verification_reported": {
+      "modules": 17,
+      "lean_version": "4.33.0",
+      "frontend_trustLevel": 0,
+      "leanchecker_replayed_modules": 17,
+      "replay_seconds": 43.78,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "protected_sandbox_workflow": false,
+      "acceptance_receipt": false
+    },
+    "remaining": [
+      "Formal covariant-map transport and moving-map differential correction",
+      "Physical field/nonvanishing compatibilities",
+      "Transport to the immutable sextic",
+      "Ordinary homogeneous clearing",
+      "Exact protected HodgeComputer.HasCertificate statement"
+    ],
+    "solve_claimed": false,
+    "solve_pr_claimed": false
+  },
+  "attribution_clarification": {
+    "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378",
+    "scope": "The author describes rbajaj5 bounded exclusions as useful context, explicitly not premises of this existence argument.",
+    "new_replay_of_our_work": false,
+    "new_solve_credit": false
+  },
+  "upstream_commit": "a27594117baa30dbd39b2b62066d5b55a8a00dc3",
+  "proof_record_changes": [],
+  "publication_status_changes": [],
+  "status": {
+    "accepted_published_monitored_instances": 5,
+    "open_monitored_instances": 8,
+    "cycle_three": "open"
+  },
+  "checks_performed_here": [
+    "Fetched all comment/reply pages and compared IDs, timestamps, bodies and hashes.",
+    "Read the new reply with its parent and earlier continuations in context.",
+    "Separate review agent checked auxiliary versus physical theorem scope and attribution.",
+    "Read target proof records and compared acceptance/publication blob identities at pinned main."
+  ],
+  "checks_not_performed_here": [
+    "No fork code or build-log inspection, packet execution or theorem reconstruction.",
+    "No local Lean compilation, kernel replay or protected solve workflow."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "ad4cdd623c6f373720b6ac944da0d9919326c293aa588f0e07ff6538b42e6d99",
+    "accepted-records.json": "840132bf9b59e1d0fbe898e2e1539fb1f139c077d8467e06492b9b572cc27478",
+    "comparison.json": "c0e1c3df9c152a448d96510238b0862940636f412b4a1c6e38189cdf92fab4e1",
+    "discussion-111.json": "c7bcdeb1681cb67bddfdc2a67310595e75859d0172ff2a58d7a8d34ccea23670",
+    "discussion-112.json": "d09343e2fea8ae3bc6b7ee8c4520ea73447dee8360bb881a7d5e2cd1354b1f11",
+    "discussion-113.json": "15efe5322be29ab1e202a6433db124610ab1dff7a019c1abb0ec17262717da52",
+    "discussion-114.json": "979da43d26a4a7deb76f77e029bbf8d9d1a8d188372c4f3652ceb55c4ab2d7af",
+    "discussion-115.json": "442219732322746cb54f876b9c1865c22ea3fc612292f1e99c4d16e60cbe3f4f",
+    "discussion-116.json": "de80f2d9bacd12ada54e9f7602a288e966e4a603b310338a0ad584db7245d478",
+    "discussion-117.json": "61fa834feb4d181ef6e4f92dc23f38a9924fbaacfc3475ab756f8d44ab9a82c3",
+    "discussion-118.json": "a7591f2a22a7654e0e4dea303f21fb6afcc9051fbeed65fecd8ac185f2aeec65",
+    "discussion-119.json": "a76a9542fc9844f6b33151a55452048e0816a36c08bcbe5177786c8283e488ea",
+    "discussion-120.json": "affec6d11001c95368ffd6620fb34961414f7775ca01e28f24d1da9ff4b8ba8a",
+    "discussion-44.json": "b83373c5ae3aecfde0ddbd2589106dd09fe824545da9cac1c3b6499caf98a74d",
+    "discussion-55.json": "103a0add69d89753481b149943ad2ce2e0a31048bf2b5ff1f1653d98d5f696ea",
+    "discussion-56.json": "0fa35f04acb9a000757b0d236e44583bc637e7bfc38da2b11f6c2a4299aeaf82",
+    "manifest.json": "9ca8e5ed037048ee47d82261ded6380a118c9d75282b4f0e16bdb4deb95eaac3",
+    "publication-status.json": "f6c0b64b1ef6d31b0fefe14bff8d2bb65899722a4e042fc772aa3bda2ea5ff73"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "All new mathematical and compilation assertions are attributed reports. Earlier uncompiled-helper status remains a valid historical checkpoint. No offline identity is inferred."
+}
