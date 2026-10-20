@@ -2650,6 +2650,51 @@ conversations or evidence of an accepted solve.
     rendered website.
     [Discussion comparison and publication-status receipt](results/discussion-monitor/update-20261020T150120Z.json).
 
+94. **20 October 2026, 13:45 EDT / 17:45 UTC — New cycle-three partial approaches and acknowledgment of the bounded exclusions.**
+    The complete read-only comparison against the 16:04 UTC snapshot
+    found one new top-level comment and its reply in discussion #55,
+    with no edits or removals. Across all 13 monitored threads there are
+    now 26 comments and 13 replies. The other threads are unchanged.
+
+    [The cubic-model pilot](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077016),
+    by `hodgepodgeconjecture`, says the author read and credits `rbajaj5`'s
+    prior bounded-degree exclusions. This is a new acknowledgment, not
+    a reported independent replay of our proof packets. The post reports
+    an exact paired-sign coordinate transport to a varying genus-one
+    cubic family, including horizontal derivatives, and a two-dimensional
+    connection on one parameter slice. Its unsuccessful rational-primitive
+    search fixes a degree-42 denominator and numerator degrees at most 46;
+    the reported coefficient/augmented ranks are 94/95 at two good primes.
+    This only excludes that ansatz. Other denominators, degrees and use
+    of the full three-parameter family remain outside that conclusion.
+    A primitive and legal homogeneous clearing are still needed.
+
+    [The surface-quotient continuation](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077807)
+    proposes a geometric support route. It reports a generically smooth
+    surface, a free order-three action, a quotient with `p_g = q = 0`,
+    and an invariant physical source, motivating divisor support via
+    Lefschetz (1,1). The author explicitly leaves generic-field descent
+    and identification with the physical residue as review points.
+    No divisor equation or Lean implementation of that bridge is
+    supplied. The claimed sector does not include the exact `cycle-q2`
+    source. This is a proposed route, not an accepted certificate.
+
+    Both posts disclose Codex assistance. We read them in full thread
+    context and reviewed their scope, but **did not download or execute
+    the attached packets, replay their algebra, or compile Lean**.
+    At upstream `a27594117baa30dbd39b2b62066d5b55a8a00dc3`,
+    proof and publication records remain unchanged: five monitored
+    instances are accepted/published and eight, including `cycle-three`,
+    remain open. Previously recorded cyclic-Fano and T100 credit is
+    unchanged.
+
+    This monitoring run made no upstream comment, edit, message, PR or
+    workflow action. The historical tally remains **27 discussion
+    contributions, one maintenance PR (closed), zero accepted authored
+    solves**. Reading new work and receiving acknowledgment add no
+    contribution to that tally.
+    [Snapshot comparison, attribution and scope receipt](results/discussion-monitor/update-20261020T174550Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

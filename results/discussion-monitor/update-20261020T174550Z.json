@@ -1,0 +1,140 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-20T17:45:50.297634+00:00",
+  "baseline_snapshot": "20261020T160450Z",
+  "snapshot": "20261020T174550Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 13,
+    "records": 39,
+    "new_records": 2,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "changed_discussion": 55,
+  "new_records": [
+    {
+      "id": "DC_kwDOVLOOJc4BIxeY",
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077016",
+      "parent_id": null,
+      "author": {
+        "login": "hodgepodgeconjecture",
+        "name": null
+      },
+      "createdAt": "2026-10-20T16:33:48Z",
+      "updatedAt": "2026-10-20T16:33:48Z",
+      "body_sha256": "96e3a3a3640e323237d6753939a16c3ca5ad6859500e3d8c4aa8deed4a31461e"
+    },
+    {
+      "id": "DC_kwDOVLOOJc4BIxqv",
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077807",
+      "parent_id": "DC_kwDOVLOOJc4BIxeY",
+      "author": {
+        "login": "hodgepodgeconjecture",
+        "name": null
+      },
+      "createdAt": "2026-10-20T17:13:40Z",
+      "updatedAt": "2026-10-20T17:13:40Z",
+      "body_sha256": "042f89eaeb49b80db8bd383dc2749ffd6b88d9ee995e2e8c0c34cde656dbfed6"
+    }
+  ],
+  "discussion_metadata_changes": {
+    "updatedAt": {
+      "before": "2026-10-17T17:59:34Z",
+      "after": "2026-10-20T17:13:40Z"
+    }
+  },
+  "new_substantive_attribution": {
+    "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077016",
+    "author": "hodgepodgeconjecture",
+    "scope": "Acknowledges having read and credits rbajaj5's prior bounded-degree exclusions.",
+    "limits": "No reported independent replay of our packets. No inference about the author's offline identity."
+  },
+  "reported_partial_results": [
+    {
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077016",
+      "summary": "Paired-sign coordinate transport to a varying genus-one cubic family, an exact connection pilot, and failure of one bounded rational-primitive ansatz.",
+      "reported_search_scope": {
+        "slice": "a0=t, a1=a2=1",
+        "fixed_denominator_degree": 42,
+        "numerator_degree_bound": 46,
+        "coefficient_rank": 94,
+        "augmented_rank": 95,
+        "good_primes": [
+          1009,
+          1013
+        ]
+      },
+      "limits": "Does not exclude other poles/degrees or full three-parameter integration. Primitive construction and legal homogeneous clearing remain to be supplied."
+    },
+    {
+      "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077807",
+      "summary": "Proposed surface quotient with a free order-three action, pg=q=0, and an invariant physical residue, motivating support by divisors.",
+      "limits": "Generic-field descent and physical-residue identification are explicit review points. No divisor equation, Lean bridge, HasCertificate proof or solve PR supplied. The exact cycle-q2 source is outside the stated invariant sector."
+    }
+  ],
+  "upstream_commit": "a27594117baa30dbd39b2b62066d5b55a8a00dc3",
+  "proof_record_changes": [],
+  "publication_status_changes": [],
+  "publication_audit": "publication-status.json (raw hash below; full local snapshot retained)",
+  "status": {
+    "accepted_published_monitored_instances": 5,
+    "open_monitored_instances": 8,
+    "cycle_three": "open"
+  },
+  "checks_performed_here": [
+    "Fetched all discussion and reply pages and compared IDs, timestamps, bodies and hashes.",
+    "Read the complete changed thread, including both new posts and earlier bounded exclusions.",
+    "Separate review agent checked the reported scope and attribution.",
+    "Read fixed-target proof records and compared publication-related blobs at a pinned main."
+  ],
+  "checks_not_performed_here": [
+    "No attached packet downloaded or executed.",
+    "No reconstruction of connection, smoothness, transport, or geometric-support claims.",
+    "No Lean build or independent kernel replay."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "99aee7e686586d14cca37f284490bfa601b924787260d329aa868ce68f5b18ce",
+    "accepted-records.json": "6661ccfef53fb81352217b619b0d2819f47397edb488f4f4e569d7b23a421c01",
+    "comparison.json": "7805c7a37737b10b2cf41c8f83753c66b5a726173871789153b3ab9749180ae6",
+    "discussion-111.json": "1c4307260c09a058dcd17a50b80491007f7d18a2734f75d48bba712df9245809",
+    "discussion-112.json": "273e682701a5df91c774441f56893c9374d76b9d98fe313ed977e860f758ac75",
+    "discussion-113.json": "f5cc67e865e0ef6d35d58eed71fb59ee4a014b9dc48d0875008e0a0bbfe3dc67",
+    "discussion-114.json": "0b70cd91af58e4e25960296144c4e9c008bda5b98f5b10c4bac58945a1ea5cdc",
+    "discussion-115.json": "aac6aeefb08718238930e13f95791c53707b4478c0587882ffe384d4f4b55643",
+    "discussion-116.json": "e18ff0ad868b5083ef911021080fe56d81ab46252a83b3c08564f87810654646",
+    "discussion-117.json": "efffdabb545d5f2dc67296c9c3b4bc6ca6fdb1448d8dfe07908cc005a9738bb1",
+    "discussion-118.json": "8a8cf14e893597f173258d75e05607eecd0673f3826990a48abf8e288573b879",
+    "discussion-119.json": "a2963e2a94d7cb3e6e4157bef91b0df0d83680dfc2ed43b24ed1124943e2698b",
+    "discussion-120.json": "13698f38f96ee86ea10ac29d06641ad2f1123991cf2a967a8456aada854b6741",
+    "discussion-44.json": "43f993e1aab194c314bf864a7dc0e5936048e9763ee479737444c3433b193578",
+    "discussion-55.json": "b980160b5cb418c9e1c5e209d7ba741fb919a787e9027923347048ca5b1fe1cc",
+    "discussion-56.json": "27c7ee68a0f1eaa4555959445791bd4f0f15d156dfba9adb0a6a0a5e43bd0b0f",
+    "manifest.json": "86149392f7e918729f22977bf95dcb4dc7704e20e36ce1d51235aea574b6625d",
+    "publication-status.json": "c3d8ae6d716bfb3bc6e2f4e2fc74af5389c943679d0428fb6be8b1554d4d64f0"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "The mathematical assertions above are attributed reports from discussion posts, not newly verified theorems. New acknowledgment does not count as a new contribution."
+}
