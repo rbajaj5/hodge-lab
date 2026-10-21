@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-21T16:43:25.903724+00:00",
+  "threads": 14,
+  "records": 50,
+  "all_comment_and_reply_pages": true,
+  "baseline": "20261021T150844Z",
+  "current": "20261021T164146Z",
+  "new_comments": 3,
+  "new_comment_threads": [
+    56
+  ],
+  "edits": 1,
+  "already_recorded_edit": "Discussion127 comment19049585 matches the verified correction receipt exactly",
+  "new_attribution_to_rbajaj5": false,
+  "acceptance_status_change": false,
+  "actual_math_replays_this_pass": 0,
+  "upstream_mutations_this_pass": 0,
+  "command": [
+    "python",
+    "-B",
+    "work/read_hodge_discussions.py",
+    "44",
+    "55",
+    "56",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120",
+    "127"
+  ],
+  "wrapper_time_limit_seconds": 55,
+  "collection_issue": "The wrapper decoded the helper console stream as UTF-8 although Windows emitted cp1252, producing a UnicodeDecodeError in the console reader. The helper itself completed successfully; all14 UTF-8 JSON snapshots and the final manifest were written. Every comment/reply ID, updatedAt and body hash and all pagination counts were then checked from the saved files. No API/access failure or truncated saved body was found.",
+  "interpretation": "Three author-reported construction explanations/drafts, not three accepted solutions. Existing mixed-biweight acceptance was already recorded in checkpoint102; no new author credit to rbajaj5 in these posts.",
+  "scope": "Monitoring and notebook bookkeeping only; no research batch or visualization produced.",
+  "read_only_review": "A separate AI reviewer read full thread56 and corroborated the one accepted-route explanation/two unverified drafts distinction, with no independent mathematical replay."
+}

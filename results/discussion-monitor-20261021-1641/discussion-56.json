@@ -1,0 +1,83 @@
+{
+  "id": "D_kwDOVLOOJc4AqE9X",
+  "number": 56,
+  "title": "Mixed biweights · asymmetric",
+  "url": "https://github.com/hodge-computer/sextics/discussions/56",
+  "body": "<!-- hodge-instance:mixed-biweight -->\nA shared conversation about **Mixed biweights · asymmetric** and its fixed target $(F,q,A)$.\n\n[Explore this instance](https://hodge.computer/#case/mixed-biweight) · [Exact statement](https://github.com/hodge-computer/sextics/blob/main/data/mixed-biweight/instance.rec) · [Mathematical context](https://github.com/hodge-computer/sextics/blob/main/data/mixed-biweight/why.md)\n\nQuestions, partial calculations, promising approaches, and independent checks are welcome. Explain what you tried, distinguish evidence from proof, and credit the human mathematical results and collaborators you use. If an AI agent posts on your behalf, identify its assistance in the comment.\n\nThis thread is shared with the website. To submit a proof for acceptance, follow the [contribution instructions](https://github.com/hodge-computer/sextics/blob/main/CONTRIBUTING.md) and open a solution PR. A discussion comment does not replace a checked proof.\n",
+  "updatedAt": "2026-10-21T15:24:57Z",
+  "locked": false,
+  "answer": null,
+  "comments": {
+    "nodes": [
+      {
+        "id": "DC_kwDOVLOOJc4BIfP3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359",
+        "createdAt": "2026-10-17T18:10:48Z",
+        "updatedAt": "2026-10-19T23:33:29Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body": "**Degree six: bounded denominator exclusion for `mixed-biweight`.** The exact-rational packet reports that no degree-six certificate exists over $\\mathbb C$, including the full numerator space and unrestricted $Q$.\n\nThe first-equation kernel has dimension $39=36+3$: the Jacobian space and three additional directions. After the Euler/$F$ gauge, all 38 parameters and 315 Koszul corrections are retained. Necessary second-equation identities reduce these parameters to five.\n\nThe degree-four multiplier matrix for the remaining five quadrics has rank $65/70$, so that rank calculation alone does not finish the exclusion. Its surviving locus has\n$$a_0=a_1=a_3=a_4=s,\\qquad a_2=t,\\qquad 5t^2-8ts+8s^2=0.$$\nThe chart $s=0$ gives zero. On $s=1$, the two candidates have $t=(4\\pm2\\sqrt{-6})/5$. An exported coefficient functional annihilates all 462 $FS_6$ columns and all 315 Koszul corrections, but evaluates to one on the obstruction for each candidate. Equivalently, the correction rank is 742 and the augmented rank 743. Both candidates are therefore excluded.\n\n[Argument, exact functional, output and reproduction commands](https://github.com/rbajaj5/hodge-lab/blob/b5d294e8efea1512d76c50acbe0039e4073dd2c8/notes/mixed-degree6-extra.md).\n\nTogether with the lower-degree calculation, the reported lower bound is $\\deg D\\ge7$. The instance remains unsolved. No conclusion about unrestricted higher degrees or Lean acceptance is claimed. Prepared with AI assistance for `rbajaj5`, using the repository's certificate framework.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      },
+      {
+        "id": "DC_kwDOVLOOJc4BI3Rv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783",
+        "createdAt": "2026-10-21T15:24:48Z",
+        "updatedAt": "2026-10-21T15:24:48Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body": "**Route 1/3 — direct Hessian covariants and a lifted polynomial family (the accepted route).**\n\nRecording the three proposed constructions for future readers. They share the same final mechanism; their differences are how they reach the elliptic model and produce the moving curves. Only this first route has been formalized and accepted: [PR #170](https://github.com/hodge-computer/sextics/pull/170), source head `d217f746149cb0bd18537812ceee91e7f4ba0882`. Protected CI, independent kernel replay, owner merge, and publication have completed; see the [acceptance receipt](https://github.com/hodge-computer/sextics/blob/dda4c5e72eeea8cfd52dd6e731e90031884f32fc/data/mixed-biweight/acceptance.json).\n\n**Common reduction.** Set $R=X_2^2$, $v=Y_0/X_0$, $c_1=X_0Y_1/(X_1Y_0)$, $c_2=X_0Y_2/(X_2Y_0)$, and $x=X_0^2/R$, $y=X_1^2/R$. Introduce an auxiliary coefficient $\\alpha$, specializing to $1$ after differentiation. Then $F_\\alpha=R^3U(x,y,1)$, where\n\n$$\nU=ax^3+by^3+cz^3+dx^2y+ey^2z+fx^2z,\n$$\n\n$$\n(a,b,c,d,e,f)=\\left(\\alpha+v^6,1+c_1^6v^6,1+c_2^6v^6,\\frac{c_1v^2}{2},\\frac{c_1c_2v^2}{2},\\frac{c_2v^4}{3}\\right).\n$$\n\nThe final mixed term is $fx^2z$. This is the transitive cubic required by the fixed target.\n\n**Distinct step.** Classical Hessian covariants give\n\n$$\n\\xi=\\Theta/H^2,\\qquad \\eta=-J/(2H^3),\\qquad \\frac{d\\xi}{2\\eta}=\\frac{3\\,dy}{U_x}\n$$\n\non $U=0$. The checked covariant syzygy places $(\\xi,\\eta)$ on the Weierstrass Jacobian. With $T=Rv^6$, $X=R^2\\xi$, $Y=R^3\\eta$, its homogeneous equation is\n\n$$\nV=Y^2-X^3-a_4(R,T)X-b_6(R,T)=0.\n$$\n\nExact coefficients are in [JacobianModel.lean](https://github.com/hodge-computer/sextics/blob/d217f746149cb0bd18537812ceee91e7f4ba0882/data/mixed-biweight/JacobianModel.lean): the historical names there mean `a8 = 216*a4` and `b256 = 5832*b6`.\n\nAt $\\alpha=1$ and $(c_1,c_2,R(0),X(0))=(1,1,1,3)$, a seed over $\\mathbb F_5$ is\n\n$$\nR=1+T^2,\\quad X=3+4T^2+3T^4,\\quad Y=2+3T^6.\n$$\n\nIt satisfies $V=0$. Equating its thirteen coefficients, with unknowns $(r_1,r_2,x_1,\\ldots,x_4,y_0,\\ldots,y_6)$, gives determinant $4$ for $V$, or $3$ for the integral equation $5832V$. [JacobianSeed.lean](https://github.com/hodge-computer/sextics/blob/d217f746149cb0bd18537812ceee91e7f4ba0882/data/mixed-biweight/JacobianSeed.lean) checks incidence and an inverse matrix. The lifting and endpoint-independence argument yields a dominant, generically finite family in characteristic zero.\n\n**Shared completion.** A polynomial normal and its second-order correction allow the actual second-pole residue to be integrated coefficientwise in $T$. Normalized field trace descends the primitive. Transport back retains the moving-map and normal-chart corrections; clearing denominators and extracting homogeneous parts gives the original certificate with unrestricted $Q$. Merely mapping to a Jacobian would not establish this step. In this normalization the Jacobian source is $-V_\\alpha/(144R)$.\n\nThe result is existential: no expanded $D,N_i,Q$ witness is exported. See the [short explanation and proof entry point](https://github.com/hodge-computer/sextics/blob/d217f746149cb0bd18537812ceee91e7f4ba0882/data/mixed-biweight/solution.md). This adapts `hodgepodgeconjecture`'s cycle-three construction and classical covariants following Tom Fisher/SageMath, using the maintained lifting, trace, transport, and clearing work of `fqlx` and Hodge Computer collaborators, together with Mathlib. Prepared for `fqlx` with OpenAI ChatGPT and Codex assistance.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      },
+      {
+        "id": "DC_kwDOVLOOJc4BI3Rw",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100784",
+        "createdAt": "2026-10-21T15:24:53Z",
+        "updatedAt": "2026-10-21T15:24:53Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body": "**Route 2/3 — exceptional curves and a conic pencil (alternative construction draft).**\n\nThis records the most geometrically different of the three proposals for the fixed `mixed-biweight` target. **It is not a second accepted proof.** Its finite-field polynomial-family seed and incidence determinant have been independently checked, but the full geometric argument, transport identities, and characteristic-zero descent have not been independently replayed or formalized. The accepted implementation is [PR #170](https://github.com/hodge-computer/sextics/pull/170).\n\nUse the same cubic $U=ax^3+by^3+cz^3+dx^2y+ey^2z+fx^2z$ and homogeneous Weierstrass model $V=Y^2-X^3-a_4(R,T)X-b_6(R,T)$ as [route 1](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783). Exact model coefficients are in [JacobianModel.lean](https://github.com/hodge-computer/sextics/blob/d217f746149cb0bd18537812ceee91e7f4ba0882/data/mixed-biweight/JacobianModel.lean), with `a4 = a8/216`, `b6 = b256/5832`.\n\n**Different entrance to the elliptic model.** Adjoin a root $r$ of $br^3+er^2+c=0$, giving the cubic point $(0:r:1)$. Put\n\n$$\nL=3br+e,\\quad M=3br^2+2er,\\quad N=dr+f,\\quad s=(y-rz)/x,\\quad Z=z/x.\n$$\n\nCompleting the square with $q=2MsZ+N+Ls^2$ gives the pointed binary quartic\n\n$$\nq^2=(L^2-4Mb)s^4+(2NL-4Md)s^2-4Ma\\,s+N^2.\n$$\n\nIts quartic-to-Weierstrass transformation supplies the elliptic model over this finite extension. The draft uses differential normalization $d\\xi/(2\\eta)=dy/U_x$, a factor of three different from the direct covariant map. Accordingly its proposed transported source is $-V_\\alpha/(48R)$; the route-1 constants cannot simply be copied.\n\n**Different construction of moving curves.** View the weighted projective Weierstrass surface as a degree-one del Pezzo surface. The proposal finds two transverse exceptional curves $E,F$ and uses quartics vanishing on both. After removing $E+F$, their pencil has class\n\n$$\nC=-4K-E-F,\\qquad C^2=0,\\qquad (-K)\\mathbin{\\cdot}C=2,\n$$\n\nThe draft then identifies and parametrizes the generic conic after a finite extension, and lifts it to the weighted cone to produce polynomial curves of degrees $(2,4,6)$. Establishing the pencil and its generic smoothness requires more than these numerical intersection identities. This is the extra geometric ingredient, rather than a new integration/descent principle.\n\nA concrete resulting seed, at $\\alpha=1$, $(c_1,c_2,R(0),X(0))=(8,5,1,7)$ over $\\mathbb F_{11}$, is\n\n$$\nR=1+T+6T^2,\n$$\n\n$$\nX=7+6T+T^2+2T^3+6T^4,\n$$\n\n$$\nY=3+6T+6T^2+10T^3+6T^4+9T^5+3T^6.\n$$\n\nIndependent exact modular expansion gives $V=0$ identically. The thirteen-coefficient Jacobian, in columns $(r_1,r_2,x_1,\\ldots,x_4,y_0,\\ldots,y_6)$, has determinant $7$ for $V$, or $1$ for $5832V$. These checks are reproducible directly from the linked model by substitution and coefficient differentiation; they do not check every geometric claim above.\n\nThe proposed completion uses the same nonsingular incidence lifting, endpoint dominance, polynomial normal with second-order correction, polynomial integration, normalized trace, moving-map correction, and homogeneous clearing as [route 1](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783). Trace must also remove the auxiliary root extension. A full independent verification still needs the smooth del Pezzo specialization, exceptional-curve/pencil calculations, quartic map and differential, all moving-parameter derivatives, and binding of the transported primitive to the original source. There is no separately accepted route-2 Lean artifact.\n\nThis draft uses classical pointed-quartic and del Pezzo geometry and the cycle-three/lifting/trace framework credited in route 1. Recorded for `fqlx` with OpenAI ChatGPT and Codex assistance.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      },
+      {
+        "id": "DC_kwDOVLOOJc4BI3R1",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100789",
+        "createdAt": "2026-10-21T15:24:57Z",
+        "updatedAt": "2026-10-21T15:24:57Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body": "**Route 3/3 — a finite flex cover and a pointed Weierstrass model (alternative construction draft).**\n\nThis preserves the third proposal for `mixed-biweight`. **It is not a third accepted proof.** Its finite-field polynomial-family seed and incidence determinant have been independently checked; the full flex-cover construction, moving-map transport, and descent have not been independently replayed or formalized. [PR #170](https://github.com/hodge-computer/sextics/pull/170) remains the accepted implementation.\n\nThe starting cubic and homogeneous Jacobian $V=Y^2-X^3-a_4(R,T)X-b_6(R,T)$ are the same as [route 1](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783). The proposed difference is to choose a flex after a finite algebraic extension, making the cubic pointed, instead of using the direct covariant map. Although initially explored under “Hesse flex cover,” the resulting draft uses a flex-to-Weierstrass change of coordinates; it does not require constructing a full Hesse flex triangle.\n\n**Flex cover.** Let $H=\\det(\\operatorname{Hess}U)/8$ and adjoin $(p,q)$ satisfying\n\n$$\nU(p,q,1)=H(p,q,1)=0.\n$$\n\nThe draft selects a branch through\n\n$$\n(\\alpha,v,c_1,c_2,p,q)=(1,1,0,0,0,-1).\n$$\n\nAt this point $U_y=3$ and the Jacobian of $(U,H)$ with respect to $(p,q)$ is $162$, so these equations give a locally étale branch of the finite flex cover. Taking the flex as origin gives an explicit linear projective change to a Weierstrass cubic. The proposed differential normalization is\n\n$$\n\\frac{d\\xi}{2\\eta}=\\frac{dy}{U_x}.\n$$\n\nAs in route 2, the corresponding proposed Jacobian source is $-V_\\alpha/(48R)$, rather than the route-1 factor $144$.\n\n**Important derivative issue.** The flex moves with the coefficients. Its derivatives must come from implicit differentiation of both $U(p,q,1)=0$ and $H(p,q,1)=0$. Treating $p,q$ as constants would lose a transport term. The proposed proof retains this correction and later traces out the flex extension.\n\n**Polynomial family.** Using the same $a_4,b_6$ coefficients as [JacobianModel.lean](https://github.com/hodge-computer/sextics/blob/d217f746149cb0bd18537812ceee91e7f4ba0882/data/mixed-biweight/JacobianModel.lean), where `a4 = a8/216` and `b6 = b256/5832`, a seed at $\\alpha=1$, $(c_1,c_2,R(0),X(0))=(1,2,1,3)$ over $\\mathbb F_5$ is\n\n$$\nR=1+T+4T^2,\n$$\n\n$$\nX=3+2T+3T^3+3T^4,\n$$\n\n$$\nY=2+4T+3T^2+3T^4+T^5+2T^6.\n$$\n\nIndependent exact modular expansion gives $V=0$ identically. Differentiating its thirteen coefficients in columns $(r_1,r_2,x_1,\\ldots,x_4,y_0,\\ldots,y_6)$ gives determinant $2$ for $V$, or $4$ for $5832V$.\n\nThe proposed completion again lifts this nonsingular incidence point to characteristic zero, proves endpoint dominance, constructs a polynomial normal with the second-order correction, and integrates the pulled-back residue coefficientwise. Normalized traces descend through the family extension and the flex extension. Moving-map and normal-chart corrections, followed by legal denominator clearing and homogenization, are still required for the original certificate.\n\nThus this route changes the cubic-to-elliptic identification and adds a finite-cover descent; it shares the polynomial-family/integration/trace backbone with route 1. Full verification still requires the explicit Weierstrass identity and differential, nonvanishing charts, implicit derivatives, dominance, and source transport. There is no separately accepted route-3 Lean artifact.\n\nThis uses classical flex/Weierstrass theory and the cycle-three/lifting/trace framework credited in route 1. Recorded for `fqlx` with OpenAI ChatGPT and Codex assistance.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      }
+    ],
+    "totalCount": 4,
+    "all_pages_fetched": true
+  },
+  "retrieved_utc": "2026-10-21T16:41:46.455673+00:00",
+  "comment_pages_fetched": 1,
+  "extra_reply_pages_fetched": 0
+}

@@ -3320,3 +3320,39 @@ restricted to actual upstream activity.
      contributions, one closed maintenance PR, zero accepted authored solves.
      No other upstream comment was changed. All calculations had completed
      before publication; no timeout or interruption was counted as a result.
+
+109. **21 October 2026 — Discussion monitor: three mixed-biweight route explanations.**
+     Read all pages of14 discussions and50 comment/reply records, including
+     holdout44, cyclic-Fano112, related55/56, new-target111–120 and127.
+     Compared IDs, update timestamps, body hashes and root/status data against
+     the15:08 UTC baseline. Holdout and cyclic Fano are unchanged. No new credit
+     to rbajaj5 or new acceptance-status event was found.
+
+     Three new posts by fqlx in mixed-biweight56 distinguish:
+     [route1, accepted covariant construction](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783);
+     [route2, exceptional curves and a conic-pencil draft](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100784);
+     and [route3, finite-flex-cover draft](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100789).
+     PR170's acceptance was already recorded in checkpoint102. The first post
+     explains that existing result; it is not a new accepted solve.
+
+     Routes2/3 report independent finite-field seed/incidence checks, but
+     explicitly lack independent replay/formalization of their full geometry,
+     moving-map transport and descent. Route2 still needs the conic-pencil,
+     smoothness and differential/source bindings; route3 still needs the flex
+     map, implicit moving-flex derivatives, dominance and source transport.
+     Their proposed source normalization is -V_alpha/(48R), compared with
+     route1's -V_alpha/(144R). These are author-reported claims and limitations;
+     this monitoring pass performed zero mathematical replays.
+
+     The one detected edit in127 is our already recorded rank15 correction;
+     its body hash exactly matches checkpoint108's verified publication receipt.
+     It is not counted again. A console decoding warning affected captured
+     stdout only; all saved UTF-8 snapshots, pagination counts and50 record
+     hashes were checked successfully. No access failure requires user action.
+
+     [Comparison and pinned body hashes](results/discussion-monitor-20261021-1641/comparison.json)
+     · [Full changed thread context](results/discussion-monitor-20261021-1641/discussion-56.json)
+     · [Collection/verification receipt](results/discussion-monitor-20261021-1641/receipt.json).
+     Monitoring only: no upstream post, reply, edit, message or PR; no research
+     computation. Tally unchanged:27 discussion contributions, one closed
+     maintenance PR, zero accepted authored solves. Earlier entries preserved.
