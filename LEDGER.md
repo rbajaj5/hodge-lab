@@ -3412,3 +3412,27 @@ restricted to actual upstream activity.
      rerun; alternative drafts remain unverified monitoring entries. This is an
      edit, not a new contribution: tally remains 27 discussion contributions,
      one closed maintenance PR, zero accepted authored solves.
+
+111. **21 October 2026 — Standing upstream publication authorization clarified.**
+     The user clarifies that the offer to push to our own clone was another
+     destination, not a prohibition on upstream contributions. This supersedes
+     the restrictive interpretation recorded at checkpoint 110 and in the
+     former AGENTS.md "Default publication destination" section; the historical
+     entry remains unchanged. [Current publication policy](AGENTS.md#standing-upstream-publication-authorization--21-october-2026)
+     now records standing authorization, within the existing project scope,
+     for substantive, relevant, nonduplicative discussion contributions,
+     appropriate edits to our own comments, and appropriate PRs through the
+     normal contribution workflow, without separate permission each time.
+
+     Read current threads and check for duplicates; batch related findings,
+     update an existing contribution or use a relevant reply where appropriate,
+     and link reproducible evidence with accurate scope and attribution.
+     Push a corresponding ledger audit before every upstream post, reply or
+     substantive edit, then read back and record the outcome and permalink.
+     The audit is part of the authorized workflow, not a permission gate.
+     There is no posting quota. Routine progress and bookkeeping stay here.
+
+     Policy maintenance only: no upstream announcement, post, edit or PR, and
+     no mathematical rerun. Prompt 3 and both verified comment corrections
+     remain complete. The contribution tally is unchanged: 27 discussion
+     contributions, one closed maintenance PR, zero accepted authored solves.

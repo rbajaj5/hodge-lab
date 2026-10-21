@@ -51,11 +51,32 @@ scope. It is now included in the intended monitoring scope. No external
 scheduled monitor was changed by this update.
 
 
-## Default publication destination — 21 October 2026
+## Standing upstream publication authorization — 21 October 2026
 
-The latest user instruction favors our own repositories or contributor clone
-for further pushes; upstream publication is not required. Keep ordinary work
-and bookkeeping on our side unless the user explicitly directs an upstream
-action. A notebook or fork push does not itself authorize a discussion edit.
-The ledger-before-publication and verified-outcome policies still apply to
-any future specifically authorized upstream action.
+The user gives standing authorization for substantive, relevant, nonduplicative
+contributions to hodge-computer/sextics within our existing project scope.
+This includes discussion contributions, appropriate edits to our own comments,
+and appropriate PRs through the normal contribution workflow. Do not request
+separate permission for each qualifying contribution. The earlier offer to
+push to our own clone provided another destination; it did not prohibit
+upstream contributions. This clarification replaces the restrictive default
+publication-destination interpretation, without expanding the project scope.
+
+- Read the current thread and check for duplicates before publishing.
+- Share a substantive result, correction, useful independent check, or
+  well-supported observation that advances the discussion. Keep routine
+  progress reports and bookkeeping in Hodge Lab.
+- Batch closely related findings. Update an existing contribution or use a
+  relevant reply when appropriate.
+- Link reproducible evidence, preserve attribution, and state verification
+  limits accurately.
+- Push the corresponding Hodge Lab ledger audit before every upstream post,
+  reply, or substantive edit. After publication, read back the result and
+  record its outcome and permalink in Hodge Lab.
+- Treat the ledger audit as part of the already authorized workflow, not
+  another permission gate.
+- Use no posting quota. Publish when there is something worthwhile to
+  contribute; do not post merely to announce this policy change.
+
+Prompt 3 and the two verified comment corrections remain complete. Do not
+rerun or republish them. Apply this clarified policy to subsequent work.
