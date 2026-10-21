@@ -1,0 +1,58 @@
+{
+  "original_patch": {
+    "bytes": 396733,
+    "sha256": "78073356288484b2cb0742237a93f21220c2127b30ffbb5e857af8dc626b32bc"
+  },
+  "transport_patch": {
+    "bytes": 154923,
+    "sha256": "764f2fa3f8d3c8796b56c6926b5ef3d5c43ee601e70f3687b3aa51d8004df175"
+  },
+  "compressed": {
+    "bytes": 40300,
+    "sha256": "dc8e539d490f3bd68e231841d7829d258531f6ae54df1ee3139e223f2b1d4616",
+    "encoding": "lzma preset=9, base64",
+    "base64_length": 53736
+  },
+  "base_commit": "e057d7e98ce6ab58a05dc80d76879eaf772f381c",
+  "omitted_generated_assets": [
+    {
+      "path": "visualizations/skew-small-obstruction.png",
+      "bytes": 131804,
+      "sha256": "7162c62ad6241ae5e4bd4cd5db39cee723d6284b001a6b001486e5ea78a2dccf"
+    },
+    {
+      "path": "visualizations/skew-small-obstruction.svg",
+      "bytes": 97563,
+      "sha256": "2d57409a91b8a9c05adf22f1207b463dadf41a639da9bf46ef0c3ebced2e1941"
+    }
+  ],
+  "regeneration_command": "python scripts/visualize_skew_small_obstruction.py",
+  "source_thread": "6ad7ae7c-cb1c-8331-b721-dfa837061a60",
+  "source_message": "abce6379-b620-58e3-92c1-8a91330424d0",
+  "retained_sections_identical": "reported by exporting ChatGPT; complete original patch not transferred",
+  "chunks": [
+    {
+      "offset": 0,
+      "length": 16000,
+      "sha256": "0c91e8af8a969f15c904cf6de93156acf57c05e5129e193afc71176937cf7853"
+    },
+    {
+      "offset": 16000,
+      "length": 16000,
+      "sha256": "52c1706df84810051b287f22daccdadfe1405458c310f9f516c41993922ba38d",
+      "source_message": "3e1c6232-cf13-5804-a52f-9f9b75c34eba"
+    },
+    {
+      "offset": 32000,
+      "length": 16000,
+      "sha256": "0f139d39fb91b810c0c88b989eb88c7030e66162c064f4d1f58b518209a8be3c",
+      "source_message": "8869c0e4-144a-55db-9529-a740d9dc3d57"
+    },
+    {
+      "offset": 48000,
+      "length": 5736,
+      "sha256": "123996eda0f41acbdb993c5ee0c8fcb90ce3bf6ba83160336a6fa76c929c5737",
+      "source_message": "8f2c9098-3629-5f4b-80f0-0f7cfa94586b"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "started_utc": "2026-10-21T23:33:15.839143+00:00",
+  "base": "e057d7e98ce6ab58a05dc80d76879eaf772f381c",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "matplotlib": "3.11.1",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "process_limit_seconds": 60,
+  "batch_limit_seconds": 180,
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_skew_small_obstruction.py"
+      ],
+      "cwd": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\skew-publication-handoff\\local-validation",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "{\n  \"columns_checked\": 280,\n  \"requirements_passed\": 299,\n  \"rhs_pairing\": \"1\",\n  \"earliest_failure_degree\": 5,\n  \"earliest_failure_columns\": [\n    {\n      \"component\": \"U\",\n      \"exponents\": [\n        1,\n        1,\n        0,\n        3\n      ],\n      \"pairing\": \"-1512/5\"\n    },\n    {\n      \"component\": \"r\",\n      \"exponents\": [\n        0,\n        2,\n        0,\n        3\n      ],\n      \"pairing\": \"-3024/5\"\n    },\n    {\n      \"component\": \"w\",\n      \"exponents\": [\n        0,\n        1,\n        1,\n        3\n      ],\n      \"pairing\": \"-1512/5\"\n    },\n    {\n      \"component\": \"t\",\n      \"exponents\": [\n        0,\n        1,\n        0,\n        4\n      ],\n      \"pairing\": \"-6048/5\"\n    }\n  ],\n  \"mutation_omit_first_dual_term_on_constant_NU\": \"36\",\n  \"mutation_omit_denominator_derivative_nonzero_pairings\": [],\n  \"elapsed_seconds\": 0.014234700007364154\n}\n",
+      "stderr": "",
+      "seconds": 0.125
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/reduce_skew_small_obstruction.py"
+      ],
+      "cwd": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\skew-publication-handoff\\local-validation",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "{\n  \"scope\": \"5 exact universal horizontal reductions only; source transport, connection, rank screens not rerun\",\n  \"sympy\": \"1.14.0\",\n  \"python\": \"3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]\",\n  \"reduction_identity\": \"U^k omega0 = remainder*omega0 + d_U(Q z)\",\n  \"checks\": [\n    {\n      \"k\": 0,\n      \"remainder\": [\n        \"1\",\n        \"0\"\n      ],\n      \"exact_Q\": \"0\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 1,\n      \"remainder\": [\n        \"0\",\n        \"1\"\n      ],\n      \"exact_Q\": \"0\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 2,\n      \"remainder\": [\n        \"-c/(3*a)\",\n        \"-2*b/(3*a)\"\n      ],\n      \"exact_Q\": \"-2/a\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 3,\n      \"remainder\": [\n        \"-2*(9*a*d - 4*b*c)/(27*a**2)\",\n        \"-(21*a*c - 16*b**2)/(27*a**2)\"\n      ],\n      \"exact_Q\": \"-2*(3*U*a - 8*b)/(9*a**2)\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 4,\n      \"remainder\": [\n        \"(252*a*b*d + 117*a*c**2 - 112*b**2*c)/(405*a**3)\",\n        \"-4*(81*a**2*d - 132*a*b*c + 56*b**3)/(405*a**3)\"\n      ],\n      \"exact_Q\": \"-2*(27*U**2*a**2 - 42*U*a*b - 117*a*c + 112*b**2)/(135*a**3)\",\n      \"identity_residual\": \"0\"\n    }\n  ],\n  \"N_r_U2_D_a_example\": {\n    \"f0\": \"-c/(3*a**2)\",\n    \"f1\": \"-2*b/(3*a**2)\",\n    \"correction\": \"-2/a**2\",\n    \"a_divides_c\": false,\n    \"nonzero_polynomial_remainder\": \"-r*t**3/7 + r*t/7\"\n  },\n  \"archive_bindings\": [\n    \"basis\",\n    \"four Y0 physical coefficients\"\n  ],\n  \"denominator_bound\": \"Each reduced horizontal component N_i/a, deg_total N_i<=4, lies in a^-4 Q[r,w,t]^2; this is only a common-denominator upper bound. No inclusion in degree-six polynomial or H/a screens follows.\",\n  \"seconds\": 0.18799999996554106\n}\n",
+      "stderr": "",
+      "seconds": 2.125
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/visualize_skew_small_obstruction.py"
+      ],
+      "cwd": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\skew-publication-handoff\\local-validation",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "Rendered selected coefficients from the exact replay JSON.\n",
+      "stderr": "",
+      "seconds": 2.6719999999622814
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": "scripts/check_skew_small_obstruction.py",
+      "sha256": "2cd7488ac10bbbeacdf5a664def7d6beb8f12093d69c1ede45399ef550f415b5",
+      "matches": true
+    },
+    {
+      "path": "scripts/reduce_skew_small_obstruction.py",
+      "sha256": "ecc2938da90e00779911d2386161ddfcd985154ce06d4d637b60d11ffef97046",
+      "matches": true
+    },
+    {
+      "path": "scripts/visualize_skew_small_obstruction.py",
+      "sha256": "ffa758507ffff6979164f5dcb6a3469702acac900184a778e3ab993871c75a60",
+      "matches": true
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_primitive_notes.md",
+      "sha256": "722cdb2601d2f3ade9ce9a8f034a949763ce85611d061197f7658e001cfcacc0",
+      "matches": true
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_primitive_system_Y0.json",
+      "sha256": "5362be3d42e97ef17dcc0356fe0ad720b508d8bef3999f8ff2bcdcb28ccc35a6",
+      "matches": true
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_screen_Y0_deg6_1_p1000003.json",
+      "sha256": "b55eee5488b902d153a49c4ba5db3c89d581e52bc26cbe4c1142b129377b3fac",
+      "matches": true
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_screen_Y0_deg6_a_p1000003.json",
+      "sha256": "8002620bfc614215dd475f7acdfaaa444564f8507935f9cf5a95c2e0ff17c7a5",
+      "matches": true
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/search_rank2_polynomial.py",
+      "sha256": "69aad61454cee727108f9045cc1281f408b3fec0f17b3f4cf07026679110564c",
+      "matches": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+      "matches": true
+    },
+    {
+      "path": "LEDGER.md",
+      "sha256": "da8f38a6c88bb451d49a73bfba27933a692f829d834c6ecbbcb27fcbc37cef18",
+      "matches": true
+    },
+    {
+      "path": "notes/skew-base-derivatives.md",
+      "sha256": "3853553270415d428e66b54a467d920a2e1543c5a61a4316fe69eda30e89f625",
+      "matches": true
+    },
+    {
+      "path": "results/skew-base-derivatives/inputs.json",
+      "sha256": "ae2f022286d872554c4f61ba365f5c3726584db2b19ad83523ec4bed79ff52d7",
+      "matches": true
+    },
+    {
+      "path": "results/chi-target-source/replay.json",
+      "sha256": "bbc2cd67202e617253c21586fe249a837a5aca9a0b8a368149bb58bf5de9b7b2",
+      "matches": true
+    },
+    {
+      "path": "results/physical-source-transport-audit/replay.json",
+      "sha256": "5621f625076ba3e800d25dc22715d4d23e16e39644accd2385e5b0ed9733b064",
+      "matches": true
+    },
+    {
+      "path": "results/covariant-jet-audit/replay.json",
+      "sha256": "814082f93d2b5ee0f3f597f3f421e028e00c54bf406ecaa14fbf49ed0f115fe9",
+      "matches": true
+    }
+  ],
+  "scope": "Fresh execution of supplied small coefficient and reduction checkers; no previous research or rank screens rerun. Historical receipts preserved unchanged. Counts are not additive.",
+  "historical_ledger": {
+    "bytes": 314365,
+    "sha256": "da8f38a6c88bb451d49a73bfba27933a692f829d834c6ecbbcb27fcbc37cef18",
+    "preserved": true
+  },
+  "receipt_comparisons": [
+    {
+      "receipt": "three-coefficient-replay.json",
+      "mathematical_outputs_identical": true,
+      "excluded_environment_timing_fields": [
+        "python",
+        "elapsed_seconds"
+      ]
+    },
+    {
+      "receipt": "horizontal-reduction.json",
+      "mathematical_outputs_identical": true,
+      "excluded_environment_timing_fields": [
+        "python",
+        "seconds"
+      ]
+    }
+  ],
+  "regenerated_visualizations": [
+    {
+      "path": "visualizations/skew-small-obstruction.png",
+      "bytes": 116185,
+      "sha256": "8aa5cb5cf7bed169aadb3129cdba75e155c72e0e449d1439ce4b275b1f1c218f",
+      "original_sha256": "7162c62ad6241ae5e4bd4cd5db39cee723d6284b001a6b001486e5ea78a2dccf",
+      "identical_bytes": false,
+      "scope": "Regenerated from the exact replay; renderer/platform metadata may differ. Visual inspection required."
+    },
+    {
+      "path": "visualizations/skew-small-obstruction.svg",
+      "bytes": 97320,
+      "sha256": "39a3e5006b15bad53fb4354ec624829e0266c02e64b73a19ca31eafda4559ad7",
+      "original_sha256": "2d57409a91b8a9c05adf22f1207b463dadf41a639da9bf46ef0c3ebced2e1941",
+      "identical_bytes": false,
+      "scope": "Regenerated from the exact replay; renderer/platform metadata may differ. Visual inspection required."
+    }
+  ],
+  "status": "PASS",
+  "batch_seconds": 5.375,
+  "visual_inspection": "PNG inspected in Codex: all coefficient labels, numbers, source columns and scope text readable; no clipping detected. Original rendered assets were omitted only for transfer and regenerated from the retained code/data."
+}

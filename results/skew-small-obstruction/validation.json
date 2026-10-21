@@ -1,0 +1,101 @@
+{
+  "process_limit_seconds": 60,
+  "batch_limit_seconds": 180,
+  "batch_seconds": 4.412552269001026,
+  "runs": [
+    {
+      "name": "coefficient check from final path",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "scripts/check_skew_small_obstruction.py"
+      ],
+      "cwd": "/workspace/scratch/b5ce893745f7/skew118-review/repo",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "{\n  \"columns_checked\": 280,\n  \"requirements_passed\": 299,\n  \"rhs_pairing\": \"1\",\n  \"earliest_failure_degree\": 5,\n  \"earliest_failure_columns\": [\n    {\n      \"component\": \"U\",\n      \"exponents\": [\n        1,\n        1,\n        0,\n        3\n      ],\n      \"pairing\": \"-1512/5\"\n    },\n    {\n      \"component\": \"r\",\n      \"exponents\": [\n        0,\n        2,\n        0,\n        3\n      ],\n      \"pairing\": \"-3024/5\"\n    },\n    {\n      \"component\": \"w\",\n      \"exponents\": [\n        0,\n        1,\n        1,\n        3\n      ],\n      \"pairing\": \"-1512/5\"\n    },\n    {\n      \"component\": \"t\",\n      \"exponents\": [\n        0,\n        1,\n        0,\n        4\n      ],\n      \"pairing\": \"-6048/5\"\n    }\n  ],\n  \"mutation_omit_first_dual_term_on_constant_NU\": \"36\",\n  \"mutation_omit_denominator_derivative_nonzero_pairings\": [],\n  \"elapsed_seconds\": 0.023298410000279546\n}\n",
+      "stderr": "",
+      "seconds": 0.1664843680046033
+    },
+    {
+      "name": "relative reduction from final path",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "scripts/reduce_skew_small_obstruction.py"
+      ],
+      "cwd": "/workspace/scratch/b5ce893745f7/skew118-review/repo",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "{\n  \"scope\": \"5 exact universal horizontal reductions only; source transport, connection, rank screens not rerun\",\n  \"sympy\": \"1.14.0\",\n  \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\",\n  \"reduction_identity\": \"U^k omega0 = remainder*omega0 + d_U(Q z)\",\n  \"checks\": [\n    {\n      \"k\": 0,\n      \"remainder\": [\n        \"1\",\n        \"0\"\n      ],\n      \"exact_Q\": \"0\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 1,\n      \"remainder\": [\n        \"0\",\n        \"1\"\n      ],\n      \"exact_Q\": \"0\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 2,\n      \"remainder\": [\n        \"-c/(3*a)\",\n        \"-2*b/(3*a)\"\n      ],\n      \"exact_Q\": \"-2/a\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 3,\n      \"remainder\": [\n        \"-2*(9*a*d - 4*b*c)/(27*a**2)\",\n        \"-(21*a*c - 16*b**2)/(27*a**2)\"\n      ],\n      \"exact_Q\": \"-2*(3*U*a - 8*b)/(9*a**2)\",\n      \"identity_residual\": \"0\"\n    },\n    {\n      \"k\": 4,\n      \"remainder\": [\n        \"(252*a*b*d + 117*a*c**2 - 112*b**2*c)/(405*a**3)\",\n        \"-4*(81*a**2*d - 132*a*b*c + 56*b**3)/(405*a**3)\"\n      ],\n      \"exact_Q\": \"-2*(27*U**2*a**2 - 42*U*a*b - 117*a*c + 112*b**2)/(135*a**3)\",\n      \"identity_residual\": \"0\"\n    }\n  ],\n  \"N_r_U2_D_a_example\": {\n    \"f0\": \"-c/(3*a**2)\",\n    \"f1\": \"-2*b/(3*a**2)\",\n    \"correction\": \"-2/a**2\",\n    \"a_divides_c\": false,\n    \"nonzero_polynomial_remainder\": \"-r*t**3/7 + r*t/7\"\n  },\n  \"archive_bindings\": [\n    \"basis\",\n    \"four Y0 physical coefficients\"\n  ],\n  \"denominator_bound\": \"Each reduced horizontal component N_i/a, deg_total N_i<=4, lies in a^-4 Q[r,w,t]^2; this is only a common-denominator upper bound. No inclusion in degree-six polynomial or H/a screens follows.\",\n  \"seconds\": 0.22006021199922543\n}\n",
+      "stderr": "",
+      "seconds": 2.3590231370035326
+    },
+    {
+      "name": "reproducible selected-row visualization",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/visualize_skew_small_obstruction.py"
+      ],
+      "cwd": "/workspace/scratch/b5ce893745f7/skew118-review/repo",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "Rendered selected coefficients from the exact replay JSON.\n",
+      "stderr": "mkdir -p failed for path /root/.config/matplotlib: [Errno 30] Read-only file system: '/root/.config'\nMatplotlib created a temporary cache directory at /tmp/matplotlib-zdfe7pym because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\n",
+      "seconds": 2.0492599360004533
+    },
+    {
+      "name": "plot label-width repair after visual inspection",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/visualize_skew_small_obstruction.py"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "seconds": 1.7583570229980978,
+      "stdout": "Rendered selected coefficients from the exact replay JSON.\n",
+      "stderr": "mkdir -p failed for path /root/.config/matplotlib: [Errno 30] Read-only file system: '/root/.config'\nMatplotlib created a temporary cache directory at /tmp/matplotlib-swbqk8ry because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\n"
+    },
+    {
+      "name": "final plot: coefficient labels as explicit full-width cells",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/visualize_skew_small_obstruction.py"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "seconds": 1.7030364890015335,
+      "stdout": "Rendered selected coefficients from the exact replay JSON.\n",
+      "stderr": ""
+    }
+  ],
+  "first_independent_runs": {
+    "coefficient_requirements": 299,
+    "coefficient_internal_seconds": 0.015059487,
+    "reduction_identities": 5,
+    "reduction_internal_seconds": 0.123405569,
+    "reduction_process_seconds": 0.273
+  },
+  "counts_are_not_additive": true,
+  "source_access_limits": {
+    "discussion_request_seconds": 30,
+    "attachment_request_seconds": 30,
+    "git_clone_and_checkout_seconds_each": 50
+  },
+  "source_reader_development": {
+    "web_reader": "DisabledError; public HTML fetch succeeded once",
+    "first_extraction": "Regex stopped at a nested table; discarded and replaced",
+    "second_extraction": "KeyError due to permalink element IDs; corrected to require exact numeric comment-root IDs",
+    "final_extraction": "Nested table aware extraction; all six comment bodies captured; rendered math may retain GitHub escaping. Raw Markdown/edit timestamps unavailable."
+  },
+  "script_hashes": {
+    "scripts/check_skew_small_obstruction.py": "2cd7488ac10bbbeacdf5a664def7d6beb8f12093d69c1ede45399ef550f415b5",
+    "scripts/reduce_skew_small_obstruction.py": "ecc2938da90e00779911d2386161ddfcd985154ce06d4d637b60d11ffef97046",
+    "scripts/visualize_skew_small_obstruction.py": "ffa758507ffff6979164f5dcb6a3469702acac900184a778e3ab993871c75a60"
+  },
+  "visual_review": "Two row-label layouts clipped long labels; the final render uses explicit coefficient cells. Only plotting repeated, no mathematical checks repeated.",
+  "link_validation_development": "Initial regex misidentified a coefficient expression inside backticks as a Markdown link; final check strips inline code first.",
+  "missing_local_note_links": [],
+  "packaging_repair": "git diff --check initially flagged Matplotlib SVG path trailing spaces; removed trailing spaces in generated SVG and added the same normalization to the plot generator. No math or visual geometry changed.",
+  "final_visual_inspection": "Coefficient labels fully visible and values match the exact selected-row data."
+}

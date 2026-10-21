@@ -1,0 +1,30 @@
+{
+  "status": "blocked before audit push; upstream reply not sent",
+  "upstream_reply_to": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252",
+  "discussion_id": "D_kwDOVLOOJc4AqP2y",
+  "parent_comment_id": "DC_kwDOVLOOJc4BIyQ8",
+  "prepublication_audit_required": true,
+  "audit_push_verified": false,
+  "permalink": null,
+  "contribution_tally": {
+    "discussion_contributions": 28,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "outcome": "No audit commit was created remotely, no branch was updated, and no upstream publication request was sent. Local patch is ready for the authorized Codex environment.",
+  "checked_utc": "2026-10-21T20:19:36.629087+00:00",
+  "verified_remote_head": "e057d7e98ce6ab58a05dc80d76879eaf772f381c",
+  "failure": {
+    "operation": "GitHub integration create_blob for the reviewed note, before tree/commit/ref creation",
+    "endpoint": "POST /repos/rbajaj5/hodge-lab/git/blobs",
+    "status": 403,
+    "message": "Resource not accessible by integration",
+    "attempts_this_task": 1,
+    "content_bytes": 11364
+  },
+  "cli_fallback": {
+    "gh_available": false,
+    "git_credential_helper_configured": false,
+    "authentication_retries": 0
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "date_utc": "2026-10-21T20:14:29.260582+00:00",
+  "hodge_lab_base": "e057d7e98ce6ab58a05dc80d76879eaf772f381c",
+  "upstream_head": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+  "discussion_fetch": {
+    "url": "https://github.com/hodge-computer/sextics/discussions/127",
+    "status": 200,
+    "bytes": 443941,
+    "sha256": "aa008e148da30db26ff73476d4b2b4a6059c85c58455019658ced1e271abe043",
+    "fetched_utc": "2026-10-21T20:09:37.534210+00:00",
+    "seconds": 1.180779669994081
+  },
+  "companion_attachment": {
+    "url": "https://github.com/user-attachments/files/33736319/one_reflection_skew_twisted_companions.zip",
+    "status": 200,
+    "bytes": 48403,
+    "sha256": "3901f358ec9f1f46b6f4900cba80aa82160dd50d28e86e766aae826e39a960be",
+    "seconds": 0.4898096059987438
+  },
+  "sources": [
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_primitive_notes.md",
+      "sha256": "722cdb2601d2f3ade9ce9a8f034a949763ce85611d061197f7658e001cfcacc0",
+      "attribution": "fqlx; preserved from the pinned public companion attachment"
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_primitive_system_Y0.json",
+      "sha256": "5362be3d42e97ef17dcc0356fe0ad720b508d8bef3999f8ff2bcdcb28ccc35a6",
+      "attribution": "fqlx; preserved from the pinned public companion attachment"
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_screen_Y0_deg6_1_p1000003.json",
+      "sha256": "b55eee5488b902d153a49c4ba5db3c89d581e52bc26cbe4c1142b129377b3fac",
+      "attribution": "fqlx; preserved from the pinned public companion attachment"
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/rank2_screen_Y0_deg6_a_p1000003.json",
+      "sha256": "8002620bfc614215dd475f7acdfaaa444564f8507935f9cf5a95c2e0ff17c7a5",
+      "attribution": "fqlx; preserved from the pinned public companion attachment"
+    },
+    {
+      "path": "results/skew-small-obstruction/inputs/fqlx/search_rank2_polynomial.py",
+      "sha256": "69aad61454cee727108f9045cc1281f408b3fec0f17b3f4cf07026679110564c",
+      "attribution": "fqlx; preserved from the pinned public companion attachment"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    },
+    {
+      "path": "LEDGER.md",
+      "sha256": "da8f38a6c88bb451d49a73bfba27933a692f829d834c6ecbbcb27fcbc37cef18",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    },
+    {
+      "path": "notes/skew-base-derivatives.md",
+      "sha256": "3853553270415d428e66b54a467d920a2e1543c5a61a4316fe69eda30e89f625",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    },
+    {
+      "path": "results/skew-base-derivatives/inputs.json",
+      "sha256": "ae2f022286d872554c4f61ba365f5c3726584db2b19ad83523ec4bed79ff52d7",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    },
+    {
+      "path": "results/chi-target-source/replay.json",
+      "sha256": "bbc2cd67202e617253c21586fe249a837a5aca9a0b8a368149bb58bf5de9b7b2",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    },
+    {
+      "path": "results/physical-source-transport-audit/replay.json",
+      "sha256": "5621f625076ba3e800d25dc22715d4d23e16e39644accd2385e5b0ed9733b064",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    },
+    {
+      "path": "results/covariant-jet-audit/replay.json",
+      "sha256": "814082f93d2b5ee0f3f597f3f421e028e00c54bf406ecaa14fbf49ed0f115fe9",
+      "attribution": "Hodge Lab pinned base, reused without executing old checkers"
+    }
+  ],
+  "reused_audits": [
+    "results/skew-base-derivatives/inputs.json",
+    "results/chi-target-source/replay.json",
+    "results/physical-source-transport-audit/replay.json",
+    "results/covariant-jet-audit/replay.json"
+  ],
+  "scope": "Independent selected-coefficient certificate and comparison only. Prior source, transport, jet, historical rank and formal audits not rerun."
+}

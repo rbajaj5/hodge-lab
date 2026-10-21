@@ -3857,3 +3857,101 @@ restricted to actual upstream activity.
      this pass. Tally remains **28 discussion contributions, one closed
      maintenance PR, zero accepted authored solves**. Historical ledger
      bytes are preserved; this checkpoint is an append.
+
+119. **21 October 2026 — Independent small skew certificate and companion-scope comparison.**
+     Audited checkpoint 118 against all six comments visible in live discussion
+     127 and fqlx's pinned twisted-companion packet. Notebook base
+     `e057d7e98ce6ab58a05dc80d76879eaf772f381c`; upstream
+     `a6b4cc49452abe31ead0be71d04e8146639896d9`. Both heads were refreshed and
+     unchanged. The attachment SHA-256 remains `3901f358ec9f1f46b6f4900cba80aa82160dd50d28e86e766aae826e39a960be`.
+
+     The exact three-coefficient dual for D=a and total numerator degree <=4
+     is correct. A standalone Fraction implementation reconstructs the
+     coefficient transpose and all 280 columns, with 299 explicit requirements.
+     The three equations force n2=n0, n0=1/36 and n2=0. All four components
+     are retained. At degree five an explicit numerator satisfies these three
+     rows but has full residual [rt]=5/3; it is not a primitive. The small
+     dual does not itself detect omission of denominator differentiation;
+     checkpoint 118's separate positive control supplies that check.
+
+     Scope comparison: 165 affine-in-U horizontal coefficients map directly
+     into fqlx's reported degree-six H/a space. The 70 vertical coefficients
+     are fiber-exact in the necessary rank-two equation. Five independent
+     polynomial reductions describe the other 45 horizontal coefficients;
+     U^2/a already produces genuine a^2 denominators. This does not establish
+     increased coverage, disjointness, or absence of another gauge. Relative
+     exact corrections need their base derivatives for absolute reconstruction.
+     The two historical 504-column / augmented-rank-505 screens remain
+     author-reported in this audit; they were not rerun.
+
+     Initial independent calculations took 0.015 and 0.123 seconds internally.
+     Final-path checkers under python -O and plotting passed in 4.413 seconds
+     total before a label-width-only plot repair. Every process was bounded
+     by 60 seconds, with a 180-second computation ceiling. No timeout.
+     The source reader's nested-table/ID extraction repairs and plot repair
+     are recorded as implementation work, not mathematical evidence.
+
+     [Certificate, overlap, limits and next calculation](notes/skew-small-obstruction-audit.md) ·
+     [Input pins](results/skew-small-obstruction/inputs.json) ·
+     [Coefficient replay](results/skew-small-obstruction/three-coefficient-replay.json) ·
+     [Relative reductions](results/skew-small-obstruction/horizontal-reduction.json) ·
+     [Commands and limits](results/skew-small-obstruction/validation.json) ·
+     [Review](results/skew-small-obstruction/review.json) ·
+     [Reproducible selected-row figure](visualizations/skew-small-obstruction.png).
+
+     **Publication audit:** a concise reply beneath fqlx's companion comment
+     19080252 is justified as an independent small certificate and scope
+     clarification, not a stronger coverage claim. Push this audit first;
+     only then publish, read back and record the actual permalink. The
+     [draft](results/skew-small-obstruction/comment-draft.md) and
+     [publication record](results/skew-small-obstruction/publication.json)
+     distinguish preparation from outcome. No upstream post is claimed here.
+
+     Completed source-transport/covariant-jet audits were reused, not rerun.
+     No primitive, unrestricted exclusion, homogeneous certificate-degree
+     bound, Lean proof, trace or clearing is constructed. The next targeted
+     calculation is containment of the 45 high-U covariant-divergence images
+     in the prior 504-column image, retaining absolute correction data.
+     Credit fqlx (Ben Burns) for source/connection/companion work, checkpoint
+     118 for the dual, and Benjamin E. Diamond and contributors for the
+     protected framework. Prepared for rbajaj5 with ChatGPT and parallel
+     AI-agent assistance. Independent means separate implementations, not
+     human review. Tally remains **28 discussion contributions, one closed
+     maintenance PR, zero accepted authored solves** until verified publication.
+
+     **Publication attempt:** the GitHub integration rejected creation of the
+     reviewed note blob with HTTP 403, "Resource not accessible by integration",
+     before any tree, commit or branch update. One write attempt; no repeated
+     authentication requests. Remote main was independently re-read at the
+     same e057d7e revision. This audit and reply remain local and unpublished.
+     The required ledger-first ordering therefore prevented an upstream post.
+     A checked patch is provided for the already authorized Codex workflow;
+     no extra publication permission is needed. Contribution tally unchanged.
+
+     **Codex handoff and prepublication refresh, 21 October 2026:** received
+     the original review through direct ChatGPT thread messages. The supplied
+     transport patch omits only generated PNG/SVG assets; all four chunks,
+     compressed bytes and the 154,923-byte patch passed their supplied hashes.
+     The full original patch hash remains supplied provenance, not a local
+     recomputation. Regenerated both figures from the retained script/data
+     and inspected the PNG. Original receipts and original asset hashes remain.
+     [Transfer manifest](results/skew-small-obstruction/transport-manifest.json).
+
+     Fresh isolated Codex replay passed the same 299 requirements/280 columns
+     and five universal reductions, plus basis/coefficient/nondivisibility
+     checks. Mathematical JSON matches the supplied receipts; counts are not
+     additive. All 15 input/script pins match. Three processes took 5.375s
+     total, with 60s per process and 180s batch limits; no timeout. The original
+     review's counts/timings remain distinct in its unchanged receipts.
+     [Local validation](results/skew-small-obstruction/codex-replay/validation.json).
+
+     Complete GraphQL refresh at 23:33:38 UTC found six comments and one reply;
+     both repository heads remain the pins above. Read fqlx's new
+     [compact source/kernel update](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825)
+     in context. Its results remain reported and unreplayed; no coverage
+     comparison or larger search was performed. The short certificate and
+     scope clarification are nonduplicative, with no stronger-exclusion claim.
+     The audited draft acknowledges the new result. Push this audit before
+     the authorized reply, then read back and record its permalink. Tally
+     remains 28 discussion contributions, one closed maintenance PR, zero
+     accepted authored solves until actual verified publication.

@@ -1,0 +1,779 @@
+{
+  "purpose": "Independent three-coefficient dual and its exact degree frontier",
+  "coordinate_order": [
+    "U",
+    "r",
+    "w",
+    "t"
+  ],
+  "operator": "60*a*grad(P7).N -72*P7*a*div(N)+72*P7*N.grad(a)",
+  "columns_checked": 280,
+  "requirements_passed": 299,
+  "selected_targets": [
+    [
+      0,
+      1,
+      0,
+      3
+    ],
+    [
+      2,
+      0,
+      12,
+      0
+    ],
+    [
+      2,
+      0,
+      12,
+      2
+    ]
+  ],
+  "dual_weights": [
+    "3/5",
+    "1/35",
+    "-1/35"
+  ],
+  "rhs_selected_coefficients": [
+    0,
+    35,
+    0
+  ],
+  "rhs_pairing": "1",
+  "full_selected_coefficient_maps": [
+    [
+      [
+        {
+          "exponents": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-60",
+          "degree": 0
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "60",
+          "degree": 2
+        },
+        {
+          "exponents": [
+            1,
+            1,
+            0,
+            3
+          ],
+          "coefficient": "-504",
+          "degree": 5
+        }
+      ],
+      [
+        {
+          "exponents": [
+            0,
+            2,
+            0,
+            3
+          ],
+          "coefficient": "-1008",
+          "degree": 5
+        }
+      ],
+      [
+        {
+          "exponents": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "coefficient": "-504",
+          "degree": 5
+        }
+      ],
+      [
+        {
+          "exponents": [
+            0,
+            1,
+            0,
+            4
+          ],
+          "coefficient": "-2016",
+          "degree": 5
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "exponents": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1260",
+          "degree": 0
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            6,
+            0
+          ],
+          "coefficient": "2520",
+          "degree": 6
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            6,
+            0
+          ],
+          "coefficient": "-1512",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            12,
+            0
+          ],
+          "coefficient": "1260",
+          "degree": 12
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            12,
+            0
+          ],
+          "coefficient": "-1512",
+          "degree": 15
+        }
+      ],
+      [
+        {
+          "exponents": [
+            2,
+            1,
+            6,
+            0
+          ],
+          "coefficient": "-504",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            12,
+            0
+          ],
+          "coefficient": "-504",
+          "degree": 15
+        }
+      ],
+      [
+        {
+          "exponents": [
+            2,
+            0,
+            7,
+            0
+          ],
+          "coefficient": "-504",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            13,
+            0
+          ],
+          "coefficient": "-6552",
+          "degree": 15
+        }
+      ],
+      [
+        {
+          "exponents": [
+            2,
+            0,
+            6,
+            1
+          ],
+          "coefficient": "-504",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            12,
+            1
+          ],
+          "coefficient": "-504",
+          "degree": 15
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "exponents": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "1260",
+          "degree": 2
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "coefficient": "2520",
+          "degree": 8
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            6,
+            2
+          ],
+          "coefficient": "-1512",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            12,
+            2
+          ],
+          "coefficient": "1260",
+          "degree": 14
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            12,
+            2
+          ],
+          "coefficient": "-1512",
+          "degree": 17
+        }
+      ],
+      [
+        {
+          "exponents": [
+            0,
+            0,
+            6,
+            1
+          ],
+          "coefficient": "420",
+          "degree": 7
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            6,
+            1
+          ],
+          "coefficient": "60",
+          "degree": 8
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            6,
+            2
+          ],
+          "coefficient": "-504",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            12,
+            1
+          ],
+          "coefficient": "420",
+          "degree": 13
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            12,
+            1
+          ],
+          "coefficient": "60",
+          "degree": 14
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            12,
+            2
+          ],
+          "coefficient": "-504",
+          "degree": 17
+        }
+      ],
+      [
+        {
+          "exponents": [
+            2,
+            0,
+            7,
+            2
+          ],
+          "coefficient": "-504",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            13,
+            2
+          ],
+          "coefficient": "-6552",
+          "degree": 17
+        }
+      ],
+      [
+        {
+          "exponents": [
+            2,
+            0,
+            6,
+            3
+          ],
+          "coefficient": "-1512",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            12,
+            3
+          ],
+          "coefficient": "-1512",
+          "degree": 17
+        }
+      ]
+    ]
+  ],
+  "full_dual_support": [
+    {
+      "component": "U",
+      "coefficients": [
+        {
+          "exponents": [
+            1,
+            1,
+            0,
+            3
+          ],
+          "coefficient": "-1512/5",
+          "degree": 5
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            6,
+            0
+          ],
+          "coefficient": "72",
+          "degree": 6
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            6,
+            2
+          ],
+          "coefficient": "-72",
+          "degree": 8
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            6,
+            0
+          ],
+          "coefficient": "-216/5",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            6,
+            2
+          ],
+          "coefficient": "216/5",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            12,
+            0
+          ],
+          "coefficient": "36",
+          "degree": 12
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            12,
+            2
+          ],
+          "coefficient": "-36",
+          "degree": 14
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            12,
+            0
+          ],
+          "coefficient": "-216/5",
+          "degree": 15
+        },
+        {
+          "exponents": [
+            3,
+            0,
+            12,
+            2
+          ],
+          "coefficient": "216/5",
+          "degree": 17
+        }
+      ]
+    },
+    {
+      "component": "r",
+      "coefficients": [
+        {
+          "exponents": [
+            0,
+            2,
+            0,
+            3
+          ],
+          "coefficient": "-3024/5",
+          "degree": 5
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            6,
+            1
+          ],
+          "coefficient": "-12",
+          "degree": 7
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            6,
+            1
+          ],
+          "coefficient": "-12/7",
+          "degree": 8
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            6,
+            0
+          ],
+          "coefficient": "-72/5",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            6,
+            2
+          ],
+          "coefficient": "72/5",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            0,
+            0,
+            12,
+            1
+          ],
+          "coefficient": "-12",
+          "degree": 13
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            12,
+            1
+          ],
+          "coefficient": "-12/7",
+          "degree": 14
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            12,
+            0
+          ],
+          "coefficient": "-72/5",
+          "degree": 15
+        },
+        {
+          "exponents": [
+            2,
+            1,
+            12,
+            2
+          ],
+          "coefficient": "72/5",
+          "degree": 17
+        }
+      ]
+    },
+    {
+      "component": "w",
+      "coefficients": [
+        {
+          "exponents": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "coefficient": "-1512/5",
+          "degree": 5
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            7,
+            0
+          ],
+          "coefficient": "-72/5",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            7,
+            2
+          ],
+          "coefficient": "72/5",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            13,
+            0
+          ],
+          "coefficient": "-936/5",
+          "degree": 15
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            13,
+            2
+          ],
+          "coefficient": "936/5",
+          "degree": 17
+        }
+      ]
+    },
+    {
+      "component": "t",
+      "coefficients": [
+        {
+          "exponents": [
+            0,
+            1,
+            0,
+            4
+          ],
+          "coefficient": "-6048/5",
+          "degree": 5
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            6,
+            1
+          ],
+          "coefficient": "-72/5",
+          "degree": 9
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            6,
+            3
+          ],
+          "coefficient": "216/5",
+          "degree": 11
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            12,
+            1
+          ],
+          "coefficient": "-72/5",
+          "degree": 15
+        },
+        {
+          "exponents": [
+            2,
+            0,
+            12,
+            3
+          ],
+          "coefficient": "216/5",
+          "degree": 17
+        }
+      ]
+    }
+  ],
+  "earliest_failure_degree": 5,
+  "earliest_failure_columns": [
+    {
+      "component": "U",
+      "exponents": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "pairing": "-1512/5"
+    },
+    {
+      "component": "r",
+      "exponents": [
+        0,
+        2,
+        0,
+        3
+      ],
+      "pairing": "-3024/5"
+    },
+    {
+      "component": "w",
+      "exponents": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "pairing": "-1512/5"
+    },
+    {
+      "component": "t",
+      "exponents": [
+        0,
+        1,
+        0,
+        4
+      ],
+      "pairing": "-6048/5"
+    }
+  ],
+  "degree5_selected_only_solution": [
+    [
+      {
+        "exponents": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1/36",
+        "degree": 0
+      }
+    ],
+    [
+      {
+        "exponents": [
+          0,
+          2,
+          0,
+          3
+        ],
+        "coefficient": "-5/3024",
+        "degree": 5
+      }
+    ],
+    [],
+    []
+  ],
+  "degree5_selected_only_residual_rt": "5/3",
+  "mutation_omit_first_dual_term_on_constant_NU": "36",
+  "mutation_omit_denominator_derivative_nonzero_pairings": [],
+  "limits": [
+    "No source/residue or covariant-jet replay",
+    "No claim of solvability at degree five",
+    "No full degree-five matrix elimination",
+    "No identification with companion ansatz"
+  ],
+  "python": "3.12.14",
+  "elapsed_seconds": 0.023298410000279546
+}
