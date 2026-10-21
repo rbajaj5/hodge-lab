@@ -1,0 +1,504 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-21T00:51:41.376103+00:00",
+  "baseline_snapshot": "20261020T234335Z",
+  "snapshot": "20261021T005141Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 16,
+    "records": 42,
+    "new_records": 0,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "discussion_changes": [],
+  "upstream_commit": "24b41de35a1f8822551cb5e38570d43b8ee483eb",
+  "proof_record_changes": [],
+  "publication_status": {
+    "accepted_monitored_instances": 6,
+    "open_monitored_instances": 7,
+    "cycle_three": "open; protected verification failed"
+  },
+  "proposal": {
+    "head": "39a846e695aa8584693f711d333789abde2dbfea",
+    "metadata": {
+      "number": 165,
+      "html_url": "https://github.com/hodge-computer/sextics/pull/165",
+      "title": "Solve cycle-three: paired-sign cubic and Jacobian residue transport",
+      "updated_at": "2026-10-21T00:27:29Z",
+      "state": "open",
+      "merged": false,
+      "merged_at": null
+    },
+    "author": "hodgepodgeconjecture",
+    "observed_at_utc": "2026-10-21T00:51:57.685770+00:00",
+    "observed_status": {
+      "pr_state": "open",
+      "merged": false,
+      "current_head": "39a846e695aa8584693f711d333789abde2dbfea",
+      "requested_head_unchanged": true,
+      "protected_run_conclusion": "failure",
+      "failed_step": "Verify exact statement, kernel replay, and axioms",
+      "failure_phase": "kernel-replay",
+      "docker_exit_code": 137,
+      "formal_acceptance": false,
+      "no_acceptance_record_on_pinned_main": true,
+      "prior_pr_body_unchanged": false
+    },
+    "run": {
+      "id": 39516661290,
+      "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39516661290",
+      "head_sha": "39a846e695aa8584693f711d333789abde2dbfea",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-20T23:41:31Z",
+      "updated_at": "2026-10-21T00:14:38Z"
+    },
+    "failure_diagnosis": {
+      "observed": "The protected command failed during the official kernel-replay Docker invocation with exit code 137; the retained kernel-replay.log is empty.",
+      "resource_interpretation": "Exit 137 is consistent with SIGKILL/resource termination. The logs contain no explicit OOM-killer diagnosis, so the precise cause is not established.",
+      "mathematical_failure_demonstrated": false,
+      "complete_kernel_replay_passed": false,
+      "trusted_final_theorem_audit_completed": false,
+      "compiler_stage_completed": true,
+      "compiler_stage_basis": "The pinned, hash-matched sandbox.py runs all compile commands and artifact checks before line106 kernel replay; the traceback reaches line106. All60 proposal compilation logs and2 protected-wrapper logs are retained.",
+      "compile_solution_axioms": "propext, Classical.choice, Quot.sound (printed in compile-Solution.log; not a completed final Audit.lean result).",
+      "no_fresh_replay_or_rerun": true
+    },
+    "new_author_reported_local_checks": {
+      "source": "Current PR165 body",
+      "all_60_modules_individually_replayed": true,
+      "reported_seconds": 640.8,
+      "reported_peak_child_RSS_KiB": 5413772,
+      "protected_wrappers_reported_replay_seconds": [
+        1.92,
+        2.22
+      ],
+      "development_final_audit": "Author reports Audit.lean logic succeeded after renaming only its executable entry point in a scratch copy; exact final type/protected declarations and standard axioms reported, witnessChecked=false.",
+      "verification_by_this_monitor": "Read the reported results only; no local rerun and no downloaded independent local-replay receipts.",
+      "boundary": "This does not repair the failed protected combined replay or establish acceptance."
+    },
+    "pr_body_hash_before": "2e33abd4fda4490b6220b734fe40e5b376823f3cba97a0c1590fc8720cabfc4f",
+    "pr_body_hash_after": "76829fb3c2e26960c1d9776a506dacb6d80040104e8dd1d081081467ec8b7bde"
+  },
+  "retained_ci_evidence": {
+    "id": 12310432380,
+    "name": "solve-165-39a846e695aa8584693f711d333789abde2dbfea",
+    "reported_transport_digest": "sha256:13588949d87fa9460ccc069b3223caf2182ad5b91f159d4def32a928a6fd23d4",
+    "reported_size_bytes": 32424,
+    "transport_digest_independently_verified": false,
+    "local_directory": "work/discussion-monitor/proposal165-ci-39516661290",
+    "files": [
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-BivariateExpressions.log",
+        "bytes": 73,
+        "sha256": "5836592e1b3da24d30d974c3ad9e199a926d59fdde56a8c2d64ba6a4b7ac4f99"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CoordinateIndependence.log",
+        "bytes": 566,
+        "sha256": "b038e703ec52e75c8d6dd2091570877c069f5836efea53a349ca51fbe5b217ab"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsA.log",
+        "bytes": 107,
+        "sha256": "aa9c8132ca81e4c93ce274eb60e93c58407d31c4b2ece2c5d6379fc38487b6f0"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsB.log",
+        "bytes": 106,
+        "sha256": "0eee5ece5138757803bd2983e930247e9418c15928efe6f51fac69b827767954"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsC.log",
+        "bytes": 106,
+        "sha256": "1a5c7cb441edff0c17d16b6c3bf058bbfdd9a4f213cf699a9201d972a46530ca"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsD.log",
+        "bytes": 106,
+        "sha256": "e4518a381fe9417a353d56c8ca35ae5f183d9a270118d0845d86007604187239"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsE.log",
+        "bytes": 106,
+        "sha256": "56a474b6ee51ac4951f006804fc2bcfd64f1609b8886fe17e434a25d050343a2"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsF.log",
+        "bytes": 106,
+        "sha256": "cd7b4cd821d1351a1b6ded135ccea3abc4ca885b99eb66f1df83b5d300775479"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsG.log",
+        "bytes": 106,
+        "sha256": "d007367b6031b05fa215fb8580de52736b496d3cad80ce2f0998d9015cb5fd9c"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCoefficientsH.log",
+        "bytes": 106,
+        "sha256": "f78a51bf1aab620b291f530a3f796b332619471b493f89c7988f21aa2b1ebee7"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicCovariants.log",
+        "bytes": 8040,
+        "sha256": "6c03894e35cc23abfe1fcd87981d99998b4a045673ae9f20bcd9a0e0836a34bf"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicDiagonal.log",
+        "bytes": 9032,
+        "sha256": "95a0e473eb74753b79394496f00af0d7129de2db5453e99ea3fb41dbf3978077"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicDifferential.log",
+        "bytes": 1891,
+        "sha256": "89be018e74d55c81daad4aab8ea0162443754da78316704cc6272352d712114b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicDominance.log",
+        "bytes": 112,
+        "sha256": "403549071d6a2bf159aa9b5b8f38025af11fb601982a9e3f33bd04b9200c2f7c"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicEncodingCheck.log",
+        "bytes": 106,
+        "sha256": "db01985aff25dc67af28140d12cf2189a2f574bf482679bd2c175b112b138173"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicFieldDifferential.log",
+        "bytes": 8553,
+        "sha256": "fb468261cebfb69bf96ed0450a4f196aad5fe76745592251709d4ef549ac95e4"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicFunctorial.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicGradeCheck.log",
+        "bytes": 94,
+        "sha256": "39e6748458a82b7e71229fc3708b2b8a3db07cae168daffcea6f8f8a4285518b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicIdentityData.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicIdentityEvaluation.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicIdentityProducts.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicJetCalculus.log",
+        "bytes": 6493,
+        "sha256": "a9873096aaea7009c94019c8322564fe6c9878f436ce140395ad64ae96f42f10"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicKronecker.log",
+        "bytes": 2812,
+        "sha256": "40e8205f951dbb0f3e3a95333a7d193267bbcd962b18414f79ac24607ec25baf"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicMap.log",
+        "bytes": 88,
+        "sha256": "adfb5c257c11d3997bb80a85b093e4a4b579bd4f651c09dfabdcea1399c5e17d"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicPoint.log",
+        "bytes": 174,
+        "sha256": "f77075bf7a36c10ebc7a905cc266f55545c7b5fa32c186b316d93471d8eb1518"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicReflectionData.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CubicSyzygy.log",
+        "bytes": 102,
+        "sha256": "43edfe6dd6a57f3c0b4188e1d3bb8691a7848c8b777135f0d9486215c9cf8780"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-CyclicCubic.log",
+        "bytes": 65,
+        "sha256": "b4283b5f728b4c393d4f27b7e3e72babb0ec27d1d7f960ee9663f6076e54afce"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-HodgeChecked.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-HodgeTarget.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianClearing.log",
+        "bytes": 103,
+        "sha256": "c387d8797d1e1794a5a5a17d7f1723fd151b29c92a9b0805b8480e5cab8afaae"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianDimension.log",
+        "bytes": 105,
+        "sha256": "6f7c77bf54538f6ca60ca5a75a0e986c0974103702ba73caa2d869a0885607a5"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianDomain.log",
+        "bytes": 102,
+        "sha256": "bdd3ef438275cff88f52abd5dc0eee94420fe2b20182f83367b52d15ea79ff0f"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianEmbedding.log",
+        "bytes": 443,
+        "sha256": "9081b94adc893148ea798edf432622c51e5ab897d380c692c3640f01a833c50a"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianFamily.log",
+        "bytes": 812,
+        "sha256": "537068126f75cb3afa7287bf4ef987a599b94ddf12a5cb7d0e7fb3680d2199a3"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianGeometry.log",
+        "bytes": 214,
+        "sha256": "dcc1a084c4c1f28a4f4c0df2cd20993baa7a06d8dad3e594e0c378500f7e21e9"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianHypersurface.log",
+        "bytes": 203,
+        "sha256": "29b985864c042bd039feeedbe0bf4ae7f850d670db0c3742688e912585f1aeff"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianIncidence.log",
+        "bytes": 1675,
+        "sha256": "f6544000c913ed99e80413356c44308413126ee9169912ebad1c928df1ceba9b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianLifting.log",
+        "bytes": 365,
+        "sha256": "f653d29d1bc3c609404b73b12cba6513d48f5de9f520112c65ccc1e48684af4c"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianModel.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianNormal.log",
+        "bytes": 3119,
+        "sha256": "d08946f8ca59de249080def54d67c94e96bffa54e2a2c3961fa0042e59e6611a"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianParameters.log",
+        "bytes": 224,
+        "sha256": "09d297b324156f4d686b073444dff781cb191fd3a744ac82d4d5383c89d7a9fa"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianResidue.log",
+        "bytes": 106,
+        "sha256": "162c5a05a0edbc7e06bd87785bd7533952ff971b558a2da56015b2882d503e88"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianSeed.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianSeedBinding.log",
+        "bytes": 1051,
+        "sha256": "be1c68f1cb1aebba839815349cfab86e114e9a97af265ff2204873fb606ae81b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-JacobianSource.log",
+        "bytes": 208,
+        "sha256": "732c37e8fac1095d7a0a0fa7e78488d6f93d9b76f49a5c3c2d9f005a288d2d3b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-MovingMap.log",
+        "bytes": 301,
+        "sha256": "49ed57e896cbc247a85a1650ce4c53dc69603281fe02b33191ac11542c3382d7"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalChart.log",
+        "bytes": 405,
+        "sha256": "c67f3bef3b2fce64f6df6da9bc5c380d6e1630710242eef22788cab3e690d10d"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalClearing.log",
+        "bytes": 107,
+        "sha256": "8e0ca47f230f6b574d78633cd4fcc082bf6e5134e291a0d5764446f4acecb655"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalCoordinates.log",
+        "bytes": 101,
+        "sha256": "7db7c09fe5d7c52b4b526fc9077b9831c308784df1e36b65d5707b723a9df1b5"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalCubicJets.log",
+        "bytes": 1032,
+        "sha256": "9c54a4a661ecc24b522138ad2651d6c8a63f954e4ec06e929db9825354bcc906"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalCubicTangent.log",
+        "bytes": 5952,
+        "sha256": "b8f4dbd2863045e068c903b38b5742c3e29c8eb4a509ba5cf9deb221f9ba0c3b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalCubicVolume.log",
+        "bytes": 1238,
+        "sha256": "92168dac84df6941c7823c90e4733800a8ec872ca682bc63bc1b3922dcc9b962"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalField.log",
+        "bytes": 195,
+        "sha256": "c2547d53c033f9f719112970a271d62370166717500c6cb2099312264126a521"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalJacobianCoordinates.log",
+        "bytes": 11656,
+        "sha256": "1336de6f7d72229d7be6fe75b812c83b9cf3f25ccc4153b3b389d6f2fe34a2c4"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalJacobianMap.log",
+        "bytes": 2016,
+        "sha256": "aa153acf09089bdd2fee2de1f3690e40ea00e94656d5a7a21a96df31891fc651"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalNormalTransport.log",
+        "bytes": 533,
+        "sha256": "30d513d72844731af6350b28575cb932862d1fce1741eb3b950a590099fec17f"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PhysicalPrimitive.log",
+        "bytes": 96,
+        "sha256": "03ca15599be76391e51d49e7776c800d3583c69ad955fc9217d6e492e9d48e9d"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-PolynomialDigitCheck.log",
+        "bytes": 106,
+        "sha256": "e5f6c37e8b5945107c371d6add20a585d8e717476081f11809e7eef2663f25ef"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-ResidueTransport.log",
+        "bytes": 98,
+        "sha256": "a9eb2e78617edeb10e09092423aef6638c1fca5162c076ca8967649e86ebf547"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-SignedExpressions.log",
+        "bytes": 1187,
+        "sha256": "f7264562ce4564f1dab2151bc471310eadd08c5319932cae2880839b26e5a7bd"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/compile-Solution.log",
+        "bytes": 84,
+        "sha256": "874d99dceaee6e17f8b6a8990fdacf903c035a101d328077ae94df2c2b65f62b"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/kernel-replay.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/report.json",
+        "bytes": 7403,
+        "sha256": "dde6d20cfa7b9e2d01f28b169ddec7153f7ecb472f2d2502f11886f78fb833d7"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/solution.html",
+        "bytes": 17582,
+        "sha256": "dcf89aab68a7adb801e73d97ad86c29e0283e3a7e0b81d4adfa1c5e0dfe02973"
+      },
+      {
+        "path": "work/discussion-monitor/proposal165-ci-39516661290/trusted-base-sandbox.py.txt",
+        "bytes": 7812,
+        "sha256": "c8a1febc230b57b5666667ba82da588e912c3b6262ea3d8299bb5f53031b71d9"
+      }
+    ],
+    "proposal_compile_log_count": 60,
+    "protected_wrapper_compile_log_count": 2,
+    "retained_report_result": "structure-only",
+    "report_source_hashes_match_prior_pinned_solution_manifest_and_wrapper": true
+  },
+  "failed_workflow_log": {
+    "path": "work/discussion-monitor/cycle-three-proposal165-20261021T0051-failed.log",
+    "sha256": "8e0bd3e7276db82de1a24776306d3b29b5f39b371f46c5de4c1741a82e645ebe"
+  },
+  "attribution_scope": "No new authored solve, accepted certificate, or attribution is inferred. Previous rbajaj5 context-not-premises credit remains as recorded.",
+  "new_substantive_rbajaj5_credit": [],
+  "checks_performed_here": [
+    "Fetched and compared every discussion/reply page, IDs, timestamps, body hashes and metadata.",
+    "Read current PR body and workflow/job status; inspected the failed-step log and retained report.",
+    "Read pinned verifier control flow and retained compile-Solution output; checked local evidence hashes.",
+    "Confirmed no change to the monitored main-branch acceptance, atlas or credit records."
+  ],
+  "checks_not_performed_here": [
+    "No Lean compilation, kernel replay, source repair or workflow rerun.",
+    "No independent execution or receipt audit of the author-reported local individual replays.",
+    "No host OOM-killer logs; the precise reason for exit 137 remains unestablished."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "a92446323c1a05c578be8124e1848182801e032bc5975d4b446f2cabd641e770",
+    "accepted-records.json": "c2c0658cab1b7af2b7b94e86bba71512b99ef75eeadacdda0795b294ebfd6530",
+    "comparison.json": "37b6aa1bb09277930b389fe8aee03b207b4fc07173a82933c49026db04bd0c1a",
+    "cycle-three-proposal165.json": "f7e9e34c6e1be59747089062c0bd2798d1460c6a807d33a3ca9632284a24c09e",
+    "discussion-111.json": "9ddbff6a5e511a04501aff86a93699c58ef1848efefe20acf8693a99f50800ea",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "5eb37edfa0b5cafb6de234b17690f8d09b8b95e290a5e48469e33548521ac42f",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "a7261072486425acf1fab8d77b45f646773a21eeb503494dc86b9d2ec9b09897",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "d49a49a2b4a708e7f65e5f1da427fd0c8498f821130491086dc2c0ef24eed253",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "7d65eb7d812d48dab1e1b09fe7557b82f46be3e7b8cd8d30f9164f48e1411a87",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "a2bc8ce984179e5e5f82b0798225523dd313e92bfb1f15fa419d663a2f19960c",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "3ef2bfb09342db2cdab92ba343ec078729929372b55f7e8bb5599dc0b3750182",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "b1a95964a8314a65199f3f1c18a2f99b2fc7050b2beef9494829faf462dd6c18",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "d6d7752c6ed1dd375373d98d661058aee0512bba37fa670f8fe5d078c220f4db",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "61402d6f546f27cd8612c08fc597928aa0dd1d994b69502599efc41b808baffe",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-44.json": "2c5ae95256e7f399c721501fabc1cae20a170a68c312e28da0576493910c9e2c",
+    "discussion-44.md": "415d0e977e3e0d6921a448dddc338d804dcf80ff1ef4fe0ab5d84527d8539fbb",
+    "discussion-55.json": "c0e397cc53e0522dc444279b91b3db730a9906cae916df6dc6c90328d4753700",
+    "discussion-55.md": "23cf68ee426abc1f96f5e1b4ffe83a01d74a30e5aca8ad7c21f1246d5d169125",
+    "discussion-56.json": "0747b779d7599446e0009b8574b4d53cc75f941cbff4ffae1227f76042699650",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "manifest.json": "0a98bd7c8b8f2190d946dfe378ebf04c7bb49ce759aa081271de6542a58c6422",
+    "proposal165-failed.log": "8e0bd3e7276db82de1a24776306d3b29b5f39b371f46c5de4c1741a82e645ebe",
+    "publication-status.json": "d467fdc2629b0cec8702d192b0cf5af77ed102270cd93a9492700cd23fb2ddee"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "Protected compilation completed, but the combined independent replay failed and the trusted final theorem audit did not run. Exit 137 is consistent with a killed process, not proof of a mathematical error or a specific OOM cause. The author separately reports successful individual local replay and a development audit; neither establishes protected acceptance."
+}

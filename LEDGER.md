@@ -2921,6 +2921,46 @@ conversations or evidence of an accepted solve.
     authored solves**.
     [Edit, proposal, attribution and verification-scope receipt](results/discussion-monitor/update-20261020T234335Z.json).
 
+100. **20 October 2026, 20:51 EDT / 21 October, 00:51 UTC — Cycle-three protected replay failed; local individual replay success reported.**
+     All pages of the 13 monitored discussions were compared with checkpoint
+     99: the same 26 comments and 16 replies, with no edits or removals.
+     [PR165](https://github.com/hodge-computer/sextics/pull/165) remains open
+     and unmerged at the unchanged head 39a846e695aa8584693f711d333789abde2dbfea.
+     Its [protected workflow](https://github.com/hodge-computer/sextics/actions/runs/39516661290)
+     has now **failed during combined kernel replay**. The failure occurred
+     at approximately 00:14 UTC, after the previous status check.
+
+     The failed-step log ends with Docker exit code 137 at the kernel-replay
+     invocation. The retained kernel-replay log is empty. The pinned verifier
+     control flow, together with all 60 proposal compilation logs and both
+     protected-wrapper logs, establishes that compilation and compiler-artifact
+     checks completed before this failure. The trusted final theorem audit
+     follows replay and did not run; the retained report says structure-only
+     and formalAcceptance=false. The printed standard axiom list in the
+     Solution compilation log is not a substitute for that final audit.
+
+     Exit 137 is consistent with a killed process or resource termination,
+     but the inspected logs contain no explicit OOM diagnosis. They establish
+     neither a mathematical error nor a successful full replay. We inspected
+     the workflow, retained evidence and verifier control flow; we did not
+     compile or replay the proposal, change its sources, or rerun CI.
+
+     Separately, the updated PR body now **reports** successful individual
+     official replay of all 60 modules in 640.80 seconds, with peak child RSS
+     5,413,772 KiB, plus both generated wrappers. It also reports a successful
+     development audit using the upstream Audit.lean logic with only an
+     executable entry-point rename in a scratch copy. These local checks
+     were not reproduced here and do not repair the failed protected run
+     or establish acceptance. Checkpoint 99 retains the earlier pending state.
+
+     At pinned main 24b41de35a1f8822551cb5e38570d43b8ee483eb, all monitored
+     acceptance, atlas and credit records remain unchanged: **six accepted/
+     published, seven open**. The prior acknowledgment of rbajaj5's exclusions
+     remains research context, not proof premises; no new credit is inferred.
+     No upstream action was taken. Our tally remains **27 discussion
+     contributions, one maintenance PR (closed), zero accepted authored solves**.
+     [Failure evidence, reported local checks and scope receipt](results/discussion-monitor/update-20261021T005141Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
