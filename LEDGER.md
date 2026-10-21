@@ -2961,6 +2961,52 @@ conversations or evidence of an accepted solve.
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Failure evidence, reported local checks and scope receipt](results/discussion-monitor/update-20261021T005141Z.json).
 
+101. **21 October 2026, 06:51 EDT / 10:51 UTC — Cycle-three accepted and published after sequential kernel replay.**
+     All pages of the 13 monitored discussions were compared with checkpoint
+     100. Their 26 comments and 16 replies are unchanged. The acceptance
+     records have advanced: [PR165](https://github.com/hodge-computer/sextics/pull/165),
+     credited to **hodgepodgeconjecture**, merged at **01:22:13 UTC** and
+     was published at **01:22:42 UTC**. At pinned main
+     fc84eb5862d83c3491cdd45cc35bddd151c45892,
+     [the cycle-three acceptance receipt](https://github.com/hodge-computer/sextics/blob/fc84eb5862d83c3491cdd45cc35bddd151c45892/data/cycle-three/acceptance.json)
+     has formalAcceptance=true, with matching atlas and solver-credit entries.
+     The monitored totals are now **seven accepted/published and six open**.
+
+     **What changed after the failure:** the earlier combined replay run
+     remains failed, as recorded in checkpoint 100. A
+     [new protected verification run](https://github.com/hodge-computer/sextics/actions/runs/39522253110)
+     succeeded on trusted base 24b41de35a1f8822551cb5e38570d43b8ee483eb.
+     Its receipt binds the same proposal head
+     39a846e695aa8584693f711d333789abde2dbfea. The statement hash and all
+     **62 submitted-file hashes** match the earlier failed-run report.
+     The trusted verifier now calls the official checker sequentially in
+     fresh read-only sandbox processes for every module, including helpers
+     and protected wrappers, then runs the same trusted final theorem audit.
+     Its time budget rose from 1,800 to 3,600 seconds and the job limit from
+     55 to 85 minutes; the 14,336 MB memory setting was unchanged. The
+     [publication workflow](https://github.com/hodge-computer/sextics/actions/runs/39526913302)
+     also succeeded after the owner's merge. The nested pre-merge verification
+     record awaiting owner approval is historical; the outer receipt records
+     completed acceptance and publication.
+
+     The [accepted explanation](https://github.com/hodge-computer/sextics/blob/fc84eb5862d83c3491cdd45cc35bddd151c45892/data/cycle-three/solution.md)
+     is byte-identical to the previously read proposal. This is the exact
+     q=1 cycle-three existential homogeneous certificate, permitting nonzero
+     Q, with no expanded witness or numerical denominator-degree bound. It
+     does not solve the separate cycle-q2 target or the general Hodge conjecture.
+     Its acknowledgment that rbajaj5's exclusions informed the existence
+     approach is unchanged and explicitly excludes their use as proof premises.
+     Acceptance credits hodgepodgeconjecture; no new authorship credit to us
+     or new independent replay of our exclusions is inferred.
+
+     We inspected the receipts, successful workflow outcomes and trusted
+     replay changes, compared the source/statement hashes, and confirmed the
+     explanation is unchanged. **We did not compile or replay Lean**, re-audit
+     every individual kernel log, or test the live website/CDN. No upstream
+     action was taken. Our tally remains **27 discussion contributions, one
+     maintenance PR (closed), zero accepted authored solves**.
+     [Acceptance, replay-transition and attribution receipt](results/discussion-monitor/update-20261021T105125Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

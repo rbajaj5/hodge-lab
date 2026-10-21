@@ -1,0 +1,391 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-21T10:51:25.744932+00:00",
+  "baseline_snapshot": "20261021T005141Z",
+  "snapshot": "20261021T105125Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 26,
+    "replies": 16,
+    "records": 42,
+    "new_records": 0,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "discussion_changes": [],
+  "upstream_commit": "fc84eb5862d83c3491cdd45cc35bddd151c45892",
+  "proof_record_changes": [
+    {
+      "instance": "cycle-three",
+      "before": null,
+      "after": {
+        "schemaVersion": 2,
+        "instanceId": "cycle-three",
+        "theorem": "Submission.certificate"
+      }
+    }
+  ],
+  "publication_status_changes": [
+    {
+      "instance": "cycle-three",
+      "before": {
+        "instance": "cycle-three",
+        "discussion": 55,
+        "formal_acceptance": null,
+        "record_status": "open",
+        "formal_status": "unproved",
+        "lean_verification_status": null,
+        "pull_request": null,
+        "credit": null
+      },
+      "after": {
+        "instance": "cycle-three",
+        "discussion": 55,
+        "formal_acceptance": true,
+        "record_status": "solved",
+        "formal_status": "proved",
+        "lean_verification_status": "accepted",
+        "pull_request": 165,
+        "credit": {
+          "githubLogin": "hodgepodgeconjecture",
+          "origin": "contribution",
+          "awardedAt": "2026-10-20T23:41:28Z"
+        }
+      }
+    }
+  ],
+  "publication_status": {
+    "accepted_monitored_instances": 7,
+    "open_monitored_instances": 6,
+    "cycle_three": "accepted and published"
+  },
+  "accepted_solution": {
+    "instance": "cycle-three",
+    "solver": "hodgepodgeconjecture",
+    "acceptance_receipt": {
+      "schemaVersion": 1,
+      "formalAcceptance": true,
+      "repository": "hodge-computer/sextics",
+      "instanceId": "cycle-three",
+      "githubLogin": "hodgepodgeconjecture",
+      "submittedAt": "2026-10-20T23:41:28Z",
+      "acceptedAt": "2026-10-21T01:22:13Z",
+      "publishedAt": "2026-10-21T01:22:42.324464+00:00",
+      "pullRequest": {
+        "number": 165,
+        "url": "https://github.com/hodge-computer/sextics/pull/165",
+        "headCommit": "39a846e695aa8584693f711d333789abde2dbfea",
+        "baseCommit": "24b41de35a1f8822551cb5e38570d43b8ee483eb",
+        "mergeCommit": "0f6e1fe61faac0c1729072491131b34583405531"
+      },
+      "run": {
+        "id": 39522253110,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39522253110",
+        "workflowPath": ".github/workflows/solve-proposal.yml",
+        "conclusion": "success"
+      },
+      "verification": {
+        "schemaVersion": 2,
+        "mode": "live",
+        "instanceId": "cycle-three",
+        "pullRequest": 165,
+        "githubLogin": "hodgepodgeconjecture",
+        "baseCommit": "24b41de35a1f8822551cb5e38570d43b8ee483eb",
+        "headCommit": "39a846e695aa8584693f711d333789abde2dbfea",
+        "checkedAt": "2026-10-21T00:38:30.963543+00:00",
+        "formalAcceptance": false,
+        "requiresOwnerMerge": true,
+        "verifierSha256": {
+          "scripts/proposals/check.py": "9d7af1c8a30c50ce6bca3c42c6d75d3a547b6a82516bc5581c784cd569158338",
+          "scripts/proposals/sandbox.py": "df0f1134adf01766f83f253cc4d60ff5d586e20449be538e8edddbfcc935b323",
+          "scripts/proposals/Audit.lean": "d1a381c70025c6de519e0b0e5e4da0db72eeba0881b843d9b9cd0e9dd459ed9f",
+          "scripts/proposals/review.py": "732b72f6799a4ead1827eeb0a22589578d2a2d208d018579fedde60530b1070d",
+          "formal/lean/HodgeComputer/Verify.lean": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3",
+          "formal/lean/lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+          ".github/solve-policy.json": "b96716fdc6e97378da72f6c788b57801b3852cc7559b268c3a4d2f8b77af8878",
+          ".github/workflows/solve-proposal.yml": "88c345dd105c9e30e5f38c9e0387ed7328d56e41c2a92786533421b501ba1e39"
+        },
+        "statementSha256": "7eb1499af886ce89d5b080b03ac505c2dfcc1c7889deb7eac63a1d8dec4cdcfb",
+        "sourceHashes": {
+          "BivariateExpressions.lean": "0df02047bc32737af585eb92584918dbb5c43746895b8012f8b7d73164251c11",
+          "CoordinateIndependence.lean": "0536a7055ecc4569705e4fb258c5a71aa604fcf8d845a3bd51003558fa6219a4",
+          "CubicCoefficientsA.lean": "495c0af8a71ff2739336883f65747f5d8fb92145ee79d59cc42f08c60e0e34cc",
+          "CubicCoefficientsB.lean": "27a62373d89d190085e5e690dd291ca0e743cb20b8c7011622db39942829a010",
+          "CubicCoefficientsC.lean": "7cfd8d320ddec6a94442abd2fddb08108aa00703c1d0831e0d118a7dffa6b7db",
+          "CubicCoefficientsD.lean": "3acf1dac5296cd500d6d75a17d50daab5d364a674093ca00e33af137f5a84ea4",
+          "CubicCoefficientsE.lean": "5eef4c18704e685b6a87ecfec74df26cae903b43ed64fdafb9004eb73296e960",
+          "CubicCoefficientsF.lean": "9da98680b028aae2400dccd16e8313f39cb100045214d9b86f96d0c3a17d0c09",
+          "CubicCoefficientsG.lean": "64ca83766888d7ea9f107da5a80a67d545e886cb58e3a54870e6d824b8c90c07",
+          "CubicCoefficientsH.lean": "4fcdb4a9804d0fd3268d0587ebfc38989e2a217eb36f01e569a6daeffc630b4e",
+          "CubicCovariants.lean": "4d2dfa471a4c85e1132831df6abf1104bc5504092fab712f833b4268039efad5",
+          "CubicDiagonal.lean": "3682a7d07fcb9aabde2f4b62fadfa3e2a54538f3d4c97ef3dec49690d6b25bba",
+          "CubicDifferential.lean": "9e8be18d9d87c91206e611eae3335b06e1c8b120f02bc7629ae3d1fcae56aa8c",
+          "CubicDominance.lean": "1f1c9b0957c1d58e3d009d8f8e16168343aa2380c53d627c586ddf1fe7226945",
+          "CubicEncodingCheck.lean": "0c89a5ee720b2ad9fe15d59cde26a07771be8786366af5f58531042782e8b9b0",
+          "CubicFieldDifferential.lean": "ea332f23cccc3498946490a36bb16bc804d22263bd8b45d436b68ed0d890ff0f",
+          "CubicFunctorial.lean": "0334a1fbde4d4c4a7311765acd25d77e4159cce9f348507e1eceaaee95e8d669",
+          "CubicGradeCheck.lean": "3e0b4d69c999512bb4b2e1cd7b5887a491db37cef4677df8137b1decd96d66c9",
+          "CubicIdentityData.lean": "b93c5847fa430a1a4942a10e72724b0251e947a859423272bb581c5f8ac51aaa",
+          "CubicIdentityEvaluation.lean": "b5ae931d22b0ad6b2289590d36651365984342a5fa821ad149b224e44fbce99d",
+          "CubicIdentityProducts.lean": "ab05dd6bf03308d8c1367fff5338c4abcf822c78ecca64c89fcbe16bb3656154",
+          "CubicJetCalculus.lean": "2b46ebca01905e6016be646ef4889e503e43804c7b5bf7e87981721ebfc69bea",
+          "CubicKronecker.lean": "e723f10a244c151d71c91dba4551d2448abd779a413b92ebe665788dd1e57590",
+          "CubicMap.lean": "5fd0a6a60950b216a9a0b89eca7804fd9d58f143ec9c3d9c8077e54c6f458c1d",
+          "CubicPoint.lean": "6f07e216a14ce26805f10397f4887a71d79cb628a4fea9c6f91f0ebec3271991",
+          "CubicReflectionData.lean": "36f9c2762ac3c496822b7d5d75a9891edf0eb3b5ea33967ced929c5c769ca2f2",
+          "CubicSyzygy.lean": "3a770c292af13da9dadbfa40daf8876b8eb13e927b2e6dbb74086b7bec9041f6",
+          "CyclicCubic.lean": "aec2f0dfc509971289aa8d5acb3e5e81c4962ead9d5d9fb275a68bdd370a9e93",
+          "JacobianClearing.lean": "10e4c0a80fe5a9659f6cd126c94ecdb721846986421ef9f55198a19104686ffa",
+          "JacobianDimension.lean": "d0ef0c0af6b6b6dcbce613bc21ea2c0205e9419d078f3a8d865f1d2922494d60",
+          "JacobianDomain.lean": "51c16447849ff19dace148fa4bde3aefacbe30790b29b62e1d14e5ab59276b47",
+          "JacobianEmbedding.lean": "7fe6c1acfc2289928b662fc766981cb1fb9bcfe6e741d820e7247cc3a69883aa",
+          "JacobianFamily.lean": "aa989eccf75381eebe44e5e9388b7d457416f230eb56351682bdc5606de54efd",
+          "JacobianGeometry.lean": "2279f8e81a8c860f7c0c4ea69a0ceb49221bb205258fcdba440a377c1252e45c",
+          "JacobianHypersurface.lean": "74a0924e0fe062b346a9ace67de65cd54eb58a07616dfb05367476d0a77b9579",
+          "JacobianIncidence.lean": "d89f0ecb7241f95e00d6745e32fe4c28fcd06595db957126bafa861f9c4913cb",
+          "JacobianLifting.lean": "73d87dd52dcba05aaa549857d145cb741ac447346d57866e82e5b8eb62e3e7e4",
+          "JacobianModel.lean": "3c8a5898c1108bf28b42fa91a327874dbb608a52036d93d7f3af11d2f6884f2f",
+          "JacobianNormal.lean": "0277b1184d143bd1cc0ca6beac40a7ffc07cbc4d3967835b24d11154a9c13d1a",
+          "JacobianParameters.lean": "2836ede983d2d29d4afe9a20ddc17bad1bcaec98aa457fad486142559e8b5f9b",
+          "JacobianResidue.lean": "d2e0a0b4fefc477a412229dcdcbcbcd4051d7c0909d9ccbad1a2352afa315ce9",
+          "JacobianSeed.lean": "0a6fbd6be36b445cff9324ba0548a1dd351780bb7abb93187153af9e503cd515",
+          "JacobianSeedBinding.lean": "61a538596dd4d9ee63dfc5f27e0acc919f200682d878f801816070a31364d442",
+          "JacobianSource.lean": "f03cb29a308116d582950c8f078b112766f312f0f57560a3a064a51a494066c5",
+          "MovingMap.lean": "f1bb637303befbd6cfcb928106f93fe92225bee5bee360c60dd6776203b2b809",
+          "PhysicalChart.lean": "46a100125754f9c6526c4aa4585b62a8f810f255d476b7fcc4284af192a84bd9",
+          "PhysicalClearing.lean": "26c42ce44fff28896dda4748eeefba91855e9f0ef53f31a63f207e863c4a1791",
+          "PhysicalCoordinates.lean": "0de67cf08bd3c12b63cc0b3657e62d2396ad7e71b6c2fb9cacfffb218c312273",
+          "PhysicalCubicJets.lean": "253769ebc3087098022bc7aeb7c1ac31a2b37d7546d64c7235006b2fd1332cb0",
+          "PhysicalCubicTangent.lean": "d04475cef591143628ff6ff6674b4a6d838c06fcad46f29d9fb1dae1a69d8bf0",
+          "PhysicalCubicVolume.lean": "ba8e5f1c77de13290db2cc6b077ae9affdd5453e666c8a8a55a44617b20c206b",
+          "PhysicalField.lean": "a2600499b004406fb4f2ea2ede4585ac40043c2e1c865d5e706fd4753c37e207",
+          "PhysicalJacobianCoordinates.lean": "6a465bface10ec90e0850fb10f331193ead11dc19a0bae1ac31a4a0af3960b51",
+          "PhysicalJacobianMap.lean": "f330f6bae2af2d2185bc6f269082c0a237c14f44518a9ad8d3470ac7ae743472",
+          "PhysicalNormalTransport.lean": "24fae316fa1aea48a1a31630890b72898dd726299ec8ff4236446ac4d76fe4fe",
+          "PhysicalPrimitive.lean": "ab0c67be8bfe40c3ed8f94b8f28b9fee88442c7422780f8431e0c36de4bd8773",
+          "PolynomialDigitCheck.lean": "13c5f4814c233b6bfd18383aab319220c960c2d7fe4643773d667491b654b1d1",
+          "ResidueTransport.lean": "ab7103b12b47b2227d8605806c568741265fd0db1af282e8d35898075b20be4c",
+          "SignedExpressions.lean": "663c9c6d372b93cf4d75a9d296220ca484d4865a5b7d075ffaba39fd579ae414",
+          "Solution.lean": "1dfb7debf172c26d9f130b66ebe88fc4ce2bfcc67a89953cd244fd33385eba47",
+          "proof.json": "bd47d6ecdcf819a89ad886cca65e6dafd750c934330e51da28c052fa7938e4f9",
+          "solution.md": "dbfbc4921721673e8f11b8411dee5fc1c3a2aa697de933de87626344dd8402bd"
+        },
+        "leanVersion": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+        "kernelReplay": true,
+        "axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "witnessChecked": false,
+        "theorem": "Submission.certificate",
+        "sandbox": "docker-no-network",
+        "toolchain": "leanprover/lean4:v4.33.0",
+        "result": "lean-checked-awaiting-owner",
+        "ownerAuthorization": null
+      },
+      "ownerAuthorization": {
+        "method": "owner_merge",
+        "githubLogin": "benediamond",
+        "headCommit": "39a846e695aa8584693f711d333789abde2dbfea",
+        "mergeCommit": "0f6e1fe61faac0c1729072491131b34583405531"
+      }
+    },
+    "proposal": {
+      "number": 165,
+      "html_url": "https://github.com/hodge-computer/sextics/pull/165",
+      "title": "Solve cycle-three: paired-sign cubic and Jacobian residue transport",
+      "state": "closed",
+      "merged": true,
+      "merged_at": "2026-10-21T01:22:13Z",
+      "merge_commit_sha": "0f6e1fe61faac0c1729072491131b34583405531"
+    },
+    "observed_status": {
+      "accepted_and_published": true,
+      "pr_state": "closed",
+      "merged_at": "2026-10-21T01:22:13Z",
+      "accepted_at": "2026-10-21T01:22:13Z",
+      "published_at": "2026-10-21T01:22:42.324464+00:00",
+      "proposal_head_unchanged": true,
+      "new_accepted_solve_since_baseline": true,
+      "accepted_solver_login": "hodgepodgeconjecture",
+      "accepted_run": {
+        "id": 39522253110,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/39522253110",
+        "workflowPath": ".github/workflows/solve-proposal.yml",
+        "conclusion": "success"
+      },
+      "publication_run": 39526913302,
+      "prior_failed_run_retained_as_history": 39516661290
+    },
+    "verification_transition": {
+      "earlier_failure": "Run39516661290 stopped in combined kernel replay with Docker exit137; that run remains failed.",
+      "new_success": "A separately dispatched protected run39522253110 on trusted base24b41de3 verified the identical proposal head and all identical source/statement hashes.",
+      "trusted_replay_change": "The verifier invokes official leanchecker separately for every module in its complete sequence, including unused helpers and protected wrappers, in fresh read-only sandbox processes, then runs the same trusted theorem audit.",
+      "limits_changed": {
+        "timeoutSeconds_before": 1800,
+        "timeoutSeconds_after": 3600,
+        "workflow_minutes_before": 55,
+        "workflow_minutes_after": 85,
+        "memoryMb_unchanged": 14336
+      },
+      "diagnostic_logging_added": true,
+      "accepted_verifier_sources_hash_match_receipt": true,
+      "successful_run_event": "workflow_dispatch",
+      "successful_run_head_is_trusted_base_not_proposal": "24b41de35a1f8822551cb5e38570d43b8ee483eb",
+      "receipt_binds_actual_proposal_head": "39a846e695aa8584693f711d333789abde2dbfea",
+      "protected_source_hash_count": 62,
+      "statement_and_all_source_hashes_equal_previous_failed_report": true,
+      "fresh_lean_replay_by_monitor": false,
+      "all_individual_kernel_logs_reaudited_here": false
+    },
+    "workflows": {
+      "accepted_run": {
+        "id": 39522253110,
+        "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39522253110",
+        "head_sha": "24b41de35a1f8822551cb5e38570d43b8ee483eb",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "publication_run": {
+        "id": 39526913302,
+        "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39526913302",
+        "head_sha": "39a846e695aa8584693f711d333789abde2dbfea",
+        "event": "pull_request_target",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    },
+    "scope": {
+      "target": "cycle-three, q=1, A=X0^3Y0^3, cyclic couplings 1/2",
+      "certificate": "Exact existential homogeneous HasCertificate with complex coefficients and unrestricted quotient Q.",
+      "construction": "Paired-sign cubic to auxiliary Jacobian primitive, arithmetic lifting, polynomial integration and finite trace, physical Piola pullback and two corrections, legal clearing and homogeneous extraction.",
+      "expanded_witness_supplied": false,
+      "numerical_denominator_degree_bound_supplied": false,
+      "excluded_claims": [
+        "Separate cycle-q2 solution",
+        "General Hodge conjecture solution"
+      ]
+    },
+    "inspected_sources": {
+      "accepted_solution": {
+        "url": "https://github.com/hodge-computer/sextics/blob/fc84eb5862d83c3491cdd45cc35bddd151c45892/data/cycle-three/solution.md",
+        "blob_sha": "5343d0ea4f3cb308d68b93729094a1c15abde0e8",
+        "sha256": "dbfbc4921721673e8f11b8411dee5fc1c3a2aa697de933de87626344dd8402bd"
+      },
+      "accepted_sandbox": {
+        "url": "https://github.com/hodge-computer/sextics/blob/24b41de35a1f8822551cb5e38570d43b8ee483eb/scripts/proposals/sandbox.py",
+        "blob_sha": "1ec3f39408016ea0014e13fbafa86830142a168f",
+        "sha256": "df0f1134adf01766f83f253cc4d60ff5d586e20449be538e8edddbfcc935b323"
+      },
+      "accepted_policy": {
+        "url": "https://github.com/hodge-computer/sextics/blob/24b41de35a1f8822551cb5e38570d43b8ee483eb/.github/solve-policy.json",
+        "blob_sha": "23fe492a252c4b441199d99eefbcfa2b3549051d",
+        "sha256": "b96716fdc6e97378da72f6c788b57801b3852cc7559b268c3a4d2f8b77af8878"
+      },
+      "old_policy": {
+        "url": "https://github.com/hodge-computer/sextics/blob/deddb63a44f14e3e4ea3c897557b6ddf936a82d7/.github/solve-policy.json",
+        "blob_sha": "f5b1859d2dbe78d50a1fb659fc09afd1b560e311",
+        "sha256": "bbf4a6375356cf722a70f353445290d2f7649a63ceae11f509f056ca91d96408"
+      },
+      "accepted_workflow": {
+        "url": "https://github.com/hodge-computer/sextics/blob/24b41de35a1f8822551cb5e38570d43b8ee483eb/.github/workflows/solve-proposal.yml",
+        "blob_sha": "a285584ab39eed2e3c54d02942d9632a1d343f80",
+        "sha256": "88c345dd105c9e30e5f38c9e0387ed7328d56e41c2a92786533421b501ba1e39"
+      },
+      "old_workflow": {
+        "url": "https://github.com/hodge-computer/sextics/blob/deddb63a44f14e3e4ea3c897557b6ddf936a82d7/.github/workflows/solve-proposal.yml",
+        "blob_sha": "f78ab1991f949f7728a7197e086d5c979dbb2635",
+        "sha256": "5ca74c2ef21560b0ee5707454cc5540a3d98589221a9aadb45d3a77b5be8e552"
+      }
+    },
+    "accepted_explanation_identical_to_prior_proposal": true,
+    "attribution": {
+      "author_login": "hodgepodgeconjecture",
+      "offline_identity_inferred": false,
+      "rbajaj5_mention_in_solution": true,
+      "exact_scope": "The solution says the earlier bounded denominator exclusion by rbajaj5 informed the choice to pursue an existence construction; it is explicitly not a premise of the proof. PR body and edited discussion retain context-not-premises wording.",
+      "proof_dependency_or_authored_solve_credit_to_rbajaj5": false,
+      "other_credits": [
+        "Benjamin E. Diamond and project contributors",
+        "fqlx and acknowledged shared-construction authors",
+        "classical ternary-cubic invariant theory, Fisher and SageMath normalization",
+        "Lean/mathlib",
+        "OpenAI Codex assistance"
+      ],
+      "new_credit_text": false,
+      "accepted_solve_credit": "hodgepodgeconjecture",
+      "rbajaj5_contribution_tally_change": false
+    }
+  },
+  "new_credit_text": false,
+  "checks_performed_here": [
+    "Fetched and compared all discussion and reply pages, IDs, timestamps, body hashes and thread metadata.",
+    "Inspected acceptance, atlas, solver credits, merged PR and successful verification/publication workflow records.",
+    "Compared all 62 proposal source hashes and the statement hash with the earlier failed protected report.",
+    "Inspected the trusted verifier replay/limit changes and confirmed accepted explanation byte equality with the previously read proposal."
+  ],
+  "checks_not_performed_here": [
+    "No fresh Lean compilation, kernel replay or mathematical proof reconstruction.",
+    "No full individual kernel-log re-audit or live website/CDN test."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "67218450c09ed60d9720d43e26b9ed6c6ac25bf90cce10b42c5433b4475ba8e8",
+    "accepted-records.json": "30110d29ea29f38cb40eafeb8138108a12d4cebf5b046a5c7db9a58d9fc2aeab",
+    "comparison.json": "8db9aed423bf186016ae5676a5391f42df334c9fa6ec7130872d900e367cc657",
+    "cycle-three-accepted-solution.md": "dbfbc4921721673e8f11b8411dee5fc1c3a2aa697de933de87626344dd8402bd",
+    "cycle-three-proposal165.json": "3497e40c6defb21cd73019b9dc4693b050395a701087a4ccb879c0eb26bb50bc",
+    "discussion-111.json": "ccfb52d2b5de9f311a0d15d56ede7c8eaa0a6d6cd962f229ee2cebdbcd9894fc",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "51f1e5e0e9e7874d475e6bf449dd6dcf72b45e3b641632ab4cd65fd780e12513",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "3f991474a3703a60f1b176c4bafaa68309283f38c34a0dfd5543d33f2f3c5ec8",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "491941db3efa8054d50c3279cc79a28be98efb42bcaae870eb2eca82c6b7e71f",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "dfc9f7d4f3ef47ffa8b8a3faa82229fbf24f6825f47a83140ef3e6bf600a19f3",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "a3bca09fd011496c7bb4897e318434a6aaf3e58564927418a99ff41f78a0541f",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "2f07e5605ce7a5649afb1ac22c1b40d281b176c1f3f8ba1e350e77052567aa46",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "1e1d8047904530574d7cc2bb271c089eb2cdb504f9212c6154edfbecc8cdfa7a",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "cf48c4b15ddbcb510fedbc9facddb25913c493e57e85c184cfa25c85113cfe29",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "cc70ef1547ce7375e599258dcb52607b36d41cfcf9044c9791577de682b4a965",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-44.json": "94d0389e155c24909dc4a0093e9ad3c3d54fa25941a2ee9c75e5c662d9c35e2b",
+    "discussion-44.md": "415d0e977e3e0d6921a448dddc338d804dcf80ff1ef4fe0ab5d84527d8539fbb",
+    "discussion-55.json": "3a43094594aaf174cb57b76ad06e932f9512e8f796e9444375bebc8d8adf449f",
+    "discussion-55.md": "23cf68ee426abc1f96f5e1b4ffe83a01d74a30e5aca8ad7c21f1246d5d169125",
+    "discussion-56.json": "bbd66806af7fe13120641ff45023f7c226d9ee90ebe9486227ae045d43aab9c1",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "manifest.json": "b20887913e3d40d1f1661b89263f39c8ef019155c3cb9519f0d337b7e3939433",
+    "publication-status.json": "7ac9a319192ea80a51065ac14fd28e5e2ec8b4b7817a5c3952f9a5cb567bd283"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "The earlier combined replay remains a failed historical run. The new protected run uses sequential per-module replay and a longer time budget on identical proposal sources, followed by the trusted audit. The nested pre-merge verification record awaiting owner approval is superseded by the outer accepted/published receipt. rbajaj5 research-direction credit is unchanged and is not solve authorship or a proof premise."
+}
