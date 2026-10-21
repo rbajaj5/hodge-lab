@@ -3356,3 +3356,40 @@ restricted to actual upstream activity.
      Monitoring only: no upstream post, reply, edit, message or PR; no research
      computation. Tally unchanged:27 discussion contributions, one closed
      maintenance PR, zero accepted authored solves. Earlier entries preserved.
+
+110. **21 October 2026 — Prompt 3 complete; mixed-biweight status-notice audit.**
+     Marked both Prompt 3 deliverables complete: the
+     [source-to-Hessian reconstruction](https://github.com/rbajaj5/hodge-lab/commit/6d07ba27d66b9a9d74618401e6af9c315cdc9888)
+     and the [verified existing-comment rank correction](https://github.com/rbajaj5/hodge-lab/commit/893899a80de3433824a3599ceec1678c7f0ad3df).
+     Neither was rerun or republished. The conic-pencil and flex-cover posts
+     remain monitored alternative drafts; no full proof verification is begun.
+
+     **Prepublication audit:** freshly read all four comments and zero replies
+     of discussion #56. Our existing
+     [comment 19002359](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359)
+     still says the instance remains unsolved. The current GitHub PR record
+     confirms fqlx's PR #170 is merged. The existing
+     [pinned acceptance receipt](https://github.com/hodge-computer/sextics/blob/dda4c5e72eeea8cfd52dd6e731e90031884f32fc/data/mixed-biweight/acceptance.json)
+     records formal acceptance at 11:40:04 UTC and publication at 11:40:37 UTC
+     on 21 October 2026, credited to fqlx. This is status inspection, not another
+     Lean replay or proof audit.
+
+     The user explicitly authorizes one brief dated notice linking that
+     acceptance. The complete original comment is preserved byte-for-byte as
+     the draft's suffix, including its bounded-degree argument, equations,
+     links and attribution. The notice marks its old unsolved sentence as
+     historical and superseded. No alternative construction is promoted to
+     an accepted proof. Push this ledger audit before editing, then verify the
+     saved before-body hash, edit once, read back the exact draft and permalink,
+     and record/push the outcome.
+
+     [Audited draft](results/mixed-biweight-status-maintenance/comment-draft.md)
+     · [Live thread and PR state](results/mixed-biweight-status-maintenance/live-before.json)
+     · [Acceptance receipt](results/mixed-biweight-status-maintenance/acceptance.json)
+     · [Input/body hashes and scope](results/mixed-biweight-status-maintenance/prepublication-audit.json).
+
+     This checkpoint precedes the edit; publication is not yet claimed.
+     Maintenance only: no new research batch, mathematical computation or
+     visualization. This edit must not increase the contribution tally, which
+     remains 27 discussion contributions, one closed maintenance PR and zero
+     accepted authored solves. Historical ledger entries are preserved.
