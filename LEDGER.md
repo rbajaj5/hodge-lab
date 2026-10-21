@@ -3254,3 +3254,51 @@ restricted to actual upstream activity.
      tally remains27 discussion contributions, one closed maintenance PR, zero
      accepted authored solves. Future upstream publication still requires its
      corresponding prior Hodge Lab ledger audit.
+
+108. **21 October 2026 — Source-to-Hessian provenance closed; prepublication rank-correction audit.**
+     Starting from notebook aa72496deb8968958c54ba72ac568f34b7ca57ee, pinned
+     the unchanged protected target at upstream78632ddad42489fe92f14e588f1ed4b8909395dd.
+     Reconstructed15 diagonal Hessian columns from exact F and A, retaining the
+     complete source-character component of all six Jacobian derivatives:
+     882 rows,684 columns, rank636. All567 saved coefficients on49 rows agree.
+     Exact membership identities and49 duals checked against all4,752 Jacobian
+     columns identify the rank-four rowspace with the corrected ideal in both
+     directions. Q_anchor belongs; historical Q3 fails on the rebuilt space,
+     with value5/4 at(1,1,1,1,1), where all rebuilt rows vanish.
+
+     This closes the source-to-packet gap recorded at eaa4f89. Earlier complete
+     E1/square-reduction and height/homology receipts were hash-bound and reused,
+     not rerun. Consequently the already checked regular-sequence/Hilbert-series
+     result applies to this verified ideal. The full nine-quadric E2 system,
+     mixed degree-seven claims, unrestricted denominators and rational primitive
+     are separate. No additional family exclusion or accepted solve is claimed.
+     Reconstruction, elimination-free certificate replay and visualization all
+     passed within60-second per-process bounds. Altered source and residual data
+     are rejected. No computational timeout or failed search is hidden.
+     Independent read-only AI reviewers reconstructed the block and reviewed
+     code/bindings; these reviews are not human peer review.
+
+     [Dependency, assumptions and exact scope](notes/one-reflection-skew-hessian-source.md)
+     · [Certificate](results/one-reflection-skew-hessian-source/reconstruction.json)
+     · [Bounded execution receipt](results/one-reflection-skew-hessian-source/validation.json)
+     · [Reproducible operator visualization](results/one-reflection-skew-hessian-source/source-map.png).
+
+     **Publication audit, before any upstream edit:** refreshed all six comments
+     and all replies of discussion127. Existing
+     [post25](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19049585)
+     still says degree-five Hessian rank16. The committed Prompt2 audit at
+     aa72496 established rank15 and the extra zero F_X0X2; all six square-dual
+     witnesses pass, preserving the degree<=5 exclusion. The user now explicitly
+     authorizes correcting that existing comment. The complete
+     [audited draft](results/one-reflection-skew-rank-correction/comment-draft.md)
+     preserves attribution and links, adds pinned evidence, and removes stale
+     wording that degrees six and higher are all open. No new comment or new
+     research claim is proposed. The reconstruction above is not a prerequisite
+     for this correction. Push this audit first, check for concurrent comment
+     changes, then edit and read back before recording the outcome.
+     [Fresh thread, hashes and exact scope](results/one-reflection-skew-rank-correction/prepublication-audit.json).
+
+     At this checkpoint the edit has **not yet been performed**. Contribution
+     tally remains27 discussion contributions, one closed maintenance PR, zero
+     accepted authored solves. An edit to post25 will not be counted as a new
+     contribution. Historical ledger bytes and unrelated checkouts are preserved.

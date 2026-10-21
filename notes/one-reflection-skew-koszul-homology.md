@@ -80,3 +80,6 @@ python experiments/one_reflection_skew_koszul_homology.py
 ```
 
 The three pure added-block rows in the summary are inherited from the degree-seven calculation; this script does not reconstruct those blocks. They are not included as newly executed checks in this audit. The saved physical Hessian rows are checked here; their construction from the original sextic remains a separate verification layer.
+
+
+**Later provenance check, 21 October 2026:** the [source reconstruction](one-reflection-skew-hessian-source.md) now verifies the previously separate source-to-residual layer: all 567 coefficients on 49 rows agree with the protected sextic. This adds input provenance to the corrected ideal, not a new exclusion.

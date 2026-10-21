@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "started_utc": "2026-10-21T16:38:55.866726+00:00",
+  "time_limit_seconds_per_command": 60,
+  "memory_limit": "No additional process cap",
+  "executions": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-B",
+        "-S",
+        "experiments/skew_audit/hessian_source.py"
+      ],
+      "script_lf_sha256": "4c7d5881af3aa5b1a894e1427a934cddfd4f85464a5b0b6f3e7331d26117052d",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"dimensions\": {\"ambient_degree12\": 6188, \"full_jacobian_columns\": 4752, \"source_character_rows\": 882, \"source_character_columns\": 684, \"source_character_rank\": 636, \"hessian_columns\": 15, \"nonzero_residual_rows\": 49, \"quadric_row_rank\": 4}, \"negative_controls\": {\"perturbed_F_term\": [1, 1, 0, 3, 1, 0], \"coefficient_change\": \"1/7 -> 2/7\", \"nonzero_dual_pairing\": [0, 14, \"-176082600962005/174154134\"], \"changed_residual_rejected\": true}, \"elapsed_seconds\": 2.5073603999917395}\n",
+      "stderr": "",
+      "status": "PASS",
+      "elapsed_seconds": 2.789036300033331
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-B",
+        "-S",
+        "experiments/skew_audit/hessian_source_replay.py"
+      ],
+      "script_lf_sha256": "7889b5ef0f5883b37e06d8ab56d89e0e2166ddf77c2b28b2044b776a1e1059c9",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"method\": \"Exact certificate replay, no elimination\", \"membership_identities\": 15, \"duals\": 49, \"full_J_pairings\": 232848, \"rowspace_maps\": \"4 canonical generators from49 source rows,49 rows from4 generators\", \"reconstruction_lf_sha256\": \"18b4f32cbb02a0e6cd9e992b08f624c99863b287e60dc462970bb4685ab04295\", \"script_lf_sha256\": \"7889b5ef0f5883b37e06d8ab56d89e0e2166ddf77c2b28b2044b776a1e1059c9\", \"negative_controls\": [{\"control\": \"changed residual\", \"rejected_by\": \"Hessian membership identity failed\"}, {\"control\": \"changed protected coupling\", \"rejected_by\": \"Hessian membership identity failed\"}], \"elapsed_seconds\": 0.8907982999808155}\n",
+      "stderr": "",
+      "status": "PASS",
+      "elapsed_seconds": 1.1239998000091873
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-B",
+        "experiments/skew_audit/plot_hessian_source.py"
+      ],
+      "script_lf_sha256": "2f4d7dbfea0f087acdab33801f26fa7b7417d5881ba045cfade4691502e657e1",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "status": "PASS",
+      "elapsed_seconds": 2.507423500006553
+    }
+  ],
+  "versions": {
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1"
+  },
+  "completed_utc": "2026-10-21T16:39:02.307119+00:00",
+  "output_lf_sha256": {
+    "inputs.json": "228fdf6b98e9cfe9a5b9c22b7abe25cbf030b39f42003ae92f4eef3ef1cf6238",
+    "reconstruction.json": "18b4f32cbb02a0e6cd9e992b08f624c99863b287e60dc462970bb4685ab04295",
+    "replay.json": "eb664f95676b7f2867363c932fc504b8b72ed2dd064bcd17132ae4c2fea81053"
+  }
+}

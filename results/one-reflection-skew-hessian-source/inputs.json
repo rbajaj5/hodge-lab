@@ -1,0 +1,75 @@
+{
+  "notebook_input_commit": "aa72496deb8968958c54ba72ac568f34b7ca57ee",
+  "corrected_ideal_commit": "eaa4f89b1bc333951a18cd0bccbb31b8c3f94671",
+  "upstream_commit": "78632ddad42489fe92f14e588f1ed4b8909395dd",
+  "observed_utc": "2026-10-21T16:32:41.095823+00:00",
+  "protected_record": "results/one-reflection-skew-audit-20261021/inputs/live/upstream/data/one-reflection-skew/instance.rec",
+  "protected_record_git_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+  "residual_packet": "results/one-reflection-skew-degree6/one-reflection-skew/degree-6-e2.json",
+  "corrected_ideal_receipt": "results/repository-audit-20261021/corrected-hessian-validation.json",
+  "prerequisite_receipt": "results/one-reflection-skew-audit-20261021/diagonal-review.json",
+  "live_checks": [
+    {
+      "command": "gh api repos/hodge-computer/sextics/commits/main --jq .sha",
+      "stdout": "78632ddad42489fe92f14e588f1ed4b8909395dd",
+      "exit_code": 0
+    },
+    {
+      "command": "gh api repos/hodge-computer/sextics/contents/data/one-reflection-skew/instance.rec?ref=78632ddad42489fe92f14e588f1ed4b8909395dd --jq .sha",
+      "stdout": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "exit_code": 0
+    }
+  ],
+  "files": [
+    {
+      "path": "results/one-reflection-skew-audit-20261021/inputs/live/upstream/data/one-reflection-skew/instance.rec",
+      "lf_sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+      "raw_sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f"
+    },
+    {
+      "path": "results/one-reflection-skew-degree6/one-reflection-skew/degree-6-e2.json",
+      "lf_sha256": "5760378eb0b3757507d915338f0c62520387edf4b3eb16937e451d3b17031329",
+      "raw_sha256": "5760378eb0b3757507d915338f0c62520387edf4b3eb16937e451d3b17031329"
+    },
+    {
+      "path": "results/repository-audit-20261021/corrected-hessian-validation.json",
+      "lf_sha256": "c52a165469ce155b893a3b8deea96ccd5acace2d9497d61daa51036a5ec92ae6",
+      "raw_sha256": "c52a165469ce155b893a3b8deea96ccd5acace2d9497d61daa51036a5ec92ae6"
+    },
+    {
+      "path": "results/one-reflection-skew-audit-20261021/diagonal-review.json",
+      "lf_sha256": "19535ba91a51de06ad0c5c96afd9af594ed8770f780f3a6e214536df2f649883",
+      "raw_sha256": "19535ba91a51de06ad0c5c96afd9af594ed8770f780f3a6e214536df2f649883"
+    },
+    {
+      "path": "experiments/skew_audit/check_exclusions.py",
+      "lf_sha256": "64d99f37549d6d8df33e0c064cfe4fac82a13e02dcdbae16b07d0793b9db17e5",
+      "raw_sha256": "64d99f37549d6d8df33e0c064cfe4fac82a13e02dcdbae16b07d0793b9db17e5"
+    },
+    {
+      "path": "experiments/check_one_reflection_skew_hessian.py",
+      "lf_sha256": "44e194dfc23624d7da13f74d704cbcae5248ba969bd11545effbfd23fcdeaade",
+      "raw_sha256": "44e194dfc23624d7da13f74d704cbcae5248ba969bd11545effbfd23fcdeaade"
+    },
+    {
+      "path": "experiments/one_reflection_skew_koszul_homology.py",
+      "lf_sha256": "20c97c76706e44d106d1a3f6076080f3d542c8666350c6157af2458a35184dfa",
+      "raw_sha256": "20c97c76706e44d106d1a3f6076080f3d542c8666350c6157af2458a35184dfa"
+    },
+    {
+      "path": "results/one-reflection-skew-degree6/one-reflection-skew/degree-6.json",
+      "lf_sha256": "e9bd6e4ebdb4f159e906609ff350b7b7a3d842aeba10c03e75415b3b03591d79",
+      "raw_sha256": "e9bd6e4ebdb4f159e906609ff350b7b7a3d842aeba10c03e75415b3b03591d79"
+    },
+    {
+      "path": "results/one-reflection-skew-audit-20261021/validation.json",
+      "lf_sha256": "7f2114b9055b0d364464f74e921aab39af394330a5ced7eae356ea3885938622",
+      "raw_sha256": "7f2114b9055b0d364464f74e921aab39af394330a5ced7eae356ea3885938622"
+    },
+    {
+      "path": "results/one-reflection-skew-audit-20261021/inputs/live/upstream/formal/lean/HodgeComputer/Verify.lean",
+      "lf_sha256": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3",
+      "raw_sha256": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3"
+    }
+  ]
+}

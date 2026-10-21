@@ -1,0 +1,23 @@
+**Degree at most five: bounded denominator exclusion for `one-reflection-skew`.** The linked exact-rational calculation reports no certificate over $\mathbb C$ in these degrees, with the complete numerator space and unrestricted $Q$. This comment concerns degrees at most five; the instance is not solved.
+
+Write $J=(\partial_0F,\ldots,\partial_5F)$. Under Euler normalization, $N(F)=AD$. The map $S_d\to S_{d+6}/J_{d+6}$, $D\mapsto[AD]$, has zero kernel for $d=0,1,2,3,4$. At $d=5$, its six-dimensional kernel is $J_5$: every surviving denominator is $D=a\cdot\nabla F$, with lift $N=Aa+K$ and all 90 degree-six Koszul corrections retained.
+
+For $B_D(N)=D\operatorname{div}N-N(D)$, reduction modulo $J$ gives
+$$
+[B_D(N)]=[-A\,a^T\operatorname{Hess}(F)a].
+$$
+The 21-column quadratic map has rank **15**. Besides the five mixed $Y_2$ Hessian entries, $F_{X_0X_2}=0$ also vanishes, giving six zero columns. Six checked rational square-dual witnesses still isolate all six squares $a_i^2$, forcing $a=0$ over $\mathbb C$.
+
+**Correction, 21 October 2026:** The earlier rank-16 statement was a reporting error; the original computed packet and independent reconstruction both give rank 15. All six square-dual witnesses passed, so the bounded exclusion through degree five is unchanged. See the [committed audit](https://github.com/rbajaj5/hodge-lab/blob/aa72496deb8968958c54ba72ac568f34b7ca57ee/notes/one-reflection-skew-mathematical-audit.md), [source-based coefficients and square witnesses](https://github.com/rbajaj5/hodge-lab/blob/aa72496deb8968958c54ba72ac568f34b7ca57ee/results/one-reflection-skew-audit-20261021/low-and-odd.json), and [executed commands and receipt](https://github.com/rbajaj5/hodge-lab/blob/aa72496deb8968958c54ba72ac568f34b7ca57ee/results/one-reflection-skew-audit-20261021/validation.json). This correction supplies neither a rational primitive nor a Lean-accepted solve.
+
+**A separate binary-cubic observation.** For $f=c_0u^3+c_1u^2v+c_2uv^2+c_3v^3$, use the normalization
+$$
+h=\tfrac14(f_{uu}f_{vv}-f_{uv}^2)=(3c_0c_2-c_1^2)u^2+(9c_0c_3-c_1c_2)uv+(3c_1c_3-c_2^2)v^2.
+$$
+With $H=h_v\partial_u-h_u\partial_v$, $k=H(f)/3$ and $\delta=\operatorname{disc}(h)$, the identities are $H(k)=3\delta f$ and $\delta f^2-k^2=4h^3/9$. Cramer's rule expresses $\delta u^2$ as a constant-coefficient combination of $f_u,f_v,h$; the coefficients are in the linked notes. This identity alone does not construct a certificate for the skew target.
+
+The skew term changes sign under the real exchange of $Y_0,Y_1$. The complex map $(Y_0,Y_1)\mapsto(iY_1,-iY_0)$ is an involution and negates $Y_0^6+Y_1^6$, so it is **not a symmetry of the full sextic**. Vanishing of a coefficient on a coordinate locus is not, by itself, a global obstruction to a certificate.
+
+[Argument and reproduction instructions](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/notes/one-reflection-skew-pilot.md) · [code](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/experiments/one_reflection_skew_pilot.py) · [report](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/results/one-reflection-skew-pilot/report.json).
+
+Builds on the repository's certificate framework, `fringewidth`'s reflection observation and `fqlx`'s binary-cubic construction. Prepared with AI assistance for `rbajaj5`; no Lean proof is submitted.

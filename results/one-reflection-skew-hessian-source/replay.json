@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "method": "Exact certificate replay, no elimination",
+  "membership_identities": 15,
+  "duals": 49,
+  "full_J_pairings": 232848,
+  "rowspace_maps": "4 canonical generators from49 source rows,49 rows from4 generators",
+  "reconstruction_lf_sha256": "18b4f32cbb02a0e6cd9e992b08f624c99863b287e60dc462970bb4685ab04295",
+  "script_lf_sha256": "7889b5ef0f5883b37e06d8ab56d89e0e2166ddf77c2b28b2044b776a1e1059c9",
+  "negative_controls": [
+    {
+      "control": "changed residual",
+      "rejected_by": "Hessian membership identity failed"
+    },
+    {
+      "control": "changed protected coupling",
+      "rejected_by": "Hessian membership identity failed"
+    }
+  ],
+  "elapsed_seconds": 0.8907982999808155
+}

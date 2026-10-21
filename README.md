@@ -33,6 +33,8 @@ The audit corrected a substituted Hessian generator, a mistaken flow-degeneracy 
 
 The [focused one-reflection-skew audit](notes/one-reflection-skew-mathematical-audit.md) corrects the degree-five Hessian rank to **15**, replays the exclusions through degree six and the four pure odd degree-seven families, and reconstructs both line tangent maps. The twisted-companion identities pass; the rational primitive remains open. [Coefficient-map visualization](results/one-reflection-skew-audit-20261021/audit-map.png) · [Executed checks](results/one-reflection-skew-audit-20261021/validation.json).
 
+The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.md) now binds the corrected rank-four ideal to the protected sextic: all 567 residual coefficients match, with exact two-way rowspace witnesses. This closes a provenance gap, without adding a new denominator exclusion. [Rebuilt operator](results/one-reflection-skew-hessian-source/source-map.png) · [Reproducible receipt](results/one-reflection-skew-hessian-source/validation.json).
+
 ## Selected results
 
 ### From a GPU screen to exact exclusions

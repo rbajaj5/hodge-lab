@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "-S",
+    "experiments/skew_audit/hessian_source.py"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"status\": \"PASS\", \"dimensions\": {\"ambient_degree12\": 6188, \"full_jacobian_columns\": 4752, \"source_character_rows\": 882, \"source_character_columns\": 684, \"source_character_rank\": 636, \"hessian_columns\": 15, \"nonzero_residual_rows\": 49, \"quadric_row_rank\": 4}, \"negative_controls\": {\"perturbed_F_term\": [1, 1, 0, 3, 1, 0], \"coefficient_change\": \"1/7 -> 2/7\", \"nonzero_dual_pairing\": [0, 14, \"-176082600962005/174154134\"], \"changed_residual_rejected\": true}, \"elapsed_seconds\": 2.2023597999941558}\n",
+  "stderr": "",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "utc": "2026-10-21T16:32:43.881158+00:00",
+  "time_limit_seconds": 60,
+  "memory_limit": "No additional process cap",
+  "elapsed_seconds": 2.560677500034217,
+  "checker_lf_sha256": "ac6e6e07ef639b1d99d58ebc8dbe8e5d6e996a27f9efcae7ce847637d8cdda01",
+  "scope": "First development run before extra prior-receipt and raw-Git-blob binding checks; superseded by validation.json. No mathematical failure."
+}
