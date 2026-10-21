@@ -138,3 +138,11 @@ The prepublication ledger audit accompanies this batch. The intended upstream
 action is one short verification addendum to our existing
 [reply 19111234](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234),
 after this audit is pushed. Its actual outcome will be recorded afterward.
+
+
+**Publication outcome:** the prepublication audit was pushed in
+[b7ec864](https://github.com/rbajaj5/hodge-lab/commit/b7ec8648acf95fb2ce86f11d3b207b702d00d76a).
+The Lean addendum to [reply 19111234](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234)
+was then published and read back exactly, with its original content preserved.
+[Verified outcome](../formal/results/skew-lean/upstream/outcome.json). The
+contribution tally remains 29; no additional comment was created.

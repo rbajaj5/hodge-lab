@@ -1,0 +1,72 @@
+{
+  "audit_commit": "b7ec8648acf95fb2ce86f11d3b207b702d00d76a",
+  "started_utc": "2026-10-21T23:56:37.017074+00:00",
+  "operations": [
+    {
+      "endpoint": "user",
+      "mutation": false,
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/compare/b7ec8648acf95fb2ce86f11d3b207b702d00d76a...main",
+      "mutation": false,
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/contents/LEDGER.md?ref=b7ec8648acf95fb2ce86f11d3b207b702d00d76a",
+      "mutation": false,
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/contents/formal/results/skew-lean/upstream-addendum.md?ref=b7ec8648acf95fb2ce86f11d3b207b702d00d76a",
+      "mutation": false,
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "graphql",
+      "mutation": false,
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "graphql",
+      "mutation": true,
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "graphql",
+      "mutation": false,
+      "status": "returned",
+      "exit_code": 0
+    }
+  ],
+  "original_body_sha256": "c2c0ba616462f7375447823141f4fb75f3e1e00d2cfc0eda874b6c4955051479",
+  "updated_body_sha256": "ac2976172c1785ab9fe31ae132d52c6bbcb339c5fe905489294f3e5616d62c88",
+  "status": "EDITED_AND_READBACK_VERIFIED",
+  "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+  "comment": {
+    "id": "DC_kwDOVLOOJc4BI51C",
+    "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+    "body": "**A three-coefficient certificate for one bounded unreduced primitive space.** Building on `fqlx`'s source and rank-two formulation above, checkpoint 118 of Hodge Lab has a small exact obstruction that can be checked without a large rank calculation. This is an independent certificate and comparison of bounds; **no increased coverage over the existing companion screens is claimed**.\n\nIn the same `Y0=1` chart, write `a=1+r^6+w^6`, `P=aU^3+bU^2+cU+d`, and $P_7=7P$. For all four components of `V=N/a`, the full source equation becomes\n\n$$\n\\mathcal M(N):=60a\\nabla P_7\\cdot N-72P_7a\\operatorname{div}N+72P_7N\\cdot\\nabla a\n=35U^2a^2.\n$$\n\nSuppose each numerator has total degree at most four in `(U,r,w,t)`. Set `n0=[1]N_U`, `n2=[t^2]N_U`. Coefficient support gives\n\n$$\n[rt^3]\\mathcal M=60(n_2-n_0),\\qquad\n[U^2w^{12}]\\mathcal M=1260n_0,\\qquad\n[U^2w^{12}t^2]\\mathcal M=1260n_2.\n$$\n\nThe source coefficients are `(0,35,0)`, forcing `n2=n0`, `n0=1/36`, and `n2=0`. All base-component contributions to these three rows vanish under this bound. A separate exact `Fraction` implementation checked the coefficient transpose and all 280 monomial columns; no historical companion rank was rerun.\n\n**Overlap with the prior screens:** if each horizontal numerator is `A_i+U B_i`, its rank-two coefficients are directly `(A_i/a,B_i/a)`, already inside `fqlx`'s reported degree-six `H/a` space. This accounts for 165 of the 210 horizontal coefficients. The remaining 45 higher-`U` terms require care: for instance,\n\n$$\n\\frac{U^2}{a}\\omega_0\n=-\\frac{c}{3a^2}\\omega_0-\\frac{2b}{3a^2}\\omega_1\n+d_U\\left(-\\frac{2z}{a^2}\\right).\n$$\n\nThus the natural reduction changes the denominator; this does not establish new coverage or rule out a different gauge representative. Base derivatives of the relative exact correction must be retained in an absolute reconstruction. Five such relative reductions were independently checked.\n\nThe degree bound is essential to this tiny certificate: at degree five, `N=(1/36,-5r^2t^3/3024,0,0)` satisfies these three rows, but its full residual has `[rt]=5/3`, so it is not a primitive. No unrestricted nonexistence or homogeneous certificate-degree bound follows.\n\nI also read the [new compact source/kernel update](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825). Its polynomial-`w` compact-flux exclusion is a different bounded presentation; I have not replayed that packet or established a coverage comparison with it.\n\n[Certificate, comparison, reproducible checks and limits](https://github.com/rbajaj5/hodge-lab/blob/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39/notes/skew-small-obstruction-audit.md). A comparison not executed in this audit is the 45 higher-`U` covariant-divergence images against the prior 504-column image, rather than identifying the two degree bounds by inspection.\n\nCredit `fqlx` for the quotient, residue and companion formulation, and Benjamin E. Diamond and contributors for the framework. Prepared for `rbajaj5` with ChatGPT and parallel AI-agent assistance; independent here means separate computational implementations, not human review.\n\n\n**Lean verification — 21 October 2026.** The same bounded obstruction now has a [Lean polynomial-to-matrix proof](https://github.com/rbajaj5/hodge-lab/blob/b7ec8648acf95fb2ce86f11d3b207b702d00d76a/notes/skew-lean.md): it constructs the full chart operator, checks the 840 selected coefficients of all 280 columns and the three source coefficients, and rules out the encoded polynomial equation over every characteristic-zero field. The [local verification receipt](https://github.com/rbajaj5/hodge-lab/blob/b7ec8648acf95fb2ce86f11d3b207b702d00d76a/formal/results/skew-lean/validation.json) records compilation, 17 declaration audits, four default kernel module replays, and two rejected mutations. This strengthens verification of the existing exclusion; it does not add exclusion coverage. Geometric source transport, unrestricted rational primitives and the 45-versus-504 operator-image comparison remain outside these Lean theorems; imported mathlib is not freshly replayed.\n",
+    "updatedAt": "2026-10-21T23:56:40Z",
+    "author": {
+      "login": "rbajaj5"
+    },
+    "bodyHTML": "<p dir=\"auto\"><strong>A three-coefficient certificate for one bounded unreduced primitive space.</strong> Building on <code class=\"notranslate\">fqlx</code>'s source and rank-two formulation above, checkpoint 118 of Hodge Lab has a small exact obstruction that can be checked without a large rank calculation. This is an independent certificate and comparison of bounds; <strong>no increased coverage over the existing companion screens is claimed</strong>.</p>\n<p dir=\"auto\">In the same <code class=\"notranslate\">Y0=1</code> chart, write <code class=\"notranslate\">a=1+r^6+w^6</code>, <code class=\"notranslate\">P=aU^3+bU^2+cU+d</code>, and <math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"fb12a8152f0bec0995b72877ccf938ed\">$P_7=7P$</math-renderer>. For all four components of <code class=\"notranslate\">V=N/a</code>, the full source equation becomes</p>\n<p dir=\"auto\"><math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"fb12a8152f0bec0995b72877ccf938ed\">$$\n\\mathcal M(N):=60a\\nabla P_7\\cdot N-72P_7a\\operatorname{div}N+72P_7N\\cdot\\nabla a\n=35U^2a^2.\n$$</math-renderer></p>\n<p dir=\"auto\">Suppose each numerator has total degree at most four in <code class=\"notranslate\">(U,r,w,t)</code>. Set <code class=\"notranslate\">n0=[1]N_U</code>, <code class=\"notranslate\">n2=[t^2]N_U</code>. Coefficient support gives</p>\n<p dir=\"auto\"><math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"fb12a8152f0bec0995b72877ccf938ed\">$$\n[rt^3]\\mathcal M=60(n_2-n_0),\\qquad\n[U^2w^{12}]\\mathcal M=1260n_0,\\qquad\n[U^2w^{12}t^2]\\mathcal M=1260n_2.\n$$</math-renderer></p>\n<p dir=\"auto\">The source coefficients are <code class=\"notranslate\">(0,35,0)</code>, forcing <code class=\"notranslate\">n2=n0</code>, <code class=\"notranslate\">n0=1/36</code>, and <code class=\"notranslate\">n2=0</code>. All base-component contributions to these three rows vanish under this bound. A separate exact <code class=\"notranslate\">Fraction</code> implementation checked the coefficient transpose and all 280 monomial columns; no historical companion rank was rerun.</p>\n<p dir=\"auto\"><strong>Overlap with the prior screens:</strong> if each horizontal numerator is <code class=\"notranslate\">A_i+U B_i</code>, its rank-two coefficients are directly <code class=\"notranslate\">(A_i/a,B_i/a)</code>, already inside <code class=\"notranslate\">fqlx</code>'s reported degree-six <code class=\"notranslate\">H/a</code> space. This accounts for 165 of the 210 horizontal coefficients. The remaining 45 higher-<code class=\"notranslate\">U</code> terms require care: for instance,</p>\n<p dir=\"auto\"><math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"fb12a8152f0bec0995b72877ccf938ed\">$$\n\\frac{U^2}{a}\\omega_0\n=-\\frac{c}{3a^2}\\omega_0-\\frac{2b}{3a^2}\\omega_1\n+d_U\\left(-\\frac{2z}{a^2}\\right).\n$$</math-renderer></p>\n<p dir=\"auto\">Thus the natural reduction changes the denominator; this does not establish new coverage or rule out a different gauge representative. Base derivatives of the relative exact correction must be retained in an absolute reconstruction. Five such relative reductions were independently checked.</p>\n<p dir=\"auto\">The degree bound is essential to this tiny certificate: at degree five, <code class=\"notranslate\">N=(1/36,-5r^2t^3/3024,0,0)</code> satisfies these three rows, but its full residual has <code class=\"notranslate\">[rt]=5/3</code>, so it is not a primitive. No unrestricted nonexistence or homogeneous certificate-degree bound follows.</p>\n<p dir=\"auto\">I also read the <a href=\"https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825\" data-hovercard-type=\"discussion\" data-hovercard-url=\"/hodge-computer/sextics/discussions/127/hovercard?comment_id=19108825\">new compact source/kernel update</a>. Its polynomial-<code class=\"notranslate\">w</code> compact-flux exclusion is a different bounded presentation; I have not replayed that packet or established a coverage comparison with it.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rbajaj5/hodge-lab/blob/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39/notes/skew-small-obstruction-audit.md\">Certificate, comparison, reproducible checks and limits</a>. A comparison not executed in this audit is the 45 higher-<code class=\"notranslate\">U</code> covariant-divergence images against the prior 504-column image, rather than identifying the two degree bounds by inspection.</p>\n<p dir=\"auto\">Credit <code class=\"notranslate\">fqlx</code> for the quotient, residue and companion formulation, and Benjamin E. Diamond and contributors for the framework. Prepared for <code class=\"notranslate\">rbajaj5</code> with ChatGPT and parallel AI-agent assistance; independent here means separate computational implementations, not human review.</p>\n<p dir=\"auto\"><strong>Lean verification — 21 October 2026.</strong> The same bounded obstruction now has a <a href=\"https://github.com/rbajaj5/hodge-lab/blob/b7ec8648acf95fb2ce86f11d3b207b702d00d76a/notes/skew-lean.md\">Lean polynomial-to-matrix proof</a>: it constructs the full chart operator, checks the 840 selected coefficients of all 280 columns and the three source coefficients, and rules out the encoded polynomial equation over every characteristic-zero field. The <a href=\"https://github.com/rbajaj5/hodge-lab/blob/b7ec8648acf95fb2ce86f11d3b207b702d00d76a/formal/results/skew-lean/validation.json\">local verification receipt</a> records compilation, 17 declaration audits, four default kernel module replays, and two rejected mutations. This strengthens verification of the existing exclusion; it does not add exclusion coverage. Geometric source transport, unrestricted rational primitives and the 45-versus-504 operator-image comparison remain outside these Lean theorems; imported mathlib is not freshly replayed.</p>",
+    "replyTo": {
+      "id": "DC_kwDOVLOOJc4BIyQ8"
+    },
+    "discussion": {
+      "number": 127
+    }
+  },
+  "tally_before": 29,
+  "tally_after": 29,
+  "rendering_scope": "Server HTML has no math-error marker; not a browser pixel assertion.",
+  "completed_utc": "2026-10-21T23:56:40.767610+00:00"
+}

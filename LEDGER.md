@@ -4022,3 +4022,21 @@ attribution, limitations and degree-five boundary. Read back the edit and
 append the outcome afterward. No new comment is planned. Contribution tally
 remains **29 discussion contributions, one closed maintenance PR, and zero
 accepted authored solves**; this edit will not increase it.
+
+
+### Checkpoint 120 publication outcome — 21 October 2026
+
+**Published and verified.** The proof, visualization and prepublication audit
+were pushed first in [b7ec864](https://github.com/rbajaj5/hodge-lab/commit/b7ec8648acf95fb2ce86f11d3b207b702d00d76a).
+The scoped Lean addendum was then appended to our existing
+[discussion reply 19111234](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234).
+A separate API read verified the exact complete body, author, parent, discussion
+and permanent link. The original reply remains an unchanged prefix. Server
+HTML contains no math-error marker; no browser pixel-render claim is made.
+[Outcome receipt](formal/results/skew-lean/upstream/outcome.json).
+
+This was an edit to the existing contribution, not a new comment or solve.
+The tally remains **29 discussion contributions, one closed maintenance PR,
+and zero accepted authored solves**. The 45-versus-504 image comparison is
+still deferred. This outcome supersedes the prepublication plan immediately
+above without changing its historical text.
