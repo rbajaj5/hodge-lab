@@ -39,3 +39,13 @@ Continue using Eisenbud's syzygy and graded-module viewpoint where it supplies
 a concrete test. Do not claim a full resolution or geometric interpretation
 from a truncated matrix calculation. Update the public-contribution tally only
 after an actual upstream contribution, with its permanent link.
+
+## Audit and monitoring policy — 21 October 2026
+
+Every future post, reply, or substantive edit to hodge-computer must have a
+corresponding hodge-lab ledger audit before publication. Record the actual
+outcome and permalink afterward.
+
+Discussion 127 was missing from the repository’s latest recorded monitoring
+scope. It is now included in the intended monitoring scope. No external
+scheduled monitor was changed by this update.
