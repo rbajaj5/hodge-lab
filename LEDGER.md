@@ -3600,3 +3600,21 @@ restricted to actual upstream activity.
      `b2ee2acb5409e37b6fad800b256fb8f2fee163bf`; exact tree/blob comparison
      confirms all 22 audited inputs unchanged. Hodge Lab main still matched
      the starting revision. [Pinned head comparison](results/physical-source-transport-audit/heads.json).
+
+     **Completed browser-review report supplied by the user, 21 October 2026:**
+     after publication of [3a57584](https://github.com/rbajaj5/hodge-lab/commit/3a57584e6927192164321fa5aefdece066a72ad1),
+     the reviewer reports 25 tangent-matrix and 36 separate coordinate-Jacobian
+     entries, 18 exact rational identities, three sign-sensitivity tests and
+     20 pinned source blob matches at the same upstream `28d14ed` revision.
+     It found no defect in the normalization or either correction sign under
+     the stated function-field hypotheses. Its separate scripts, execution
+     logs and source manifest were not supplied; these reviewer-reported
+     checks are not added to our 65 executed checks or 22-file input inventory.
+     [Updated review scope](results/physical-source-transport-audit/review.json)
+     records that distinction. The note now displays the equivalent integral
+     formula explicitly: `P = -E_alpha/(16003008 R)` for `E = 111132 V`.
+     The signed assembly remains pulled + moving - normal correction.
+     No calculation was rerun and no upstream publication was made. This is
+     a documentation follow-up; the visualization and verification receipts
+     remain unchanged, as does the contribution tally of 28 discussion
+     contributions, one closed maintenance PR and zero accepted authored solves.

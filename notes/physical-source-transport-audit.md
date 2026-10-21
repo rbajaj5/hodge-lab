@@ -122,7 +122,7 @@ polynomials and differentiating in $\alpha$ gives
 
 $$
 E_\alpha|_1=-16003008RP,\qquad
-P=-V_\alpha|_1/(144R).
+P=-\frac{V_\alpha|_1}{144R}=-\frac{E_\alpha|_1}{16003008R}.
 $$
 
 The apparent division by $R$ cancels: $P=N/576$ is a polynomial, with
@@ -244,3 +244,22 @@ Mathlib. This independent notebook audit was prepared for rbajaj5 with
 OpenAI Codex assistance and read-only review agents. The browser audit
 supplied by the user agrees with the determinant factors; we do not count
 its transcript as an additional local execution receipt.
+
+## Independent browser-review follow-up
+
+The user supplied the browser review's completed report on 21 October 2026,
+after this audit was published in
+[`3a57584`](https://github.com/rbajaj5/hodge-lab/commit/3a57584e6927192164321fa5aefdece066a72ad1).
+It reports, at the same upstream pin `28d14ed`, reconstruction of 25 tangent
+matrix entries and 36 entries of a separate coordinate Jacobian, 18 exact
+rational identities, three sign-sensitivity checks, and Git blob matches for
+20 downloaded sources. It found no defect in the normalization or either
+correction sign under the stated function-field hypotheses.
+
+These are **reviewer-reported checks**. The separate scripts, full execution
+logs and 20-file manifest were not supplied with the report, so they are not
+added to our 65 executed checks, three deliberate-error tests or 22-file
+input inventory. The reviewer explicitly did not perform a new Lean build,
+full primitive construction, finite-trace replay or denominator-clearing
+replay. Our own receipts and verification boundary remain unchanged.
+This is documentation maintenance; no new calculation or upstream publication.

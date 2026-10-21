@@ -23,6 +23,22 @@
     "resolution": "Both limits are explicit in final checker receipt, note and visualization. Final version adds parsed jet-pair/gJet tests, for 65 checks."
   },
   "browser_transcript": "Supplied by user; agrees with -48 R^4, 6 eta, 2 R^3 eta. No extra local run claimed.",
+  "browser_completed_report": {
+    "received_date": "2026-10-21",
+    "provenance": "Completed browser-review report pasted by the user after publication of 3a57584e6927192164321fa5aefdece066a72ad1",
+    "upstream_commit": "28d14ed300d4d2cb84555466b81cfcfa54854cdd",
+    "reported_checks": {
+      "tangent_matrix_entries": 25,
+      "separate_coordinate_jacobian_entries": 36,
+      "exact_rational_identities": 18,
+      "sign_mutations": ["normal correction", "moving correction", "density"],
+      "source_git_blobs": 20
+    },
+    "reported_result": "No defect in 1/(144R) normalization or either correction sign under the stated function-field hypotheses",
+    "reported_limits": "No new Lean compilation, full primitive construction, finite-trace replay or denominator-clearing replay",
+    "evidence_boundary": "Separate scripts, full execution logs and 20-file manifest were not supplied. Reviewer-reported checks, not additional local executions; do not combine counts with our receipt.",
+    "notation": "Normalized V and integral E=111132V give P=-V_alpha|1/(144R)=-E_alpha|1/(16003008R)."
+  },
   "final_note_review": {
     "reviewer": "independent volume reviewer",
     "result": "No consequential mathematical or scoping problems found",
