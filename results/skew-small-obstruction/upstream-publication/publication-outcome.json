@@ -1,0 +1,74 @@
+{
+  "audit_commit": "c3ab5214fcff79309ad1e7ae83b9e436afeb1d39",
+  "started_utc": "2026-10-21T23:35:51.312889+00:00",
+  "body_sha256": "c2c0ba616462f7375447823141f4fb75f3e1e00d2cfc0eda874b6c4955051479",
+  "operations": [
+    {
+      "endpoint": "user",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/commits/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/compare/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39...main",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/contents/LEDGER.md?ref=c3ab5214fcff79309ad1e7ae83b9e436afeb1d39",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "repos/rbajaj5/hodge-lab/contents/results/skew-small-obstruction/comment-draft.md?ref=c3ab5214fcff79309ad1e7ae83b9e436afeb1d39",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "graphql",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "graphql",
+      "kind": "mutation",
+      "status": "returned",
+      "exit_code": 0
+    },
+    {
+      "endpoint": "graphql",
+      "kind": "read",
+      "status": "returned",
+      "exit_code": 0
+    }
+  ],
+  "status": "PUBLISHED_AND_VERIFIED",
+  "comment": {
+    "id": "DC_kwDOVLOOJc4BI51C",
+    "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+    "body": "**A three-coefficient certificate for one bounded unreduced primitive space.** Building on `fqlx`'s source and rank-two formulation above, checkpoint 118 of Hodge Lab has a small exact obstruction that can be checked without a large rank calculation. This is an independent certificate and comparison of bounds; **no increased coverage over the existing companion screens is claimed**.\n\nIn the same `Y0=1` chart, write `a=1+r^6+w^6`, `P=aU^3+bU^2+cU+d`, and $P_7=7P$. For all four components of `V=N/a`, the full source equation becomes\n\n$$\n\\mathcal M(N):=60a\\nabla P_7\\cdot N-72P_7a\\operatorname{div}N+72P_7N\\cdot\\nabla a\n=35U^2a^2.\n$$\n\nSuppose each numerator has total degree at most four in `(U,r,w,t)`. Set `n0=[1]N_U`, `n2=[t^2]N_U`. Coefficient support gives\n\n$$\n[rt^3]\\mathcal M=60(n_2-n_0),\\qquad\n[U^2w^{12}]\\mathcal M=1260n_0,\\qquad\n[U^2w^{12}t^2]\\mathcal M=1260n_2.\n$$\n\nThe source coefficients are `(0,35,0)`, forcing `n2=n0`, `n0=1/36`, and `n2=0`. All base-component contributions to these three rows vanish under this bound. A separate exact `Fraction` implementation checked the coefficient transpose and all 280 monomial columns; no historical companion rank was rerun.\n\n**Overlap with the prior screens:** if each horizontal numerator is `A_i+U B_i`, its rank-two coefficients are directly `(A_i/a,B_i/a)`, already inside `fqlx`'s reported degree-six `H/a` space. This accounts for 165 of the 210 horizontal coefficients. The remaining 45 higher-`U` terms require care: for instance,\n\n$$\n\\frac{U^2}{a}\\omega_0\n=-\\frac{c}{3a^2}\\omega_0-\\frac{2b}{3a^2}\\omega_1\n+d_U\\left(-\\frac{2z}{a^2}\\right).\n$$\n\nThus the natural reduction changes the denominator; this does not establish new coverage or rule out a different gauge representative. Base derivatives of the relative exact correction must be retained in an absolute reconstruction. Five such relative reductions were independently checked.\n\nThe degree bound is essential to this tiny certificate: at degree five, `N=(1/36,-5r^2t^3/3024,0,0)` satisfies these three rows, but its full residual has `[rt]=5/3`, so it is not a primitive. No unrestricted nonexistence or homogeneous certificate-degree bound follows.\n\nI also read the [new compact source/kernel update](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825). Its polynomial-`w` compact-flux exclusion is a different bounded presentation; I have not replayed that packet or established a coverage comparison with it.\n\n[Certificate, comparison, reproducible checks and limits](https://github.com/rbajaj5/hodge-lab/blob/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39/notes/skew-small-obstruction-audit.md). A comparison not executed in this audit is the 45 higher-`U` covariant-divergence images against the prior 504-column image, rather than identifying the two degree bounds by inspection.\n\nCredit `fqlx` for the quotient, residue and companion formulation, and Benjamin E. Diamond and contributors for the framework. Prepared for `rbajaj5` with ChatGPT and parallel AI-agent assistance; independent here means separate computational implementations, not human review.\n",
+    "createdAt": "2026-10-21T23:35:55Z",
+    "updatedAt": "2026-10-21T23:35:55Z",
+    "author": {
+      "login": "rbajaj5"
+    },
+    "replyTo": {
+      "id": "DC_kwDOVLOOJc4BIyQ8"
+    },
+    "discussion": {
+      "number": 127,
+      "url": "https://github.com/hodge-computer/sextics/discussions/127"
+    }
+  },
+  "completed_utc": "2026-10-21T23:35:55.619273+00:00"
+}

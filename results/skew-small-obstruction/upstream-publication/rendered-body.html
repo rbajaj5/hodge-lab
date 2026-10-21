@@ -1,0 +1,24 @@
+<p dir="auto"><strong>A three-coefficient certificate for one bounded unreduced primitive space.</strong> Building on <code class="notranslate">fqlx</code>'s source and rank-two formulation above, checkpoint 118 of Hodge Lab has a small exact obstruction that can be checked without a large rank calculation. This is an independent certificate and comparison of bounds; <strong>no increased coverage over the existing companion screens is claimed</strong>.</p>
+<p dir="auto">In the same <code class="notranslate">Y0=1</code> chart, write <code class="notranslate">a=1+r^6+w^6</code>, <code class="notranslate">P=aU^3+bU^2+cU+d</code>, and <math-renderer class="js-inline-math" style="display: inline-block" data-run-id="d04fc0f5bc72e0afa2ef070eb18698f8">$P_7=7P$</math-renderer>. For all four components of <code class="notranslate">V=N/a</code>, the full source equation becomes</p>
+<p dir="auto"><math-renderer class="js-display-math" style="display: block" data-run-id="d04fc0f5bc72e0afa2ef070eb18698f8">$$
+\mathcal M(N):=60a\nabla P_7\cdot N-72P_7a\operatorname{div}N+72P_7N\cdot\nabla a
+=35U^2a^2.
+$$</math-renderer></p>
+<p dir="auto">Suppose each numerator has total degree at most four in <code class="notranslate">(U,r,w,t)</code>. Set <code class="notranslate">n0=[1]N_U</code>, <code class="notranslate">n2=[t^2]N_U</code>. Coefficient support gives</p>
+<p dir="auto"><math-renderer class="js-display-math" style="display: block" data-run-id="d04fc0f5bc72e0afa2ef070eb18698f8">$$
+[rt^3]\mathcal M=60(n_2-n_0),\qquad
+[U^2w^{12}]\mathcal M=1260n_0,\qquad
+[U^2w^{12}t^2]\mathcal M=1260n_2.
+$$</math-renderer></p>
+<p dir="auto">The source coefficients are <code class="notranslate">(0,35,0)</code>, forcing <code class="notranslate">n2=n0</code>, <code class="notranslate">n0=1/36</code>, and <code class="notranslate">n2=0</code>. All base-component contributions to these three rows vanish under this bound. A separate exact <code class="notranslate">Fraction</code> implementation checked the coefficient transpose and all 280 monomial columns; no historical companion rank was rerun.</p>
+<p dir="auto"><strong>Overlap with the prior screens:</strong> if each horizontal numerator is <code class="notranslate">A_i+U B_i</code>, its rank-two coefficients are directly <code class="notranslate">(A_i/a,B_i/a)</code>, already inside <code class="notranslate">fqlx</code>'s reported degree-six <code class="notranslate">H/a</code> space. This accounts for 165 of the 210 horizontal coefficients. The remaining 45 higher-<code class="notranslate">U</code> terms require care: for instance,</p>
+<p dir="auto"><math-renderer class="js-display-math" style="display: block" data-run-id="d04fc0f5bc72e0afa2ef070eb18698f8">$$
+\frac{U^2}{a}\omega_0
+=-\frac{c}{3a^2}\omega_0-\frac{2b}{3a^2}\omega_1
++d_U\left(-\frac{2z}{a^2}\right).
+$$</math-renderer></p>
+<p dir="auto">Thus the natural reduction changes the denominator; this does not establish new coverage or rule out a different gauge representative. Base derivatives of the relative exact correction must be retained in an absolute reconstruction. Five such relative reductions were independently checked.</p>
+<p dir="auto">The degree bound is essential to this tiny certificate: at degree five, <code class="notranslate">N=(1/36,-5r^2t^3/3024,0,0)</code> satisfies these three rows, but its full residual has <code class="notranslate">[rt]=5/3</code>, so it is not a primitive. No unrestricted nonexistence or homogeneous certificate-degree bound follows.</p>
+<p dir="auto">I also read the <a href="https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825" data-hovercard-type="discussion" data-hovercard-url="/hodge-computer/sextics/discussions/127/hovercard?comment_id=19108825">new compact source/kernel update</a>. Its polynomial-<code class="notranslate">w</code> compact-flux exclusion is a different bounded presentation; I have not replayed that packet or established a coverage comparison with it.</p>
+<p dir="auto"><a href="https://github.com/rbajaj5/hodge-lab/blob/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39/notes/skew-small-obstruction-audit.md">Certificate, comparison, reproducible checks and limits</a>. A comparison not executed in this audit is the 45 higher-<code class="notranslate">U</code> covariant-divergence images against the prior 504-column image, rather than identifying the two degree bounds by inspection.</p>
+<p dir="auto">Credit <code class="notranslate">fqlx</code> for the quotient, residue and companion formulation, and Benjamin E. Diamond and contributors for the framework. Prepared for <code class="notranslate">rbajaj5</code> with ChatGPT and parallel AI-agent assistance; independent here means separate computational implementations, not human review.</p>

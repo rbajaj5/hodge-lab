@@ -1,0 +1,102 @@
+{
+  "started_utc": "2026-10-21T23:35:27.118058+00:00",
+  "base": "e057d7e98ce6ab58a05dc80d76879eaf772f381c",
+  "operations": [
+    {
+      "command": [
+        "git",
+        "fetch",
+        "origin",
+        "main"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "From github.com:rbajaj5/hodge-lab\n * branch            main       -> FETCH_HEAD\n"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "origin/main"
+      ],
+      "timeout_seconds": 45,
+      "exit_code": 0,
+      "stdout": "e057d7e98ce6ab58a05dc80d76879eaf772f381c\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "timeout_seconds": 45,
+      "exit_code": 0,
+      "stdout": "e057d7e98ce6ab58a05dc80d76879eaf772f381c\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "timeout_seconds": 45,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "-m",
+        "Audit the small skew obstruction and companion bounds"
+      ],
+      "timeout_seconds": 45,
+      "exit_code": 0,
+      "stdout": "[audit-skew-hessian-source-20261021 c3ab521] Audit the small skew obstruction and companion bounds\n 32 files changed, 7236 insertions(+)\n create mode 100644 notes/skew-small-obstruction-audit.md\n create mode 100644 results/skew-small-obstruction/CODEX_HANDOFF.md\n create mode 100644 results/skew-small-obstruction/codex-replay/horizontal-reduction.json\n create mode 100644 results/skew-small-obstruction/codex-replay/ledger-preservation.json\n create mode 100644 results/skew-small-obstruction/codex-replay/three-coefficient-replay.json\n create mode 100644 results/skew-small-obstruction/codex-replay/validation.json\n create mode 100644 results/skew-small-obstruction/comment-draft.md\n create mode 100644 results/skew-small-obstruction/discussion-127.json\n create mode 100644 results/skew-small-obstruction/discussion-prepublication.json\n create mode 100644 results/skew-small-obstruction/first-independent-review.md\n create mode 100644 results/skew-small-obstruction/horizontal-reduction.json\n create mode 100644 results/skew-small-obstruction/inputs.json\n create mode 100644 results/skew-small-obstruction/inputs/fqlx/rank2_primitive_notes.md\n create mode 100644 results/skew-small-obstruction/inputs/fqlx/rank2_primitive_system_Y0.json\n create mode 100644 results/skew-small-obstruction/inputs/fqlx/rank2_screen_Y0_deg6_1_p1000003.json\n create mode 100644 results/skew-small-obstruction/inputs/fqlx/rank2_screen_Y0_deg6_a_p1000003.json\n create mode 100644 results/skew-small-obstruction/inputs/fqlx/search_rank2_polynomial.py\n create mode 100644 results/skew-small-obstruction/ledger-append.md\n create mode 100644 results/skew-small-obstruction/ledger-preservation.json\n create mode 100644 results/skew-small-obstruction/prepublication-heads-and-context.json\n create mode 100644 results/skew-small-obstruction/publication-original-handoff.json\n create mode 100644 results/skew-small-obstruction/publication.json\n create mode 100644 results/skew-small-obstruction/review.json\n create mode 100644 results/skew-small-obstruction/three-coefficient-replay.json\n create mode 100644 results/skew-small-obstruction/transport-manifest.json\n create mode 100644 results/skew-small-obstruction/validation.json\n create mode 100644 scripts/check_skew_small_obstruction.py\n create mode 100644 scripts/reduce_skew_small_obstruction.py\n create mode 100644 scripts/visualize_skew_small_obstruction.py\n create mode 100644 visualizations/skew-small-obstruction.png\n create mode 100644 visualizations/skew-small-obstruction.svg\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "timeout_seconds": 45,
+      "exit_code": 0,
+      "stdout": "c3ab5214fcff79309ad1e7ae83b9e436afeb1d39\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:main"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "To github.com:rbajaj5/hodge-lab.git\n   e057d7e..c3ab521  HEAD -> main\n"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "timeout_seconds": 45,
+      "exit_code": 0,
+      "stdout": "c3ab5214fcff79309ad1e7ae83b9e436afeb1d39\trefs/heads/main\n",
+      "stderr": ""
+    }
+  ],
+  "commit": "c3ab5214fcff79309ad1e7ae83b9e436afeb1d39",
+  "status": "PUSHED_AND_HEAD_VERIFIED",
+  "url": "https://github.com/rbajaj5/hodge-lab/commit/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39"
+}

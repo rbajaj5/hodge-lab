@@ -299,3 +299,19 @@ contributors for the protected framework; `fqlx` for the quotient, source,
 connection, and companion work; and checkpoint 118 for the original small
 dual. Prepared for `rbajaj5` with ChatGPT and parallel AI-agent assistance.
 Independent checks here mean separate implementations, not human review.
+
+## Verified publication — 21 October 2026
+
+The audit was pushed first as
+[`c3ab521`](https://github.com/rbajaj5/hodge-lab/commit/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39).
+The [checked reply](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234)
+is published beneath `fqlx` comment 19080252. A separate API read verified
+its exact body, `rbajaj5` authorship, parent, discussion and permalink. The
+body is the committed draft with its audit link pinned to that commit.
+See the [verified outcome](../results/skew-small-obstruction/upstream-publication/publication-outcome.json).
+
+This adds one discussion contribution, bringing the tally to **29 discussion
+contributions, one closed maintenance PR, zero accepted authored solves**.
+It changes no mathematical scope or acceptance status. The earlier integration
+failure above remains historical evidence; it is no longer the current
+publication status.

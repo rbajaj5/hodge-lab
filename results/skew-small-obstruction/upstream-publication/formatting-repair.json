@@ -1,0 +1,19 @@
+{
+  "operation": "Outcome staged-byte comparison before commit",
+  "failure": "Two API receipt files used CRLF; Git staged LF",
+  "repair": "Normalize new receipt JSON outer line endings to LF; JSON body values and verified mathematical content unchanged",
+  "files": [
+    {
+      "path": "mutation-response.json",
+      "before_sha256": "1b00c272cc44403b88657a058660cda909a9008ead7898188a6a3e8724e08a45",
+      "after_sha256": "e4fef91b145c70b6bf5c5d08a1b65b6ca29ee8113414e5247e1162b6d5c861c8"
+    },
+    {
+      "path": "publication-outcome.json",
+      "before_sha256": "c4e99f550e7157475832e8a3fcd41a29cc5f841ce6e248e47c87d5355791a77f",
+      "after_sha256": "cc5d14c2119148756b322ea83415ce8cac46268bb410ccf8ca91f6dada819351"
+    }
+  ],
+  "historical_receipts_modified": false,
+  "upstream_publication_remains_verified": true
+}

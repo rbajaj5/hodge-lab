@@ -3955,3 +3955,18 @@ restricted to actual upstream activity.
      the authorized reply, then read back and record its permalink. Tally
      remains 28 discussion contributions, one closed maintenance PR, zero
      accepted authored solves until actual verified publication.
+
+     **Published and verified, 21 October 2026:** audit commit
+     [c3ab521](https://github.com/rbajaj5/hodge-lab/commit/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39)
+     was normally pushed to Hodge Lab and its remote main SHA, committed
+     ledger audit and draft were read back before the upstream mutation.
+     The live thread still matched the complete reviewed snapshot. Published
+     one [checked reply](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234)
+     beneath fqlx comment 19080252. A separate API read verified exact body,
+     rbajaj5 authorship, parent, discussion number, comment ID and permalink.
+     The outgoing body matches the committed draft with only its audit link
+     pinned to c3ab521. [Publication receipt](results/skew-small-obstruction/upstream-publication/publication-outcome.json).
+     This is one bounded independent-check contribution, not a solve or an
+     increased-coverage claim. Tally is now **29 discussion contributions,
+     one closed maintenance PR, zero accepted authored solves**. The earlier
+     integration 403 and all historical ledger text remain preserved.
