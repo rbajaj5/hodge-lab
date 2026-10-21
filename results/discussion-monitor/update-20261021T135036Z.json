@@ -1,0 +1,351 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-21T13:50:36.202214+00:00",
+  "snapshot": "20261021T135036Z",
+  "baseline_snapshot": "20261021T125544Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    127
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 31,
+    "replies": 16,
+    "records": 47,
+    "new_records": 0,
+    "edited_records": 0,
+    "removed_records": 0
+  },
+  "discussion_changes": [],
+  "upstream_commit": "f247a3664d5e75ffd8cfea9d01817d5c8a27bc95",
+  "monitored_instance_proof_record_changes": [],
+  "monitored_instance_publication_status_changes": [],
+  "monitored_publication_status": {
+    "accepted_and_published": 8,
+    "without_acceptance_record": 6
+  },
+  "incidental_accepted_solution_outside_monitored_set": {
+    "schema": "hodge-incidental-publication-audit-v1",
+    "checked_at_utc": "2026-10-21T13:52:01.054357+00:00",
+    "instance": "holdout-moving-branch",
+    "pinned_main_commit": "f247a3664d5e75ffd8cfea9d01817d5c8a27bc95",
+    "baseline_commit": "e0b3d0b6f48a97f9458a5408742e69204bfe599d",
+    "new_since_baseline": true,
+    "outside_14_monitored_instances": true,
+    "status": {
+      "formal_acceptance": true,
+      "record_status": "solved",
+      "formal_status": "proved",
+      "lean_verification_status": "accepted",
+      "merged_at": "2026-10-21T13:22:41Z",
+      "published_at": "2026-10-21T13:23:08.343896+00:00",
+      "author_login": "benediamond",
+      "pull_request": {
+        "number": 172,
+        "url": "https://github.com/hodge-computer/sextics/pull/172",
+        "headCommit": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+        "baseCommit": "e0b3d0b6f48a97f9458a5408742e69204bfe599d",
+        "mergeCommit": "3ada47113d3731c27bfee765ad5f81bcb5a5b2b2"
+      },
+      "owner_authorization": {
+        "method": "owner_merge",
+        "githubLogin": "benediamond",
+        "headCommit": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+        "mergeCommit": "3ada47113d3731c27bfee765ad5f81bcb5a5b2b2"
+      }
+    },
+    "protected_run": {
+      "id": 39603700120,
+      "name": "Solve proposal",
+      "path": ".github/workflows/solve-proposal.yml",
+      "event": "pull_request_target",
+      "head_sha": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39603700120",
+      "created_at": "2026-10-21T12:56:39Z",
+      "updated_at": "2026-10-21T13:22:21Z"
+    },
+    "publication_run": {
+      "id": 39607472119,
+      "name": "Publish accepted solve",
+      "path": ".github/workflows/publish-solve.yml",
+      "event": "pull_request_target",
+      "head_sha": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39607472119",
+      "created_at": "2026-10-21T13:22:44Z",
+      "updated_at": "2026-10-21T13:23:22Z"
+    },
+    "verification_receipt_summary": {
+      "lean_version": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "kernel_replay": true,
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "witness_checked": false,
+      "theorem": "Submission.certificate",
+      "lean_source_count": 31,
+      "statement_sha256": "5609a39ed02a42d0f6d2a437b1d21bc1612a740cb3620f68fcafa17564091e78",
+      "proof_and_explanation_sha256_match": true,
+      "nested_pending_owner_state": "Historical pre-merge verification stage, superseded by outer formalAcceptance and owner authorization."
+    },
+    "scope": {
+      "q": 1,
+      "A": "X0**3*Y0**3",
+      "F": "X0**6 + X0**3*X1*Y0*Y1 + X0**2*Y0**2*Y2**2/7 + X1**6 + X1**3*X2*Y1*Y2 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+      "construction": "Application of the accepted mixed-biweight transitive-cubic Jacobian construction to a new coefficient specialization and nonsingular degree-(2,4,6) polynomial-curve seed modulo five; thirteen-variable incidence inverse, arithmetic lift, integration, trace and corrected physical residue transport.",
+      "certificate": "Exact protected existential Submission.certificate: nonzero homogeneous D coprime to F, six numerators of degree deg(D)+1, and general polynomial Q.",
+      "expanded_witness_exported": false,
+      "denominator_degree_bound_exported": false,
+      "new_general_geometric_mechanism_claimed": false
+    },
+    "attribution": {
+      "rbajaj5_in_solution_or_pr_body": false,
+      "credits": [
+        "fqlx / mixed-biweight PR170",
+        "hodgepodgeconjecture / cycle-three PR165",
+        "Tom Fisher",
+        "SageMath",
+        "maintained project constructions and collaborators",
+        "Mathlib",
+        "OpenAI Codex assistance for benediamond"
+      ],
+      "new_rbajaj5_attribution": false
+    },
+    "limits": {
+      "fresh_lean_replay": false,
+      "source_code_execution": false,
+      "all_31_lean_sources_freshly_rehashed": false,
+      "individual_kernel_logs_downloaded_or_replayed": false,
+      "live_website_CDN_checked": false,
+      "ci_status_based_on": "Committed receipt, merged PR metadata and successful protected/publication workflow metadata; protected exact-statement/kernel/axiom step confirmed successful."
+    },
+    "pr_body_historical_language": "Its application replay running/protected verification required sentences predate the successful workflow and accepted publication; current status comes from the live metadata and committed receipt.",
+    "evidence_files": [
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/acceptance.json",
+        "sha256": "7d984537510a9588d4bcba7014fd12dfdb8daa177a5c6bb2a6b20c408262ebf0"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/head-runs.json",
+        "sha256": "1fc82e62badefc1aeaf0b19a7ea3557e2868bd7176a2b33b504bd118da032046"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/pr172.json",
+        "sha256": "afa0d16dd820e49a585d0faaca9e79a5cf1902f31ebb3131c32fac11251c166c"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/proof.json",
+        "sha256": "5b11d973f9c9a1ba00b9bbf0fd24d0e089edccd78df5b56fbfd9cdb4ec7c88da"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/protected-jobs.json",
+        "sha256": "c111a88ce1b82b60e4b4144b9989674b41abfa06c96bed116f6d96dc876f7d79"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/protected-run.json",
+        "sha256": "d36a3aaaef35e7d9f5f1f7e773c1a5b18600e896316e9d4830523a9816a76943"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/record.json",
+        "sha256": "4b14d7d18fa258275b9ddb03d47eb6b611b5910e5438d323ded74f9cabb2d317"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/solution.json",
+        "sha256": "80882fd377c81e82c9a4d8406c098f8b85cae742bf16a06994bb7fc137a0b316"
+      },
+      {
+        "path": "work/discussion-monitor/holdout-moving-branch-20261021T1350/solution.md",
+        "sha256": "e489ffda9bf2b9ad95724a25458ae838d0e1ad39bbfadf0d7f4def325b9610c4"
+      }
+    ],
+    "urls": {
+      "pr": "https://github.com/hodge-computer/sextics/pull/172",
+      "protected_run": "https://github.com/hodge-computer/sextics/actions/runs/39603700120",
+      "publication_run": "https://github.com/hodge-computer/sextics/actions/runs/39607472119",
+      "acceptance": "https://github.com/hodge-computer/sextics/blob/f247a3664d5e75ffd8cfea9d01817d5c8a27bc95/data/holdout-moving-branch/acceptance.json",
+      "solution": "https://github.com/hodge-computer/sextics/blob/f247a3664d5e75ffd8cfea9d01817d5c8a27bc95/data/holdout-moving-branch/solution.md"
+    }
+  },
+  "acceptance_receipt": {
+    "schemaVersion": 1,
+    "formalAcceptance": true,
+    "repository": "hodge-computer/sextics",
+    "instanceId": "holdout-moving-branch",
+    "githubLogin": "benediamond",
+    "submittedAt": "2026-10-21T12:56:35Z",
+    "acceptedAt": "2026-10-21T13:22:41Z",
+    "publishedAt": "2026-10-21T13:23:08.343896+00:00",
+    "pullRequest": {
+      "number": 172,
+      "url": "https://github.com/hodge-computer/sextics/pull/172",
+      "headCommit": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+      "baseCommit": "e0b3d0b6f48a97f9458a5408742e69204bfe599d",
+      "mergeCommit": "3ada47113d3731c27bfee765ad5f81bcb5a5b2b2"
+    },
+    "run": {
+      "id": 39603700120,
+      "url": "https://github.com/hodge-computer/sextics/actions/runs/39603700120",
+      "workflowPath": ".github/workflows/solve-proposal.yml",
+      "conclusion": "success"
+    },
+    "verification": {
+      "schemaVersion": 2,
+      "mode": "live",
+      "instanceId": "holdout-moving-branch",
+      "pullRequest": 172,
+      "githubLogin": "benediamond",
+      "baseCommit": "e0b3d0b6f48a97f9458a5408742e69204bfe599d",
+      "headCommit": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+      "checkedAt": "2026-10-21T12:59:30.755556+00:00",
+      "formalAcceptance": false,
+      "requiresOwnerMerge": true,
+      "verifierSha256": {
+        "scripts/proposals/check.py": "9d7af1c8a30c50ce6bca3c42c6d75d3a547b6a82516bc5581c784cd569158338",
+        "scripts/proposals/sandbox.py": "df0f1134adf01766f83f253cc4d60ff5d586e20449be538e8edddbfcc935b323",
+        "scripts/proposals/Audit.lean": "d1a381c70025c6de519e0b0e5e4da0db72eeba0881b843d9b9cd0e9dd459ed9f",
+        "scripts/proposals/review.py": "732b72f6799a4ead1827eeb0a22589578d2a2d208d018579fedde60530b1070d",
+        "formal/lean/HodgeComputer/Verify.lean": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3",
+        "formal/lean/lake-manifest.json": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+        ".github/solve-policy.json": "b96716fdc6e97378da72f6c788b57801b3852cc7559b268c3a4d2f8b77af8878",
+        ".github/workflows/solve-proposal.yml": "88c345dd105c9e30e5f38c9e0387ed7328d56e41c2a92786533421b501ba1e39"
+      },
+      "statementSha256": "5609a39ed02a42d0f6d2a437b1d21bc1612a740cb3620f68fcafa17564091e78",
+      "sourceHashes": {
+        "CubicFieldDifferential.lean": "cf78195fb1ce5501b455043162f2a4e41f197cbd6d02541409bf3f49189c0a94",
+        "CubicJetCalculus.lean": "2335c501628fce1db8e2786ddfddb7d58fa73e1916ee8d176118fcd22e1c649d",
+        "CubicPoint.lean": "402a95759f59e3ea471bfef35cb8627dc1bc41cf450c9a15f2c9a82d62f36cc5",
+        "JacobianDimension.lean": "9c435f2171702d215c6732ff15fecde9ae80fc2e71741374b2825b3fa97d311f",
+        "JacobianDomain.lean": "582d67eb2ace69f490997d8931373aac57e598886b22f2e2fb014850cd529db5",
+        "JacobianEmbedding.lean": "fc39a466455fff677d6cbee633b621c2cecb4b2ee93ecba37f43a294f36e5d67",
+        "JacobianFamily.lean": "05fc951940a636d892592013c61ebc11ab9c1bcb36442eb4471a332af81d9e39",
+        "JacobianGeometry.lean": "655cf130a3fa74b1c350ae5a31c4967984e89d1715610804fa32c0f989ced2ba",
+        "JacobianHypersurface.lean": "6a6a4f698be2b5650863a76ccb88b5216b447e5b441f1cd67c36e03f6dde34d1",
+        "JacobianIncidence.lean": "eed2b8ca519db1a4631ebf1086b14b21365f2d68beeb7368fc83b381ef6d3e4d",
+        "JacobianLifting.lean": "6c3ea924288e291c6195ef2cc1a3b74ed13e50fac448d2d6346711231c793667",
+        "JacobianModel.lean": "1a578a180741be2425f927f8eef966030c362842ecac681a25c4287d2dc42552",
+        "JacobianNormal.lean": "794c25842524f34801d024d8f9da3305e3e1bd0b2ed8399aeb9383f89934d763",
+        "JacobianParameters.lean": "4c601d0d1a890ffdea538d769f81375f946f73c210d0f163a4217c04caa708b6",
+        "JacobianResidue.lean": "375b578caa8dbc89880080d9ae78bf47ddb8f5f261705e712f68d0a8434d96f3",
+        "JacobianSeed.lean": "f718da3d8d6d5d4d3ae6848aea033fe9b681dc92ea2aee0ad3a166dd7b92fe5d",
+        "JacobianSeedBinding.lean": "4ccdb5c207c44ba79767d72b6926400d3b54dcfc09091e6ea38698282fcb60de",
+        "JacobianSource.lean": "18f099f4346a186ddbb7e33a4f7d783814d0a41f4aa8c99d750f8a845f8daa15",
+        "PhysicalChart.lean": "b6cb9da4dad67ee611afc0ff03cb7f9e30438ce38819673a7d6d644bd0d48215",
+        "PhysicalClearing.lean": "4cecf0f56499ddebcf15fa98777466b6777498a9613b2fedf14e168b37a402a3",
+        "PhysicalCoordinates.lean": "2a460abb7f50bde7b6f705626bdb1cbb3f8097f017175e87f89b5e964db6c404",
+        "PhysicalCubicJets.lean": "9774c2fe727e35fef1863c676ea1d89c7d4f4874f368820c23486a6b7a42eb7d",
+        "PhysicalCubicTangent.lean": "ade9709a295d82ce36b7fe2323f5f694f813135253c37f0a147604d13a830455",
+        "PhysicalCubicVolume.lean": "5d3f5075414efb5f1ed80c095b91c4cfbec3c6bf88c166cae120e8c1dbf1e4a9",
+        "PhysicalField.lean": "c3493003ce080ca6b2a2774dd8b5eda06075e5127e14c465a3a52dca3be6ed7b",
+        "PhysicalJacobianCoefficients.lean": "cf1c4a9a67df33ca7765454fbf9a0f83597fa74ef545b3b0828e8b3376181ccc",
+        "PhysicalJacobianCoordinates.lean": "fa9c31c84823a6d00d86eb3e1cfa8943373e07d4126c10f56a68a29cbb0abd23",
+        "PhysicalJacobianMap.lean": "2b8d1eaca074722efe25aefe2fba2a7e5fb08e9400f209e55aa9136e3a2aa14d",
+        "PhysicalNormalTransport.lean": "0344c2d20e84e71ed2df929645addd9d12b1dafd8bbe9fe6ec04810fd37e9c0e",
+        "PhysicalPrimitive.lean": "d8f24f7af7c7679541d779000121cfc620462db657b6c0599c9250436986d961",
+        "Solution.lean": "184d01d16d7aa6cbc45c70c9626dc8669fce096c94ccedffbcb002f8670d2639",
+        "proof.json": "5b11d973f9c9a1ba00b9bbf0fd24d0e089edccd78df5b56fbfd9cdb4ec7c88da",
+        "solution.md": "e489ffda9bf2b9ad95724a25458ae838d0e1ad39bbfadf0d7f4def325b9610c4"
+      },
+      "leanVersion": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "kernelReplay": true,
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "witnessChecked": false,
+      "theorem": "Submission.certificate",
+      "sandbox": "docker-no-network",
+      "toolchain": "leanprover/lean4:v4.33.0",
+      "result": "lean-checked-awaiting-owner",
+      "ownerAuthorization": null
+    },
+    "ownerAuthorization": {
+      "method": "owner_merge",
+      "githubLogin": "benediamond",
+      "headCommit": "63d1b39ba72750d4f18e33a7ca07b2864f34be0a",
+      "mergeCommit": "3ada47113d3731c27bfee765ad5f81bcb5a5b2b2"
+    }
+  },
+  "new_rbajaj5_attribution": false,
+  "checks_performed_here": [
+    "Fetched and compared all discussion/reply IDs, timestamps, bodies and hashes.",
+    "Compared monitored publication blobs, inspected the changed global atlas/credits and followed the new solve to its acceptance receipt and PR.",
+    "Read the accepted explanation; checked its SHA256 against the receipt and inspected successful protected/publication workflow records.",
+    "Validated historical ledger encoding-only repair and preserved checkpoint103 verbatim."
+  ],
+  "checks_not_performed_here": [
+    "No fresh Lean compilation, kernel replay or mathematical reconstruction.",
+    "No fresh rehash of all 31 application Lean sources, individual kernel-log replay or live website/CDN test."
+  ],
+  "notebook_encoding_repair": {
+    "method": "Restore only lines proven equal to previous UTF-8 text misdecoded as Windows-1252; preserve the newly inserted checkpoint103 verbatim.",
+    "reference_commit": "535101dbca5f824e51765eaea6a6c05aa57a90ff",
+    "input_commit": "5bf5931ebee1b6f578e3b08294a76dd3634f0c17",
+    "repaired_lines": 205,
+    "input_sha256": "f39bdf598c7eeaa503e6b10380187e9fdee56f3302a0b46fe1b0ed052767ff2c",
+    "repaired_sha256_before_new_checkpoint": "ab3dde2ed3300da6237e880a5c48e777e39065ffa318f7665ac1c7bfc4a27d17",
+    "preserved_checkpoint103_insert_sha256": "9c009a1f5eb2e16a26466e23bd255cbcb46729a2d738190e0e7fb4268bc92144",
+    "historical_text_without_new_insertion_equals_reference": true
+  },
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "1b2f594f4e7b40ef6fa99f8d672b2a9ec45759898b7887d84829a4d165bae0ff",
+    "accepted-records.json": "bad53489a6ec132bce6781a6afe483e8d719ec5f6e2e7605fca8224a71ad90bc",
+    "comparison.json": "893ca51a118cd68bf1d1b5a71f309689d6300c42c4b238ec336225462b46cc77",
+    "discussion-111.json": "cad6c6245a57efe1c42d4cf0f92ea6da815221b7a30f14666a6f2649fc648291",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "7a299ea412c9dd8d2f1ba76a0985da74862f0009cc2faeb4c075ea5c971370ad",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "3022e4c12c076eb8d0c3e1f707597da1c13fca1086f56d231108b2f2a4c1ef27",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "1e30cbce81ffa00d53292baaa4e121a1cf0656836a0042da3183a3d58abfa9ff",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "223af7e65e7293f4dbe10af8de65f08f136eb226f71b8a000796add857eaa8aa",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "93f76a56d07a54e16358a1d954391d6e3c8474636ea97f5f929e9d31ca8c9c89",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "f6f3d3b69db6d4cc8b030d44599443a936ca8756243f0f6aa097d9e73f7d9321",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "ea1ccbc88e26a396012c7ee772eb7e8b5e436a1de9119547bc213f9b2899ad8e",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "6d44cf979bef20b00a2a16363bdcbf8f69eb0daa3f56112d1452cc8a6d8b2b4a",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "7865330acb9756d165826ad0de245b45c0d1af485256e80554dbe92b7922a781",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-127.json": "84f73fd90c3ded0435617a839a3afcebbb17f01c22ef563ef4d2fa18ae270e9b",
+    "discussion-127.md": "7257281aa578d3f75187f336f906d03f6f755847c73f1a216e80e4f444eca7b3",
+    "discussion-44.json": "f5ee3f4e817b9ab26f94fb5c69396cfaa26d5c996a7d30d61c54fca4da18025b",
+    "discussion-44.md": "c920e1f96f3e4f505563be92e8c3293a8b94a9a687a87ce8a5371b0bc9123d33",
+    "discussion-55.json": "e21f83ead3a8f8ad6bc1f3e4b5bf323278b6c5e4684f2457449a7fa0a97a7b1f",
+    "discussion-55.md": "23cf68ee426abc1f96f5e1b4ffe83a01d74a30e5aca8ad7c21f1246d5d169125",
+    "discussion-56.json": "27a219db01179d78b4b04b02e9be98aef7308961028b739aa263763623131395",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "holdout-moving-branch-publication.json": "fcbdfc8f832dc86553eba4099b5824243057769207ee549d69c2eaf77fcfef36",
+    "ledger-encoding-repair.json": "749bb8d5660d9226dcbf36a97e6ea29adef92895c692406ad03a31f912b29a13",
+    "manifest.json": "47c098380c9d9de1dc7a24c7f6f9460b1a99772b191954119264b433242be80a",
+    "publication-status.json": "ef75fdc7e02001413e31c683a246ed644bf4a0ecb494fc86bb4654f83ce6f040"
+  },
+  "upstream_actions": [],
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  }
+}

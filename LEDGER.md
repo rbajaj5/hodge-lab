@@ -10,10 +10,10 @@ Our intent is to understand the fixed problems, share reproducible results and u
 
 | Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 7$) | Degree-6 & Degree-7 $E_2$ Quotient & Koszul Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$ ($H_0=0$ at $d=3,4$; $P_{\text{core}}$ $\binom{4}{d}$ complete intersection)<br/>**$d=7$:** **4/4 $Y_2$-odd excluded**; 9/9 pure added $E_1$ squares $=0$; 1,408 chain-map cols ($d'_k \Lambda^k T = \Lambda^{k-1} T d_k$); 2-head attention $\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$ | **$\deg D \le 6$ + all 4 $Y_2$-odd $d=7$ sectors + all 9 pure added $E_1$ blocks excluded over $\mathbb{C}$** | Order-4 Kramers quartet; Spivak chain maps $\Lambda^k(T)$; Yang $\mathbb{Z}_2^{\text{Kramers}}$ channels; Buehler 2-head bilinear attention ($\mathcal{A}_{\text{div}}$ detects $U_i \notin J_7$); Dyatlov FUP / Mumford / Minsky collar hierarchy | **CP 85â€“90 (Posts #25â€“27)** Â· [`categorified-koszul-network.md`](notes/categorified-koszul-network.md) Â· [`dyatlov-mumford-minsky-chaos-ag.md`](notes/dyatlov-mumford-minsky-chaos-ag.md) |
-| **`cycle-three`** | [Discussion #55](https://github.com/hodge-computer/sextics/discussions/55) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **30** Hessian squares + **rank-7** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (quartic $70/70$) | $\mathbb{Z}_3$ cyclic transport; 7-equation diagonal quotient | **CP 71â€“72** Â· [`fresh-instance-degree6.md`](notes/fresh-instance-degree6.md) |
-| **`mixed-biweight`** | [Discussion #56](https://github.com/hodge-computer/sextics/discussions/56) | `(0, 0, 0, 0, 0, 6, 39)` ($J_6 \oplus \mathbb{Q}^3$) | **26+10** square cascade + 2-point residual functional | **$\deg D \le 6$ excluded over $\mathbb{C}$** | Non-Jacobian $E_1$ excess ($+3$ dims); three-term coefficient functional kills both residual points | **CP 73** Â· [`mixed-degree6-extra.md`](notes/mixed-degree6-extra.md) |
-| **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.33 row-functional bridge | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16-module polynomial-to-matrix Lean 4 bridge | **CP 74â€“84** Â· [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
+| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$ ($H_0=0$ at $d=3,4$; $P_{\text{core}}$ $\binom{4}{d}$ complete intersection)<br/>**$d=7$:** **4/4 $Y_2$-odd excluded**; 9/9 pure added $E_1$ squares $=0$; 1,408 chain-map cols ($d'_k \Lambda^k T = \Lambda^{k-1} T d_k$); 2-head attention $\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$ | **$\deg D \le 6$ + all 4 $Y_2$-odd $d=7$ sectors + all 9 pure added $E_1$ blocks excluded over $\mathbb{C}$** | Order-4 Kramers quartet; Spivak chain maps $\Lambda^k(T)$; Yang $\mathbb{Z}_2^{\text{Kramers}}$ channels; Buehler 2-head bilinear attention ($\mathcal{A}_{\text{div}}$ detects $U_i \notin J_7$); Dyatlov FUP / Mumford / Minsky collar hierarchy | **CP 85–90 (Posts #25–27)** · [`categorified-koszul-network.md`](notes/categorified-koszul-network.md) · [`dyatlov-mumford-minsky-chaos-ag.md`](notes/dyatlov-mumford-minsky-chaos-ag.md) |
+| **`cycle-three`** | [Discussion #55](https://github.com/hodge-computer/sextics/discussions/55) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **30** Hessian squares + **rank-7** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (quartic $70/70$) | $\mathbb{Z}_3$ cyclic transport; 7-equation diagonal quotient | **CP 71–72** · [`fresh-instance-degree6.md`](notes/fresh-instance-degree6.md) |
+| **`mixed-biweight`** | [Discussion #56](https://github.com/hodge-computer/sextics/discussions/56) | `(0, 0, 0, 0, 0, 6, 39)` ($J_6 \oplus \mathbb{Q}^3$) | **26+10** square cascade + 2-point residual functional | **$\deg D \le 6$ excluded over $\mathbb{C}$** | Non-Jacobian $E_1$ excess ($+3$ dims); three-term coefficient functional kills both residual points | **CP 73** · [`mixed-degree6-extra.md`](notes/mixed-degree6-extra.md) |
+| **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.33 row-functional bridge | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16-module polynomial-to-matrix Lean 4 bridge | **CP 74–84** · [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
 
 ```mermaid
 flowchart LR
@@ -44,17 +44,17 @@ flowchart LR
 
 ### Latest Visual Checkpoints (`one-reflection-skew`, Discussion #127)
 
-![Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry â€” Mumford, Dyatlov & Minsky on one-reflection-skew](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
+![Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry — Mumford, Dyatlov & Minsky on one-reflection-skew](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
 
-*Checkpoint 90 (`results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png`): Visual synthesis of David Mumford's Indra's Pearls Schottky uniformization ($484$ nested circles up to word depth $L=5$, Kleinian limit set $\Lambda(\Gamma_{\text{skew}})$ of Hausdorff dimension $\delta \approx 0.30$), Semyon Dyatlov's Pollicottâ€“Ruelle scattering resonances and Fractal Uncertainty Principle (FUP) gap paired with the exact algebraic FUP survival collapse $\rho_3(P_{\text{full}}) = 0$, Yair Minsky's curve-complex subsurface hierarchy and collar pinches ($\alpha_{Y_2} \to \alpha_{a_0} \to \alpha_{34} \to \nu_{\text{end}}$), and David Mumford's Pattern-Theory Gibbs energy landscape $E_P(a) = \sum_{Q \in P} |Q(a)|^2$ on $\mathbb{S}^4$ ($E_{\text{Cas}}(v_0) = 0 \to E_{\text{Hess}}(v_0) = 1/16 \to E_{\text{full}}(v_0) = 4.7244 > 0$).*
+*Checkpoint 90 (`results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png`): Visual synthesis of David Mumford's Indra's Pearls Schottky uniformization ($484$ nested circles up to word depth $L=5$, Kleinian limit set $\Lambda(\Gamma_{\text{skew}})$ of Hausdorff dimension $\delta \approx 0.30$), Semyon Dyatlov's Pollicott–Ruelle scattering resonances and Fractal Uncertainty Principle (FUP) gap paired with the exact algebraic FUP survival collapse $\rho_3(P_{\text{full}}) = 0$, Yair Minsky's curve-complex subsurface hierarchy and collar pinches ($\alpha_{Y_2} \to \alpha_{a_0} \to \alpha_{34} \to \nu_{\text{end}}$), and David Mumford's Pattern-Theory Gibbs energy landscape $E_P(a) = \sum_{Q \in P} |Q(a)|^2$ on $\mathbb{S}^4$ ($E_{\text{Cas}}(v_0) = 0 \to E_{\text{Hess}}(v_0) = 1/16 \to E_{\text{full}}(v_0) = 4.7244 > 0$).*
 
-![Visual Categorification on one-reflection-skew â€” Spivak Chain Maps, Yang Equivariant Channels & Buehler 2-Head Attention](results/categorified-koszul-network/categorified-koszul-network.png)
+![Visual Categorification on one-reflection-skew — Spivak Chain Maps, Yang Equivariant Channels & Buehler 2-Head Attention](results/categorified-koszul-network/categorified-koszul-network.png)
 
 *Checkpoint 89 (`results/categorified-koszul-network/categorified-koszul-network.png`): Visual categorification beyond the Snake Lemma combining David Spivak's operadic wiring and explicit exterior-power chain maps $\Lambda^k(T): K_k(P; S) \to K_k(P'; S)$ ($1{,}408$ verified commutative columns $d'_k \circ f_k = f_{k-1} \circ d_k = 0$ over $\mathbb{Q}$), David H. Yang's $\mathbb{Z}_2^{\text{Kramers}}$ equivariant channel decomposition $S_d = S_d^{(+)} \oplus S_d^{(-)}$, and Markus J. Buehler's 2-head bilinear attention decomposition $\mathcal{B}(e_a, e_b) = \mathcal{A}_{\text{div}}(e_a, e_b) + \mathcal{A}_{\text{Lie}}(e_a, e_b)$ on $5$ Jacobian Euler tokens + $5$ non-Jacobian ("added") E1 syzygy lifts in sector `[1,1,1,0]` (proving $\operatorname{rank}(\mathcal{A}_{\text{div}}) = 0/44$ on $J_7 \times J_7$ and $15/44$ on non-Jacobian lifts, while $\operatorname{rank}(\mathcal{A}_{\text{Lie}}) = 39/44$).*
 
 ![one-reflection-skew Eisenbud graded strands and finite Koszul homology](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
 
-*Checkpoint 88 (`results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png`): Eisenbud graded-syzygy strands and Yang / Eisenbudâ€“Erman finite Koszul homology ($H_0$ vs. $H_1$ contrast) across $26$ verified Koszul complexes ($709$ $d_{k-1}\circ d_k = 0$ composition columns): $P_{\text{Hess}}$ and all five degree-7 $Z_k$-twisted Euler families form length-$4$ regular sequences in $\mathbb{P}^4$ ($\dim H_0 \to 2^4 = 16$, $H_1 = 0$); the $a_0$-eliminated sub-block $P_{\text{core}} = (Q_6,Q_7,Q_8,Q_9)$ is an exact $4$-variable complete intersection ($\dim H_0 = \binom{4}{d} \to 0$ at $d=5$); the shared Kramers factor $(a_3-a_4)$ between $Q_{\text{Kramers}}$ and $Q_8$ generates an explicit degree-$3$ non-boundary cycle in $H_1(K(P_{\text{factored}}))_3$; $P_{\text{full}}$ splits $\ker(d_1)_4 = 65 = 36\text{ boundaries} + 29\text{ } H_1$ with $\dim H_0 = 0$ at $d=3,4,5$; and all three degree-7 non-Jacobian ("added") $E_1$ sub-blocks achieve full rank at $d=2$ (`1/1`, `1/1`, `28/28`), forcing all $9$ pure added squares to vanish.*
+*Checkpoint 88 (`results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png`): Eisenbud graded-syzygy strands and Yang / Eisenbud–Erman finite Koszul homology ($H_0$ vs. $H_1$ contrast) across $26$ verified Koszul complexes ($709$ $d_{k-1}\circ d_k = 0$ composition columns): $P_{\text{Hess}}$ and all five degree-7 $Z_k$-twisted Euler families form length-$4$ regular sequences in $\mathbb{P}^4$ ($\dim H_0 \to 2^4 = 16$, $H_1 = 0$); the $a_0$-eliminated sub-block $P_{\text{core}} = (Q_6,Q_7,Q_8,Q_9)$ is an exact $4$-variable complete intersection ($\dim H_0 = \binom{4}{d} \to 0$ at $d=5$); the shared Kramers factor $(a_3-a_4)$ between $Q_{\text{Kramers}}$ and $Q_8$ generates an explicit degree-$3$ non-boundary cycle in $H_1(K(P_{\text{factored}}))_3$; $P_{\text{full}}$ splits $\ker(d_1)_4 = 65 = 36\text{ boundaries} + 29\text{ } H_1$ with $\dim H_0 = 0$ at $d=3,4,5$; and all three degree-7 non-Jacobian ("added") $E_1$ sub-blocks achieve full rank at $d=2$ (`1/1`, `1/1`, `28/28`), forcing all $9$ pure added squares to vanish.*
 
 ![one-reflection-skew degree-7 Z2^4 superselection sectors](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
 
@@ -70,63 +70,63 @@ flowchart LR
 
 ## Posts
 
-1. **16 October 2026, 17:20 EDT / 21:20 UTC â€” [Holdout discussion #44: exact partial result](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983276).** Shared an exact exclusion of the degree-seven `{chi_Y0, chi_X1}` denominator family, with reproducible code and certificate checks. The purpose was to contribute a checkable partial result and narrow the remaining search. The post credits fqlx's preceding calculations and the project's mathematical framework, and discloses Codex assistance. It reports 9,451 of 9,453 two-character families excluded **at the time of posting**, while explicitly leaving the full holdout unresolved. No Lean `HasCertificate` proof or solve submission was claimed. Evidence: [pinned explanation and code links](https://github.com/rbajaj5/hodge-lab/blob/dc2756300cbfa7a54d4735c60b852cd38ca8725e/notes/degree-seven-pair.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38968484482).
+1. **16 October 2026, 17:20 EDT / 21:20 UTC — [Holdout discussion #44: exact partial result](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983276).** Shared an exact exclusion of the degree-seven `{chi_Y0, chi_X1}` denominator family, with reproducible code and certificate checks. The purpose was to contribute a checkable partial result and narrow the remaining search. The post credits fqlx's preceding calculations and the project's mathematical framework, and discloses Codex assistance. It reports 9,451 of 9,453 two-character families excluded **at the time of posting**, while explicitly leaving the full holdout unresolved. No Lean `HasCertificate` proof or solve submission was claimed. Evidence: [pinned explanation and code links](https://github.com/rbajaj5/hodge-lab/blob/dc2756300cbfa7a54d4735c60b852cd38ca8725e/notes/degree-seven-pair.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38968484482).
 
-2. **16 October 2026, 18:52 EDT / 22:52 UTC â€” [Holdout discussion #44: family-13 exclusion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984345).** Shared the exact `{chi_X0, chi_Y0}` degree-seven exclusion and our reproduction of fqlx's distinct family-30 proof. The purpose was to fill the last two-character proof gap with a portable check, while crediting the complementary upstream work. The post records the 25 rational chart identities, independent coefficient reconstruction, corruption check, and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38978064849). It links [immutable source and explanation](https://github.com/rbajaj5/hodge-lab/blob/5a1683fb82217aa49450614dc78d3b3e18b768c1/notes/x0-y0-exclusion.md), discloses Codex assistance, and explicitly leaves three-or-more-character denominators and higher degrees open. The combined count is 9,453/9,453 two-character families; no existence certificate, Lean proof, or accepted solve is claimed. The published body, author, and permanent URL were read back and verified.
+2. **16 October 2026, 18:52 EDT / 22:52 UTC — [Holdout discussion #44: family-13 exclusion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984345).** Shared the exact `{chi_X0, chi_Y0}` degree-seven exclusion and our reproduction of fqlx's distinct family-30 proof. The purpose was to fill the last two-character proof gap with a portable check, while crediting the complementary upstream work. The post records the 25 rational chart identities, independent coefficient reconstruction, corruption check, and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38978064849). It links [immutable source and explanation](https://github.com/rbajaj5/hodge-lab/blob/5a1683fb82217aa49450614dc78d3b3e18b768c1/notes/x0-y0-exclusion.md), discloses Codex assistance, and explicitly leaves three-or-more-character denominators and higher degrees open. The combined count is 9,453/9,453 two-character families; no existence certificate, Lean proof, or accepted solve is claimed. The published body, author, and permanent URL were read back and verified.
 
-3. **16 October 2026, 19:33 EDT / 23:33 UTC â€” [Holdout discussion #44: 132 three-character family exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710).** Shared the systematic test of all 136 third-character extensions of the `X0/Y0` pair: 112 exclusions via exact necessary-condition duals and 20 through shared-numerator chart covers. The post explicitly retains four unresolved extensions and the 16 additional coordinate triples that survived the relaxed pass. It links [immutable proofs, failed attempts, and explanation](https://github.com/rbajaj5/hodge-lab/blob/841cd0623c64d917a31ddf8433ddfbcc10c1260a/notes/three-character-families.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38981740498), credits fqlx and the prior mathematical framework, and discloses Codex assistance and the shared identity replayer. The purpose is to narrow a reproducible search region and make the four residual extensions available to collaborators. No Lean theorem, solution, improved unconditional degree bound, or leaderboard point is claimed. The body was previewed using GitHub's Markdown renderer; the published author and full body were independently read back and matched to the prepared text. [Publication receipt](results/degree7-triples/upstream-post.json).
+3. **16 October 2026, 19:33 EDT / 23:33 UTC — [Holdout discussion #44: 132 three-character family exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710).** Shared the systematic test of all 136 third-character extensions of the `X0/Y0` pair: 112 exclusions via exact necessary-condition duals and 20 through shared-numerator chart covers. The post explicitly retains four unresolved extensions and the 16 additional coordinate triples that survived the relaxed pass. It links [immutable proofs, failed attempts, and explanation](https://github.com/rbajaj5/hodge-lab/blob/841cd0623c64d917a31ddf8433ddfbcc10c1260a/notes/three-character-families.md) and [passing CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38981740498), credits fqlx and the prior mathematical framework, and discloses Codex assistance and the shared identity replayer. The purpose is to narrow a reproducible search region and make the four residual extensions available to collaborators. No Lean theorem, solution, improved unconditional degree bound, or leaderboard point is claimed. The body was previewed using GitHub's Markdown renderer; the published author and full body were independently read back and matched to the prepared text. [Publication receipt](results/degree7-triples/upstream-post.json).
 
-4. **16 October 2026, 20:00 EDT / 17 October 2026, 00:00 UTC â€” [Holdout discussion #44: polynomial-syzygy exclusion of triple family 87](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985544).** Shared one new complete exclusion, increasing the fixed-`X0/Y0` extension coverage to 133/136. Polynomial relations eliminate the shared numerator corrections; three cubic identities and a three-row physical identity finish the contradiction. The post includes the bounded method, the two unresolved family-115 charts, failed module searches and multiplier exports, and the limits of the literature connection. It links the [immutable proof and explanation](https://github.com/rbajaj5/hodge-lab/blob/cf75f3b67385c78769325db138104435ffa04b35/notes/polynomial-syzygies.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38983831725), credits prior work, and discloses Codex assistance and shared verification code. No Lean theorem, general three-character exclusion, solve submission, or leaderboard point is claimed. The draft was previewed through GitHub Markdown; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-syzygies/upstream-post.json).
+4. **16 October 2026, 20:00 EDT / 17 October 2026, 00:00 UTC — [Holdout discussion #44: polynomial-syzygy exclusion of triple family 87](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985544).** Shared one new complete exclusion, increasing the fixed-`X0/Y0` extension coverage to 133/136. Polynomial relations eliminate the shared numerator corrections; three cubic identities and a three-row physical identity finish the contradiction. The post includes the bounded method, the two unresolved family-115 charts, failed module searches and multiplier exports, and the limits of the literature connection. It links the [immutable proof and explanation](https://github.com/rbajaj5/hodge-lab/blob/cf75f3b67385c78769325db138104435ffa04b35/notes/polynomial-syzygies.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38983831725), credits prior work, and discloses Codex assistance and shared verification code. No Lean theorem, general three-character exclusion, solve submission, or leaderboard point is claimed. The draft was previewed through GitHub Markdown; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-syzygies/upstream-post.json).
 
-5. **16 October 2026, 20:24 EDT / 17 October 2026, 00:24 UTC â€” [Holdout discussion #44: rebuilt-syzygy exclusion of triple family 115](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755).** Shared the new complete exclusion, increasing fixed-`X0/Y0` extension coverage to 134/136. Rebuilding after the verified zeros and searching through degree five closes chart 10; its forced zero then closes chart 0. The post links [immutable proofs, visualization, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/b366f33c5a9421532d452ec4d15588c5f9998b7f/notes/syzygy-rebuild.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164). It records the ten larger-chart timeouts and two conditional chart improvements, credits prior work, and discloses Codex assistance and the shared identity replayer. The purpose is to supply another portable exclusion and reusable reductions while keeping the unresolved scope explicit. No Lean proof, solve submission, or leaderboard point is claimed. GitHub rendered the draft's four math blocks; the published author, URL, and full body were independently read back and matched exactly. [Publication receipt](results/degree7-syzygy-rebuild/upstream-post.json).
+5. **16 October 2026, 20:24 EDT / 17 October 2026, 00:24 UTC — [Holdout discussion #44: rebuilt-syzygy exclusion of triple family 115](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985755).** Shared the new complete exclusion, increasing fixed-`X0/Y0` extension coverage to 134/136. Rebuilding after the verified zeros and searching through degree five closes chart 10; its forced zero then closes chart 0. The post links [immutable proofs, visualization, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/b366f33c5a9421532d452ec4d15588c5f9998b7f/notes/syzygy-rebuild.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38985896164). It records the ten larger-chart timeouts and two conditional chart improvements, credits prior work, and discloses Codex assistance and the shared identity replayer. The purpose is to supply another portable exclusion and reusable reductions while keeping the unresolved scope explicit. No Lean proof, solve submission, or leaderboard point is claimed. GitHub rendered the draft's four math blocks; the published author, URL, and full body were independently read back and matched exactly. [Publication receipt](results/degree7-syzygy-rebuild/upstream-post.json).
 
-6. **16 October 2026, 21:08 EDT / 17 October 2026, 01:08 UTC â€” [Holdout discussion #44: the last two fixed-pair triple extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986224).** Shared the exact exclusions of families 16 and 137, completing 136/136 third-character extensions of the fixed `X0/Y0` pair and 136/152 selected triples. Two-row global identities and rebuilt Koszul syzygies close all ten charts. The post links [immutable proofs, dependencies, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/17799c6c210373d4e7d2e9dcab837097161f8bfc/notes/koszul-rank-continuation.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38988964935). It records exceptional-rank handling, bounded timeouts, two polynomial reconstructions, and the shared identity replayer; it credits prior work and discloses Codex assistance. Sixteen other selected triples and the full holdout remain unresolved. No Lean theorem, general degree-seven exclusion, solve submission, or leaderboard point is claimed. GitHub rendered the three math blocks and chart table before publication; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-rank-strata/upstream-post.json).
+6. **16 October 2026, 21:08 EDT / 17 October 2026, 01:08 UTC — [Holdout discussion #44: the last two fixed-pair triple extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986224).** Shared the exact exclusions of families 16 and 137, completing 136/136 third-character extensions of the fixed `X0/Y0` pair and 136/152 selected triples. Two-row global identities and rebuilt Koszul syzygies close all ten charts. The post links [immutable proofs, dependencies, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/17799c6c210373d4e7d2e9dcab837097161f8bfc/notes/koszul-rank-continuation.md) and [passing full CI](https://github.com/rbajaj5/hodge-lab/actions/runs/38988964935). It records exceptional-rank handling, bounded timeouts, two polynomial reconstructions, and the shared identity replayer; it credits prior work and discloses Codex assistance. Sixteen other selected triples and the full holdout remain unresolved. No Lean theorem, general degree-seven exclusion, solve submission, or leaderboard point is claimed. GitHub rendered the three math blocks and chart table before publication; the published author, URL, and full body were read back and matched exactly. [Publication receipt](results/degree7-rank-strata/upstream-post.json).
 
-7. **17 October 2026, 07:10 EDT / 11:10 UTC â€” [Reply to post six: degree-three necessary ideals](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997300).** Shared eleven family-coordinate vanishings across families 6, 8, 10, 149, and 152, with a pinned exact packet and cancellation visualizations. Six cubic identities and five rebuilt square identities reduce parameter spaces; no additional family is excluded and all sixteen remain open. The reply links [immutable code, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/6d478ea5b8896935ebabf1ffd323afc66c26cd0e/notes/eisenbud-linear-strand.md), states the bounded degree-three search and the relaxed correction-space assumption, credits prior work, and discloses Codex assistance and shared verification code. It reports both local exact replays passing without claiming full CI, independent human review, a full resolution, a Lean proof, or solve credit. The existing thread was reread; GitHub's Markdown preview was inspected before posting. The published author, permanent URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-linear-strand/upstream-post.json).
+7. **17 October 2026, 07:10 EDT / 11:10 UTC — [Reply to post six: degree-three necessary ideals](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997300).** Shared eleven family-coordinate vanishings across families 6, 8, 10, 149, and 152, with a pinned exact packet and cancellation visualizations. Six cubic identities and five rebuilt square identities reduce parameter spaces; no additional family is excluded and all sixteen remain open. The reply links [immutable code, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/6d478ea5b8896935ebabf1ffd323afc66c26cd0e/notes/eisenbud-linear-strand.md), states the bounded degree-three search and the relaxed correction-space assumption, credits prior work, and discloses Codex assistance and shared verification code. It reports both local exact replays passing without claiming full CI, independent human review, a full resolution, a Lean proof, or solve credit. The existing thread was reread; GitHub's Markdown preview was inspected before posting. The published author, permanent URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-linear-strand/upstream-post.json).
 
-8. **17 October 2026, 07:32 EDT / 11:32 UTC â€” [Reply to post six: degree-four blocks close five triples](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997670).** Shared exact exclusions of families 6, 8, 10, 149, and 152, increasing selected coverage to 141/152. Six blocks of six quadratics in five variables have a full quartic image; thirty fourth-power identities and replayed residual-sector proofs close the five triples. The reply links [immutable proof packets, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/f131c2f9649fe5eb08f1a36caff7cc87162f5ad9/notes/eisenbud-quartic-strand.md), credits fqlx's pre-existing Y0/Y1 pair exclusion and the prior framework, and discloses Codex assistance and shared verification code. Both local physical reconstructions pass. It retains the timeout, slower alternative basis, and failed relaxed pair search, while leaving eleven selected triples and holdout open. No Lean proof, full resolution, improved unconditional degree bound, or solve credit is claimed. The full thread was reread and GitHub's mathematical Markdown preview inspected. Publication preceded the linked Hodge Lab push; the author, URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-quartic-strand/upstream-post.json).
+8. **17 October 2026, 07:32 EDT / 11:32 UTC — [Reply to post six: degree-four blocks close five triples](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997670).** Shared exact exclusions of families 6, 8, 10, 149, and 152, increasing selected coverage to 141/152. Six blocks of six quadratics in five variables have a full quartic image; thirty fourth-power identities and replayed residual-sector proofs close the five triples. The reply links [immutable proof packets, explanation, visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/f131c2f9649fe5eb08f1a36caff7cc87162f5ad9/notes/eisenbud-quartic-strand.md), credits fqlx's pre-existing Y0/Y1 pair exclusion and the prior framework, and discloses Codex assistance and shared verification code. Both local physical reconstructions pass. It retains the timeout, slower alternative basis, and failed relaxed pair search, while leaving eleven selected triples and holdout open. No Lean proof, full resolution, improved unconditional degree bound, or solve credit is claimed. The full thread was reread and GitHub's mathematical Markdown preview inspected. Publication preceded the linked Hodge Lab push; the author, URL, and complete body were independently read back and matched. [Publication receipt](results/eisenbud-quartic-strand/upstream-post.json).
 
-9. **17 October 2026, 07:45 EDT / 11:45 UTC â€” [Holdout discussion #44: nine more quartic triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997810).** Shared exact exclusions of families 1, 2, 4, 5, 7, 9, 15, 39, and 150, increasing selected coverage to 150/152. All 33 small blocks were tested; 62 fourth-power identities and explicit residual-sector replays close the nine triples. The full quartic maps for 17 and 151 fail to force coordinate fourth powers, and those families remain open. The post links [immutable proofs, visualizations, and failures](https://github.com/rbajaj5/hodge-lab/blob/d44f72a44a36d7f58b623b8c905bd2f0f8e6c8a0/notes/eleven-quartic.md), credits fqlx's existing family-30 proof as a reproduced dependency, and discloses Codex assistance and shared verification code. Both local physical reconstructions and 330 presentation checks pass. The existing discussion was reread; GitHub's mathematical Markdown preview was inspected. Posted as a self-contained top-level result, followed immediately by the linked repository push. The author, body, URL, and absence of a reply parent were read back and matched. No remote CI result was claimed before it ran, and no Lean proof, improved degree bound, solve submission, or leaderboard point is claimed. [Publication receipt](results/eleven-quartic/upstream-post.json).
+9. **17 October 2026, 07:45 EDT / 11:45 UTC — [Holdout discussion #44: nine more quartic triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18997810).** Shared exact exclusions of families 1, 2, 4, 5, 7, 9, 15, 39, and 150, increasing selected coverage to 150/152. All 33 small blocks were tested; 62 fourth-power identities and explicit residual-sector replays close the nine triples. The full quartic maps for 17 and 151 fail to force coordinate fourth powers, and those families remain open. The post links [immutable proofs, visualizations, and failures](https://github.com/rbajaj5/hodge-lab/blob/d44f72a44a36d7f58b623b8c905bd2f0f8e6c8a0/notes/eleven-quartic.md), credits fqlx's existing family-30 proof as a reproduced dependency, and discloses Codex assistance and shared verification code. Both local physical reconstructions and 330 presentation checks pass. The existing discussion was reread; GitHub's mathematical Markdown preview was inspected. Posted as a self-contained top-level result, followed immediately by the linked repository push. The author, body, URL, and absence of a reply parent were read back and matched. No remote CI result was claimed before it ran, and no Lean proof, improved degree bound, solve submission, or leaderboard point is claimed. [Publication receipt](results/eleven-quartic/upstream-post.json).
 
-10. **17 October 2026, 08:16 EDT / 12:16 UTC â€” [Holdout discussion #44: shared numerators close family 17](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998140).** Shared one new complete selected-family exclusion and one exact linear reduction in the remaining family 151. The shared-numerator chart forces a56=0 in family 17; rebuilding yields a full degree-six image and five sixth-power identities, followed by the explicitly reproduced fqlx X1/Y1 proof. Selected coverage is 151/152. The post links [immutable proofs, before/after visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/5e768a2c1261f12fe124bcf9d62ee768fdd482b6/notes/remaining-triples-shared.md), credits dependencies and the mathematical framework, and discloses Codex assistance and shared verification code. Both local physical reconstructions pass, with 17 chart traces, 167 exact inferences, seven corruption checks, and 21 presentation checks. The complete discussion was reread and GitHub's mathematical preview inspected. Posted as one self-contained top-level result before the linked Hodge Lab push; author, complete body, permanent URL, and absence of a reply parent were read back and matched. Remote CI was not claimed before running. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. [Publication receipt](results/remaining-triples-shared/upstream-post.json).
+10. **17 October 2026, 08:16 EDT / 12:16 UTC — [Holdout discussion #44: shared numerators close family 17](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998140).** Shared one new complete selected-family exclusion and one exact linear reduction in the remaining family 151. The shared-numerator chart forces a56=0 in family 17; rebuilding yields a full degree-six image and five sixth-power identities, followed by the explicitly reproduced fqlx X1/Y1 proof. Selected coverage is 151/152. The post links [immutable proofs, before/after visualizations, and failed attempts](https://github.com/rbajaj5/hodge-lab/blob/5e768a2c1261f12fe124bcf9d62ee768fdd482b6/notes/remaining-triples-shared.md), credits dependencies and the mathematical framework, and discloses Codex assistance and shared verification code. Both local physical reconstructions pass, with 17 chart traces, 167 exact inferences, seven corruption checks, and 21 presentation checks. The complete discussion was reread and GitHub's mathematical preview inspected. Posted as one self-contained top-level result before the linked Hodge Lab push; author, complete body, permanent URL, and absence of a reply parent were read back and matched. Remote CI was not claimed before running. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. [Publication receipt](results/remaining-triples-shared/upstream-post.json).
 
-11. **17 October 2026, 08:34 EDT / 12:34 UTC â€” [Holdout discussion #44: polynomial multipliers close family 151](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998404).** Shared the exact exclusion of X1/Y0/Y1, completing 152/152 selected triples while leaving other triple supports, larger supports, higher degrees, and holdout open. Polynomial multipliers of the rebuilt shared-numerator equations produce 96 additional cubic relations; three correctly graded small blocks force thirteen fourth powers, and two direct residual charts contradict. The post links [immutable proof packets, visualizations, and failures](https://github.com/rbajaj5/hodge-lab/blob/a825be71140bb5c70327c2229c208df7d959e164/notes/family151-multipliers.md), credits the preceding framework and calculations, and discloses Codex assistance and shared verification code. Both physical reconstructions pass. Failed degree-three searches, three bounded timeouts, and a discarded mixed-degree pilot remain documented. The entire existing thread was reread, GitHub's mathematical preview inspected, and the result posted before the linked repository push. The complete published body, author, permanent URL, and lack of a reply parent were independently read back and matched. No Lean proof, solve PR, unconditional degree-bound improvement, or leaderboard point is claimed. Remote CI was still running at publication. [Publication receipt](results/family151-multipliers/upstream-post.json).
+11. **17 October 2026, 08:34 EDT / 12:34 UTC — [Holdout discussion #44: polynomial multipliers close family 151](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998404).** Shared the exact exclusion of X1/Y0/Y1, completing 152/152 selected triples while leaving other triple supports, larger supports, higher degrees, and holdout open. Polynomial multipliers of the rebuilt shared-numerator equations produce 96 additional cubic relations; three correctly graded small blocks force thirteen fourth powers, and two direct residual charts contradict. The post links [immutable proof packets, visualizations, and failures](https://github.com/rbajaj5/hodge-lab/blob/a825be71140bb5c70327c2229c208df7d959e164/notes/family151-multipliers.md), credits the preceding framework and calculations, and discloses Codex assistance and shared verification code. Both physical reconstructions pass. Failed degree-three searches, three bounded timeouts, and a discarded mixed-degree pilot remain documented. The entire existing thread was reread, GitHub's mathematical preview inspected, and the result posted before the linked repository push. The complete published body, author, permanent URL, and lack of a reply parent were independently read back and matched. No Lean proof, solve PR, unconditional degree-bound improvement, or leaderboard point is claimed. Remote CI was still running at publication. [Publication receipt](results/family151-multipliers/upstream-post.json).
 
-12. **17 October 2026, 09:08 EDT / 13:08 UTC â€” [Holdout discussion #44: 132 further X1/Y1 triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998764).** Shared 132 new complete three-character exclusions, completing all 136 extensions of X1/Y1 and increasing our selected union to 284 triples. Necessary blocks close 123; shared-numerator charts and reconstruction finish nine. The post links [immutable proofs, exact graded-map visualizations, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/c126e8bbc6ccc3f4c37a14d6be20809bdbccef25/notes/x1y1-extensions.md), explicitly credits fqlx's reproduced pair-30 dependency, and discloses Codex assistance and shared verification code. Both physical constructions pass. Nine unsuccessful first-pass systems and two initially unresolved charts remain recorded, alongside their later closures. The thread and current participation policy were reread, and GitHub's mathematical preview was inspected. Posted before the linked Hodge Lab push; the complete body, author, permanent URL, and absence of a reply parent were read back and matched. The current thread confirms ten top-level contributions and two replies. Other triple supports, larger supports, higher degrees, and holdout remain open; no Lean proof, solve PR, degree-bound improvement, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/x1y1-extensions/upstream-post.json).
+12. **17 October 2026, 09:08 EDT / 13:08 UTC — [Holdout discussion #44: 132 further X1/Y1 triple exclusions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998764).** Shared 132 new complete three-character exclusions, completing all 136 extensions of X1/Y1 and increasing our selected union to 284 triples. Necessary blocks close 123; shared-numerator charts and reconstruction finish nine. The post links [immutable proofs, exact graded-map visualizations, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/c126e8bbc6ccc3f4c37a14d6be20809bdbccef25/notes/x1y1-extensions.md), explicitly credits fqlx's reproduced pair-30 dependency, and discloses Codex assistance and shared verification code. Both physical constructions pass. Nine unsuccessful first-pass systems and two initially unresolved charts remain recorded, alongside their later closures. The thread and current participation policy were reread, and GitHub's mathematical preview was inspected. Posted before the linked Hodge Lab push; the complete body, author, permanent URL, and absence of a reply parent were read back and matched. The current thread confirms ten top-level contributions and two replies. Other triple supports, larger supports, higher degrees, and holdout remain open; no Lean proof, solve PR, degree-bound improvement, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/x1y1-extensions/upstream-post.json).
 
-13. **17 October 2026, 09:28 EDT / 13:28 UTC â€” [Holdout discussion #44: 132 Y0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998994).** Shared one consolidated result completing another 132 full three-character families, bringing our selected union to 416. The final family required 39 new cubic consequences, three quartic power identities, two rebuilt cubic power identities, and two chart contradictions before applying the prior pair-22 exclusion. The post links [immutable proof packets, figures, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/840b88c22386687c745cf944c5c2a41c6b854d39/notes/y0x1-extensions.md), credits preceding work and Eisenbud's viewpoint, discloses Codex assistance, and gives the exact checks and resource bounds. The current discussion and contribution policy were reread. The mathematical Markdown preview was inspected. Posted before the supporting Hodge Lab push; the full body, rbajaj5 author, permanent URL, and absent reply parent were read back and matched. No Lean proof, solve PR, improved degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/y0x1-extensions/upstream-post.json).
+13. **17 October 2026, 09:28 EDT / 13:28 UTC — [Holdout discussion #44: 132 Y0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18998994).** Shared one consolidated result completing another 132 full three-character families, bringing our selected union to 416. The final family required 39 new cubic consequences, three quartic power identities, two rebuilt cubic power identities, and two chart contradictions before applying the prior pair-22 exclusion. The post links [immutable proof packets, figures, and failed searches](https://github.com/rbajaj5/hodge-lab/blob/840b88c22386687c745cf944c5c2a41c6b854d39/notes/y0x1-extensions.md), credits preceding work and Eisenbud's viewpoint, discloses Codex assistance, and gives the exact checks and resource bounds. The current discussion and contribution policy were reread. The mathematical Markdown preview was inspected. Posted before the supporting Hodge Lab push; the full body, rbajaj5 author, permanent URL, and absent reply parent were read back and matched. No Lean proof, solve PR, improved degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/y0x1-extensions/upstream-post.json).
 
-14. **17 October 2026, 09:43 EDT / 13:43 UTC â€” [Holdout discussion #44: 132 Y0/Y1 extensions and a homology-ranking comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999145).** Shared one consolidated result completing 132 new full three-character families, giving 548 selected exclusions. A prospective comparison closes four high-homology and four low-homology cases alike; no ranking advantage is established. The post links [immutable proofs, figures, plans, failures, and corrections](https://github.com/rbajaj5/hodge-lab/blob/876a0cc913a059dd384f77451a9a59b1999d66df/notes/homology-guided-triples.md), retains the two initially failed charts, and explains the explicit fourteen-to-eleven-direction binding to the prior Y0/Y1 proof. Both physical polynomial implementations and figure-data checks pass. The post credits prior work and Yang/Eisenbud-Erman as motivation, without claiming their categorical or geometric theorems were applied. The current discussion and participation policy were reread; GitHub's mathematical Markdown preview was inspected. Published before the supporting Hodge Lab push. The complete body, author, permanent URL, and absence of a reply parent were read back and matched. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/homology-guided-triples/upstream-post.json).
+14. **17 October 2026, 09:43 EDT / 13:43 UTC — [Holdout discussion #44: 132 Y0/Y1 extensions and a homology-ranking comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999145).** Shared one consolidated result completing 132 new full three-character families, giving 548 selected exclusions. A prospective comparison closes four high-homology and four low-homology cases alike; no ranking advantage is established. The post links [immutable proofs, figures, plans, failures, and corrections](https://github.com/rbajaj5/hodge-lab/blob/876a0cc913a059dd384f77451a9a59b1999d66df/notes/homology-guided-triples.md), retains the two initially failed charts, and explains the explicit fourteen-to-eleven-direction binding to the prior Y0/Y1 proof. Both physical polynomial implementations and figure-data checks pass. The post credits prior work and Yang/Eisenbud-Erman as motivation, without claiming their categorical or geometric theorems were applied. The current discussion and participation policy were reread; GitHub's mathematical Markdown preview was inspected. Published before the supporting Hodge Lab push. The complete body, author, permanent URL, and absence of a reply parent were read back and matched. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/homology-guided-triples/upstream-post.json).
 
-15. **17 October 2026, 09:57 EDT / 13:57 UTC â€” [Holdout discussion #44: added-character homology and 132 X0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999334).** Shared one consolidated exact partial result: 132 fresh full three-character families are excluded, bringing the selected union to **680**. The added-only homology ranking shows no advantage: both prospective groups close 4/4, with unmatched block sizes and empty controls explicitly disclosed. The post preserves the 131/132 checkpoint and explains A100's separate multiplier/power/rebuilding closure, including failed charts. It links [immutable proof, figures, credits, limits, and unsuccessful attempts](https://github.com/rbajaj5/hodge-lab/blob/718cf9a2e721b58782748ac90414dd7707f2a061/notes/added-character-homology.md), credits the prior mathematical work and Codex-assisted implementation, and distinguishes both physical replays from human review. The full body, author, URL, and absence of a reply parent were read back and verified; the proof commit was pushed immediately after posting. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/added-character-homology/upstream-post.json).
+15. **17 October 2026, 09:57 EDT / 13:57 UTC — [Holdout discussion #44: added-character homology and 132 X0/X1 extensions](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999334).** Shared one consolidated exact partial result: 132 fresh full three-character families are excluded, bringing the selected union to **680**. The added-only homology ranking shows no advantage: both prospective groups close 4/4, with unmatched block sizes and empty controls explicitly disclosed. The post preserves the 131/132 checkpoint and explains A100's separate multiplier/power/rebuilding closure, including failed charts. It links [immutable proof, figures, credits, limits, and unsuccessful attempts](https://github.com/rbajaj5/hodge-lab/blob/718cf9a2e721b58782748ac90414dd7707f2a061/notes/added-character-homology.md), credits the prior mathematical work and Codex-assisted implementation, and distinguishes both physical replays from human review. The full body, author, URL, and absence of a reply parent were read back and verified; the proof commit was pushed immediately after posting. No Lean proof, solve PR, improved unconditional degree bound, or leaderboard credit is claimed. Remote CI was not claimed at publication. [Publication receipt](results/added-character-homology/upstream-post.json).
 
-16. **17 October 2026, 10:43 EDT / 14:43 UTC â€” [Holdout discussion #44: concrete reason for reading Yang](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999956).** Replied to contribution 15 with the distinction between Koszul H1 relations and H0/image information relevant to coordinate-power exclusions. The checked A19/A30/A61 examples show why equal H1 need not give equal constraint strength. The reply retains the negative ranking result, credits classical Koszul algebra separately from Yang's geometric interpretation, and explicitly says Yang's geometric hypotheses have not been established here. It links the public rationale and existing visualization; no new exclusion, solve, or GPU requirement is claimed. The complete existing thread was reread, Markdown preview inspected, and published body, author, URL, and reply parent read back and matched. [Publication receipt](results/yang-rationale/upstream-post.json).
+16. **17 October 2026, 10:43 EDT / 14:43 UTC — [Holdout discussion #44: concrete reason for reading Yang](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999956).** Replied to contribution 15 with the distinction between Koszul H1 relations and H0/image information relevant to coordinate-power exclusions. The checked A19/A30/A61 examples show why equal H1 need not give equal constraint strength. The reply retains the negative ranking result, credits classical Koszul algebra separately from Yang's geometric interpretation, and explicitly says Yang's geometric hypotheses have not been established here. It links the public rationale and existing visualization; no new exclusion, solve, or GPU requirement is claimed. The complete existing thread was reread, Markdown preview inspected, and published body, author, URL, and reply parent read back and matched. [Publication receipt](results/yang-rationale/upstream-post.json).
 
-17. **17 October 2026, 10:45 EDT / 14:45 UTC â€” [Holdout discussion #44: 131 fresh X0/Y1 triple exclusions and typed-search comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999988).** Shared the checked 131/132 batch, bringing selected coverage to 811 triples. T100's additional nineteen necessary relations and raw56 vanishing are explicitly partial; both rebuilt charts remain unsuccessful. The post reports the negative frozen cache experiment and the separate exact target-character projection, preserving timeouts and distinguishing their evidence. It links the immutable proof commit, five actual-operator/history figures, credits, bounds, and fifteen passing local checks. The current thread was reread and Markdown preview inspected; the complete published body, author, URL, and absence of a reply parent were read back and matched. The proof commit was pushed immediately after posting. Remote CI is pending, not claimed successful. No Lean proof, solve PR, improved degree bound, or leaderboard point is claimed. [Publication receipt](results/typed-rewrite-families/upstream-post.json).
+17. **17 October 2026, 10:45 EDT / 14:45 UTC — [Holdout discussion #44: 131 fresh X0/Y1 triple exclusions and typed-search comparison](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18999988).** Shared the checked 131/132 batch, bringing selected coverage to 811 triples. T100's additional nineteen necessary relations and raw56 vanishing are explicitly partial; both rebuilt charts remain unsuccessful. The post reports the negative frozen cache experiment and the separate exact target-character projection, preserving timeouts and distinguishing their evidence. It links the immutable proof commit, five actual-operator/history figures, credits, bounds, and fifteen passing local checks. The current thread was reread and Markdown preview inspected; the complete published body, author, URL, and absence of a reply parent were read back and matched. The proof commit was pushed immediately after posting. Remote CI is pending, not claimed successful. No Lean proof, solve PR, improved degree bound, or leaderboard point is claimed. [Publication receipt](results/typed-rewrite-families/upstream-post.json).
 
-18. **17 October 2026, 10:58 EDT / 14:58 UTC â€” [Holdout discussion #44: explicit T100 cubic identity and residual system](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000117).** Replied to contribution 17 with the displayed fifteen-product physical-equation identity for raw coefficient 56 cubed, exact equation/generator indices, and the twelve-direction residual support. Both physical reconstructions re-expanded the displayed identity exactly (1,075 coefficient products each). The reply specifies the missing multiplier block, all 128 remaining compatible corrections, and the two still-unresolved charts. It unpacks an existing checked reduction, adding no new family exclusion. The complete current thread and unchanged contribution policy were read; mathematical Markdown was previewed. Published author, complete body, permanent URL, and reply parent were read back and matched. [Receipt](results/typed-rewrite-families/followups/t100-detail.json).
+18. **17 October 2026, 10:58 EDT / 14:58 UTC — [Holdout discussion #44: explicit T100 cubic identity and residual system](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000117).** Replied to contribution 17 with the displayed fifteen-product physical-equation identity for raw coefficient 56 cubed, exact equation/generator indices, and the twelve-direction residual support. Both physical reconstructions re-expanded the displayed identity exactly (1,075 coefficient products each). The reply specifies the missing multiplier block, all 128 remaining compatible corrections, and the two still-unresolved charts. It unpacks an existing checked reduction, adding no new family exclusion. The complete current thread and unchanged contribution policy were read; mathematical Markdown was previewed. Published author, complete body, permanent URL, and reply parent were read back and matched. [Receipt](results/typed-rewrite-families/followups/t100-detail.json).
 
-19. **17 October 2026, 10:58 EDT / 14:58 UTC â€” [Holdout discussion #44: exact character-projection argument](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000118).** Replied to contribution 17 with the direct-sum argument preserving finite coordinate-power membership when off-character rows are omitted. The reply links the checker, gives exact T3/T16 row counts, and distinguishes projected-only computations from completed full elimination. It clarifies stale review metadata: T3's full quartic attempt timed out, whereas T16's completed. The remote job had passed the family/T100 checks and primary comparison checker; remaining steps were running or pending. No full CI success, new family exclusion, speedup, or solve is claimed. The complete body, author, URL, and reply parent were independently read back and matched after a small math-formatting edit. [Receipt](results/typed-rewrite-families/followups/typed-projection.json), [CI snapshot](results/typed-rewrite-families/followups/ci-snapshot.json).
+19. **17 October 2026, 10:58 EDT / 14:58 UTC — [Holdout discussion #44: exact character-projection argument](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19000118).** Replied to contribution 17 with the direct-sum argument preserving finite coordinate-power membership when off-character rows are omitted. The reply links the checker, gives exact T3/T16 row counts, and distinguishes projected-only computations from completed full elimination. It clarifies stale review metadata: T3's full quartic attempt timed out, whereas T16's completed. The remote job had passed the family/T100 checks and primary comparison checker; remaining steps were running or pending. No full CI success, new family exclusion, speedup, or solve is claimed. The complete body, author, URL, and reply parent were independently read back and matched after a small math-formatting edit. [Receipt](results/typed-rewrite-families/followups/typed-projection.json), [CI snapshot](results/typed-rewrite-families/followups/ci-snapshot.json).
 
-20. **17 October 2026, 13:22 EDT / 17:22 UTC â€” [Reply to contribution 17: exact T100 exclusion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19001784).** Shared the rebuilt T100 result after checking that the thread was unlocked and contained no newer T100 solution. Starting from the previously published `a56=0`, the complete twelve-direction constant/linear multiplier pass yields 39 additional necessary relations. Exact degree-five identities force all five Y1 coefficients to vanish; rebuilt charts for raw 6 and 211 contradict, while five X0 chart failures remain recorded. The reproduced anchor dependency closes the residual sector, completing 132/132 in this fresh batch and raising the selected union to 812 triples. The reply links immutable commit `c50638e`, gives seven reproduction commands, reports two physical replays, and labels 36 three-prime rank comparisons as diagnostic rather than p-adic Hodge theory. It credits prior work and discloses Codex assistance. Holdout remains unsolved; no Lean proof, solve PR, improved unconditional degree bound, accepted solve, or leaderboard point is claimed. GitHub's Markdown renderer was inspected before publication. The published author, permanent URL, complete 4,159-character body, and reply parent were read back and matched exactly. [Publication receipt](results/typed-rewrite-families/t100-rebuilt-multipliers/upstream-post.json).
+20. **17 October 2026, 13:22 EDT / 17:22 UTC — [Reply to contribution 17: exact T100 exclusion](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19001784).** Shared the rebuilt T100 result after checking that the thread was unlocked and contained no newer T100 solution. Starting from the previously published `a56=0`, the complete twelve-direction constant/linear multiplier pass yields 39 additional necessary relations. Exact degree-five identities force all five Y1 coefficients to vanish; rebuilt charts for raw 6 and 211 contradict, while five X0 chart failures remain recorded. The reproduced anchor dependency closes the residual sector, completing 132/132 in this fresh batch and raising the selected union to 812 triples. The reply links immutable commit `c50638e`, gives seven reproduction commands, reports two physical replays, and labels 36 three-prime rank comparisons as diagnostic rather than p-adic Hodge theory. It credits prior work and discloses Codex assistance. Holdout remains unsolved; no Lean proof, solve PR, improved unconditional degree bound, accepted solve, or leaderboard point is claimed. GitHub's Markdown renderer was inspected before publication. The published author, permanent URL, complete 4,159-character body, and reply parent were read back and matched exactly. [Publication receipt](results/typed-rewrite-families/t100-rebuilt-multipliers/upstream-post.json).
 
-21. **17 October 2026, 13:48 EDT / 17:48 UTC â€” [Cyclic instance discussion #55: degree-five bounds for two fresh targets](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002099).** Shared one consolidated exact result for `cycle-three` and the companion `mixed-biweight` calculation: every denominator of degree at most five is excluded for each fixed target. The complete E1 kernels vanish through degree four; the degree-five gradient spans fail the necessary Hessian quotient test after all 90 Koszul numerator syzygies are accounted for. The post links the immutable explanation at `02026b3`, exact packets, both actual-map figures, bounded-attempt logs, and reproduction commands. It reports rational replays, a separate coefficient/rank implementation, and explicit limits; it credits the repository framework and discloses Codex assistance. The current threads were reread and were empty of research comments. GitHub's Markdown preview covered three display equations and a table; a typography correction and source-link update were made within the same comment. The final body, author, URL, thread, and absence of a reply parent were read back and matched. The supporting Hodge Lab result was pushed after the shared discussion record was created. No new holdout comment, existence proof, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/fresh-instance-e1/upstream-post.json). Remote CI was still running when recorded.
+21. **17 October 2026, 13:48 EDT / 17:48 UTC — [Cyclic instance discussion #55: degree-five bounds for two fresh targets](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002099).** Shared one consolidated exact result for `cycle-three` and the companion `mixed-biweight` calculation: every denominator of degree at most five is excluded for each fixed target. The complete E1 kernels vanish through degree four; the degree-five gradient spans fail the necessary Hessian quotient test after all 90 Koszul numerator syzygies are accounted for. The post links the immutable explanation at `02026b3`, exact packets, both actual-map figures, bounded-attempt logs, and reproduction commands. It reports rational replays, a separate coefficient/rank implementation, and explicit limits; it credits the repository framework and discloses Codex assistance. The current threads were reread and were empty of research comments. GitHub's Markdown preview covered three display equations and a table; a typography correction and source-link update were made within the same comment. The final body, author, URL, thread, and absence of a reply parent were read back and matched. The supporting Hodge Lab result was pushed after the shared discussion record was created. No new holdout comment, existence proof, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/fresh-instance-e1/upstream-post.json). Remote CI was still running when recorded.
 
-22. **17 October 2026, 13:59 EDT / 17:59 UTC â€” [Reply in cyclic instance discussion #55: degree-six exclusion](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002223).** Shared the complete degree-six exclusion for `cycle-three`, raising its denominator lower bound to seven. Thirty rational square functionals remove the off-diagonal parameters; seven consequences of the full second equation and five quartic identities close the diagonal sector. All 315 Koszul corrections and an unrestricted quotient are included before the stated independent-product relaxation. The companion `mixed-biweight` kernel has three extra directions and remains open in degree six. The reply links immutable proof commit `55083fa`, two actual-map visualizations, exact and separate reconstruction checks, and the unsuccessful weaker tests. Both current threads were reread; Diamond's latest upstream push was still unchanged. GitHub's mathematical preview was inspected before publication, including a bracket-formatting correction. The full published body, author, URL, discussion, and reply parent were independently read back and matched. The linked Hodge Lab commit was pushed immediately after posting. This is the only upstream contribution in this batch; no holdout post, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/fresh-instance-degree6/upstream-post.json). Remote CI was running when recorded.
+22. **17 October 2026, 13:59 EDT / 17:59 UTC — [Reply in cyclic instance discussion #55: degree-six exclusion](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002223).** Shared the complete degree-six exclusion for `cycle-three`, raising its denominator lower bound to seven. Thirty rational square functionals remove the off-diagonal parameters; seven consequences of the full second equation and five quartic identities close the diagonal sector. All 315 Koszul corrections and an unrestricted quotient are included before the stated independent-product relaxation. The companion `mixed-biweight` kernel has three extra directions and remains open in degree six. The reply links immutable proof commit `55083fa`, two actual-map visualizations, exact and separate reconstruction checks, and the unsuccessful weaker tests. Both current threads were reread; Diamond's latest upstream push was still unchanged. GitHub's mathematical preview was inspected before publication, including a bracket-formatting correction. The full published body, author, URL, discussion, and reply parent were independently read back and matched. The linked Hodge Lab commit was pushed immediately after posting. This is the only upstream contribution in this batch; no holdout post, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/fresh-instance-degree6/upstream-post.json). Remote CI was running when recorded.
 
-23. **17 October 2026, 14:10 EDT / 18:10 UTC â€” [Mixed-biweight discussion #56: complete degree-six exclusion](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359).** Shared the exact degree-six obstruction including all three extra E1 directions, raising this fixed target's denominator lower bound to seven. The post explains why correction elimination modulo the Jacobian ideal applies outside the Jacobian denominator subspace, the two rounds of square identities, the failed lower multiplier degrees, and the two remaining complex points. It displays the three-term coefficient functional that rejects both points while retaining all 315 shared Koszul corrections and an unrestricted quotient. The post links immutable proof commit `b5d294e`, four actual-map/support/root visualizations, rational checks, the separate reconstruction, and retained exploratory probes. The separate checker rejects 50 altered witnesses. The current discussion was reread and empty; upstream main was unchanged and no open PR existed. GitHub's mathematical preview was inspected. The full 4,059-character body, author, permanent URL, discussion, and absence of a reply parent were independently read back and matched. The linked repository push succeeded after one transient SSH connection failure. This is the only upstream post in the batch; no holdout post, existence certificate, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/mixed-degree6-extra/upstream-post.json). Remote CI was not claimed in the post.
+23. **17 October 2026, 14:10 EDT / 18:10 UTC — [Mixed-biweight discussion #56: complete degree-six exclusion](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359).** Shared the exact degree-six obstruction including all three extra E1 directions, raising this fixed target's denominator lower bound to seven. The post explains why correction elimination modulo the Jacobian ideal applies outside the Jacobian denominator subspace, the two rounds of square identities, the failed lower multiplier degrees, and the two remaining complex points. It displays the three-term coefficient functional that rejects both points while retaining all 315 shared Koszul corrections and an unrestricted quotient. The post links immutable proof commit `b5d294e`, four actual-map/support/root visualizations, rational checks, the separate reconstruction, and retained exploratory probes. The separate checker rejects 50 altered witnesses. The current discussion was reread and empty; upstream main was unchanged and no open PR existed. GitHub's mathematical preview was inspected. The full 4,059-character body, author, permanent URL, discussion, and absence of a reply parent were independently read back and matched. The linked repository push succeeded after one transient SSH connection failure. This is the only upstream post in the batch; no holdout post, existence certificate, Lean theorem, solve PR, accepted solve, or leaderboard point is counted. [Publication receipt](results/mixed-degree6-extra/upstream-post.json). Remote CI was not claimed in the post.
 
-24. **17 October 2026, 14:31 EDT / 18:31 UTC â€” [Cyclic-triple-fano discussion #112: explicit free curve and local covering family](https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605).** Shared one checked geometric partial result for this new target only. The quotient curve's twisted deformation map has rank six; seven incidence equations give a smooth three-parameter component, and marked evaluation has a four-by-four minor equal to one. The post links [immutable code, exact checks, three figures, and limits](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/notes/cyclic-fano-curve.md), credits the upstream framework and classical methods, and discloses Codex assistance. The two implementations reject ten and six altered witnesses. No supporting divisor, certificate, Lean proof, solution PR, or accepted solve is claimed. The thread was read and empty before posting. The author, complete 5,002-character body, URL, discussion, and absence of a reply parent were read back and matched. The supporting Hodge Lab commit was pushed immediately afterward. Local previews rendered all math, but live GitHub inspection found that the Gram display rejected `\operatorname`; the internal note uses `\mathrm{diag}`. **The post preceded the user's stand-down instruction. Further upstream posts and edits are now paused, so that live-comment formatting issue remains uncorrected upstream.** [Publication receipt and rendering limitation](results/cyclic-fano-curve/upstream-post.json).
+24. **17 October 2026, 14:31 EDT / 18:31 UTC — [Cyclic-triple-fano discussion #112: explicit free curve and local covering family](https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605).** Shared one checked geometric partial result for this new target only. The quotient curve's twisted deformation map has rank six; seven incidence equations give a smooth three-parameter component, and marked evaluation has a four-by-four minor equal to one. The post links [immutable code, exact checks, three figures, and limits](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/notes/cyclic-fano-curve.md), credits the upstream framework and classical methods, and discloses Codex assistance. The two implementations reject ten and six altered witnesses. No supporting divisor, certificate, Lean proof, solution PR, or accepted solve is claimed. The thread was read and empty before posting. The author, complete 5,002-character body, URL, discussion, and absence of a reply parent were read back and matched. The supporting Hodge Lab commit was pushed immediately afterward. Local previews rendered all math, but live GitHub inspection found that the Gram display rejected `\operatorname`; the internal note uses `\mathrm{diag}`. **The post preceded the user's stand-down instruction. Further upstream posts and edits are now paused, so that live-comment formatting issue remains uncorrected upstream.** [Publication receipt and rendering limitation](results/cyclic-fano-curve/upstream-post.json).
 
-25. **19 October 2026, 16:22 EDT / 20:22 UTC (updated 16:35 & 17:07 EDT) â€” [One-reflection-skew discussion #127: degree-five denominator exclusion, Kramers quartet, and deformed Nambu/Casimir flow](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19049585).** Shared the complete rational $E_1$ and degree-five Hessian $E_2$ exclusion of denominators of degree at most five for `one-reflection-skew`, together with the surviving $\mathbb{Z}_2^3$ charge-parity subgroup, the order-four Kramers-like complex exchange $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$, the universal constant-coefficient Cramer identity $\mathrm{disc}(h) u^2 = L_u f_u + L_v f_v + L_h h(u,v)$ for the deformed binary-cubic Nambu/Casimir flow, and the phase-space caustic along $X_1 Y_1 = 0$. The thread was read and verified empty (`totalCount: 0`) before posting. Links immutable proof commit [`4bbac5c`](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/notes/one-reflection-skew-pilot.md) and its inline [four-panel E1/E2 & Casimir phase-portrait figure](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/results/one-reflection-skew-pilot/one-reflection-skew-audit.png), credits the repository framework, `fringewidth`, and `fqlx` (PR #123), and discloses AI assistance. Published author `rbajaj5`, permanent URL, and exact body were read back and matched. No solve, Lean theorem, or exclusion of $\deg D \ge 6$ or auxiliary covers is claimed. [Publication receipt](results/one-reflection-skew-pilot/upstream-post.json).
+25. **19 October 2026, 16:22 EDT / 20:22 UTC (updated 16:35 & 17:07 EDT) — [One-reflection-skew discussion #127: degree-five denominator exclusion, Kramers quartet, and deformed Nambu/Casimir flow](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19049585).** Shared the complete rational $E_1$ and degree-five Hessian $E_2$ exclusion of denominators of degree at most five for `one-reflection-skew`, together with the surviving $\mathbb{Z}_2^3$ charge-parity subgroup, the order-four Kramers-like complex exchange $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$, the universal constant-coefficient Cramer identity $\mathrm{disc}(h) u^2 = L_u f_u + L_v f_v + L_h h(u,v)$ for the deformed binary-cubic Nambu/Casimir flow, and the phase-space caustic along $X_1 Y_1 = 0$. The thread was read and verified empty (`totalCount: 0`) before posting. Links immutable proof commit [`4bbac5c`](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/notes/one-reflection-skew-pilot.md) and its inline [four-panel E1/E2 & Casimir phase-portrait figure](https://github.com/rbajaj5/hodge-lab/blob/4bbac5cafd4bbd4d602606f258c9c26e78c23334/results/one-reflection-skew-pilot/one-reflection-skew-audit.png), credits the repository framework, `fringewidth`, and `fqlx` (PR #123), and discloses AI assistance. Published author `rbajaj5`, permanent URL, and exact body were read back and matched. No solve, Lean theorem, or exclusion of $\deg D \ge 6$ or auxiliary covers is claimed. [Publication receipt](results/one-reflection-skew-pilot/upstream-post.json).
 
-26. **19 October 2026, 17:07 EDT / 21:07 UTC â€” [One-reflection-skew discussion #127: complete degree-six $E_1 + E_2$ exclusion over $\mathbb{C}$ (Kramers-bridge cascade, factored Casimir modes, and rank-9 diagonal quotient)](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19051428).** Shared the complete degree-six $E_1$ and $E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew`, raising its coprime denominator lower bound to $\deg D \ge 7$. Reports $\dim\ker(E_1)_6 = 36 = \dim J_6(F)$ ($0$ extra non-Jacobian directions), the two-step Hessian $E_2$ square cascade in $S_{12}/J_{12}$ ($28$ off-diagonals eliminated at Step 1; the Kramers-bridge doublet $M_{13}=(X_1,Y_0), M_{14}=(X_1,Y_1)$ isolated at Step 2), the three factored pure-Hessian modes ($Q_{\text{node}}, Q_{\text{Kramers}}, Q_{\text{bridge}}$), the full $9$-equation diagonal $E_2$ quotient system retaining all $315$ Koszul corrections and $462$ $F$-multiples, and full-rank cubic ($35/35$) and quartic ($70/70$) Macaulay elimination over $\mathbb{C}$. Links immutable commit [`2aa95c5`](https://github.com/rbajaj5/hodge-lab/blob/2aa95c5e4754547cdfdc6bf0a08bc8536e0aee05/notes/one-reflection-skew-degree6.md), inline [four-panel degree-six exclusion figure](https://github.com/rbajaj5/hodge-lab/blob/2aa95c5e4754547cdfdc6bf0a08bc8536e0aee05/results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png), and exact proof packets. Published author `rbajaj5`, permanent URL, and exact 9,173-character body were read back and matched. No solve PR, Lean theorem, or exclusion of $\deg D \ge 7$ is claimed. [Publication receipt](results/one-reflection-skew-degree6/upstream-post.json).
+26. **19 October 2026, 17:07 EDT / 21:07 UTC — [One-reflection-skew discussion #127: complete degree-six $E_1 + E_2$ exclusion over $\mathbb{C}$ (Kramers-bridge cascade, factored Casimir modes, and rank-9 diagonal quotient)](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19051428).** Shared the complete degree-six $E_1$ and $E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew`, raising its coprime denominator lower bound to $\deg D \ge 7$. Reports $\dim\ker(E_1)_6 = 36 = \dim J_6(F)$ ($0$ extra non-Jacobian directions), the two-step Hessian $E_2$ square cascade in $S_{12}/J_{12}$ ($28$ off-diagonals eliminated at Step 1; the Kramers-bridge doublet $M_{13}=(X_1,Y_0), M_{14}=(X_1,Y_1)$ isolated at Step 2), the three factored pure-Hessian modes ($Q_{\text{node}}, Q_{\text{Kramers}}, Q_{\text{bridge}}$), the full $9$-equation diagonal $E_2$ quotient system retaining all $315$ Koszul corrections and $462$ $F$-multiples, and full-rank cubic ($35/35$) and quartic ($70/70$) Macaulay elimination over $\mathbb{C}$. Links immutable commit [`2aa95c5`](https://github.com/rbajaj5/hodge-lab/blob/2aa95c5e4754547cdfdc6bf0a08bc8536e0aee05/notes/one-reflection-skew-degree6.md), inline [four-panel degree-six exclusion figure](https://github.com/rbajaj5/hodge-lab/blob/2aa95c5e4754547cdfdc6bf0a08bc8536e0aee05/results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png), and exact proof packets. Published author `rbajaj5`, permanent URL, and exact 9,173-character body were read back and matched. No solve PR, Lean theorem, or exclusion of $\deg D \ge 7$ is claimed. [Publication receipt](results/one-reflection-skew-degree6/upstream-post.json).
 
-27. **19 October 2026, 17:40 EDT / 21:40 UTC â€” [One-reflection-skew discussion #127: degree-seven $\mathbb{Z}_2^4$ charge-parity superselection decomposition, $Y_2$-covariant scaling, and complete $Y_2$-odd exclusion over $\mathbb{C}$](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407).** Shared the complete degree-seven ($792$-monomial) $\mathbb{Z}_2^4$ superselection decomposition across all $8$ charge-parity sectors of $S_7$ and $S_{13}$ ($8{,}568$ rows, $\mathrm{rank}(J_{13}) = 6{,}882$, degree-$8$ Koszul syzygy kernel $\dim\ker(J_{13}) = 840 = 15 \times 56$, $\dim\ker(E_1)_7 = 135 = 126 + 9$), the $\mathbb{Z}_2^4$ Superselection Focusing Theorem mapping all $8$ sectors into $S_{14}[(1,0,1,0)]$ ($213$-dimensional quotient), the complete exclusion over $\mathbb{C}$ of all four $Y_2$-odd sectors ($41/135$ $E_1$ dimensions and $296/792$ $S_7$ monomials, via 1-step rank-$26/45$ elimination on the off-Euler triad and $Y_2$-covariant scaling $B_{Y_2 D_6}(Y_2 N_6) = Y_2^2 B_{D_6}(N_6)$ + rank-$9$ Macaulay $35/35, 70/70$ on `[0,0,0,1]`), and complete $Y_2$-decoupling + rank-$44/44$ base-quotient surjectivity across all four $Y_2$-even sectors. Links immutable commit [`45ab8ff`](https://github.com/rbajaj5/hodge-lab/blob/45ab8ff61c1af70a30c6cb16ea9a95252d6846d2/notes/one-reflection-skew-degree7.md), inline [four-panel degree-seven superselection figure](https://github.com/rbajaj5/hodge-lab/blob/45ab8ff61c1af70a30c6cb16ea9a95252d6846d2/results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png), and exact certificate (`sha256[:16] = dda75a2b1a2987c7`). Published author `rbajaj5`, permanent URL, and body were read back and verified. [Publication receipt](results/one-reflection-skew-degree7/upstream-post.json).
+27. **19 October 2026, 17:40 EDT / 21:40 UTC — [One-reflection-skew discussion #127: degree-seven $\mathbb{Z}_2^4$ charge-parity superselection decomposition, $Y_2$-covariant scaling, and complete $Y_2$-odd exclusion over $\mathbb{C}$](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407).** Shared the complete degree-seven ($792$-monomial) $\mathbb{Z}_2^4$ superselection decomposition across all $8$ charge-parity sectors of $S_7$ and $S_{13}$ ($8{,}568$ rows, $\mathrm{rank}(J_{13}) = 6{,}882$, degree-$8$ Koszul syzygy kernel $\dim\ker(J_{13}) = 840 = 15 \times 56$, $\dim\ker(E_1)_7 = 135 = 126 + 9$), the $\mathbb{Z}_2^4$ Superselection Focusing Theorem mapping all $8$ sectors into $S_{14}[(1,0,1,0)]$ ($213$-dimensional quotient), the complete exclusion over $\mathbb{C}$ of all four $Y_2$-odd sectors ($41/135$ $E_1$ dimensions and $296/792$ $S_7$ monomials, via 1-step rank-$26/45$ elimination on the off-Euler triad and $Y_2$-covariant scaling $B_{Y_2 D_6}(Y_2 N_6) = Y_2^2 B_{D_6}(N_6)$ + rank-$9$ Macaulay $35/35, 70/70$ on `[0,0,0,1]`), and complete $Y_2$-decoupling + rank-$44/44$ base-quotient surjectivity across all four $Y_2$-even sectors. Links immutable commit [`45ab8ff`](https://github.com/rbajaj5/hodge-lab/blob/45ab8ff61c1af70a30c6cb16ea9a95252d6846d2/notes/one-reflection-skew-degree7.md), inline [four-panel degree-seven superselection figure](https://github.com/rbajaj5/hodge-lab/blob/45ab8ff61c1af70a30c6cb16ea9a95252d6846d2/results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png), and exact certificate (`sha256[:16] = dda75a2b1a2987c7`). Published author `rbajaj5`, permanent URL, and body were read back and verified. [Publication receipt](results/one-reflection-skew-degree7/upstream-post.json).
 
 ## Pull requests
 
-1. **17 October 2026, 20:20 EDT / 18 October, 00:20 UTC â€” [Draft maintenance PR #121: finite-row obstruction lemmas](https://github.com/hodge-computer/sextics/pull/121).**
+1. **17 October 2026, 20:20 EDT / 18 October, 00:20 UTC — [Draft maintenance PR #121: finite-row obstruction lemmas](https://github.com/hodge-computer/sextics/pull/121).**
    Submitted the reusable row-functional lemma and a literal two-row,
    175-column worked example, following the user's request to contribute
    reusable Lean work. Only two new files under `formal/lean/HodgeTestbed/`
@@ -141,7 +141,7 @@ flowchart LR
    assistance. It is not a `HasCertificate` proof, an accepted solution,
    or a claim to solve points. No discussion comment was added.
    [Publication receipt](results/cyclic-fano-lean/upstream-maintenance/publication.json)
-   Â· [immutable notebook](https://github.com/rbajaj5/hodge-lab/blob/7fe139a725339afd1a45caf801dbee27f7d97417/notes/cyclic-fano-concrete-lean.md).
+   · [immutable notebook](https://github.com/rbajaj5/hodge-lab/blob/7fe139a725339afd1a45caf801dbee27f7d97417/notes/cyclic-fano-concrete-lean.md).
 
    **Later validation update, 17 October 2026:** upstream's pinned Lean
    4.33.0 compatibility check subsequently passed for both proposed modules.
@@ -158,7 +158,7 @@ They do not add to the public contribution tally above. They were recorded on
 explicitly. They are a public research record, not a transcript of private
 conversations or evidence of an accepted solve.
 
-1. **16 October 2026 â€” Why Dubedat.** The user's intended direction is to use
+1. **16 October 2026 — Why Dubedat.** The user's intended direction is to use
    free fields, geometric response, and visualization to develop ideas for the
    fixed algebra problem. Dubedat's dimer work suggests determinant partition
    functions, inverse operators, cycle twists, and deformation identities.
@@ -167,7 +167,7 @@ conversations or evidence of an accepted solve.
    connecting these constructions to the holdout has been established.
    [Sources and concrete adaptation](notes/dubedat-cycles.md).
 
-2. **16 October 2026 â€” Earlier Gram-ranking results, recorded retrospectively.**
+2. **16 October 2026 — Earlier Gram-ranking results, recorded retrospectively.**
    Geometric/anisotropic Gram matrices were meant to improve candidate ranking.
    The recorded experiment reduced a numerical residual by about 32% against
    random selection, but extra anisotropic weighting did not clearly improve
@@ -175,7 +175,7 @@ conversations or evidence of an accepted solve.
    exact checks. This motivated treating numerical ranking and algebraic
    validity as separate questions. [Experiment](notes/denominator-ranking.md).
 
-3. **16 October 2026 â€” Six-cycle determinant experiment.** A small bipartite
+3. **16 October 2026 — Six-cycle determinant experiment.** A small bipartite
    graph matrix supplies a degree-seven determinant and cofactor numerator
    lift satisfying E1 automatically. We tested all 15 gradient pairs with
    monomial edges and with mixed linear edges at twists +1 and -1. All 45
@@ -187,7 +187,7 @@ conversations or evidence of an accepted solve.
    Dubedat's ideas or all graph-matrix constructions. [Code, reasoning, and
    checks](notes/dubedat-cycles.md). No upstream post for this experiment.
 
-4. **16 October 2026 â€” Imaginary geometry pictures.** The user's request is to
+4. **16 October 2026 — Imaginary geometry pictures.** The user's request is to
    make the geometric intuition visible. The new CUDA gallery holds Gaussian
    input fixed while varying the angle of a smoothed field's flow or the
    directional conductances of its Laplacian. Colors and textures are display
@@ -197,7 +197,7 @@ conversations or evidence of an accepted solve.
    [Gallery, equations, and validation](notes/imaginary-geometry-gallery.md).
    No upstream post for these pictures.
 
-5. **16 October 2026 â€” Complementary exact algebra.** fqlx published and
+5. **16 October 2026 — Complementary exact algebra.** fqlx published and
    credited our family-22 continuation while supplying a portable proof for
    family 30. We reproduced that proof and its separate audit. Our checked
    family-13 exclusion fills the remaining two-character gap. This supports
@@ -205,14 +205,14 @@ conversations or evidence of an accepted solve.
    not validate the separate geometric heuristics or solve holdout.
    [Combined argument and provenance](notes/x0-y0-exclusion.md).
 
-6. **16 October 2026 â€” Proposed next tests, not executed here.** Use E1
+6. **16 October 2026 — Proposed next tests, not executed here.** Use E1
    denominator/lift pairs outside the Jacobian ideal as graph-matrix entries;
    test multiple independent cycles after removing rescaling redundancy; and
    investigate whether inverse-operator/deformation identities impose useful
    relations on the full certificate equations. Each proposal still needs
    exact checks and a stated comparison baseline.
 
-7. **16 October 2026 â€” Failed family-30 proof exports.** Before fqlx's portable
+7. **16 October 2026 — Failed family-30 proof exports.** Before fqlx's portable
    proof, our rational Singular `slimgb` calculations returned the unit ideal
    on five full-system charts. Exporting a transformation matrix on the first
    chart exceeded 50 seconds and returned no polynomial multipliers. A bounded
@@ -222,7 +222,7 @@ conversations or evidence of an accepted solve.
    attempt as a portable proof. The subsequent proof is attributed to fqlx.
    [Saved inputs and stopping conditions](results/degree7-x1-y1-provisional/report.json).
 
-8. **16 October 2026 â€” Unsuccessful routes before the family-13 proof.**
+8. **16 October 2026 — Unsuccessful routes before the family-13 proof.**
    Individual coordinate cubes/fourth powers produced no new vanishings in
    the tested row spaces. Squares of the 25 mixed products had no witnesses
    in the tested degree-four space. A larger tracked degree-six calculation
@@ -230,7 +230,7 @@ conversations or evidence of an accepted solve.
    outcomes, not claims that no such polynomial consequences exist at higher
    degree. [Discovery history and the successful replacement](notes/x0-y0-exclusion.md).
 
-9. **16 October 2026 â€” Hodge projection applied to the actual holdout equations.**
+9. **16 October 2026 — Hodge projection applied to the actual holdout equations.**
    The torus decomposition suggested separating each residual into a removable
    numerator-correction part and a cokernel obstruction. We screened 600
    degree-seven directions in six seeded three-character spans, chosen from
@@ -246,7 +246,7 @@ conversations or evidence of an accepted solve.
    [Method, code, packet, and limits](notes/hodge-projected-search.md).
    No upstream post, solve submission, or leaderboard point from this run.
 
-10. **16 October 2026 â€” High-genus pictures and a failed transition lead.**
+10. **16 October 2026 — High-genus pictures and a failed transition lead.**
     Reused the original connected genus-48 surface and ran 256 independent
     Gaussian samples under each of three paired directional weightings.
     Rotating a checked harmonic reference gives a visible connection between
@@ -260,9 +260,9 @@ conversations or evidence of an accepted solve.
     This surface is a synthetic intuition model, not the algebraic holdout.
     No upstream post for these pictures.
 
-11. **16 October 2026 â€” Failed long-flow approximation and implementation repair.**
+11. **16 October 2026 — Failed long-flow approximation and implementation repair.**
     Most traced paths on the piecewise-constant triangle field terminate at
-    an immediate edge reversal (1,352â€“1,527 of 1,600 seeds across the three
+    an immediate edge reversal (1,352–1,527 of 1,600 seeds across the three
     images). We retained short streamlets but rejected path trapping and
     length as physical observables. The covariance-based phase test does not
     use these paths. An initial CUDA matrix contraction also failed because
@@ -270,16 +270,16 @@ conversations or evidence of an accepted solve.
     reconstruction checked the result. Neither failure was omitted or
     interpreted as a mathematical obstruction. [Recorded limits](notes/high-genus-flow.md#phase-response-and-what-failed).
 
-12. **16 October 2026 â€” What counts as work.** The user's stated aim is to
+12. **16 October 2026 — What counts as work.** The user's stated aim is to
     continue experiments, exact checks, and useful Lean formalization when
     appropriate, while keeping the motivation and outcomes honest. A public
     discussion contribution, a computational obstruction, a formalized partial
     lemma, and an accepted solution are separate outcomes. No new Lean theorem
-    was attempted in entries 9â€“11. The upstream contribution tally remains two
+    was attempted in entries 9–11. The upstream contribution tally remains two
     comments and zero accepted solves; there is no pending solve point from
     these experiments.
 
-13. **16 October 2026 â€” From sampled directions to complete three-character families.**
+13. **16 October 2026 — From sampled directions to complete three-character families.**
     The user's request was to make the holdout search systematic. We tested
     all 136 third-character extensions of the previously difficult `X0/Y0`
     pair, plus all 20 coordinate-character triples, giving 152 distinct
@@ -290,7 +290,7 @@ conversations or evidence of an accepted solve.
     correction pair strategy; it is not a new theorem from imaginary geometry.
     [Selection, equations, attribution, and coverage map](notes/three-character-families.md).
 
-14. **16 October 2026 â€” Successful shared-numerator continuation and retained failures.**
+14. **16 October 2026 — Successful shared-numerator continuation and retained failures.**
     The relaxed test left 40 families unresolved. For the 24 remaining
     `X0/Y0` extensions we restored the actual shared numerator coefficients,
     retaining the full correction space allowed by exact stabilizer projection.
@@ -306,7 +306,7 @@ conversations or evidence of an accepted solve.
     16 coordinate triples received only the relaxed pass. [Proof packets,
     stopping rules, and failed attempts](notes/three-character-families.md#what-remains-and-what-failed).
 
-15. **16 October 2026 â€” Evidence and scope of this batch.** Exact replay checks
+15. **16 October 2026 — Evidence and scope of this batch.** Exact replay checks
     6,219 physical duals, 265 square identities, and 70 chart attempts with
     1,739 inferences. A separate polynomial construction uses the pinned target
     and opposite division order; it shares the identity replayer and is not
@@ -320,7 +320,7 @@ conversations or evidence of an accepted solve.
     Hodge Lab. After the proof commit passed CI, it was shared as post 3 above;
     no solve submission is counted.
 
-16. **16 October 2026 â€” Keep the simpler baseline competitive.** The comparison
+16. **16 October 2026 — Keep the simpler baseline competitive.** The comparison
     with sequence-model research suggests evaluating an ambitious mechanism
     against improvements to an established method. The analogy has limits:
     [Mamba](https://arxiv.org/abs/2312.00752) changes sequence processing and its
@@ -334,7 +334,7 @@ conversations or evidence of an accepted solve.
     supplied the verified obstruction. The 132-family result does not establish
     an advantage for anisotropy, GPUs, or imaginary geometry.
 
-17. **16 October 2026 â€” Algebra as composition: Marco Kuhlmann's dependency structures.**
+17. **16 October 2026 — Algebra as composition: Marco Kuhlmann's dependency structures.**
     The user supplied [Kuhlmann's 2007 dissertation](https://www.ps.uni-saarland.de/Publications/documents/kuhlmann2007dependency.pdf).
     Its dependency algebras connect rules for composing structures with
     grammatical expressivity and parsing complexity; sections 3.2, 4.2, and
@@ -349,7 +349,7 @@ conversations or evidence of an accepted solve.
     algorithms, complexity bound, or new holdout theorem has been established
     from this analogy.
 
-18. **16 October 2026 â€” Polynomial syzygies turn the literature lead into a new exclusion.**
+18. **16 October 2026 — Polynomial syzygies turn the literature lead into a new exclusion.**
     The user supplied David Yang's paper on equivariant sheaves and Koszul
     cohomology and asked us to pursue that direction. We tested affine
     polynomial multipliers of the actual shared correction equations,
@@ -364,9 +364,9 @@ conversations or evidence of an accepted solve.
     [Proof, comparison, checks, and scope](notes/polynomial-syzygies.md).
     After the proof commit passed full CI, this was published as post 4 above.
 
-19. **16 October 2026 â€” Unsuccessful searches and the choice to seek powers.**
+19. **16 October 2026 — Unsuccessful searches and the choice to seek powers.**
     Full Singular module-syzygy searches timed out at 45 seconds on all three
-    charts. A GrÃ¶bner calculation on family 87 suggested a stronger component
+    charts. A Gröbner calculation on family 87 suggested a stronger component
     vanishing, but multiplier exports timed out at 60 and 90 seconds.
     A direct bounded search for linear memberships was also insufficient.
     Seeking coordinate powers instead supplied the three useful cubes, each
@@ -377,7 +377,7 @@ conversations or evidence of an accepted solve.
     after those vanishings; this remains unexecuted in this batch.
     [Attempts and reproducible inputs](results/degree7-syzygies/experiments.json).
 
-20. **16 October 2026 â€” Etingof and Kelly: useful hypotheses, no automatic transfer.**
+20. **16 October 2026 — Etingof and Kelly: useful hypotheses, no automatic transfer.**
     The later PDFs are Etingof's paper on Koszul duality and PBW in symmetric
     tensor categories, and Jack Kelly's thesis on exact categories and derived
     analytic algebra. We examined the introductions and relevant deformation
@@ -389,7 +389,7 @@ conversations or evidence of an accepted solve.
     degree-three stopping rule. The source PDFs and private conversations
     are not republished here. [Sources and interpretation](notes/polynomial-syzygies.md#how-the-papers-guided-the-experiment).
 
-21. **16 October 2026 â€” Rebuild after the proven zeros.** The proposed
+21. **16 October 2026 — Rebuild after the proven zeros.** The proposed
     family-115 rebuild was executed. Affine syzygies alone and power searches
     through degree four still failed. A degree-five search on chart `a10=1`
     supplied two square identities; a subsequent fourth-power identity and
@@ -400,7 +400,7 @@ conversations or evidence of an accepted solve.
     [Proof and exact packets](notes/syzygy-rebuild.md).
     After the proof commit passed full CI, this was published as post 5 above.
 
-22. **16 October 2026 â€” Larger families and unsuccessful computations.** All
+22. **16 October 2026 — Larger families and unsuccessful computations.** All
     ten remaining third-component charts of families 16 and 137 were attempted
     with full shared numerator corrections and affine polynomial multipliers.
     Every full search reached its 120-second limit. Six later runs retained
@@ -412,7 +412,7 @@ conversations or evidence of an accepted solve.
     economical lead emerged. An unused 39 MB CAS unit export was superseded
     by the smaller checked proof. [Bounds, logs, and retained failures](results/degree7-syzygy-rebuild/experiments.json).
 
-23. **16 October 2026 â€” Visualizing the algebra rather than substituting a picture for it.**
+23. **16 October 2026 — Visualizing the algebra rather than substituting a picture for it.**
     The new figure shows the actual cancellation-support matrix and the
     dependency chain from syzygies to powers, chart exclusion, and refinement.
     Its colors count multiplier monomials; they do not represent conditioning
@@ -420,7 +420,7 @@ conversations or evidence of an accepted solve.
     correction map. No phase transition or new geometric theorem is inferred
     from this figure. [Reproducible visualization](results/degree7-syzygy-rebuild/syzygy-proof-map.png).
 
-24. **16 October 2026 â€” Braids and arithmetic: possible next tools.** The user
+24. **16 October 2026 — Braids and arithmetic: possible next tools.** The user
     asked whether the braid and supercongruence projects could help. A kernel
     bundle around rank-drop loci could motivate a monodromy experiment, but
     no braid action or compatible transport on this certificate system has
@@ -432,7 +432,7 @@ conversations or evidence of an accepted solve.
     already produced another complete restricted-family result.
     [Sources and explicit limits](notes/syzygy-rebuild.md#braids-hodge-projection-and-arithmetic-as-research-tools).
 
-25. **16 October 2026 â€” A further family-16 lead after the fifth proof packet.**
+25. **16 October 2026 — A further family-16 lead after the fifth proof packet.**
     Composing the two conditional chart identities back to physical equations
     leaves only linear multipliers. Homogenizing these multipliers gives two
     identities against the unnormalized family: `a1^3=a9^3=0`, with ten and
@@ -443,7 +443,7 @@ conversations or evidence of an accepted solve.
     This strengthening is recorded after the immutable fifth-post packet and
     is not a sixth public post. [Small checker](algebra/check_family16_global_cubes.py).
 
-26. **16 October 2026 â€” Three syzygy sources and a precise next question.**
+26. **16 October 2026 — Three syzygy sources and a precise next question.**
     Read the relevant definitions and theorem statements in the user's
     Eisenbud, Ein--Lazarsfeld--Yang, and Caucci--Lahoz links. The polynomial
     matrix viewpoint fits our existing equations directly; the geometric
@@ -455,7 +455,7 @@ conversations or evidence of an accepted solve.
     rank-stratification experiment, or a sixth upstream post.
     [Sources, assumptions, and proposed calculation](notes/syzygy-literature-map.md).
 
-27. **16 October 2026 â€” A local rank obstruction becomes a two-row identity.**
+27. **16 October 2026 — A local rank obstruction becomes a two-row identity.**
     Ten bounded rank-block searches all remained unresolved after discovering
     one new linear relation per family. Each relation has a simpler global
     proof: two unnormalized physical rows give `L^2=(9/2)Ej-27Ek`. Hence `L=0`
@@ -463,7 +463,7 @@ conversations or evidence of an accepted solve.
     The search was local to small blocks, not a complete stratification of
     the full correction matrix. [Identities, bounds, and reasoning](notes/koszul-rank-continuation.md).
 
-28. **16 October 2026 â€” Rebuilding Koszul syzygies closes families 16 and 137.**
+28. **16 October 2026 — Rebuilding Koszul syzygies closes families 16 and 137.**
     The family-16 global cubes and new linear identity close chart 11; its
     forced zero makes the other four charts tractable. For family 137,
     composing and homogenizing conditional relations supplies two global
@@ -476,7 +476,7 @@ conversations or evidence of an accepted solve.
     theorem. [Complete proof and checks](notes/koszul-rank-continuation.md).
     After the proof commit passed full CI, this was published as post 6 above.
 
-29. **16 October 2026 â€” Failed bounds and the successful change of order.**
+29. **16 October 2026 — Failed bounds and the successful change of order.**
     Three of four initial syzygy follow-ups timed out at 120 seconds; an
     unrefined family-137 chart timed out again at 150 seconds. Their retained
     checkpoints led to useful reductions but are not themselves exclusions.
@@ -488,7 +488,7 @@ conversations or evidence of an accepted solve.
     proofs; no GPU, braid, optical, or imaginary-geometry advantage is
     asserted. [Logs and retained discovery inputs](results/degree7-rank-strata/).
 
-30. **16 October 2026 â€” Visualizing the actual Koszul correction map.**
+30. **16 October 2026 — Visualizing the actual Koszul correction map.**
     Added three companions to post six: polynomial support of the correction
     map and its selected left syzygies, the exact two-row image/cokernel
     obstruction, and the dependencies closing all ten charts. The displayed
@@ -505,7 +505,7 @@ conversations or evidence of an accepted solve.
     the contribution tally remains six. [Figures, sources, and reproducible
     checks](notes/koszul-map-visualizations.md).
 
-31. **16 October 2026 â€” Standard parameter optimization with exact follow-up.**
+31. **16 October 2026 — Standard parameter optimization with exact follow-up.**
     Optimized the surviving coefficients in each of the 16 other selected
     holdout triple families. Two L-BFGS-B starts per bounded real chart use
     the full 840-column correction map and fixed equation weights. The
@@ -524,7 +524,7 @@ conversations or evidence of an accepted solve.
     This batch stays in Hodge Lab; the upstream tally remains six, reconfirmed
     against discussion #44.
 
-32. **16 October 2026 â€” Visual focus: where the parameter search moves.**
+32. **16 October 2026 — Visual focus: where the parameter search moves.**
     Added an interactive view of the existing 16-family optimization batch.
     The triangle shows squared coefficient-norm shares of the denominator's
     three characters; its paths are linked to the best residual seen at each
@@ -543,7 +543,7 @@ conversations or evidence of an accepted solve.
     flag. The score tolerance and exact certificate checks are unchanged.
     [Explorer, interpretation, and checks](notes/koszul-parameter-optimization.md#interactive-view-of-character-concentration).
 
-33. **16 October 2026 â€” Geometry of the Koszul-induced operator.**
+33. **16 October 2026 — Geometry of the Koszul-induced operator.**
     Built a circle-to-ellipse view of three previously rejected rational
     denominators: the first optimized endpoints with one, two, and three
     characters, from families 1, 2, and 4. Two response observables and an
@@ -560,7 +560,7 @@ conversations or evidence of an accepted solve.
     search or upstream post; the contribution tally remains six.
     [Derivation, limits, and visualizations](notes/koszul-geometric-map.md).
 
-34. **16 October 2026 â€” Denominator sweep and an interior-character search.**
+34. **16 October 2026 — Denominator sweep and an interior-character search.**
     Varied `D_42 + s D_272 + t D_294` in a fixed pair of viewing frames. All
     81 sampled rational full-map ranks are checked by rational elimination
     and separate modular elimination: 72 have rank 720, eight rank 713, and
@@ -582,7 +582,7 @@ conversations or evidence of an accepted solve.
     was posted; the public contribution tally remains six.
     [Derivation, visualizations, failed attempts, and reproduction](notes/koszul-denominator-sweep.md).
 
-35. **17 October 2026 â€” Read the expanded discussion; repair CI portability.**
+35. **17 October 2026 — Read the expanded discussion; repair CI portability.**
     Checked the thread inventory (15 top-level posts and five replies) and
     read the six newer updates, including the corrected closing edit.
     Recorded the reported new character
@@ -598,7 +598,7 @@ conversations or evidence of an accepted solve.
     No upstream message or solve submission; our contribution tally remains six.
     [Discussion sources, implications, and CI correction](notes/discussion-checkpoint-2026-10-17.md).
 
-36. **17 October 2026 â€” Eisenbud linear strands, with inspectable cancellation.**
+36. **17 October 2026 — Eisenbud linear strands, with inspectable cancellation.**
     Extended the necessary-ideal power search from degree two to degree three
     in all sixteen remaining selected triples. Six cubic identities force
     zeros in families 6, 8, 10, 149, and 152; rebuilding yields five more
@@ -624,7 +624,7 @@ conversations or evidence of an accepted solve.
     The corrected Linux `eisenbud-strand` job subsequently passed both exact
     replays and the visualization-data check at the linked publication commit.
 
-37. **17 October 2026 â€” Degree-four blocks close five selected triples.**
+37. **17 October 2026 — Degree-four blocks close five selected triples.**
     Tested families 6, 8, 10, 149, and 152 after the preceding reductions.
     Full degree-four maps found thirty family-coordinate fourth-power
     identities; inspection reduced their proof to six blocks of six
@@ -649,7 +649,7 @@ conversations or evidence of an accepted solve.
     The Linux `eisenbud-quartic` job passed every new arithmetic and figure-data
     check at the pinned publication commit; its receipt is retained in the note.
 
-38. **17 October 2026 â€” Degree four on the eleven remaining triples.**
+38. **17 October 2026 — Degree four on the eleven remaining triples.**
     Tested all 33 pure-character blocks and the two surviving full maps.
     Twelve blocks fill their quartic target and force sixty family-coordinate
     zeros; a rank-65/70 block in family 2 forces two more. After replaying
@@ -677,7 +677,7 @@ conversations or evidence of an accepted solve.
     proof commit. Its receipt is retained; the other workflow jobs were
     still running at that checkpoint.
 
-39. **17 October 2026 â€” Shared numerators close family 17; reduce family 151.**
+39. **17 October 2026 — Shared numerators close family 17; reduce family 151.**
     Followed the failed quartic searches with bounded shared-numerator chart
     tests and pure-block powers through degree six. The original blocks
     force no coordinate powers. The full family-17 system excludes the
@@ -702,7 +702,7 @@ conversations or evidence of an accepted solve.
     commit. Its receipt is retained; other workflow jobs were still running
     when that receipt was recorded.
 
-40. **17 October 2026 â€” Polynomial multipliers close family 151.**
+40. **17 October 2026 — Polynomial multipliers close family 151.**
     Rebuilt the shared equations after the checked linear constraint and
     searched global and normalized-chart multipliers of degree at most one.
     The global calculation supplies 96 cubic relations independent of linear
@@ -726,7 +726,7 @@ conversations or evidence of an accepted solve.
     [receipt](results/family151-multipliers/ci-family151.json) records that
     later success separately from the publication-time status.
 
-41. **17 October 2026 â€” Complete the X1/Y1 extension batch.**
+41. **17 October 2026 — Complete the X1/Y1 extension batch.**
     Chose all 132 extensions not already in the preceding 152-family
     selection, with complete character eigenspaces and no transferred
     family-specific constraint. Necessary block equations and powers through
@@ -754,7 +754,7 @@ conversations or evidence of an accepted solve.
     jobs at that proof commit. The [full-workflow receipt](results/x1y1-extensions/ci-complete-workflow.json)
     records the update without a separate upstream status comment.
 
-42. **17 October 2026 â€” Curved bands and a corrected factorization.**
+42. **17 October 2026 — Curved bands and a corrected factorization.**
     The user noticed parabola-like bands in old X1/Y1 case B19 at degree
     four, compared B49 and B100, and asked for different colors. Added
     original, adapted, and reordered matrix views with two sign palettes
@@ -769,7 +769,7 @@ conversations or evidence of an accepted solve.
     necessities, and 162 browser layouts pass checks.
     [Equations, visual comparison, and correction](notes/graded-map-patterns.md).
 
-43. **17 October 2026 â€” Complete the new Y0/X1 extension batch.**
+43. **17 October 2026 — Complete the new Y0/X1 extension batch.**
     Extended the same rebuild strategy to 132 families disjoint from the
     previous 284. First-pass blocks close 123, shared equations and rebuilding
     close eight, and Y100 needs a global polynomial-multiplier continuation.
@@ -792,7 +792,7 @@ conversations or evidence of an accepted solve.
     The [CI receipt](results/y0x1-extensions/ci-y0x1.json) records that job's
     success while other workflow jobs were still running.
 
-44. **17 October 2026 â€” Distinguish relations from Koszul homology.**
+44. **17 October 2026 — Distinguish relations from Koszul homology.**
     The user redirected the proposed grammar-inspired experiment toward
     categorifications of syzygies, recalling David H. Yang and Emily Riehl.
     Checked the primary references: Yang's equivariant-sheaf interpretation,
@@ -812,7 +812,7 @@ conversations or evidence of an accepted solve.
     The [later full Linux receipt](results/necessary-koszul-complex/ci-complete-workflow.json)
     confirms all eleven workflow jobs passed at the published commit.
 
-45. **17 October 2026 â€” Use finite Koszul homology to choose continuations.**
+45. **17 October 2026 — Use finite Koszul homology to choose continuations.**
     Selected 132 previously uncovered full Y0/Y1 extensions. Square identities
     close 117. Computed 70 finite complexes for the fifteen survivors, then
     froze a ranking before testing four high-score families and four low-score
@@ -836,7 +836,7 @@ conversations or evidence of an accepted solve.
     subsequently confirmed both physical replays and the figure-data check
     passed at the proof commit; other workflow jobs were still running.
 
-46. **17 October 2026 â€” Rank only the added-character homology.**
+46. **17 October 2026 — Rank only the added-character homology.**
     Chose 132 fresh X0/X1 extensions, disjoint from the preceding 548.
     Square identities close 117. Computed the added-character block alone
     for fifteen survivors and froze high-score and low-score groups before
@@ -867,8 +867,8 @@ conversations or evidence of an accepted solve.
     verification variants, and both visualization checks at that commit.
     Other workflow jobs were still running at receipt time.
 
-47. **17 October 2026 â€” Revisit unique-category grammars.**
-    Read the supplied Vishnikinâ€“Okhotin paper while continuing the
+47. **17 October 2026 — Revisit unique-category grammars.**
+    Read the supplied Vishnikin–Okhotin paper while continuing the
     added-character experiment. Its encoding theorem and preservation of
     primitive-category counts suggest an analogy with typed composition
     and degree/character filters. Unique lexical typing does not remove
@@ -879,9 +879,9 @@ conversations or evidence of an accepted solve.
     [Precise scope and connection to the existing map figures](notes/categorical-syzygies.md#revisiting-the-grammar-suggestion-17-october-2026).
     This reading adds no upstream contribution to the tally.
 
-48. **17 October 2026 â€” Implement typed rewrites and goal projection.**
+48. **17 October 2026 — Implement typed rewrites and goal projection.**
     Following the user's request, implemented an experiment motivated by
-    Vishnikinâ€“Okhotin's conserved category counts. Derived auxiliary
+    Vishnikin–Okhotin's conserved category counts. Derived auxiliary
     degree/character types from the actual fixed physical polynomials.
     Selected 132 fresh X0/Y1 extensions outside the preceding 680-family
     union; the square pass excludes 119 with both physical replays passing.
@@ -908,7 +908,7 @@ conversations or evidence of an accepted solve.
     Published the consolidated result as contribution 17 and pushed the
     proof, figures, failures, and checks. Remote CI was pending at handoff.
 
-49. **17 October 2026 â€” Publish the concrete reason for reading Yang.**
+49. **17 October 2026 — Publish the concrete reason for reading Yang.**
     Added a [public rationale with an existing checked visualization](notes/why-yang.md)
     and linked it from the README at commit `5f267e4`. A19 and A30 both
     have degree-four H1 dimension three but H0 dimensions eleven and zero;
@@ -920,9 +920,9 @@ conversations or evidence of an accepted solve.
     returned in contribution 15. The requested rationale was then posted as
     contribution 16; it adds no new mathematical exclusion.
 
-50. **17 October 2026 â€” Make two existing results easier to inspect.**
+50. **17 October 2026 — Make two existing results easier to inspect.**
     Expanded the exact T100 cubic identity into physical equations and
-    explained the target-character projection lemma in contributions 18â€“19.
+    explained the target-character projection lemma in contributions 18–19.
     The [T100 continuation figure](results/typed-rewrite-families/typed100-continuation.png)
     and [projection figure](results/typed-rewrite-families/typed-goal-powers.png)
     remain the corresponding visualizations. Corrected two stale scope
@@ -934,7 +934,7 @@ conversations or evidence of an accepted solve.
     a separate T100 source-review receipt and a pending remote-CI snapshot.
     No new search, mathematical exclusion, or accepted solution is counted.
 
-51. **17 October 2026 â€” Close T100 locally with rebuilt multipliers.**
+51. **17 October 2026 — Close T100 locally with rebuilt multipliers.**
     Preserved the earlier thirteen-direction timeout, the exact `a56=0`
     reduction, and its two failed rebuilt charts. Rebuilt the physical system
     on twelve directions and completed all constant/linear multiplier blocks
@@ -948,14 +948,14 @@ conversations or evidence of an accepted solve.
     graded ranks also agree modulo 1009, 1013, and 1019, for 36 diagnostic
     comparisons; those screens are not p-adic Hodge-theory proofs. This closes
     T100, completes 132/132 in the fresh X0/Y1 batch, and raises the selected
-    union to **812**. Recorded unsupported Yang-geometric, Beilinsonâ€“Bernstein,
+    union to **812**. Recorded unsupported Yang-geometric, Beilinson–Bernstein,
     KZ/KPZ, and VC-complexity bridges as ideas not used by the proof. Added a
     data-bound visualization, complete bounded-attempt logs, and exact
     checkers. [Proof, figure, failures, and reproduction](notes/t100-rebuilt-exclusion.md).
     Shared the consolidated exact result as contribution 20 above. No pull
     request, Lean proof, accepted solve, or leaderboard point is counted.
 
-52. **17 October 2026 â€” Pause holdout posts and prepare to change instances.**
+52. **17 October 2026 — Pause holdout posts and prepare to change instances.**
     Retain the T100 checkpoint and stop adding holdout discussion posts while
     waiting for the announced new instances. At 17:37 UTC, upstream main was
     `0768616c9b70b318011b7c421abdd640322ccbfc`; its
@@ -974,7 +974,7 @@ conversations or evidence of an accepted solve.
     remain unchanged. No upstream comment was made, and the public tally
     remains 20 contributions, with no solve submission or accepted solve.
 
-53. **17 October 2026 â€” Begin two different fixed targets.**
+53. **17 October 2026 — Begin two different fixed targets.**
     Selected `cycle-three` and `mixed-biweight` after checking their exact
     targets, context, provenance, current proof/acceptance files, open PRs,
     and complete discussion threads. Both threads had no research comments.
@@ -998,7 +998,7 @@ conversations or evidence of an accepted solve.
     both verifiers and the plot generator. Other jobs in the full workflow
     were still running; no full-workflow success is claimed.
 
-54. **17 October 2026 â€” Full second equation closes cyclic degree six.**
+54. **17 October 2026 — Full second equation closes cyclic degree six.**
     Upstream main remained `0768616c9b70b318011b7c421abdd640322ccbfc`;
     the announced additional instances had not appeared. Continued
     `cycle-three` and `mixed-biweight`, with fixed targets and all existing
@@ -1024,7 +1024,7 @@ conversations or evidence of an accepted solve.
     and figure generation. This records that targeted job, not a claim
     about every unrelated job in the workflow.
 
-55. **17 October 2026 â€” Include all three mixed extra directions and close degree six.**
+55. **17 October 2026 — Include all three mixed extra directions and close degree six.**
     Rebuilt the actual mixed-biweight $B_D(N_0)$ map on all 38 parameters
     after Euler gauge. Two rounds of rational square identities eliminate
     the three extra E1 directions and all 30 off-diagonal matrix entries.
@@ -1048,7 +1048,7 @@ conversations or evidence of an accepted solve.
     passed the `mixed-degree6-extra` job. This records that targeted job,
     not a result for every unrelated workflow job.
 
-56. **17 October 2026 â€” Switch to Diamond's ten new targets; explicit cyclic Fano curve.**
+56. **17 October 2026 — Switch to Diamond's ten new targets; explicit cyclic Fano curve.**
     Following the user's direction to work only on the newly added targets,
     inspected commit `d96911d725077e66a8f10848908be01a643b1714`, all ten new
     discussions, current guides, and open PRs. All ten discussions were
@@ -1075,7 +1075,7 @@ conversations or evidence of an accepted solve.
     supporting notebook was pushed. See the contribution entry for the
     subsequent live-rendering limitation.
 
-57. **17 October 2026 â€” Pause all upstream publication; continue only in Hodge Lab.**
+57. **17 October 2026 — Pause all upstream publication; continue only in Hodge Lab.**
     The user directed that further work be applied only to this notebook.
     Recorded that boundary in README.md and AGENTS.md. No additional upstream
     post, reply, PR, or formatting edit was made after the instruction.
@@ -1091,7 +1091,7 @@ conversations or evidence of an accepted solve.
     Further notebook-only typography fixes preserve the multiplication sign
     and double-bar norm notation through GitHub Markdown.
 
-58. **17 October 2026 â€” Resume new-target contributions in consolidated batches.**
+58. **17 October 2026 — Resume new-target contributions in consolidated batches.**
     The user explicitly reopened useful contributions and requested fewer
     comments. Updated the repository instructions accordingly. Continued only
     `cyclic-triple-fano`: exact Taylor elimination reduces the full normalized
@@ -1112,7 +1112,7 @@ conversations or evidence of an accepted solve.
     The publication plan is to consolidate the existing #112 contribution,
     with no additional comment or increment to the upstream tally.
 
-59. **17 October 2026 â€” Use the supplied spectral theory to resolve the fiber's multiplicities.**
+59. **17 October 2026 — Use the supplied spectral theory to resolve the fiber's multiplicities.**
     Continued only `cyclic-triple-fano` after the user supplied Bourbaki's
     spectral multiplicity, trace, normal-operator and polar-decomposition
     passages. Built the actual 120-dimensional quotient multiplication maps
@@ -1128,13 +1128,13 @@ conversations or evidence of an accepted solve.
     [Proof, actual-operator visualizations, reproduction, and limits](notes/cyclic-fano-spectrum.md).
     The user then requested still more infrequent comments. The prepared
     consolidation of contribution 24 is held locally; no upstream edit,
-    new comment, or supporting public push has been made for entries 58â€“59.
+    new comment, or supporting public push has been made for entries 58–59.
     The upstream tally remains 24. Current upstream main `4e920b8` changes
     website/navigation files; the protected target and relevant contribution
     rules are unchanged from the pinned source. Discussion 112 still contains
     only our original comment, with no replies or open solution PRs observed.
 
-60. **17 October 2026 â€” Choose a tractable pilot on the new quadric-contact target.**
+60. **17 October 2026 — Choose a tractable pilot on the new quadric-contact target.**
     Following the user's invitation to select an easier new instance,
     compared the new targets and chose `quadric-contact-broken` for a small
     exact test, without claiming it is the easiest target to solve. Its
@@ -1151,14 +1151,14 @@ conversations or evidence of an accepted solve.
     five mutation controls in the independent checker. The visualization
     reconstructs the physical map and binds the final validation receipt.
     [Pilot, explanation, source binding, and reproduction](notes/quadric-contact-pilot.md).
-    Work remains local alongside entries 58â€“59; no post, discussion edit,
+    Work remains local alongside entries 58–59; no post, discussion edit,
     public push, solve PR, or accepted solution is claimed.
 
-61. **17 October 2026 â€” Resume notebook pushes while holding upstream comments.**
+61. **17 October 2026 — Resume notebook pushes while holding upstream comments.**
     The user explicitly asked to continue cyclic Fano, push results,
     visualizations and failures here, and save upstream comments for a
     substantial batch. This supersedes the local-only staging of entries
-    58â€“60. The notebook publication includes their previously local commit
+    58–60. The notebook publication includes their previously local commit
     `9cf26be` and the continuation below. Read discussion 112 again: only
     the original contribution was present, with no replies, accepted answer,
     or open solution PR observed. Upstream main `adfb848` differs from the
@@ -1166,7 +1166,7 @@ conversations or evidence of an accepted solve.
     the target and contribution rules are unchanged. No upstream comment,
     edit, or PR accompanies this notebook batch. The tally remains 24.
 
-62. **17 October 2026 â€” Unfold the cyclic Fano triple point on the fixed target.**
+62. **17 October 2026 — Unfold the cyclic Fano triple point on the fixed target.**
     Moved the evaluation point along the actual quotient curve
     `[0:1:0:i:1+h:i(1+h)]`. Exact order-four implicit jets give
     `h=(5/6+8i/35)b^3+O(b^4)`, proving a smooth local source curve,
@@ -1184,9 +1184,9 @@ conversations or evidence of an accepted solve.
     No quantitative convergence radius, full branch equation, supporting
     divisor, certificate, or solve follows.
 
-63. **17 October 2026 â€” Apply the final Bourbaki character projector concretely.**
+63. **17 October 2026 — Apply the final Bourbaki character projector concretely.**
     The supplied corpus ends with compact-group character averaging;
-    Chapter V, section 4, pages 465â€“466 supplies the finite-group projector
+    Chapter V, section 4, pages 465–466 supplies the finite-group projector
     used here. On the fixed cyclic target, invariant degree-three
     denominators admit a complete numerator reduction from 756 to 150
     coefficients. Polynomial Piola identities transfer both physical
@@ -1202,7 +1202,7 @@ conversations or evidence of an accepted solve.
     products, all supports on these zero sets, or unrestricted certificates.
     No new upstream post or accepted solve is counted.
 
-64. **17 October 2026 â€” Use higher unfolding terms to make and test denominator guesses.**
+64. **17 October 2026 — Use higher unfolding terms to make and test denominator guesses.**
     Continued only `cyclic-triple-fano`. Solved all seven physical incidence
     coefficients for the actual local evaluation map through degree twelve
     in the X0 direction and degree eight in Y0. X0 gives no centered height
@@ -1246,7 +1246,7 @@ conversations or evidence of an accepted solve.
     both passed on Linux. This records the two targeted jobs, not a completed
     full-workflow result; the broader workflow was still running when checked.
 
-65. **17 October 2026 â€” Test higher powers and products on cyclic Fano.**
+65. **17 October 2026 — Test higher powers and products on cyclic Fano.**
     Continued the same fixed `(F,q,A)` with 26 explicitly listed products of
     the tangent, centered cubic, leading branch sextic, rational tangent
     norm, and Jacobian factor. Degrees range from two to twelve. Exactly
@@ -1281,7 +1281,7 @@ conversations or evidence of an accepted solve.
     No upstream comment, edit, PR, Lean proof, accepted solve, or leaderboard
     point accompanies it. The upstream contribution tally remains 24.
 
-66. **17 October 2026 â€” Apply Dolgachev's first polars to the branch sextic.**
+66. **17 October 2026 — Apply Dolgachev's first polars to the branch sextic.**
     The supplied classical-geometry excerpts suggest an explicit new family,
     `E_v = partial_v Delta`, where `Delta = Q^2 - 4H` is the actual branch
     sextic. Direct differentiation gives a polynomial first-equation lift
@@ -1312,7 +1312,7 @@ conversations or evidence of an accepted solve.
     This is notebook research; no upstream comment, edit, or PR accompanies
     it. The contribution tally remains 24, with no certificate or solve claimed.
 
-67. **17 October 2026 â€” Audit curve restrictions using Shafarevich.**
+67. **17 October 2026 — Audit curve restrictions using Shafarevich.**
     Applied the supplied introductory chapters on coordinate rings, rational
     functions, dominant rational maps, and tangent spaces to the same seven
     already excluded cyclic-Fano polars. This is an exact restriction audit,
@@ -1348,7 +1348,7 @@ conversations or evidence of an accepted solve.
     No upstream comment or PR accompanies this notebook audit. The
     contribution tally remains 24; no new solve or Lean proof is claimed.
 
-68. **17 October 2026 â€” Separate pole orders with exact blowup charts.**
+68. **17 October 2026 — Separate pole orders with exact blowup charts.**
     Continued the Shafarevich reading with the two charts of a chosen
     transverse plane, setting `X0=Y0=1` and retaining `X1=u` as a parameter.
     The same failed `Y2` polar defines a smooth plane curve at the origin.
@@ -1374,7 +1374,7 @@ conversations or evidence of an accepted solve.
     No upstream comment or PR accompanies this notebook batch. The upstream
     contribution tally remains 24.
 
-69. **17 October 2026 â€” Exclude the complete constant first-polar family.**
+69. **17 October 2026 — Exclude the complete constant first-polar family.**
     Extended the preceding seven-direction pilot to every nonzero complex
     constant vector `v` in the five base directions, with denominator
     `E_v = partial_v Delta` of degree five. All directions satisfy the first
@@ -1408,10 +1408,10 @@ conversations or evidence of an accepted solve.
     outside the result. No successful certificate, Lean proof, accepted solve
     or upstream post is claimed. The contribution tally remains 24.
 
-70. **17 October 2026, 16:32 EDT / 20:32 UTC â€” Read the complete discussion and record new T100 credit.**
+70. **17 October 2026, 16:32 EDT / 20:32 UTC — Read the complete discussion and record new T100 credit.**
     Fetched every current comment and reply page for holdout #44,
     cycle-three #55, mixed-biweight #56, and all ten new-target threads
-    #111â€“120. The holdout snapshot contains 13 top-level comments and six
+    #111–120. The holdout snapshot contains 13 top-level comments and six
     replies following the maintainer's consolidation; the historical
     publication entries above remain intact.
 
@@ -1445,7 +1445,7 @@ conversations or evidence of an accepted solve.
     accompanies this checkpoint; the historical contribution tally stays
     **24**. [Compact public metadata receipt](results/discussion-watch/2026-10-17.json).
 
-71. **17 October 2026 â€” Apply the prescribed-support theorem before repeating power searches.**
+71. **17 October 2026 — Apply the prescribed-support theorem before repeating power searches.**
     The refreshed full discussions are unchanged since checkpoint 70.
     Applied the reduced-support observation in fqlx / Ben Burns's holdout
     continuation to the separate fixed cyclic-Fano target. The applicable
@@ -1473,7 +1473,7 @@ conversations or evidence of an accepted solve.
     by the Python audit. No upstream comment, solve or Lean proof accompanies
     this notebook continuation. The historical contribution tally stays 24.
 
-72. **17 October 2026 â€” Exclude every degree-six linear-direction polar and expand the front-page gallery.**
+72. **17 October 2026 — Exclude every degree-six linear-direction polar and expand the front-page gallery.**
     Tested the complete 25-parameter family `E_M = (M x) . grad(Delta)`
     over the complex numbers. Each direction has an explicit first-equation
     lift. Reflection projection retains ten correction constants from the
@@ -1503,7 +1503,7 @@ conversations or evidence of an accepted solve.
     claimed. Upstream comments are held for a substantial batch; the
     historical contribution tally remains 24.
 
-    Published checkpoints 71â€“72, their three new figures, exact packets,
+    Published checkpoints 71–72, their three new figures, exact packets,
     failed steps and front-page gallery in commit
     [`a1c1375`](https://github.com/rbajaj5/hodge-lab/commit/a1c1375ec34ec9ba90cc908a1bda4c69b17cc254).
     Local primary and independent replays, figure-data checks and whitespace
@@ -1517,7 +1517,7 @@ conversations or evidence of an accepted solve.
     both figure generators. This records that completed job, not every
     job in the larger workflow.
 
-73. **17 October 2026 â€” Test quadratic-direction polars and separate five exact exclusions from the unresolved mixed family.**
+73. **17 October 2026 — Test quadratic-direction polars and separate five exact exclusions from the unresolved mixed family.**
     Extended the fixed cyclic-Fano construction to `E_v = v . grad(Delta)`
     with five homogeneous quadratic direction components: 75 parameters
     and degree-seven denominators. The first equation still has an explicit
@@ -1579,7 +1579,7 @@ conversations or evidence of an accepted solve.
     figure generator. This records that completed job rather than every
     job in the larger workflow.
 
-74. **17 October 2026 â€” Use polynomial multipliers to exclude the coordinate-divisible quadratic family.**
+74. **17 October 2026 — Use polynomial multipliers to exclude the coordinate-divisible quadratic family.**
     Continued precisely the 25-parameter family left unresolved in checkpoint
     73: `v_i = x_i sum_j M_ij x_j`, with degree-seven denominator
     `E = v . grad(Delta)`. The complete 55 projected correction types and
@@ -1650,7 +1650,7 @@ conversations or evidence of an accepted solve.
     primary replay, independent reconstruction and figure generator. This
     records that completed job, not every job in the larger workflow.
 
-75. **17 October 2026 â€” Reduce the full quadratic-direction family from 75 to 66 parameters.**
+75. **17 October 2026 — Reduce the full quadratic-direction family from 75 to 66 parameters.**
     Allowed all 75 quadratic-direction coefficients simultaneously, keeping
     the fixed cyclic-Fano target, all 55 projected correction types and all
     246 quotient directions. This makes no coordinate-divisibility or
@@ -1728,10 +1728,10 @@ conversations or evidence of an accepted solve.
     subsequently passed the primary replay, independent reconstruction and
     figure generator. This records that job, not the whole larger workflow.
 
-76. **17 October 2026 â€” Larger polynomial multipliers and rebuilding close the full quadratic-direction polar family.**
+76. **17 October 2026 — Larger polynomial multipliers and rebuilding close the full quadratic-direction polar family.**
     Continued the preceding 66-parameter remainder of the fixed
     `cyclic-triple-fano` target. The exact reduction chain is
-    `66 â†’ 65 â†’ 60 â†’ 53 â†’ 45 â†’ 37 â†’ 21 â†’ 10`. The last ten raw
+    `66 → 65 → 60 → 53 → 45 → 37 → 21 → 10`. The last ten raw
     directions embed explicitly in the already excluded coordinate-divisible
     25-parameter family. Replaying that proof closes the chain to zero.
     Together with the previous nine vanishings, this excludes the full
@@ -1820,10 +1820,10 @@ conversations or evidence of an accepted solve.
     This updates the CI status without changing the mathematical scope or
     counting an additional upstream contribution.
 
-77. **17 October 2026 â€” An idea atlas and the degree-eight cubic-direction continuation.**
+77. **17 October 2026 — An idea atlas and the degree-eight cubic-direction continuation.**
     At the user's request, reorganized the front page as an independent
     companion notebook with seven linked mathematical routes: high-genus
-    Hodge/Gaussian fields, DubÃ©dat-inspired determinants, anisotropic Gram
+    Hodge/Gaussian fields, Dubédat-inspired determinants, anisotropic Gram
     ranking, braids and random matrices, Yang and typed relations,
     Eisenbud/Koszul calculations, and classical geometry. The
     [idea atlas](notes/idea-atlas.md) connects each motivation to its actual
@@ -1852,7 +1852,7 @@ conversations or evidence of an accepted solve.
     The saved final cube identities are one-term multiples of these squares,
     so a higher multiplier degree is not needed at that step.
     Thus each conditional family has
-    the chain `35 â†’ 10 â†’ 0`. All five rebuild gains are zero: in this batch,
+    the chain `35 → 10 → 0`. All five rebuild gains are zero: in this batch,
     rebuilding simplifies the computation without enlarging the restricted
     necessary quadratic span. These five results do not exclude arbitrary
     sums across components; the full 175-parameter family remains open.
@@ -1928,12 +1928,12 @@ conversations or evidence of an accepted solve.
     **Later verification, 17 October:** that CPU CI run completed
     successfully, including the dedicated cubic-polar replay and figures.
 
-78. **17 October 2026 â€” Visualizing the first Lean bridge.**
+78. **17 October 2026 — Visualizing the first Lean bridge.**
     At the user's request, added a standalone [Lean project](formal/README.md)
     and a front-page [proof map](results/lean-rank-gap/lean-rank-gap.png).
     The map follows the actual source: assume the target belongs to the
     correction span; adjoining it then leaves the span equal; combine the
-    dimension bounds to obtain the impossible inequality `n + 1 â‰¤ n`.
+    dimension bounds to obtain the impossible inequality `n + 1 ≤ n`.
     Three declarations formalize the general implication, its `150 / 151`
     specialization, and the consequence that no correction candidate can
     equal the target.
@@ -1983,7 +1983,7 @@ conversations or evidence of an accepted solve.
     completed successfully. This confirms the original generic bridge;
     the subsequent concrete-matrix work has its own checks below.
 
-79. **17 October 2026 â€” Concrete Lean row certificates for cyclic Fano.**
+79. **17 October 2026 — Concrete Lean row certificates for cyclic Fano.**
     Continued the user's request to move actual matrix arithmetic into
     Lean. The sixteen fixed cubic-direction candidates from entry 77
     all admit exact integer row certificates: 100 selected rows and 611
@@ -2055,9 +2055,9 @@ conversations or evidence of an accepted solve.
     verified. The historical discussion tally stays at **24**; the PR
     tally is now **one draft**, with zero accepted solves.
 
-80. **17 October 2026, 20:23 EDT / 18 October, 00:23 UTC â€” New reported holdout obstruction observed.**
+80. **17 October 2026, 20:23 EDT / 18 October, 00:23 UTC — New reported holdout obstruction observed.**
     The scheduled read-only refresh fetched every comment and reply page
-    in discussions #44, #55, #56, and #111â€“120. Against the 23:07 UTC
+    in discussions #44, #55, #56, and #111–120. Against the 23:07 UTC
     baseline it found one new reply and one linked parent edit in #44;
     all twelve other threads, including cyclic Fano #112, were unchanged.
 
@@ -2095,7 +2095,7 @@ conversations or evidence of an accepted solve.
     was made: the tally remains **24 discussion contributions, one draft
     maintenance PR, and zero accepted solves**.
 
-81. **17 October 2026 â€” Full concrete Lean replay completes on fresh Linux.**
+81. **17 October 2026 — Full concrete Lean replay completes on fresh Linux.**
     Continued the user's request to focus on Lean. The
     [Linux audit](https://github.com/rbajaj5/hodge-lab/actions/runs/39082400121)
     of exact commit `7fe139a725339afd1a45caf801dbee27f7d97417` completed
@@ -2128,7 +2128,7 @@ conversations or evidence of an accepted solve.
     [`ff4f1c4`](https://github.com/rbajaj5/hodge-lab/commit/ff4f1c42a5b997d9a325cdd88e5b9360a4a91f43).
     The live GitHub proof map and PASS text were inspected.
 
-82. **17 October 2026, 20:50 EDT â€” Exact upstream Lean 4.33 compatibility passes.**
+82. **17 October 2026, 20:50 EDT — Exact upstream Lean 4.33 compatibility passes.**
     [Own-repository CI run 39084143971](https://github.com/rbajaj5/hodge-lab/actions/runs/39084143971)
     tested the exact two files proposed at PR head
     `84b1c1584b7615ec7189e896df2734a0833e84e1`, with upstream's copied
@@ -2164,7 +2164,7 @@ conversations or evidence of an accepted solve.
     discussion contributions, one draft maintenance PR, and zero accepted
     solves; maintainer authorization and acceptance remain pending.
 
-83. **17 October 2026, 21:52 EDT â€” Upstream owner-authorization check fails before Lean.**
+83. **17 October 2026, 21:52 EDT — Upstream owner-authorization check fails before Lean.**
     The user supplied a failure notification for
     [run 39087992575](https://github.com/hodge-computer/sextics/actions/runs/39087992575).
     Read the actual run and PR state: head `84b1c158` is unchanged, PR #121
@@ -2181,7 +2181,7 @@ conversations or evidence of an accepted solve.
     one maintenance PR and zero accepted solves. The polynomial bridge
     continues in Hodge Lab; upstream updates remain batched.
 
-84. **17 October 2026, 22:17 EDT â€” Case05 polynomial-to-matrix Lean continuation.**
+84. **17 October 2026, 22:17 EDT — Case05 polynomial-to-matrix Lean continuation.**
     Formalized the polynomial arithmetic behind one existing fixed cyclic-Fano
     obstruction, raw direction `0 + 69`. A sparse-list implementation is proved
     to agree with mathlib's multivariate polynomials. Lean constructs all 175
@@ -2190,9 +2190,9 @@ conversations or evidence of an accepted solve.
     over every characteristic-zero field. This adds no new denominator exclusion.
 
     [Explanation and reproduction](notes/cyclic-fano-polynomial-bridge.md)
-    Â· [Polynomial proof diagram](results/cyclic-fano-polynomial-bridge-figures/polynomial-bridge.png)
-    Â· [Formal source](formal/HodgeLab/CyclicFano/Case05Polynomial.lean)
-    Â· [Field extension](formal/HodgeLab/CyclicFano/Case05PolynomialField.lean).
+    · [Polynomial proof diagram](results/cyclic-fano-polynomial-bridge-figures/polynomial-bridge.png)
+    · [Formal source](formal/HodgeLab/CyclicFano/Case05Polynomial.lean)
+    · [Field extension](formal/HodgeLab/CyclicFano/Case05PolynomialField.lean).
     The source checkpoint and local attempts were pushed as
     [`b96230e`](https://github.com/rbajaj5/hodge-lab/commit/b96230ed63911e7bf4b23d31e85e86d9a42fe347).
 
@@ -2200,7 +2200,7 @@ conversations or evidence of an accepted solve.
     the generated operator and theorem statements, and 19 altered-input
     controls. Its seven-term pullback functional also annihilates all 525 raw
     Koszul columns and 636 weighted-degree-eight quotient columns and pairs
-    the target to `âˆ’1000/147`. That raw-column extension is Python evidence,
+    the target to `−1000/147`. That raw-column extension is Python evidence,
     not part of the new Lean theorem.
     [Independent receipt](results/cyclic-fano-polynomial-bridge/independent-validation.json).
 
@@ -2232,13 +2232,13 @@ conversations or evidence of an accepted solve.
     No `HasCertificate`, accepted solve, new upstream comment or PR is claimed.
     The upstream tally remains unchanged; useful updates remain batched.
 
-85. **19 October 2026, 16:16 EDT â€” Begin `one-reflection-skew` frontier target; baseline and binary-cubic audit.**
+85. **19 October 2026, 16:16 EDT — Begin `one-reflection-skew` frontier target; baseline and binary-cubic audit.**
     Inspected upstream commit `b56894e` (*Extend cubic-surface methods and add
     three frontier targets*: `one-reflection-skew`, `one-reflection-y2-sector`,
     and `quadric-contact-residual`), the accepted degree-60 strict Hessian
     solution of `one-reflection` (`3cfd50d`, PR #123 by `fqlx`), the accepted
     Fermat-cover + moving-conic holdout solutions (`bfb1391`, `07a0f66`,
-    `dc13685`, PRs #128 and #134â€“#138 by `fqlx`), and open PR #144 (`DiamondJM`
+    `dc13685`, PRs #128 and #134–#138 by `fqlx`), and open PR #144 (`DiamondJM`
     on `one-reflection-y2-sector`). Selected `one-reflection-skew`, which has
     no open PR.
 
@@ -2261,16 +2261,16 @@ conversations or evidence of an accepted solve.
     $\operatorname{Res}_\beta(c_1, c_2) = 0$ identically on $r(1+r^2 w) = 0$
     and $h_{vv}$ vanishes on $X_1 Y_1 = 0$.
     [Analysis, exact checks, and limits](notes/one-reflection-skew-pilot.md)
-    Â· [Audit figure (PNG)](results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
-    Â· [Audit figure (SVG)](results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
-    Â· [Verification script](experiments/one_reflection_skew_pilot.py)
-    Â· [JSON receipt](results/one-reflection-skew-pilot/report.json).
+    · [Audit figure (PNG)](results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
+    · [Audit figure (SVG)](results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
+    · [Verification script](experiments/one_reflection_skew_pilot.py)
+    · [JSON receipt](results/one-reflection-skew-pilot/report.json).
     Subsequently published as upstream contribution #25 on Discussion #127
     ([receipt](results/one-reflection-skew-pilot/upstream-post.json)).
 
     ![one-reflection-skew degree <= 5 audit](results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
 
-86. **19 October 2026, 16:54 EDT â€” Complete degree-six $E_1 + E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew` (Kramers-bridge cascade, factored Casimir modes, and rank-9 diagonal quotient).**
+86. **19 October 2026, 16:54 EDT — Complete degree-six $E_1 + E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew` (Kramers-bridge cascade, factored Casimir modes, and rank-9 diagonal quotient).**
     Executed the complete degree-six $E_1$ and $E_2$ elimination pipeline on
     `one-reflection-skew` (`experiments/one_reflection_skew_degree6.py`):
 
@@ -2319,19 +2319,19 @@ conversations or evidence of an accepted solve.
     | Stage | Ambient Space | Columns | Rank | Result / Obstruction | Packet Digest (`sha256[:16]`) |
     | :--- | :--- | :--- | :--- | :--- | :--- |
     | **Complete $E_1$ ($d=6$)** | $S_{12}$ ($6{,}188$) | $4{,}752 + 462$ | $4{,}437 \to 4{,}863$ | $\dim\ker(E_1)_6 = 36 = \dim J_6(F)$ ($0$ extra) | `e9bd6e4ebdb4f159` |
-    | **Hessian $E_2$ Steps 1â€“3** | $S_{12}/J_{12}$ | $630 \to 28 \to 15$ | $236 \to 15 \to 4$ | $28 + 2$ off-diagonal squares $= 0$; $4$ Hessian quadrics | `5760378eb0b37575` |
+    | **Hessian $E_2$ Steps 1–3** | $S_{12}/J_{12}$ | $630 \to 28 \to 15$ | $236 \to 15 \to 4$ | $28 + 2$ off-diagonal squares $= 0$; $4$ Hessian quadrics | `5760378eb0b37575` |
     | **Full Diagonal $E_2$** | $S_{12}$ ($6{,}188$) | $2{,}352$ corr $+ 21$ quad | $1{,}486$ (corr) | **$9$** RREF quadrics $Q_1,\dots,Q_9$ in $(a_0,\dots,a_4)$ | `55a86e93759ddb83` |
     | **Cubic / Quartic Macaulay** | $\mathrm{Sym}^{3,4}(\mathbb{Q}^5)$ | $35$ / $70$ monos | **$35/35$** & **$70/70$** | $a_i^3 = a_i^4 = 0 \implies \deg D = 6$ excluded over $\mathbb{C}$ | `2418b9b6a05227c7` |
 
     [Complete note and RREF equations](notes/one-reflection-skew-degree6.md)
-    Â· [Exclusion figure (PNG)](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
-    Â· [Exclusion figure (SVG)](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.svg)
-    Â· [Verification script](experiments/one_reflection_skew_degree6.py)
-    Â· [Summary JSON](results/one-reflection-skew-degree6/summary.json).
+    · [Exclusion figure (PNG)](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
+    · [Exclusion figure (SVG)](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.svg)
+    · [Verification script](experiments/one_reflection_skew_degree6.py)
+    · [Summary JSON](results/one-reflection-skew-degree6/summary.json).
 
     ![one-reflection-skew degree-6 exclusion](results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png)
 
-87. **19 October 2026, 17:34 EDT â€” Complete degree-seven $\mathbb{Z}_2^4$ charge-parity superselection decomposition, $Y_2$-odd exclusion over $\mathbb{C}$, and $44/44$ base-quotient surjectivity for `one-reflection-skew`.**
+87. **19 October 2026, 17:34 EDT — Complete degree-seven $\mathbb{Z}_2^4$ charge-parity superselection decomposition, $Y_2$-odd exclusion over $\mathbb{C}$, and $44/44$ base-quotient surjectivity for `one-reflection-skew`.**
     Decomposed the complete, untruncated degree-seven $E_1$ and $E_2$ systems
     ($S_7$ of dimension $792$, $(S_8)^6$ of dimension $7{,}722$, $S_{13}$ of
     dimension $8{,}568$) into **eight exact superselection sectors** under the
@@ -2386,19 +2386,19 @@ conversations or evidence of an accepted solve.
     | **Total ($S_7$)** | **all** | **$792$** | **$8{,}568$** | **$6{,}882$** | **$135$** | **$126$** | **$+9$** | **4/8 Excluded ($41/135$) + $Y_2=0$ Decoupling (`dda75a2b1a2987c7`)** |
 
     [Complete note and theorems](notes/one-reflection-skew-degree7.md)
-    Â· [Sector figure (PNG)](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
-    Â· [Sector figure (SVG)](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.svg)
-    Â· [Verification script](experiments/one_reflection_skew_degree7.py)
-    Â· [Summary JSON](results/one-reflection-skew-degree7/summary.json)
-    Â· [Upstream Post #27](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407)
-    Â· [Publication receipt](results/one-reflection-skew-degree7/upstream-post.json).
+    · [Sector figure (PNG)](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
+    · [Sector figure (SVG)](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.svg)
+    · [Verification script](experiments/one_reflection_skew_degree7.py)
+    · [Summary JSON](results/one-reflection-skew-degree7/summary.json)
+    · [Upstream Post #27](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407)
+    · [Publication receipt](results/one-reflection-skew-degree7/upstream-post.json).
 
     ![one-reflection-skew degree-7 Z2^4 superselection sectors](results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
 
-88. **19 October 2026 â€” `one-reflection-skew` (#127): Eisenbud graded-syzygy strands and Yang / Eisenbudâ€“Erman finite Koszul homology ($H_0$ vs. $H_1$ contrast across degree-6 and degree-7 $E_2$ ideals, pushed to Hodge Lab only).**
+88. **19 October 2026 — `one-reflection-skew` (#127): Eisenbud graded-syzygy strands and Yang / Eisenbud–Erman finite Koszul homology ($H_0$ vs. $H_1$ contrast across degree-6 and degree-7 $E_2$ ideals, pushed to Hodge Lab only).**
     Applied the finite Koszul complex engine
     [`experiments/necessary_koszul_complex.py`](experiments/necessary_koszul_complex.py)
-    (`complex_at`) and the Eisenbud / Eisenbudâ€“Erman / David H. Yang diagnostic
+    (`complex_at`) and the Eisenbud / Eisenbud–Erman / David H. Yang diagnostic
     framework ([`notes/categorical-syzygies.md`](notes/categorical-syzygies.md),
     [`notes/added-character-homology.md`](notes/added-character-homology.md)) to
     `one-reflection-skew` via
@@ -2463,46 +2463,46 @@ conversations or evidence of an accepted solve.
     | **Added $E_1$ `[1,1,1,0]`** | `[1,1,1,0]` | $7$v, $28$g | **$(0, 0, 0, 0)$** | $(0, 0, 0, 0)$ | $(0, 0, 0, 0)$ | **Full rank $28/28$ in $\mathrm{Sym}^2(\mathbb{Q}^7) \implies e_a^2 = 0$ at $d=2$** |
 
     [Complete note and theorems](notes/one-reflection-skew-koszul-homology.md)
-    Â· [Koszul homology figure (PNG)](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
-    Â· [Koszul homology figure (SVG)](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.svg)
-    Â· [Verification script](experiments/one_reflection_skew_koszul_homology.py)
-    Â· [Summary JSON (`c226ddb123d4307e`)](results/one-reflection-skew-koszul/summary.json).
+    · [Koszul homology figure (PNG)](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
+    · [Koszul homology figure (SVG)](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.svg)
+    · [Verification script](experiments/one_reflection_skew_koszul_homology.py)
+    · [Summary JSON (`c226ddb123d4307e`)](results/one-reflection-skew-koszul/summary.json).
 
     ![one-reflection-skew Eisenbud graded strands and finite Koszul homology](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
 
-89. **19 October 2026 â€” Visual Categorification Beyond the Snake Lemma on `one-reflection-skew`: Spivak Chain Maps $\Lambda^k(T)$, Yang $\mathbb{Z}_2^{\text{Kramers}}$ Equivariant Channels, Buehler 2-Head Bilinear Attention ($\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$), and CFT KÃ¤hler Manifold Exposition (`rbajaj5/hodge-lab` only)**
-    - **Scope & Rationale:** Implements the previously unimplemented chain-map step noted in [`notes/categorical-syzygies.md`](notes/categorical-syzygies.md) (line 102) and places the visual categorification and foundational CFT KÃ¤hler manifold exposition directly on the front page ([`README.md`](README.md)), pushed to `rbajaj5/hodge-lab` without posting to `hodge-computer/sextics`.
+89. **19 October 2026 — Visual Categorification Beyond the Snake Lemma on `one-reflection-skew`: Spivak Chain Maps $\Lambda^k(T)$, Yang $\mathbb{Z}_2^{\text{Kramers}}$ Equivariant Channels, Buehler 2-Head Bilinear Attention ($\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$), and CFT Kähler Manifold Exposition (`rbajaj5/hodge-lab` only)**
+    - **Scope & Rationale:** Implements the previously unimplemented chain-map step noted in [`notes/categorical-syzygies.md`](notes/categorical-syzygies.md) (line 102) and places the visual categorification and foundational CFT Kähler manifold exposition directly on the front page ([`README.md`](README.md)), pushed to `rbajaj5/hodge-lab` without posting to `hodge-computer/sextics`.
     - **Spivak Operadic Wiring & Exterior-Power Chain Maps (`1,408` Verified Columns):** Constructs exact rational transition matrices $T$ via forward elimination along the REF pivots of $P_{\text{full}} = (Q_1,\dots,Q_9)$ and builds the exterior-power chain maps $f_k = \Lambda^k(T) \otimes \mathrm{id}_S: K_k(P; S) \to K_k(P'; S)$ for $\iota_1: K_\bullet(P_{\text{Cas}}) \to K_\bullet(P_{\text{Hess}})$, $\Phi_\bullet: K_\bullet(P_{\text{factored}}) \to K_\bullet(P_{\text{full}})$, $\iota_{\text{core}}: K_\bullet(P_{\text{core}}) \to K_\bullet(P_{\text{full}})$, and $\Psi_\bullet: K_\bullet(P_{\text{Hess}}) \to K_\bullet(P_{\text{full}})$, verifying strict chain-map commutativity $d'_k \circ f_k = f_{k-1} \circ d_k$ across **1,408 basis columns** over $\mathbb{Q}$ and strict functorial composition $\Psi_\bullet \circ \iota_1 = \iota_{\text{Cas}\to\text{full}}$.
     - **Yang Equivariant Kramers Channels:** Splits $S_d = \mathbb{Q}[a_0,\dots,a_4]_d = S_d^{(+)} \oplus S_d^{(-)}$ under $\sigma_{34}: a_3 \leftrightarrow a_4$ into Kramers-even dimensions $(4, 11, 24, 46, 80, 130)$ and Kramers-odd dimensions $(1, 4, 11, 24, 46, 80)$ for $d=1\dots 6$, tracking $\Phi_1$-image ranks $(4, 20, 60, 140)$ for $d=2\dots 5$.
-    - **Buehler 2-Head Bilinear Attention ($\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$):** Proves and verifies across all $55$ pairs of a 10-token system in degree-7 sector `[1,1,1,0]` ($5$ Jacobian Euler tokens $X_0 E_0\dots X_0 E_4 \in J_7(F)$ + $5$ non-Jacobian added E1 tokens $U_0\dots U_4 \notin J_7(F)$) that **Head 1 ($\mathcal{A}_{\text{div}}$) has quotient rank $0/44$ on all Jacobianâ€“Jacobian pairs $J_7 \times J_7$** and **rank $15/44$ exclusively on non-Jacobian syzygy lifts**, while **Head 2 ($\mathcal{A}_{\text{Lie}}$)** carries the KÃ¤hlerâ€“Hessian curvature $\partial_i \partial_j F$ with **rank $39/44$** (combined rank $39/44$).
-    - **CFT KÃ¤hler Manifold Exposition on Front Page:** Documents the equivalence between target-space KÃ¤hler geometry and 2D $\mathcal{N}=(2,2)$ worldsheet supersymmetry ($S = \int d^2z\,d^4\theta\,K(\Phi,\bar\Phi)$, Zumino 1979 / Alvarez-GaumÃ©â€“Freedman 1981), Hodge $(p,q)$-bi-grading as $U(1)_L \times U(1)_R$ R-charges, $\{Q,Q^\dagger\} = \Delta_{\bar\partial}$, and the Landauâ€“Ginzburg superpotential $W(Z) = F(Z)$ chiral primary ring $\mathbb{C}[Z]/J(F)$.
+    - **Buehler 2-Head Bilinear Attention ($\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$):** Proves and verifies across all $55$ pairs of a 10-token system in degree-7 sector `[1,1,1,0]` ($5$ Jacobian Euler tokens $X_0 E_0\dots X_0 E_4 \in J_7(F)$ + $5$ non-Jacobian added E1 tokens $U_0\dots U_4 \notin J_7(F)$) that **Head 1 ($\mathcal{A}_{\text{div}}$) has quotient rank $0/44$ on all Jacobian–Jacobian pairs $J_7 \times J_7$** and **rank $15/44$ exclusively on non-Jacobian syzygy lifts**, while **Head 2 ($\mathcal{A}_{\text{Lie}}$)** carries the Kähler–Hessian curvature $\partial_i \partial_j F$ with **rank $39/44$** (combined rank $39/44$).
+    - **CFT Kähler Manifold Exposition on Front Page:** Documents the equivalence between target-space Kähler geometry and 2D $\mathcal{N}=(2,2)$ worldsheet supersymmetry ($S = \int d^2z\,d^4\theta\,K(\Phi,\bar\Phi)$, Zumino 1979 / Alvarez-Gaumé–Freedman 1981), Hodge $(p,q)$-bi-grading as $U(1)_L \times U(1)_R$ R-charges, $\{Q,Q^\dagger\} = \Delta_{\bar\partial}$, and the Landau–Ginzburg superpotential $W(Z) = F(Z)$ chiral primary ring $\mathbb{C}[Z]/J(F)$.
 
     [Complete note](notes/categorified-koszul-network.md)
-    Â· [Visual categorification figure (PNG)](results/categorified-koszul-network/categorified-koszul-network.png)
-    Â· [Visual categorification figure (SVG)](results/categorified-koszul-network/categorified-koszul-network.svg)
-    Â· [Verification script](experiments/categorified_koszul_network.py)
-    Â· [Summary JSON (`5ae2d057249eacc7`)](results/categorified-koszul-network/summary.json).
+    · [Visual categorification figure (PNG)](results/categorified-koszul-network/categorified-koszul-network.png)
+    · [Visual categorification figure (SVG)](results/categorified-koszul-network/categorified-koszul-network.svg)
+    · [Verification script](experiments/categorified_koszul_network.py)
+    · [Summary JSON (`5ae2d057249eacc7`)](results/categorified-koszul-network/summary.json).
 
-    ![Visual Categorification on one-reflection-skew â€” Spivak Chain Maps, Yang Equivariant Channels & Buehler 2-Head Attention](results/categorified-koszul-network/categorified-koszul-network.png)
+    ![Visual Categorification on one-reflection-skew — Spivak Chain Maps, Yang Equivariant Channels & Buehler 2-Head Attention](results/categorified-koszul-network/categorified-koszul-network.png)
 
-90. **19 October 2026 â€” Visual Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry on `one-reflection-skew`: Mumford (*Indra's Pearls* & *Pattern Theory*), Dyatlov (FUP & Pollicottâ€“Ruelle Resonances), and Minsky (Subsurface Collar Hierarchy) (`rbajaj5/hodge-lab` only)**
+90. **19 October 2026 — Visual Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry on `one-reflection-skew`: Mumford (*Indra's Pearls* & *Pattern Theory*), Dyatlov (FUP & Pollicott–Ruelle Resonances), and Minsky (Subsurface Collar Hierarchy) (`rbajaj5/hodge-lab` only)**
     - **Scope & Rationale:** Connects four visual paradigms from chaotic scattering, Kleinian groups, hyperbolic 3-manifolds, and stochastic pattern theory to the exact algebraic exclusion pipeline on `one-reflection-skew`.
-    - **Mumfordâ€“Seriesâ€“Wright *Indra's Pearls* Schottky Uniformization:** Constructs a 2-generator / 4-disk MÃ¶bius Schottky group $\Gamma_{\text{skew}} = \langle \gamma_X, \gamma_Y \rangle \subset \mathrm{PSL}_2(\mathbb{C})$ orthogonal to $|z|=1$ with $1/7$ Kramers skew angle, rendering $484$ nested Schottky circles across word depths $1\dots 5$ and the Kleinian limit set $\Lambda(\Gamma_{\text{skew}})$ of estimated Hausdorff dimension $\delta \approx 0.30$.
-    - **Semyon Dyatlov's Pollicottâ€“Ruelle Resonances & Algebraic FUP Collapse:** Computes the truncated Selbergâ€“Ruelle resonance landscape in the complex $s$-plane alongside the exact algebraic FUP survival density $\rho_d(P) = \dim H_0(P)_d / \dim S_d$ across $d=1\dots 6$, contrasting slow decay on $P_{\text{Cas}}$ ($1.00 \to 0.210$) and $P_{\text{Hess}}$ ($1.00 \to 0.076$) against the sharp collapse to **$\rho_3(P_{\text{full}}) = 0$** at degree $d=3$.
+    - **Mumford–Series–Wright *Indra's Pearls* Schottky Uniformization:** Constructs a 2-generator / 4-disk Möbius Schottky group $\Gamma_{\text{skew}} = \langle \gamma_X, \gamma_Y \rangle \subset \mathrm{PSL}_2(\mathbb{C})$ orthogonal to $|z|=1$ with $1/7$ Kramers skew angle, rendering $484$ nested Schottky circles across word depths $1\dots 5$ and the Kleinian limit set $\Lambda(\Gamma_{\text{skew}})$ of estimated Hausdorff dimension $\delta \approx 0.30$.
+    - **Semyon Dyatlov's Pollicott–Ruelle Resonances & Algebraic FUP Collapse:** Computes the truncated Selberg–Ruelle resonance landscape in the complex $s$-plane alongside the exact algebraic FUP survival density $\rho_d(P) = \dim H_0(P)_d / \dim S_d$ across $d=1\dots 6$, contrasting slow decay on $P_{\text{Cas}}$ ($1.00 \to 0.210$) and $P_{\text{Hess}}$ ($1.00 \to 0.076$) against the sharp collapse to **$\rho_3(P_{\text{full}}) = 0$** at degree $d=3$.
     - **Yair Minsky's Curve-Complex Subsurface Hierarchy & Collar Pinching:** Maps the 3-stage elimination cascade on `one-reflection-skew` to three subsurface collar pinches: **Pinch $\alpha_{Y_2}$** (Step-1 E2 decoupling $35\to 5$ at $d=6$ and $34\to 21$ at $d=7$, isolating the $Y_2=0$ 5-variable subsurface) $\to$ **Pinch $\alpha_{a_0}$** ($Q_1\dots Q_5$ isolating the 4-variable core $a_1\dots a_4$) $\to$ **Pinch $\alpha_{34}$** (Kramers seam $a_3 - a_4$ and complete intersection $P_{\text{core}}$ collapsing to the ending lamination $\nu_{\text{end}} = \{0\}$).
     - **David Mumford's *Pattern Theory* Gibbs Energy Landscape:** Evaluates $E_P(a) = \sum_{Q \in P} |Q(a)|^2$ on $\mathbb{S}^4$, proving that the uniform diagonal template $v_{\text{diag}} = \frac{1}{\sqrt{5}}(1,1,1,1,1)$ is an exact zero of the 3-quadric Casimir grammar ($E_{\text{Cas}}(v_{\text{diag}}) = 0$, explaining why $\dim H_0(P_{\text{Cas}})_d = 8d-4 > 0$), is lifted to $E_{\text{Hess}}(v_{\text{diag}}) = \frac{1}{16} = 0.0625$ by $Q_3$, and is lifted to $E_{\text{full}}(v_{\text{diag}}) = \frac{4252}{900} \approx 4.724444 > 0$ by $P_{\text{full}}$.
 
     [Complete note](notes/dyatlov-mumford-minsky-chaos-ag.md)
-    Â· [Dyatlovâ€“Mumfordâ€“Minsky figure (PNG)](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
-    Â· [Dyatlovâ€“Mumfordâ€“Minsky figure (SVG)](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.svg)
-    Â· [Verification script](experiments/dyatlov_mumford_minsky_chaos_ag.py)
-    Â· [Summary JSON (`bed45067ed484513`)](results/dyatlov-mumford-minsky/summary.json).
+    · [Dyatlov–Mumford–Minsky figure (PNG)](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
+    · [Dyatlov–Mumford–Minsky figure (SVG)](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.svg)
+    · [Verification script](experiments/dyatlov_mumford_minsky_chaos_ag.py)
+    · [Summary JSON (`bed45067ed484513`)](results/dyatlov-mumford-minsky/summary.json).
 
-    ![Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry â€” Mumford, Dyatlov & Minsky on one-reflection-skew](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
+    ![Chaos, Hyperbolic Scattering & Pattern Theory in Algebraic Geometry — Mumford, Dyatlov & Minsky on one-reflection-skew](results/dyatlov-mumford-minsky/dyatlov-mumford-minsky-chaos-ag.png)
 
-91. **20 October 2026, 09:01 EDT / 13:01 UTC â€” New cyclic-Fano credit and changed upstream acceptance status.**
+91. **20 October 2026, 09:01 EDT / 13:01 UTC — New cyclic-Fano credit and changed upstream acceptance status.**
     The read-only monitor fetched all comment and reply pages in discussions
-    #44, #55, #56 and #111â€“120, comparing against the last successful saved
+    #44, #55, #56 and #111–120, comparing against the last successful saved
     snapshot of 18 October, 02:21 UTC. The 13 threads now contain 37 records,
     up from 24: 13 additions, eight edited records, and no removals.
     IDs, timestamps and body hashes were checked, together with opening
@@ -2541,7 +2541,7 @@ conversations or evidence of an accepted solve.
     reports 38 minimal generators and quotient length 4,460.
     [The support/sector update](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046211)
     distinguishes exact rational support exclusions from single-prime
-    evidence and withdraws an earlier internal Gaussâ€“Manin calculation.
+    evidence and withdraws an earlier internal Gauss–Manin calculation.
     [The moving-conic extension table](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046728)
     supplies data for nine additional monomial targets; its posting-time
     compilation claims are not themselves acceptance records.
@@ -2575,8 +2575,8 @@ conversations or evidence of an accepted solve.
     No upstream comment, edit, message or PR was made by this monitoring run.
     [Snapshot comparison, attribution and acceptance receipt](results/discussion-monitor/update-20261020T130126Z.json).
 
-92. **20 October 2026, 09:58 EDT / 13:58 UTC â€” Cyclic-Fano proof merged, with direct credit for our geometric input; publication pending.**
-    All 13 monitored threads (#44, #55, #56 and #111â€“120) are unchanged
+92. **20 October 2026, 09:58 EDT / 13:58 UTC — Cyclic-Fano proof merged, with direct credit for our geometric input; publication pending.**
+    All 13 monitored threads (#44, #55, #56 and #111–120) are unchanged
     from checkpoint 91: all pages were fetched, and the same 25 comments
     and 12 replies have unchanged IDs, timestamps and body hashes.
     The new result is in the solution proposal, not a new discussion post.
@@ -2621,7 +2621,7 @@ conversations or evidence of an accepted solve.
     solution. No upstream comment, edit, message or PR was made.
     [Snapshot, proof-status and attribution receipt](results/discussion-monitor/update-20261020T135840Z.json).
 
-93. **20 October 2026, 11:01 EDT / 15:01 UTC â€” Cyclic-Fano publication completed.**
+93. **20 October 2026, 11:01 EDT / 15:01 UTC — Cyclic-Fano publication completed.**
     The publication issue recorded in checkpoint 92 is resolved:
     [publication run 39435988176](https://github.com/hodge-computer/sextics/actions/runs/39435988176)
     succeeded. At pinned upstream main
@@ -2634,7 +2634,7 @@ conversations or evidence of an accepted solve.
     Diamond's already-merged PR153, not a new mathematical result or proof
     replay by this monitor.
 
-    All pages of discussions #44, #55, #56 and #111â€“120 were fetched again.
+    All pages of discussions #44, #55, #56 and #111–120 were fetched again.
     Their 25 comments and 12 replies are unchanged from checkpoint 92;
     IDs, timestamps, body hashes and discussion metadata match.
     The 13 monitored targets' proof files also have no changes. The
@@ -2650,7 +2650,7 @@ conversations or evidence of an accepted solve.
     rendered website.
     [Discussion comparison and publication-status receipt](results/discussion-monitor/update-20261020T150120Z.json).
 
-94. **20 October 2026, 13:45 EDT / 17:45 UTC â€” New cycle-three partial approaches and acknowledgment of the bounded exclusions.**
+94. **20 October 2026, 13:45 EDT / 17:45 UTC — New cycle-three partial approaches and acknowledgment of the bounded exclusions.**
     The complete read-only comparison against the 16:04 UTC snapshot
     found one new top-level comment and its reply in discussion #55,
     with no edits or removals. Across all 13 monitored threads there are
@@ -2695,7 +2695,7 @@ conversations or evidence of an accepted solve.
     contribution to that tally.
     [Snapshot comparison, attribution and scope receipt](results/discussion-monitor/update-20261020T174550Z.json).
 
-95. **20 October 2026, 14:40 EDT / 18:40 UTC â€” Reported cycle-three source transport and a nonsingular modular conic seed.**
+95. **20 October 2026, 14:40 EDT / 18:40 UTC — Reported cycle-three source transport and a nonsingular modular conic seed.**
     All pages in the 13 monitored threads were compared with the 17:45 UTC
     snapshot. There is one new reply in discussion #55, with no edits or
     removals: [the Jacobian-transport continuation](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19078438)
@@ -2716,7 +2716,7 @@ conversations or evidence of an accepted solve.
     an inverse matrix and a separate symbolic differentiation check.
     This is a nonsingular seed at one finite-field specialization,
     **not an already constructed characteristic-zero lift or certificate**.
-    Arithmetic lifting, ring/field embeddings, normalâ€“tangent
+    Arithmetic lifting, ring/field embeddings, normal–tangent
     compatibility, primitive transport and legal homogeneous clearing
     remain unfinished. The two Lean helpers linked in the post are
     explicitly **uncompiled**; the author reports a runtime startup
@@ -2734,7 +2734,7 @@ conversations or evidence of an accepted solve.
     contributions, one maintenance PR (closed), zero accepted authored
     solves**. [Snapshot comparison and scope receipt](results/discussion-monitor/update-20261020T184058Z.json).
 
-96. **20 October 2026, 15:44 EDT / 19:44 UTC â€” Reported Lean verification on the auxiliary cycle-three Jacobian.**
+96. **20 October 2026, 15:44 EDT / 19:44 UTC — Reported Lean verification on the auxiliary cycle-three Jacobian.**
     The complete 13-thread comparison found one new reply in #55 and no
     edits or removals, bringing the snapshot to 26 comments and 15 replies.
     [The residue-exactness and clearing update](https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378)
@@ -2776,7 +2776,7 @@ conversations or evidence of an accepted solve.
     contributions, one maintenance PR (closed), zero accepted authored
     solves**. [Snapshot, reported-verification scope and attribution receipt](results/discussion-monitor/update-20261020T194433Z.json).
 
-97. **20 October 2026, 16:43 EDT / 20:43 UTC â€” Split-ternary-q2 accepted; further conditional cycle-three Lean progress.**
+97. **20 October 2026, 16:43 EDT / 20:43 UTC — Split-ternary-q2 accepted; further conditional cycle-three Lean progress.**
     All pages of the 13 monitored discussions were compared with the
     19:44 UTC snapshot. One new reply in #55 brings the total to
     26 comments and 16 replies, with no edits or removals. A separate
@@ -2817,7 +2817,7 @@ conversations or evidence of an accepted solve.
     compatibility and assembled primitive remain unfinished.
 
     The author also records terminated proof-checking strategies with
-    peak child memory around 7.7 GiB and other 180â€“300 second time limits.
+    peak child memory around 7.7 GiB and other 180–300 second time limits.
     These are unsuccessful verification strategies, not counterexamples
     or nonexistence results. We did not execute or inspect the fork code
     or its logs; these remain author-reported development checks, not a
@@ -2829,7 +2829,7 @@ conversations or evidence of an accepted solve.
     (closed), zero accepted authored solves**.
     [Discussion, acceptance and scope receipt](results/discussion-monitor/update-20261020T204303Z.json).
 
-98. **20 October 2026, 17:43 EDT / 21:43 UTC â€” Holdout-bundle accepted; monitored discussion threads unchanged.**
+98. **20 October 2026, 17:43 EDT / 21:43 UTC — Holdout-bundle accepted; monitored discussion threads unchanged.**
     All comment and reply pages in the 13 monitored discussions were compared
     with the 20:43 UTC snapshot: the same 26 comments and 16 replies, with
     no additions, edits or removals. Their acceptance status is also unchanged:
@@ -2877,7 +2877,7 @@ conversations or evidence of an accepted solve.
     (closed), zero accepted authored solves**.
     [Snapshot, acceptance, attribution and verification-scope receipt](results/discussion-monitor/update-20261020T214337Z.json).
 
-99. **20 October 2026, 19:43 EDT / 23:43 UTC â€” Cycle-three certificate submitted; protected verification pending.**
+99. **20 October 2026, 19:43 EDT / 23:43 UTC — Cycle-three certificate submitted; protected verification pending.**
     All pages of the 13 monitored discussions were compared with the 22:48 UTC
     snapshot. One existing reply was edited, with no additions or removals;
     the total remains 26 comments and 16 replies. The
@@ -2885,7 +2885,7 @@ conversations or evidence of an accepted solve.
     now announces [PR165](https://github.com/hodge-computer/sextics/pull/165),
     prepared for hodgepodgeconjecture with Codex assistance. Its earlier
     unfinished 31-module checkpoint is retained in a collapsed historical
-    section. Checkpoints 95â€“97 above preserve what was reported at those times.
+    section. Checkpoints 95–97 above preserve what was reported at those times.
 
     The author now claims the exact cycle-three q=1 HasCertificate theorem
     with no additional hypotheses or placeholders. The universal cubic
@@ -2921,7 +2921,7 @@ conversations or evidence of an accepted solve.
     authored solves**.
     [Edit, proposal, attribution and verification-scope receipt](results/discussion-monitor/update-20261020T234335Z.json).
 
-100. **20 October 2026, 20:51 EDT / 21 October, 00:51 UTC â€” Cycle-three protected replay failed; local individual replay success reported.**
+100. **20 October 2026, 20:51 EDT / 21 October, 00:51 UTC — Cycle-three protected replay failed; local individual replay success reported.**
      All pages of the 13 monitored discussions were compared with checkpoint
      99: the same 26 comments and 16 replies, with no edits or removals.
      [PR165](https://github.com/hodge-computer/sextics/pull/165) remains open
@@ -2961,7 +2961,7 @@ conversations or evidence of an accepted solve.
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Failure evidence, reported local checks and scope receipt](results/discussion-monitor/update-20261021T005141Z.json).
 
-101. **21 October 2026, 06:51 EDT / 10:51 UTC â€” Cycle-three accepted and published after sequential kernel replay.**
+101. **21 October 2026, 06:51 EDT / 10:51 UTC — Cycle-three accepted and published after sequential kernel replay.**
      All pages of the 13 monitored discussions were compared with checkpoint
      100. Their 26 comments and 16 replies are unchanged. The acceptance
      records have advanced: [PR165](https://github.com/hodge-computer/sextics/pull/165),
@@ -3007,7 +3007,7 @@ conversations or evidence of an accepted solve.
      maintenance PR (closed), zero accepted authored solves**.
      [Acceptance, replay-transition and attribution receipt](results/discussion-monitor/update-20261021T105125Z.json).
 
-102. **21 October 2026, 07:55 EDT / 11:55 UTC â€” Mixed-biweight accepted; skew discussion baseline added.**
+102. **21 October 2026, 07:55 EDT / 11:55 UTC — Mixed-biweight accepted; skew discussion baseline added.**
      [PR170](https://github.com/hodge-computer/sextics/pull/170), credited to
      **fqlx (Ben Burns)**, merged at **11:40:04 UTC** and was published at
      **11:40:37 UTC**. The [acceptance receipt](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/mixed-biweight/acceptance.json)
@@ -3059,7 +3059,7 @@ conversations or evidence of an accepted solve.
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Acceptance, baseline hashes, attribution and limits](results/discussion-monitor/update-20261021T115542Z.json).
 
-104. **21 October 2026, 08:55 EDT / 12:55 UTC â€” Holdout extraction note unavailable; acceptance and attribution unchanged.**
+104. **21 October 2026, 08:55 EDT / 12:55 UTC — Holdout extraction note unavailable; acceptance and attribution unchanged.**
      All pages of 14 discussions were compared with checkpoint 102: 31
      comments and 16 replies remain, with no additions, one missing comment
      and one editorial edit. Diamond's [explicit-denominator extraction note](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19054721)
@@ -3089,6 +3089,46 @@ conversations or evidence of an accepted solve.
 103. **21 October 2026 — Independent `F_{11}` line incidence check for one-reflection-skew.**
     Substituted the reported line `\ell(s,t)=[s:t:6s+2t:3s+2t:2s:7s+8t]` into the exact term list from the protected record. The coefficients of `7F(\ell)` are `(0,0,0,0,0,0,0)` modulo 11, confirming the line lies on the skew sextic hypersurface. The restriction of the source `A=X_0^3 Y_0^3` is `5s^6+10s^5 t+3s^4 t^2+8s^3 t^3` modulo 11 (not identically zero; value 5 at `[1:0]`). Executable checker and saved output published. Rank/minor claims remain author-reported. No rational primitive or certificate claimed. Upstream tally unchanged.
     Note: [notes/one-reflection-skew-line-check.md](notes/one-reflection-skew-line-check.md). Checker: [experiments/check_one_reflection_skew_line.py](experiments/check_one_reflection_skew_line.py). Output: [results/one-reflection-skew-line/output.txt](results/one-reflection-skew-line/output.txt).
+
+105. **21 October 2026, 09:50 EDT / 13:50 UTC — Moving-branch instance accepted; monitored discussions unchanged.**
+     The complete 14-thread comparison has no additions, edits or removals:
+     31 comments and 16 replies remain. The monitored instances still total
+     **eight accepted/published and six open**, with unchanged proof and
+     acceptance records. The global atlas and credits reveal a separate new
+     acceptance outside that set: **holdout-moving-branch**, credited to
+     **benediamond (Benjamin Diamond)** through
+     [PR172](https://github.com/hodge-computer/sextics/pull/172), merged at
+     **13:22:41 UTC** and published at **13:23:08 UTC**. The
+     [receipt at pinned main f247a366](https://github.com/hodge-computer/sextics/blob/f247a3664d5e75ffd8cfea9d01817d5c8a27bc95/data/holdout-moving-branch/acceptance.json)
+     records owner-authorized acceptance and kernel replay. Both
+     [protected verification](https://github.com/hodge-computer/sextics/actions/runs/39603700120)
+     and [publication](https://github.com/hodge-computer/sextics/actions/runs/39607472119)
+     succeeded at proposal head 63d1b39ba72750d4f18e33a7ca07b2864f34be0a.
+
+     The [accepted explanation](https://github.com/hodge-computer/sextics/blob/f247a3664d5e75ffd8cfea9d01817d5c8a27bc95/data/holdout-moving-branch/solution.md)
+     applies fqlx's transitive-cubic construction to this coefficient
+     specialization, with a new nonsingular polynomial-curve seed modulo
+     five and exact target transport. It credits the mixed-biweight and
+     cycle-three constructions; it does not claim a new general geometric
+     mechanism. The exact q=1, A=X0^3Y0^3 certificate is existential and allows
+     general Q. No expanded witness or denominator-degree bound is exported.
+     Neither the explanation nor the PR body adds rbajaj5 attribution.
+
+     We inspected the committed receipt and successful workflow records,
+     read the explanation and matched its hash. **We did not compile or
+     replay Lean**, rehash all 31 application Lean sources, or reconstruct
+     the proof. The missing holdout extraction comment remains unavailable;
+     this separate acceptance does not establish why it was removed.
+
+     Notebook maintenance restored 205 encoding-damaged historical lines
+     using their prior exact UTF-8 text, after verifying the corruption
+     pattern. The newly added checkpoint 103 was preserved verbatim. No
+     historical mathematical claim was changed by that repair.
+
+     No upstream action was taken. The tally remains **27 discussion
+     contributions, one maintenance PR (closed), zero accepted authored solves**.
+     [Acceptance, attribution, monitoring and encoding-repair receipt](results/discussion-monitor/update-20261021T135036Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
