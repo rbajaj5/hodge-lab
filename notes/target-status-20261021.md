@@ -29,7 +29,7 @@ For **one-reflection-skew**, the reported line
 \[
 [s:t:6s+2t:3s+2t:2s:7s+8t]
 \]
-over \(\mathbb{F}_{11}\) was substituted into the defining sextic (after clearing the factor of 7). The resulting form vanishes identically modulo 11, confirming the line lies on the surface. The source monomial \(X_0^3 Y_0^3\) does not. See [notes/one-reflection-skew-line-check.md](notes/one-reflection-skew-line-check.md).
+over \(\mathbb{F}_{11}\) was substituted into the defining sextic (after clearing the factor of 7). The resulting form vanishes identically modulo 11, confirming the line lies on the sextic hypersurface. The restriction of the source monomial \(X_0^3 Y_0^3\) to the line is not identically zero. See [one-reflection-skew-line-check.md](one-reflection-skew-line-check.md).
 
 No new rational primitives, full certificates, or accepted solves are claimed. Upstream contribution tally remains unchanged (zero accepted authored solves by rbajaj5).
 

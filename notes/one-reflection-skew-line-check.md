@@ -17,17 +17,32 @@ Target source \( A = X_0^3 Y_0^3 \).
 ## Reported line
 
 \[
-[s : t : 6s+2t : 3s+2t : 2s : 7s+8t]
+\ell(s,t) = [s : t : 6s+2t : 3s+2t : 2s : 7s+8t]
 \]
 
 over \(\mathbb{F}_{11}\).
 
 ## Independent verification
 
-Substitution of the parametric line into \( 7F \) (clearing the denominator) yields a homogeneous degree-6 polynomial in \( s,t \) that is identically zero modulo 11. The line therefore lies on the skew sextic over \(\mathbb{F}_{11}\).
+Substitution of the parametric line into \( 7F \) (clearing the denominator) yields a homogeneous degree-6 polynomial in \( s,t \) whose coefficients, ordered as \( s^6, s^5 t, \dots, t^6 \), are all zero modulo 11:
 
-The source \( A \) does not vanish on the same line.
+\[
+(0,0,0,0,0,0,0) \pmod{11}.
+\]
 
-This confirms the geometric incidence claim in the feedback audit. Rank and minor claims remain author-reported and were not re-computed.
+Since 7 is invertible modulo 11, the line lies on the skew sextic hypersurface over \(\mathbb{F}_{11}\).
+
+The restriction of \( A \) to the line is
+
+\[
+A|_\ell = s^3 (3s+2t)^3 \equiv 5s^6 + 10 s^5 t + 3 s^4 t^2 + 8 s^3 t^3 \pmod{11},
+\]
+
+which is not identically zero (for example, its value at \([s:t]=[1:0]\) is 5). It does vanish at some individual points.
+
+This confirms the previously reported finite-field incidence. Endpoint conditions, characteristic-zero constructions, and the rational primitive remain separate obligations. Rank and minor claims remain author-reported and were not re-computed.
+
+Executable checker: [`experiments/check_one_reflection_skew_line.py`](../experiments/check_one_reflection_skew_line.py)  
+Saved output: [`results/one-reflection-skew-line/output.txt`](../results/one-reflection-skew-line/output.txt)
 
 No full certificate or rational primitive is claimed.
