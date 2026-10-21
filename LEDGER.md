@@ -3059,6 +3059,32 @@ conversations or evidence of an accepted solve.
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Acceptance, baseline hashes, attribution and limits](results/discussion-monitor/update-20261021T115542Z.json).
 
+104. **21 October 2026, 08:55 EDT / 12:55 UTC — Holdout extraction note unavailable; acceptance and attribution unchanged.**
+     All pages of 14 discussions were compared with checkpoint 102: 31
+     comments and 16 replies remain, with no additions, one missing comment
+     and one editorial edit. Diamond's [explicit-denominator extraction note](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19054721)
+     is absent from the complete holdout thread, and its previously saved
+     GitHub node returns NOT_FOUND. Its earlier content described unfinished
+     extraction from an accepted construction, not a new accepted certificate.
+     The archive and historical ledger entry are preserved. **No reason for
+     its unavailability or mathematical retraction is established.**
+
+     The [skew addendum](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252)
+     was edited at 12:53:37 UTC to format contributor handles and link the
+     project name. Its mathematics, remaining gaps, packet limitations and
+     existing acknowledgment of rbajaj5 are unchanged; this is not new credit.
+
+     At main e0b3d0b6f48a97f9458a5408742e69204bfe599d, all **58 monitored
+     publication-file blobs** are unchanged. The 14-target set remains **eight
+     accepted/published and six open**. The new main commit merges maintenance
+     [PR171](https://github.com/hodge-computer/sextics/pull/171), extracting
+     reusable constructions; its mathematics was not reviewed here. No Lean
+     compilation, replay or research-packet execution was performed.
+
+     No upstream action was taken. The tally remains **27 discussion
+     contributions, one maintenance PR (closed), zero accepted authored solves**.
+     [Availability, editorial-diff and publication-status receipt](results/discussion-monitor/update-20261021T125544Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.

@@ -1,0 +1,188 @@
+{
+  "schema": "hodge-discussion-monitor-update-v1",
+  "retrieved_utc": "2026-10-21T12:55:44.956857+00:00",
+  "snapshot": "20261021T125544Z",
+  "baseline_snapshot": "20261021T115542Z",
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    127
+  ],
+  "all_comment_and_reply_pages_fetched": true,
+  "totals": {
+    "top_level_comments": 31,
+    "replies": 16,
+    "records": 47,
+    "new_records": 0,
+    "edited_records": 1,
+    "removed_records": 1
+  },
+  "discussion_changes": [
+    {
+      "number": 44,
+      "kind": "previously_saved_research_comment_unavailable",
+      "removed_record": {
+        "id": "DC_kwDOVLOOJc4BIsCB",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19054721",
+        "parent_id": null,
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "createdAt": "2026-10-20T00:24:07Z",
+        "updatedAt": "2026-10-20T01:24:49Z",
+        "body_sha256": "f648291888b661dd3abdcf1626d87a2803f0753e83ab42c977b7e464eb0c71c2"
+      },
+      "thread_updatedAt": {
+        "before": "2026-10-20T00:24:07Z",
+        "after": "2026-10-21T12:53:52Z"
+      },
+      "availability_check": {
+        "checked_utc": "2026-10-21T12:57:27.842637+00:00",
+        "query": "{node(id:\"DC_kwDOVLOOJc4BIsCB\"){id ...on DiscussionComment{url body updatedAt}}}",
+        "returncode": 1,
+        "response": {
+          "data": {
+            "node": null
+          },
+          "errors": [
+            {
+              "type": "NOT_FOUND",
+              "path": [
+                "node"
+              ],
+              "locations": [
+                {
+                  "line": 1,
+                  "column": 2
+                }
+              ],
+              "message": "Could not resolve to a node with the global id of 'DC_kwDOVLOOJc4BIsCB'."
+            }
+          ]
+        },
+        "stderr": "gh: Could not resolve to a node with the global id of 'DC_kwDOVLOOJc4BIsCB'.\n",
+        "interpretation": "Previously saved comment is absent from complete thread fetch and this node is not resolvable. No deletion reason or mathematical retraction is established."
+      },
+      "historical_scope": "An unfinished explicit-denominator extraction with unexpanded resultant expressions and no completed physical numerator export; not the accepted certificate itself.",
+      "reason_for_unavailability": "unknown",
+      "mathematical_retraction_established": false
+    },
+    {
+      "number": 127,
+      "kind": "formatting_and_links_only",
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIyQ8",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252",
+        "parent_id": null,
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "createdAt": "2026-10-20T19:35:47Z",
+        "updatedAt": "2026-10-20T21:51:29Z",
+        "body_sha256": "74e032324847a98c0fcb423b9d4004b39bc7236a981262fd5174cac65e702561"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIyQ8",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252",
+        "parent_id": null,
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "createdAt": "2026-10-20T19:35:47Z",
+        "updatedAt": "2026-10-21T12:53:37Z",
+        "body_sha256": "95c0c2ca9b4b3e50e1920dce85ad90add9b75869d7f8dc42976caef2c400a4b8"
+      },
+      "editorial_changes": [
+        "HodgeComputer replaced by a hodge.computer link.",
+        "Contributor handles formatted as code; trailing whitespace changed."
+      ],
+      "mathematical_content_and_existing_attribution_unchanged": true,
+      "normalization_equality_checked": true
+    }
+  ],
+  "upstream_commit": "e0b3d0b6f48a97f9458a5408742e69204bfe599d",
+  "proof_record_changes": [],
+  "publication_status_changes": [],
+  "publication_status": {
+    "accepted_and_published": 8,
+    "without_acceptance_record": 6
+  },
+  "monitored_publication_blobs_compared": 58,
+  "incidental_repository_change": {
+    "commit": {
+      "message": "Merge pull request #171 from hodge-computer/codex/transitive-cubic-consolidation\n\nExtract reusable transitive cubic constructions",
+      "committer_date": "2026-10-21T12:55:37Z",
+      "url": "https://github.com/hodge-computer/sextics/commit/e0b3d0b6f48a97f9458a5408742e69204bfe599d"
+    },
+    "scope": "Maintenance PR171 extracts reusable constructions; no mathematical review or replay performed in this monitor."
+  },
+  "new_credit": false,
+  "upstream_actions": [],
+  "checks_performed_here": [
+    "Fetched all comment/reply pages and compared complete records, timestamps, hashes and thread metadata.",
+    "Inspected the changed records in full thread context and confirmed the missing comment node does not resolve.",
+    "Checked normalized equality of the formatting-only edit.",
+    "Compared all 58 monitored publication blobs at the pinned upstream main against the preceding baseline."
+  ],
+  "checks_not_performed_here": [
+    "No Lean compilation or kernel replay.",
+    "No research packet execution, independent proof reconstruction or live website/CDN test."
+  ],
+  "source_files_raw_sha256": {
+    "acceptance-comparison.json": "7ade3536e2ec77d9f26c3598279b91371a5328dcdb2f27d1cd300fd328eb68f6",
+    "accepted-records.json": "aa12c75cce458a002b55cf85d5ed8a97a90213ddf96367d4a230a7227f819b87",
+    "comparison.json": "4fdac0ebab0e6798e3b17008029a37bc1ce3266e4ce15abcbe89599be33101af",
+    "discussion-111.json": "3b327944699f9bcee1fe60d81a2b0e986785b32919a46cebb66a1a19021e0513",
+    "discussion-111.md": "f244b73e3f4f6b19c8b940ce44283e51d738175573f12f9ba577150c60823fff",
+    "discussion-112.json": "5062baa0f7c55a53c0cd653ccb480256eeac4be0c07c88794384f3c83c75c1dc",
+    "discussion-112.md": "3df82860f8222ce95fa46353ca7d2c06c5136875d36f863d374007192a824ff9",
+    "discussion-113.json": "8cde603a1bdd12058a7f5aea5fe272c171c4dbc19b542006f6ac1d09664c26ae",
+    "discussion-113.md": "65790086246e46177884da1768523d69ea41b718a6187754bb3748c9b2ee1aa0",
+    "discussion-114.json": "50a3ad83990b7011059363fbafa90cc164c3984fa6fa9f7967edf80406fff857",
+    "discussion-114.md": "d5e53108cbe9684e98a95fcba8ac3a900919887c0bdbeaa24b2821ef0104dcee",
+    "discussion-115.json": "8a9b6bc0718757f1b49ce420a0647b96decef2d73e8e94f3091576cd1cb6857f",
+    "discussion-115.md": "5c506a30504546d08c31740bb2d8a8c97de423dec74bb7f70c12179cfb406055",
+    "discussion-116.json": "98f44383bfd164656bb048ee512ffb0b1f3b819c1ab189f2bb46216694bb7537",
+    "discussion-116.md": "103fc46b175c1aa8b899ebccb1d33e5665b35b2e53341377d6190d675d24f8f9",
+    "discussion-117.json": "5b327aef2274c24aa73ee470b4093537dd18af32c87942c40481be0738d175e9",
+    "discussion-117.md": "7e9a31fe9d75018da23179b2e0087b8eaa93619ae3bbacdb61d5ecfb20f51c28",
+    "discussion-118.json": "6fa6da1ec8d2df498f0617dc36faea422754e6f33f76c509bd4e439a8b1aab5d",
+    "discussion-118.md": "9432f009300ef4daf14a79c8432d40babbf046aaec5cd56491aea5b363030620",
+    "discussion-119.json": "94fc233c191408b0aa2b3cd54ba9356f982d4bdb5a1783792f81e709d541c913",
+    "discussion-119.md": "7fabad2628f3a276a23040d245a2e88fbaccb7191aef53f98c1dfbbf9e261834",
+    "discussion-120.json": "2faf78eaaec7f3f201cefa2e396dfb88f1e8cfd7220c8da0624ba3d6cc69e4a8",
+    "discussion-120.md": "473b6fe3ad56b157b91f3e14c6d9859827199f3cd926184b06ab8906604a73a1",
+    "discussion-127.json": "440996e1d822ae0071fb47c2197b08b82969bc282d00f578bebe4f5266dd8553",
+    "discussion-127.md": "7257281aa578d3f75187f336f906d03f6f755847c73f1a216e80e4f444eca7b3",
+    "discussion-44.json": "c97590667e867baac4f4b7868e38cfcb55bde4ccac92b26f27f8c4b634f2c1b5",
+    "discussion-44.md": "c920e1f96f3e4f505563be92e8c3293a8b94a9a687a87ce8a5371b0bc9123d33",
+    "discussion-55.json": "6ae103720b22b8d866f9e1693fdd54f11d5c8041c5057fc8cb050016c164b1a7",
+    "discussion-55.md": "23cf68ee426abc1f96f5e1b4ffe83a01d74a30e5aca8ad7c21f1246d5d169125",
+    "discussion-56.json": "5d2942c4af74cafe9b5361c7139c32dfea0a26d79cb7499d98e1a774eaec30bc",
+    "discussion-56.md": "9d1c5fa7a648beec7c74cc2cd3e35d83bfb2c5a8734f813c4877fb21f0815fe4",
+    "manifest.json": "a0a9a45dee23a2a370d3ef73e5ecc529c46b22b8665f96cf5d6b8bd8908f1a3a",
+    "publication-status.json": "07f580590270283b92ca83b4c9dd6477393c02f179a9ca43e0cdf800b34b82bd",
+    "removed-comment-node.json": "d8c54d592e7974b5fdbb9bc2e0e45aad10d9da6c24651e066575ab685023338d"
+  },
+  "historical_user_tally_unchanged": {
+    "discussion_contributions": 27,
+    "maintenance_pull_requests": 1,
+    "maintenance_pull_request_status": "closed",
+    "accepted_authored_solves": 0
+  },
+  "limits": "Absence establishes current availability only. It does not identify the actor or reason, refute the former mathematical claims, or revoke the accepted holdout solution. Historical notebook entries remain preserved."
+}
