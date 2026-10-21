@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_curve_bridge.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"checks\": 46, \"seconds\": 0.296}\n",
+      "stderr": "",
+      "elapsed_seconds": 2.422,
+      "timeout_seconds": 60
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_curve_bridge.py",
+        "--perturb",
+        "primitive-sign"
+      ],
+      "returncode": 1,
+      "stdout": "FAIL: m=1 rational primitive failed\n",
+      "stderr": "",
+      "elapsed_seconds": 2.203,
+      "timeout_seconds": 60
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_curve_bridge.py",
+        "--perturb",
+        "omit-ds"
+      ],
+      "returncode": 1,
+      "stdout": "FAIL: m=1 complete measure transport failed\n",
+      "stderr": "",
+      "elapsed_seconds": 2.265,
+      "timeout_seconds": 60
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/visualize_chi_curve_bridge.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "timeout_seconds": 60
+    }
+  ],
+  "timeouts": 0,
+  "primary_script_sha256": "63c0000abb26a5ae33c672f5cf31e4fed5c973ded75b58485170b39895ef5217"
+}

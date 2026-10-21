@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "notebook_base": "ae043a1b037cc8b0393460f0b58fc5dedd4c35cb",
+  "remote_main_before_commit": "ae043a1b037cc8b0393460f0b58fc5dedd4c35cb",
+  "historical_ledger_bytes_preserved": 302817,
+  "all_staged_bytes_match_working_files": true,
+  "staged_files_before_this_receipt": [
+    {
+      "path": "LEDGER.md",
+      "sha256": "696f95891ad21a132b84cad65d2f8b1352a1fb81b21a9d77fb2b2cae1235b0c1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f0fb48d24f74b9e785c5978f8b0a2865ff0d888c99e1af3db9e23bc1cb9695d9"
+    },
+    {
+      "path": "notes/chi-curve-bridge.md",
+      "sha256": "bdee86a9d1e37c2f7119ad33c66277716a10810f19c8bbe228ba53e1e20c389f"
+    },
+    {
+      "path": "results/chi-curve-bridge/.gitattributes",
+      "sha256": "f7a60b968275573a63b67d75751fdaee06da42645861f9ae34bdd521f6906cbb"
+    },
+    {
+      "path": "results/chi-curve-bridge/inputs.json",
+      "sha256": "5348b9a4c46de4da7b3d85f993cb31a715426b55caf668d5395be23794782358"
+    },
+    {
+      "path": "results/chi-curve-bridge/inputs/GOE-CORRECTION.md",
+      "sha256": "3c63cde371ca402a82bd12afe0883e66948042ad4060094f7c670f72cec961e4"
+    },
+    {
+      "path": "results/chi-curve-bridge/replay.json",
+      "sha256": "f5149983224b0d9614823b718a325be3d6065409e55079993e732be501a394f6"
+    },
+    {
+      "path": "results/chi-curve-bridge/review.json",
+      "sha256": "af784ad3c9b03269f336b5c239751a655f3f0532c0fcc8db335d9e32666d661d"
+    },
+    {
+      "path": "results/chi-curve-bridge/validation.json",
+      "sha256": "8bb3c1240fcee27a378c1d5823daf0192c29bffd8f9796ad96656ea4f8895fad"
+    },
+    {
+      "path": "scripts/check_chi_curve_bridge.py",
+      "sha256": "63c0000abb26a5ae33c672f5cf31e4fed5c973ded75b58485170b39895ef5217"
+    },
+    {
+      "path": "scripts/visualize_chi_curve_bridge.py",
+      "sha256": "fe57cd419f2fe4d4603ce70d142a5b49620bb1541431f41c8e074723fbcbdd3e"
+    },
+    {
+      "path": "visualizations/chi-curve-bridge.png",
+      "sha256": "734baebf6cdf859cb83457c59290047f0bfdb4a26e1e40fdf9c63402ae4b7d4f"
+    },
+    {
+      "path": "visualizations/chi-curve-bridge.svg",
+      "sha256": "48349a18b9acc1535924e3188f6e4344c768b39634ef958ae41f812d7ee67c3d"
+    }
+  ],
+  "scope": "Publication integrity only. Prior mathematical replay not rerun; receipt/source hashes checked independently."
+}

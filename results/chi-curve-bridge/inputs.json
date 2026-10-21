@@ -1,0 +1,24 @@
+{
+  "notebook_base": "ae043a1b037cc8b0393460f0b58fc5dedd4c35cb",
+  "upstream_observed": "b2ee2acb5409e37b6fad800b256fb8f2fee163bf",
+  "goe_source": {
+    "repository": "rbajaj5/goe-determinant-factor-density",
+    "commit": "e864d2c164a6ded910b8ecf764905193102c2a83",
+    "path": "CORRECTION.md",
+    "local_path": "results/chi-curve-bridge/inputs/GOE-CORRECTION.md",
+    "sha256": "3c63cde371ca402a82bd12afe0883e66948042ad4060094f7c670f72cec961e4",
+    "git_blob": "729053816cfcefd501ea0b02ae58342260cc7cd2"
+  },
+  "model_transcription": "R_m^4=X^4+2X^2Y^2; X~chi_1 and Y~chi_(2m) independent; g_t(s)^2=(t^4/s^2-s^2)/2; corrected density in source section 3",
+  "scope": "Source formulas are manually transcribed and independently reviewed; hash checking does not parse or prove the entire source note.",
+  "references": [
+    {
+      "url": "https://dlmf.nist.gov/19.2",
+      "scope": "Definition and algebraic form of elliptic integrals"
+    },
+    {
+      "url": "https://www.claymath.org/millennium/hodge-conjecture/",
+      "scope": "Classical Hodge conjecture statement"
+    }
+  ]
+}

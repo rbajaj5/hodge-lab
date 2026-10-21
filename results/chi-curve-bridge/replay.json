@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "scope": "Exact curve/density transport and algebraic primitive examples; no target Hodge correspondence",
+  "checks_passed": 46,
+  "checks": [
+    "curve chart identity",
+    "inverse s",
+    "inverse y",
+    "corrected g squared on curve",
+    "Gaussian exponent transport",
+    "implicit inverse Jacobian",
+    "quartic to conic",
+    "squared-variable rational quotient",
+    "branch polynomial squarefree",
+    "rational point on quartic",
+    "plane model singular infinity s",
+    "plane model singular infinity y",
+    "plane model singular infinity z",
+    "generic primitive denominator is odd",
+    "m=1 rational primitive",
+    "m=1 complete measure transport",
+    "m=1 conic quotient sign",
+    "m=1 exponential cannot be dropped",
+    "m=2 rational primitive",
+    "m=2 complete measure transport",
+    "m=2 conic quotient sign",
+    "m=2 exponential cannot be dropped",
+    "m=3 rational primitive",
+    "m=3 complete measure transport",
+    "m=3 conic quotient sign",
+    "m=3 exponential cannot be dropped",
+    "m=4 rational primitive",
+    "m=4 complete measure transport",
+    "m=4 conic quotient sign",
+    "m=4 exponential cannot be dropped",
+    "m=5 rational primitive",
+    "m=5 complete measure transport",
+    "m=5 conic quotient sign",
+    "m=5 exponential cannot be dropped",
+    "m=6 rational primitive",
+    "m=6 complete measure transport",
+    "m=6 conic quotient sign",
+    "m=6 exponential cannot be dropped",
+    "m=7 rational primitive",
+    "m=7 complete measure transport",
+    "m=7 conic quotient sign",
+    "m=7 exponential cannot be dropped",
+    "m=8 rational primitive",
+    "m=8 complete measure transport",
+    "m=8 conic quotient sign",
+    "m=8 exponential cannot be dropped"
+  ],
+  "examples": [
+    {
+      "m": 1,
+      "algebraic_coefficient": "u**(-2)",
+      "rational_primitive": "-1/u",
+      "naive_weighted_residual": "(t**2*u**4 - t**2)/(2*u**4)"
+    },
+    {
+      "m": 2,
+      "algebraic_coefficient": "-2 + 2/u**4",
+      "rational_primitive": "-2*u - 2/(3*u**3)",
+      "naive_weighted_residual": "(3*t**2*u**8 - 2*t**2*u**4 - t**2)/(3*u**6)"
+    },
+    {
+      "m": 3,
+      "algebraic_coefficient": "4*u**2 - 8/u**2 + 4/u**6",
+      "rational_primitive": "4*u**3/3 + 8/u - 4/(5*u**5)",
+      "naive_weighted_residual": "(-10*t**2*u**12 - 50*t**2*u**8 + 66*t**2*u**4 - 6*t**2)/(15*u**8)"
+    },
+    {
+      "m": 4,
+      "algebraic_coefficient": "-8*u**4 + 24 - 24/u**4 + 8/u**8",
+      "rational_primitive": "-8*u**5/5 + 24*u + 8/u**3 - 8/(7*u**7)",
+      "naive_weighted_residual": "(28*t**2*u**16 - 448*t**2*u**12 + 280*t**2*u**8 + 160*t**2*u**4 - 20*t**2)/(35*u**10)"
+    },
+    {
+      "m": 5,
+      "algebraic_coefficient": "16*u**6 - 64*u**2 + 96/u**2 - 64/u**6 + 16/u**10",
+      "rational_primitive": "16*u**7/7 - 64*u**3/3 - 96/u + 64/(5*u**5) - 16/(9*u**9)",
+      "naive_weighted_residual": "(-360*t**2*u**20 + 3720*t**2*u**16 + 11760*t**2*u**12 - 17136*t**2*u**8 + 2296*t**2*u**4 - 280*t**2)/(315*u**12)"
+    },
+    {
+      "m": 6,
+      "algebraic_coefficient": "-32*u**8 + 160*u**4 - 320 + 320/u**4 - 160/u**8 + 32/u**12",
+      "rational_primitive": "-32*u**9/9 + 32*u**5 - 320*u - 320/(3*u**3) + 160/(7*u**7) - 32/(11*u**11)",
+      "naive_weighted_residual": "(1232*t**2*u**24 - 12320*t**2*u**20 + 121968*t**2*u**16 - 73920*t**2*u**12 - 44880*t**2*u**8 + 8928*t**2*u**4 - 1008*t**2)/(693*u**14)"
+    },
+    {
+      "m": 7,
+      "algebraic_coefficient": "64*u**10 - 384*u**6 + 960*u**2 - 1280/u**2 + 960/u**6 - 384/u**10 + 64/u**14",
+      "rational_primitive": "64*u**11/11 - 384*u**7/7 + 320*u**3 + 1280/u - 192/u**5 + 128/(3*u**9) - 64/(13*u**13)",
+      "naive_weighted_residual": "(-8736*t**2*u**28 + 91104*t**2*u**24 - 562848*t**2*u**20 - 1441440*t**2*u**16 + 2210208*t**2*u**12 - 352352*t**2*u**8 + 71456*t**2*u**4 - 7392*t**2)/(3003*u**16)"
+    },
+    {
+      "m": 8,
+      "algebraic_coefficient": "-128*u**12 + 896*u**8 - 2688*u**4 + 4480 - 4480/u**4 + 2688/u**8 - 896/u**12 + 128/u**16",
+      "rational_primitive": "-128*u**13/13 + 896*u**9/9 - 2688*u**5/5 + 4480*u + 4480/(3*u**3) - 384/u**7 + 896/(11*u**11) - 128/(15*u**15)",
+      "naive_weighted_residual": "(31680*t**2*u**32 - 352000*t**2*u**28 + 2050048*t**2*u**24 - 16144128*t**2*u**20 + 9609600*t**2*u**16 + 6040320*t**2*u**12 - 1497600*t**2*u**8 + 289536*t**2*u**4 - 27456*t**2)/(6435*u**18)"
+    }
+  ],
+  "general_argument": "For every integer m>=1, expand (1-u^4)^(m-1); exponents 4k-2m are even, so termwise primitives divide by odd nonzero 4k-2m+1.",
+  "genus_argument": "Four simple branch points for the degree-two map to P1_u; Riemann-Hurwitz gives genus one for the smooth completion.",
+  "coefficient_field": "Q(t), t nonzero; probability integral uses t>0, 0<u<1 and positive v",
+  "isotrivial_after_scaling": true,
+  "parameter_m_changes_curve": false,
+  "hodge_target_map_constructed": false,
+  "elapsed_seconds": 0.296,
+  "versions": {
+    "python": "3.11.9",
+    "sympy": "1.14.0"
+  },
+  "script_sha256": "63c0000abb26a5ae33c672f5cf31e4fed5c973ded75b58485170b39895ef5217",
+  "inputs_sha256": "5348b9a4c46de4da7b3d85f993cb31a715426b55caf668d5395be23794782358"
+}

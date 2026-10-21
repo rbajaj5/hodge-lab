@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-21",
+  "reviewer": "OpenAI Codex read-only subagent chi_curve_bridge_review",
+  "scope": "Independent mathematical derivation, followed by source and replay-receipt inspection. No separate execution of the suite.",
+  "findings": [
+    "Density prefactors, Gaussian exponent, inverse Jacobian and ds transport agree.",
+    "Genus one applies to the smooth projective completion; the plane quartic has the recorded singular point.",
+    "The general binomial primitive argument holds for integer m>=1; finite examples are not the universal proof.",
+    "The two quotient involutions differ; the conic-quotient differential is anti-invariant.",
+    "The 46 requirements comprise 38 equality checks and 8 nonzero residual controls.",
+    "Negative controls reject the naive weighted primitive only; no general nonexistence or nonelementarity conclusion."
+  ],
+  "status": "No mathematical defect found within stated scope",
+  "hodge_target_map_constructed": false,
+  "final_note_review": "Read-only follow-up confirmed general-m proof, quotients and scope. Replaced measure normalization with measure prefactors to avoid implying independent total-mass integration; added cohomological degree/Tate twist to correspondence requirements."
+}

@@ -3681,3 +3681,56 @@ restricted to actual upstream activity.
      remains **28 discussion contributions, one closed maintenance PR,
      zero accepted authored solves**. Historical ledger bytes and previous
      receipts are preserved. No Grok prompt was needed.
+
+116. **21 October 2026 — A chi-density curve as a test of geometric transport.**
+     Tested Ravi Bajaj's suggestion to carry the corrected GOE chi-variable
+     construction into algebraic curves as guidance for Hodge work. Starting
+     from the factor law in GOE commit
+     `e864d2c164a6ded910b8ecf764905193102c2a83`, the level equation
+     `s^4 + 2 s^2 y^2 = t^4` becomes `v^2 = 2(1-u^4)` under
+     `s=t u`, `y=t v/(2u)`. Four simple branch points give genus one for
+     the smooth completion; the original plane quartic is singular at infinity.
+     Scaling t removes it from the curve, and m changes the weight, not genus.
+
+     The measure, inverse Jacobian, exponential and ds factor are retained.
+     For every integer m >= 1 the unweighted algebraic differential is
+     rationally exact, by an explicit binomial primitive with nonzero odd
+     denominators. The Gaussian-weighted problem has a derivative correction.
+     Eight examples reject simply multiplying the unweighted primitive by
+     the exponential. This failed shortcut does not establish nonexistence
+     of other weighted primitives or nonelementarity.
+
+     Executed **46 requirements: 38 exact equalities and eight nonzero
+     residual controls**, with m=1,...,8 examples supplementing the general
+     proof. Two additional CLI mutations fail at the intended requirements,
+     including under python -O: reversed primitive sign and omitted ds.
+     Python 3.11.9 / SymPy 1.14.0, CPU exact arithmetic. Each process bounded
+     by 60 seconds; no timeout. Positive replay: 0.296 seconds calculation,
+     2.422 seconds including startup. Mutation processes: 2.203 and 2.265
+     seconds. The figure was generated and visually inspected. A separate
+     read-only agent independently derived the formulas and inspected the
+     checker and receipt; no extra replay counts are claimed for that review.
+
+     [Derivation and Hodge relevance](notes/chi-curve-bridge.md) ·
+     [Source pins](results/chi-curve-bridge/inputs.json) ·
+     [Exact checks](results/chi-curve-bridge/replay.json) ·
+     [Commands, bounds and failed shortcuts](results/chi-curve-bridge/validation.json) ·
+     [Independent review scope](results/chi-curve-bridge/review.json) ·
+     [Reproducible visualization](visualizations/chi-curve-bridge.png).
+
+     Notebook base `ae043a1b037cc8b0393460f0b58fc5dedd4c35cb`; observed
+     upstream head `b2ee2acb5409e37b6fad800b256fb8f2fee163bf`. No protected
+     target data changed and no target correspondence, family exclusion,
+     supporting cycle or Hodge primitive was constructed. No numerical
+     probability integration, GPU search, Lean/kernel build or previous
+     transport/jet replay was run. The earlier audits remain complete.
+     The figure shows a real affine slice; it does not certify a Hodge class.
+     Credit the GOE correction and its cited Bornemann-Lacroix work;
+     this elementary reconstruction makes no novelty claim. Prepared for
+     rbajaj5 with OpenAI Codex and read-only mathematical review.
+
+     Published only to Hodge Lab. The README's stale 27-count was aligned
+     with the already recorded 28, not incremented for this notebook work.
+     Tally remains **28 discussion contributions, one closed maintenance PR,
+     zero accepted authored solves**. No upstream post, reply, edit or PR.
+     Historical ledger bytes and earlier receipts were preserved.

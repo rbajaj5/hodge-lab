@@ -37,6 +37,14 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### A chi-variable curve: geometry is only part of the data
+
+[![A genus-one curve and the differential transported onto it](visualizations/chi-curve-bridge.png)](notes/chi-curve-bridge.md)
+
+The corrected GOE factor gives the genus-one model `v² = 2(1 − u⁴)`. For every integer `m ≥ 1`, its unweighted algebraic density differential has an explicit rational primitive. The Gaussian weight changes that primitive equation. This small example explains why a Hodge construction must transport the specified form, Jacobian and covering data along with the curve. **No correspondence to a protected Hodge target is constructed.**
+
+[Derivation and limits](notes/chi-curve-bridge.md) · [46 exact/control checks](results/chi-curve-bridge/replay.json) · [Deliberate error tests](results/chi-curve-bridge/validation.json)
+
 ### The actual covariant jets, replayed exactly
 
 [![Full affine covariant-jet replay and remaining limits](visualizations/covariant-jet-audit.png)](notes/covariant-jet-audit.md)
@@ -111,7 +119,7 @@ Plotting and numerical experiments use [`requirements.txt`](requirements.txt); C
 
 The ledger distinguishes numerical observations, exact identities, bounded exclusions, formal proofs, and accepted upstream submissions. Author-reported findings and locally reproduced checks are recorded separately. AI assistance is part of the workflow; each audit states what was actually executed.
 
-The recorded upstream contribution tally is **27 discussion contributions, one closed maintenance PR, and zero accepted authored solves by rbajaj5**. Acknowledgment of a research direction does not transfer solve authorship.
+The recorded upstream contribution tally is **28 discussion contributions, one closed maintenance PR, and zero accepted authored solves by rbajaj5**. Acknowledgment of a research direction does not transfer solve authorship.
 
 Every upstream post, reply, or substantive edit requires a ledger audit before publication, followed by the actual outcome and permanent link. Routine technical updates stay in this notebook. Discussion 127 is included in the intended monitoring scope; that policy does not itself change an external scheduled monitor.
 
