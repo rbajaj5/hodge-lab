@@ -1,0 +1,32 @@
+{
+  "type": "independent read-only reviews; not additional accepted proofs",
+  "normal_moving": {
+    "checks": 9,
+    "python": "3.11.9",
+    "sympy": "1.14.0",
+    "seconds": 0.306,
+    "result": "PASS; no algebraic discrepancy",
+    "scope": "generic normal correction; protected sextic scaling; paired gradient/Hessian; generic volume divergence; conditional moving-map identity; final signs",
+    "limitations": "No Lean compile or full covariant jet replay"
+  },
+  "volume": {
+    "checks": 12,
+    "result": "PASS; no discrepancy",
+    "scope": "small coordinate determinants, source normalization and orientation; relative differential factor reused",
+    "limitations": "On-shell residue multiplier, not ambient map determinant; no Lean compilation"
+  },
+  "combined_checker_review": {
+    "reviewed_version_checks": 64,
+    "replay_seconds": 0.672,
+    "result": "PASS; no algebraic defect",
+    "finding": "State both curve and differential first variations explicitly; do not imply every hashed file was semantically replayed",
+    "resolution": "Both limits are explicit in final checker receipt, note and visualization. Final version adds parsed jet-pair/gJet tests, for 65 checks."
+  },
+  "browser_transcript": "Supplied by user; agrees with -48 R^4, 6 eta, 2 R^3 eta. No extra local run claimed.",
+  "final_note_review": {
+    "reviewer": "independent volume reviewer",
+    "result": "No consequential mathematical or scoping problems found",
+    "scope": "determinant sign/powers; normalized source; on-shell vs ambient distinction; conditional jet and Piola limits",
+    "execution": "read-only review, no additional computation"
+  }
+}

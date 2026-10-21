@@ -3545,3 +3545,58 @@ restricted to actual upstream activity.
      documentation correction is the GOE commit linked above. The Weierstrass
      post and contribution tally remain unchanged; physical source transport
      remains a separate prospective audit.
+
+114. **21 October 2026 — Physical source transport audit for holdout-moving-branch.**
+     Continued the completed covariant/seed audit at upstream
+     `28d14ed300d4d2cb84555466b81cfcfa54854cdd`, from notebook
+     `2887b40c4b555a6fb3e1836efb2be7615ede8e8a`. Parsed the protected
+     record and relevant source formulas; pinned 22 input files with SHA-256
+     and Git blob hashes. A hash check is not a semantic replay of every file.
+
+     The source-bound checker passes **65 exact equalities** over rational
+     functions: all 25 passive-coordinate matrix entries, the determinant
+     factor `-48 R^4`, an independent chart-volume calculation, source scaling,
+     generic normal-chart correction, divergence-free volume direction, and
+     conditional moving-map/final correction algebra. Reusing the previously
+     checked cubic factor three gives `F_0 det(M)/(2Y) = -144 R v^3` and
+     `P = -V_alpha/(144R)`. The latter is polynomial after cancellation.
+     The primitive assembly adds the moving correction and subtracts the
+     normal correction. No discrepancy was found in these bounded checks.
+
+     Three deliberate mutations (144 to 143, omitted moving correction,
+     reversed normal-correction sign) fail with nonzero exits. Python 3.11.9,
+     SymPy 1.14.0; 60 seconds per process, no timeout, final baseline 0.625
+     seconds inside the checker. Two read-only reviewers independently
+     checked the normal/moving algebra and the volume/source route. The
+     additional browser transcript supplied by the user is separate from
+     these executed checks.
+
+     [Derivation, exact scope and attribution](notes/physical-source-transport-audit.md) ·
+     [Input pins](results/physical-source-transport-audit/inputs.json) ·
+     [Replay](results/physical-source-transport-audit/replay.json) ·
+     [Commands and failure tests](results/physical-source-transport-audit/validation.json) ·
+     [Review scope](results/physical-source-transport-audit/review.json) ·
+     [Reproducible transport diagram](visualizations/physical-source-transport-audit.png).
+
+     This is an on-hypersurface residue identity, not an ambient six-variable
+     Jacobian assertion. The moving-map scalar check assumes the covariant
+     curve and differential first variations; their full jet evaluation was
+     not rerun. Function-field nonvanishing/embedding, Piola hypotheses,
+     accepted primitive existence, trace and homogeneous clearing remain
+     imported dependencies. No Lean/kernel build, full syzygy expansion or
+     new seed replay was executed. These coverage limits do not establish a
+     defect in the accepted proof. Credit the classical Fisher/cubic-invariant
+     work, hodgepodgeconjecture, fqlx, benediamond, shared-library contributors
+     and Mathlib; prepared for rbajaj5 with OpenAI Codex assistance.
+
+     Refreshed all comments/replies in discussion #146 at 18:39:34 UTC:
+     our existing comment 19103930 is unchanged, with zero replies. No
+     upstream post, reply, comment edit or PR was made. The contribution
+     tally remains **28 discussion contributions, one closed maintenance PR,
+     zero accepted authored solves**. Prompt 3, the prior comment corrections
+     and GOE maintenance remain complete. Historical ledger bytes preserved.
+
+     **Pre-publication source refresh:** upstream advanced to
+     `b2ee2acb5409e37b6fad800b256fb8f2fee163bf`; exact tree/blob comparison
+     confirms all 22 audited inputs unchanged. Hodge Lab main still matched
+     the starting revision. [Pinned head comparison](results/physical-source-transport-audit/heads.json).

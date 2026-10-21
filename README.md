@@ -37,6 +37,14 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### Physical source transport: why the factor is 144
+
+[![Exact transport factors and verification limits](visualizations/physical-source-transport-audit.png)](notes/physical-source-transport-audit.md)
+
+For the accepted `holdout-moving-branch` construction, **65 exact equalities** check the residue-volume multiplier `-144 R v^3`, the corresponding alpha-source normalization, and the correction algebra. All 25 coordinate-matrix entries are reconstructed, and three deliberate errors are rejected. The moving-map conclusion retains its curve and differential first-variation hypotheses; this is a bounded independent audit, not a new solve or full Lean replay.
+
+[Derivation and limits](notes/physical-source-transport-audit.md) · [Source-bound checker](scripts/audit_physical_source_transport.py) · [Executed checks](results/physical-source-transport-audit/validation.json)
+
 ### From a GPU screen to exact exclusions
 
 [![GPU rank calculation and the exact correction-space bound for sixteen fixed cubic-direction candidates](results/cyclic-fano-cubic-polars-figures/cyclic-fano-cubic-gpu-shortcut.png)](notes/cyclic-fano-cubic-polars.md)

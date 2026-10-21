@@ -1,0 +1,60 @@
+{
+  "executed_utc": "2026-10-21T18:40:52.266310+00:00",
+  "cwd": "repository root",
+  "executable": "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "checker_sha256": "3be5ca1f9018f444e43e6759657f8ec863ea608d230f632b4b2b04610b9e3c9d",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "scripts/audit_physical_source_transport.py",
+        "--output",
+        "results/physical-source-transport-audit/replay.json"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "seconds": 1.625,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"instance\": \"holdout-moving-branch\",\n  \"q\": 1,\n  \"upstream_commit\": \"28d14ed300d4d2cb84555466b81cfcfa54854cdd\",\n  \"notebook_base\": \"2887b40c4b555a6fb3e1836efb2be7615ede8e8a\",\n  \"field\": \"exact rational functions over Q; interpreted on the stated complex function-field chart\",\n  \"variable_order\": [\n    \"X0\",\n    \"X1\",\n    \"X2\",\n    \"Y0\",\n    \"Y1\",\n    \"Y2\"\n  ],\n  \"target_order\": [\n    \"Y\",\n    \"T\",\n    \"c1\",\n    \"c2\",\n    \"R\",\n    \"X\"\n  ],\n  \"input_files_hashed\": 22,\n  \"checks_passed\": 65,\n  \"checks\": [\n    \"protected source A\",\n    \"protected F = R^3 U\",\n    \"protected A = v^3 R^3 x^3\",\n    \"paired gradient = 2 R^3 x G\",\n    \"paired Hessian minus gradient\",\n    \"generic normal correction\",\n    \"source normal correction binding\",\n    \"cubic normal source scaling\",\n    \"relative direction tangent to F\",\n    \"D radial = 0\",\n    \"D ratio = 0\",\n    \"D cOne = 0\",\n    \"D cTwo = 0\",\n    \"D y = 1\",\n    \"D x = -Uy/Ux\",\n    \"generic volume vector residue divergence\",\n    \"volume vector direction 0\",\n    \"volume vector direction 1\",\n    \"volume vector direction 2\",\n    \"volume vector direction 3\",\n    \"volume vector direction 4\",\n    \"coordinate matrix entry 0,0\",\n    \"coordinate matrix entry 0,1\",\n    \"coordinate matrix entry 0,2\",\n    \"coordinate matrix entry 0,3\",\n    \"coordinate matrix entry 0,4\",\n    \"coordinate matrix entry 1,0\",\n    \"coordinate matrix entry 1,1\",\n    \"coordinate matrix entry 1,2\",\n    \"coordinate matrix entry 1,3\",\n    \"coordinate matrix entry 1,4\",\n    \"coordinate matrix entry 2,0\",\n    \"coordinate matrix entry 2,1\",\n    \"coordinate matrix entry 2,2\",\n    \"coordinate matrix entry 2,3\",\n    \"coordinate matrix entry 2,4\",\n    \"coordinate matrix entry 3,0\",\n    \"coordinate matrix entry 3,1\",\n    \"coordinate matrix entry 3,2\",\n    \"coordinate matrix entry 3,3\",\n    \"coordinate matrix entry 3,4\",\n    \"coordinate matrix entry 4,0\",\n    \"coordinate matrix entry 4,1\",\n    \"coordinate matrix entry 4,2\",\n    \"coordinate matrix entry 4,3\",\n    \"coordinate matrix entry 4,4\",\n    \"direct determinant = -48 R^4 W(xi)/F0\",\n    \"residue density = -144 R v^3\",\n    \"paired coordinate determinant\",\n    \"squared coordinate determinant\",\n    \"second chart residue density\",\n    \"integral model scale\",\n    \"alpha-source normalization\",\n    \"integral alpha-source identity\",\n    \"Jacobian source independent of Y\",\n    \"aDot is zero\",\n    \"bDot formula\",\n    \"model invariant A4 binding\",\n    \"model invariant B6 binding\",\n    \"mapped source R^5/144\",\n    \"source jet preserves cubic equation to first order\",\n    \"source cubic normal jet value\",\n    \"source cubic normal jet variation\",\n    \"moving-map scalar identity given curve and jet identities\",\n    \"physical three-term divergence = negative protected source\"\n  ],\n  \"residue_density\": \"-144*R*v^3\",\n  \"alpha_source\": \"-V_alpha|alpha=1/(144*R)\",\n  \"primitive_assembly\": \"pulled + (xiDot/(6*eta))*volumeVector - correctionVector\",\n  \"reused\": \"prior exact covariant/differential audit; seed not rerun\",\n  \"conditional_dependencies\": [\n    \"covariant curve and differential first variations; no full xiJet/etaJet evaluation\",\n    \"function-field nonvanishing, embedding and Piola theorem\",\n    \"accepted Jacobian primitive existence, trace and homogeneous clearing\"\n  ],\n  \"not_executed\": [\n    \"Lean build/kernel replay\",\n    \"full syzygy expansion\",\n    \"full xiJet/etaJet curve and differential first-variation evaluation\",\n    \"seed replay\",\n    \"trace/clearing replay\"\n  ],\n  \"python\": \"3.11.9\",\n  \"sympy\": \"1.14.0\",\n  \"checker_sha256\": \"3be5ca1f9018f444e43e6759657f8ec863ea608d230f632b4b2b04610b9e3c9d\",\n  \"seconds\": 0.625\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/audit_physical_source_transport.py",
+        "--perturb",
+        "normalization"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "seconds": 1.468,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 283, in <module>\n    result = run(args.perturb)\n             ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 205, in run\n    eq('alpha-source normalization',P,-s.diff(V,alpha).subs(alpha,1)/(normalization*radial))\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 77, in eq\n    require(s.cancel(lhs-rhs) == 0, label)\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 26, in require\n    raise ValueError(label)\nValueError: alpha-source normalization\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/audit_physical_source_transport.py",
+        "--perturb",
+        "omit-moving"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "seconds": 1.578,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 283, in <module>\n    result = run(args.perturb)\n             ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 257, in run\n    eq('physical three-term divergence = negative protected source',\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 77, in eq\n    require(s.cancel(lhs-rhs) == 0, label)\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 26, in require\n    raise ValueError(label)\nValueError: physical three-term divergence = negative protected source\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/audit_physical_source_transport.py",
+        "--perturb",
+        "normal-sign"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "seconds": 1.532,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 283, in <module>\n    result = run(args.perturb)\n             ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 257, in run\n    eq('physical three-term divergence = negative protected source',\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 77, in eq\n    require(s.cancel(lhs-rhs) == 0, label)\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\audit_physical_source_transport.py\", line 26, in require\n    raise ValueError(label)\nValueError: physical three-term divergence = negative protected source\n"
+    }
+  ]
+}
