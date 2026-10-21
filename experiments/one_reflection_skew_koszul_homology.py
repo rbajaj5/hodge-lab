@@ -29,12 +29,12 @@ the quadratic E2 obstruction ideals of `one-reflection-skew` across degrees 6 an
      ker d1 = 65 = 36 Koszul boundaries + 29 H1 classes), and d = 5 (rank 126/126,
      ker d1 = 189 = 179 Koszul boundaries + 10 H1 classes, plus dim H2 = 1).
 
-2. Universal Z_k-Twisted Euler Regular Sequence in Degree 7:
+2. Z_k-Twisted Euler Finite Strands in Degree 7:
    Across all 5 base coordinates Z_k in {X0, X1, X2, Y0, Y1} (landing in the four
    Y2-even degree-7 superselection sectors `[1,1,1,0]`, `[1,0,0,0]`, `[0,1,0,0]`,
    `[0,0,1,0]`), the 5-dimensional Z_k-twisted Euler sub-block {Z_k Z_i d_i F}_{i=0}^4
-   projects in S_14^{(5)} / (J_14^{(5)}(F_5) + F_5 S_8^{(5)})[(1,0,1)] to a 4-quadric
-   regular sequence with identical Koszul profile H0 = (11, 15, 16), H1 = (0, 0, 0)
+   projects in S_14^{(5)} / (J_14^{(5)}(F_5) + F_5 S_8^{(5)})[(1,0,1)] to four quadrics
+   with identical finite Koszul profile H0 = (11, 15, 16), H1 = (0, 0, 0)
    for d = 2, 3, 4 (matching Y2 in `[0,0,0,1]`).
 
 3. Degree-7 Non-Jacobian ("Added") E1 Sub-Block Obstruction:
@@ -92,9 +92,15 @@ def canonical_quadrics() -> dict[str, list[dict[tuple[int, int], Q]]]:
     q_kramers = {(0, 3): Q(1), (0, 4): Q(-1), (1, 3): Q(1), (1, 4): Q(-1), (3, 3): Q(-1), (4, 4): Q(1)}
     q_bridge = {(0, 0): Q(1), (0, 1): Q(-1), (0, 4): Q(-1), (1, 3): Q(1), (3, 3): Q(-1), (3, 4): Q(1)}
 
+    # Q_anchor is in the saved physical Hessian rowspace; Q3 is not.
+    # Independently certified by check_one_reflection_skew_hessian.py.
+    q_anchor = {(0,1): Q(1), (0,4): Q(-1), (1,2): Q(10,9), (1,3): Q(-5,9),
+                (1,4): Q(-14,9), (2,2): Q(-25,27), (2,3): Q(10,27),
+                (2,4): Q(10,27), (3,3): Q(47,27), (3,4): Q(-89,27), (4,4): Q(74,27)}
+
     return {
         "P_Cas": [q6, q_kramers, q_bridge],
-        "P_Hess": [q6, q_kramers, q_bridge, q3],
+        "P_Hess": [q6, q_kramers, q_bridge, q_anchor],
         "P_factored": [q_kramers, q8, q3, q4],
         "P_core": [q6, q7, q8, q9],
         "P_full": [q1, q2, q3, q4, q5, q6, q7, q8, q9],
@@ -116,6 +122,8 @@ def run_analysis() -> dict:
     OUT.mkdir(parents=True, exist_ok=True)
     t0 = time.perf_counter()
 
+    from check_one_reflection_skew_hessian import main as audit_hessian
+    audit_hessian()  # checks physical rowspace and all-degree height certificate
     ideals = canonical_quadrics()
     configs = [
         ("P_Cas", "3 factored Casimir/Kramers modes (Q_node, Q_Kramers, Q_bridge)", [0, 1, 2, 3, 4], [2, 3, 4, 5, 6]),
@@ -180,7 +188,7 @@ def run_analysis() -> dict:
     assert [r["H1"] for r in ideal_reports["P_full"]["degrees"]] == [0, 10, 29, 10]
     assert [r["H2"] for r in ideal_reports["P_full"]["degrees"]] == [0, 0, 0, 1]
 
-    # Universal Z_k-Twisted Euler Regular Sequence across all 5 Y2=0 coordinates in degree 7
+    # Finite Z_k-twisted Euler strands across the five Y2=0 coordinates in degree 7
     F, A, _, _ = e1.target(INSTANCE)
     parts = [e1.derivative(F, i) for i in range(6)]
     chi5 = lambda mon: ((mon[0] + mon[1] + mon[2]) % 2, (mon[0] + mon[2] + mon[3]) % 2, (mon[0] + mon[2] + mon[4]) % 2)
@@ -259,6 +267,7 @@ def run_analysis() -> dict:
         },
         "canonical_ideals": ideal_reports,
         "degree7_twisted_euler_families": twisted_euler_reports,
+        "degree7_pure_added_verification_scope": "Inherited degree-seven results; these blocks are not reconstructed by this script. Only degree two is reported here.",
         "degree7_pure_added_non_jacobian_blocks": [
             {"sector_D": [0, 0, 1, 0], "extra_dim": 1, "quad_cols": 1, "base_quotient_rank": 1, "forced_squares": 1, "deg2_H0": 0, "deg2_H1": 0},
             {"sector_D": [1, 0, 0, 0], "extra_dim": 1, "quad_cols": 1, "base_quotient_rank": 1, "forced_squares": 1, "deg2_H0": 0, "deg2_H1": 0},
@@ -314,7 +323,7 @@ def make_figure(summary: dict, ideals: dict) -> None:
     series = [
         ("P_Cas (3 Casimir modes, 5 vars)", degs_5, [r["H0"] for r in summary["canonical_ideals"]["P_Cas"]["degrees"]], SLATE, "o--"),
         ("P_factored (4 Kramers/anchor modes, H1 > 0)", degs_5, [r["H0"] for r in summary["canonical_ideals"]["P_factored"]["degrees"]], GOLD, "s--"),
-        ("P_Hess & deg-7 Z_k-Euler (4 modes, reg seq -> 2^4=16)", degs_5, [r["H0"] for r in summary["canonical_ideals"]["P_Hess"]["degrees"]], TEAL, "^-"),
+        ("P_Hess; Z_k-Euler agrees in degrees 2-4 only", degs_5, [r["H0"] for r in summary["canonical_ideals"]["P_Hess"]["degrees"]], TEAL, "^-"),
         ("P_core (Q6..Q9 in 4 vars, C(4,d) -> H0=0 at d=5)", degs_5, [r["H0"] for r in summary["canonical_ideals"]["P_core"]["degrees"]], "#2B5B84", "D-"),
         ("P_full (all 9 E2 quadrics, H0=0 at d=3,4,5)", degs_full, [r["H0"] for r in summary["canonical_ideals"]["P_full"]["degrees"]], CORAL, "P-"),
     ]
@@ -396,13 +405,14 @@ def make_figure(summary: dict, ideals: dict) -> None:
     ax.set_title("D. Degree-7 Sub-Block Koszul Homology & Added-Direction Audit", pad=8)
     table_rows = [
         ["Sub-Block / Ideal", "Sector chi", "Vars/Gens", "H0 (d=2..5)", "H1 (d=2..5)", "Algebraic / Obstruction Meaning"],
-        ["P_Hess & Z_k-Euler", "All 5 Z_k", "5v, 4g", "(11,15,16,16)", "(0, 0, 0, 0)", "Length-4 reg. seq. in P^4 (2^4=16 pts)"],
+        ["P_Hess", "degree 6", "5v, 4g", "(11,15,16,16)", "(0, 0, 0, 0)", "Height 4 certified separately"],
+        ["Z_k-Euler", "All 5 Z_k", "5v, 4g", "(11,15,16,-)", "(0, 0, 0, -)", "Only degrees 2-4 computed"],
         ["P_factored (Kramers)", "d6 & [0001]", "5v, 4g", "(11,16,20,24)", "(0, 1, 4, 8)", "Shared (a3-a4) => deg-3 H1 cycle"],
-        ["P_core = (Q6..Q9)", "d6 & [0001]", "4v, 4g", "(6, 4, 1, 0)", "(0, 0, 0, 0)", "4-var complete intersection => a_i^5=0"],
-        ["P_full = (Q1..Q9)", "d6 & [0001]", "5v, 9g", "(6, 0, 0, 0)", "(0,10,29,10)", "H0=0 at d=3,4 => a_i^3=a_i^4=0 (H2_5=1)"],
-        ["Added E1 [0,0,1,0]", "[0,0,1,0]", "1v, 1g", "(0, 0, 0, 0)", "(0, 0, 0, 0)", "Rank 1/1 in base quot => e_0^2 = 0"],
-        ["Added E1 [1,0,0,0]", "[1,0,0,0]", "1v, 1g", "(0, 0, 0, 0)", "(0, 0, 0, 0)", "Rank 1/1 in base quot => e_0^2 = 0"],
-        ["Added E1 [1,1,1,0]", "[1,1,1,0]", "7v, 28g", "(0, 0, 0, 0)", "(0, 0, 0, 0)", "Rank 28/28 in Sym^2(Q^7) => e_a^2 = 0"],
+        ["P_core = (Q6..Q9)", "d6 & [0001]", "4v, 4g", "(6, 4, 1, 0)", "(0, 0, 0, 0)", "Complete intersection; a_i^5=0"],
+        ["P_full = (Q1..Q9)", "d6 & [0001]", "5v, 9g", "(6, 0, 0, 0)", "(0,10,29,10)", "a_i^3=a_i^4=0; H2_5=1"],
+        ["Added E1 [0,0,1,0]", "[0,0,1,0]", "1v, 1g", "(0, -, -, -)", "(0, -, -, -)", "Inherited rank 1/1; not replayed here"],
+        ["Added E1 [1,0,0,0]", "[1,0,0,0]", "1v, 1g", "(0, -, -, -)", "(0, -, -, -)", "Inherited rank 1/1; not replayed here"],
+        ["Added E1 [1,1,1,0]", "[1,1,1,0]", "7v, 28g", "(0, -, -, -)", "(0, -, -, -)", "Inherited rank 28/28; d=2 only"],
     ]
     tbl = ax.table(
         cellText=table_rows[1:],
@@ -428,7 +438,8 @@ def make_figure(summary: dict, ideals: dict) -> None:
     ax.text(
         0.0,
         0.02,
-        "Explicit degree-3 Kramers H1 cycle: (a1 - 1/3 a2 - 2/3 a3 + 1/3 a4) Q_Kramers - (a0 + a1 - a3 - a4) Q_8 = 0\n(26 finite Koszul complexes, 709 d^2 = 0 composition columns verified over Q).",
+        "Explicit degree-3 Kramers H1 cycle: (a1 - 1/3 a2 - 2/3 a3 + 1/3 a4) Q_Kramers - (a0 + a1 - a3 - a4) Q_8 = 0\n"
+        f"({summary['total_checked_complexes']} finite complexes, {summary['total_d_squared_zero_columns_verified']} d^2 = 0 columns; counts generated from results).",
         transform=ax.transAxes,
         fontsize=8.2,
         fontweight="bold",

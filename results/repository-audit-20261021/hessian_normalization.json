@@ -1,0 +1,9 @@
+{
+  "pin": "09539bb5151f918f73ec9fd4b9faba781959c436",
+  "source": "notes/one-reflection-skew-pilot.md:44",
+  "claim": "h=(f_uu*f_vv-f_uv^2)/36 equals displayed quadratic",
+  "actual_identity": "f_uu*f_vv-f_uv^2=4*h",
+  "reported_factor_error": 9,
+  "symbolic_difference": "-8*c0*c2*u**2/3 - 8*c0*c3*u*v + 8*c1**2*u**2/9 + 8*c1*c2*u*v/9 - 8*c1*c3*v**2/3 + 8*c2**2*v**2/9",
+  "consequence": "Displayed Hessian normalization is false; producer uses the explicit quadratic and its checked Cramer/Cayley identities, so this does not refute their computed identities."
+}

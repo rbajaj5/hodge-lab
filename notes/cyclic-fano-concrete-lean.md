@@ -193,7 +193,7 @@ and all nine pinned dependencies. Both modules compile and replay, all
 five declaration reports pass, and both altered-certificate controls are
 rejected. The [source-bound receipt and logs](../formal/results/upstream433-ci/39084143971/metadata.json)
 were downloaded and independently audited. This establishes compatibility
-of those two maintenance modules. The PR is now ready for review; upstream's
+of those two maintenance modules. PR #121 was later closed unmerged on 18 October 2026; upstream's
 17 October, 21:52 EDT run stopped at missing owner authorization and skipped
 Lean. [Observed diagnostic](../results/cyclic-fano-lean/upstream-maintenance/owner-gate-39087992575/observation.json).
 No protected upstream acceptance or `HasCertificate` proof is claimed.

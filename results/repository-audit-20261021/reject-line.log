@@ -1,0 +1,6 @@
+7F coefficients mod 11 (s^6, s^5 t, ..., t^6): [0, 3, 0, 8, 5, 9, 0]
+All zero? False
+Traceback (most recent call last):
+  File "C:\Users\anaxe\AppData\Local\Packages\sandbox.{b3545454-0503-440b-b178-93225da01aa1}\AC\Temp\hodge-audit-u50q1g7t\changed.py", line 62, in <module>
+    raise ValueError("The proposed line is not contained in the sextic over F_11")
+ValueError: The proposed line is not contained in the sextic over F_11

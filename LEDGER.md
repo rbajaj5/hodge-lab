@@ -10,10 +10,10 @@ Our intent is to understand the fixed problems, share reproducible results and u
 
 | Target Instance | Upstream Thread | Complete $E_1$ Kernel ($d=0\dots 7$) | Degree-6 & Degree-7 $E_2$ Quotient & Koszul Structure | Unconditional Exclusion Bound | Key Algebraic / Physics Mechanism | Latest Checkpoint & Note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$ ($H_0=0$ at $d=3,4$; $P_{\text{core}}$ $\binom{4}{d}$ complete intersection)<br/>**$d=7$:** **4/4 $Y_2$-odd excluded**; 9/9 pure added $E_1$ squares $=0$; 1,408 chain-map cols ($d'_k \Lambda^k T = \Lambda^{k-1} T d_k$); 2-head attention $\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$ | **$\deg D \le 6$ + all 4 $Y_2$-odd $d=7$ sectors + all 9 pure added $E_1$ blocks excluded over $\mathbb{C}$** | Order-4 Kramers quartet; Spivak chain maps $\Lambda^k(T)$; Yang $\mathbb{Z}_2^{\text{Kramers}}$ channels; Buehler 2-head bilinear attention ($\mathcal{A}_{\text{div}}$ detects $U_i \notin J_7$); Dyatlov FUP / Mumford / Minsky collar hierarchy | **CP 85–90 (Posts #25–27)** · [`categorified-koszul-network.md`](notes/categorified-koszul-network.md) · [`dyatlov-mumford-minsky-chaos-ag.md`](notes/dyatlov-mumford-minsky-chaos-ag.md) |
+| **`one-reflection-skew`** | [Discussion #127](https://github.com/hodge-computer/sextics/discussions/127) | `(0, 0, 0, 0, 0, 6, 36, 135)` ($\ker(E_1)_6 = J_6$; $\ker(E_1)_7 = J_7 \oplus \mathbb{Q}^9$) | **$d=6$:** 28+2 cascade + **rank-9** diagonal $E_2$ ($H_0=0$ at $d=3,4$; $P_{\text{core}}$ $\binom{4}{d}$ complete intersection)<br/>**$d=7$:** **4/4 $Y_2$-odd excluded**; 9/9 pure added $E_1$ squares $=0$; 1,408 chain-map cols ($d'_k \Lambda^k T = \Lambda^{k-1} T d_k$); 2-head attention $\mathcal{B} = \mathcal{A}_{\text{div}} + \mathcal{A}_{\text{Lie}}$ | **$\deg D \le 6$ + all four pure-character $Y_2$-odd $d=7$ sectors + all 9 directions in the three pure added $E_1$ blocks excluded over $\mathbb{C}$** | Order-two interaction involution (not a full-sextic symmetry); Spivak chain maps $\Lambda^k(T)$; Yang $\mathbb{Z}_2^{\text{Kramers}}$ channels; Buehler 2-head bilinear attention ($\mathcal{A}_{\text{div}}$ detects $U_i \notin J_7$); Dyatlov FUP / Mumford / Minsky collar hierarchy | **CP 85–90 (Posts #25–27)** · [`categorified-koszul-network.md`](notes/categorified-koszul-network.md) · [`dyatlov-mumford-minsky-chaos-ag.md`](notes/dyatlov-mumford-minsky-chaos-ag.md) |
 | **`cycle-three`** | [Discussion #55](https://github.com/hodge-computer/sextics/discussions/55) | `(0, 0, 0, 0, 0, 6, 36)` ($\ker(E_1)_6 = J_6$) | **30** Hessian squares + **rank-7** diagonal $E_2$ ($315$ Koszul syzygies) | **$\deg D \le 6$ excluded over $\mathbb{C}$** (quartic $70/70$) | $\mathbb{Z}_3$ cyclic transport; 7-equation diagonal quotient | **CP 71–72** · [`fresh-instance-degree6.md`](notes/fresh-instance-degree6.md) |
 | **`mixed-biweight`** | [Discussion #56](https://github.com/hodge-computer/sextics/discussions/56) | `(0, 0, 0, 0, 0, 6, 39)` ($J_6 \oplus \mathbb{Q}^3$) | **26+10** square cascade + 2-point residual functional | **$\deg D \le 6$ excluded over $\mathbb{C}$** | Non-Jacobian $E_1$ excess ($+3$ dims); three-term coefficient functional kills both residual points | **CP 73** · [`mixed-degree6-extra.md`](notes/mixed-degree6-extra.md) |
-| **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.33 row-functional bridge | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16-module polynomial-to-matrix Lean 4 bridge | **CP 74–84** · [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
+| **`cyclic` / `fano`** | [Discussion #112](https://github.com/hodge-computer/sextics/discussions/112) | `(0, 0, 0, 0, 0, 6, 38)` ($J_6 \oplus \mathbb{Q}^2$) | Cyclic character split ($\chi_0, \chi_1, \chi_2$) + Lean 4.31 notebook; separate 4.33 maintenance compatibility | **$\deg D \le 6$ excluded over $\mathbb{C}$** + explicit free curve family | $\mathbb{Z}_3$ character projection; 16 literal-matrix candidates (17 modules); polynomial-to-matrix Lean bridge for Case05 only (5 modules) | **CP 74–84** · [`cyclic-fano-curve.md`](notes/cyclic-fano-curve.md) |
 
 ```mermaid
 flowchart LR
@@ -3059,6 +3059,10 @@ conversations or evidence of an accepted solve.
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Acceptance, baseline hashes, attribution and limits](results/discussion-monitor/update-20261021T115542Z.json).
 
+103. **21 October 2026 — Independent `F_{11}` line incidence check for one-reflection-skew.**
+    Substituted the reported line `\ell(s,t)=[s:t:6s+2t:3s+2t:2s:7s+8t]` into the exact term list from the protected record. The coefficients of `7F(\ell)` are `(0,0,0,0,0,0,0)` modulo 11, confirming the line lies on the skew sextic hypersurface. The restriction of the source `A=X_0^3 Y_0^3` is `5s^6+10s^5 t+3s^4 t^2+8s^3 t^3` modulo 11 (not identically zero; value 5 at `[1:0]`). Executable checker and saved output published. Rank/minor claims remain author-reported. No rational primitive or certificate claimed. Upstream tally unchanged.
+    Note: [notes/one-reflection-skew-line-check.md](notes/one-reflection-skew-line-check.md). Checker: [experiments/check_one_reflection_skew_line.py](experiments/check_one_reflection_skew_line.py). Output: [results/one-reflection-skew-line/output.txt](results/one-reflection-skew-line/output.txt).
+
 104. **21 October 2026, 08:55 EDT / 12:55 UTC — Holdout extraction note unavailable; acceptance and attribution unchanged.**
      All pages of 14 discussions were compared with checkpoint 102: 31
      comments and 16 replies remain, with no additions, one missing comment
@@ -3085,10 +3089,6 @@ conversations or evidence of an accepted solve.
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Availability, editorial-diff and publication-status receipt](results/discussion-monitor/update-20261021T125544Z.json).
 
-
-103. **21 October 2026 — Independent `F_{11}` line incidence check for one-reflection-skew.**
-    Substituted the reported line `\ell(s,t)=[s:t:6s+2t:3s+2t:2s:7s+8t]` into the exact term list from the protected record. The coefficients of `7F(\ell)` are `(0,0,0,0,0,0,0)` modulo 11, confirming the line lies on the skew sextic hypersurface. The restriction of the source `A=X_0^3 Y_0^3` is `5s^6+10s^5 t+3s^4 t^2+8s^3 t^3` modulo 11 (not identically zero; value 5 at `[1:0]`). Executable checker and saved output published. Rank/minor claims remain author-reported. No rational primitive or certificate claimed. Upstream tally unchanged.
-    Note: [notes/one-reflection-skew-line-check.md](notes/one-reflection-skew-line-check.md). Checker: [experiments/check_one_reflection_skew_line.py](experiments/check_one_reflection_skew_line.py). Output: [results/one-reflection-skew-line/output.txt](results/one-reflection-skew-line/output.txt).
 
 105. **21 October 2026, 09:50 EDT / 13:50 UTC — Moving-branch instance accepted; monitored discussions unchanged.**
      The complete 14-thread comparison has no additions, edits or removals:
@@ -3128,6 +3128,56 @@ conversations or evidence of an accepted solve.
      No upstream action was taken. The tally remains **27 discussion
      contributions, one maintenance PR (closed), zero accepted authored solves**.
      [Acceptance, attribution, monitoring and encoding-repair receipt](results/discussion-monitor/update-20261021T135036Z.json).
+
+106. **21 October 2026 — Substantive live-state audit and focused corrections.**
+     Audited Hodge Lab at `09539bb5151f918f73ec9fd4b9faba781959c436`
+     and upstream at `dda4c5e72eeea8cfd52dd6e731e90031884f32fc`, using
+     independent read-only reviewers and one writer in an isolated worktree.
+     The previous UTF-8 repair was already correct: all 205 repaired lines
+     match the older text, and checkpoints 1–105 each occur once. Moved 103
+     before 104 without changing their text or numbering. Historical entries
+     are retained; the corrections below supersede their affected claims.
+
+     **Mathematics corrected:** the `P_Hess` homology script had substituted
+     full-E2 `Q3` for the physical `Q_anchor`. The all-ones parameter vector
+     annihilates all 49 physical Hessian rows but gives `Q3=5/4`. The corrected
+     generators now have checked two-way rowspace witnesses. Their finite
+     profile is unchanged. A separate 56-by-80 hyperplane-section matrix,
+     with nonzero minor 6 modulo 101, supplies the all-degree height argument;
+     sampled vanishing alone was insufficient. Twisted-Euler claims are
+     restricted to the degrees actually computed. Figure entries beyond
+     computed/inherited data and incorrect hardcoded check counts were fixed.
+     Degree-seven exclusions are now explicitly limited to pure-character
+     families; quadratic-column rank is not nonlinear-map surjectivity.
+
+     The pilot Hessian factor is 1/4, not 1/36; the complex exchange is an
+     involution, not order four. A vanishing Cramer coefficient does not
+     imply flow degeneration: at r=w=beta=0 the Hessian discriminant is 81.
+     The symbolic identities and boundary counterexample were checked;
+     the expensive low-degree baseline was retained unchanged, not rerun.
+     The line checker now exits unsuccessfully for invalid incidence or a
+     changed target restriction, including under Python -O.
+
+     **Scope and status corrected:** the Lean polynomial-to-matrix bridge
+     covers Case05; the other fifteen cases concern literal matrices with
+     external correspondence checks. Reviewed source/receipt bindings and
+     small Case05 checks passed. No fresh Lean compilation or replay was
+     executed; a sixteen-minor reconstruction timed out at 60 seconds.
+     Current upstream records contain 82 targets, 65 solved and 17 open.
+     The older counts were correct historical snapshots. Updated the current
+     README and qualified the older mixed-biweight/PR121 status descriptions.
+
+     All 14 discussion threads were fetched with complete pagination;
+     their 47 records were unchanged. Acceptance records and attribution were
+     inspected, not independently reproved. No upstream activity occurred;
+     the tally remains **27 discussion contributions, one closed maintenance
+     PR, zero accepted authored solves**. The unfinished earlier rank-proof
+     work and other checkout changes were preserved separately.
+
+     [Findings, exact claims, pinned evidence and remaining limits](notes/repository-audit-20261021.md)
+     · [Executed checks and versions](results/repository-audit-20261021/validation.json)
+     · [Corrected Koszul visualization](results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png)
+     · [Corrected pilot visualization](results/one-reflection-skew-pilot/one-reflection-skew-audit.png).
 
 ## Keeping this current
 

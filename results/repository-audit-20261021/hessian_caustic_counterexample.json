@@ -1,0 +1,14 @@
+{
+  "claim": "symplectic Hessian degenerates on X1*Y1=0",
+  "counterexample_parameters": {
+    "r": 0,
+    "w": 0,
+    "beta": 0
+  },
+  "h": "9*u*v",
+  "discriminant": "81",
+  "flow": "9u d/du -9v d/dv",
+  "L_h_at_point": "0",
+  "resultant_beta_c1_c2": "0",
+  "consequence": "A single Cramer coefficient vanishes but neither the quadratic form nor the linear Hamiltonian field degenerates; the resultant is identically zero for all r,w because both inputs have beta factor."
+}

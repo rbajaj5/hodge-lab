@@ -1,0 +1,28 @@
+{
+  "hodge_lab_head": "09539bb5151f918f73ec9fd4b9faba781959c436",
+  "upstream_head": "dda4c5e72eeea8cfd52dd6e731e90031884f32fc",
+  "hodge_lab_fetch": {
+    "command": "git fetch origin main",
+    "exit_code": 0
+  },
+  "upstream_git_fetch_attempts": [
+    {
+      "command": "git fetch origin main",
+      "exit_code": 1,
+      "stderr": "RPC failed; curl 56 Recv failure: Connection was reset; early EOF; invalid index-pack output"
+    },
+    {
+      "command": "git fetch --depth=1 origin main",
+      "exit_code": 1,
+      "stderr": "RPC failed; curl 56 Recv failure: Connection was reset; early EOF; invalid index-pack output"
+    }
+  ],
+  "upstream_retrieval": "Pinned GitHub API reads, contents decoded and Git blob hashes checked in upstream-review.json",
+  "discussion_snapshot": "20261021T150844Z",
+  "discussion_comparison_baseline": "20261021T135036Z",
+  "discussions": 14,
+  "all_pages_fetched": true,
+  "changed_records": 0,
+  "comment_and_reply_records": 47,
+  "scope": "Repository audit only; no external publication or fresh Lean verification"
+}

@@ -8,7 +8,7 @@ An independent research notebook by [Ravi Bajaj](https://github.com/rbajaj5), ex
 
 ## Current frontier
 
-**Snapshot: 21 October 2026.** The upstream catalogue at [`be8ec039`](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/index.json) contains **78 targets: 64 solved and 14 open**.
+**Snapshot: 21 October 2026, 15:43 UTC.** The upstream catalogue at [`dda4c5e7`](https://github.com/hodge-computer/sextics/blob/dda4c5e72eeea8cfd52dd6e731e90031884f32fc/data/index.json) contains **82 targets: 65 solved and 17 open**.
 
 | Target | Upstream status | Notebook entry point |
 | --- | --- | --- |
@@ -26,6 +26,10 @@ Research notes retain the status at the time they were written. This dated table
 For fixed polynomial data, seek a rational vector field satisfying the prescribed certificate identity. Clearing denominators produces exact polynomial conditions. A useful outcome can be a certificate, a proof that a specified family cannot work, or a failed experiment with enough evidence to guide the next search.
 
 The [algebra notebook](algebra/README.md) develops the normalized `q=1` equations, complete correction spaces, and exact rejection witnesses. Each calculation specifies its target revision, denominator family, allowed corrections, and verification boundary.
+
+## Audit corrections — 21 October 2026
+
+The audit corrected a substituted Hessian generator, a mistaken flow-degeneracy interpretation, a line checker that did not fail on invalid input, and an overstatement of Lean coverage. The corrected Hessian finite profile is unchanged; its all-degree claim now has a separate height certificate. Historical ledger text was preserved. [Findings, evidence, replay commands and limits](notes/repository-audit-20261021.md).
 
 ## Selected results
 

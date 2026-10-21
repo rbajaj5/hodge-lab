@@ -1,0 +1,1173 @@
+{
+  "schema": "hodge-lab-live-formal-review-v1",
+  "review_date": "2026-10-21",
+  "pinned_commit": "09539bb5151f918f73ec9fd4b9faba781959c436",
+  "checkout": "C:/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-audit-20261021",
+  "scope": "Read-only review of committed Case05 polynomial-to-matrix claims, the generic150/151 rank-gap lemma, sixteen literal matrix cases, and saved CI receipts. Uncommitted SkewLine work excluded.",
+  "versions": {
+    "python": "Python 3.11.9",
+    "git": "git version 2.53.0.windows.3",
+    "historically_recorded_lean": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)\ninfo: downloading https://releases.lean-lang.org/lean4/v4.31.0/lean-4.31.0-linux.tar.zst\ninfo: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.31.0\ninfo: mathlib: cloning https://github.com/leanprover-community/mathlib4.git\ninfo: mathlib: checking out revision 'fabf563a7c95a166b8d7b6efca11c8b4dc9d911f'\ninfo: plausible: cloning https://github.com/leanprover-community/plausible\ninfo: plausible: checking out revision '63045536fe95024e6c18fc7b48e03f506701c5bc'\ninfo: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient\ninfo: LeanSearchClient: checking out revision 'c5d5b8fe6e5158def25cd28eb94e4141ad97c843'\ninfo: importGraph: cloning https://github.com/leanprover-community/import-graph\ninfo: importGraph: checking out revision '5c7542ed018c78194f1e2b903eaf6a792b74c03d'\ninfo: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4\ninfo: proofwidgets: checking out revision '24b0d9dc081c5423f8eec7e866c441e5184f29d9'\ninfo: aesop: cloning https://github.com/leanprover-community/aesop\ninfo: aesop: checking out revision 'e3cb2f741431ce31bf73549fb52316a57368b06f'\ninfo: Qq: cloning https://github.com/leanprover-community/quote4\ninfo: Qq: checking out revision 'f46324995fca5f0483b742e4eb4daec7f4ee50d2'\ninfo: batteries: cloning https://github.com/leanprover-community/batteries\ninfo: batteries: checking out revision 'fa08db58b30eb033edcdab331bba000827f9f785'\ninfo: Cli: cloning https://github.com/leanprover/lean4-cli\ninfo: Cli: checking out revision '92564e5770e4d09f2d86dfbf8ada1e9c715b384c'",
+    "current_lean_executed": false
+  },
+  "checkout_status_porcelain": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "executed_commands": [
+    {
+      "executable": "python.exe",
+      "arguments": [
+        "-B",
+        "-S",
+        "formal/check_polynomial_bridge.py",
+        "--check-inputs-only"
+      ],
+      "cwd": "C:/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-audit-20261021",
+      "timeout_ms": 60000,
+      "status": "PASS",
+      "exit_code": 0,
+      "signal": null,
+      "elapsed_ms": 185,
+      "stdout": "{\"status\": \"INPUTS_PASS\", \"source_bindings\": 20, \"lean_executed\": false}\r\n",
+      "stderr": ""
+    },
+    {
+      "executable": "python.exe",
+      "arguments": [
+        "-B",
+        "-S",
+        "experiments/check_cyclic_fano_polynomial_bridge.py",
+        "--arithmetic-only"
+      ],
+      "cwd": "C:/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-audit-20261021",
+      "timeout_ms": 60000,
+      "status": "PASS",
+      "exit_code": 0,
+      "signal": null,
+      "elapsed_ms": 1831,
+      "stdout": "{\r\n  \"schema\": \"cyclic-fano-polynomial-bridge-independent-v1\",\r\n  \"status\": \"PASS\",\r\n  \"projected_coefficient_audit\": {\r\n    \"status\": \"PASS\",\r\n    \"physical_coefficients\": 352,\r\n    \"correction_columns\": 175,\r\n    \"particular_weighted_E1_identity\": true,\r\n    \"particular_original_E1_identity\": true,\r\n    \"particular_Piola_E2_identity\": true,\r\n    \"only_nonzero_column\": 119,\r\n    \"exact_unscaled_rows\": [\r\n      \"2400/49\",\r\n      \"-1440/7\"\r\n    ],\r\n    \"exact_unscaled_target\": [\r\n      \"0\",\r\n      \"-200/147\"\r\n    ],\r\n    \"integer_target_pairing\": -5\r\n  },\r\n  \"raw_next_step_evidence\": {\r\n    \"status\": \"PASS\",\r\n    \"functional\": [\r\n      {\r\n        \"powers\": [\r\n          0,\r\n          0,\r\n          1,\r\n          5,\r\n          1,\r\n          5\r\n        ],\r\n        \"coefficient\": \"-25/14\"\r\n      },\r\n      {\r\n        \"powers\": [\r\n          0,\r\n          0,\r\n          1,\r\n          6,\r\n          0,\r\n          5\r\n        ],\r\n        \"coefficient\": \"-15/2\"\r\n      },\r\n      {\r\n        \"powers\": [\r\n          0,\r\n          0,\r\n          3,\r\n          0,\r\n          0,\r\n          5\r\n        ],\r\n        \"coefficient\": \"45/2\"\r\n      },\r\n      {\r\n        \"powers\": [\r\n          0,\r\n          1,\r\n          0,\r\n          7,\r\n          1,\r\n          5\r\n        ],\r\n        \"coefficient\": \"21\"\r\n      },\r\n      {\r\n        \"powers\": [\r\n          0,\r\n          1,\r\n          2,\r\n          1,\r\n          1,\r\n          5\r\n        ],\r\n        \"coefficient\": \"-21\"\r\n      },\r\n      {\r\n        \"powers\": [\r\n          1,\r\n          0,\r\n          0,\r\n          5,\r\n          2,\r\n          6\r\n        ],\r\n        \"coefficient\": \"5\"\r\n      },\r\n      {\r\n        \"powers\": [\r\n          1,\r\n          0,\r\n          2,\r\n          5,\r\n          2,\r\n          0\r\n        ],\r\n        \"coefficient\": \"-5\"\r\n      }\r\n    ],\r\n    \"functional_support\": 7,\r\n    \"raw_Koszul_columns\": 525,\r\n    \"retained_projection_types\": 175,\r\n    \"quotient_columns\": 636,\r\n    \"target_pairing\": \"-1000/147\",\r\n    \"projection\": \"Half trace after reduction modulo G, applied after differentiation\",\r\n    \"scope\": \"Additional independent exact Python check, not part of the Lean theorem. This does not formalize regular-sequence completeness, Euler normalization or Piola transfer.\"\r\n  },\r\n  \"altered_inputs_rejected\": [\r\n    \"entry\",\r\n    \"target\",\r\n    \"scale\",\r\n    \"monomial\",\r\n    \"dual\",\r\n    \"column_count\",\r\n    \"missing_mixed_multiplier_derivative\",\r\n    \"residual_sign\",\r\n    \"missing_E1_component\"\r\n  ],\r\n  \"source_lf_sha256\": {\r\n    \"experiments/check_cyclic_fano_polynomial_bridge.py\": \"4810b5d3a7242e9e889b1eaee4336b78f3af940161f7ebdbfaf67d3ef55a7c20\",\r\n    \"results/cyclic-fano-curve/source/instance.rec\": \"d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c\",\r\n    \"results/cyclic-fano-lean/case-05.json\": \"903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c\"\r\n  },\r\n  \"elapsed_seconds\": 1.664\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "executable": "python.exe",
+      "arguments": [
+        "-B",
+        "-S",
+        "-c",
+        "import runpy,json\nfrom pathlib import Path\nd=runpy.run_path('experiments/check_cyclic_fano_polynomial_bridge.py')\ne=d['derive']()\nr=Path('.').resolve()\nread=lambda p:(r/p).read_text(encoding='utf-8')\ns=read('formal/HodgeLab/CyclicFano/Case05Polynomial.lean')\ncase=json.loads(read('results/cyclic-fano-lean/case-05.json'))\nresult={'model':d['audit_lean_model'](s,e),'model_controls':d['lean_source_controls'](s,e),'sparse':d['audit_sparse_implementation'](read('formal/HodgeLab/SparsePolynomial.lean')),'matrix':d['audit_case05_literals'](read('formal/HodgeLab/CyclicFano/Case05.lean'),case),'field':d['audit_field_extension'](read('formal/HodgeLab/CyclicFano/Case05PolynomialField.lean'),s)}\nprint(json.dumps(result))"
+      ],
+      "cwd": "C:/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-audit-20261021",
+      "timeout_ms": 60000,
+      "status": "PASS",
+      "exit_code": 0,
+      "signal": null,
+      "elapsed_ms": 414,
+      "stdout": "{\"model\": {\"status\": \"PASS\", \"literal_polynomials\": 5, \"operational_definitions\": 12, \"correction_labels\": 175, \"base_variable_order\": [\"X0\", \"X1\", \"Y0\", \"Y1\", \"Y2\"], \"method\": \"Parse literal polynomials and all correction labels; match each computational expression to an independently reconstructed polynomial operation. Lean execution is separate.\"}, \"model_controls\": [\"source_coefficient\", \"source_direction\", \"source_row_scale\", \"source_correction_label\", \"source_mixed_derivative\"], \"sparse\": {\"status\": \"PASS\", \"representation\": \"Finite lists interpreted in MvPolynomial (Fin 5) Q\", \"checked_computational_operations\": [\"exponent\", \"scale\", \"subtract\", \"multiply\", \"derivative\", \"eval\", \"coefficient\"], \"semantic_lemmas\": [\"coefficient_eval\", \"eval_append\", \"eval_scale\", \"eval_subtract\", \"eval_multiply\", \"eval_derivative\"], \"scope\": \"Operation definitions and proof statements reviewed; compilation and kernel replay are established only by the separate Lean receipt.\"}, \"matrix\": {\"status\": \"PASS\", \"encoded_rows\": 2, \"encoded_columns\": 175, \"encoded_dual\": [756, 1], \"encoded_target\": [0, -5]}, \"field\": {\"status\": \"PASS\", \"theorem\": \"HodgeLab.CyclicFano.Case05Polynomial.no_polynomial_solution_over\", \"field_scope\": \"Every characteristic-zero field K; coefficients c are scalar elements of K.\", \"scalar_extension\": \"MvPolynomial.map (Rat.castHom K) of the explicitly computed rational polynomials.\", \"checked_statements\": [\"column_coefficients_over\", \"target_coefficients_over\", \"polynomial_equation_implies_matrix_over\", \"no_polynomial_solution_over\", \"no_polynomial_solution\"], \"boundary\": \"This is an explicit 175-operator polynomial equation obstruction. General certificate normalization, correction-space completeness, and quotient/Piola transfer remain outside these Lean statements.\"}}\r\n",
+      "stderr": ""
+    },
+    {
+      "executable": "python.exe",
+      "arguments": [
+        "-B",
+        "-S",
+        "-c",
+        "import sys,json,time\nfrom pathlib import Path\nsys.path.insert(0,str(Path('experiments').resolve()))\nimport check_cyclic_fano_cubic_polars as c\nt=time.perf_counter()\ne=c.derive()\nr=c.audit_gpu_minors(json.loads((c.ROOT/'results/cyclic-fano-cubic-gpu/report.json').read_text()),e)\nr['elapsed_seconds']=round(time.perf_counter()-t,3)\nprint(json.dumps(r))"
+      ],
+      "cwd": "C:/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-audit-20261021",
+      "timeout_ms": 60000,
+      "status": "TIMEOUT",
+      "exit_code": null,
+      "signal": "SIGTERM",
+      "elapsed_ms": 60054,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_bindings": {
+    "polynomial_formal_receipt": [
+      {
+        "path": "experiments/check_cyclic_fano_branch_polars.py",
+        "match": true,
+        "expected": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37",
+        "actual": "d9c015292111c70f6e134cc76ab64395b7996adb898994c6b9dae5ba555d2d37"
+      },
+      {
+        "path": "experiments/check_cyclic_fano_cubic_polars.py",
+        "match": true,
+        "expected": "e2b768adaae6ad97345110cfd65114f3c645f348d34c051d3ea215e321ae2453",
+        "actual": "e2b768adaae6ad97345110cfd65114f3c645f348d34c051d3ea215e321ae2453"
+      },
+      {
+        "path": "experiments/check_cyclic_fano_guided_denominators.py",
+        "match": true,
+        "expected": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f",
+        "actual": "429ee150c5ef2f11587abae004a8ca19109145da5fbb170de5b834b8a8dbc47f"
+      },
+      {
+        "path": "experiments/check_cyclic_fano_lean.py",
+        "match": true,
+        "expected": "6310ce44d138a3e7b76b5a3670af9efc5e6712b55f753fedd9be20204316f7e8",
+        "actual": "6310ce44d138a3e7b76b5a3670af9efc5e6712b55f753fedd9be20204316f7e8"
+      },
+      {
+        "path": "experiments/check_cyclic_fano_linear_polars.py",
+        "match": true,
+        "expected": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58",
+        "actual": "f99b97539748ffbf49d1d5353e591b9561dcf34c8d787f7f189df5fca9fc8e58"
+      },
+      {
+        "path": "experiments/check_cyclic_fano_unfolding.py",
+        "match": true,
+        "expected": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54",
+        "actual": "ca0b0081b5acf2e9577e17d259c2a4933861c7766eb492b3e8d08dab7e1e6b54"
+      },
+      {
+        "path": "formal/generate_polynomial_bridge.py",
+        "match": true,
+        "expected": "4e651d608f66aa94933e89ca2fa8b86406a37f10cc9a103e9a2235dff697873c",
+        "actual": "4e651d608f66aa94933e89ca2fa8b86406a37f10cc9a103e9a2235dff697873c"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05.lean",
+        "match": true,
+        "expected": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884",
+        "actual": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05Polynomial.lean",
+        "match": true,
+        "expected": "b279007cb6667ef52cc2718c708effffee5596e154b265d70968c557f0f08c1d",
+        "actual": "b279007cb6667ef52cc2718c708effffee5596e154b265d70968c557f0f08c1d"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05PolynomialField.lean",
+        "match": true,
+        "expected": "2a0733ff74011ddaff87bffbcb7cecf2f766607a9441e98dc8c9a7274e428c41",
+        "actual": "2a0733ff74011ddaff87bffbcb7cecf2f766607a9441e98dc8c9a7274e428c41"
+      },
+      {
+        "path": "formal/HodgeLab/RowCertificate.lean",
+        "match": true,
+        "expected": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+        "actual": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313"
+      },
+      {
+        "path": "formal/HodgeLab/SparsePolynomial.lean",
+        "match": true,
+        "expected": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+        "actual": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50"
+      },
+      {
+        "path": "results/cyclic-fano-curve/source/instance.rec",
+        "match": true,
+        "expected": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c",
+        "actual": "d99d10c84d25dc5def72cd7a9a17e5d022e18f562660c8e33bf106675b4a418c"
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-05.json",
+        "match": true,
+        "expected": "903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c",
+        "actual": "903bd1bc44d32579a4fcc4e44e3a5702f46b1ecc2a6948108599e4c68c84d00c"
+      },
+      {
+        "path": "formal/lean-toolchain",
+        "match": true,
+        "expected": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+        "actual": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee"
+      },
+      {
+        "path": "formal/lakefile.toml",
+        "match": true,
+        "expected": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+        "actual": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447"
+      },
+      {
+        "path": "formal/lake-manifest.json",
+        "match": true,
+        "expected": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+        "actual": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16"
+      },
+      {
+        "path": "formal/check_polynomial_bridge.py",
+        "match": true,
+        "expected": "fc09dc6acbd0c8df9a1269417a025231b79d0cbdb7d5b7056e92b439315db691",
+        "actual": "fc09dc6acbd0c8df9a1269417a025231b79d0cbdb7d5b7056e92b439315db691"
+      },
+      {
+        "path": "formal/results/polynomial-bridge-export.json",
+        "match": true,
+        "expected": "fe856ce695a0d0bffab3b911f4a772f234f4a36750dd33dc59043becae9479ae",
+        "actual": "fe856ce695a0d0bffab3b911f4a772f234f4a36750dd33dc59043becae9479ae"
+      },
+      {
+        "path": ".github/workflows/lean-polynomial-bridge.yml",
+        "match": true,
+        "expected": "c7621e4d2b7091f110dea0ea15ceac6d563652a8eef7c9de0b004139e2a24820",
+        "actual": "c7621e4d2b7091f110dea0ea15ceac6d563652a8eef7c9de0b004139e2a24820"
+      }
+    ],
+    "generic_rank_gap_receipt": [
+      {
+        "path": "formal/lean-toolchain",
+        "match": true,
+        "expected": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+        "actual": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee"
+      },
+      {
+        "path": "formal/lakefile.toml",
+        "match": true,
+        "expected": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+        "actual": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447"
+      },
+      {
+        "path": "formal/lake-manifest.json",
+        "match": true,
+        "expected": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+        "actual": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16"
+      },
+      {
+        "path": "formal/HodgeLab.lean",
+        "match": true,
+        "expected": "fb1780d5a82ac444f4bc4baddc0a4b45f8f99cfd355acf2d8cf7c1e536332988",
+        "actual": "fb1780d5a82ac444f4bc4baddc0a4b45f8f99cfd355acf2d8cf7c1e536332988"
+      },
+      {
+        "path": "formal/HodgeLab/RankGap.lean",
+        "match": true,
+        "expected": "d70dd8b9374dff04335cf6ab710a281c752e35a01fb53fcaf3f2284aa7f8a28a",
+        "actual": "d70dd8b9374dff04335cf6ab710a281c752e35a01fb53fcaf3f2284aa7f8a28a"
+      },
+      {
+        "path": "formal/Audit.lean",
+        "match": true,
+        "expected": "cdc2782138727aa80939652c21b70bb898c8bd30e3e03213303582ee360b63d9",
+        "actual": "cdc2782138727aa80939652c21b70bb898c8bd30e3e03213303582ee360b63d9"
+      },
+      {
+        "path": "formal/check.py",
+        "match": true,
+        "expected": "30624288ccd37c3adc731c012cffc7e5a5d995be76fd78bb854458eb770f26dc",
+        "actual": "30624288ccd37c3adc731c012cffc7e5a5d995be76fd78bb854458eb770f26dc"
+      }
+    ],
+    "sixteen_case_formal_receipt": [
+      {
+        "path": "formal/lean-toolchain",
+        "match": true,
+        "expected": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+        "actual": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee"
+      },
+      {
+        "path": "formal/lakefile.toml",
+        "match": true,
+        "expected": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+        "actual": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447"
+      },
+      {
+        "path": "formal/lake-manifest.json",
+        "match": true,
+        "expected": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+        "actual": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16"
+      },
+      {
+        "path": "formal/HodgeLab/RowCertificate.lean",
+        "match": true,
+        "expected": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+        "actual": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313"
+      },
+      {
+        "path": "formal/AuditConcrete.lean",
+        "match": true,
+        "expected": "16dbecaee3a933358400e45e54a223e306c97409303039b2ae7ae3b4f932c29d",
+        "actual": "16dbecaee3a933358400e45e54a223e306c97409303039b2ae7ae3b4f932c29d"
+      },
+      {
+        "path": "formal/generate_concrete.py",
+        "match": true,
+        "expected": "dc8f1c86bc5fc839ae2c6246bf3cce2d0a5ab41ef1426ec9046a1b40bfea435b",
+        "actual": "dc8f1c86bc5fc839ae2c6246bf3cce2d0a5ab41ef1426ec9046a1b40bfea435b"
+      },
+      {
+        "path": "formal/check_concrete.py",
+        "match": true,
+        "expected": "46f6c82d5e1a3d641c2c37561287da30e3b86dea9600d3bd92c06bc32848544d",
+        "actual": "46f6c82d5e1a3d641c2c37561287da30e3b86dea9600d3bd92c06bc32848544d"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case00.lean",
+        "match": true,
+        "expected": "3633efd55b6e1f46aef453191456eab16d2e7ea0fd22e43d6334c1d8020fb2e5",
+        "actual": "3633efd55b6e1f46aef453191456eab16d2e7ea0fd22e43d6334c1d8020fb2e5"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case01.lean",
+        "match": true,
+        "expected": "19d1f70f8e3e357703b19b964562eaac406f0067c83a347702aec86523d1f195",
+        "actual": "19d1f70f8e3e357703b19b964562eaac406f0067c83a347702aec86523d1f195"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case02.lean",
+        "match": true,
+        "expected": "f1360602a82313f80d594f2f39ef293111d1521d796d5deb7f2402353051df6c",
+        "actual": "f1360602a82313f80d594f2f39ef293111d1521d796d5deb7f2402353051df6c"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case03.lean",
+        "match": true,
+        "expected": "2ff56826de43a66e58d22d59818a138723e51e487a1f6f2de846d742b5cf0746",
+        "actual": "2ff56826de43a66e58d22d59818a138723e51e487a1f6f2de846d742b5cf0746"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case04.lean",
+        "match": true,
+        "expected": "27baad4b76777a3768978b56b4f2e5c8c47250699dfd4c0d14a34977ca094e6f",
+        "actual": "27baad4b76777a3768978b56b4f2e5c8c47250699dfd4c0d14a34977ca094e6f"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05.lean",
+        "match": true,
+        "expected": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884",
+        "actual": "2a1f20e2b408cf0251cb8717ab0585ed78c4842ffde0cef6a7db26d639575884"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case06.lean",
+        "match": true,
+        "expected": "590a9a473333b137f8c52e326e4b8e888d608e43b9f818da16b5aebd16fee3fb",
+        "actual": "590a9a473333b137f8c52e326e4b8e888d608e43b9f818da16b5aebd16fee3fb"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case07.lean",
+        "match": true,
+        "expected": "9ab7327fdfe430d42a0bbf2f8f68d7fb824beccd1be46f107fed5340602c7111",
+        "actual": "9ab7327fdfe430d42a0bbf2f8f68d7fb824beccd1be46f107fed5340602c7111"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case08.lean",
+        "match": true,
+        "expected": "0ffa961499f98e810126bc5a5a5d8dae70e13e4a19047ce4c6e125c7954d8ffb",
+        "actual": "0ffa961499f98e810126bc5a5a5d8dae70e13e4a19047ce4c6e125c7954d8ffb"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case09.lean",
+        "match": true,
+        "expected": "1eea6193c9494de3c0b74835f81a06f2b8a6e1a9a99c1e644ae2947a296f1e11",
+        "actual": "1eea6193c9494de3c0b74835f81a06f2b8a6e1a9a99c1e644ae2947a296f1e11"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case10.lean",
+        "match": true,
+        "expected": "ed1c91e7e096801cb2bf7a4175cad21b268e99ad60f5a2bf2f504fc4c099c236",
+        "actual": "ed1c91e7e096801cb2bf7a4175cad21b268e99ad60f5a2bf2f504fc4c099c236"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case11.lean",
+        "match": true,
+        "expected": "c47d38fc0158c9ad88b132d6a0d05ae3c0c600e72d0bc4c52780445665eb46cd",
+        "actual": "c47d38fc0158c9ad88b132d6a0d05ae3c0c600e72d0bc4c52780445665eb46cd"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case12.lean",
+        "match": true,
+        "expected": "c8d341091200f6a66bd7870d69d8f0156a2d449bac547cd90d587badd611cbf4",
+        "actual": "c8d341091200f6a66bd7870d69d8f0156a2d449bac547cd90d587badd611cbf4"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case13.lean",
+        "match": true,
+        "expected": "97bff6dcac91cf41763ba51b1d8a8a12bc6d7fd327f0cbafe5470c2b8c1b9d3a",
+        "actual": "97bff6dcac91cf41763ba51b1d8a8a12bc6d7fd327f0cbafe5470c2b8c1b9d3a"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case14.lean",
+        "match": true,
+        "expected": "55911fcae0753eaeecfac6260fa875c8148dd2310af43769e412225229eca930",
+        "actual": "55911fcae0753eaeecfac6260fa875c8148dd2310af43769e412225229eca930"
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case15.lean",
+        "match": true,
+        "expected": "de03e0556c5473a500999d4fc91005ca620a258e828282652424ce3a368b7b5e",
+        "actual": "de03e0556c5473a500999d4fc91005ca620a258e828282652424ce3a368b7b5e"
+      }
+    ],
+    "sixteen_case_input_receipt": [
+      {
+        "path": "results/cyclic-fano-lean/case-00.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-01.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-02.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-03.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-04.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-05.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-06.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-07.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-08.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-09.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-10.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-11.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-12.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-13.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-14.json",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-15.json",
+        "match": true
+      }
+    ],
+    "polynomial_independent_receipt": [
+      {
+        "path": "experiments/check_cyclic_fano_polynomial_bridge.py",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-curve/source/instance.rec",
+        "match": true
+      },
+      {
+        "path": "results/cyclic-fano-lean/case-05.json",
+        "match": true
+      },
+      {
+        "path": "experiments/check_cyclic_fano_branch_polars.py",
+        "match": true
+      },
+      {
+        "path": "experiments/check_cyclic_fano_cubic_polars.py",
+        "match": true
+      },
+      {
+        "path": "experiments/check_cyclic_fano_guided_denominators.py",
+        "match": true
+      },
+      {
+        "path": "experiments/check_cyclic_fano_lean.py",
+        "match": true
+      },
+      {
+        "path": "experiments/check_cyclic_fano_linear_polars.py",
+        "match": true
+      },
+      {
+        "path": "experiments/check_cyclic_fano_unfolding.py",
+        "match": true
+      },
+      {
+        "path": "formal/generate_polynomial_bridge.py",
+        "match": true
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05.lean",
+        "match": true
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05Polynomial.lean",
+        "match": true
+      },
+      {
+        "path": "formal/HodgeLab/CyclicFano/Case05PolynomialField.lean",
+        "match": true
+      },
+      {
+        "path": "formal/HodgeLab/RowCertificate.lean",
+        "match": true
+      },
+      {
+        "path": "formal/HodgeLab/SparsePolynomial.lean",
+        "match": true
+      },
+      {
+        "path": "formal/results/polynomial-bridge-export.json",
+        "match": true
+      }
+    ]
+  },
+  "archived_log_checks": {
+    "polynomial_commands": [
+      {
+        "label": "version",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-cache",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-mathlib",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-plausible",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-LeanSearchClient",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-importGraph",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-proofwidgets",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-aesop",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-Qq",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-batteries",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "dependency-Cli",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "build-00",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "build-01",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "build-02",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "build-03",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "build-04",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "axioms",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "kernel-00",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "kernel-01",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "kernel-02",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "kernel-03",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "kernel-04",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "negative-proof-scale",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "negative-scale",
+        "hashMatch": true,
+        "exit": 1,
+        "expectedFailure": true,
+        "status": "PASS"
+      },
+      {
+        "label": "negative-proof-density",
+        "hashMatch": true,
+        "exit": 0,
+        "expectedFailure": false,
+        "status": "PASS"
+      },
+      {
+        "label": "negative-density",
+        "hashMatch": true,
+        "exit": 1,
+        "expectedFailure": true,
+        "status": "PASS"
+      }
+    ],
+    "polynomial_archived_files": [
+      {
+        "path": "validation.json",
+        "raw": true,
+        "LF": true
+      },
+      {
+        "path": "logs/version.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-cache.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-mathlib.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-plausible.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-LeanSearchClient.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-importGraph.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-proofwidgets.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-aesop.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-Qq.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-batteries.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/dependency-Cli.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/build-00.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/build-01.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/build-02.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/build-03.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/build-04.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/axioms.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/kernel-00.log",
+        "raw": true,
+        "LF": true
+      },
+      {
+        "path": "logs/kernel-01.log",
+        "raw": true,
+        "LF": true
+      },
+      {
+        "path": "logs/kernel-02.log",
+        "raw": true,
+        "LF": true
+      },
+      {
+        "path": "logs/kernel-03.log",
+        "raw": true,
+        "LF": true
+      },
+      {
+        "path": "logs/kernel-04.log",
+        "raw": true,
+        "LF": true
+      },
+      {
+        "path": "logs/negative-proof-scale.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/negative-scale.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/negative-proof-density.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "logs/negative-density.log",
+        "raw": false,
+        "LF": true
+      },
+      {
+        "path": "independent-validation.json",
+        "raw": true,
+        "LF": true
+      }
+    ],
+    "concrete_archive_files": [
+      {
+        "path": "concrete-coefficient-validation.json",
+        "match": true
+      },
+      {
+        "path": "concrete/axioms.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-00.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-01.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-02.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-03.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-04.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-05.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-06.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-07.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-08.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-09.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-10.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-11.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-12.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-13.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-14.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-15.log",
+        "match": true
+      },
+      {
+        "path": "concrete/build-16.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-00.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-01.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-02.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-03.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-04.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-05.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-06.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-07.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-08.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-09.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-10.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-11.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-12.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-13.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-14.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-15.log",
+        "match": true
+      },
+      {
+        "path": "concrete/kernel-16.log",
+        "match": true
+      },
+      {
+        "path": "concrete/negative-entry.log",
+        "match": true
+      },
+      {
+        "path": "concrete/negative-target.log",
+        "match": true
+      },
+      {
+        "path": "concrete/version.log",
+        "match": true
+      }
+    ],
+    "generic_rank_gap_commands": [
+      {
+        "path": "version.log",
+        "match": true,
+        "exit": 0
+      },
+      {
+        "path": "build.log",
+        "match": true,
+        "exit": 0
+      },
+      {
+        "path": "axioms.log",
+        "match": true,
+        "exit": 0
+      },
+      {
+        "path": "kernel.log",
+        "match": true,
+        "exit": 0
+      }
+    ],
+    "normalization_note": "The Windows checkout converts nonempty .log files toCRLF. AllLF-normalized hashes match the archives. Raw working-tree .log mismatches are line-ending conversion, not evidence of altered committed proof logs.",
+    "polynomial_axiom_reports": 30,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "outside_allowed": []
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "classification": "INCORRECT_SUMMARY",
+      "priority": 2,
+      "path": "LEDGER.md",
+      "line": 16,
+      "claim": "16-module polynomial-to-matrix Lean4 bridge",
+      "evidence": [
+        {
+          "path": "formal/README.md",
+          "lines": [
+            17,
+            23
+          ],
+          "fact": "Polynomial-to-matrix identification is inside Lean only forCase05; fifteen others remain externalPython checks."
+        },
+        {
+          "path": "formal/README.md",
+          "lines": [
+            50,
+            54
+          ],
+          "fact": "Polynomial bridge CI covers five modules."
+        },
+        {
+          "path": "formal/README.md",
+          "lines": [
+            96,
+            107
+          ],
+          "fact": "Sixteen literal cases use17modules; their proof does not establish polynomial correspondence."
+        },
+        {
+          "path": "LEDGER.md",
+          "lines": [
+            2229,
+            2231
+          ],
+          "fact": "Detailed ledger entry itself explicitly states the narrower one-case scope."
+        }
+      ],
+      "impact": "Front-page ledger table overstates formalized coverage; this is not evidence that the underlying Lean theorems are false.",
+      "recommendation": "Describe sixteen literal matrix cases and one Case05 polynomial-to-matrix bridge separately. Keep notebook Lean4.31 scope separate from two-module Lean4.33 compatibility."
+    },
+    {
+      "id": "F2",
+      "classification": "STALE_STATUS",
+      "priority": 3,
+      "path": "formal/README.md",
+      "line": 221,
+      "claim": "PR#121 is now ready for maintainer review",
+      "evidence": [
+        {
+          "path": "README.md",
+          "lines": [
+            90,
+            90
+          ],
+          "fact": "Current summary records one closed maintenance PR."
+        },
+        {
+          "path": "LEDGER.md",
+          "lines": [
+            3129,
+            3129
+          ],
+          "fact": "Latest ledger tally records maintenance PR(closed)."
+        },
+        {
+          "path": "notes/cyclic-fano-concrete-lean.md",
+          "lines": [
+            196,
+            198
+          ],
+          "fact": "Same present-tense ready-for-review status persists in the detailed note."
+        }
+      ],
+      "impact": "Current-status wording disagrees with later repository evidence. Historical17October event can remain if dated explicitly. No fresh GitHub state request was made in this review."
+    }
+  ],
+  "verified_boundaries": [
+    {
+      "path": "formal/HodgeLab/RankGap.lean",
+      "lines": [
+        18,
+        33
+      ],
+      "classification": "EXPLICIT_ASSUMPTIONS",
+      "fact": "The150/151 theorem assumes both dimension bounds; it does not formally compute ranks or transfer finite-field minors. README and detailed notes state this accurately."
+    },
+    {
+      "path": "formal/HodgeLab/CyclicFano/Case05PolynomialField.lean",
+      "lines": [
+        47,
+        50
+      ],
+      "classification": "EXPLICIT_SCOPE",
+      "fact": "Excludes a scalar linear combination of175 explicitly mapped rational correction polynomials equalling the explicitly mapped rhs over any characteristic-zero field."
+    },
+    {
+      "path": "notes/cyclic-fano-polynomial-bridge.md",
+      "lines": [
+        107,
+        111
+      ],
+      "classification": "ACKNOWLEDGED_FORMALIZATION_GAP",
+      "fact": "Normalization, transport, completeness of allowed numerators, and HasCertificate remain outsideLean. These are stated limits, not hidden proved hypotheses."
+    }
+  ],
+  "live_results_summary": {
+    "case05_arithmetic": "PASS:352 selected coefficients,525rawKoszul and636quotient columns,9arithmetic mutation controls.",
+    "case05_source_scope": "PASS:5literal polynomials,12operational definitions,175labels,sparse statements,field extension,5source mutation controls.",
+    "generic_rank_source_bindings": "7/7match",
+    "polynomial_formal_source_bindings": "20/20match",
+    "polynomial_independent_source_bindings": "16/16match",
+    "sixteen_case_formal_source_bindings": "23/23match",
+    "sixteen_case_input_bindings": "16/16match",
+    "polynomial_log_hashes": "26/26match afterLF normalization",
+    "concrete_archive_hashes": "39/39match afterLF normalization",
+    "fresh_sixteen_minor_replay": "TIMEOUT after60054ms;SIGTERM,no stdout. No mathematical pass/fail conclusion.",
+    "fresh_lean_compile_or_kernel_replay": "NOT EXECUTED"
+  },
+  "limitations": [
+    "Stored CI logs and their exact bindings were checked; historical CI execution was not recreated.",
+    "No compiledLean binaries are archived, so recorded build/replay binary hashes cannot be independently rehashed here.",
+    "The sixteen-minor replay timeout does not invalidate the archived result, but it supplies no fresh confirmation.",
+    "No repository edits,Gitmutations,upstream actions,or broad new research were performed."
+  ]
+}

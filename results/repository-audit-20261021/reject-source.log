@@ -1,0 +1,10 @@
+7F coefficients mod 11 (s^6, s^5 t, ..., t^6): [0, 0, 0, 0, 0, 0, 0]
+All zero? True
+A restriction mod 11: [10, 9, 6, 5, 0, 0, 0]
+Identically zero? False
+Value at [1:0]: 10
+A polynomial: 54*s**6 + 108*s**5*t + 72*s**4*t**2 + 16*s**3*t**3
+Traceback (most recent call last):
+  File "C:\Users\anaxe\AppData\Local\Packages\sandbox.{b3545454-0503-440b-b178-93225da01aa1}\AC\Temp\hodge-audit-6oa847_r\changed.py", line 76, in <module>
+    raise ValueError("Unexpected source restriction on the fixed line")
+ValueError: Unexpected source restriction on the fixed line

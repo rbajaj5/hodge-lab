@@ -1,0 +1,130 @@
+{
+  "schema": "hodge-lab-focused-audit-v1",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "corrected-hessian",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "experiments/check_one_reflection_skew_hessian.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "exit_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 1.427,
+      "log": "corrected-hessian.log",
+      "log_lf_sha256": "822bdf22f53a11b04377071610855221bd9c1cf3cd7c27c1ec260cab7da40ca6"
+    },
+    {
+      "label": "line-valid",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "experiments/check_one_reflection_skew_line.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "exit_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 1.949,
+      "log": "line-valid.log",
+      "log_lf_sha256": "7103d27afedac48b44a516f8353add5f6a2a3041db07bc893d34b9875c3bde23"
+    },
+    {
+      "label": "reject-line",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "C:\\Users\\anaxe\\AppData\\Local\\Packages\\sandbox.{b3545454-0503-440b-b178-93225da01aa1}\\AC\\Temp\\hodge-audit-u50q1g7t\\changed.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": true,
+      "exit_code": 1,
+      "status": "PASS",
+      "elapsed_seconds": 3.978,
+      "log": "reject-line.log",
+      "log_lf_sha256": "d07cc6a9cb6761c9283a0755cf1b3308366dab65a339de373167309f7a6af7a8"
+    },
+    {
+      "label": "reject-source",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "C:\\Users\\anaxe\\AppData\\Local\\Packages\\sandbox.{b3545454-0503-440b-b178-93225da01aa1}\\AC\\Temp\\hodge-audit-6oa847_r\\changed.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": true,
+      "exit_code": 1,
+      "status": "PASS",
+      "elapsed_seconds": 3.272,
+      "log": "reject-source.log",
+      "log_lf_sha256": "c31adde6340bed4894eefefaa3cdb58b6f01ff1d3f4a196b332756054a13caf5"
+    },
+    {
+      "label": "koszul-strands",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "experiments/one_reflection_skew_koszul_homology.py"
+      ],
+      "bound_seconds": 180,
+      "expected_failure": false,
+      "exit_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 137.329,
+      "log": "koszul-strands.log",
+      "log_lf_sha256": "9272935f90a8dd0df42e7b066d528bc08d91632675aaddfd9ac30297265e40fa"
+    }
+  ],
+  "audit_base": "09539bb5151f918f73ec9fd4b9faba781959c436",
+  "upstream_observed_head": "dda4c5e72eeea8cfd52dd6e731e90031884f32fc",
+  "not_executed": [
+    "Fresh Lean compilation/replay",
+    "Full degree0\u20136 elimination",
+    "Full degree7 added-block reconstruction"
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0"
+  },
+  "source_lf_sha256": {
+    "experiments/check_one_reflection_skew_hessian.py": "44e194dfc23624d7da13f74d704cbcae5248ba969bd11545effbfd23fcdeaade",
+    "experiments/check_one_reflection_skew_line.py": "fceb7ec4febe79bab934a5ced94bac96f97a037399d12c04af312180d3da3fad",
+    "experiments/one_reflection_skew_koszul_homology.py": "20c97c76706e44d106d1a3f6076080f3d542c8666350c6157af2458a35184dfa",
+    "experiments/one_reflection_skew_pilot.py": "371e83cac6deeb521de05984ba1356f3d4d26820738805ced9b5bd95aa9587e9",
+    "experiments/check_repository_audit_20261021.py": "c9877117d00df32dbaca89fa61350822e0dff7ca6af8fbd8f4327a9947c979f1",
+    "experiments/necessary_koszul_complex.py": "f2e56a36b49f982f7f9bd718c44216685ca37c78605fb1b470d3697f2469f622",
+    "experiments/one_reflection_skew_degree6.py": "1bb9fa11166e8a203d8f707693e1d209c8ab3d22f204b5d3f4a29730fdc51b3a",
+    "experiments/fresh_instance_e1.py": "ef1242b0b52420828f44f5158b0b9968c9ae22a35f8390847121bdc9d9066b84",
+    "experiments/fresh_instance_degree6.py": "54907d4cca976d2993e0883e09b5b912c5ec73fd90a11bf7f80730cffc1fcee3",
+    "experiments/one_reflection_skew_degree7.py": "f10283a34147137e79dcacd358aea937566068a52b8af53c49a538141d4eb5de",
+    "results/one-reflection-skew-degree6/one-reflection-skew/degree-6-e2.json": "5760378eb0b3757507d915338f0c62520387edf4b3eb16937e451d3b17031329"
+  },
+  "added_block_figure_control": {
+    "model": "All 28 quadrics in seven variables",
+    "degree": 3,
+    "H1": 112,
+    "scope": "Abstract full quadratic ideal; not a replay of the physical added block"
+  },
+  "symbolic_pilot": {
+    "status": "PASS",
+    "hessian_det_scale": 4,
+    "exchange_order": 2,
+    "disc_h_boundary": 81,
+    "inherited_low_degree_sorted_json_sha256": "5d8a46eea9a52028c52a387368af207ac65fd153abed82c0ebc2fd62293baa74"
+  },
+  "output_lf_sha256": {
+    "results/one-reflection-skew-koszul/summary.json": "8760ee53987538b6b46eeac2ce64c6f706b261542556cf2c8607de93222e91cb",
+    "results/one-reflection-skew-pilot/report.json": "bf9fd088d5a62532a3701ef8c37e158407062a1bfac929bf593f20f779c41fe3",
+    "results/repository-audit-20261021/corrected-hessian-validation.json": "c52a165469ce155b893a3b8deea96ccd5acace2d9497d61daa51036a5ec92ae6"
+  },
+  "figure_raw_sha256": {
+    "results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.png": "9862db00f1ad1dbc4a045dafdc081f19d6670e23f718ed9a813fc45e603c02e2",
+    "results/one-reflection-skew-koszul/one-reflection-skew-koszul-homology.svg": "784622a8aa03836a3ba3b7921093c07c3c02d4cb0a6389a86552f1a515a3526a",
+    "results/one-reflection-skew-pilot/one-reflection-skew-audit.png": "fe648d7ea36e70e4e986984e3c9531da4987ae73cd02caba5fff50031bf6e88e",
+    "results/one-reflection-skew-pilot/one-reflection-skew-audit.svg": "2c375e36225bf034a11de9ed2ee9c7fa880258b2e94a0373d9b45f52ec4801e7"
+  }
+}

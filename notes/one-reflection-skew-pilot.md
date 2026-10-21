@@ -1,8 +1,10 @@
-# `one-reflection-skew`: denominators must have degree at least six, and why the 3-passive-ratio Casimir flow degenerates
+# `one-reflection-skew`: denominators must have degree at least six, and a boundary check for the binary-cubic construction
 
-For the fixed `one-reflection-skew` frontier target ($q = 1$, $A = X_0^3 Y_0^3$), the calculations below exclude **every nonzero homogeneous denominator of degree zero through five** over the complex numbers, including the complete numerator space and an unrestricted quotient $Q$. We also record the exact Kramers-like complex exchange symmetry of the interaction polynomial, the universal constant-coefficient Cramer identity for the deformed binary-cubic Nambu/Casimir flow, and the phase-space caustic along $X_1 Y_1 = 0$ that obstructs naive 3-passive-ratio Hessian transport. Degrees six and higher remain open; the instance is not solved.
+For the fixed `one-reflection-skew` frontier target ($q = 1$, $A = X_0^3 Y_0^3$), the calculations below exclude **every nonzero homogeneous denominator of degree zero through five** over the complex numbers, including the complete numerator space and an unrestricted quotient $Q$. We also record the exact Kramers-like complex exchange symmetry of the interaction polynomial, the universal constant-coefficient Cramer identity for the deformed binary-cubic Nambu/Casimir flow, and the vanishing of a selected Cramer coefficient along $X_1Y_1=0$, without an established transport obstruction. This pilot does not test degrees six and higher; see the later [degree-six result](one-reflection-skew-degree6.md).
 
 ![Exact E1/E2 exclusion through degree five and deformed Nambu/Casimir phase portrait for one-reflection-skew](../results/one-reflection-skew-pilot/one-reflection-skew-audit.png)
+
+**Audit correction, 21 October 2026:** the Hessian scale, exchange order, and boundary interpretation below supersede the corresponding statements in checkpoint 85. The low-degree exclusion is unchanged; this audit reran the symbolic identities, not its full elimination. [Evidence and limits](repository-audit-20261021.md).
 
 ## 1. Fixed target and symmetry breaking
 
@@ -16,7 +18,7 @@ $$F(\pm Y_1, \pm Y_0) - F = -\frac{2}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2) \ne 0.$
 
 Two exact symmetry structures survive:
 - **Discrete $\mathbb{Z}_2^3$ charge-parity subgroup:** Every mixed term of $F$ has parity $(-1, -1, -1, -1)$ on the four coordinate blocks $\tau_1: (X_0, X_2) \mapsto (-X_0, -X_2)$, $\tau_2: X_1 \mapsto -X_1$, $\tau_3: Y_0 \mapsto -Y_0$, and $\tau_4: Y_1 \mapsto -Y_1$. Every product of two of these blocks preserves $F$, alongside the decoupled reflection $\tau_{Y_2}: Y_2 \mapsto -Y_2$.
-- **Kramers-like order-four complex exchange:** The transformation $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ preserves both $Y_0 Y_1$ and $Y_0^2 - Y_1^2$, hence leaves the entire interaction Hamiltonian $F - F_0$ invariant while inverting the Fermat kinetic block $Y_0^6 + Y_1^6 \mapsto -(Y_0^6 + Y_1^6)$.
+- **Complex exchange involution (order two):** The transformation $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ preserves both $Y_0 Y_1$ and $Y_0^2 - Y_1^2$, its square is the identity, and it leaves the entire interaction Hamiltonian $F - F_0$ invariant while inverting the Fermat kinetic block $Y_0^6 + Y_1^6 \mapsto -(Y_0^6 + Y_1^6)$.
 
 ## 2. Complete first-equation and degree-five Hessian exclusion
 
@@ -37,11 +39,11 @@ $$B_D(A a + K) \equiv -A \cdot a^{\mathsf{T}} \operatorname{Hess}(F) a \pmod{J_{
 
 Unlike `cycle-three` and `mixed-biweight` (where the $21$-column quadratic Hessian map in $S_{10}/J_{10}$ has full rank $21$), here $Y_2$ enters $F$ only through $Y_2^6$, so the five mixed second partials $\partial_i \partial_{Y_2} F$ ($i < 5$) vanish identically and the $21$-column map has exact quotient rank **$16$ of $21$** ($49$ active rows). Nevertheless, all six diagonal square columns $a_i^2$ remain linearly independent of the off-diagonal columns in $S_{10}/J_{10}$: six exported rational dual functionals annihilate $J_{10}$ and isolate $a_0^2, \dots, a_5^2$ one at a time, forcing $a = 0$ and $D = 0$.
 
-## 3. Deformed Nambu/Casimir flow and the 3-passive-ratio caustic
+## 3. Binary-cubic identities and the passive-ratio boundary
 
 For any general binary cubic $f(u, v) = c_0 u^3 + c_1 u^2 v + c_2 u v^2 + c_3 v^3$ with quadratic Casimir (scaled Hessian)
 
-$$h(u, v) = \frac{1}{36}(f_{uu} f_{vv} - f_{uv}^2) = (3 c_0 c_2 - c_1^2) u^2 + (9 c_0 c_3 - c_1 c_2) u v + (3 c_1 c_3 - c_2^2) v^2,$$
+$$h(u, v) = \frac{1}{4}(f_{uu} f_{vv} - f_{uv}^2) = (3 c_0 c_2 - c_1^2) u^2 + (9 c_0 c_3 - c_1 c_2) u v + (3 c_1 c_3 - c_2^2) v^2,$$
 
 the divergence-free Hamiltonian / Nambu vector field $H = h_v \partial_u - h_u \partial_v$ and cubic covariant $k = H(f)/3$ obey the exact identities
 
@@ -59,12 +61,14 @@ In the 3-passive-ratio chart $r = X_1/X_0$, $w = X_2/X_0$, $\beta = Y_1/Y_0$ wit
 
 $$c_0 = 1 + r^6 + w^6, \quad c_1 = \beta(r + r^3 w), \quad c_2 = \frac{1}{7} r \beta (1 - \beta^2), \quad c_3 = 1 + \beta^6.$$
 
-Whereas `one-reflection` absorbed $\beta$ into $p = Y_0 Y_1$ so that $c_3 = 2$ was constant, the skew factor $Y_0^2 - Y_1^2$ prevents absorbing $\beta$ into a single active coordinate. Consequently $c_1$ and $c_2$ share the common factor $r \beta$, their $\beta$-resultant $\mathrm{Res}_\beta(c_1, c_2) = 0$ vanishes identically on $r(1 + r^2 w) = 0$, and $L_h = -2(3 c_1 c_3 - c_2^2)$ vanishes along the caustic locus $X_1 Y_1 = 0$.
+Both $c_1$ and $c_2$ contain the factor $r\beta$. Their $\beta$-resultant is therefore identically zero for all $r,w$; it does not define a special boundary locus. The selected coefficient $L_h=-2(3c_1c_3-c_2^2)$ vanishes when $r\beta=0$. This alone does not imply $\operatorname{disc}(h)=0$, degeneration of the Hamiltonian field, or failure of transport.
+
+For example, at $r=w=\beta=0$ (with $X_0,Y_0\ne0$), $f=u^3+v^3$, $h=9uv$, $\operatorname{disc}(h)=81$, and $H=9u\partial_u-9v\partial_v$, while $L_h=0$. This exact counterexample corrects the previous caustic interpretation.
 
 ## 4. Physics analogies considered vs. what proves the bound
 
-- **Symplectic / Nambu flow and Casimir invariants:** Interpreting $H = h_v \partial_u - h_u \partial_v$ as an incompressible phase-space flow with Casimir $h(u, v)$ and action-angle cubes $f_\pm = \frac{1}{2}(f \pm k/\sqrt{\mathrm{disc}(h)})$ clarifies why $c_2 \ne 0$ preserves the algebraic integrable structure on generic fibers while failing at the boundary caustic $r \beta = 0$.
-- **Kramers quartet vs. parity doublet:** The complex exchange $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ explains the $\mathbb{Z}_4$ symmetry of the interaction terms, but because it negates $Y_0^6 + Y_1^6$, it does not directly supply a real projective quotient of $F$.
+- **Symplectic / Nambu flow and Casimir invariants:** Interpreting $H = h_v \partial_u - h_u \partial_v$ as an incompressible phase-space flow with Casimir $h(u, v)$ and action-angle cubes $f_\pm = \frac{1}{2}(f \pm k/\sqrt{\mathrm{disc}(h)})$ describes the verified binary-cubic identities on fibers with nonzero discriminant. The coefficient-vanishing locus alone does not diagnose their failure.
+- **Interaction involution vs. full-sextic symmetry:** The complex exchange $(Y_0, Y_1) \mapsto (i Y_1, -i Y_0)$ has order two and preserves the interaction terms, but because it negates $Y_0^6 + Y_1^6$, it does not directly supply a real projective quotient of $F$.
 - **What actually proves the bound:** Neither the Nambu/Casimir interpretation nor the Kramers analogy is used as an axiom. The degree $\le 5$ exclusion is proved entirely by exact rational linear algebra over `Fraction` ($E_1$ kernels in degrees $0$–$5$ and the six exported rational dual witnesses in $S_{10}/J_{10}$).
 
 ## 5. Reproduce and attribution

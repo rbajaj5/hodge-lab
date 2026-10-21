@@ -1,17 +1,19 @@
-# `one-reflection-skew`: Complete Degree-7 $\mathbb{Z}_2^4$ Superselection Sector Decomposition, $Y_2$-Odd Exclusion & $44/44$ Base-Quotient Surjectivity
+# `one-reflection-skew`: Degree-7 Character Decomposition, Pure-Sector Exclusions & Base-Quotient Column Rank
 
 **Target (`hodge-computer/sextics`, Discussion #127):**
 $$F = X_0^6 + X_1^6 + X_2^6 + Y_0^6 + Y_1^6 + Y_2^6 + X_0^3 X_1 Y_0 Y_1 + X_1^3 X_2 Y_0 Y_1 + \frac{1}{7} X_0 X_1 Y_0 Y_1 (Y_0^2 - Y_1^2), \qquad A = X_0^3 Y_0^3, \qquad q = 1.$$
 
-This note records **Checkpoint 87**, advancing the analysis of `one-reflection-skew` to **degree $d = 7$** ($S_7$ of dimension $792$, mapping into $S_{13}/J_{13}$ of ambient dimension $8{,}568$ with $7{,}722$ numerator columns). By exploiting the exact order-16 real charge-parity symmetry group $G_{\text{parity}} \cong \mathbb{Z}_2^4$ (projective quotient $PG_{\text{parity}} \cong \mathbb{Z}_2^3$), we decompose the complete, untruncated degree-7 $E_1$ and $E_2$ systems into **8 exact superselection sectors**, proved in exact rational arithmetic over $\mathbb{Q}$ in [`experiments/one_reflection_skew_degree7.py`](../experiments/one_reflection_skew_degree7.py).
+This note records **Checkpoint 87**, advancing the analysis of `one-reflection-skew` to **degree $d = 7$** ($S_7$ of dimension $792$, mapping into $S_{13}/J_{13}$ of ambient dimension $8{,}568$ with $7{,}722$ numerator columns). By exploiting the exact order-16 real charge-parity symmetry group $G_{\text{parity}} \cong \mathbb{Z}_2^4$ (projective quotient $PG_{\text{parity}} \cong \mathbb{Z}_2^3$), we decompose the complete degree-7 $E_1$ map into **8 character blocks** and test $E_2$ separately on each pure-character family, using exact rational arithmetic over $\mathbb{Q}$ in [`experiments/one_reflection_skew_degree7.py`](../experiments/one_reflection_skew_degree7.py).
 
-![Complete degree-7 Z2^4 sector decomposition and Y2-odd exclusion](../results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
+**Scope correction, 21 October 2026:** the first equation decomposes linearly across characters, but the second equation is quadratic. The reported exclusions below apply to each pure-character sector separately; they do not exclude a denominator mixing characters. The phrase “44/44 surjectivity” in the historical figure means that the quadratic coefficient columns span the quotient. It does not assert surjectivity of the nonlinear parameter map. The figure is retained as a historical display; this audit did not rerun the full degree-seven calculation. [Audit evidence](repository-audit-20261021.md).
 
-*Figure 1 (`results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png`, SVG companion `one-reflection-skew-degree7-sectors.svg`). Panel A shows the complete degree-7 $E_1$ kernel dimension across all 8 projective parity sectors ($\dim\ker(E_1)_7 = 135 = 126 + 9$). Panel B shows the $E_2$ parameter-elimination cascade across the 8 sectors, completely excluding all 4 $Y_2$-odd sectors over $\mathbb{C}$ and decoupling all $Y_2$-dependent generators in the 4 $Y_2$-even sectors. Panel C tabulates the exact dimensions, ranks, and $E_2$ status of every sector. Panel D summarizes the $\mathbb{Z}_2^4$ Superselection Focusing Theorem, the exact $Y_2$-covariant scaling identity $B_{Y_2 D_6}(Y_2 N_{6,0}) = Y_2^2 B_{D_6}(N_{6,0})$, and the $44/44$ surjectivity onto the 5-variable base Hessian quotient. Scope note: the figure establishes complete degree-7 $E_1$ decomposition across all $792$ monomials of $S_7$, complete exclusion over $\mathbb{C}$ of all four pure $Y_2$-odd sectors ($296$ monomials of $S_7$, $41$ $E_1$ kernel dimensions), and $Y_2$-decoupling of the four $Y_2$-even sectors; it does not yet close the 5-variable ($Y_2=0$) degree-7 base sectors or establish a full certificate.*
+![Historical degree-7 character decomposition and pure-sector exclusions](../results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png)
+
+*Figure 1 (`results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png`, SVG companion `one-reflection-skew-degree7-sectors.svg`). Panel A shows the complete degree-7 $E_1$ kernel dimension across all 8 projective parity sectors ($\dim\ker(E_1)_7 = 135 = 126 + 9$). Panel B shows the $E_2$ parameter-elimination cascade across the 8 sectors, completely excluding all 4 $Y_2$-odd sectors over $\mathbb{C}$ and decoupling all $Y_2$-dependent generators in the 4 $Y_2$-even sectors. Panel C tabulates the exact dimensions, ranks, and $E_2$ status of every sector. Panel D summarizes the $\mathbb{Z}_2^4$ Superselection Focusing Theorem, the exact $Y_2$-covariant scaling identity $B_{Y_2 D_6}(Y_2 N_{6,0}) = Y_2^2 B_{D_6}(N_{6,0})$, and the historical “$44/44$ surjectivity” label for quadratic-column rank in the 5-variable base Hessian quotient. Scope note: the figure establishes complete degree-7 $E_1$ decomposition across all $792$ monomials of $S_7$, complete exclusion over $\mathbb{C}$ of all four pure $Y_2$-odd sectors ($296$ monomials of $S_7$, $41$ $E_1$ kernel dimensions), and $Y_2$-decoupling of the four $Y_2$-even sectors; it does not yet close the 5-variable ($Y_2=0$) degree-7 base sectors or establish a full certificate.*
 
 ---
 
-## 1. $\mathbb{Z}_2^4$ Charge-Parity Superselection Structure at Degree 7
+## 1. $\mathbb{Z}_2^4$ Charge-Parity Structure at Degree 7
 
 All 10 monomials of $F$ are invariant under the order-16 diagonal sign group $G_{\text{parity}} \subset \{\pm 1\}^6$ defined by
 $$\chi(X_0^{e_0} X_1^{e_1} X_2^{e_2} Y_0^{e_3} Y_1^{e_4} Y_2^{e_5}) = \big((e_0 + e_1 + e_2) \bmod 2,\; (e_0 + e_2 + e_3) \bmod 2,\; (e_0 + e_2 + e_4) \bmod 2,\; e_5 \bmod 2\big) \in \mathbb{F}_2^4.$$
@@ -60,13 +62,13 @@ Every monomial in the four $Y_2$-odd sectors (`[0,0,0,1]`, `[0,1,1,1]`, `[1,0,1,
 
 ---
 
-### Theorem 2.3 (Complete $Y_2$-Decoupling & $44/44$ Base-Quotient Surjectivity in All Four $Y_2$-Even Sectors)
+### Theorem 2.3 ($Y_2$-Decoupling and Quadratic Column Rank Within Each Pure $Y_2$-Even Sector)
 In each of the four $Y_2$-even sectors (`[0,1,0,0]`, `[0,0,1,0]`, `[1,0,0,0]`, `[1,1,1,0]`):
 1. The only $Y_2$-dependent generators in $\ker(E_1)_{7,\chi}$ are $Z_k Y_2 \partial_{Y_2} F = 6 Z_k Y_2^6$ and $Y_2^2 \partial_{Z_k} F$, where $Z_k \in \{X_0, X_1, X_2, Y_0, Y_1\}$ has $\chi(Z_k) = \chi$:
    - $Z_k \in \{Y_0\}$ for `[0,1,0,0]`, $Z_k \in \{Y_1\}$ for `[0,0,1,0]`, $Z_k \in \{X_1\}$ for `[1,0,0,0]`, and $Z_k \in \{X_0, X_2\}$ for `[1,1,1,0]`.
 2. Fixing the $Z_k F$ gauge ($D \mapsto D - 6 c_k Z_k F$) eliminates all $5$ generators $Z_k Y_2 \partial_{Y_2} F$, and Step 1 of the Hessian $E_2$ cascade (`ranks = 62, 63, 63, 82`) isolates and kills all $5$ remaining $Y_2$-dependent generators $Y_2^2 \partial_{Z_k} F$.
 3. Thus **every surviving generator across all four $Y_2$-even sectors is strictly independent of $Y_2$** ($e_5 = 0$), living on the 5-variable base space $\mathbb{P}^4_{(X_0, X_1, X_2, Y_0, Y_1)}$ ($18$ parameters in `[0,1,0,0]`, $19 = 18+1$ in `[0,0,1,0]` and `[1,0,0,0]`, and $28 = 21+7$ in `[1,1,1,0]`).
-4. In the 5-variable target space $S_{14}^{(5)}[(1,0,1)]$ ($756$ rows), the ideal $(J_{14}^{(5)}(F_5) + F_5 S_8^{(5)})[(1,0,1)]$ has exact rank $712$, leaving a **$44$-dimensional base Hessian quotient**. Every one of the four $Y_2$-even sectors achieves **exact quadratic image rank $44/44$** at Step 2, surjecting onto the entire 44-dimensional 5-variable Hessian obstruction space.
+4. In the 5-variable target space $S_{14}^{(5)}[(1,0,1)]$ ($756$ rows), the ideal $(J_{14}^{(5)}(F_5) + F_5 S_8^{(5)})[(1,0,1)]$ has exact rank $712$, leaving a **$44$-dimensional base Hessian quotient**. The quadratic coefficient columns in each pure $Y_2$-even sector have reported linear-span rank $44$. Products of denominator parameters are constrained; this column rank does not establish surjectivity of the nonlinear parameter map.
 
 ---
 

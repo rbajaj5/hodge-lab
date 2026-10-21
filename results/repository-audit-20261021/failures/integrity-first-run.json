@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "-S",
+    "results/repository-audit-20261021/check_integrity.py"
+  ],
+  "exit_code": 1,
+  "error": "ValueError: Duplicate checkpoint 1",
+  "program_lf_sha256": "911438265c0dbe46f42212b0e966cfcf5d4afd3651496b36a2ecb7e061e556cd",
+  "cause": "The initial integrity helper mixed the separately numbered Posts and Research sections. This was a checker defect, not a duplicated research checkpoint.",
+  "correction": "Restrict numbered-entry parsing to the Research section and independently compare the complete Posts/Pull requests block."
+}

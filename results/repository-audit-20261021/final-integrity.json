@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "base": "09539bb5151f918f73ec9fd4b9faba781959c436",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "git": "git version 2.53.0.windows.3",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "results\\repository-audit-20261021\\check_integrity.py"
+  ],
+  "program_lf_sha256": "99a0bad66ff2bec8b347b59d7469f7bc9f5a6d115aca2087ecb7df87020049c3",
+  "receipt_bindings_checked": 23,
+  "historical_entries_preserved": 105,
+  "checkpoints_ordered": 106,
+  "posts_and_pull_requests_block_unchanged": true,
+  "inherited_pilot_sections_unchanged": [
+    "lowDegreeBaseline",
+    "curationAndSmoothness"
+  ],
+  "utf8_text_files_checked": 1598,
+  "json_files_parsed": 815,
+  "changed_markdown_local_links_checked": 331,
+  "optimization_controls": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "-c",
+        "import runpy; runpy.run_path('experiments/check_one_reflection_skew_hessian.py')[\"main\"]()"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"experiments/check_one_reflection_skew_hessian.py\", line 137, in main\n    raise RuntimeError(\"Do not run with -O.\")\nRuntimeError: Do not run with -O.\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "-c",
+        "import runpy; runpy.run_path('experiments/check_repository_audit_20261021.py')[\"main\"]()"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"experiments/check_repository_audit_20261021.py\", line 50, in main\n    raise RuntimeError('Run without -O.')\nRuntimeError: Run without -O.\n"
+    }
+  ],
+  "diff_check": "PASS",
+  "cached_diff_check": "PASS",
+  "scope": "Saved bindings, file integrity and guard failures; no fresh mathematical or Lean replay"
+}

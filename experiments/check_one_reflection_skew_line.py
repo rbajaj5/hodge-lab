@@ -58,6 +58,8 @@ for a, b in monoms:
 
 print("7F coefficients mod 11 (s^6, s^5 t, ..., t^6):", coeffs_mod11)
 print("All zero?", all(c == 0 for c in coeffs_mod11))
+if any(coeffs_mod11):
+    raise ValueError("The proposed line is not contained in the sextic over F_11")
 
 # Source A = X0**3 * Y0**3
 A = X0**3 * Y0**3
@@ -70,3 +72,6 @@ print("A restriction mod 11:", coeffs_A)
 print("Identically zero?", all(c == 0 for c in coeffs_A))
 print("Value at [1:0]:", int(A_on_line.subs({s: 1, t: 0}) % 11))
 print("A polynomial:", A_on_line)
+if coeffs_A != [5, 10, 3, 8, 0, 0, 0]:
+    raise ValueError("Unexpected source restriction on the fixed line")
+print("PASS: exact line incidence and source restriction")

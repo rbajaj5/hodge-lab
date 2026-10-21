@@ -1,0 +1,78 @@
+{
+  "schema": "hodge-lab-focused-audit-v1",
+  "status": "FAIL",
+  "commands": [
+    {
+      "label": "corrected-hessian",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-S",
+        "experiments/check_one_reflection_skew_hessian.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "exit_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 1.26,
+      "log": "corrected-hessian.log",
+      "log_lf_sha256": "604e276103418ed1ce995517f2fcb6541edd9eac82c1cdd1b3e537a0e595386c"
+    },
+    {
+      "label": "line-valid",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "experiments/check_one_reflection_skew_line.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": false,
+      "exit_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 2.147,
+      "log": "line-valid.log",
+      "log_lf_sha256": "7103d27afedac48b44a516f8353add5f6a2a3041db07bc893d34b9875c3bde23"
+    },
+    {
+      "label": "reject-line",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "C:\\Users\\anaxe\\AppData\\Local\\Packages\\sandbox.{e5c2db76-98ea-488d-b80f-9eadcf9eb6d9}\\AC\\Temp\\hodge-audit-6_d_t6w_\\changed.py"
+      ],
+      "bound_seconds": 30,
+      "expected_failure": true,
+      "exit_code": 1,
+      "status": "PASS",
+      "elapsed_seconds": 22.02,
+      "log": "reject-line.log",
+      "log_lf_sha256": "21efb02ff8b742066ac5a53ec7ecc41b356a250574774ab586ff8eccb58ba423"
+    }
+  ],
+  "audit_base": "09539bb5151f918f73ec9fd4b9faba781959c436",
+  "upstream_observed_head": "dda4c5e72eeea8cfd52dd6e731e90031884f32fc",
+  "not_executed": [
+    "Fresh Lean compilation/replay",
+    "Full degree0\u20136 elimination",
+    "Full degree7 added-block reconstruction"
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0"
+  },
+  "source_lf_sha256": {
+    "experiments/check_one_reflection_skew_hessian.py": "f998bcd209b4a53c42774783496f1e02b71897db2d9e15a4e72eab439120814b",
+    "experiments/check_one_reflection_skew_line.py": "fceb7ec4febe79bab934a5ced94bac96f97a037399d12c04af312180d3da3fad",
+    "experiments/one_reflection_skew_koszul_homology.py": "bd854b01716a6085255d697834d02effe8e5acb79424b91e9216cfc8dd4ac7b9",
+    "experiments/one_reflection_skew_pilot.py": "e51a9ff2ba3c4589b9619345a34bc64025948fb19313af3694060686ee1bac24",
+    "experiments/check_repository_audit_20261021.py": "a7f849fc8c729e599fbb4d8f267c8f7453eddff94fc26549859ee1dc623cf787",
+    "experiments/necessary_koszul_complex.py": "f2e56a36b49f982f7f9bd718c44216685ca37c78605fb1b470d3697f2469f622",
+    "experiments/one_reflection_skew_degree6.py": "1bb9fa11166e8a203d8f707693e1d209c8ab3d22f204b5d3f4a29730fdc51b3a",
+    "experiments/fresh_instance_e1.py": "ef1242b0b52420828f44f5158b0b9968c9ae22a35f8390847121bdc9d9066b84",
+    "experiments/fresh_instance_degree6.py": "54907d4cca976d2993e0883e09b5b912c5ec73fd90a11bf7f80730cffc1fcee3",
+    "experiments/one_reflection_skew_degree7.py": "f10283a34147137e79dcacd358aea937566068a52b8af53c49a538141d4eb5de",
+    "results/one-reflection-skew-degree6/one-reflection-skew/degree-6-e2.json": "5760378eb0b3757507d915338f0c62520387edf4b3eb16937e451d3b17031329"
+  },
+  "error": "AssertionError: "
+}

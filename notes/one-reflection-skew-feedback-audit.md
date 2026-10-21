@@ -6,6 +6,8 @@
 
 This note records the detailed one-reflection-skew feedback that was missing from the cycle-three chronology already captured in checkpoints 95–101. It cross-references existing ledger entries without recounting them. Claims below are handoff summaries corroborated against public sources. Large-packet replay and Lean compilation were not executed in this update.
 
+**Later status correction — 21 October 2026:** mixed-biweight PR170 is now merged and published; the earlier protected-CI-only status below is historical. Current catalogue at `dda4c5e7` has 82 targets, 65 solved and 17 open. One-reflection-skew remains open. The line substitution was subsequently checked at checkpoint103; rank claims in this historical note remain author-reported. See the [substantive audit](repository-audit-20261021.md).
+
 ## Fixed-denominator exclusions
 
 The specific degree-24 denominator recorded in paired-reflection-discriminant-e1.json is author-reported to yield coefficient/augmented ranks 17,839 / 17,840, using 267 exact independent kernel fields in an 18,106-dimensional space for the upper bound. This excludes that particular denominator ansatz, not arbitrary denominators or their powers. It is distinct from the later 69-term cubic discriminant. A separate sparse29 dual is author-reported to annihilate 318 columns, with source pairing 268850534400.

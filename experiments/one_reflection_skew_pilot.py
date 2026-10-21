@@ -160,9 +160,11 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
     assert diff_plus == sp.expand(-2 * skew_term)
     assert diff_minus == sp.expand(-2 * skew_term)
 
-    # Kramers-like complex quartet exchange (Y0, Y1) -> (i*Y1, -i*Y0)
+    # Complex exchange involution (Y0, Y1) -> (i*Y1, -i*Y0)
     I_sym = sp.I
     kramers = {Y0: I_sym * Y1, Y1: -I_sym * Y0}
+    assert sp.expand(kramers[Y0].subs(kramers, simultaneous=True) - Y0) == 0
+    assert sp.expand(kramers[Y1].subs(kramers, simultaneous=True) - Y1) == 0
     F_int = X0**3 * X1 * Y0 * Y1 + X1**3 * X2 * Y0 * Y1 + skew_term
     assert sp.expand(F_int.subs(kramers, simultaneous=True) - F_int) == 0
     assert sp.expand((Y0**6 + Y1**6).subs(kramers, simultaneous=True) + (Y0**6 + Y1**6)) == 0
@@ -200,6 +202,7 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
     c0, c1, c2, c3 = sp.symbols("c0 c1 c2 c3")
     f_sym = c0 * u**3 + c1 * u**2 * v + c2 * u * v**2 + c3 * v**3
     h_sym = (3 * c0 * c2 - c1**2) * u**2 + (9 * c0 * c3 - c1 * c2) * u * v + (3 * c1 * c3 - c2**2) * v**2
+    assert sp.expand(sp.det(sp.hessian(f_sym, (u, v))) - 4*h_sym) == 0
     fu_sym = sp.diff(f_sym, u)
     fv_sym = sp.diff(f_sym, v)
     disc_sym = sp.expand((9 * c0 * c3 - c1 * c2) ** 2 - 4 * (3 * c0 * c2 - c1**2) * (3 * c1 * c3 - c2**2))
@@ -231,12 +234,19 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
     assert sp.simplify(f_sub + Y2**6 - F) == 0
 
     res_beta_c1_c2 = sp.factor(sp.resultant(c1_val, c2_val, beta))
+    assert res_beta_c1_c2 == 0  # common beta factor for every r,w, not a caustic locus
+    boundary = {c0: 1, c1: 0, c2: 0, c3: 1}
+    assert sp.expand(h_sym.subs(boundary) - 9*u*v) == 0
+    assert disc_sym.subs(boundary) == 81
+    assert L_h.subs(boundary) == 0
     h_vv_factored = sp.factor((3 * c1 * c3 - c2**2).subs({c1: c1_val, c2: c2_val, c3: c3_val}))
 
     return {
         "hiddenExchangeResidualPlus": str(diff_plus),
         "hiddenExchangeResidualMinus": str(diff_minus),
         "kramersComplexExchangePreservesInteraction": True,
+        "complexExchangeOrder": 2,
+        "complexExchangeIsFullSexticSymmetry": False,
         "survivingTwoBlockSignSymmetries": even_pairs,
         "binaryCubicDiscriminantIdentity": {
             "universalIdentityVerified": True,
@@ -250,6 +260,9 @@ def check_symmetries_and_cubic_obstruction(vars6, F_unperturbed, skew_term, F, A
             "c3": str(c3_val),
             "h_vv_factored": str(h_vv_factored),
             "resultant_beta_c1_c2": str(res_beta_c1_c2),
+            "hessian_determinant_equals": "4*h",
+            "boundary_counterexample": {"r": 0, "w": 0, "beta": 0, "h": "9*u*v", "disc_h": 81, "L_h": 0},
+            "scope": "L_h vanishing does not imply Hessian degeneracy or a transport obstruction",
         },
     }
 
@@ -421,7 +434,7 @@ def render_figures(report: dict) -> None:
     fig.text(
         0.07,
         0.885,
-        "Complete E1/E2 rational elimination through degree 5  |  Deformed binary-cubic Nambu/Casimir phase portrait & caustic locus",
+        "Complete E1/E2 rational elimination through degree 5  |  Binary-cubic identities and a Cramer-coefficient boundary",
         fontsize=10.5,
         color=MUTED,
     )
@@ -556,7 +569,7 @@ def render_figures(report: dict) -> None:
     ax.text(
         0.0,
         1.015,
-        r"Teal: Casimir $h(u,v)$  |  Coral: cubic $f(u,v)$  |  Caustic on $r\beta=0$: $\mathrm{Res}_\beta(c_1,c_2)=0$",
+        r"Teal: $h(u,v)$  |  Coral: $f(u,v)$  |  $L_h=0$ does not imply $\mathrm{disc}(h)=0$",
         transform=ax.transAxes,
         fontsize=9.2,
         color=MUTED,
@@ -572,13 +585,17 @@ def render_figures(report: dict) -> None:
     fig.text(
         0.07,
         0.018,
-        "but in the 3-passive-ratio chart (r,w,beta) the symplectic Hessian degenerates on X1*Y1 = 0. Higher-degree / Fermat-cover certificates remain open.",
+        "On X1*Y1 = 0 the selected coefficient L_h vanishes; this does not imply Hessian degeneracy. Higher-degree certificates are outside this pilot.",
         fontsize=10,
         color=MUTED,
     )
 
     fig.savefig(PNG_PATH, dpi=110, facecolor=PAPER)
     fig.savefig(SVG_PATH, facecolor=PAPER)
+    # Matplotlib path elements can carry trailing spaces; keep generated text clean.
+    svg = SVG_PATH.read_text(encoding="utf-8")
+    SVG_PATH.write_text("\n".join(line.rstrip() for line in svg.splitlines()) + "\n",
+                        encoding="utf-8", newline="\n")
     plt.close(fig)
 
 

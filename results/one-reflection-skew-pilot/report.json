@@ -20,6 +20,8 @@
     "hiddenExchangeResidualPlus": "-2*X0*X1*Y0**3*Y1/7 + 2*X0*X1*Y0*Y1**3/7",
     "hiddenExchangeResidualMinus": "-2*X0*X1*Y0**3*Y1/7 + 2*X0*X1*Y0*Y1**3/7",
     "kramersComplexExchangePreservesInteraction": true,
+    "complexExchangeOrder": 2,
+    "complexExchangeIsFullSexticSymmetry": false,
     "survivingTwoBlockSignSymmetries": [
       {
         "pair": [
@@ -120,7 +122,17 @@
       "c2": "beta*r*(1 - beta**2)/7",
       "c3": "beta**6 + 1",
       "h_vv_factored": "beta*r*(147*beta**6*r**2*w + 147*beta**6 - beta**5*r + 2*beta**3*r - beta*r + 147*r**2*w + 147)/49",
-      "resultant_beta_c1_c2": "0"
+      "resultant_beta_c1_c2": "0",
+      "hessian_determinant_equals": "4*h",
+      "boundary_counterexample": {
+        "r": 0,
+        "w": 0,
+        "beta": 0,
+        "h": "9*u*v",
+        "disc_h": 81,
+        "L_h": 0
+      },
+      "scope": "L_h vanishing does not imply Hessian degeneracy or a transport obstruction"
     }
   },
   "lowDegreeBaseline": {
@@ -2035,5 +2047,10 @@
     ],
     "degreeAtMost5Excluded": true,
     "elapsedSeconds": 0.782
+  },
+  "audit20261021": {
+    "rerun": "Symbolic exchange/Cramer/Cayley/Hessian identities and boundary counterexample; figure redraw",
+    "not_rerun": "Curation/smoothness and full low-degree elimination; inherited unchanged from original receipt",
+    "inherited_low_degree_sorted_json_sha256": "5d8a46eea9a52028c52a387368af207ac65fd153abed82c0ebc2fd62293baa74"
   }
 }
