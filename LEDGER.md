@@ -3302,3 +3302,21 @@ restricted to actual upstream activity.
      tally remains27 discussion contributions, one closed maintenance PR, zero
      accepted authored solves. An edit to post25 will not be counted as a new
      contribution. Historical ledger bytes and unrelated checkouts are preserved.
+
+     **Verified publication outcome, 21 October 2026, 16:39:58 UTC:** after pushing
+     the prepublication audit in
+     [6d07ba27d66b9a9d74618401e6af9c315cdc9888](https://github.com/rbajaj5/hodge-lab/commit/6d07ba27d66b9a9d74618401e6af9c315cdc9888),
+     edited [the existing post25](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19049585)
+     under rbajaj5. A fresh pre-edit body hash matched the audited snapshot; a
+     separate post-edit readback exactly matched the complete audited draft and
+     permalink. The comment now says rank15, records the additional F_X0X2 zero,
+     and explains that six checked square-dual witnesses preserve the degree<=5
+     exclusion, with immutable aa72496 audit/evidence links and AI attribution.
+     [Publication operations and hashes](results/one-reflection-skew-rank-correction/publication-outcome.json)
+     · [Independent readback](results/one-reflection-skew-rank-correction/comment-after.json).
+
+     This is one correction to an existing contribution, not a new comment,
+     exclusion, proof submission or acceptance. The tally remains27 discussion
+     contributions, one closed maintenance PR, zero accepted authored solves.
+     No other upstream comment was changed. All calculations had completed
+     before publication; no timeout or interruption was counted as a result.
