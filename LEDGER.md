@@ -3500,3 +3500,32 @@ restricted to actual upstream activity.
      Tally is now 28 discussion contributions, one closed maintenance PR,
      zero accepted authored solves. Historical entries and the dated historical
      tally remain unchanged; Prompt3 and both earlier corrections remain closed.
+
+113. **21 October 2026 — Complete the GOE density correction list.**
+     At the user's request, added the missing exponential correction to
+     `rbajaj5/goe-determinant-factor-density`'s README and CORRECTION section 4.
+     The 2016 report's equation (2), page 3, prints $e^{-g_t(s)/2}$;
+     the chi density requires $e^{-g_t(s)^2/2}$. Substitution of $y=g_t(s)$
+     into the Gaussian factor $e^{-y^2/2}$ explains the square. The repository's
+     density formula and verification code already used the correct expression.
+
+     The supplied browser audit highlighted the omission; direct inspection of
+     the rendered [MIT report](https://web.mit.edu/18.338/www/projects/bajaj_report.pdf)
+     and an independent read-only review confirmed it. Download SHA-256:
+     `ad5419ee86749f9095e08b575092441910d505bd1df45f0200d67f122d0aa516`.
+     GOE base: `d5f5974c195a4fe84e5be3698c4da98f50ce71a2`;
+     notebook base: `00aec914061fa950b0eecdb163690f3526a0bad5`.
+
+     [Published GOE correction](https://github.com/rbajaj5/goe-determinant-factor-density/commit/e864d2c164a6ded910b8ecf764905193102c2a83)
+     was pushed normally to main; `git ls-remote origin refs/heads/main`
+     returned that exact commit. Reviewed the complete two-file diff,
+     `git diff --cached --check`, strict UTF-8 decoding, Markdown fences,
+     and the existing use of `g_squared` in `verification.py`.
+     No numerical verifier was rerun for this documentation-only edit;
+     earlier browser-reported and local numerical checks remain separate.
+     No formula, code, new theorem or visualization was added. This is routine
+     documentation maintenance, not a substantive research batch.
+
+     No hodge-computer post, edit or PR was made. The contribution tally remains
+     28 discussion contributions, one closed maintenance PR, zero accepted
+     authored solves. Historical ledger bytes are preserved.
