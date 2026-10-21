@@ -3483,3 +3483,20 @@ restricted to actual upstream activity.
      At this checkpoint no new upstream publication is claimed. Tally remains
      27 discussion contributions, one closed maintenance PR, zero accepted
      authored solves. Earlier ledger bytes are preserved.
+
+     **Verified publication outcome, 21 October 2026, 17:59:54 UTC:**
+     after pushing the corresponding audit in
+     [826ed4150c9b034f0bcd2e7874323e5d07136213](https://github.com/rbajaj5/hodge-lab/commit/826ed4150c9b034f0bcd2e7874323e5d07136213),
+     refreshed the full discussion (still zero comments/replies) and checked
+     that all seven audited source blobs were unchanged on live main. Published
+     [discussion contribution 28: independent Weierstrass normalization and seed check](https://github.com/hodge-computer/sextics/discussions/146#discussioncomment-19103930)
+     under rbajaj5. A separate readback matched the complete audited body,
+     author, comment ID and permalink. No other upstream comment or file changed.
+
+     [Published body](results/moving-branch-weierstrass-audit/comment-draft.md) ·
+     [Operations and verified outcome](results/moving-branch-weierstrass-audit/publication-outcome.json) ·
+     [Independent readback](results/moving-branch-weierstrass-audit/discussion-after.json).
+     This is one independent-check contribution, not a new solve or acceptance.
+     Tally is now 28 discussion contributions, one closed maintenance PR,
+     zero accepted authored solves. Historical entries and the dated historical
+     tally remain unchanged; Prompt3 and both earlier corrections remain closed.

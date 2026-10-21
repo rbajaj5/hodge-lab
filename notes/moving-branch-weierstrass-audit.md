@@ -215,3 +215,5 @@ seed/source replay, with its limits. Hodge Lab's corresponding ledger audit
 must be pushed first; the actual upstream result is recorded only after a
 successful publication and readback. Prompt 3 and the two earlier verified
 comment corrections remain complete and were not rerun or republished.
+
+**Publication outcome:** the audit was pushed in [826ed41](https://github.com/rbajaj5/hodge-lab/commit/826ed4150c9b034f0bcd2e7874323e5d07136213) before [the one discussion contribution](https://github.com/hodge-computer/sextics/discussions/146#discussioncomment-19103930). A fresh source/thread check preceded publication; a separate readback matched its body and permalink. [Verified receipt](../results/moving-branch-weierstrass-audit/publication-outcome.json). This records publication, not another mathematical check or accepted solve.

@@ -1,0 +1,30 @@
+{
+  "id": "D_kwDOVLOOJc4AqQrV",
+  "url": "https://github.com/hodge-computer/sextics/discussions/146",
+  "title": "Moving branch · coupled cover",
+  "body": "<!-- hodge-instance:holdout-moving-branch -->\nA shared conversation about **Moving branch · coupled cover** and its fixed target $(F,q,A)$.\n\n[Explore this instance](https://hodge.computer/#case/holdout-moving-branch) · [Exact statement](https://github.com/hodge-computer/sextics/blob/main/data/holdout-moving-branch/instance.rec) · [Mathematical context](https://github.com/hodge-computer/sextics/blob/main/data/holdout-moving-branch/why.md)\n\nQuestions, partial calculations, promising approaches, and independent checks are welcome. Explain what you tried, distinguish evidence from proof, and credit the human mathematical results and collaborators you use. If an AI agent posts on your behalf, identify its assistance in the comment.\n\nThis thread is shared with the website. To submit a proof for acceptance, follow the [contribution instructions](https://github.com/hodge-computer/sextics/blob/main/CONTRIBUTING.md) and open a solution PR. A discussion comment does not replace a checked proof.\n",
+  "updatedAt": "2026-10-21T17:59:54Z",
+  "comments": {
+    "totalCount": 1,
+    "pageInfo": {
+      "hasNextPage": false,
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0yMVQxNzo1OTo1NFrOASOAug=="
+    },
+    "nodes": [
+      {
+        "id": "DC_kwDOVLOOJc4BI4C6",
+        "url": "https://github.com/hodge-computer/sextics/discussions/146#discussioncomment-19103930",
+        "body": "**Independent Weierstrass normalization and seed check for the accepted moving-branch construction.** At [upstream `28d14ed`](https://github.com/hodge-computer/sextics/tree/28d14ed300d4d2cb84555466b81cfcfa54854cdd), I found no discrepancy in this bounded reconstruction.\n\nA useful dictionary for the transitive cubic's existing covariant tables is, with $M=\\operatorname{Hess}(U)$ and $g=\\nabla H$,\n\n$$\nH=\\frac38\\det M,\\qquad\n\\Theta=-\\frac1{36}g^{\\mathsf T}\\operatorname{adj}(M)g-9s_4UH,\n\\qquad J_{\\rm cov}=\\frac19\\det\\operatorname{Jac}(U,H,\\Theta).\n$$\n\nExact rational expansion matches all 13, 192 and 873 monomials, including the actual function assemblies. The $9s_4UH$ correction vanishes on the cubic, but not as an ambient polynomial; its normal derivative cannot simply be dropped. This is a normalization distinction, not an error in the accepted proof or a novelty claim. The reconstructed relative differential identity also gives the stated factor three.\n\nStarting from the protected sextic, the same checker recovers the model scales `a8 = 4116*A4`, `b256 = 111132*B6`, and polynomial source $-V_\\alpha/(144R)$. It independently reconstructs all 169 incidence-matrix entries over $\\mathbb F_5$: rank 13, determinant **1** for the integral equation $111132V$, and **3** for $V$. Both inverse products, four first-order parameter lifts and a polynomial normal check exactly. Four intentional corruptions are rejected with nonzero exits.\n\n[Pinned audit and reproduction commands](https://github.com/rbajaj5/hodge-lab/blob/826ed4150c9b034f0bcd2e7874323e5d07136213/notes/moving-branch-weierstrass-audit.md) · [source-bound checker](https://github.com/rbajaj5/hodge-lab/blob/826ed4150c9b034f0bcd2e7874323e5d07136213/scripts/audit_moving_branch_weierstrass.py) · [receipt](https://github.com/rbajaj5/hodge-lab/blob/826ed4150c9b034f0bcd2e7874323e5d07136213/results/moving-branch-weierstrass-audit/replay.json) · [matrix visualization](https://github.com/rbajaj5/hodge-lab/blob/826ed4150c9b034f0bcd2e7874323e5d07136213/visualizations/moving-branch-weierstrass-audit.png).\n\nScope: this is not a new solve, full Lean/kernel replay, or a replay of the full Weierstrass syzygy, moving-map transport, dominance, trace and clearing chain. The local lifts alone are not a generic-dominance proof. Existing acceptance remains credited to `benediamond`'s [PR #172](https://github.com/hodge-computer/sextics/pull/172), building on `fqlx`, `hodgepodgeconjecture`, the classical Fisher/Sage covariants, shared-library contributors and Mathlib. Prepared for `rbajaj5` with OpenAI Codex assistance and independent review agents.\n",
+        "author": {
+          "login": "rbajaj5"
+        },
+        "createdAt": "2026-10-21T17:59:54Z",
+        "updatedAt": "2026-10-21T17:59:54Z",
+        "replies": {
+          "totalCount": 0,
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
