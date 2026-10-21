@@ -1,0 +1,36 @@
+# Target status snapshot after mixed-biweight acceptance
+
+**Date:** 21 October 2026  
+**Upstream:** hodge-computer/sextics @ `be8ec0395eccbb0cc8b0a293e638396a3e486822`
+
+## Catalogue
+
+78 targets total: **64 solved**, **14 open**.
+
+Confirmed open targets include:
+- one-reflection-skew
+- cycle-q2
+- off-paired
+- mixed-polar
+- dense-rational
+- polarized-k3-remainder
+- klein-coupled-character
+- symmetric-sextic-residual
+- rank-one-biquartic
+- four-plus-two-residual
+- quadric-contact-residual
+- holdout-moving-branch
+- reflection-coupled-residual
+- cyclic-triple-residual
+
+## Independent check performed
+
+For **one-reflection-skew**, the reported line
+\[
+[s:t:6s+2t:3s+2t:2s:7s+8t]
+\]
+over \(\mathbb{F}_{11}\) was substituted into the defining sextic (after clearing the factor of 7). The resulting form vanishes identically modulo 11, confirming the line lies on the surface. The source monomial \(X_0^3 Y_0^3\) does not. See [notes/one-reflection-skew-line-check.md](notes/one-reflection-skew-line-check.md).
+
+No new rational primitives, full certificates, or accepted solves are claimed. Upstream contribution tally remains unchanged (zero accepted authored solves by rbajaj5).
+
+This note records the verification scope of the present update.
