@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "notebook_base": "e5067915e93b968e0e55133d41379fe2dd438cec",
+  "remote_main_before_commit": "e5067915e93b968e0e55133d41379fe2dd438cec",
+  "historical_ledger_bytes_preserved": 306221,
+  "note_links_resolve": true,
+  "script_input_and_discussion_hashes_match": true,
+  "all_staged_bytes_match_working_files": true,
+  "staged_files_before_this_receipt": [
+    {
+      "path": "LEDGER.md",
+      "sha256": "001f9f6c4a1f84ce83c145acc32a9315e0dca008dc4371fca046546ac84e975d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d8c2aa0c089ced8d8d57091180827e7c5e609785459a410b3129df1b7dce83fb"
+    },
+    {
+      "path": "notes/chi-target-source.md",
+      "sha256": "d6d598a6d68a8107c4cf894f615e451b3668bef7c29e741b423d7a9fd0e0ad15"
+    },
+    {
+      "path": "results/chi-target-source/.gitattributes",
+      "sha256": "f7a60b968275573a63b67d75751fdaee06da42645861f9ae34bdd521f6906cbb"
+    },
+    {
+      "path": "results/chi-target-source/context.json",
+      "sha256": "16eb706479b2a4f37ac825d7e3c77db233e84026079a44f8e696f1de2dae98cc"
+    },
+    {
+      "path": "results/chi-target-source/discussion-127.json",
+      "sha256": "1189031ffb9e9a676b174f768b2d49187be2d27bfddcd160d185d7f291d52279"
+    },
+    {
+      "path": "results/chi-target-source/environment.json",
+      "sha256": "43875d9a20ab6ccf619c088841fa8fbe72fa15cbf1e4707fbc7ea7e1bcd3de1d"
+    },
+    {
+      "path": "results/chi-target-source/initial-execution.json",
+      "sha256": "61e0c1937a00d51dcc0cec90e3298a336996e364a9467e54cf389360007d86e2"
+    },
+    {
+      "path": "results/chi-target-source/inputs.json",
+      "sha256": "86814cbeb34a8d2a461788545b34810d60d2f361c343ba58185b1d247511674e"
+    },
+    {
+      "path": "results/chi-target-source/inputs/AGENTS.md",
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed"
+    },
+    {
+      "path": "results/chi-target-source/inputs/CONTRIBUTING.md",
+      "sha256": "ed9578887530ab2c8369746e66fd5826d7561628517fa2581b9a485d9ebabe9c"
+    },
+    {
+      "path": "results/chi-target-source/inputs/README.md",
+      "sha256": "03e211599712fb1ba8083f0686189d03729b2577b91674656949811073168908"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/index.json",
+      "sha256": "13c42bd53c4a8c7b9e8144b14cf5bd8202f73ee7d593dd55e884b88b2ad99fa8"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec",
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/provenance.json",
+      "sha256": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/record.json",
+      "sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/why.md",
+      "sha256": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28"
+    },
+    {
+      "path": "results/chi-target-source/inputs/formal/README.md",
+      "sha256": "727502644e3bfa5bec2376bc08ecaea0e00993cfbaab58b3e03e14f69a7f4149"
+    },
+    {
+      "path": "results/chi-target-source/inputs/formal/lean/HodgeComputer/Verify.lean",
+      "sha256": "007f24d3b7ac642e1bcd6adddd0a1512791c32e0e5882cd741c096c6d7e583c3"
+    },
+    {
+      "path": "results/chi-target-source/open-pr-search.json",
+      "sha256": "145a6ef46a0f11fd1b04234b3ddcc7c274e51e026d4456b3b4400a3bb98d27d1"
+    },
+    {
+      "path": "results/chi-target-source/replay.json",
+      "sha256": "bbc2cd67202e617253c21586fe249a837a5aca9a0b8a368149bb58bf5de9b7b2"
+    },
+    {
+      "path": "results/chi-target-source/review.json",
+      "sha256": "4261d36e7c6f9e68dd3577f96ec95a89181c3539a07fa790138880cc526c480a"
+    },
+    {
+      "path": "results/chi-target-source/validation.json",
+      "sha256": "b71d691a41adc63ab0ead86fd8a020d1a0225cbfb837141e19282ab69343aebb"
+    },
+    {
+      "path": "scripts/check_chi_target_source.py",
+      "sha256": "0cbe8d45fe17b16a7e53a06058fc096c41ab597cdec35f4d11977872ba914b84"
+    },
+    {
+      "path": "scripts/validate_chi_target_source.py",
+      "sha256": "4b7aa1aad4bc0fe887051eded1e64a069f789299bc679165f6a9670e898400b6"
+    },
+    {
+      "path": "scripts/visualize_chi_target_source.py",
+      "sha256": "6b7b594a1e93075f23176a47b572d8c5c44565aacff416b0e8f410a6db41b0ab"
+    },
+    {
+      "path": "visualizations/chi-target-source.png",
+      "sha256": "66a06b609bd3a9b2f911792e4213987ee43c18a8c6f263c10a8ddb8b3ba0b95b"
+    },
+    {
+      "path": "visualizations/chi-target-source.svg",
+      "sha256": "5df3a1fdda9852a3543a7562d9735441467872f9199c86d067eaf24120ec0326"
+    }
+  ],
+  "scope": "Publication integrity, not another mathematical replay. Figure visually inspected; two read-only reviewers completed.",
+  "staging_correction": "Copied monitor JSON used CRLF; normalized outer JSON to LF with parsed-field equality and separate original/canonical hashes. Protected Git input bytes and mathematical receipts unchanged."
+}

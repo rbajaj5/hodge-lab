@@ -3734,3 +3734,67 @@ restricted to actual upstream activity.
      Tally remains **28 discussion contributions, one closed maintenance PR,
      zero accepted authored solves**. No upstream post, reply, edit or PR.
      Historical ledger bytes and earlier receipts were preserved.
+
+117. **21 October 2026 — Chi-curve lesson bound to the open skew source.**
+     Continued the chi-curve idea through the actual protected F, A and q=1
+     of one-reflection-skew, pinned at upstream
+     `a6b4cc49452abe31ead0be71d04e8146639896d9`. The catalogue is open at
+     that revision. Source expressions from instance.rec are parsed without
+     executing code and compared coefficient-by-coefficient to record.json;
+     variable order is checked against provenance. Notebook base
+     `e5067915e93b968e0e55133d41379fe2dd438cec` and ten source/context files
+     are pinned by Git blob and SHA-256. No protected input was changed.
+
+     The prior physical quotient and residue reduction are credited to
+     fqlx's comment 19080252. Reconstructing that small source binding gives
+     `G=z^6+P(U)`, `U=x^2`, and `omega=5U^2 dU/(72 z^11)`.
+     The Jacobian, orientation, factor 1/2 and positive residue are retained.
+     The smooth generic curve has genus four, not the genus-one chi model.
+     This applies the weighted-differential method; it does not construct a
+     map from the chi elliptic curve to the target.
+
+     On `a != 0` and `disc(P) != 0`, an elementary basis/pole/degree argument
+     proves the relative rational primitive criterion `b=c=0`, with
+     `W=1/(36 a z^5)`. The generic physical coefficients miss that locus.
+     At `(r,w,t)=(1,1,2)`, polynomial B searches at degrees 0,2,4,8 have
+     ranks 1,3,5,9 and augmented ranks 2,4,6,10; rational left duals certify
+     inconsistency. At `(0,1,2)`, all four control tests recover
+     `W=1/(72 z^5)`. The general argument covers rational moving poles too;
+     it is stated separately from the bounded matrix computations.
+
+     **58 required checks passed**, plus three deliberate mutations rejected
+     at the expected messages: drop the skew coefficient, omit the connection
+     term, reverse the primitive sign. Explicit exceptions remain active under
+     python -O. Final suite 10.562 seconds; positive algebra 0.313 seconds.
+     Bounds: 120 seconds per checker, 60 seconds plotting, 300 seconds total.
+     No timeout. Python 3.11.9 / SymPy 1.14.0; CPU exact arithmetic.
+     A preimplementation scratch sign mistake was caught independently and
+     corrected before the first executed checker; it is documented, not
+     treated as a mathematical counterexample. Two read-only agents derived
+     the formulas and reviewed scope/code; they did not execute extra suites.
+
+     [Source derivation and exactness criterion](notes/chi-target-source.md) ·
+     [Pins](results/chi-target-source/inputs.json) ·
+     [Ranks, duals and source checks](results/chi-target-source/replay.json) ·
+     [Bounded validation and failures](results/chi-target-source/validation.json) ·
+     [Independent review scope](results/chi-target-source/review.json) ·
+     [Reproducible source/operator visualization](visualizations/chi-target-source.png).
+
+     **Limit:** this excludes direct relative integration only. Base-parameter
+     derivatives and connection terms may still give an absolute primitive.
+     The note gives an explicit counterexample to inferring absolute
+     nonexactness from fiber nonexactness. No ambient HasCertificate exclusion,
+     denominator-family exclusion, Lean proof, or accepted solve follows.
+     Previous transport/jet/Prompt 3 and large-packet replays were not rerun;
+     no trace, clearing, numerical search or GPU computation was attempted.
+     The planned source binding, two samples and error controls are complete;
+     this pass stops before the full base-derivative primitive equation.
+
+     Credit Benjamin E. Diamond and contributors for the protected framework,
+     fqlx for the source quotient/reduction and companion formulation, and
+     Ravi Bajaj's GOE correction for the motivating experiment. Prepared for
+     rbajaj5 with OpenAI Codex and two read-only reviewers, with no novelty
+     claim. Published to Hodge Lab as a bounded research batch; no upstream
+     post, reply, edit or PR in this pass. Tally remains **28 discussion
+     contributions, one closed maintenance PR, zero accepted authored solves**.
+     Historical ledger bytes and completed receipts were preserved.

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "total_budget_seconds": 300,
+  "operations": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_target_source.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"checks\": 58, \"seconds\": 0.313}\n",
+      "stderr": "",
+      "seconds": 2.218,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_target_source.py",
+        "--mutation",
+        "drop-skew"
+      ],
+      "returncode": 1,
+      "stdout": "FAIL: protected coefficient c\n",
+      "stderr": "",
+      "seconds": 2.0,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_target_source.py",
+        "--mutation",
+        "drop-connection"
+      ],
+      "returncode": 1,
+      "stdout": "FAIL: weighted derivative operator\n",
+      "stderr": "",
+      "seconds": 2.047,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_chi_target_source.py",
+        "--mutation",
+        "primitive-sign"
+      ],
+      "returncode": 1,
+      "stdout": "FAIL: constant candidate residual\n",
+      "stderr": "",
+      "seconds": 2.172,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/visualize_chi_target_source.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 2.125,
+      "timeout_seconds": 60
+    }
+  ],
+  "seconds": 10.562,
+  "script_sha256": {
+    "check_chi_target_source.py": "0cbe8d45fe17b16a7e53a06058fc096c41ab597cdec35f4d11977872ba914b84",
+    "validate_chi_target_source.py": "4b7aa1aad4bc0fe887051eded1e64a069f789299bc679165f6a9670e898400b6",
+    "visualize_chi_target_source.py": "6b7b594a1e93075f23176a47b572d8c5c44565aacff416b0e8f410a6db41b0ab"
+  }
+}

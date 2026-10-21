@@ -37,6 +37,14 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### The chi-curve idea reaches an actual protected source
+
+[![Exact source transport and the relative primitive test](visualizations/chi-target-source.png)](notes/chi-target-source.md)
+
+For **one-reflection-skew**, retaining the source and Jacobian gives `ω = 5U² dU/(72z¹¹)` on `z⁶ = −P(U)`. On the smooth cubic open, a rational primitive along the fiber exists exactly when `b = c = 0`. The generic physical coefficients miss that locus; a special fiber supplies a positive control. **This tests direct integration along the curve, not the full target: base-parameter derivatives remain available.**
+
+[Derivation, prior work and limits](notes/chi-target-source.md) · [58 exact requirements and rational duals](results/chi-target-source/replay.json) · [Three detected errors](results/chi-target-source/validation.json)
+
 ### A chi-variable curve: geometry is only part of the data
 
 [![A genus-one curve and the differential transported onto it](visualizations/chi-curve-bridge.png)](notes/chi-curve-bridge.md)

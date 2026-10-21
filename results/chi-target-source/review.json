@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21",
+  "status": "No defect found in final source-bound relative calculation",
+  "reviewers": [
+    {
+      "reviewer": "OpenAI Codex chi_curve_bridge_review",
+      "method": "Independent mathematical derivation, followed by read-only source/checker/receipt inspection. Degree-zero dual checked directly, not through another suite execution.",
+      "findings": [
+        "Corrected derivative sign and positive primitive",
+        "Irreducibility/basis decomposition is complete for relative primitives",
+        "Pole orders force rational B to be polynomial; degree forces constant",
+        "Source and samples bound to protected sextic",
+        "Higher-degree dual verification inspected in code, not separately executed"
+      ]
+    },
+    {
+      "reviewer": "OpenAI Codex jet_math_review",
+      "method": "Independent differential-form derivation and final note read-through; no calculations executed and no packet replay.",
+      "findings": [
+        "Projective orientation, Jacobian and 5/72 residue checked algebraically",
+        "Absolute base-derivative counterexample has the correct sign",
+        "Relative nonexactness does not exclude ambient primitive or HasCertificate",
+        "Final note retains prior attribution, coefficient field and chart conditions"
+      ]
+    }
+  ],
+  "development_correction": "Before first implemented replay, the main agent scratch equation had the wrong sign for 5Pprime B and a negative constant. Both reviewers derived the correct equation 5Pprime B-6P Bprime=5U^2/12, primitive +1/(36a z^5). The final checker and note use that sign; deliberate primitive-sign mutation fails.",
+  "scope": "Independent AI derivations and read-only review, not independent human refereeing or additional executed replay counts. General theorem proof is in note; bounded matrices are supplementary. Open status is pinned source metadata."
+}

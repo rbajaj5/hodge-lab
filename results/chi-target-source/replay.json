@@ -1,0 +1,274 @@
+{
+  "status": "PASS",
+  "scope": "Actual protected source to relative genus-four differential; relative exactness criterion and bounded matrix checks, not an ambient Hodge exclusion",
+  "input_manifest_sha256": "86814cbeb34a8d2a461788545b34810d60d2f361c343ba58185b1d247511674e",
+  "checker_sha256": "0cbe8d45fe17b16a7e53a06058fc096c41ab597cdec35f4d11977872ba914b84",
+  "upstream_commit": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+  "variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "q": 1,
+  "F": "X0**6 + X0**3*X1*Y0*Y1 + X0*X1*Y0**3*Y1/7 - X0*X1*Y0*Y1**3/7 + X1**6 + X1**3*X2*Y0*Y1 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+  "A": "X0**3*Y0**3",
+  "coefficient_field": "Q(r,w,t), characteristic zero; argument also over C(r,w,t)",
+  "coefficients": {
+    "a": "r**6 + w**6 + 1",
+    "b": "r**3*t*w + r*t",
+    "c": "-r*t**3/7 + r*t/7",
+    "d": "t**6 + 1"
+  },
+  "relative_curve": "z^6=-P(U)",
+  "relative_source": "5*U^2/(72*z^11) dU",
+  "operator": "5*Pprime*B-6*P*Bprime=5*U^2/12",
+  "required_open": [
+    "a != 0",
+    "discriminant(P) != 0",
+    "x != 0 on square-coordinate chart",
+    "z != 0 on residue chart"
+  ],
+  "general_proof": "Irreducibility and derivative-preserved degree-six basis reduce any relative primitive to B/z^5. Pole orders force B polynomial; coefficient a(15-6n) forces B constant. Exactness iff b=c=0, with B=1/(36a). See note for proof, not inferred from finite rank tests.",
+  "genus_argument": {
+    "cover_degree": 6,
+    "finite_branch_contribution": 15,
+    "infinity_branch_contribution": 3,
+    "two_genus_minus_two": 6,
+    "genus": 4
+  },
+  "checks_passed": 58,
+  "checks": [
+    "protected variable order",
+    "instance.rec matches structured F",
+    "instance.rec matches structured A",
+    "protected q=1",
+    "pinned target is open",
+    "equation descends through x squared",
+    "protected coefficient a",
+    "protected coefficient b",
+    "protected coefficient c",
+    "protected coefficient d",
+    "protected source maps to x cubed",
+    "physical five-coordinate Jacobian",
+    "full source descends through U=x squared",
+    "signed pole reduction",
+    "residue normalization 5/72",
+    "weighted derivative operator",
+    "source character-one representation",
+    "matching source and primitive deck characters",
+    "derivation preserves basis component 0",
+    "derivation preserves basis component 1",
+    "derivation preserves basis component 2",
+    "derivation preserves basis component 3",
+    "derivation preserves basis component 4",
+    "derivation preserves basis component 5",
+    "polynomial leading factor never zero at integer degree",
+    "root-pole leading factor never zero at integer order",
+    "constant candidate residual",
+    "physical b factors",
+    "physical c factors",
+    "generic_sample squarefree cubic",
+    "generic_sample full column rank degree 0",
+    "generic_sample expected consistency degree 0",
+    "generic_sample exact left dual degree 0",
+    "generic_sample full column rank degree 2",
+    "generic_sample expected consistency degree 2",
+    "generic_sample exact left dual degree 2",
+    "generic_sample full column rank degree 4",
+    "generic_sample expected consistency degree 4",
+    "generic_sample exact left dual degree 4",
+    "generic_sample full column rank degree 8",
+    "generic_sample expected consistency degree 8",
+    "generic_sample exact left dual degree 8",
+    "special_control squarefree cubic",
+    "special_control full column rank degree 0",
+    "special_control expected consistency degree 0",
+    "special_control exact primitive degree 0",
+    "special_control full column rank degree 2",
+    "special_control expected consistency degree 2",
+    "special_control exact primitive degree 2",
+    "special_control full column rank degree 4",
+    "special_control expected consistency degree 4",
+    "special_control exact primitive degree 4",
+    "special_control full column rank degree 8",
+    "special_control expected consistency degree 8",
+    "special_control exact primitive degree 8",
+    "generic sample discriminant",
+    "special sample discriminant",
+    "base derivative counterexample coefficient"
+  ],
+  "samples": [
+    {
+      "label": "generic_sample",
+      "point": {
+        "r": 1,
+        "w": 1,
+        "t": 2
+      },
+      "P": "3*U**3 + 4*U**2 - 6*U/7 + 65",
+      "discriminant": "-361978181/343",
+      "degree_tests": [
+        {
+          "B_degree_bound": 0,
+          "matrix_shape": [
+            3,
+            1
+          ],
+          "rank": 1,
+          "augmented_rank": 2,
+          "coefficient_row_dual": [
+            "126/5",
+            "0",
+            "12/5"
+          ],
+          "dual_convention": "Rows U^0,...,U^(bound+2); lambda^T M=0, lambda^T rhs=1"
+        },
+        {
+          "B_degree_bound": 2,
+          "matrix_shape": [
+            5,
+            3
+          ],
+          "rank": 3,
+          "augmented_rank": 4,
+          "coefficient_row_dual": [
+            "4699058/439015",
+            "-136374/87803",
+            "12/5",
+            "67272552/439015",
+            "0"
+          ],
+          "dual_convention": "Rows U^0,...,U^(bound+2); lambda^T M=0, lambda^T rhs=1"
+        },
+        {
+          "B_degree_bound": 4,
+          "matrix_shape": [
+            7,
+            5
+          ],
+          "rank": 5,
+          "augmented_rank": 6,
+          "coefficient_row_dual": [
+            "-19599789118/11729843455",
+            "-33770554734/11729843455",
+            "12/5",
+            "-59743685592/2345968691",
+            "-3211076651328/11729843455",
+            "51713258840568/82108904185",
+            "0"
+          ],
+          "dual_convention": "Rows U^0,...,U^(bound+2); lambda^T M=0, lambda^T rhs=1"
+        },
+        {
+          "B_degree_bound": 8,
+          "matrix_shape": [
+            11,
+            9
+          ],
+          "rank": 9,
+          "augmented_rank": 10,
+          "coefficient_row_dual": [
+            "-38838393388887245062/2657313778955376445",
+            "-11336003637703149801/2657313778955376445",
+            "12/5",
+            "-790185806471253076362/3720239290537527023",
+            "-10418874372180891434844/18601196452687635115",
+            "184447808596744758422604/130208375168813445805",
+            "234276415359141406475016/26041675033762689161",
+            "1632074020203555343256400/182291725236338824127",
+            "-11593830250909607661694656/182291725236338824127",
+            "-254182268460396891272611824/1276042076654371768889",
+            "0"
+          ],
+          "dual_convention": "Rows U^0,...,U^(bound+2); lambda^T M=0, lambda^T rhs=1"
+        }
+      ],
+      "constant_candidate_residual": "5*(28*U - 3)/378"
+    },
+    {
+      "label": "special_control",
+      "point": {
+        "r": 0,
+        "w": 1,
+        "t": 2
+      },
+      "P": "2*U**3 + 65",
+      "discriminant": "-456300",
+      "degree_tests": [
+        {
+          "B_degree_bound": 0,
+          "matrix_shape": [
+            3,
+            1
+          ],
+          "rank": 1,
+          "augmented_rank": 1,
+          "B_coefficients": [
+            "1/72"
+          ]
+        },
+        {
+          "B_degree_bound": 2,
+          "matrix_shape": [
+            5,
+            3
+          ],
+          "rank": 3,
+          "augmented_rank": 3,
+          "B_coefficients": [
+            "1/72",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "B_degree_bound": 4,
+          "matrix_shape": [
+            7,
+            5
+          ],
+          "rank": 5,
+          "augmented_rank": 5,
+          "B_coefficients": [
+            "1/72",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "B_degree_bound": 8,
+          "matrix_shape": [
+            11,
+            9
+          ],
+          "rank": 9,
+          "augmented_rank": 9,
+          "B_coefficients": [
+            "1/72",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "constant_candidate_residual": "0"
+    }
+  ],
+  "ambient_nonexistence_claimed": false,
+  "hodge_certificate_constructed": false,
+  "versions": {
+    "python": "3.11.9",
+    "sympy": "1.14.0"
+  },
+  "elapsed_seconds": 0.313
+}
