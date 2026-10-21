@@ -1,0 +1,24 @@
+{
+  "instanceId": "holdout-moving-branch",
+  "variables": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "statementSource": "instance.rec",
+  "contextSource": "why.md",
+  "sameVarietyInstances": [],
+  "mathematicalChecks": "checks.json",
+  "checkCommand": "python3 scripts/audit-cover-frontier.py",
+  "references": [
+    "data/holdout/solution.md",
+    "formal/lean/HodgeComputer/Constructions/HoldoutCover/README.md",
+    "docs/02-explicit-constructions.md",
+    "docs/03-geometric-support.md",
+    "docs/04-known-locus-and-frontier.md"
+  ],
+  "existenceStatus": "No existence conclusion follows from the specified fixed-base cover and quotient constructions."
+}

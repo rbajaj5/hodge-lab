@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-21",
+  "reviewers": [
+    {
+      "role": "independent seed and endpoint reviewer",
+      "scope": [
+        "Integral model derivative reconstruction",
+        "169 matrix entries",
+        "Both inverse products",
+        "Rank13, integral determinant1, normalized determinant3 mod5",
+        "Polynomial normal",
+        "Four first-order parameter lifts",
+        "Checker and note review"
+      ],
+      "outcome": "PASS; no material error or overclaim found"
+    },
+    {
+      "role": "independent covariant and normalization reviewer",
+      "scope": [
+        "Hessian and bordered-Hessian covariants",
+        "Actual coefficient-function assembly",
+        "Jacobian determinant formula",
+        "Relative differential identity and its scope",
+        "Read-only inspection of physical transport hypotheses"
+      ],
+      "outcome": "PASS; off-curve Theta correction is normalization, not source bug"
+    }
+  ],
+  "publication_review": "One concise independent check in Discussion146; preserve attribution and audit limits; no claim of new generic dominance or full proof replay."
+}

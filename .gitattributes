@@ -5,3 +5,6 @@
 *.yml text eol=lf
 *.png binary
 *.npz binary
+
+# Preserve the exact upstream bytes used by the Weierstrass audit hashes.
+results/moving-branch-weierstrass-audit/inputs/** text eol=lf

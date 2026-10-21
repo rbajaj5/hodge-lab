@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-10-21T17:54:26.068820+00:00",
+  "script_sha256": "5c15779dbbcfbd98e6bad84cdfb5949aabb2c5a6b335266caef9f6d262b0f00a",
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/audit_moving_branch_weierstrass.py",
+        "--output",
+        "results/moving-branch-weierstrass-audit/replay.json"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "expected": "PASS",
+      "output": "PASS"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/audit_moving_branch_weierstrass.py",
+        "--perturb",
+        "coupling"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "expected": "Seed incidence failed",
+      "output": "ValueError: Seed incidence failed"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/audit_moving_branch_weierstrass.py",
+        "--perturb",
+        "matrix"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "expected": "Reconstructed Jacobian differs",
+      "output": "ValueError: Reconstructed Jacobian differs from submitted matrix"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/audit_moving_branch_weierstrass.py",
+        "--perturb",
+        "inverse"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "expected": "Right inverse failed",
+      "output": "ValueError: Right inverse failed"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/audit_moving_branch_weierstrass.py",
+        "--perturb",
+        "theta-raw"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 1,
+      "expected": "Normalized Theta dictionary failed",
+      "output": "ValueError: Normalized Theta dictionary failed"
+    }
+  ],
+  "scope": "Positive exact checks plus four intentional in-memory corruptions rejected; inputs not modified."
+}

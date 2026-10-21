@@ -3436,3 +3436,50 @@ restricted to actual upstream activity.
      no mathematical rerun. Prompt 3 and both verified comment corrections
      remain complete. The contribution tally is unchanged: 27 discussion
      contributions, one closed maintenance PR, zero accepted authored solves.
+
+112. **21 October 2026 — Independent moving-branch Weierstrass audit; prepublication record.**
+     Pinned upstream `28d14ed300d4d2cb84555466b81cfcfa54854cdd` and notebook
+     base `0eb6b83bf0d5749fbc1aa1087222f4fa1d9ce881`. Read the current
+     instructions, protected moving-branch target, accepted explanation and
+     complete discussion #146 (zero comments/replies at 17:51 UTC).
+
+     No defect found in the bounded checks. Reconstructed the transitive
+     covariants from Hessian/Jacobian determinants over the rational polynomial
+     ring, matching the actual function assemblies and all 13/192/873 expanded
+     monomials. The normalized Theta equals the raw bordered-Hessian expression
+     minus 9*s4*U*H. This term vanishes on the cubic but is not zero as an ambient
+     polynomial; it is a normalization dictionary, not a correction or novelty
+     claim. The exact relative differential identity gives factor three.
+
+     From the protected sextic, reconstructed the cubic specialization,
+     Weierstrass coefficient scales 4116/111132, and polynomial alpha-source
+     -V_alpha/(144R). All 13 seed coefficients vanish modulo five; all 169
+     reconstructed incidence entries match, both inverse products pass, and
+     rank is 13. The determinant is one for the integral equation and three
+     for V. All four local parameter lifts and a polynomial normal also pass.
+     Four intentional in-memory corruptions fail with nonzero exit status.
+     Runs were bounded to 60 seconds each; no timeout occurred.
+
+     [Exact scope and attribution](notes/moving-branch-weierstrass-audit.md) ·
+     [Input hashes](results/moving-branch-weierstrass-audit/inputs.json) ·
+     [Replay](results/moving-branch-weierstrass-audit/replay.json) ·
+     [Validation commands](results/moving-branch-weierstrass-audit/validation.json) ·
+     [Reproducible matrix visualization](visualizations/moving-branch-weierstrass-audit.png).
+     Credit the classical Fisher/Sage covariants, hodgepodgeconjecture's cyclic
+     construction, fqlx's transitive adaptation, benediamond's accepted PR172,
+     the shared-library contributors and Mathlib. Prepared for rbajaj5 with
+     OpenAI Codex assistance and independent read-only reviewers.
+
+     Full Lean/kernel replay, the full Weierstrass syzygy, physical moving-map
+     transport, trace, admissibility and homogeneous clearing were not replayed.
+     These are audit-coverage limits; the instance is already accepted, and
+     this is neither a new solve nor a proof-gap finding. Prompt3 and both prior
+     comment corrections were not rerun. No alternative draft was promoted.
+
+     **Planned publication:** one concise independent check in the relevant
+     moving-branch discussion, linking this packet and preserving its limits.
+     Push this corresponding ledger audit before publishing; refresh the thread
+     for duplicates, then read back and record the actual outcome/permalink.
+     At this checkpoint no new upstream publication is claimed. Tally remains
+     27 discussion contributions, one closed maintenance PR, zero accepted
+     authored solves. Earlier ledger bytes are preserved.
