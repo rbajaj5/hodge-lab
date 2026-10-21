@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "cwd": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/audit_covariant_jets.py"
+      ],
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "elapsed_seconds": 3.609,
+      "stdout": "{\"status\": \"PASS\", \"checks\": 62, \"zero_remainders\": 6, \"elapsed_seconds\": 1.453}\n",
+      "stderr": "",
+      "expected_returncode": 0,
+      "expected_message": "\"status\": \"PASS\""
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/audit_covariant_jets.py",
+        "--perturb",
+        "cubic-path"
+      ],
+      "timeout_seconds": 120,
+      "returncode": 1,
+      "elapsed_seconds": 2.313,
+      "stdout": "FAIL: actual cubic jet tangent failed\n",
+      "stderr": "",
+      "expected_returncode": 1,
+      "expected_message": "actual cubic jet tangent failed"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/audit_covariant_jets.py",
+        "--perturb",
+        "j-coefficient"
+      ],
+      "timeout_seconds": 120,
+      "returncode": 1,
+      "elapsed_seconds": 2.765,
+      "stdout": "FAIL: actual full_syzygy RHS failed\n",
+      "stderr": "",
+      "expected_returncode": 1,
+      "expected_message": "actual full_syzygy RHS failed"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/audit_covariant_jets.py",
+        "--perturb",
+        "omit-gdot"
+      ],
+      "timeout_seconds": 120,
+      "returncode": 1,
+      "elapsed_seconds": 3.125,
+      "stdout": "FAIL: differential_first_variation remainder failed\n",
+      "stderr": "",
+      "expected_returncode": 1,
+      "expected_message": "differential_first_variation remainder failed"
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/review_covariant_jet_denominators.py"
+      ],
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "elapsed_seconds": 2.407,
+      "stdout_file": "denominator-review.json",
+      "stderr": "",
+      "script_sha256": "946585e3e8f0b4bb6d9ddf95d74bf2d22f2874bc4c626284a76bd833ba5a3de5"
+    }
+  ],
+  "elapsed_seconds": 14.219,
+  "computation_ceiling_seconds": 600,
+  "timeouts": 0,
+  "script_sha256": "9118702c6f5fed21d150593a27f22442d619fede693f3c593a49497204740173",
+  "development_attempts": [
+    {
+      "outcome": "implementation failure before receipt serialization",
+      "output": "FAIL: Object of type fmpz is not JSON serializable",
+      "correction": "Convert exact monomial exponents to Python integers before JSON output; no mathematical formula changed.",
+      "claimed_mathematical_result": null
+    },
+    {
+      "outcome": "staging validation detected CRLF/LF byte mismatch",
+      "correction": "Use explicit LF for generated receipts and source-checker files, then regenerate affected hash-bound receipts.",
+      "claimed_mathematical_result": null
+    }
+  ]
+}

@@ -3618,3 +3618,66 @@ restricted to actual upstream activity.
      a documentation follow-up; the visualization and verification receipts
      remain unchanged, as does the contribution tally of 28 discussion
      contributions, one closed maintenance PR and zero accepted authored solves.
+
+115. **21 October 2026 — Full affine covariant-jet replay for holdout-moving-branch.**
+     Closed the actual covariant-first-variation dependency left conditional
+     in checkpoint 114. The pinned full H/Theta/J tables and assembly functions,
+     eight input jet pairs, inverse/quotient definitions and invariant scales
+     are evaluated directly. All six cleared polynomial residuals divide by the
+     generic cubic U with zero remainder over Q: curve, curve first variation,
+     invariant differential, differential first variation, the source theorem's
+     differential-jet form, and the moving-map identity. Each division is
+     checked by multiplication back. No numerical sampling or modular lift.
+
+     Main replay: **62 required checks**, including the six exact divisions.
+     A separate read-only reviewer supplied an independent abstract rational
+     checker: **15 exact identities and four denominator-error rejections**.
+     Its saved code was executed in the bounded validation suite; these
+     different scopes are recorded separately. The actual covariant supports
+     contain 13/192/873 monomials. The largest cleared numerator has 49,757
+     monomials; these counts are expression sizes, not independent theorems.
+
+     Three deliberate mutations fail at the intended algebraic requirements:
+     reversed x-jet motion, a perturbed J coefficient, and omitted Gdot Dxi.
+     Tests require the specific failure message and nonzero exit under
+     python -O. One development attempt failed on serialization of FLINT
+     integer exponents and was fixed without changing any mathematical
+     formula; it is recorded as an implementation failure, not a result.
+     Staging checks caught a Windows CRLF/LF mismatch; explicit LF output
+     and regenerated receipts preserve exact hashes in the committed files.
+     Final validation: 14.219 seconds including startup, main calculation
+     1.453 seconds, no timeout. Bounds: 120 seconds per main process,
+     60 seconds for independent review, 600-second computation ceiling.
+     Python 3.11.9, python-flint 0.9.0, SymPy 1.14.0; CPU exact arithmetic.
+
+     Notebook base `f035536f268342a8043c04e687f0c7332b96d927`.
+     Source pin `28d14ed300d4d2cb84555466b81cfcfa54854cdd`; all ten inventoried
+     source blobs remain unchanged at current upstream
+     `b2ee2acb5409e37b6fad800b256fb8f2fee163bf`. Input hashes are recorded,
+     but are not counted as semantic replay of all proofs in those files.
+     The existing covariant/seed and physical-transport receipts are reused
+     with checked hashes. Their full checkers and browser review are not
+     rerun or merged into the new check counts.
+
+     [Derivation and limits](notes/covariant-jet-audit.md) ·
+     [Pins and reused receipts](results/covariant-jet-audit/inputs.json) ·
+     [Exact replay](results/covariant-jet-audit/replay.json) ·
+     [Commands, bounds and deliberate failures](results/covariant-jet-audit/validation.json) ·
+     [Independent review](results/covariant-jet-audit/review.json) ·
+     [Reproducible visualization](visualizations/covariant-jet-audit.png).
+
+     The result is affine z=1, characteristic zero, with G,H nonzero and J
+     nonzero for the moving quotient. The earlier physical substitution
+     binding is reused. Physical function-field nonvanishing/embeddings,
+     the complete Piola chain, primitive existence, trace, admissibility,
+     homogeneous clearing and Lean/kernel replay remain imported or unchecked
+     here. These limits are not defects established in the accepted proof.
+     The normalization and signed primitive assembly retain their prior values.
+     Credit the classical cubic-invariant work including Tom Fisher,
+     hodgepodgeconjecture, fqlx, benediamond, shared-library contributors and
+     Mathlib. Prepared for rbajaj5 with OpenAI Codex and read-only review.
+
+     No upstream post, reply, edit or PR was made; the contribution tally
+     remains **28 discussion contributions, one closed maintenance PR,
+     zero accepted authored solves**. Historical ledger bytes and previous
+     receipts are preserved. No Grok prompt was needed.

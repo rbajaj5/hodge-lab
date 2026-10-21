@@ -37,11 +37,19 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### The actual covariant jets, replayed exactly
+
+[![Full affine covariant-jet replay and remaining limits](visualizations/covariant-jet-audit.png)](notes/covariant-jet-audit.md)
+
+The `holdout-moving-branch` audit now evaluates the actual covariant jets: **six complete polynomial residuals vanish modulo the generic cubic**, including both first variations and the moving-map identity. Three deliberate errors are rejected. This closes the first-variation dependency in the transport audit below, under its stated function-field hypotheses. Lean/kernel verification, primitive existence, trace and clearing remain outside this replay.
+
+[Derivation and limits](notes/covariant-jet-audit.md) · [Pinned replay](results/covariant-jet-audit/replay.json) · [Commands and failure tests](results/covariant-jet-audit/validation.json)
+
 ### Physical source transport: why the factor is 144
 
 [![Exact transport factors and verification limits](visualizations/physical-source-transport-audit.png)](notes/physical-source-transport-audit.md)
 
-For the accepted `holdout-moving-branch` construction, **65 exact equalities** check the residue-volume multiplier `-144 R v^3`, the corresponding alpha-source normalization, and the correction algebra. All 25 coordinate-matrix entries are reconstructed, and three deliberate errors are rejected. The moving-map conclusion retains its curve and differential first-variation hypotheses; this is a bounded independent audit, not a new solve or full Lean replay.
+For the accepted `holdout-moving-branch` construction, **65 exact equalities** check the residue-volume multiplier `-144 R v^3`, the corresponding alpha-source normalization, and the correction algebra. All 25 coordinate-matrix entries are reconstructed, and three deliberate errors are rejected. Its curve and differential first-variation hypotheses are now checked by the separate covariant-jet replay above; the original 65-check receipt is unchanged. This remains a bounded independent audit, not a new solve or full Lean replay.
 
 [Derivation and limits](notes/physical-source-transport-audit.md) · [Source-bound checker](scripts/audit_physical_source_transport.py) · [Executed checks](results/physical-source-transport-audit/validation.json)
 

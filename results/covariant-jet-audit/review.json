@@ -1,0 +1,28 @@
+{
+  "scope": "Read-only agent derived and independently checked denominator clearings; main author executed the supplied checker in the bounded suite.",
+  "independent_checks": {
+    "exact_identities": 15,
+    "deliberate_denominator_rejections": 4,
+    "script": "scripts/review_covariant_jet_denominators.py",
+    "receipt": "results/covariant-jet-audit/denominator-review.json"
+  },
+  "source_review": {
+    "status": "No mathematical or source-binding defect found",
+    "reviewed": [
+      "actual eight input jet pairs",
+      "all coefficient expressions and assemblies",
+      "covariant jet call bindings",
+      "inverse and invariant scales",
+      "six residuals and localization",
+      "script and input hashes match receipt"
+    ],
+    "validation_observation": "Nonzero exit alone would not establish an effective perturbation; require each specific algebraic failure message.",
+    "resolution": "validate_covariant_jet_audit.py verifies specific failure labels and exit codes; all three passed.",
+    "limits": "Physical coefficient/tangent binding is reused from prior receipts, not freshly replayed. No Lean, primitive, trace or clearing review."
+  },
+  "counts_not_combined_with": [
+    "main 62-check replay",
+    "previous 65-check physical audit",
+    "browser-reported audit"
+  ]
+}

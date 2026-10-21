@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "check_count": 19,
+  "checks": [
+    {
+      "name": "actual_xi_first_variation",
+      "result": "PASS"
+    },
+    {
+      "name": "actual_eta_first_variation_Neta_sign",
+      "result": "PASS"
+    },
+    {
+      "name": "relative_xi_derivative",
+      "result": "PASS"
+    },
+    {
+      "name": "relative_xidot_derivative",
+      "result": "PASS"
+    },
+    {
+      "name": "curve_jet_denominator_108_G_H7",
+      "result": "PASS"
+    },
+    {
+      "name": "curve_jet_numerator_product_rule",
+      "result": "PASS"
+    },
+    {
+      "name": "differential_jet_denominator_G2_H4",
+      "result": "PASS"
+    },
+    {
+      "name": "source_differential_jet_denominator_G_H7",
+      "result": "PASS"
+    },
+    {
+      "name": "source_differential_numerator_recombination",
+      "result": "PASS"
+    },
+    {
+      "name": "moving_quotient_H_cancellation",
+      "result": "PASS"
+    },
+    {
+      "name": "moving_map_denominator_54_G2_J2",
+      "result": "PASS"
+    },
+    {
+      "name": "curve_doubled_denominator_rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "differential_doubled_denominator_rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "source_differential_doubled_denominator_rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "moving_doubled_denominator_rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "auxiliary_tangency",
+      "result": "PASS"
+    },
+    {
+      "name": "relative_tangency",
+      "result": "PASS"
+    },
+    {
+      "name": "E_D_x_commutator",
+      "result": "PASS"
+    },
+    {
+      "name": "E_scaled_D_x_commutator",
+      "result": "PASS"
+    }
+  ],
+  "formulas": {
+    "Nxi": "H*PQ - 2*Q*PH",
+    "Neta": "H*PJ - 3*J*PH",
+    "M": "H*LQ - 2*Q*LH",
+    "Kd": "G*H*LN - H*N*LG - 3*G*N*LH",
+    "curve_denominator": "108*G*H^7",
+    "differential_denominator": "G^2*H^4",
+    "source_differential_denominator": "G*H^7",
+    "moving_denominator": "54*G^2*J^2",
+    "curve_numerator": "H**7*PTN - 36*H**5*PSN*Q + 54*J*(H*PJ - 3*J*PH) - (H*PQ - 2*PH*Q)*(36*H**4*SN + 324*Q**2)",
+    "differential_numerator": "G*H*LN - 3*G*LH*N + 3*G*NE + H*KG*(H*LQ - 2*LH*Q) - H*LG*N",
+    "source_differential_numerator": "G*NE*(H*LQ - 2*LH*Q) + 3*H*J**2*KG - J*(G*H*LN - 3*G*LH*N - H*LG*N)",
+    "moving_numerator": "G**2*H**6*TNa - 18*G*J*LN + 18*G*LJ*N + 54*J**2*KG + 18*J*LG*N"
+  },
+  "localization": [
+    "characteristic zero",
+    "G != 0",
+    "H != 0",
+    "J != 0 for moving quotient"
+  ],
+  "scope": "Independent abstract rational denominator and sign audit. Does not prove actual covariant residuals vanish, replay a Lean kernel, or rerun seed checks.",
+  "versions": {
+    "python": "3.11.9",
+    "sympy": "1.14.0"
+  },
+  "executable": "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "script_sha256": "946585e3e8f0b4bb6d9ddf95d74bf2d22f2874bc4c626284a76bd833ba5a3de5",
+  "elapsed_seconds": 0.312
+}

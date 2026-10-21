@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-21T19:02:03.123685+00:00",
+  "notebook_base_and_fetched_main": "f035536f268342a8043c04e687f0c7332b96d927",
+  "staged_files": [
+    {
+      "path": "LEDGER.md",
+      "bytes": 302817,
+      "sha256": "14a58246e18e2681a550f9c1c706c22574d91fc91e6fe9fa641e1b9adf7c692e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11437,
+      "sha256": "1246cc32d2cfc2b715ec77a323b3e8712cf9bc0d249042f76a80a82d0e58abbc"
+    },
+    {
+      "path": "notes/covariant-jet-audit.md",
+      "bytes": 11205,
+      "sha256": "869f131295718c3c56bd4c69b75f8cceec5b0d4e6f703c9abc9fff4e19f2f7c3"
+    },
+    {
+      "path": "notes/physical-source-transport-audit.md",
+      "bytes": 12746,
+      "sha256": "9e9de49dd31166491d71d8977540b744816ec7606e622394ce8a07d3c281ac67"
+    },
+    {
+      "path": "results/covariant-jet-audit/.gitattributes",
+      "bytes": 22,
+      "sha256": "f7a60b968275573a63b67d75751fdaee06da42645861f9ae34bdd521f6906cbb"
+    },
+    {
+      "path": "results/covariant-jet-audit/denominator-review.json",
+      "bytes": 2940,
+      "sha256": "a485ee9ba8eafd0596a15e59bcb9c010c1c1ea0b42439fb9003f939cdb7aa57f"
+    },
+    {
+      "path": "results/covariant-jet-audit/inputs.json",
+      "bytes": 5018,
+      "sha256": "73159f9e89bf645f9ab640373e49632df7f31f5ce81a0f282ddd09d351a5f895"
+    },
+    {
+      "path": "results/covariant-jet-audit/inputs/formal/lean/HodgeComputer/Constructions/TransitiveCubic/Syzygy.lean",
+      "bytes": 6389,
+      "sha256": "822bf8f401183d151d42ab4f38b2677c994ea27da25fd2d1f19ef9681f400901"
+    },
+    {
+      "path": "results/covariant-jet-audit/replay.json",
+      "bytes": 7128,
+      "sha256": "814082f93d2b5ee0f3f597f3f421e028e00c54bf406ecaa14fbf49ed0f115fe9"
+    },
+    {
+      "path": "results/covariant-jet-audit/review.json",
+      "bytes": 1308,
+      "sha256": "8da1e3751a2a3b471f82bd5b3c315a20c75254fdbab5c16efabff085bfe55cbb"
+    },
+    {
+      "path": "results/covariant-jet-audit/validation.json",
+      "bytes": 3341,
+      "sha256": "51077a1da65ad5ff6f11c5c788818c255ca77a5b3aaa8c6be808f148ce9bdd78"
+    },
+    {
+      "path": "scripts/audit_covariant_jets.py",
+      "bytes": 14754,
+      "sha256": "d6c5b16facfc9db235929fe3d9e81a9a08febeab6057ea3d79211295afcc4a1d"
+    },
+    {
+      "path": "scripts/review_covariant_jet_denominators.py",
+      "bytes": 5796,
+      "sha256": "946585e3e8f0b4bb6d9ddf95d74bf2d22f2874bc4c626284a76bd833ba5a3de5"
+    },
+    {
+      "path": "scripts/validate_covariant_jet_audit.py",
+      "bytes": 3736,
+      "sha256": "9118702c6f5fed21d150593a27f22442d619fede693f3c593a49497204740173"
+    },
+    {
+      "path": "scripts/visualize_covariant_jets.py",
+      "bytes": 3866,
+      "sha256": "b2ebe402fe07143332e3b3e0f5be84bad47b78660fa3f0f8a9413d8cae0bc3cf"
+    },
+    {
+      "path": "visualizations/covariant-jet-audit.png",
+      "bytes": 219074,
+      "sha256": "62fc6d87ee363594e13941000571e32219ae6e872a6bf6b7af483a385f25a924"
+    },
+    {
+      "path": "visualizations/covariant-jet-audit.svg",
+      "bytes": 133341,
+      "sha256": "277ebcc0a171004f83c62bc6db9db72b8f3ba78026c5de1aa06c5293a7b2821e"
+    }
+  ],
+  "ledger_historical_prefix_preserved": true,
+  "prior_note_preserved_as_prefix": true,
+  "ten_staged_source_hashes_and_two_reused_receipts_match": true,
+  "three_checker_receipt_hash_pairs_match": true,
+  "utf8_and_character_checks": "PASS",
+  "new_note_local_links_checked": [
+    "physical-source-transport-audit.md",
+    "../scripts/audit_covariant_jets.py",
+    "../results/covariant-jet-audit/replay.json",
+    "../results/covariant-jet-audit/validation.json",
+    "../results/covariant-jet-audit/inputs.json",
+    "../results/covariant-jet-audit/review.json",
+    "../visualizations/covariant-jet-audit.png",
+    "../scripts/visualize_covariant_jets.py",
+    "../scripts/review_covariant_jet_denominators.py",
+    "../results/covariant-jet-audit/validation.json"
+  ],
+  "git_diff_cached_check": "PASS",
+  "visual_inspection": "PNG viewed; labels, bars, zero remainders, scope and limits readable without overlap",
+  "visualization_command": [
+    "python",
+    "scripts/visualize_covariant_jets.py"
+  ],
+  "visualization_process_bound_seconds": 60,
+  "visualization_returncode": 0,
+  "visualization_library": "matplotlib 3.11.1",
+  "independent_final_review": "No formula mismatch or overclaim found; mutation validation checks specific algebraic failure labels.",
+  "upstream_publication": false
+}

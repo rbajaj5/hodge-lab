@@ -263,3 +263,14 @@ input inventory. The reviewer explicitly did not perform a new Lean build,
 full primitive construction, finite-trace replay or denominator-clearing
 replay. Our own receipts and verification boundary remain unchanged.
 This is documentation maintenance; no new calculation or upstream publication.
+
+## Later closure of the covariant-jet dependency
+
+The [full affine covariant-jet replay](covariant-jet-audit.md), recorded in
+checkpoint 115 on 21 October 2026, now evaluates the actual jets and verifies
+all six cleared residuals modulo the generic cubic. It closes the abstract
+curve/differential first-variation premises used above, under the same stated
+function-field hypotheses. This dated follow-up does not change this audit's
+historical 65-check receipt or its separate browser-review scope. Lean/kernel,
+primitive-existence, field nonvanishing/embedding, trace and clearing limits
+remain as described in the new note.

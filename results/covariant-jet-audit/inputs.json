@@ -1,0 +1,101 @@
+{
+  "upstream_repository": "hodge-computer/sextics",
+  "source_commit": "28d14ed300d4d2cb84555466b81cfcfa54854cdd",
+  "checked_current_upstream": "b2ee2acb5409e37b6fad800b256fb8f2fee163bf",
+  "notebook_base": "f035536f268342a8043c04e687f0c7332b96d927",
+  "captured_utc": "2026-10-21T18:54:45.441291+00:00",
+  "current_source_blobs_unchanged": true,
+  "files": [
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/TransitiveCubic/Cubic.lean",
+      "git_blob": "16b1d895018318b6439678a4e82223f1b441a622",
+      "sha256": "3a1ed8863f556cca2059efbdbe16e71544df9106bd3011895772da00cbaf3d0a",
+      "bytes": 1125,
+      "local_path": "results/physical-source-transport-audit/inputs/formal/lean/HodgeComputer/Constructions/TransitiveCubic/Cubic.lean"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/TransitiveCubic/Covariants.lean",
+      "git_blob": "083b160d0873f2cb77eb0e6c251b71621fe43672",
+      "sha256": "24bc49b4178daadf59592c35d143df4c9c7f5a1c540c69083537f3e408ca8df8",
+      "bytes": 68504,
+      "local_path": "results/moving-branch-weierstrass-audit/inputs/formal/lean/HodgeComputer/Constructions/TransitiveCubic/Covariants.lean"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/TransitiveCubic/Syzygy.lean",
+      "git_blob": "6a48d90937e93e97be3146d8ac0a272ab3958084",
+      "sha256": "822bf8f401183d151d42ab4f38b2677c994ea27da25fd2d1f19ef9681f400901",
+      "bytes": 6389,
+      "local_path": "results/covariant-jet-audit/inputs/formal/lean/HodgeComputer/Constructions/TransitiveCubic/Syzygy.lean"
+    },
+    {
+      "path": "data/holdout-moving-branch/PhysicalCubicJets.lean",
+      "git_blob": "e6c4e14147a92cfdcca6f6421cfb522914624961",
+      "sha256": "9774c2fe727e35fef1863c676ea1d89c7d4f4874f368820c23486a6b7a42eb7d",
+      "bytes": 8962,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/PhysicalCubicJets.lean"
+    },
+    {
+      "path": "data/holdout-moving-branch/CubicJetCalculus.lean",
+      "git_blob": "762dd9d8c739fab7954d0c6c9e2cd8eef426c5a4",
+      "sha256": "2335c501628fce1db8e2786ddfddb7d58fa73e1916ee8d176118fcd22e1c649d",
+      "bytes": 8822,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/CubicJetCalculus.lean"
+    },
+    {
+      "path": "data/holdout-moving-branch/CubicFieldDifferential.lean",
+      "git_blob": "ed1fa936e3c4a7c3fe23cbff2c4c84d31c994c22",
+      "sha256": "cf78195fb1ce5501b455043162f2a4e41f197cbd6d02541409bf3f49189c0a94",
+      "bytes": 6105,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/CubicFieldDifferential.lean"
+    },
+    {
+      "path": "data/holdout-moving-branch/PhysicalCoordinates.lean",
+      "git_blob": "f464ab77ec03b39eb074f1f3de69d6f8128a6b26",
+      "sha256": "2a460abb7f50bde7b6f705626bdb1cbb3f8097f017175e87f89b5e964db6c404",
+      "bytes": 3183,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/PhysicalCoordinates.lean"
+    },
+    {
+      "path": "data/holdout-moving-branch/PhysicalCubicTangent.lean",
+      "git_blob": "42b9f597bbe95468584e3985f6808cc47e8840e2",
+      "sha256": "ade9709a295d82ce36b7fe2323f5f694f813135253c37f0a147604d13a830455",
+      "bytes": 5338,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/PhysicalCubicTangent.lean"
+    },
+    {
+      "path": "data/holdout-moving-branch/instance.rec",
+      "git_blob": "3abbdcc31023491b37844ea1e81a6ec03a2388c6",
+      "sha256": "c4ad143c725998922715fe4ebbd9263883d82fdc8ae85980891cdb3a99c9643e",
+      "bytes": 3180,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/instance.rec"
+    },
+    {
+      "path": "data/holdout-moving-branch/provenance.json",
+      "git_blob": "b07b958d0ca34a7cef999c65196c37d90be6860a",
+      "sha256": "042171518d0611eacf883a373433be2686684d60cb735a010d7382f63136ca17",
+      "bytes": 685,
+      "local_path": "results/physical-source-transport-audit/inputs/data/holdout-moving-branch/provenance.json"
+    }
+  ],
+  "reused_receipts": [
+    {
+      "path": "results/moving-branch-weierstrass-audit/replay.json",
+      "published_commit": "826ed4150c9b034f0bcd2e7874323e5d07136213",
+      "sha256": "c19b1110f9eae5de42722033a25d4a250f9bb453b3f55c10c49af5ed7b0a78e6",
+      "reexecuted": false,
+      "byte_convention": "Committed UTF-8 LF bytes; normalize checkout CRLF without modifying historical files"
+    },
+    {
+      "path": "results/physical-source-transport-audit/replay.json",
+      "published_commit": "3a57584e6927192164321fa5aefdece066a72ad1",
+      "sha256": "5621f625076ba3e800d25dc22715d4d23e16e39644accd2385e5b0ed9733b064",
+      "reexecuted": false,
+      "byte_convention": "Committed UTF-8 LF bytes; normalize checkout CRLF without modifying historical files"
+    }
+  ],
+  "bounds": {
+    "network_process_seconds": 45,
+    "replay_process_seconds": 120,
+    "computation_ceiling_seconds": 600
+  }
+}
