@@ -46,3 +46,5 @@ Executable checker: [`experiments/check_one_reflection_skew_line.py`](../experim
 Saved output: [`results/one-reflection-skew-line/output.txt`](../results/one-reflection-skew-line/output.txt)
 
 No full certificate or rational primitive is claimed.
+
+**Later focused audit — 21 October 2026:** both line matrices have now been independently reconstructed from the protected target. The fixed-endpoint rank-four kernel consists exactly of two parameterization directions. The new audit also distinguishes the scalar and differential-form characters and replays the small twisted-companion packet. Earlier statements above about unexecuted checks remain historical. [Fresh checks, corrections and remaining obligations](one-reflection-skew-mathematical-audit.md).

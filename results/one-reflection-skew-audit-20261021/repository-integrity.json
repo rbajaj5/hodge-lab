@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "historical_ledger_prefix_byte_identical": true,
+  "checkpoints_103_through_107_in_order": true,
+  "new_checkpoint_unique": true,
+  "checked_local_links_files": [
+    "README.md",
+    "LEDGER.md",
+    "notes/one-reflection-skew-mathematical-audit.md",
+    "notes/one-reflection-skew-line-check.md",
+    "notes/one-reflection-skew-feedback-audit.md",
+    "notes/one-reflection-skew-pilot.md",
+    "notes/one-reflection-skew-degree7.md"
+  ],
+  "broken_local_links": [],
+  "UTF8_strict_and_replacement_character_checks": true,
+  "validation_receipt_and_current_checker_hashes_match": true,
+  "upstream_publication": "none",
+  "staged_raw_input_hashes_match": true,
+  "staged_existing_packet_hashes_match": true,
+  "staged_UTF8_text_files": 60,
+  "staged_diff_check": "PASS; frozen upstream input whitespace preserved by scoped attribute"
+}

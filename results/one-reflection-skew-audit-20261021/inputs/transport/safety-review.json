@@ -1,0 +1,53 @@
+{
+  "archive": "one_reflection_skew_twisted_companions.zip",
+  "archive_validation": "All 26 members checked for absolute paths, parent traversal and symlink mode; each <2 MB; all 25 SHA256SUMS entries matched.",
+  "source_reviewed": [
+    "verify_twisted_companion.py",
+    "check_serving_twist.py",
+    "rank2/rank2_primitive_system.py",
+    "rank2/gauge_scalar_repair.py"
+  ],
+  "observed_imports": {
+    "verify_twisted_companion": [
+      "fractions",
+      "itertools"
+    ],
+    "check_serving_twist": [
+      "sympy"
+    ],
+    "rank2_primitive_system": [
+      "json",
+      "pathlib",
+      "sympy"
+    ],
+    "gauge_scalar_repair": [
+      "json",
+      "pathlib",
+      "sympy"
+    ]
+  },
+  "network_or_subprocess_calls_in_executed_sources": false,
+  "package_installation_performed": false,
+  "original_archive_unchanged": true,
+  "output_writes": {
+    "verify_twisted_companion.py": [],
+    "check_serving_twist.py": [],
+    "rank2/rank2_primitive_system.py": [
+      "rank2/rank2_primitive_system.json",
+      "rank2/rank2_primitive_system_Y0.json"
+    ],
+    "rank2/gauge_scalar_repair.py": [
+      "rank2/gauge_scalar_repair.json"
+    ]
+  },
+  "write_location": "companion-replay-work (separate scratch copy)",
+  "assertion_note": "Packet scripts use assert without an explicit optimization guard. Executed with python -B and runtime optimize=0, debug=true. A wrapper must reject optimized mode.",
+  "license_note": "Archive has no separate LICENSE file. Supplied README, provenance, SHA256SUMS and requirements.txt are preserved; no license inferred.",
+  "not_executed": [
+    "rank2/search_rank2_polynomial.py",
+    "original degree-seven full experiment",
+    "older round4 packet",
+    "unattached newer degree-seven export",
+    "Lean compilation or kernel replay"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "record_sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+  "script_sha256": "1735389edab74a940eb4dfeaa48968ef6f3430e61e144e54df04ea45544d4069",
+  "coordinate_characters": [
+    [
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "A_character": [
+    1,
+    0,
+    1,
+    0
+  ],
+  "Omega_character": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "A_Omega_character": [
+    0,
+    1,
+    0,
+    1
+  ],
+  "odd_degree_characters": "Affine coset (torsor), not ordinary characters of G/{+I,-I} without a twist.",
+  "actions": {
+    "Y2_reflection": {
+      "F_preserved": true,
+      "F_difference": "0",
+      "determinant": "-1",
+      "A_image": "X0**3*Y0**3",
+      "A_Omega_image_coefficient": "-X0**3*Y0**3"
+    },
+    "Y0_Y1_exchange": {
+      "F_preserved": false,
+      "F_difference": "-2*X0*X1*Y0**3*Y1/7 + 2*X0*X1*Y0*Y1**3/7",
+      "determinant": "-1",
+      "A_image": "X0**3*Y1**3",
+      "A_Omega_image_coefficient": "-X0**3*Y1**3"
+    },
+    "negative_Y0_Y1_exchange": {
+      "F_preserved": false,
+      "F_difference": "-2*X0*X1*Y0**3*Y1/7 + 2*X0*X1*Y0*Y1**3/7",
+      "determinant": "-1",
+      "A_image": "-X0**3*Y1**3",
+      "A_Omega_image_coefficient": "X0**3*Y1**3"
+    },
+    "complex_interaction_involution": {
+      "F_preserved": false,
+      "F_difference": "-2*Y0**6 - 2*Y1**6",
+      "determinant": "-1",
+      "A_image": "-I*X0**3*Y1**3",
+      "A_Omega_image_coefficient": "I*X0**3*Y1**3"
+    },
+    "simultaneous_X_negation": {
+      "F_preserved": true,
+      "F_difference": "0",
+      "determinant": "-1",
+      "A_image": "-X0**3*Y0**3",
+      "A_Omega_image_coefficient": "X0**3*Y0**3"
+    }
+  },
+  "cover_exchange_defect": "T*X0*X1*alpha*y*(-T + y)*(T + y)*(alpha**2 + 1)/7",
+  "mixed_control": {
+    "field": "Q(i)",
+    "hessian_term": "30*X2**4*lambda**2",
+    "square_term": "-30*X2**4*lambda**2",
+    "D": "6*I*X2**2*Y2**5 + Y2**2*(X1**3*Y0*Y1 + 6*X2**5)",
+    "E1_residual": "0",
+    "B_remainder_mod_F": "2*I*X0**3*X2*Y0**3*Y2*(42*X0**6 + 42*X0**3*X1*Y0*Y1 + 6*X0*X1*Y0**3*Y1 - 6*X0*X1*Y0*Y1**3 + 42*X1**6 + 35*X1**3*X2*Y0*Y1 + 42*Y0**6 + 42*Y1**6)/7",
+    "altered_R2_rejected": true,
+    "AX2_squared_not_in_Jf_by_monomial_support": true,
+    "scope": "One necessary mixed equation cancels. This particular lift fails E2. No exclusion of all Koszul-corrected lifts is inferred."
+  },
+  "seconds": 0.13414270000066608,
+  "sympy": "1.14.0"
+}

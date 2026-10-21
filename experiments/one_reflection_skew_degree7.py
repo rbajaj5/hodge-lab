@@ -8,12 +8,12 @@ Establishes:
    dim ker(E1)_7 = 135 = 126 + 9).
 2. Superselection focusing: for every pure-parity sector chi, the quadratic E2 map
    B_D(N_0) lands in the single sector S_14[(1,0,1,0)] (1,638 rows, quotient dim 213).
-3. Complete degree-7 exclusion over C of all four Y2-odd sectors ((0,0,0,1),
+3. Complete degree-7 exclusion over C of each pure Y2-odd character separately ((0,0,0,1),
    (0,1,1,1), (1,0,1,1), (1,1,0,1) — 41 E1 kernel dimensions, 296 monomials of S_7),
    including the exact Y2-covariant scaling identity B_{Y2 D6}(Y2 N6) = Y2^2 B_{D6}(N6)
    and rank-9 diagonal quotient in (0,0,0,1).
 4. Complete Y2-decoupling (elimination of all Y2-dependent generators at Step 1) and
-   exact 44/44 surjectivity onto the 5-variable base Hessian quotient across all four
+   quadratic-column span rank 44/44 in the 5-variable base Hessian quotient within each of four
    Y2-even sectors ((0,1,0,0), (0,0,1,0), (1,0,0,0), (1,1,1,0)).
 """
 from __future__ import annotations
@@ -65,6 +65,16 @@ def unpack_num(nc: dict[int, e1.Q], num8: list[tuple[int, ...]]) -> list[dict[tu
     for col_idx, c in nc.items():
         field[col_idx // n_len][num8[col_idx % n_len]] = c
     return field
+
+
+def require_degree6_equations(equations, pairs):
+    """Fail if the claimed ordered equality to the pinned degree-six data is false."""
+    packet_path = ROOT / 'results/one-reflection-skew-degree6/one-reflection-skew/degree-6-diagonal.json'
+    packet = json.loads(packet_path.read_text(encoding='utf-8'))
+    expected = [{int(j): e1.Q(c) for j, c in row} for row in packet['gauged_equations']]
+    if [list(p) for p in pairs] != packet['gauged_column_pairs'] or equations != expected:
+        raise ValueError('Degree-seven diagonal equations do not match degree-six RREF data')
+    return True
 
 
 def run_analysis() -> dict:
@@ -266,8 +276,6 @@ def run_analysis() -> dict:
             quads = []
             for i, j in diag_pairs:
                 col = d6.B(euler_dens[i], euler_nums[j])
-                if i != b:
-                    pass
                 if i != j:
                     e1.add(col, d6.B(euler_dens[j], euler_nums[i]))
                 quads.append(e1.reduce_vector(to_s14(col), cb)[0])
@@ -281,13 +289,14 @@ def run_analysis() -> dict:
             cub = m6.cubic_multipliers(ge, gp)
             quart = d6.quartic_multipliers(ge, gp)
             assert len(rb_d) == 9 and cub["row_rank"] == 35 and quart["row_rank"] == 70
+            matches_degree6 = require_degree6_equations(ge, gp)
             sector_excluded = True
             diagonal_closure = {
                 "koszul_fields": len(koszul_fields),
                 "correction_columns": len(corrections),
                 "correction_rank": len(cb),
                 "diagonal_quadratic_rank": len(rb_d),
-                "matches_degree6_RREF_identically": True,
+                "matches_degree6_RREF_identically": matches_degree6,
                 "cubic_macaulay_rank": f"{cub['row_rank']}/{cub['coefficient_columns']}",
                 "quartic_macaulay_rank": f"{quart['row_rank']}/{quart['coefficient_columns']}",
             }

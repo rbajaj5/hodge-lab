@@ -45,3 +45,5 @@ For one-reflection-skew, the frontier remains the construction of a suitable rat
 Attribution: acknowledgments of rbajaj5’s bounded exclusions are not solve authorship or proof premises. Notebook commits do not increase the upstream contribution tally (still 27 discussion contributions, one closed maintenance PR, zero accepted authored solves by rbajaj5). Upstream catalogue at fc84eb58… has 78 targets: 63 solved and 15 open.
 
 No upstream publication is requested for this audit.
+
+**Later focused audit — 21 October 2026:** both line matrices have now been independently reconstructed from the protected target. The fixed-endpoint rank-four kernel consists exactly of two parameterization directions. The new audit also distinguishes the scalar and differential-form characters and replays the small twisted-companion packet. Earlier statements above about unexecuted checks remain historical. [Fresh checks, corrections and remaining obligations](one-reflection-skew-mathematical-audit.md).

@@ -123,6 +123,8 @@ def check_jacobian_and_smoothness(vars6, F, A):
         str(sum(abs(c) for c in sp.Poly(sp.diff(F - F0, v), *vars6, domain=sp.QQ).coeffs()))
         for v in vars6
     ]
+    if not all(sp.Rational(load) < 6 for load in loads):
+        raise ValueError('Strict maximal-coordinate smoothness estimate failed')
     cols = [sp.Poly(v * sp.diff(F, w), *vars6, domain=sp.QQ).as_dict() for v in vars6 for w in vars6]
     all_cols = cols + [sp.Poly(A, *vars6, domain=sp.QQ).as_dict()]
     monoms = sorted(set().union(*(c.keys() for c in all_cols)))
@@ -514,7 +516,7 @@ def render_figures(report: dict) -> None:
     ax.set_xlim(-0.65, 20.65)
     ax.set_ylim(len(rows5) - 0.4, -0.6)
     ax.set_title(
-        f"3. Degree 5 E2 Hessian quotient: rank 16/21, all 6 squares isolated",
+        f"3. Degree 5 E2 Hessian quotient: rank {report['lowDegreeBaseline']['degree5QuotientQuadraticRank']}/21, all 6 squares isolated",
         loc="left",
         fontsize=13,
         weight="bold",
@@ -523,7 +525,7 @@ def render_figures(report: dict) -> None:
     ax.text(
         0.0,
         1.015,
-        "5 mixed Y2 columns vanish identically; 6 rational duals force a_i^2 = 0",
+        "6 zero columns: 5 mixed Y2 and X0/X2; 6 duals force a_i^2 = 0",
         transform=ax.transAxes,
         fontsize=9.5,
         color=MUTED,

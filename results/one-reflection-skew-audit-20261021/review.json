@@ -1,0 +1,19 @@
+{
+  "reviewed_utc": "2026-10-21T16:24:55.062682+00:00",
+  "mode": "Three independent read-only AI reviewers; root sole repository writer",
+  "reviews": [
+    {
+      "area": "line geometry and gauges",
+      "result": "No mathematical blocker; local dimensions, expected J rank and gauge signs confirmed. Missing LaTeX backslashes corrected."
+    },
+    {
+      "area": "bounded exclusions",
+      "result": "Rank15 correction confirmed, full correction scopes and modular transfers confirmed. Added production-script and manifest hashes. Nested inputs/** -text verified by git check-attr preserves raw pinned bytes."
+    },
+    {
+      "area": "transport and packets",
+      "result": "Source/Jacobian/trace factors and unresolved obligations confirmed. E1 shifts by chi(A), pure E2 lands there; wording clarified. Archived assertion checks protected by wrapper, not independently -O-guarded."
+    }
+  ],
+  "not_claimed": "Independent human review, Lean acceptance, or complete replay of the later unpublished export."
+}

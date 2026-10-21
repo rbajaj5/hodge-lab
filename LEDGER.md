@@ -3187,3 +3187,70 @@ Also append substantive changes in research intuition, experiments, failed
 approaches, and proposed tests, with dates and links. Distinguish a motivation
 from an implemented experiment and a checked result. Keep the upstream tally
 restricted to actual upstream activity.
+
+107. **21 October 2026 — Focused mathematical audit of `one-reflection-skew`; Hodge Lab only.**
+     Began from notebook `eaa4f89b1bc333951a18cd0bccbb31b8c3f94671`, fetched and
+     pinned upstream `78632ddad42489fe92f14e588f1ed4b8909395dd`, read the current
+     instructions, exact target, protected Lean contract, relevant historical
+     explanations, and every page of discussion127 (six comments, no replies).
+     Source bytes, packet versions, commands and independent-review scopes are
+     retained. Earlier ledger entries, including checkpoints103–106, are preserved.
+
+     **Correction:** checkpoint85's pilot prose/figure and upstream post25 say
+     degree-five Hessian rank16. The original computed packet and fresh exact
+     reconstruction both give **rank15**. In addition to the five mixed Y2
+     derivatives, F_X0X2 vanishes. All six square witnesses still pass, so the
+     degree≤5 exclusion survives. Corrected the notebook prose and made the
+     figure label read the stored rank. No upstream edit was made.
+     Also corrected odd-degree character labels to a torsor for projective
+     characters; the numerical blocks are unchanged. An untested equality flag
+     now compares the degree-seven and degree-six equations and fails on a
+     changed coefficient. Strict smoothness estimates now fail when violated.
+
+     Fresh source-based checks establish all denominators of degree≤6 excluded
+     and each of the four pure Y2-odd degree-seven characters excluded over C,
+     retaining all six numerator components, permitted Koszul corrections,
+     quotient Q and justified Euler/F gauges. Exact replay covers426 E1 duals,
+     36 independent lifts, all28+2 conditional square witnesses, all2,352 final
+     correction columns, and five cube plus five fourth-power identities.
+     The cubic map is **35×45**, rank35; a selected35-column minor is15 mod101.
+     This is not exclusion of the full mixed degree-seven family. A newly
+     reconstructed mixed cross-term survives modulo J+F, with exact separating
+     functional pairing−12; another mixed necessary equation cancels over Q(i).
+     Neither is a certificate or a global nonexistence result.
+
+     The F11 line has ordinary-incidence rank7/minor6 for F (minor3 for7F).
+     Fixed-endpoint rank4 has precisely the two unavoidable parameterization
+     directions in its kernel. The local marked evaluation has rank2 into a
+     four-dimensional target tangent space. The source is a nonzero polynomial
+     with two projective zero points; this is not a generic-endpoint construction.
+
+     Replayed the four advertised positive checkers of fqlx's small twisted-
+     companion archive; all25 manifest hashes and three regenerated JSONs match.
+     An independent checker verifies31 displayed transport/source/trace checks.
+     The original rbajaj5 degree-seven packet, the four available but unreplayed
+     round-four archives (~76MB), and the explicitly unattached later large export
+     are recorded separately. Author-reported spot checks are not counted as our
+     replay. The actual rational primitive and later ambient certificate remain
+     unconstructed. No Lean build, protected acceptance run, or accepted solve
+     is claimed. The target remains open at the pin.
+
+     Negative controls reject changed line data, duals, polynomial multipliers,
+     residue and trace factors, false smoothness bounds, and altered comparison
+     equations. A first integrated run passed all mathematical checks but failed
+     in SVG postprocessing because Windows default text decoding was used; the
+     UTF-8 repair and rerun are recorded. Preliminary scratch failures are listed
+     separately. All subprocesses have120-second limits; no timeout is treated
+     as exclusion. Reviewers are separate AI reconstructions, not human referees.
+
+     [Precise audit and next proof obligation](notes/one-reflection-skew-mathematical-audit.md)
+     · [Commands, versions and receipts](results/one-reflection-skew-audit-20261021/validation.json)
+     · [Actual operator visualization](results/one-reflection-skew-audit-20261021/audit-map.png)
+     · [Reproducible checker runner](experiments/skew_audit/run.py).
+
+     Credit: rbajaj5's original bounded computations; fqlx's reported line,
+     correspondence and subsequent investigations; and the upstream authors'
+     protected framework. **No upstream post, reply, edit or PR.** Contribution
+     tally remains27 discussion contributions, one closed maintenance PR, zero
+     accepted authored solves. Future upstream publication still requires its
+     corresponding prior Hodge Lab ledger audit.

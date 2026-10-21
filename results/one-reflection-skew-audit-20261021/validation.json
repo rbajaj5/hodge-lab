@@ -1,0 +1,283 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-21T16:24:55.314592+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "optimize": 0,
+  "versions": {
+    "sympy": "1.14.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1"
+  },
+  "timeout_seconds_per_command": 120,
+  "memory_limit": "No extra process memory cap imposed",
+  "executions": [
+    {
+      "label": "line.py",
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/skew_audit/line.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"M_rank\": 7, \"M_minor\": 6, \"J_rank\": 4, \"J_minor\": {\"rows\": [0, 1, 2, 3], \"columns\": [0, 1, 2, 3], \"determinant_mod11\": 4}, \"source_zeros\": [[1, 4], [0, 1]], \"direct_derivative_columns\": 14, \"controls\": 5}\n",
+      "stderr": "",
+      "elapsed_seconds": 0.13907760003348812
+    },
+    {
+      "label": "check_exclusions.py",
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/skew_audit/check_exclusions.py",
+        "--full-e1"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\"full_E1_and_Hessian\": \"PASS\", \"elapsed_seconds\": 2.5493770000175573}\n{\"status\": \"PASS\", \"F_gauge_identity_checks\": 792, \"negative_controls_rejected\": 19, \"elapsed_seconds\": 3.35785259999102}\n",
+      "stderr": "",
+      "elapsed_seconds": 3.4883180999895558
+    },
+    {
+      "label": "modular_e1.py",
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/skew_audit/modular_e1.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\"degree\": 0, \"rows\": 462, \"jacobian_columns\": 36, \"AD_columns\": 1, \"prime\": 101, \"augmented_rank\": 37, \"gradient_regular_sequence_Jacobian_rank\": 36, \"char0_E1_kernel_upper_bound\": 0, \"elapsed_seconds\": 0.0005750999553129077}\n{\"degree\": 1, \"rows\": 792, \"jacobian_columns\": 126, \"AD_columns\": 6, \"prime\": 101, \"augmented_rank\": 132, \"gradient_regular_sequence_Jacobian_rank\": 126, \"char0_E1_kernel_upper_bound\": 0, \"elapsed_seconds\": 0.0021112000104039907}\n{\"degree\": 2, \"rows\": 1287, \"jacobian_columns\": 336, \"AD_columns\": 21, \"prime\": 101, \"augmented_rank\": 357, \"gradient_regular_sequence_Jacobian_rank\": 336, \"char0_E1_kernel_upper_bound\": 0, \"elapsed_seconds\": 0.004070399969350547}\n{\"degree\": 3, \"rows\": 2002, \"jacobian_columns\": 756, \"AD_columns\": 56, \"prime\": 101, \"augmented_rank\": 812, \"gradient_regular_sequence_Jacobian_rank\": 756, \"char0_E1_kernel_upper_bound\": 0, \"elapsed_seconds\": 0.010496000002603978}\n{\"degree\": 4, \"rows\": 3003, \"jacobian_columns\": 1512, \"AD_columns\": 126, \"prime\": 101, \"augmented_rank\": 1623, \"gradient_regular_sequence_Jacobian_rank\": 1497, \"char0_E1_kernel_upper_bound\": 0, \"elapsed_seconds\": 0.021326899994164705}\n{\"degree\": 5, \"rows\": 4368, \"jacobian_columns\": 2772, \"AD_columns\": 252, \"prime\": 101, \"augmented_rank\": 2928, \"gradient_regular_sequence_Jacobian_rank\": 2682, \"char0_E1_kernel_upper_bound\": 6, \"elapsed_seconds\": 0.044351199991069734}\n{\"degree\": 6, \"rows\": 6188, \"jacobian_columns\": 4752, \"AD_columns\": 462, \"prime\": 101, \"augmented_rank\": 4863, \"gradient_regular_sequence_Jacobian_rank\": 4437, \"char0_E1_kernel_upper_bound\": 36, \"elapsed_seconds\": 0.10873340000398457}\n",
+      "stderr": "",
+      "elapsed_seconds": 0.36603169998852536
+    },
+    {
+      "label": "check_low_and_odd.py",
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/skew_audit/check_low_and_odd.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\"degree5\": \"PASS\", \"rank\": 15, \"six_squares\": 6, \"elapsed_seconds\": 0.6250187000259757}\n{\"degree7pure\": [0, 0, 0, 1], \"E1dim\": 14, \"remaining_after_squares\": 5, \"elapsed_seconds\": 0.6676813999656588}\n{\"degree7pure\": [0, 1, 1, 1], \"E1dim\": 9, \"remaining_after_squares\": 0, \"elapsed_seconds\": 0.21819480002159253}\n{\"degree7pure\": [1, 0, 1, 1], \"E1dim\": 9, \"remaining_after_squares\": 0, \"elapsed_seconds\": 0.19807670003501698}\n{\"degree7pure\": [1, 1, 0, 1], \"E1dim\": 9, \"remaining_after_squares\": 0, \"elapsed_seconds\": 0.20528110000304878}\n",
+      "stderr": "",
+      "elapsed_seconds": 3.231700100004673
+    },
+    {
+      "label": "check_mixed_cross.py",
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/skew_audit/check_mixed_cross.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"nonzero_modulo_J_plus_F\": true, \"elapsed_seconds\": 0.7529197999974713}\n",
+      "stderr": "",
+      "elapsed_seconds": 0.871543700050097
+    },
+    {
+      "label": "independent displayed transport",
+      "command": [
+        "python",
+        "-B",
+        "experiments/skew_audit/transport.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\n  \"scope\": \"Independent exact checks of displayed formulas only; no certificate or large-packet replay\",\n  \"python\": \"3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]\",\n  \"sympy\": \"1.14.0\",\n  \"record_sha256\": \"a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183\",\n  \"script_sha256\": \"8d752f7056823cf0a679c4b949199fab344c51b3697c0a1678f45ff381c3003c\",\n  \"checks\": [\n    \"all perturbing derivative coefficient sums < 6 (max 30/7)\",\n    \"F invariant under Y2 reflection\",\n    \"A even under Y2 reflection\",\n    \"nonzero even A cannot equal odd Y2*B(x,Y2^2) in characteristic zero\",\n    \"protected F maps to z^6+P(x^2)\",\n    \"protected A maps to x^3\",\n    \"physical chart Jacobian is x^2\",\n    \"physical source density is -U^2/2\",\n    \"double-pole residue coefficient 5/72\",\n    \"quartic decomposition identity\",\n    \"quartic derivative identity\",\n    \"cubic decomposition modulo quartic\",\n    \"Hermite exact source reduction\",\n    \"differential pullback factor -1/6\",\n    \"pushed coefficient two displayed formulas\",\n    \"quartic raw trace beta^0 M/k\",\n    \"quartic raw trace beta^1 M/k\",\n    \"quartic raw trace beta^2 M/k\",\n    \"summed serving operator entry 00\",\n    \"summed serving operator entry 01\",\n    \"summed serving operator entry 10\",\n    \"summed serving operator entry 11\",\n    \"inverse cubic zh' identity\",\n    \"cubic trace prerequisites h(0)=-k and degree(z)<2\",\n    \"cubic trace constant\",\n    \"domega=-gamma wedge omega coefficient 01\",\n    \"domega=-gamma wedge omega coefficient 02\",\n    \"domega=-gamma wedge omega coefficient 12\",\n    \"physical discriminant sample\",\n    \"physical nondegeneracy sample\",\n    \"sample quartic squarefree and coprime to M,k\"\n  ],\n  \"count\": 31,\n  \"result\": \"PASS\",\n  \"delta_at_1_1_2\": \"-361978181/343\",\n  \"3ac_minus_b2_at_1_1_2\": \"-166/7\",\n  \"quartic_discriminant_at_1_1_2\": \"-73359022361187937358592/117649\",\n  \"perturbing_derivative_absolute_coefficient_sums\": [\n    \"23/7\",\n    \"30/7\",\n    \"1\",\n    \"18/7\",\n    \"18/7\",\n    \"0\"\n  ],\n  \"seconds\": 0.22111225128173828\n}\n",
+      "stderr": "",
+      "elapsed_seconds": 1.153454699961003
+    },
+    {
+      "label": "characters and mixed cancellation",
+      "command": [
+        "python",
+        "-B",
+        "experiments/skew_audit/characters.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"mixed_cancellation\": true, \"particular_lift_fails\": true}\n",
+      "stderr": "",
+      "elapsed_seconds": 1.0773155000060797
+    },
+    {
+      "label": "wrong residue coefficient",
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path; p=Path(\"experiments/skew_audit/transport.py\").resolve(); s=p.read_text(); old='-5*U**2/(72*z**11)'; new='-5*U**2/(71*z**11)'; assert s.count(old)==1; exec(compile(s.replace(old,new),str(p),\"exec\"),{\"__file__\":str(p),\"__name__\":\"__main__\"})"
+      ],
+      "timeout_seconds": 120,
+      "expected": "nonzero exit",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<run-directory>\\experiments\\skew_audit\\transport.py\", line 39, in <module>\n    check(\"double-pole residue coefficient 5/72\",(-s.diff(U**2/(12*z**5),z))/(6*z**5)-5*U**2/(72*z**11))\n  File \"<run-directory>\\experiments\\skew_audit\\transport.py\", line 13, in check\n    if value!=0: raise AssertionError((name,value))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('double-pole residue coefficient 5/72', -5*U**2/(5112*z**11))\n",
+      "elapsed_seconds": 1.005517499987036
+    },
+    {
+      "label": "wrong trace factor",
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path; p=Path(\"experiments/skew_audit/transport.py\").resolve(); s=p.read_text(); old='Ttrace[i,j]-(6 if i==j else 0)'; new='Ttrace[i,j]-(12 if i==j else 0)'; assert s.count(old)==1; exec(compile(s.replace(old,new),str(p),\"exec\"),{\"__file__\":str(p),\"__name__\":\"__main__\"})"
+      ],
+      "timeout_seconds": 120,
+      "expected": "nonzero exit",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<run-directory>\\experiments\\skew_audit\\transport.py\", line 70, in <module>\n    for j in range(2): check(\"summed serving operator entry %d%d\"%(i,j),Ttrace[i,j]-(6 if i==j else 0))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<run-directory>\\experiments\\skew_audit\\transport.py\", line 13, in check\n    if value!=0: raise AssertionError((name,value))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('summed serving operator entry 00', -6)\n",
+      "elapsed_seconds": 1.1359243000042625
+    },
+    {
+      "label": "optimization guard",
+      "command": [
+        "python",
+        "-O",
+        "-S",
+        "experiments/skew_audit/check_exclusions.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "nonzero exit",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<run-directory>\\experiments\\skew_audit\\check_exclusions.py\", line 6, in <module>\n    if not __debug__:raise RuntimeError('This review requires active assertions; do not use -O.')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: This review requires active assertions; do not use -O.\n",
+      "elapsed_seconds": 0.12790760002098978
+    },
+    {
+      "label": "production enforcement and corrected pilot figure",
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "import sys,json\nsys.path.insert(0,'experiments')\nimport one_reflection_skew_degree7 as d7\nimport one_reflection_skew_pilot as pilot\npacket=json.load(open('results/one-reflection-skew-degree6/one-reflection-skew/degree-6-diagonal.json'))\neq=[{int(j):d7.e1.Q(c) for j,c in row} for row in packet['gauged_equations']]\npairs=[tuple(p) for p in packet['gauged_column_pairs']]\nassert d7.require_degree6_equations(eq,pairs)\nbad=[dict(q) for q in eq]; bad[0][0]+=1\ntry:d7.require_degree6_equations(bad,pairs)\nexcept ValueError:pass\nelse:raise RuntimeError('altered equation accepted')\nZ,F0,skew,F,A=pilot.make_one_reflection_skew()\npilot.check_jacobian_and_smoothness(Z,F,A)\ntry:pilot.check_jacobian_and_smoothness(Z,F+100*Z[0]**5*Z[1],A)\nexcept ValueError:pass\nelse:raise RuntimeError('invalid smoothness bound accepted')\npilot.render_figures(json.load(open('results/one-reflection-skew-pilot/report.json')))\nprint('PASS: equation comparison, strict smoothness bound, both perturbations, and data-derived pilot figure')\n"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "PASS: equation comparison, strict smoothness bound, both perturbations, and data-derived pilot figure\n",
+      "stderr": "",
+      "elapsed_seconds": 2.8714609000016935
+    },
+    {
+      "label": "archived verify_twisted_companion.py",
+      "command": [
+        "python",
+        "-B",
+        "verify_twisted_companion.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "PASS: exact second-pole reduction identity\nPASS: quartic resolver equals 4[M(d-aB^3)-N^2]\nPASS: exact relation M Rprime +12 a K^2 = -3 a R\nPASS: twisted companion equation transport modulo R\nPASS: relative Jacobian / differential pullback identity modulo R\nPASS: fully cleared simplified-source identity modulo R\nPASS: universal b-direction derivative of the resolvent root\nPASS: exact scalar-connection expression for the simplified source\nPASS: translation, U-scaling, and P-scaling covariant gauge actions\nPASS: Lagrange moments explicitly assemble sum T_beta=6 I_2\nPASS: exact protected F, including the skew term, under physical substitution\nPASS: full six-coordinate determinant = -x^2 y and source density = -x^5 y^4\nPASS: projective-chart determinant and x->U=x^2 density factor U^2/2\nPASS: translation-only tangent lift has exact nonzero divergence 2209940204/1905584409\n",
+      "stderr": "",
+      "elapsed_seconds": 0.11358130001462996
+    },
+    {
+      "label": "archived check_serving_twist.py",
+      "command": [
+        "python",
+        "-B",
+        "check_serving_twist.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "Quartic, decomposition, and derivative identities: PASS\nGeneric open verified at actual r=w=1,t=2: PASS\nExact skew polynomial, projective density, and theta normalization: PASS\nExact Hermite reduction to H0*omega0 + H1*omega1: PASS\nQuartic root traces and sum T_beta = 6 I: PASS\nTwisted equation and inverse degree-three equation: PASS\nExact pullback dx/(2y) = -(U+L)dU/(6 z^5): PASS\nPushforward omega0=-6 M/K omegaE, omega1=6 beta M/K omegaE: PASS\nCompanion source C_beta=M^2*(3*a*beta^2*K-2*N^2)/(12*a*K^4): PASS\nAbsolute serving identity: sum phi_beta^*(C_beta*omegaE*nu) = 6 theta - 6 d(S*nu)\nAbsolute connection d(omegahat) = -(da/(3a)+dM/(2M)) wedge omegahat: PASS\nHorizontal/vertical derivations preserve E; [D_i,partial_E]=gamma_i*partial_E: PASS\nFull primitive equation: partial_E W + sum_i (D_i V_i - gamma_i V_i) = C_beta\nEvery rational 3-form is Gamma=W*nu-omegahat wedge sum_i V_i contraction_i(nu).\nUse the finite etale algebra B=K[beta]/R componentwise; no irreducibility is presumed.\nA solution gives primitive S*nu+(1/6)*Tr_beta(phi_beta^*Gamma_beta) on C.\nNo solution of the primitive PDE, HodgeComputer certificate, or\nrational-connectedness assertion for the twisted total space is made.\n",
+      "stderr": "",
+      "elapsed_seconds": 1.3074780000024475
+    },
+    {
+      "label": "archived rank2/rank2_primitive_system.py",
+      "command": [
+        "python",
+        "-B",
+        "rank2/rank2_primitive_system.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\n  \"all_exact_checks_passed\": true,\n  \"curvature_checks\": 6,\n  \"Gauss_Manin_columns_checked\": 8,\n  \"finite_cover_flat_columns_checked\": 4,\n  \"output\": \"C:\\\\Users\\\\anaxe\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{20638859-5c7c-4042-b696-a0fea6dedefd}\\\\AC\\\\Temp\\\\skew-audit-v1h5vvdg\\\\one_reflection_skew_twisted_companions\\\\rank2\\\\rank2_primitive_system.json\",\n  \"cleaner_source_chart\": \"C:\\\\Users\\\\anaxe\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{20638859-5c7c-4042-b696-a0fea6dedefd}\\\\AC\\\\Temp\\\\skew-audit-v1h5vvdg\\\\one_reflection_skew_twisted_companions\\\\rank2\\\\rank2_primitive_system_Y0.json\",\n  \"remaining_PDE_solved\": false\n}\n",
+      "stderr": "",
+      "elapsed_seconds": 4.124166800000239
+    },
+    {
+      "label": "archived rank2/gauge_scalar_repair.py",
+      "command": [
+        "python",
+        "-B",
+        "rank2/gauge_scalar_repair.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "{\n  \"all_checks_passed\": true,\n  \"mu_at_point\": \"-3143016/49\",\n  \"divV_at_point\": \"2209940204/1905584409\",\n  \"weighted_scalar_repair\": \"(W+6)H+(Z+19/6)K=-div(V)/(12*mu)\",\n  \"rank_two_minor_WZ_at_point\": \"-52691/349224\",\n  \"status\": \"exact scalar repair reduction; no solution H,K and no certificate supplied\"\n}\n",
+      "stderr": "",
+      "elapsed_seconds": 7.2715435000136495
+    },
+    {
+      "label": "audit visualization",
+      "command": [
+        "python",
+        "-B",
+        "experiments/skew_audit/render.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "zero exit",
+      "returncode": 0,
+      "stdout": "PASS: visualization drawn from line, degree-five and degree-six audit receipts\n",
+      "stderr": "",
+      "elapsed_seconds": 1.370868700032588
+    }
+  ],
+  "limits": [
+    "No Lean build or HasCertificate proof.",
+    "No replay of the 76 MB round-four packets or the unattached large degree-seven export.",
+    "No upstream publication or changes."
+  ],
+  "input_bindings": "PASS: all vendored inputs and six existing packets",
+  "companion": {
+    "url": "https://github.com/user-attachments/files/33736319/one_reflection_skew_twisted_companions.zip",
+    "sha256": "3901f358ec9f1f46b6f4900cba80aa82160dd50d28e86e766aae826e39a960be",
+    "bytes": 48403,
+    "SHA256SUMS_entries_checked": 25,
+    "positive_checkers_replayed": 4,
+    "three_regenerated_JSONs_equal_archive": true,
+    "search_scripts_run": false
+  },
+  "checker_sha256": {
+    "characters.py": "1735389edab74a940eb4dfeaa48968ef6f3430e61e144e54df04ea45544d4069",
+    "check_exclusions.py": "64d99f37549d6d8df33e0c064cfe4fac82a13e02dcdbae16b07d0793b9db17e5",
+    "check_low_and_odd.py": "d23ba88fccfc721f2ed3fe46ca7480db5629761f370febbbb037a6ea6ea2c446",
+    "check_mixed_cross.py": "fc69ece1d25b9b7c9e091b095a9cb3313f7a170cf198802d90676d8a8ac607a6",
+    "line.py": "8bfa5018d115fdea37d54b87270be63b832e4cc9483a06e6959e0f8e5bb3cc27",
+    "modular_e1.py": "308eb78d924dcf47e27e1332da1dff1c147d3d49a539b710969c09b7a5e61a8b",
+    "render.py": "3bf17b5f313e1298e9ded46bdda0d34981485935e735e946b819dde899c3899f",
+    "run.py": "14ee5fc394ffc9a530be2bd6ca8330fa03deabfd503db9f356ab2d1de7b720ba",
+    "transport.py": "8d752f7056823cf0a679c4b949199fab344c51b3697c0a1678f45ff381c3003c"
+  },
+  "additional_input_sha256": {
+    "experiments/one_reflection_skew_pilot.py": "9861600e43fad13e43e2bcfef8b7a1d4427e40d8fb32acdc7050473769cbe2ce",
+    "experiments/one_reflection_skew_degree7.py": "7e901b13c207e2fc98040c5f9f068a680767c7a3c9e8bee6712db199d05adf55",
+    "results/one-reflection-skew-audit-20261021/input-manifest.json": "cabe9ebf0a09f0f87097561a11c1be0490f896a72e89e3a725c5666bfe3b7499",
+    "results/one-reflection-skew-audit-20261021/packet-pins.json": "6a15dc7fcf00465e91355b98c20c0a9413ba3b31bcb7d7673497c0c5cc77cdab"
+  },
+  "completed_utc": "2026-10-21T16:25:25.148454+00:00"
+}

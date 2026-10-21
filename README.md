@@ -31,6 +31,8 @@ The [algebra notebook](algebra/README.md) develops the normalized `q=1` equation
 
 The audit corrected a substituted Hessian generator, a mistaken flow-degeneracy interpretation, a line checker that did not fail on invalid input, and an overstatement of Lean coverage. The corrected Hessian finite profile is unchanged; its all-degree claim now has a separate height certificate. Historical ledger text was preserved. [Findings, evidence, replay commands and limits](notes/repository-audit-20261021.md).
 
+The [focused one-reflection-skew audit](notes/one-reflection-skew-mathematical-audit.md) corrects the degree-five Hessian rank to **15**, replays the exclusions through degree six and the four pure odd degree-seven families, and reconstructs both line tangent maps. The twisted-companion identities pass; the rational primitive remains open. [Coefficient-map visualization](results/one-reflection-skew-audit-20261021/audit-map.png) · [Executed checks](results/one-reflection-skew-audit-20261021/validation.json).
+
 ## Selected results
 
 ### From a GPU screen to exact exclusions

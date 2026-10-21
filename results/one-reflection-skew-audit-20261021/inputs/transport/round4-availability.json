@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-10-21T16:13:55.702Z",
+  "method": "curl HEAD with redirects; no body download or replay",
+  "parts": [
+    {
+      "part": 1,
+      "http_statuses": [
+        302,
+        200
+      ],
+      "content_length": 18996863,
+      "source_url": "https://github.com/user-attachments/files/33698467/one-reflection-skew-e2-round4-part-1-of-4.zip",
+      "body_downloaded": false,
+      "replayed": false
+    },
+    {
+      "part": 2,
+      "http_statuses": [
+        302,
+        200
+      ],
+      "content_length": 19004243,
+      "source_url": "https://github.com/user-attachments/files/33698469/one-reflection-skew-e2-round4-part-2-of-4.zip",
+      "body_downloaded": false,
+      "replayed": false
+    },
+    {
+      "part": 3,
+      "http_statuses": [
+        302,
+        200
+      ],
+      "content_length": 19004293,
+      "source_url": "https://github.com/user-attachments/files/33698470/one-reflection-skew-e2-round4-part-3-of-4.zip",
+      "body_downloaded": false,
+      "replayed": false
+    },
+    {
+      "part": 4,
+      "http_statuses": [
+        302,
+        200
+      ],
+      "content_length": 19004251,
+      "source_url": "https://github.com/user-attachments/files/33698473/one-reflection-skew-e2-round4-part-4-of-4.zip",
+      "body_downloaded": false,
+      "replayed": false
+    }
+  ],
+  "total_bytes": 76009650
+}

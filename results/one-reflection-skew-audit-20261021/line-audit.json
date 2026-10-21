@@ -1,0 +1,663 @@
+{
+  "schema": "one-reflection-skew-line-independent-source-audit-v1",
+  "status": "PASS",
+  "field": 11,
+  "upstream_commit": "78632ddad42489fe92f14e588f1ed4b8909395dd",
+  "source_git_blob_and_raw_sha256_checks": 2,
+  "source_bindings_lf_sha256": {
+    "upstream/data/one-reflection-skew/instance.rec": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+    "upstream/data/one-reflection-skew/record.json": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+    "discussion-127.md": "08ffc143eb3deb1676261b47986090ec5cc4989d809e68f454b3f02842b92464",
+    "source-manifest.json": "41093fdb5cbc9b337777ad46e8916ef90ed886422c039088aa8c05bc3a147e18"
+  },
+  "checker_lf_sha256": "8bfa5018d115fdea37d54b87270be63b832e4cc9483a06e6959e0f8e5bb3cc27",
+  "protected": {
+    "q": 1,
+    "variables": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "F_terms": [
+      [
+        "1",
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          3,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        "1/7",
+        [
+          1,
+          1,
+          0,
+          3,
+          1,
+          0
+        ]
+      ],
+      [
+        "-1/7",
+        [
+          1,
+          1,
+          0,
+          1,
+          3,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          0,
+          3,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0
+        ]
+      ],
+      [
+        "1",
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ]
+    ],
+    "A_terms": [
+      [
+        "1",
+        [
+          3,
+          0,
+          0,
+          3,
+          0,
+          0
+        ]
+      ]
+    ],
+    "record_and_instance_expressions_match": true
+  },
+  "line": {
+    "a": [
+      1,
+      0,
+      6,
+      3,
+      2,
+      7
+    ],
+    "b": [
+      0,
+      1,
+      2,
+      2,
+      0,
+      8
+    ],
+    "F_coefficients_s6_to_t6": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "seven_F_coefficients": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "same_integer_point_F_over_Q": "165099"
+  },
+  "source_restriction": {
+    "coefficients_s6_to_t6": [
+      5,
+      10,
+      3,
+      8,
+      0,
+      0,
+      0
+    ],
+    "factorization": "s^3 (3s+2t)^3",
+    "value_at_1_0": 5,
+    "zero_points_P1_F11": [
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "zero_multiplicity_each": 3,
+    "projective_values": [
+      {
+        "point": [
+          1,
+          0
+        ],
+        "value": 5
+      },
+      {
+        "point": [
+          1,
+          1
+        ],
+        "value": 4
+      },
+      {
+        "point": [
+          1,
+          2
+        ],
+        "value": 2
+      },
+      {
+        "point": [
+          1,
+          3
+        ],
+        "value": 3
+      },
+      {
+        "point": [
+          1,
+          4
+        ],
+        "value": 0
+      },
+      {
+        "point": [
+          1,
+          5
+        ],
+        "value": 8
+      },
+      {
+        "point": [
+          1,
+          6
+        ],
+        "value": 9
+      },
+      {
+        "point": [
+          1,
+          7
+        ],
+        "value": 7
+      },
+      {
+        "point": [
+          1,
+          8
+        ],
+        "value": 6
+      },
+      {
+        "point": [
+          1,
+          9
+        ],
+        "value": 10
+      },
+      {
+        "point": [
+          1,
+          10
+        ],
+        "value": 1
+      },
+      {
+        "point": [
+          0,
+          1
+        ],
+        "value": 0
+      }
+    ],
+    "not_identically_zero": true,
+    "nowhere_zero": false
+  },
+  "restricted_gradients": {
+    "rows_are_coordinates": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "coefficients_t0_to_t5": [
+      [
+        6,
+        5,
+        0,
+        4,
+        7,
+        0
+      ],
+      [
+        4,
+        3,
+        2,
+        5,
+        2,
+        6
+      ],
+      [
+        5,
+        1,
+        8,
+        5,
+        2,
+        5
+      ],
+      [
+        6,
+        5,
+        5,
+        3,
+        3,
+        5
+      ],
+      [
+        5,
+        8,
+        0,
+        9,
+        5,
+        4
+      ],
+      [
+        5,
+        5,
+        2,
+        7,
+        4,
+        5
+      ]
+    ]
+  },
+  "ordinary_incidence": {
+    "domain": "8-dimensional Grassmann chart: X0=s,X1=t; other four coordinates alpha_i*s+beta_i*t",
+    "codomain": "7 coefficients s^6,...,t^6 of F",
+    "columns": [
+      "X2 intercept",
+      "X2 slope",
+      "Y0 intercept",
+      "Y0 slope",
+      "Y1 intercept",
+      "Y1 slope",
+      "Y2 intercept",
+      "Y2 slope"
+    ],
+    "matrix": [
+      [
+        5,
+        0,
+        6,
+        0,
+        5,
+        0,
+        5,
+        0
+      ],
+      [
+        1,
+        5,
+        5,
+        6,
+        8,
+        5,
+        5,
+        5
+      ],
+      [
+        8,
+        1,
+        5,
+        5,
+        0,
+        8,
+        2,
+        5
+      ],
+      [
+        5,
+        8,
+        3,
+        5,
+        9,
+        0,
+        7,
+        2
+      ],
+      [
+        2,
+        5,
+        3,
+        3,
+        5,
+        9,
+        4,
+        7
+      ],
+      [
+        5,
+        2,
+        5,
+        3,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        0,
+        5,
+        0,
+        5,
+        0,
+        4,
+        0,
+        5
+      ]
+    ],
+    "rank": 7,
+    "kernel": [
+      [
+        3,
+        8,
+        9,
+        3,
+        0,
+        7,
+        6,
+        1
+      ]
+    ],
+    "first_seven_columns_minor": 6,
+    "first_seven_columns_minor_if_using_7F": 3,
+    "local_incidence_dimension": 1
+  },
+  "fixed_endpoint": {
+    "domain": "6 slope coefficients b_i with endpoint a fixed; residual parameterization gauges span(a,b)",
+    "codomain": "coefficients t^1,...,t^6 of F(a+t*b); constant coefficient already zero",
+    "matrix": [
+      [
+        6,
+        4,
+        5,
+        6,
+        5,
+        5
+      ],
+      [
+        5,
+        3,
+        1,
+        5,
+        8,
+        5
+      ],
+      [
+        0,
+        2,
+        8,
+        5,
+        0,
+        2
+      ],
+      [
+        4,
+        5,
+        5,
+        3,
+        9,
+        7
+      ],
+      [
+        7,
+        2,
+        2,
+        3,
+        5,
+        4
+      ],
+      [
+        0,
+        6,
+        5,
+        5,
+        4,
+        5
+      ]
+    ],
+    "rank": 4,
+    "kernel": [
+      [
+        6,
+        3,
+        9,
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        7,
+        3,
+        3,
+        0,
+        1
+      ]
+    ],
+    "kernel_equals_span_a_b": true,
+    "kernel_dimension": 2,
+    "nonzero_minor": {
+      "rows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "determinant_mod11": 4
+    },
+    "quotient_domain_dimension": 4,
+    "induced_quotient_map_injective": true,
+    "rank_four_is_maximal_given_gauges": true
+  },
+  "marked_evaluation": {
+    "point": "a, in affine chart X0=1",
+    "target_coordinates": [
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "domain_columns": [
+      "ordinary-incidence kernel parameter",
+      "marked point parameter t"
+    ],
+    "derivative_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "rank": 2,
+    "target_tangent_equation_coefficients": [
+      4,
+      5,
+      6,
+      5,
+      5
+    ],
+    "target_tangent_dimension": 4,
+    "image_is_in_target_tangent": true,
+    "scope": "The local two-dimensional marked-line family at this smooth incidence point does not dominate the four-dimensional target."
+  },
+  "derivative_checks": {
+    "direct_dual_number_columns_checked": 14,
+    "reported_matrices_match": true,
+    "Euler_and_line_derivative_kernel_identities_checked": true
+  },
+  "perturbations": {
+    "X2_intercept_6_to_5_F_coefficients": [
+      0,
+      2,
+      0,
+      9,
+      7,
+      6,
+      0
+    ],
+    "X2_slope_2_to_3_F_coefficients": [
+      0,
+      5,
+      4,
+      9,
+      5,
+      10,
+      5
+    ],
+    "same_line_b_plus_a_incidence": true,
+    "same_line_2b_incidence": true,
+    "Grassmann_kernel_tangent": [
+      3,
+      8,
+      9,
+      3,
+      0,
+      7,
+      6,
+      1
+    ],
+    "straight_tangent_path_first_nonzero_epsilon_order": 2,
+    "straight_tangent_epsilon2_coefficients": [
+      6,
+      4,
+      1,
+      1,
+      6,
+      2,
+      2
+    ]
+  },
+  "controls": [
+    "changed_X2_intercept_rejected",
+    "nonkernel_slope_change_rejected",
+    "A_is_not_nowhere_zero",
+    "7F_minor_differs",
+    "altered_M_entry_breaks_source_and_kernel"
+  ],
+  "limits": [
+    "Ranks and smooth-incidence conclusion are over F11 for this line and these explicitly specified charts.",
+    "Rank4 is not an accidental defect: two slope gauge directions are forced.",
+    "The line source is nonzero as a polynomial but vanishes at two projective points.",
+    "Ordinary incidence smoothness supplies no independent generic-endpoint or characteristic-zero construction here.",
+    "No rational primitive, HasCertificate proof, or target-solve claim."
+  ]
+}

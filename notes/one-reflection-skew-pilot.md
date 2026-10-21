@@ -37,7 +37,7 @@ At degree five, the six-dimensional $E_1$ kernel is the gradient span $D = a \cd
 
 $$B_D(A a + K) \equiv -A \cdot a^{\mathsf{T}} \operatorname{Hess}(F) a \pmod{J_{10}}.$$
 
-Unlike `cycle-three` and `mixed-biweight` (where the $21$-column quadratic Hessian map in $S_{10}/J_{10}$ has full rank $21$), here $Y_2$ enters $F$ only through $Y_2^6$, so the five mixed second partials $\partial_i \partial_{Y_2} F$ ($i < 5$) vanish identically and the $21$-column map has exact quotient rank **$16$ of $21$** ($49$ active rows). Nevertheless, all six diagonal square columns $a_i^2$ remain linearly independent of the off-diagonal columns in $S_{10}/J_{10}$: six exported rational dual functionals annihilate $J_{10}$ and isolate $a_0^2, \dots, a_5^2$ one at a time, forcing $a = 0$ and $D = 0$.
+Unlike `cycle-three` and `mixed-biweight` (where the $21$-column quadratic Hessian map in $S_{10}/J_{10}$ has full rank $21$), here $Y_2$ enters $F$ only through $Y_2^6$, so the five mixed second partials $\partial_i \partial_{Y_2} F$ ($i < 5$) vanish. Also $\partial_{X_0}\partial_{X_2}F=0$, since no term contains both variables. The $21$-column map therefore has six zero columns and exact quotient rank **$15$ of $21$** ($49$ active rows). Nevertheless, all six diagonal square columns $a_i^2$ remain linearly independent of the off-diagonal columns in $S_{10}/J_{10}$: six exported rational dual functionals annihilate $J_{10}$ and isolate $a_0^2, \dots, a_5^2$ one at a time, forcing $a = 0$ and $D = 0$.
 
 ## 3. Binary-cubic identities and the passive-ratio boundary
 
@@ -81,3 +81,5 @@ python3 experiments/one_reflection_skew_pilot.py
 - **Receipt:** [results/one-reflection-skew-pilot/report.json](../results/one-reflection-skew-pilot/report.json)
 - **Figures:** [one-reflection-skew-audit.png](../results/one-reflection-skew-pilot/one-reflection-skew-audit.png) · [one-reflection-skew-audit.svg](../results/one-reflection-skew-pilot/one-reflection-skew-audit.svg)
 - **Credits:** Builds on the `hodge-computer/sextics` certificate and cubic-transfer framework (Chapters 1, 2, 4, and 5), `fringewidth`'s hidden-reflection observation, and `fqlx`'s accepted binary-cubic Hessian certificate for `one-reflection` (PR #123). Prepared with AI assistance for `rbajaj5`.
+
+**Focused audit correction — 21 October 2026:** rank 15 agrees with the original computed report and a fresh independent reconstruction of every residual entry. Rank 16 in the earlier prose and figure was incorrect. All six square witnesses still pass, so the degree-five exclusion is unchanged. The figure now reads its rank from the data. [Inputs, exact replay and scope](one-reflection-skew-mathematical-audit.md).

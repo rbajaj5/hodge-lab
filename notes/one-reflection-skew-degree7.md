@@ -17,7 +17,7 @@ This note records **Checkpoint 87**, advancing the analysis of `one-reflection-s
 
 All 10 monomials of $F$ are invariant under the order-16 diagonal sign group $G_{\text{parity}} \subset \{\pm 1\}^6$ defined by
 $$\chi(X_0^{e_0} X_1^{e_1} X_2^{e_2} Y_0^{e_3} Y_1^{e_4} Y_2^{e_5}) = \big((e_0 + e_1 + e_2) \bmod 2,\; (e_0 + e_2 + e_3) \bmod 2,\; (e_0 + e_2 + e_4) \bmod 2,\; e_5 \bmod 2\big) \in \mathbb{F}_2^4.$$
-Since the sum of the four parity bits equals $\sum_{i=0}^5 e_i + 2(e_0 + e_2) \equiv d \pmod 2$ on any homogeneous piece $S_d$, the 16 characters of $G_{\text{parity}}$ partition $S_7$ ($\dim = 792$) and $S_{13}$ ($\dim = 8{,}568$) into **8 non-empty superselection sectors** (corresponding to the 8 characters of $PG_{\text{parity}} = G_{\text{parity}} / \{\pm I_6\} \cong \mathbb{Z}_2^3$).
+Since the sum of the four parity bits equals $\sum_{i=0}^5 e_i + 2(e_0 + e_2) \equiv d \pmod 2$ on any homogeneous piece $S_d$, the 16 characters of $G_{\text{parity}}$ partition $S_7$ ($\dim = 792$) and $S_{13}$ ($\dim = 8{,}568$) into **8 non-empty superselection sectors** (an affine coset, or torsor, for the character group of $PG_{\text{parity}} = G_{\text{parity}} / \{\pm I_6\} \cong \mathbb{Z}_2^3$). On odd degree, $-I_6$ acts by $-1$, so these representations do not descend to $PG_{\text{parity}}$ without a chosen character twist.
 
 Because $\chi(F) = (0,0,0,0)$ and $\chi(A) = \chi(X_0^3 Y_0^3) = (1,0,1,0)$, the degree-7 $E_1$ map $D \mapsto [AD] \in S_{13}/J_{13}(F)$ is block-diagonal across the 8 sectors:
 $$S_7[\chi] \xrightarrow{D \mapsto [AD]} S_{13}[\chi + \chi(A)] / J_{13}(F)[\chi + \chi(A)].$$
@@ -78,3 +78,5 @@ Run the complete degree-7 sector analysis and figure generation from the reposit
 ```bash
 python experiments/one_reflection_skew_degree7.py
 ```
+
+**Focused audit, 21 October 2026:** the character-torsor wording above corrects the projective interpretation, without changing the four-bit blocks. The scalar source has character `1010`; the projective volume form contributes `1111`, giving differential-form character `0101`. Fresh independent checks replay the four pure odd exclusions and exhibit a mixed cross-term nonzero even modulo $J+F$. The original equality-to-degree-six flag is now enforced by a comparison. [Precise scopes and inputs](one-reflection-skew-mathematical-audit.md).
