@@ -3970,3 +3970,55 @@ restricted to actual upstream activity.
      increased-coverage claim. Tally is now **29 discussion contributions,
      one closed maintenance PR, zero accepted authored solves**. The earlier
      integration 403 and all historical ledger text remain preserved.
+
+
+## Checkpoint 120 — 21 October 2026: the skew chart obstruction in Lean
+
+User direction: prioritize useful Lean formalization. The proposed comparison
+of 45 higher-U images with fqlx's 504-column space is deferred; it was not run.
+Notebook parent `ba09d7f31af83a5e6126a1b9fd691467e525c149`; upstream
+`a6b4cc49452abe31ead0be71d04e8146639896d9`. Fresh pinned protected record reads
+match the existing input bytes. Prior source transport and exact Python checks
+are reused, with their attribution and scope unchanged.
+
+- [Proof, provenance and limits](notes/skew-lean.md).
+- [Lean polynomial-to-three-row proof](formal/HodgeLab/OneReflectionSkew/ThreeCoefficient.lean),
+  with all three operator terms, 840 selected coefficients over 280 columns,
+  three source coefficients, and a finite 625-tuple monomial-coverage check.
+  The integer dual `(21,1,-1)` has source pairing 35. The encoded equation is
+  excluded over every characteristic-zero field.
+- [Executed receipt](formal/results/skew-lean/validation.json): Lean 4.31.0,
+  pinned mathlib; 17 declaration audits, four default kernel module replays,
+  two deliberately false propositions rejected. Final run 78.016 seconds;
+  120-second command bounds and a 600-second run budget. No timeout.
+- [Reproducible coefficient visualization](visualizations/skew-lean.png)
+  and [generator](scripts/visualize_skew_lean.py); rendered image inspected.
+- [Preserved development failures](formal/results/skew-lean/development/README.md):
+  Lean elaboration fixes, a terminal UTF-8 print fix, and a WSL PATH fix.
+  These are implementation failures, not mathematical counterexamples.
+
+This is formal assurance for the existing chart ansatz, not a new exclusion
+family. Geometric transport, expansion of arbitrary degree-bounded MvPolynomial
+inputs into the encoded list, the 45-versus-504 image comparison, unrestricted
+primitives and HasCertificate remain outside the Lean theorem. Imported
+mathlib declarations are trusted by default replay; no fresh mathlib replay
+or upstream protected verification is claimed. The full denominator derivative
+is present, but these three rows alone do not detect its omission.
+
+Attribution: fqlx's quotient/residue/companion formulation, Hodge Lab's
+checkpoint-118 computation, and the separate checkpoint-119 ChatGPT review
+are preserved. This batch added locally compiled Lean proofs and a read-only
+review; no additional ChatGPT calculation was requested.
+
+Ledger-status check: the latest reply
+[19111234](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234)
+was already recorded in checkpoint 119's verified outcome at `ba09d7f`.
+The live ledger matches that commit; no newer unrecorded post or missing
+entry was found. Earlier prepublication text remains as historical context.
+
+Prepublication audit: after this audit is pushed, add the scoped Lean
+verification to that existing reply, retaining its original calculation,
+attribution, limitations and degree-five boundary. Read back the edit and
+append the outcome afterward. No new comment is planned. Contribution tally
+remains **29 discussion contributions, one closed maintenance PR, and zero
+accepted authored solves**; this edit will not increase it.

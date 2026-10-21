@@ -1,0 +1,6 @@
+import HodgeLab.OneReflectionSkew.Controls
+open HodgeLab.SparsePolynomial
+open HodgeLab.OneReflectionSkew
+example : coefficient (rowExponent 0) changedConstantColumn = -60 := by
+  rw [changed_coefficient]
+  decide +kernel

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files_sha256": {
+    "visualizations/skew-lean.png": "26a35697633db9a770acd91a7b2176bac8a3f61011690693e5df9ecf9e12385b",
+    "visualizations/skew-lean.svg": "b028b2a62e5aeefd540ac868f7a971b22cb2f1861ff0001b2b8be5787ef9f4d3",
+    "scripts/visualize_skew_lean.py": "cefa44e3be0606b1c046f7862d931ce8432cbcbe4b9df21959ef2ab233bfc595"
+  },
+  "review": "Rendered PNG inspected: labels and boundary text visible; figure generator verifies displayed dual pairing against checked source.",
+  "scope": "Figure is not a new proof or global rank claim."
+}

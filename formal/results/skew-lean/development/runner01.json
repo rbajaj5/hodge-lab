@@ -1,0 +1,33 @@
+{
+  "status": "FAIL",
+  "error": "version failed: timeout: failed to execute process: No such file or directory (os error 2)\n",
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "timeout",
+        "120",
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 127,
+      "bound_seconds": 120,
+      "elapsed_seconds": 0.14100000000325963,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "eb5b3f71cf1f7572c48b628683b898b09ee577c6dbb249cbc8397dd4ef127dfc"
+    }
+  ]
+}

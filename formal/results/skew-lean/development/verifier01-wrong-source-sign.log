@@ -1,0 +1,40 @@
+.lake/skew-negative/wrong-source-sign.lean:4:72: error: Tactic `decide` failed for proposition
+  coefficient (rowExponent 0) changedConstantColumn = -60
+because its `Decidable` instance
+  instDecidableEqRat (coefficient (rowExponent 0) changedConstantColumn) (-60)
+did not reduce to `isTrue` or `isFalse`.
+
+Reduction got stuck at the `Decidable` instance
+  match
+    ((60 *
+            ((fun b => (fun i => (exp 0 0 0 0, 1).1 i + b.1 i, (exp 0 0 0 0, 1).2 * b.2))
+                (fun j =>
+                  ((fun term => if term.1 = exp 1 1 0 3 then (term.1, -term.2) else term) (exp 1 1 0 3, -1)).1 j -
+                    if j = 0 then 1 else 0,
+                  ((fun term => if term.1 = exp 1 1 0 3 then (term.1, -term.2) else term) (exp 1 1 0 3, -1)).2 *
+                    ↑(((fun term => if term.1 = exp 1 1 0 3 then (term.1, -term.2) else term) (exp 1 1 0 3, -1)).1
+                        0))).2).add
+        (coefficient (rowExponent 0)
+          ((List.map (fun term => (term.1, 60 * term.2))
+                ((List.map (fun b => (fun i => (exp 0 0 0 0, 1).1 i + b.1 i, (exp 0 0 0 0, 1).2 * b.2))
+                      ([].append
+                        (List.map
+                            (fun term =>
+                              if term.1 0 = 0 then []
+                              else [(fun j => term.1 j - if j = 0 then 1 else 0, term.2 * ↑(term.1 0))])
+                            (List.map (fun term => if term.1 = exp 1 1 0 3 then (term.1, -term.2) else term)
+                              [(exp 0 0 0 0, 7), (exp 0 0 0 6, 7)])).flatten)).append
+                  (List.map (fun a => List.map (fun b => (fun i => a.1 i + b.1 i, a.2 * b.2)) (derivative 0 changedP7))
+                      [(exp 0 6 0 0, 1), (exp 0 0 6 0, 1)]).flatten)).append
+            (scale 72 (multiply changedP7 (derivative 0 aSparse)))))).num,
+    -Rat.num 60 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯

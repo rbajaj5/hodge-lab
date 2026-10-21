@@ -37,6 +37,14 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: polynomial coefficients checked in Lean
+
+[![Lean coefficient map and its verification boundary](visualizations/skew-lean.png)](notes/skew-lean.md)
+
+Lean reconstructs **840 selected coefficients across 280 columns**, checks the three source coefficients, and proves the encoded degree-four polynomial equation has no solution over every characteristic-zero field. Compilation, declaration audits, kernel replay and two deliberate-error controls passed locally. This formalizes the existing bounded obstruction; geometric source transport, other denominator families and the 45-versus-504 comparison remain outside this theorem.
+
+[Proof and reproduction](notes/skew-lean.md) · [Lean source](formal/HodgeLab/OneReflectionSkew/ThreeCoefficient.lean) · [Verification receipt](formal/results/skew-lean/validation.json)
+
 ### Including the base derivatives: four bounded primitive searches
 
 [![Four-component source operator and an exact three-coefficient obstruction](visualizations/skew-base-derivatives.png)](notes/skew-base-derivatives.md)

@@ -1,0 +1,76 @@
+{
+  "retrieved_utc": "2026-10-21T23:50:38.186339+00:00",
+  "heads": {
+    "rbajaj5/hodge-lab": {
+      "sha": "ba09d7f31af83a5e6126a1b9fd691467e525c149",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/ba09d7f31af83a5e6126a1b9fd691467e525c149",
+      "message": "Record verified skew certificate reply and publication outcome"
+    },
+    "hodge-computer/sextics": {
+      "sha": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+      "url": "https://github.com/hodge-computer/sextics/commit/a6b4cc49452abe31ead0be71d04e8146639896d9",
+      "message": "Reduce front-page mesh and correct phase coloring"
+    }
+  },
+  "input_pins": [
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec",
+      "upstream_path": "data/one-reflection-skew/instance.rec",
+      "upstream_commit": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+      "git_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/instance.rec?ref=a6b4cc49452abe31ead0be71d04e8146639896d9"
+      ]
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/record.json",
+      "upstream_path": "data/one-reflection-skew/record.json",
+      "upstream_commit": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+      "git_blob": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/record.json?ref=a6b4cc49452abe31ead0be71d04e8146639896d9"
+      ]
+    },
+    {
+      "path": "notes/skew-base-derivatives.md",
+      "sha256": "3853553270415d428e66b54a467d920a2e1543c5a61a4316fe69eda30e89f625",
+      "role": "Reused prior evidence; not rerun"
+    },
+    {
+      "path": "notes/skew-small-obstruction-audit.md",
+      "sha256": "51d922130667ec7443fd2f7918ea814640ed81ce286685f3cda08b873d3c3360",
+      "role": "Reused prior evidence; not rerun"
+    },
+    {
+      "path": "results/skew-small-obstruction/three-coefficient-replay.json",
+      "sha256": "2d3bf130803b0154ed12e5f5dc29ef8aaa21281f8012b95a130faaf92af5edf8",
+      "role": "Reused prior evidence; not rerun"
+    },
+    {
+      "path": "scripts/check_skew_small_obstruction.py",
+      "sha256": "2cd7488ac10bbbeacdf5a664def7d6beb8f12093d69c1ede45399ef550f415b5",
+      "role": "Reused prior evidence; not rerun"
+    }
+  ],
+  "variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "coefficient_field": "Q; polynomial obstruction extends to every characteristic-zero field",
+  "q": 1,
+  "A": "X0^3*Y0^3",
+  "chart": "Y0=1, (X0,X1,X2,Y1,Y2)=(x,rx,wx,t,z), U=x^2",
+  "comparison_45_504": "Deferred at user direction in favor of Lean",
+  "latest_publication": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+  "ledger_missing_entry_check": "Already recorded in ba09d7f checkpoint119; no missing entry found"
+}

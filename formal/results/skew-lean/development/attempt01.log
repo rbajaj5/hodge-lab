@@ -1,0 +1,10 @@
+HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:91:23: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:93:91: error: unexpected token 'set_option'; expected 'lemma'
+HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:193:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  ∑ x, MvPolynomial.coeff (exponent (rowExponent r)) (columnOver K x * MvPolynomial.C (c x)) = ↑(target r)
+but is expected to have type
+  ∑ x, c x * ↑(matrix r x) = ↑(target r)

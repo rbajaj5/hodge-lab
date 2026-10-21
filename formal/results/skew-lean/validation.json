@@ -1,0 +1,303 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-21T23:54:50.024538+00:00",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "HodgeLab/SparsePolynomial.lean": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+    "HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "HodgeLab/OneReflectionSkew/ThreeCoefficient.lean": "d5b56aa6ec51bf531eb0ed5de858e0e0f921cab5ed7dd9bf6bde6af8abb70138",
+    "HodgeLab/OneReflectionSkew/Controls.lean": "653a4e03f791b5ecc5686ae5bfd584a97e8acf902b6f97c92de861fc754045ec",
+    "AuditSkew.lean": "3543c088e4a8140207ca8416af48f3cc717c32fe16f7d4a453d0bd7815cffc69",
+    "ReplaySkew.lean": "34b7eb448ee9358d4050472e04ba31835af60dc244f2619b288c108b4bd484eb",
+    "check_skew.py": "661d37375b15cd3feea865c41cd5a4824e252e6ea8824219f1e67c8fad6c173d"
+  },
+  "artifact_sha256": {
+    "HodgeLab.SparsePolynomial": "f55d769733e9e311802bee7c05e23150dae257a275977051161403a68dfe64e2",
+    "HodgeLab.RowCertificate": "ccba8a9bff376389ab74e57265fa9841386bd58b52958bc079c1fad94a7a9218",
+    "HodgeLab.OneReflectionSkew.ThreeCoefficient": "8d1237c7cb1931c486e3444e91999c8dc87a7ac78cf8d699f4acef4a73a06d99",
+    "HodgeLab.OneReflectionSkew.Controls": "957dea80a2cb9b2344c30efd2383f66a079e90f762307bc8742ef0dea472eea9"
+  },
+  "theorem_axioms": {
+    "HodgeLab.OneReflectionSkew.monomials_length": [
+      "propext"
+    ],
+    "HodgeLab.OneReflectionSkew.monomial_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.column_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.rhs_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.computed_columns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.computed_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.annihilates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.no_matrix_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.column_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.target_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.column_coefficients_over": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.target_coefficients_over": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.polynomial_equation_implies_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.no_polynomial_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.changed_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.changed_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean --version"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 8.047000000020489,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 git -C .lake/packages/mathlib rev-parse HEAD"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 0.1720000000204891,
+      "expected_failure": false,
+      "log": "mathlib-head.log",
+      "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.Controls"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake build HodgeLab.OneReflectionSkew.Controls"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 1.2809999999590218,
+      "expected_failure": false,
+      "log": "build.log",
+      "log_lf_sha256": "881f185200e299df0adb68ff46a32db093db7e9cda026098f343aedba9864fce"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkew.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean AuditSkew.lean"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 8.39100000000326,
+      "expected_failure": false,
+      "log": "axioms.log",
+      "log_lf_sha256": "066900716e85503e8137a4bd72019e114f4d4046a4c51eaa6b8207d2c1721e45"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkew.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean ReplaySkew.lean"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 51.54700000002049,
+      "expected_failure": false,
+      "log": "kernel-replay.log",
+      "log_lf_sha256": "c2ab6a4e412e090b1f1f6986c520598f7f6610fea3fac3c2aaefb838ecb90a1b"
+    },
+    {
+      "label": "wrong-source-sign",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-negative/wrong-source-sign.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-negative/wrong-source-sign.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 4.577999999979511,
+      "expected_failure": true,
+      "log": "wrong-source-sign.log",
+      "log_lf_sha256": "32d00ae996d0fe0eaa1f65efe8608571226e54a38e10715d0d32e8cc4415cb60"
+    },
+    {
+      "label": "wrong-target",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-negative/wrong-target.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-negative/wrong-target.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 3.98499999998603,
+      "expected_failure": true,
+      "log": "wrong-target.log",
+      "log_lf_sha256": "897c0953a45f5b0276a6ddd38648e73783a22b08d0047898c2c90b51624d9d8d"
+    }
+  ],
+  "negative_source_lf_sha256": {
+    "wrong-source-sign": "822ee580a2cdf551b491dd2545fb00529c74dd94329b46277d6d15494f2660a3",
+    "wrong-target": "756f5f8fa9632e36a562af043695d1ed48448e9b607db3b5b54f90e73367ec89"
+  },
+  "columns": 280,
+  "selected_coefficients": 840,
+  "source_coefficients": 3,
+  "finite_exponent_tuples": 625,
+  "integer_dual": [
+    21,
+    1,
+    -1
+  ],
+  "target_pairing": 35,
+  "total_budget_seconds": 600,
+  "elapsed_seconds": 78.01600000000326,
+  "scope": "Encoded 280-column chart polynomial equation over every characteristic-zero field.",
+  "limits": [
+    "No new denominator exclusion",
+    "No formal source transport or arbitrary MvPolynomial degree-bound expansion",
+    "No 45-versus-504 comparison",
+    "No primitive, HasCertificate, or fresh replay of imported mathlib",
+    "These three rows alone do not detect omitted denominator differentiation"
+  ]
+}

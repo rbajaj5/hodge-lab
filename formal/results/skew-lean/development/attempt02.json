@@ -1,0 +1,20 @@
+{
+  "command": [
+    "wsl.exe",
+    "--cd",
+    "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+    "-e",
+    "timeout",
+    "120",
+    "/home/anaxe/.elan/bin/lake",
+    "env",
+    "lean",
+    "-o",
+    ".lake/build/lib/lean/HodgeLab/OneReflectionSkew/ThreeCoefficient.olean",
+    "HodgeLab/OneReflectionSkew/ThreeCoefficient.lean"
+  ],
+  "exit_code": 0,
+  "bound_seconds": 120,
+  "elapsed_seconds": 65.59400000004098,
+  "source_sha256": "d5b56aa6ec51bf531eb0ed5de858e0e0f921cab5ed7dd9bf6bde6af8abb70138"
+}

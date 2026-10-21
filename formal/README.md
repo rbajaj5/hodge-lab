@@ -1,5 +1,19 @@
 # Lean proofs for the rank shortcut and concrete obstructions
 
+## One-reflection-skew polynomial obstruction
+
+The [new module](HodgeLab/OneReflectionSkew/ThreeCoefficient.lean) constructs
+the degree-four chart operator, checks its 840 selected column coefficients
+and three source coefficients, and proves the encoded polynomial equation
+has no solution over any characteristic-zero field. It reuses the sparse
+polynomial and row-certificate libraries below. It does not formalize the
+geometric source transport or compare the 45 higher-U images with fqlx's space.
+
+Run `python3 -O check_skew.py` with the pinned dependencies installed.
+[Scope and diagram](../notes/skew-lean.md) · [Executed local receipt](results/skew-lean/validation.json).
+
+## Earlier cyclic-Fano stages
+
 The notebook has three stages of formalization. The original rank-gap theorem
 accepts dimension bounds as hypotheses. The new concrete project encodes
 integer coefficient rows for all sixteen fixed cubic-direction candidates

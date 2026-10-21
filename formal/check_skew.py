@@ -1,0 +1,130 @@
+"""Bounded compile, axiom audit, kernel replay and sensitive negative controls.
+
+Run from formal: python3 check_skew.py
+Dependencies must already match lake-manifest.json. No network fetch is made.
+Each command has a 120-second limit; the complete run has a 600-second budget.
+Required conditions use explicit exceptions, including under python -O.
+"""
+from pathlib import Path
+import datetime, hashlib, json, os, re, shlex, subprocess, sys, time
+
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / 'results/skew-lean'
+PREFIX = 'HodgeLab.OneReflectionSkew.'
+NAMES = ['monomials_length','monomial_coverage','column_formula','rhs_formula',
+         'computed_columns','computed_target','annihilates','separates',
+         'no_matrix_solution','column_coefficients','target_coefficients',
+         'column_coefficients_over','target_coefficients_over',
+         'polynomial_equation_implies_matrix','no_polynomial_solution',
+         'changed_coefficient','changed_pairing']
+MODULES = ['HodgeLab.SparsePolynomial','HodgeLab.RowCertificate',
+           PREFIX+'ThreeCoefficient',PREFIX+'Controls']
+SOURCES = ['lean-toolchain','lakefile.toml','lake-manifest.json',
+           'HodgeLab/SparsePolynomial.lean','HodgeLab/RowCertificate.lean',
+           'HodgeLab/OneReflectionSkew/ThreeCoefficient.lean',
+           'HodgeLab/OneReflectionSkew/Controls.lean','AuditSkew.lean',
+           'ReplaySkew.lean','check_skew.py']
+START = time.monotonic()
+RECORDS = []
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
+def require(condition, message):
+    if not condition:
+        raise RuntimeError(message)
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
+
+def write(name, value):
+    (OUT/name).write_text(json.dumps(value,indent=2,ensure_ascii=False)+'\n',encoding='utf-8',newline='\n')
+
+def run(label, command, expected_failure=False, required_error=None):
+    remaining=600-(time.monotonic()-START)
+    require(remaining>1, '600-second run budget exhausted')
+    bound=min(120,int(remaining))
+    execution=command
+    if os.name=='nt':
+        wroot='/mnt/'+ROOT.drive[0].lower()+ROOT.as_posix()[2:]
+        execution=['wsl.exe','--cd',wroot,'-e','sh','-lc',
+                   'exec timeout '+str(bound)+' '+shlex.join(command)]
+    began=time.monotonic()
+    try:
+        result=subprocess.run(execution,cwd=ROOT,capture_output=True,text=True,
+                              encoding='utf-8',timeout=bound+10)
+        log=result.stdout+result.stderr; code=result.returncode
+    except subprocess.TimeoutExpired as e:
+        def text(x): return x.decode('utf-8',errors='replace') if isinstance(x,bytes) else (x or '')
+        log=text(e.stdout)+text(e.stderr); code=124
+    path=OUT/(label+'.log'); path.write_text(log,encoding='utf-8',newline='\n')
+    rec={'label':label,'command':command,'execution_command':execution,'exit_code':code,
+         'bound_seconds':bound,'elapsed_seconds':time.monotonic()-began,
+         'expected_failure':expected_failure,'log':path.name,'log_lf_sha256':digest(path)}
+    RECORDS.append(rec); write('commands.json',RECORDS)
+    print(json.dumps({'label':label,'exit_code':code,'seconds':rec['elapsed_seconds']}),flush=True)
+    require(code!=124, label+' timed out; this is not a mathematical result')
+    if expected_failure:
+        require(code!=0 and 'error:' in log and required_error in log,
+                label+' did not fail at the required false proposition')
+    else:
+        require(code==0,label+' failed: '+log[:2000])
+    return log
+
+def main():
+    OUT.mkdir(parents=True,exist_ok=True)
+    write('validation.json',{'status':'IN_PROGRESS','started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()})
+    source_hashes={s:digest(ROOT/s) for s in SOURCES}
+    for s in SOURCES:
+        if s.endswith('.lean'):
+            require(not re.search(r'\b(sorry|admit|axiom|native_decide)\b',
+                                  (ROOT/s).read_text(encoding='utf-8')), 'Unproved declaration token: '+s)
+    version=run('version',['lake','env','lean','--version'])
+    require('version 4.31.0,' in version,'Wrong Lean version')
+    manifest=json.loads((ROOT/'lake-manifest.json').read_text(encoding='utf-8'))
+    mathlib=next(x for x in manifest['packages'] if x['name']=='mathlib')['rev']
+    actual=run('mathlib-head',['git','-C','.lake/packages/mathlib','rev-parse','HEAD']).strip()
+    require(actual==mathlib,'Wrong mathlib revision')
+    run('build',['lake','build',PREFIX+'Controls'])
+    audit=run('axioms',['lake','env','lean','AuditSkew.lean'])
+    declarations={name:[a.strip() for a in axioms.split(',') if a.strip()]
+                  for name,axioms in re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]",audit)}
+    # Lean prints 'does not depend on any axioms' for completely computational declarations.
+    for name in re.findall(r"'([^']+)' does not depend on any axioms",audit):
+        declarations[name]=[]
+    require(set(declarations)=={PREFIX+n for n in NAMES},'Missing or unexpected axiom reports')
+    require(all(set(xs)<={'propext','Classical.choice','Quot.sound'} for xs in declarations.values()),
+            'Unexpected axiom')
+    replay=run('kernel-replay',['lake','env','lean','ReplaySkew.lean'])
+    require(all('PASS '+m in replay for m in MODULES),'Missing kernel replay marker')
+    scratch=ROOT/'.lake/skew-negative';scratch.mkdir(parents=True,exist_ok=True)
+    negatives={
+        'wrong-source-sign': 'open HodgeLab.SparsePolynomial\nopen HodgeLab.OneReflectionSkew\nexample : coefficient (rowExponent 0) changedConstantColumn = -60 := by\n  rw [changed_coefficient]\n  decide +kernel\n',
+        'wrong-target': 'open HodgeLab.OneReflectionSkew\nexample : target 1 = 36 := by decide +kernel\n'}
+    negative_hashes={}
+    for label,body in negatives.items():
+        path=scratch/(label+'.lean');path.write_text('import HodgeLab.OneReflectionSkew.Controls\n'+body,encoding='utf-8',newline='\n')
+        (OUT/(label+'.lean.txt')).write_bytes(path.read_bytes())
+        negative_hashes[label]=digest(path)
+        run(label,['lake','env','lean',path.relative_to(ROOT).as_posix()],True,'is false')
+    require(source_hashes=={s:digest(ROOT/s) for s in SOURCES},'Sources changed during verification')
+    artifacts={m:hashlib.sha256((ROOT/'.lake/build/lib/lean'/(m.replace('.','/')+'.olean')).read_bytes()).hexdigest() for m in MODULES}
+    write('validation.json',{'status':'PASS','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          'lean_version':version.strip(),'mathlib_commit':mathlib,'source_lf_sha256':source_hashes,
+          'artifact_sha256':artifacts,'theorem_axioms':declarations,'commands':RECORDS,
+          'negative_source_lf_sha256':negative_hashes,'columns':280,'selected_coefficients':840,
+          'source_coefficients':3,'finite_exponent_tuples':625,'integer_dual':[21,1,-1],
+          'target_pairing':35,'total_budget_seconds':600,'elapsed_seconds':time.monotonic()-START,
+          'scope':'Encoded 280-column chart polynomial equation over every characteristic-zero field.',
+          'limits':['No new denominator exclusion','No formal source transport or arbitrary MvPolynomial degree-bound expansion',
+                    'No 45-versus-504 comparison','No primitive, HasCertificate, or fresh replay of imported mathlib',
+                    'These three rows alone do not detect omitted denominator differentiation']})
+    print('PASS: compile, 17 axiom audits, four module replays, two rejected mutations')
+
+if __name__=='__main__':
+    try:
+        main()
+    except Exception as error:
+        OUT.mkdir(parents=True,exist_ok=True)
+        write('failure.json',{'status':'FAIL','error':str(error),'commands':RECORDS})
+        write('validation.json',{'status':'FAIL','error':str(error),'commands':RECORDS})
+        raise
