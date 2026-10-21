@@ -3007,6 +3007,58 @@ conversations or evidence of an accepted solve.
      maintenance PR (closed), zero accepted authored solves**.
      [Acceptance, replay-transition and attribution receipt](results/discussion-monitor/update-20261021T105125Z.json).
 
+102. **21 October 2026, 07:55 EDT / 11:55 UTC — Mixed-biweight accepted; skew discussion baseline added.**
+     [PR170](https://github.com/hodge-computer/sextics/pull/170), credited to
+     **fqlx (Ben Burns)**, merged at **11:40:04 UTC** and was published at
+     **11:40:37 UTC**. The [acceptance receipt](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/mixed-biweight/acceptance.json)
+     at pinned main be8ec0395eccbb0cc8b0a293e638396a3e486822 records formal
+     acceptance, owner authorization and kernel replay. Both the
+     [protected verification](https://github.com/hodge-computer/sextics/actions/runs/39552184411)
+     and [publication](https://github.com/hodge-computer/sextics/actions/runs/39593649116)
+     runs succeeded. This supersedes the earlier pending state in the
+     [feedback audit](notes/one-reflection-skew-feedback-audit.md).
+
+     The [accepted construction](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/mixed-biweight/solution.md)
+     adapts hodgepodgeconjecture's cycle-three route to the transitive cubic,
+     with new covariants and syzygy, a thirteen-variable incidence seed
+     modulo five, lifting, integration, trace and physical transport. It
+     proves the exact q=1, A=X0^3Y0^3 existential certificate, allowing
+     general Q. No expanded polynomial witness or numerical denominator
+     degree bound is supplied. The accepted explanation and PR body contain
+     no new rbajaj5 credit. We inspected the receipts and workflow outcomes
+     and matched the explanation hash; **we did not compile or replay Lean**
+     or independently rehash all 58 Lean sources.
+
+     All 26 comments and 16 replies in the original 13 threads are unchanged.
+     Following the repository's new monitoring policy, this run also fetched
+     all six comments in [discussion #127](https://github.com/hodge-computer/sextics/discussions/127).
+     This is an **initial baseline**, not six new posts. There are now 48
+     monitored comment/reply records across 14 threads. The original set has
+     eight accepted instances and five open; adding the open skew instance
+     gives eight accepted and six open. No external automation setting changed.
+
+     The older [20 October addendum by fqlx](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252)
+     **reports** exact replay of rbajaj5's degree-seven sector data, 129 gauged
+     E1 lifts and the 84-dimensional base span. It reports stronger joint
+     odd-character and three even-character exclusions; pure 1110 and mixtures
+     of multiple even characters remain unresolved. Its separate degree-seven
+     packet is explicitly not attached, and only 16 selected exported columns
+     are reported independently rebuilt. We have not replayed those claims.
+     This is older attribution newly captured by the monitor, not new solve
+     authorship or a newly published result.
+
+     **Qualifications to historical summaries:** the current post 25 calls
+     the complex exchange an involution and explicitly says it is not a
+     symmetry of the full sextic. Post 27 excludes four pure-character odd
+     sectors; the subsequent joint odd-mixture result is fqlx's reported
+     extension. Earlier wording about an order-four symmetry or mixed-character
+     exclusion must not be read as an established result of those posts.
+
+     The front-page and feedback-audit changes already on main were preserved.
+     No upstream action was taken. Our tally remains **27 discussion
+     contributions, one maintenance PR (closed), zero accepted authored solves**.
+     [Acceptance, baseline hashes, attribution and limits](results/discussion-monitor/update-20261021T115542Z.json).
+
 ## Keeping this current
 
 Append each new upstream post or submission with its actual date, permanent link, purpose, result, attribution, and limits; update the tally after verifying publication. Record corrections and acceptance decisions as dated updates. Preserve what earlier posts claimed at the time. A discussion post, passing local checks, and an accepted solve are distinct outcomes.
