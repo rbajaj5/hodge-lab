@@ -1,0 +1,69 @@
+{
+  "status": "FAIL",
+  "total_budget_seconds": 300,
+  "operations": [
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_skew_base_derivatives.py",
+        "--mutation",
+        "drop-base"
+      ],
+      "exit_code": 1,
+      "stdout": "FAIL: base-only positive control r\n",
+      "stderr": "",
+      "seconds": 2.0092669999576174,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_skew_base_derivatives.py",
+        "--mutation",
+        "drop-denominator-derivative"
+      ],
+      "exit_code": 1,
+      "stdout": "FAIL: denominator differentiation required\n",
+      "stderr": "",
+      "seconds": 2.022641299990937,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-O",
+        "scripts/check_skew_base_derivatives.py",
+        "--mutation",
+        "drop-dual-term"
+      ],
+      "exit_code": 1,
+      "stdout": "FAIL: dual annihilates full column\n",
+      "stderr": "",
+      "seconds": 2.186372099968139,
+      "timeout_seconds": 120
+    },
+    {
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/visualize_skew_base_derivatives.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\hodge-lab-skew-audit-20261021\\scripts\\visualize_skew_base_derivatives.py\", line 63, in <module>\n    fig.savefig(ROOT/f'visualizations/skew-base-derivatives.{ext}',dpi=160,facecolor=fig.get_facecolor())\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\figure.py\", line 3515, in savefig\n    self.canvas.print_figure(fname, **kwargs)\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\backend_bases.py\", line 2289, in print_figure\n    result = print_method(\n             ^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\backend_bases.py\", line 2146, in <lambda>\n    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(\n                                                                 ^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\backends\\backend_agg.py\", line 537, in print_png\n    self._print_pil(filename_or_obj, \"png\", pil_kwargs, metadata)\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\backends\\backend_agg.py\", line 485, in _print_pil\n    FigureCanvasAgg.draw(self)\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\backends\\backend_agg.py\", line 438, in draw\n    self.figure.draw(self.renderer)\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\artist.py\", line 94, in draw_wrapper\n    result = draw(artist, renderer, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\artist.py\", line 71, in draw_wrapper\n    return draw(artist, renderer)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\figure.py\", line 3282, in draw\n    mimage._draw_list_compositing_images(\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\image.py\", line 133, in _draw_list_compositing_images\n    a.draw(renderer)\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\artist.py\", line 71, in draw_wrapper\n    return draw(artist, renderer)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\text.py\", line 853, in draw\n    bbox, info, _ = self._get_layout(renderer)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\text.py\", line 479, in _get_layout\n    w, h, d = _get_text_metrics_with_cache(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\text.py\", line 59, in _get_text_metrics_with_cache\n    return get_text_metrics(text, fontprop.copy(), ismath, dpi)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\text.py\", line 125, in _text_metrics\n    return local_renderer.get_text_width_height_descent(text, fontprop, ismath)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\backends\\backend_agg.py\", line 259, in get_text_width_height_descent\n    parse = self.mathtext_parser.parse(s, self.dpi, prop)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\mathtext.py\", line 86, in parse\n    return self._parse_cached(s, dpi, prop, antialiased, load_glyph_flags)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\mathtext.py\", line 100, in _parse_cached\n    box = self._parser.parse(s, fontset, fontsize, dpi)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\matplotlib\\_mathtext.py\", line 2306, in parse\n    raise ValueError(\"\\n\" + err.explain(0)) from None\nValueError: \n\\lambda=\\frac35[rt^3]+\\frac1{35}[U^2w^{12}]-\\frac1{35}[U^2w^{12}t^2]\n             ^\nParseSyntaxException: Expected \\frac{num}{den}, found '35'  (at char 13), (line:1, col:14)\n",
+      "seconds": 1.955013400001917,
+      "timeout_seconds": 60
+    }
+  ],
+  "positive_verification": "first-independent-run.json",
+  "searches": "initial-run.json and remaining-runs.json; reused without rerun",
+  "error": "Visualization failed",
+  "seconds": 8.173357299994677,
+  "script_sha256": {
+    "check_skew_base_derivatives.py": "47f68c227093c73400d42bb1443f64dafbdc6b0f7464be60dcb4c64c7fb25609",
+    "search_skew_base_derivatives.py": "af7d0355f02f30a13d42a1555e020576be933396f4a416b22ee7c289970a1db2",
+    "validate_skew_base_derivatives.py": "02c677f0b12bfdd0fb3b4c487ed7646c805e6d2dfcd8d2d6376e23d6bc886c9e",
+    "visualize_skew_base_derivatives.py": "e55d35e8f33ae4585bd615ee86c0841507415b5dff6602fe15e6bfee66bd3049"
+  }
+}

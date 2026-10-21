@@ -1,0 +1,96 @@
+{
+  "retrieved_utc": "2026-10-21T19:58:03.380063+00:00",
+  "upstream_commit": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+  "notebook_base": "eb36f9a199dc9e8d7b206f4fedcebbd8f13a3751",
+  "source_packet": "results/chi-target-source",
+  "reused_upstream_files": [
+    {
+      "upstream_path": "README.md",
+      "previous_blob": "d84b81564a9affc86cefc48ea49dcadf8b88ff58",
+      "current_blob": "d84b81564a9affc86cefc48ea49dcadf8b88ff58",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "AGENTS.md",
+      "previous_blob": "023f7734a0cfeed450c241c77049aa54ae0636d6",
+      "current_blob": "023f7734a0cfeed450c241c77049aa54ae0636d6",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "CONTRIBUTING.md",
+      "previous_blob": "ec0b83d1854a25be473bc5c0685f2df748b7bce6",
+      "current_blob": "ec0b83d1854a25be473bc5c0685f2df748b7bce6",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "formal/README.md",
+      "previous_blob": "28697bca4f4d86bba9e229dc34ff2d5675f2c16a",
+      "current_blob": "28697bca4f4d86bba9e229dc34ff2d5675f2c16a",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "formal/lean/HodgeComputer/Verify.lean",
+      "previous_blob": "73ad73de4693fb1a220585a4870ecb1af3ed19ac",
+      "current_blob": "73ad73de4693fb1a220585a4870ecb1af3ed19ac",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/instance.rec",
+      "previous_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "current_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/record.json",
+      "previous_blob": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "current_blob": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/why.md",
+      "previous_blob": "c8c9930215f857586c5e52bc1ff0a2957dc47be6",
+      "current_blob": "c8c9930215f857586c5e52bc1ff0a2957dc47be6",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/provenance.json",
+      "previous_blob": "e75110bb3e35f5cb5b70364a0c3accc935052329",
+      "current_blob": "e75110bb3e35f5cb5b70364a0c3accc935052329",
+      "unchanged": true
+    },
+    {
+      "upstream_path": "data/index.json",
+      "previous_blob": "c420436b09c6b0e96310b265c4e42f16fb5f532f",
+      "current_blob": "c420436b09c6b0e96310b265c4e42f16fb5f532f",
+      "unchanged": true
+    }
+  ],
+  "local_inputs": [
+    {
+      "path": "results/chi-target-source/inputs.json",
+      "sha256": "86814cbeb34a8d2a461788545b34810d60d2f361c343ba58185b1d247511674e"
+    },
+    {
+      "path": "results/chi-target-source/replay.json",
+      "sha256": "bbc2cd67202e617253c21586fe249a837a5aca9a0b8a368149bb58bf5de9b7b2"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec",
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/provenance.json",
+      "sha256": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477"
+    },
+    {
+      "path": "scripts/check_chi_target_source.py",
+      "sha256": "0cbe8d45fe17b16a7e53a06058fc096c41ab597cdec35f4d11977872ba914b84"
+    },
+    {
+      "path": "notes/chi-target-source.md",
+      "sha256": "d6d598a6d68a8107c4cf894f615e451b3668bef7c29e741b423d7a9fd0e0ad15"
+    }
+  ],
+  "method": "read-only GitHub API,45-second request bounds",
+  "scope": "Reuse completed source-to-residue derivation; new full base-derivative operator and bounded fixed-denominator tests. No prior checker rerun."
+}

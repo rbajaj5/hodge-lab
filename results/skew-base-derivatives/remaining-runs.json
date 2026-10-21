@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/search_skew_base_derivatives.py",
+      "--denominator",
+      "r"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"denominator_label\": \"r\", \"numerator_total_degree_bound\": 0, \"outcome\": \"excluded_in_tested_family\", \"rows\": 23, \"columns\": 4, \"seconds\": 0.016}\n{\"denominator_label\": \"r\", \"numerator_total_degree_bound\": 2, \"outcome\": \"excluded_in_tested_family\", \"rows\": 243, \"columns\": 60, \"seconds\": 0.015}\n{\"denominator_label\": \"r\", \"numerator_total_degree_bound\": 4, \"outcome\": \"excluded_in_tested_family\", \"rows\": 841, \"columns\": 280, \"seconds\": 0.0}\n",
+    "stderr": "",
+    "wall_seconds": 0.9252402000129223,
+    "external_timeout_seconds": 120
+  },
+  {
+    "command": [
+      "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/search_skew_base_derivatives.py",
+      "--denominator",
+      "t"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"denominator_label\": \"t\", \"numerator_total_degree_bound\": 0, \"outcome\": \"excluded_in_tested_family\", \"rows\": 23, \"columns\": 4, \"seconds\": 0.031}\n{\"denominator_label\": \"t\", \"numerator_total_degree_bound\": 2, \"outcome\": \"excluded_in_tested_family\", \"rows\": 243, \"columns\": 60, \"seconds\": 0.0}\n{\"denominator_label\": \"t\", \"numerator_total_degree_bound\": 4, \"outcome\": \"excluded_in_tested_family\", \"rows\": 841, \"columns\": 280, \"seconds\": 0.015}\n",
+    "stderr": "",
+    "wall_seconds": 0.9493142000283115,
+    "external_timeout_seconds": 120
+  },
+  {
+    "command": [
+      "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/search_skew_base_derivatives.py",
+      "--denominator",
+      "a"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"denominator_label\": \"a\", \"numerator_total_degree_bound\": 0, \"outcome\": \"excluded_in_tested_family\", \"rows\": 61, \"columns\": 4, \"seconds\": 0.047}\n{\"denominator_label\": \"a\", \"numerator_total_degree_bound\": 2, \"outcome\": \"excluded_in_tested_family\", \"rows\": 627, \"columns\": 60, \"seconds\": 0.0}\n{\"denominator_label\": \"a\", \"numerator_total_degree_bound\": 4, \"outcome\": \"excluded_in_tested_family\", \"rows\": 2068, \"columns\": 280, \"seconds\": 0.016}\n",
+    "stderr": "",
+    "wall_seconds": 0.9425626000156626,
+    "external_timeout_seconds": 120
+  }
+]

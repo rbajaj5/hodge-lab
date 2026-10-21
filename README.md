@@ -37,6 +37,14 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### Including the base derivatives: four bounded primitive searches
+
+[![Four-component source operator and an exact three-coefficient obstruction](visualizations/skew-base-derivatives.png)](notes/skew-base-derivatives.md)
+
+The **one-reflection-skew** search now includes derivatives in `U,r,w,t`, including the derivative of each chosen denominator. Exact rational duals exclude all four-component numerators of total degree at most four for fixed `D=1,r,t,1+r⁶+w⁶`. A separate checker reconstructs every column; manufactured positive controls verify that base derivatives can supply a primitive. **No target primitive was found. Other denominators and unrestricted rational functions remain open.**
+
+[Equation, attribution and scope](notes/skew-base-derivatives.md) · [1,376 independently rebuilt columns](results/skew-base-derivatives/verification.json) · [Detected errors and rendering repair](results/skew-base-derivatives/validation.json)
+
 ### The chi-curve idea reaches an actual protected source
 
 [![Exact source transport and the relative primitive test](visualizations/chi-target-source.png)](notes/chi-target-source.md)

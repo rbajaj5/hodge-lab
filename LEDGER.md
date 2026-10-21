@@ -3798,3 +3798,62 @@ restricted to actual upstream activity.
      post, reply, edit or PR in this pass. Tally remains **28 discussion
      contributions, one closed maintenance PR, zero accepted authored solves**.
      Historical ledger bytes and completed receipts were preserved.
+
+118. **21 October 2026 — Full base derivatives in a bounded skew primitive search.**
+     Continued checkpoint 117 with all four components of a rational
+     three-form on the actual one-reflection-skew quotient. Protected input
+     stays pinned at upstream `a6b4cc49452abe31ead0be71d04e8146639896d9`;
+     notebook base `eb36f9a199dc9e8d7b206f4fedcebbd8f13a3751`. Ten reused
+     upstream blobs are unchanged. Source-to-residue work is reused, while
+     the search parses F from instance.rec and a separate verifier constructs
+     it from record.json. All protected data and earlier receipts are intact.
+
+     For `Gamma=z^(-5) i_V(dU wedge dr wedge dw wedge dt)`, the full source
+     equation is `5 grad(P).V - 6P div(V) = 5U^2/12`. Writing `V=N/D`
+     retains the denominator derivative `N.grad(D)` as well as all three
+     base derivatives. For each fixed `D=1,r,t,a`, `a=1+r^6+w^6`, all four
+     numerator components contain every monomial of total degree <=0,2,4.
+     Exact rational duals exclude all four degree-four spaces. The twelve
+     recorded tests are nested, not twelve independent new families.
+     At degree four the row/column counts are 705/280, 841/280, 841/280,
+     and 2068/280. The final case has a three-term coefficient dual.
+     These identities remain valid over complex constant coefficients;
+     no numerical-rank or modular-lifting inference is used.
+
+     **1,376 complete columns independently reconstructed; 1,533 required
+     checks passed.** The positive verification took 0.990 seconds internally,
+     2.847 seconds as a process. Four search processes each took about one
+     second. Their row operations and full-column dual checks use exact QQ.
+     Base-only and rational-denominator manufactured positive controls pass.
+     Three mutations fail at the expected messages under python -O: remove
+     base terms, ignore denominator differentiation, or drop a dual term.
+     The first plot failed on unbraced Mathtext fractions; its receipt is
+     retained and only that plot was rerun after repair. The mutation/plot
+     operations totaled 10.492 seconds. Search budgets: 90 seconds internally,
+     120 per process; verifier 120; validation 300 total and plot 60.
+     No timeout. Python 3.11.9, SymPy 1.14.0, python-flint 0.9.0, CPU.
+
+     [Full equation, certificates and limits](notes/skew-base-derivatives.md) ·
+     [Pinned inputs](results/skew-base-derivatives/inputs.json) ·
+     [Independent column replay](results/skew-base-derivatives/verification.json) ·
+     [Commands, mutations and retained failure](results/skew-base-derivatives/validation.json) ·
+     [Read-only review scope](results/skew-base-derivatives/review.json) ·
+     [Reproducible operator visualization](visualizations/skew-base-derivatives.png).
+
+     **No target primitive found.** Other denominators, higher powers,
+     higher numerator degrees and unrestricted rational functions remain
+     open. This is not a full physical certificate exclusion or a bound on
+     homogeneous certificate degree. No Lean proof, trace, clearing or
+     full historical packet replay. The manufactured controls are not
+     solutions of the protected target. The finite matrix picture proves
+     no phase transition or geometric correspondence.
+
+     Credit fqlx's existing quotient/residue and rank-two companion work;
+     its degree-six modular searches are reported prior work, not rerun or
+     equated with this unreduced degree-four ansatz. Credit the protected
+     framework to Benjamin E. Diamond and contributors, and the chi-curve
+     motivation to Ravi Bajaj's GOE work. Prepared with OpenAI Codex and
+     independent read-only review. No novelty claim or upstream post in
+     this pass. Tally remains **28 discussion contributions, one closed
+     maintenance PR, zero accepted authored solves**. Historical ledger
+     bytes are preserved; this checkpoint is an append.

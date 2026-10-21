@@ -1,0 +1,24 @@
+{
+  "status": "no_material_defect_found",
+  "writers": 1,
+  "reviews": [
+    {
+      "reviewer": "jet_math_review",
+      "mode": "independent read-only derivation and source/script/receipt inspection",
+      "findings": "Confirmed contraction signs, full divergence operator, denominator derivative, factor84, complete monomials, exact dual tracking and partial pivot-count scope. Manually checked lowest-degree duals. Supplied base-only and rational-denominator manufactured positive controls.",
+      "executed_extra_suites": false
+    },
+    {
+      "reviewer": "chi_curve_bridge_review",
+      "mode": "independent read-only derivation and source/script/note/receipt inspection",
+      "findings": "Confirmed verifier independence, controls and restricted scope. Checked prior companion overlap. Independently derived the three coefficient equations 60(n2-n0),1260n0,1260n2 for D=a, degree<=4. No material correction.",
+      "executed_extra_suites": false
+    }
+  ],
+  "not_claimed": "No extra numerical checks or replay totals, historical packet replay, current upstream acceptance audit, or contribution-count review by these agents.",
+  "reviewed_sha256": {
+    "scripts/search_skew_base_derivatives.py": "af7d0355f02f30a13d42a1555e020576be933396f4a416b22ee7c289970a1db2",
+    "scripts/check_skew_base_derivatives.py": "47f68c227093c73400d42bb1443f64dafbdc6b0f7464be60dcb4c64c7fb25609",
+    "results/skew-base-derivatives/verification.json": "8b4ea3213b9da9a0ab683aea03ae0b558b1c7d86ad131b1e4f9c473540aa581b"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "method": "QQ polynomial column reconstruction; no matrix or elimination imported from search",
+  "python": "3.11.9",
+  "sympy": "1.14.0",
+  "seconds": 0.990035,
+  "required_checks": 1533,
+  "full_columns_checked": 1376,
+  "cases": [
+    {
+      "denominator": "1",
+      "degree_bound": 0,
+      "rows": 19,
+      "columns_checked": 4,
+      "nonzero_entries": 19,
+      "dual_terms": 2,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "1",
+      "degree_bound": 2,
+      "rows": 203,
+      "columns_checked": 60,
+      "nonzero_entries": 370,
+      "dual_terms": 2,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "1",
+      "degree_bound": 4,
+      "rows": 705,
+      "columns_checked": 280,
+      "nonzero_entries": 1925,
+      "dual_terms": 5,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "r",
+      "degree_bound": 0,
+      "rows": 23,
+      "columns_checked": 4,
+      "nonzero_entries": 23,
+      "dual_terms": 2,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "r",
+      "degree_bound": 2,
+      "rows": 243,
+      "columns_checked": 60,
+      "nonzero_entries": 394,
+      "dual_terms": 4,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "r",
+      "degree_bound": 4,
+      "rows": 841,
+      "columns_checked": 280,
+      "nonzero_entries": 1985,
+      "dual_terms": 9,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "t",
+      "degree_bound": 0,
+      "rows": 23,
+      "columns_checked": 4,
+      "nonzero_entries": 23,
+      "dual_terms": 2,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "t",
+      "degree_bound": 2,
+      "rows": 243,
+      "columns_checked": 60,
+      "nonzero_entries": 394,
+      "dual_terms": 4,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "t",
+      "degree_bound": 4,
+      "rows": 841,
+      "columns_checked": 280,
+      "nonzero_entries": 1985,
+      "dual_terms": 8,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "a",
+      "degree_bound": 0,
+      "rows": 61,
+      "columns_checked": 4,
+      "nonzero_entries": 61,
+      "dual_terms": 2,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "a",
+      "degree_bound": 2,
+      "rows": 627,
+      "columns_checked": 60,
+      "nonzero_entries": 1090,
+      "dual_terms": 2,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    },
+    {
+      "denominator": "a",
+      "degree_bound": 4,
+      "rows": 2068,
+      "columns_checked": 280,
+      "nonzero_entries": 5495,
+      "dual_terms": 3,
+      "dual_rhs_pairing": "1",
+      "all_column_pairings_zero": true
+    }
+  ],
+  "certificate_sha256": {
+    "search-1-degree0.json": "fd2ee43228ff83c6e0f3ee81fb95d7bb4247423cd8599b2fe7e9aa4db5d8e5ef",
+    "search-1-degree2.json": "61128e0d99ef1e07720715a978deff1ab7f20d67561ba7f55fbfd00b64225e4a",
+    "search-1-degree4.json": "9c46414945077d80487d16a73e98c757ec6d7432a89d3e863e3ad781f8615afc",
+    "search-r-degree0.json": "4894b7c4216cbc67caaa023834aad06fb2221ddcfb88a3a3297dcab649fd419b",
+    "search-r-degree2.json": "6d3c0f07ad53dac6a13b7145e01c083df6ffff7ae3d332779aa631505da1d6ed",
+    "search-r-degree4.json": "2e644e622ed68c2d22b183b074f4bf0259cc023cd7888672130871a1f6dc6ba2",
+    "search-t-degree0.json": "500a4f0f56203f5e8736a2d88c3683654f49c6fbe99222d3079b4593596e9724",
+    "search-t-degree2.json": "c536c962f206a73bd9be658d79f69e556c8aa55ed94ed8fe4ef6d01d2c04d533",
+    "search-t-degree4.json": "4c1fd5c3270ff7a33124ee3551ad8494041848fc8c5216c4203ce70db261197c",
+    "search-a-degree0.json": "9bb8785653fa8fc3aec9158380e2164e76979448b3c9f85b6682290580405c27",
+    "search-a-degree2.json": "c69419fcebe11f2c5fc5486db6f2a40b0c1aa1092a27df2212d624f96b564be3",
+    "search-a-degree4.json": "8b1b13a5102eee323c7c8a4a87bb625626f19568cc6f923f225b7f7a2fdc9def"
+  },
+  "checker_sha256": "47f68c227093c73400d42bb1443f64dafbdc6b0f7464be60dcb4c64c7fb25609",
+  "scope": "Four fixed denominators, total numerator degree <=0,2,4, all four components. No general rational or physical certificate exclusion."
+}

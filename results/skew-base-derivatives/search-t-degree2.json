@@ -1,0 +1,67 @@
+{
+  "outcome": "excluded_in_tested_family",
+  "rows": 243,
+  "columns": 60,
+  "pivots_before_contradiction_not_total_rank": 44,
+  "dual": [
+    {
+      "exponent": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "coefficient": "-3/5"
+    },
+    {
+      "exponent": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "coefficient": "-1/5"
+    },
+    {
+      "exponent": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "coefficient": "1/35"
+    },
+    {
+      "exponent": [
+        3,
+        2,
+        1,
+        2
+      ],
+      "coefficient": "-1/735"
+    }
+  ],
+  "denominator_label": "t",
+  "denominator": "t",
+  "denominator_power": 1,
+  "numerator_total_degree_bound": 2,
+  "variables": [
+    "U",
+    "r",
+    "w",
+    "t"
+  ],
+  "component_order": [
+    "U",
+    "r",
+    "w",
+    "t"
+  ],
+  "monomial_order": "total degree, then lexicographic exponent tuple",
+  "P": "U**3*r**6 + U**3*w**6 + U**3 + U**2*r**3*t*w + U**2*r*t - U*r*t**3/7 + U*r*t/7 + t**6 + 1",
+  "operator_scale": 84,
+  "scaled_rhs": "35*U^2*D^2",
+  "scope": "All four numerator components and every monomial of total degree at most the bound; fixed D only",
+  "seconds": 0.0,
+  "search_script_sha256": "af7d0355f02f30a13d42a1555e020576be933396f4a416b22ee7c289970a1db2"
+}

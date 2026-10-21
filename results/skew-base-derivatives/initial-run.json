@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/anaxe/AppData/Local/Programs/Python/Python311/python.exe",
+    "scripts/search_skew_base_derivatives.py",
+    "--denominator",
+    "1"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"denominator_label\": \"1\", \"numerator_total_degree_bound\": 0, \"outcome\": \"excluded_in_tested_family\", \"rows\": 19, \"columns\": 4, \"seconds\": 0.031}\n{\"denominator_label\": \"1\", \"numerator_total_degree_bound\": 2, \"outcome\": \"excluded_in_tested_family\", \"rows\": 203, \"columns\": 60, \"seconds\": 0.0}\n{\"denominator_label\": \"1\", \"numerator_total_degree_bound\": 4, \"outcome\": \"excluded_in_tested_family\", \"rows\": 705, \"columns\": 280, \"seconds\": 0.0}\n",
+  "stderr": "",
+  "seconds": 1.079,
+  "timeout_seconds": 120
+}
