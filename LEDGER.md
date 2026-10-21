@@ -3529,3 +3529,19 @@ restricted to actual upstream activity.
      No hodge-computer post, edit or PR was made. The contribution tally remains
      28 discussion contributions, one closed maintenance PR, zero accepted
      authored solves. Historical ledger bytes are preserved.
+
+     **Browser-audit follow-up supplied by the user, 21 October 2026:**
+     the browser reviewer reports a fresh run of the
+     [verifier pinned at d5f5974](https://github.com/rbajaj5/goe-determinant-factor-density/blob/d5f5974c195a4fe84e5be3698c4da98f50ce71a2/verification.py):
+     16/16 density/CDF comparisons passed, with maximum relative discrepancy
+     $3.735\times10^{-6}$ against tolerance $2\times10^{-5}$. It also reports
+     an independent integration at $m=1$ giving total mass 1 and fourth moment 7.
+     These are browser-reported checks, separate from this chat's earlier nine
+     numerical comparisons; the browser's execution logs and additional
+     integration code were not supplied here, and no new local replay is claimed.
+     For independent $X\sim\chi_1$ and $Y\sim\chi_{2m}$, the fourth moment also
+     follows analytically: $\mathbb E[R_m^4]=\mathbb E[X^4]+2\mathbb E[X^2]\mathbb E[Y^2]=3+4m$.
+     The browser report states that it made no remote edits. The published
+     documentation correction is the GOE commit linked above. The Weierstrass
+     post and contribution tally remain unchanged; physical source transport
+     remains a separate prospective audit.
