@@ -1,0 +1,37 @@
+{
+  "status": "PUBLISHED_AND_VERIFIED",
+  "ledger_audit_commit": "f00c533baad158c31b3581cab7866efb3c58443d",
+  "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359",
+  "operations": [
+    {
+      "operation": "audit commit exists locally",
+      "exit_code": 0
+    },
+    {
+      "operation": "audit published on Hodge Lab main",
+      "exit_code": 0
+    },
+    {
+      "operation": "authenticated contributor",
+      "exit_code": 0
+    },
+    {
+      "operation": "pre-edit body guard",
+      "exit_code": 0
+    },
+    {
+      "operation": "authorized correction",
+      "exit_code": 0
+    },
+    {
+      "operation": "independent readback",
+      "exit_code": 0
+    }
+  ],
+  "started_utc": "2026-10-21T17:20:33.988387+00:00",
+  "updated_at": "2026-10-21T17:20:37Z",
+  "before_body_sha256": "df55ad071e150da758b7559d2903e6cc466a10771dd3a876898332b7b117d8fb",
+  "after_body_sha256": "bf7e48695fcd798302db2d996ace907ffe04e38a6cf2a427f3fe627eb570113f",
+  "author": "rbajaj5",
+  "completed_utc": "2026-10-21T17:20:38.602840+00:00"
+}

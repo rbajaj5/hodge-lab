@@ -3393,3 +3393,22 @@ restricted to actual upstream activity.
      visualization. This edit must not increase the contribution tally, which
      remains 27 discussion contributions, one closed maintenance PR and zero
      accepted authored solves. Historical ledger entries are preserved.
+
+     **Publication outcome, 21 October 2026, 13:20:37 EDT / 17:20:37 UTC:**
+     after pushing the audit in
+     [f00c533baad158c31b3581cab7866efb3c58443d](https://github.com/rbajaj5/hodge-lab/commit/f00c533baad158c31b3581cab7866efb3c58443d),
+     added the authorized dated notice to
+     [the same mixed-biweight comment](https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359).
+     A fresh pre-edit hash matched; an independent readback matched the audited
+     draft and permalink exactly. The original body remains its exact suffix.
+     A separate read-only reviewer confirmed acceptance attribution, preservation
+     and valid UTF-8. [Verified operations and hashes](results/mixed-biweight-status-maintenance/publication-outcome.json)
+     · [Readback](results/mixed-biweight-status-maintenance/comment-after.json).
+
+     The user then steered further pushes to our own repositories/clone. The
+     already-dispatched authorized edit completed; no additional upstream action
+     was initiated. This outcome and preference are recorded in Hodge Lab only.
+     Prompt 3 is closed. The source reconstruction and rank correction were not
+     rerun; alternative drafts remain unverified monitoring entries. This is an
+     edit, not a new contribution: tally remains 27 discussion contributions,
+     one closed maintenance PR, zero accepted authored solves.

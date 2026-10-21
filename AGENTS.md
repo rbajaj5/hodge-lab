@@ -49,3 +49,13 @@ outcome and permalink afterward.
 Discussion 127 was missing from the repository’s latest recorded monitoring
 scope. It is now included in the intended monitoring scope. No external
 scheduled monitor was changed by this update.
+
+
+## Default publication destination — 21 October 2026
+
+The latest user instruction favors our own repositories or contributor clone
+for further pushes; upstream publication is not required. Keep ordinary work
+and bookkeeping on our side unless the user explicitly directs an upstream
+action. A notebook or fork push does not itself authorize a discussion edit.
+The ledger-before-publication and verified-outcome policies still apply to
+any future specifically authorized upstream action.
