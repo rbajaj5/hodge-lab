@@ -1,0 +1,9 @@
+import HodgeLab.OneReflectionSkew.AmbientDerivation
+open HodgeLab.OneReflectionSkew.AmbientDerivation
+example : ambientD (coord 0) = 0 := by simp [ambientD_coord]
+example : ambientD (coord 1) = 0 := by simp [ambientD_coord]
+example : ambientD (coord 2) = 0 := by simp [ambientD_coord]
+example : ambientD (coord 3) = 0 := by simp [ambientD_coord]
+example : ambientD (coord 4) = 1 := by simp [ambientD_coord]
+example : (coord 4)^2 * ambientD ((coord 4)⁻¹) = -1 := scaled_reciprocal_derivative
+example : G ≠ 0 := G_ne_zero

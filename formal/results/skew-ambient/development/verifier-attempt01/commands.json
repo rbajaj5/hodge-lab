@@ -1,0 +1,74 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean --version"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 6.844000000040978,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 git -C .lake/packages/mathlib rev-parse HEAD"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.18699999997625127,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.AmbientDerivation"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake build HodgeLab.OneReflectionSkew.AmbientDerivation"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 13.73399999999674,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "97cfb3da84cc83406424951a28092864edb07768ba282656d76f3a428e08560f"
+  }
+]

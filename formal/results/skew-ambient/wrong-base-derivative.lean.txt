@@ -1,0 +1,4 @@
+import HodgeLab.OneReflectionSkew.AmbientDerivation
+open HodgeLab.OneReflectionSkew.AmbientDerivation
+example : ambientD (coord 0) = 1 := by
+  simp [ambientD_coord]

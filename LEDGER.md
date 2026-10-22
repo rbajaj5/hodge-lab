@@ -4404,3 +4404,63 @@ No upstream post, reply, edit or PR was made. This indexes existing verified
 publications; the tally remains **29 discussion contributions, one closed
 maintenance PR, zero accepted authored solves**. Earlier entries and
 verification receipts are preserved.
+
+
+## Checkpoint 128 — 21 October 2026: construct the skew ambient derivation in Lean
+
+Notebook parent `71a44f03e38234f4f2ce82b6d4a956c9e3a2bbc0`; protected
+source pin `d5e9ef223a2cd210517f35c071e9a5108a15e025`. Reused the completed
+substitution, volume and residue proofs, saved source pins and checkpoint
+126 receipt. Inherited proof/input hashes were checked before and after
+verification. No old mathematical replay or acceptance audit was repeated.
+
+- [Construction, attribution and limits](notes/skew-ambient-lean.md).
+- [AmbientDerivation.lean](formal/HodgeLab/OneReflectionSkew/AmbientDerivation.lean)
+  constructs D on K=Frac(ℚ[U,r,w,t,z]) from the actual polynomial partial
+  derivative, using Mathlib's localization theorem for Kähler differentials.
+  The embedding identity D(ιp)=ι(∂z p) yields DU=Dr=Dw=Dt=0 and Dz=1.
+- The exact G-to-polynomial embedding includes 1/7. Fraction-field
+  injectivity gives z≠0; DG=6z⁵≠0 proves G≠0. These facts instantiate
+  the previous coefficient reduction and +5U²/(72z¹¹) normalization
+  without an unspecified derivation hypothesis in this ambient field.
+- Lean also proves that these same derivative values are incompatible
+  with G=0,z≠0. This is a normal-direction fact, not a nonexistence
+  theorem for primitives or tangential derivations. The generic quotient
+  identity uses Lean's total division; ordinary fractions require nonzero
+  denominators, proved for the concrete application.
+- [Executed receipt](formal/results/skew-ambient/validation.json): **12
+  theorem axiom audits, one new-module kernel replay, seven positive
+  controls and three rejected false statements**, **40.047 seconds**.
+  Bounds: 120 seconds per process, 600 seconds total; no timeout. Lean
+  4.31.0, Python 3.11.9, mathlib
+  `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`. Imports are reused;
+  no full-dependency kernel replay or future CI outcome is claimed.
+- The error controls reverse a base value, the normal sign, or the
+  reciprocal sign and reach closed False goals. These are proof controls,
+  not a second independent reconstruction. A separate read-only agent
+  reviewed the construction, verifier and all three error logs.
+- [Failed attempts](formal/results/skew-ambient/development/README.md)
+  preserve missing-cache, wrong cache-path, field-instance, rational
+  coefficient and reciprocal-simplification errors. One initial verifier
+  stopped at the reciprocal elaboration error. No failure is presented
+  as mathematical nonexistence.
+- [Reproducible dependency diagram](visualizations/skew-ambient.png) and
+  [generator](scripts/visualize_skew_ambient.py) show the constructed map,
+  proved coordinate values and ambient/divisor distinction; the source
+  hashes and receipt are required by the generator. Rendered PNG inspected.
+
+This closes the ambient-derivation existence dependency for this explicit
+rational chart. General exterior-derivative/residue transport, the lift
+through U=x², global descent, trace, clearing, a rational primitive and
+HasCertificate remain separate. No larger exclusion family, 45-versus-504
+comparison or accepted solve follows. Credit Benjamin E. Diamond and
+contributors for the target/framework, fqlx for the quotient/source
+reduction, and Mathlib contributors including Andrew Yang for the
+localization/Kähler differential theorem. No novelty claim.
+
+Hodge Lab publication only: no upstream post, reply, edit or PR. The Posts
+index still contains the 29 recorded discussion contributions, including
+entries 28 and 29 and the edit within 29. This batch creates no new entry
+there. Historical ledger text and prior receipts are preserved; tally
+unchanged at **29 discussion contributions, one closed maintenance PR,
+zero accepted authored solves**.

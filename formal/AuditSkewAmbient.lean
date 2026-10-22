@@ -1,0 +1,14 @@
+import HodgeLab.OneReflectionSkew.AmbientDerivation
+
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.ambientD_algebraMap
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.ambientD_coord
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.coord_ne_zero
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.ambientD_quotient
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.reciprocal_derivative
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.scaled_reciprocal_derivative
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.G_eq_algebraMap
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.ambientD_G
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.G_ne_zero
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.concrete_ambient_reduction
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.concrete_normal_factorization
+#print axioms HodgeLab.OneReflectionSkew.AmbientDerivation.no_unchanged_derivation_on_divisor

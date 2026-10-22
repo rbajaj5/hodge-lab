@@ -54,6 +54,9 @@ jobs:
       - name: Check local residue normalization and normal chart
         working-directory: formal
         run: python3 -O check_skew_residue.py
+      - name: Check the constructed ambient coordinate derivation
+        working-directory: formal
+        run: python3 -O check_skew_ambient.py
       - name: Save concrete proof receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -73,4 +76,6 @@ jobs:
             formal/results/skew-volume/*.log
             formal/results/skew-residue/*.json
             formal/results/skew-residue/*.log
+            formal/results/skew-ambient/*.json
+            formal/results/skew-ambient/*.log
           if-no-files-found: error

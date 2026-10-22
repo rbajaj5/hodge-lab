@@ -184,3 +184,12 @@ algebra, with no novelty claim. Read-only review checked signs, base
 cancellation and the ambient/divisor distinction. Hodge Lab only; no
 upstream post or edit. Tally unchanged: **29 discussion contributions,
 one closed maintenance PR, zero accepted authored solves**.
+
+
+## Follow-up — checkpoint 128, 21 October 2026
+
+The [ambient derivation construction](skew-ambient-lean.md) now instantiates
+the coordinate-derivation hypothesis on Frac(ℚ[U,r,w,t,z]), proving the
+required nonzero conditions there. The historical scope and receipt above
+are preserved. This does not extend the normal derivative to G=0 or supply
+a general residue operator or primitive.

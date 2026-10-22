@@ -38,6 +38,22 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the ambient derivation constructed in Lean
+
+[![From polynomial partial derivative to the rational ambient field](visualizations/skew-ambient.png)](notes/skew-ambient-lean.md)
+
+Lean now constructs the derivation on **Frac(ℚ[U,r,w,t,z])**, proves
+**DU=Dr=Dw=Dt=0, Dz=1**, and instantiates the existing +5/72 coefficient
+reduction. The needed z≠0 and G≠0 conditions are proved in that ambient
+field. **12 theorem audits, one new-module kernel replay, seven positive
+and three negative proof controls passed.**
+
+The same normal derivative cannot descend unchanged to G=0 with z≠0.
+General differential-form/residue transport and a rational primitive
+remain separate; this is no new solve or denominator exclusion.
+
+[Construction and limits](notes/skew-ambient-lean.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/AmbientDerivation.lean) · [Executed receipt](formal/results/skew-ambient/validation.json)
+
 ### One-reflection-skew: the local residue coefficient checked in Lean
 
 [![The positive 5/72 factor and separate ambient and divisor conditions](visualizations/skew-residue.png)](notes/skew-residue-lean.md)
@@ -47,10 +63,10 @@ normal partial **6z⁵**, the alternating sign and the correction's quotient
 derivative. **19 theorem audits, two new-module kernel replays and five
 deliberate-error controls passed.**
 
-The ambient proof assumes a coordinate derivation and z≠0, G≠0. Only the
-separate coefficient formula restricts to G=0, z≠0. Constructing that
-derivation, a general residue operator and the rational primitive remain
-outside this bounded proof.
+This earlier ambient theorem assumes a coordinate derivation and z≠0,
+G≠0; the construction above now instantiates those hypotheses in the
+rational ambient field. Only the separate coefficient formula restricts
+to G=0, z≠0. A general residue operator and the primitive remain separate.
 
 [Proof and chart limits](notes/skew-residue-lean.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean) · [Executed receipt](formal/results/skew-residue/validation.json)
 

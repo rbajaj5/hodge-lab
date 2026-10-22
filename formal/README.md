@@ -2,6 +2,17 @@
 
 ## One-reflection-skew polynomial obstruction
 
+The [ambient derivation module](HodgeLab/OneReflectionSkew/AmbientDerivation.lean)
+constructs D on Frac(ℚ[U,r,w,t,z]) via localization of Kähler differentials.
+It proves the coordinate values, z≠0 and G≠0, then instantiates the existing
+residue coefficient theorem. Run `python3 -O check_skew_ambient.py`:
+12 theorem audits, one new-module kernel replay, seven positive controls
+and three rejected false statements. [Construction and limits](../notes/skew-ambient-lean.md)
+· [Receipt](results/skew-ambient/validation.json).
+It also proves that these same coordinate-derivative values cannot hold
+on G=0,z≠0. Differential-form/residue transport and a primitive remain open
+formal obligations; this is an ambient-field construction.
+
 The [normal-chart module](HodgeLab/OneReflectionSkew/NormalChart.lean) and
 [residue coefficient module](HodgeLab/OneReflectionSkew/ResidueNormalization.lean)
 check the +5/72 local normalization: actual polynomial normal partial,
@@ -10,8 +21,8 @@ an explicit coordinate-derivation hypothesis. Run `python3 -O check_skew_residue
 19 theorem audits, two new-module kernel replays and five false-statement
 controls passed. [Chart assumptions and remaining API obligations](../notes/skew-residue-lean.md)
 · [Receipt](results/skew-residue/validation.json).
-This does not construct the ambient function-field derivation or a general
-residue operator; it does not supply a primitive.
+The ambient function-field derivation is now constructed in the separate
+module above. Neither result supplies a general residue operator or a primitive.
 
 The [coordinate-volume module](HodgeLab/OneReflectionSkew/CoordinateVolume.lean)
 now derives the actual polynomial Jacobians and ordered Euler-volume sign.

@@ -1,0 +1,25 @@
+{
+  "coordinate_order": [
+    "U",
+    "r",
+    "w",
+    "t",
+    "z"
+  ],
+  "proved_D_values": [
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "required_theorems": [
+    "ambientD_algebraMap",
+    "ambientD_coord",
+    "G_ne_zero",
+    "concrete_normal_factorization",
+    "no_unchanged_derivation_on_divisor"
+  ],
+  "ambient_field": "Frac(Q[U,r,w,t,z])",
+  "scope": "Proof dependencies and coordinate values; no hypersurface primitive."
+}

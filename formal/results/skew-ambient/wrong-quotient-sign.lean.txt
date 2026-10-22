@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.AmbientDerivation
+open HodgeLab.OneReflectionSkew.AmbientDerivation
+example : (coord 4)^2 * ambientD ((coord 4)⁻¹) = 1 := by
+  rw [scaled_reciprocal_derivative]
+  norm_num
