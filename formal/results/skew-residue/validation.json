@@ -1,0 +1,422 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-22T02:18:19.273781+00:00",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "check_skew_residue.py": "ce16fc9f6487f29b31c317ddbf611524cc079c699696a7caa7004282625e6fd2",
+    "AuditSkewResidue.lean": "8d193c6c5b560f6ee443803bcd318ac47548e133340fd431495acf128400fcca",
+    "ReplaySkewResidue.lean": "7a64fe137b3ebc3f7b4a0a43e5219c4f7b47c9fdea725e19a35a95a626f2ee19",
+    "check_skew_volume.py": "b68b5cb3e1faf306dc44d97b9182d4247141cad8a33fa9d91606042940004b56",
+    "skew_residue_algebra.py": "a349cc816797c2f65a8c1893471d7bbcf89fba0b076a561fd04847fc6dfb2b2a",
+    "HodgeLab/OneReflectionSkew/NormalChart.lean": "2d8050b1ae67b7187634e18add161c2576c920393b3fe416e7b04829782b2232",
+    "HodgeLab/OneReflectionSkew/ResidueNormalization.lean": "213abfe2f1ab6d997953bf01e20ce09d7b46b47820675288bee2e27ed1ca2efa"
+  },
+  "reused_source_lf_sha256": {
+    "HodgeLab/SparsePolynomial.lean": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+    "HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "HodgeLab/OneReflectionSkew/ThreeCoefficient.lean": "d5b56aa6ec51bf531eb0ed5de858e0e0f921cab5ed7dd9bf6bde6af8abb70138",
+    "HodgeLab/OneReflectionSkew/Controls.lean": "653a4e03f791b5ecc5686ae5bfd584a97e8acf902b6f97c92de861fc754045ec",
+    "HodgeLab/OneReflectionSkew/DegreeFour.lean": "8ccad69f0509a2538d34cccc46f2ecf8fc428b12214088b60b0a6a127faea848",
+    "HodgeLab/OneReflectionSkew/CoordinateComparison.lean": "d7c88cffbf24278e685dc4cfb44f9899eac2a7095877820c8e771aa28069f684",
+    "HodgeLab/OneReflectionSkew/ChartSubstitution.lean": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+    "HodgeLab/OneReflectionSkew/CoordinateVolume.lean": "2e5525339a4ac23e88ba62addda1b310fb10b7eb3dd664cd2b491f8186ada594",
+    "HodgeLab/OneReflectionSkew/VolumeDensity.lean": "d3950d20c3e330800d816f37eadfb07a5889bc5c67f22e1ac11041cac4ab7620"
+  },
+  "input_lf_sha256": {
+    "inputs.json": "2a004abd34cf4fa9165a03420e1deb5845a780fcc0c1baea30adbc4ce29d6b44",
+    "results/chi-target-source/inputs/data/one-reflection-skew/record.json": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+    "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+    "results/chi-target-source/inputs/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477"
+  },
+  "prior_receipt_lf_sha256": "0bb161ca8a853d8e9962875e1bde6164665984b43470e4034c0344620643cd24",
+  "independent_receipt_lf_sha256": "344d1557a7f94243253e8cd991c2ec0faa4af8029bff28e2cec9788f741feca9",
+  "artifact_sha256": {
+    "HodgeLab.OneReflectionSkew.NormalChart": "341c6e28ed5c4b86f0d1cda4d8c5f6eb6768438b2bcc9b84a0572d646e9781fe",
+    "HodgeLab.OneReflectionSkew.ResidueNormalization": "fa364a5f6077ffb234cbd8796e3df1338bfd087c561328dfc17042122864bbf3"
+  },
+  "theorem_axioms": {
+    "HodgeLab.OneReflectionSkew.NormalChart.chartPolynomial_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.chartPolynomial_pderiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.normalDerivative_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.coefficientMatrix_det": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.gradient_volume_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.coefficientMatrix_scaled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.base_covector_vanishes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.normalJacobian_entries": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.normalJacobian_det": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.normalDerivative_ne_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.NormalChart.normalJacobian_ne_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.cubic_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.chartDenominator_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.beta_denominator_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.beta_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.ambient_reduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.normalizedPoleCoefficient_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.simple_pole_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.ResidueNormalization.ambient_normal_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean --version"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 0.5790000000270084,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 git -C .lake/packages/mathlib rev-parse HEAD"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 0.18699999997625127,
+      "expected_failure": false,
+      "log": "mathlib-head.log",
+      "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.NormalChart",
+        "HodgeLab.OneReflectionSkew.ResidueNormalization"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake build HodgeLab.OneReflectionSkew.NormalChart HodgeLab.OneReflectionSkew.ResidueNormalization"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 1.1880000000237487,
+      "expected_failure": false,
+      "log": "build.log",
+      "log_lf_sha256": "85927ad4beb2a2c7c07e3dc1af2e9a82e92b3bc4dbdc699a5b7c7cea0181db4f"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewResidue.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean AuditSkewResidue.lean"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 3.875,
+      "expected_failure": false,
+      "log": "axioms.log",
+      "log_lf_sha256": "db340b88776aab2f2fd44eb131ad7fa5fb563b5e63fa50c0d3faa53f87dc0cc9"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewResidue.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean ReplaySkewResidue.lean"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 6.687999999965541,
+      "expected_failure": false,
+      "log": "kernel-replay.log",
+      "log_lf_sha256": "ca4cea64ed7780389dbba45f8f1be5122fcd30ca13947f5d48910d8f99adebf8"
+    },
+    {
+      "label": "positive-controls",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-residue-controls/positive.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-residue-controls/positive.lean"
+      ],
+      "exit_code": 0,
+      "bound_seconds": 120,
+      "elapsed_seconds": 4.077999999979511,
+      "expected_failure": false,
+      "log": "positive-controls.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "wrong-wedge-sign",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-residue-controls/wrong-wedge-sign.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-residue-controls/wrong-wedge-sign.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 3.8910000000032596,
+      "expected_failure": true,
+      "log": "wrong-wedge-sign.log",
+      "log_lf_sha256": "6a2f2c6f6630f67de46187c3c62b486ce16bd86ea3606ef2c61a84e61b1a9277"
+    },
+    {
+      "label": "wrong-residue-sign",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-residue-controls/wrong-residue-sign.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-residue-controls/wrong-residue-sign.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 4.078000000037719,
+      "expected_failure": true,
+      "log": "wrong-residue-sign.log",
+      "log_lf_sha256": "c9834e1480f738379476e32d3a386ec48f541fee4f6fcd3d67df0b7bf1a2ea6e"
+    },
+    {
+      "label": "missing-normal-factor-six",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-residue-controls/missing-normal-factor-six.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-residue-controls/missing-normal-factor-six.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 4.094000000040978,
+      "expected_failure": true,
+      "log": "missing-normal-factor-six.log",
+      "log_lf_sha256": "3ab53ed21f9f0107466ed1c64e04f0aa643b85deacaca00a4bc1f6fcf58ec996"
+    },
+    {
+      "label": "omitted-z-power-derivative",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-residue-controls/omitted-z-power-derivative.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-residue-controls/omitted-z-power-derivative.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 3.780999999959022,
+      "expected_failure": true,
+      "log": "omitted-z-power-derivative.log",
+      "log_lf_sha256": "148ff0d083e82c7741cc350ca373ff857309d463f83d030b543ef88ed5d8d1c5"
+    },
+    {
+      "label": "invalid-normal-chart",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-residue-controls/invalid-normal-chart.lean"
+      ],
+      "execution_command": [
+        "wsl.exe",
+        "--cd",
+        "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+        "-e",
+        "sh",
+        "-lc",
+        "exec timeout 120 lake env lean .lake/skew-residue-controls/invalid-normal-chart.lean"
+      ],
+      "exit_code": 1,
+      "bound_seconds": 120,
+      "elapsed_seconds": 3.9839999999967404,
+      "expected_failure": true,
+      "log": "invalid-normal-chart.log",
+      "log_lf_sha256": "730e903d4fa42bb6d652da5208a462d7770a5511ccd631d12b31c54251a0c96b"
+    }
+  ],
+  "elapsed_seconds": 36.59299999999348,
+  "total_budget_seconds": 600,
+  "new_theorems": 19,
+  "new_modules_replayed": 2,
+  "positive_controls": 8,
+  "negative_controls": 5,
+  "scope": "Actual normal polynomial derivative, arbitrary-covector orientation and conditional coordinate-derivation pole reduction; local normal coefficient 5/72.",
+  "limits": [
+    "No general exterior-derivative or residue operator instantiated",
+    "Ambient reduction assumes a coordinate derivation; its existence on the chosen function field is not constructed",
+    "Ambient z and G nonzero; final normal coefficient only z nonzero and may be restricted to G=0",
+    "No global descent, trace, primitive, clearing or HasCertificate",
+    "Prior proofs and mathlib reused; only two new modules kernel-replayed",
+    "No expanded denominator family or accepted solve"
+  ]
+}

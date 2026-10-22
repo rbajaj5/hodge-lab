@@ -1,0 +1,21 @@
+import HodgeLab.OneReflectionSkew.ResidueNormalization
+
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.chartPolynomial_eval
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.chartPolynomial_pderiv
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.normalDerivative_eq
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.coefficientMatrix_det
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.gradient_volume_coefficient
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.coefficientMatrix_scaled
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.base_covector_vanishes
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.normalJacobian_entries
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.normalJacobian_det
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.normalDerivative_ne_zero_iff
+#print axioms HodgeLab.OneReflectionSkew.NormalChart.normalJacobian_ne_zero_iff
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.cubic_derivative_zero
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.chartDenominator_derivative
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.beta_denominator_derivative
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.beta_derivative
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.ambient_reduction
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.normalizedPoleCoefficient_eq
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.simple_pole_factorization
+#print axioms HodgeLab.OneReflectionSkew.ResidueNormalization.ambient_normal_factorization

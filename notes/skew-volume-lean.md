@@ -170,3 +170,12 @@ independent read-only reviewer checked theorem and verifier scope. Published
 in Hodge Lab only, with no upstream post, reply, edit or PR. Tally unchanged:
 **29 discussion contributions, one closed maintenance PR, zero accepted
 authored solves**.
+
+
+## Follow-up — checkpoint 126
+
+The subsequent [local residue-coefficient proof](skew-residue-lean.md) checks
+the +5/72 factor using actual normal differentiation and alternating signs.
+The ambient derivative theorem has an explicit coordinate-derivation
+hypothesis; constructing that derivation and a general residue operator
+remain separate. The preceding checkpoint-125 scope is retained as history.

@@ -4304,3 +4304,72 @@ Hodge Lab publication only; no upstream post, reply, edit or PR. Historical
 ledger text, prior receipts and concurrent work are preserved. Contribution
 tally remains **29 discussion contributions, one closed maintenance PR,
 zero accepted authored solves**.
+
+
+## Checkpoint 126 — 21 October 2026: skew local residue coefficient in Lean
+
+Notebook parent `4c010b26ee5386f73deee8c9d526f7322420338b`; fresh upstream
+`d5e9ef223a2cd210517f35c071e9a5108a15e025`. Protected F, A, q=1 and
+variable order were pinned under 45-second request bounds and agree with
+checkpoints 124–125. Their substitution and volume proofs were reused;
+inherited source/input hashes and the prior receipt were checked before
+and after this run. No completed historical audit was reopened.
+
+- [Proof, assumptions, attribution and limits](notes/skew-residue-lean.md).
+- [NormalChart](formal/HodgeLab/OneReflectionSkew/NormalChart.lean) binds the
+  full five-variable chart polynomial to the existing G, differentiates it
+  to obtain G_z=6z⁵ and proves the actual normal-map Jacobian. For an
+  arbitrary covector v it proves det[v,eU,er,ew,et]=vz: the sign is positive
+  and base components cancel by alternation, without assuming they vanish.
+- [ResidueNormalization](formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean)
+  derives the quotient derivative of f=U²/(12z⁵G) from an explicit
+  D:Derivation ℚ K K with DU=Dr=Dw=Dt=0 and Dz=1. For z≠0,G≠0 it proves
+  the ambient coefficient identity ψ=Df+5U²/(12z⁶G). Dividing the simple-pole
+  numerator by the actual normal partial gives **+5U²/(72z¹¹)**.
+- Only the final coefficient theorem, which has no D or G≠0 hypothesis,
+  restricts to G=0,z≠0 under Res((dG/G)∧θ)=θ. The ambient derivation itself
+  must not be specialized to G=0 with those coordinate values. This is a
+  local determinant/coefficient model, not a general residue API.
+- [Executed receipt](formal/results/skew-residue/validation.json): **19
+  theorem audits, two new-module kernel replays, eight true control
+  statements compiled together and five deliberate errors rejected**.
+  Final run **36.593 seconds**; 120 seconds per command, 600 seconds total,
+  no timeout. Lean 4.31.0, mathlib
+  `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`, Python 3.11.9. Imported
+  proofs were reused; no full-dependency replay or future CI pass is claimed.
+- [Independent exact reconstruction](formal/results/skew-residue/independent.json)
+  computes all five G and f partials from the protected polynomial, verifies
+  the complete rational identities and normal coefficient, and checks
+  `−1/18=−7/36+5/36` at `(1,0,0,0,1)`. At the separate divisor point
+  `(-1,1,0,0,1)`, G=0, G_z=6 and the coefficient is 5/72. A base r-partial
+  of −1/32 at another point verifies that wedge cancellation is essential.
+- Strict Lean controls detect wrong wedge/residue signs, a missing normal
+  factor six, the omitted z⁻⁵ derivative and an invalid normal-chart claim
+  at z=0. False-proposition failures are distinguished from tool errors.
+- [Development archive](formal/results/skew-residue/development/README.md)
+  preserves missing-instance, simplification and syntax failures and their
+  sources/logs. These are implementation repairs, not mathematical exclusions.
+- [Reproducible figure](visualizations/skew-residue.png) and
+  [generator](scripts/visualize_skew_residue.py) use the checked rational
+  coefficients and show the ambient/divisor distinction. PNG inspected.
+
+This establishes the local normal-coefficient calculation under the stated
+coordinate-derivation hypotheses. It does **not** construct that derivation
+on the ambient function field, instantiate a general exterior-derivative or
+residue operator, prove global descent/trace/clearing, supply a rational
+primitive or HasCertificate, or extend the bounded denominator exclusions.
+The smallest next connection is constructing the required ambient derivation.
+
+Credit: Benjamin E. Diamond and upstream contributors for the target and
+framework; fqlx for the physical quotient/source reduction and companion
+formulation already cited in the earlier notebook. No novelty claim. A
+read-only reviewer checked the signs and chart separation.
+
+The user's ledger question was checked against the complete saved #127
+snapshot: [reply 19111234](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234)
+is recorded in checkpoint 119; its verified Lean edit is in checkpoint 120.
+No missing publication outcome was found. Checkpoints 124–126 are Hodge Lab
+batches; this pass made no upstream post, reply, edit or PR. Historical
+entries and receipts remain intact. The contribution tally stays **29
+discussion contributions, one closed maintenance PR, zero accepted authored
+solves**.

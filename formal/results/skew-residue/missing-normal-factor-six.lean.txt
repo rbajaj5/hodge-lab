@@ -1,0 +1,11 @@
+import HodgeLab.OneReflectionSkew.ResidueNormalization
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.NormalChart
+open HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ResidueNormalization
+example : 72 * normalizedPoleCoefficient (1 : ℚ) 0 0 0 1 = 30 := by
+  have checked : 72 * normalizedPoleCoefficient (1 : ℚ) 0 0 0 1 = 5 := by
+    rw [normalizedPoleCoefficient_eq _ _ _ _ _ (by norm_num)]
+    norm_num
+  rw [checked]
+  decide +kernel

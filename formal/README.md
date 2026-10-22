@@ -2,6 +2,17 @@
 
 ## One-reflection-skew polynomial obstruction
 
+The [normal-chart module](HodgeLab/OneReflectionSkew/NormalChart.lean) and
+[residue coefficient module](HodgeLab/OneReflectionSkew/ResidueNormalization.lean)
+check the +5/72 local normalization: actual polynomial normal partial,
+arbitrary-covector sign and cancellation, and quotient differentiation under
+an explicit coordinate-derivation hypothesis. Run `python3 -O check_skew_residue.py`.
+19 theorem audits, two new-module kernel replays and five false-statement
+controls passed. [Chart assumptions and remaining API obligations](../notes/skew-residue-lean.md)
+· [Receipt](results/skew-residue/validation.json).
+This does not construct the ambient function-field derivation or a general
+residue operator; it does not supply a primitive.
+
 The [coordinate-volume module](HodgeLab/OneReflectionSkew/CoordinateVolume.lean)
 now derives the actual polynomial Jacobians and ordered Euler-volume sign.
 The [density module](HodgeLab/OneReflectionSkew/VolumeDensity.lean) proves

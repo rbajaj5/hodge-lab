@@ -1,0 +1,10 @@
+import HodgeLab.OneReflectionSkew.ResidueNormalization
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.NormalChart
+open HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ResidueNormalization
+example : 36 * (uCoefficient (1 : ℚ) 0 0 0 1 - poleNumerator 1 1 / chartDenominator 1 0 0 0 1) = -2 := by
+  have checked : 36 * (uCoefficient (1 : ℚ) 0 0 0 1 - poleNumerator 1 1 / chartDenominator 1 0 0 0 1) = -7 := by
+    norm_num [uCoefficient, poleNumerator, chartDenominator, cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+  rw [checked]
+  decide +kernel

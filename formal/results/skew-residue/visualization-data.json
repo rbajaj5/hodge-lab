@@ -1,0 +1,148 @@
+{
+  "control_values": {
+    "G": "3",
+    "psi": "-1/18",
+    "beta_z": "-7/36",
+    "simple_pole": "5/36",
+    "residue_coefficient": "5/72"
+  },
+  "divisor_control": {
+    "point": [
+      -1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "G": "0",
+    "normal": "6",
+    "residue": "5/72"
+  },
+  "nonzero_base_partial": {
+    "point": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "direction": "r",
+    "value": "-1/32",
+    "wedge_contribution": 0
+  },
+  "polynomial": [
+    [
+      "1",
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      "1",
+      [
+        0,
+        0,
+        0,
+        0,
+        6
+      ]
+    ],
+    [
+      "1",
+      [
+        0,
+        0,
+        0,
+        6,
+        0
+      ]
+    ],
+    [
+      "1/7",
+      [
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    ],
+    [
+      "-1/7",
+      [
+        1,
+        1,
+        0,
+        3,
+        0
+      ]
+    ],
+    [
+      "1",
+      [
+        2,
+        1,
+        0,
+        1,
+        0
+      ]
+    ],
+    [
+      "1",
+      [
+        2,
+        3,
+        1,
+        1,
+        0
+      ]
+    ],
+    [
+      "1",
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      "1",
+      [
+        3,
+        0,
+        6,
+        0,
+        0
+      ]
+    ],
+    [
+      "1",
+      [
+        3,
+        6,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "normal": [
+    [
+      "6",
+      [
+        0,
+        0,
+        0,
+        0,
+        5
+      ]
+    ]
+  ],
+  "scope": "Local normal-coefficient reduction under Res((dG/G) wedge theta)=theta; no general residue map, global descent or primitive"
+}

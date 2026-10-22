@@ -38,6 +38,22 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the local residue coefficient checked in Lean
+
+[![The positive 5/72 factor and separate ambient and divisor conditions](visualizations/skew-residue.png)](notes/skew-residue-lean.md)
+
+Lean now checks the local normalization **+5U²/(72z¹¹)**, deriving the
+normal partial **6z⁵**, the alternating sign and the correction's quotient
+derivative. **19 theorem audits, two new-module kernel replays and five
+deliberate-error controls passed.**
+
+The ambient proof assumes a coordinate derivation and z≠0, G≠0. Only the
+separate coefficient formula restricts to G=0, z≠0. Constructing that
+derivation, a general residue operator and the rational primitive remain
+outside this bounded proof.
+
+[Proof and chart limits](notes/skew-residue-lean.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean) · [Executed receipt](formal/results/skew-residue/validation.json)
+
 ### One-reflection-skew: coordinate volume and signs checked in Lean
 
 [![The actual Euler-volume matrix and explicit chart assumptions](visualizations/skew-volume.png)](notes/skew-volume-lean.md)

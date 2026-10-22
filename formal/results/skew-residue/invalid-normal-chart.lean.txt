@@ -1,0 +1,11 @@
+import HodgeLab.OneReflectionSkew.ResidueNormalization
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.NormalChart
+open HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ResidueNormalization
+example : normalDerivative (1 : ℚ) 0 0 0 0 ≠ 0 := by
+  have checked : normalDerivative (1 : ℚ) 0 0 0 0 = 0 := by
+    rw [normalDerivative_eq]
+    norm_num
+  rw [checked]
+  decide +kernel

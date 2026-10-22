@@ -1,0 +1,29 @@
+import HodgeLab.OneReflectionSkew.ResidueNormalization
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.NormalChart
+open HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ResidueNormalization
+example : (coefficientMatrix (![0,0,0,0,1] : Fin 5 → ℚ)).det = 1 := by
+    rw [coefficientMatrix_det]
+    rfl
+
+example : 72 * normalizedPoleCoefficient (1 : ℚ) 0 0 0 1 = 5 := by
+    rw [normalizedPoleCoefficient_eq _ _ _ _ _ (by norm_num)]
+    norm_num
+
+example : 72 * normalizedPoleCoefficient (1 : ℚ) 0 0 0 1 = 5 := by
+    rw [normalizedPoleCoefficient_eq _ _ _ _ _ (by norm_num)]
+    norm_num
+
+example : 36 * (uCoefficient (1 : ℚ) 0 0 0 1 - poleNumerator 1 1 / chartDenominator 1 0 0 0 1) = -7 := by
+    norm_num [uCoefficient, poleNumerator, chartDenominator, cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+
+example : normalDerivative (1 : ℚ) 0 0 0 0 = 0 := by
+    rw [normalDerivative_eq]
+    norm_num
+example : chartDenominator (-1 : ℚ) 1 0 0 1 = 0 := by
+  norm_num [chartDenominator, cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+example : normalDerivative (-1 : ℚ) 1 0 0 1 = 6 := by
+  rw [normalDerivative_eq]; norm_num
+example : 72 * normalizedPoleCoefficient (-1 : ℚ) 1 0 0 1 = 5 := by
+  rw [normalizedPoleCoefficient_eq _ _ _ _ _ (by norm_num)]; norm_num
