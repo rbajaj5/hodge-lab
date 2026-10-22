@@ -4,6 +4,8 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
+**Current publication tally, through 21 October 2026 (EDT):** **29 discussion contributions**, one closed maintenance PR, and zero accepted authored solves. The two October 21 publications are entries **28 and 29** in [Posts](#posts) below; the Lean addendum edits entry 29 and does not add another contribution. Detailed publication receipts remain in checkpoints 112, 119 and 120. The earlier tally below is preserved as history.
+
 **Historical publication tally, through 19 October 2026 (EDT):** 27 discussion contributions (originally twenty top-level comments and seven replies); 0 authored issues; 1 maintenance pull request (closed); 0 reviews or review comments; 0 merged authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
 
 ## Visual Frontier Dashboard (October 2026)
@@ -123,6 +125,10 @@ flowchart LR
 26. **19 October 2026, 17:07 EDT / 21:07 UTC — [One-reflection-skew discussion #127: complete degree-six $E_1 + E_2$ exclusion over $\mathbb{C}$ (Kramers-bridge cascade, factored Casimir modes, and rank-9 diagonal quotient)](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19051428).** Shared the complete degree-six $E_1$ and $E_2$ exclusion over $\mathbb{C}$ for `one-reflection-skew`, raising its coprime denominator lower bound to $\deg D \ge 7$. Reports $\dim\ker(E_1)_6 = 36 = \dim J_6(F)$ ($0$ extra non-Jacobian directions), the two-step Hessian $E_2$ square cascade in $S_{12}/J_{12}$ ($28$ off-diagonals eliminated at Step 1; the Kramers-bridge doublet $M_{13}=(X_1,Y_0), M_{14}=(X_1,Y_1)$ isolated at Step 2), the three factored pure-Hessian modes ($Q_{\text{node}}, Q_{\text{Kramers}}, Q_{\text{bridge}}$), the full $9$-equation diagonal $E_2$ quotient system retaining all $315$ Koszul corrections and $462$ $F$-multiples, and full-rank cubic ($35/35$) and quartic ($70/70$) Macaulay elimination over $\mathbb{C}$. Links immutable commit [`2aa95c5`](https://github.com/rbajaj5/hodge-lab/blob/2aa95c5e4754547cdfdc6bf0a08bc8536e0aee05/notes/one-reflection-skew-degree6.md), inline [four-panel degree-six exclusion figure](https://github.com/rbajaj5/hodge-lab/blob/2aa95c5e4754547cdfdc6bf0a08bc8536e0aee05/results/one-reflection-skew-degree6/one-reflection-skew-degree6-exclusion.png), and exact proof packets. Published author `rbajaj5`, permanent URL, and exact 9,173-character body were read back and matched. No solve PR, Lean theorem, or exclusion of $\deg D \ge 7$ is claimed. [Publication receipt](results/one-reflection-skew-degree6/upstream-post.json).
 
 27. **19 October 2026, 17:40 EDT / 21:40 UTC — [One-reflection-skew discussion #127: degree-seven $\mathbb{Z}_2^4$ charge-parity superselection decomposition, $Y_2$-covariant scaling, and complete $Y_2$-odd exclusion over $\mathbb{C}$](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407).** Shared the complete degree-seven ($792$-monomial) $\mathbb{Z}_2^4$ superselection decomposition across all $8$ charge-parity sectors of $S_7$ and $S_{13}$ ($8{,}568$ rows, $\mathrm{rank}(J_{13}) = 6{,}882$, degree-$8$ Koszul syzygy kernel $\dim\ker(J_{13}) = 840 = 15 \times 56$, $\dim\ker(E_1)_7 = 135 = 126 + 9$), the $\mathbb{Z}_2^4$ Superselection Focusing Theorem mapping all $8$ sectors into $S_{14}[(1,0,1,0)]$ ($213$-dimensional quotient), the complete exclusion over $\mathbb{C}$ of all four $Y_2$-odd sectors ($41/135$ $E_1$ dimensions and $296/792$ $S_7$ monomials, via 1-step rank-$26/45$ elimination on the off-Euler triad and $Y_2$-covariant scaling $B_{Y_2 D_6}(Y_2 N_6) = Y_2^2 B_{D_6}(N_6)$ + rank-$9$ Macaulay $35/35, 70/70$ on `[0,0,0,1]`), and complete $Y_2$-decoupling + rank-$44/44$ base-quotient surjectivity across all four $Y_2$-even sectors. Links immutable commit [`45ab8ff`](https://github.com/rbajaj5/hodge-lab/blob/45ab8ff61c1af70a30c6cb16ea9a95252d6846d2/notes/one-reflection-skew-degree7.md), inline [four-panel degree-seven superselection figure](https://github.com/rbajaj5/hodge-lab/blob/45ab8ff61c1af70a30c6cb16ea9a95252d6846d2/results/one-reflection-skew-degree7/one-reflection-skew-degree7-sectors.png), and exact certificate (`sha256[:16] = dda75a2b1a2987c7`). Published author `rbajaj5`, permanent URL, and body were read back and verified. [Publication receipt](results/one-reflection-skew-degree7/upstream-post.json).
+
+28. **21 October 2026, 13:59 EDT / 17:59 UTC — [Moving-branch discussion #146: independent Weierstrass normalization and seed check](https://github.com/hodge-computer/sextics/discussions/146#discussioncomment-19103930).** Bounded exact reconstruction of covariant formulas, the source polynomial and finite-field seed calculations for the already accepted construction. The post does not claim a new solve, full physical transport or Lean/kernel replay; acceptance remains credited to `benediamond`'s PR #172 and the contributors identified in the post. The [pinned audit](https://github.com/rbajaj5/hodge-lab/blob/826ed4150c9b034f0bcd2e7874323e5d07136213/notes/moving-branch-weierstrass-audit.md) and [verified publication receipt](results/moving-branch-weierstrass-audit/publication-outcome.json) were already recorded in checkpoint 112.
+
+29. **21 October 2026, 19:35 EDT / 23:35 UTC — [One-reflection-skew discussion #127: three-coefficient obstruction and comparison of bounds](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234).** Reply under `fqlx`'s companion formulation: an exact certificate for denominator `a` and all four numerator components of total degree at most four, with no increased coverage over the companion screens claimed. Credit `fqlx` for the quotient, residue and companion formulation. The [pinned audit](https://github.com/rbajaj5/hodge-lab/blob/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39/notes/skew-small-obstruction-audit.md) and [verified publication receipt](results/skew-small-obstruction/upstream-publication/publication-outcome.json) are in checkpoint 119. **Edited at 19:56 EDT / 23:56 UTC** to add the bounded Lean verification; [verified edit receipt](formal/results/skew-lean/upstream/outcome.json), checkpoint 120. This is one contribution with an addendum, not two. The 45-versus-504 operator-image comparison and unrestricted rational primitives remain outside the published check.
 
 ## Pull requests
 
@@ -4373,3 +4379,28 @@ batches; this pass made no upstream post, reply, edit or PR. Historical
 entries and receipts remain intact. The contribution tally stays **29
 discussion contributions, one closed maintenance PR, zero accepted authored
 solves**.
+
+
+## Checkpoint 127 — 21 October 2026: bring the Posts index up to date
+
+Documentation maintenance against notebook parent
+`19dd61333e1f409054b33df0366decb2c22a9f44`. The user's copied section exposed
+an index omission: the prominent Posts list stopped at 27 even though the
+verified outcomes for contributions 28 and 29 were already recorded in
+checkpoints 112 and 119. Checkpoint 120 records an edit to contribution 29.
+The checkpoint 126 statement that no publication outcome was missing was
+about those detailed records; it did not address the incomplete Posts index.
+
+Added entries 28 and 29 to Posts and a current tally above the preserved
+historical tally. Checked both publication receipts and the edit receipt
+for comment ID, author, permanent URL, timestamp and verified status; the
+EDT times use UTC minus four hours. An independent read-only reviewer
+confirmed the scopes and that the Lean addendum is not another contribution.
+Checked the numbered Posts sequence, local receipt links, UTF-8, final diff
+and preservation of all prior ledger text. No mathematical replay was needed
+or executed for this documentation correction.
+
+No upstream post, reply, edit or PR was made. This indexes existing verified
+publications; the tally remains **29 discussion contributions, one closed
+maintenance PR, zero accepted authored solves**. Earlier entries and
+verification receipts are preserved.
