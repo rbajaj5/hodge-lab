@@ -53,6 +53,10 @@ a rational primitive remain separate.
 
 [Proof and limits](notes/skew-differential-forms-lean.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean) · [Executed receipt](formal/results/skew-forms/validation.json)
 
+[Related compact-source architecture](notes/skew-compact-architecture.md): fqlx’s
+physical correction and rank-17 reformulation, their reported scope, and the
+interfaces still needed to connect them to these Lean proofs.
+
 ### One-reflection-skew: the ambient derivation constructed in Lean
 
 [![From polynomial partial derivative to the rational ambient field](visualizations/skew-ambient.png)](notes/skew-ambient-lean.md)

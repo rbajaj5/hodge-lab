@@ -102,3 +102,31 @@ and [complete thread snapshot](../results/upstream-monitor-20261022/010928/discu
 No access failure or timeout occurred. No research replay or upstream action
 was performed. The tally remains **29 discussion contributions, one closed
 maintenance PR, zero accepted authored solves**.
+
+
+## Later monitor — 22 October 2026, 11:58 UTC
+
+Upstream remains at `d5e9ef223a2cd210517f35c071e9a5108a15e025`; all
+532 saved target/policy blob pins are unchanged from the previous monitor.
+Hodge Lab is at `824a5ba427eed35cd2c6ab4504612390533f2f2c`, including
+the completed ambient-form proof. No new acceptance is recorded.
+
+One new reply in [#127, fqlx comment 19113830](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830)
+reports a rational physical correction with a nonzero remainder and a
+rank-17 reformulation of the compact source problem. The primitive,
+homogeneous certificate and protected theorem remain missing. The claimed
+22 exact current checks, 16 audit checks and two-point matrix tests are
+author-reported; we did not replay them. The compact equivalence must not
+be widened to all certificates with extra fibre supports or general Q.
+
+All comment/reply pages in the 14 monitored discussions were compared by
+IDs, timestamps and body hashes. No other comment, reply or answer change
+was found. This is not new specific credit to rbajaj5; earlier parent-comment
+credit remains historical. [Pins, complete changed-thread snapshot and scope](../results/skew-compact-architecture/monitor-receipt.json).
+
+At the user's request, we also inspected and mapped the packet's architecture.
+The archive and all 40 member hashes pass, and its protected target matches
+our pin. This establishes byte provenance, not the reported mathematics.
+[Architecture, proposed Lean interface and limits](skew-compact-architecture.md).
+No packet math replay, upstream post, reply, edit or PR was performed.
+Posts and contribution tally remain 29; historical entries are preserved.

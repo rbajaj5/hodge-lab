@@ -1,0 +1,192 @@
+{
+  "scope": "Bounded monitoring, packet byte integrity and architecture assessment; no new mathematical proof or replay",
+  "retrieved_utc": "2026-10-22T11:58:02.269989+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "url": "https://github.com/hodge-computer/sextics/commit/d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "message": "Merge pull request #183 from hodge-computer/docs/representation-support\n\nMaintain the book and shared Lean resources for averaging, residue transport, coordinate/source reduction, and algebraic specialization.",
+      "committer_date": "2026-10-22T01:24:28Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "824a5ba427eed35cd2c6ab4504612390533f2f2c",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/824a5ba427eed35cd2c6ab4504612390533f2f2c",
+      "message": "Connect the skew coefficient reduction to actual differential forms",
+      "committer_date": "2026-10-22T02:56:58Z"
+    }
+  },
+  "previous_upstream_head": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+  "upstream_head_unchanged": true,
+  "unchanged_target_policy_blob_count": 532,
+  "discussions_checked": [
+    44,
+    55,
+    56,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    127
+  ],
+  "coverage": [
+    {
+      "number": 44,
+      "top_level_comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 55,
+      "top_level_comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 56,
+      "top_level_comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 111,
+      "top_level_comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 112,
+      "top_level_comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 113,
+      "top_level_comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 114,
+      "top_level_comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 115,
+      "top_level_comments": 1,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 116,
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 117,
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 118,
+      "top_level_comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 119,
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 120,
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 127,
+      "top_level_comments": 6,
+      "replies": 3,
+      "all_pages_fetched": true
+    }
+  ],
+  "new_comment": {
+    "id": "DC_kwDOVLOOJc4BI6dm",
+    "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830",
+    "parent_id": "DC_kwDOVLOOJc4BIyQ8",
+    "author": {
+      "login": "fqlx",
+      "name": "Ben Burns"
+    },
+    "createdAt": "2026-10-22T03:08:57Z",
+    "updatedAt": "2026-10-22T03:08:57Z",
+    "body": "**E2 update: an exact physical correction and a complete rank-17 reformulation; the primitive remains missing.**\n\nFor the unchanged `one-reflection-skew` target, $q=1$ and $A=X_0^3Y_0^3$, we have made progress beyond the [source/kernel update](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825). **We still have no complete E2 primitive, certificate $(D,N_i,Q)$, or instance theorem `HodgeComputer.HasCertificate`.**\n\n[Reproduction packet: formulas, checkers, recorded outputs, and hashes](https://gist.github.com/fqlx/1d83052f07e2898ef493a52c86a2180b)\n\nArchive SHA256: `d067112d6a859e2fb83d8139eb4de9fe410982ab593d1c77fee77602e72df449`.\n\n1. **A rational correction on the actual physical chart.** With the same $(a,b,c,d)$ as the parent comment, set $u=3db-c^2$, $j=27d^2a-9dcb+2c^3$, and $s=t^2$, so $d=1+s^3$. An exact reduction of the full two-row compact source $S$ gives\n\n   ```math\n   c^{-3}S=D_cH+C,\n   ```\n\n   with explicit rational vectors $H,C$. Integrating the meromorphic exact part on the genus-four curve $s^3=D^6-1$, where $D^6=d$, produces a rational two-form $\\Xi$ on the original physical chart. Its complete identity is\n\n   ```math\n   S\\,dr\\wedge dw\\wedge dt=\\nabla_M\\Xi+R\\,du\\wedge dc\\wedge dd,\n   ```\n\n\n   ```math\n   R=\\mathfrak r C-B_0J_cD_jH-fJ_dD_jC.\n   ```\n\n   Here $\\nabla_M=\\mathrm d+M$ is the full compact connection, $J_c=\\partial_cj_{\\rm phys}$ and $J_d=\\partial_dj_{\\rm phys}$, including the motion of $s$; $D_c,D_j$ are its coefficient-direction covariant derivatives. All coefficients are given in the packet. Both source rows and every transverse derivative are retained. The removed source contribution and remaining density are both nonzero at the exact ordinary point $(r,w,t)=(1,1,2)$. This is a global rational chart identity, improving on a slice calculation, but it does not cancel the full source.\n\n2. **The full compact problem has an explicit rank-17 formulation.** On the stated finite algebraic base, the actual scalar source is\n\n   ```math\n   \\omega=K\\frac{\\delta^{11}}{\\partial_\\delta G}\\,dL\\wedge dD\\wedge dz,\n   ```\n\n   where $G$ is the exact physical degree-18 polynomial. Its ordinary trace is zero. Retaining the entire trace-free part gives the basis $e_i=\\delta^i/(\\partial_\\delta G)$, $0\\le i\\le16$, and the remaining equation\n\n   ```math\n   (\\partial_L+A_L)y_L+(\\partial_D+A_D)y_D+(\\partial_z+A_z)y_z=K\\mathbf e_{11}.\n   ```\n\n   The vector $\\mathbf e_{11}$ is indexed from zero. The three unknown vectors have arbitrary rational coefficients on that base: there is no numerator-degree or pole-order cutoff here. The full finite trace back to the original two-row compact system has been audited, including all components and normalization $1/864$. **This is an equivalence for the compact formulation only**, not a necessity claim for every certificate with extra fibre poles or general $Q$. Trace zero does not make the source exact.\n\nThe physical-current checker passed **22 exact checks**. The rank-17 audit passed **16 exact checks**, with generic algebraic identities separated from implementation tests of all 102 derivative columns and six curvature matrices at two finite-field points. Those modular tests do not prove characteristic-zero rational solvability. No Lean certificate validation was performed.\n\nThe sink/scale-cascade idea motivated rational pole corrections; it has not supplied a Navier–Stokes theorem or an E2 solution. The concrete remaining task is to integrate the displayed nonzero source/remainder, then transport and verify a legal homogeneous certificate. Research is currently paused.\n\nPrepared for `fqlx` with ChatGPT and parallel AI-agent assistance. Independent checks here mean separate computational implementations and algebra audits, not independent human review. Credit Benjamin E. Diamond and the hodge.computer contributors for the problem and framework, and the earlier contributors in this thread for the source and companion calculations.\n",
+    "body_sha256": "26f989791c224d470da34946d8241aa8500c2b2a3f1b435fb7750deab77e7d66"
+  },
+  "other_comment_changes": 0,
+  "new_acceptance": false,
+  "new_specific_rbajaj5_credit": false,
+  "comparison": "comparison.json",
+  "full_changed_thread": "discussion-127.json",
+  "snapshots_sha256": {
+    "comparison.json": "69e3be7b00c77434ae9990f79073f6061106462fff47060c5b62c65e17035ab0",
+    "discussion-127.json": "7551779b3c2b67ad4d32a07dacae9f407e1fdf56972e1d7db35270f8bf4bdc48",
+    "packet-inventory.json": "ae0073d99c41d06a556f984ff3d08670c7567b54e587341f52bd4d04eb6081dc",
+    "packet-integrity.json": "6790ced36245bede54d2c2e6cb4b31132c3032f339dce0a4706d8c1476270ee6"
+  },
+  "baseline_sha256": "60d2855a23efc3d6f501c84a210685dfab6f256f712d1ed5b56d7a771a1a0b26",
+  "head_baseline_sha256": "6365c05ddc82fd2db399a3020765c1f64f03f0e9cfd9304616726332a48581df",
+  "source_head_receipt_sha256": "b35a2752630dca0519f8e698a5253e20a2311ae43ba5e9365834e0866d376d74",
+  "discussion_run": {
+    "started_utc": "2026-10-22T11:58:02.231045+00:00",
+    "helper": "work/read_hodge_discussions.py",
+    "per_request_seconds": 45,
+    "total_seconds": 240,
+    "baseline": "baseline-before-20261022T115802Z.json",
+    "status": "completed",
+    "snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261022T115802Z",
+    "finished_utc": "2026-10-22T11:58:09.937286+00:00"
+  },
+  "network_bound_seconds": 45,
+  "discussion_total_bound_seconds": 240,
+  "commands": [
+    "python -X utf8 work/read_hodge_repository_heads.py",
+    "python -X utf8 work/run_bounded_discussion_monitor.py",
+    "python -X utf8 work/compare_hodge_discussions.py work/discussion-monitor/20261022T021052Z",
+    "gh api gists/1d83052f07e2898ef493a52c86a2180b",
+    "python -X utf8 -O scripts/check_rank17_packet_inventory.py --packet-dir /path/to/downloaded-gist --output results/skew-compact-architecture/packet-integrity.json"
+  ],
+  "executed": [
+    "All 14 discussion comment/reply pages and ID/timestamp/body-hash comparison",
+    "All 40 archive member hashes",
+    "Exact protected target byte match"
+  ],
+  "author_reported_only": [
+    "22 physical-current exact checks",
+    "16 rank-17 audit checks",
+    "102 derivative columns and six curvature matrices at two finite-field points",
+    "Full compact equivalence and 1/864 trace transport"
+  ],
+  "not_executed": [
+    "No packet mathematical scripts",
+    "No new Lean proof or compilation",
+    "No primitive search",
+    "No trace/clearing replay",
+    "No upstream publication"
+  ],
+  "contribution_tally": {
+    "discussion_contributions": 29,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  }
+}

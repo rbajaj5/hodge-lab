@@ -4527,3 +4527,60 @@ the edit within 29. Notebook work creates no new Posts entry. Historical
 ledger text and prior receipts are preserved. Tally unchanged at **29
 discussion contributions, one closed maintenance PR, zero accepted
 authored solves**.
+
+
+## Checkpoint 130 — 22 October 2026: compact-source architecture and bounded monitor
+
+Notebook parent `824a5ba427eed35cd2c6ab4504612390533f2f2c`. The monitor
+at 11:58 UTC / 07:58 EDT found upstream unchanged at
+`d5e9ef223a2cd210517f35c071e9a5108a15e025`; all 532 target/policy blob
+pins are unchanged. All pages of #44, #55, #56, #111–120 and #127 were
+fetched and compared by IDs, timestamps and body hashes.
+
+Only [fqlx reply 19113830](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830)
+is new. It reports an exact physical compact correction with a nonzero
+remainder and a complete rank-17 reformulation within the compact problem.
+It supplies no primitive, homogeneous certificate, Lean validation or
+HasCertificate theorem. One-reflection-skew remains open. No other
+discussion change, new acceptance or new specific rbajaj5 credit was found.
+
+At the user's request to reuse this architecture, read the full thread
+context and principal packet explanations. Pinned gist revision
+`455deb68009f99b3da2cae7b68d30dd5ed5df82f`; archive SHA256
+`d067112d6a859e2fb83d8139eb4de9fe410982ab593d1c77fee77602e72df449`.
+Our integrity checker verifies the 96,076-byte archive, all **40 file
+hashes** (436,183 unpacked bytes), and an exact protected-target match.
+No packet mathematical scripts were executed. The 22 current checks,
+16 audit checks, 102 derivative columns, six two-point curvature tests
+and compact trace equivalence remain **author-reported evidence** here.
+
+- [Architecture, notation collisions and limits](notes/skew-compact-architecture.md).
+- [Executed integrity receipt](results/skew-compact-architecture/packet-integrity.json)
+  and [reproducible checker](scripts/check_rank17_packet_inventory.py).
+- [Monitoring coverage, pins, comparison and full changed thread](results/skew-compact-architecture/monitor-receipt.json).
+- [Reproducible architecture diagram](visualizations/skew-compact-architecture.png)
+  and [generator](scripts/visualize_skew_compact_architecture.py): checked
+  ambient forms, unverified compact interface, parallel correction and
+  rank-17 routes, and the missing integration/transport obligations.
+
+The adoption decision is to preserve full source/remainder identities and
+explicit connection/trace contracts. Do not identify the new degree-18 G,
+CM z, root difference delta, base sixth-root D or source scalar K with
+the earlier symbols. The correction and rank-17 paths are parallel;
+their composition would require another source-map check. The smallest
+proposed Lean unit is the codifferent trace-free basis theorem with the
+nonmonic leading-coefficient factor retained. **No new Lean theorem was
+implemented or checked in this pass.** Existing proofs and receipts stay
+unchanged. A separate read-only agent reviewed context and dependencies.
+
+Network requests were bounded at 45 seconds; the paginated discussion
+run had a 240-second total bound. No timeout/access failure. The archive
+check ran under Python -O; it verifies bytes, not solvability. No primitive
+search, matrix replay, trace/clearing replay or unrelated draft verification.
+Credit fqlx/Ben Burns and declared ChatGPT/agent assistance for the packet,
+Benjamin E. Diamond and contributors for the target/framework. Earlier
+rbajaj5 credit is not recounted as new. No copied proof claim or novelty claim.
+
+No upstream post, reply, edit or PR. Posts list remains 1–29 and the tally
+remains **29 discussion contributions, one closed maintenance PR, zero
+accepted authored solves**. Historical ledger text is preserved.

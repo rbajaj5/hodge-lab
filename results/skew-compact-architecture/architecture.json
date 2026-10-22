@@ -1,0 +1,54 @@
+{
+  "scope": "Architecture and evidence map; not a new proof",
+  "layers": [
+    {
+      "id": "ambient",
+      "status": "Our Lean proofs; physical pullback/residue incomplete",
+      "label": "Protected F,A → ambient forms"
+    },
+    {
+      "id": "compact",
+      "status": "fqlx packet; not replayed here",
+      "label": "Full two-row compact source S and connection M"
+    },
+    {
+      "id": "correction",
+      "status": "Author reports exact identity; remainder nonzero",
+      "label": "Partial current Xi + full remainder R"
+    },
+    {
+      "id": "rank17",
+      "status": "Author reports compact equivalence; integration unsolved",
+      "label": "Full trace-free rank-17 connection; source slot 11"
+    },
+    {
+      "id": "return",
+      "status": "No primitive or certificate supplied",
+      "label": "Integrate → trace → physical transport → clearing"
+    }
+  ],
+  "routes": [
+    [
+      "ambient",
+      "compact"
+    ],
+    [
+      "compact",
+      "correction"
+    ],
+    [
+      "compact",
+      "rank17"
+    ],
+    [
+      "correction",
+      "return"
+    ],
+    [
+      "rank17",
+      "return"
+    ]
+  ],
+  "warning": "The two middle routes are parallel; applying the rank-17 map to R requires another source-map check.",
+  "smallest_next_unit": "Codifferent basis and trace-kernel theorem, with nonmonic leading coefficient retained; planned, not implemented."
+}
