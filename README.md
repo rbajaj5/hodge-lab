@@ -8,16 +8,17 @@ An independent research notebook by [Ravi Bajaj](https://github.com/rbajaj5), ex
 
 ## Current frontier
 
-**Snapshot: 21 October 2026, 15:43 UTC.** The upstream catalogue at [`dda4c5e7`](https://github.com/hodge-computer/sextics/blob/dda4c5e72eeea8cfd52dd6e731e90031884f32fc/data/index.json) contains **82 targets: 65 solved and 17 open**.
+**Snapshot: 22 October 2026, 00:08 UTC.** The upstream catalogue at [`84f106e`](https://github.com/hodge-computer/sextics/blob/84f106ebf0731cbee1926833236361cddac0fc3f/data/index.json) contains **82 targets: 66 solved and 16 open**. [Latest status and verification scope](notes/upstream-status-20261022.md).
 
 | Target | Upstream status | Notebook entry point |
 | --- | --- | --- |
 | `one-reflection-skew` | **Open.** The feedback describes bounded obstructions and a remaining rational-primitive problem. | [Feedback, attribution, and verification limits](notes/one-reflection-skew-feedback-audit.md) · [Degree-seven calculations](notes/one-reflection-skew-degree7.md) |
 | `cycle-three` | **Accepted existence proof**, credited to `hodgepodgeconjecture` in [PR165](https://github.com/hodge-computer/sextics/pull/165). | [Earlier bounded exclusions](notes/fresh-instance-degree6.md) · [Acceptance audit](LEDGER.md) |
 | `mixed-biweight` | **Accepted existence proof**, credited to `fqlx` in [PR170](https://github.com/hodge-computer/sextics/pull/170), merged and published on 21 October. | [Bounded denominator calculation](notes/mixed-degree6-extra.md) |
+| `mixed-polar` | **Accepted existence proof**, credited to `benediamond` in [PR182](https://github.com/hodge-computer/sextics/pull/182), accepted 22 October UTC (21 October EDT). | [Acceptance, attribution and verification limits](notes/upstream-status-20261022.md) |
 | `cycle-q2` | **Open.** This is a separate higher-pole target; the accepted `cycle-three` proof does not settle it. | [Upstream problem and remaining obstruction](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/cycle-q2/why.md) |
 
-The two accepted existence proofs above do not provide an expanded polynomial witness or a numerical denominator-degree bound. Their acceptance is compatible with earlier bounded exclusions. [Mixed-biweight acceptance receipt](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/mixed-biweight/acceptance.json).
+The three accepted existence proofs above do not provide an expanded polynomial witness or a numerical denominator-degree bound. Their acceptance is compatible with earlier bounded exclusions. [Mixed-biweight acceptance receipt](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/mixed-biweight/acceptance.json).
 
 Research notes retain the status at the time they were written. This dated table and the ledger record later developments.
 
@@ -143,7 +144,7 @@ Plotting and numerical experiments use [`requirements.txt`](requirements.txt); C
 
 The ledger distinguishes numerical observations, exact identities, bounded exclusions, formal proofs, and accepted upstream submissions. Author-reported findings and locally reproduced checks are recorded separately. AI assistance is part of the workflow; each audit states what was actually executed.
 
-The recorded upstream contribution tally is **28 discussion contributions, one closed maintenance PR, and zero accepted authored solves by rbajaj5**. Acknowledgment of a research direction does not transfer solve authorship.
+The recorded upstream contribution tally is **29 discussion contributions, one closed maintenance PR, and zero accepted authored solves by rbajaj5**. Acknowledgment of a research direction does not transfer solve authorship.
 
 Every upstream post, reply, or substantive edit requires a ledger audit before publication, followed by the actual outcome and permanent link. Routine technical updates stay in this notebook. Discussion 127 is included in the intended monitoring scope; that policy does not itself change an external scheduled monitor.
 

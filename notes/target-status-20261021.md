@@ -34,3 +34,13 @@ over \(\mathbb{F}_{11}\) was substituted into the defining sextic (after clearin
 No new rational primitives, full certificates, or accepted solves are claimed. Upstream contribution tally remains unchanged (zero accepted authored solves by rbajaj5).
 
 This note records the verification scope of the present update.
+
+
+## Later status notice — 22 October 2026, 00:08 UTC
+
+The catalogue and open list above are preserved as the snapshot at `be8ec039`.
+The later [monitoring update](upstream-status-20261022.md) records mixed-polar's
+acceptance through PR #182 and the current 82-target catalogue (66 solved,
+16 open). Holdout-moving-branch's acceptance is already documented in the
+[completed transport audit](physical-source-transport-audit.md). These later
+statuses do not alter the scope of the line check recorded above.

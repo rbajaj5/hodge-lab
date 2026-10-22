@@ -1,0 +1,63 @@
+{
+  "retrieved_utc": "2026-10-22T00:12:16.315068+00:00",
+  "upstream_head": "84f106ebf0731cbee1926833236361cddac0fc3f",
+  "request_timeout_seconds": 45,
+  "requests": 7,
+  "python_version": "3.11.9",
+  "pull_request": {
+    "number": 182,
+    "html_url": "https://github.com/hodge-computer/sextics/pull/182",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-22T00:03:34Z",
+    "merge_commit_sha": "bc29abbedb88e9222d329220580bbfdaf04bed55",
+    "author": "benediamond",
+    "merged_by": "benediamond",
+    "head": "02796bf16efe274ffac4dc29aba3805793ce7a29",
+    "base": "a6b4cc49452abe31ead0be71d04e8146639896d9"
+  },
+  "source_pins": [
+    {
+      "path": "data/mixed-polar/acceptance.json",
+      "endpoint": "repos/hodge-computer/sextics/contents/data/mixed-polar/acceptance.json?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "git_blob_sha": "4c3da6962202e66fbede833d158f213b309abe9d",
+      "sha256": "b1b64f19af699d5f769012b27190f50799f5f759b6ad0378a04287a8ba5478d4",
+      "bytes": 8169
+    },
+    {
+      "path": "data/mixed-polar/proof.json",
+      "endpoint": "repos/hodge-computer/sextics/contents/data/mixed-polar/proof.json?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "git_blob_sha": "98601bb8a6c56e0682962bdae901debe23b5c30d",
+      "sha256": "265313c1e8a849ca38b60d7930b4a830e3a3441ab9725bbb052e86d95e86f1bf",
+      "bytes": 95
+    },
+    {
+      "path": "data/mixed-polar/solution.json",
+      "endpoint": "repos/hodge-computer/sextics/contents/data/mixed-polar/solution.json?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "git_blob_sha": "cfd705b0d4d7bb0fec0cdb5b97ce177d4dbec003",
+      "sha256": "b0265daa7999dfcd9eb4ad57bdecdc735dd15cce1b2c68038230766eacb77752",
+      "bytes": 1038
+    },
+    {
+      "path": "data/index.json",
+      "endpoint": "repos/hodge-computer/sextics/contents/data/index.json?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "git_blob_sha": "947b76b2a3dfc5ad2a732293fd9e4c69590b73c6",
+      "sha256": "800c6d516a2f25cd57923f8ee4225d393563b712d7a92875d7dd9d5ce2d388b6",
+      "bytes": 43558
+    },
+    {
+      "path": "leaderboard/credits.json",
+      "endpoint": "repos/hodge-computer/sextics/contents/leaderboard/credits.json?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "git_blob_sha": "f84ff4d3664e9473cea4ac0484fb9e235d344f6f",
+      "sha256": "f9b6d2c84a74e8e303fad7a863583ce9a1c08ee4025e4bb9faa61ea1ec0ad4d5",
+      "bytes": 13990
+    },
+    {
+      "path": "data/mixed-polar/solution.md",
+      "endpoint": "repos/hodge-computer/sextics/contents/data/mixed-polar/solution.md?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "git_blob_sha": "86926b2e7f2017dd0c4d9d17827445010120520f",
+      "sha256": "d9f8b4282571177b30d5c2e5e39cfe6c1dab4cf440eef9c7ed5277458cf258ee",
+      "bytes": 11107
+    }
+  ]
+}

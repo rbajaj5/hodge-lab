@@ -1,0 +1,609 @@
+{
+  "kind": "bounded read-only repository and discussion monitoring; no mathematical replay",
+  "retrieved_utc": "2026-10-22T00:08:36.926315+00:00",
+  "notebook_parent": "d76a73a8de1b37e12051f1ea919e1ebfc6d8fecc",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "84f106ebf0731cbee1926833236361cddac0fc3f",
+      "url": "https://github.com/hodge-computer/sextics/commit/84f106ebf0731cbee1926833236361cddac0fc3f",
+      "message": "Record accepted solution from PR #182",
+      "committer_date": "2026-10-22T00:04:11Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "d76a73a8de1b37e12051f1ea919e1ebfc6d8fecc",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/d76a73a8de1b37e12051f1ea919e1ebfc6d8fecc",
+      "message": "Record verified Lean addendum on the existing skew reply",
+      "committer_date": "2026-10-21T23:57:07Z"
+    }
+  },
+  "upstream_base": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+  "catalogue": {
+    "total": 82,
+    "status_counts": {
+      "solved": 66,
+      "open": 16
+    },
+    "relevant_records": [
+      {
+        "id": "mixed-polar",
+        "title": "Mixed polar · balanced target",
+        "status": "solved",
+        "formalStatus": "proved",
+        "evidenceKind": "existence-proof",
+        "certificateAvailable": true,
+        "visibility": "navigation",
+        "draftDisplayStatus": "solved",
+        "category": "Challenge instances",
+        "q": 1,
+        "path": "data/mixed-polar/record.json",
+        "credit": {
+          "githubLogin": "benediamond",
+          "origin": "contribution",
+          "awardedAt": "2026-10-21T22:46:01Z"
+        }
+      },
+      {
+        "id": "cycle-q2",
+        "title": "Cyclic coupling · pole order two",
+        "status": "open",
+        "formalStatus": "unproved",
+        "evidenceKind": "none",
+        "certificateAvailable": false,
+        "visibility": "navigation",
+        "draftDisplayStatus": "open",
+        "category": "Challenge instances",
+        "q": 2,
+        "path": "data/cycle-q2/record.json"
+      },
+      {
+        "id": "one-reflection-skew",
+        "title": "One reflection · skew coupling",
+        "status": "open",
+        "formalStatus": "unproved",
+        "evidenceKind": "none",
+        "certificateAvailable": false,
+        "visibility": "navigation",
+        "draftDisplayStatus": "open",
+        "category": "Challenge instances",
+        "q": 1,
+        "path": "data/one-reflection-skew/record.json"
+      }
+    ],
+    "accepted_credit": {
+      "instanceId": "mixed-polar",
+      "githubLogin": "benediamond",
+      "origin": "contribution",
+      "awardedAt": "2026-10-21T22:46:01Z",
+      "acceptedAt": "2026-10-22T00:03:34Z"
+    }
+  },
+  "new_commits": [
+    {
+      "sha": "c6a986b32ec2b0f20a00151d673747210997bab5",
+      "message": "Solve mixed-polar by cubic covariants and Jacobian transport"
+    },
+    {
+      "sha": "02796bf16efe274ffac4dc29aba3805793ce7a29",
+      "message": "Serialize coefficient elaboration within the sandbox thread limit"
+    },
+    {
+      "sha": "bc29abbedb88e9222d329220580bbfdaf04bed55",
+      "message": "Merge pull request #182: solve mixed-polar\n\nAccept the mixed-polar certificate after protected compilation, kernel replay, and exact-target axiom audit passed for 02796bf16efe274ffac4dc29aba3805793ce7a29 against a6b4cc49452abe31ead0be71d04e8146639896d9."
+    },
+    {
+      "sha": "84f106ebf0731cbee1926833236361cddac0fc3f",
+      "message": "Record accepted solution from PR #182"
+    }
+  ],
+  "changed_paths": [
+    {
+      "path": "data/index.json",
+      "status": "modified",
+      "blob_sha": "947b76b2a3dfc5ad2a732293fd9e4c69590b73c6"
+    },
+    {
+      "path": "data/mixed-polar/CubicBivariate.lean",
+      "status": "added",
+      "blob_sha": "9bdd1fcd1906940758608798ad3d619decfb281e"
+    },
+    {
+      "path": "data/mixed-polar/CubicCoefficientExpressions.lean",
+      "status": "added",
+      "blob_sha": "da7020faef9d1e4422e80f5e54ce025da62fb7c2"
+    },
+    {
+      "path": "data/mixed-polar/CubicCoefficientsA.lean",
+      "status": "added",
+      "blob_sha": "d5899de76860f977bb4b4a0ce563e6f172034768"
+    },
+    {
+      "path": "data/mixed-polar/CubicCoefficientsB.lean",
+      "status": "added",
+      "blob_sha": "d33897eecd47299c41cab7c8e3d00ade2c9ea5ef"
+    },
+    {
+      "path": "data/mixed-polar/CubicCoefficientsC.lean",
+      "status": "added",
+      "blob_sha": "9487da447b70e6738e48e8b4a8b6f9a0ec7445b6"
+    },
+    {
+      "path": "data/mixed-polar/CubicCoefficientsD.lean",
+      "status": "added",
+      "blob_sha": "9975dd5e10609e1b1443d7f249d733b5f75dffda"
+    },
+    {
+      "path": "data/mixed-polar/CubicCovariants.lean",
+      "status": "added",
+      "blob_sha": "8e478615e4e2caef3bde7f14d8252f6601bc6100"
+    },
+    {
+      "path": "data/mixed-polar/CubicDifferential.lean",
+      "status": "added",
+      "blob_sha": "1c6aebcab122b1e3a466ac892780db10d6f92378"
+    },
+    {
+      "path": "data/mixed-polar/CubicDifferentialData.lean",
+      "status": "added",
+      "blob_sha": "0cacd6a6f17f5201cbfa785cef526f4156db4531"
+    },
+    {
+      "path": "data/mixed-polar/CubicDifferentialJets.lean",
+      "status": "added",
+      "blob_sha": "4f76415a2a700cfd6d5cdd2d4d2fc0405cd62046"
+    },
+    {
+      "path": "data/mixed-polar/CubicDifferentialTables.lean",
+      "status": "added",
+      "blob_sha": "a34cdb634deb1541e7537b32361003185c0d14c6"
+    },
+    {
+      "path": "data/mixed-polar/CubicEncoding.lean",
+      "status": "added",
+      "blob_sha": "8bc4b463837c7e91e2f4bec8cdbf58c926511fb3"
+    },
+    {
+      "path": "data/mixed-polar/CubicFieldDifferential.lean",
+      "status": "added",
+      "blob_sha": "83b46d0acbaba1f2d5ee2b59526302cd5e4429ec"
+    },
+    {
+      "path": "data/mixed-polar/CubicFunctorial.lean",
+      "status": "added",
+      "blob_sha": "e0779fa9e49df50bd2ca4205b8a9aea702025ea9"
+    },
+    {
+      "path": "data/mixed-polar/CubicIdentityData.lean",
+      "status": "added",
+      "blob_sha": "73c458c5da2f92ec8638927018aeb9700674f17f"
+    },
+    {
+      "path": "data/mixed-polar/CubicIdentityTablesA.lean",
+      "status": "added",
+      "blob_sha": "fdb6e6da815a05b3dc8a7d4fb25e7ae732cfb446"
+    },
+    {
+      "path": "data/mixed-polar/CubicIdentityTablesB.lean",
+      "status": "added",
+      "blob_sha": "3e3ae7f73ca0fa5959f2d75f950ea26d69aee0e1"
+    },
+    {
+      "path": "data/mixed-polar/CubicIdentityTablesC.lean",
+      "status": "added",
+      "blob_sha": "f56abcd94e6adca0069eedeb4fe11021ac85a05f"
+    },
+    {
+      "path": "data/mixed-polar/CubicJetAlgebra.lean",
+      "status": "added",
+      "blob_sha": "9daf770554882253d44fc42537a3c7cbf4813d13"
+    },
+    {
+      "path": "data/mixed-polar/CubicJetCalculus.lean",
+      "status": "added",
+      "blob_sha": "a85b39a239ab15381567f719853ddc8c87ec3b39"
+    },
+    {
+      "path": "data/mixed-polar/CubicMap.lean",
+      "status": "added",
+      "blob_sha": "aaac1de7758828ac40e594131b3da25a81e41fce"
+    },
+    {
+      "path": "data/mixed-polar/CubicPoint.lean",
+      "status": "added",
+      "blob_sha": "90315b97da844601243a5168c3798243b1eab1f0"
+    },
+    {
+      "path": "data/mixed-polar/CubicSyzygy.lean",
+      "status": "added",
+      "blob_sha": "43aa44f4d396727b82a771b7f15f361224ac61e6"
+    },
+    {
+      "path": "data/mixed-polar/JacobianDimension.lean",
+      "status": "added",
+      "blob_sha": "2ab1660d4a8008fff9476e6db62f0708f742f28f"
+    },
+    {
+      "path": "data/mixed-polar/JacobianDomain.lean",
+      "status": "added",
+      "blob_sha": "1eb572e0e20358ac08ba5466fca972914be5203d"
+    },
+    {
+      "path": "data/mixed-polar/JacobianEmbedding.lean",
+      "status": "added",
+      "blob_sha": "729b1b18bf4ce14306a9a057b5715c38212487d5"
+    },
+    {
+      "path": "data/mixed-polar/JacobianFamily.lean",
+      "status": "added",
+      "blob_sha": "500b9a0727325677854f80e57d61bc3695b82241"
+    },
+    {
+      "path": "data/mixed-polar/JacobianGeometry.lean",
+      "status": "added",
+      "blob_sha": "af9ed12cc35bfc4ef9dedd29abcca140c7f70a48"
+    },
+    {
+      "path": "data/mixed-polar/JacobianHypersurface.lean",
+      "status": "added",
+      "blob_sha": "5e587aeedae501816567cbc3c13dfe51ea066074"
+    },
+    {
+      "path": "data/mixed-polar/JacobianIncidence.lean",
+      "status": "added",
+      "blob_sha": "035f1afc6b6b747d8cc93d910e1a66627e5ffd1d"
+    },
+    {
+      "path": "data/mixed-polar/JacobianLifting.lean",
+      "status": "added",
+      "blob_sha": "b3eb8ca298b82a1463d29cfc79d58c1a17f9767b"
+    },
+    {
+      "path": "data/mixed-polar/JacobianModel.lean",
+      "status": "added",
+      "blob_sha": "19efb488e32b5904c426eb8b30139cd74192d6c7"
+    },
+    {
+      "path": "data/mixed-polar/JacobianNormal.lean",
+      "status": "added",
+      "blob_sha": "d5dd277122d67a1a14efca576d5c82d348e67f23"
+    },
+    {
+      "path": "data/mixed-polar/JacobianParameters.lean",
+      "status": "added",
+      "blob_sha": "6298ae1c125a549256397df2b1636d5570e8b3fa"
+    },
+    {
+      "path": "data/mixed-polar/JacobianResidue.lean",
+      "status": "added",
+      "blob_sha": "74a20b0d25a2cb9f1f2d93d833f856c2de2ca21b"
+    },
+    {
+      "path": "data/mixed-polar/JacobianSeed.lean",
+      "status": "added",
+      "blob_sha": "21bc2794fe3313099390ab50116d4e8dd75b9b9a"
+    },
+    {
+      "path": "data/mixed-polar/JacobianSeedBinding.lean",
+      "status": "added",
+      "blob_sha": "de27ef55180ef74fd3fbad3eb247e5cf5bcf70db"
+    },
+    {
+      "path": "data/mixed-polar/JacobianSource.lean",
+      "status": "added",
+      "blob_sha": "56a97dd89df93efff988a41881febad3f95dff06"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalChart.lean",
+      "status": "added",
+      "blob_sha": "963540ab71ccb6c40804ed8a250eb5eb520e02ca"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalClearing.lean",
+      "status": "added",
+      "blob_sha": "2bd165ab4c1d0d085897727b9bbcb936fb01194f"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalCoordinates.lean",
+      "status": "added",
+      "blob_sha": "7cdd754ffdf347ab026708bb98e5bcd0e19bebba"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalCubicJets.lean",
+      "status": "added",
+      "blob_sha": "3c254d889497470df57ee7f56aa39ee96020268a"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalCubicTangent.lean",
+      "status": "added",
+      "blob_sha": "862bde77cd1abec8908fc19a46f7d2422bc157e1"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalCubicVolume.lean",
+      "status": "added",
+      "blob_sha": "9f54d0ebc9edbd5de9af6d08ff788b0bfaf74c4e"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalField.lean",
+      "status": "added",
+      "blob_sha": "a932f0be276662a1002a71a177bb947b75e4184f"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalJacobianCoefficients.lean",
+      "status": "added",
+      "blob_sha": "cf1c25e881d0b73ad8ec3706971a8220fe911526"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalJacobianCoordinates.lean",
+      "status": "added",
+      "blob_sha": "f99515796492fa364dab0667bcbbdf64ae2c516f"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalJacobianMap.lean",
+      "status": "added",
+      "blob_sha": "52e035eee5294dad98661a1d25747b8f30ffaf12"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalNormalTransport.lean",
+      "status": "added",
+      "blob_sha": "b74174bb7e8385cf6848e5f9e4d1dfa741a4a333"
+    },
+    {
+      "path": "data/mixed-polar/PhysicalPrimitive.lean",
+      "status": "added",
+      "blob_sha": "83b116ace0c333873eeb7825b0bf24f9ba853482"
+    },
+    {
+      "path": "data/mixed-polar/Solution.lean",
+      "status": "added",
+      "blob_sha": "ccc0660f20115a047f2828b31210a2b69b1033e8"
+    },
+    {
+      "path": "data/mixed-polar/acceptance.json",
+      "status": "added",
+      "blob_sha": "4c3da6962202e66fbede833d158f213b309abe9d"
+    },
+    {
+      "path": "data/mixed-polar/proof.json",
+      "status": "added",
+      "blob_sha": "98601bb8a6c56e0682962bdae901debe23b5c30d"
+    },
+    {
+      "path": "data/mixed-polar/record.json",
+      "status": "modified",
+      "blob_sha": "a13b8a1f76b7b886d18f4044158f5cb773c7f941"
+    },
+    {
+      "path": "data/mixed-polar/solution.html",
+      "status": "added",
+      "blob_sha": "9cc780948a8e417f5e6d6fd52c16f3222402a256"
+    },
+    {
+      "path": "data/mixed-polar/solution.json",
+      "status": "added",
+      "blob_sha": "cfd705b0d4d7bb0fec0cdb5b97ce177d4dbec003"
+    },
+    {
+      "path": "data/mixed-polar/solution.md",
+      "status": "added",
+      "blob_sha": "86926b2e7f2017dd0c4d9d17827445010120520f"
+    },
+    {
+      "path": "data/mixed-polar/solution.rec",
+      "status": "added",
+      "blob_sha": "e3ff2ee114ae759c578a18169de8b588bd48445c"
+    },
+    {
+      "path": "data/revision.json",
+      "status": "modified",
+      "blob_sha": "dc48099bc30c15109660e9b323923564c7980af3"
+    },
+    {
+      "path": "leaderboard/credits.json",
+      "status": "modified",
+      "blob_sha": "f84ff4d3664e9473cea4ac0484fb9e235d344f6f"
+    }
+  ],
+  "protected_and_policy_comparison": {
+    "no_changed_paths_outside_data_and_leaderboard": true,
+    "changed_record_patch": "@@ -300,13 +300,37 @@\n   \"slice\": \"slices/mixed-polar.json\",\n   \"rationale\": \"why.md\",\n   \"provenanceFile\": \"provenance.json\",\n-  \"formalStatus\": \"unproved\",\n-  \"status\": \"open\",\n-  \"evidenceKind\": \"none\",\n-  \"certificateAvailable\": false,\n+  \"formalStatus\": \"proved\",\n+  \"status\": \"solved\",\n+  \"evidenceKind\": \"existence-proof\",\n+  \"certificateAvailable\": true,\n   \"content\": {\n-    \"why\": \"data/mixed-polar/why.html\"\n+    \"why\": \"data/mixed-polar/why.html\",\n+    \"solution\": \"data/mixed-polar/solution.html\"\n   },\n-  \"witnessAvailability\": \"missing\",\n-  \"draftDisplayStatus\": \"open\"\n+  \"pullRequest\": {\n+    \"number\": 182,\n+    \"url\": \"https://github.com/hodge-computer/sextics/pull/182\",\n+    \"headCommit\": \"02796bf16efe274ffac4dc29aba3805793ce7a29\",\n+    \"baseCommit\": \"a6b4cc49452abe31ead0be71d04e8146639896d9\",\n+    \"mergeCommit\": \"bc29abbedb88e9222d329220580bbfdaf04bed55\"\n+  },\n+  \"certificate\": {\n+    \"proofSource\": \"data/mixed-polar/Solution.lean\"\n+  },\n+  \"witnessAvailability\": \"lean-source\",\n+  \"leanVerification\": {\n+    \"formalStatus\": \"proved\",\n+    \"status\": \"accepted\",\n+    \"proofFile\": \"data/mixed-polar/Solution.lean\",\n+    \"receipt\": \"data/mixed-polar/acceptance.json\",\n+    \"theorem\": \"Submission.certificate\",\n+    \"checker\": \"Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)\"\n+  },\n+  \"credit\": {\n+    \"githubLogin\": \"benediamond\",\n+    \"origin\": \"contribution\",\n+    \"awardedAt\": \"2026-10-21T22:46:01Z\"\n+  },\n+  \"draftDisplayStatus\": \"solved\"\n }",
+    "unchanged_instance_rec_count": 82,
+    "mixed_polar_instance_blob": "b38097877610163cdceb5e7b17cfa78b1cc82f9e",
+    "no_verifier_or_policy_changes_in_comparison": true
+  },
+  "discussion_coverage": [
+    {
+      "number": 44,
+      "url": "https://github.com/hodge-computer/sextics/discussions/44",
+      "updatedAt": "2026-10-21T12:53:52Z",
+      "top_level_comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 55,
+      "url": "https://github.com/hodge-computer/sextics/discussions/55",
+      "updatedAt": "2026-10-20T20:18:14Z",
+      "top_level_comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 56,
+      "url": "https://github.com/hodge-computer/sextics/discussions/56",
+      "updatedAt": "2026-10-21T15:24:57Z",
+      "top_level_comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 111,
+      "url": "https://github.com/hodge-computer/sextics/discussions/111",
+      "updatedAt": "2026-10-20T04:58:31Z",
+      "top_level_comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 112,
+      "url": "https://github.com/hodge-computer/sextics/discussions/112",
+      "updatedAt": "2026-10-19T15:31:00Z",
+      "top_level_comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 113,
+      "url": "https://github.com/hodge-computer/sextics/discussions/113",
+      "updatedAt": "2026-10-19T03:15:29Z",
+      "top_level_comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 114,
+      "url": "https://github.com/hodge-computer/sextics/discussions/114",
+      "updatedAt": "2026-10-19T20:59:52Z",
+      "top_level_comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 115,
+      "url": "https://github.com/hodge-computer/sextics/discussions/115",
+      "updatedAt": "2026-10-20T00:00:41Z",
+      "top_level_comments": 1,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 116,
+      "url": "https://github.com/hodge-computer/sextics/discussions/116",
+      "updatedAt": "2026-10-17T18:15:22Z",
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 117,
+      "url": "https://github.com/hodge-computer/sextics/discussions/117",
+      "updatedAt": "2026-10-17T18:15:26Z",
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 118,
+      "url": "https://github.com/hodge-computer/sextics/discussions/118",
+      "updatedAt": "2026-10-17T18:15:30Z",
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 119,
+      "url": "https://github.com/hodge-computer/sextics/discussions/119",
+      "updatedAt": "2026-10-17T18:15:34Z",
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 120,
+      "url": "https://github.com/hodge-computer/sextics/discussions/120",
+      "updatedAt": "2026-10-17T18:15:38Z",
+      "top_level_comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "number": 127,
+      "url": "https://github.com/hodge-computer/sextics/discussions/127",
+      "updatedAt": "2026-10-21T23:35:55Z",
+      "top_level_comments": 6,
+      "replies": 2,
+      "all_pages_fetched": true
+    }
+  ],
+  "discussion_deltas": [
+    {
+      "number": 127,
+      "added": [
+        {
+          "id": "DC_kwDOVLOOJc4BI5PZ",
+          "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825",
+          "author": {
+            "login": "fqlx",
+            "name": "Ben Burns"
+          },
+          "updatedAt": "2026-10-21T20:51:48Z",
+          "body_sha256": "961d54cb9b4b7c446c48a3f70d91e077e0c79b309f5b86145ea97aba55788ca8"
+        },
+        {
+          "id": "DC_kwDOVLOOJc4BI51C",
+          "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+          "author": {
+            "login": "rbajaj5",
+            "name": null
+          },
+          "updatedAt": "2026-10-21T23:56:40Z",
+          "body_sha256": "ac2976172c1785ab9fe31ae132d52c6bbcb339c5fe905489294f3e5616d62c88"
+        }
+      ],
+      "edited": [],
+      "removed": [],
+      "body_changed": false,
+      "answer_changed": false
+    }
+  ],
+  "delta_interpretation": "Both added IDs in #127 are already recorded in checkpoints 119/120, including the current Lean addendum. No new unrecorded credit, edited old post, deletion or acceptance answer change found in the monitored threads.",
+  "snapshot_hashes": {
+    "repository-heads-20261021T194322Z.json": "a1584bb9e919595781cb96f62164208f7e2bb9ad604cd19e010b3dcd849702c5",
+    "repository-heads-20261022T000836Z.json": "828c7e9b79cbdda25a4cc8720fbe8e2f57a8f3a6cd7a03729d257155ea306c76",
+    "baseline-before-20261022T000836Z.json": "b7abf0ca67466ffb4f2f9a845f5f4779e02c386b98f13317da07c88ea4c10669",
+    "20261022T000836Z/manifest.json": "2f908fadd5ad8b6f4bcdcfcc96c4ea54280932ba78bcee9e88dfca9ddee81aa5"
+  },
+  "commands": [
+    {
+      "command": "python work/run_bounded_discussion_monitor.py",
+      "request_timeout_seconds": 45,
+      "total_budget_seconds": 240,
+      "result": "completed, 6.827 seconds"
+    },
+    {
+      "command": "python work/read_hodge_repository_heads.py",
+      "request_timeout_seconds": 45,
+      "requests": 4,
+      "result": "completed"
+    },
+    {
+      "command": "python work/save_monitor_acceptance_20261022.py; additional pinned solution.md capture",
+      "request_timeout_seconds": 45,
+      "requests": 7,
+      "result": "completed; each downloaded file Git blob hash checked"
+    },
+    {
+      "command": "gh api repos/hodge-computer/sextics/contents/PATH?ref=84f106ebf0731cbee1926833236361cddac0fc3f",
+      "purpose": "Pinned source paths and blob/SHA256 hashes are in acceptance-capture.json"
+    },
+    {
+      "command": "gh api repos/hodge-computer/sextics/pulls/182",
+      "purpose": "Read-only live merge state, author, merger and commit pins"
+    }
+  ],
+  "versions": {
+    "python": "3.11.9",
+    "gh": "gh version 2.96.0 (2026-07-02)"
+  },
+  "failures_and_limits": [
+    "No network access failure or timeout in the monitor or acceptance capture.",
+    "One reviewer console print failed under cp1252 after a successful API read; corrected once using explicit UTF-8 and compact output. No authentication retry.",
+    "No Lean build, kernel replay, independent polynomial check, workflow-artifact replay, primitive reconstruction or denominator clearing executed here.",
+    "Protected-check results and axiom list are statements in the pinned upstream receipt, not newly executed checks.",
+    "Historical proofs, alternative drafts, Prompt 3 and existing corrections were not reopened."
+  ],
+  "publication": {
+    "upstream_actions": 0,
+    "contribution_tally": 29,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  }
+}

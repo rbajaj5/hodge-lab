@@ -4040,3 +4040,42 @@ The tally remains **29 discussion contributions, one closed maintenance PR,
 and zero accepted authored solves**. The 45-versus-504 image comparison is
 still deferred. This outcome supersedes the prepublication plan immediately
 above without changing its historical text.
+
+
+## Checkpoint 121 — 21 October 2026: mixed-polar accepted upstream
+
+Bounded monitor at **22 October 2026, 00:08 UTC / 21 October, 8:08 p.m. EDT**.
+Notebook parent `d76a73a8de1b37e12051f1ea919e1ebfc6d8fecc`; upstream moved from
+`a6b4cc49452abe31ead0be71d04e8146639896d9` to
+`84f106ebf0731cbee1926833236361cddac0fc3f` through four commits.
+
+**New acceptance:** [mixed-polar, PR #182](https://github.com/hodge-computer/sextics/pull/182),
+credited to **benediamond**, owner-merged at 2026-10-22T00:03:34Z. The pinned
+receipt records successful protected checking and kernel replay for proposal
+`02796bf16efe274ffac4dc29aba3805793ce7a29`, followed by owner acceptance. This
+monitor read those records; it did not rerun Lean or the mathematical proof.
+The accepted result is existential, with Lean source but no expanded polynomial
+witness or denominator-degree bound exported. It adds no rbajaj5 solve credit.
+
+- [Status note and pinned primary sources](notes/upstream-status-20261022.md).
+- [Commands, page coverage, input hashes and limits](results/upstream-monitor-20261022/monitor-receipt.json)
+  and [acceptance capture](results/upstream-monitor-20261022/acceptance-capture.json).
+- Current catalogue: **82 targets, 66 solved and 16 open**. One-reflection-skew
+  and cycle-q2 remain open. No verifier/policy change or protected target
+  polynomial/source change was found in this upstream comparison.
+- All comments/replies in #44, #55, #56, #111–120 and #127 were fetched and
+  compared by ID, timestamp and body hash. The only two new IDs relative to
+  the previous full monitor are already recorded in checkpoints 119/120:
+  fqlx's 19108825 and our 19111234, including its Lean addendum. They are not
+  counted or announced again. No other substantive thread change was found.
+- README's stale tally of 28 is corrected to the already recorded **29**.
+  Earlier snapshots and ledger entries are preserved; later status is linked
+  explicitly. No proof replay, new experiment, upstream post, reply or edit.
+
+Per-request bounds were 45 seconds; the full discussion fetch completed in
+6.827 seconds within its 240-second budget. A read-only review had one console
+encoding failure after a successful API read, corrected once with explicit
+UTF-8; there was no access failure, timeout or authentication retry loop.
+This status maintenance does not require a new research visualization.
+Contribution tally remains **29 discussion contributions, one closed
+maintenance PR, and zero accepted authored solves**.
