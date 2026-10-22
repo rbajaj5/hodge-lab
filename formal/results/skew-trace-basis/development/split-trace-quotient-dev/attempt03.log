@@ -1,0 +1,50 @@
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:50:51: error: Application type mismatch: The argument
+  Finset.mem_univ j
+has type
+  j ∈ Finset.univ
+but is expected to have type
+  Set.InjOn ?m.48 ↑?m.46
+in the application
+  Lagrange.eval_interpolate_at_node ?m.54 (Finset.mem_univ j)
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:50:42: error: Application type mismatch: The argument
+  Function.Injective.injOn hr
+has type
+  Set.InjOn roots ?m.52
+of sort `Prop` but is expected to have type
+  ?m.44 → ?m.42
+of sort `Type (max ?u.28 ?u.29)` in the application
+  Lagrange.eval_interpolate_at_node (Function.Injective.injOn hr)
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:67:9: error: Application type mismatch: The argument
+  (LinearMap.injective_iff_surjective_of_finrank_eq_finrank hd).mpr ?m.77
+has type
+  Function.Injective ⇑?m.74
+but is expected to have type
+  Function.Injective ⇑(evaluation a roots)
+in the application
+  And.intro ((LinearMap.injective_iff_surjective_of_finrank_eq_finrank hd).mpr ?m.77)
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:91:4: error: No applicable extensionality theorem found for type
+  Type u_1
+
+Note: Extensionality theorems can be registered by marking them with the `[ext]` attribute
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:128:2: error: 'change' tactic failed, pattern
+  derivativeValue a roots j * (roots j ^ ↑i / derivativeValue a roots j) = roots j ^ ↑i
+is not definitionally equal to target
+  eval₂ (algebraMap K (SplitAlgebra K)) roots (derivative (coverPolynomial a roots)) j *
+      (roots j ^ ↑i / derivativeValue a roots j) =
+    roots j ^ ↑i
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:126:41: warning: This simp argument is unused:
+  Polynomial.aeval_pi_apply₂
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.mul_apply, Pi.pow_apply, Polynomial.aeval_p̵i̵_̵a̵p̵p̵l̵y̵₂̵,̵
+  ̵ ̵ ̵ ̵ ̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵a̵e̵v̵a̵l̵_̵def, Polynomial.eval₂_id, codifferent]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean:127:26: warning: This simp argument is unused:
+  Polynomial.eval₂_id
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.mul_apply, Pi.pow_apply, Polynomial.aeval_pi_apply₂, Polynomial.aeval_def,
+  ̲  ̲ ̲ ̲P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵e̵v̵a̵l̵₂̵_̵i̵d̵,̵ ̵codifferent]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

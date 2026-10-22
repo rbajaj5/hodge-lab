@@ -38,6 +38,20 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: trace-free basis in Lean
+
+[![Full degree-18 quotient and trace kernel](visualizations/skew-trace-basis.png)](notes/skew-trace-basis-lean.md)
+
+For a degree-18 polynomial with **nonzero leading coefficient and eighteen
+distinct roots in the coefficient field**, Lean constructs the full quotient's
+derivative-weighted basis and **17-dimensional trace kernel**. The last
+basis vector has trace **1/a18**. All 18 components are retained.
+**56 declaration audits, three module kernel replays, seven positive and
+three negative controls passed.** Unsplit descent and literal physical
+source binding remain open; trace zero does not establish a primitive.
+
+[Proof and limits](notes/skew-trace-basis-lean.md) · [Lean quotient module](formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean) · [Executed receipt](formal/results/skew-trace-basis/validation.json)
+
 ### One-reflection-skew: actual differential forms in Lean
 
 [![From coefficients to actual Kähler differential forms](visualizations/skew-forms.png)](notes/skew-differential-forms-lean.md)

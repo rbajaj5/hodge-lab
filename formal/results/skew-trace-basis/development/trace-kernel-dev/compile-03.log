@@ -1,0 +1,32 @@
+HodgeLab/OneReflectionSkew/TraceKernel.lean:99:2: error: unsolved goals
+case refine_2
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : Basis (Fin (n + 1)) K V
+T : V →ₗ[K] K
+c : K
+hzero : ∀ (i : Fin n), T (b i.castSucc) = 0
+hlast : T (b (Fin.last n)) = c
+hc : c ≠ 0
+i : Fin n
+j : Fin (n + 1)
+k : Fin n
+⊢ (Finsupp.single i 1) k = (Finsupp.single i.castSucc 1) k.castSucc
+HodgeLab/OneReflectionSkew/TraceKernel.lean:100:10: warning: This simp argument is unused:
+  Basis.repr_self_apply
+
+Hint: Omit it from the simp argument list.
+  simp [B̵a̵s̵i̵s̵.̵r̵e̵p̵r̵_̵s̵e̵l̵f̵_̵a̵p̵p̵l̵y̵,̵ ̵Fin.castSucc_inj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:100:33: warning: This simp argument is unused:
+  Fin.castSucc_inj
+
+Hint: Omit it from the simp argument list.
+  simp [Basis.repr_self_apply,̵ ̵F̵i̵n̵.̵c̵a̵s̵t̵S̵u̵c̵c̵_̵i̵n̵j̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

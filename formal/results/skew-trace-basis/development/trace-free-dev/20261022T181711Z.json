@@ -1,0 +1,14 @@
+{
+  "command": [
+    "wsl.exe",
+    "--cd",
+    "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+    "-e",
+    "sh",
+    "-lc",
+    "exec timeout 120 lake build HodgeLab.OneReflectionSkew.TraceFreeBasis"
+  ],
+  "exit_code": 0,
+  "seconds": 23.31199999997625,
+  "bound_seconds": 120
+}

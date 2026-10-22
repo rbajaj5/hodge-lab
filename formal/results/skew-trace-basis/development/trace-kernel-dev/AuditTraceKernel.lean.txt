@@ -1,0 +1,23 @@
+import HodgeLab.OneReflectionSkew.TraceKernel
+
+open HodgeLab.OneReflectionSkew.TraceKernel
+
+#check trace_eq_last_coefficient
+#check mem_ker_iff_last_coefficient_eq_zero
+#check kernelEquiv
+#check kernelBasis
+#check kernelBasisSeventeen
+#check kernelBasis_apply
+#check kernelBasis_repr
+#check slot_eleven_mem_ker
+
+#print axioms trace_eq_last_coefficient
+#print axioms mem_ker_iff_last_coefficient_eq_zero
+#print axioms kernelCoordinates_injective
+#print axioms kernelCoordinates_surjective
+#print axioms kernelEquiv
+#print axioms kernelBasis
+#print axioms kernelBasis_apply
+#print axioms kernelBasis_repr
+#print axioms kernelBasisSeventeen
+#print axioms slot_eleven_mem_ker

@@ -1,0 +1,160 @@
+import Mathlib.LinearAlgebra.Lagrange
+import Mathlib.LinearAlgebra.Vandermonde
+import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
+import Mathlib.RingTheory.Trace.Defs
+import HodgeLab.OneReflectionSkew.TraceKernel
+
+/-!
+The codifferent trace formulas on the entire split degree-18 algebra.
+The scalar `a` is the leading coefficient, not a hidden monic normalization.
+The roots are independent data required to be pairwise distinct. No literal
+physical cover, splitting-field descent, or primitive is asserted here.
+-/
+noncomputable section
+
+namespace HodgeLab.OneReflectionSkew.TraceFreeBasis
+
+open scoped BigOperators
+open Polynomial Module
+
+variable {K : Type*} [Field K]
+
+abbrev SplitAlgebra (K : Type*) [Field K] := Fin 18 → K
+
+def coverPolynomial (a : K) (roots : Fin 18 → K) : K[X] :=
+  C a * Lagrange.nodal Finset.univ roots
+
+def derivativeValue (a : K) (roots : Fin 18 → K) (j : Fin 18) : K :=
+  (coverPolynomial a roots).derivative.eval (roots j)
+
+def codifferent (a : K) (roots : Fin 18 → K) (i : Fin 18) : SplitAlgebra K :=
+  fun j => roots j ^ (i : ℕ) / derivativeValue a roots j
+
+theorem leading_coefficient (a : K) (roots : Fin 18 → K) :
+    (coverPolynomial a roots).leadingCoeff = a := by
+  simp [coverPolynomial, Polynomial.leadingCoeff_mul,
+    Lagrange.nodal_monic.leadingCoeff]
+
+theorem cover_degree (a : K) (ha : a ≠ 0) (roots : Fin 18 → K) :
+    (coverPolynomial a roots).natDegree = 18 := by
+  simp [coverPolynomial, Polynomial.natDegree_C_mul ha]
+
+theorem derivative_value (a : K) (roots : Fin 18 → K) (j : Fin 18) :
+    derivativeValue a roots j =
+      a * ∏ k ∈ Finset.univ.erase j, (roots j - roots k) := by
+  simp only [derivativeValue, coverPolynomial, Polynomial.derivative_mul,
+    Polynomial.derivative_C, zero_mul, zero_add, Polynomial.eval_mul,
+    Polynomial.eval_C]
+  rw [Lagrange.eval_nodal_derivative_eval_node_eq (Finset.mem_univ j),
+    Lagrange.eval_nodal]
+
+theorem derivative_value_ne_zero (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (j : Fin 18) : derivativeValue a roots j ≠ 0 := by
+  rw [derivative_value]
+  apply mul_ne_zero ha
+  apply Finset.prod_ne_zero_iff.mpr
+  intro k hk
+  exact sub_ne_zero.mpr (fun h => (Finset.mem_erase.mp hk).1 (hr h).symm)
+
+theorem algebra_trace_eq_sum (x : SplitAlgebra K) :
+    Algebra.trace K (SplitAlgebra K) x = ∑ j, x j := by
+  rw [Algebra.trace_eq_matrix_trace (Pi.basisFun K (Fin 18))]
+  simp [Matrix.trace, Algebra.leftMulMatrix]
+
+theorem monomial_weight_sum (roots : Fin 18 → K) (hr : Function.Injective roots)
+    (i : Fin 18) :
+    (∑ j, roots j ^ (i : ℕ) / ∏ k ∈ Finset.univ.erase j, (roots j - roots k)) =
+      if (i : ℕ) = 17 then 1 else 0 := by
+  have h := Lagrange.coeff_eq_sum (s := Finset.univ) hr.injOn
+    (P := (X : K[X]) ^ (i : ℕ)) (by simpa using i.isLt)
+  simpa [Polynomial.coeff_X_pow, eq_comm] using h.symm
+
+theorem trace_codifferent (a : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (i : Fin 18) :
+    Algebra.trace K (SplitAlgebra K) (codifferent a roots i) =
+      (if (i : ℕ) = 17 then 1 else 0) / a := by
+  rw [algebra_trace_eq_sum]
+  simp only [codifferent, derivative_value]
+  calc
+    (∑ j, roots j ^ (i : ℕ) / (a * ∏ k ∈ Finset.univ.erase j, (roots j - roots k))) =
+        (∑ j, roots j ^ (i : ℕ) / ∏ k ∈ Finset.univ.erase j, (roots j - roots k)) / a := by
+      simp only [div_eq_mul_inv, mul_inv_rev, ← mul_assoc, Finset.sum_mul]
+    _ = _ := by rw [monomial_weight_sum roots hr i]
+
+def evaluationMatrix (a : K) (roots : Fin 18 → K) : Matrix (Fin 18) (Fin 18) K :=
+  Matrix.diagonal (fun j => (derivativeValue a roots j)⁻¹) * Matrix.vandermonde roots
+
+theorem evaluation_matrix_det_ne_zero (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) : (evaluationMatrix a roots).det ≠ 0 := by
+  rw [evaluationMatrix, Matrix.det_mul, Matrix.det_diagonal]
+  exact mul_ne_zero (Finset.prod_ne_zero_iff.mpr fun j _ =>
+    inv_ne_zero (derivative_value_ne_zero a ha roots hr j))
+    (Matrix.det_vandermonde_ne_zero_iff.mpr hr)
+
+def codifferentBasis (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) : Basis (Fin 18) K (SplitAlgebra K) :=
+  (Pi.basisFun K (Fin 18)).map
+    (Matrix.toLinearEquiv (Pi.basisFun K (Fin 18)) (evaluationMatrix a roots)
+      (isUnit_iff_ne_zero.mpr (evaluation_matrix_det_ne_zero a ha roots hr)))
+
+theorem codifferentBasis_apply (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (i : Fin 18) :
+    codifferentBasis a ha roots hr i = codifferent a roots i := by
+  ext j
+  simp [codifferentBasis, Matrix.toLinearEquiv_apply, evaluationMatrix,
+    Matrix.toLin_eq_toLin', Matrix.toLin'_apply,
+    Matrix.mulVec, dotProduct, Matrix.diagonal_apply, Matrix.vandermonde_apply, codifferent,
+    div_eq_mul_inv, mul_comm]
+
+theorem trace_basis_initial (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (i : Fin 17) :
+    Algebra.trace K (SplitAlgebra K) (codifferentBasis a ha roots hr i.castSucc) = 0 := by
+  rw [codifferentBasis_apply, trace_codifferent a roots hr]
+  have hi : (i : ℕ) ≠ 17 := Nat.ne_of_lt i.isLt
+  simp [hi]
+
+theorem trace_basis_last (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) :
+    Algebra.trace K (SplitAlgebra K) (codifferentBasis a ha roots hr (Fin.last 17)) = a⁻¹ := by
+  rw [codifferentBasis_apply, trace_codifferent a roots hr]
+  simp
+
+def traceFreeBasis (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) :
+    Basis (Fin 17) K (LinearMap.ker (Algebra.trace K (SplitAlgebra K))) :=
+  TraceKernel.kernelBasis (codifferentBasis a ha roots hr) (Algebra.trace K (SplitAlgebra K))
+    (trace_basis_initial a ha roots hr) (trace_basis_last a ha roots hr) (inv_ne_zero ha)
+
+theorem traceFreeBasis_apply (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (i : Fin 17) :
+    ((traceFreeBasis a ha roots hr i) : SplitAlgebra K) = codifferent a roots i.castSucc := by
+  rw [traceFreeBasis, TraceKernel.kernelBasis_apply, codifferentBasis_apply]
+
+theorem trace_eq_coordinate (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (x : SplitAlgebra K) :
+    Algebra.trace K (SplitAlgebra K) x = (codifferentBasis a ha roots hr).repr x (Fin.last 17) / a := by
+  simpa [div_eq_mul_inv] using TraceKernel.trace_eq_last_coefficient
+    (codifferentBasis a ha roots hr) (Algebra.trace K (SplitAlgebra K))
+    (trace_basis_initial a ha roots hr) (trace_basis_last a ha roots hr) x
+
+theorem slot_eleven_trace_zero (a : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) :
+    Algebra.trace K (SplitAlgebra K) (codifferent a roots (11 : Fin 18)) = 0 := by
+  rw [trace_codifferent a roots hr]
+  simp
+
+theorem traceFree_finrank (a : K) (ha : a ≠ 0) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) :
+    Module.finrank K (LinearMap.ker (Algebra.trace K (SplitAlgebra K))) = 17 := by
+  exact Module.finrank_eq_card_basis (traceFreeBasis a ha roots hr)
+
+theorem trace_one : Algebra.trace K (SplitAlgebra K) 1 = 18 := by
+  simp [algebra_trace_eq_sum]
+
+theorem remove_scalar_trace [CharZero K] (x : SplitAlgebra K) :
+    Algebra.trace K (SplitAlgebra K)
+      (x - (Algebra.trace K (SplitAlgebra K) x / 18) • (1 : SplitAlgebra K)) = 0 := by
+  rw [map_sub, map_smul, trace_one]
+  simp [smul_eq_mul]
+
+end HodgeLab.OneReflectionSkew.TraceFreeBasis

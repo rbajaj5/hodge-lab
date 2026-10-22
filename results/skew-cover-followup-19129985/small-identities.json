@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "retrieved_utc": "2026-10-22T18:19:51.878552+00:00",
+  "sympy_version": "1.14.0",
+  "seconds": 22.32799999997951,
+  "identities": {
+    "cover_equals_r15_times_A_minus_a": "zero",
+    "cover_derivative_on_cover": "zero",
+    "cubic_V3_coefficient": "zero",
+    "cubic_V2_coefficient": "zero",
+    "cubic_V_coefficient": "zero",
+    "implicit_r_a": "zero",
+    "implicit_r_v": "zero",
+    "implicit_r_t": "zero",
+    "ordinary_H_r_equals_A_r_psi_vv": "zero"
+  },
+  "negative_controls": {
+    "wrong_sign_r_v": "12*r**6*v**5 - 60*r**5*v**4 + 120*r**4*v**3 - 120*r**3*v**2 + 60*r**2*v - 12*r",
+    "omit_K_from_H": "(-90*r**4*v**4 + 360*r**3*v**3 - 540*r**2*v**2 + 360*r*v - 90)/r**17"
+  },
+  "scope": "Exact rational identities over Q(r,v,a,t). Derivatives on the cover use f_r != 0; rational chart uses r != 0. psi_vv means fixed-a derivative partial_v - (A_v/A_r) partial_r. No connection, physical source transport, current, rank, pole-bound, Lean, or full packet replay."
+}

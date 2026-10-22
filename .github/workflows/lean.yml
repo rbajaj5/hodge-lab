@@ -60,6 +60,9 @@ jobs:
       - name: Check the actual differential-form reduction
         working-directory: formal
         run: python3 -O check_skew_forms.py
+      - name: Check the split trace-free basis and normalization
+        working-directory: formal
+        run: python3 -O check_skew_trace_basis.py
       - name: Save concrete proof receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -83,4 +86,6 @@ jobs:
             formal/results/skew-ambient/*.log
             formal/results/skew-forms/*.json
             formal/results/skew-forms/*.log
+            formal/results/skew-trace-basis/*.json
+            formal/results/skew-trace-basis/*.log
           if-no-files-found: error

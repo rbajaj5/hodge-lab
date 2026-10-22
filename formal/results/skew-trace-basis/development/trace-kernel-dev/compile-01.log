@@ -1,0 +1,169 @@
+HodgeLab/OneReflectionSkew/TraceKernel.lean:18:22: error: Function expected at
+  Basis
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  (Fin (n + 1))
+HodgeLab/OneReflectionSkew/TraceKernel.lean:19:28: warning: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:26:18: error(lean.unknownIdentifier): Unknown identifier `b.repr`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:26:31: error(lean.unknownIdentifier): Unknown identifier `b`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:27:8: error(lean.unknownIdentifier): Unknown identifier `b.repr`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:26:51: error(lean.unknownIdentifier): Unknown identifier `b.sum_repr`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:29:22: error(lean.unknownIdentifier): Unknown identifier `hzero`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:29:29: error(lean.unknownIdentifier): Unknown identifier `hlast`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:27:37: error: unsolved goals
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+T : V →ₗ[K] K
+c : K
+v : V
+⊢ ∑ x, T (sorry () • sorry ()) + T (sorry () • sorry ()) = sorry () * c
+
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+T : V →ₗ[K] K
+c : K
+v : V
+⊢ ℕ
+HodgeLab/OneReflectionSkew/TraceKernel.lean:24:39: error: unsolved goals
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+T : V →ₗ[K] K
+c : K
+v : V
+⊢ T v = sorry * c
+HodgeLab/OneReflectionSkew/TraceKernel.lean:29:12: warning: This simp argument is unused:
+  map_smul
+
+Hint: Omit it from the simp argument list.
+  simp [m̵a̵p̵_̵s̵m̵u̵l̵,̵ ̵hzero, hlast, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:29:36: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp [map_smul, hzero, hlast,̵ ̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:34:51: error(lean.unknownIdentifier): Unknown identifier `b`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:33:55: error: unsolved goals
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+T : V →ₗ[K] K
+v : V
+⊢ T v = 0 ↔ sorry = 0
+HodgeLab/OneReflectionSkew/TraceKernel.lean:40:18: error: unsolved goals
+x✝ : Sort ?u.1
+Basis : x✝
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : sorry
+T : V →ₗ[K] K
+c : K
+hzero : ∀ (i : Fin n), T sorry = 0
+hlast : T sorry = c
+hc : c ≠ 0
+v w : ↥T.ker
+i : Fin n
+⊢ sorry () = 0
+HodgeLab/OneReflectionSkew/TraceKernel.lean:43:19: error: unsolved goals
+x✝ : Sort ?u.1
+Basis : x✝
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : sorry
+T : V →ₗ[K] K
+c : K
+hzero : ∀ (i : Fin n), T sorry = 0
+hlast : T sorry = c
+hc : c ≠ 0
+a : K
+v : ↥T.ker
+i : Fin n
+⊢ sorry () = a * sorry ()
+HodgeLab/OneReflectionSkew/TraceKernel.lean:48:44: error: Application type mismatch: The argument
+  T
+has type
+  V →ₗ[K] K
+but is expected to have type
+  ↥(LinearMap.ker ?m.38)
+in the application
+  (kernelCoordinates ?m.38) T
+HodgeLab/OneReflectionSkew/TraceKernel.lean:60:45: error: Application type mismatch: The argument
+  T
+has type
+  V →ₗ[K] K
+but is expected to have type
+  ↥(LinearMap.ker ?m.38)
+in the application
+  (kernelCoordinates ?m.38) T
+HodgeLab/OneReflectionSkew/TraceKernel.lean:71:47: error: Application type mismatch: The argument
+  T
+has type
+  V →ₗ[K] K
+but is expected to have type
+  ↥(LinearMap.ker ?m.71)
+in the application
+  (kernelCoordinates ?m.71) T
+HodgeLab/OneReflectionSkew/TraceKernel.lean:72:5: error(lean.unknownIdentifier): Unknown identifier `kernelCoordinates_injective`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:73:6: error(lean.unknownIdentifier): Unknown identifier `kernelCoordinates_surjective`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:76:18: error: Function expected at
+  Basis
+but this term has type
+  x✝
+
+Note: Expected a function because this term is being applied to the argument
+  (Fin n)
+HodgeLab/OneReflectionSkew/TraceKernel.lean:77:2: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  Basis
+has type `x✝` which does not have the necessary form.
+HodgeLab/OneReflectionSkew/TraceKernel.lean:81:8: error(lean.unknownIdentifier): Unknown identifier `Basis.ofEquivFun_repr_apply`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:86:8: error(lean.unknownIdentifier): Unknown identifier `b.repr.injective`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:87:2: error: No goals to be solved
+HodgeLab/OneReflectionSkew/TraceKernel.lean:98:30: error: Function expected at
+  Basis
+but this term has type
+  x✝
+
+Note: Expected a function because this term is being applied to the argument
+  (Fin 18)
+HodgeLab/OneReflectionSkew/TraceKernel.lean:101:4: error: Function expected at
+  Basis
+but this term has type
+  x✝
+
+Note: Expected a function because this term is being applied to the argument
+  (Fin 17)
+HodgeLab/OneReflectionSkew/TraceKernel.lean:106:33: error: Function expected at
+  Basis
+but this term has type
+  x✝
+
+Note: Expected a function because this term is being applied to the argument
+  (Fin 18)

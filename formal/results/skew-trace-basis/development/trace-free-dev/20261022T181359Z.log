@@ -1,0 +1,99 @@
+✔ [1821/1827] Built Mathlib.LinearAlgebra.BilinearForm.Basic (4.0s)
+✔ [1826/1827] Built Mathlib.LinearAlgebra.Lagrange (5.8s)
+✖ [1827/1827] Building HodgeLab.OneReflectionSkew.TraceFreeBasis (8.1s)
+trace: .> LEAN_PATH=/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/Cli/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/batteries/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/Qq/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/aesop/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/importGraph/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/plausible/.lake/build/lib/lean:/home/anaxe/qrcert-aeneas-20260805b/.lake/packages/mathlib/.lake/build/lib/lean:/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal/.lake/build/lib/lean /home/anaxe/.elan/toolchains/leanprover--lean4---v4.31.0/bin/lean /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal/HodgeLab/OneReflectionSkew/TraceFreeBasis.lean -o /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal/.lake/build/lib/lean/HodgeLab/OneReflectionSkew/TraceFreeBasis.olean -i /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal/.lake/build/lib/lean/HodgeLab/OneReflectionSkew/TraceFreeBasis.ilean -c /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal/.lake/build/ir/HodgeLab/OneReflectionSkew/TraceFreeBasis.c --setup /mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal/.lake/build/ir/HodgeLab/OneReflectionSkew/TraceFreeBasis.setup.json --json
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:61:45: This simp argument is unused:
+  LinearMap.toMatrix_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.trace, Algebra.leftMulMatrix,̵ ̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵t̵o̵M̵a̵t̵r̵i̵x̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:68:36: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:69:2: Type mismatch: After simplification, term
+  Eq.symm h
+ has type
+  ∑ x, roots x ^ ↑i / ∏ j ∈ Finset.univ.erase x, (roots x - roots j) = if 17 = ↑i then 1 else 0
+but is expected to have type
+  ∑ j, roots j ^ ↑i / ∏ k ∈ Finset.univ.erase j, (roots j - roots k) = if ↑i = 17 then 1 else 0
+error: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:80:10: Unknown constant `Finset.sum_div`
+error: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:79:89: unsolved goals
+K : Type u_1
+inst✝ : Field K
+a : K
+roots : Fin 18 → K
+hr : Function.Injective roots
+i : Fin 18
+⊢ ∑ j, roots j ^ ↑i / (a * ∏ k ∈ Finset.univ.erase j, (roots j - roots k)) =
+    (∑ j, roots j ^ ↑i / ∏ k ∈ Finset.univ.erase j, (roots j - roots k)) / a
+error: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:99:26: Application type mismatch: The argument
+  evaluationMatrix a roots
+has type
+  Matrix (Fin 18) (Fin 18) K
+but is expected to have type
+  Basis ?m.27 ?m.29 ?m.30
+in the application
+  @Matrix.toLinearEquiv ?m.27 ?m.28 ?m.29 ?m.30 ?m.31 ?m.32 ?m.33 (evaluationMatrix a roots)
+error: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:107:19: Unknown constant `Matrix.dotProduct`
+error: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:104:64: unsolved goals
+K : Type u_1
+inst✝ : Field K
+a : K
+ha : a ≠ 0
+roots : Fin 18 → K
+hr : Function.Injective roots
+i j : Fin 18
+⊢ (sorry a ha roots hr) i j = roots j ^ ↑i * (derivativeValue a roots j)⁻¹
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:106:8: declaration uses `sorry`
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:106:26: This simp argument is unused:
+  Matrix.toLinearEquiv_apply
+
+Hint: Omit it from the simp argument list.
+  simp [codifferentBasis, M̵a̵t̵r̵i̵x̵.̵t̵o̵L̵i̵n̵e̵a̵r̵E̵q̵u̵i̵v̵_̵a̵p̵p̵l̵y̵,̵ ̵evaluationMatrix, Matrix.mulVec, Matrix.dotProduct,
+  ̲  ̲ ̲ ̲Matrix.vandermonde_apply, codifferent, div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:106:54: This simp argument is unused:
+  evaluationMatrix
+
+Hint: Omit it from the simp argument list.
+  simp [codifferentBasis, Matrix.toLinearEquiv_apply, e̵v̵a̵l̵u̵a̵t̵i̵o̵n̵Matrix,̵
+  ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.mulVec, Matrix.dotProduct,
+  ̲  ̲ ̲ ̲Matrix.vandermonde_apply, codifferent,
+  ̵  ̵ ̵ ̵div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:107:4: This simp argument is unused:
+  Matrix.mulVec
+
+Hint: Omit it from the simp argument list.
+  simp [codifferentBasis, Matrix.toLinearEquiv_apply, evaluationMatrix,
+  ̵  ̵ ̵ ̵Matrix.m̵u̵l̵V̵e̵c̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵dotProduct,
+  ̲  ̲ ̲ ̲Matrix.vandermonde_apply, codifferent,
+  ̵  ̵ ̵ ̵div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:107:38: This simp argument is unused:
+  Matrix.vandermonde_apply
+
+Hint: Omit it from the simp argument list.
+  simp [codifferentBasis, Matrix.toLinearEquiv_apply, evaluationMatrix, Matrix.mulVec,
+  ̲  ̲ ̲ ̲Matrix.dotProduct, M̵a̵t̵r̵i̵x̵.̵v̵a̵n̵d̵e̵r̵m̵o̵n̵d̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵codifferent, div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:108:20: This simp argument is unused:
+  mul_comm
+
+Hint: Omit it from the simp argument list.
+  simp [codifferentBasis, Matrix.toLinearEquiv_apply, evaluationMatrix,
+  ̵  ̵ ̵ ̵Matrix.mulVec,
+  ̲  ̲ ̲ ̲Matrix.dotProduct, Matrix.vandermonde_apply, codifferent,
+  ̵  ̵ ̵ ̵div_eq_mul_inv,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- HodgeLab.OneReflectionSkew.TraceFreeBasis
+error: build failed

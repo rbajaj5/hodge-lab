@@ -4625,3 +4625,65 @@ research visualizations are unchanged. No upstream post, reply, edit or PR.
 Posts list stays 1–29. Tally unchanged: **29 discussion contributions, one
 closed maintenance PR, zero accepted authored solves**. Earlier ledger text
 and receipts are preserved.
+
+
+## Checkpoint 132 — 22 October 2026: split trace-free basis with explicit leading coefficient
+
+Notebook parent fd33336945c499099cda55c740c9e9375073bdb5; refreshed upstream
+head 21fccb6b4f1d4070ddaa30195a78f268247569e6. This is a bounded formal
+follow-up to checkpoint 130, reusing completed chart/forms and packet context
+without rerunning them.
+
+Lean constructs the full split quotient by P=a18*product(X-root_j), over a
+field with a18 nonzero and eighteen distinct roots. Evaluation preserves
+actual multiplication trace. The derivative-weighted basis satisfies
+P'(delta)*b_i=delta^i, with the derivative proved a unit. The first seventeen
+vectors form the trace kernel; the last trace is **1/a18**. No irreducibility
+assumption or discarded factor is used. The nonmonic a18=2 control gives
+**1/2**. Only scalar trace/18 removal needs characteristic zero. Trace zero
+does not establish zero source or exactness.
+
+- [Statement, dependencies, attribution and limits](notes/skew-trace-basis-lean.md).
+- [Executed Lean receipt](formal/results/skew-trace-basis/validation.json)
+  and [fail-closed checker](formal/check_skew_trace_basis.py).
+- [Reproducible diagram](visualizations/skew-trace-basis.png) and
+  [generator](scripts/visualize_skew_trace_basis.py).
+- [Failed attempts](formal/results/skew-trace-basis/development/README.md).
+
+Executed on Lean 4.31.0 / pinned Mathlib fabf563: **56 declaration audits,
+three new-module kernel replays, seven positive controls and three expected
+false-goal rejections** passed. Elapsed 57.953 seconds; bounds 120 seconds per
+process, 600 total. Python -O was used. No new kernel replay of Mathlib or
+earlier proofs is claimed. Development import/API failures are retained;
+no mathematical counterexample or timeout result is claimed. CI now includes
+the checker; the local receipt does not assert a remote CI outcome.
+
+This unit is complete **for the full split quotient**. Descent to the original
+unsplit physical coefficient field, literal cover/separability/source binding,
+connection solving, primitive construction and homogeneous clearing remain
+outside this pass. The next smallest unit is trace-compatible base change
+and descent, followed by an explicit physical polynomial instantiation.
+
+The user's newly supplied [benediamond reply 19129985](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985)
+was read in full thread context. It reports a monic degree-18 cover, a partial
+rational current with nonzero remainder, and one-direction exclusions; no
+solve or Lean certificate. A separate agent actually checked **nine rational
+identities and two mutation controls in 22.328 seconds**, under a 30-second
+bound: [receipt](results/skew-cover-followup-19129985/small-identities.json),
+[checker](results/skew-cover-followup-19129985/check_small_identities.py),
+[pinned context and scope](results/skew-cover-followup-19129985/review-scope.json).
+Counts are separate from Lean. No ZIP/current/full connection, physical
+normalization, pole-bound or reported rank replay was performed.
+
+Credit fqlx/Ben Burns for the compact architecture, benediamond/Benjamin
+Diamond for the new cover/current, and Mathlib contributors for the APIs.
+Codex and parallel agents performed the formalization and bounded checks.
+The note preserves the existing specific credit to rbajaj5's degree-seven
+calculation in fqlx's separate replay addendum; the new text does not establish
+direct reuse of that calculation by the newer compact cover/current.
+This is not new attribution or a new upstream contribution.
+
+No upstream post, reply, edit or PR. Posts remain entries 1–29. Tally unchanged:
+**29 discussion contributions, one closed maintenance PR, zero accepted
+authored solves**. Earlier ledger bytes and receipts are preserved.
+Results and limits are published in Hodge Lab only.

@@ -1,0 +1,48 @@
+HodgeLab.OneReflectionSkew.TraceKernel.trace_eq_last_coefficient.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] {n : ℕ} (b : Module.Basis (Fin (n + 1)) K V) (T : V →ₗ[K] K) {c : K}
+  (hzero : ∀ (i : Fin n), T (b i.castSucc) = 0) (hlast : T (b (Fin.last n)) = c) (v : V) :
+  T v = (b.repr v) (Fin.last n) * c
+HodgeLab.OneReflectionSkew.TraceKernel.mem_ker_iff_last_coefficient_eq_zero.{u_1, u_2} {K : Type u_1} {V : Type u_2}
+  [Field K] [AddCommGroup V] [Module K V] {n : ℕ} (b : Module.Basis (Fin (n + 1)) K V) (T : V →ₗ[K] K) {c : K}
+  (hzero : ∀ (i : Fin n), T (b i.castSucc) = 0) (hlast : T (b (Fin.last n)) = c) (hc : c ≠ 0) (v : V) :
+  v ∈ T.ker ↔ (b.repr v) (Fin.last n) = 0
+HodgeLab.OneReflectionSkew.TraceKernel.kernelEquiv.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K] [AddCommGroup V]
+  [Module K V] {n : ℕ} (b : Module.Basis (Fin (n + 1)) K V) (T : V →ₗ[K] K) {c : K}
+  (hzero : ∀ (i : Fin n), T (b i.castSucc) = 0) (hlast : T (b (Fin.last n)) = c) (hc : c ≠ 0) : ↥T.ker ≃ₗ[K] Fin n → K
+HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K] [AddCommGroup V]
+  [Module K V] {n : ℕ} (b : Module.Basis (Fin (n + 1)) K V) (T : V →ₗ[K] K) {c : K}
+  (hzero : ∀ (i : Fin n), T (b i.castSucc) = 0) (hlast : T (b (Fin.last n)) = c) (hc : c ≠ 0) :
+  Module.Basis (Fin n) K ↥T.ker
+HodgeLab.OneReflectionSkew.TraceKernel.kernelBasisSeventeen.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] {c : K} (b : Module.Basis (Fin 18) K V) (T : V →ₗ[K] K)
+  (hzero : ∀ (i : Fin 17), T (b i.castSucc) = 0) (hlast : T (b (Fin.last 17)) = c) (hc : c ≠ 0) :
+  Module.Basis (Fin 17) K ↥T.ker
+HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_apply.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] {n : ℕ} (b : Module.Basis (Fin (n + 1)) K V) (T : V →ₗ[K] K) {c : K}
+  (hzero : ∀ (i : Fin n), T (b i.castSucc) = 0) (hlast : T (b (Fin.last n)) = c) (hc : c ≠ 0) (i : Fin n) :
+  ↑((kernelBasis b T hzero hlast hc) i) = b i.castSucc
+HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_repr.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] {n : ℕ} (b : Module.Basis (Fin (n + 1)) K V) (T : V →ₗ[K] K) {c : K}
+  (hzero : ∀ (i : Fin n), T (b i.castSucc) = 0) (hlast : T (b (Fin.last n)) = c) (hc : c ≠ 0) (v : ↥T.ker) (i : Fin n) :
+  ((kernelBasis b T hzero hlast hc).repr v) i = (b.repr ↑v) i.castSucc
+HodgeLab.OneReflectionSkew.TraceKernel.slot_eleven_mem_ker.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] (b : Module.Basis (Fin 18) K V) (T : V →ₗ[K] K)
+  (hzero : ∀ (i : Fin 17), T (b i.castSucc) = 0) : b 11 ∈ T.ker
+'HodgeLab.OneReflectionSkew.TraceKernel.trace_eq_last_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.mem_ker_iff_last_coefficient_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_repr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasisSeventeen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.TraceKernel.slot_eleven_mem_ker' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,24 @@
+{
+  "notebook_parent": "fd33336945c499099cda55c740c9e9375073bdb5",
+  "upstream_commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+  "mathematical_inputs": {
+    "field": "arbitrary K",
+    "polynomial": "a18 * product (X-root_j), j=0..17",
+    "hypotheses": [
+      "a18 != 0",
+      "roots injective"
+    ],
+    "normalization": "original derivative retained; no hidden monic rescaling"
+  },
+  "context_receipt_lf_sha256": {
+    "formal/results/skew-forms/validation.json": "29cc594f52a403ca17a46958497aea73fbc099f042ec4d9be962e0ae1b1a1c4c",
+    "results/skew-compact-architecture/packet-integrity.json": "6790ced36245bede54d2c2e6cb4b31132c3032f339dce0a4706d8c1476270ee6",
+    "results/atlas-monitor-20261022/validation.json": "8e1519f53c9a0464ac8e30236ec74708ad6add28c64e9511a56256fd110d7d9d"
+  },
+  "context_scope": "Historical completed checks reused as context only. This generic theorem does not instantiate protected F,A,q or the physical degree18 polynomial.",
+  "motivation": {
+    "gist_revision": "455deb68009f99b3da2cae7b68d30dd5ed5df82f",
+    "discussion": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830"
+  },
+  "source_policy": "Only new modules replayed; old mathematical results not repeated."
+}

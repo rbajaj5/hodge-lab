@@ -1,0 +1,142 @@
+HodgeLab/OneReflectionSkew/TraceKernel.lean:30:22: error(lean.unknownIdentifier): Unknown identifier `hzero`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:30:29: error(lean.unknownIdentifier): Unknown identifier `hlast`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:28:37: error: unsolved goals
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : Basis (Fin (n + 1)) K V
+T : V →ₗ[K] K
+c : K
+v : V
+⊢ ∑ x, (b.repr v) x.castSucc * T (b x.castSucc) + (b.repr v) (Fin.last n) * T (b (Fin.last n)) =
+    (b.repr v) (Fin.last n) * c
+HodgeLab/OneReflectionSkew/TraceKernel.lean:35:55: error(lean.unknownIdentifier): Unknown identifier `hzero`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:34:55: error: unsolved goals
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : Basis (Fin (n + 1)) K V
+T : V →ₗ[K] K
+v : V
+⊢ T v = 0 ↔ (b.repr v) (Fin.last n) = 0
+HodgeLab/OneReflectionSkew/TraceKernel.lean:55:57: error(lean.unknownIdentifier): Unknown identifier `hzero`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:65:19: error(lean.unknownIdentifier): Unknown identifier `hzero`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:64:2: error: unsolved goals
+case refine_1
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : Basis (Fin (n + 1)) K V
+T : V →ₗ[K] K
+a : Fin n → K
+⊢ ∑ x, a x * T (b x.castSucc) = 0
+HodgeLab/OneReflectionSkew/TraceKernel.lean:66:2: error: unsolved goals
+case refine_2
+K : Type u_1
+V : Type u_2
+inst✝² : Field K
+inst✝¹ : AddCommGroup V
+inst✝ : Module K V
+n : ℕ
+b : Basis (Fin (n + 1)) K V
+T : V →ₗ[K] K
+a : Fin n → K
+i : Fin n
+⊢ ∑ c, (Finsupp.single c.castSucc (a c)) i.castSucc = a i
+HodgeLab/OneReflectionSkew/TraceKernel.lean:67:48: warning: This simp argument is unused:
+  Basis.repr_self_apply
+
+Hint: Omit it from the simp argument list.
+  simp [kernelCoordinates, map_sum, map_smul, B̵a̵s̵i̵s̵.̵r̵e̵p̵r̵_̵s̵e̵l̵f̵_̵a̵p̵p̵l̵y̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Fin.castSucc_inj, Finset.sum_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:68:6: warning: This simp argument is unused:
+  Fin.castSucc_inj
+
+Hint: Omit it from the simp argument list.
+  simp [kernelCoordinates, map_sum, map_smul, Basis.repr_self_apply, F̵i̵n̵.̵c̵a̵s̵t̵S̵u̵c̵c̵_̵i̵n̵j̵,̵ ̵Finset.sum_apply,
+  ̲  ̲ ̲ ̲ ̲ ̲smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/TraceKernel.lean:73:37: error: Application type mismatch: The argument
+  hzero
+has type
+  ∀ (i : Fin n), T (b i.castSucc) = 0
+but is expected to have type
+  (kernelCoordinates b T) ?m.84 = (kernelCoordinates b T) ?m.85
+in the application
+  kernelCoordinates_injective b T hzero
+HodgeLab/OneReflectionSkew/TraceKernel.lean:74:39: error: Application type mismatch: The argument
+  hzero
+has type
+  ∀ (i : Fin n), T (b i.castSucc) = 0
+of sort `Prop` but is expected to have type
+  Fin n → K
+of sort `Type u_1` in the application
+  kernelCoordinates_surjective b T hzero
+HodgeLab/OneReflectionSkew/TraceKernel.lean:78:36: error: Application type mismatch: The argument
+  hzero
+has type
+  ∀ (i : Fin n), T (b i.castSucc) = 0
+of sort `Prop` but is expected to have type
+  ↥T.ker
+of sort `Type u_2` in the application
+  (kernelEquiv b T) hzero
+HodgeLab/OneReflectionSkew/TraceKernel.lean:81:19: error: Application type mismatch: The argument
+  T
+has type
+  V →ₗ[K] K
+of sort `Type (max u_2 u_1)` but is expected to have type
+  Fin ?m.64
+of sort `Type` in the application
+  (kernelBasis ?m.65) T
+HodgeLab/OneReflectionSkew/TraceKernel.lean:81:17: error: Application type mismatch: The argument
+  b
+has type
+  Basis (Fin (n + 1)) K V
+but is expected to have type
+  ?m.60 →ₗ[?m.59] ?m.59
+in the application
+  kernelBasis b
+HodgeLab/OneReflectionSkew/TraceKernel.lean:86:20: error: Application type mismatch: The argument
+  T
+has type
+  V →ₗ[K] K
+of sort `Type (max u_2 u_1)` but is expected to have type
+  Fin ?m.42
+of sort `Type` in the application
+  (kernelBasis ?m.43) T
+HodgeLab/OneReflectionSkew/TraceKernel.lean:86:18: error: Application type mismatch: The argument
+  b
+has type
+  Basis (Fin (n + 1)) K V
+but is expected to have type
+  ?m.38 →ₗ[?m.37] ?m.37
+in the application
+  kernelBasis b
+HodgeLab/OneReflectionSkew/TraceKernel.lean:103:16: error: Application type mismatch: The argument
+  T
+has type
+  V →ₗ[K] K
+of sort `Type (max u_2 u_1)` but is expected to have type
+  Fin ?m.84
+of sort `Type` in the application
+  (kernelBasis ?m.85) T
+HodgeLab/OneReflectionSkew/TraceKernel.lean:103:14: error: Application type mismatch: The argument
+  b
+has type
+  Basis (Fin 18) K V
+but is expected to have type
+  ?m.80 →ₗ[?m.79] ?m.79
+in the application
+  kernelBasis b

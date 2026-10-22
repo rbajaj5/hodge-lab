@@ -1,0 +1,49 @@
+{
+  "status": "REVIEW_COMPLETED_WITH_BOUNDED_EXACT_CHECK",
+  "comment_url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985",
+  "initial_access_attempt": {
+    "operation": "gh api graphql, sandboxed",
+    "error": "error connecting to api.github.com; check your internet connection or https://githubstatus.com",
+    "outcome": "one network-enabled read-only retry succeeded; no authentication loop"
+  },
+  "executed_check": {
+    "command": "python -X utf8 work/skew-followup-19129985/check_small_identities.py",
+    "hard_timeout_seconds": 30,
+    "identities_passed": 9,
+    "deliberate_nonzero_controls": 2,
+    "receipt": "small-identities.json"
+  },
+  "not_executed": [
+    "ZIP download or packet replay",
+    "physical source normalization and residue sign verification",
+    "connection/current identity replay",
+    "pole bounds and generic specialization proof",
+    "26/27 and 38/39 rank reconstruction",
+    "Lean compilation or source transport"
+  ],
+  "trace_basis_relevance": "The displayed f is monic degree 18. A generic separable-degree-18 trace-free theorem can be instantiated for the scalar r^11/f_r only after checking its field/separability hypotheses. Full 18-sheet cover and a 17-dimensional trace-free subspace are compatible; this is not permission to discard a sheet or assume exactness.",
+  "attribution_review": {
+    "method": "Existing fully fetched Discussion 127 only; no new network or packet replay.",
+    "direct_reuse_documented": {
+      "original": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407",
+      "fqlx_acknowledgment": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252",
+      "scope": "fqlx explicitly reports replaying rbajaj5 degree-seven packet 45ab8ff, reproducing sector dimensions, basis labels and equation ranks, checking 129 E1 lifts, and reconstructing the 84-dimensional base span. Credits rbajaj5 for published degree-seven bases and calculations.",
+      "limit": "The same comment explicitly labels this a separate degree-seven addendum, distinct from its twisted-companion packet."
+    },
+    "later_source_connection_chain": [
+      {
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825",
+        "claim": "Continues source/companion work above; generic earlier-contributor credit."
+      },
+      {
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830",
+        "claim": "Explicitly advances source/kernel update 19108825; credits earlier contributors for source and companion calculations without naming rbajaj5."
+      },
+      {
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985",
+        "claim": "Explicitly builds on fqlx 19113830 and credits fqlx for starting connection/source; does not name rbajaj5."
+      }
+    ],
+    "conclusion": "Documented historical contribution and direct reuse of rbajaj5 bounded degree-seven bases/calculations are clear. The fetched text does not establish that the distinct full compact connection, source transport, or new cover/current specifically derives from rbajaj5 contribution. A desired fuller historical acknowledgment is distinguishable from a proven missing direct-dependency citation."
+  }
+}

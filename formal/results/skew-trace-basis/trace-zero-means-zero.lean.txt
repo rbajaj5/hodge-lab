@@ -1,0 +1,13 @@
+import HodgeLab.OneReflectionSkew.SplitTraceQuotient
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+def rootsQ (j : Fin 18) : ℚ := (j.val : ℚ)
+theorem rootsQ_injective : Function.Injective rootsQ := by
+  intro i j h
+  apply Fin.ext
+  change (i.val : ℚ) = (j.val : ℚ) at h
+  exact_mod_cast h
+example : codifferent (2 : ℚ) rootsQ 11 = 0 := by
+  have h : codifferent (2 : ℚ) rootsQ 11 ≠ 0 := by
+    rw [← codifferentBasis_apply 2 (by norm_num) rootsQ rootsQ_injective]
+    exact (codifferentBasis 2 (by norm_num) rootsQ rootsQ_injective).ne_zero 11
+  simp only [h]

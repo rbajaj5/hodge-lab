@@ -1,0 +1,23 @@
+import HodgeLab.OneReflectionSkew.SplitTraceQuotient
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+def rootsQ (j : Fin 18) : ℚ := (j.val : ℚ)
+theorem rootsQ_injective : Function.Injective rootsQ := by
+  intro i j h
+  apply Fin.ext
+  change (i.val : ℚ) = (j.val : ℚ) at h
+  exact_mod_cast h
+
+example : (coverPolynomial (2 : ℚ) rootsQ).leadingCoeff = 2 := leading_coefficient 2 rootsQ
+example : (coverPolynomial (2 : ℚ) rootsQ).natDegree = 18 := cover_degree 2 (by norm_num) rootsQ
+example : Algebra.trace ℚ (SplitAlgebra ℚ) (codifferent 2 rootsQ 17) = 1/2 := by
+  rw [trace_codifferent 2 rootsQ rootsQ_injective]; norm_num
+example : Algebra.trace ℚ (SplitAlgebra ℚ) (codifferent 2 rootsQ 11) = 0 :=
+  slot_eleven_trace_zero 2 rootsQ rootsQ_injective
+example : codifferent (2 : ℚ) rootsQ 11 ≠ 0 := by
+  rw [← codifferentBasis_apply 2 (by norm_num) rootsQ rootsQ_injective]
+  exact (codifferentBasis 2 (by norm_num) rootsQ rootsQ_injective).ne_zero 11
+example : Module.finrank ℚ (LinearMap.ker (Algebra.trace ℚ (CoverAlgebra 2 rootsQ))) = 17 :=
+  quotient_traceFree_finrank 2 (by norm_num) rootsQ rootsQ_injective
+example : Algebra.trace ℚ (CoverAlgebra 2 rootsQ)
+    (quotientCodifferent 2 (by norm_num) rootsQ rootsQ_injective 17) = 1/2 := by
+  rw [trace_quotientCodifferent]; norm_num

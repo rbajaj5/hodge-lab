@@ -1,0 +1,16 @@
+{
+  "scope": "Bounded live-comment review and nine exact rational identities by a separate Codex agent; not a full packet replay.",
+  "files_lf_sha256": {
+    "check_small_identities.py": "a581fbcdc3161619d14a8348b9f4f97dcd2f1d88e829cc160415bd851e748896",
+    "comment-19129985.json": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f",
+    "discussion-127.json": "67bda05906426f108b5e016bbe22d7607ee3141f3830d6f4cc77c0483186957e",
+    "discussion-127.md": "6162be4c0a88c26b172154c4a0a725bf517737922d344450506e67db638a1321",
+    "fetch.py": "72e104a5413adb325315f39b96162f6a91be37f1b51e04105ea35d9802320402",
+    "manifest.json": "86c7382f048913a134ec9a6ae8f168ff4a17bd46535c78649711ab3cc6c488e2",
+    "review-scope.json": "7da9b33e2d23f5e8fc11550a8e20be4c8bfa544c6daf2cd4f46d1b86b2a82394",
+    "small-identities.json": "8cfb41e241ffe7b5180866a2739fc841c36cf509b9bfeade1cc50508b226cc6e"
+  },
+  "reproduce_from_repository_root": "python -O results/skew-cover-followup-19129985/check_small_identities.py",
+  "script_limit": "The saved executed command had an external 30-second hard timeout. Use an external timeout when replaying; the script raises on failures but is not internally time-limited.",
+  "markdown_normalization": "Derived discussion-127.md normalized to LF; exact API comment bodies remain in JSON snapshots with body hashes."
+}

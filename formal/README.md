@@ -312,3 +312,20 @@ This proof uses mathlib's span and dimension API, especially
 `Submodule.span_insert_eq_span`. Codex assisted its construction and a separate
 statement/scope review. The exact numerical experiments and their independent
 replays remain linked from the mathematical notebook.
+
+
+## Split degree-18 trace-free basis
+
+[Trace basis and limits](../notes/skew-trace-basis-lean.md) formalizes the full
+split quotient, with nonzero leading coefficient and distinct roots. No
+field structure on the quotient is assumed. The first seventeen
+derivative-weighted vectors form its actual trace kernel; the last trace is
+1/a18. Unsplit descent and physical source binding remain separate.
+
+    python3 -O check_skew_trace_basis.py
+
+The [receipt](results/skew-trace-basis/validation.json) records 56 declaration
+audits, three new-module kernel replays, seven positive and three negative
+controls. Each process has a 120-second bound and the driver a 600-second
+total. Mathlib and earlier proof imports are not replayed by this unit.
+CI is configured separately; this local receipt is not a remote CI claim.
