@@ -1,0 +1,10 @@
+import HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateVolume
+open HodgeLab.OneReflectionSkew.VolumeDensity
+example : (squareJacobian (0 : ℚ) 0 0 0 0).det ≠ 0 := by
+  have checked : (squareJacobian (0 : ℚ) 0 0 0 0).det = 0 := by
+    rw [squareJacobian_det]
+    norm_num
+  rw [checked]
+  decide +kernel

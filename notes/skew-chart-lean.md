@@ -152,3 +152,12 @@ An independent read-only reviewer checked the statements and verifier and
 recommended the final concurrent-input hash checks. Hodge Lab only; no
 upstream post or edit. Tally unchanged: **29 discussion contributions, one
 closed maintenance PR, zero accepted authored solves**.
+
+
+## Follow-up — checkpoint 125
+
+The subsequent [coordinate-volume proof](skew-volume-lean.md) closes the
+ordered Jacobian and ambient source-coefficient step: x², 2x, −x² and
+−U²/(2G²), with chart assumptions explicit. The earlier description above
+is retained as the boundary of checkpoint 124. Residue reduction, trace,
+global descent and the rational primitive remain outside the new proof.

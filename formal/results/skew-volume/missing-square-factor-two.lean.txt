@@ -1,0 +1,9 @@
+import HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateVolume
+open HodgeLab.OneReflectionSkew.VolumeDensity
+example : 4225 * uCoefficient (4 : ℚ) 0 0 0 0 = -16 := by
+  have checked : 4225 * uCoefficient (4 : ℚ) 0 0 0 0 = -8 := by
+    norm_num [uCoefficient, chartDenominator, cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+  rw [checked]
+  decide +kernel

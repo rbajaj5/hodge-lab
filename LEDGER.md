@@ -4238,3 +4238,69 @@ Published in Hodge Lab only; no upstream post, reply, edit or PR in this pass.
 Historical ledger text and earlier receipts are preserved. Contribution tally
 remains **29 discussion contributions, one closed maintenance PR, zero accepted
 authored solves**.
+
+
+## Checkpoint 125 — 21 October 2026: skew coordinate volume and chart assumptions in Lean
+
+Notebook parent `25047b538e33dd5e76874744d2ac22cb8483cf08`; fresh upstream
+head `d5e9ef223a2cd210517f35c071e9a5108a15e025`. Protected record, REC
+equation and provenance were fetched under 45-second bounds; their bytes
+match checkpoint 124. Order `(X0,X1,X2,Y0,Y1,Y2)`, rational coefficients,
+q=1, A=X0³Y0³. The completed polynomial-substitution proofs and receipts
+were reused, with source/input hashes checked before and after this run.
+
+- [Proof, orders, assumptions, attribution and limits](notes/skew-volume-lean.md).
+- [CoordinateVolume](formal/HodgeLab/OneReflectionSkew/CoordinateVolume.lean)
+  defines the coordinate polynomials and their actual partial derivatives.
+  It proves the affine determinant x², square-coordinate determinant 2x,
+  and signed Euler-volume coefficient −x². The Y0 row has index 3; its
+  minor is formally identified with the affine Jacobian before expansion.
+- [VolumeDensity](formal/HodgeLab/OneReflectionSkew/VolumeDensity.lean)
+  combines these with the protected F and A to prove −x⁵/G(x²)² and the
+  U-coordinate coefficient −U²/(2G²). Forward Jacobian identities allow
+  x=0. Inverse-Jacobian recovery requires x≠0, and the rational-volume
+  interpretation requires G≠0 on the ambient complement before residue.
+  G≠0 is not a condition on points of G=0. The factor 1/2 comes from
+  dU=2x dx, not from a trace or covering average.
+- [Executed receipt](formal/results/skew-volume/validation.json): **16
+  theorem audits, two new-module kernel replays, four true evaluations
+  compiled in a separate positive-control file and four deliberate errors rejected**. Final run
+  **66.219 seconds**; 120 seconds per process, 600 seconds total; no timeout.
+  Lean 4.31.0, mathlib `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`,
+  Python 3.11.9. Prior modules and mathlib are trusted imports, not freshly
+  replayed. Future CI is wired; no unobserved CI pass is claimed.
+- [Independent rational reconstruction](formal/results/skew-volume/independent.json)
+  rebuilds all 30 physical and 25 square-map derivative entries, both
+  Jacobians, six Euler-cofactor summands and the protected source numerator.
+  This external check is distinct from the Lean proofs. At x=2,r=w=t=z=0,
+  G=65, the volume coefficient is −4 and c_U=−8/4225.
+- Controls detect a reversed orientation, omitted affine x factor, missing
+  square-map factor two and a false nonzero Jacobian at x=0. Explicit
+  requirement failures remain active under Python `-O`.
+- [Development archive](formal/results/skew-volume/development/README.md)
+  preserves bounded cache/import and proof-simplification failures, their
+  source snapshots and logs. These are implementation failures, not
+  mathematical nonexistence results. No incomplete run is credited.
+- [Reproducible visualization](visualizations/skew-volume.png) and
+  [generator](scripts/visualize_skew_volume.py) display the reconstructed
+  matrix, its signed minor and the chart hypotheses. The rendered PNG was
+  inspected; the figure is tied to the checked sources and receipt.
+
+This closes the ordered coordinate-volume coefficient unit proposed in
+checkpoint 124. It uses an algebraic determinant coefficient model, not a
+general differential-form API. Residue reduction (including the previous
+5/72 factor), trace, global descent, clearing, rational primitive,
+HasCertificate, other denominator families and the 45-versus-504 comparison
+remain separate. No new exclusion or authored solve is claimed.
+
+The newly available upstream residue-transport framework was inspected in
+a [read-only pinned check](formal/results/skew-volume/upstream-context.json),
+not compiled, instantiated or replayed. Attribution remains with Benjamin
+E. Diamond and upstream contributors for the target/framework and fqlx for
+the physical quotient/source reduction and companion formulation. A separate
+read-only reviewer checked the new theorem/verifier scope.
+
+Hodge Lab publication only; no upstream post, reply, edit or PR. Historical
+ledger text, prior receipts and concurrent work are preserved. Contribution
+tally remains **29 discussion contributions, one closed maintenance PR,
+zero accepted authored solves**.

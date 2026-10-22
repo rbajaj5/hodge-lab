@@ -1,0 +1,10 @@
+import HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateVolume
+open HodgeLab.OneReflectionSkew.VolumeDensity
+example : (affineJacobian (2 : ℚ) 0 0 0 0).det = 2 := by
+  have checked : (affineJacobian (2 : ℚ) 0 0 0 0).det = 4 := by
+    rw [affineJacobian_det]
+    norm_num
+  rw [checked]
+  decide +kernel

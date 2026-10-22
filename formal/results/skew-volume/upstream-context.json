@@ -1,0 +1,47 @@
+{
+  "upstream": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+  "comparison_base": "84f106ebf0731cbee1926833236361cddac0fc3f",
+  "protected_unchanged": {
+    "data/one-reflection-skew/instance.rec": {
+      "old": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "new": "6d35d3b8bc50814cb5c7774306f64d6902372bee"
+    },
+    "data/one-reflection-skew/provenance.json": {
+      "old": "e75110bb3e35f5cb5b70364a0c3accc935052329",
+      "new": "e75110bb3e35f5cb5b70364a0c3accc935052329"
+    },
+    "data/one-reflection-skew/record.json": {
+      "old": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "new": "1ee559be681582cc26a1767f99c933fbcbdd3b10"
+    },
+    "data/one-reflection-skew/why.md": {
+      "old": "c8c9930215f857586c5e52bc1ff0a2957dc47be6",
+      "new": "c8c9930215f857586c5e52bc1ff0a2957dc47be6"
+    }
+  },
+  "files": [
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/ResidueTransport/Density.lean",
+      "git_blob": "5f0fac28ddcb630de2d2844fda3490e442ee2df4",
+      "sha256": "248f5efeb10209b0ac0d8e2e05bda7f448727f39816529b09827793f401a0206",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/formal/lean/HodgeComputer/Constructions/ResidueTransport/Density.lean?ref=d5e9ef223a2cd210517f35c071e9a5108a15e025"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/formal/lean/HodgeComputer/Constructions/ResidueTransport/Density.lean"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/ResidueTransport/README.md",
+      "git_blob": "128915fe3dbad6c22028573882bf8b47569a60c2",
+      "sha256": "c9bad9edf38eac83d69694b74caa3782993dcd380802c446d258e0abd65b4fdb",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/formal/lean/HodgeComputer/Constructions/ResidueTransport/README.md?ref=d5e9ef223a2cd210517f35c071e9a5108a15e025"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/formal/lean/HodgeComputer/Constructions/ResidueTransport/README.md"
+    }
+  ],
+  "scope": "Read-only inspection and hash comparison; neither upstream file was compiled or mathematically replayed in this batch."
+}

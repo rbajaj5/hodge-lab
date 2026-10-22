@@ -1,0 +1,18 @@
+import HodgeLab.OneReflectionSkew.VolumeDensity
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateVolume
+open HodgeLab.OneReflectionSkew.VolumeDensity
+example : (omegaMatrix (2 : ℚ) 0 0 0 0).det = -4 := by
+    rw [omegaMatrix_det]
+    norm_num
+
+example : (affineJacobian (2 : ℚ) 0 0 0 0).det = 4 := by
+    rw [affineJacobian_det]
+    norm_num
+
+example : 4225 * uCoefficient (4 : ℚ) 0 0 0 0 = -8 := by
+    norm_num [uCoefficient, chartDenominator, cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+
+example : (squareJacobian (0 : ℚ) 0 0 0 0).det = 0 := by
+    rw [squareJacobian_det]
+    norm_num

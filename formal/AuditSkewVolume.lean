@@ -1,0 +1,19 @@
+import HodgeLab.OneReflectionSkew.CoordinateVolume
+import HodgeLab.OneReflectionSkew.VolumeDensity
+
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.physicalCoordinates_eval
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.physicalJacobian_entries
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.affineJacobian_entries
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.affineJacobian_det
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.squareCoordinates_eval
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.squareJacobian_entries
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.squareJacobian_det
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.omegaMatrix_entries
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.omegaMatrix_minor
+#print axioms HodgeLab.OneReflectionSkew.CoordinateVolume.omegaMatrix_det
+#print axioms HodgeLab.OneReflectionSkew.VolumeDensity.xCoefficient_eq
+#print axioms HodgeLab.OneReflectionSkew.VolumeDensity.square_pullback
+#print axioms HodgeLab.OneReflectionSkew.VolumeDensity.affine_nonsingular_iff
+#print axioms HodgeLab.OneReflectionSkew.VolumeDensity.square_nonsingular_iff
+#print axioms HodgeLab.OneReflectionSkew.VolumeDensity.coefficient_recovery
+#print axioms HodgeLab.OneReflectionSkew.VolumeDensity.protected_pole_condition

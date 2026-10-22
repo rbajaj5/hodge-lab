@@ -1,0 +1,42 @@
+'HodgeLab.OneReflectionSkew.CoordinateVolume.physicalCoordinates_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.physicalJacobian_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.affineJacobian_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.affineJacobian_det' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.squareCoordinates_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.squareJacobian_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.squareJacobian_det' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.omegaMatrix_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.omegaMatrix_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.CoordinateVolume.omegaMatrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.VolumeDensity.xCoefficient_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.VolumeDensity.square_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.VolumeDensity.affine_nonsingular_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.VolumeDensity.square_nonsingular_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.VolumeDensity.coefficient_recovery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.VolumeDensity.protected_pole_condition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

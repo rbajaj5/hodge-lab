@@ -38,6 +38,22 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: coordinate volume and signs checked in Lean
+
+[![The actual Euler-volume matrix and explicit chart assumptions](visualizations/skew-volume.png)](notes/skew-volume-lean.md)
+
+Lean now derives the actual polynomial Jacobians **x²** and **2x**, the
+ordered Euler-volume coefficient **−x²**, and the ambient source coefficient
+**−U²/(2G²)**. The inverse-Jacobian step explicitly requires x≠0; G≠0
+describes the complement before taking residue. **16 theorem audits, two
+new-module kernel replays and four deliberate-error controls passed.**
+
+This closes the coordinate-volume coefficient step. The formal model uses
+ordered determinants; residue reduction, general differential-form transport
+and the rational primitive remain separate obligations.
+
+[Proof and limits](notes/skew-volume-lean.md) · [Lean modules](formal/HodgeLab/OneReflectionSkew/VolumeDensity.lean) · [Executed receipt](formal/results/skew-volume/validation.json)
+
 ### One-reflection-skew: protected sextic to chart, checked in Lean
 
 [![All protected monomials transported to the actual Lean chart polynomial](visualizations/skew-chart.png)](notes/skew-chart-lean.md)
