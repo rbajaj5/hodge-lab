@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "retrieved_utc": "2026-10-22T21:31:04.617092+00:00",
+  "files": [
+    {
+      "path": "leaderboard/comment-counts.json",
+      "commit": "8d89c1001e9381aa82c313506bfcf72fb05b3579",
+      "git_blob": "2c90cfa7437bd424fb0c50d2f52d9be5c90ac143",
+      "sha256": "5db4513cbc7525d7dc3b486e07a2117f12f9d7e2c213897ef3bf0178e5b1671e",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/leaderboard/comment-counts.json?ref=8d89c1001e9381aa82c313506bfcf72fb05b3579"
+      ],
+      "timeout_seconds": 45
+    },
+    {
+      "path": "scripts/build-comment-leaderboard.py",
+      "commit": "8d89c1001e9381aa82c313506bfcf72fb05b3579",
+      "git_blob": "be96f94c1fa07e98c746c6b2b7731a999cac332f",
+      "sha256": "02f3a5bc1537968a991a0999816bb48abba46b4a3a5ee0bdddde256a188cdd79",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/scripts/build-comment-leaderboard.py?ref=8d89c1001e9381aa82c313506bfcf72fb05b3579"
+      ],
+      "timeout_seconds": 45
+    }
+  ]
+}

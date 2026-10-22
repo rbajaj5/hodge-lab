@@ -1,0 +1,32 @@
+{
+  "status": "READ_ONLY_REVIEW_COMPLETED",
+  "observed_utc": "2026-10-22T21:32:23.340681+00:00",
+  "upstream_commit": "8d89c1001e9381aa82c313506bfcf72fb05b3579",
+  "notebook_parent": "0200f4c07e76af3cdd29f45e9078c245c222b28c",
+  "target_policy_files_unchanged": 532,
+  "monitored_threads_unchanged": 14,
+  "all_comment_reply_pages_fetched": true,
+  "rbajaj5_snapshot_score": 12,
+  "rbajaj5_snapshot_entries": 12,
+  "rbajaj5_snapshot_replies": 2,
+  "count_scope": "Raw comments and replies from atlas-mapped discussion threads; named authors only. Not all user activity, mathematical credit, curated contribution tally, or solves. No full reconciliation with the notebook 29 was performed.",
+  "checks_executed": [
+    "Git blob/SHA256 verification of two pinned fetched files",
+    "JSON score equals entry count for rbajaj5:12, of which2 replies",
+    "Read the count builder and upstream UI/workflow diff",
+    "Compare complete tree pins and all14 discussion bodies/IDs/timestamps/body hashes/answer state"
+  ],
+  "not_executed": [
+    "Leaderboard rebuild across all mapped threads",
+    "Live deployed UI validation",
+    "Any mathematical or Lean replay"
+  ],
+  "posts_tally_unchanged": true,
+  "files_lf_sha256": {
+    "comparison-20261022T212958Z.json": "09982bc476f6cf7f5353007fb88cf2ea5f7dc902ee34a0a39007c2e298eb6da0",
+    "repository-heads-20261022T212958Z.json": "ee3a9c6f9b2801f3e6684079a6a1eb0a2279586f117951b82d16473e73ad41f4",
+    "upstream/fetch-receipt.json": "d81eed1aec034e2bcd697ccabf829a58b48be009249911c4e372e3fa1663b6d6",
+    "upstream/leaderboard/comment-counts.json": "5db4513cbc7525d7dc3b486e07a2117f12f9d7e2c213897ef3bf0178e5b1671e",
+    "upstream/scripts/build-comment-leaderboard.py": "02f3a5bc1537968a991a0999816bb48abba46b4a3a5ee0bdddde256a188cdd79"
+  }
+}

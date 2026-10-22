@@ -4687,3 +4687,36 @@ No upstream post, reply, edit or PR. Posts remain entries 1–29. Tally unchange
 **29 discussion contributions, one closed maintenance PR, zero accepted
 authored solves**. Earlier ledger bytes and receipts are preserved.
 Results and limits are published in Hodge Lab only.
+
+
+## Checkpoint 133 — 22 October 2026: comment leaderboard scope and unchanged research status
+
+Bounded read-only monitoring observed upstream advance from 21fccb6 to
+[8d89c1001e9381aa82c313506bfcf72fb05b3579](https://github.com/hodge-computer/sextics/commit/8d89c1001e9381aa82c313506bfcf72fb05b3579)
+(PRs #189/#190); Hodge Lab parent is
+0200f4c07e76af3cdd29f45e9078c245c222b28c. Fetch timestamps are approximately
+21:30 UTC; this is the actual observation time, later than the queued
+heartbeat timestamp. The eight-file change adds a comment-count leaderboard,
+previews and navigation. **All 532 target/policy pins and all 14 monitored
+threads are unchanged**, including full comments/replies, edits and answers.
+No new research result, acceptance or mathematical attribution was found.
+
+- [Status note and scope distinction](notes/upstream-status-20261022.md#22-october-2026-2130-utc-comment-leaderboard-added-research-records-unchanged).
+- [Read-only receipt, pins and limits](results/comment-leaderboard-monitor-20261022/review.json).
+
+The pinned upstream snapshot records **12 rbajaj5 comments/replies, including
+2 replies**, within atlas-mapped threads. Its builder counts entries, not
+mathematical substance or accepted solves. This is not the same coverage
+as our curated 29-contribution Posts list. No full reconciliation of the
+historical list against the atlas subset was undertaken. Both fetched source
+files matched their Git blob hashes; no leaderboard rebuild, live website
+validation, mathematical check or Lean replay was performed.
+
+Requests had 45-second bounds and the complete discussion collection a
+240-second total bound. A separate read-only agent reviewed the changed-file
+scope and unchanged pins. Credit Benjamin E. Diamond and upstream contributors
+for the interface work. This is ordinary status maintenance; no new research
+visualization is needed. README mathematical claims and prior receipts remain
+unchanged. No upstream post, reply, edit or PR; Posts remain entries 1–29.
+Tally unchanged: **29 discussion contributions, one closed maintenance PR,
+zero accepted authored solves**. Earlier ledger bytes are preserved.

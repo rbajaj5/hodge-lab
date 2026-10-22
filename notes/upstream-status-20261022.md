@@ -178,3 +178,37 @@ collector had a 240-second total budget and the eight-file follow-up a
 120-second budget. No timeout or access failure occurred. This is ordinary
 status/pin maintenance; no new research visualization or README change is
 warranted. No upstream publication. Posts and tally remain 29.
+
+
+## 22 October 2026, 21:30 UTC: comment leaderboard added; research records unchanged
+
+Upstream advanced from 21fccb6b4f1d4070ddaa30195a78f268247569e6 to
+[8d89c1001e9381aa82c313506bfcf72fb05b3579](https://github.com/hodge-computer/sextics/commit/8d89c1001e9381aa82c313506bfcf72fb05b3579)
+through PRs [189](https://github.com/hodge-computer/sextics/pull/189) and
+[190](https://github.com/hodge-computer/sextics/pull/190). The eight changed
+files add a Comments/Solves leaderboard selector, comment previews and
+navigation, and an event-driven comment-count updater. All **532 monitored
+target/policy blob pins** are unchanged. All comments, replies, bodies,
+answer states and tracked metadata in the **14 monitored threads** are
+unchanged from the preceding complete baseline. No new acceptance or
+mathematical attribution was found.
+
+The [pinned count builder](https://github.com/hodge-computer/sextics/blob/8d89c1001e9381aa82c313506bfcf72fb05b3579/scripts/build-comment-leaderboard.py)
+counts authored comments and replies from the atlas's mapped discussion
+threads. It does not score their mathematical substance. The
+[pinned JSON snapshot](https://github.com/hodge-computer/sextics/blob/8d89c1001e9381aa82c313506bfcf72fb05b3579/leaderboard/comment-counts.json)
+contains **12 rbajaj5 entries, including two replies**, with score 12.
+This is a different scope from Hodge Lab's curated **29 discussion
+contributions**. We have not reconciled every historical entry with this
+atlas subset. Neither count is an accepted-solve count; the notebook tally
+is unchanged. The previous explicit degree-seven credit remains historical
+credit, not a new acknowledgment caused by this interface.
+
+[Read-only receipt and limits](../results/comment-leaderboard-monitor-20261022/review.json)
+include current heads, the comparison, and the two hash-verified pinned
+files. This pass inspected code and stored data, not the live deployment,
+and did not rebuild the leaderboard or replay mathematical proofs. Requests
+were bounded at 45 seconds; the complete discussion fetch at 240 seconds.
+A separate read-only agent checked the eight-file diff and unchanged pins.
+Credit Benjamin E. Diamond/upstream contributors for the interface work.
+No upstream action or change to the Posts list.
