@@ -146,3 +146,14 @@ The Lean addendum to [reply 19111234](https://github.com/hodge-computer/sextics/
 was then published and read back exactly, with its original content preserved.
 [Verified outcome](../formal/results/skew-lean/upstream/outcome.json). The
 contribution tally remains 29; no additional comment was created.
+
+
+### Later formal extension — 21 October 2026
+
+[Checkpoint 122](skew-lean-extension.md) closes the arbitrary-MvPolynomial
+expansion gap stated above: the new theorem accepts all four numerator
+polynomials with total degree at most four and explicitly absent fifth
+coordinate. It applies the same existing obstruction and changes no search
+coverage. The source transport, other denominators and 45-versus-504 comparison
+remain outside the theorem. This later extension preserves the original proof,
+receipt and publication history.

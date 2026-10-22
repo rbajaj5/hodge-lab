@@ -1,0 +1,26 @@
+import HodgeLab.OneReflectionSkew.DegreeFour
+import HodgeLab.OneReflectionSkew.CoordinateComparison
+
+#print axioms HodgeLab.OneReflectionSkew.monomial_injective
+#print axioms HodgeLab.OneReflectionSkew.exponent_monomial_injective
+#print axioms HodgeLab.OneReflectionSkew.support_degree_four_coverage
+#print axioms HodgeLab.OneReflectionSkew.degree_four_expansion
+#print axioms HodgeLab.OneReflectionSkew.componentOperator_basis
+#print axioms HodgeLab.OneReflectionSkew.componentOperator_C_mul
+#print axioms HodgeLab.OneReflectionSkew.componentOperator_sum
+#print axioms HodgeLab.OneReflectionSkew.componentOperator_degree_four
+#print axioms HodgeLab.OneReflectionSkew.fullOperator_degree_four
+#print axioms HodgeLab.OneReflectionSkew.no_degree_four_solution
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.mixed_flip0
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.mixed_flip1
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.mixed_flip2
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.skew_flip0_defect
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.skew_flip1
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.skew_flip2_defect
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.source_flip0
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.source_flip1
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.source_flip2
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.coordinates_flip0
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.seed_chart
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.seed_values
+#print axioms HodgeLab.OneReflectionSkew.CoordinateComparison.no_pointwise_factorization

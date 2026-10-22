@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.CoordinateComparison
+open HodgeLab.OneReflectionSkew.CoordinateComparison
+example : skewF (flip0 seed : Fin 6 → ℚ) = skewF (seed : Fin 6 → ℚ) := by
+  rw [(seed_values (K:=ℚ)).1, (seed_values (K:=ℚ)).2]
+  decide +kernel

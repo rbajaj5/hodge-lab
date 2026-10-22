@@ -1,0 +1,4 @@
+import HodgeLab.OneReflectionSkew.DegreeFour
+open HodgeLab.OneReflectionSkew
+set_option maxRecDepth 100000 in
+example : ∃ k : Fin 70, monomial k = exp 5 0 0 0 := by decide +kernel

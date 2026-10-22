@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "coefficient_field": "rational input; Lean statements over fields with indicated hypotheses",
+  "files_hash_checked": 6,
+  "polynomials": [
+    {
+      "target": "one-reflection-skew",
+      "polynomial": "F",
+      "terms": 10,
+      "rec_json_lean_binding": "PASS"
+    },
+    {
+      "target": "one-reflection-skew",
+      "polynomial": "A",
+      "terms": 1,
+      "rec_json_lean_binding": "PASS"
+    },
+    {
+      "target": "mixed-polar",
+      "polynomial": "F",
+      "terms": 9,
+      "rec_json_lean_binding": "PASS"
+    },
+    {
+      "target": "mixed-polar",
+      "polynomial": "A",
+      "terms": 1,
+      "rec_json_lean_binding": "PASS"
+    }
+  ],
+  "limits": "Hash checks of accepted Lean files do not replay those files."
+}

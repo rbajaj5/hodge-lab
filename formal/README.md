@@ -2,6 +2,16 @@
 
 ## One-reflection-skew polynomial obstruction
 
+The [degree-bound extension](HodgeLab/OneReflectionSkew/DegreeFour.lean) now proves
+the same exclusion for arbitrary numerator polynomials of total degree at most
+four, with the unused fifth coordinate explicitly absent. The separate
+[protected-target comparison](HodgeLab/OneReflectionSkew/CoordinateComparison.lean)
+checks why the accepted mixed-polar coordinate formula cannot transfer unchanged.
+Run `python3 -O check_skew_extension.py` for the two new-module kernel replays,
+23 theorem audits and three rejected false statements.
+[Scope, visualization and remaining transport dependency](../notes/skew-lean-extension.md)
+· [New receipt](results/skew-extension/validation.json).
+
 The [new module](HodgeLab/OneReflectionSkew/ThreeCoefficient.lean) constructs
 the degree-four chart operator, checks its 840 selected column coefficients
 and three source coefficients, and proves the encoded polynomial equation

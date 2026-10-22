@@ -4079,3 +4079,65 @@ UTF-8; there was no access failure, timeout or authentication retry loop.
 This status maintenance does not require a new research visualization.
 Contribution tally remains **29 discussion contributions, one closed
 maintenance PR, and zero accepted authored solves**.
+
+
+## Checkpoint 122 — 21 October 2026: arbitrary skew numerators in Lean
+
+User direction: continue Lean for one-reflection-skew, examine the accepted
+mixed-polar proof, and publish checked results, visualization and limits here.
+Notebook parent `c5862c4a2881cac1705f7937cd599bdcff6a8170`; freshly pinned upstream
+`84f106ebf0731cbee1926833236361cddac0fc3f`. Protected skew inputs are unchanged.
+[Six input pins and byte hashes](formal/results/skew-extension/inputs.json)
+include both targets' REC/JSON records and the accepted mixed-polar coordinate
+and clearing modules. Network requests were bounded at 45 seconds each.
+
+**Completed formal step:** [DegreeFour.lean](formal/HodgeLab/OneReflectionSkew/DegreeFour.lean)
+proves arbitrary degree-at-most-four numerator polynomials expand into the
+70-monomial basis per component and their full differentiated operator expands
+into the existing 280 columns. The unused fifth variable is explicitly absent.
+The existing dual then excludes the chart equation over every characteristic-zero
+field. This closes checkpoint 120's expansion gap; it adds no new denominator
+family or search coverage. The prior coefficient proof and source-transport
+calculations are reused with their attribution unchanged.
+
+**Mixed-polar comparison:** [CoordinateComparison.lean](formal/HodgeLab/OneReflectionSkew/CoordinateComparison.lean)
+checks both protected equations and sources. Mixed-polar F is invariant under
+all paired sign flips; skew has defect `-2 X1^3 X2 Y0 Y1` for flips 0 and 2.
+Both scalar sources are invariant. The accepted ratio/square coordinates forget
+that sign. A separate chart witness gives the same six coordinates but skew F
+values 8 and 6. These points are off F=0: the theorem blocks pointwise
+factorization on the whole displayed chart, not all hypersurface maps or
+rational expressions with additional poles. The accepted residue-clearing
+architecture is useful, but no primitive or physical-field hypotheses are
+transferred merely by citing it.
+
+- [Derivation, attribution and exact scope](notes/skew-lean-extension.md).
+- [Executed Lean receipt](formal/results/skew-extension/validation.json):
+  Lean 4.31.0, pinned mathlib, **23 theorem audits**, **two new-module default
+  kernel replays**, **three deliberate false claims rejected**. Final run
+  46.171 seconds; 120 seconds per command, 600 seconds total; no timeout.
+- [REC/JSON/Lean source binding](formal/results/skew-extension/source-binding.json):
+  exact independent REC parsing agrees with both F/A structured term lists
+  and generated Lean definitions. This parser is external to Lean. Upstream
+  file hashes are not proof replays.
+- [Reproducible visualization](visualizations/skew-extension.png) and
+  [generator](scripts/visualize_skew_extension.py), reconstructed from pinned
+  terms and bound to the Lean receipt; rendered PNG inspected.
+- [Development attempts](formal/results/skew-extension/development) preserve
+  a missing Omega cache import and coordinate-elaboration fixes. The expansion
+  implementation had a 15-minute development bound and 90-second compile bounds.
+  These failures were implementation issues, not mathematical results.
+
+Read-only review found no scope or verifier blocker. Imported mathlib and the
+prior coefficient modules were not freshly replayed. No accepted mixed-polar
+proof replay, target primitive, HasCertificate, new exclusion family, or
+45-versus-504 comparison is claimed. The next formal dependency is the exact
+protected-sextic-to-chart substitution and differential normalization. The
+existing accepted mixed-polar solve remains credited to benediamond and its
+stated contributors; fqlx's earlier skew formulation and the independent
+checkpoint-119 review remain attributed separately.
+
+This batch publishes in Hodge Lab only; related observations are retained for
+an infrequent substantial upstream update. Contribution tally remains **29
+discussion contributions, one closed maintenance PR, zero accepted authored
+solves**. Earlier ledger entries and receipts are preserved.

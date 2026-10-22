@@ -38,13 +38,15 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
-### One-reflection-skew: polynomial coefficients checked in Lean
+### One-reflection-skew: arbitrary degree-four numerators checked in Lean
 
-[![Lean coefficient map and its verification boundary](visualizations/skew-lean.png)](notes/skew-lean.md)
+[![Protected target comparison and complete degree-four proof inputs](visualizations/skew-extension.png)](notes/skew-lean-extension.md)
 
-Lean reconstructs **840 selected coefficients across 280 columns**, checks the three source coefficients, and proves the encoded degree-four polynomial equation has no solution over every characteristic-zero field. Compilation, declaration audits, kernel replay and two deliberate-error controls passed locally. This formalizes the existing bounded obstruction; geometric source transport, other denominator families and the 45-versus-504 comparison remain outside this theorem.
+Lean now expands **arbitrary degree-at-most-four numerator polynomials** into the 280 previously checked operator columns, closing the formal coverage gap. A source-bound comparison also proves why mixed-polar's paired-sign coordinate formula needs adaptation for skew. **23 theorem audits, two new-module kernel replays and three deliberate-error controls passed.**
 
-[Proof and reproduction](notes/skew-lean.md) · [Lean source](formal/HodgeLab/OneReflectionSkew/ThreeCoefficient.lean) · [Verification receipt](formal/results/skew-lean/validation.json)
+This strengthens the existing bounded exclusion for `D=1+r^6+w^6`; it adds no new search coverage or solve. The unused fifth polynomial coordinate is explicitly absent. Protected-source transport, other denominator families and the 45-versus-504 comparison remain outside these theorems.
+
+[Proof, comparison and limits](notes/skew-lean-extension.md) · [Lean expansion theorem](formal/HodgeLab/OneReflectionSkew/DegreeFour.lean) · [Verification receipt](formal/results/skew-extension/validation.json) · [Earlier coefficient proof](notes/skew-lean.md)
 
 ### Including the base derivatives: four bounded primitive searches
 

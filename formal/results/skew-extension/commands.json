@@ -1,0 +1,195 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean --version"
+    ],
+    "exit_code": 0,
+    "bound_seconds": 120,
+    "elapsed_seconds": 8.577999999979511,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 git -C .lake/packages/mathlib rev-parse HEAD"
+    ],
+    "exit_code": 0,
+    "bound_seconds": 120,
+    "elapsed_seconds": 0.2029999999795109,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.DegreeFour",
+      "HodgeLab.OneReflectionSkew.CoordinateComparison"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake build HodgeLab.OneReflectionSkew.DegreeFour HodgeLab.OneReflectionSkew.CoordinateComparison"
+    ],
+    "exit_code": 0,
+    "bound_seconds": 120,
+    "elapsed_seconds": 8.797000000020489,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "72df60e98f6bee31df994a969bef60e5fa28f32af567d57eb765acb7e2863e47"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewExtension.lean"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean AuditSkewExtension.lean"
+    ],
+    "exit_code": 0,
+    "bound_seconds": 120,
+    "elapsed_seconds": 4.311999999976251,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "2e70867da2f940ffc0c84b634c0358c2214bb1f01e3d56ca022d0953001988f4"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewExtension.lean"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean ReplaySkewExtension.lean"
+    ],
+    "exit_code": 0,
+    "bound_seconds": 120,
+    "elapsed_seconds": 8.89100000000326,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "6e739f53bd445d45705fe97434c81032aae61fe11ba99a4df1fa36ccbb8bedfe"
+  },
+  {
+    "label": "wrong-skew-symmetry",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-extension-negative/wrong-skew-symmetry.lean"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean .lake/skew-extension-negative/wrong-skew-symmetry.lean"
+    ],
+    "exit_code": 1,
+    "bound_seconds": 120,
+    "elapsed_seconds": 4.5,
+    "expected_failure": true,
+    "log": "wrong-skew-symmetry.log",
+    "log_lf_sha256": "25ac409d214b228ab0b45612b1692b285baa63a5100d1ab7eded8957a2c74abe"
+  },
+  {
+    "label": "degree-five-inclusion",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-extension-negative/degree-five-inclusion.lean"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean .lake/skew-extension-negative/degree-five-inclusion.lean"
+    ],
+    "exit_code": 1,
+    "bound_seconds": 120,
+    "elapsed_seconds": 5.5,
+    "expected_failure": true,
+    "log": "degree-five-inclusion.log",
+    "log_lf_sha256": "67a2006149b1bbe44c9730d3d0fe7cb768a9316d582b9faae0203292e085d294"
+  },
+  {
+    "label": "unused-variable-inclusion",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-extension-negative/unused-variable-inclusion.lean"
+    ],
+    "execution_command": [
+      "wsl.exe",
+      "--cd",
+      "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+      "-e",
+      "sh",
+      "-lc",
+      "exec timeout 120 lake env lean .lake/skew-extension-negative/unused-variable-inclusion.lean"
+    ],
+    "exit_code": 1,
+    "bound_seconds": 120,
+    "elapsed_seconds": 5.2810000000172295,
+    "expected_failure": true,
+    "log": "unused-variable-inclusion.log",
+    "log_lf_sha256": "93f9da5440642dc951e60e41ff00bcc0e663bfd661cc9bf53a0949ebdd3c82f8"
+  }
+]
