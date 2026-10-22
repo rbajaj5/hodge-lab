@@ -38,6 +38,22 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: protected sextic to chart, checked in Lean
+
+[![All protected monomials transported to the actual Lean chart polynomial](visualizations/skew-chart.png)](notes/skew-chart-lean.md)
+
+Lean now proves `F(x,rx,wx,1,t,z)=z^6+P(x^2)` and `A=x^3`, and identifies
+the resulting P with the **existing `p7` polynomial divided by seven**.
+The existing denominator is bound to `1+r^6+w^6` as well. Eight theorem
+audits, one new-module kernel replay and three deliberate-error controls
+check the substitution and its source binding.
+
+This closes the polynomial-substitution step. Differential normalization,
+other denominator families and the rational primitive remain outside these
+theorems; the target is still open.
+
+[Proof and limits](notes/skew-chart-lean.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean) · [Executed receipt](formal/results/skew-chart/validation.json)
+
 ### One-reflection-skew: arbitrary degree-four numerators checked in Lean
 
 [![Protected target comparison and complete degree-four proof inputs](visualizations/skew-extension.png)](notes/skew-lean-extension.md)

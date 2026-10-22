@@ -168,3 +168,11 @@ This batch is published in Hodge Lab with checkpoint 122. No upstream post or
 edit is part of this batch; related findings are retained for a substantial
 future update. The contribution tally remains **29 discussion contributions,
 one closed maintenance PR, zero accepted authored solves**.
+
+## Follow-up — 21 October 2026, checkpoint 124
+
+The [protected polynomial substitution](skew-chart-lean.md) is now proved in
+Lean and bound to the actual existing `p7` and `a` definitions. The scalar
+source restricts to x³. This closes the first small unit proposed above;
+the differential/Jacobian/residue normalization remains a separate formal
+dependency. The earlier statements, receipt and bounded exclusion are unchanged.

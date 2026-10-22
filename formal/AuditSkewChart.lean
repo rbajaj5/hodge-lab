@@ -1,0 +1,10 @@
+import HodgeLab.OneReflectionSkew.ChartSubstitution
+
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.eval_a
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.eval_aOver
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.eval_p7
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.protected_source_substitution
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution_p7
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.eval_p7Over
+#print axioms HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution_p7Over

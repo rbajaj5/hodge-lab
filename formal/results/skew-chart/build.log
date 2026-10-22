@@ -1,0 +1,21 @@
+⚠ [961/1199] Replayed HodgeLab.OneReflectionSkew.CoordinateComparison
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:63:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [1371/1373] Replayed HodgeLab.OneReflectionSkew.ThreeCoefficient
+warning: HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:91:23: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (1373 jobs).

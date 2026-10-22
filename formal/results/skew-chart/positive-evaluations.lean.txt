@@ -1,0 +1,14 @@
+import HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateComparison
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+example : skewF (physicalPoint (2 : ℚ) 0 0 0 0) = 65 := by
+    rw [protected_substitution]
+    norm_num [cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+
+example : 7 * skewF (physicalPoint (1 : ℚ) 1 0 2 0) = 477 := by
+    rw [protected_substitution]
+    norm_num [cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+
+example : skewA (physicalPoint (2 : ℚ) 0 0 0 0) = 8 := by
+    rw [protected_source_substitution]
+    norm_num

@@ -2,3 +2,4 @@ import HodgeLab.RankGap
 import HodgeLab.OneReflectionSkew.ThreeCoefficient
 import HodgeLab.OneReflectionSkew.DegreeFour
 import HodgeLab.OneReflectionSkew.CoordinateComparison
+import HodgeLab.OneReflectionSkew.ChartSubstitution

@@ -1,0 +1,397 @@
+{
+  "lean_development": {
+    "attempt01.lean.txt": {
+      "lf_sha256": "79708b3eb81292c1e16d1ab1c3619423de913a8c3bbe73c2459641dcdcf4c6c3",
+      "text": "import HodgeLab.OneReflectionSkew.CoordinateComparison\nimport HodgeLab.OneReflectionSkew.DegreeFour\n\n/-! Polynomial substitution from the protected one-reflection-skew equation\nto the actual chart polynomial used by the degree-four Lean obstruction.\nThis is a coordinate identity, not a differential-form normalization. -/\n\nnamespace HodgeLab.OneReflectionSkew.ChartSubstitution\nopen HodgeLab.SparsePolynomial\nopen CoordinateComparison\n\nvariable {K : Type*} [Field K] [CharZero K]\n\ndef physicalPoint (x r w t z : K) : Fin 6 → K := ![x,r*x,w*x,1,t,z]\ndef polynomialPoint (U r w t : K) : Fin 5 → K := ![U,r,w,t,0]\n\ndef aCoeff (r w : K) : K := 1 + r^6 + w^6\ndef bCoeff (r w t : K) : K := r*t*(1+r^2*w)\ndef cCoeff (r t : K) : K := r*t*(1-t^2)/7\ndef dCoeff (t : K) : K := 1+t^6\n\ndef cubic (U r w t : K) : K :=\n  aCoeff r w * U^3 + bCoeff r w t * U^2 + cCoeff r t * U + dCoeff t\n\n/-- Binding to the existing sparse polynomial, including its normalization by seven. -/\ntheorem eval_p7 (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) p7 =\n      7 * cubic U r w t := by\n  simp [p7, p7Sparse, eval, MvPolynomial.eval₂_monomial,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint,\n    cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\ntheorem protected_substitution (x r w t z : K) :\n    skewF (physicalPoint x r w t z) = z^6 + cubic (x^2) r w t := by\n  simp [skewF, physicalPoint, cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\ntheorem protected_source_substitution (x r w t z : K) :\n    skewA (physicalPoint x r w t z) = x^3 := by\n  simp [skewA, physicalPoint]\n\n/-- The protected sextic is bound to the exact polynomial used in the prior\nLean operator, rather than merely to another displayed cubic formula. -/\ntheorem protected_substitution_p7 (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval₂ (Rat.castHom K)\n        (polynomialPoint (x^2) r w t) p7 := by\n  rw [eval_p7, protected_substitution]\n  ring\n\nend HodgeLab.OneReflectionSkew.ChartSubstitution\n"
+    },
+    "attempt01.log": {
+      "lf_sha256": "ca9ee984892e8592899af1d4138481b655d7cc5fd887cf4460aea420dd04751c",
+      "text": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\nHodgeLab/OneReflectionSkew/ChartSubstitution.lean:28:27: error: unsolved goals\nK : Type u_1\ninst✝¹ : Field K\ninst✝ : CharZero K\nU r w t : K\n⊢ 7 + U * r * t + U ^ 2 * r * t * 7 + U ^ 2 * r ^ 3 * w * t * 7 + U ^ 3 * 7 + U ^ 3 * r ^ 6 * 7 + U ^ 3 * w ^ 6 * 7 +\n        t ^ 6 * 7 +\n      MvPolynomial.eval₂ (Rat.castHom K) ![U, r, w, t, 0] (-(MvPolynomial.monomial (exponent ![1, 1, 0, 3, 0])) 1) =\n    7 + U * r * t - U * r * t ^ 3 + U ^ 2 * r * t * 7 + U ^ 2 * r ^ 3 * w * t * 7 + U ^ 3 * 7 + U ^ 3 * r ^ 6 * 7 +\n        U ^ 3 * w ^ 6 * 7 +\n      t ^ 6 * 7\nHodgeLab/OneReflectionSkew/ChartSubstitution.lean:39:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.ChartSubstitution.protected_source_substitution`:\n  [CharZero K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [CharZero K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n"
+    },
+    "attempt02.lean.txt": {
+      "lf_sha256": "10fd2095add58bf7226a5a2531114e996d43187023c1e9e89125cc80b038f317",
+      "text": "import HodgeLab.OneReflectionSkew.CoordinateComparison\nimport HodgeLab.OneReflectionSkew.DegreeFour\n\n/-! Polynomial substitution from the protected one-reflection-skew equation\nto the actual chart polynomial used by the degree-four Lean obstruction.\nThis is a coordinate identity, not a differential-form normalization. -/\n\nnamespace HodgeLab.OneReflectionSkew.ChartSubstitution\nopen HodgeLab.SparsePolynomial\nopen CoordinateComparison\n\nvariable {K : Type*} [Field K] [CharZero K]\n\ndef physicalPoint (x r w t z : K) : Fin 6 → K := ![x,r*x,w*x,1,t,z]\ndef polynomialPoint (U r w t : K) : Fin 5 → K := ![U,r,w,t,0]\n\ndef aCoeff (r w : K) : K := 1 + r^6 + w^6\ndef bCoeff (r w t : K) : K := r*t*(1+r^2*w)\ndef cCoeff (r t : K) : K := r*t*(1-t^2)/7\ndef dCoeff (t : K) : K := 1+t^6\n\ndef cubic (U r w t : K) : K :=\n  aCoeff r w * U^3 + bCoeff r w t * U^2 + cCoeff r t * U + dCoeff t\n\n/-- Binding to the existing sparse polynomial, including its normalization by seven. -/\ntheorem eval_p7 (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) p7 =\n      7 * cubic U r w t := by\n  simp [p7, p7Sparse, eval, MvPolynomial.eval₂_monomial, MvPolynomial.eval₂_neg,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint,\n    cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\ntheorem protected_substitution (x r w t z : K) :\n    skewF (physicalPoint x r w t z) = z^6 + cubic (x^2) r w t := by\n  simp [skewF, physicalPoint, cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\nomit [CharZero K] in\ntheorem protected_source_substitution (x r w t z : K) :\n    skewA (physicalPoint x r w t z) = x^3 := by\n  simp [skewA, physicalPoint]\n\n/-- The protected sextic is bound to the exact polynomial used in the prior\nLean operator, rather than merely to another displayed cubic formula. -/\ntheorem protected_substitution_p7 (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval₂ (Rat.castHom K)\n        (polynomialPoint (x^2) r w t) p7 := by\n  rw [eval_p7, protected_substitution]\n  ring\n\ntheorem eval_p7Over (U r w t : K) :\n    MvPolynomial.eval (polynomialPoint U r w t) (p7Over K) =\n      7 * cubic U r w t := by\n  rw [p7Over, MvPolynomial.eval_map]\n  exact eval_p7 U r w t\n\ntheorem protected_substitution_p7Over (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval (polynomialPoint (x^2) r w t) (p7Over K) := by\n  rw [eval_p7Over, protected_substitution]\n  ring\n\nend HodgeLab.OneReflectionSkew.ChartSubstitution\n"
+    },
+    "attempt02.log": {
+      "lf_sha256": "07c2b345dc33debdc2fd157452e1cce487a98e1101f21ad7be7ca14f8b16b512",
+      "text": "HodgeLab/OneReflectionSkew/ChartSubstitution.lean:29:57: error(lean.unknownIdentifier): Unknown constant `MvPolynomial.eval₂_neg`\nTry this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\nHodgeLab/OneReflectionSkew/ChartSubstitution.lean:28:27: error: unsolved goals\nK : Type u_1\ninst✝¹ : Field K\ninst✝ : CharZero K\nU r w t : K\n⊢ 7 + U * r * t + U ^ 2 * r * t * 7 + U ^ 2 * r ^ 3 * w * t * 7 + U ^ 3 * 7 + U ^ 3 * r ^ 6 * 7 + U ^ 3 * w ^ 6 * 7 +\n        t ^ 6 * 7 +\n      MvPolynomial.eval₂ (Rat.castHom K) ![U, r, w, t, 0] (-(MvPolynomial.monomial (exponent ![1, 1, 0, 3, 0])) 1) =\n    7 + U * r * t - U * r * t ^ 3 + U ^ 2 * r * t * 7 + U ^ 2 * r ^ 3 * w * t * 7 + U ^ 3 * 7 + U ^ 3 * r ^ 6 * 7 +\n        U ^ 3 * w ^ 6 * 7 +\n      t ^ 6 * 7\n"
+    },
+    "attempt03.lean.txt": {
+      "lf_sha256": "203d0b21b7b5e65878103e53b63186b835debe5c0e4374d1f94eaf3e9e2aa2d0",
+      "text": "import HodgeLab.OneReflectionSkew.CoordinateComparison\nimport HodgeLab.OneReflectionSkew.DegreeFour\nimport Mathlib.Algebra.MvPolynomial.CommRing\n\n/-! Polynomial substitution from the protected one-reflection-skew equation\nto the actual chart polynomial used by the degree-four Lean obstruction.\nThis is a coordinate identity, not a differential-form normalization. -/\n\nnamespace HodgeLab.OneReflectionSkew.ChartSubstitution\nopen HodgeLab.SparsePolynomial\nopen CoordinateComparison\n\nvariable {K : Type*} [Field K] [CharZero K]\n\ndef physicalPoint (x r w t z : K) : Fin 6 → K := ![x,r*x,w*x,1,t,z]\ndef polynomialPoint (U r w t : K) : Fin 5 → K := ![U,r,w,t,0]\n\ndef aCoeff (r w : K) : K := 1 + r^6 + w^6\ndef bCoeff (r w t : K) : K := r*t*(1+r^2*w)\ndef cCoeff (r t : K) : K := r*t*(1-t^2)/7\ndef dCoeff (t : K) : K := 1+t^6\n\ndef cubic (U r w t : K) : K :=\n  aCoeff r w * U^3 + bCoeff r w t * U^2 + cCoeff r t * U + dCoeff t\n\n/-- Binding to the existing sparse polynomial, including its normalization by seven. -/\ntheorem eval_p7 (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) p7 =\n      7 * cubic U r w t := by\n  simp [p7, p7Sparse, eval, MvPolynomial.eval₂_monomial, MvPolynomial.eval₂_neg,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint,\n    cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\ntheorem protected_substitution (x r w t z : K) :\n    skewF (physicalPoint x r w t z) = z^6 + cubic (x^2) r w t := by\n  simp [skewF, physicalPoint, cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\nomit [CharZero K] in\ntheorem protected_source_substitution (x r w t z : K) :\n    skewA (physicalPoint x r w t z) = x^3 := by\n  simp [skewA, physicalPoint]\n\n/-- The protected sextic is bound to the exact polynomial used in the prior\nLean operator, rather than merely to another displayed cubic formula. -/\ntheorem protected_substitution_p7 (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval₂ (Rat.castHom K)\n        (polynomialPoint (x^2) r w t) p7 := by\n  rw [eval_p7, protected_substitution]\n  ring\n\ntheorem eval_p7Over (U r w t : K) :\n    MvPolynomial.eval (polynomialPoint U r w t) (p7Over K) =\n      7 * cubic U r w t := by\n  rw [p7Over, MvPolynomial.eval_map]\n  exact eval_p7 U r w t\n\ntheorem protected_substitution_p7Over (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval (polynomialPoint (x^2) r w t) (p7Over K) := by\n  rw [eval_p7Over, protected_substitution]\n  ring\n\nend HodgeLab.OneReflectionSkew.ChartSubstitution\n"
+    },
+    "attempt03.log": {
+      "lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    "attempt04.lean.txt": {
+      "lf_sha256": "1e0b0dffc6f6a957fb11281c9db05aeeb16fabf338de1a7d4fc964890313aa9e",
+      "text": "import HodgeLab.OneReflectionSkew.CoordinateComparison\nimport HodgeLab.OneReflectionSkew.DegreeFour\nimport Mathlib.Algebra.MvPolynomial.CommRing\n\n/-! Polynomial substitution from the protected one-reflection-skew equation\nto the actual chart polynomial used by the degree-four Lean obstruction.\nThis is a coordinate identity, not a differential-form normalization. -/\n\nnamespace HodgeLab.OneReflectionSkew.ChartSubstitution\nopen HodgeLab.SparsePolynomial\nopen CoordinateComparison\n\nvariable {K : Type*} [Field K] [CharZero K]\n\ndef physicalPoint (x r w t z : K) : Fin 6 → K := ![x,r*x,w*x,1,t,z]\ndef polynomialPoint (U r w t : K) : Fin 5 → K := ![U,r,w,t,0]\n\ndef aCoeff (r w : K) : K := 1 + r^6 + w^6\ndef bCoeff (r w t : K) : K := r*t*(1+r^2*w)\ndef cCoeff (r t : K) : K := r*t*(1-t^2)/7\ndef dCoeff (t : K) : K := 1+t^6\n\ndef cubic (U r w t : K) : K :=\n  aCoeff r w * U^3 + bCoeff r w t * U^2 + cCoeff r t * U + dCoeff t\n\ntheorem eval_a (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) a =\n      aCoeff r w := by\n  simp [a, aSparse, eval, MvPolynomial.eval₂_monomial,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint, aCoeff]\n\ntheorem eval_aOver (U r w t : K) :\n    MvPolynomial.eval (polynomialPoint U r w t) (aOver K) = aCoeff r w := by\n  rw [aOver, MvPolynomial.eval_map]\n  exact eval_a U r w t\n\n/-- Binding to the existing sparse polynomial, including its normalization by seven. -/\ntheorem eval_p7 (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) p7 =\n      7 * cubic U r w t := by\n  simp [p7, p7Sparse, eval, MvPolynomial.eval₂_monomial, MvPolynomial.eval₂_neg,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint,\n    cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\ntheorem protected_substitution (x r w t z : K) :\n    skewF (physicalPoint x r w t z) = z^6 + cubic (x^2) r w t := by\n  simp [skewF, physicalPoint, cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\nomit [CharZero K] in\ntheorem protected_source_substitution (x r w t z : K) :\n    skewA (physicalPoint x r w t z) = x^3 := by\n  simp [skewA, physicalPoint]\n\n/-- The protected sextic is bound to the exact polynomial used in the prior\nLean operator, rather than merely to another displayed cubic formula. -/\ntheorem protected_substitution_p7 (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval₂ (Rat.castHom K)\n        (polynomialPoint (x^2) r w t) p7 := by\n  rw [eval_p7, protected_substitution]\n  ring\n\ntheorem eval_p7Over (U r w t : K) :\n    MvPolynomial.eval (polynomialPoint U r w t) (p7Over K) =\n      7 * cubic U r w t := by\n  rw [p7Over, MvPolynomial.eval_map]\n  exact eval_p7 U r w t\n\ntheorem protected_substitution_p7Over (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval (polynomialPoint (x^2) r w t) (p7Over K) := by\n  rw [eval_p7Over, protected_substitution]\n  ring\n\nend HodgeLab.OneReflectionSkew.ChartSubstitution\n"
+    },
+    "attempt04.log": {
+      "lf_sha256": "69ef5bf875cd977a19b5c789a8035d1f1f43bc390d4f9cbce4b01874765ba5cd",
+      "text": "HodgeLab/OneReflectionSkew/ChartSubstitution.lean:28:20: error: unsolved goals\nK : Type u_1\ninst✝¹ : Field K\ninst✝ : CharZero K\nU r w t : K\n⊢ 1 + (r ^ 6 + w ^ 6) = 1 + r ^ 6 + w ^ 6\n"
+    },
+    "attempt05.lean.txt": {
+      "lf_sha256": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+      "text": "import HodgeLab.OneReflectionSkew.CoordinateComparison\nimport HodgeLab.OneReflectionSkew.DegreeFour\nimport Mathlib.Algebra.MvPolynomial.CommRing\n\n/-! Polynomial substitution from the protected one-reflection-skew equation\nto the actual chart polynomial used by the degree-four Lean obstruction.\nThis is a coordinate identity, not a differential-form normalization. -/\n\nnamespace HodgeLab.OneReflectionSkew.ChartSubstitution\nopen HodgeLab.SparsePolynomial\nopen CoordinateComparison\n\nvariable {K : Type*} [Field K] [CharZero K]\n\ndef physicalPoint (x r w t z : K) : Fin 6 → K := ![x,r*x,w*x,1,t,z]\ndef polynomialPoint (U r w t : K) : Fin 5 → K := ![U,r,w,t,0]\n\ndef aCoeff (r w : K) : K := 1 + r^6 + w^6\ndef bCoeff (r w t : K) : K := r*t*(1+r^2*w)\ndef cCoeff (r t : K) : K := r*t*(1-t^2)/7\ndef dCoeff (t : K) : K := 1+t^6\n\ndef cubic (U r w t : K) : K :=\n  aCoeff r w * U^3 + bCoeff r w t * U^2 + cCoeff r t * U + dCoeff t\n\ntheorem eval_a (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) a =\n      aCoeff r w := by\n  simp [a, aSparse, eval, MvPolynomial.eval₂_monomial,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint, aCoeff, add_assoc]\n\ntheorem eval_aOver (U r w t : K) :\n    MvPolynomial.eval (polynomialPoint U r w t) (aOver K) = aCoeff r w := by\n  rw [aOver, MvPolynomial.eval_map]\n  exact eval_a U r w t\n\n/-- Binding to the existing sparse polynomial, including its normalization by seven. -/\ntheorem eval_p7 (U r w t : K) :\n    MvPolynomial.eval₂ (Rat.castHom K) (polynomialPoint U r w t) p7 =\n      7 * cubic U r w t := by\n  simp [p7, p7Sparse, eval, MvPolynomial.eval₂_monomial, MvPolynomial.eval₂_neg,\n    Finsupp.prod_fintype, Fin.prod_univ_succ, exp, polynomialPoint,\n    cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\ntheorem protected_substitution (x r w t z : K) :\n    skewF (physicalPoint x r w t z) = z^6 + cubic (x^2) r w t := by\n  simp [skewF, physicalPoint, cubic, aCoeff, bCoeff, cCoeff, dCoeff]\n  ring\n\nomit [CharZero K] in\ntheorem protected_source_substitution (x r w t z : K) :\n    skewA (physicalPoint x r w t z) = x^3 := by\n  simp [skewA, physicalPoint]\n\n/-- The protected sextic is bound to the exact polynomial used in the prior\nLean operator, rather than merely to another displayed cubic formula. -/\ntheorem protected_substitution_p7 (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval₂ (Rat.castHom K)\n        (polynomialPoint (x^2) r w t) p7 := by\n  rw [eval_p7, protected_substitution]\n  ring\n\ntheorem eval_p7Over (U r w t : K) :\n    MvPolynomial.eval (polynomialPoint U r w t) (p7Over K) =\n      7 * cubic U r w t := by\n  rw [p7Over, MvPolynomial.eval_map]\n  exact eval_p7 U r w t\n\ntheorem protected_substitution_p7Over (x r w t z : K) :\n    7 * skewF (physicalPoint x r w t z) =\n      7*z^6 + MvPolynomial.eval (polynomialPoint (x^2) r w t) (p7Over K) := by\n  rw [eval_p7Over, protected_substitution]\n  ring\n\nend HodgeLab.OneReflectionSkew.ChartSubstitution\n"
+    },
+    "attempt05.log": {
+      "lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    "README.md": {
+      "lf_sha256": "91884827fbe63826a781a4224e89d349357206f8462281288836d771f98a9e9f",
+      "text": "# Chart substitution bounded development\n\nThe only repository file changed by this agent was\n`formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean`.\nThe development budget was ten minutes, with a 90-second bound on each Lean\nprocess. No timeout occurred; no Git or publication operation was performed.\n\nAll five commands used the cached dependencies and the same invocation from\nthe repository's `formal` directory:\n\n```text\ntimeout 90 lake env lean HodgeLab/OneReflectionSkew/ChartSubstitution.lean\n```\n\nEach attempt's complete source and output are preserved separately.\n\n1. `attempt01`: failed at simplifying evaluation of a negative monomial.\n   The direct protected substitution and source identities elaborated, but\n   the file did not compile successfully.\n2. `attempt02`: the requested evaluation-negation lemma was not imported;\n   failure was preserved and not treated as a result.\n3. `attempt03`: added `Mathlib.Algebra.MvPolynomial.CommRing`; all six\n   polynomial/source and actual-p7/p7Over bindings compiled successfully.\n4. `attempt04`: added the existing denominator a/aOver bindings; only the\n   addition-associativity goal in eval_a remained unsolved.\n5. `attempt05`: supplied add_assoc. All eight theorems compiled successfully\n   without diagnostics. Outer command time was 4.556 seconds; this is not a\n   standalone kernel replay timing.\n\nThe source substitution identities hold for all substituted values. They\ndo not assert that the parametrization is invertible there or that any\nchart denominator is nonzero. The unit proves no differential, residue,\ntrace or source-density normalization, and performs no accepted-solve replay.\nThe parent task owns pin validation, theorem-axiom audit, kernel replay and\nthe final receipt and publication.\n"
+    }
+  },
+  "first_verifier_attempt": {
+    "checker_source": "\"\"\"Bounded source-bound Lean replay of the protected sextic/chart substitution.\n\nRun python3 -O check_skew_chart.py from formal. Reuses earlier proof sources;\nno network or dependency fetch. 120 seconds per command, 600 seconds total.\n\"\"\"\nfrom fractions import Fraction\nfrom pathlib import Path\nimport datetime, hashlib, json, re, sys, time\nimport check_skew_extension as util\n\nROOT = Path(__file__).resolve().parent\nOUT = ROOT / 'results/skew-chart'\nPREFIX = 'HodgeLab.OneReflectionSkew.ChartSubstitution.'\nMODULE = 'HodgeLab.OneReflectionSkew.ChartSubstitution'\nNAMES = [PREFIX + name for name in ['eval_a', 'eval_aOver', 'eval_p7', 'protected_substitution',\n         'protected_source_substitution', 'protected_substitution_p7',\n         'eval_p7Over', 'protected_substitution_p7Over']]\nSOURCES = ['lean-toolchain', 'lakefile.toml', 'lake-manifest.json',\n           'check_skew_chart.py', 'check_skew_extension.py',\n           'AuditSkewChart.lean', 'ReplaySkewChart.lean', MODULE.replace('.', '/') + '.lean']\nrequire, digest = util.require, util.digest\n\n\ndef write(name, value):\n    (OUT / name).write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8', newline='\\n')\n\n\ndef terms_json(p):\n    return [[str(c), list(e)] for e, c in sorted(p.items()) if c]\n\n\ndef source_binding():\n    pins = json.loads((OUT / 'inputs.json').read_text(encoding='utf-8'))['pins']\n    paths = {}\n    for pin in pins:\n        raw = (ROOT.parent / pin['path']).read_bytes().replace(b'\\r\\n', b'\\n')\n        require(hashlib.sha256(raw).hexdigest() == pin['sha256'], 'Input SHA256 mismatch')\n        require(hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\\0' + raw).hexdigest() == pin['git_blob'], 'Input Git blob mismatch')\n        paths[Path(pin['upstream_path']).name] = raw.decode('utf-8')\n    record = json.loads(paths['record.json'])\n    rec = paths['instance.rec']\n    require(record['q'] == 1 and util.expression_from_rec(rec, 'q') == '1', 'Unexpected pole order')\n    lean = (ROOT / 'HodgeLab/OneReflectionSkew/CoordinateComparison.lean').read_text(encoding='utf-8')\n    polys, chart = {}, {}\n    for key in ['F', 'A']:\n        terms = record[key]['terms']\n        expected = {tuple(e): Fraction(c) for c, e in terms}\n        require(len(expected) == len(terms), 'Duplicate protected terms need summation')\n        require(util.parse_expression(util.expression_from_rec(rec, key)) == expected, 'REC/JSON mismatch')\n        require(util.parse_expression(record[key]['expression']) == expected, 'JSON expression mismatch')\n        definition = f'def skew{key} (p : Fin 6 → K) : K :=\\n  ' + util.lean_expression(terms)\n        actual = lean.split(f'def skew{key} ', 1)[1].split('\\ndef ', 1)[0].strip()\n        require('def skew' + key + ' ' + actual == definition, 'Lean definition differs from protected input')\n        polys[key] = expected\n        out = {}\n        # The chart substitutes (x, r*x, w*x, 1, t, z) in the REC variable order.\n        for e, c in expected.items():\n            k = (e[0] + e[1] + e[2], e[1], e[2], e[4], e[5])\n            out[k] = out.get(k, Fraction(0)) + c\n        chart[key] = {e: c for e, c in out.items() if c}\n    require(chart['A'] == {(3, 0, 0, 0, 0): Fraction(1)}, 'Source did not substitute to x^3')\n    zterm = (0, 0, 0, 0, 6)\n    require(chart['F'].get(zterm) == 1, 'Missing monic z^6 term')\n    cubic = {}\n    for e, c in chart['F'].items():\n        if e == zterm:\n            continue\n        require(e[0] % 2 == 0 and e[4] == 0, 'Cannot descend this monomial through U=x^2')\n        cubic[(e[0] // 2, *e[1:4], 0)] = 7 * c\n    # Read actual sparse data used by the pre-existing formal obstruction.\n    text = (ROOT / 'HodgeLab/OneReflectionSkew/ThreeCoefficient.lean').read_text(encoding='utf-8')\n    body = text.split('def p7Sparse : Sparse := [', 1)[1].split(']', 1)[0]\n    rows = re.findall(r'\\(exp\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+),\\s*(-?\\d+)\\)', body)\n    remainder = re.sub(r'\\(exp\\s+\\d+\\s+\\d+\\s+\\d+\\s+\\d+,\\s*-?\\d+\\)', '', body)\n    require(not remainder.replace(',', '').strip(), 'Unparsed p7Sparse syntax')\n    p7 = {tuple(map(int, row[:4])) + (0,): Fraction(row[4]) for row in rows}\n    require(len(p7) == len(rows), 'Duplicate sparse terms need summation')\n    require(cubic == p7, 'Protected equation does not reproduce the actual p7')\n    # Independent exact checks at points which distinguish common transcription errors.\n    def ev(poly, point):\n        total = Fraction(0)\n        for e, c in poly.items():\n            term = c\n            for v, n in zip(point, e):\n                term *= Fraction(v) ** n\n            total += term\n        return total\n    controls = [\n        ('wrong-U=x', ev(chart['F'], (2, 0, 0, 0, 0)), ev(p7, (2, 0, 0, 0, 0))/7),\n        ('wrong-skew-sign', ev(chart['F'], (1, 1, 0, 2, 0)), Fraction(489, 7)),\n        ('wrong-source-power', ev(chart['A'], (2, 0, 0, 0, 0)), Fraction(4)),\n    ]\n    for name, correct, wrong in controls:\n        require(correct != wrong, 'Mutation control undetected: ' + name)\n    result = {'status': 'PASS', 'protected_variable_order': ['X0', 'X1', 'X2', 'Y0', 'Y1', 'Y2'],\n              'chart_variable_order': ['x', 'r', 'w', 't', 'z'], 'p7_variable_order': ['U', 'r', 'w', 't', 'unused'],\n              'coefficient_field': 'exact rational input; Lean extension to characteristic-zero fields', 'q': 1,\n              'input_files_checked': len(pins), 'F_terms_checked': len(polys['F']), 'A_terms_checked': len(polys['A']),\n              'p7_terms_checked': len(p7), 'substituted_F': terms_json(chart['F']), 'substituted_A': terms_json(chart['A']),\n              'reconstructed_p7': terms_json(cubic), 'actual_Lean_p7': terms_json(p7),\n              'mutation_witnesses': [{'name': n, 'correct': str(c), 'wrong': str(w), 'residual_correct_minus_wrong': str(c-w)} for n, c, w in controls],\n              'limits': 'External exact parser binds files to Lean definitions. No proof of differential normalization or global chart coverage.'}\n    write('source-binding.json', result)\n\n\ndef main():\n    OUT.mkdir(parents=True, exist_ok=True)\n    util.OUT, util.START, util.RECORDS = OUT, time.monotonic(), []\n    write('validation.json', {'status': 'IN_PROGRESS'})\n    require(NAMES, 'Audited declaration list must be explicit')\n    source_hashes = {s: digest(ROOT / s) for s in SOURCES}\n    input_hashes = {'inputs.json': digest(OUT / 'inputs.json')}\n    for pin in json.loads((OUT / 'inputs.json').read_text(encoding='utf-8'))['pins']:\n        input_hashes[pin['path']] = digest(ROOT.parent / pin['path'])\n    for s in SOURCES:\n        if s.endswith('.lean'):\n            require(not re.search(r'\\b(sorry|admit|axiom|native_decide)\\b', (ROOT / s).read_text(encoding='utf-8')), 'Unproved token: ' + s)\n    prior = json.loads((ROOT / 'results/skew-extension/validation.json').read_text(encoding='utf-8'))\n    require(prior['status'] == 'PASS', 'Prior proof receipt missing')\n    inherited = dict(prior['reused_source_lf_sha256'])\n    inherited.update({n: h for n, h in prior['source_lf_sha256'].items() if n.endswith('.lean') and n.startswith('HodgeLab/')})\n    for name, h in inherited.items():\n        require(digest(ROOT / name) == h, 'Reused proof source changed: ' + name)\n    source_binding()\n    version = util.run('version', ['lake', 'env', 'lean', '--version'])\n    require('version 4.31.0,' in version, 'Wrong Lean version')\n    manifest = json.loads((ROOT / 'lake-manifest.json').read_text(encoding='utf-8'))\n    rev = next(x['rev'] for x in manifest['packages'] if x['name'] == 'mathlib')\n    require(util.run('mathlib-head', ['git', '-C', '.lake/packages/mathlib', 'rev-parse', 'HEAD']).strip() == rev, 'Mathlib mismatch')\n    util.run('build', ['lake', 'build', MODULE])\n    audit = util.run('axioms', ['lake', 'env', 'lean', 'AuditSkewChart.lean'])\n    axioms = {n: [x.strip() for x in a.split(',') if x.strip()] for n, a in re.findall(r\"'([^']+)' depends on axioms: \\[([^\\]]*)\\]\", audit)}\n    for n in re.findall(r\"'([^']+)' does not depend on any axioms\", audit):\n        axioms[n] = []\n    require(set(axioms) == set(NAMES), 'Missing or unexpected theorem reports')\n    require(all(set(xs) <= {'propext', 'Classical.choice', 'Quot.sound'} for xs in axioms.values()), 'Unexpected axiom')\n    replay = util.run('kernel-replay', ['lake', 'env', 'lean', 'ReplaySkewChart.lean'])\n    require('PASS ' + MODULE in replay, 'Replay marker missing')\n    negatives = {\n        'wrong-U=x': 'skewF (![2,0,0,1,0,0] : Fin 6 → ℚ) = 9',\n        'wrong-skew-sign': 'skewF (![1,1,0,1,2,0] : Fin 6 → ℚ) = 489 / 7',\n        'wrong-source-power': 'skewA (![2,0,0,1,0,0] : Fin 6 → ℚ) = 4',\n    }\n    scratch = ROOT / '.lake/skew-chart-negative'\n    scratch.mkdir(parents=True, exist_ok=True)\n    for name, statement in negatives.items():\n        body = ('import HodgeLab.OneReflectionSkew.ChartSubstitution\\n'\n                'open HodgeLab.OneReflectionSkew.CoordinateComparison\\n'\n                'set_option maxRecDepth 10000 in\\nexample : ' + statement + ' := by decide +kernel\\n')\n        p = scratch / (name + '.lean')\n        p.write_text(body, encoding='utf-8', newline='\\n')\n        (OUT / (name + '.lean.txt')).write_bytes(p.read_bytes())\n        util.run(name, ['lake', 'env', 'lean', p.relative_to(ROOT).as_posix()], True)\n    require(source_hashes == {s: digest(ROOT / s) for s in SOURCES}, 'Sources changed during run')\n    for name, h in inherited.items():\n        require(digest(ROOT / name) == h, 'Reused proof changed during run: ' + name)\n    for name, h in input_hashes.items():\n        require(digest(OUT / name if name == 'inputs.json' else ROOT.parent / name) == h,\n                'Pinned input changed during run: ' + name)\n    write('validation.json', {\n        'status': 'PASS', 'completed_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),\n        'lean_version': version.strip(), 'python_version': sys.version, 'mathlib_commit': rev,\n        'source_lf_sha256': source_hashes, 'reused_source_lf_sha256': inherited,\n        'input_lf_sha256': input_hashes,\n        'artifact_sha256': {MODULE: hashlib.sha256((ROOT / '.lake/build/lib/lean' / (MODULE.replace('.', '/') + '.olean')).read_bytes()).hexdigest()},\n        'input_manifest_lf_sha256': digest(OUT/'inputs.json'), 'binding_receipt_lf_sha256': digest(OUT/'source-binding.json'),\n        'theorem_axioms': axioms, 'commands': util.RECORDS, 'elapsed_seconds': time.monotonic()-util.START,\n        'total_budget_seconds': 600, 'new_theorems': len(NAMES), 'new_modules_replayed': 1, 'negative_controls': len(negatives),\n        'scope': 'Protected F/A substitution and equality with the existing p7 polynomial, under stated field hypotheses.',\n        'limits': ['Only the new module is kernel-replayed; imports and earlier coefficient proof are reused',\n                   'External parser/hash checks bind protected files to Lean definitions; no Lean Git/JSON parser',\n                   'No differential/Jacobian/residue normalization, rational primitive, trace or global clearing proof',\n                   'No new denominator/degree coverage or 45-versus-504 comparison; target remains open']})\n    print('PASS: chart theorem audits, new-module replay, exact source binding and three rejected false statements')\n\n\nif __name__ == '__main__':\n    try:\n        main()\n    except Exception as error:\n        OUT.mkdir(parents=True, exist_ok=True)\n        write('validation.json', {'status': 'FAIL', 'error': str(error), 'commands': util.RECORDS})\n        raise\n",
+    "validation": {
+      "status": "FAIL",
+      "error": "wrong-U=x failed for the wrong reason",
+      "commands": [
+        {
+          "label": "version",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "--version"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean --version"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 6.703000000037719,
+          "expected_failure": false,
+          "log": "version.log",
+          "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+        },
+        {
+          "label": "mathlib-head",
+          "command": [
+            "git",
+            "-C",
+            ".lake/packages/mathlib",
+            "rev-parse",
+            "HEAD"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 git -C .lake/packages/mathlib rev-parse HEAD"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 0.18799999996554106,
+          "expected_failure": false,
+          "log": "mathlib-head.log",
+          "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+        },
+        {
+          "label": "build",
+          "command": [
+            "lake",
+            "build",
+            "HodgeLab.OneReflectionSkew.ChartSubstitution"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake build HodgeLab.OneReflectionSkew.ChartSubstitution"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 10.078000000037719,
+          "expected_failure": false,
+          "log": "build.log",
+          "log_lf_sha256": "14215273a34982edd5fac3082d9a5df9df331e9f3e18a2aa54c57a9628ff13db"
+        },
+        {
+          "label": "axioms",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "AuditSkewChart.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean AuditSkewChart.lean"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 3.7820000000065193,
+          "expected_failure": false,
+          "log": "axioms.log",
+          "log_lf_sha256": "c726ec23912faee2797b753537d18e63f18e8895e52b8b09ca6e0bbfc8df6947"
+        },
+        {
+          "label": "kernel-replay",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "ReplaySkewChart.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean ReplaySkewChart.lean"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 5.078000000037719,
+          "expected_failure": false,
+          "log": "kernel-replay.log",
+          "log_lf_sha256": "8a5262dac709a2ee76f2b05156e3a9c08d63c22bf0a3524952bfa2d50fd6e644"
+        },
+        {
+          "label": "wrong-U=x",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            ".lake/skew-chart-negative/wrong-U=x.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean .lake/skew-chart-negative/wrong-U=x.lean"
+          ],
+          "exit_code": 1,
+          "bound_seconds": 120,
+          "elapsed_seconds": 3.672000000020489,
+          "expected_failure": true,
+          "log": "wrong-U=x.log",
+          "log_lf_sha256": "a9b6da066869039b876cfdbf25c9bff08c0c4d0b8f6a27268008c3b377267466"
+        }
+      ]
+    },
+    "logs": {
+      "version.log": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)\n",
+      "mathlib-head.log": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f\n",
+      "build.log": "⚠ [940/1036] Replayed HodgeLab.OneReflectionSkew.CoordinateComparison\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:63:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: 'ring' tactic does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: 'ring' tactic does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n⚠ [1370/1373] Replayed HodgeLab.OneReflectionSkew.ThreeCoefficient\nwarning: HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:91:23: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n✔ [1373/1373] Built HodgeLab.OneReflectionSkew.ChartSubstitution (8.8s)\nBuild completed successfully (1373 jobs).\n",
+      "axioms.log": "'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_a' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_aOver' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_p7' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_source_substitution' depends on axioms: [propext, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution_p7' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_p7Over' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution_p7Over' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "kernel-replay.log": "PASS HodgeLab.OneReflectionSkew.ChartSubstitution\n",
+      "wrong-U=x.log": ".lake/skew-chart-negative/wrong-U=x.lean:4:55: error: Tactic `decide` failed for proposition\n  skewF ![2, 0, 0, 1, 0, 0] = 9\nbecause its `Decidable` instance\n  instDecidableEqRat (skewF ![2, 0, 0, 1, 0, 0]) 9\ndid not reduce to `isTrue` or `isFalse`.\n\nReduction got stuck at the `Decidable` instance\n  match\n    ((1 * ![2, 0, 0, 1, 0, 0] 0 ^ 6 +\n                          1 * ![2, 0, 0, 1, 0, 0] 0 ^ 3 * ![2, 0, 0, 1, 0, 0] 1 * ![2, 0, 0, 1, 0, 0] 3 *\n                            ![2, 0, 0, 1, 0, 0] 4 +\n                        1 / 7 * ![2, 0, 0, 1, 0, 0] 0 * ![2, 0, 0, 1, 0, 0] 1 * ![2, 0, 0, 1, 0, 0] 3 ^ 3 *\n                          ![2, 0, 0, 1, 0, 0] 4 +\n                      -1 / 7 * ![2, 0, 0, 1, 0, 0] 0 * ![2, 0, 0, 1, 0, 0] 1 * ![2, 0, 0, 1, 0, 0] 3 *\n                        ![2, 0, 0, 1, 0, 0] 4 ^ 3 +\n                    1 * ![2, 0, 0, 1, 0, 0] 1 ^ 6 +\n                  1 * ![2, 0, 0, 1, 0, 0] 1 ^ 3 * ![2, 0, 0, 1, 0, 0] 2 * ![2, 0, 0, 1, 0, 0] 3 *\n                    ![2, 0, 0, 1, 0, 0] 4 +\n                1 * ![2, 0, 0, 1, 0, 0] 2 ^ 6 +\n              1 * ![2, 0, 0, 1, 0, 0] 3 ^ 6 +\n            1 * ![2, 0, 0, 1, 0, 0] 4 ^ 6).add\n        (1 * ![2, 0, 0, 1, 0, 0] 5 ^ 6)).num,\n    ↑9 with\n  | Int.ofNat a, Int.ofNat b =>\n    match decEq a b with\n    | isTrue h => isTrue ⋯\n    | isFalse h => isFalse ⋯\n  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯\n  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯\n  | Int.negSucc a, Int.negSucc b =>\n    match decEq a b with\n    | isTrue h => isTrue ⋯\n    | isFalse h => isFalse ⋯\n"
+    },
+    "reason": "First negative control could not reduce the rational expression; fail-closed verifier rejected it. No false-statement detection was credited."
+  },
+  "second_verifier_attempt": {
+    "checker_source": "\"\"\"Bounded source-bound Lean replay of the protected sextic/chart substitution.\n\nRun python3 -O check_skew_chart.py from formal. Reuses earlier proof sources;\nno network or dependency fetch. 120 seconds per command, 600 seconds total.\n\"\"\"\nfrom fractions import Fraction\nfrom pathlib import Path\nimport datetime, hashlib, json, re, sys, time\nimport check_skew_extension as util\n\nROOT = Path(__file__).resolve().parent\nOUT = ROOT / 'results/skew-chart'\nPREFIX = 'HodgeLab.OneReflectionSkew.ChartSubstitution.'\nMODULE = 'HodgeLab.OneReflectionSkew.ChartSubstitution'\nNAMES = [PREFIX + name for name in ['eval_a', 'eval_aOver', 'eval_p7', 'protected_substitution',\n         'protected_source_substitution', 'protected_substitution_p7',\n         'eval_p7Over', 'protected_substitution_p7Over']]\nSOURCES = ['lean-toolchain', 'lakefile.toml', 'lake-manifest.json',\n           'check_skew_chart.py', 'check_skew_extension.py',\n           'AuditSkewChart.lean', 'ReplaySkewChart.lean', MODULE.replace('.', '/') + '.lean']\nrequire, digest = util.require, util.digest\n\n\ndef write(name, value):\n    (OUT / name).write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8', newline='\\n')\n\n\ndef terms_json(p):\n    return [[str(c), list(e)] for e, c in sorted(p.items()) if c]\n\n\ndef source_binding():\n    pins = json.loads((OUT / 'inputs.json').read_text(encoding='utf-8'))['pins']\n    paths = {}\n    for pin in pins:\n        raw = (ROOT.parent / pin['path']).read_bytes().replace(b'\\r\\n', b'\\n')\n        require(hashlib.sha256(raw).hexdigest() == pin['sha256'], 'Input SHA256 mismatch')\n        require(hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\\0' + raw).hexdigest() == pin['git_blob'], 'Input Git blob mismatch')\n        paths[Path(pin['upstream_path']).name] = raw.decode('utf-8')\n    record = json.loads(paths['record.json'])\n    rec = paths['instance.rec']\n    require(record['q'] == 1 and util.expression_from_rec(rec, 'q') == '1', 'Unexpected pole order')\n    lean = (ROOT / 'HodgeLab/OneReflectionSkew/CoordinateComparison.lean').read_text(encoding='utf-8')\n    polys, chart = {}, {}\n    for key in ['F', 'A']:\n        terms = record[key]['terms']\n        expected = {tuple(e): Fraction(c) for c, e in terms}\n        require(len(expected) == len(terms), 'Duplicate protected terms need summation')\n        require(util.parse_expression(util.expression_from_rec(rec, key)) == expected, 'REC/JSON mismatch')\n        require(util.parse_expression(record[key]['expression']) == expected, 'JSON expression mismatch')\n        definition = f'def skew{key} (p : Fin 6 → K) : K :=\\n  ' + util.lean_expression(terms)\n        actual = lean.split(f'def skew{key} ', 1)[1].split('\\ndef ', 1)[0].strip()\n        require('def skew' + key + ' ' + actual == definition, 'Lean definition differs from protected input')\n        polys[key] = expected\n        out = {}\n        # The chart substitutes (x, r*x, w*x, 1, t, z) in the REC variable order.\n        for e, c in expected.items():\n            k = (e[0] + e[1] + e[2], e[1], e[2], e[4], e[5])\n            out[k] = out.get(k, Fraction(0)) + c\n        chart[key] = {e: c for e, c in out.items() if c}\n    require(chart['A'] == {(3, 0, 0, 0, 0): Fraction(1)}, 'Source did not substitute to x^3')\n    zterm = (0, 0, 0, 0, 6)\n    require(chart['F'].get(zterm) == 1, 'Missing monic z^6 term')\n    cubic = {}\n    for e, c in chart['F'].items():\n        if e == zterm:\n            continue\n        require(e[0] % 2 == 0 and e[4] == 0, 'Cannot descend this monomial through U=x^2')\n        cubic[(e[0] // 2, *e[1:4], 0)] = 7 * c\n    # Read actual sparse data used by the pre-existing formal obstruction.\n    text = (ROOT / 'HodgeLab/OneReflectionSkew/ThreeCoefficient.lean').read_text(encoding='utf-8')\n    body = text.split('def p7Sparse : Sparse := [', 1)[1].split(']', 1)[0]\n    rows = re.findall(r'\\(exp\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+),\\s*(-?\\d+)\\)', body)\n    remainder = re.sub(r'\\(exp\\s+\\d+\\s+\\d+\\s+\\d+\\s+\\d+,\\s*-?\\d+\\)', '', body)\n    require(not remainder.replace(',', '').strip(), 'Unparsed p7Sparse syntax')\n    p7 = {tuple(map(int, row[:4])) + (0,): Fraction(row[4]) for row in rows}\n    require(len(p7) == len(rows), 'Duplicate sparse terms need summation')\n    require(cubic == p7, 'Protected equation does not reproduce the actual p7')\n    # Independent exact checks at points which distinguish common transcription errors.\n    def ev(poly, point):\n        total = Fraction(0)\n        for e, c in poly.items():\n            term = c\n            for v, n in zip(point, e):\n                term *= Fraction(v) ** n\n            total += term\n        return total\n    controls = [\n        ('wrong-U=x', ev(chart['F'], (2, 0, 0, 0, 0)), ev(p7, (2, 0, 0, 0, 0))/7),\n        ('wrong-skew-sign', ev(chart['F'], (1, 1, 0, 2, 0)), Fraction(489, 7)),\n        ('wrong-source-power', ev(chart['A'], (2, 0, 0, 0, 0)), Fraction(4)),\n    ]\n    for name, correct, wrong in controls:\n        require(correct != wrong, 'Mutation control undetected: ' + name)\n    result = {'status': 'PASS', 'protected_variable_order': ['X0', 'X1', 'X2', 'Y0', 'Y1', 'Y2'],\n              'chart_variable_order': ['x', 'r', 'w', 't', 'z'], 'p7_variable_order': ['U', 'r', 'w', 't', 'unused'],\n              'coefficient_field': 'exact rational input; Lean extension to characteristic-zero fields', 'q': 1,\n              'input_files_checked': len(pins), 'F_terms_checked': len(polys['F']), 'A_terms_checked': len(polys['A']),\n              'p7_terms_checked': len(p7), 'substituted_F': terms_json(chart['F']), 'substituted_A': terms_json(chart['A']),\n              'reconstructed_p7': terms_json(cubic), 'actual_Lean_p7': terms_json(p7),\n              'mutation_witnesses': [{'name': n, 'correct': str(c), 'wrong': str(w), 'residual_correct_minus_wrong': str(c-w)} for n, c, w in controls],\n              'limits': 'External exact parser binds files to Lean definitions. No proof of differential normalization or global chart coverage.'}\n    write('source-binding.json', result)\n\n\ndef main():\n    OUT.mkdir(parents=True, exist_ok=True)\n    util.OUT, util.START, util.RECORDS = OUT, time.monotonic(), []\n    write('validation.json', {'status': 'IN_PROGRESS'})\n    require(NAMES, 'Audited declaration list must be explicit')\n    source_hashes = {s: digest(ROOT / s) for s in SOURCES}\n    input_hashes = {'inputs.json': digest(OUT / 'inputs.json')}\n    for pin in json.loads((OUT / 'inputs.json').read_text(encoding='utf-8'))['pins']:\n        input_hashes[pin['path']] = digest(ROOT.parent / pin['path'])\n    for s in SOURCES:\n        if s.endswith('.lean'):\n            require(not re.search(r'\\b(sorry|admit|axiom|native_decide)\\b', (ROOT / s).read_text(encoding='utf-8')), 'Unproved token: ' + s)\n    prior = json.loads((ROOT / 'results/skew-extension/validation.json').read_text(encoding='utf-8'))\n    require(prior['status'] == 'PASS', 'Prior proof receipt missing')\n    inherited = dict(prior['reused_source_lf_sha256'])\n    inherited.update({n: h for n, h in prior['source_lf_sha256'].items() if n.endswith('.lean') and n.startswith('HodgeLab/')})\n    for name, h in inherited.items():\n        require(digest(ROOT / name) == h, 'Reused proof source changed: ' + name)\n    source_binding()\n    version = util.run('version', ['lake', 'env', 'lean', '--version'])\n    require('version 4.31.0,' in version, 'Wrong Lean version')\n    manifest = json.loads((ROOT / 'lake-manifest.json').read_text(encoding='utf-8'))\n    rev = next(x['rev'] for x in manifest['packages'] if x['name'] == 'mathlib')\n    require(util.run('mathlib-head', ['git', '-C', '.lake/packages/mathlib', 'rev-parse', 'HEAD']).strip() == rev, 'Mathlib mismatch')\n    util.run('build', ['lake', 'build', MODULE])\n    audit = util.run('axioms', ['lake', 'env', 'lean', 'AuditSkewChart.lean'])\n    axioms = {n: [x.strip() for x in a.split(',') if x.strip()] for n, a in re.findall(r\"'([^']+)' depends on axioms: \\[([^\\]]*)\\]\", audit)}\n    for n in re.findall(r\"'([^']+)' does not depend on any axioms\", audit):\n        axioms[n] = []\n    require(set(axioms) == set(NAMES), 'Missing or unexpected theorem reports')\n    require(all(set(xs) <= {'propext', 'Classical.choice', 'Quot.sound'} for xs in axioms.values()), 'Unexpected axiom')\n    replay = util.run('kernel-replay', ['lake', 'env', 'lean', 'ReplaySkewChart.lean'])\n    require('PASS ' + MODULE in replay, 'Replay marker missing')\n    negatives = {\n        'wrong-U=x': ('skewF (![2,0,0,1,0,0] : Fin 6 → ℚ)', '65', '9', 'skewF'),\n        'wrong-skew-sign': ('skewF (![1,1,0,1,2,0] : Fin 6 → ℚ)', '477 / 7', '489 / 7', 'skewF'),\n        'wrong-source-power': ('skewA (![2,0,0,1,0,0] : Fin 6 → ℚ)', '8', '4', 'skewA'),\n    }\n    scratch = ROOT / '.lake/skew-chart-negative'\n    scratch.mkdir(parents=True, exist_ok=True)\n    for name, (expression, correct, wrong, definition) in negatives.items():\n        body = ('import HodgeLab.OneReflectionSkew.ChartSubstitution\\n'\n                'open HodgeLab.OneReflectionSkew.CoordinateComparison\\n'\n                'set_option maxRecDepth 10000 in\\nexample : ' + expression + ' = ' + wrong + ' := by\\n'\n                '  have checked : ' + expression + ' = ' + correct + ' := by norm_num [' + definition + ']\\n'\n                '  rw [checked]\\n  decide +kernel\\n')\n        p = scratch / (name + '.lean')\n        p.write_text(body, encoding='utf-8', newline='\\n')\n        (OUT / (name + '.lean.txt')).write_bytes(p.read_bytes())\n        util.run(name, ['lake', 'env', 'lean', p.relative_to(ROOT).as_posix()], True)\n    require(source_hashes == {s: digest(ROOT / s) for s in SOURCES}, 'Sources changed during run')\n    for name, h in inherited.items():\n        require(digest(ROOT / name) == h, 'Reused proof changed during run: ' + name)\n    for name, h in input_hashes.items():\n        require(digest(OUT / name if name == 'inputs.json' else ROOT.parent / name) == h,\n                'Pinned input changed during run: ' + name)\n    write('validation.json', {\n        'status': 'PASS', 'completed_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),\n        'lean_version': version.strip(), 'python_version': sys.version, 'mathlib_commit': rev,\n        'source_lf_sha256': source_hashes, 'reused_source_lf_sha256': inherited,\n        'input_lf_sha256': input_hashes,\n        'artifact_sha256': {MODULE: hashlib.sha256((ROOT / '.lake/build/lib/lean' / (MODULE.replace('.', '/') + '.olean')).read_bytes()).hexdigest()},\n        'input_manifest_lf_sha256': digest(OUT/'inputs.json'), 'binding_receipt_lf_sha256': digest(OUT/'source-binding.json'),\n        'theorem_axioms': axioms, 'commands': util.RECORDS, 'elapsed_seconds': time.monotonic()-util.START,\n        'total_budget_seconds': 600, 'new_theorems': len(NAMES), 'new_modules_replayed': 1, 'negative_controls': len(negatives),\n        'scope': 'Protected F/A substitution and equality with the existing p7 polynomial, under stated field hypotheses.',\n        'limits': ['Only the new module is kernel-replayed; imports and earlier coefficient proof are reused',\n                   'External parser/hash checks bind protected files to Lean definitions; no Lean Git/JSON parser',\n                   'No differential/Jacobian/residue normalization, rational primitive, trace or global clearing proof',\n                   'No new denominator/degree coverage or 45-versus-504 comparison; target remains open']})\n    print('PASS: chart theorem audits, new-module replay, exact source binding and three rejected false statements')\n\n\nif __name__ == '__main__':\n    try:\n        main()\n    except Exception as error:\n        OUT.mkdir(parents=True, exist_ok=True)\n        write('validation.json', {'status': 'FAIL', 'error': str(error), 'commands': util.RECORDS})\n        raise\n",
+    "validation": {
+      "status": "FAIL",
+      "error": "wrong-skew-sign failed for the wrong reason",
+      "commands": [
+        {
+          "label": "version",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "--version"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean --version"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 6.717999999993481,
+          "expected_failure": false,
+          "log": "version.log",
+          "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+        },
+        {
+          "label": "mathlib-head",
+          "command": [
+            "git",
+            "-C",
+            ".lake/packages/mathlib",
+            "rev-parse",
+            "HEAD"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 git -C .lake/packages/mathlib rev-parse HEAD"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 0.18800000002374873,
+          "expected_failure": false,
+          "log": "mathlib-head.log",
+          "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+        },
+        {
+          "label": "build",
+          "command": [
+            "lake",
+            "build",
+            "HodgeLab.OneReflectionSkew.ChartSubstitution"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake build HodgeLab.OneReflectionSkew.ChartSubstitution"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 1.375,
+          "expected_failure": false,
+          "log": "build.log",
+          "log_lf_sha256": "1ae547669e29490ac7e10d41fd29c8759654b09062108c5e152bd0fc4fb5978c"
+        },
+        {
+          "label": "axioms",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "AuditSkewChart.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean AuditSkewChart.lean"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 8.577999999979511,
+          "expected_failure": false,
+          "log": "axioms.log",
+          "log_lf_sha256": "c726ec23912faee2797b753537d18e63f18e8895e52b8b09ca6e0bbfc8df6947"
+        },
+        {
+          "label": "kernel-replay",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "ReplaySkewChart.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean ReplaySkewChart.lean"
+          ],
+          "exit_code": 0,
+          "bound_seconds": 120,
+          "elapsed_seconds": 5.297000000020489,
+          "expected_failure": false,
+          "log": "kernel-replay.log",
+          "log_lf_sha256": "8a5262dac709a2ee76f2b05156e3a9c08d63c22bf0a3524952bfa2d50fd6e644"
+        },
+        {
+          "label": "wrong-U=x",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            ".lake/skew-chart-negative/wrong-U=x.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean .lake/skew-chart-negative/wrong-U=x.lean"
+          ],
+          "exit_code": 1,
+          "bound_seconds": 120,
+          "elapsed_seconds": 3.875,
+          "expected_failure": true,
+          "log": "wrong-U=x.log",
+          "log_lf_sha256": "a55098ab7be975309de71dc7dbeb6c2cc20cadc90d19f9f804c1b1624655ad51"
+        },
+        {
+          "label": "wrong-skew-sign",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            ".lake/skew-chart-negative/wrong-skew-sign.lean"
+          ],
+          "execution_command": [
+            "wsl.exe",
+            "--cd",
+            "/mnt/c/Users/anaxe/Documents/Codex/2026-10-16/what-is-hodge-theory-by-the/work/hodge-lab-skew-audit-20261021/formal",
+            "-e",
+            "sh",
+            "-lc",
+            "exec timeout 120 lake env lean .lake/skew-chart-negative/wrong-skew-sign.lean"
+          ],
+          "exit_code": 1,
+          "bound_seconds": 120,
+          "elapsed_seconds": 3.780999999959022,
+          "expected_failure": true,
+          "log": "wrong-skew-sign.log",
+          "log_lf_sha256": "b1b89b84a3d3e6565f13bc1fe3690841f9a50eca28a82bcb313d554b9a83a888"
+        }
+      ]
+    },
+    "logs": {
+      "version.log": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)\n",
+      "mathlib-head.log": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f\n",
+      "build.log": "⚠ [940/1095] Replayed HodgeLab.OneReflectionSkew.CoordinateComparison\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:63:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: 'ring' tactic does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: 'ring' tactic does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nwarning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n⚠ [1370/1373] Replayed HodgeLab.OneReflectionSkew.ThreeCoefficient\nwarning: HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:91:23: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\nBuild completed successfully (1373 jobs).\n",
+      "axioms.log": "'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_a' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_aOver' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_p7' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_source_substitution' depends on axioms: [propext, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution_p7' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.eval_p7Over' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeLab.OneReflectionSkew.ChartSubstitution.protected_substitution_p7Over' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "kernel-replay.log": "PASS HodgeLab.OneReflectionSkew.ChartSubstitution\n",
+      "wrong-U=x.log": ".lake/skew-chart-negative/wrong-U=x.lean:5:60: error: unsolved goals\n⊢ 64 + ![2, 0, 0, 1, 0, 0] 2 ^ 6 + ![2, 0, 0, 1, 0, 0] 3 ^ 6 + ![2, 0, 0, 1, 0, 0] 4 ^ 6 + ![2, 0, 0, 1, 0, 0] 5 ^ 6 =\n    65\n.lake/skew-chart-negative/wrong-U=x.lean:7:2: error: Tactic `decide` proved that the proposition\n  65 = 9\nis false\n",
+      "wrong-skew-sign.log": ".lake/skew-chart-negative/wrong-skew-sign.lean:5:65: error: unsolved goals\n⊢ 1 + ![1, 1, 0, 1, 2, 0] 3 * ![1, 1, 0, 1, 2, 0] 4 + 1 / 7 * ![1, 1, 0, 1, 2, 0] 3 ^ 3 * ![1, 1, 0, 1, 2, 0] 4 +\n                  -(1 / 7 * ![1, 1, 0, 1, 2, 0] 3 * ![1, 1, 0, 1, 2, 0] 4 ^ 3) +\n                1 +\n              ![1, 1, 0, 1, 2, 0] 2 * ![1, 1, 0, 1, 2, 0] 3 * ![1, 1, 0, 1, 2, 0] 4 +\n            ![1, 1, 0, 1, 2, 0] 2 ^ 6 +\n          ![1, 1, 0, 1, 2, 0] 3 ^ 6 +\n        ![1, 1, 0, 1, 2, 0] 4 ^ 6 +\n      ![1, 1, 0, 1, 2, 0] 5 ^ 6 =\n    477 / 7\n.lake/skew-chart-negative/wrong-skew-sign.lean:7:2: error: Tactic `decide` failed for proposition\n  477 / 7 = 489 / 7\nbecause its `Decidable` instance\n  instDecidableEqRat (477 / 7) (489 / 7)\ndid not reduce to `isTrue` or `isFalse`.\n\nReduction got stuck at the `Decidable` instance\n  match (Rat.mul 477 (Rat.inv 7)).num, (Rat.mul 489 (Rat.inv 7)).num with\n  | Int.ofNat a, Int.ofNat b =>\n    match decEq a b with\n    | isTrue h => isTrue ⋯\n    | isFalse h => isFalse ⋯\n  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯\n  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯\n  | Int.negSucc a, Int.negSucc b =>\n    match decEq a b with\n    | isTrue h => isTrue ⋯\n    | isFalse h => isFalse ⋯\n"
+    },
+    "reason": "Two control evaluation proofs were incomplete; first still emitted a later false-equality diagnostic, revealing a harness gap. Final harness must separately compile positive evaluations and reject every other error diagnostic."
+  }
+}

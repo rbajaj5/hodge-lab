@@ -2,6 +2,16 @@
 
 ## One-reflection-skew polynomial obstruction
 
+The [protected chart substitution](HodgeLab/OneReflectionSkew/ChartSubstitution.lean)
+now proves `F(x,rx,wx,1,t,z)=z^6+P(x^2)` and `A=x^3`, binding P to the
+actual existing `p7` (with its factor seven) and its leading coefficient
+to the existing `a`. Eight theorem audits and a new-module kernel replay
+are checked by `python3 -O check_skew_chart.py`.
+[Exact scope and reproducible diagram](../notes/skew-chart-lean.md) ·
+[Receipt](results/skew-chart/validation.json).
+This closes the polynomial step; the volume/Jacobian/residue normalization
+and rational primitive are still separate formal obligations.
+
 The [degree-bound extension](HodgeLab/OneReflectionSkew/DegreeFour.lean) now proves
 the same exclusion for arbitrary numerator polynomials of total degree at most
 four, with the unused fifth coordinate explicitly absent. The separate

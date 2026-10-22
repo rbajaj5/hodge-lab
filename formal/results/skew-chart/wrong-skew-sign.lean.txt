@@ -1,0 +1,9 @@
+import HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateComparison
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+example : 7 * skewF (physicalPoint (1 : ℚ) 1 0 2 0) = 489 := by
+  have checked : 7 * skewF (physicalPoint (1 : ℚ) 1 0 2 0) = 477 := by
+    rw [protected_substitution]
+    norm_num [cubic, aCoeff, bCoeff, cCoeff, dCoeff]
+  rw [checked]
+  decide +kernel

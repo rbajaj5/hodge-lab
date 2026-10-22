@@ -4171,3 +4171,70 @@ certificate problem open; the report is not a Lean proof or acceptance receipt.
 Historical entries and completed work are preserved. Contribution tally remains
 **29 discussion contributions, one closed maintenance PR, zero accepted authored
 solves**; monitoring and this notebook entry do not increase it.
+
+
+## Checkpoint 124 — 21 October 2026: protected skew sextic to chart in Lean
+
+Notebook parent `c0b4347ad4d2dbad112813e57b9e7554dc0cad9b`; fresh upstream
+head `84f106ebf0731cbee1926833236361cddac0fc3f`. The protected record and
+REC equation were fetched with 45-second request bounds and match the
+saved input bytes. Order `(X0,X1,X2,Y0,Y1,Y2)`, rational coefficients, q=1;
+the pinned target remains open. Completed earlier work was reused.
+
+[New Lean module](formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean)
+proves `F(x,rx,wx,1,t,z)=z^6+P(x^2)` and `A(x,rx,wx,1,t,z)=x^3`.
+It identifies P with the actual existing `p7/7`, and the existing a/aOver
+with `1+r^6+w^6`. The p7 and p7Over versions retain the factor seven
+explicitly. Field/characteristic-zero hypotheses are stated; the scalar
+source identity needs only a field. The forward identities have no
+nonvanishing hypotheses and do not assert an inverse or global coverage.
+
+- [Derivation, attribution and limits](notes/skew-chart-lean.md).
+- [Executed receipt](formal/results/skew-chart/validation.json): **eight
+  theorem audits**, **one new-module default kernel replay**, **three true
+  point evaluations compiled independently**, and **three deliberate errors
+  rejected**. Final run 36.234 seconds; 120 seconds per command, 600 seconds
+  total, no timeout. Lean 4.31.0, mathlib
+  `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`. Imports were reused, not freshly
+  replayed; no new full-project/accepted-proof CI success is claimed.
+- [External source binding](formal/results/skew-chart/source-binding.json)
+  independently parses REC/JSON expressions and structured terms, binds
+  their exact Lean definitions, substitutes ten F terms and one A term,
+  and recovers all nine actual p7 terms. This parser is outside Lean.
+  [Pins and hashes](formal/results/skew-chart/inputs.json) distinguish file
+  provenance from mathematical verification. Inherited proofs and inputs
+  are hash-checked before and after the run.
+- Controls detect U=x instead of x² (65 versus 9), reversing the complete
+  linear-in-U coefficient c (477 versus 489 after scaling by seven), and
+  source x² instead of x³ (8 versus 4). Only an explicit false-proposition
+  diagnostic with no unrelated errors passes a negative control.
+- [Development archive](formal/results/skew-chart/development/README.md)
+  preserves five bounded compilation attempts and two failed verifier runs.
+  Simplification/import issues and incomplete evaluation proofs were fixed.
+  A later false-equality diagnostic could coexist with an earlier error;
+  the final harness separately compiles true values and rejects other errors.
+  These implementation failures are not mathematical nonexistence results.
+- [Reproducible figure](visualizations/skew-chart.png) and
+  [generator](scripts/visualize_skew_chart.py) reconstruct every displayed
+  monomial from the protected record and bind the figure to the passing
+  receipt. Rendered PNG inspected; no clipping or formula mismatch found.
+
+This closes the **polynomial-substitution** dependency proposed at checkpoint
+122. It does not normalize the differential: x³ becoming the reduced U²
+source still needs the volume, Jacobian and residue factors. The smallest
+next formal unit is the affine coordinate-volume/Jacobian identity with its
+orientation and open-chart assumptions. This pass stops before that unit.
+No primitive, HasCertificate, new denominator/degree coverage, 45-versus-504
+comparison, trace, global clearing or accepted authored solve is claimed.
+
+An independent read-only reviewer checked theorem scope and the verifier;
+its concurrent-input hash recommendation was implemented. Credit remains
+with Benjamin E. Diamond and the upstream contributors for the protected
+target/framework, and fqlx for the physical quotient/source reduction and
+companion formulation. The new work formalizes the notebook substitution;
+no mathematical novelty claim is made.
+
+Published in Hodge Lab only; no upstream post, reply, edit or PR in this pass.
+Historical ledger text and earlier receipts are preserved. Contribution tally
+remains **29 discussion contributions, one closed maintenance PR, zero accepted
+authored solves**.

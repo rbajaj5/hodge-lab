@@ -1,0 +1,9 @@
+import HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.CoordinateComparison
+open HodgeLab.OneReflectionSkew.ChartSubstitution
+example : skewA (physicalPoint (2 : ℚ) 0 0 0 0) = 4 := by
+  have checked : skewA (physicalPoint (2 : ℚ) 0 0 0 0) = 8 := by
+    rw [protected_source_substitution]
+    norm_num
+  rw [checked]
+  decide +kernel

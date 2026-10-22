@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-10-22T01:15:37.183795+00:00",
+  "upstream": "84f106ebf0731cbee1926833236361cddac0fc3f",
+  "notebook_parent": "c0b4347ad4d2dbad112813e57b9e7554dc0cad9b",
+  "request_timeout_seconds": 45,
+  "pins": [
+    {
+      "upstream_path": "data/one-reflection-skew/record.json",
+      "upstream_commit": "84f106ebf0731cbee1926833236361cddac0fc3f",
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/record.json",
+      "git_blob": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/record.json?ref=84f106ebf0731cbee1926833236361cddac0fc3f"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/84f106ebf0731cbee1926833236361cddac0fc3f/data/one-reflection-skew/record.json"
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/instance.rec",
+      "upstream_commit": "84f106ebf0731cbee1926833236361cddac0fc3f",
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec",
+      "git_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/instance.rec?ref=84f106ebf0731cbee1926833236361cddac0fc3f"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/84f106ebf0731cbee1926833236361cddac0fc3f/data/one-reflection-skew/instance.rec"
+    }
+  ],
+  "reused": "Unchanged protected input bytes and checkpoint122 Lean definitions; prior coefficient proofs are not recomputed."
+}

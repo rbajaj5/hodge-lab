@@ -45,6 +45,9 @@ jobs:
       - name: Check arbitrary degree-four inputs and the mixed-polar comparison
         working-directory: formal
         run: python3 -O check_skew_extension.py
+      - name: Check the protected sextic to chart substitution
+        working-directory: formal
+        run: python3 -O check_skew_chart.py
       - name: Save concrete proof receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -58,4 +61,6 @@ jobs:
             formal/results/skew-lean/*.log
             formal/results/skew-extension/*.json
             formal/results/skew-extension/*.log
+            formal/results/skew-chart/*.json
+            formal/results/skew-chart/*.log
           if-no-files-found: error
