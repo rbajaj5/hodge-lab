@@ -4584,3 +4584,44 @@ rbajaj5 credit is not recounted as new. No copied proof claim or novelty claim.
 No upstream post, reply, edit or PR. Posts list remains 1–29 and the tally
 remains **29 discussion contributions, one closed maintenance PR, zero
 accepted authored solves**. Historical ledger text is preserved.
+
+
+## Checkpoint 131 — 22 October 2026: atlas metadata refresh and preserved research pins
+
+The bounded monitor at 15:58 UTC / 11:58 EDT observed upstream
+`d5e9ef223a2cd210517f35c071e9a5108a15e025` advance to
+[21fccb6b4f1d4070ddaa30195a78f268247569e6](https://github.com/hodge-computer/sextics/commit/21fccb6b4f1d4070ddaa30195a78f268247569e6)
+(PR #187, atlas meshes/rendering); Hodge Lab parent is
+`903fdfe27f05318446d9b6686c673385a8e9f84d`. All 14 monitored discussion
+threads and replies are unchanged. No new credit or acceptance is recorded.
+
+The complete tracked tree shows 165 changed pins: 82 instance records,
+82 generated JSON records and MAINTAINING.md. All acceptance/proof/solution
+pins remain unchanged. Direct old/new comparisons for **one-reflection-skew
+and cyclic-triple-fano** verify that only render metadata changed; F, A, q,
+status and every other record field agree. Eight fetched file hashes were
+checked. Historical protected inputs and mathematical receipts stay intact.
+The earlier one-reflection-skew byte hash still identifies the historical
+file, while the current whole-file hash differs because its rendering changed.
+
+- [Detailed status, source links and limitations](notes/upstream-status-20261022.md#22-october-2026-1558-utc-atlas-refresh-changes-file-pins-not-the-two-checked-targets).
+- [Pinned inputs and fetch receipt](results/atlas-monitor-20261022/fetch-receipt.json).
+- [Executed validation](results/atlas-monitor-20261022/validation.json) and
+  [offline checker](scripts/check_atlas_target_metadata.py), run under Python
+  -O with a 15-second process bound; failures raise explicitly.
+- [Repository pin comparison](results/atlas-monitor-20261022/repository-comparison.json)
+  and [complete discussion comparison](results/atlas-monitor-20261022/discussion-comparison.json).
+
+GitHub's changed-file listing is capped at 300; mathematical field equality
+was checked for these two targets only, not all 82. No mathematical, Lean,
+primitive, trace/clearing or mesh replay was performed. A read-only reviewer
+confirmed the tree/policy/acceptance scope. Credit Benjamin E. Diamond and
+upstream contributors for the atlas work. Network requests were bounded at
+45 seconds, the discussion collection at 240 seconds, and the eight-file
+follow-up at 120 seconds; no failure or timeout occurred.
+
+This is status maintenance, not a substantive research batch; README and
+research visualizations are unchanged. No upstream post, reply, edit or PR.
+Posts list stays 1–29. Tally unchanged: **29 discussion contributions, one
+closed maintenance PR, zero accepted authored solves**. Earlier ledger text
+and receipts are preserved.

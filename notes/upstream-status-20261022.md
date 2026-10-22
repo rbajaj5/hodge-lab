@@ -130,3 +130,51 @@ our pin. This establishes byte provenance, not the reported mathematics.
 [Architecture, proposed Lean interface and limits](skew-compact-architecture.md).
 No packet math replay, upstream post, reply, edit or PR was performed.
 Posts and contribution tally remain 29; historical entries are preserved.
+
+
+## 22 October 2026, 15:58 UTC: atlas refresh changes file pins, not the two checked targets
+
+Upstream advanced from `d5e9ef223a2cd210517f35c071e9a5108a15e025`
+to [21fccb6b4f1d4070ddaa30195a78f268247569e6](https://github.com/hodge-computer/sextics/commit/21fccb6b4f1d4070ddaa30195a78f268247569e6),
+merging [PR #187](https://github.com/hodge-computer/sextics/pull/187).
+Benjamin E. Diamond's three commits update atlas slices/cameras, publish adaptive
+meshes and adjust renderer startup. Hodge Lab's observed head was
+`903fdfe27f05318446d9b6686c673385a8e9f84d`.
+
+All 532 monitored paths remain present. Exactly 165 blob pins changed:
+82 `instance.rec`, 82 `record.json`, and `MAINTAINING.md`. All 66 acceptance,
+66 proof and 66 solution JSON pins are unchanged, as are provenance, why notes,
+index, README and contribution-policy files. The maintainer documentation adds
+mesh simplification/refinement commands and explicitly warns that a local
+simplification tolerance is not a global error bound.
+
+We fetched old/new `instance.rec` and `record.json` for **one-reflection-skew
+and cyclic-triple-fano**, verified eight Git blob/SHA256 hashes, and checked
+that only `render` changes. Every other JSON field, including F, A, q and
+status, is identical. The rec files also match outside their render blocks.
+This is an executed data comparison, not a mathematical or rendering replay.
+The old one-reflection-skew record SHA256 remains
+`fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f`;
+the new full file is
+`7c724757bc4e1147b57a96e4ce1344938a82d4825ab444b9027f00621859fa85`.
+Historical audits retain their original inputs and receipts. A historical
+byte-equality claim must not be silently restated against the new full file.
+
+[Inputs, pins and executed validation](../results/atlas-monitor-20261022/validation.json)
+and [offline checker](../scripts/check_atlas_target_metadata.py):
+`python -X utf8 -O scripts/check_atlas_target_metadata.py` (15-second bound).
+The [fetch receipt](../results/atlas-monitor-20261022/fetch-receipt.json) pins
+all eight files; [repository comparison](../results/atlas-monitor-20261022/repository-comparison.json)
+and [full tracked blob pins](../results/atlas-monitor-20261022/monitor-pins.json)
+record the broader scope. The GitHub comparison's 300-file listing is capped:
+we have **not** independently compared mathematical fields for all 82 targets.
+No Lean build, certificate validation, mesh execution or new proof is claimed.
+
+All pages of the 14 monitored discussions were fetched, including replies,
+and [compared](../results/atlas-monitor-20261022/discussion-comparison.json):
+zero additions, edits, removals or metadata changes. No new acceptance or
+attribution was found. All network requests had a 45-second bound; the main
+collector had a 240-second total budget and the eight-file follow-up a
+120-second budget. No timeout or access failure occurred. This is ordinary
+status/pin maintenance; no new research visualization or README change is
+warranted. No upstream publication. Posts and tally remain 29.

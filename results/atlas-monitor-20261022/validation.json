@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "old": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+  "new": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+  "input_files_checked": 8,
+  "checks": [
+    {
+      "target": "one-reflection-skew",
+      "record_changed_fields": [
+        "render"
+      ],
+      "instance_rec_non_render_bytes_equal_after_utf8_decoding": true,
+      "F_A_q_and_all_other_record_fields_equal": true
+    },
+    {
+      "target": "cyclic-triple-fano",
+      "record_changed_fields": [
+        "render"
+      ],
+      "instance_rec_non_render_bytes_equal_after_utf8_decoding": true,
+      "F_A_q_and_all_other_record_fields_equal": true
+    }
+  ],
+  "scope": "Two target records; no mathematical, Lean, mesh or acceptance replay.",
+  "command": "python -X utf8 -O scripts/check_atlas_target_metadata.py",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "timeout_seconds": 15,
+  "checker_lf_sha256": "b421444aeb493683b691bcce75b2218da684600f8b486def7cc1bfeb48fa44a2"
+}

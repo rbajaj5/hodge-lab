@@ -1,0 +1,135 @@
+{
+  "old": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+  "new": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+  "per_request_seconds": 45,
+  "total_seconds": 120,
+  "status": "COMPLETED",
+  "inputs": [
+    {
+      "commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "data/one-reflection-skew/instance.rec",
+      "git_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+      "file": "d5e9ef2-one-reflection-skew-instance.rec",
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/one-reflection-skew/instance.rec"
+    },
+    {
+      "commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "data/one-reflection-skew/record.json",
+      "git_blob": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+      "file": "d5e9ef2-one-reflection-skew-record.json",
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/one-reflection-skew/record.json"
+    },
+    {
+      "commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "data/cyclic-triple-fano/instance.rec",
+      "git_blob": "6c867b4f0f7d44acb846427de82f09f89261d31b",
+      "sha256": "6999d6ded30d24f9faeb6b932cffc7d6f3965714024fc7f7be3af99dc2dc87f0",
+      "file": "d5e9ef2-cyclic-triple-fano-instance.rec",
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/cyclic-triple-fano/instance.rec"
+    },
+    {
+      "commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "data/cyclic-triple-fano/record.json",
+      "git_blob": "3870919d1b6a9c5506bd17bcf0fb43f246f42987",
+      "sha256": "7a742c3de1b8ae918c2aa670899edb3882c426f78b2f8dccfd8c67f8bd6741a0",
+      "file": "d5e9ef2-cyclic-triple-fano-record.json",
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/cyclic-triple-fano/record.json"
+    },
+    {
+      "commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+      "path": "data/one-reflection-skew/instance.rec",
+      "git_blob": "7ea130ca09a4cbd35607df9b1f079bdd4eb688b7",
+      "sha256": "7c724757bc4e1147b57a96e4ce1344938a82d4825ab444b9027f00621859fa85",
+      "file": "21fccb6-one-reflection-skew-instance.rec",
+      "url": "https://github.com/hodge-computer/sextics/blob/21fccb6b4f1d4070ddaa30195a78f268247569e6/data/one-reflection-skew/instance.rec"
+    },
+    {
+      "commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+      "path": "data/one-reflection-skew/record.json",
+      "git_blob": "9c583fa4a6d268d6375d1dc1f645f08048202dcd",
+      "sha256": "1484e65cbba83500f7e37c5440ea34be46f7289dfd4683fa9def1f5fd97866a2",
+      "file": "21fccb6-one-reflection-skew-record.json",
+      "url": "https://github.com/hodge-computer/sextics/blob/21fccb6b4f1d4070ddaa30195a78f268247569e6/data/one-reflection-skew/record.json"
+    },
+    {
+      "commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+      "path": "data/cyclic-triple-fano/instance.rec",
+      "git_blob": "0a22ca973723bc651823f20b762b58b0a05ecb6e",
+      "sha256": "68cfd92bf9e1f4f7c76dc0c55bd79c37e6dbe97ff45f6ff15ba7e9f831970065",
+      "file": "21fccb6-cyclic-triple-fano-instance.rec",
+      "url": "https://github.com/hodge-computer/sextics/blob/21fccb6b4f1d4070ddaa30195a78f268247569e6/data/cyclic-triple-fano/instance.rec"
+    },
+    {
+      "commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+      "path": "data/cyclic-triple-fano/record.json",
+      "git_blob": "69c04253393fc7df2f32c24501d6a09c0f6c3f38",
+      "sha256": "f6e0bc308cfc8e7b90746866d480cab622ba63cbba11e695cda09077c8490d54",
+      "file": "21fccb6-cyclic-triple-fano-record.json",
+      "url": "https://github.com/hodge-computer/sextics/blob/21fccb6b4f1d4070ddaa30195a78f268247569e6/data/cyclic-triple-fano/record.json"
+    }
+  ],
+  "comparisons": [
+    {
+      "target": "one-reflection-skew",
+      "changed_top_level_fields": [
+        "render"
+      ],
+      "all_non_render_fields_equal": true,
+      "record_keys": [
+        "id",
+        "title",
+        "q",
+        "F",
+        "A",
+        "render",
+        "visibility",
+        "category",
+        "displayDefinitions",
+        "slice",
+        "rationale",
+        "provenanceFile",
+        "formalStatus",
+        "status",
+        "evidenceKind",
+        "certificateAvailable",
+        "content",
+        "witnessAvailability",
+        "draftDisplayStatus"
+      ]
+    },
+    {
+      "target": "cyclic-triple-fano",
+      "changed_top_level_fields": [
+        "render"
+      ],
+      "all_non_render_fields_equal": true,
+      "record_keys": [
+        "id",
+        "title",
+        "q",
+        "F",
+        "A",
+        "render",
+        "visibility",
+        "category",
+        "displayDefinitions",
+        "slice",
+        "rationale",
+        "provenanceFile",
+        "formalStatus",
+        "status",
+        "evidenceKind",
+        "certificateAvailable",
+        "content",
+        "pullRequest",
+        "certificate",
+        "witnessAvailability",
+        "leanVerification",
+        "credit",
+        "draftDisplayStatus"
+      ]
+    }
+  ]
+}
