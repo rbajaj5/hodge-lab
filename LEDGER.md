@@ -4464,3 +4464,66 @@ entries 28 and 29 and the edit within 29. This batch creates no new entry
 there. Historical ledger text and prior receipts are preserved; tally
 unchanged at **29 discussion contributions, one closed maintenance PR,
 zero accepted authored solves**.
+
+
+## Checkpoint 129 — 21 October 2026: actual skew differential forms in Lean
+
+Notebook parent `2db781f19ddc5577db01a3bc178c6c6594e58756`; protected
+source pin `d5e9ef223a2cd210517f35c071e9a5108a15e025`. Reused the
+completed chart substitution, coordinate-volume, residue-coefficient and
+ambient-derivation proofs, with hashes checked against their receipts.
+No completed mathematical reconstruction or upstream audit was repeated.
+
+- [Proof, conventions, attribution and limits](notes/skew-differential-forms-lean.md).
+- [DifferentialForms.lean](formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean)
+  works in E=ExteriorAlgebra(K,Ω(K/ℚ)), K=Frac(ℚ[U,r,w,t,z]). Its
+  one-forms come from the universal Kähler derivation. With
+  α=dU∧dr∧dw∧dt and vol=α∧dz, the module proves base-factor
+  annihilation and dz∧α=vol by four antisymmetric swaps.
+- Equality of two actual derivations is proved first on polynomial
+  generators and then on arbitrary fractions. Thus df∧α=D(f)vol
+  for every f in K. A localized differential basis and its determinant
+  functional give λ(vol)=1 and vol≠0, making the coefficient check
+  nonvacuous.
+- The previous +5/72 identity now yields the actual form equality
+  −U²/(2G²)vol = d(U²/(12z⁵G))∧α + 5U²/(72z¹¹)(dG/G)∧α.
+  Nonzero G and z are reused ambient-field theorems. This does not
+  authorize substituting G=0 into ambient denominators.
+- [Executed receipt](formal/results/skew-forms/validation.json): **13
+  theorem axiom audits, one new-module kernel replay, five positive
+  controls and three deliberately false statements rejected**, in
+  **60.828 seconds**. Python -O; 120 seconds per process, 600 seconds
+  total; no timeout. Lean 4.31.0, Python 3.11.9, mathlib
+  `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`. Imports are trusted
+  reused dependencies, not a new full-dependency replay. No remote CI
+  result is claimed.
+- The controls use the actual forms and determinant functional; wrong
+  orientation, repeated-wedge and reciprocal-sign answers each reach
+  one closed False goal. They are proof controls, not independent
+  reconstructions. A separate read-only agent reviewed the final source,
+  verifier, receipt and logs; it made no edits or additional replay.
+- [Bounded development evidence](formal/results/skew-forms/development/README.md)
+  preserves five attempts and scalar-tower, missing-cache, noncommutative
+  scalar restriction and basis simplification failures. No failure is
+  presented as a mathematical exclusion.
+- [Reproducible diagram](visualizations/skew-forms.png) and
+  [generator](scripts/visualize_skew_forms.py) show the actual exterior
+  identity, orientation and nonzero-volume certificate. The generator
+  requires the passing receipt and source hashes; rendered PNG inspected.
+
+The expression called betaDifferential is exactly d(f)∧α for the
+specific four-form fα. No general exterior differential on E or de Rham
+complex is constructed. The physical U=x² pullback, residue map, global
+descent, finite trace, denominator clearing, rational primitive and
+HasCertificate remain separate. No larger denominator exclusion,
+45-versus-504 image comparison or accepted solve follows. Attribution:
+Benjamin E. Diamond and contributors for the target/framework, fqlx for
+the quotient/source reduction, Mathlib contributors including Andrew
+Yang for Kähler localization. No mathematical novelty claim.
+
+Hodge Lab publication only: **no upstream post, reply, edit or PR**. The
+Posts list remains entries 1–29, including recent posts 28 and 29 and
+the edit within 29. Notebook work creates no new Posts entry. Historical
+ledger text and prior receipts are preserved. Tally unchanged at **29
+discussion contributions, one closed maintenance PR, zero accepted
+authored solves**.

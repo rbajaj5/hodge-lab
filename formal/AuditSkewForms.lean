@@ -1,0 +1,15 @@
+import HodgeLab.OneReflectionSkew.DifferentialForms
+
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.base_wedge_zero
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.coordinate_swap
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.normal_first_orientation
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.wedgeDerivation_apply
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.normalDerivation_apply
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.polynomial_derivations_eq
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.derivations_eq
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.differential_wedge
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.differentialBasis_apply
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.volume_eq_multi
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.topCoefficient_volume
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.volume_ne_zero
+#print axioms HodgeLab.OneReflectionSkew.DifferentialForms.actual_form_reduction

@@ -38,6 +38,21 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: actual differential forms in Lean
+
+[![From coefficients to actual Kähler differential forms](visualizations/skew-forms.png)](notes/skew-differential-forms-lean.md)
+
+The +5/72 local reduction now holds in the **exterior algebra of actual
+Kähler differentials**. Lean proves **df∧α=D(f)vol**, the positive
+normal-first orientation, and **vol≠0**. **13 theorem audits, one
+new-module kernel replay, five positive and three negative controls passed.**
+
+This closes the scalar-to-exterior-product step. A general exterior
+derivative, residue transport, the physical square-cover pullback and
+a rational primitive remain separate.
+
+[Proof and limits](notes/skew-differential-forms-lean.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean) · [Executed receipt](formal/results/skew-forms/validation.json)
+
 ### One-reflection-skew: the ambient derivation constructed in Lean
 
 [![From polynomial partial derivative to the rational ambient field](visualizations/skew-ambient.png)](notes/skew-ambient-lean.md)

@@ -126,3 +126,13 @@ including Andrew Yang's localization/Kähler differential development, for
 the extension theorem used here. No mathematical novelty claim is made.
 This batch is published in Hodge Lab only. The Posts index stays at 29
 verified discussion contributions; this notebook batch creates no post.
+
+
+## Follow-up — checkpoint 129, 21 October 2026
+
+The [actual differential-form bridge](skew-differential-forms-lean.md)
+now proves df∧α=D(f)vol and the local +5/72 reduction in the exterior
+algebra of Kähler differentials over this ambient field. A localized
+basis and determinant functional prove vol≠0. The historical source
+and receipt above remain unchanged. General exterior differentiation,
+residue transport, physical pullback and a primitive remain separate.

@@ -2,6 +2,18 @@
 
 ## One-reflection-skew polynomial obstruction
 
+The [actual differential-form module](HodgeLab/OneReflectionSkew/DifferentialForms.lean)
+now proves the local reduction in the exterior algebra of Kähler differentials
+over Frac(ℚ[U,r,w,t,z]). It proves df∧α=D(f)vol and vol≠0 using the
+localized differential basis and its determinant functional. The +5/72
+coefficient therefore appears in an equality of actual exterior products.
+Run `python3 -O check_skew_forms.py`: 13 theorem audits, one new-module
+kernel replay, five positive controls and three rejected false statements.
+[Forms and limits](../notes/skew-differential-forms-lean.md) ·
+[Receipt](results/skew-forms/validation.json).
+The expression d(f)∧α is proved directly; a general exterior differential,
+residue map, physical square-cover pullback and primitive remain separate.
+
 The [ambient derivation module](HodgeLab/OneReflectionSkew/AmbientDerivation.lean)
 constructs D on Frac(ℚ[U,r,w,t,z]) via localization of Kähler differentials.
 It proves the coordinate values, z≠0 and G≠0, then instantiates the existing
@@ -10,8 +22,8 @@ residue coefficient theorem. Run `python3 -O check_skew_ambient.py`:
 and three rejected false statements. [Construction and limits](../notes/skew-ambient-lean.md)
 · [Receipt](results/skew-ambient/validation.json).
 It also proves that these same coordinate-derivative values cannot hold
-on G=0,z≠0. Differential-form/residue transport and a primitive remain open
-formal obligations; this is an ambient-field construction.
+on G=0,z≠0. The actual exterior-product bridge is now proved above;
+general residue transport and a primitive remain separate obligations.
 
 The [normal-chart module](HodgeLab/OneReflectionSkew/NormalChart.lean) and
 [residue coefficient module](HodgeLab/OneReflectionSkew/ResidueNormalization.lean)

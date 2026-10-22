@@ -1,0 +1,64 @@
+{
+  "notebook_parent": "2db781f19ddc5577db01a3bc178c6c6594e58756",
+  "upstream_pin": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+  "pins": [
+    {
+      "upstream_path": "data/one-reflection-skew/record.json",
+      "upstream_commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/record.json",
+      "git_blob": "1ee559be681582cc26a1767f99c933fbcbdd3b10",
+      "sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/record.json?ref=d5e9ef223a2cd210517f35c071e9a5108a15e025"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/one-reflection-skew/record.json"
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/instance.rec",
+      "upstream_commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec",
+      "git_blob": "6d35d3b8bc50814cb5c7774306f64d6902372bee",
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/instance.rec?ref=d5e9ef223a2cd210517f35c071e9a5108a15e025"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/one-reflection-skew/instance.rec"
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/provenance.json",
+      "upstream_commit": "d5e9ef223a2cd210517f35c071e9a5108a15e025",
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/provenance.json",
+      "git_blob": "e75110bb3e35f5cb5b70364a0c3accc935052329",
+      "sha256": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+      "command": [
+        "gh",
+        "api",
+        "repos/hodge-computer/sextics/contents/data/one-reflection-skew/provenance.json?ref=d5e9ef223a2cd210517f35c071e9a5108a15e025"
+      ],
+      "url": "https://github.com/hodge-computer/sextics/blob/d5e9ef223a2cd210517f35c071e9a5108a15e025/data/one-reflection-skew/provenance.json"
+    }
+  ],
+  "reused_input_receipt": "formal/results/skew-ambient/inputs.json",
+  "reuse_scope": "Completed chart substitution, coordinate volume, residue coefficient and ambient derivation proofs reused by source hash. No new upstream status review or old mathematical replay.",
+  "coefficient_field": "Q; ambient K=Frac(MvPolynomial(Fin 5,Q))",
+  "coordinate_order": [
+    "U",
+    "r",
+    "w",
+    "t",
+    "z"
+  ],
+  "protected_variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "q": 1
+}

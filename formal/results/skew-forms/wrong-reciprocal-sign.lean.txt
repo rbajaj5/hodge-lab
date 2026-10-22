@@ -1,0 +1,7 @@
+import HodgeLab.OneReflectionSkew.DifferentialForms
+open HodgeLab.OneReflectionSkew.DifferentialForms HodgeLab.OneReflectionSkew.AmbientDerivation
+example : (coord 4)^2 * topCoefficient (oneForm ((coord 4)⁻¹)*alpha) = 1 := by
+  rw [differential_wedge, map_smul, topCoefficient_volume]
+  change (coord 4)^2 * (ambientD ((coord 4)⁻¹) * 1) = 1
+  rw [mul_one,scaled_reciprocal_derivative]
+  norm_num

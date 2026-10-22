@@ -1,0 +1,26 @@
+{
+  "coordinate_order": [
+    "U",
+    "r",
+    "w",
+    "t",
+    "z"
+  ],
+  "normal_first_swap_count": 4,
+  "normal_first_sign": 1,
+  "top_coefficient_of_volume": 1,
+  "base_wedge_coefficients": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "required_theorems": [
+    "differential_wedge",
+    "normal_first_orientation",
+    "topCoefficient_volume",
+    "volume_ne_zero",
+    "actual_form_reduction"
+  ],
+  "scope": "Actual Kahler/exterior identity, not a general exterior differential or a residue map."
+}

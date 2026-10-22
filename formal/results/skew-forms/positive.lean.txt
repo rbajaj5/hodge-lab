@@ -1,0 +1,14 @@
+import HodgeLab.OneReflectionSkew.DifferentialForms
+open HodgeLab.OneReflectionSkew.DifferentialForms HodgeLab.OneReflectionSkew.AmbientDerivation
+
+example : topCoefficient volume = 1 := topCoefficient_volume
+example : volume ≠ 0 := volume_ne_zero
+example : topCoefficient (oneForm (coord 4)*alpha) = 1 := by
+  rw [normal_first_orientation, topCoefficient_volume]
+example : topCoefficient (oneForm (coord 0)*alpha) = 0 := by
+  have h := base_wedge_zero 0
+  change oneForm (coord 0)*alpha = 0 at h
+  rw [h,map_zero]
+example : (coord 4)^2 * topCoefficient (oneForm ((coord 4)⁻¹)*alpha) = -1 := by
+  rw [differential_wedge, map_smul, topCoefficient_volume]
+  simpa using scaled_reciprocal_derivative
