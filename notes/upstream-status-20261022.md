@@ -67,3 +67,38 @@ No mathematical replay, upstream publication or discussion edit was performed.
 This is ordinary status maintenance, not a substantive research batch requiring
 a new visualization. Contribution tally stays **29 discussion contributions,
 one closed maintenance PR, zero accepted authored solves**.
+
+
+## Later monitor — 22 October 2026, 01:09 UTC
+
+The upstream head remains `84f106ebf0731cbee1926833236361cddac0fc3f`; catalogue,
+target/acceptance records and policy pins are unchanged. Hodge Lab now includes
+the completed checkpoint-122 Lean batch at `c4fc59eb3c2f4ea2c3382a3cb9a1e7d77e4f3740`.
+The previous status and verification summaries above remain historical records.
+
+There is one new substantive discussion update: fqlx's
+[rank-one-biquartic report, comment 19111720](https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19111720),
+posted 22 October at 00:19:35 UTC (21 October, 8:19:35 p.m. EDT).
+The author reports geometric generic Picard rank one for the weighted X-pencil,
+scoped exclusions of compact-Y base currents, and an elliptic partial current
+that still leaves a nonzero **17-dimensional residue sector**. Generic Picard
+rank is not a statement about every special fiber, and these current exclusions
+do not cover a support correlating the individual X and Y curve coordinates.
+
+The linked [portable packet](https://gist.github.com/fqlx/93cce6ff81f26815d56d1c2865a0b9a9)
+and its **15 focused replays** are author-reported evidence here. This monitor
+read the complete discussion; it did not download or replay that packet or
+verify the geometric arguments. The post explicitly claims no unrestricted
+certificate, Lean proof or acceptance receipt. Its newer mixed-support,
+conductor and residue proposals are described as not independently replayed by
+the author, so this note does not promote them to checked conclusions.
+
+`rank-one-biquartic` remains **open** in the pinned catalogue. The post supplies
+no new rbajaj5 attribution, and receiving or recording it is not a contribution.
+All pages in the 14 monitored discussions were fetched; no other comment,
+reply, body-hash or answer change was found.
+[Snapshot, coverage, pins, commands and scope](../results/upstream-monitor-20261022/010928/monitor-receipt.json)
+and [complete thread snapshot](../results/upstream-monitor-20261022/010928/discussion-118.json).
+No access failure or timeout occurred. No research replay or upstream action
+was performed. The tally remains **29 discussion contributions, one closed
+maintenance PR, zero accepted authored solves**.

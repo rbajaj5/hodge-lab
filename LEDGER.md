@@ -4141,3 +4141,33 @@ This batch publishes in Hodge Lab only; related observations are retained for
 an infrequent substantial upstream update. Contribution tally remains **29
 discussion contributions, one closed maintenance PR, zero accepted authored
 solves**. Earlier ledger entries and receipts are preserved.
+
+
+## Checkpoint 123 — 21 October 2026: rank-one-biquartic research report
+
+Bounded monitor at **22 October 2026, 01:09 UTC / 21 October, 9:09 p.m. EDT**.
+Notebook parent `c4fc59eb3c2f4ea2c3382a3cb9a1e7d77e4f3740`; upstream stays at
+`84f106ebf0731cbee1926833236361cddac0fc3f`. All 532 recorded target/policy blob
+pins are unchanged. No new acceptance or authored solve is recorded.
+
+New [fqlx comment 19111720 in #118](https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19111720)
+reports generic Picard rank one for the weighted X-pencil, scoped compact-Y
+current exclusions, and an elliptic partial current with a nonzero
+17-dimensional residual sector. The target remains open. The claimed 15 focused
+replays and geometric arguments are **author-reported, not replayed here**.
+The author explicitly leaves correlated X/Y support and the unrestricted
+certificate problem open; the report is not a Lean proof or acceptance receipt.
+
+- [Context, attribution and limits](notes/upstream-status-20261022.md#later-monitor--22-october-2026-0109-utc).
+- [Pinned receipt and full monitoring coverage](results/upstream-monitor-20261022/010928/monitor-receipt.json)
+  and [complete #118 snapshot](results/upstream-monitor-20261022/010928/discussion-118.json).
+- All comments/replies of #44, #55, #56, #111–120 and #127 were fetched; IDs,
+  timestamps and body hashes were compared. This was the only changed thread.
+- Requests were capped at 45 seconds and the discussion run at 240 seconds.
+  No access failure or timeout. A separate read-only review agreed on scope.
+  No linked-packet download, mathematical replay, new research visualization,
+  upstream post, reply, edit or PR was performed.
+
+Historical entries and completed work are preserved. Contribution tally remains
+**29 discussion contributions, one closed maintenance PR, zero accepted authored
+solves**; monitoring and this notebook entry do not increase it.
