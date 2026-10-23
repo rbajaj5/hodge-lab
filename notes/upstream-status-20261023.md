@@ -96,3 +96,87 @@ reviewed the scope. No backend tests, live endpoint check, mathematical replay
 or Lean build was performed. This is ordinary status maintenance, with no
 new research visualization, upstream publication or contribution-tally change.
 Credit Benjamin E. Diamond and the upstream contributors for the interface work.
+
+## 23 October 2026, 16:46 UTC: publication policy and local CI follow-up
+
+Upstream moved from `faa9df2ec6406e4eacc135f677cf3711315d0e41` to
+[`554757eca1aebecdd1d21f3452d3c71ffa601b19`](https://github.com/hodge-computer/sextics/commit/554757eca1aebecdd1d21f3452d3c71ffa601b19)
+through PRs #195–197. The complete local Git comparison has 742 files;
+GitHub's compare response listed only its first 300. We used the full Git
+diff for the structural checks below rather than treating that API list as complete.
+
+The [current contribution rules](https://github.com/hodge-computer/sextics/blob/554757eca1aebecdd1d21f3452d3c71ffa601b19/CONTRIBUTING.md)
+remove CI-specific approving-review and workflow-signoff requirements.
+Maintenance PRs use Repository build. The publisher no longer tests the
+merging account against a configured owner; GitHub repository permissions
+control merging. Historical authorization fields remain in existing receipts.
+The [publisher](https://github.com/hodge-computer/sextics/blob/554757eca1aebecdd1d21f3452d3c71ffa601b19/scripts/proposals/publish.py)
+still requires protected verification, matching source/target/verifier hashes,
+kernel-replay evidence, contributor identity and exact merge parents. A green
+proof check and accepted publication remain separate. Documentation identifies
+benediamond as the sole human writer; we did not inspect the actual access settings.
+
+The verifier regression workflow and its `test_check.py` / `test_lean.py`
+scripts were removed. The replacement Repository build validates release
+content and conditionally checks changed shared Lean modules and affected
+accepted applications. These are source observations; we did not run the
+builds, inspect deployment behavior or audit the revised verifier end to end.
+Hodge Lab's own ledger-before-upstream-publication requirement is unchanged.
+
+The 167 changed monitored blob hashes comprise three documentation files,
+82 `instance.rec` files and 82 generated `record.json` files. Exact text
+comparison finds only camera-key edits in every `instance.rec`. JSON
+comparison finds the corresponding camera edits and one removal of
+`render.divisorProgram` from quadric-contact-broken's generated record. That
+removed field describes approximate slice-presentation data. All other JSON
+content is identical. Forty-one `solution.md` files change only their two
+witness/proof link targets to document-relative paths. No Lean source,
+formal-library file, witness, acceptance receipt, proof manifest, provenance
+or motivation file changed. Camera-rotation equivalence was not tested.
+
+All 14 monitored threads have complete comment/reply pagination and unchanged
+IDs, timestamps and body hashes (56 records). There is no new discussion
+result, credit or acceptance. The review of the chat now titled **Correct Grok
+Assessment** confirms that the original holdout's accepted PR #128 and its
+explicit rbajaj5 attribution are existing facts; checkpoint 91 already records
+the acceptance and preceding-work credit. The accepted explanation does not
+give a minimal denominator degree. Our bounded degree-seven exclusions are
+not a universal degree-eight bound, and the accepted holdout result is not a
+solve of one-reflection-skew. No new contribution is counted for this read-back.
+
+### A verified notebook CI failure, separate from the upstream cleanup
+
+The live [Notebook Lean proofs run](https://github.com/rbajaj5/hodge-lab/actions/runs/39832127430)
+at checkpoint 132 (`0200f4c07e76af3cdd29f45e9078c245c222b28c`) passed the
+differential-form step, then stopped in the trace-basis check with:
+
+```text
+RuntimeError: Historical context receipt changed: formal/results/skew-forms/validation.json
+```
+
+The current workflow runs `check_skew_forms.py` before
+`check_skew_trace_basis.py`. The former rewrites its validation receipt,
+including run-dependent timestamps and timings. The latter compares that
+working file with a pinned historical hash before calling Lean. The logs and
+current source therefore identify a receipt-lifecycle conflict. This failure
+does not refute the theorem, and it does not establish a successful CI replay
+of the new trace-basis modules. The saved local checkpoint-132 checks retain
+their original scope. No repair or Lean replay was performed in this review.
+The smallest next maintenance step is to separate immutable historical
+context receipts from fresh run outputs, retain the hash check on the former,
+and rerun the affected CI sequence.
+
+[Evidence, reproducible structural checker and limits](../results/upstream-policy-monitor-20261023/review.json)
+include a complete changed-file list, policy diff and the exact CI error
+excerpt. The structural check ran under Python 3.11.9 with required checks
+active under `-O`; Git was 2.55.0.windows.5. Each Git subprocess was bounded
+at 30 seconds, fetches at 90, network reads at 45, and discussion collection
+at 240. The initial checker assumptions and their corrections are retained:
+some cameras already had orientation data, one generated renderer field was
+removed, and explanation links also changed. A separate read-only AI agent
+reviewed the policy source; no independent human or mathematical review is claimed.
+
+This is status/provenance maintenance, not a research batch; no new figure is
+needed. No upstream post, reply, edit or PR was made. Posts remain 1–29 and
+the tally remains **29 discussion contributions, one closed maintenance PR,
+zero accepted authored solves**. Existing ledger text and proof receipts are preserved.

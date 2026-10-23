@@ -1,0 +1,61 @@
+{
+  "status": "SOURCE_REVIEW_AND_STRUCTURAL_CHECKS_COMPLETE",
+  "checked_utc": "2026-10-23T16:51:32.224470+00:00",
+  "notebook_parent": "9e8c507f30b82250c9ebcf1965446319c13fcaa2",
+  "upstream_base": "faa9df2ec6406e4eacc135f677cf3711315d0e41",
+  "upstream_head": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+  "discussion_count": 14,
+  "comments_and_replies": 56,
+  "all_pages_complete": true,
+  "changed_discussion_records": 0,
+  "monitored_blob_count": 532,
+  "changed_monitored_blobs": 167,
+  "structural_command": "python -X utf8 -O results/upstream-policy-monitor-20261023/check_cleanup.py <upstream-git-checkout> <output.json>",
+  "executed_structural_checks": "82 instance.rec camera-only diffs; 82 record.json comparisons excluding explicitly recorded render edits; 41 solution.md two-link changes; complete 742-file diff",
+  "attempts": [
+    {
+      "result": "ENVIRONMENT_LIMIT",
+      "detail": "PyYAML import unavailable; no install; rec changes checked with exact diff-line constraints instead."
+    },
+    {
+      "result": "CHECKER_SCOPE_CORRECTED",
+      "detail": "Initial yaw/pitch-only assumption rejected contact46006: existing orientation is retained while redundant yaw/pitch are removed."
+    },
+    {
+      "result": "CHECKER_SCOPE_CORRECTED",
+      "detail": "Strict camera-only record assertion exposed quadric-contact-broken render.divisorProgram removal. Explicitly recorded presentation change; no target/proof conclusion inferred from it."
+    },
+    {
+      "result": "CHECKER_SCOPE_CORRECTED",
+      "detail": "Solution explanation files also changed; exact comparison verifies only two link targets per each of 41 files were rewritten."
+    }
+  ],
+  "lean_ci": {
+    "run_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39832127430",
+    "job_id": 120010687123,
+    "head": "0200f4c07e76af3cdd29f45e9078c245c222b28c",
+    "error": "Historical context receipt changed: formal/results/skew-forms/validation.json",
+    "verified": "Live job steps/logs and current workflow/checker source read; failure before new trace-basis compilation. Previous forms step passed and rewrote runtime receipt.",
+    "limits": "No Lean replay or CI repair in this read-only review; not a mathematical refutation."
+  },
+  "independent_review": "Read-only agent reviewed removal of CI review/signoff and publisher owner gate, retained protected verification and historical receipts. No human review claimed.",
+  "limits": [
+    "No mathematical or Lean/kernel replay",
+    "No CI repair or theorem changes",
+    "No frontend/backend tests or deployed service checks",
+    "No direct inspection of GitHub permission settings",
+    "No new attribution or accepted result",
+    "No upstream publication; contribution tally unchanged"
+  ],
+  "artifact_lf_sha256": {
+    "check_cleanup.py": "cc67032a12264178e450ffafe20aff88bbdcfbebccc2b39013bea5a41ae5f513",
+    "ci-run.json": "f924966288280a4462a48460165ae72a7b4f75fd832995c5b58f164707c965b5",
+    "complete-changed-files.txt": "6c458c53f18fb09c18fa3fd19eaf9bd656690e8be011451b198854a63d282412",
+    "discussion-comparison.json": "ba80abec86f82cb91e0f19a0181a241eaeea8307bd25732c97c46c3149d76281",
+    "latest-lean-run.json": "f924966288280a4462a48460165ae72a7b4f75fd832995c5b58f164707c965b5",
+    "lean-ci-failure.log": "882acfd3e781a3b7a6f43ed1cc5216fead1821cda38698d73e8294bb27378734",
+    "policy-diff.json": "83a1004b8a3b080e665dc2be40e23c31c393340df408b67e4d4a2a3c084b1c36",
+    "repository-heads.json": "e3ae342dd6d682cda74b1d9650d09d8ef94def7326bff598fae62f0d37bda92e",
+    "target-comparison.json": "e5c340755feff1aeff835aa57772bb5380433454ad37f664da0ac55279d7eefa"
+  }
+}

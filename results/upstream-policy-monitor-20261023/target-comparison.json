@@ -1,0 +1,743 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-23T16:50:32.117386+00:00",
+  "base": "faa9df2ec6406e4eacc135f677cf3711315d0e41",
+  "head": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+  "complete_git_diff_files": 742,
+  "file_groups": {
+    ".github": 6,
+    "CONTRIBUTING.md": 1,
+    "MAINTAINING.md": 1,
+    "README.md": 1,
+    "assets": 338,
+    "data": 262,
+    "index.html": 1,
+    "infra": 6,
+    "schema": 1,
+    "scripts": 27,
+    "server": 14,
+    "slices": 84
+  },
+  "target_record_checks": [
+    {
+      "path": "data/block-q2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cofactor-eight/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cofactor-mixed/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/collision-h3/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cone-ladder-linear/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/contact46006/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cycle-q2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cycle-three/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cyclic-triple-fano/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/cyclic-triple-residual/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/dense-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/diagonal-permutation/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/eight-plane-configuration/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-block-cube/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-hesse-web/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-passive-contact/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-root-cube/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-shear/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-sylvester-norm/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/family-trace-zero/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/fermat-q2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/four-plus-two-residual/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/hesse-triangle/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-all-six/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-bundle/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-moving-branch/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-p-y14/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-p3/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-q2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-ternary-deformation/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-x04-p/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-x12-p-y02/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout-x13-y13/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/holdout/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/klein-coupled-character/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/klein-hesse/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/klein-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/m3-coupled/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/mixed-biweight/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/mixed-polar/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/off-paired/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/one-reflection-skew/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/one-reflection-y2-sector/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/one-reflection/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/polarized-k3-remainder/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/quadric-contact-broken/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/quadric-contact-residual/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/rank-one-biquartic/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/reflection-coupled-fano/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/reflection-coupled-residual/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/short-power-presentation/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/split-ternary-q2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/symmetric-sextic-residual/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/twoblock-cubic/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/xtype-strict-rational-113/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/record.json",
+      "unchanged_except_camera_representation_and_listed_render_removals": true
+    },
+    {
+      "path": "data/block-q2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cofactor-eight/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cofactor-mixed/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/collision-h3/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cone-ladder-linear/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/contact46006/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cycle-q2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cycle-three/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cyclic-triple-fano/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/cyclic-triple-residual/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/dense-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/diagonal-permutation/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/eight-plane-configuration/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-block-cube/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-hesse-web/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-passive-contact/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-root-cube/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-shear/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-sylvester-norm/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/family-trace-zero/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/fermat-q2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/four-plus-two-residual/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/hesse-triangle/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-all-six/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-bundle/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-moving-branch/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-p-y14/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-p3/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-q2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-ternary-deformation/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-x04-p/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-x12-p-y02/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout-x13-y13/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/holdout/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/klein-coupled-character/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/klein-hesse/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/klein-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/m3-coupled/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/mixed-biweight/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/mixed-polar/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/off-paired/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/one-reflection-skew/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/one-reflection-y2-sector/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/one-reflection/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/polarized-k3-remainder/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/quadric-contact-broken/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/quadric-contact-residual/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/rank-one-biquartic/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/reflection-coupled-fano/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/reflection-coupled-residual/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/short-power-presentation/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/split-ternary-q2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/symmetric-sextic-residual/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/twoblock-cubic/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/xtype-strict-rational-113/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/instance.rec",
+      "only_two_camera_scalars_removed_and_optional_orientation_added": true
+    }
+  ],
+  "proof_or_acceptance_changes": [],
+  "render_removals": [
+    {
+      "path": "data/quadric-contact-broken/record.json",
+      "field": "render.divisorProgram",
+      "description": "Support of the explicit nonminimal denominator on this fixed-parameter slice. Coefficients are numerical approximations to isolated algebraic roots; this is presentation data, not a new accepted proof package.",
+      "source": {
+        "path": "display-divisor.md",
+        "definition": "Explicit homogeneous clearing of GenericCubicCertificate"
+      }
+    }
+  ],
+  "solution_explanations_only_two_link_targets_changed": [
+    "data/block-q2/solution.md",
+    "data/cofactor-eight/solution.md",
+    "data/cofactor-mixed/solution.md",
+    "data/collision-h3/solution.md",
+    "data/completed-square-nambu-holdout/solution.md",
+    "data/cone-ladder-linear/solution.md",
+    "data/contact46006/solution.md",
+    "data/coupled-pair-rational-d4-strict/solution.md",
+    "data/f3-block-x0-quartic-strict/solution.md",
+    "data/family-block-cube/solution.md",
+    "data/family-hesse-web/solution.md",
+    "data/family-passive-contact/solution.md",
+    "data/family-root-cube/solution.md",
+    "data/family-shear/solution.md",
+    "data/family-sylvester-norm/solution.md",
+    "data/family-trace-zero/solution.md",
+    "data/fermat-pair-rational-d4-strict/solution.md",
+    "data/fermat-q2/solution.md",
+    "data/fixed-witness-hesse-cofactor-d4-rational/solution.md",
+    "data/hesse-radial-hesse-cofactor-d4-rational/solution.md",
+    "data/hesse-triangle/solution.md",
+    "data/klein-hesse/solution.md",
+    "data/klein-rational/solution.md",
+    "data/m3-coupled/solution.md",
+    "data/passive-quadratic-d4-strict-rational/solution.md",
+    "data/polarized-contact-coupled-d2/solution.md",
+    "data/polarized-contact-deformation-d2/solution.md",
+    "data/ternary-collision-cb-d2/solution.md",
+    "data/ternary-collision-cbp-d2/solution.md",
+    "data/ternary-tangent-residual-h2-d2/solution.md",
+    "data/three-block-rational-d4-strict/solution.md",
+    "data/tie-offblock-ytype-d4-strict-rational/solution.md",
+    "data/tie-singleton-3odd-strict/solution.md",
+    "data/two-reflection-cubic-surface-d2/solution.md",
+    "data/twoblock-cubic/solution.md",
+    "data/twoties-crossblock-hesse-cofactor-d4-rational/solution.md",
+    "data/twoties-tie2-x2-quartic-strict/solution.md",
+    "data/xtype-sparse-rational-1m142/solution.md",
+    "data/xtype-strict-rational-113/solution.md",
+    "data/ytype-companion-231-d4-strict-rational/solution.md",
+    "data/ytype-companion-fiberA-d4-strict-rational/solution.md"
+  ],
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "git_version": "git version 2.55.0.windows.5",
+  "command_timeout_seconds": 30,
+  "checker_sha256": "cc67032a12264178e450ffafe20aff88bbdcfbebccc2b39013bea5a41ae5f513",
+  "limits": [
+    "Structural data comparison only; camera rotations not independently compared",
+    "No Lean build, mathematical replay, backend tests, or deployed-service verification",
+    "GitHub compare response capped at 300 files; complete local Git diff used instead"
+  ]
+}

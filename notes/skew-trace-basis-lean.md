@@ -166,3 +166,14 @@ is claimed by this pass.
 Hodge Lab publication only. No upstream post, reply, edit or PR. Posts remain
 entries 1–29. Tally unchanged: **29 discussion contributions, one closed
 maintenance PR, zero accepted authored solves**.
+
+## CI follow-up — 23 October 2026
+
+The saved local results above remain the checkpoint-132 evidence. The
+[subsequent CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/39832127430)
+stopped before the trace-basis Lean commands: an earlier step regenerated
+`formal/results/skew-forms/validation.json`, conflicting with this checker's
+historical hash pin. This is an unresolved receipt-lifecycle issue, not a
+failed mathematical goal or a successful CI replay. See the
+[verified log, source diagnosis and next bounded check](upstream-status-20261023.md#a-verified-notebook-ci-failure-separate-from-the-upstream-cleanup).
+No proof or historical receipt was changed during that review.

@@ -1,0 +1,21 @@
+: 3.4916522330000817}
+2026-10-22T18:43:17.7178297Z {"label": "wrong-orientation", "exit_code": 1, "seconds": 2.9152202039999793}
+2026-10-22T18:43:20.6891583Z {"label": "wrong-repeated-wedge", "exit_code": 1, "seconds": 2.97051029499994}
+2026-10-22T18:43:23.5298880Z {"label": "wrong-reciprocal-sign", "exit_code": 1, "seconds": 2.839861883000026}
+2026-10-22T18:43:23.5370217Z PASS: 13 theorem audits, one kernel replay, five positive and three negative controls
+2026-10-22T18:43:23.5482523Z ##[group]Run python3 -O check_skew_trace_basis.py
+2026-10-22T18:43:23.5483203Z [36;1mpython3 -O check_skew_trace_basis.py[0m
+2026-10-22T18:43:23.5545466Z shell: /usr/bin/bash -e {0}
+2026-10-22T18:43:23.5545727Z ##[endgroup]
+2026-10-22T18:43:24.4880552Z Traceback (most recent call last):
+2026-10-22T18:43:24.4881504Z   File "/home/runner/work/hodge-lab/hodge-lab/formal/check_skew_trace_basis.py", line 138, in <module>
+2026-10-22T18:43:24.4882405Z     try:main()
+2026-10-22T18:43:24.4882756Z         ^^^^^^
+2026-10-22T18:43:24.4883482Z   File "/home/runner/work/hodge-lab/hodge-lab/formal/check_skew_trace_basis.py", line 55, in main
+2026-10-22T18:43:24.4884535Z     require(digest(ROOT.parent/p)==h,'Historical context receipt changed: '+p)
+2026-10-22T18:43:24.4885518Z   File "/home/runner/work/hodge-lab/hodge-lab/formal/check_skew_extension.py", line 26, in require
+2026-10-22T18:43:24.4886519Z     if not c:raise RuntimeError(m)
+2026-10-22T18:43:24.4886928Z              ^^^^^^^^^^^^^^^^^^^^^
+2026-10-22T18:43:24.4887588Z RuntimeError: Historical context receipt changed: formal/results/skew-forms/validation.json
+2026-10-22T18:43:24.5073945Z ##[error]Process completed with exit code 1.
+2026-10-22T18:43:24.5151262Z

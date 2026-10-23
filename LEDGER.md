@@ -4787,3 +4787,60 @@ interface work. This is status maintenance, requiring no research visualization.
 No upstream post, reply, edit or PR. Posts remain entries 1–29. Tally unchanged:
 **29 discussion contributions, one closed maintenance PR, zero accepted
 authored solves**. Earlier ledger bytes and historical receipts are preserved.
+
+
+## Checkpoint 136 — 23 October 2026: upstream publication policy and verified notebook CI failure
+
+At 16:46 UTC, bounded monitoring pinned upstream
+[554757eca1aebecdd1d21f3452d3c71ffa601b19](https://github.com/hodge-computer/sextics/commit/554757eca1aebecdd1d21f3452d3c71ffa601b19)
+(PRs #195–197), from faa9df2ec6406e4eacc135f677cf3711315d0e41.
+Hodge Lab parent is 9e8c507f30b82250c9ebcf1965446319c13fcaa2. All 14 discussions
+and their 56 comments/replies are unchanged, including edits and full pagination.
+
+Upstream removed its CI-specific approval/signoff and publisher owner-account
+gates. GitHub permissions control merging; protected Lean verification,
+source/target/verifier binding and exact merge-parent requirements remain.
+Historical authorization receipts remain historical evidence. The verifier
+regression workflow/scripts were removed; Repository build checks release
+content and affected shared Lean applications. These are source observations,
+not a test of actual GitHub permissions or the revised runtime workflow.
+Hodge Lab's ledger-audit-before-upstream-publication policy is unchanged.
+
+The complete Git diff contains 742 files; the API comparison was capped at
+300. Of 532 monitored pins, 167 changed: three docs and 82 pairs of target
+records. Required structural checks confirm only camera edits in all 82
+instance.rec files, corresponding JSON camera edits, and one explicitly
+recorded removal of a generated slice renderer. Forty-one solution explanations
+change only two link targets apiece. No Lean source, formal-library file,
+witness, acceptance receipt, proof manifest, provenance or motivation changed.
+This does not claim camera-orientation equivalence or deployed-site behavior.
+
+A separate chat review led to direct verification of the existing
+[Notebook Lean proofs failure](https://github.com/rbajaj5/hodge-lab/actions/runs/39832127430)
+at checkpoint 132. The forms step passes and regenerates its runtime receipt;
+the next checker rejects that file against a historical hash before compiling
+the trace-basis modules. The exact error is `Historical context receipt changed:
+formal/results/skew-forms/validation.json`. The current workflow still has this
+conflict. It is neither a theorem refutation nor a successful CI trace-basis
+replay. Saved local results retain their original scope. No CI repair or Lean
+replay was attempted; the next check is to separate immutable history from
+fresh receipts and rerun the affected sequence.
+
+- [Status, scope and source links](notes/upstream-status-20261023.md#23-october-2026-1646-utc-publication-policy-and-local-ci-follow-up).
+- [Executed checks, source pins, failed assumptions and limits](results/upstream-policy-monitor-20261023/review.json).
+- [Trace-basis CI qualification](notes/skew-trace-basis-lean.md#ci-follow-up--23-october-2026).
+
+Reading **Correct Grok Assessment** confirmed existing original-holdout
+acceptance and attribution, already recorded in checkpoint 91. Bounded
+degree-seven exclusions do not establish a universal degree-eight bound;
+no new result or credit is counted. No mathematical replay, new Lean build,
+backend test or deployment check was executed. Read-only AI-agent source
+review is distinguished from human review. Per-command bounds and the
+initial structural-check assumptions are saved in the receipt. Credit
+Benjamin E. Diamond and upstream contributors for the cleanup.
+
+This is ordinary status/provenance maintenance, not a research batch; no new
+visualization is required. No upstream post, reply, edit or PR. Posts remain
+1–29. Tally unchanged: **29 discussion contributions, one closed maintenance
+PR, zero accepted authored solves**. Historical ledger and proof receipts
+are preserved; earlier successful local checks have not been overwritten.
