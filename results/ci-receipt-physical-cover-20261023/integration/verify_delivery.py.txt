@@ -1,0 +1,58 @@
+"""Verify delivered bytes, without rerunning mathematics or Lean.
+
+Usage: python3 -O verify_delivery.py PATH_TO_PATCHED_REPOSITORY
+With no argument, verify the archive's changed-file tree instead.
+"""
+from pathlib import Path
+import hashlib
+import json
+import sys
+
+BUNDLE = Path(__file__).resolve().parent
+MANIFEST = json.loads((BUNDLE / 'delivery-manifest.json').read_text(encoding='utf-8'))
+ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else BUNDLE / 'tree'
+
+
+def require(ok, message):
+    if not ok:
+        raise RuntimeError(message)
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+require(sha(BUNDLE / MANIFEST['patch']['path']) == MANIFEST['patch']['sha256'], 'Patch hash mismatch')
+texts = 0
+for item in MANIFEST['files']:
+    path = ROOT / item['path']
+    require(path.is_file() and not path.is_symlink(), 'Nonregular file: ' + item['path'])
+    raw = path.read_bytes()
+    require(len(raw) == item['bytes'] and hashlib.sha256(raw).hexdigest() == item['sha256'],
+            'Changed file mismatch: ' + item['path'])
+    if path.suffix != '.png':
+        raw.decode('utf-8', errors='strict')
+        texts += 1
+references = json.loads((BUNDLE / 'reference-manifest.json').read_text(encoding='utf-8'))
+for item in references:
+    raw = (BUNDLE / item['archive_path']).read_bytes()
+    require(len(raw) == item['bytes'] and hashlib.sha256(raw).hexdigest() == item['sha256'],
+            'Reference file mismatch: ' + item['archive_path'])
+    blob = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
+    require(blob == item['git_blob'], 'Reference blob mismatch')
+    raw.decode('utf-8', errors='strict')
+result = {'status': 'PASS', 'root': str(ROOT), 'base': MANIFEST['base'],
+          'changed_files': len(MANIFEST['files']), 'utf8_changed_text_files': texts,
+          'reference_files': len(references), 'patch_sha256': MANIFEST['patch']['sha256'],
+          'scope': 'Delivery bytes and source reference pins only; no theorem execution.'}
+if len(sys.argv) > 1:
+    batch = ROOT / 'results/ci-receipt-physical-cover-20261023'
+    history = json.loads((batch / 'historical-files-sha256.json').read_text(encoding='utf-8'))
+    for name, expected in history.items():
+        require(sha(ROOT / name) == expected, 'Historical receipt changed: ' + name)
+    old_ledger = (BUNDLE / 'reference/base/LEDGER.md').read_bytes()
+    append = (batch / 'LEDGER.append.md').read_bytes()
+    require((ROOT / 'LEDGER.md').read_bytes() == old_ledger + append, 'Ledger prefix or append changed')
+    result.update(historical_result_files_unchanged=len(history),
+                  original_ledger_bytes=len(old_ledger), append_bytes=len(append))
+print(json.dumps(result, indent=2))

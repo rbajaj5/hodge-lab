@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-23 17:36:51 UTC",
+  "observation_scope": "Read-only GitHub connector snapshots collected during final handoff preparation; no remote mutation.",
+  "hodge_lab_main": {
+    "url": "https://api.github.com/repos/rbajaj5/hodge-lab/branches/main",
+    "sha": "d29cd55b7c7e738ae84bec7da50c8c843877506d"
+  },
+  "workflow_runs_source": "https://api.github.com/repos/rbajaj5/hodge-lab/actions/runs",
+  "latest_observed_notebook_lean_run": {
+    "id": 39832127430,
+    "head_sha": "0200f4c07e76af3cdd29f45e9078c245c222b28c",
+    "status": "completed",
+    "conclusion": "failure",
+    "updated_at": "2026-10-22T18:43:27Z",
+    "html_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/39832127430"
+  },
+  "remote_execution_of_patch": false,
+  "remote_commit_by_this_chat": null,
+  "publication_owner": "External original Goal-enabled coordinator, per human steering; its product state is user-reported, not independently controlled or verified here.",
+  "read_route_limit": {
+    "attempted_url": "https://api.github.com/repos/rbajaj5/hodge-lab/actions/workflows/388038633/runs?per_page=1",
+    "result": "Connector rejected read with INVALID_ARGUMENT, HTTP 400, URL allowlist; supported repository actions/runs read succeeded."
+  },
+  "limit": "Local receipts are not a green remote workflow run. Re-fetch and reconcile concurrent changes before coordinator publication."
+}

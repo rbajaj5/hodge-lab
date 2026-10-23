@@ -2,19 +2,23 @@
 
 Run python3 -O check_skew_forms.py from formal after fetching pinned Mathlib
 dependencies. Reuses checkpoint 128; does not rewrite or replay its receipts.
+Historical inputs remain in results/skew-forms. Every invocation writes to a
+fresh results/runs directory (or a new directory selected by --output-dir).
 Every required check raises on failure, including under Python -O.
 """
 from pathlib import Path
 import datetime, hashlib, json, os, re, shlex, subprocess, sys, time
 import check_skew_extension as util
+from fresh_receipts import fresh_output_dir
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT/'results/skew-forms'
+HISTORY = ROOT/'results/skew-forms'
+OUT = None
 MODULE = 'HodgeLab.OneReflectionSkew.DifferentialForms'
 DECLARATIONS = ['base_wedge_zero', 'coordinate_swap', 'normal_first_orientation', 'wedgeDerivation_apply', 'normalDerivation_apply', 'polynomial_derivations_eq', 'derivations_eq', 'differential_wedge', 'differentialBasis_apply', 'volume_eq_multi', 'topCoefficient_volume', 'volume_ne_zero', 'actual_form_reduction']
 NAMES = [MODULE+'.'+name for name in DECLARATIONS]
 SOURCES = ['lean-toolchain','lakefile.toml','lake-manifest.json','check_skew_extension.py',
-           'check_skew_forms.py','AuditSkewForms.lean','ReplaySkewForms.lean',
+           'check_skew_forms.py','fresh_receipts.py','AuditSkewForms.lean','ReplaySkewForms.lean',
            MODULE.replace('.','/')+'.lean']
 require, digest = util.require, util.digest
 START = time.monotonic()
@@ -55,9 +59,12 @@ def run(label,command,reject=False):
     return log
 
 def main():
-    global START
+    global START, OUT
     START=time.monotonic()
-    OUT.mkdir(parents=True,exist_ok=True)
+    OUT=fresh_output_dir(ROOT, 'skew-forms', [HISTORY,
+        ROOT/'results/skew-trace-basis', ROOT/'results/skew-ambient',
+        ROOT.parent/'results/chi-target-source'])
+    print('Fresh receipts: '+str(OUT),flush=True)
     write('validation.json',{'status':'IN_PROGRESS'})
     hashes={p:digest(ROOT/p) for p in SOURCES}
     prior_path=ROOT/'results/skew-ambient/validation.json'
@@ -67,8 +74,8 @@ def main():
     reused=dict(prior['reused_source_lf_sha256'])
     reused.update({p:h for p,h in prior['source_lf_sha256'].items() if p.startswith('HodgeLab/') and p.endswith('.lean')})
     for p,h in reused.items(): require(digest(ROOT/p)==h,'Reused proof changed '+p)
-    pins=json.loads((OUT/'inputs.json').read_text(encoding='utf-8'))
-    input_hashes={'inputs.json':digest(OUT/'inputs.json')}
+    pins=json.loads((HISTORY/'inputs.json').read_text(encoding='utf-8'))
+    input_hashes={'inputs.json':digest(HISTORY/'inputs.json')}
     for pin in pins['pins']:
         raw=(ROOT.parent/pin['path']).read_bytes().replace(b'\r\n',b'\n')
         require(hashlib.sha256(raw).hexdigest()==pin['sha256'],'Target hash mismatch')
@@ -131,7 +138,7 @@ example : (coord 4)^2 * topCoefficient (oneForm ((coord 4)⁻¹)*alpha) = -1 := 
         run(label,['lake','env','lean',p.relative_to(ROOT).as_posix()],True)
     require(hashes=={p:digest(ROOT/p) for p in SOURCES},'New sources changed during verification')
     for p,h in reused.items(): require(digest(ROOT/p)==h,'Reused sources changed during verification')
-    for p,h in input_hashes.items(): require(digest(OUT/p if p=='inputs.json' else ROOT.parent/p)==h,'Input changed during verification')
+    for p,h in input_hashes.items(): require(digest(HISTORY/p if p=='inputs.json' else ROOT.parent/p)==h,'Input changed during verification')
     require(digest(prior_path)==prior_hash,'Prior receipt changed')
     write('validation.json',{'status':'PASS','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'lean_version':version.strip(),'python_version':sys.version,'mathlib_commit':rev,
@@ -153,6 +160,6 @@ example : (coord 4)^2 * topCoefficient (oneForm ((coord 4)⁻¹)*alpha) = -1 := 
 if __name__=='__main__':
     try: main()
     except Exception as error:
-        OUT.mkdir(parents=True,exist_ok=True)
-        write('validation.json',{'status':'FAIL','error':str(error),'commands':RECORDS})
+        if OUT is not None:
+            write('validation.json',{'status':'FAIL','error':str(error),'commands':RECORDS})
         raise

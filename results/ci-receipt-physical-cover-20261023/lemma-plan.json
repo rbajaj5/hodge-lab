@@ -1,0 +1,22 @@
+{
+  "selected_after": "sequence-executed/sequence.json PASS",
+  "selected_lemma_count": 1,
+  "main_statement": "For any field K and a,v in K, f=X^18+X^12+(C(v)*X-1)^6-C(a)*X^15 equals coverPolynomial 1 roots if roots:Fin 18 -> K is injective and every root evaluates f to zero.",
+  "supporting_helpers": ["monicity", "natural degree 18", "leading coefficient 1", "root-factor divisibility"],
+  "approach_1": "Degree bounds, pairwise-coprime linear root factors, divisibility and equality of monic equal-degree polynomials.",
+  "approach_2_only_if_needed": "Interpolation uniqueness from the same eighteen distinct root values.",
+  "maximum_approaches": 2,
+  "initial_implementation_minutes": 20,
+  "lean_process_seconds": 120,
+  "checker_total_seconds": 600,
+  "small_exact_control_seconds": 30,
+  "coefficient_field": "Formal: arbitrary field K. Intended physical base: k=Q(a,v,t), with independent parameters; root data must be supplied in a splitting extension L/k, not assumed in k.",
+  "chart_context": "Historical source uses Y0=1, r=X1/X0, w=X2/X0, v=r^(-1)+r*w, so X0 != 0 and r != 0 for that ratio chart. The polynomial lemma itself does not need these inverses.",
+  "excluded": ["generic separability", "construction of a splitting field/root tuple", "trace base change or descent", "new physical differential-source normalization", "rational primitive", "homogeneous clearing", "HasCertificate", "target solve"],
+  "review_roles": {
+    "independent_mathematical_derivation": "physical_derivation",
+    "Lean_implementation": "receipt_lifecycle",
+    "adversarial_source_review": "adversarial_review",
+    "integration_and_handoff": "root"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean"
+  ],
+  "cwd": "formal",
+  "exit_code": 1,
+  "elapsed_seconds": 2.449166304000755,
+  "timeout_seconds": 120,
+  "completed_utc": "2026-10-23T17:23:00.032717+00:00",
+  "source": "HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean",
+  "source_sha256": "608c125cbb051d7c7478611d6449966b677aade378547a06cc81b67c11531978",
+  "source_snapshot": "approach1-01.lean.txt",
+  "log": "approach1-01.log",
+  "log_sha256": "5030d9d02762d5f63a9306600a265497bfd6071e23f2ec1f4b1d55cf0882114d",
+  "scope": "Development compile only; interruption or failure is not a mathematical result"
+}

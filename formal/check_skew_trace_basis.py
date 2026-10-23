@@ -1,12 +1,16 @@
 """Full split degree-18 trace-kernel audit; 120 seconds/command, 600 total.
 Run python3 -O check_skew_trace_basis.py. No network, old proof replay, or
 literal physical-cover instantiation. Required checks raise under Python -O.
+Historical inputs remain in results/skew-trace-basis; outputs go to a fresh
+results/runs directory, or a new directory selected by --output-dir.
 """
 from pathlib import Path
 import datetime, hashlib, json, os, re, shlex, subprocess, sys, time
 import check_skew_extension as util
+from fresh_receipts import fresh_output_dir
 ROOT=Path(__file__).resolve().parent
-OUT=ROOT/'results/skew-trace-basis'
+HISTORY=ROOT/'results/skew-trace-basis'
+OUT=None
 require,digest=util.require,util.digest
 START=time.monotonic(); RECORDS=[]
 if hasattr(sys.stdout,'reconfigure'):sys.stdout.reconfigure(encoding='utf-8')
@@ -14,7 +18,7 @@ def write(name,value):
     (OUT/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 MODULES=['HodgeLab.OneReflectionSkew.TraceKernel', 'HodgeLab.OneReflectionSkew.TraceFreeBasis', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient']
 NAMES=['HodgeLab.OneReflectionSkew.TraceKernel.trace_eq_last_coefficient', 'HodgeLab.OneReflectionSkew.TraceKernel.mem_ker_iff_last_coefficient_eq_zero', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates_injective', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates_surjective', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelEquiv', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_repr', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_apply', 'HodgeLab.OneReflectionSkew.TraceKernel.kernelBasisSeventeen', 'HodgeLab.OneReflectionSkew.TraceKernel.slot_eleven_mem_ker', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.coverPolynomial', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.derivativeValue', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.codifferent', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.leading_coefficient', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.cover_degree', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.derivative_value', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.derivative_value_ne_zero', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.algebra_trace_eq_sum', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.monomial_weight_sum', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_codifferent', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.evaluationMatrix', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.evaluation_matrix_det_ne_zero', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.codifferentBasis', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.codifferentBasis_apply', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_basis_initial', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_basis_last', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.traceFreeBasis', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.traceFreeBasis_apply', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_eq_coordinate', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.slot_eleven_trace_zero', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.traceFree_finrank', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_one', 'HodgeLab.OneReflectionSkew.TraceFreeBasis.remove_scalar_trace', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.cover_eval_root', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_mk', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_root', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_surjective', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.cover_ne_zero', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_bijective', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluationEquiv', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluationEquiv_apply', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluationEquiv_root', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_transport', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientCodifferent', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientCodifferentBasis', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientCodifferentBasis_apply', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_quotientCodifferent', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.derivative_mul_quotientCodifferent', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotient_derivative_isUnit', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_quotient_basis_initial', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_quotient_basis_last', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientTraceFreeBasis', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientTraceFreeBasis_apply', 'HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotient_traceFree_finrank']
-SOURCES=['lean-toolchain','lakefile.toml','lake-manifest.json','check_skew_extension.py','check_skew_trace_basis.py','AuditSkewTraceBasis.lean','ReplaySkewTraceBasis.lean']+[m.replace('.','/')+'.lean' for m in MODULES]
+SOURCES=['lean-toolchain','lakefile.toml','lake-manifest.json','check_skew_extension.py','check_skew_trace_basis.py','fresh_receipts.py','AuditSkewTraceBasis.lean','ReplaySkewTraceBasis.lean']+[m.replace('.','/')+'.lean' for m in MODULES]
 def run(label,command,reject=False):
     remaining=600-(time.monotonic()-START)
     require(remaining>1,'600-second budget exhausted')
@@ -46,11 +50,16 @@ def run(label,command,reject=False):
     return log
 
 def main():
-    global START
-    START=time.monotonic();OUT.mkdir(parents=True,exist_ok=True)
+    global START,OUT
+    START=time.monotonic()
+    OUT=fresh_output_dir(ROOT, 'skew-trace-basis', [HISTORY,
+        ROOT/'results/skew-forms', ROOT.parent/'results/skew-compact-architecture',
+        ROOT.parent/'results/atlas-monitor-20261022'])
+    print('Fresh receipts: '+str(OUT),flush=True)
     write('validation.json',{'status':'IN_PROGRESS'})
     hashes={p:digest(ROOT/p) for p in SOURCES}
-    pins=json.loads((OUT/'inputs.json').read_text(encoding='utf-8'))
+    inputs_hash=digest(HISTORY/'inputs.json')
+    pins=json.loads((HISTORY/'inputs.json').read_text(encoding='utf-8'))
     for p,h in pins['context_receipt_lf_sha256'].items():
         require(digest(ROOT.parent/p)==h,'Historical context receipt changed: '+p)
     for p in SOURCES:
@@ -117,10 +126,11 @@ example : Algebra.trace ℚ (CoverAlgebra 2 rootsQ)
         (OUT/(label+'.lean.txt')).write_bytes(p.read_bytes())
         run(label,['lake','env','lean',p.relative_to(ROOT).as_posix()],True)
     require(hashes=={p:digest(ROOT/p) for p in SOURCES},'Sources changed during verification')
+    require(digest(HISTORY/'inputs.json')==inputs_hash,'Input manifest changed during verification')
     for p,h in pins['context_receipt_lf_sha256'].items():require(digest(ROOT.parent/p)==h,'Prior receipt changed')
     write('validation.json',{'status':'PASS','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
       'lean_version':version.strip(),'python_version':sys.version,'mathlib_commit':rev,
-      'source_lf_sha256':hashes,'inputs_lf_sha256':digest(OUT/'inputs.json'),
+      'source_lf_sha256':hashes,'inputs_lf_sha256':inputs_hash,
       'declaration_axioms':axioms,'commands':RECORDS,'elapsed_seconds':time.monotonic()-START,
       'total_budget_seconds':600,'new_declarations_audited':len(NAMES),'new_modules_replayed':len(MODULES),
       'positive_controls':7,'negative_controls':3,
@@ -137,6 +147,6 @@ example : Algebra.trace ℚ (CoverAlgebra 2 rootsQ)
 if __name__=='__main__':
     try:main()
     except Exception as error:
-        OUT.mkdir(parents=True,exist_ok=True)
-        write('validation.json',{'status':'FAIL','error':str(error),'commands':RECORDS})
+        if OUT is not None:
+            write('validation.json',{'status':'FAIL','error':str(error),'commands':RECORDS})
         raise

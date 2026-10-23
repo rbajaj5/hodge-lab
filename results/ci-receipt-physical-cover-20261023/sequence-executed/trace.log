@@ -1,0 +1,11 @@
+Fresh receipts: /workspace/scratch/b8974c152662/hodge-lab-pass/results/ci-receipt-physical-cover-20261023/sequence-executed/trace
+{"label": "version", "exit_code": 0, "seconds": 0.543773212000815}
+{"label": "mathlib-head", "exit_code": 0, "seconds": 0.0016951140005403431}
+{"label": "build", "exit_code": 0, "seconds": 6.857555765000143}
+{"label": "axioms", "exit_code": 0, "seconds": 2.2854568169987033}
+{"label": "kernel-replay", "exit_code": 0, "seconds": 4.466326817000663}
+{"label": "positive-controls", "exit_code": 0, "seconds": 2.089360480000323}
+{"label": "missing-leading-coefficient", "exit_code": 1, "seconds": 2.0161369369998283}
+{"label": "wrong-kernel-dimension", "exit_code": 1, "seconds": 2.0513497329993697}
+{"label": "trace-zero-means-zero", "exit_code": 1, "seconds": 1.9011802180011728}
+PASS: 56 declaration audits, three module kernel replays, seven positive and three negative controls

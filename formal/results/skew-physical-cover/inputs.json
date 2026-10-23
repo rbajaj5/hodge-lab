@@ -1,0 +1,48 @@
+{
+  "notebook_parent": "d29cd55b7c7e738ae84bec7da50c8c843877506d",
+  "upstream_commit": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+  "context_receipt_lf_sha256": {
+    "formal/results/skew-trace-basis/validation.json": "b46616fd57a0a5adde559c0022b56b9d0871264909221d2ce2c3b964320a116b"
+  },
+  "physical_source_pins": [
+    {
+      "path": "results/ci-receipt-physical-cover-20261023/inputs/context/comment-19129985.json",
+      "sha256": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f"
+    },
+    {
+      "path": "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/record.json",
+      "sha256": "a0c86d6d9cd25b8387a13104291879c14c14288fad39a23723ebf36ef7f8b300"
+    },
+    {
+      "path": "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/instance.rec",
+      "sha256": "3f693c1ead9f2849eda88348ddf74c5d22b783b0aaf09ca1e45c49dd5a18c026"
+    },
+    {
+      "path": "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/provenance.json",
+      "sha256": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477"
+    },
+    {
+      "path": "results/chi-target-source/inputs/data/one-reflection-skew/record.json",
+      "sha256": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183"
+    }
+  ],
+  "comment_body_sha256": "bbebae10b90520c5c3d4c6bd0a4f090c26a13bb5ae2feab45562a6589997b521",
+  "literal_equation_latex": "f(r)=r^{18}+r^{12}+(vr-1)^6-ar^{15}=0.",
+  "literal_definition_lean": "X ^ 18 + X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15",
+  "mathematical_scope": {
+    "formal_field": "arbitrary K with Field K",
+    "parameters": [
+      "a",
+      "v"
+    ],
+    "root_assumptions": [
+      "roots : Fin 18 -> K",
+      "Function.Injective roots",
+      "forall j, f.eval (roots j) = 0"
+    ],
+    "intended_base_field": "Q(a,v,t)",
+    "splitting_scope": "For the physical base, root data belongs to a splitting extension L/k; existence and distinctness are not established by this pass.",
+    "geometric_context": "Y0=1, X0 nonzero, r=X1/X0 nonzero, w=X2/X0, v=r^(-1)+r*w",
+    "verified_source_scope": "Literal author-reported cover equation pinned; current protected F/A/q equal historical chart source fields. No new derivation or differential-source normalization replay."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-10-23T17:10:22Z",
+  "wall_clock_budget_minutes": 90,
+  "new_mathematical_lemmas": 1,
+  "maximum_mathematical_approaches": 2,
+  "order": [
+    "CI receipt-lifecycle repair and affected-sequence verification",
+    "select and prove one physical-cover link",
+    "source/adversarial review, visualization, append-only ledger, publication"
+  ],
+  "process_limits": {
+    "network_seconds": 60,
+    "dependency_setup_total_seconds": 900,
+    "lean_process_seconds": 120,
+    "affected_checker_total_seconds": 600,
+    "new_lemma_checker_total_seconds": 600,
+    "python_controls_seconds": 60,
+    "ci_observation_minutes": 22
+  },
+  "publication": "rbajaj5/hodge-lab only; normal fast-forward; no force push or upstream activity",
+  "source_heads": {
+    "hodge_lab": "d29cd55b7c7e738ae84bec7da50c8c843877506d",
+    "sextics": "554757eca1aebecdd1d21f3452d3c71ffa601b19"
+  },
+  "capabilities": {
+    "specialist_agents": true,
+    "goal_mode_control": false,
+    "model_switch_control": false
+  },
+  "roles": {
+    "integration_ledger_publication": "root",
+    "receipt_implementation": "receipt_lifecycle",
+    "adversarial_source_review": "adversarial_review"
+  },
+  "status": "DECLARED_BEFORE_NEW_MATHEMATICAL_COMPUTATION"
+}
+

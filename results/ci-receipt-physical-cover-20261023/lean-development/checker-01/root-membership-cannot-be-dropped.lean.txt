@@ -1,0 +1,13 @@
+import HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open Polynomial HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : physicalPolynomial (0 : ℚ) 0 =
+    coverPolynomial 1 (fun j : Fin 18 => (j.val : ℚ)) := by
+  have hne : physicalPolynomial (0 : ℚ) 0 ≠ coverPolynomial 1 (fun j : Fin 18 => (j.val : ℚ)) := by
+    intro h
+    have he := congrArg (fun p : ℚ[X] => p.eval 0) h
+    have hr := cover_eval_root (1 : ℚ) (fun j : Fin 18 => (j.val : ℚ)) (0 : Fin 18)
+    norm_num only [Fin.val_zero, Nat.cast_zero] at hr
+    rw [hr] at he
+    norm_num [physicalPolynomial] at he
+  simp only [hne]

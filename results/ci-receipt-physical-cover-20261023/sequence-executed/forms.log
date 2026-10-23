@@ -1,0 +1,11 @@
+Fresh receipts: /workspace/scratch/b8974c152662/hodge-lab-pass/results/ci-receipt-physical-cover-20261023/sequence-executed/forms
+{"label": "version", "exit_code": 0, "seconds": 0.6965738859998964}
+{"label": "mathlib-head", "exit_code": 0, "seconds": 0.0022494129989354406}
+{"label": "build", "exit_code": 0, "seconds": 103.13538541199887}
+{"label": "axioms", "exit_code": 0, "seconds": 2.56153109799925}
+{"label": "kernel-replay", "exit_code": 0, "seconds": 2.6634779929991055}
+{"label": "positive-controls", "exit_code": 0, "seconds": 2.75704240199957}
+{"label": "wrong-orientation", "exit_code": 1, "seconds": 2.3664905490004458}
+{"label": "wrong-repeated-wedge", "exit_code": 1, "seconds": 2.5132149620003474}
+{"label": "wrong-reciprocal-sign", "exit_code": 1, "seconds": 2.410538190999432}
+PASS: 13 theorem audits, one kernel replay, five positive and three negative controls

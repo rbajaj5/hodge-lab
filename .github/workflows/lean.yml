@@ -6,11 +6,13 @@ on:
       - 'formal/**'
       - 'results/cyclic-fano-lean/**'
       - '.github/workflows/lean.yml'
+      - 'scripts/check_skew_physical_source.py'
   pull_request:
     paths:
       - 'formal/**'
       - 'results/cyclic-fano-lean/**'
       - '.github/workflows/lean.yml'
+      - 'scripts/check_skew_physical_source.py'
   workflow_dispatch:
 
 permissions:
@@ -57,12 +59,21 @@ jobs:
       - name: Check the constructed ambient coordinate derivation
         working-directory: formal
         run: python3 -O check_skew_ambient.py
+      - name: Check immutable and fresh receipt separation
+        working-directory: formal
+        run: timeout 60 python3 -O test_receipt_lifecycle.py
       - name: Check the actual differential-form reduction
         working-directory: formal
-        run: python3 -O check_skew_forms.py
+        run: python3 -O check_skew_forms.py --output-dir results/runs/ci-skew-forms
       - name: Check the split trace-free basis and normalization
         working-directory: formal
-        run: python3 -O check_skew_trace_basis.py
+        run: python3 -O check_skew_trace_basis.py --output-dir results/runs/ci-skew-trace-basis
+      - name: Bind the literal physical cover to pinned sources
+        working-directory: formal
+        run: timeout 60 python3 -O ../scripts/check_skew_physical_source.py --output-dir results/runs/ci-skew-physical-source
+      - name: Check the conditional physical-cover lemma
+        working-directory: formal
+        run: python3 -O check_skew_physical_cover.py --output-dir results/runs/ci-skew-physical-cover
       - name: Save concrete proof receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -84,8 +95,5 @@ jobs:
             formal/results/skew-residue/*.log
             formal/results/skew-ambient/*.json
             formal/results/skew-ambient/*.log
-            formal/results/skew-forms/*.json
-            formal/results/skew-forms/*.log
-            formal/results/skew-trace-basis/*.json
-            formal/results/skew-trace-basis/*.log
+            formal/results/runs/**
           if-no-files-found: error

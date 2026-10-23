@@ -1,0 +1,154 @@
+{
+  "status": "PASS_EXACT_SYMBOLIC_CONTROLS_AND_INDEPENDENT_PAPER_DERIVATION",
+  "reviewer": "physical_derivation, separate AI agent; no human review claimed",
+  "completed_utc": "2026-10-23T17:23:58.615791+00:00",
+  "approach_used": "1: monic degree18 plus pairwise-coprime root-factor divisibility",
+  "fallback_used": false,
+  "process_bound_seconds": 30,
+  "elapsed_seconds": 0.001674353999987943,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "command": "timeout 30 python3 -O - (execute the exact executed_python field)",
+  "executed_python": "# Exact Z[r,a,v] arithmetic, with exponent tuples in order (r,a,v).\nfrom math import comb\nZERO={}\nONE={(0,0,0):1}\nR={(1,0,0):1}\nA={(0,1,0):1}\nV={(0,0,1):1}\ndef add(p,q):\n    out=dict(p)\n    for k,c in q.items():\n        out[k]=out.get(k,0)+c\n    return {k:c for k,c in out.items() if c}\ndef scale(c,p):\n    return {k:c*x for k,x in p.items() if c*x}\ndef mul(p,q):\n    out={}\n    for e,c in p.items():\n        for f,d in q.items():\n            k=tuple(e[i]+f[i] for i in range(3))\n            out[k]=out.get(k,0)+c*d\n    return {k:c for k,c in out.items() if c}\ndef power(p,n):\n    out=ONE\n    for _ in range(n):\n        out=mul(out,p)\n    return out\ndef deriv(p):\n    return {(k[0]-1,k[1],k[2]):c*k[0] for k,c in p.items() if k[0]}\ndef eval_at(p,r,a,v):\n    return sum(c*r**k[0]*a**k[1]*v**k[2] for k,c in p.items())\ndef specialize(p,a,v):\n    out={}\n    for k,c in p.items():\n        d=(k[0],0,0)\n        out[d]=out.get(d,0)+c*a**k[1]*v**k[2]\n    return {k:c for k,c in out.items() if c}\ndef require(c,m):\n    if not c: raise RuntimeError(m)\nf=add(add(power(R,18),power(R,12)),add(power(add(mul(V,R),scale(-1,ONE)),6),scale(-1,mul(A,power(R,15)))))\nexpected={(18,0,0):1,(15,1,0):-1,(12,0,0):1}\nfor k in range(7):\n    expected[(k,0,k)]=comb(6,k)*(-1)**(6-k)\nrequire(f==expected,'Literal coefficient expansion mismatch')\nrequire(max(k[0] for k in f)==18 and f[(18,0,0)]==1,'Monic degree18 check failed')\ng=specialize(f,2,1)\nref=add(mul(power(R,12),power(add(power(R,3),scale(-1,ONE)),2)),power(add(R,scale(-1,ONE)),6))\nrequire(g==ref,'Degenerate specialization identity failed')\nrequire(eval_at(g,1,0,0)==0 and eval_at(deriv(g),1,0,0)==0 and eval_at(deriv(deriv(g)),1,0,0)==18,'Expected exactly double root control failed')\n# Root-membership omission: an injective tuple containing 0 cannot be the roots.\nrequire(eval_at(f,0,0,0)==1,'Root-membership omission control failed')\n# Injectivity omission: all eighteen entries may equal the verified root1.\nnodal_repeated=power(add(R,scale(-1,ONE)),18)\nrequire(add(g,scale(-1,nodal_repeated))[(17,0,0)]==18,'Injectivity omission control failed')\n# Lower-term mutation leaves monicity and degree unchanged, but not source identity.\nwrong_sign=add(f,scale(2,mul(A,power(R,15))))\nrequire(add(wrong_sign,scale(-1,f))=={(15,1,0):2},'Source coefficient mutation mismatch')\nrequire(max(k[0] for k in wrong_sign)==18 and wrong_sign[(18,0,0)]==1,'Source mutation changed leading term unexpectedly')\nwrong_leading=add(f,power(R,18))\nrequire(wrong_leading[(18,0,0)]==2,'Leading-coefficient mutation failed')\nresults={\n 'coefficient_table':{'18':'1','17':'0','16':'0','15':'-a','14':'0','13':'0','12':'1','11':'0','10':'0','9':'0','8':'0','7':'0','6':'v^6','5':'-6*v^5','4':'15*v^4','3':'-20*v^3','2':'15*v^2','1':'-6*v','0':'1'},\n 'expanded_sparse_terms':[{'r_power':k[0],'a_power':k[1],'v_power':k[2],'integer_coefficient':c} for k,c in sorted(f.items(),reverse=True)],\n 'degree':18,'leading_coefficient':'1',\n 'specialization':{'a':'2','v':'1','identity':'f(r)=r^12*(r^3-1)^2+(r-1)^6','f_at_1':'0','derivative_at_1':'0','second_derivative_at_1':'18','conclusion':'Exactly double root at r=1 over Q; this specialization is not separable.'},\n 'mutation_controls':[\n  {'mutation':'omit root membership; injective rational tuple 0,...,17','obstruction':'f(0)=1, while its nodal product vanishes at0'},\n  {'mutation':'omit injectivity; a=2,v=1, all rho_j=1','obstruction':'Each entry is a root, but coefficient of r^17 in f-(r-1)^18 is18 over Q'},\n  {'mutation':'replace -a*r^15 by +a*r^15','obstruction':'Difference 2*a*r^15 is nonzero symbolically; degree18 and leading coefficient1 are unchanged, so monicity alone does not bind the source'},\n  {'mutation':'replace r^18 by 2*r^18','obstruction':'Leading coefficient2; existing generic last trace would be1/2 after a valid distinct-root split, not1'}],\n 'dependencies':'Python standard library; exact integer arithmetic, no floating point'}\n",
+  "source_pins": {
+    "hodge_lab_parent": "d29cd55b7c7e738ae84bec7da50c8c843877506d",
+    "upstream_head": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+    "comment_url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985",
+    "comment_file_sha256": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f",
+    "comment_body_sha256": "bbebae10b90520c5c3d4c6bd0a4f090c26a13bb5ae2feab45562a6589997b521"
+  },
+  "results": {
+    "coefficient_table": {
+      "18": "1",
+      "17": "0",
+      "16": "0",
+      "15": "-a",
+      "14": "0",
+      "13": "0",
+      "12": "1",
+      "11": "0",
+      "10": "0",
+      "9": "0",
+      "8": "0",
+      "7": "0",
+      "6": "v^6",
+      "5": "-6*v^5",
+      "4": "15*v^4",
+      "3": "-20*v^3",
+      "2": "15*v^2",
+      "1": "-6*v",
+      "0": "1"
+    },
+    "expanded_sparse_terms": [
+      {
+        "r_power": 18,
+        "a_power": 0,
+        "v_power": 0,
+        "integer_coefficient": 1
+      },
+      {
+        "r_power": 15,
+        "a_power": 1,
+        "v_power": 0,
+        "integer_coefficient": -1
+      },
+      {
+        "r_power": 12,
+        "a_power": 0,
+        "v_power": 0,
+        "integer_coefficient": 1
+      },
+      {
+        "r_power": 6,
+        "a_power": 0,
+        "v_power": 6,
+        "integer_coefficient": 1
+      },
+      {
+        "r_power": 5,
+        "a_power": 0,
+        "v_power": 5,
+        "integer_coefficient": -6
+      },
+      {
+        "r_power": 4,
+        "a_power": 0,
+        "v_power": 4,
+        "integer_coefficient": 15
+      },
+      {
+        "r_power": 3,
+        "a_power": 0,
+        "v_power": 3,
+        "integer_coefficient": -20
+      },
+      {
+        "r_power": 2,
+        "a_power": 0,
+        "v_power": 2,
+        "integer_coefficient": 15
+      },
+      {
+        "r_power": 1,
+        "a_power": 0,
+        "v_power": 1,
+        "integer_coefficient": -6
+      },
+      {
+        "r_power": 0,
+        "a_power": 0,
+        "v_power": 0,
+        "integer_coefficient": 1
+      }
+    ],
+    "degree": 18,
+    "leading_coefficient": "1",
+    "specialization": {
+      "a": "2",
+      "v": "1",
+      "identity": "f(r)=r^12*(r^3-1)^2+(r-1)^6",
+      "f_at_1": "0",
+      "derivative_at_1": "0",
+      "second_derivative_at_1": "18",
+      "conclusion": "Exactly double root at r=1 over Q; this specialization is not separable."
+    },
+    "mutation_controls": [
+      {
+        "mutation": "omit root membership; injective rational tuple 0,...,17",
+        "obstruction": "f(0)=1, while its nodal product vanishes at0"
+      },
+      {
+        "mutation": "omit injectivity; a=2,v=1, all rho_j=1",
+        "obstruction": "Each entry is a root, but coefficient of r^17 in f-(r-1)^18 is18 over Q"
+      },
+      {
+        "mutation": "replace -a*r^15 by +a*r^15",
+        "obstruction": "Difference 2*a*r^15 is nonzero symbolically; degree18 and leading coefficient1 are unchanged, so monicity alone does not bind the source"
+      },
+      {
+        "mutation": "replace r^18 by 2*r^18",
+        "obstruction": "Leading coefficient2; existing generic last trace would be1/2 after a valid distinct-root split, not1"
+      }
+    ],
+    "dependencies": "Python standard library; exact integer arithmetic, no floating point"
+  },
+  "proof": "All summands other than X^18 have degree at most15; hence f is monic of degree18. Every X-rho_j divides f by the root hypothesis. Injectivity makes these monic linear factors pairwise coprime, so their product g divides f. Since g and f are monic of degree18, the quotient is the constant1. Thus f=g=coverPolynomial1 rho.",
+  "hypotheses": [
+    "K is a field",
+    "a,v are arbitrary elements of K",
+    "rho:Fin18->K is injective",
+    "f.eval(rho_j)=0 for every j"
+  ],
+  "physical_chart_context": [
+    "Canonical representative Y0=1",
+    "Recovering r=X1/X0 and w=X2/X0 requires X0 nonzero",
+    "The v=r^(-1)+r*w change requires r nonzero",
+    "Intended original coefficient field k=Q(a,v,t); take a suitable splitting extension L/k before supplying rho"
+  ],
+  "limits": [
+    "No proof of existence of eighteen distinct roots over the original physical coefficient field",
+    "No generic separability proof; the degenerate specialization is a negative control only",
+    "rho is not assumed to lie in k=Q(a,v,t)",
+    "No chart derivation, physical differential/source normalization, descent, primitive, clearing, HasCertificate, or target solve",
+    "Symbolic coefficient and specialization checks are external exact checks, not Lean compilation or kernel replay"
+  ]
+}

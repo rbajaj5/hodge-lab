@@ -1,0 +1,19 @@
+{
+  "status": "GENERATED",
+  "generator": "scripts/visualize_skew_physical_cover.py",
+  "generator_sha256": "ac09c58d772b733e3241681c351bff1d01ebe4d786c07190f837f693d243c44d",
+  "matplotlib": "3.10.8",
+  "input_sha256": {
+    "results/ci-receipt-physical-cover-20261023/sequence-executed/sequence.json": "a7a611d7df85ced32ffe448be077cb5512654bdb6082c0cf9faad97a99b92431",
+    "results/ci-receipt-physical-cover-20261023/sequence-executed/forms/validation.json": "4b261c6d7bb9cf6236de87e265fae9b827a7a8e95f336bb1c551967b285433f3",
+    "results/ci-receipt-physical-cover-20261023/sequence-executed/trace/validation.json": "193b5e2fe50f05910b2327e852a550174ca9573947db0e5d9fd67de8f370302d",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json": "b12036f10e69df667c85c15573b20fe57ec92ab8ec98024b932b9b49f25abff6",
+    "results/ci-receipt-physical-cover-20261023/physical-source/validation.json": "be01dedce728f5e28d713660a3e01c31b2f95ab4295df1a3ea9db8fc90041bb5",
+    "results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json": "83eddfdd118095a73e2cd9a978e37b75db09ec42abad841ec5b01b6b5bfe5840"
+  },
+  "output_sha256": {
+    "visualizations/skew-physical-cover-binding.png": "db6aaa724d1b339fb8f63a0e8c4c1e620fd4468284f4b861c901110818f70f5d",
+    "visualizations/skew-physical-cover-binding.svg": "e1276edf76618fbbce512846a117bb150f1d9836e30f7cac23c459813b86e67d"
+  },
+  "scope": "Receipt separation, exact coefficient support, conditional binding, split traces and repeated-root control; not independent proof evidence."
+}

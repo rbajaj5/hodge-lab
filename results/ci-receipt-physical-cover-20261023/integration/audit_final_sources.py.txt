@@ -1,0 +1,206 @@
+"""Read-only final source/receipt audit. Does not execute Lean or research checks.
+
+Usage: python3 -O audit_final_sources.py PATH_TO_PATCHED_REPOSITORY
+Prints a JSON receipt to stdout. Requires the pinned base Git object locally.
+"""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import re
+import subprocess
+import sys
+
+BASE = 'd29cd55b7c7e738ae84bec7da50c8c843877506d'
+ROOT = Path(sys.argv[1]).resolve()
+BATCH = ROOT / 'results/ci-receipt-physical-cover-20261023'
+
+
+def require(ok, message):
+    if not ok:
+        raise RuntimeError(message)
+
+
+def digest(path, lf=False):
+    raw = path.read_bytes()
+    return hashlib.sha256(raw.replace(b'\r\n', b'\n') if lf else raw).hexdigest()
+
+
+def read(path):
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def git(*args):
+    return subprocess.check_output(['git', *args], cwd=ROOT)
+
+
+checked_pins = 0
+checked_logs = 0
+
+
+def check_map(pins, root=ROOT, lf=False):
+    global checked_pins
+    for name, expected in pins.items():
+        require(digest(root / name, lf) == expected, 'Changed pinned file: ' + name)
+        checked_pins += 1
+
+
+history = read(BATCH / 'historical-files-sha256.json')
+base_history = {p for p in git('ls-tree', '-r', '--name-only', BASE, '--',
+                             'formal/results', 'results').decode().splitlines()}
+require(set(history) == base_history, 'Historical manifest does not cover the pinned base')
+check_map(history)
+old_ledger = git('show', BASE + ':LEDGER.md')
+append = (BATCH / 'LEDGER.append.md').read_bytes()
+require((ROOT / 'LEDGER.md').read_bytes() == old_ledger + append, 'Ledger is not an exact append')
+ledger = read(BATCH / 'ledger-preservation.json')
+require(hashlib.sha256(old_ledger).hexdigest() == ledger['original_sha256'], 'Base ledger hash mismatch')
+require(hashlib.sha256(append).hexdigest() == ledger['append_sha256'], 'Append hash mismatch')
+
+seq = read(BATCH / 'sequence-executed/sequence.json')
+require(seq['status'] == 'PASS', 'Affected sequence did not pass')
+workflow = (ROOT / '.github/workflows/lean.yml').read_text(encoding='utf-8')
+addition = '''      - name: Bind the literal physical cover to pinned sources
+        working-directory: formal
+        run: timeout 60 python3 -O ../scripts/check_skew_physical_source.py --output-dir results/runs/ci-skew-physical-source
+      - name: Check the conditional physical-cover lemma
+        working-directory: formal
+        run: python3 -O check_skew_physical_cover.py --output-dir results/runs/ci-skew-physical-cover
+'''
+require(workflow.count(addition) == 1, 'Unexpected physical workflow additions')
+require(workflow.count("      - 'scripts/check_skew_physical_source.py'\n") == 2,
+        'Unexpected physical source path filters')
+prior_workflow = workflow.replace(addition, '').replace(
+    "      - 'scripts/check_skew_physical_source.py'\n", '')
+require(hashlib.sha256(prior_workflow.encode()).hexdigest() ==
+        seq['source_sha256']['.github/workflows/lean.yml'],
+        'Affected workflow steps changed after the successful sequence')
+check_map({k:v for k,v in seq['source_sha256'].items() if k != '.github/workflows/lean.yml'})
+for command in seq['commands']:
+    require(digest(BATCH / 'sequence-executed' / command['log']) == command['log_sha256'],
+            'Changed sequence log')
+    require(command['exit_code'] == 0, 'Unexpected sequence command failure')
+    checked_logs += 1
+
+receipt_paths = ['sequence-executed/forms/validation.json',
+                 'sequence-executed/trace/validation.json',
+                 'lean-development/checker-01/validation.json']
+receipts = []
+allowed_axioms = {'propext', 'Classical.choice', 'Quot.sound'}
+for relative in receipt_paths:
+    path = BATCH / relative
+    data = read(path)
+    require(data['status'] == 'PASS', 'Missing PASS: ' + relative)
+    check_map(data['source_lf_sha256'], ROOT / 'formal', lf=True)
+    check_map(data.get('reused_source_lf_sha256', {}), ROOT / 'formal', lf=True)
+    check_map(data.get('physical_source_sha256', {}))
+    check_map(data.get('historical_context_lf_sha256', {}), lf=True)
+    for axioms in data.get('declaration_axioms', data.get('theorem_axioms', {})).values():
+        require(set(axioms) <= allowed_axioms, 'Unapproved audited axiom')
+    for command in data['commands']:
+        require(digest(path.parent / command['log'], lf=True) == command['log_lf_sha256'],
+                'Changed checker log: ' + relative + '/' + command['log'])
+        require(command['exit_code'] == (1 if command['expected_failure'] else 0),
+                'Unexpected checker command exit')
+        checked_logs += 1
+    receipts.append({'path': str(path.relative_to(ROOT)), 'sha256': digest(path),
+                     'status': data['status'], 'elapsed_seconds': data['elapsed_seconds']})
+
+forms, trace, physical = [read(BATCH / p) for p in receipt_paths]
+check_map({k:v for k,v in forms['input_lf_sha256'].items() if k != 'inputs.json'}, lf=True)
+require(digest(ROOT / 'formal/results/skew-forms/inputs.json', True) ==
+        forms['input_lf_sha256']['inputs.json'], 'Forms input manifest changed')
+require(digest(ROOT / 'formal/results/skew-ambient/validation.json', True) ==
+        forms['prior_receipt_lf_sha256'], 'Forms prior receipt changed')
+for label, receipt in [('skew-trace-basis', trace), ('skew-physical-cover', physical)]:
+    path = ROOT / 'formal/results' / label / 'inputs.json'
+    require(digest(path, True) == receipt['inputs_lf_sha256'], 'Input manifest changed: ' + label)
+    check_map(read(path)['context_receipt_lf_sha256'], lf=True)
+
+source = read(BATCH / 'physical-source/validation.json')
+require(source['status'] == 'PASS', 'Source gate did not pass')
+check_map(source['source_sha256'])
+for relative, key in [('source-review/review.json', 'reviewed_files_sha256'),
+                      ('source-review/source-gate-review.json', 'reviewed_sha256')]:
+    check_map(read(BATCH / relative)[key])
+review = read(BATCH / 'source-review/checker-review.json')
+require(digest(ROOT / review['actual_execution_receipt']) ==
+        review['actual_execution_receipt_sha256'], 'Reviewed execution receipt changed')
+require(digest(ROOT / 'formal/check_skew_physical_cover.py') ==
+        review['checker_sha256'], 'Reviewed checker changed')
+visual = read(BATCH / 'visualization.json')
+check_map(visual['input_sha256'])
+check_map(visual['output_sha256'])
+require(digest(ROOT / visual['generator']) == visual['generator_sha256'], 'Figure generator changed')
+for pin in read(BATCH / 'source-pins.json')['pins']:
+    raw = (BATCH / 'inputs/upstream' / pin['path']).read_bytes()
+    require(hashlib.sha256(raw).hexdigest() == pin['sha256'], 'Upstream snapshot changed')
+    blob = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
+    require(blob == pin['git_blob'], 'Upstream Git blob mismatch')
+
+changed = git('diff', '--name-only', BASE).decode().splitlines()
+require(set(changed) <= {'.github/workflows/lean.yml', 'LEDGER.md',
+                         'formal/check_skew_forms.py', 'formal/check_skew_trace_basis.py'}
+        or all(p in history or not git('ls-tree', BASE, '--', p) for p in changed
+               if p not in {'.github/workflows/lean.yml', 'LEDGER.md',
+                            'formal/check_skew_forms.py', 'formal/check_skew_trace_basis.py'}),
+        'Unexpected modification of a base file')
+candidates = set(changed) | set(git('ls-files', '--others', '--exclude-standard').decode().splitlines())
+text_count = 0
+for relative in sorted(candidates):
+    path = ROOT / relative
+    require(path.is_file() and not path.is_symlink(), 'Unexpected non-regular delivery file')
+    if path.suffix != '.png':
+        path.read_bytes().decode('utf-8', errors='strict')
+        text_count += 1
+    require('.lake' not in path.parts and '__pycache__' not in path.parts, 'Build cache in delivery')
+allowed_whitespace_files = {
+    'results/ci-receipt-physical-cover-20261023/bootstrap-ci-run.json',
+    'results/ci-receipt-physical-cover-20261023/bootstrap-hodge-lab-head.json',
+    'results/ci-receipt-physical-cover-20261023/bootstrap-sextics-head.json',
+    'results/ci-receipt-physical-cover-20261023/environment/install-lean-4.31.0.log',
+    'results/ci-receipt-physical-cover-20261023/original-ci-job.json',
+    'results/ci-receipt-physical-cover-20261023/original-ci-job.log',
+    'results/ci-receipt-physical-cover-20261023/plan.json',
+    'results/ci-receipt-physical-cover-20261023/sequence/forms.log',
+    'visualizations/skew-physical-cover-binding.svg',
+}
+full_diff = subprocess.run(['git', 'diff', '--check', BASE], cwd=ROOT,
+                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=30)
+require(full_diff.returncode in (0, 2), 'Full diff inspection failed')
+warning_counts = {}
+for line in full_diff.stdout.decode('utf-8').splitlines():
+    if line.startswith('+'):
+        continue
+    match = re.fullmatch(r'(.+?):[0-9]+: (trailing whitespace\.|new blank line at EOF\.)', line)
+    require(match is not None and match.group(1) in allowed_whitespace_files,
+            'Unexpected diff diagnostic: ' + line)
+    name = match.group(1)
+    warning_counts[name] = warning_counts.get(name, 0) + 1
+source_diff = ['git', 'diff', '--check', BASE, '--', '.'] + [
+    ':(exclude)' + name for name in sorted(allowed_whitespace_files)]
+subprocess.run(source_diff, cwd=ROOT, check=True, timeout=30)
+
+print(json.dumps({
+    'status': 'PASS', 'completed_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Read-only final packaging/source audit; no research or Lean check rerun.',
+    'base': BASE, 'script_sha256': digest(Path(__file__)),
+    'command': [sys.executable] + (['-O'] if sys.flags.optimize else []) +
+               [str(Path(__file__).resolve()), str(ROOT)],
+    'cwd': str(Path.cwd()),
+    'historical_result_files_unchanged': len(history),
+    'ledger_original_bytes': len(old_ledger), 'ledger_append_bytes': len(append),
+    'ledger_original_sha256': hashlib.sha256(old_ledger).hexdigest(),
+    'ledger_append_sha256': hashlib.sha256(append).hexdigest(),
+    'pinned_hash_comparisons': checked_pins, 'matched_command_logs': checked_logs,
+    'utf8_text_files_checked': text_count, 'authored_source_diff_check': 'PASS',
+    'full_diff_check': {'exit_code': full_diff.returncode,
+                        'warning_files': warning_counts,
+                        'output_sha256': hashlib.sha256(full_diff.stdout).hexdigest(),
+                        'disposition': 'Preserved captured evidence and generated SVG bytes; no whitespace correction applied.'},
+    'workflow_sequence_relation': 'Exact recorded workflow after removal only of the two physical steps and two source-script path filters.',
+    'current_workflow_sha256': digest(ROOT / '.github/workflows/lean.yml'),
+    'executed_receipts_reused': receipts,
+    'review_attribution': 'Existing AI review retained; this is an integration hash audit, not a new independent proof review.',
+    'commit_or_push_performed': False,
+}, indent=2))

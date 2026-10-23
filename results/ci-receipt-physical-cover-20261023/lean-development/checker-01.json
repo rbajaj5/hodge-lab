@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "-O",
+    "check_skew_physical_cover.py",
+    "--output-dir",
+    "../results/ci-receipt-physical-cover-20261023/lean-development/checker-01"
+  ],
+  "cwd": "formal",
+  "exit_code": 0,
+  "elapsed_seconds": 20.823276639999676,
+  "outer_timeout_seconds": 610,
+  "completed_utc": "2026-10-23T17:26:27.420163+00:00",
+  "checker_sha256": "4219eaac7dfdbad127bb4ff579a53da214ef20ae110685844a47430a93fbd0df",
+  "log_sha256": "da5445600cb27f9240dcac7b1360036ae9884eef74514b1964bda556b342f43f"
+}

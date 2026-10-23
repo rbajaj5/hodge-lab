@@ -1,0 +1,16 @@
+Fresh receipts: /workspace/scratch/b8974c152662/hodge-lab-pass/results/ci-receipt-physical-cover-20261023/sequence/forms
+{"label": "version", "exit_code": 1, "seconds": 0.08060085600118327}
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-pass/formal/check_skew_forms.py", line 161, in <module>
+    try: main()
+         ^^^^^^
+  File "/workspace/scratch/b8974c152662/hodge-lab-pass/formal/check_skew_forms.py", line 87, in main
+    version=run('version',['lake','env','lean','--version'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/hodge-lab-pass/formal/check_skew_forms.py", line 58, in run
+    require(code==0,label+' failed: '+log[:1800])
+  File "/workspace/scratch/b8974c152662/hodge-lab-pass/formal/check_skew_extension.py", line 26, in require
+    if not c:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: version failed: error: could not detect the configuration of the Lake installation
+

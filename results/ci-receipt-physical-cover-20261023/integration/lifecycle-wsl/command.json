@@ -1,0 +1,16 @@
+{
+  "command": [
+    "wsl.exe",
+    "--cd",
+    "/mnt/c/Users/anaxe/Documents/Codex/hl-cover-20261023/formal",
+    "-e",
+    "timeout",
+    "60",
+    "python3",
+    "-O",
+    "test_receipt_lifecycle.py"
+  ],
+  "exit_code": 0,
+  "seconds": 10.125,
+  "scope": "Coordinator execution of receipt lifecycle controls; no Lean execution"
+}

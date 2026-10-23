@@ -1,0 +1,306 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-23T17:26:27.410321+00:00",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "check_skew_physical_cover.py": "4219eaac7dfdbad127bb4ff579a53da214ef20ae110685844a47430a93fbd0df",
+    "AuditSkewPhysicalCover.lean": "f18fddd3304b9ba41b1c8a5443ae073967786ef214884ef2aa2217aa541a45f0",
+    "ReplaySkewPhysicalCover.lean": "96abdcf9700f72ade4d12a9e653ddf2cc2f7be061bde2b3378b5ee8fdee137e5",
+    "HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b"
+  },
+  "reused_source_lf_sha256": {
+    "HodgeLab/OneReflectionSkew/TraceKernel.lean": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+    "HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+    "HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8"
+  },
+  "inputs_lf_sha256": "6e091298c7e09c7f34af5638cb685cac8dfa48a05e9433756737056c38453472",
+  "physical_source_sha256": {
+    "results/ci-receipt-physical-cover-20261023/inputs/context/comment-19129985.json": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/record.json": "a0c86d6d9cd25b8387a13104291879c14c14288fad39a23723ebf36ef7f8b300",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "3f693c1ead9f2849eda88348ddf74c5d22b783b0aaf09ca1e45c49dd5a18c026",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+    "results/chi-target-source/inputs/data/one-reflection-skew/record.json": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183"
+  },
+  "historical_context_lf_sha256": {
+    "formal/results/skew-trace-basis/validation.json": "b46616fd57a0a5adde559c0022b56b9d0871264909221d2ce2c3b964320a116b"
+  },
+  "declaration_axioms": {
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physicalPolynomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.lower_terms_degree_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_monic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_leading_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_eq_split_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_trace_last": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_trace_slot_eleven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.7585059169996384,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "execution_command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.0029938839998067124,
+      "expected_failure": false,
+      "log": "mathlib-head.log",
+      "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.PhysicalCoverBinding"
+      ],
+      "execution_command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.PhysicalCoverBinding"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 3.37815461199898,
+      "expected_failure": false,
+      "log": "build.log",
+      "log_lf_sha256": "35acfc2349a5b5f25a7d47741187eab6c0adef3f659f5de0bd38b0838dff7873"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewPhysicalCover.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewPhysicalCover.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.4889687089998915,
+      "expected_failure": false,
+      "log": "axioms.log",
+      "log_lf_sha256": "d6eedee858953bf85345c36c456b91f7063c3b63b26b8c8560d305ffa54af643"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewPhysicalCover.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewPhysicalCover.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.372648239999762,
+      "expected_failure": false,
+      "log": "kernel-replay.log",
+      "log_lf_sha256": "e1a99ba9610220526c0247dfa12fda8579eaeb527e0f02b264873e9b81fbdbc4"
+    },
+    {
+      "label": "positive-controls",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/positive-controls.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/positive-controls.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.708490750999772,
+      "expected_failure": false,
+      "log": "positive-controls.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "parameter-is-not-leading-coefficient",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/parameter-is-not-leading-coefficient.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/parameter-is-not-leading-coefficient.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.105164913000408,
+      "expected_failure": true,
+      "log": "parameter-is-not-leading-coefficient.log",
+      "log_lf_sha256": "087decc85c353c3ef0800dd35c688ff1af797ef48b0e8c4fee4a2b70a2dc1011"
+    },
+    {
+      "label": "distinctness-cannot-be-dropped",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/distinctness-cannot-be-dropped.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/distinctness-cannot-be-dropped.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.367274169000666,
+      "expected_failure": true,
+      "log": "distinctness-cannot-be-dropped.log",
+      "log_lf_sha256": "db3461081ce2bb06e6a8b93a946302cfe036536959090e8a24d5ed78b542a7c9"
+    },
+    {
+      "label": "root-membership-cannot-be-dropped",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/root-membership-cannot-be-dropped.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/root-membership-cannot-be-dropped.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.221634704999815,
+      "expected_failure": true,
+      "log": "root-membership-cannot-be-dropped.log",
+      "log_lf_sha256": "58d05b404c48b3dee1407b2accbb22aab2e8d8a1b3bbc7b749c2a727bd2d5be9"
+    },
+    {
+      "label": "specializations-not-always-simple",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/specializations-not-always-simple.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-physical-cover-controls/specializations-not-always-simple.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.3604915239993716,
+      "expected_failure": true,
+      "log": "specializations-not-always-simple.log",
+      "log_lf_sha256": "bfc14df4324fd65c9c2a86975c7f6fa45a65f1223d45572699b4d60bcc8b0497"
+    }
+  ],
+  "elapsed_seconds": 20.775412569000764,
+  "total_budget_seconds": 600,
+  "new_declarations_audited": 8,
+  "new_modules_replayed": 1,
+  "positive_controls": 9,
+  "negative_controls": 4,
+  "artifact_sha256": {
+    "HodgeLab.OneReflectionSkew.PhysicalCoverBinding": "305198dfed7ebbd452b9f84d595ced1160a84e1a74d787973906b454bad86b0e"
+  },
+  "scope": "One conditional literal-polynomial to full split-cover binding, degree/monicity helpers and reuse of two split trace formulas.",
+  "limits": [
+    "Arbitrary field K; parameters a,v; 18 explicitly distinct roots and root membership required",
+    "No proof that root hypotheses hold over Q(a,v,t), or any specified splitting extension",
+    "No separability, descent, physical differential source normalization, primitive or certificate",
+    "Two trace corollaries reuse prior basis proofs; slot11 is not identified with the physical source",
+    "Mathlib and prior proof imports are not newly kernel-replayed",
+    "Physical file hashes are provenance only; the separate source checker binds the literal definition"
+  ]
+}

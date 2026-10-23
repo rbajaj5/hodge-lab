@@ -1,0 +1,60 @@
+{
+  "status": "AI_SOURCE_REVIEW_NO_BLOCKING_DEFECT_FOUND",
+  "reviewer": "ChatGPT adversarial_review specialist; source review separate from mathematical derivation and Lean implementation; not human review",
+  "completed_utc": "2026-10-23T17:25:28.290193+00:00",
+  "notebook_parent": "d29cd55b7c7e738ae84bec7da50c8c843877506d",
+  "upstream_commit": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+  "reviewed_files_sha256": {
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "formal/AuditSkewPhysicalCover.lean": "f18fddd3304b9ba41b1c8a5443ae073967786ef214884ef2aa2217aa541a45f0",
+    "formal/ReplaySkewPhysicalCover.lean": "96abdcf9700f72ade4d12a9e653ddf2cc2f7be061bde2b3378b5ee8fdee137e5",
+    "results/skew-cover-followup-19129985/comment-19129985.json": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f",
+    "results/chi-target-source/inputs/data/one-reflection-skew/record.json": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183"
+  },
+  "live_target_record_sha256": "a0c86d6d9cd25b8387a13104291879c14c14288fad39a23723ebf36ef7f8b300",
+  "source_comment_url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985",
+  "source_comment_body_sha256": "bbebae10b90520c5c3d4c6bd0a4f090c26a13bb5ae2feab45562a6589997b521",
+  "checks": {
+    "saved_comment_body_digest_matches": true,
+    "literal_comment_formula_present": "f(r)=r^{18}+r^{12}+(vr-1)^6-ar^{15}=0.",
+    "literal_lean_definition_matches_reviewed_formula": "X ^ 18 + X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15",
+    "current_vs_historical_protected_fields_equal": {
+      "F": true,
+      "A": true,
+      "q": true
+    },
+    "statement_has_injective_Fin18_roots_and_all_root_equations": true,
+    "strategy": "18 distinct linear root factors divide the monic degree-18 polynomial; monicity and equal degree give equality; trace corollaries reuse existing split theorem.",
+    "new_Lean_compilation_by_this_reviewer": false,
+    "physical_chart_or_source_transport_replayed_by_this_reviewer": false
+  },
+  "exact_negative_control": {
+    "purpose": "Dropping injectivity makes the asserted factorization false, despite all 18 root equations.",
+    "field": "Q",
+    "a": 2,
+    "v": 1,
+    "roots": "constant tuple rho_j=1",
+    "f_at_1": 0,
+    "evaluation_witness": 2,
+    "f_at_2": 200705,
+    "product_at_2": 1,
+    "difference": 200704,
+    "execution": "Pure Python integer arithmetic under timeout 5; completed exit 0."
+  },
+  "scope": [
+    "The formal theorem is conditional in a field K containing the supplied roots; no root existence or separability theorem is proved.",
+    "For physical base k=Q(a,v,t), the intended application uses a splitting extension L/k, with a and v mapped into L. This pass does not prove distinctness there or descend to k.",
+    "The rational chart interpretation uses Y0=1, X0!=0 for r=X1/X0 and w=X2/X0, and r!=0 for v=r^-1+r*w. The formal polynomial identity itself does not require these chart assumptions.",
+    "The base parameter a is not the leading coefficient; the literal polynomial has leading coefficient 1.",
+    "The slot-eleven corollary is an algebra trace identity, not a proof of the physical differential-source normalization, exactness, primitive, clearing, certificate, or target solve.",
+    "Exact equality of protected F/A/q fields establishes unchanged target data, not a new derivation of the cover from the target.",
+    "Historical nine-identity calculations are read as prior evidence and not rerun or counted as new results."
+  ],
+  "resource_limits": {
+    "review_wall_budget_minutes": 20,
+    "source_check_command_seconds": 15,
+    "negative_control_command_seconds": 5,
+    "new_math_approach_count_by_reviewer": 0
+  },
+  "writes": "Only this new source-review receipt; no ledger edits, commits, pushes, or upstream actions."
+}

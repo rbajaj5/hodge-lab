@@ -1,0 +1,12 @@
+Fresh receipts: /workspace/scratch/b8974c152662/hodge-lab-pass/results/ci-receipt-physical-cover-20261023/lean-development/checker-01
+{"label": "version", "exit_code": 0, "seconds": 0.7585059169996384}
+{"label": "mathlib-head", "exit_code": 0, "seconds": 0.0029938839998067124}
+{"label": "build", "exit_code": 0, "seconds": 3.37815461199898}
+{"label": "axioms", "exit_code": 0, "seconds": 2.4889687089998915}
+{"label": "kernel-replay", "exit_code": 0, "seconds": 2.372648239999762}
+{"label": "positive-controls", "exit_code": 0, "seconds": 2.708490750999772}
+{"label": "parameter-is-not-leading-coefficient", "exit_code": 1, "seconds": 2.105164913000408}
+{"label": "distinctness-cannot-be-dropped", "exit_code": 1, "seconds": 2.367274169000666}
+{"label": "root-membership-cannot-be-dropped", "exit_code": 1, "seconds": 2.221634704999815}
+{"label": "specializations-not-always-simple", "exit_code": 1, "seconds": 2.3604915239993716}
+PASS: 8 declaration audits, one new-module kernel replay, nine positive and four negative controls

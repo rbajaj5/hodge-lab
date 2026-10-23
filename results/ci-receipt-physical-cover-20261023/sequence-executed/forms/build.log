@@ -1,0 +1,31 @@
+✔ [2007/2018] Built HodgeLab.RowCertificate (4.9s)
+✔ [2008/2018] Built HodgeLab.SparsePolynomial (5.4s)
+⚠ [2009/2018] Built HodgeLab.OneReflectionSkew.CoordinateComparison (5.9s)
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:63:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [2010/2018] Built HodgeLab.OneReflectionSkew.ThreeCoefficient (64s)
+warning: HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:91:23: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2011/2018] Built HodgeLab.OneReflectionSkew.DegreeFour (4.2s)
+✔ [2012/2018] Built HodgeLab.OneReflectionSkew.ChartSubstitution (1.0s)
+✔ [2013/2018] Built HodgeLab.OneReflectionSkew.CoordinateVolume (3.8s)
+✔ [2014/2018] Built HodgeLab.OneReflectionSkew.VolumeDensity (1.6s)
+✔ [2015/2018] Built HodgeLab.OneReflectionSkew.NormalChart (3.7s)
+✔ [2016/2018] Built HodgeLab.OneReflectionSkew.ResidueNormalization (1.0s)
+✔ [2017/2018] Built HodgeLab.OneReflectionSkew.AmbientDerivation (4.5s)
+✔ [2018/2018] Built HodgeLab.OneReflectionSkew.DifferentialForms (10s)
+Build completed successfully (2018 jobs).

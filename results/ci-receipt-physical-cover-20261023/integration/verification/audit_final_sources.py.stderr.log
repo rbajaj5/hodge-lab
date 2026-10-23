@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\anaxe\Documents\Codex\pro-handoff-20261023\hodge-lab-ci-physical-cover-20261023\audit_final_sources.py", line 52, in <module>
+    check_map(history)
+  File "C:\Users\anaxe\Documents\Codex\pro-handoff-20261023\hodge-lab-ci-physical-cover-20261023\audit_final_sources.py", line 44, in check_map
+    require(digest(root / name, lf) == expected, 'Changed pinned file: ' + name)
+  File "C:\Users\anaxe\Documents\Codex\pro-handoff-20261023\hodge-lab-ci-physical-cover-20261023\audit_final_sources.py", line 21, in require
+    raise RuntimeError(message)
+RuntimeError: Changed pinned file: formal/results/ReplayConcrete.executed.txt

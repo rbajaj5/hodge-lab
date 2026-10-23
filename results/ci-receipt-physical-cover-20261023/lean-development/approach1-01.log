@@ -1,0 +1,8 @@
+HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean:43:11: error: Type mismatch
+  (X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15).degree
+has type
+  WithBot ℕ
+but is expected to have type
+  ℕ
+HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean:44:10: error(lean.unknownIdentifier): Unknown identifier `degree_lt_of_natDegree_lt`
+HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean:45:78: error(lean.unknownIdentifier): Unknown identifier `h`

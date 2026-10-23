@@ -1,0 +1,25 @@
+import HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open Polynomial HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+
+example {K : Type*} [Field K] (a v : K) : physicalPolynomial a v =
+    X ^ 18 + X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15 := rfl
+example : (physicalPolynomial (0 : ℚ) 0).natDegree = 18 := physical_degree 0 0
+example : (physicalPolynomial (2 : ℚ) 1).leadingCoeff = 1 := physical_leading_coefficient 2 1
+example : (physicalPolynomial (2 : ℚ) 1).eval 1 = 0 := by norm_num [physicalPolynomial]
+example : (physicalPolynomial (2 : ℚ) 1).derivative.eval 1 = 0 := by
+  norm_num [physicalPolynomial, derivative_pow]
+example : (physicalPolynomial (2 : ℚ) 1).eval 2 = 200705 := by norm_num [physicalPolynomial]
+example {K : Type*} [Field K] (a v : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (hroot : ∀ j, (physicalPolynomial a v).eval (roots j) = 0) :
+    physicalPolynomial a v = coverPolynomial 1 roots := physical_eq_split_cover a v roots hr hroot
+example {K : Type*} [Field K] (a v : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (hroot : ∀ j, (physicalPolynomial a v).eval (roots j) = 0) :
+    Algebra.trace K (SplitAlgebra K)
+      (fun j => roots j ^ 17 / (physicalPolynomial a v).derivative.eval (roots j)) = 1 :=
+  physical_trace_last a v roots hr hroot
+example {K : Type*} [Field K] (a v : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots) (hroot : ∀ j, (physicalPolynomial a v).eval (roots j) = 0) :
+    Algebra.trace K (SplitAlgebra K)
+      (fun j => roots j ^ 11 / (physicalPolynomial a v).derivative.eval (roots j)) = 0 :=
+  physical_trace_slot_eleven a v roots hr hroot

@@ -1,0 +1,23 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 0.08060085600118327,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dfce1e7d6849bcb01696e698fae3345a66f15495d7e36f99ac1293476a5bd045"
+  }
+]

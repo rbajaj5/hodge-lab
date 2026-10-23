@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-23T21:26:13.684808+00:00",
+  "coordinator_chat": "01a145f0-1bc3-7321-8c36-83a883bf061f",
+  "pro_chat": "https://chatgpt.com/c/6adb94ec-665c-8325-9a4b-2b4237c63f19",
+  "base": "d29cd55b7c7e738ae84bec7da50c8c843877506d",
+  "pro_handoff_tree": "1f4cbe9971b94342254b365694eec1786a109ec1",
+  "zip_sha256": "74ed783c92dfa32bf66c920bd080622f595fa5d1fe05fb4c6434020e3f6b4d4e",
+  "patch_sha256": "1f1a02832ab32a0738252e1845f5dd45326f1dd634a1ab185df82b012868e2ac",
+  "historical_result_files_unchanged": 2862,
+  "prior_ledger_bytes_preserved": 379790,
+  "pro_append_bytes_preserved": 5818,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "coordinator_executed": [
+    "delivery byte audit: 124 changed files, 66 references, 2862 historical files",
+    "source/log/hash audit: 2951 pins, 31 logs, 123 UTF-8 texts at exact handoff tree",
+    "source binding and 5 mutation controls under Python -O",
+    "receipt-lifecycle regression under Python -O in WSL; explicit stop before Lean"
+  ],
+  "pro_executed_reused": [
+    "forms checker",
+    "trace-basis checker",
+    "new physical-cover Lean checker",
+    "integer polynomial controls"
+  ],
+  "coordinator_did_not_execute": [
+    "Lean build or kernel replay",
+    "new mathematics or separability proof",
+    "full remote CI before push"
+  ],
+  "visualization_inspected": true,
+  "publication_status": "not yet pushed; remote CI will be recorded separately",
+  "upstream_publication": false,
+  "line_ending_resolution": "Exact Git index bytes restored only in newly created isolated integration clone. Existing user checkout and history preserved. All committed bytes match handoff; core.autocrlf=false and core.eol=lf locally.",
+  "retained_integration_failures": [
+    {
+      "operation": "initial ZIP extraction",
+      "error": "FileNotFoundError at Windows path-length limit",
+      "resolution": "verified same archive and extracted in shorter fresh workspace path"
+    },
+    {
+      "operation": "local clone in sandbox",
+      "error": "MSYS NtCreateDirectoryObject 0xC0000022",
+      "resolution": "same local clone succeeded outside sandbox"
+    },
+    {
+      "operation": "initial delivery audits",
+      "error": "raw byte mismatches caused solely by Windows CRLF conversion",
+      "resolution": "exact staged Git blobs restored in new isolated clone; final delivery and source audits PASS"
+    },
+    {
+      "operation": "bulk index-byte materialization",
+      "error": "IndexError parsing a batch header after most files copied; a diagnostic audit overlapped that incomplete materialization",
+      "resolution": "explicit remaining mismatch inventory found one SVG; its exact index blob restored, then final audits run sequentially and passed"
+    }
+  ]
+}

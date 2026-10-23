@@ -1,0 +1,100 @@
+{
+  "started_utc": "2026-10-23T17:16:16.332646+00:00",
+  "records": [
+    {
+      "label": "download-elan-4.2.0",
+      "command": [
+        "curl",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--location",
+        "--max-time",
+        "60",
+        "https://github.com/leanprover/elan/releases/download/v4.2.0/elan-x86_64-unknown-linux-gnu.tar.gz",
+        "--output",
+        "elan-4.2.0.tar.gz"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/tools-setup",
+      "timeout_seconds": 65,
+      "exit_code": 0,
+      "elapsed_seconds": 0.6667082769999979,
+      "log": "download-elan-4.2.0.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "install-elan",
+      "command": [
+        "/workspace/scratch/b8974c152662/tools-setup/elan-installer/elan-init",
+        "-y",
+        "--no-modify-path",
+        "--default-toolchain",
+        "none"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/tools-setup",
+      "timeout_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.016074076000222703,
+      "log": "install-elan.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "elan-version",
+      "command": [
+        "/workspace/scratch/b8974c152662/lean-environment/bin/elan",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/tools-setup",
+      "timeout_seconds": 20,
+      "exit_code": 0,
+      "elapsed_seconds": 0.0038609389994235244,
+      "log": "elan-version.log",
+      "log_sha256": "0c26f3366854194c2cc06f060d806f0438a851be68637c7a6e108496303cef81"
+    },
+    {
+      "label": "install-lean-4.31.0",
+      "command": [
+        "/workspace/scratch/b8974c152662/lean-environment/bin/elan",
+        "toolchain",
+        "install",
+        "leanprover/lean4:v4.31.0"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/tools-setup",
+      "timeout_seconds": 300,
+      "exit_code": 0,
+      "elapsed_seconds": 20.689071753000462,
+      "log": "install-lean-4.31.0.log",
+      "log_sha256": "4754e9e58b8c45bff4fb11dab73db9c1880de3170dcfe288ac39f79cde1f8109"
+    },
+    {
+      "label": "lean-version",
+      "command": [
+        "/workspace/scratch/b8974c152662/lean-environment/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/hodge-lab-pass/formal",
+      "timeout_seconds": 30,
+      "exit_code": 0,
+      "elapsed_seconds": 0.06410738699923968,
+      "log": "lean-version.log",
+      "log_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "mathlib-cache",
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/hodge-lab-pass/formal",
+      "timeout_seconds": 600,
+      "exit_code": 0,
+      "elapsed_seconds": 87.44618721600091,
+      "log": "mathlib-cache.log",
+      "log_sha256": "bf240c37d0ae94165f1cad9af666275e3f38b70ffd36b48c5c67684165df9e3e"
+    }
+  ],
+  "elan_home": "/workspace/scratch/b8974c152662/lean-environment",
+  "elapsed_seconds": 87.44646053999895
+}

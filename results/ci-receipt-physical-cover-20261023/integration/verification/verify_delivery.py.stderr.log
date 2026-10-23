@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\anaxe\Documents\Codex\pro-handoff-20261023\hodge-lab-ci-physical-cover-20261023\verify_delivery.py", line 31, in <module>
+    require(len(raw) == item['bytes'] and hashlib.sha256(raw).hexdigest() == item['sha256'],
+  File "C:\Users\anaxe\Documents\Codex\pro-handoff-20261023\hodge-lab-ci-physical-cover-20261023\verify_delivery.py", line 18, in require
+    raise RuntimeError(message)
+RuntimeError: Changed file mismatch: formal/AuditSkewPhysicalCover.lean

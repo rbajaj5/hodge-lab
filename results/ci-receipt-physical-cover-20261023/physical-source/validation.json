@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-23T17:25:36.893737+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-pass/scripts/check_skew_physical_source.py",
+    "--output-dir",
+    "../results/ci-receipt-physical-cover-20261023/physical-source"
+  ],
+  "scope": "Literal equation, immutable source pins and protected F/A/q correspondence only.",
+  "mutations": [
+    {
+      "label": "lower-term-sign",
+      "result": "REJECTED",
+      "error": "Literal physicalPolynomial definition differs from pinned source equation"
+    },
+    {
+      "label": "lower-exponent",
+      "result": "REJECTED",
+      "error": "Literal physicalPolynomial definition differs from pinned source equation"
+    },
+    {
+      "label": "parameter-slot",
+      "result": "REJECTED",
+      "error": "Literal physicalPolynomial definition differs from pinned source equation"
+    },
+    {
+      "label": "leading-coefficient",
+      "result": "REJECTED",
+      "error": "Literal physicalPolynomial definition differs from pinned source equation"
+    },
+    {
+      "label": "pinned-source-byte",
+      "result": "REJECTED_BY_SHA256"
+    }
+  ],
+  "source_sha256": {
+    "formal/results/skew-physical-cover/inputs.json": "6e091298c7e09c7f34af5638cb685cac8dfa48a05e9433756737056c38453472",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "scripts/check_skew_physical_source.py": "902e6d2032d7acabd98790d47e59fd9a379a9681281d81ecb1187807a5a15589",
+    "formal/fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "results/ci-receipt-physical-cover-20261023/inputs/context/comment-19129985.json": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/record.json": "a0c86d6d9cd25b8387a13104291879c14c14288fad39a23723ebf36ef7f8b300",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "3f693c1ead9f2849eda88348ddf74c5d22b783b0aaf09ca1e45c49dd5a18c026",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+    "results/chi-target-source/inputs/data/one-reflection-skew/record.json": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183"
+  },
+  "protected_target_fields_equal": [
+    "F",
+    "A",
+    "q"
+  ],
+  "upstream_commit": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+  "comment_body_sha256": "bbebae10b90520c5c3d4c6bd0a4f090c26a13bb5ae2feab45562a6589997b521",
+  "literal_definition": "X ^ 18 + X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15",
+  "mathematical_hypotheses_verified_here": [],
+  "limitations": [
+    "No new chart derivation or differential-source normalization",
+    "No separability, splitting roots, descent, primitive or certificate",
+    "The pinned comment is historical author-reported source; no live discussion refresh in this checker"
+  ],
+  "elapsed_seconds": 0.004196850999505841,
+  "completed_utc": "2026-10-23T17:25:36.895355+00:00"
+}

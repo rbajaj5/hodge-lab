@@ -1,0 +1,88 @@
+import HodgeLab.OneReflectionSkew.SplitTraceQuotient
+
+/-!
+Conditional binding of the literal degree-18 cover to the existing split
+trace-free basis. The parameter `a` is a cover coordinate; the leading
+coefficient is 1. A field containing eighteen explicitly distinct roots is
+required. No splitting, separability, descent, chart transport, differential
+source normalization, rational primitive or certificate is supplied here.
+-/
+noncomputable section
+
+namespace HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+
+open scoped BigOperators
+open Polynomial TraceFreeBasis SplitTraceQuotient
+
+variable {K : Type*} [Field K]
+
+def physicalPolynomial (a v : K) : K[X] :=
+  X ^ 18 + X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15
+
+theorem lower_terms_degree_bound (a v : K) :
+    (X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15).natDegree ≤ 15 := by
+  have hl : (C v * X - 1).natDegree ≤ 1 := by
+    refine (natDegree_sub_le _ _).trans (max_le ?_ ?_)
+    · exact (natDegree_C_mul_le v X).trans (by simp)
+    · simp
+  have hp : ((C v * X - 1) ^ 6).natDegree ≤ 6 := by
+    simpa using natDegree_pow_le_of_le 6 hl
+  refine (natDegree_sub_le _ _).trans (max_le ?_ ?_)
+  · refine (natDegree_add_le _ _).trans (max_le ?_ (hp.trans (by decide)))
+    simp
+  · exact (natDegree_C_mul_le a (X ^ 15)).trans (by simp)
+
+theorem physical_degree (a v : K) : (physicalPolynomial a v).natDegree = 18 := by
+  have h : (X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15).natDegree <
+      (X ^ 18 : K[X]).natDegree := by
+    simpa using (lower_terms_degree_bound a v).trans_lt (show 15 < 18 by decide)
+  simpa [physicalPolynomial, sub_eq_add_neg, add_assoc] using
+    natDegree_add_eq_left_of_natDegree_lt h
+
+theorem physical_monic (a v : K) : (physicalPolynomial a v).Monic := by
+  have h : (X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15).degree < (18 : WithBot ℕ) := by
+    apply lt_of_le_of_lt degree_le_natDegree
+    exact_mod_cast (lower_terms_degree_bound a v).trans_lt (show 15 < 18 by decide)
+  simpa [physicalPolynomial, sub_eq_add_neg, add_assoc] using monic_X_pow_add h
+
+theorem physical_leading_coefficient (a v : K) :
+    (physicalPolynomial a v).leadingCoeff = 1 := physical_monic a v
+
+/-- Literal source binding, conditional on a full tuple of distinct roots in K. -/
+theorem physical_eq_split_cover (a v : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots)
+    (hroot : ∀ j, (physicalPolynomial a v).eval (roots j) = 0) :
+    physicalPolynomial a v = coverPolynomial 1 roots := by
+  classical
+  have hdvd : Lagrange.nodal Finset.univ roots ∣ physicalPolynomial a v := by
+    unfold Lagrange.nodal
+    apply Finset.prod_dvd_of_coprime
+    · intro i _ j _ hij
+      exact pairwise_coprime_X_sub_C hr hij
+    · intro i _
+      exact dvd_iff_isRoot.mpr (hroot i)
+  have heq := eq_of_monic_of_dvd_of_natDegree_le Lagrange.nodal_monic
+    (physical_monic a v) hdvd (by simp [physical_degree])
+  simpa [coverPolynomial] using heq
+
+/-- Reuse of the existing split trace formula after literal polynomial binding. -/
+theorem physical_trace_last (a v : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots)
+    (hroot : ∀ j, (physicalPolynomial a v).eval (roots j) = 0) :
+    Algebra.trace K (SplitAlgebra K)
+      (fun j => roots j ^ 17 / (physicalPolynomial a v).derivative.eval (roots j)) = 1 := by
+  rw [physical_eq_split_cover a v roots hr hroot]
+  change Algebra.trace K (SplitAlgebra K) (codifferent 1 roots (17 : Fin 18)) = 1
+  simpa using trace_codifferent (1 : K) roots hr (17 : Fin 18)
+
+/-- This trace-zero vector is not asserted to be the physical differential source. -/
+theorem physical_trace_slot_eleven (a v : K) (roots : Fin 18 → K)
+    (hr : Function.Injective roots)
+    (hroot : ∀ j, (physicalPolynomial a v).eval (roots j) = 0) :
+    Algebra.trace K (SplitAlgebra K)
+      (fun j => roots j ^ 11 / (physicalPolynomial a v).derivative.eval (roots j)) = 0 := by
+  rw [physical_eq_split_cover a v roots hr hroot]
+  change Algebra.trace K (SplitAlgebra K) (codifferent 1 roots (11 : Fin 18)) = 0
+  exact slot_eleven_trace_zero 1 roots hr
+
+end HodgeLab.OneReflectionSkew.PhysicalCoverBinding

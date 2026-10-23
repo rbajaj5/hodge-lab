@@ -1,0 +1,21 @@
+{
+  "reviewer": "adversarial_review",
+  "kind": "separate read-only AI review, not human review",
+  "reviewed_files": [
+    "formal/check_skew_forms.py",
+    "formal/check_skew_trace_basis.py",
+    "formal/fresh_receipts.py",
+    "formal/test_receipt_lifecycle.py",
+    ".github/workflows/lean.yml",
+    "scripts/check_skew_ci_sequence.py"
+  ],
+  "result": "No blocking source defect found; actual Lean sequence must still pass",
+  "findings": [
+    "Original historical receipt hashes and manifests retained",
+    "Fresh PASS/FAIL outputs; collision refusal before OUT assignment",
+    "Explicit require/raise under optimized Python",
+    "Mutation performed only in disposable fixture; must fail before Lean",
+    "Fresh artifacts no longer mixed with historical forms/trace PASS files"
+  ],
+  "scope_limit": "Earlier workflow checkers not migrated; review did not execute Lean"
+}

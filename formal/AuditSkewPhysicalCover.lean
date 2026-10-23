@@ -1,0 +1,10 @@
+import HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physicalPolynomial
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.lower_terms_degree_bound
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_degree
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_monic
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_leading_coefficient
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_eq_split_cover
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_trace_last
+#print axioms HodgeLab.OneReflectionSkew.PhysicalCoverBinding.physical_trace_slot_eleven

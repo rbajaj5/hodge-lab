@@ -1,0 +1,7 @@
+{
+  "status": "ENVIRONMENT_FAILURE_BEFORE_CALCULATION",
+  "command": "timeout 30 python3 -O -",
+  "error": "ModuleNotFoundError: No module named sympy",
+  "exit_code": 1,
+  "disposition": "No mathematical result; retry with standard-library integer sparse-polynomial arithmetic, same selected approach"
+}

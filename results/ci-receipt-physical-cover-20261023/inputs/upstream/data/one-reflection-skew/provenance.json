@@ -1,0 +1,23 @@
+{
+  "instanceId": "one-reflection-skew",
+  "variables": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "statementSource": "instance.rec",
+  "contextSource": "why.md",
+  "sameVarietyInstances": [],
+  "mathematicalChecks": "checks.json",
+  "checkCommand": "python3 scripts/audit-cubic-frontier.py",
+  "references": [
+    "data/one-reflection/solution.md",
+    "docs/02-explicit-constructions.md",
+    "docs/04-known-locus-and-frontier.md"
+  ],
+  "existenceStatus": "No existence conclusion for this target follows from the specified quotient-density constructions.",
+  "discussionUrl": "https://github.com/hodge-computer/sextics/discussions/127"
+}

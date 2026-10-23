@@ -1,0 +1,52 @@
+{
+  "status": "FAIL",
+  "started_utc": "2026-10-23T17:17:13.156440+00:00",
+  "parent": "d29cd55b7c7e738ae84bec7da50c8c843877506d",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "label": "lifecycle",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "test_receipt_lifecycle.py"
+      ],
+      "cwd": "formal",
+      "bound_seconds": 60,
+      "exit_code": 0,
+      "elapsed_seconds": 1.1200021839995316,
+      "log": "lifecycle.log",
+      "log_sha256": "5ac47087ebdec416898b2ab4b9de036930601f0fee0c8074899685205549e0c9"
+    },
+    {
+      "label": "forms",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "check_skew_forms.py",
+        "--output-dir",
+        "/workspace/scratch/b8974c152662/hodge-lab-pass/results/ci-receipt-physical-cover-20261023/sequence/forms"
+      ],
+      "cwd": "formal",
+      "bound_seconds": 610,
+      "exit_code": 1,
+      "elapsed_seconds": 0.31504497999958403,
+      "log": "forms.log",
+      "log_sha256": "6a9a11b24185c7ef8ea3b7b6c97a72ad1de7bcdbafd95c344cdf246bd07e187a"
+    }
+  ],
+  "source_sha256": {
+    "scripts/check_skew_ci_sequence.py": "880f3d5f2556d7fd63d9ca1d6b2d4ce8d2a1a9079a6cdc46a5512d42bd82e3a9",
+    "formal/fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "formal/test_receipt_lifecycle.py": "19a8c265286bf5f54e16b9d9f1a01881dc3dc0f4e91356c4755a530542a61edb",
+    "formal/check_skew_forms.py": "fcb3951e87afc882c0b3188392ce8823bafa75f3318d98c78402f611358476b2",
+    "formal/check_skew_trace_basis.py": "b3ee0a458ebc4710e668a89160a1c6349021c1b3b521a154e583f0ff7925cc67",
+    ".github/workflows/lean.yml": "113427dc25a768691d0b5e10041e02e16ff19215a005a08c143a995990856728"
+  },
+  "scope": "Affected lifecycle regression and forms then trace, not the entire workflow.",
+  "error": "forms failed or was interrupted; see saved log",
+  "historical_files_checked": 2862,
+  "historical_files_changed": [],
+  "completed_utc": "2026-10-23T17:17:14.886169+00:00"
+}
