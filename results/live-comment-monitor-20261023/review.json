@@ -1,0 +1,53 @@
+{
+  "status": "SOURCE_MAINTENANCE_OBSERVED_NOT_DEPLOYMENT_VERIFIED",
+  "observation_utc": "2026-10-23T02:24:09.574076+00:00",
+  "upstream_before": "59d570e2823d7c605decc3055dae392ec5b8d5f2",
+  "upstream_after": "faa9df2ec6406e4eacc135f677cf3711315d0e41",
+  "notebook_parent": "505b48c6e858048044d26fbdc17fe13ffb6ae052",
+  "comparison_file_count": 20,
+  "comparison_api_file_cap": 300,
+  "policy_pin_changes": [
+    {
+      "path": "MAINTAINING.md",
+      "before": "f50bc9a9d9bc639ee36d70312560055468c6fd7e",
+      "after": "ea711de166584ef5fbf5b5455b948ea4e14d1899"
+    },
+    {
+      "path": "README.md",
+      "before": "d84b81564a9affc86cefc48ea49dcadf8b88ff58",
+      "after": "14bcdab17329557f01e0a9264a17b9fce8f9a7df"
+    }
+  ],
+  "unchanged_other_pins": 530,
+  "unchanged_threads": 14,
+  "read_scope": [
+    "Reviewed changed-file inventory and README/MAINTAINING/server documentation patches.",
+    "Read client leaderboard changes and full newly added server/comment-leaderboard.mjs as returned by the pinned comparison.",
+    "Compared all monitored discussion IDs, timestamps, bodies and answer metadata, with complete comment/reply pagination.",
+    "Separate read-only agent reviewed maintenance scope and attribution."
+  ],
+  "observations": [
+    "PR193 replaces committed count/account snapshots with backend comment counts and GitHub profiles; PR194 adds loading-message spacing.",
+    "Comment ranking counts mapped-thread comments and replies, omitting minimized posts and deleted-account authors; it is not a mathematical quality or accepted-solve metric.",
+    "Checkpoint133 count12 is a historical pinned observation, not a current live-count measurement.",
+    "Accepted-solve score and attribution rules remain backed by acceptance records.",
+    "Upstream prohibition on committed snapshots is scoped to the live-leaderboard feature; existing Hodge Lab research evidence is preserved."
+  ],
+  "not_executed": [
+    "No live website or endpoint request; no assertion that the deployment matches main.",
+    "No leaderboard rebuild, backend test execution or current rbajaj5 count.",
+    "No mathematical, Lean, protected certificate or earlier packet replay."
+  ],
+  "bounds_seconds": {
+    "request": 45,
+    "discussion_total": 240
+  },
+  "failures": [],
+  "upstream_publication": false,
+  "tally_changed": false,
+  "visualization": "Ordinary status maintenance; no new research batch.",
+  "evidence_sha256_lf": {
+    "repository-heads.json": "5b4fa6b1297c725aca96b20ba2af3f0bad4cd4e3b3d4edbdcd21373d80c72b6e",
+    "discussion-comparison.json": "03bb2cf4521a8f251c73cafda55b5559d7cac6156ec1d0b54599c88fd2091622"
+  }
+}

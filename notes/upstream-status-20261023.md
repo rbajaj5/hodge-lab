@@ -59,3 +59,40 @@ remains **29 discussion contributions, one closed maintenance PR, zero
 accepted authored solves**. README mathematical claims and historical receipts
 remain unchanged. The new report does not close the primitive/certificate gap
 or any outstanding physical-instantiation/descent obligations of our Lean work.
+
+## 23 October 2026, 02:24 UTC: comment rankings move to a live service
+
+Upstream [faa9df2ec6406e4eacc135f677cf3711315d0e41](https://github.com/hodge-computer/sextics/commit/faa9df2ec6406e4eacc135f677cf3711315d0e41)
+includes PRs [193](https://github.com/hodge-computer/sextics/pull/193) and
+[194](https://github.com/hodge-computer/sextics/pull/194). The source now obtains
+comment rankings and contributor profiles through its backend, replacing the
+committed comment/account snapshots and refresh workflow. The separate spacing
+change affects the loading message.
+
+The [maintenance documentation](https://github.com/hodge-computer/sextics/blob/faa9df2ec6406e4eacc135f677cf3711315d0e41/MAINTAINING.md)
+and [backend implementation](https://github.com/hodge-computer/sextics/blob/faa9df2ec6406e4eacc135f677cf3711315d0e41/server/comment-leaderboard.mjs)
+describe counts of comments/replies in mapped atlas threads, omitting minimized
+posts and deleted-account authors. The visible board is designed to refresh
+without a repository commit. Accepted-solve scoring remains acceptance-backed.
+These are implementation observations, not verification of the deployed site.
+
+**Checkpoint 133's count of 12 rbajaj5 entries remains a historical snapshot.**
+We did not measure a new live count. The curated Posts list and tally of 29
+contributions retain their separate scope. No new mathematical attribution
+or acceptance follows from this implementation change.
+
+The new instruction against committing discussion snapshots is explicitly
+scoped to the upstream leaderboard feature. Hodge Lab's separate pinned
+research-evidence archive and historical receipts are preserved.
+
+[Receipt and limits](../results/live-comment-monitor-20261023/review.json)
+record the 20-file/four-commit comparison and source pins. Among 532 monitored
+target/policy pins only README.md and MAINTAINING.md changed; the other 530
+are identical, including all monitored target/acceptance/proof/solution files.
+All 14 monitored discussions are unchanged, with complete comments/replies
+and edited-body comparison. Requests were bounded at 45 seconds and discussion
+collection at 240 seconds; no failure occurred. A separate read-only agent
+reviewed the scope. No backend tests, live endpoint check, mathematical replay
+or Lean build was performed. This is ordinary status maintenance, with no
+new research visualization, upstream publication or contribution-tally change.
+Credit Benjamin E. Diamond and the upstream contributors for the interface work.

@@ -4756,3 +4756,34 @@ no research replay or new visualization. No upstream post, reply, edit or PR;
 Posts remain entries 1–29. Tally unchanged: **29 discussion contributions,
 one closed maintenance PR, zero accepted authored solves**. Earlier ledger
 bytes, completed checks, README claims and historical receipts are preserved.
+
+## Checkpoint 135 — 23 October 2026: live comment-count source; historical count retained
+
+Bounded monitoring at 02:24 UTC observed upstream advance from 59d570e to
+[faa9df2ec6406e4eacc135f677cf3711315d0e41](https://github.com/hodge-computer/sextics/commit/faa9df2ec6406e4eacc135f677cf3711315d0e41)
+through PRs #193/#194. Hodge Lab parent is
+505b48c6e858048044d26fbdc17fe13ffb6ae052. The 20-file change replaces static
+comment/account snapshots with a live backend and adjusts loading-message
+spacing. Only README.md and MAINTAINING.md changed among 532 monitored pins;
+all target/acceptance/proof/solution pins and all 14 discussions are unchanged.
+
+- [Status correction and scope](notes/upstream-status-20261023.md#23-october-2026-0224-utc-comment-rankings-move-to-a-live-service).
+- [Pinned comparison, checks and limits](results/live-comment-monitor-20261023/review.json).
+
+Checkpoint 133's **12 rbajaj5 entries** is a historical pinned count, not a
+current live metric. The new service omits minimized posts and deleted-account
+authors; it still counts entries, not mathematical substance or accepted solves.
+We did not request the live endpoint or measure a new count. Solve-score rules
+remain acceptance-backed. The upstream no-static-archive instruction concerns
+its leaderboard feature, not deletion of Hodge Lab's research evidence.
+
+We inspected source changes and compared all discussion IDs/timestamps/body
+hashes, including every comment/reply page. No backend tests, website validation,
+mathematical replay or Lean build. Requests had 45-second bounds and collection
+a 240-second total bound; no failure occurred. A separate read-only agent
+reviewed scope. Credit Benjamin E. Diamond and upstream contributors for this
+interface work. This is status maintenance, requiring no research visualization.
+
+No upstream post, reply, edit or PR. Posts remain entries 1–29. Tally unchanged:
+**29 discussion contributions, one closed maintenance PR, zero accepted
+authored solves**. Earlier ledger bytes and historical receipts are preserved.
