@@ -74,6 +74,9 @@ jobs:
       - name: Check the conditional physical-cover lemma
         working-directory: formal
         run: python3 -O check_skew_physical_cover.py --output-dir results/runs/ci-skew-physical-cover
+      - name: Check generic distinct roots in the physical splitting field
+        working-directory: formal
+        run: python3 -O check_skew_distinct_roots.py --output-dir results/runs/ci-skew-distinct-roots
       - name: Save concrete proof receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

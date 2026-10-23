@@ -1,0 +1,33 @@
+import HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+
+example : CharZero CoeffField ∧ CharZero BaseField ∧ CharZero SplitField :=
+  ⟨inferInstance, inferInstance, inferInstance⟩
+example : Transcendental ℚ vInVField ∧ Transcendental VField tInCoeffField ∧
+    Transcendental CoeffField genericA := ⟨v_transcendental, t_transcendental, a_transcendental⟩
+example (a v : ℚ) : X * (physicalPolynomial a v).derivative - 15 * physicalPolynomial a v =
+    eliminant v ∧ (eliminant v).eval 0 = -15 := ⟨eliminant_identity a v, eliminant_at_zero v⟩
+example : Function.Injective coefficientToBase ∧ Function.Injective baseToSplit ∧
+    (∀ c, coefficientToSplit c = baseToSplit (coefficientToBase c)) :=
+  ⟨coefficientToBase_injective, baseToSplit_injective, coefficient_map_compatibility⟩
+example : genericPolynomial.Separable ∧ (genericPolynomial.map baseToSplit).Splits ∧
+    genericPolynomial.natDegree = 18 := ⟨generic_separable, generic_splits, generic_degree⟩
+example : Function.Injective roots ∧
+    (∀ j, (physicalPolynomial (baseToSplit genericA) (baseToSplit genericV)).eval (roots j) = 0) ∧
+    (∀ j, (physicalPolynomial (baseToSplit genericA) (baseToSplit genericV)).derivative.eval
+      (roots j) ≠ 0) := ⟨roots_injective, roots_eval, roots_derivative_ne_zero⟩
+example : physicalPolynomial (baseToSplit genericA) (baseToSplit genericV) =
+    coverPolynomial 1 roots := generic_eq_split_cover
+example : Algebra.trace SplitField (SplitAlgebra SplitField)
+    (fun j => roots j ^ 17 / (physicalPolynomial (baseToSplit genericA)
+      (baseToSplit genericV)).derivative.eval (roots j)) = 1 ∧
+    Algebra.trace SplitField (SplitAlgebra SplitField)
+    (fun j => roots j ^ 11 / (physicalPolynomial (baseToSplit genericA)
+      (baseToSplit genericV)).derivative.eval (roots j)) = 0 :=
+  ⟨generic_trace_last, generic_trace_slot_eleven⟩
+example : (physicalPolynomial (2 : ℚ) 1).eval 1 = 0 ∧
+    (physicalPolynomial (2 : ℚ) 1).derivative.eval 1 = 0 ∧
+    ¬ (physicalPolynomial (2 : ℚ) 1).Separable :=
+  ⟨repeated_specialization.1, repeated_specialization.2, repeated_specialization_not_separable⟩

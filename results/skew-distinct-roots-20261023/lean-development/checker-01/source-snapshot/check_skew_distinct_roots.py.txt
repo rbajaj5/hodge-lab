@@ -1,0 +1,262 @@
+"""Audit one generic distinct-root construction; 120s/command, 600s total.
+
+Run python3 -O check_skew_distinct_roots.py after fetching the pinned cache.
+Immutable inputs stay in results/skew-distinct-roots; every invocation writes
+fresh receipts. Imported binding/basis proofs and prior CI receipts are reused,
+not re-executed here. The generic base is Q(v)(t)(a). No universal specialization,
+unsplit descent, differential-source normalization, primitive or certificate.
+"""
+from pathlib import Path
+import datetime, hashlib, json, os, re, shlex, subprocess, sys, time
+from check_skew_extension import require, digest
+from fresh_receipts import fresh_output_dir
+
+ROOT = Path(__file__).resolve().parent
+HISTORY = ROOT/'results/skew-distinct-roots'
+OUT = None
+MODULE = 'HodgeLab.OneReflectionSkew.GenericDistinctRoots'
+DECLARATIONS = ['eliminant', 'eliminant_identity', 'eliminant_at_zero',
+    'eliminant_ne_zero', 'eliminant_map', 'common_root_parameter_algebraic',
+    'root_derivative_ne_zero', 'physical_map', 'physical_separable_of_transcendental',
+    'VField', 'CoeffField', 'BaseField', 'vInVField', 'tInCoeffField', 'vInCoeffField',
+    'genericA', 'genericV', 'genericT', 'v_transcendental', 't_transcendental',
+    'a_transcendental', 'genericPolynomial', 'generic_separable', 'generic_degree',
+    'SplitField', 'coefficientToBase', 'baseToSplit', 'coefficientToSplit',
+    'coefficientToBase_injective', 'baseToSplit_injective', 'coefficientToSplit_injective',
+    'coefficient_map_compatibility', 'a_transcendental_in_split', 'generic_splits',
+    'physical_polynomial_map', 'generic_root_card', 'rootEquiv', 'roots',
+    'roots_injective', 'roots_aeval', 'roots_eval', 'roots_ne_zero',
+    'roots_derivative_ne_zero', 'generic_eq_split_cover', 'generic_trace_last',
+    'generic_trace_slot_eleven', 'repeated_specialization', 'repeated_specialization_not_separable']
+NAMES = [MODULE+'.'+n for n in DECLARATIONS]
+SOURCES = ['lean-toolchain', 'lakefile.toml', 'lake-manifest.json',
+    'check_skew_extension.py', 'fresh_receipts.py', 'check_skew_distinct_roots.py',
+    'AuditSkewDistinctRoots.lean', 'ReplaySkewDistinctRoots.lean',
+    MODULE.replace('.', '/')+'.lean']
+RECORDS = []
+START = time.monotonic()
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
+
+def write(name, value):
+    (OUT/name).write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n',
+                          encoding='utf-8', newline='\n')
+
+
+def raw_digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def run(label, command, reject=False):
+    remaining = 600 - (time.monotonic()-START)
+    require(remaining > 1, '600-second budget exhausted')
+    bound = min(120, int(remaining))
+    execution = command
+    if os.name == 'nt':
+        wroot = '/mnt/'+ROOT.drive[0].lower()+ROOT.as_posix()[2:]
+        execution = ['wsl.exe', '--cd', wroot, '-e', 'sh', '-lc',
+                     'exec timeout '+str(bound)+' '+shlex.join(command)]
+    began = time.monotonic()
+    started = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    try:
+        completed = subprocess.run(execution, cwd=ROOT, capture_output=True,
+                                   encoding='utf-8', timeout=bound)
+        code, stdout, stderr = completed.returncode, completed.stdout, completed.stderr
+    except subprocess.TimeoutExpired as error:
+        def text(value):
+            return value.decode('utf-8', errors='replace') if isinstance(value, bytes) else value or ''
+        code, stdout, stderr = 124, text(error.stdout), text(error.stderr)
+    log = stdout+stderr
+    for suffix, value in [('stdout.log', stdout), ('stderr.log', stderr), ('log', log)]:
+        (OUT/(label+'.'+suffix)).write_text(value, encoding='utf-8', newline='\n')
+    RECORDS.append(dict(label=label, command=command, execution_command=execution,
+        cwd='formal', started_utc=started, bound_seconds=bound, exit_code=code,
+        elapsed_seconds=time.monotonic()-began, expected_failure=reject,
+        log=label+'.log', log_lf_sha256=digest(OUT/(label+'.log')),
+        stdout=label+'.stdout.log', stdout_sha256=raw_digest(OUT/(label+'.stdout.log')),
+        stderr=label+'.stderr.log', stderr_sha256=raw_digest(OUT/(label+'.stderr.log'))))
+    write('commands.json', RECORDS)
+    print(json.dumps({'label':label, 'exit_code':code,
+                      'seconds':RECORDS[-1]['elapsed_seconds']}), flush=True)
+    require(code != 124, label+' timed out; interrupted calculations are not results')
+    if reject:
+        require(code != 0 and log.count('error:') == 1 and 'unsolved goals' in log and '⊢ False' in log,
+                label+' did not fail at the intended false mathematical goal: '+log[:2500])
+        require('failed to synthesize' not in log and 'unknown' not in log.lower(),
+                'Unrelated control error: '+label)
+    else:
+        require(code == 0, label+' failed: '+log[:2500])
+    return log
+
+
+def main():
+    global OUT, START
+    START = time.monotonic()
+    OUT = fresh_output_dir(ROOT, 'skew-distinct-roots', [HISTORY,
+        ROOT/'results/skew-trace-basis', ROOT/'results/skew-physical-cover',
+        ROOT.parent/'results/skew-distinct-roots-20261023/inputs',
+        ROOT.parent/'results/ci-receipt-physical-cover-20261023'])
+    print('Fresh receipts: '+str(OUT), flush=True)
+    write('validation.json', {'status':'IN_PROGRESS'})
+    inputs_hash = digest(HISTORY/'inputs.json')
+    inputs = json.loads((HISTORY/'inputs.json').read_text(encoding='utf-8'))
+    require(bool(inputs['context_receipt_lf_sha256']), 'Missing historical pins')
+    require(bool(inputs['physical_source_pins']), 'Missing physical source pins')
+    for path, expected in inputs['context_receipt_lf_sha256'].items():
+        require(digest(ROOT.parent/path) == expected, 'Historical receipt changed: '+path)
+    source_manifest = inputs['source_pins_manifest']
+    require(raw_digest(ROOT.parent/source_manifest['path']) == source_manifest['sha256'],
+            'Source-pin manifest changed')
+    physical_hashes = {}
+    for pin in inputs['physical_source_pins']:
+        path = (ROOT.parent/pin['path']).resolve()
+        require(path.is_relative_to(ROOT.parent.resolve()), 'Source path escapes repository')
+        require(raw_digest(path) == pin['sha256'], 'Physical source pin changed: '+pin['path'])
+        physical_hashes[pin['path']] = pin['sha256']
+    prior = json.loads((ROOT.parent/inputs['previous_physical_receipt']).read_text(encoding='utf-8'))
+    require(prior['status'] == 'PASS', 'Completed physical-binding receipt required')
+    reused = dict(prior['reused_source_lf_sha256'])
+    reused.update({p:h for p,h in prior['source_lf_sha256'].items()
+                   if p.startswith('HodgeLab/') and p.endswith('.lean')})
+    for path, expected in reused.items():
+        require(digest(ROOT/path) == expected, 'Reused proof source changed: '+path)
+    hashes = {p:digest(ROOT/p) for p in SOURCES}
+    snapshot = OUT/'source-snapshot'
+    snapshot.mkdir()
+    for name in SOURCES:
+        target = snapshot/(name+'.txt')
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes((ROOT/name).read_bytes())
+    (snapshot/'inputs.json.txt').write_bytes((HISTORY/'inputs.json').read_bytes())
+    write('source-inputs.json', {'source_lf_sha256':hashes,
+        'inputs_lf_sha256':inputs_hash, 'reused_source_lf_sha256':reused,
+        'physical_source_sha256':physical_hashes})
+    for path in SOURCES:
+        if path.endswith('.lean'):
+            require(not re.search(r'\b(sorry|admit|axiom|native_decide)\b',
+                                  (ROOT/path).read_text(encoding='utf-8')), 'Unproved token: '+path)
+    actual_decls = re.findall(r'^(?:def|abbrev|theorem) (\w+)',
+        (ROOT/(MODULE.replace('.', '/')+'.lean')).read_text(encoding='utf-8'), re.M)
+    require(actual_decls == DECLARATIONS, 'Declaration audit list does not match source')
+    version = run('version', ['lake', 'env', 'lean', '--version'])
+    require('version 4.31.0,' in version, 'Unexpected Lean version')
+    manifest = json.loads((ROOT/'lake-manifest.json').read_text(encoding='utf-8'))
+    revision = next(p['rev'] for p in manifest['packages'] if p['name'] == 'mathlib')
+    require(run('mathlib-head', ['git', '-C', '.lake/packages/mathlib', 'rev-parse', 'HEAD']).strip()
+            == revision, 'Mathlib mismatch')
+    run('build', ['lake', 'build', MODULE])
+    audit = run('axioms', ['lake', 'env', 'lean', 'AuditSkewDistinctRoots.lean'])
+    axioms = {n:[a.strip() for a in values.split(',') if a.strip()]
+              for n,values in re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", audit)}
+    for name in re.findall(r"'([^']+)' does not depend on any axioms", audit):
+        axioms[name] = []
+    require(set(axioms) == set(NAMES), 'Missing or unexpected declaration audit')
+    require(all(set(a) <= {'propext', 'Classical.choice', 'Quot.sound'} for a in axioms.values()),
+            'Unexpected axiom')
+    replay = run('kernel-replay', ['lake', 'env', 'lean', 'ReplaySkewDistinctRoots.lean'])
+    require('PASS '+MODULE in replay, 'Missing kernel replay marker')
+    header = '''import HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+'''
+    positive = '''
+example : CharZero CoeffField ∧ CharZero BaseField ∧ CharZero SplitField :=
+  ⟨inferInstance, inferInstance, inferInstance⟩
+example : Transcendental ℚ vInVField ∧ Transcendental VField tInCoeffField ∧
+    Transcendental CoeffField genericA := ⟨v_transcendental, t_transcendental, a_transcendental⟩
+example (a v : ℚ) : X * (physicalPolynomial a v).derivative - 15 * physicalPolynomial a v =
+    eliminant v ∧ (eliminant v).eval 0 = -15 := ⟨eliminant_identity a v, eliminant_at_zero v⟩
+example : Function.Injective coefficientToBase ∧ Function.Injective baseToSplit ∧
+    (∀ c, coefficientToSplit c = baseToSplit (coefficientToBase c)) :=
+  ⟨coefficientToBase_injective, baseToSplit_injective, coefficient_map_compatibility⟩
+example : genericPolynomial.Separable ∧ (genericPolynomial.map baseToSplit).Splits ∧
+    genericPolynomial.natDegree = 18 := ⟨generic_separable, generic_splits, generic_degree⟩
+example : Function.Injective roots ∧
+    (∀ j, (physicalPolynomial (baseToSplit genericA) (baseToSplit genericV)).eval (roots j) = 0) ∧
+    (∀ j, (physicalPolynomial (baseToSplit genericA) (baseToSplit genericV)).derivative.eval
+      (roots j) ≠ 0) := ⟨roots_injective, roots_eval, roots_derivative_ne_zero⟩
+example : physicalPolynomial (baseToSplit genericA) (baseToSplit genericV) =
+    coverPolynomial 1 roots := generic_eq_split_cover
+example : Algebra.trace SplitField (SplitAlgebra SplitField)
+    (fun j => roots j ^ 17 / (physicalPolynomial (baseToSplit genericA)
+      (baseToSplit genericV)).derivative.eval (roots j)) = 1 ∧
+    Algebra.trace SplitField (SplitAlgebra SplitField)
+    (fun j => roots j ^ 11 / (physicalPolynomial (baseToSplit genericA)
+      (baseToSplit genericV)).derivative.eval (roots j)) = 0 :=
+  ⟨generic_trace_last, generic_trace_slot_eleven⟩
+example : (physicalPolynomial (2 : ℚ) 1).eval 1 = 0 ∧
+    (physicalPolynomial (2 : ℚ) 1).derivative.eval 1 = 0 ∧
+    ¬ (physicalPolynomial (2 : ℚ) 1).Separable :=
+  ⟨repeated_specialization.1, repeated_specialization.2, repeated_specialization_not_separable⟩
+'''
+    negatives = {
+        'universal-specialization-rejected': '''example : ∀ a v : ℚ, (physicalPolynomial a v).Separable := by
+  have h : ¬ (∀ a v : ℚ, (physicalPolynomial a v).Separable) := by
+    intro hall
+    exact repeated_specialization_not_separable (hall 2 1)
+  simp only [h]
+''',
+        'eliminant-sign-mutation-rejected': '''example : (eliminant (0 : ℚ)).eval 0 = 15 := by
+  rw [eliminant_at_zero]
+  norm_num
+''',
+        'root-collision-rejected': '''example : roots (0 : Fin 18) = roots (1 : Fin 18) := by
+  have h : roots (0 : Fin 18) ≠ roots (1 : Fin 18) := by
+    intro he
+    have hi := roots_injective he
+    norm_num at hi
+  simp only [h]
+'''}
+    scratch = ROOT/'.lake/skew-distinct-roots-controls'/OUT.name
+    scratch.mkdir(parents=True, exist_ok=False)
+    for label, body, reject in [('positive-controls', positive, False)] + [
+            (label, body, True) for label, body in negatives.items()]:
+        path = scratch/(label+'.lean')
+        path.write_text(header+body, encoding='utf-8', newline='\n')
+        (OUT/(label+'.lean.txt')).write_bytes(path.read_bytes())
+        run(label, ['lake', 'env', 'lean', path.relative_to(ROOT).as_posix()], reject)
+    require(hashes == {p:digest(ROOT/p) for p in SOURCES}, 'Source changed during verification')
+    require(inputs_hash == digest(HISTORY/'inputs.json'), 'Input manifest changed during verification')
+    for path, expected in inputs['context_receipt_lf_sha256'].items():
+        require(digest(ROOT.parent/path) == expected, 'Historical receipt changed during verification')
+    for path, expected in reused.items():
+        require(digest(ROOT/path) == expected, 'Reused proof changed during verification')
+    for path, expected in physical_hashes.items():
+        require(raw_digest(ROOT.parent/path) == expected, 'Physical source changed during verification')
+    require(raw_digest(ROOT.parent/source_manifest['path']) == source_manifest['sha256'],
+            'Source-pin manifest changed during verification')
+    positive_count = len(re.findall(r'^example', positive, re.M))
+    write('validation.json', dict(status='PASS',
+        completed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        worker='distinct_lean', lean_version=version.strip(), python_version=sys.version,
+        mathlib_commit=revision, source_lf_sha256=hashes, reused_source_lf_sha256=reused,
+        inputs_lf_sha256=inputs_hash, physical_source_sha256=physical_hashes,
+        source_pins_manifest=source_manifest,
+        historical_context_lf_sha256=inputs['context_receipt_lf_sha256'],
+        declaration_axioms=axioms, commands=RECORDS, elapsed_seconds=time.monotonic()-START,
+        total_budget_seconds=600, new_public_declarations_audited=len(NAMES),
+        new_modules_replayed=1, positive_controls=positive_count, negative_controls=len(negatives),
+        artifact_sha256={MODULE:raw_digest(ROOT/'.lake/build/lib/lean'/
+                            (MODULE.replace('.', '/')+'.olean'))},
+        scope='Generic separability and specified full splitting field with injective Fin18 root tuple; existing physical binding and two trace corollaries instantiated.',
+        limits=['Base Q(v)(t)(a), with characteristic zero and stagewise transcendence proved',
+                'a=2,v=1 over Q is not separable; no claim for every specialization',
+                'The root enumeration is noncomputable; no numeric approximations used as proof',
+                'No unsplit descent, physical differential normalization, primitive, certificate or solve',
+                'Mathlib and prior imported proof modules are reused, not newly kernel-replayed',
+                'Physical file hashes are provenance; source snapshot verification is a separate execution',
+                'This is local worker execution, not remote CI']))
+    print('PASS: '+str(len(NAMES))+' public declaration audits, one new-module replay, '+
+          str(positive_count)+' positive and '+str(len(negatives))+' negative controls')
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception as error:
+        if OUT is not None:
+            write('validation.json', {'status':'FAIL', 'error':str(error), 'commands':RECORDS,
+                                     'worker':'distinct_lean'})
+        raise

@@ -1,0 +1,245 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:04:46.514522+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.5710035800002515,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stdout": "version.stdout.log",
+    "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stderr": "version.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:04:47.085936+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.0020251290006854106,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stdout": "mathlib-head.stdout.log",
+    "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stderr": "mathlib-head.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.GenericDistinctRoots"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.GenericDistinctRoots"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:04:47.088216+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 4.7175573550011904,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "1e79cd56406c1d89b4927c8b2912cd58de48b741c184800e565bf860b9e6cfd3",
+    "stdout": "build.stdout.log",
+    "stdout_sha256": "1e79cd56406c1d89b4927c8b2912cd58de48b741c184800e565bf860b9e6cfd3",
+    "stderr": "build.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewDistinctRoots.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewDistinctRoots.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:04:51.806143+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.471322360001068,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "stdout": "axioms.stdout.log",
+    "stdout_sha256": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "stderr": "axioms.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewDistinctRoots.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewDistinctRoots.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:04:54.278195+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.9015895769989584,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "stdout": "kernel-replay.stdout.log",
+    "stdout_sha256": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "stderr": "kernel-replay.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/positive-controls.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/positive-controls.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:04:58.193630+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.013106020000123,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "positive-controls.stdout.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "positive-controls.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "universal-specialization-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/universal-specialization-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/universal-specialization-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:05:01.207171+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.7198968470002,
+    "expected_failure": true,
+    "log": "universal-specialization-rejected.log",
+    "log_lf_sha256": "7e61dc6c3640f7129a09c3fb20123d5ecf3dff03aade15d6b42ac7c327c230f3",
+    "stdout": "universal-specialization-rejected.stdout.log",
+    "stdout_sha256": "7e61dc6c3640f7129a09c3fb20123d5ecf3dff03aade15d6b42ac7c327c230f3",
+    "stderr": "universal-specialization-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "eliminant-sign-mutation-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/eliminant-sign-mutation-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/eliminant-sign-mutation-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:05:03.927939+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.630278577998979,
+    "expected_failure": true,
+    "log": "eliminant-sign-mutation-rejected.log",
+    "log_lf_sha256": "8123c817ea15caeece4682a83052f11c40f2cf347cc4dd371451b7ff35be2759",
+    "stdout": "eliminant-sign-mutation-rejected.stdout.log",
+    "stdout_sha256": "8123c817ea15caeece4682a83052f11c40f2cf347cc4dd371451b7ff35be2759",
+    "stderr": "eliminant-sign-mutation-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "root-collision-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/root-collision-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/checker-01/root-collision-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:05:06.558781+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.5251375980005832,
+    "expected_failure": true,
+    "log": "root-collision-rejected.log",
+    "log_lf_sha256": "db4c1d4254a5e21b9ec9a3c22d509471131fe313a257ee0a2caf8f26c0bfe8aa",
+    "stdout": "root-collision-rejected.stdout.log",
+    "stdout_sha256": "db4c1d4254a5e21b9ec9a3c22d509471131fe313a257ee0a2caf8f26c0bfe8aa",
+    "stderr": "root-collision-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

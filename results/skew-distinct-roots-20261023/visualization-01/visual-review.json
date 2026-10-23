@@ -1,0 +1,10 @@
+{
+  "reviewer": "Pro chat root",
+  "method": "Rendered PNG visually inspected",
+  "status": "REVISION_REQUIRED",
+  "findings": [
+    "Field-tower and proof footnotes overlap their final boxes",
+    "Product equation overlaps root-tuple line in outcome panel"
+  ],
+  "action": "Preserve initial outputs and generator; fix layout and regenerate in a fresh directory after checker02 integration"
+}

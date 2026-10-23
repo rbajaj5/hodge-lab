@@ -1,0 +1,140 @@
+{
+  "D_constant_term": -15,
+  "D_terms": [
+    {
+      "a_power": 0,
+      "coefficient": 3,
+      "v_power": 0,
+      "x_power": 18
+    },
+    {
+      "a_power": 0,
+      "coefficient": -3,
+      "v_power": 0,
+      "x_power": 12
+    },
+    {
+      "a_power": 0,
+      "coefficient": -9,
+      "v_power": 6,
+      "x_power": 6
+    },
+    {
+      "a_power": 0,
+      "coefficient": 60,
+      "v_power": 5,
+      "x_power": 5
+    },
+    {
+      "a_power": 0,
+      "coefficient": -165,
+      "v_power": 4,
+      "x_power": 4
+    },
+    {
+      "a_power": 0,
+      "coefficient": 240,
+      "v_power": 3,
+      "x_power": 3
+    },
+    {
+      "a_power": 0,
+      "coefficient": -195,
+      "v_power": 2,
+      "x_power": 2
+    },
+    {
+      "a_power": 0,
+      "coefficient": 84,
+      "v_power": 1,
+      "x_power": 1
+    },
+    {
+      "a_power": 0,
+      "coefficient": -15,
+      "v_power": 0,
+      "x_power": 0
+    }
+  ],
+  "a_eliminated": true,
+  "arithmetic": "Exact integers in the sparse polynomial ring Z[a,v,x]; no floats or CAS dependency",
+  "elimination_identity": "x*f'(x)-15*f(x)=3*x^18-3*x^12+(v*x-1)^5*(15-9*v*x)",
+  "f_constant_term": 1,
+  "limits": [
+    "This exact identity computation is not a Lean proof or a separability transfer argument",
+    "Generic distinctness additionally uses characteristic zero and a transcendental over the coefficient field containing v",
+    "The prior a=2,v=1 double-root control is reused by hash; it is not rerun here",
+    "No source normalization, unsplit descent, primitive, HasCertificate, or solve claim"
+  ],
+  "mutation_controls": [
+    {
+      "expected_obstruction": "The coefficient of a*x^15 is -1, so a is not eliminated",
+      "mutation": "Replace multiplier 15 by 14 in x*f'-15*f",
+      "residual_a_terms": [
+        {
+          "a_power": 1,
+          "coefficient": -1,
+          "v_power": 0,
+          "x_power": 15
+        }
+      ]
+    },
+    {
+      "expected_obstruction": "The coefficient of a*x^14 is 1, so a is not eliminated",
+      "mutation": "Change physical term -a*x^15 to -a*x^14 but retain multiplier 15",
+      "residual_a_terms": [
+        {
+          "a_power": 1,
+          "coefficient": 1,
+          "v_power": 0,
+          "x_power": 14
+        }
+      ]
+    },
+    {
+      "expected_obstruction": "The claimed identity differs by nonzero 18*v*x*(v*x-1)^5",
+      "mutation": "Change (15-9*v*x) to (15+9*v*x) in the claimed eliminant",
+      "residual_terms": [
+        {
+          "a_power": 0,
+          "coefficient": 18,
+          "v_power": 6,
+          "x_power": 6
+        },
+        {
+          "a_power": 0,
+          "coefficient": -90,
+          "v_power": 5,
+          "x_power": 5
+        },
+        {
+          "a_power": 0,
+          "coefficient": 180,
+          "v_power": 4,
+          "x_power": 4
+        },
+        {
+          "a_power": 0,
+          "coefficient": -180,
+          "v_power": 3,
+          "x_power": 3
+        },
+        {
+          "a_power": 0,
+          "coefficient": 90,
+          "v_power": 2,
+          "x_power": 2
+        },
+        {
+          "a_power": 0,
+          "coefficient": -18,
+          "v_power": 1,
+          "x_power": 1
+        }
+      ]
+    }
+  ],
+  "physical_polynomial": "x^18+x^12+(v*x-1)^6-a*x^15",
+  "root_recovery_identity": "f(x)+a*x^15=x^18+x^12+(v*x-1)^6",
+  "status": "PASS_EXACT_IDENTITY_AND_THREE_MUTATION_CONTROLS"
+}

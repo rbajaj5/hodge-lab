@@ -1,0 +1,14 @@
+{
+  "scope": "Coordinator exact algebra check only; not a Lean proof of algebraicity transfer or root enumeration",
+  "python": "3.11.9",
+  "sympy": "1.14.0",
+  "coefficient_ring": "Q[x,a,v,t]",
+  "checks": {
+    "elimination_identity": true,
+    "a_eliminated": true,
+    "nonzero_constant_minus_15": true,
+    "wrong_sign_mutation_detected": true
+  },
+  "expanded_D": "-9*v**6*x**6 + 60*v**5*x**5 - 165*v**4*x**4 + 240*v**3*x**3 - 195*v**2*x**2 + 84*v*x + 3*x**18 - 3*x**12 - 15",
+  "seconds": 0.23400000000037835
+}

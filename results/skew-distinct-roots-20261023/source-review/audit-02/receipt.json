@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "results/skew-distinct-roots-20261023/source-review/audit_saved_evidence.py"
+  ],
+  "started_utc": "2026-10-23T23:09:32.858554+00:00",
+  "elapsed_seconds": 0.047445960000914056,
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "executor": "distinct_review AI read-only reviewer",
+  "source_sha256": "ddf9e1d28ce4aeb1b0c978258eedc94d315be55c38424a727009792c1f0ae420",
+  "stdout_sha256": "0c80f07d2535ff85662d044697001cf9989a1e4c8a301febbd3733a00e8a46c0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Saved evidence hash/log audit only; no Lean or mathematical calculation"
+}

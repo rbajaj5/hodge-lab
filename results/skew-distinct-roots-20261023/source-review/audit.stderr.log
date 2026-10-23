@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/results/skew-distinct-roots-20261023/source-review/audit_saved_evidence.py", line 191, in <module>
+    main()
+  File "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/results/skew-distinct-roots-20261023/source-review/audit_saved_evidence.py", line 135, in main
+    check(path.parent / 'GenericDistinctRoots.lean', attempt['source_sha256'])
+                                                     ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'source_sha256'

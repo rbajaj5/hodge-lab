@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "manifest_members": 231,
+  "applied_tree": "6b0afd87f571a8bc7922d71fa8bbd31ee56b13ba",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023",
+        "apply",
+        "--check",
+        "--index",
+        "C:\\Users\\anaxe\\Documents\\Codex\\roots-handoff-20261023\\hodge-distinct-roots-bf0c692.patch"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023",
+        "apply",
+        "--index",
+        "C:\\Users\\anaxe\\Documents\\Codex\\roots-handoff-20261023\\hodge-distinct-roots-bf0c692.patch"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "C:/Users/anaxe/Documents/Codex/roots-handoff-20261023/hodge-distinct-roots-bf0c692.patch:6452: trailing whitespace.\n \nC:/Users/anaxe/Documents/Codex/roots-handoff-20261023/hodge-distinct-roots-bf0c692.patch:6454: trailing whitespace.\n \nC:/Users/anaxe/Documents/Codex/roots-handoff-20261023/hodge-distinct-roots-bf0c692.patch:6476: trailing whitespace.\n \nC:/Users/anaxe/Documents/Codex/roots-handoff-20261023/hodge-distinct-roots-bf0c692.patch:6481: trailing whitespace.\n \nC:/Users/anaxe/Documents/Codex/roots-handoff-20261023/hodge-distinct-roots-bf0c692.patch:6487: trailing whitespace.\n \nwarning: squelched 9105 whitespace errors\nwarning: 9110 lines add whitespace errors.\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023",
+        "write-tree"
+      ],
+      "exit": 0,
+      "stdout": "6b0afd87f571a8bc7922d71fa8bbd31ee56b13ba\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "executor": "Pro chat root",
+  "command": [
+    "git",
+    "archive",
+    "--format=tar",
+    "HEAD"
+  ],
+  "scope": "Read raw parent Git blobs; no extraction, normalization or mutation",
+  "historical_files": 3086,
+  "git_exit_code": 0,
+  "git_stderr": "",
+  "git_blob_vs_initial_checkout_differences": [],
+  "elapsed_seconds": 0.8549775790015701
+}

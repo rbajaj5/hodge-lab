@@ -1,0 +1,65 @@
+{
+  "notebook_parent": "bf0c69287865ba00d3e651cdbc4d0f881deba4db",
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "recorded_utc": "2026-10-23T22:57:48.025441+00:00",
+  "pins": [
+    {
+      "upstream_path": "AGENTS.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/AGENTS.md",
+      "git_blob": "023f7734a0cfeed450c241c77049aa54ae0636d6",
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "bytes": 5141
+    },
+    {
+      "upstream_path": "CONTRIBUTING.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/CONTRIBUTING.md",
+      "git_blob": "5f093c306f5d73263de3863b42631a4c9f2c8c9f",
+      "sha256": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+      "bytes": 21521
+    },
+    {
+      "upstream_path": "formal/README.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/formal/README.md",
+      "git_blob": "330b3aaba1f9ac4283ce40d347a153a260b79cb0",
+      "sha256": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+      "bytes": 10905
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/instance.rec",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec",
+      "git_blob": "2eb2d72427b8cca49a49029c930fe4aa88b81720",
+      "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "bytes": 340
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/provenance.json",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/provenance.json",
+      "git_blob": "e75110bb3e35f5cb5b70364a0c3accc935052329",
+      "sha256": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+      "bytes": 667
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/why.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/why.md",
+      "git_blob": "c8c9930215f857586c5e52bc1ff0a2957dc47be6",
+      "sha256": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28",
+      "bytes": 2835
+    }
+  ],
+  "historical_context_raw_sha256": {
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "formal/results/skew-physical-cover/inputs.json": "6e091298c7e09c7f34af5638cb685cac8dfa48a05e9433756737056c38453472",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json": "b12036f10e69df667c85c15573b20fe57ec92ab8ec98024b932b9b49f25abff6",
+    "results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json": "83eddfdd118095a73e2cd9a978e37b75db09ec42abad841ec5b01b6b5bfe5840",
+    "results/ci-receipt-physical-cover-20261023/integration/remote-ci/verification.json": "11156829eb7dbbd07a5cf5bb445d0aedb260daada07b9330e7e69e13bc5aee60",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "3f693c1ead9f2849eda88348ddf74c5d22b783b0aaf09ca1e45c49dd5a18c026"
+  },
+  "historical_instance_path": "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/instance.rec",
+  "current_instance_path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec",
+  "removed_generated_paths": {
+    "data/one-reflection-skew/record.json": true,
+    "data/index.json": true
+  },
+  "scope": "Current authoritative instance.rec and historical immutable context. Old record.json pins remain historical and unchanged."
+}

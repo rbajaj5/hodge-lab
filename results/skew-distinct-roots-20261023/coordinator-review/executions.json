@@ -1,0 +1,41 @@
+{
+  "executor": "Goal-enabled Codex coordinator; independent replay of source gate and exact-polynomial script, not a local Lean replay",
+  "utc": "2026-10-23T23:24:27.105049+00:00",
+  "commands": [
+    {
+      "label": "source",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-X",
+        "utf8",
+        "-O",
+        "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023\\results\\skew-distinct-roots-20261023\\verify_source_snapshot.py",
+        "--output-dir",
+        "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023\\results\\skew-distinct-roots-20261023\\coordinator-review\\source"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.17199999999866122,
+      "bound_seconds": 60,
+      "stdout_sha256": "1e0ae0ac3d3047ec76003cac53e80929862949c4690980335d793d5a34a041b1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_raw_sha256": "b26b0cfdc3c4703c27d22ffe19c94cb84ed1abd4fccd4448dd27c15518a95a37"
+    },
+    {
+      "label": "exact-polynomial",
+      "command": [
+        "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-X",
+        "utf8",
+        "-O",
+        "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023\\results\\skew-distinct-roots-20261023\\math-review\\check_elimination.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07800000000133878,
+      "bound_seconds": 60,
+      "stdout_sha256": "171308d662e060be8e28bf960ea784324389d383d807bf98177be4544d3f8a28",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_raw_sha256": "64cb87f57ae3c3ed07d3e6eb9684182f1d7d8257bb71ba55bd8fbd8ef1401871"
+    }
+  ],
+  "saved_text_normalization": "UTF-8 text normalized CRLF to LF for Git; original bytes retained in raw-windows-captures.json"
+}

@@ -1,0 +1,17 @@
+{
+  "label": "separability-closure",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/formal",
+  "started_utc": "2026-10-23T23:00:12.635680+00:00",
+  "elapsed_seconds": 2.8452347870006633,
+  "exit_code": 0,
+  "timeout_seconds": 120,
+  "source_sha256": "e84315d1a1c077716795964e3ba35bb7e2ca23b65b904c48aa189409b190965c",
+  "worker": "distinct_lean",
+  "ELAN_HOME": "/workspace/scratch/b8974c152662/lean-environment"
+}

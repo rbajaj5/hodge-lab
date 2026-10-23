@@ -1,0 +1,802 @@
+{
+  "status": "PASS",
+  "executor": "Pro chat root",
+  "scope": "Saved source/log/pin, staged content, UTF-8, links and preservation audit; no proof execution.",
+  "completed_utc": "2026-10-23T23:12:51.447316+00:00",
+  "parent": "bf0c69287865ba00d3e651cdbc4d0f881deba4db",
+  "elapsed_seconds": 0.8088467540001147,
+  "historical_result_files_checked": 3086,
+  "historical_result_files_changed": [],
+  "ledger_original_bytes": 393826,
+  "ledger_original_sha256": "645c410bb39705ad63f849caa7c7948e978808b9eb6ce18d6df35117eb48820f",
+  "ledger_append_bytes": 8233,
+  "ledger_append_sha256": "c20a0cfd73371faf3bfad19c243f3e838f2a6fd23e0d6ef4196bc7e5c2328bc5",
+  "staged_files_checked": 192,
+  "staged_raw_sha256": {
+    ".github/workflows/lean.yml": "1d3100fd3f62a1947264136723c8192f30b0766b862cf24982682c409f235721",
+    "LEDGER.md": "8fffcdc709f208e43571eddbf643438540623b6a04372177e1a3e23cfdc62ff3",
+    "README.md": "d769442c494097c0b360875f1e79b619bac9e8785ed9d291bc386889f13be73c",
+    "formal/AuditSkewDistinctRoots.lean": "ddfe13420636d3cdd3e500824d24bd279318663fd72f9c7b3d4389f4b373c47a",
+    "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "formal/ReplaySkewDistinctRoots.lean": "db47e8985a2cc545f13bdf984ed0c3f329d52a28004ea956b30dd4bdad60c63e",
+    "formal/check_skew_distinct_roots.py": "39cee47d3030ebe61252bfee5a241f3158053b38f72eb7b89771058a390ae2e4",
+    "formal/results/skew-distinct-roots/inputs.json": "85b3739d879f4a3d886c9ffbb16902fcc230f6326a27b51f679d9307460a1c6c",
+    "notes/skew-generic-distinct-roots.md": "e2118e8833950522e25fa2f3419b56d3f8710a15f7232648c261689068d21a17",
+    "results/skew-distinct-roots-20261023/bootstrap-preservation.json": "b7cd1c898812bdf463f3d107f95b2bd81998fca42851a94ddf8bf3768f3d3e28",
+    "results/skew-distinct-roots-20261023/checkpoint139-append.md": "c20a0cfd73371faf3bfad19c243f3e838f2a6fd23e0d6ef4196bc7e5c2328bc5",
+    "results/skew-distinct-roots-20261023/coordinator-support-reported.json": "03aec336a39ae36ecbad04ec67da5d94666e2d9a80905d45efa832358a09a9ae",
+    "results/skew-distinct-roots-20261023/historical-files-sha256.json": "a8b77f2c2b6ba02094a473a3a540ddf0267dc7c25055281dbac0da7dbbd6b106",
+    "results/skew-distinct-roots-20261023/inputs/upstream/AGENTS.md": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+    "results/skew-distinct-roots-20261023/inputs/upstream/CONTRIBUTING.md": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/why.md": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28",
+    "results/skew-distinct-roots-20261023/inputs/upstream/formal/README.md": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+    "results/skew-distinct-roots-20261023/integration/figure-execution-01/execution.json": "2a3efdd32e16ab31911f2a0e2ffa071515c8f5278bc26fa09b1362f6ffcc720d",
+    "results/skew-distinct-roots-20261023/integration/figure-execution-01/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/integration/figure-execution-01/stdout.log": "c34fd1c836b0112a7e1f4c91049143e6e096b3e6ad524c79f869c08cc13ffa80",
+    "results/skew-distinct-roots-20261023/integration/figure-execution-02/execution.json": "8c4314a5f0d8ed7a4b98ae715a8d0a28d13b72f65c3e60518011c84d0f89ed81",
+    "results/skew-distinct-roots-20261023/integration/figure-execution-02/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/integration/figure-execution-02/stdout.log": "ec3e530373ca298a64aece05d36788afec5d2d0851772b92c37a5d5cac37ed78",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225855259231Z-eliminant-core/GenericDistinctRoots.lean": "180e59f05c2d4dce9e9acf1b4a47d1cf1bd691ff8aba25d6401b4a0f32983c36",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225855259231Z-eliminant-core/attempt.json": "931e8c7e4e9abaa6f8eaf7b58c8534689f7b891377cd1b5be100368875a81a51",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225855259231Z-eliminant-core/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225855259231Z-eliminant-core/stdout.log": "81221d447c2bc303ce5f2a1a6c947d08e662149ea94421917a2b778afe2429b0",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225931142739Z-separability-core/GenericDistinctRoots.lean": "1d2d33498ba1a3c26338f02ce205c9192c1299eab24945030fbcf901ecc4d6e1",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225931142739Z-separability-core/attempt.json": "8ae5c41e5582b93edbb1dd31cd132b23c879fe1aa52692fa59e164416c032af1",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225931142739Z-separability-core/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225931142739Z-separability-core/stdout.log": "cdf838ed39fce9978469a6f993dbadd0d687d34747cd632cc44edce14e9f9f36",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225956239265Z-separability-normalization/GenericDistinctRoots.lean": "bad78e9e6f30cd8f368e2c828996941da6fc2dddfce0aa3c93f8f16df6441261",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225956239265Z-separability-normalization/attempt.json": "7b14b4e00544b875d97f7663ca229893fce5be2e54628dcb249ca8312a0abfc7",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225956239265Z-separability-normalization/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T225956239265Z-separability-normalization/stdout.log": "3ea6a85557d669c1400b740f639c8210a71c2abac29afc02990f8764189fcec6",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230012633808Z-separability-closure/GenericDistinctRoots.lean": "e84315d1a1c077716795964e3ba35bb7e2ca23b65b904c48aa189409b190965c",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230012633808Z-separability-closure/attempt.json": "67b7c076f3fb3e8d085d9bc73a7d8c3eb1ae834ea38409b294835a4023d70beb",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230012633808Z-separability-closure/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230012633808Z-separability-closure/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230107140989Z-generic-split-roots/GenericDistinctRoots.lean": "8e6e75a3afb3355c49d719b0a69c4e8267cdbd617872af336ba3fc5a19f75af9",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230107140989Z-generic-split-roots/attempt.json": "103c07380c2838d1b7d76e8ff30b22fb20b1728bd0873cc945608aa5331c9edd",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230107140989Z-generic-split-roots/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230107140989Z-generic-split-roots/stdout.log": "274856b88b20acc92ea38ec77ff91e142c98218970649afa48701c5ddaee3375",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230202405622Z-generic-tower-coercions/GenericDistinctRoots.lean": "b0886c327a49cd2a4ada3bfc8bdfb26e73737950c56a84530282977bce4842de",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230202405622Z-generic-tower-coercions/attempt.json": "e4dbc3ff004be114e5b14e7a00a64861891ef14857f246adfe0a33df55fb5153",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230202405622Z-generic-tower-coercions/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230202405622Z-generic-tower-coercions/stdout.log": "54ebd73e9e6f40d7d09d2f3c00828254a07bca3c3f7fde749c2e3a32fb32ffa6",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230224652062Z-generic-distinct-complete/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230224652062Z-generic-distinct-complete/attempt.json": "58cc57b944a1bb0d9e7fb9d87c50635738c4aa1b44dff0daf5ba89c9d7b71670",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230224652062Z-generic-distinct-complete/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/20261023T230224652062Z-generic-distinct-complete/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01-launch/attempt.json": "5a9645b064c5da2ffe800431508165922f64e793519123f3c61f0418393bcd28",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01-launch/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01-launch/stdout.log": "09760dfdf5e347ac9d8cbfad69103929008ccd3ac379104300626938d8c4ffc6",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/axioms.log": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/axioms.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/axioms.stdout.log": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/build.log": "1e79cd56406c1d89b4927c8b2912cd58de48b741c184800e565bf860b9e6cfd3",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/build.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/build.stdout.log": "1e79cd56406c1d89b4927c8b2912cd58de48b741c184800e565bf860b9e6cfd3",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/commands.json": "9da36235e96519988ec659e794f41943f9db9626ca0c9aaa9df09ce1708a421f",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/eliminant-sign-mutation-rejected.lean.txt": "b44356a274f4bd3c39a40b901adb98f99def0aab6a56f29785b13478d5aef754",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/eliminant-sign-mutation-rejected.log": "8123c817ea15caeece4682a83052f11c40f2cf347cc4dd371451b7ff35be2759",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/eliminant-sign-mutation-rejected.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/eliminant-sign-mutation-rejected.stdout.log": "8123c817ea15caeece4682a83052f11c40f2cf347cc4dd371451b7ff35be2759",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/kernel-replay.log": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/kernel-replay.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/kernel-replay.stdout.log": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/mathlib-head.log": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/mathlib-head.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/mathlib-head.stdout.log": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/positive-controls.lean.txt": "26712f9fd6a5215d28d39c457a43baa6e28cd6ae688fa507aae6cab81c16473d",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/positive-controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/positive-controls.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/positive-controls.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/root-collision-rejected.lean.txt": "6c20af613511e26935f8a634263ed6a1cf49821e98e9757549ac3b2441c81b8a",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/root-collision-rejected.log": "db4c1d4254a5e21b9ec9a3c22d509471131fe313a257ee0a2caf8f26c0bfe8aa",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/root-collision-rejected.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/root-collision-rejected.stdout.log": "db4c1d4254a5e21b9ec9a3c22d509471131fe313a257ee0a2caf8f26c0bfe8aa",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-inputs.json": "61f91e68b1082212993ed2b0e0f9590505dd4ce95647dd82f6262571d8398fa6",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/AuditSkewDistinctRoots.lean.txt": "ddfe13420636d3cdd3e500824d24bd279318663fd72f9c7b3d4389f4b373c47a",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean.txt": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/ReplaySkewDistinctRoots.lean.txt": "db47e8985a2cc545f13bdf984ed0c3f329d52a28004ea956b30dd4bdad60c63e",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/check_skew_distinct_roots.py.txt": "aac8a85b2d4632ec609d1cb6a8afc27426559cc321d8bda89da9aba3b9f450fb",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/check_skew_extension.py.txt": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/fresh_receipts.py.txt": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/inputs.json.txt": "85b3739d879f4a3d886c9ffbb16902fcc230f6326a27b51f679d9307460a1c6c",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/lake-manifest.json.txt": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/lakefile.toml.txt": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/source-snapshot/lean-toolchain.txt": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/universal-specialization-rejected.lean.txt": "18645b8628787d5dd75158ffcc8b6e2cbe7f5002e2e719c6ecfcdd5a105c73a6",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/universal-specialization-rejected.log": "7e61dc6c3640f7129a09c3fb20123d5ecf3dff03aade15d6b42ac7c327c230f3",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/universal-specialization-rejected.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/universal-specialization-rejected.stdout.log": "7e61dc6c3640f7129a09c3fb20123d5ecf3dff03aade15d6b42ac7c327c230f3",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/validation.json": "d0ad09a5d70c23e6136dba4121fb649137ca90581c00fa0b946b1f119719523c",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/version.log": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/version.stdout.log": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02-launch/attempt.json": "c7da0b442f97763a6f6812696b4e1b4fcbc6df6327602364c1ab1786d9afad0b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02-launch/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02-launch/stdout.log": "38ee22634fcf0fa256e911b9ba4bb8e4128629256a71a572808f735a4447a8c2",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/axioms.log": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/axioms.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/axioms.stdout.log": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/build.log": "4ffa661a10c84cb6a54171f3f7ef4b0b5f68212142f7ccb03d7f1b66cfa4c28b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/build.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/build.stdout.log": "4ffa661a10c84cb6a54171f3f7ef4b0b5f68212142f7ccb03d7f1b66cfa4c28b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/commands.json": "9ef4187e9e1c7402caea61965584da927e121176316d104feeed7ef8d3913760",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/eliminant-sign-mutation-rejected.lean.txt": "b44356a274f4bd3c39a40b901adb98f99def0aab6a56f29785b13478d5aef754",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/eliminant-sign-mutation-rejected.log": "82c6f5d32b62a2e9e01bccfc43d83416a420327d085593e871685710e13486ce",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/eliminant-sign-mutation-rejected.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/eliminant-sign-mutation-rejected.stdout.log": "82c6f5d32b62a2e9e01bccfc43d83416a420327d085593e871685710e13486ce",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/kernel-replay.log": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/kernel-replay.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/kernel-replay.stdout.log": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/mathlib-head.log": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/mathlib-head.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/mathlib-head.stdout.log": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/positive-controls.lean.txt": "26712f9fd6a5215d28d39c457a43baa6e28cd6ae688fa507aae6cab81c16473d",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/positive-controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/positive-controls.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/positive-controls.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/root-collision-rejected.lean.txt": "6c20af613511e26935f8a634263ed6a1cf49821e98e9757549ac3b2441c81b8a",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/root-collision-rejected.log": "6f3dc0a23196d860eda7cdba4ed99fcc4c88810b2333abee443eb66432bb3cc7",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/root-collision-rejected.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/root-collision-rejected.stdout.log": "6f3dc0a23196d860eda7cdba4ed99fcc4c88810b2333abee443eb66432bb3cc7",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-inputs.json": "c1a129852491d9eb0df86d01656e920f160c5f01a5053ab00e4a4a24a2a10c52",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/AuditSkewDistinctRoots.lean.txt": "ddfe13420636d3cdd3e500824d24bd279318663fd72f9c7b3d4389f4b373c47a",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean.txt": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/ReplaySkewDistinctRoots.lean.txt": "db47e8985a2cc545f13bdf984ed0c3f329d52a28004ea956b30dd4bdad60c63e",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/check_skew_distinct_roots.py.txt": "39cee47d3030ebe61252bfee5a241f3158053b38f72eb7b89771058a390ae2e4",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/check_skew_extension.py.txt": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/fresh_receipts.py.txt": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/inputs.json.txt": "85b3739d879f4a3d886c9ffbb16902fcc230f6326a27b51f679d9307460a1c6c",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/lake-manifest.json.txt": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/lakefile.toml.txt": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/source-snapshot/lean-toolchain.txt": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/universal-specialization-rejected.lean.txt": "18645b8628787d5dd75158ffcc8b6e2cbe7f5002e2e719c6ecfcdd5a105c73a6",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/universal-specialization-rejected.log": "60f307bb30d867cba5fac790f093ceedc2c382555431aa0cea42e900239ec741",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/universal-specialization-rejected.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/universal-specialization-rejected.stdout.log": "60f307bb30d867cba5fac790f093ceedc2c382555431aa0cea42e900239ec741",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/version.log": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/version.stdout.log": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "results/skew-distinct-roots-20261023/lean-development/create_checker.py": "1fb11fc2afc16a972754d94c53a302d4938782d576997895e7107de03edc542d",
+    "results/skew-distinct-roots-20261023/lean-development/run_attempt.py": "9408a999368e51cc9b66accb5e9a1c88a5feb6aef05add9d21d2aac8a724920c",
+    "results/skew-distinct-roots-20261023/lean-development/run_checker-v1.py": "98bc5cdb9f94be53cc1f8ec7c1db0be0818145000e76accb764891b543d70429",
+    "results/skew-distinct-roots-20261023/lean-development/run_checker.py": "99408b9673e3064630c0323f46cca9fe6d77b8f74ecac8fd4ef78a0c821177e3",
+    "results/skew-distinct-roots-20261023/lean-development/worker-summary-final.json": "cc56a22eb0865d0c678a1a4ed6a02707c7e7fe93413765a9e71203c6368fb91c",
+    "results/skew-distinct-roots-20261023/lean-development/worker-summary.json": "6681b2335abf809bab1956dc539ca21caf583b5db751500f7b62094dbd3edb9a",
+    "results/skew-distinct-roots-20261023/math-review/check_elimination.py": "b4c1abf0298d5d8ef8a45fd47577974d9a47d75d3066de643074be2bdfa24a2a",
+    "results/skew-distinct-roots-20261023/math-review/derivation.md": "26151536fd07257afcb9c21640bff299daf45c9d02f547a72ac2385d4aa581ea",
+    "results/skew-distinct-roots-20261023/math-review/exact-01/receipt.json": "e5d2046371aa4991dd005165db51a5235e5a746bc9004ffc2d3f22d9cfc4e92e",
+    "results/skew-distinct-roots-20261023/math-review/exact-01/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/math-review/exact-01/stdout.json": "171308d662e060be8e28bf960ea784324389d383d807bf98177be4544d3f8a28",
+    "results/skew-distinct-roots-20261023/math-review/review.json": "b8c42d68b02a304819c1fd573debcd06e8d314cdf404607d0e415001d0643107",
+    "results/skew-distinct-roots-20261023/math-review/run_exact_review.py": "7505ed71891d81284233413c848ef7937897b67f79abc3d61f3f9c4b06db0a9d",
+    "results/skew-distinct-roots-20261023/mathematical-completion.json": "16ae5d310f189db97506a9cf8392522b39f0a85c367a780748a1463dce2437c6",
+    "results/skew-distinct-roots-20261023/notebook-head.json": "6f7cf92ada15c44c2deeda744424fa63e52c613ab38769c4db5395552f113f08",
+    "results/skew-distinct-roots-20261023/plan.json": "2cc86741c2cfd9c6abd9bb2940a679bff2445424b339b411b6f4d82a23b86015",
+    "results/skew-distinct-roots-20261023/reused-published-ci-run.json": "66cbd322698ff83e75492701b239905a16d677d430afe42711ff06b42563d04f",
+    "results/skew-distinct-roots-20261023/run_recorded.py": "c452735bed99137e1127e1f7106b6052dee89e12973c36682ec7ef260ed9b809",
+    "results/skew-distinct-roots-20261023/source-check/root-observation.json": "d355a176fb8c56b4d20818905153ac3e7ed08eee9ea842fd6eab8a2b3ef8efb5",
+    "results/skew-distinct-roots-20261023/source-check/validation.json": "0dbfbf3ac67ab6787a70383ea65661d28411b19e723c5d9b24e18faa9d49d2c3",
+    "results/skew-distinct-roots-20261023/source-pins.json": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4",
+    "results/skew-distinct-roots-20261023/source-review/audit-01-failure.json": "9a42377df6891221e8447c07cc547a78a1692ff4d552ea649ae07ffb3d525fe6",
+    "results/skew-distinct-roots-20261023/source-review/audit-01.py.txt": "ce980fbb095142db064d2bb6777e375ca179dcf66a1e657f0603355f60603eef",
+    "results/skew-distinct-roots-20261023/source-review/audit-02/receipt.json": "1e9aa357cb88ce121f00a32f68bacff35ac611696d9f56a7258cb893ed49f172",
+    "results/skew-distinct-roots-20261023/source-review/audit-02/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/source-review/audit-02/stdout.log": "0c80f07d2535ff85662d044697001cf9989a1e4c8a301febbd3733a00e8a46c0",
+    "results/skew-distinct-roots-20261023/source-review/audit.stderr.log": "f321dd3d6d9c1a434d8b59696d034707be81324f659e8cc1f28b73d0c46e1226",
+    "results/skew-distinct-roots-20261023/source-review/audit.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-distinct-roots-20261023/source-review/audit_saved_evidence.py": "ddf9e1d28ce4aeb1b0c978258eedc94d315be55c38424a727009792c1f0ae420",
+    "results/skew-distinct-roots-20261023/source-review/final-review.json": "8cae6dfc6f257c3227da5fccda3cf76f8f6fe41718207f0bea63c610fb416863",
+    "results/skew-distinct-roots-20261023/source-review/preliminary-review.json": "4334a59d974e9cf133b90231534b771424d740c1c9b2cbdbc54cacc7317da9d7",
+    "results/skew-distinct-roots-20261023/upstream-head.json": "afc016090e01ddc2ab696c5dd306ecd4c821ec3e66838a10445d2069fb3aa20f",
+    "results/skew-distinct-roots-20261023/verify_delivery.py": "1a311f01cacec52fd671cb9a93000703e70b040201b5e6c37a17f435f64f8750",
+    "results/skew-distinct-roots-20261023/verify_source_snapshot.py": "e9a1d941fd8c7d0aa1493925e333b6b3f137f37be74495b8c4396b50ac85cc89",
+    "results/skew-distinct-roots-20261023/visualization-01/generator.py": "eb61e6d4cb61f7f4aec25b1e0f0df1e9bd939012fc374bdbd2b3508f5679e683",
+    "results/skew-distinct-roots-20261023/visualization-01/generic-distinct-roots.png": "ea94c1057e8d49f14b0b8f541aa282db1cf7c9cf114d93d653c34b76e8a01e33",
+    "results/skew-distinct-roots-20261023/visualization-01/generic-distinct-roots.svg": "ee4f7e0580c564bf4d765571f4ea9a216f4fbad4c143f2b918874caa13be7ef0",
+    "results/skew-distinct-roots-20261023/visualization-01/visual-review.json": "6a60a8728a7d3abdaaf665eae105d8d13e90806f6c4bf485a170f0b8cf0b7e53",
+    "results/skew-distinct-roots-20261023/visualization-01/visualization.json": "c34fd1c836b0112a7e1f4c91049143e6e096b3e6ad524c79f869c08cc13ffa80",
+    "results/skew-distinct-roots-20261023/visualization-02/generator.py": "e92af427506213aa1304832fb8ca1b5e5319747fead9f9f19d0ad072ee6cf1e9",
+    "results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png": "948ed59f74fed50e4028d4c8b5c520bf985a2d096d88c2e126431b670e313690",
+    "results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.svg": "bbbc438c260cc8b5eb3aadcec5ec704e25cfdf144e45c3f480a3d863816c6a53",
+    "results/skew-distinct-roots-20261023/visualization-02/visual-review.json": "cccea9b1424887a485be34fd74a7cb612fbbec9f28403f427c0d3d213fb1ae26",
+    "results/skew-distinct-roots-20261023/visualization-02/visualization.json": "ec3e530373ca298a64aece05d36788afec5d2d0851772b92c37a5d5cac37ed78",
+    "scripts/visualize_skew_distinct_roots.py": "e92af427506213aa1304832fb8ca1b5e5319747fead9f9f19d0ad072ee6cf1e9"
+  },
+  "modified_existing_files": [
+    ".github/workflows/lean.yml",
+    "LEDGER.md",
+    "README.md"
+  ],
+  "utf8_text_files_checked": 190,
+  "binary_png_files": [
+    "results/skew-distinct-roots-20261023/visualization-01/generic-distinct-roots.png",
+    "results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png"
+  ],
+  "local_links_checked": 143,
+  "local_links": [
+    {
+      "document": "README.md",
+      "target": "LEDGER.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/one-reflection-skew-feedback-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/idea-atlas.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "SOURCES.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/catalogue-prym-monitor-20261023.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/one-reflection-skew-feedback-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/one-reflection-skew-degree7.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/catalogue-prym-monitor-20261023.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/fresh-instance-degree6.md"
+    },
+    {
+      "document": "README.md",
+      "target": "LEDGER.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/mixed-degree6-extra.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/upstream-status-20261022.md"
+    },
+    {
+      "document": "README.md",
+      "target": "algebra/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/repository-audit-20261021.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/one-reflection-skew-mathematical-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/one-reflection-skew-audit-20261021/audit-map.png"
+    },
+    {
+      "document": "README.md",
+      "target": "results/one-reflection-skew-audit-20261021/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/one-reflection-skew-hessian-source.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/one-reflection-skew-hessian-source/source-map.png"
+    },
+    {
+      "document": "README.md",
+      "target": "results/one-reflection-skew-hessian-source/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-generic-distinct-roots.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-generic-distinct-roots.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-physical-cover-binding.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-physical-cover-binding.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-physical-cover-binding.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-trace-basis.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-trace-basis-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-trace-basis-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-trace-basis/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-forms.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-differential-forms-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-differential-forms-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-forms/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-compact-architecture.md"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-ambient.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-ambient-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-ambient-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/AmbientDerivation.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-ambient/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-residue.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-residue-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-residue-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-residue/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-volume.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-volume-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-volume-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/VolumeDensity.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-volume/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-chart.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-chart-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-chart-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-chart/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-extension.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-lean-extension.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-lean-extension.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/DegreeFour.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/skew-extension/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-lean.md"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/skew-base-derivatives.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-base-derivatives.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/skew-base-derivatives.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/skew-base-derivatives/verification.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/skew-base-derivatives/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/chi-target-source.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/chi-target-source.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/chi-target-source.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/chi-target-source/replay.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/chi-target-source/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/chi-curve-bridge.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/chi-curve-bridge.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/chi-curve-bridge.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/chi-curve-bridge/replay.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/chi-curve-bridge/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/covariant-jet-audit.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/covariant-jet-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/covariant-jet-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/covariant-jet-audit/replay.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/covariant-jet-audit/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "visualizations/physical-source-transport-audit.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/physical-source-transport-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/physical-source-transport-audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "scripts/audit_physical_source_transport.py"
+    },
+    {
+      "document": "README.md",
+      "target": "results/physical-source-transport-audit/validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/cyclic-fano-cubic-polars-figures/cyclic-fano-cubic-gpu-shortcut.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/cyclic-fano-cubic-polars.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/cyclic-fano-cubic-polars.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/cyclic-fano-cubic-gpu/report.json"
+    },
+    {
+      "document": "README.md",
+      "target": "experiments/check_cyclic_fano_cubic_polars.py"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/cyclic-fano-polynomial-bridge.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/HodgeLab/CyclicFano/Case05PolynomialField.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/results/polynomial-bridge-ci/39089131101/metadata.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/koszul-geometry/operator-geometry.png"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/koszul-geometric-map.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/koszul-geometric-map.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/koszul-denominator-sweep.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/idea-atlas.md"
+    },
+    {
+      "document": "README.md",
+      "target": "LEDGER.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/"
+    },
+    {
+      "document": "README.md",
+      "target": "experiments/"
+    },
+    {
+      "document": "README.md",
+      "target": "results/"
+    },
+    {
+      "document": "README.md",
+      "target": "algebra/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "SOURCES.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/cyclic-fano-cubic-polars.md#bounds-failures-and-reproduction"
+    },
+    {
+      "document": "README.md",
+      "target": "requirements.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "requirements-cuda.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "formal/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "notes/research-milestones.md"
+    },
+    {
+      "document": "README.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "skew-physical-cover-binding.md"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/math-review/check_elimination.py"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/math-review/derivation.md"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/source-pins.json"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/plan.json"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/coordinator-support-reported.json"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/lean-development"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../scripts/visualize_skew_distinct_roots.py"
+    },
+    {
+      "document": "notes/skew-generic-distinct-roots.md",
+      "target": "../results/skew-distinct-roots-20261023/visualization-02/visualization.json"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "notes/skew-generic-distinct-roots.md"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "formal/check_skew_distinct_roots.py"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/lean-development/worker-summary-final.json"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/math-review/derivation.md"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/source-review/final-review.json"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/source-pins.json"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "scripts/visualize_skew_distinct_roots.py"
+    },
+    {
+      "document": "results/skew-distinct-roots-20261023/checkpoint139-append.md",
+      "target": "results/skew-distinct-roots-20261023/visualization-02/visualization.json"
+    }
+  ],
+  "current_and_historical_source_pins_checked": 13,
+  "final_checker_receipt_sha256": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835",
+  "adversarial_review_sha256": "8cae6dfc6f257c3227da5fccda3cf76f8f6fe41718207f0bea63c610fb416863",
+  "source_diff_whitespace": "PASS; captured raw logs and source snapshots are preserved, not normalized",
+  "posts": "Entries1\u201329 retained in byte-identical original ledger prefix; no post made",
+  "tally": "29 discussion contributions /1 closed maintenance PR /0 accepted authored solves; unchanged",
+  "remote_writes": "None",
+  "new_remote_ci": "Not executed"
+}

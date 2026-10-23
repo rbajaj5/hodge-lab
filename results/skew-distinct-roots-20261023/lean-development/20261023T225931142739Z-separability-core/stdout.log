@@ -1,0 +1,43 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:28:91: error: unsolved goals
+k : Type u_1
+inst✝ : Field k
+a v : k
+⊢ -15 - X * C 6 * C v + X * C v * 90 + X ^ 2 * C 6 * C v ^ 2 * 5 - X ^ 2 * C v ^ 2 * 225 - X ^ 3 * C 6 * C v ^ 3 * 10 +
+                              X ^ 3 * C v ^ 3 * 300 +
+                            X ^ 4 * C 6 * C v ^ 4 * 10 -
+                          X ^ 4 * C v ^ 4 * 225 -
+                        X ^ 5 * C 6 * C v ^ 5 * 5 +
+                      X ^ 5 * C v ^ 5 * 90 +
+                    X ^ 6 * C 6 * C v ^ 6 -
+                  X ^ 6 * C v ^ 6 * 15 -
+                X ^ 12 * 15 +
+              X ^ 12 * C 12 +
+            X ^ 15 * C a * 15 -
+          X ^ 15 * C a * C 15 -
+        X ^ 18 * 15 +
+      X ^ 18 * C 18 =
+    -15 + X * C v * 84 - X ^ 2 * C v ^ 2 * 195 + X ^ 3 * C v ^ 3 * 240 - X ^ 4 * C v ^ 4 * 165 + X ^ 5 * C v ^ 5 * 60 -
+          X ^ 6 * C v ^ 6 * 9 -
+        X ^ 12 * 3 +
+      X ^ 18 * 3
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:94:4: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  IsCoprime ?p ?q
+in the target expression
+  IsCoprime (physicalPolynomial a ((algebraMap k K) v)) (derivative (physicalPolynomial a ((algebraMap k K) v)))
+
+k : Type u_1
+K : Type u_2
+inst✝³ : Field k
+inst✝² : Field K
+inst✝¹ : CharZero k
+inst✝ : Algebra k K
+a : K
+v : k
+ha : Transcendental k a
+⊢ IsCoprime (physicalPolynomial a ((algebraMap k K) v)) (derivative (physicalPolynomial a ((algebraMap k K) v)))

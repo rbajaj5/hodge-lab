@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-23T23:24:27.013649+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-O",
+    "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023\\results\\skew-distinct-roots-20261023\\verify_source_snapshot.py",
+    "--output-dir",
+    "C:\\Users\\anaxe\\Documents\\Codex\\hl-roots-20261023\\results\\skew-distinct-roots-20261023\\coordinator-review\\source"
+  ],
+  "elapsed_seconds": 0.046999999998661224,
+  "external_bound_seconds": 60,
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "source_sha256": {
+    "results/skew-distinct-roots-20261023/source-pins.json": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4",
+    "results/skew-distinct-roots-20261023/verify_source_snapshot.py": "e9a1d941fd8c7d0aa1493925e333b6b3f137f37be74495b8c4396b50ac85cc89",
+    "formal/fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "results/skew-distinct-roots-20261023/inputs/upstream/AGENTS.md": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+    "results/skew-distinct-roots-20261023/inputs/upstream/CONTRIBUTING.md": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+    "results/skew-distinct-roots-20261023/inputs/upstream/formal/README.md": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/why.md": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "formal/results/skew-physical-cover/inputs.json": "6e091298c7e09c7f34af5638cb685cac8dfa48a05e9433756737056c38453472",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json": "b12036f10e69df667c85c15573b20fe57ec92ab8ec98024b932b9b49f25abff6",
+    "results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json": "83eddfdd118095a73e2cd9a978e37b75db09ec42abad841ec5b01b6b5bfe5840",
+    "results/ci-receipt-physical-cover-20261023/integration/remote-ci/verification.json": "11156829eb7dbbd07a5cf5bb445d0aedb260daada07b9330e7e69e13bc5aee60",
+    "results/ci-receipt-physical-cover-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "3f693c1ead9f2849eda88348ddf74c5d22b783b0aaf09ca1e45c49dd5a18c026"
+  },
+  "literal_protected_fields": {
+    "id": "one-reflection-skew",
+    "F": "X0**6 + X0**3*X1*Y0*Y1 + X0*X1*Y0**3*Y1/7 - X0*X1*Y0*Y1**3/7 + X1**6 + X1**3*X2*Y0*Y1 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "q": "1",
+    "A": "X0**3*Y0**3"
+  },
+  "scope": "Single-target authoritative instance snapshot and immutable context correspondence only.",
+  "reused_evidence": "Prior literal physical-polynomial binding and remote CI success are reused, not rerun.",
+  "limits": [
+    "No new geometric source derivation",
+    "No generated record.json used as current authority",
+    "No separability proof is supplied by this source check"
+  ]
+}

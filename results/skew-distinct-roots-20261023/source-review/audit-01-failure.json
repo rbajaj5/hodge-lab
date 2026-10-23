@@ -1,0 +1,23 @@
+{
+  "status": "REVIEW_AUDIT_SCHEMA_FAILURE",
+  "reviewer": "distinct_review",
+  "recorded_utc": "2026-10-23T23:08:40.846455+00:00",
+  "command": [
+    "timeout",
+    "60",
+    "python3",
+    "-O",
+    "results/skew-distinct-roots-20261023/source-review/audit_saved_evidence.py"
+  ],
+  "exit_code": 1,
+  "source_snapshot": "audit-01.py.txt",
+  "source_sha256": "ce980fbb095142db064d2bb6777e375ca179dcf66a1e657f0603355f60603eef",
+  "stdout": "audit.stdout.log",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "audit.stderr.log",
+  "stderr_sha256": "f321dd3d6d9c1a434d8b59696d034707be81324f659e8cc1f28b73d0c46e1226",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "tool_reported_wall_time_seconds": 2.6019e-05,
+  "timing_note": "Tool-reported wall-time only; no separate monotonic process timing was captured for this first review audit.",
+  "obstruction": "KeyError source_sha256: checker-launch receipts have a different schema from per-source Lean development attempt receipts. No mathematical or Lean computation was executed by this audit."
+}

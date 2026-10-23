@@ -1,0 +1,75 @@
+{
+  "notebook_parent": "bf0c69287865ba00d3e651cdbc4d0f881deba4db",
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "context_receipt_lf_sha256": {
+    "formal/results/skew-trace-basis/validation.json": "b46616fd57a0a5adde559c0022b56b9d0871264909221d2ce2c3b964320a116b",
+    "formal/results/skew-physical-cover/inputs.json": "6e091298c7e09c7f34af5638cb685cac8dfa48a05e9433756737056c38453472",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json": "b12036f10e69df667c85c15573b20fe57ec92ab8ec98024b932b9b49f25abff6"
+  },
+  "physical_source_pins": [
+    {
+      "upstream_path": "AGENTS.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/AGENTS.md",
+      "git_blob": "023f7734a0cfeed450c241c77049aa54ae0636d6",
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "bytes": 5141
+    },
+    {
+      "upstream_path": "CONTRIBUTING.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/CONTRIBUTING.md",
+      "git_blob": "5f093c306f5d73263de3863b42631a4c9f2c8c9f",
+      "sha256": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+      "bytes": 21521
+    },
+    {
+      "upstream_path": "formal/README.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/formal/README.md",
+      "git_blob": "330b3aaba1f9ac4283ce40d347a153a260b79cb0",
+      "sha256": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+      "bytes": 10905
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/instance.rec",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec",
+      "git_blob": "2eb2d72427b8cca49a49029c930fe4aa88b81720",
+      "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "bytes": 340
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/provenance.json",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/provenance.json",
+      "git_blob": "e75110bb3e35f5cb5b70364a0c3accc935052329",
+      "sha256": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+      "bytes": 667
+    },
+    {
+      "upstream_path": "data/one-reflection-skew/why.md",
+      "path": "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/why.md",
+      "git_blob": "c8c9930215f857586c5e52bc1ff0a2957dc47be6",
+      "sha256": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28",
+      "bytes": 2835
+    }
+  ],
+  "source_pins_manifest": {
+    "path": "results/skew-distinct-roots-20261023/source-pins.json",
+    "sha256": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4"
+  },
+  "previous_physical_receipt": "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json",
+  "literal_definition_lean": "X ^ 18 + X ^ 12 + (C v * X - 1) ^ 6 - C a * X ^ 15",
+  "mathematical_scope": {
+    "base_field": "Q(v)(t)(a), explicit iterated RatFunc tower",
+    "v": "RatFunc.X in Q(v), embedded into Q(v)(t)(a)",
+    "t": "RatFunc.X in Q(v)(t), embedded into Q(v)(t)(a)",
+    "a": "RatFunc.X in Q(v)(t)(a), transcendental over Q(v)(t)",
+    "extension": "genericPolynomial.SplittingField, with canonical injective field embeddings",
+    "new_hypothesis_closed": "generic separability and an injective Fin 18 root tuple with all root equations",
+    "specialization_limit": "a=2,v=1 over Q has repeated root1; generic distinctness is not universal",
+    "excluded": [
+      "unsplit descent",
+      "physical differential source normalization",
+      "primitive",
+      "HasCertificate",
+      "target solve"
+    ]
+  }
+}

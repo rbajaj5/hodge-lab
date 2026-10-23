@@ -1,0 +1,28 @@
+{
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "check_skew_distinct_roots.py": "aac8a85b2d4632ec609d1cb6a8afc27426559cc321d8bda89da9aba3b9f450fb",
+    "AuditSkewDistinctRoots.lean": "ddfe13420636d3cdd3e500824d24bd279318663fd72f9c7b3d4389f4b373c47a",
+    "ReplaySkewDistinctRoots.lean": "db47e8985a2cc545f13bdf984ed0c3f329d52a28004ea956b30dd4bdad60c63e",
+    "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b"
+  },
+  "inputs_lf_sha256": "85b3739d879f4a3d886c9ffbb16902fcc230f6326a27b51f679d9307460a1c6c",
+  "reused_source_lf_sha256": {
+    "HodgeLab/OneReflectionSkew/TraceKernel.lean": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+    "HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+    "HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b"
+  },
+  "physical_source_sha256": {
+    "results/skew-distinct-roots-20261023/inputs/upstream/AGENTS.md": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+    "results/skew-distinct-roots-20261023/inputs/upstream/CONTRIBUTING.md": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+    "results/skew-distinct-roots-20261023/inputs/upstream/formal/README.md": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/why.md": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28"
+  }
+}

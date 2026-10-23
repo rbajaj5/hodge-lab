@@ -1,0 +1,29 @@
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:126:57: error: Type mismatch
+  RatFunc.transcendental_X
+has type
+  @Transcendental ?m.5 (RatFunc ?m.5) ?m.6 (RatFunc.instField ?m.5).toDivisionRing.toRing
+    (RatFunc.instAlgebraOfPolynomial ?m.5 ?m.5) RatFunc.X
+but is expected to have type
+  @Transcendental ℚ VField Rat.commRing (RatFunc.instField ℚ).toDivisionRing.toRing DivisionRing.toRatAlgebra vInVField
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:147:66: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsSimpleRing BaseField
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:157:34: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsSimpleRing BaseField
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:186:33: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  eval ?b (map (algebraMap ?m.14 ?m.15) ?P)
+in the target expression
+  eval (roots j) (map baseToSplit genericPolynomial) = 0
+
+j : Fin 18
+⊢ eval (roots j) (map baseToSplit genericPolynomial) = 0
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:198:49: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  eval ?b (map (algebraMap ?m.24 ?m.25) ?P)
+in the target expression
+  eval (roots j) (map baseToSplit (derivative genericPolynomial)) ≠ 0
+
+j : Fin 18
+⊢ eval (roots j) (map baseToSplit (derivative genericPolynomial)) ≠ 0

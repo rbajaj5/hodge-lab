@@ -1,0 +1,9 @@
+import HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : ∀ a v : ℚ, (physicalPolynomial a v).Separable := by
+  have h : ¬ (∀ a v : ℚ, (physicalPolynomial a v).Separable) := by
+    intro hall
+    exact repeated_specialization_not_separable (hall 2 1)
+  simp only [h]

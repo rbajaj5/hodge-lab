@@ -1,0 +1,10 @@
+import HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : roots (0 : Fin 18) = roots (1 : Fin 18) := by
+  have h : roots (0 : Fin 18) ≠ roots (1 : Fin 18) := by
+    intro he
+    have hi := roots_injective he
+    norm_num at hi
+  simp only [h]

@@ -1,0 +1,153 @@
+[
+  {
+    "label": "parent",
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.0023320789987337776,
+    "timeout_seconds": 120,
+    "stdout_sha256": "599421f814620d384754475531498a02df23b68d00d10479ecfdca3215087e79",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "unstaged-diff",
+    "command": [
+      "git",
+      "diff",
+      "--name-only"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.004714542999863625,
+    "timeout_seconds": 120,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "untracked",
+    "command": [
+      "git",
+      "ls-files",
+      "--others",
+      "--exclude-standard"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.006230612998479046,
+    "timeout_seconds": 120,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "proposal-tree",
+    "command": [
+      "git",
+      "write-tree"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.008587208998505957,
+    "timeout_seconds": 120,
+    "stdout_sha256": "af728620470ec6065bc34132d92e6658f92e0c1e7c9c8fb88e8a40f98ae42c66",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "binary-patch",
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--binary",
+      "--full-index",
+      "bf0c69287865ba00d3e651cdbc4d0f881deba4db"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.04835438200097997,
+    "timeout_seconds": 120,
+    "stdout_sha256": "e8ffb3528e4212ca2ca3ce9e27d03aef6e0501a79a42b67a3270cd23405574b3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "isolated-apply-checkout",
+    "command": [
+      "git",
+      "worktree",
+      "add",
+      "--detach",
+      "/workspace/scratch/b8974c152662/hodge-lab-distinct-apply-check",
+      "bf0c69287865ba00d3e651cdbc4d0f881deba4db"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5630221580031503,
+    "timeout_seconds": 120,
+    "stdout_sha256": "da55c8ba1fa5218fc6c4bb43d91fac9bc09c7edcd25f66142348f04133ac8e2d",
+    "stderr_sha256": "c1bf2b52adca7b7b88620c5f93d17ad30de6c957025f05f98b204593c37bfe6b"
+  },
+  {
+    "label": "patch-check",
+    "command": [
+      "git",
+      "apply",
+      "--check",
+      "--index",
+      "/workspace/scratch/b8974c152662/handoff-distinct-roots/hodge-distinct-roots-bf0c692.patch"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-apply-check",
+    "exit_code": 0,
+    "elapsed_seconds": 0.025066998998227064,
+    "timeout_seconds": 120,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "patch-apply",
+    "command": [
+      "git",
+      "apply",
+      "--index",
+      "/workspace/scratch/b8974c152662/handoff-distinct-roots/hodge-distinct-roots-bf0c692.patch"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-apply-check",
+    "exit_code": 0,
+    "elapsed_seconds": 1.0147917140020581,
+    "timeout_seconds": 120,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "90b6193a9fc4aaa527116c2c102bcc3cdab12a2bd81f44ddd4898495885eda79"
+  },
+  {
+    "label": "applied-tree",
+    "command": [
+      "git",
+      "write-tree"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-apply-check",
+    "exit_code": 0,
+    "elapsed_seconds": 0.02024050799809629,
+    "timeout_seconds": 120,
+    "stdout_sha256": "af728620470ec6065bc34132d92e6658f92e0c1e7c9c8fb88e8a40f98ae42c66",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "tree-paths",
+    "command": [
+      "git",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "-z",
+      "c3db7f625cfdd6375fafa1daee95c9dcc7ce2d00"
+    ],
+    "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots",
+    "exit_code": 0,
+    "elapsed_seconds": 0.0055154639994725585,
+    "timeout_seconds": 120,
+    "stdout_sha256": "7cd5fabf6aaba6c5ccbd8e3320c4f911e172f5ce827e6fd44dec11f4105d936d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

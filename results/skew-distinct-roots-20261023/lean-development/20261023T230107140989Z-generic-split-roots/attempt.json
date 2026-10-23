@@ -1,0 +1,17 @@
+{
+  "label": "generic-split-roots",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/formal",
+  "started_utc": "2026-10-23T23:01:07.142976+00:00",
+  "elapsed_seconds": 9.59949666600005,
+  "exit_code": 1,
+  "timeout_seconds": 120,
+  "source_sha256": "8e6e75a3afb3355c49d719b0a69c4e8267cdbd617872af336ba3fc5a19f75af9",
+  "worker": "distinct_lean",
+  "ELAN_HOME": "/workspace/scratch/b8974c152662/lean-environment"
+}

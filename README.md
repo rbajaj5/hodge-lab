@@ -39,6 +39,27 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: generic distinct roots in Lean
+
+[![Exact eliminant, explicit field tower and eighteen distinct roots](results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png)](notes/skew-generic-distinct-roots.md)
+
+For the literal physical polynomial, Lean constructs an injective
+`Fin 18` tuple of roots in its **full splitting field over `Q(v)(t)(a)`**.
+The proof eliminates the transcendental parameter `a` from `X*f'−15*f`,
+proves generic separability, and applies the existing conditional binding
+and split-trace corollaries. Characteristic zero, the independent parameter
+tower and compatible field embeddings are explicit. The specialization
+`a=2,v=1` still has a repeated root; the theorem makes no claim that every
+specialization is separable.
+
+Pro's focused Lean validation and the coordinator's independent review
+passed. A focused CI step is included; its post-push outcome is recorded
+separately from those local checks. Unsplit descent,
+physical differential-source normalization and a rational primitive remain
+separate obligations.
+
+[Proof, executed checks and limits](notes/skew-generic-distinct-roots.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean) · [Focused receipt](results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json)
+
 ### One-reflection-skew: conditional physical-cover binding in Lean
 
 [![Literal physical cover, explicit root hypotheses and trace values](visualizations/skew-physical-cover-binding.png)](notes/skew-physical-cover-binding.md)
@@ -52,8 +73,8 @@ controls; the coordinator separately checked source binding and receipt
 integrity. The CI repair keeps fresh execution receipts separate from
 immutable historical evidence. The complete [Lean CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/40026828482) passed on the published proof commit.
 
-Distinct-root data over a specified splitting extension of `Q(a,v,t)`,
-descent, physical differential-source normalization and a rational primitive
+The generic distinct-root data are now constructed in the new unit above.
+Descent, physical differential-source normalization and a rational primitive
 remain separate obligations.
 
 [Proof, execution scope and limits](notes/skew-physical-cover-binding.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean) · [Pro execution receipt](results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json)

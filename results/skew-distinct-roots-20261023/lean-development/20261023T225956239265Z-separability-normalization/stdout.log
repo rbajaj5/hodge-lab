@@ -1,0 +1,5 @@
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:95:8: error: Invalid projection: Projections cannot be used on functions, and
+  isCoprime_iff_aeval_ne_zero_of_isAlgClosed (AlgebraicClosure K) ?m.23 ?m.27
+has function type
+  ∀ (q : (AlgebraicClosure K)[X]), IsCoprime ?m.27 q ↔ ∀ (a : ?m.23), (aeval a) ?m.27 ≠ 0 ∨ (aeval a) q ≠ 0
+HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean:96:8: error: No goals to be solved

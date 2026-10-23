@@ -1,0 +1,75 @@
+{
+  "approach": 1,
+  "executed_checks": [
+    {
+      "command": "python3 results/skew-distinct-roots-20261023/math-review/run_exact_review.py --output-dir results/skew-distinct-roots-20261023/math-review/exact-01",
+      "receipt": "exact-01/receipt.json",
+      "receipt_sha256": "e5d2046371aa4991dd005165db51a5235e5a746bc9004ffc2d3f22d9cfc4e92e",
+      "result": "PASS, one new exact identity execution, three mutation obstructions, no timeout or runtime error",
+      "stdout": "exact-01/stdout.json",
+      "stdout_sha256": "171308d662e060be8e28bf960ea784324389d383d807bf98177be4544d3f8a28"
+    }
+  ],
+  "executed_lean_commands_by_this_reviewer": [],
+  "fallback_used": false,
+  "generic_tower": "V=RatFunc(Q), k=RatFunc(V), K=RatFunc(k); v is the first formal X, t the second, a the third; maps are successive constant embeddings.",
+  "independence": "Mathematical derivation and exact arithmetic executed by this reviewer separately from Lean writer; source inspection of API declarations does not count as compilation.",
+  "input_raw_sha256": {
+    "AGENTS.md": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/specializations-not-always-simple.log": "bfc14df4324fd65c9c2a86975c7f6fa45a65f1223d45572699b4d60bcc8b0497",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json": "b12036f10e69df667c85c15573b20fe57ec92ab8ec98024b932b9b49f25abff6",
+    "results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json": "83eddfdd118095a73e2cd9a978e37b75db09ec42abad841ec5b01b6b5bfe5840",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-distinct-roots-20261023/plan.json": "2cc86741c2cfd9c6abd9bb2940a679bff2445424b339b411b6f4d82a23b86015",
+    "results/skew-distinct-roots-20261023/source-pins.json": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4"
+  },
+  "limits": [
+    "Formal completion depends on the sole Lean writer actual compiled declarations and checks; this review does not certify an unfinished Lean file.",
+    "No squarefree-specialization transfer or expanded discriminant is used.",
+    "No claim that all physical specializations have distinct roots; a=2,v=1 is known to fail.",
+    "No independent proof of physical chart derivation or source normalization, unsplit descent, primitive, clearing, HasCertificate, or solve.",
+    "No Git commit, push, upstream posting, or remote CI execution performed by this reviewer."
+  ],
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "notebook_parent": "bf0c69287865ba00d3e651cdbc4d0f881deba4db",
+  "recorded_utc": "2026-10-23T23:00:39.076950+00:00",
+  "reused_control": {
+    "a": 2,
+    "f_at_root": 0,
+    "f_prime_at_root": 0,
+    "f_second_at_root": 18,
+    "meaning": "Exactly double root over Q; refutes universal-specialization distinctness.",
+    "root": 1,
+    "v": 1
+  },
+  "reused_receipts_not_rerun": [
+    "results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json"
+  ],
+  "review_artifacts_raw_sha256": {
+    "check_elimination.py": "b4c1abf0298d5d8ef8a45fd47577974d9a47d75d3066de643074be2bdfa24a2a",
+    "derivation.md": "26151536fd07257afcb9c21640bff299daf45c9d02f547a72ac2385d4aa581ea",
+    "exact-01/receipt.json": "e5d2046371aa4991dd005165db51a5235e5a746bc9004ffc2d3f22d9cfc4e92e",
+    "exact-01/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exact-01/stdout.json": "171308d662e060be8e28bf960ea784324389d383d807bf98177be4544d3f8a28",
+    "run_exact_review.py": "7505ed71891d81284233413c848ef7937897b67f79abc3d61f3f9c4b06db0a9d"
+  },
+  "reviewer": "distinct_derivation, separate AI mathematical derivation specialist; not human review",
+  "selected_argument": "A common root r of f and f_prime satisfies nonzero D=X*f_prime-15*f in k[X], so r is algebraic over k. Since f(0)=1, r is nonzero. The equation r^15*a=P(r) and IsAlgebraic.of_mul force a algebraic, contradicting transcendence. Split-field cardinality plus existing degree eighteen gives injective Fin18 root enumeration.",
+  "source_inspection_only": {
+    "mathlib_api_raw_sha256": {
+      "Mathlib/Algebra/Polynomial/Roots.lean": "cc20d0d950084d83dcc9827f18c05da656a7da59384f0e7cb74e1f24a1e30280",
+      "Mathlib/Data/Fintype/EquivFin.lean": "135835936222dd833aca95a55105deb9bdc869adf3601290cb91b6f312b8a295",
+      "Mathlib/FieldTheory/RatFunc/AsPolynomial.lean": "0bf5b0d7843f2c47be908dd267d95e7d1a5401c5b4d0d744a485e218cece23d5",
+      "Mathlib/FieldTheory/Separable.lean": "e4b7a0efd41a92e04babe3c6604c9e53fa5a1e8e660176a649f164925f7778a0",
+      "Mathlib/FieldTheory/SplittingField/Construction.lean": "75f644a2aa9ce33f4e3a9b3af6b61387bae9fdea7ce3dbf0ef1ec4c5bea1cda5",
+      "Mathlib/RingTheory/Algebraic/Basic.lean": "b022edaa07a52ff5bbb59fe067a447f06bf9487fdf2683b46c64844268cceead",
+      "Mathlib/RingTheory/Algebraic/Integral.lean": "fc0ac08ee048884ba7583061a8f6eb20240cc276d11413f308115f01831f8e03"
+    }
+  },
+  "statement": "For k a characteristic-zero field, v in k, and a transcendental over k, the literal f=X^18+X^12+(vX-1)^6-aX^15 over k(a) is separable; its specified splitting field has exactly eighteen distinct roots.",
+  "status": "MATHEMATICAL_ARGUMENT_VALID_AND_EXACT_IDENTITY_CONTROLS_PASS",
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319"
+}

@@ -1,0 +1,9 @@
+# Exact mathematical target; acceptance is derived from a checked, merged proposal.
+id: one-reflection-skew
+title: One reflection · skew coupling
+q: 1
+F: X0**6 + X0**3*X1*Y0*Y1 + X0*X1*Y0**3*Y1/7 - X0*X1*Y0*Y1**3/7 + X1**6 + X1**3*X2*Y0*Y1
+  + X2**6 + Y0**6 + Y1**6 + Y2**6
+A: X0**3*Y0**3
+rationale: why.md
+provenanceFile: provenance.json

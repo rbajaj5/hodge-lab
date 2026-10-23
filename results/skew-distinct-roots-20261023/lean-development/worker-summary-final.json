@@ -1,0 +1,174 @@
+{
+  "worker": "distinct_lean (AI mathematics worker)",
+  "status": "PASS",
+  "notebook_parent": "bf0c69287865ba00d3e651cdbc4d0f881deba4db",
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "core_first_pass_utc": "2026-10-23T23:00:15Z",
+  "complete_module_pass_utc": "2026-10-23T23:02:28Z",
+  "focused_completed_utc": "2026-10-23T23:07:01.585944+00:00",
+  "math_approaches_used": 1,
+  "approach_2_used": false,
+  "new_public_declarations": 48,
+  "focused_commands": 9,
+  "positive_controls": 9,
+  "negative_controls": 3,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "focused_seconds": 16.800737248999212,
+  "attempts": [
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T225855259231Z-eliminant-core/attempt.json",
+      "label": "eliminant-core",
+      "exit_code": 1,
+      "elapsed_seconds": 10.239055946000008,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T225931142739Z-separability-core/attempt.json",
+      "label": "separability-core",
+      "exit_code": 1,
+      "elapsed_seconds": 3.500826039999083,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T225956239265Z-separability-normalization/attempt.json",
+      "label": "separability-normalization",
+      "exit_code": 1,
+      "elapsed_seconds": 2.924432274001447,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T230012633808Z-separability-closure/attempt.json",
+      "label": "separability-closure",
+      "exit_code": 0,
+      "elapsed_seconds": 2.8452347870006633,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T230107140989Z-generic-split-roots/attempt.json",
+      "label": "generic-split-roots",
+      "exit_code": 1,
+      "elapsed_seconds": 9.59949666600005,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T230202405622Z-generic-tower-coercions/attempt.json",
+      "label": "generic-tower-coercions",
+      "exit_code": 1,
+      "elapsed_seconds": 3.7659588399983477,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/20261023T230224652062Z-generic-distinct-complete/attempt.json",
+      "label": "generic-distinct-complete",
+      "exit_code": 0,
+      "elapsed_seconds": 3.7039755939986208,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+      ]
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/checker-01-launch/attempt.json",
+      "label": "checker-01",
+      "exit_code": 0,
+      "elapsed_seconds": 22.626221820002684,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "check_skew_distinct_roots.py",
+        "--output-dir",
+        "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/results/skew-distinct-roots-20261023/lean-development/checker-01"
+      ]
+    },
+    {
+      "label": "checker-02",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "check_skew_distinct_roots.py",
+        "--output-dir",
+        "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/results/skew-distinct-roots-20261023/lean-development/checker-02"
+      ],
+      "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/formal",
+      "started_utc": "2026-10-23T23:06:44.748777+00:00",
+      "elapsed_seconds": 16.84766274499998,
+      "exit_code": 0,
+      "timeout_seconds": 600,
+      "worker": "distinct_lean (AI mathematics worker)"
+    }
+  ],
+  "sha256": {
+    "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "formal/check_skew_distinct_roots.py": "39cee47d3030ebe61252bfee5a241f3158053b38f72eb7b89771058a390ae2e4",
+    "formal/AuditSkewDistinctRoots.lean": "ddfe13420636d3cdd3e500824d24bd279318663fd72f9c7b3d4389f4b373c47a",
+    "formal/ReplaySkewDistinctRoots.lean": "db47e8985a2cc545f13bdf984ed0c3f329d52a28004ea956b30dd4bdad60c63e",
+    "formal/results/skew-distinct-roots/inputs.json": "85b3739d879f4a3d886c9ffbb16902fcc230f6326a27b51f679d9307460a1c6c",
+    "results/skew-distinct-roots-20261023/lean-development/checker-01/validation.json": "d0ad09a5d70c23e6136dba4121fb649137ca90581c00fa0b946b1f119719523c",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835"
+  },
+  "reproduction": "cd formal && python3 -O check_skew_distinct_roots.py --output-dir <fresh-output-directory>",
+  "executed_scope": "Only new-module compilation/replay/audit and focused controls. Old proof imports reused with hash checks; no old checker or remote CI execution.",
+  "closed": "Separable physicalPolynomial over explicit Q(v)(t)(a); full splitting-field rootSet has cardinality18, giving injective Fin18 tuple with all root equations and nonzero derivative values; previous conditional binding and trace corollaries instantiated.",
+  "limits": [
+    "No universal specialization claim; a=2,v=1 is proved nonseparable",
+    "Root enumeration noncomputable",
+    "No new unsplit descent, physical source normalization, primitive, certificate or solve",
+    "No remote writes, commits or pushes by this worker"
+  ],
+  "final_focused_receipt": "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json",
+  "focused_receipts": [
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/checker-01/validation.json",
+      "role": "first complete mathematical audit; preserved before checker integration correction",
+      "sha256": "d0ad09a5d70c23e6136dba4121fb649137ca90581c00fa0b946b1f119719523c"
+    },
+    {
+      "path": "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json",
+      "role": "final checker source after runtime executor and unique scratch fixes",
+      "sha256": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835"
+    }
+  ],
+  "integration_corrections": [
+    "Read executor from HODGE_CHECK_EXECUTOR, otherwise label GitHub Actions only from explicit GITHUB_ACTIONS=true, else unspecified local invoker",
+    "Use tempfile.mkdtemp for unique scratch controls independent of output directory basename",
+    "Replace hardcoded local-only execution statement with precise runtime-provenance limit"
+  ],
+  "execution_total_checker_runs": 2,
+  "math_source_unchanged_after_first_full_pass": true
+}

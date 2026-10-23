@@ -1,0 +1,7 @@
+import HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : (eliminant (0 : ℚ)).eval 0 = 15 := by
+  rw [eliminant_at_zero]
+  norm_num

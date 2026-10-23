@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/results/skew-distinct-roots-20261023/math-review/check_elimination.py"
+  ],
+  "completed_utc": "2026-10-23T22:58:57.642083+00:00",
+  "elapsed_seconds": 0.03975413399894023,
+  "exit_code": 0,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "process_bound_seconds": 30,
+  "proof_claim": "Exact eliminant identity and three mutation controls only; generic field reasoning is reviewed separately",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runner_sha256": "7505ed71891d81284233413c848ef7937897b67f79abc3d61f3f9c4b06db0a9d",
+  "source_sha256": "b4c1abf0298d5d8ef8a45fd47577974d9a47d75d3066de643074be2bdfa24a2a",
+  "started_utc": "2026-10-23T22:58:57.602039+00:00",
+  "status": "PASS",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "171308d662e060be8e28bf960ea784324389d383d807bf98177be4544d3f8a28",
+  "worker": "distinct_derivation, AI mathematical derivation specialist",
+  "working_directory": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots"
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:44.789159+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.6047354959991935,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stdout": "version.stdout.log",
+    "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stderr": "version.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:45.394393+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.0019293479999760166,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stdout": "mathlib-head.stdout.log",
+    "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stderr": "mathlib-head.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.GenericDistinctRoots"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.GenericDistinctRoots"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:45.396549+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 1.338341868999123,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "4ffa661a10c84cb6a54171f3f7ef4b0b5f68212142f7ccb03d7f1b66cfa4c28b",
+    "stdout": "build.stdout.log",
+    "stdout_sha256": "4ffa661a10c84cb6a54171f3f7ef4b0b5f68212142f7ccb03d7f1b66cfa4c28b",
+    "stderr": "build.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewDistinctRoots.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewDistinctRoots.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:46.735232+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.3119093519999296,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "stdout": "axioms.stdout.log",
+    "stdout_sha256": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+    "stderr": "axioms.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewDistinctRoots.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewDistinctRoots.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:49.047763+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.8192951589990116,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "stdout": "kernel-replay.stdout.log",
+    "stdout_sha256": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+    "stderr": "kernel-replay.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/positive-controls.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/positive-controls.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:51.868398+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.5552740590028407,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "positive-controls.stdout.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "positive-controls.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "universal-specialization-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/universal-specialization-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/universal-specialization-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:54.424244+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.377574943999207,
+    "expected_failure": true,
+    "log": "universal-specialization-rejected.log",
+    "log_lf_sha256": "60f307bb30d867cba5fac790f093ceedc2c382555431aa0cea42e900239ec741",
+    "stdout": "universal-specialization-rejected.stdout.log",
+    "stdout_sha256": "60f307bb30d867cba5fac790f093ceedc2c382555431aa0cea42e900239ec741",
+    "stderr": "universal-specialization-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "eliminant-sign-mutation-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/eliminant-sign-mutation-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/eliminant-sign-mutation-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:56.802474+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.2723737330015865,
+    "expected_failure": true,
+    "log": "eliminant-sign-mutation-rejected.log",
+    "log_lf_sha256": "82c6f5d32b62a2e9e01bccfc43d83416a420327d085593e871685710e13486ce",
+    "stdout": "eliminant-sign-mutation-rejected.stdout.log",
+    "stdout_sha256": "82c6f5d32b62a2e9e01bccfc43d83416a420327d085593e871685710e13486ce",
+    "stderr": "eliminant-sign-mutation-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "root-collision-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/root-collision-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-distinct-roots-controls/controls-zku2op20/root-collision-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-23T23:06:59.075472+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.5092415449980763,
+    "expected_failure": true,
+    "log": "root-collision-rejected.log",
+    "log_lf_sha256": "6f3dc0a23196d860eda7cdba4ed99fcc4c88810b2333abee443eb66432bb3cc7",
+    "stdout": "root-collision-rejected.stdout.log",
+    "stdout_sha256": "6f3dc0a23196d860eda7cdba4ed99fcc4c88810b2333abee443eb66432bb3cc7",
+    "stderr": "root-collision-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

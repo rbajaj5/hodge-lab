@@ -1,0 +1,38 @@
+{
+  "started_utc": "2026-10-23T22:53:18Z",
+  "hard_mathematical_stop_utc": "2026-10-23T23:53:18Z",
+  "reassess_and_target_freeze_utc": "2026-10-23T23:38:18Z",
+  "scope": "One generic distinct-root construction for the literal degree-18 physical cover, sufficient for existing conditional binding and split traces.",
+  "base": "bf0c69287865ba00d3e651cdbc4d0f881deba4db",
+  "upstream": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "bounds": {
+    "wall_minutes": 60,
+    "approaches": 2,
+    "lean_process_seconds": 120,
+    "focused_checker_total_seconds": 600,
+    "no_large_expanded_discriminant": true
+  },
+  "approach_1": "Eliminate the transcendental parameter a from a repeated-root pair using X*f_prime-15*f; a repeated root is algebraic over the coefficient field excluding a, then the root equation makes a algebraic, a contradiction. Use existing splitting-field and separable-root enumeration APIs.",
+  "approach_2": "Only if approach 1 reaches a concrete Lean obstruction: generic linear-parameter irreducibility of P(X)-a*X^15 using gcd(P,X^15)=1, followed by characteristic-zero separability.",
+  "stopping_rule": "Stop at hard deadline or after two concrete approaches; retain exact compiled partial statements and obstruction without adding a distinctness hypothesis to claim completion. Reassess at 45 minutes.",
+  "excluded": [
+    "replay or repair prior CI",
+    "source-to-Hessian",
+    "transport",
+    "covariant jets",
+    "old split-basis construction",
+    "unsplit descent",
+    "physical source normalization",
+    "primitive",
+    "HasCertificate",
+    "solve"
+  ],
+  "publication": "Coordinator owns Git publication; this chat produces one local patch/archive and proposed append only. No remote writes.",
+  "goal": "Human reports objective active in original coordinator 01a145f0-1bc3-7321-8c36-83a883bf061f; no Goal control or cross-chat messaging tool exposed here.",
+  "roles": {
+    "root": "integration, source pins, note, figure, proposed ledger, packaging",
+    "derivation": "independent mathematical derivation and exact controls",
+    "lean": "sole Lean implementation and focused checker writer",
+    "review": "adversarial read-only source/assumption review; own review receipts only"
+  }
+}

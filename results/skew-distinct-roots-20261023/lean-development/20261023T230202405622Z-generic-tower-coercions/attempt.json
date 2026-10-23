@@ -1,0 +1,17 @@
+{
+  "label": "generic-tower-coercions",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/formal",
+  "started_utc": "2026-10-23T23:02:02.407566+00:00",
+  "elapsed_seconds": 3.7659588399983477,
+  "exit_code": 1,
+  "timeout_seconds": 120,
+  "source_sha256": "b0886c327a49cd2a4ada3bfc8bdfb26e73737950c56a84530282977bce4842de",
+  "worker": "distinct_lean",
+  "ELAN_HOME": "/workspace/scratch/b8974c152662/lean-environment"
+}

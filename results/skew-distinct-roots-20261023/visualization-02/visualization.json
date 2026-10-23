@@ -1,0 +1,21 @@
+{
+  "status": "GENERATED",
+  "generator": "scripts/visualize_skew_distinct_roots.py",
+  "generator_sha256": "e92af427506213aa1304832fb8ca1b5e5319747fead9f9f19d0ad072ee6cf1e9",
+  "matplotlib": "3.10.8",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "input_sha256": {
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835",
+    "results/skew-distinct-roots-20261023/math-review/exact-01/stdout.json": "171308d662e060be8e28bf960ea784324389d383d807bf98177be4544d3f8a28",
+    "results/skew-distinct-roots-20261023/source-check/validation.json": "0dbfbf3ac67ab6787a70383ea65661d28411b19e723c5d9b24e18faa9d49d2c3",
+    "results/skew-distinct-roots-20261023/source-pins.json": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4",
+    "results/ci-receipt-physical-cover-20261023/math-review/derivation-review.json": "83eddfdd118095a73e2cd9a978e37b75db09ec42abad841ec5b01b6b5bfe5840"
+  },
+  "output_sha256": {
+    "generic-distinct-roots.png": "948ed59f74fed50e4028d4c8b5c520bf985a2d096d88c2e126431b670e313690",
+    "generic-distinct-roots.svg": "bbbc438c260cc8b5eb3aadcec5ec704e25cfdf144e45c3f480a3d863816c6a53"
+  },
+  "scope": "Exact eliminant, compatible generic field tower, proof dependencies, all-root enumeration and specialization limit; not independent proof evidence.",
+  "historical_control": "The historical exact double-root receipt is read by hash; the new Lean module additionally proves this specialization is not separable.",
+  "new_remote_ci": "Not executed; coordinator owns publication."
+}

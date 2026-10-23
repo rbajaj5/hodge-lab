@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_WITHIN_DECLARED_SCOPE",
+  "started_utc": "2026-10-23T22:53:18Z",
+  "final_focused_checker_completed_utc": "2026-10-23T23:07:01.585944+00:00",
+  "elapsed_wall_seconds_to_final_checker": 823.585944,
+  "hard_bound_seconds": 3600,
+  "mathematical_approaches_used": 1,
+  "second_approach_started": false,
+  "proof_source_sha256": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+  "final_receipt": "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json",
+  "final_receipt_sha256": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835",
+  "closed_dependency": "Generic separability over explicit Q(v)(t)(a), specified full splitting field, injective Fin18 root tuple satisfying every root equation and nonzero derivative values; previous conditional binding and two split-L trace corollaries instantiated.",
+  "remaining_mathematical_exploration": "None in this unit; only read-only review, reproducible visualization and delivery integration follow.",
+  "smallest_future_formal_bridge": "Explicit scalar-extension comparison between K[X]/(f) and the existing split L quotient, with trace compatibility; not attempted.",
+  "not_claimed": [
+    "distinct roots in every specialization",
+    "roots contained in K",
+    "an unsplit descent theorem",
+    "physical differential-source normalization",
+    "a rational primitive",
+    "global clearing",
+    "HasCertificate",
+    "a target solve",
+    "a new remote CI result"
+  ]
+}

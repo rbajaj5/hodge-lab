@@ -1,0 +1,16 @@
+{
+  "label": "checker-02",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "check_skew_distinct_roots.py",
+    "--output-dir",
+    "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/results/skew-distinct-roots-20261023/lean-development/checker-02"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-distinct-roots/formal",
+  "started_utc": "2026-10-23T23:06:44.748777+00:00",
+  "elapsed_seconds": 16.84766274499998,
+  "exit_code": 0,
+  "timeout_seconds": 600,
+  "worker": "distinct_lean (AI mathematics worker)"
+}

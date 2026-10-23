@@ -1,0 +1,18 @@
+{
+  "executor": "Pro chat root",
+  "command": [
+    "python3",
+    "results/skew-distinct-roots-20261023/package_handoff.py",
+    "--output-dir",
+    "/workspace/scratch/b8974c152662/handoff-distinct-roots",
+    "--verify-worktree",
+    "/workspace/scratch/b8974c152662/hodge-lab-distinct-apply-check"
+  ],
+  "exit_code": 1,
+  "stdout_observed": "",
+  "stderr_observed": "RuntimeError: Incomplete repository archive",
+  "capture": "Final traceback observed in tool result; Git subprocess raw logs retained separately",
+  "cause": "Ten mode160000 Git-link entries were counted as regular files; Git archive emits their directories without submodule content",
+  "resolution": "Record exact submodule Git-link IDs, count regular blobs separately, and preserve empty submodule directories without fetching unrelated repositories",
+  "partial_archive": "Retained outside Git at the first output path; exact staged tree and patch preserved for reconstruction"
+}
