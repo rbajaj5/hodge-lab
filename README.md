@@ -53,8 +53,9 @@ tower and compatible field embeddings are explicit. The specialization
 specialization is separable.
 
 Pro's focused Lean validation and the coordinator's independent review
-passed. A focused CI step is included; its post-push outcome is recorded
-separately from those local checks. Unsplit descent,
+passed. The complete [Lean CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/40039653837)
+also passed on [proof commit 3f73632](https://github.com/rbajaj5/hodge-lab/commit/3f73632b0d99eb22eb69aeb67235099a3818f92b),
+including the new generic-root check. Unsplit descent,
 physical differential-source normalization and a rational primitive remain
 separate obligations.
 

@@ -5230,3 +5230,33 @@ changed-file payload; its earlier packaging failure remains recorded.
 Normal notebook publication and exact-commit remote CI follow this audit;
 no upstream publication. Posts 1–29 and tally **29 discussion contributions,
 one closed maintenance PR, zero accepted authored solves** are unchanged.
+
+### Verified publication and full CI outcome (checkpoint 139 continuation)
+
+23 October 2026. The coordinator committed and normally pushed the reviewed
+proof batch as [3f73632b0d99eb22eb69aeb67235099a3818f92b](https://github.com/rbajaj5/hodge-lab/commit/3f73632b0d99eb22eb69aeb67235099a3818f92b),
+then verified the remote main head. [Full Lean CI run 40039653837](https://github.com/rbajaj5/hodge-lab/actions/runs/40039653837)
+completed successfully on that exact commit at 23:39:00 UTC. Every configured
+check passed, including the prior receipt-lifecycle checks and the new
+generic distinct-root step. This later CI execution is separate from the
+Pro unit's focused local checks; prior mathematics is not counted again.
+
+The new focused CI check used Lean 4.31.0 and the pinned Mathlib revision.
+It passed 48 declaration audits, one new-module kernel replay, nine grouped
+positive controls and three intended false-goal controls in 24.065 seconds.
+The coordinator downloaded the actual run artifact and verified 22 source/
+context hashes and all 27 command-output hashes against the published code
+and saved logs. Only propext, Classical.choice and Quot.sound occur in the
+audited axiom dependencies. [Run metadata, complete artifact and focused receipts](results/skew-distinct-roots-20261023/coordinator-ci/40039653837)
+and [review](results/skew-distinct-roots-20261023/coordinator-ci/40039653837/ci-receipt-review.json)
+retain this evidence. The artifact archive SHA256 is
+`9eea6d3cb12a0d8df39f3bae69ddef5004f2e6f59968a7f8ccca94cb82f08f63`.
+
+The generic distinct-root dependency is closed in the specified splitting
+field. The smallest separate next formal bridge is trace-compatible scalar
+extension from K[X]/(f) to the split L-algebra. No unsplit descent, physical
+differential-source normalization, primitive, global clearing, certificate
+or solve is claimed. Goal coordination reused the existing Pro chat and
+separate AI reviewers. No upstream post or edit occurred; Posts 1–29 and
+the 29/1/0 contribution tally remain unchanged. This outcome is appended
+to the complete published proof-commit ledger; none of its bytes is replaced.

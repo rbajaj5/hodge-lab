@@ -320,3 +320,29 @@ and [final patch application](../results/skew-distinct-roots-20261023/coordinato
 record this handoff. Remote CI is a separate post-push check, pending at
 this integration stage. The Pro archive omits unchanged parent files and
 submodule contents; the exact parent checkout supplies those dependencies.
+
+## Published result and independent remote CI
+
+The coordinator normally pushed [proof commit 3f73632](https://github.com/rbajaj5/hodge-lab/commit/3f73632b0d99eb22eb69aeb67235099a3818f92b)
+and verified its remote head. [Full Lean CI run 40039653837](https://github.com/rbajaj5/hodge-lab/actions/runs/40039653837)
+passed on that exact commit, finishing at 23:39:00 UTC on 23 October 2026.
+All configured existing checks and the new generic-root check passed. This
+later full-workflow execution follows the focused Pro handoff described
+above; the earlier "not rerun" and "pending" statements describe that
+handoff stage, not the final publication outcome.
+
+The new focused CI receipt records 48 declaration audits, one new-module
+kernel replay, nine positive interfaces and three intended false-goal
+controls in 24.065 seconds. The coordinator checked 22 source/context
+hashes and all 27 command-output hashes in the downloaded artifact against
+the published sources and logs. Only the allowed axiom dependencies occur.
+[Run metadata, artifact and focused receipts](../results/skew-distinct-roots-20261023/coordinator-ci/40039653837)
+and the [review receipt](../results/skew-distinct-roots-20261023/coordinator-ci/40039653837/ci-receipt-review.json)
+retain the exact execution scope. The Pro and CI counts are separate runs,
+not additional mathematical results. This documentation/receipt follow-up
+does not change the validated Lean source or checker.
+
+The final figure remains the reproducible handoff-stage figure; its footer
+records that CI was then pending. This dated outcome supersedes that timing
+statement without altering the historical image or its generator hashes.
+The generic-field and unsplit-descent limits above remain unchanged.

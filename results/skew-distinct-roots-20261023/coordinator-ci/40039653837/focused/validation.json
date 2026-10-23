@@ -1,0 +1,549 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-23T23:38:57.605899+00:00",
+  "worker": "GitHub Actions",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "check_skew_distinct_roots.py": "39cee47d3030ebe61252bfee5a241f3158053b38f72eb7b89771058a390ae2e4",
+    "AuditSkewDistinctRoots.lean": "ddfe13420636d3cdd3e500824d24bd279318663fd72f9c7b3d4389f4b373c47a",
+    "ReplaySkewDistinctRoots.lean": "db47e8985a2cc545f13bdf984ed0c3f329d52a28004ea956b30dd4bdad60c63e",
+    "HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b"
+  },
+  "reused_source_lf_sha256": {
+    "HodgeLab/OneReflectionSkew/TraceKernel.lean": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+    "HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+    "HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b"
+  },
+  "inputs_lf_sha256": "85b3739d879f4a3d886c9ffbb16902fcc230f6326a27b51f679d9307460a1c6c",
+  "physical_source_sha256": {
+    "results/skew-distinct-roots-20261023/inputs/upstream/AGENTS.md": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+    "results/skew-distinct-roots-20261023/inputs/upstream/CONTRIBUTING.md": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+    "results/skew-distinct-roots-20261023/inputs/upstream/formal/README.md": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477",
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/why.md": "29020fc8d6478260bc4bb0b41369537188858e587d31706c34919f06df981a28"
+  },
+  "source_pins_manifest": {
+    "path": "results/skew-distinct-roots-20261023/source-pins.json",
+    "sha256": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4"
+  },
+  "historical_context_lf_sha256": {
+    "formal/results/skew-trace-basis/validation.json": "b46616fd57a0a5adde559c0022b56b9d0871264909221d2ce2c3b964320a116b",
+    "formal/results/skew-physical-cover/inputs.json": "6e091298c7e09c7f34af5638cb685cac8dfa48a05e9433756737056c38453472",
+    "results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json": "b12036f10e69df667c85c15573b20fe57ec92ab8ec98024b932b9b49f25abff6"
+  },
+  "declaration_axioms": {
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.eliminant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.eliminant_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.eliminant_at_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.eliminant_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.eliminant_map": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.common_root_parameter_algebraic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.root_derivative_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.physical_map": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.physical_separable_of_transcendental": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.VField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.CoeffField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.BaseField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.vInVField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.tInCoeffField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.vInCoeffField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.genericA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.genericV": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.genericT": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.v_transcendental": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.t_transcendental": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.a_transcendental": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.genericPolynomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_separable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.SplitField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.coefficientToBase": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.baseToSplit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.coefficientToSplit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.coefficientToBase_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.baseToSplit_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.coefficientToSplit_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.coefficient_map_compatibility": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.a_transcendental_in_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_splits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.physical_polynomial_map": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_root_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.rootEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.roots": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.roots_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.roots_aeval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.roots_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.roots_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.roots_derivative_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_eq_split_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_trace_last": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.generic_trace_slot_eleven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.repeated_specialization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots.repeated_specialization_not_separable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:33.549012+00:00",
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.8027596489999951,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+      "stdout": "version.stdout.log",
+      "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+      "stderr": "version.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "execution_command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:34.352183+00:00",
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.002162656999985302,
+      "expected_failure": false,
+      "log": "mathlib-head.log",
+      "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+      "stdout": "mathlib-head.stdout.log",
+      "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+      "stderr": "mathlib-head.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.GenericDistinctRoots"
+      ],
+      "execution_command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.GenericDistinctRoots"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:34.354679+00:00",
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 5.762510735000092,
+      "expected_failure": false,
+      "log": "build.log",
+      "log_lf_sha256": "274e116e24c2fb145b20749b8a8fa9439276bf6cde2437a1cefddee74332f83a",
+      "stdout": "build.stdout.log",
+      "stdout_sha256": "274e116e24c2fb145b20749b8a8fa9439276bf6cde2437a1cefddee74332f83a",
+      "stderr": "build.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewDistinctRoots.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewDistinctRoots.lean"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:40.117739+00:00",
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.83214739999994,
+      "expected_failure": false,
+      "log": "axioms.log",
+      "log_lf_sha256": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+      "stdout": "axioms.stdout.log",
+      "stdout_sha256": "eeaa80ed9ff4b931a3d99c71dc2a38cd86781042f441430cec77ea0cc26b2f90",
+      "stderr": "axioms.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewDistinctRoots.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewDistinctRoots.lean"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:42.951068+00:00",
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 3.1852837049999607,
+      "expected_failure": false,
+      "log": "kernel-replay.log",
+      "log_lf_sha256": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+      "stdout": "kernel-replay.stdout.log",
+      "stdout_sha256": "8a8984446f0cc060195772dd8818cd9bd6aadab01fe006762553b732bfc24088",
+      "stderr": "kernel-replay.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "positive-controls",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/positive-controls.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/positive-controls.lean"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:46.137599+00:00",
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 3.1800110269999777,
+      "expected_failure": false,
+      "log": "positive-controls.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "positive-controls.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "positive-controls.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "universal-specialization-rejected",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/universal-specialization-rejected.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/universal-specialization-rejected.lean"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:49.318560+00:00",
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.7710056890000487,
+      "expected_failure": true,
+      "log": "universal-specialization-rejected.log",
+      "log_lf_sha256": "3c0f2bef7cfa78aa13f6703547e7d2568fca40fb1b009387d6903bfa9727e25b",
+      "stdout": "universal-specialization-rejected.stdout.log",
+      "stdout_sha256": "3c0f2bef7cfa78aa13f6703547e7d2568fca40fb1b009387d6903bfa9727e25b",
+      "stderr": "universal-specialization-rejected.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "eliminant-sign-mutation-rejected",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/eliminant-sign-mutation-rejected.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/eliminant-sign-mutation-rejected.lean"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:52.090495+00:00",
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.7458478569999443,
+      "expected_failure": true,
+      "log": "eliminant-sign-mutation-rejected.log",
+      "log_lf_sha256": "054ca5f5590978a307880b78054427a0698a7d429de489016a5878382df87b39",
+      "stdout": "eliminant-sign-mutation-rejected.stdout.log",
+      "stdout_sha256": "054ca5f5590978a307880b78054427a0698a7d429de489016a5878382df87b39",
+      "stderr": "eliminant-sign-mutation-rejected.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "root-collision-rejected",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/root-collision-rejected.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-distinct-roots-controls/controls-_75kngff/root-collision-rejected.lean"
+      ],
+      "cwd": "formal",
+      "started_utc": "2026-10-23T23:38:54.837345+00:00",
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.766905458999986,
+      "expected_failure": true,
+      "log": "root-collision-rejected.log",
+      "log_lf_sha256": "111538a6258102102c937b7875d1c01821d688f6ebe35e5c062fa11c286f379c",
+      "stdout": "root-collision-rejected.stdout.log",
+      "stdout_sha256": "111538a6258102102c937b7875d1c01821d688f6ebe35e5c062fa11c286f379c",
+      "stderr": "root-collision-rejected.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "elapsed_seconds": 24.06497644400008,
+  "total_budget_seconds": 600,
+  "new_public_declarations_audited": 48,
+  "new_modules_replayed": 1,
+  "positive_controls": 9,
+  "negative_controls": 3,
+  "artifact_sha256": {
+    "HodgeLab.OneReflectionSkew.GenericDistinctRoots": "519b6e70737dc53275a465be576e010a7c633a2deedde7433099112bd8c6c593"
+  },
+  "scope": "Generic separability and specified full splitting field with injective Fin18 root tuple; existing physical binding and two trace corollaries instantiated.",
+  "limits": [
+    "Base Q(v)(t)(a), with characteristic zero and stagewise transcendence proved",
+    "a=2,v=1 over Q is not separable; no claim for every specialization",
+    "The root enumeration is noncomputable; no numeric approximations used as proof",
+    "No unsplit descent, physical differential normalization, primitive, certificate or solve",
+    "Mathlib and prior imported proof modules are reused, not newly kernel-replayed",
+    "Physical file hashes are provenance; source snapshot verification is a separate execution",
+    "Executor label is runtime provenance; this receipt does not independently verify a remote CI run"
+  ]
+}
