@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "commit": "5d216691981cdb248073209bdc80df86021412d4",
+  "run": "https://github.com/rbajaj5/hodge-lab/actions/runs/40026828482",
+  "scope": "Coordinator verification of remote execution receipts, sources and logs; no local Lean rerun",
+  "checks": [
+    {
+      "checker": "forms",
+      "status": "PASS",
+      "declarations": 13,
+      "positive_controls": 5,
+      "negative_controls": 3,
+      "elapsed_seconds": 19.698747130000015,
+      "receipt_sha256": "426eb814aa7ecd0ae5a437080c2115c2a448dfb175c3168319bdf326853013e5"
+    },
+    {
+      "checker": "trace-basis",
+      "status": "PASS",
+      "declarations": 56,
+      "positive_controls": 7,
+      "negative_controls": 3,
+      "elapsed_seconds": 19.117582467000034,
+      "receipt_sha256": "d418dd47649b5858f29725b05c12ab8052fcc063bf83eaa1e16054faeec35488"
+    },
+    {
+      "checker": "physical-cover",
+      "status": "PASS",
+      "declarations": 8,
+      "positive_controls": 9,
+      "negative_controls": 4,
+      "elapsed_seconds": 21.299046359000045,
+      "receipt_sha256": "2ab229b1dc9059aacaab5c15735039042bfbfb6b1bfff179c45de2dd48803902"
+    }
+  ],
+  "source_gate_mutations": 5,
+  "matched_published_source_files": 43,
+  "matched_command_logs": 28,
+  "limits": [
+    "No new mathematical claims beyond the checked conditional theorem",
+    "Full CPU workflow observed separately; not inferred from Lean success",
+    "Runtime ambient receipt handled separately from immutable historical evidence"
+  ]
+}

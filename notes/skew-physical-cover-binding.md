@@ -5,8 +5,12 @@
 > The coordinator independently passed delivery/source/log audits, the literal
 > source gate and the non-Lean receipt-lifecycle regression; it reused the
 > reported Lean runs. See [integration evidence](../results/ci-receipt-physical-cover-20261023/integration/integration.json).
-> A fresh remote CI outcome will be recorded after publication; local receipts
-> alone do not establish that outcome.
+> Published in [5d21669](https://github.com/rbajaj5/hodge-lab/commit/5d216691981cdb248073209bdc80df86021412d4).
+> The complete [Lean CI run 40026828482](https://github.com/rbajaj5/hodge-lab/actions/runs/40026828482)
+> passed, including the repaired sequence and new lemma. Downloaded receipts
+> were checked against 43 published source files and 28 logs; see the separate
+> [remote verification](../results/ci-receipt-physical-cover-20261023/integration/remote-ci/verification.json).
+> Historical handoff statements below refer to the earlier local-only stage.
 
 23 October 2026. **Reviewed local handoff; no commit, push, new remote CI run,
 or upstream publication by this chat.** The human assigned final Git

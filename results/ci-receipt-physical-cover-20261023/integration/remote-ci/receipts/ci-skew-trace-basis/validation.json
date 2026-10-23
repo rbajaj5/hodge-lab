@@ -1,0 +1,514 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-23T21:38:38.314260+00:00",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "check_skew_trace_basis.py": "b3ee0a458ebc4710e668a89160a1c6349021c1b3b521a154e583f0ff7925cc67",
+    "fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "AuditSkewTraceBasis.lean": "cec557af7a29239d6559ab3b7fe87937a50582e242d093b21d456f6f92f4445b",
+    "ReplaySkewTraceBasis.lean": "807f46fb359f3013697f2037737b5c87e12fde7be09fe5eafbd28bb04fc9adf3",
+    "HodgeLab/OneReflectionSkew/TraceKernel.lean": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+    "HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+    "HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8"
+  },
+  "inputs_lf_sha256": "eb4c9207f71c0c0287fcba392401aa1be7aeeaa57fcb8285fe30572788e029be",
+  "declaration_axioms": {
+    "HodgeLab.OneReflectionSkew.TraceKernel.trace_eq_last_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.mem_ker_iff_last_coefficient_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelCoordinates_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_repr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelBasis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.kernelBasisSeventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceKernel.slot_eleven_mem_ker": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.coverPolynomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.derivativeValue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.codifferent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.leading_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.cover_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.derivative_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.derivative_value_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.algebra_trace_eq_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.monomial_weight_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_codifferent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.evaluationMatrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.evaluation_matrix_det_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.codifferentBasis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.codifferentBasis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_basis_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_basis_last": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.traceFreeBasis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.traceFreeBasis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_eq_coordinate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.slot_eleven_trace_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.traceFree_finrank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.trace_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis.remove_scalar_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.cover_eval_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_mk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.cover_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluation_bijective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluationEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluationEquiv_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.evaluationEquiv_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientCodifferent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientCodifferentBasis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientCodifferentBasis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_quotientCodifferent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.derivative_mul_quotientCodifferent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotient_derivative_isUnit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_quotient_basis_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.trace_quotient_basis_last": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientTraceFreeBasis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotientTraceFreeBasis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient.quotient_traceFree_finrank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.6991447020000123,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "execution_command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.002170930000033877,
+      "expected_failure": false,
+      "log": "mathlib-head.log",
+      "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.SplitTraceQuotient"
+      ],
+      "execution_command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.SplitTraceQuotient"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 1.259182621999912,
+      "expected_failure": false,
+      "log": "build.log",
+      "log_lf_sha256": "a854c4f11bd15f75dbe7f3de92c57a115647f8c529f2467fe4fbe6d00ad1afd4"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewTraceBasis.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewTraceBasis.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.289694230000009,
+      "expected_failure": false,
+      "log": "axioms.log",
+      "log_lf_sha256": "717b330471dfb085eee9032d0061108fecd9d1bbfa4364962611c851db1343f7"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewTraceBasis.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewTraceBasis.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 5.447687173999952,
+      "expected_failure": false,
+      "log": "kernel-replay.log",
+      "log_lf_sha256": "d8569b3ba59579d65ea492a0898c41eea99947f0e9a288cb2de76a2fd7ee4451"
+    },
+    {
+      "label": "positive-controls",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/positive.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/positive.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.4524231000000327,
+      "expected_failure": false,
+      "log": "positive-controls.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "missing-leading-coefficient",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/missing-leading-coefficient.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/missing-leading-coefficient.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.2744841199998973,
+      "expected_failure": true,
+      "log": "missing-leading-coefficient.log",
+      "log_lf_sha256": "d4b36f598c49e69eb04618fd9c221b28fe7e69a841c2858073538ddc2fb08a15"
+    },
+    {
+      "label": "wrong-kernel-dimension",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/wrong-kernel-dimension.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/wrong-kernel-dimension.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.324581465000051,
+      "expected_failure": true,
+      "log": "wrong-kernel-dimension.log",
+      "log_lf_sha256": "be533504f12f588bfabe006fae363a8951e80abbf95b644ad2e0924b66d6a664"
+    },
+    {
+      "label": "trace-zero-means-zero",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/trace-zero-means-zero.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-trace-basis-controls/trace-zero-means-zero.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.3410002179999765,
+      "expected_failure": true,
+      "log": "trace-zero-means-zero.log",
+      "log_lf_sha256": "9e17deb3400488fd80a043b88564a55a42ea6f151ebc2b5f8f0998505fa5d857"
+    }
+  ],
+  "elapsed_seconds": 19.117582467000034,
+  "total_budget_seconds": 600,
+  "new_declarations_audited": 56,
+  "new_modules_replayed": 3,
+  "positive_controls": 7,
+  "negative_controls": 3,
+  "artifact_sha256": {
+    "HodgeLab.OneReflectionSkew.TraceKernel": "3fe91868ceee7d8713db6a4fb3c5b61a82669b950990b1f183c5eaf956a119be",
+    "HodgeLab.OneReflectionSkew.TraceFreeBasis": "713587da2ce0eda6b2c7249f0bba1381f57c5f9c2561f61e35d475f68a01614a",
+    "HodgeLab.OneReflectionSkew.SplitTraceQuotient": "d08873936af811f9fce57eae96db6e18f81e22208507d6a2782e63ab3ec4d541"
+  },
+  "scope": "Full split degree-18 algebra and quotient; actual algebra trace; derivative-weighted basis; first17 vectors form trace kernel; last trace 1/a18.",
+  "limits": [
+    "Field K, nonzero leading coefficient, 18 explicitly distinct roots required",
+    "No irreducibility assumed; all18 split components retained",
+    "Characteristic zero required only for scalar trace/18 removal",
+    "No descent over the unsplit physical coefficient field or literal physical-polynomial/source binding",
+    "No connection, primitive, homogeneous certificate, trace-and-clearing replay or HasCertificate",
+    "Mathlib imports and previous proofs not newly kernel-replayed; context receipt hashes are provenance only"
+  ]
+}

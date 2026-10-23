@@ -1,0 +1,11 @@
+import HodgeLab.OneReflectionSkew.SplitTraceQuotient
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+def rootsQ (j : Fin 18) : ℚ := (j.val : ℚ)
+theorem rootsQ_injective : Function.Injective rootsQ := by
+  intro i j h
+  apply Fin.ext
+  change (i.val : ℚ) = (j.val : ℚ) at h
+  exact_mod_cast h
+example : Algebra.trace ℚ (CoverAlgebra 2 rootsQ)
+    (quotientCodifferent 2 (by norm_num) rootsQ rootsQ_injective 17) = 1 := by
+  rw [trace_quotientCodifferent]; norm_num

@@ -1,0 +1,6 @@
+import HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open Polynomial HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : (physicalPolynomial (2 : ℚ) 1).leadingCoeff = 2 := by
+  rw [physical_leading_coefficient]
+  norm_num

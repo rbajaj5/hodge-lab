@@ -38,6 +38,25 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: conditional physical-cover binding in Lean
+
+[![Literal physical cover, explicit root hypotheses and trace values](visualizations/skew-physical-cover-binding.png)](notes/skew-physical-cover-binding.md)
+
+For `f(X)=X^18+X^12+(vX-1)^6-aX^15`, Lean proves degree 18,
+leading coefficient **1**, and equality with the split-cover polynomial
+**given eighteen distinct roots of f in the coefficient field**. Two
+corollaries reuse the split trace formulas. Pro's saved run passed eight
+declaration audits, one module replay, nine positive and four negative
+controls; the coordinator separately checked source binding and receipt
+integrity. The CI repair keeps fresh execution receipts separate from
+immutable historical evidence. The complete [Lean CI run](https://github.com/rbajaj5/hodge-lab/actions/runs/40026828482) passed on the published proof commit.
+
+Distinct-root data over a specified splitting extension of `Q(a,v,t)`,
+descent, physical differential-source normalization and a rational primitive
+remain separate obligations.
+
+[Proof, execution scope and limits](notes/skew-physical-cover-binding.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean) · [Pro execution receipt](results/ci-receipt-physical-cover-20261023/lean-development/checker-01/validation.json)
+
 ### One-reflection-skew: trace-free basis in Lean
 
 [![Full degree-18 quotient and trace kernel](visualizations/skew-trace-basis.png)](notes/skew-trace-basis-lean.md)
@@ -47,8 +66,9 @@ distinct roots in the coefficient field**, Lean constructs the full quotient's
 derivative-weighted basis and **17-dimensional trace kernel**. The last
 basis vector has trace **1/a18**. All 18 components are retained.
 **56 declaration audits, three module kernel replays, seven positive and
-three negative controls passed.** Unsplit descent and literal physical
-source binding remain open; trace zero does not establish a primitive.
+three negative controls passed.** The conditional literal-polynomial binding
+is now linked above. Unsplit descent and physical differential-source
+normalization remain open; trace zero does not establish a primitive.
 
 [Proof and limits](notes/skew-trace-basis-lean.md) · [Lean quotient module](formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean) · [Executed receipt](formal/results/skew-trace-basis/validation.json)
 
@@ -237,7 +257,7 @@ python -S experiments/check_cyclic_fano_cubic_polars.py
 
 This checker uses standard-library exact arithmetic and needs no GPU. Read the [reproduction notes](notes/cyclic-fano-cubic-polars.md#bounds-failures-and-reproduction) for the complete scope and recorded controls.
 
-Plotting and numerical experiments use [`requirements.txt`](requirements.txt); CUDA experiments have separate [dependencies](requirements-cuda.txt). Lean setup and replay commands are in [`formal/README.md`](formal/README.md). Do not run verification scripts with Python's `-O` option. Regeneration commands may overwrite saved outputs; the individual notes identify them.
+Plotting and numerical experiments use [`requirements.txt`](requirements.txt); CUDA experiments have separate [dependencies](requirements-cuda.txt). Lean setup and replay commands are in [`formal/README.md`](formal/README.md). Follow each checker's documented command: older scripts may rely on assertions, while the newer Lean receipt/source checkers are explicitly tested under `-O`. Regeneration commands may overwrite saved outputs; the individual notes identify them.
 
 ## Evidence, credit, and publication
 

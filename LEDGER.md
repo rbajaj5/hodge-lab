@@ -4960,3 +4960,44 @@ The full 379,790-byte parent ledger and the 5,818-byte Pro append remain
 byte-identical. Publication and the fresh full remote CI outcome will be
 recorded separately after push. Posts remain 1–29 and the contribution tally
 is unchanged; this pass makes no hodge-computer publication.
+
+### Published and CI verified — 23 October 2026
+
+The coordinator normally pushed [5d216691981cdb248073209bdc80df86021412d4](https://github.com/rbajaj5/hodge-lab/commit/5d216691981cdb248073209bdc80df86021412d4)
+and verified that it was remote main. The complete [Notebook Lean proofs run
+40026828482](https://github.com/rbajaj5/hodge-lab/actions/runs/40026828482)
+passed in 12m7s, including the repaired forms-to-trace sequence, receipt
+lifecycle controls, literal source gate and new physical-cover lemma.
+The initial receipt conflict is therefore repaired and verified in CI.
+
+The coordinator downloaded the run's artifact and checked 43 published source
+files and 28 command logs against the exact tested commit. Fresh receipts
+record forms 13 declaration audits / 5 positive / 3 negative controls;
+trace 56 / 7 / 3; and physical cover 8 / 9 / 4. The physical checker took
+21.299 s. The source gate rejected five mutations. These are new remote
+executions, separate from the Pro-local runs above; no counts are combined
+into a claim of additional mathematical results. All audited axioms stayed
+within propext, Classical.choice and Quot.sound. The runtime ambient receipt
+was checked separately from immutable historical context.
+
+[Remote receipt verification](results/ci-receipt-physical-cover-20261023/integration/remote-ci/verification.json),
+[offline verifier](results/ci-receipt-physical-cover-20261023/integration/verify_remote_ci.py),
+[run metadata](results/ci-receipt-physical-cover-20261023/integration/remote-ci/run.json),
+and the downloaded fresh receipts retain the commands, timings, source pins
+and expected-failure diagnostics. This follow-up changes documentation and
+retains evidence; the proof/checker/workflow sources tested at 5d21669 are
+unchanged. The separate CPU workflow 40026828438 was still in progress at
+artifact retrieval and is not inferred successful from the Lean run.
+
+README now links the conditional binding and its explicit hypotheses,
+replaces its stale literal-binding frontier sentence, and clarifies that
+checker-specific commands govern Python -O usage. The coordinator checked
+136 local README/note links. Its initial checkout was restored exactly to
+its pre-integration state after publishing from the isolated clone; the
+raw ledger and all 2,862 original result-file hashes match that baseline.
+
+The requested bounded unit is complete. Distinct-root data in a specified
+splitting extension of Q(a,v,t), descent, physical differential-source
+normalization and a primitive remain unproved by this unit. No upstream
+publication occurred. Posts stay 1–29; tally stays **29 discussion
+contributions, one closed maintenance PR, zero accepted authored solves**.

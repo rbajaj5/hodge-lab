@@ -1,0 +1,315 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-23T21:38:18.979911+00:00",
+  "lean_version": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "source_lf_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "check_skew_forms.py": "fcb3951e87afc882c0b3188392ce8823bafa75f3318d98c78402f611358476b2",
+    "fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "AuditSkewForms.lean": "8cb35ae5b89680c0e99e6cdb0456539bd43db233e6eeae0a4e4fe6f9f9932b95",
+    "ReplaySkewForms.lean": "b8d4f925d799a29a152a89d11ce9dc9e21843aa70204b215783e3bd90434dbc2",
+    "HodgeLab/OneReflectionSkew/DifferentialForms.lean": "6c995c52e943e61d2bf5b7c3e54cebc98b0286f9c87dcfe6709775c2a5de72f6"
+  },
+  "reused_source_lf_sha256": {
+    "HodgeLab/SparsePolynomial.lean": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+    "HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "HodgeLab/OneReflectionSkew/ThreeCoefficient.lean": "d5b56aa6ec51bf531eb0ed5de858e0e0f921cab5ed7dd9bf6bde6af8abb70138",
+    "HodgeLab/OneReflectionSkew/Controls.lean": "653a4e03f791b5ecc5686ae5bfd584a97e8acf902b6f97c92de861fc754045ec",
+    "HodgeLab/OneReflectionSkew/DegreeFour.lean": "8ccad69f0509a2538d34cccc46f2ecf8fc428b12214088b60b0a6a127faea848",
+    "HodgeLab/OneReflectionSkew/CoordinateComparison.lean": "d7c88cffbf24278e685dc4cfb44f9899eac2a7095877820c8e771aa28069f684",
+    "HodgeLab/OneReflectionSkew/ChartSubstitution.lean": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+    "HodgeLab/OneReflectionSkew/CoordinateVolume.lean": "2e5525339a4ac23e88ba62addda1b310fb10b7eb3dd664cd2b491f8186ada594",
+    "HodgeLab/OneReflectionSkew/VolumeDensity.lean": "d3950d20c3e330800d816f37eadfb07a5889bc5c67f22e1ac11041cac4ab7620",
+    "HodgeLab/OneReflectionSkew/NormalChart.lean": "2d8050b1ae67b7187634e18add161c2576c920393b3fe416e7b04829782b2232",
+    "HodgeLab/OneReflectionSkew/ResidueNormalization.lean": "213abfe2f1ab6d997953bf01e20ce09d7b46b47820675288bee2e27ed1ca2efa",
+    "HodgeLab/OneReflectionSkew/AmbientDerivation.lean": "6172a74fad84c97a15f8345225fb35cb49e1e9fa806c8a1309f42f83bf6e8cc3"
+  },
+  "input_lf_sha256": {
+    "inputs.json": "363e24a0ff9cc5416e539ce57dca0276a9296c9ca02b3d6b38b3ee4364f34839",
+    "results/chi-target-source/inputs/data/one-reflection-skew/record.json": "a7c892adb3c3277a3364df60ee42d5717b40284fa49a9c5649a690b902bb0183",
+    "results/chi-target-source/inputs/data/one-reflection-skew/instance.rec": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+    "results/chi-target-source/inputs/data/one-reflection-skew/provenance.json": "2acb3d61b6c6459a09582cde880bcd605c29aa8c400b30ab206bbec7aad48477"
+  },
+  "prior_receipt_lf_sha256": "33d75ec090cb265fd2c43d28419f5e2779c6f9ca6515ad323192dab201ed5285",
+  "artifact_sha256": {
+    "HodgeLab.OneReflectionSkew.DifferentialForms": "f5f1ac792939be1f8d79d0bc401257a68a4beb45db3f0929f88a63150f25b6b5"
+  },
+  "theorem_axioms": {
+    "HodgeLab.OneReflectionSkew.DifferentialForms.base_wedge_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.coordinate_swap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.normal_first_orientation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.wedgeDerivation_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.normalDerivation_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.polynomial_derivations_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.derivations_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.differential_wedge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.differentialBasis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.volume_eq_multi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.topCoefficient_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.volume_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HodgeLab.OneReflectionSkew.DifferentialForms.actual_form_reduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.785132515999976,
+      "expected_failure": false,
+      "log": "version.log",
+      "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "execution_command": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 0.0026012939999873197,
+      "expected_failure": false,
+      "log": "mathlib-head.log",
+      "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.DifferentialForms"
+      ],
+      "execution_command": [
+        "lake",
+        "build",
+        "HodgeLab.OneReflectionSkew.DifferentialForms"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 1.561810238000021,
+      "expected_failure": false,
+      "log": "build.log",
+      "log_lf_sha256": "05bb4e1229284dafa5a5764eaa0a3fa53ca72ea23ed4aea43805d969f75ccbc9"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewForms.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditSkewForms.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 2.8514228839999305,
+      "expected_failure": false,
+      "log": "axioms.log",
+      "log_lf_sha256": "89be674dfca3b36e2fb9fa8a2410c8fe1a13c4b062403819940f178b62477502"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewForms.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        "ReplaySkewForms.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 3.2948838859999796,
+      "expected_failure": false,
+      "log": "kernel-replay.log",
+      "log_lf_sha256": "30299f4f03422455a1682ba1ef26f75897d2ade545dc313bbad9a0ce06e0b0fc"
+    },
+    {
+      "label": "positive-controls",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/positive.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/positive.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 0,
+      "elapsed_seconds": 3.1660948889999645,
+      "expected_failure": false,
+      "log": "positive-controls.log",
+      "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "wrong-orientation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/wrong-orientation.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/wrong-orientation.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.556243466000069,
+      "expected_failure": true,
+      "log": "wrong-orientation.log",
+      "log_lf_sha256": "d2451e84325397dabef3e671ca50a8ef80a25501ebb79a5a9639d702f60b4a9c"
+    },
+    {
+      "label": "wrong-repeated-wedge",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/wrong-repeated-wedge.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/wrong-repeated-wedge.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.7237024160000374,
+      "expected_failure": true,
+      "log": "wrong-repeated-wedge.log",
+      "log_lf_sha256": "428bc02604be8d715ad5155cad76543e13991ad7b2930e8ee05823026d340ce7"
+    },
+    {
+      "label": "wrong-reciprocal-sign",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/wrong-reciprocal-sign.lean"
+      ],
+      "execution_command": [
+        "lake",
+        "env",
+        "lean",
+        ".lake/skew-forms-controls/wrong-reciprocal-sign.lean"
+      ],
+      "bound_seconds": 120,
+      "exit_code": 1,
+      "elapsed_seconds": 2.7327976180000633,
+      "expected_failure": true,
+      "log": "wrong-reciprocal-sign.log",
+      "log_lf_sha256": "8f8a918aaa8fe4ad7b0e3c6c0d1a1ffc8644910320b096f6e5d5678367b7eb2f"
+    }
+  ],
+  "elapsed_seconds": 19.698747130000015,
+  "total_budget_seconds": 600,
+  "new_theorems": 13,
+  "new_modules_replayed": 1,
+  "positive_controls": 5,
+  "negative_controls": 3,
+  "scope": "Actual Kahler differentials and exterior products over Frac(Q[U,r,w,t,z]); df wedge alpha equals the constructed normal derivative times a proved nonzero volume; exact +5/72 logarithmic reduction.",
+  "limits": [
+    "Independent ambient variables over Q; G and z are nonzero rational functions",
+    "betaDifferential is d(betaScalar) wedge alpha, not a general exterior differential",
+    "No de Rham complex, general residue operator or restriction of the ambient equation to G=0",
+    "No physical square-cover pullback, primitive, trace, clearing or HasCertificate",
+    "Prior proofs and Mathlib are reused imports, not newly kernel-replayed",
+    "No increased bounded-exclusion coverage or accepted solve"
+  ]
+}

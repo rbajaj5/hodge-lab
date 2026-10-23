@@ -1,0 +1,191 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.785132515999976,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.0026012939999873197,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.DifferentialForms"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.DifferentialForms"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 1.561810238000021,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "05bb4e1229284dafa5a5764eaa0a3fa53ca72ea23ed4aea43805d969f75ccbc9"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewForms.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewForms.lean"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.8514228839999305,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "89be674dfca3b36e2fb9fa8a2410c8fe1a13c4b062403819940f178b62477502"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewForms.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewForms.lean"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.2948838859999796,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "30299f4f03422455a1682ba1ef26f75897d2ade545dc313bbad9a0ce06e0b0fc"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/positive.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/positive.lean"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.1660948889999645,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "wrong-orientation",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/wrong-orientation.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/wrong-orientation.lean"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.556243466000069,
+    "expected_failure": true,
+    "log": "wrong-orientation.log",
+    "log_lf_sha256": "d2451e84325397dabef3e671ca50a8ef80a25501ebb79a5a9639d702f60b4a9c"
+  },
+  {
+    "label": "wrong-repeated-wedge",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/wrong-repeated-wedge.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/wrong-repeated-wedge.lean"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.7237024160000374,
+    "expected_failure": true,
+    "log": "wrong-repeated-wedge.log",
+    "log_lf_sha256": "428bc02604be8d715ad5155cad76543e13991ad7b2930e8ee05823026d340ce7"
+  },
+  {
+    "label": "wrong-reciprocal-sign",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/wrong-reciprocal-sign.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-forms-controls/wrong-reciprocal-sign.lean"
+    ],
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.7327976180000633,
+    "expected_failure": true,
+    "log": "wrong-reciprocal-sign.log",
+    "log_lf_sha256": "8f8a918aaa8fe4ad7b0e3c6c0d1a1ffc8644910320b096f6e5d5678367b7eb2f"
+  }
+]

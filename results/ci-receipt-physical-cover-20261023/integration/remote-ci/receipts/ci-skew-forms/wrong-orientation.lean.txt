@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.DifferentialForms
+open HodgeLab.OneReflectionSkew.DifferentialForms HodgeLab.OneReflectionSkew.AmbientDerivation
+example : topCoefficient (oneForm (coord 4)*alpha) = -1 := by
+  rw [normal_first_orientation, topCoefficient_volume]
+  norm_num
