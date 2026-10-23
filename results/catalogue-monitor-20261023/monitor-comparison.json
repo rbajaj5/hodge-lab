@@ -1,0 +1,1302 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-10-23T21:46:35.822284+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "4a8e09b6002d250094cb1c1152a6026c55030ead",
+      "url": "https://github.com/hodge-computer/sextics/commit/4a8e09b6002d250094cb1c1152a6026c55030ead",
+      "message": "Merge pull request #202 from hodge-computer/codex/single-solve-status\n\nRemove duplicated solve metadata and committed build output",
+      "committer_date": "2026-10-23T21:43:29Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "69616138811d9f951d586049bd7f6407bea2c4f5",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/69616138811d9f951d586049bd7f6407bea2c4f5",
+      "message": "Record verified Lean CI outcome and physical-cover limits",
+      "committer_date": "2026-10-23T21:41:45Z"
+    }
+  },
+  "repository_baseline": "repository-baseline-before-20261023T214439Z.json",
+  "repository_head_unchanged": false,
+  "target_policy_pin_count": 383,
+  "target_policy_changes": [
+    {
+      "path": "CONTRIBUTING.md",
+      "before": "d0b4c828d6d6589b47aaccb045dfadc5ff5d7971",
+      "after": "5f093c306f5d73263de3863b42631a4c9f2c8c9f"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "before": "58a25ed21a59f5b1bbc6f16ce82e3f2c606f4bcd",
+      "after": "f6880ce4419ef2b22212e3d75ceccc1f313fcd37"
+    },
+    {
+      "path": "data/block-q2/instance.rec",
+      "before": "e2402b7d86c28b052fcf0a03abb199e01202071e",
+      "after": "9da098f7fd53d3b4212935dcb32de14afa1e5935"
+    },
+    {
+      "path": "data/block-q2/record.json",
+      "before": "1adb043c38cf17463662c19308c6a88d82e475d8",
+      "after": null
+    },
+    {
+      "path": "data/block-q2/solution.json",
+      "before": "9e0c591104e1343586c3f64fec732395dda281ef",
+      "after": null
+    },
+    {
+      "path": "data/cofactor-eight/instance.rec",
+      "before": "2da81f754679a83c8d513620f6e49f074a7a4793",
+      "after": "04a55f3e70a68ef068f09ae3d70acc438c740a4d"
+    },
+    {
+      "path": "data/cofactor-eight/record.json",
+      "before": "4f1b09e48d6fe52de9069b4ddb0937bf1266d527",
+      "after": null
+    },
+    {
+      "path": "data/cofactor-eight/solution.json",
+      "before": "c8c439e3998c969f7c169cd8e179af2a9894bb8e",
+      "after": null
+    },
+    {
+      "path": "data/cofactor-mixed/instance.rec",
+      "before": "2e0ed1f859ca8cbc4792b0099b8e966c4319b97e",
+      "after": "864ba8820316520489f601ad0622b268eb6d02da"
+    },
+    {
+      "path": "data/cofactor-mixed/record.json",
+      "before": "e1c00c23222a9cffc05d3fbdb8e6b8b9e72b7a75",
+      "after": null
+    },
+    {
+      "path": "data/cofactor-mixed/solution.json",
+      "before": "0dd338dcd475eee5724e579ed57ce06ad64c9926",
+      "after": null
+    },
+    {
+      "path": "data/collision-h3/instance.rec",
+      "before": "d7f6bb3861a79639ae84a199ec10512a4f36caa7",
+      "after": "f993541b1fe76a143d272a7939cc8073e580c218"
+    },
+    {
+      "path": "data/collision-h3/record.json",
+      "before": "700745a241fc492aa712e2651dc10f629ab2b7f2",
+      "after": null
+    },
+    {
+      "path": "data/collision-h3/solution.json",
+      "before": "eaeb2860637a8f2337f40f580da24353a5983cca",
+      "after": null
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/instance.rec",
+      "before": "35f7b78c417c98de9d2db4ba171e5806868a778c",
+      "after": "8d210d8bd9cc589a1668597c93292b4e16038dec"
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/record.json",
+      "before": "8852a29d36a8387a97c93d6fa03f5e4d21d2e4ba",
+      "after": null
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/solution.json",
+      "before": "293710db12e61b6f41c0346830e6247eef9c4f0c",
+      "after": null
+    },
+    {
+      "path": "data/cone-ladder-linear/instance.rec",
+      "before": "ec9edd5ae888563e3cc86a1f015f7f5648d75bf3",
+      "after": "a83248daff5f51be465b8401906fe0329e2fd63f"
+    },
+    {
+      "path": "data/cone-ladder-linear/record.json",
+      "before": "77317d4ae6b67096cf3910beb62f95efb106872d",
+      "after": null
+    },
+    {
+      "path": "data/cone-ladder-linear/solution.json",
+      "before": "15ff4a2286d0a4c5f2c39098ab8009c67ece2bda",
+      "after": null
+    },
+    {
+      "path": "data/contact46006/instance.rec",
+      "before": "67b6e72afe169492220d3d0b2242d7185a01bcc2",
+      "after": "b9e7f319636fe7f8b248d3b63b5c2658178d7edf"
+    },
+    {
+      "path": "data/contact46006/record.json",
+      "before": "b4e1b02c4c7eb077573fc08fa7bf0d35421ad2d1",
+      "after": null
+    },
+    {
+      "path": "data/contact46006/solution.json",
+      "before": "7b29d3ba7ef74f59e105a47d508c21be539878dd",
+      "after": null
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/instance.rec",
+      "before": "c5c1fdeb5a99b4b1a2370c586aa8f59ef24daf87",
+      "after": "da7a8ea314b432d6720ad4c9a408703a1fd7121b"
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/record.json",
+      "before": "0e08e268e9227ed657d69137d3c47d05718dfb3f",
+      "after": null
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/solution.json",
+      "before": "1fc162ef6a5630bf5957cd5e6736e3ccdf67644e",
+      "after": null
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/instance.rec",
+      "before": "2f6899597586158d3a67e5d45c13278dd2ea6686",
+      "after": "56d2f7aa9b71a96ae1157880c52f3cf902cdd7ae"
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/record.json",
+      "before": "1a10071fea623aa613ab536231ff50c07dd6a05a",
+      "after": null
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/solution.json",
+      "before": "83bd16a82267faab3c6e638e046d9f5bf8219c9c",
+      "after": null
+    },
+    {
+      "path": "data/cycle-q2/instance.rec",
+      "before": "049cc3656367dd3bd4b4b7282b53756c4ecae5fc",
+      "after": "92fe8c0d9290786e2f339349a95dae5126e54a58"
+    },
+    {
+      "path": "data/cycle-q2/record.json",
+      "before": "820446964aeb9beb93f86f5f6a4fc1ca19aafb84",
+      "after": null
+    },
+    {
+      "path": "data/cycle-three/instance.rec",
+      "before": "e2a826942b3c0680ac16adaab4927c8930e92a0d",
+      "after": "44cccbeec088b6d9f81264ca1c0144c84722e743"
+    },
+    {
+      "path": "data/cycle-three/record.json",
+      "before": "18f3178fcdffcab42c23b643c32bb4cccc6e779e",
+      "after": null
+    },
+    {
+      "path": "data/cycle-three/solution.json",
+      "before": "3ade0599f0bb3648cfd5d08ab799ad68b732fa58",
+      "after": null
+    },
+    {
+      "path": "data/cyclic-triple-fano/instance.rec",
+      "before": "032ad706634c1da04e4edc45b88f6e42f5402013",
+      "after": "25ef7f35a26f6e0adff222d4d430c8f6ea974298"
+    },
+    {
+      "path": "data/cyclic-triple-fano/record.json",
+      "before": "9802a15ee25919b24e4e804f719e0167fd475df2",
+      "after": null
+    },
+    {
+      "path": "data/cyclic-triple-fano/solution.json",
+      "before": "1c0e158e07bc7a65fd8029f0e64cea1414369764",
+      "after": null
+    },
+    {
+      "path": "data/cyclic-triple-residual/instance.rec",
+      "before": "3b016f968477caaecd9a8c2659feb0861fc33558",
+      "after": "11cfa831a163dfd3c9fc60fae9cbbfee7b6d180e"
+    },
+    {
+      "path": "data/cyclic-triple-residual/record.json",
+      "before": "b5255cb27f828646f0fcdd4d03c4c28e81916bbb",
+      "after": null
+    },
+    {
+      "path": "data/dense-rational/instance.rec",
+      "before": "2e18a599fa82af366f12906daaed57dfb8178d0d",
+      "after": "0f2df95e81e9ac979c59b25a4f0be0e7f84fd15b"
+    },
+    {
+      "path": "data/dense-rational/record.json",
+      "before": "ae847815ed0bb64158fc0a7a1df510c3ac97dcd3",
+      "after": null
+    },
+    {
+      "path": "data/diagonal-permutation/instance.rec",
+      "before": "41b8b85e078008b1fdb29db4d2aefd5345457a2a",
+      "after": "071b2fea8157c0d74fa7f852676bec9b1524f6fd"
+    },
+    {
+      "path": "data/diagonal-permutation/record.json",
+      "before": "9ff45bd5d4131b1d0aa76b123c965977b1e6d921",
+      "after": null
+    },
+    {
+      "path": "data/eight-plane-configuration/instance.rec",
+      "before": "7ccb51fe46186ecd6bb4bdccd5d716f7f0a67175",
+      "after": "830e155dc0338967885601dedeb71ee5b86ce8f1"
+    },
+    {
+      "path": "data/eight-plane-configuration/record.json",
+      "before": "831e69fa2a1bb7d550095067bc8b131adc33d30a",
+      "after": null
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/instance.rec",
+      "before": "f46d8e8f7f3a9f773593fb414f691f497a9008f9",
+      "after": "51b517671b87b2123ab9122231ec44e9cbe47479"
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/record.json",
+      "before": "c0cd7ae8722259d2791881d096aa12b52f72f50c",
+      "after": null
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/solution.json",
+      "before": "dea08223baa0199377a8920bc1c4aa985b862ed4",
+      "after": null
+    },
+    {
+      "path": "data/family-block-cube/instance.rec",
+      "before": "0c459d388e4a79a3ae496c1621c464644920927a",
+      "after": "2c7da619bb82c45a929ac0af29d2d383338654d6"
+    },
+    {
+      "path": "data/family-block-cube/record.json",
+      "before": "9f03d0b139e40e8c16616d7ed73800593c1bf943",
+      "after": null
+    },
+    {
+      "path": "data/family-block-cube/solution.json",
+      "before": "5fc9ae0b354da20f6e019a7402542def607144e2",
+      "after": null
+    },
+    {
+      "path": "data/family-hesse-web/instance.rec",
+      "before": "521033e8b0f66511ddb4df4fed850f9d58e9b5f0",
+      "after": "c1c505aba8c7b88dd4b8760633e6c5bed2539ad5"
+    },
+    {
+      "path": "data/family-hesse-web/record.json",
+      "before": "e086b3f2763f8bdbcb3a8b07e0c9f748a364dfe7",
+      "after": null
+    },
+    {
+      "path": "data/family-hesse-web/solution.json",
+      "before": "698c2325d346f8f2619f0279f11f3786445e6539",
+      "after": null
+    },
+    {
+      "path": "data/family-passive-contact/instance.rec",
+      "before": "6fb732391abb2119c099b264e238cdc425f998b4",
+      "after": "f308f167dd1fa8d068a8b2b59b66f118041fc3e0"
+    },
+    {
+      "path": "data/family-passive-contact/record.json",
+      "before": "f4c7212a921571c849278c9c0ba2d5dc329fd60e",
+      "after": null
+    },
+    {
+      "path": "data/family-passive-contact/solution.json",
+      "before": "c42b110dd0ef888b3dae171fc666c73287d4a90b",
+      "after": null
+    },
+    {
+      "path": "data/family-root-cube/instance.rec",
+      "before": "9cbdc964930cad4c1cad3b4d9b0965a142d9f51e",
+      "after": "dc7e4e24419d7b18d8f64ceecd28939b26d88c82"
+    },
+    {
+      "path": "data/family-root-cube/record.json",
+      "before": "d2ab3bb8fb40be9e1e974b762cc45486368d4898",
+      "after": null
+    },
+    {
+      "path": "data/family-root-cube/solution.json",
+      "before": "43460df44bb3114f40adce302609347b998c0965",
+      "after": null
+    },
+    {
+      "path": "data/family-shear/instance.rec",
+      "before": "b2848d00f75990b7c01fc88a389fd996ac279734",
+      "after": "ce0994f8aafd529ba1072d44fbc8568943326bf0"
+    },
+    {
+      "path": "data/family-shear/record.json",
+      "before": "ab28d486f5c3fef924fefd5810f66b45ac11353a",
+      "after": null
+    },
+    {
+      "path": "data/family-shear/solution.json",
+      "before": "14d05376003e85a8135e46f140fadea9cdbd1d04",
+      "after": null
+    },
+    {
+      "path": "data/family-sylvester-norm/instance.rec",
+      "before": "c8e5bb083d7300c4f2cbeb282fe2213697ef957e",
+      "after": "3367b4bd9c94fe630a15ef98b6d779fbe363cf9d"
+    },
+    {
+      "path": "data/family-sylvester-norm/record.json",
+      "before": "9f67cc9219071d133ba3fb1fcabd00f4ce7be459",
+      "after": null
+    },
+    {
+      "path": "data/family-sylvester-norm/solution.json",
+      "before": "c296262f9f2fe7dea1bca7cfcab659bb721e5000",
+      "after": null
+    },
+    {
+      "path": "data/family-trace-zero/instance.rec",
+      "before": "1b30f405887c46f6293f08ab91de26de00ea4763",
+      "after": "fd3e846ca34558ae2e0f19e674bc984f815c62be"
+    },
+    {
+      "path": "data/family-trace-zero/record.json",
+      "before": "ca659d52fe8e1852357e2b6f407f8232da81fcf8",
+      "after": null
+    },
+    {
+      "path": "data/family-trace-zero/solution.json",
+      "before": "18382602415eaf7b1ef82b3bd71c6b5b46fc8341",
+      "after": null
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/instance.rec",
+      "before": "fdd10fcacf0e5495e67969700630e23a3d754333",
+      "after": "531ac98589e2b7622d1bdcc7da9d2d462c418d7d"
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/record.json",
+      "before": "8824d02a5d14070ec3cb9e0c351cb49f96f6e1ed",
+      "after": null
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/solution.json",
+      "before": "2c18f022dbf01708b8add7ad6df5c082cf86b189",
+      "after": null
+    },
+    {
+      "path": "data/fermat-q2/instance.rec",
+      "before": "a1caf53969a3341bd0d4d747a8f64e98580d9ac3",
+      "after": "c16ddf07c71ccfb1ed054d9d9127a6fde2226587"
+    },
+    {
+      "path": "data/fermat-q2/record.json",
+      "before": "a8ec58c4ad65f2b7347e2f8bc4423a9ba2f58d04",
+      "after": null
+    },
+    {
+      "path": "data/fermat-q2/solution.json",
+      "before": "2f002c63d11459ebba753056e583a6f373eed9bd",
+      "after": null
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/instance.rec",
+      "before": "82e57d6f2c05348b37918dc0089e259bbacd24e5",
+      "after": "efd1499ab53b3b76213c52ead963282de00e677f"
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/record.json",
+      "before": "5e356081bc87875c6555da87abf4841c7f0086e0",
+      "after": null
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/solution.json",
+      "before": "e32be5ba419494d9c5b1b559582e2e076c652e6c",
+      "after": null
+    },
+    {
+      "path": "data/four-plus-two-residual/instance.rec",
+      "before": "411a6b8f6cda6f50159b0211e6c45c890b86f3df",
+      "after": "cf644e9df56723b347662bceeb8448d5d3e06b3a"
+    },
+    {
+      "path": "data/four-plus-two-residual/record.json",
+      "before": "eb6e32eaf3c13e7a17d2fb87d8370371a37b48e8",
+      "after": null
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/instance.rec",
+      "before": "449a726eabe1aab87db3c506366a0503f8d76549",
+      "after": "09e64f3255df7528fcb8ce0d4a07257cd7930633"
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/record.json",
+      "before": "73ebcf24e19715d2413d8c5699cc927fcd35534c",
+      "after": null
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/solution.json",
+      "before": "3feff93f7de676e227ce24ac1ce0de984d4eca46",
+      "after": null
+    },
+    {
+      "path": "data/hesse-triangle/instance.rec",
+      "before": "3e53f725b1ae5094cd1b95912b18d14a5a7bfe44",
+      "after": "c1943f064f465ca63d40a25202a3799edb6f35c0"
+    },
+    {
+      "path": "data/hesse-triangle/record.json",
+      "before": "a3eaa7edcb193719b8cf33485678812638a3d4d6",
+      "after": null
+    },
+    {
+      "path": "data/hesse-triangle/solution.json",
+      "before": "3f7c9b627f66e0a765564f215da74840897ca989",
+      "after": null
+    },
+    {
+      "path": "data/holdout-all-six/instance.rec",
+      "before": "2c59859daca349fe59b4a77d551c851d75ce6036",
+      "after": "1af6857cfcdf4b99d5a157e84d59a6bab6bafc4e"
+    },
+    {
+      "path": "data/holdout-all-six/record.json",
+      "before": "2e0e89772de05305c50aa64c2d63656a9a59890e",
+      "after": null
+    },
+    {
+      "path": "data/holdout-all-six/solution.json",
+      "before": "4d20c411a6be9928762381ee0d0f01584207cd66",
+      "after": null
+    },
+    {
+      "path": "data/holdout-bundle/instance.rec",
+      "before": "837b1eedcec68c5eedf724fb5307ae3ea348c2c9",
+      "after": "9ce5989fa971a378a5eef05f7bc25368223a6453"
+    },
+    {
+      "path": "data/holdout-bundle/record.json",
+      "before": "1a208c27e4d78bd1713fd745f82aa4ba67ebdf1c",
+      "after": null
+    },
+    {
+      "path": "data/holdout-bundle/solution.json",
+      "before": "832144c3f54715d84647ca96d2817b97190aec07",
+      "after": null
+    },
+    {
+      "path": "data/holdout-moving-branch/instance.rec",
+      "before": "b0b97a89d3038a3cf757feeaf19620f8ceac566e",
+      "after": "7b33ac2d1463f6673d0736d5eda417b8e56d465c"
+    },
+    {
+      "path": "data/holdout-moving-branch/record.json",
+      "before": "8a8136f99003f29120e5507db130c62b4053c36a",
+      "after": null
+    },
+    {
+      "path": "data/holdout-moving-branch/solution.json",
+      "before": "fc8ae819c1838e5583bf93aca35b28faa29ebd10",
+      "after": null
+    },
+    {
+      "path": "data/holdout-p-y14/instance.rec",
+      "before": "f02eb5b2c737ca36f5c23ee74b87a6cad64b8598",
+      "after": "65dc8454163b9459d8c3d582982940fcabfecb54"
+    },
+    {
+      "path": "data/holdout-p-y14/record.json",
+      "before": "f65b58bf9ffd65517ec2677f521829bbfb353ad7",
+      "after": null
+    },
+    {
+      "path": "data/holdout-p-y14/solution.json",
+      "before": "f12ac709422e10e3a66a19807af3afa07af0f54a",
+      "after": null
+    },
+    {
+      "path": "data/holdout-p3/instance.rec",
+      "before": "2d69f89ea3b467e0da94ba4e07ac4117b0f14acf",
+      "after": "e51e87d40e24a10d069739dde626f9261ccefe9b"
+    },
+    {
+      "path": "data/holdout-p3/record.json",
+      "before": "674278967ec049ed0372cf12979d058d486a1ad9",
+      "after": null
+    },
+    {
+      "path": "data/holdout-p3/solution.json",
+      "before": "f054428de0823cf99ccafe1de76f02009c3462d6",
+      "after": null
+    },
+    {
+      "path": "data/holdout-q2/instance.rec",
+      "before": "80aabae9dadc4f80cb1235283328c4b88ffab7c0",
+      "after": "2fc5d95c35770ed77f8a8046491c73f976e218f5"
+    },
+    {
+      "path": "data/holdout-q2/record.json",
+      "before": "b33c71ff3ac93ace22f3b7dd101f5b3f117bb254",
+      "after": null
+    },
+    {
+      "path": "data/holdout-q2/solution.json",
+      "before": "64d4b1b6f0715d2c3eb21f73a74c1afe3e499c1c",
+      "after": null
+    },
+    {
+      "path": "data/holdout-ternary-deformation/instance.rec",
+      "before": "bba6e02bcb12e1e2eba9d15349eb255456a57d77",
+      "after": "7f32447fe77bf2bfd7ca6f17d5a52e141358fc8d"
+    },
+    {
+      "path": "data/holdout-ternary-deformation/record.json",
+      "before": "950d3841b51454efa35c7f21d5900927d4f309a9",
+      "after": null
+    },
+    {
+      "path": "data/holdout-ternary-deformation/solution.json",
+      "before": "34dad2b998d302ccd6b03d20720c5983300c26d8",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/instance.rec",
+      "before": "1ef74c21629bf78e933680f72f9aa928fe76ef98",
+      "after": "8e395b118547066d174e6b97d208577ebcd470f1"
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/record.json",
+      "before": "896c05d822f1065cdced9f86881531db119609ad",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/solution.json",
+      "before": "b03792e271419187b065be6cf460f06da6a1b650",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/instance.rec",
+      "before": "e52cb743e3c2f5bc1a76fb7a04af2c3a97eee1dd",
+      "after": "d0aae106c1c141f93e6321bdd52f484ce66f9ab3"
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/record.json",
+      "before": "5a9f47e9dc24c9ebe0ff111a51c168378fde855c",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/solution.json",
+      "before": "015de6f4e2d9a7144e55b7eeb78bd41593ca5d1c",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x04-p/instance.rec",
+      "before": "2ef03d3c0dc5b959f59e658e786ea850a71f2ce6",
+      "after": "d35a122288ecdc88d3a1bcabd96aef9663138622"
+    },
+    {
+      "path": "data/holdout-x04-p/record.json",
+      "before": "9fa360f2abbe445adf9b364b16a563691cb90697",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x04-p/solution.json",
+      "before": "ee9816a4fda5679824372f6e6f4cabc8cb23af11",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/instance.rec",
+      "before": "c69aa516b8c776fa480e356da0d0ba95b5aa875d",
+      "after": "96a52ed0f00267671a277d60b123bd60a5827469"
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/record.json",
+      "before": "aa1361ab41e46ce7cc9be1ee1a5cd9e3bf5d259b",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/solution.json",
+      "before": "b000157c529c665feebdaa356625f3fe7a30b3ab",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x12-p-y02/instance.rec",
+      "before": "16251ae19120deb15bb637256756cbd62201aee0",
+      "after": "fb33f5686e383da74f218339c42f5d7eb006c7b0"
+    },
+    {
+      "path": "data/holdout-x12-p-y02/record.json",
+      "before": "ef9baef71e49c33f6a160bbad5a45d4be4c18225",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x12-p-y02/solution.json",
+      "before": "d425966047dad54a00a836e4a7620101312e6451",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x13-y13/instance.rec",
+      "before": "25604a6e7dfc10fcb1c34535114fae75e5a52c59",
+      "after": "1a5abfc71add11af54e2701b36d6db6d1bc68d39"
+    },
+    {
+      "path": "data/holdout-x13-y13/record.json",
+      "before": "d2649c77f63076d74bf2ca3a1d66e62ded2ee8c4",
+      "after": null
+    },
+    {
+      "path": "data/holdout-x13-y13/solution.json",
+      "before": "42441bd0d19767387d96b229bc4e569e0394a5be",
+      "after": null
+    },
+    {
+      "path": "data/holdout/instance.rec",
+      "before": "8ececd89c597abbbb03f0a3904ef876cca4c3776",
+      "after": "6ad2a13281b71a68196152c71da224d68b3b7382"
+    },
+    {
+      "path": "data/holdout/record.json",
+      "before": "369596426dfa766bbebe1e9fe11c6f9ca65b3b6e",
+      "after": null
+    },
+    {
+      "path": "data/holdout/solution.json",
+      "before": "2f7f1f54afc00c1cddce01fe98066ee3117f0e93",
+      "after": null
+    },
+    {
+      "path": "data/index.json",
+      "before": "947b76b2a3dfc5ad2a732293fd9e4c69590b73c6",
+      "after": null
+    },
+    {
+      "path": "data/klein-coupled-character/instance.rec",
+      "before": "9d79439243923420f7d1fe5df8d8879b0d9f1fed",
+      "after": "f80ebc9fff5245ba258e6cd9fa1f601060ffc616"
+    },
+    {
+      "path": "data/klein-coupled-character/record.json",
+      "before": "fd7991806cee9109b8fc729598cfc979a5de204a",
+      "after": null
+    },
+    {
+      "path": "data/klein-hesse/instance.rec",
+      "before": "bf9f8d991cbfab17fdfb17c7bebd836c7e6e025c",
+      "after": "0ef3eec71340c4b94a942f9896bd958188f6654c"
+    },
+    {
+      "path": "data/klein-hesse/record.json",
+      "before": "c031df104c11fdb36b57175b117f51e4c19886f1",
+      "after": null
+    },
+    {
+      "path": "data/klein-hesse/solution.json",
+      "before": "8a1ee3d208e0cdf8b3dcca3fdf60eaff7102c508",
+      "after": null
+    },
+    {
+      "path": "data/klein-rational/instance.rec",
+      "before": "a3590f85d2e1f0f92bbbd5e8cdbccef4d2ce0638",
+      "after": "27596cf0b6c0008b6d8ffb551191a8cad789e693"
+    },
+    {
+      "path": "data/klein-rational/record.json",
+      "before": "9612e62813180616d294f1c875386103ee8143f1",
+      "after": null
+    },
+    {
+      "path": "data/klein-rational/solution.json",
+      "before": "fa13b1c6915d3eda78dc9a919238fb3c40945e2d",
+      "after": null
+    },
+    {
+      "path": "data/m3-coupled/instance.rec",
+      "before": "0c15f63f4ff0f8d37eca407eac24e3da62e98f3f",
+      "after": "49fa8637770910a17b1db018727ea70e3ecc021d"
+    },
+    {
+      "path": "data/m3-coupled/record.json",
+      "before": "2c60e8ac5a9dd34eafc7be3addba66905fa5c4b5",
+      "after": null
+    },
+    {
+      "path": "data/m3-coupled/solution.json",
+      "before": "880e5ed00eb18953b935d01d641f266b3c85d694",
+      "after": null
+    },
+    {
+      "path": "data/mixed-biweight/instance.rec",
+      "before": "3849a8d1799b5e2e5fb0513977c72d580ee5541f",
+      "after": "25f62cb6c82302df7999ed5d8caaab03790d6151"
+    },
+    {
+      "path": "data/mixed-biweight/record.json",
+      "before": "7f29f58f6fd1b5055a2aae783d056153300d5c31",
+      "after": null
+    },
+    {
+      "path": "data/mixed-biweight/solution.json",
+      "before": "caa0d8b88f838def83445fc5a35fc2ec2cb33a79",
+      "after": null
+    },
+    {
+      "path": "data/mixed-polar/instance.rec",
+      "before": "67971f463a22cf546611baa821ae9e02952d9714",
+      "after": "3960b134e2cba82fcacf3215466731bf92bda486"
+    },
+    {
+      "path": "data/mixed-polar/record.json",
+      "before": "6de23e53b0e63f024560c465de0a3ea059ab5275",
+      "after": null
+    },
+    {
+      "path": "data/mixed-polar/solution.json",
+      "before": "cfd705b0d4d7bb0fec0cdb5b97ce177d4dbec003",
+      "after": null
+    },
+    {
+      "path": "data/off-paired/instance.rec",
+      "before": "701e02f611d2e7e1ab72f2892c7ceb4072dd3895",
+      "after": "190c489e66927c6abc173077cf7b8901aad866cf"
+    },
+    {
+      "path": "data/off-paired/record.json",
+      "before": "328b261e9d5bf762404189302bf31b5d9c42f887",
+      "after": null
+    },
+    {
+      "path": "data/one-reflection-skew/instance.rec",
+      "before": "146011ea3cc4e6184901c2e74bbaffc1ac1d34c8",
+      "after": "2eb2d72427b8cca49a49029c930fe4aa88b81720"
+    },
+    {
+      "path": "data/one-reflection-skew/record.json",
+      "before": "6fe0626ebd3d1f02d6be117e701745601963a37b",
+      "after": null
+    },
+    {
+      "path": "data/one-reflection-y2-sector/instance.rec",
+      "before": "fda151c36a8c682c18e2c9337b6d88e9c148c63c",
+      "after": "69d982d83fe8c0b1bf815a40caa14cf5a09707de"
+    },
+    {
+      "path": "data/one-reflection-y2-sector/record.json",
+      "before": "39eb586d288fa7af6cd5af37c77ddbd2cb14dcea",
+      "after": null
+    },
+    {
+      "path": "data/one-reflection-y2-sector/solution.json",
+      "before": "d7d7364095b7a4edea79577554df807ab8946333",
+      "after": null
+    },
+    {
+      "path": "data/one-reflection/instance.rec",
+      "before": "05acae6663ba8f14b9d2cfbadd5a342146c10f19",
+      "after": "f83fe080bd0ff7b5b88dc0266d591d7e1f113356"
+    },
+    {
+      "path": "data/one-reflection/record.json",
+      "before": "353f3bda4601894f6d7a7246c8f84947cd725b1e",
+      "after": null
+    },
+    {
+      "path": "data/one-reflection/solution.json",
+      "before": "9d1bb91f913148ec21a9634e81f62d29202e40fd",
+      "after": null
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/instance.rec",
+      "before": "450e60dac8e4daa3d8ec4812a10c15862974d7b9",
+      "after": "e77633124e7d187d7fda47cb675cb9aa9573e218"
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/record.json",
+      "before": "61422b21bb2d9d0a44f97d78d38f86e705c397f1",
+      "after": null
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/solution.json",
+      "before": "42f9078b522f0cfcca3453a33d3ed79957e8798f",
+      "after": null
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/instance.rec",
+      "before": "a9d42fd76c850b392c10e595ece264e43fdf3e70",
+      "after": "22c017960e3d6f2d706d5592279e8e701ba1bf0b"
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/record.json",
+      "before": "2d825f2964017fd6c7cade56c90c8b861d763114",
+      "after": null
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/solution.json",
+      "before": "13678d0b0c2e99f5536f044860f4eb76f910105b",
+      "after": null
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/instance.rec",
+      "before": "6540b8dc589c9a2dca3eb2da3402829db6cc6944",
+      "after": "dcce6f9ecb6056f7214f700252b35c3a375c5cea"
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/record.json",
+      "before": "16a68daf1e3c4bc6178e22b28539728efb91ee06",
+      "after": null
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/solution.json",
+      "before": "63b412d24af8a96805fbabf5f65df45ba213c7c1",
+      "after": null
+    },
+    {
+      "path": "data/polarized-k3-remainder/instance.rec",
+      "before": "e2e9b8257c54c9416c95e6b8382ecca2afb9486a",
+      "after": "5a32473fe819c1df3b2422f649b0371e13655666"
+    },
+    {
+      "path": "data/polarized-k3-remainder/record.json",
+      "before": "10704b962da6a13f091027ad20d6e467909521a3",
+      "after": null
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/instance.rec",
+      "before": "03fd16c435834fef9b8bd31bc7d9970c4d19caba",
+      "after": "21b7e26240ed72985d914f025391041501c8de08"
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/record.json",
+      "before": "8c0fc00c64899ed77237322a3850e8d1bad6dfd4",
+      "after": null
+    },
+    {
+      "path": "data/quadric-contact-broken/instance.rec",
+      "before": "c6e85133a4ab9759c96a78759607a27a9ff4c37f",
+      "after": "0508149fa5674175d5880b066ed60d3c69fa64f3"
+    },
+    {
+      "path": "data/quadric-contact-broken/record.json",
+      "before": "dba02e1de1abdd0775d4515df3d0e553aa1c3a41",
+      "after": null
+    },
+    {
+      "path": "data/quadric-contact-broken/solution.json",
+      "before": "dfbd391da5b62474d5ecd54c3f6569157300eb1d",
+      "after": null
+    },
+    {
+      "path": "data/quadric-contact-residual/instance.rec",
+      "before": "7a52ab1cf5167612acde7dc7e76d4ea52cf7baf1",
+      "after": "2a1316daca3d4bf985585f34a60428426e0b24f6"
+    },
+    {
+      "path": "data/quadric-contact-residual/record.json",
+      "before": "55e1b688bd36b501bd8dec321af743b6722e514b",
+      "after": null
+    },
+    {
+      "path": "data/rank-one-biquartic/instance.rec",
+      "before": "1f7830ce8b3c7fdeaf75c085ef462cbd1085fa91",
+      "after": "c69a0991d133d500a5b927fe04dcfd43b6e50584"
+    },
+    {
+      "path": "data/rank-one-biquartic/record.json",
+      "before": "9ec2f93f4ef85f0b3f71618d782d2ea0c7bd7e28",
+      "after": null
+    },
+    {
+      "path": "data/reflection-coupled-fano/instance.rec",
+      "before": "fdbfc95590ee3ad031d5e1e3003bf145a81e8dba",
+      "after": "77232dbed7e767cd4462dde6a77469edb4ecbf9f"
+    },
+    {
+      "path": "data/reflection-coupled-fano/record.json",
+      "before": "1129e702a9382982c49523152098cc9609d9ef8f",
+      "after": null
+    },
+    {
+      "path": "data/reflection-coupled-fano/solution.json",
+      "before": "13dd0e1a5ea76ac346851f3e9c65eb2e1cce8bff",
+      "after": null
+    },
+    {
+      "path": "data/reflection-coupled-residual/instance.rec",
+      "before": "1b72265d57f9c66f090147ed7d4011990b2f4f8d",
+      "after": "0cb524299cebdd2d6b629241a54244e8d213f78a"
+    },
+    {
+      "path": "data/reflection-coupled-residual/record.json",
+      "before": "bda4248f3453023091f7ae2b7fcd5aef6fb4d25f",
+      "after": null
+    },
+    {
+      "path": "data/short-power-presentation/instance.rec",
+      "before": "a93db99fe712f4fdb3484c4f8233da434e398f38",
+      "after": "7a0f6bab163aa509ab23571f63e4448871be10c4"
+    },
+    {
+      "path": "data/short-power-presentation/record.json",
+      "before": "cd73175cef59ec9f18561eec513e9b62c472b5eb",
+      "after": null
+    },
+    {
+      "path": "data/split-ternary-q2/instance.rec",
+      "before": "a29223e0f70b5efbb02b025c47365dc318bc9e2d",
+      "after": "48568117c47a0246a9966a0f69c3bed10cd3bcf1"
+    },
+    {
+      "path": "data/split-ternary-q2/record.json",
+      "before": "bd34f8bd2d8c89ce95453f03f340b32c6257122e",
+      "after": null
+    },
+    {
+      "path": "data/split-ternary-q2/solution.json",
+      "before": "84926f491c1e51757580028c87c33520f80ccade",
+      "after": null
+    },
+    {
+      "path": "data/symmetric-sextic-residual/instance.rec",
+      "before": "8ad2056ee955db6ddcec0de046a8ab8d7b3d9867",
+      "after": "f3691315bccc8e288af362a5871348374b11e1cc"
+    },
+    {
+      "path": "data/symmetric-sextic-residual/record.json",
+      "before": "27c57f16376d11a1c3b9722ccb1d2738f86a970a",
+      "after": null
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/instance.rec",
+      "before": "151a97c6d6684239073e81b5603574fbe3f72808",
+      "after": "a152b6673c9bb9c604f91496b1ba527f573f7aa9"
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/record.json",
+      "before": "f5e32ecd043f2b4f7e52922403744f7a3dad4745",
+      "after": null
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/solution.json",
+      "before": "f305fb2d672129c55eeb95e58995346abc67d46b",
+      "after": null
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/instance.rec",
+      "before": "857493b50307deb67fcdd37bd2d861c11c713ccc",
+      "after": "59114d80c0e4db55a6489951a59c10db55fd256c"
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/record.json",
+      "before": "8eba584c3ae85af63abc5c616cb80e6462db74b2",
+      "after": null
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/solution.json",
+      "before": "922dfbba6d23267dce848bb50e6bcf065fe98df7",
+      "after": null
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/instance.rec",
+      "before": "c43cd89b144e9d0ac567d453641258c05a980825",
+      "after": "e298e1cbefe57379dd98e1d630492449731da8df"
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/record.json",
+      "before": "63f17185c3db535c24b842ecfd6fa0a3c6379033",
+      "after": null
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/solution.json",
+      "before": "72dad4e15c10384b20becada8bb1c1d80a1a9f73",
+      "after": null
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/instance.rec",
+      "before": "3d0761429f89eda1c57401e30a67929abd6386d2",
+      "after": "04c348803c06d2d343f212ad3812c8341f8b5719"
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/record.json",
+      "before": "acfaca8865c10f768231ed8d1daf3eaf015b570d",
+      "after": null
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/solution.json",
+      "before": "0057b175f284a7a868005053cc96240ecdfd6560",
+      "after": null
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/instance.rec",
+      "before": "04fd4505b014e1ebe16bde912f6cc747a627c5b5",
+      "after": "d6884957ec14f7346a3897625d54fb2076014755"
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/record.json",
+      "before": "c06b4f1ed22ad7a40c79e6ce043f0c36378cdcea",
+      "after": null
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/solution.json",
+      "before": "e6ef79da456145b1b90360b7be4e4c5f9be666ab",
+      "after": null
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/instance.rec",
+      "before": "43b015995084dbed87e9dd0e4b8974e43f441d66",
+      "after": "0baf10faa970d1fef095d608b94d1c1bdcd690f7"
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/record.json",
+      "before": "0fabc9a613f7f15dc08de63aea7ebae0391a147b",
+      "after": null
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/solution.json",
+      "before": "1ef6ae4b5bbe8e82c699c4bde8a60e722db707d4",
+      "after": null
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/instance.rec",
+      "before": "707b88e75c0ef68ed8d5ad159e49e337f55c92d3",
+      "after": "fe649e1e82994af8f3211b4ad6c173b3c0d0f5b0"
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/record.json",
+      "before": "f877f2b522b14b944efba5055a46453c1a3c3cae",
+      "after": null
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/solution.json",
+      "before": "93efa0db1945d86d508e3b1fe59c972fb3985457",
+      "after": null
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/instance.rec",
+      "before": "906b7a877c21afd7a9d9cd10ba1d90c728659662",
+      "after": "d2118ebee3ec766902a71dc0cb913f178c5ff254"
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/record.json",
+      "before": "4973ff17e5d10a4e4e4d46899d5d85b50134225f",
+      "after": null
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/solution.json",
+      "before": "38b428129813f42bc1f2660b88df5c1421f8902b",
+      "after": null
+    },
+    {
+      "path": "data/twoblock-cubic/instance.rec",
+      "before": "bd12ecf8e85f0e92831f4420ce9ab1f3740a7185",
+      "after": "d6165ef8a8151cd382b6e1429abcba4aea38b3b1"
+    },
+    {
+      "path": "data/twoblock-cubic/record.json",
+      "before": "59acc9c182381f4b7c8c6019e63e6834c265a0eb",
+      "after": null
+    },
+    {
+      "path": "data/twoblock-cubic/solution.json",
+      "before": "ddeb7ac076441b705dd9b013787a2de36b626ce1",
+      "after": null
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/instance.rec",
+      "before": "3c5503950de67af67e597c4e4c14d3cf5e4943a7",
+      "after": "c1b0466b30cd5d34076a1eeda79e395e2ff451e0"
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/record.json",
+      "before": "1a3f28df5d68bd3e2ed36241b02497c905fb512f",
+      "after": null
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/solution.json",
+      "before": "e823c7e93cef12ad257e3ff44c15ff7d36ddf79c",
+      "after": null
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/instance.rec",
+      "before": "1c86df7200c7061f97e4f6544c52a125b7d2a011",
+      "after": "286d33a98a0abc5bdf590764c2400abef7e8f9d6"
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/record.json",
+      "before": "68acabdb080f492d57be45b1110ed2d19c198bcd",
+      "after": null
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/solution.json",
+      "before": "f76d6e4a6b8dcd6441a64ee616e6da66f8d55349",
+      "after": null
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/instance.rec",
+      "before": "17d0f93404c59ef77030119a20a41119758dab26",
+      "after": "cf64986abb1ee7659be7bbd6a3636861dd83e813"
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/record.json",
+      "before": "35ffc876f8a596acf1f4dc6a376ccf1fd7c8d4ad",
+      "after": null
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/solution.json",
+      "before": "799259c3b9862d115367df968d31fc09c2586ba2",
+      "after": null
+    },
+    {
+      "path": "data/xtype-strict-rational-113/instance.rec",
+      "before": "b1cea3bfb93bd12ef2673f669d104b5b00a731fd",
+      "after": "265c14f445fa5e14f4a0051f643de5d68e51e1a9"
+    },
+    {
+      "path": "data/xtype-strict-rational-113/record.json",
+      "before": "c2373693acab9764215c80924b41af299f985d80",
+      "after": null
+    },
+    {
+      "path": "data/xtype-strict-rational-113/solution.json",
+      "before": "206f484cc4de045643bf5067478a5eebd80f6d6d",
+      "after": null
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/instance.rec",
+      "before": "f4e8112e78ab717d8abdc5dec1c03eadf3b4cb59",
+      "after": "ea00debc40b4d8063c3607233846d4adc763340e"
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/record.json",
+      "before": "d421f946f523889f639638fedc77c9c01afe5f06",
+      "after": null
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/solution.json",
+      "before": "bd4e1f3305a98174ac4cd4e6d1928e00df766cb9",
+      "after": null
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/instance.rec",
+      "before": "de13bde1129351ddfe8cd6d6e68b0d99d9c963cc",
+      "after": "7e514191001e6fc28b18688b8f6986deb0f43d5a"
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/record.json",
+      "before": "d6fe2ad8c68f95d198b94615ac031b1a6ba94214",
+      "after": null
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/solution.json",
+      "before": "eebed80b169efe5cb8ee1010a08a467bb2c34b22",
+      "after": null
+    }
+  ],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261023T164626Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261023T214438Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 1,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 7,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [
+    {
+      "discussion": 120,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJDcS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610",
+        "createdAt": "2026-10-23T17:11:49Z",
+        "updatedAt": "2026-10-23T17:11:49Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "b50cb48616bb31ec520e3ce7ca6b3a82385fd0e079d551e355c9fac9c0dbea08"
+      }
+    }
+  ],
+  "metadata_changes": [
+    {
+      "discussion": 120,
+      "field": "updatedAt",
+      "before": "2026-10-17T18:15:38Z",
+      "after": "2026-10-23T17:11:49Z"
+    }
+  ],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

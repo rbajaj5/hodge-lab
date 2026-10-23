@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "type": "bounded read-only monitoring and notebook maintenance",
+  "upstream": "4a8e09b6002d250094cb1c1152a6026c55030ead",
+  "upstream_before": "554757eca1aebecdd1d21f3452d3c71ffa601b19",
+  "notebook_parent": "69616138811d9f951d586049bd7f6407bea2c4f5",
+  "new_discussion_comment": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610",
+  "new_comment_scope": "benediamond author-reported Prym and character calculation; no new Lean proof, acceptance, unrestricted exclusion, or independent mathematical replay by this monitor",
+  "executed": [
+    "All pages across 14 discussions fetched and IDs, timestamps, body hashes, thread and answer metadata compared",
+    "Complete local Git-tree/diff comparison supersedes the API 300-file cap",
+    "82 literal protected F/q/A/id fields match; 66 acceptance, 66 proof, 82 provenance and 82 why files retain Git blob identities",
+    "66 outer formalAcceptance flags remain true; 16 targets have no receipt",
+    "read_acceptance AST unchanged; full formal/ tree unchanged"
+  ],
+  "read_only_agent_review": "monitor_policy_review independently inspected policy/generator diffs and confirmed authoritative receipt checks retained; no code execution or proof replay",
+  "not_executed": [
+    "Discussion #120 mathematics or independent agent checks reported by its author",
+    "Protected proof or acceptance-validator replay",
+    "Lean/kernel builds",
+    "Website/content build or live deployment test",
+    "New visualization or research calculation",
+    "Upstream publication"
+  ],
+  "bounds": {
+    "network_request_seconds": 45,
+    "discussion_total_seconds": 240,
+    "source_comparison_process_seconds": 20,
+    "source_comparison_total_seconds": 60
+  },
+  "failed_probe": {
+    "command": "python -X utf8 -c \"import yaml; print(yaml.__version__)\"",
+    "exit_code": 1,
+    "error": "ModuleNotFoundError: No module named yaml",
+    "resolution": "No installation or retry; use explicit top-level literal scalar extraction with continuation lines and required field uniqueness. This compares saved text, not general YAML semantics."
+  },
+  "access_failures": [],
+  "timeouts": [],
+  "checkout_note": "Fresh isolated clone; one historical checkout newline-conversion diff was present immediately and is left unstaged. No historical receipt is normalized or changed.",
+  "posts": "unchanged entries 1-29",
+  "contribution_tally": {
+    "discussion_contributions": 29,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "files_sha256": {
+    "discussion-120.json": "6bcf97fc659eb88d3a89cb6191d7dc18d31d352394f5a4435aee2e724d923827",
+    "discussion-120.md": "e3258c4f2bf6ff180bd77a5915be4607abfb91549a1d5b3f24860ac23f468f25",
+    "discussion-run.json": "fd14989c1e34544977ea5da8c53c5750d16ee84b8778a46b25d2ca2d37ac073e",
+    "discussions-after.json": "b57f4663111d51e53af99703ed6d194f26b5c133f59e3742ec9305873bfe10ca",
+    "discussions-before.json": "3ad5f51b594652f93ee3814e92ac48d8a6df773e69af6442231a410dcae47d4f",
+    "monitor-comparison.json": "c353e7c9468f8cfb676ba2a2d9eb7ca7b454e04071f61c367f1ab576cee06f9c",
+    "repository-after.json": "b21b7146f7b1437d4785963bf5324d62cec4a0bd832dce71b47114d82cd7524e",
+    "repository-before.json": "2a2853263da185c319e41ce1f120cc8c4ea9debe37fd4e1689d09877a28f2d29",
+    "source-comparison.json": "8191b369c21c1c9b194998f96cf5b219d3330345ac9657d1dc331d48a69c7a92",
+    "upstream/CONTRIBUTING.md": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+    "upstream/MAINTAINING.md": "37364b21adaa2e4ab20b0817a9b91d369b1046efd6ac6259c3ee35f994e38ac0",
+    "upstream/scripts__build-content.py": "85e4e6e457fe56dbcc123f2e8e966c75ba8ba98ec322e731dcfbff58677379f3",
+    "upstream/scripts__proposals__acceptance.py": "8073d1d14b453eafe970c06db30f1bf7c0c8dbd1d40b48c250a2907de47ae58a",
+    "upstream/scripts__proposals__check-explanation.py": "b6ae825d945b14fa2268d47d26cf1131c3e5eea77b81beacb689ef2dbbe534d9",
+    "upstream/scripts__proposals__publish.py": "0699c677736d02e952e350c85e04b0438d4e598bd2605c46f39c5608265ca2c0",
+    "verify_snapshot.py": "43b11f89a252efe4f37dbe855280f06f4cf0b62065b917bd9aff326dc116f4e0"
+  },
+  "storage": "Evidence JSON and Markdown use UTF-8/LF. Original discussion body strings, including escapes, are retained in JSON; body SHA256 comparison uses those original strings. Saved upstream source bytes were fetched with Git cat-file/show; no source formula conversion.",
+  "final_document_review": "monitor_policy_review: passed, no blocking issues; claims, limits and attribution checked against saved full discussion and source comparison."
+}

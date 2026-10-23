@@ -5001,3 +5001,63 @@ splitting extension of Q(a,v,t), descent, physical differential-source
 normalization and a primitive remain unproved by this unit. No upstream
 publication occurred. Posts stay 1–29; tally stays **29 discussion
 contributions, one closed maintenance PR, zero accepted authored solves**.
+
+
+## Checkpoint 138 — 23 October 2026: catalogue migration and four-plus-two Prym report
+
+Bounded monitoring at 21:44 UTC / 17:44 EDT pinned Hodge Lab parent
+`69616138811d9f951d586049bd7f6407bea2c4f5` and upstream
+[4a8e09b6002d250094cb1c1152a6026c55030ead](https://github.com/hodge-computer/sextics/commit/4a8e09b6002d250094cb1c1152a6026c55030ead),
+21 commits after the previous upstream baseline 554757e.
+
+The one new discussion item is benediamond's
+[#120 comment 19150610](https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610).
+It reports a genus-four binary triple cover, a three-dimensional
+anti-invariant Prym with signature (2,1), and a visible elliptic quotient
+in the wrong sector for the prescribed residue. An additional Prym/K3
+correspondence remains missing. The author does not claim exceptional
+splitting, simplicity, certificate nonexistence, Lean verification or a
+solve. This monitor read the full context and preserves these as
+**author-reported results**, not our executed mathematical checks. Credit
+benediamond and the upstream split/K3 framework; the post identifies
+ChatGPT assistance and separate AI-agent checks. No new rbajaj5 credit
+was found.
+
+All comment/reply pages of #44, #55, #56, #111–120 and #127 were fetched
+and compared by ID, timestamps and body hashes. Only that new comment
+and its thread timestamp changed; no old-post edits, removals, replies
+or answer changes were found. Existing attribution is not recounted.
+
+The repository migration in PRs 201/202 removes generated browser
+records and redundant solution/credit files. Acceptance remains derived
+from the checked receipt and accepted source. We executed a complete
+local Git comparison after observing the API's 300-file cap: 593 changed
+paths without rename detection. All **82 literal F/q/A/id values** match;
+all **66 acceptance, 66 proof, 82 provenance and 82 why blobs** are
+unchanged. The 66 outer acceptance flags remain true and 16 targets
+remain without receipts, including one-reflection-skew and four-plus-two.
+The read_acceptance AST and formal/ sources are unchanged. This data and
+source comparison does not rerun protected verification or establish the
+new discussion mathematics. Deleting generated metadata is not a
+revocation of acceptance. Current browser records are generated under
+assets/atlas/ with formalStatus as the solve field.
+
+- [Current status, source-path migration and exact limits](notes/catalogue-prym-monitor-20261023.md).
+- [Commands, pins, evidence hashes and review](results/catalogue-monitor-20261023/review.json).
+- [Executed source comparison](results/catalogue-monitor-20261023/source-comparison.json) and [reproducible checker](results/catalogue-monitor-20261023/verify_snapshot.py).
+- [All-thread comparison](results/catalogue-monitor-20261023/monitor-comparison.json) and [complete changed thread](results/catalogue-monitor-20261023/discussion-120.json).
+
+A separate read-only agent inspected the policy/generator diffs. The
+source comparison took 0.297 seconds under a 60-second bound, with
+20 seconds per subprocess. The all-page discussion fetch took 7.280
+seconds under 240 seconds, with 45 seconds per request. An unavailable
+PyYAML import was recorded; explicit standard-library literal extraction
+then completed successfully. No access failure, timeout, authentication
+loop, proof replay or website build occurred. README now points to this
+current status; historical input pins and receipts remain intact.
+Ordinary monitoring does not require a new research visualization.
+
+No upstream publication or edit. Posts stay 1–29. Tally unchanged:
+**29 discussion contributions, one closed maintenance PR, zero accepted
+authored solves**. The 390,032-byte parent ledger is preserved exactly
+before this append.
