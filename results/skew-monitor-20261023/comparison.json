@@ -1,0 +1,136 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-10-23T00:25:23.363029+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "59d570e2823d7c605decc3055dae392ec5b8d5f2",
+      "url": "https://github.com/hodge-computer/sextics/commit/59d570e2823d7c605decc3055dae392ec5b8d5f2",
+      "message": "Merge pull request #192 from hodge-computer/codex/normalize-atlas-zoom\n\nNormalize atlas camera framing",
+      "committer_date": "2026-10-22T22:26:51Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "08d405d21632f78887dd0f78c28f248f9c17fb6b",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/08d405d21632f78887dd0f78c28f248f9c17fb6b",
+      "message": "Record comment leaderboard scope without changing contribution tally",
+      "committer_date": "2026-10-22T21:33:14Z"
+    }
+  },
+  "repository_baseline": "repository-baseline-before-20261023T002222Z.json",
+  "repository_head_unchanged": true,
+  "target_policy_pin_count": 532,
+  "target_policy_changes": [],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261022T223510Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261023T002507Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 1,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 7,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [
+    {
+      "discussion": 127,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI_aX",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19134103",
+        "createdAt": "2026-10-22T22:47:39Z",
+        "updatedAt": "2026-10-22T22:47:39Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "c05ee46bcc7cd03bf16bf94b4e87bad704c7bf7bc07646b679bacad97496b235"
+      }
+    }
+  ],
+  "metadata_changes": [
+    {
+      "discussion": 127,
+      "field": "updatedAt",
+      "before": "2026-10-22T18:15:28Z",
+      "after": "2026-10-22T22:47:40Z"
+    }
+  ],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

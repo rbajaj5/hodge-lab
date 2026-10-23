@@ -4720,3 +4720,39 @@ visualization is needed. README mathematical claims and prior receipts remain
 unchanged. No upstream post, reply, edit or PR; Posts remain entries 1–29.
 Tally unchanged: **29 discussion contributions, one closed maintenance PR,
 zero accepted authored solves**. Earlier ledger bytes are preserved.
+
+## Checkpoint 134 — 23 October 2026: scoped negative-results report; no acceptance change
+
+Bounded monitoring at 00:25 UTC (22 October, 20:25 EDT) found one new
+[post by Josh Diamond / DiamondJM in #127](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19134103).
+Hodge Lab parent: 08d405d21632f78887dd0f78c28f248f9c17fb6b; upstream head:
+59d570e2823d7c605decc3055dae392ec5b8d5f2. All 532 repository target/policy
+pins and the other 13 monitored threads are unchanged. All comments/replies,
+including edits, were fetched and compared; existing #127 posts are unchanged.
+
+The new post reports symmetry restrictions, a conditional one-active-X
+cubic-surface reduction proof sketch, a particular fibration analysis, and
+modular tests of 55 degree-six supports. These are **author-reported claims**,
+not our executed mathematical checks. The special-point Singular tests and
+modular half-certificate replay are not a characteristic-zero replay here.
+Two-active-X/mixed-passive-ratio constructions remain outside the sketch;
+the estimated large deformation calculation was explicitly not attempted.
+No certificate, Lean proof, solve PR or accepted solution is claimed.
+
+- [Status note, attribution and limits](notes/upstream-status-20261023.md).
+- [Monitor receipt and evidence hashes](results/skew-monitor-20261023/review.json).
+- [Pinned post and complete context](results/skew-monitor-20261023/discussion-127.json).
+
+We pinned the linked reproduction branch at fc57193621c91939f5d3ea1c5329c04feddd216f.
+Its commit is later than the post; this is the observed head, not an established
+calculation-version binding. No linked scripts were read or executed. Network
+requests were bounded at 45 seconds and discussion collection at 240 seconds;
+no timeout/access failure occurred. A separate read-only agent reviewed scope.
+Credit DiamondJM for the report and retain its credit to fqlx, fringewidth,
+the framework authors and Griffiths. No new rbajaj5-specific credit was found.
+
+One-reflection-skew remains open. This is ordinary status maintenance, with
+no research replay or new visualization. No upstream post, reply, edit or PR;
+Posts remain entries 1–29. Tally unchanged: **29 discussion contributions,
+one closed maintenance PR, zero accepted authored solves**. Earlier ledger
+bytes, completed checks, README claims and historical receipts are preserved.

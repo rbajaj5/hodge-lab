@@ -1,0 +1,66 @@
+{
+  "status": "MONITORED_NOT_MATHEMATICALLY_REPLAYED",
+  "observation_utc": "2026-10-23T00:25:07.182969+00:00",
+  "notebook_parent": "08d405d21632f78887dd0f78c28f248f9c17fb6b",
+  "upstream_head": "59d570e2823d7c605decc3055dae392ec5b8d5f2",
+  "python_version": "3.11.9",
+  "changed_comment": {
+    "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19134103",
+    "author": {
+      "login": "DiamondJM",
+      "name": "Josh Diamond"
+    },
+    "createdAt": "2026-10-22T22:47:39Z",
+    "updatedAt": "2026-10-22T22:47:39Z",
+    "body_sha256": "c05ee46bcc7cd03bf16bf94b4e87bad704c7bf7bc07646b679bacad97496b235"
+  },
+  "executed_scope": [
+    "Read current AGENTS.md and recent ledger checkpoints.",
+    "Fetch repository heads and target/policy Git blob pins.",
+    "Fetch every comment/reply page in all 14 monitored threads, including existing bodies to detect edits.",
+    "Compare IDs, timestamps, author and UTF-8 body hashes; compare thread metadata and answer state.",
+    "Read the new post in full thread context; separate read-only agent reviewed its scope.",
+    "Pin linked reproduction branch head; no linked source scripts read or executed."
+  ],
+  "comparison": {
+    "new_comments": 1,
+    "edited_or_deleted_existing_comments": 0,
+    "thread_metadata_updates": 1,
+    "unchanged_other_threads": 13,
+    "unchanged_repository_pins": 532
+  },
+  "author_reported_only": [
+    "Symmetry/character restrictions and a conditional one-active-X-coordinate reduction proof sketch.",
+    "Special-point Singular evidence modulo 32003 and 55 degree-six support tests modulo 268435399.",
+    "A fibration analysis and a modular replay of an existing half-certificate.",
+    "Large first-order deformation estimated but explicitly not attempted."
+  ],
+  "limits": [
+    "No mathematical, modular, Singular, Lean or certificate replay in this monitor.",
+    "The observed reproduction head was committed after the post; it is not established as the exact version used for the posted calculations.",
+    "The proof sketch and modular evidence are not promoted to an independently verified characteristic-zero exclusion.",
+    "No blanket conclusion about other compact formulations, arbitrary rational primitives or global nonexistence.",
+    "No new certificate, accepted solution, rbajaj5-specific attribution or upstream publication."
+  ],
+  "process_bounds_seconds": {
+    "network_request": 45,
+    "discussion_collection": 240
+  },
+  "monitor_failures_or_timeouts": [],
+  "contribution_tally": {
+    "discussion_contributions": 29,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0,
+    "changed": false
+  },
+  "visualization": "Ordinary status maintenance; no new research batch or visualization.",
+  "evidence_file_sha256_lf": {
+    "discussion-127.json": "d0584ad89954fbd1f27927eec2a459e6c74b29c230c94c0effa4a49b580f2663",
+    "discussion-manifest.json": "a4c1a003541ad71edf0c6f61bbf9b23a47e4c4967450eb3056fee7ab4fb407f4",
+    "linked-source-pin.json": "75d2066d139f1cbdb132e618ad1de307a79baa38281c497eb13976323ce25ad9",
+    "repository-heads.json": "cad0067b1c9706c5718360ee831b54fba1aaf1d4e525dde494bb4b5eb29c839f",
+    "comparison.json": "be5dcb725eaa574273f0c7a0d663ad51e1c828fbb475497001a24fa774f497f0",
+    "collection-run.json": "42d01f359642cd4b17f20ce504e6b034e6b95cd33b3c48c339c99efe53f7d559",
+    "comment-19134103.json": "c9b83f0e7d2c6b9f510ff08e7c6848f99254888e1ce02e090c9c737f8131686a"
+  }
+}
