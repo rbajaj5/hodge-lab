@@ -1,0 +1,89 @@
+{
+  "status": "PASS: original ZIP reconstructed from all verified slices",
+  "utc": "2026-10-24T17:49:29.691676+00:00",
+  "archive_sha256": "a2d93f309397626f51f4ba43ad85218641e401dbf2d4e24dbef6c59a2934cad2",
+  "archive_bytes": 29475593,
+  "parts": [
+    {
+      "file": "A5-denominator.zip.part001",
+      "sha256": "44518e67c9f6be646d0b418e218dffb2f614aa74e09d1bedfbe3acfff66df9db",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part002",
+      "sha256": "82282bb9461f546166180a9ec180b47e0b6cb415053c83376d5e7d0c8a16305e",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part003",
+      "sha256": "3a095e4ac74e4d0f2c3a04eb9e2b0e0f4eb404d87821ad92d73d6136b979ad29",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part004",
+      "sha256": "20bd4e2708b4291bc783523a026503d1c1e333760ca8092d048791b1bd77a194",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part005",
+      "sha256": "03c09c2c50a22402e478a5eb49d9078e3cad1f0e74a43dfaf6d2af5310cd7368",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part006",
+      "sha256": "e67dd4c071e05296fd6f5560a855e157a537ab626a75d59ac47c1f82ec680bb7",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part007",
+      "sha256": "1c6b0192d7093183cc696193ed2b53aee7ca35f33624bc331b396ea5e15e2458",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part008",
+      "sha256": "329cd7e3116adfc9d3822c20cf63efd35e024ab1c6665c44517062dbc381b80b",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part009",
+      "sha256": "34cec6013451ad88b8c5c3f5d93c351ba146105757a5c2d20cb09a143e9cb326",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part010",
+      "sha256": "982e95dd8f935a312e16e8b244438c1c1e3044d0231d26bbbc1958a396fff103",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part011",
+      "sha256": "ad4a7ee6c85f79668b083b3f8c34429cf1ff60a79e779cf0ff8c454dfd3ff690",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part012",
+      "sha256": "09a835dfc8e9172917efad5eac9fb6407e4e211624af590cc5e8b91852e5e830",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part013",
+      "sha256": "ef67abc7428224123e1e22db6c973d244bf6e904de532aed2bd1bb6ff0d00025",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part014",
+      "sha256": "74ab1c31ba836a0cc59c07b5cf58619ca0bee088685365877ba893d8febf6c17",
+      "bytes": 2000000
+    },
+    {
+      "file": "A5-denominator.zip.part015",
+      "sha256": "11a8e65c5d5cd0c4cb2762ddd85e2c3ed04708a9192f50551fba84664c5d6f7a",
+      "bytes": 1475593
+    }
+  ],
+  "parts_prefix": "parts/",
+  "review_sha256": "7d8637b4b06d09c0f0580df446347157311f4fa3ed05986c64afcf298bd12eb6",
+  "download_failures": 1,
+  "mathematical_replay": false,
+  "manifest_note": "Explicit paths checked before basename mapping; no manifest-layout assumption inherited from previous batch.",
+  "download_repair": "First part action via Playwright locator timed out after45s without a local file. One retry through the observed accessibility control succeeded; all other parts used that control and succeeded."
+}

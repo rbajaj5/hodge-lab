@@ -1,0 +1,17 @@
+{
+  "goal_start_utc": "2026-10-24T17:38:19Z",
+  "research_deadline_utc": "2026-10-24T18:23:19Z",
+  "integration_minutes": 15,
+  "math_process_timeout_seconds": 60,
+  "network_timeout_seconds": 45,
+  "parent": "ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a",
+  "upstream": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "question": "Can the bounded full six-component current with fifth A-pole order cancel the actual physical source?",
+  "family": "(B+B/A+B/A2+B/A3+B/A4+B/A5)^6; all lower sectors free",
+  "lead": "Existing Pro chat 6adb94ec-665c-8325-9a4b-2b4237c63f19",
+  "algebra": "all_sheet_algebra",
+  "checker": "current_check",
+  "lean": "benched",
+  "publication": "Hodge Lab only",
+  "stop": "Exact candidate, valid finite-family exclusion, or explicit timeout/obstruction; no wider search after decisive outcome"
+}

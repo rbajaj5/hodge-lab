@@ -18,21 +18,21 @@ by the user toward the solution. Zero trace is reused context, not the
 success criterion. A partial current counts only within its documented scope;
 the remaining source must stay explicit.
 
-The [latest fourth-power batch](skew-A4-denominator-audit-20261024.md)
-tests all six physical components in B+B/A+B/A²+B/A³+B/A⁴ with the same
-explicit numerator bounds. Only P4 is forced tangent; all 2,808 lower
+The [latest fifth-power batch](skew-A5-denominator-audit-20261024.md)
+tests all six physical components in B+B/A+B/A²+B/A³+B/A⁴+B/A⁵ with the same
+explicit numerator bounds. Only P5 is forced tangent; all 3,510 lower
 parameters remain free, preserving mixed cancellation. The resulting
-3,102-parameter necessary family has a separately reconstructed
-3,103-square augmented minor with determinant 28764 modulo 65521.
-This excludes the declared 3,510-parameter sum over Q, not general
-rational currents. The [A-cubed result](skew-A3-denominator-audit-20261024.md)
+3,804-parameter necessary family has a separately reconstructed
+3,805-square augmented minor with determinant 31971 modulo 65519.
+This excludes the declared 4,212-parameter sum over Q, not general
+rational currents. The [A-fourth-power result](skew-A4-denominator-audit-20261024.md)
 is retained as completed evidence and was not rerun.
 
 The [A-denominator batch](skew-A-denominator-audit-20261024.md) supplies
 reused divisor, tangent-module and support arguments; the
 [A-squared batch](skew-A2-denominator-audit-20261024.md) remains a separate
 completed result. Neither old search was rerun. The changed condition was
-the new fourth-power sector with all coupled lower poles retained. Earlier
+the new fifth-power sector with all coupled lower poles retained. Earlier
 exclusions do not justify separate restrictions on the lower sectors of
 this larger family.
 
@@ -55,11 +55,11 @@ Pin the current protected input and any changed dependencies at actual dispatch.
 
 | Owner role | Assignment and output | Receiver and acceptance condition | State |
 | --- | --- | --- | --- |
-| Coordinator | Pin the target and integrate the bounded outcome | Same source convention, fixed problem, explicit limits | Actual Goal; parent `a773c34`; append-only checkpoint 154; Hodge Lab only |
-| Constructive lead, reused Pro chat | Test the fourth-power denominator in the full six-component equation | Candidate or exact scoped exclusion | Consumed top-pole handoff; direct-quotient matrix retained all lower sectors; separate local determinant supplies the certificate |
-| Local algebra worker | Derive the order-four operator and coupled pole condition | Lead retains every lower-sector cancellation; checker verifies source binding | Consumed reduction: 3510 to 3102, det(Ra-4I)=52/3 and tau4=-2r^7+15r; all 2808 lower coefficients free |
+| Coordinator | Pin the target and integrate the bounded outcome | Same source convention, fixed problem, explicit limits | Actual Goal; parent `ce22ec3`; append-only checkpoint 155; Hodge Lab only |
+| Constructive lead, reused Pro chat | Test the fifth-power denominator in the full six-component equation | Candidate or exact scoped exclusion | Consumed top-pole handoff; retains every lower sector; delivered matrix binding recorded in the audit |
+| Local algebra worker | Derive the order-five operator and coupled pole condition | Lead retains every lower-sector cancellation; checker verifies source binding | Consumed reduction: 4212 to 3804, det(Ra-5I)=80/3 and tau5=-5r^7+18r; all 3510 lower coefficients free |
 | Lean implementer | No assignment in this batch | None until the user restores this role | **Benched** |
-| Separate local checker | Reconstruct the fixed new decisive minor | Executed evidence and explicit limits | 9,628,609 entries at 1552 points; determinant 28764 via exact FLINT; three new operator controls detected; delivery binding recorded separately |
+| Separate local checker | Reconstruct the fixed new decisive minor | Executed evidence and explicit limits | 14,478,025 entries at 1903 points; determinant 31971 via exact FLINT; three new operator controls detected; delivery binding recorded separately |
 
 Roles may be sequential. Do not create five workers to match five rows.
 Construction and algebra can work in parallel after agreeing their interface.

@@ -1,0 +1,61 @@
+A5 bounded six-component current search — changed files only
+24 October 2026 EDT. Mathematics closed 17:42:22 UTC / 13:42:22 EDT.
+Integration deadline 17:57:22 UTC / 13:57:22 EDT.
+
+INTEGRATION PARENT: ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a.
+Actual cached execution checkout: fc4f38a338b47addf62d1bf699783302285378fe.
+No full newer parent or expected combined Git tree is claimed.
+Upstream supplied pin: 27f4bb9ad8757e5841f884d9d30124a3c97a847d.
+Source SHA256: a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+
+LAYOUT: full ZIP contains payload/<repository-relative-path>, HANDOFF.txt,
+and MANIFEST.sha256. Manifest entries begin with payload/ and are verified
+FROM THE UNPACKED ARCHIVE ROOT. Apply contents of payload/ to the repository.
+ADDED-FILES.txt is an external repository-relative inventory, not a Git tree.
+Owned paths: notes/skew-A5-denominator-20261024.md and results/skew-A5-denominator-20261024/.
+Coordinator owns shared README/ledger/board, IO binding and Hodge Lab-only push.
+No worker Git stage/commit/push, upstream action, Lean or shared-file edit.
+
+FAMILY: (B+B/A+B/A^2+B/A^3+B/A^4+B/A^5)^6,
+B={r^m v^n t^k:-10<=m<=2,0<=n,k<=2}, constant rational coefficients.
+Original 4212 parameters; only P5 tangent: 294 top + 3510 free lower = 3804.
+Positive packet source r^-4*Mb*e0/12; both rows, all derivatives and full Nt.
+Prime 65519, random.Random seed 2026102475. First 1930 admissible points.
+Columns h5(60),k5(234),P4,P3,P2,P1,P0(702 each), then positive source.
+Full matrix shape (3860,3805); first 3805 rows are the decisive square.
+Format: row-major little-endian uint16, no header, 29,374,600 bytes.
+Matrix SHA256: 63a48714c2f7a7ce3a20829540a8573607b5ced164b2203922604e60d9fa342e.
+inputs.json SHA256: 518c96338bbafe294cbbba12d38299c3efb9c22c5daf681f3738972ebe44173a.
+All domain/sample records, rejections and basis labels are in inputs.json.
+
+PRO EXECUTIONS: direct quotient assembly 15.374s; separate literal-source
+reconstruction 13.007s, all 14,687,300 entries and 1930 records, 19 controls.
+Both exit 0 under 60s watchdogs and -O. No failures, timeout or repair.
+No determinant, backend setup or old mathematical replay was attempted.
+Inspected reproducible figure and original run sources/logs/receipts included.
+
+COORDINATOR-EXECUTED, REPORTED SEPARATELY:
+first 3805-row determinant 31971 mod65519, all 14,478,025 entries at1903points;
+11.656s, 3 controls, python-flint0.9.0 exact nmod_mat.det, no timeout.
+Script SHA:83f4b0e432d20fc769100f57c13c5909db9327bbe3b799024537394f2bb49404.
+Report SHA:3ead7fda7eb606548b1b12604324a781ab452fb38395f13e112cfe631c36437f.
+Frozen local NPY SHA:10dcc8f2d407fb8098eab61fa1f36eeed9ecfc495000f2eb79a99268f760c3b4.
+Imported top-pole algebra:7 identities+3 controls,2.250s, det(Ra-5I)=80/3,
+tau5=-5r^7+18r; previous divisor/tangency/support checks reused.
+
+REMAINING: coordinator IO-only delivered matrix/domain/basis matching.
+bind_local_minor.py optionally checks exact matrix hashes and every decisive
+entry; coordinator separately binds domain/basis records. These receiver
+checks are not executed in Pro and are not determinant reruns.
+The reported nonzero minor plus necessary restriction excludes this finite
+family, with no hidden-kernel/rank-defect inference. No general obstruction,
+primitive, full-source exactness, certificate or solve is claimed.
+
+TRANSFER: A5-review.zip omits ONLY the bulky raw matrix, retaining every other
+payload byte. Its own root manifest covers its actual members; full original
+manifest/HANDOFF are under original-delivery/. omitted-artifacts.json gives
+exact omitted hash/size. The full original ZIP remains immutable.
+PARTS.sha256 entries begin with parts/, relative to this delivery directory.
+Concatenate part001,part002,... numerically as raw bytes, without separators.
+Each slice is at most2,000,000 bytes. Verify original ZIP length and SHA256
+in external DELIVERY.json/SHA256SUMS.txt before unpacking. No old ZIP or cache.

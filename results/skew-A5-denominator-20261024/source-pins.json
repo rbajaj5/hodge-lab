@@ -1,0 +1,46 @@
+{
+  "integration_parent": "ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a",
+  "actual_cached_checkout": "fc4f38a338b47addf62d1bf699783302285378fe",
+  "working_directory": "/workspace/scratch/b8974c152662/hodge-lab-A3-denominator",
+  "full_parent_materialized": false,
+  "expected_git_tree_claimed": false,
+  "upstream_dispatch_pin": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "upstream_pin_provenance": "coordinator supplied unchanged; no worker upstream refetch",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "cached_execution_source_equals_live_parent_bytes": true,
+  "read_only_connector_snapshots": [
+    {
+      "path": "AGENTS.md",
+      "sha": "c854f86e47fe7e81ae960779226585a1f65d7de4",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a/AGENTS.md",
+      "snapshot": "inputs/AGENTS.md",
+      "bytes": 8253,
+      "sha256": "c6fa2e3422cf470cb1eb8cd7490a8ac80246f6e1c08a430cd2f398cea8148c0d",
+      "git_blob_verified": true
+    },
+    {
+      "path": "notes/one-reflection-skew-team-board.md",
+      "sha": "a1f221343d691b693028f122b6af70f4f0a9cf66",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a/notes/one-reflection-skew-team-board.md",
+      "snapshot": "inputs/one-reflection-skew-team-board.md",
+      "bytes": 7606,
+      "sha256": "aa499dd3dd96924b5cb7374d771e4bec5aca3b1f5bebd016dbdd338d5cf253e1",
+      "git_blob_verified": true
+    },
+    {
+      "path": "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json",
+      "sha": "615e73cfd69d657b4dc0dbaa0e5d0a958afabacb",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a/results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json",
+      "snapshot": "inputs/source-rank2-connection.json",
+      "bytes": 12399,
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+      "git_blob_verified": true
+    }
+  ],
+  "new_writable_scope": [
+    "notes/skew-A5-denominator-20261024.md",
+    "results/skew-A5-denominator-20261024/"
+  ],
+  "known_failed_Git_or_FLINT_routes_retried": false,
+  "created_utc": "2026-10-24T17:40:57.492410+00:00"
+}

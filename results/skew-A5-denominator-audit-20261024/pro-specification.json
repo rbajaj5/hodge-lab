@@ -1,0 +1,15 @@
+{
+  "observed_before_numeric_result": true,
+  "prime": 65519,
+  "seed": 2026102475,
+  "samples": 1930,
+  "rows": 3860,
+  "coefficient_columns": 3804,
+  "augmented_columns": 3805,
+  "decisive_rows": "first3805",
+  "order": ["h5", "k5", "P4", "P3", "P2", "P1", "P0", "positive_source"],
+  "within_sector": "direction if applicable, compactrow0then1,increasingr_v_texponents",
+  "source": "A5*r^-4*Mb*e0/12",
+  "sample_rule": "successive random.Random(seed).randrange(1,p) triples, skip A/Delta/literalconnectiondenominator zeros",
+  "origin": "Existing Pro chat visible specification, new A5 batch"
+}

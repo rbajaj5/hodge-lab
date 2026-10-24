@@ -6665,3 +6665,66 @@ the latest actual upstream post is still [#127 comment 19167075](https://github.
 The tally remains **30 discussion contributions, one closed maintenance PR
 and zero accepted authored solves**. Publication and exact remote readback
 are checked separately; this bounded Goal does not solve the full target.
+
+
+### Checkpoint 155 — 24 October 2026, 13:42 EDT / 17:42 UTC: fifth A-pole full-current family excluded; no primitive
+
+**Hodge Lab research only; no hodge-computer post, reply, edit or PR.**
+The user's requested A(r,v)^5 batch reused the existing Pro chat with an
+actual Goal and Lean benched. Parent `ce22ec3a0636e9c2dbe7e90e1a36ae63f5f4b44a`
+and fresh upstream head `27f4bb9ad8757e5841f884d9d30124a3c97a847d` were pinned.
+The protected `one-reflection-skew` target remains q=1, source X0^3Y0^3;
+A here is the separate physical chart coefficient.
+
+The [audit](notes/skew-A5-denominator-audit-20261024.md) and
+[original Pro note](notes/skew-A5-denominator-20261024.md) record the full
+six-component family `(B+B/A+B/A^2+B/A^3+B/A^4+B/A^5)^6`, with constant
+rational coefficients and `B={r^m v^n t^k:-10<=m<=2,0<=n,k<=2}`. Both source
+rows, all physical r/v/t derivatives, full Nt and positive packet source
+`r^-4 Mb e0/12` remain. The highest pole restricts only P5: det(Ra-5I)=80/3,
+tau5=-5r^7+18r. The 4,212 original parameters reduce necessarily to 3,804,
+retaining **all 3,510 lower coefficients**. The next-pole equation remains
+coupled; prior A-fourth-power exclusions were not separately imposed.
+
+**Executed evidence remains separated by owner and scope:**
+
+- Local algebra: seven new exact checks and three mutation controls,
+  2.250 seconds, with the exact injection retaining every lower coefficient.
+  Earlier divisor/module/support arguments were reused, not re-proved.
+- Pro lead: direct quotient-rule 3,860-by-3,805 matrix, 15.374 seconds.
+- Separate Pro worker: all 14,687,300 entries, 1,930 domains, basis order
+  and 19 controls, 13.007 seconds. No Pro determinant execution is claimed.
+- Separate local checker: 14,478,025 decisive entries at 1,903 points,
+  **determinant 31,971 modulo 65,519**, 11.656 seconds using exact FLINT.
+  The prime, seed 2026102475, order and first-3,805-row minor were declared
+  before the result; three new operator controls were detected.
+- Delivered-file comparison and source/hash checks are recorded separately
+  in the audit and binding receipt. They do not count as another source,
+  derivative or determinant replay.
+
+The nonzero rational augmented minor excludes this bounded 4,212-parameter
+family and its pure B/A^5 subfamily over Q. Unknown coefficient denominators
+need not reduce modulo the prime. **No primitive was found.** Larger supports,
+other divisors, higher A powers and general rational or fibre-dependent
+currents remain outside the result. No global clearing, homogeneous
+certificate, new Lean proof, accepted solve or full-target nonexistence is
+claimed.
+
+The [reproducible visualization and its scope](notes/skew-A5-denominator-audit-20261024.md#visualization-and-delivered-evidence)
+show the top restriction and free lower sectors; the figure is not proof.
+Original scripts, receipts, source pins and failed attempts are preserved.
+The connection SHA256 remains
+`a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d`.
+The initial split-message browser handoff was corrected; mathematical runs
+had no timeout. Old failed environment setup routes were not repeated.
+Mathematics stopped at 17:42:22 UTC, four minutes three seconds into the
+45-minute research allowance; only bounded integration followed.
+
+Credit fqlx for the connection/source, benediamond for the physical cover
+and reductions, and Benjamin E. Diamond and the hodge.computer contributors
+for the fixed problem/framework. This is AI-assisted work for Ravi Bajaj;
+separate computational implementations are not independent human reviews.
+Posts 1–30 remain unchanged; the latest upstream contribution is still
+[the earlier A-squared update](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075).
+Tally unchanged: **30 discussion contributions, one closed maintenance PR,
+zero accepted authored solves**.

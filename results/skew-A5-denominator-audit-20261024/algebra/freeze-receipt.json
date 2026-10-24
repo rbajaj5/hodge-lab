@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T17:39:47.454632+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "results/skew-A5-denominator-audit-20261024/algebra/freeze_artifacts.py"
+  ],
+  "checks": {
+    "successful_execution": true,
+    "bounded_execution": true,
+    "checker_snapshot_matches_execution": true,
+    "checker_snapshot_matches_validation": true,
+    "final_checker_matches_snapshot": true,
+    "runner_snapshot_matches_execution": true,
+    "final_runner_matches_snapshot": true,
+    "injection_matches_validation": true,
+    "pinned_connection_recorded": true,
+    "prior_injection_pin_recorded": true
+  },
+  "checker_sha256": "bad3f26c1f1f07c944024b6acdfa91f0c4953951a3c8f434ebd66b24850e8d8c",
+  "injection_sha256": "f60c72b00ed246266f3457c47d92fb9ee09fa3970404643d85d9105dd44e0a9e",
+  "execution_seconds": 2.25,
+  "exact_checks": 7,
+  "controls": 3,
+  "scope": "Only new A5 highest-pole structural work."
+}

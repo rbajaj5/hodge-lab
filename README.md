@@ -46,6 +46,19 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the bounded fifth-power family is excluded
+
+The [A-fifth-power test](notes/skew-A5-denominator-audit-20261024.md)
+retains all six physical components and all lower denominator sectors.
+Its 4,212-parameter family reduces necessarily to 3,804 coefficients;
+all 3,510 lower coefficients remain free. A separate exact reconstruction
+gives a nonzero 3,805-square augmented minor: **31,971 modulo 65,519**.
+This excludes the declared bounded family over Q. **No primitive was
+found; the full target remains open.** Pro was reused and Lean stayed benched.
+Publication is Hodge Lab only, with the contribution tally unchanged.
+
+[Executed evidence, visualization and limits](notes/skew-A5-denominator-audit-20261024.md).
+
 ### One-reflection-skew: the bounded fourth-power family is excluded
 
 The [A-fourth-power test](notes/skew-A4-denominator-audit-20261024.md)
