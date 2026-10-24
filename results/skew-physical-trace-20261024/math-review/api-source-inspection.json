@@ -1,0 +1,95 @@
+{
+  "timestamp_utc": "2026-10-24T10:32:33.035851+00:00",
+  "executor": "AI reviewer /root/curve_math_review",
+  "role": "read-only mathematical/API review",
+  "parent": "2bbbaa312642822c28483ba85cbbccf0af97d6dc",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "executions": {
+    "lean": 0,
+    "symbolic_mathematics": 0,
+    "old_focused_checkers": 0,
+    "remote_ci": 0,
+    "publication": 0
+  },
+  "repo_sources": [
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean",
+      "sha256": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean",
+      "sha256": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean",
+      "sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean",
+      "sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean",
+      "sha256": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b"
+    }
+  ],
+  "mathlib_sources": [
+    {
+      "path": "Mathlib/RingTheory/AlgebraicIndependent/TranscendenceBasis.lean",
+      "sha256": "7170e11e6c49db6566698b02dbd15087c25ec9b97564b78f468947fc1e396286"
+    },
+    {
+      "path": "Mathlib/RingTheory/AlgebraicIndependent/Transcendental.lean",
+      "sha256": "9c7ff9f52f9d9c2e5628ac4ec3880126d30f74e7f53c18c9a8cabd4635666e34"
+    },
+    {
+      "path": "Mathlib/RingTheory/AlgebraicIndependent/Adjoin.lean",
+      "sha256": "7ff0e2ab94126e991fff2a65cd782aa81ac84bcbcdcad819ee1c6f892db38659"
+    },
+    {
+      "path": "Mathlib/RingTheory/Algebraic/Basic.lean",
+      "sha256": "b022edaa07a52ff5bbb59fe067a447f06bf9487fdf2683b46c64844268cceead"
+    },
+    {
+      "path": "Mathlib/RingTheory/Localization/Integral.lean",
+      "sha256": "20e3c0e4f216a9346c7967337e5e795a8e6f58dc7ad5386cad4e8a0ec3876f55"
+    },
+    {
+      "path": "Mathlib/FieldTheory/RatFunc/Basic.lean",
+      "sha256": "4e9a1f48a3b50b199e8e6174f030d1362e64d040c2a6826f217f6f03af70994c"
+    },
+    {
+      "path": "Mathlib/FieldTheory/RatFunc/AsPolynomial.lean",
+      "sha256": "0bf5b0d7843f2c47be908dd267d95e7d1a5401c5b4d0d744a485e218cece23d5"
+    },
+    {
+      "path": "Mathlib/FieldTheory/IntermediateField/Adjoin/Algebra.lean",
+      "sha256": "570e450bc72364abaefde1e21a49c49c868a43c827ccdf35aebacf0e247d84e5"
+    },
+    {
+      "path": "Mathlib/FieldTheory/SplittingField/Construction.lean",
+      "sha256": "75f644a2aa9ce33f4e3a9b3af6b61387bae9fdea7ce3dbf0ef1ec4c5bea1cda5"
+    },
+    {
+      "path": "Mathlib/FieldTheory/SplittingField/IsSplittingField.lean",
+      "sha256": "9c0c3a6b661f03e4f9b11c1025ef262cf1208587348723a3286c8d341815505c"
+    },
+    {
+      "path": "Mathlib/FieldTheory/IsAlgClosed/Basic.lean",
+      "sha256": "98d1e1f5c6792eeb290eb81f2ba5c43789ca83b746fde078ddc7b89d054e8c05"
+    },
+    {
+      "path": "Mathlib/Algebra/Polynomial/Splits.lean",
+      "sha256": "950d3d44a6b112cc860a7e95ea4714051522eb4ecebb490d5fe6ac28063af0c9"
+    },
+    {
+      "path": "Mathlib/RingTheory/AdjoinRoot.lean",
+      "sha256": "3d672d875924ec581e4391b422698e1f527ecd53de54233ce19319d1b4508671"
+    },
+    {
+      "path": "Mathlib/Logic/Equiv/Fin/Basic.lean",
+      "sha256": "5d291bfe946900c36a78c860816e6f9959777c0076c448943d77553fd8598a53"
+    }
+  ]
+}

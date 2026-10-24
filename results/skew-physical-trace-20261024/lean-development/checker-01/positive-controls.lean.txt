@@ -1,0 +1,45 @@
+import HodgeLab.OneReflectionSkew.PhysicalTraceBridge
+open HodgeLab.OneReflectionSkew
+open GenericDistinctRoots ScalarExtensionTrace PhysicalSourceNormalization
+open PhysicalCurveRealization PhysicalTraceBridge TraceFreeBasis SplitTraceQuotient
+open scoped TensorProduct BigOperators
+
+example : AlgebraicIndependent ℚ physicalBaseCoords := physical_base_independent
+example : IsTranscendenceBasis ℚ transformed := transformed_basis
+example : Function.Injective baseToCurve := baseToCurve_injective
+example (i:Fin 3) : baseToCurve (genericBaseCoords i)=physicalBaseCoords i := baseToCurve_coordinates i
+example : baseToCurve genericA=aChart r w := baseToCurve_a
+example : baseToCurve genericV=vChart r w := baseToCurve_v
+example : baseToCurve genericT=t := baseToCurve_t
+example (q:ℚ) : baseToCurve (algebraMap ℚ BaseField q)=algebraMap ℚ L q := baseToCurve_rational q
+example (q:ℚ) : algebraMap BaseField L (algebraMap ℚ BaseField q)=algebraMap ℚ L q := curve_scalar_tower q
+example : genericPolynomial.map baseToCurve.toRingHom=PhysicalCoverBinding.physicalPolynomial physicalA physicalV := mapped_polynomial
+example : Polynomial.aeval r genericPolynomial=0 := physical_r_aeval
+example : physicalEval theta=r := physicalEval_theta
+example : physicalEval derivativeElement=fR r w := physicalEval_derivative
+example : physicalEval derivativeInverse=(fR r w)⁻¹ := physicalEval_inverseDerivative
+example : physicalEval sourceScalar=r^11/(12*fR r w) := physicalEval_sourceScalar
+example : physicalEval sourceScalar≠0 := physical_sourceScalar_ne_zero
+example : physicalEval sourceScalar=r^11/fR r w/12 := physical_source_factor
+example : Function.Injective splitToCurve := splitToCurve_injective
+example (k:BaseField) : splitToCurve (baseToSplit k)=baseToCurve k := split_base_compatibility k
+example : Function.Injective curveRoots := curveRoots_injective
+example (j:Fin 18) : Polynomial.aeval (curveRoots j) genericPolynomial=0 := curveRoots_aeval j
+example : PhysicalCoverBinding.physicalPolynomial physicalA physicalV=coverPolynomial 1 curveRoots := physical_eq_full_split
+example (y:L) (h:Polynomial.aeval y genericPolynomial=0) : ∃j:Fin 18,curveRoots j=y := curveRoots_exhaust y h
+example : curveRoots physicalSheet=r := physicalSheet_root
+example : physicalEval=curveSigma physicalSheet := physicalEval_eq_sheet
+example : Module.Finite L CurveTensor := inferInstance
+example : Module.Free L CurveTensor := inferInstance
+example : Module.finrank L CurveTensor=18 := curveTensor_finrank
+example (l:L) (e:E) (j:Fin 18) : curveBeta (l⊗ₜ[BaseField]e) j=l*curveSigma j e := curveBeta_tmul l e j
+example (l:L) : curveBeta (l⊗ₜ[BaseField](1:E))=fun _=>l := curveBeta_scalar l
+example (e:E) : baseToCurve (Algebra.trace BaseField E e)=Algebra.trace L CurveTensor (1⊗ₜ[BaseField]e) := trace_curve_baseChange e
+example (z:CurveTensor) : Algebra.trace L CurveTensor z=Algebra.trace L (SplitAlgebra L) (curveBeta z) := trace_curveBeta z
+example (z:CurveTensor) : Algebra.trace L CurveTensor z=∑j,curveBeta z j := trace_curve_sum z
+example (e:E) : baseToCurve (Algebra.trace BaseField E e)=∑j,curveSigma j e := trace_allSheets e
+example (l:L) (e:E) : Algebra.trace L CurveTensor (l⊗ₜ[BaseField]e)=l*baseToCurve (Algebra.trace BaseField E e) := trace_curve_tmul l e
+example : Algebra.trace L CurveTensor (1⊗ₜ[BaseField]sourceScalar)=0 := trace_curve_sourceScalar
+example : Algebra.trace L CurveTensor ((2:L)⊗ₜ[BaseField](1:E))=36 := trace_curve_two
+example : physicalEval (1:E)≠baseToCurve (Algebra.trace BaseField E 1) := physical_evaluation_not_trace
+example : ¬IsUnit (algebraMap P Regular (NormalChart.chartPolynomial (K:=ℚ))) := regular_relation_not_unit

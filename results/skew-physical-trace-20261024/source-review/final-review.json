@@ -1,0 +1,96 @@
+{
+  "status": "PASS_FINAL_ADVERSARIAL_REVIEW",
+  "executor": "Pro curve_evidence_review read-only AI reviewer",
+  "completed_utc": "2026-10-24T10:51:06.174237+00:00",
+  "parent": "2bbbaa312642822c28483ba85cbbccf0af97d6dc",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "module_sha256": "ca3b3b127a7cbab5091b3fc52e356cf212e2e755caa5fa07bcea31acbb078c67",
+  "frozen_source_review": {
+    "path": "results/skew-physical-trace-20261024/source-review/frozen-source-review.json",
+    "sha256": "f04866d5a03a3fd7c78b779cd1588a0cdaf7dff6b2436abb0dcbe4ec45735dd1"
+  },
+  "writer_final_execution": {
+    "receipt": "results/skew-physical-trace-20261024/lean-development/checker-03/validation.json",
+    "receipt_sha256": "26770567f5ca3aa99f3a5b8028e890a4586e5b9c2f4f490baa5f200e684fbe8b",
+    "status": "PASS",
+    "executor": "Pro root sole Lean writer",
+    "elapsed_seconds": 36.3572686969992,
+    "new_declarations_audited": 98,
+    "new_modules_replayed": 1,
+    "positive_controls": 39,
+    "intended_false_controls": 10,
+    "checker_sha256": "39955dc1bfcd534336b799792c7a68f355c9c975f273a7ab26625ed7725351f3",
+    "artifact_sha256": {
+      "HodgeLab.OneReflectionSkew.PhysicalTraceBridge": "36ce95c718903b792daed04416ea286cdf070f0625c4b8e3d27906bc878c5360"
+    }
+  },
+  "reviewer_executed_audit": {
+    "command": [
+      "python3",
+      "-O",
+      "results/skew-physical-trace-20261024/source-review/audit_saved_evidence.py",
+      "--receipt",
+      "results/skew-physical-trace-20261024/lean-development/checker-03/validation.json",
+      "--output-dir",
+      "results/skew-physical-trace-20261024/source-review/audit-01"
+    ],
+    "audit_script_sha256": "8f9c44f53be22c13da5a783ce59fb7a59ce2bf0b86dc50751fda0956171af5fa",
+    "execution_receipt_sha256": "53290d5cc5bb4b3df254329c1f79232d9ab9a917ec5368ea2d4b070716f0c926",
+    "output_sha256": "9966e872ac4e96514900179c234c3efd8236bda40fdf58721ebc694ce3bcd5f0",
+    "process_elapsed_seconds": 0.05287036600020656,
+    "timeout_seconds": 60,
+    "exit_code": 0,
+    "source_context_hashes": 38,
+    "final_command_stream_hashes": 48,
+    "earlier_checker_failures": [
+      {
+        "receipt": "results/skew-physical-trace-20261024/lean-development/checker-01/validation.json",
+        "sha256": "3501321484f3b336c66d39f6dda9da4c29c2af8c32b9753b2ffbc1aef705635b",
+        "status": "FAIL",
+        "error": "positive-controls failed: .lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:14:75: error: Type mismatch\n  baseToCurve_rational q\nhas type\n  baseToCurve\n      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)\n        q) =\n    (algebraMap ℚ L) q\nbut is expected to have type\n  baseToCurve\n      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring\n          (RatFunc.instAlgebraOfPolynomial CoeffField ℚ))\n        q) =\n    (algebraMap ℚ L) q\n.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:15:86: error: Type mismatch\n  curve_scalar_tower q\nhas type\n  (algebraMap BaseField L)\n      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)\n        q) =\n    (algebraMap ℚ L) q\nbut is expected to have type\n  (algebraMap BaseField L)\n      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring\n          (RatFunc.instAlgebraOfPolynomial CoeffField ℚ))\n        q) =\n    (algebraMap ℚ L) q\n.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:16:32: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized\n  RatFunc.instAlgebraOfPolynomial CoeffField ℚ\ninferred\n  baseRationalAlgebra\n",
+        "command_stream_hashes_checked": 18,
+        "source_snapshot_hashes_checked": 9
+      },
+      {
+        "receipt": "results/skew-physical-trace-20261024/lean-development/checker-02/validation.json",
+        "sha256": "330ff392ff3cf7ba8cfd2fb5698434b405eee519bc20396d12894a04c8668014",
+        "status": "FAIL",
+        "error": "positive-controls failed: .lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:6:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'vRationalAlgebra', which is 'noncomputable'\n.lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:7:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'coeffRationalAlgebra', which is 'noncomputable'\n.lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:8:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'baseRationalAlgebra', which is 'noncomputable'\n",
+        "command_stream_hashes_checked": 18,
+        "source_snapshot_hashes_checked": 9
+      }
+    ],
+    "development_attempts_checked": 12,
+    "development_source_snapshots_checked": 11,
+    "development_stream_hashes_checked": 24,
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "parent_ledger_bytes": 440921,
+    "parent_ledger_sha256": "1da42f452082925e8d6983c37276a062f336fb4e0a0ca02920403e377fa2ec9f",
+    "parent_ledger_prefix_exact": true
+  },
+  "resolved_evidence_issues": [
+    "Attempt01 created no source due an initial working-directory/path error; its missing-module build and explanatory note are preserved. Attempts02-12 have exact source snapshots.",
+    "A brief tool-environment interruption did not produce or count a mathematical result; the same process later returned its failure receipt.",
+    "Checker01 failed three external positive interfaces on mismatched presentations of rational-algebra instances. Checker02 installed the exact choices but lacked noncomputable section for that header. Both failures and all source/stream hashes remain; checker03 passes the explicit caller setup with unchanged mathematical source.",
+    "Historical discussion-127 mixed line endings produce a Git-filter dirty indication, but baseline raw bytes equal the parent. Do not normalize or stage that historical file."
+  ],
+  "mathematical_boundary_verdict": "No blocking defect found in transformed independence, actual K embedding, physical quotient evaluation and exact derivative/source scalar, full18-root exhaustion/matching sheet, left-L tensor isomorphism or arbitrary-element algebra trace compatibility. The root field/component and cohomology boundaries are preserved.",
+  "remaining_dependencies": [
+    "Compatible allowed-domain physical sheet/form maps fixing compact coordinates V=rU and z; no full all-sheet physical differential-source trace is claimed",
+    "Four-form nonvanishing, irreducibility or whole/minimal hypersurface field identification",
+    "Residue/cohomology or Gauss-Manin source realization, primitive, clearing, certificate and solve"
+  ],
+  "reviewer_execution_limits": {
+    "lean_commands": 0,
+    "symbolic_mathematics": 0,
+    "old_focused_checkers": 0,
+    "network_requests": 0,
+    "remote_ci_queries": 0,
+    "commits_pushes_upstream_actions": 0
+  },
+  "scope_limit": "Review verifies selected frozen source, focused evidence and exact parent ledger prefix. Root/coordinator own final appended prose, rendered-figure inspection, full-tree preservation, staging, packaging, publication and remote CI. AI review is not independent human review."
+}

@@ -1,0 +1,23 @@
+{
+  "executor": "Pro root visual inspection",
+  "inspected_utc": "2026-10-24T10:51:44.750957+00:00",
+  "png_sha256": "0016e728715fedcf70e00e1f5446dda60f9963ec6a5298aff2ce3c63f22aed5d",
+  "status": "PASS",
+  "observations": [
+    "All labels and mathematical expressions readable without clipping",
+    "Actual coefficient/splitting/tensor maps and scalar normalization displayed",
+    "Nonzero single-sheet scalar distinguished from zero all-sheet trace",
+    "Regular-localization and remaining two-row physical-form boundary displayed",
+    "No transient CI label"
+  ],
+  "generation_command": [
+    "python3",
+    "scripts/visualize_skew_physical_trace.py",
+    "--receipt",
+    "results/skew-physical-trace-20261024/lean-development/checker-03/validation.json",
+    "--output-dir",
+    "results/skew-physical-trace-20261024/visualization-01"
+  ],
+  "generation_exit_code": 0,
+  "generation_elapsed_seconds": 0.4632912019997093
+}

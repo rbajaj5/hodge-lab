@@ -1,0 +1,30 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "math_start_utc": "2026-10-24T10:28:47Z",
+  "math_stop_utc": "2026-10-24T10:50:01.753599+00:00",
+  "mathematical_deadline_utc": "2026-10-24T11:13:47Z",
+  "approaches_used": 1,
+  "approach": "Algebraicity over transformed coordinate field plus transcendence-degree bound; explicit coordinate fraction-field equivalence; actual quotient/splitting/tensor maps",
+  "math_limit_seconds": 2700,
+  "lean_process_seconds": 120,
+  "focused_checker_seconds": 600,
+  "network_seconds": 45,
+  "packaging_seconds": 300,
+  "final_checker": "lean-development/checker-03/validation.json",
+  "final_checker_elapsed_seconds": 36.3572686969992,
+  "writer_counts": {
+    "declarations": 98,
+    "new_module_kernel_replays": 1,
+    "positive_controls": 39,
+    "negative_controls": 10
+  },
+  "prior_ci": "40084595344 reused only",
+  "new_remote_ci": false,
+  "worker_commit_push_or_upstream_action": false,
+  "failed_checkers": [
+    "checker-01: three caller Q-instance elaboration mismatches",
+    "checker-02: explicit local instances require noncomputable header"
+  ],
+  "module_sha256": "ca3b3b127a7cbab5091b3fc52e356cf212e2e755caa5fa07bcea31acbb078c67",
+  "interrupted_calculations_counted_as_results": false
+}

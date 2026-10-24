@@ -1,0 +1,17 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "python3",
+    "-O",
+    "check_skew_physical_trace.py",
+    "--output-dir",
+    "../results/skew-physical-trace-20261024/lean-development/checker-01"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal",
+  "started_utc": "2026-10-24T10:44:57.697782+00:00",
+  "elapsed_seconds": 11.89893438800027,
+  "timeout_seconds": 600,
+  "exit_code": 1,
+  "stdout_sha256": "9d519f6a8449e20cd7686affc7340c82fffc887cf5e965615867752bd3b3e2f6",
+  "stderr_sha256": "51930d7ecb9f55f395d9c3092386471be407afa6d6fe63e2e9cd71620df42467"
+}

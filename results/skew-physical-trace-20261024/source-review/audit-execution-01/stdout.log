@@ -1,0 +1,254 @@
+{
+  "status": "PASS_SAVED_EVIDENCE_AUDIT",
+  "executor": "Pro curve_evidence_review read-only AI reviewer",
+  "started_utc": "2026-10-24T10:50:38.248951+00:00",
+  "completed_utc": "2026-10-24T10:50:38.267460+00:00",
+  "elapsed_seconds": 0.018524176000028092,
+  "receipt": "results/skew-physical-trace-20261024/lean-development/checker-03/validation.json",
+  "receipt_sha256": "26770567f5ca3aa99f3a5b8028e890a4586e5b9c2f4f490baa5f200e684fbe8b",
+  "module": "formal/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean",
+  "module_sha256": "ca3b3b127a7cbab5091b3fc52e356cf212e2e755caa5fa07bcea31acbb078c67",
+  "source_context_hashes": 38,
+  "command_stream_hashes": 48,
+  "public_declarations": 98,
+  "positive_controls": 39,
+  "intended_false_goals": 10,
+  "negative_labels": [
+    "collapsed-base-parameter-rejected",
+    "coefficient-image-zero-rejected",
+    "evaluation-as-trace-rejected",
+    "scalar-zero-on-sheet-rejected",
+    "scalar-sign-mutation-rejected",
+    "dropped-twelfth-rejected",
+    "normalized-trace-rejected",
+    "dropped-tensor-scalar-rejected",
+    "single-sheet-constant-trace-rejected",
+    "forbidden-relation-inversion-rejected"
+  ],
+  "new_modules_replayed": 1,
+  "parent_ledger_bytes": 440921,
+  "parent_ledger_prefix_exact": true,
+  "reviewer_Lean_commands": 0,
+  "reviewer_symbolic_mathematics": 0,
+  "scope": "Saved execution evidence and current source bindings; not an independent Lean or mathematical rerun",
+  "checked_source_sha256": {
+    "formal/results/skew-physical-trace/inputs.json": "0c1e51efabb39bdaf5552941a8fb251808068b2c9fd1add01a657754de148af6",
+    "results/skew-physical-trace-20261024/source-pins.json": "95bc66f59b8969a48127e5089f2fcab9adc888c7fb77e82c8d0888bca3b18ad6",
+    "formal/lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "formal/lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "formal/lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "formal/check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "formal/fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "formal/check_skew_physical_trace.py": "39955dc1bfcd534336b799792c7a68f355c9c975f273a7ab26625ed7725351f3",
+    "formal/AuditSkewPhysicalTrace.lean": "70f46b75dbf15520b46472317508fc8fdaefb5d654df0fe5108f8b6db869e46a",
+    "formal/ReplaySkewPhysicalTrace.lean": "4f0a72430868c819eedef3fa2c5e0a089e0ece49050207494aea43e22b4b0e9d",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean": "ca3b3b127a7cbab5091b3fc52e356cf212e2e755caa5fa07bcea31acbb078c67",
+    "AGENTS.md": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+    "formal/HodgeLab/OneReflectionSkew/AmbientDerivation.lean": "6172a74fad84c97a15f8345225fb35cb49e1e9fa806c8a1309f42f83bf6e8cc3",
+    "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+    "formal/HodgeLab/OneReflectionSkew/CoordinateComparison.lean": "d7c88cffbf24278e685dc4cfb44f9899eac2a7095877820c8e771aa28069f684",
+    "formal/HodgeLab/OneReflectionSkew/CoordinateVolume.lean": "2e5525339a4ac23e88ba62addda1b310fb10b7eb3dd664cd2b491f8186ada594",
+    "formal/HodgeLab/OneReflectionSkew/DegreeFour.lean": "8ccad69f0509a2538d34cccc46f2ecf8fc428b12214088b60b0a6a127faea848",
+    "formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean": "6c995c52e943e61d2bf5b7c3e54cebc98b0286f9c87dcfe6709775c2a5de72f6",
+    "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "formal/HodgeLab/OneReflectionSkew/NormalChart.lean": "2d8050b1ae67b7187634e18add161c2576c920393b3fe416e7b04829782b2232",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+    "formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean": "213abfe2f1ab6d997953bf01e20ce09d7b46b47820675288bee2e27ed1ca2efa",
+    "formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "formal/HodgeLab/OneReflectionSkew/ThreeCoefficient.lean": "d5b56aa6ec51bf531eb0ed5de858e0e0f921cab5ed7dd9bf6bde6af8abb70138",
+    "formal/HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+    "formal/HodgeLab/OneReflectionSkew/TraceKernel.lean": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+    "formal/HodgeLab/OneReflectionSkew/VolumeDensity.lean": "d3950d20c3e330800d816f37eadfb07a5889bc5c67f22e1ac11041cac4ab7620",
+    "formal/HodgeLab/RowCertificate.lean": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+    "formal/HodgeLab/SparsePolynomial.lean": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+    "notes/skew-physical-curve-realization.md": "39935f9abed6410a4fe9adf3ddff5989fa33992ca22cf01f7aa22c5eb127ab3c",
+    "notes/skew-scalar-extension-trace.md": "b71bbc2ff211fb73ef1c0a984ebd058193e4838a6d9cce0e106b96ec9fa86301",
+    "results/skew-physical-curve-20261024/inputs/upstream/AGENTS.md": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+    "results/skew-physical-curve-20261024/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-physical-curve-20261024/remote-ci-40084595344/ci-receipt-review.json": "c321fe714a16f94165a2c4b0d6698b0facc84085aa6d32d42da4bd426cc13112",
+    "results/skew-physical-curve-20261024/remote-ci-40084595344/focused-receipt/validation.json": "8d33a63f9c7c802532f2b734172eaffcc6a46839f7ee112959b0d3498423de05"
+  },
+  "development_attempts": [
+    {
+      "attempt": "attempt-01",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-01/run/execution.json",
+      "execution_sha256": "8074f8a80aa06754b413dc58032f3be4fb57fc8e6c19a367e0a89eceef47c567",
+      "source_sha256": null,
+      "stream_sha256": {
+        "stdout": "b06f6e50ac1a9c78a3913026964bc42fcb22bb3431cb3440ef49ffb3b9d54fd3",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 5.550085505999959,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-02",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-02/run/execution.json",
+      "execution_sha256": "964e7bf93f9544e5f6cc63552d0fe79c54f70295424f1a2f307a38c1713f24e2",
+      "source_sha256": "b86cf3baad8892d110acdac172c2e2d35bc159213606a58b2c271410de5757f2",
+      "stream_sha256": {
+        "stdout": "34aa45eae34daae0eddae095f4a09f6a5fe68bc3d404b442e65ca9d609debb1c",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 1.2898761709993778,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-03",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-03/run/execution.json",
+      "execution_sha256": "4c56b772d850c1c37cdccdf04f68f2dd061e945c9aa0b63315cd57ce637e229e",
+      "source_sha256": "de2ef96d5ef65fd0317f5bc8207704eb256da9e7655ac684d49d79bba99ccfd0",
+      "stream_sha256": {
+        "stdout": "1f7cb8fafe6eeb58096a737f63b4c8dc4db4d62a5b940b24d9ef928ad51749c2",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 6.94359239700043,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-04",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-04/run/execution.json",
+      "execution_sha256": "929e7a0f542e7fc4ba47b94099337388fa3eea93ebde1f9f9cd6ac3cfcb4f19f",
+      "source_sha256": "d6b9da63b61886df8a3d11d11dc2b16c919504d90615f81a22a49010748a7126",
+      "stream_sha256": {
+        "stdout": "576f74f825bc65d7dd625c4ad0a7a14a57e63fbb1e73d3c47fa5f009629a57d5",
+        "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 4.193134938000185,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-05",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-05/run/execution.json",
+      "execution_sha256": "b459dfbda5f448db825faa5bee5b71c90d0e283205051a91182cae850f6b0fc8",
+      "source_sha256": "b1c85b5dfb2f1506f027101549f8941ac601eb6d28cb088e2b0a91b9a778a7e2",
+      "stream_sha256": {
+        "stdout": "25ab60bd61540b04838faf658c2265d1efd07c0ab205891784fe2bb193457ebd",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 7.258517641999788,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-06",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-06/run/execution.json",
+      "execution_sha256": "aaa3d104250db6326ff39f36b5b0acbce6154f4cf8a9b41906f32f97ea3d8ac5",
+      "source_sha256": "f2a27dcf992238e676fcffb4a5c334249ffc5ef91bc92eccfef5a47bbf5965d4",
+      "stream_sha256": {
+        "stdout": "f1fc0c9b1064f0ac704ab1a029cf7a541a512d39f4e6279171a7c8814309649a",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 9.765889704000074,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-07",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-07/run/execution.json",
+      "execution_sha256": "cdb8f3a6391df231d8fa698096343dc6eb820077d276a3f77dcac3e4e8f28023",
+      "source_sha256": "8b0d0aeccc42e0073e325a780871969f5ebcc06a8b75301e85e7a4b05f6594ce",
+      "stream_sha256": {
+        "stdout": "d3206fc7a3966f27577bb13c949a7cb108f657135c3e9a670140500d1fb95463",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 7.172565220000251,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-08",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-08/run/execution.json",
+      "execution_sha256": "a83df45650b8891a061cb3a1c686c7c2974c5782b318f48e66d2978128b9db00",
+      "source_sha256": "8104866e86e5a2a65f6dcad86f28ae1c56915310bfb082a9ef3d937339137c36",
+      "stream_sha256": {
+        "stdout": "7c47e4858fddf67c44890716967515351ed91a44414fa22c27756bb711d1efa0",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 5.679072390999863,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-09",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-09/run/execution.json",
+      "execution_sha256": "0133ec2dbdc8c3f072ab6443d1774fb2cf3bee20e3089a1873056065a6eb6c8d",
+      "source_sha256": "687ebb53db1f34c76459ccd63b102e24f73a23ba3c8de0010ef5eb95bde57fc5",
+      "stream_sha256": {
+        "stdout": "8b58626497231cf0b9b4a4002c30bd0708aabd3ace641ae138f24463087c6347",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 5.7818197420001525,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-10",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-10/run/execution.json",
+      "execution_sha256": "9ecad44592f36894b7e405ef52afa6eedb0c5f719dbfb9a65167e2f97a26a84c",
+      "source_sha256": "7e54ec3159a9746647c18dccf7c0284727c9a81122be9a4eba5a50003b087256",
+      "stream_sha256": {
+        "stdout": "3b9542c197b14772c3a9af74b818519c01d999d39c22be3373cc4c562e772198",
+        "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 6.246036864999951,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-11",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-11/run/execution.json",
+      "execution_sha256": "834c2ab67e71c81d237a7370c3888808d5486b6b5d65cd7489cfe223e709d568",
+      "source_sha256": "2bc841cb0eac16c69b528e6ebc5f21a780b9a9b8e9b39cad7de376ebc5a3b3b4",
+      "stream_sha256": {
+        "stdout": "b39c86000112d0d2e842f33dc09eca9351bfd0b619ff785861fc83a307566fe9",
+        "stderr": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      },
+      "exit_code": 1,
+      "elapsed_seconds": 16.082436931999837,
+      "timeout_seconds": 120
+    },
+    {
+      "attempt": "attempt-12",
+      "execution": "results/skew-physical-trace-20261024/lean-development/attempt-12/run/execution.json",
+      "execution_sha256": "e5d49843ce5188eef082d7d2e3ab2e9b974d969c7479057a7b6724e1d1e835ab",
+      "source_sha256": "ca3b3b127a7cbab5091b3fc52e356cf212e2e755caa5fa07bcea31acbb078c67",
+      "stream_sha256": {
+        "stdout": "a996d608f98df61b3a1c3533a15b8a15040a63cca05b5225f0aab23cfa5bdaf5",
+        "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 8.918319792000148,
+      "timeout_seconds": 120
+    }
+  ],
+  "infrastructure_failure_notes_sha256": {
+    "results/skew-physical-trace-20261024/lean-development/initial-path-error.json": "a240fd1abc2fdc9e88c0dd12a1c57bb7895deb031706252fec692419d7c268af",
+    "results/skew-physical-trace-20261024/bootstrap/environment-interruption.json": "315adb06f6904f200997759d5c395718a727a3ac585341e4b27bb261dfd5c0a9"
+  },
+  "earlier_checker_evidence": [
+    {
+      "receipt": "results/skew-physical-trace-20261024/lean-development/checker-01/validation.json",
+      "sha256": "3501321484f3b336c66d39f6dda9da4c29c2af8c32b9753b2ffbc1aef705635b",
+      "status": "FAIL",
+      "error": "positive-controls failed: .lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:14:75: error: Type mismatch\n  baseToCurve_rational q\nhas type\n  baseToCurve\n      ((@algebraMap \u211a BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)\n        q) =\n    (algebraMap \u211a L) q\nbut is expected to have type\n  baseToCurve\n      ((@algebraMap \u211a BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring\n          (RatFunc.instAlgebraOfPolynomial CoeffField \u211a))\n        q) =\n    (algebraMap \u211a L) q\n.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:15:86: error: Type mismatch\n  curve_scalar_tower q\nhas type\n  (algebraMap BaseField L)\n      ((@algebraMap \u211a BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)\n        q) =\n    (algebraMap \u211a L) q\nbut is expected to have type\n  (algebraMap BaseField L)\n      ((@algebraMap \u211a BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring\n          (RatFunc.instAlgebraOfPolynomial CoeffField \u211a))\n        q) =\n    (algebraMap \u211a L) q\n.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:16:32: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized\n  RatFunc.instAlgebraOfPolynomial CoeffField \u211a\ninferred\n  baseRationalAlgebra\n",
+      "command_stream_hashes_checked": 18,
+      "source_snapshot_hashes_checked": 9
+    },
+    {
+      "receipt": "results/skew-physical-trace-20261024/lean-development/checker-02/validation.json",
+      "sha256": "330ff392ff3cf7ba8cfd2fb5698434b405eee519bc20396d12894a04c8668014",
+      "status": "FAIL",
+      "error": "positive-controls failed: .lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:6:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'vRationalAlgebra', which is 'noncomputable'\n.lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:7:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'coeffRationalAlgebra', which is 'noncomputable'\n.lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:8:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'baseRationalAlgebra', which is 'noncomputable'\n",
+      "command_stream_hashes_checked": 18,
+      "source_snapshot_hashes_checked": 9
+    }
+  ]
+}

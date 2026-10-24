@@ -1,0 +1,352 @@
+⚠ [940/1004] Replayed HodgeLab.OneReflectionSkew.CoordinateComparison
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:63:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:66:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/CoordinateComparison.lean:69:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [1369/1419] Replayed HodgeLab.OneReflectionSkew.ThreeCoefficient
+warning: HodgeLab/OneReflectionSkew/ThreeCoefficient.lean:91:23: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2033/2232] Replayed HodgeLab.OneReflectionSkew.TraceFreeBasis
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:69:36: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2523/2529] Replayed HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:27:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vChart_inverse`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:30:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:32:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aChart_eq_coverA`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:40:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:42:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.physical_cover_equation`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:52:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:58:17: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:58:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:60:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fR_expanded`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:75:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:87:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_mul`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:89:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_square_zero`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:92:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_swap`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:111:57: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:112:69: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:111:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:112:69: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:144:17: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:144:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:153:17: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:153:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:191:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_cleared`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:225:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.twelve_factor`:
+  [Algebra ℚ K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:251:46: This simp argument is unused:
+  h2
+
+Hint: Omit it from the simp argument list.
+  simp [delta, ha, hb, hc, hd, smul_eq_mul, h2̵,̵ ̵h̵3, h4, h9, h18, h27]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:251:50: This simp argument is unused:
+  h3
+
+Hint: Omit it from the simp argument list.
+  simp [delta, ha, hb, hc, hd, smul_eq_mul, h2, h3̵,̵ ̵h̵4, h9, h18, h27]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:251:58: This simp argument is unused:
+  h9
+
+Hint: Omit it from the simp argument list.
+  simp [delta, ha, hb, hc, hd, smul_eq_mul, h2, h3, h4, h9̵,̵ ̵h̵18, h27]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:253:84: This simp argument is unused:
+  h4
+
+Hint: Omit it from the simp argument list.
+  simp [rNumerator, rNumeratorPrime, n1, ha, hb, hc, hd, hV, smul_eq_mul, h2, h3, h4̵,̵ ̵h̵9, h18, h27]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:253:92: This simp argument is unused:
+  h18
+
+Hint: Omit it from the simp argument list.
+  simp [rNumerator, rNumeratorPrime, n1, ha, hb, hc, hd, hV, smul_eq_mul, h2, h3, h4, h9, h1̵8̵,̵ ̵h̵27]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:253:97: This simp argument is unused:
+  h27
+
+Hint: Omit it from the simp argument list.
+  simp [rNumerator, rNumeratorPrime, n1, ha, hb, hc, hd, hV, smul_eq_mul, h2, h3, h4, h9, h18,̵ ̵h̵2̵7̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:281:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_module_reduction`:
+  [IsScalarTower ℚ K M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsScalarTower ℚ K M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:296:4: This simp argument is unused:
+  zero_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [map_add, map_zero, fibreP, D.leibniz, D.leibniz_pow, ha, hb, hc, hd, z̵e̵r̵o̵_̵s̵m̵u̵l̵,̵ ̵smul_zero,
+  ̲  ̲ ̲ ̲add_zero, zero_add, Nat.reduceSub, ← Nat.cast_smul_eq_nsmul K, smul_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:296:36: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [map_add, map_zero, fibreP, D.leibniz, D.leibniz_pow, ha, hb, hc, hd, zero_smul,
+  ̲  ̲ ̲ ̲smul_zero, add_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵Nat.reduceSub, ← Nat.cast_smul_eq_nsmul K, smul_smul] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:311:49: This simp argument is unused:
+  zero_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [rNumerator, rNumeratorPrime, n1, map_add, map_sub, D.leibniz, D.leibniz_pow, ha, hb,
+  ̲  ̲ ̲ ̲ ̲ ̲hc, hd, h2, h3, h9, z̵e̵r̵o̵_̵s̵m̵u̵l̵,̵ ̵smul_zero, add_zero, zero_add, sub_zero, Nat.reduceSub,
+  ̲  ̲ ̲ ̲ ̲ ̲← Nat.cast_smul_eq_nsmul K, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:312:6: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [rNumerator, rNumeratorPrime, n1, map_add, map_sub, D.leibniz, D.leibniz_pow, ha, hb,
+  ̲  ̲ ̲ ̲ ̲ ̲hc, hd, h2, h3, h9, zero_smul, smul_zero, add_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵sub_zero, Nat.reduceSub,
+  ̲  ̲ ̲ ̲ ̲ ̲← Nat.cast_smul_eq_nsmul K, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:323:69: This simp argument is unused:
+  smul_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.reduceSub, ← Nat.cast_smul_eq_nsmul K, smul_smul, s̵m̵u̵l̵_̵s̵u̵b̵,̵ ̵← sub_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:301:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:301:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:344:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_apply`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:437:0: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vChart_recover`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:485:31: This simp argument is unused:
+  map_div₀
+
+Hint: Omit it from the simp argument list.
+  simp only [Algebra.smul_def, map_d̵i̵v̵₀̵,̵ ̵m̵a̵p̵_̵one, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:485:41: This simp argument is unused:
+  map_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Algebra.smul_def, map_div₀, map_on̵e̵,̵ ̵m̵a̵p̵_̵o̵fNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:485:50: This simp argument is unused:
+  map_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [Algebra.smul_def, map_div₀, map_one,̵ ̵m̵a̵p̵_̵o̵f̵N̵a̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2524/2529] Replayed HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+warning: HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:111:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:111:83: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✖ [2529/2529] Building HodgeLab.OneReflectionSkew.PhysicalTraceBridge (5.6s)
+trace: .> LEAN_PATH=/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/build/lib/lean /tmp/lean-4.31.0-linux/bin/lean /workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean -o /workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/build/lib/lean/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.olean -i /workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/build/lib/lean/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.ilean -c /workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/build/ir/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.c --setup /workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/.lake/build/ir/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.setup.json --json
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:95:13: failed to synthesize instance of type class
+  IsScalarTower ℚ VField CoeffField
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:88:79: unsolved goals
+hv : AlgebraicIndependent ℚ ![vInVField]
+ht : AlgebraicIndependent VField ![tInCoeffField]
+ha : AlgebraicIndependent CoeffField ![genericA]
+⊢ AlgebraicIndependent ℚ genericBaseCoords
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:109:19: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+F : Type u_1
+M : Type u_2
+inst✝¹ : Field F
+inst✝ : Field M
+S : Subfield M
+φ : RatFunc F →+* M
+hc : ∀ (c : F), φ ((algebraMap F (RatFunc F)) c) ∈ S
+hx : φ RatFunc.X ∈ S
+x : RatFunc F
+⊢ Type ?u.49
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:109:55: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+F : Type u_1
+M : Type u_2
+inst✝¹ : Field F
+inst✝ : Field M
+S : Subfield M
+φ : RatFunc F →+* M
+hc : ∀ (c : F), φ ((algebraMap F (RatFunc F)) c) ∈ S
+hx : φ RatFunc.X ∈ S
+x : RatFunc F
+a✝ : ?m.51
+⊢ Prop
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:122:8: failed to synthesize
+  IsScalarTower ℚ (RatFunc ℚ) BaseField
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:124:4: Type mismatch: After simplification, term
+  generic_coordinate_mem 1
+ has type
+  (algebraMap VField BaseField) RatFunc.X ∈ GenericCoordinateField
+but is expected to have type
+  (algebraMap VField BaseField) RatFunc.X ∈ GenericCoordinateField.toSubfield
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:146:5: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  DivisionRing.toRatAlgebra
+inferred
+  GenericCoordinateField.algebra'
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:145:2: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  DivisionRing.toRatAlgebra
+inferred
+  OreLocalization.instAlgebra
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:150:51: unsolved goals
+i : Fin 3
+⊢ (sorry ()) ((algebraMap (MvPolynomial (Fin 3) ℚ) CoordinateFractions) (MvPolynomial.X i)) = genericBaseCoords i
+warning: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:151:8: declaration uses `sorry`
+warning: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:151:31: This simp argument is unused:
+  IntermediateField.equivOfEq
+
+Hint: Omit it from the simp argument list.
+  simp [̵g̵e̵n̵e̵r̵i̵c̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵E̵q̵u̵i̵v̵,̵I̵n̵t̵e̵r̵m̵e̵d̵i̵a̵t̵e̵F̵i̵e̵l̵d̵.̵e̵q̵u̵i̵v̵O̵f̵E̵q̵,̵I̵n̵t̵e̵r̵m̵e̵d̵i̵a̵t̵e̵F̵i̵e̵l̵d̵.̵t̵o̵p̵E̵q̵u̵i̵v̵]̵[̲g̲e̲n̲e̲r̲i̲c̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲E̲q̲u̲i̲v̲,̲ ̲I̲n̲t̲e̲r̲m̲e̲d̲i̲a̲t̲e̲F̲i̲e̲l̲d̲.̲t̲o̲p̲E̲q̲u̲i̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:151:59: This simp argument is unused:
+  IntermediateField.topEquiv
+
+Hint: Omit it from the simp argument list.
+  simp [̵g̵e̵n̵e̵r̵i̵c̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵E̵q̵u̵i̵v̵,̵I̵n̵t̵e̵r̵m̵e̵d̵i̵a̵t̵e̵F̵i̵e̵l̵d̵.̵e̵q̵u̵i̵v̵O̵f̵E̵q̵,̵I̵n̵t̵e̵r̵m̵e̵d̵i̵a̵t̵e̵F̵i̵e̵l̵d̵.̵t̵o̵p̵E̵q̵u̵i̵v̵]̵[̲g̲e̲n̲e̲r̲i̲c̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲E̲q̲u̲i̲v̲,̲ ̲I̲n̲t̲e̲r̲m̲e̲d̲i̲a̲t̲e̲F̲i̲e̲l̲d̲.̲e̲q̲u̲i̲v̲O̲f̲E̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:156:5: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  DivisionRing.toRatAlgebra
+inferred
+  OreLocalization.instAlgebra
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:159:28: unsolved goals
+i : Fin 3
+⊢ sorry (genericCoordinateEquiv ((algebraMap (MvPolynomial (Fin 3) ℚ) CoordinateFractions) (MvPolynomial.X i))) =
+    physicalBaseCoords i
+warning: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:161:8: declaration uses `sorry`
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:167:66: failed to synthesize instance of type class
+  IsSimpleRing BaseField
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean:170:58: Type mismatch
+  IsScalarTower.of_algHom baseToCurve
+has type
+  @IsScalarTower ℚ BaseField L (RatFunc.instAlgebraOfPolynomial CoeffField ℚ).toSMul baseToCurve.toAlgebra.toSMul
+    DivisionRing.toRatAlgebra.toSMul
+but is expected to have type
+  @IsScalarTower ℚ BaseField L RatFunc.instSMulOfFractionRingPolynomial curveBaseAlgebra.toSMul
+    (AlgebraicClosure.instSMulOfIsScalarTower Base)
+error: Lean exited with code 1
+Some required targets logged failures:
+- HodgeLab.OneReflectionSkew.PhysicalTraceBridge

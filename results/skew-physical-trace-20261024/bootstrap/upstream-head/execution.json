@@ -1,0 +1,16 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "ls-remote",
+    "https://github.com/hodge-computer/sextics.git",
+    "HEAD"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge",
+  "started_utc": "2026-10-24T10:30:02.589263+00:00",
+  "elapsed_seconds": 0.2903506180000477,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "4678b6ce2e14d56bea7605e3ec6edca26979b9b7f03c5c9153e4d9ee2ba97580",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

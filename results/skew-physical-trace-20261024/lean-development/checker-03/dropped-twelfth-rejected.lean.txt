@@ -1,0 +1,15 @@
+import HodgeLab.OneReflectionSkew.PhysicalTraceBridge
+open HodgeLab.OneReflectionSkew
+open GenericDistinctRoots ScalarExtensionTrace PhysicalSourceNormalization
+open PhysicalCurveRealization PhysicalTraceBridge TraceFreeBasis SplitTraceQuotient
+open scoped TensorProduct BigOperators
+noncomputable section
+local instance : Algebra ℚ VField := PhysicalTraceBridge.vRationalAlgebra
+local instance : Algebra ℚ CoeffField := PhysicalTraceBridge.coeffRationalAlgebra
+local instance : Algebra ℚ BaseField := PhysicalTraceBridge.baseRationalAlgebra
+example : (12:L)*physicalEval sourceScalar=physicalEval sourceScalar := by
+  have h : (12:L)*physicalEval sourceScalar≠physicalEval sourceScalar := by
+    intro h
+    have hh : (11:L)*physicalEval sourceScalar=0 := by linear_combination h
+    exact (mul_ne_zero (by norm_num : (11:L)≠0) physical_sourceScalar_ne_zero) hh
+  simp only [h]

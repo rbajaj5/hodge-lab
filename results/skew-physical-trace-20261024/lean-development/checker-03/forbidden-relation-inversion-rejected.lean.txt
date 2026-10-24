@@ -1,0 +1,11 @@
+import HodgeLab.OneReflectionSkew.PhysicalTraceBridge
+open HodgeLab.OneReflectionSkew
+open GenericDistinctRoots ScalarExtensionTrace PhysicalSourceNormalization
+open PhysicalCurveRealization PhysicalTraceBridge TraceFreeBasis SplitTraceQuotient
+open scoped TensorProduct BigOperators
+noncomputable section
+local instance : Algebra ℚ VField := PhysicalTraceBridge.vRationalAlgebra
+local instance : Algebra ℚ CoeffField := PhysicalTraceBridge.coeffRationalAlgebra
+local instance : Algebra ℚ BaseField := PhysicalTraceBridge.baseRationalAlgebra
+example : IsUnit (algebraMap P Regular (NormalChart.chartPolynomial (K:=ℚ))) := by
+  simp only [regular_relation_not_unit]

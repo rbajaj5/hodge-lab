@@ -1,0 +1,187 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+import Mathlib.RingTheory.AlgebraicIndependent.TranscendenceBasis
+import Mathlib.RingTheory.AlgebraicIndependent.AlgebraicClosure
+import Mathlib.RingTheory.AlgebraicIndependent.Adjoin
+import Mathlib.FieldTheory.RatFunc.IntermediateField
+
+/-! Actual coefficient-field and finite-algebra bridge to the physical curve.
+The regular-localization/form boundary of PhysicalCurveRealization is unchanged. -/
+set_option backward.isDefEq.respectTransparency false
+noncomputable section
+namespace HodgeLab.OneReflectionSkew.PhysicalTraceBridge
+open Polynomial PhysicalCoverBinding PhysicalSourceNormalization
+open PhysicalCurveRealization
+open scoped TensorProduct BigOperators
+
+abbrev L := PhysicalCurveRealization.Curve
+
+def physicalA : L := aChart r w
+def physicalV : L := vChart r w
+
+def transformed : Fin 4 → L := ![U,physicalA,physicalV,t]
+abbrev ChartField := IntermediateField.adjoin ℚ (Set.range transformed)
+
+theorem original_basis : IsTranscendenceBasis ℚ param := by
+  letI : Algebra.IsAlgebraic BasePoly Base :=
+    IsLocalization.isAlgebraic Base (nonZeroDivisors BasePoly)
+  have h := ((IsTranscendenceBasis.mvPolynomial (Fin 4) ℚ).algebraMap_comp
+    (A := Base)).algebraMap_comp (A := L)
+  convert h using 1
+  funext i
+  exact (IsScalarTower.algebraMap_apply BasePoly Base L (MvPolynomial.X i)).symm
+
+theorem transformed_mem (i : Fin 4) : transformed i ∈ ChartField :=
+  IntermediateField.subset_adjoin ℚ _ ⟨i,rfl⟩
+
+def chartA : ChartField := ⟨physicalA, transformed_mem 1⟩
+def chartV : ChartField := ⟨physicalV, transformed_mem 2⟩
+
+theorem physical_r_root : (physicalPolynomial physicalA physicalV).eval r = 0 :=
+  physical_cover_equation r w (param_ne_zero 1)
+
+theorem r_algebraic_chart : IsAlgebraic ChartField r := by
+  refine ⟨physicalPolynomial chartA chartV, (physical_monic _ _).ne_zero, ?_⟩
+  rw [← eval_map_algebraMap, GenericDistinctRoots.physical_map]
+  exact physical_r_root
+
+theorem w_algebraic_chart : IsAlgebraic ChartField w := by
+  have hv : IsAlgebraic ChartField physicalV := isAlgebraic_algebraMap chartV
+  have h := ((hv.mul r_algebraic_chart).sub isAlgebraic_one).mul
+    (IsAlgebraic.inv_iff.mpr (r_algebraic_chart.pow 2))
+  rw [← div_eq_mul_inv, show (physicalV*r-1)/r^2=w from vChart_inverse r w (param_ne_zero 1)] at h
+  exact h
+
+theorem parameters_algebraic_chart (i : Fin 4) : IsAlgebraic ChartField (param i) := by
+  fin_cases i
+  · exact isAlgebraic_algebraMap (⟨U,transformed_mem 0⟩ : ChartField)
+  · exact r_algebraic_chart
+  · exact w_algebraic_chart
+  · exact isAlgebraic_algebraMap (⟨t,transformed_mem 3⟩ : ChartField)
+
+theorem transformed_basis : IsTranscendenceBasis ℚ transformed := by
+  letI : Algebra.IsAlgebraic ChartField L := original_basis.isAlgebraic_iff.mpr parameters_algebraic_chart
+  letI : Algebra.IsAlgebraic (Algebra.adjoin ℚ (Set.range transformed)) L :=
+    IntermediateField.isAlgebraic_adjoin_iff_top.mp inferInstance
+  exact Algebra.IsAlgebraic.isTranscendenceBasis_of_le_trdeg_of_finite ℚ transformed
+    parameters_independent.cardinalMk_le_trdeg
+
+theorem transformed_independent : AlgebraicIndependent ℚ transformed := transformed_basis.1
+
+def physicalBaseCoords : Fin 3 → L := ![physicalA,physicalV,t]
+
+theorem physical_base_independent : AlgebraicIndependent ℚ physicalBaseCoords := by
+  have h := transformed_independent.comp (fun i : Fin 3 => i.succ) (Fin.succ_injective 3)
+  simpa [transformed,physicalBaseCoords,Function.comp_def] using h
+
+
+
+open GenericDistinctRoots
+
+instance qVCoeffTower : IsScalarTower ℚ VField CoeffField :=
+  IsScalarTower.of_algebraMap_eq fun q => (map_rat_algebraMap (algebraMap VField CoeffField) q).symm
+instance qCoeffBaseTower : IsScalarTower ℚ CoeffField BaseField :=
+  IsScalarTower.of_algebraMap_eq fun q => (map_rat_algebraMap (algebraMap CoeffField BaseField) q).symm
+instance qVBaseTower : IsScalarTower ℚ VField BaseField :=
+  IsScalarTower.of_algebraMap_eq fun q => (map_rat_algebraMap (algebraMap VField BaseField) q).symm
+
+def genericBaseCoords : Fin 3 → BaseField := ![genericA,genericV,genericT]
+
+def coordinateIndex : Fin 3 → Fin 1 ⊕ (Fin 1 ⊕ Fin 1) :=
+  ![Sum.inl 0,Sum.inr (Sum.inr 0),Sum.inr (Sum.inl 0)]
+
+theorem coordinateIndex_injective : Function.Injective coordinateIndex := by
+  intro i j h
+  fin_cases i <;> fin_cases j <;> simp_all [coordinateIndex]
+
+theorem generic_base_independent : AlgebraicIndependent ℚ genericBaseCoords := by
+  have hv : AlgebraicIndependent ℚ ![vInVField] :=
+    algebraicIndependent_iff_transcendental.mpr v_transcendental
+  have ht : AlgebraicIndependent VField ![tInCoeffField] :=
+    algebraicIndependent_iff_transcendental.mpr t_transcendental
+  have ha : AlgebraicIndependent CoeffField ![genericA] :=
+    algebraicIndependent_iff_transcendental.mpr a_transcendental
+  have h := (hv.sumElim_comp ht).sumElim_comp ha
+  have hh := h.comp coordinateIndex coordinateIndex_injective
+  convert hh using 1
+  ext i
+  fin_cases i <;> simp [genericBaseCoords,coordinateIndex,Function.comp_def,
+    genericV,genericT,vInCoeffField]
+
+/-- A subfield containing coefficients and X contains every rational function. -/
+theorem ratfunc_image_mem {F M : Type*} [Field F] [Field M]
+    (S : Subfield M) (φ : RatFunc F →+* M)
+    (hc : ∀ c : F, φ (algebraMap F (RatFunc F) c) ∈ S)
+    (hx : φ RatFunc.X ∈ S) (x : RatFunc F) : φ x ∈ S := by
+  have h : (IntermediateField.adjoin F ({RatFunc.X} : Set (RatFunc F))).toSubfield ≤
+      S.comap φ := IntermediateField.adjoin_le_subfield F _
+        (by rintro _ ⟨c,rfl⟩; exact hc c) (by rintro _ rfl; exact hx)
+  rw [RatFunc.adjoin_X] at h
+  exact h (by trivial)
+
+abbrev GenericCoordinateField := IntermediateField.adjoin ℚ (Set.range genericBaseCoords)
+
+theorem generic_coordinate_mem (i : Fin 3) : genericBaseCoords i ∈ GenericCoordinateField :=
+  IntermediateField.subset_adjoin ℚ _ ⟨i,rfl⟩
+
+theorem generic_vfield_mem (x : VField) :
+    algebraMap VField BaseField x ∈ GenericCoordinateField := by
+  apply ratfunc_image_mem GenericCoordinateField.toSubfield (algebraMap VField BaseField)
+  · intro c
+    rw [← IsScalarTower.algebraMap_apply]
+    exact GenericCoordinateField.algebraMap_mem c
+  · simpa only [genericBaseCoords,Matrix.cons_val_one,Matrix.cons_val_zero,
+      genericV,vInCoeffField,vInVField,← IsScalarTower.algebraMap_apply] using generic_coordinate_mem 1
+
+theorem generic_coefffield_mem (x : CoeffField) :
+    algebraMap CoeffField BaseField x ∈ GenericCoordinateField := by
+  apply ratfunc_image_mem GenericCoordinateField.toSubfield (algebraMap CoeffField BaseField)
+  · intro c
+    rw [← IsScalarTower.algebraMap_apply]
+    exact generic_vfield_mem c
+  · exact generic_coordinate_mem 2
+
+theorem generic_coordinate_field_top : GenericCoordinateField = ⊤ := by
+  apply top_unique
+  intro x _
+  exact ratfunc_image_mem GenericCoordinateField.toSubfield (RingHom.id BaseField)
+    generic_coefffield_mem (generic_coordinate_mem 0) x
+
+abbrev CoordinateFractions := FractionRing (MvPolynomial (Fin 3) ℚ)
+
+/-- Identification with the existing nested rational-function field, not a replacement base. -/
+def genericCoordinateEquiv : CoordinateFractions ≃ₐ[ℚ] BaseField :=
+  generic_base_independent.aevalEquivField.trans
+    ((IntermediateField.equivOfEq generic_coordinate_field_top).trans IntermediateField.topEquiv)
+
+theorem genericCoordinateEquiv_X (i : Fin 3) :
+    genericCoordinateEquiv (algebraMap (MvPolynomial (Fin 3) ℚ) CoordinateFractions
+      (MvPolynomial.X i)) = genericBaseCoords i := by
+  simp [genericCoordinateEquiv,IntermediateField.equivOfEq,IntermediateField.topEquiv]
+
+/-- Actual Q-algebra embedding from K=Q(v)(t)(a) into the existing physical Curve. -/
+def baseToCurve : BaseField →ₐ[ℚ] L :=
+  (IntermediateField.val _).comp
+    (physical_base_independent.aevalEquivField.toAlgHom.comp genericCoordinateEquiv.symm.toAlgHom)
+
+theorem baseToCurve_coordinates (i : Fin 3) : baseToCurve (genericBaseCoords i) =
+    physicalBaseCoords i := by
+  rw [← genericCoordinateEquiv_X i]
+  simp [baseToCurve]
+
+theorem baseToCurve_a : baseToCurve genericA = physicalA := baseToCurve_coordinates 0
+theorem baseToCurve_v : baseToCurve genericV = physicalV := baseToCurve_coordinates 1
+theorem baseToCurve_t : baseToCurve genericT = t := baseToCurve_coordinates 2
+
+theorem baseToCurve_injective : Function.Injective baseToCurve := RingHom.injective baseToCurve.toRingHom
+
+instance curveBaseAlgebra : Algebra BaseField L := baseToCurve.toRingHom.toAlgebra
+instance curveQBaseTower : IsScalarTower ℚ BaseField L := IsScalarTower.of_algebraMap_eq fun q => (baseToCurve.commutes q).symm
+
+theorem baseToCurve_rational (q : ℚ) :
+    baseToCurve (algebraMap ℚ BaseField q) = algebraMap ℚ L q := baseToCurve.commutes q
+
+theorem curve_scalar_tower (q : ℚ) :
+    algebraMap BaseField L (algebraMap ℚ BaseField q) = algebraMap ℚ L q :=
+  (IsScalarTower.algebraMap_apply ℚ BaseField L q).symm
+
+end HodgeLab.OneReflectionSkew.PhysicalTraceBridge

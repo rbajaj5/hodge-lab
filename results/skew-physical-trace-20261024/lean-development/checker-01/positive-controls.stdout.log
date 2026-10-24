@@ -1,0 +1,30 @@
+.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:14:75: error: Type mismatch
+  baseToCurve_rational q
+has type
+  baseToCurve
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)
+        q) =
+    (algebraMap ℚ L) q
+but is expected to have type
+  baseToCurve
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring
+          (RatFunc.instAlgebraOfPolynomial CoeffField ℚ))
+        q) =
+    (algebraMap ℚ L) q
+.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:15:86: error: Type mismatch
+  curve_scalar_tower q
+has type
+  (algebraMap BaseField L)
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)
+        q) =
+    (algebraMap ℚ L) q
+but is expected to have type
+  (algebraMap BaseField L)
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring
+          (RatFunc.instAlgebraOfPolynomial CoeffField ℚ))
+        q) =
+    (algebraMap ℚ L) q
+.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:16:32: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  RatFunc.instAlgebraOfPolynomial CoeffField ℚ
+inferred
+  baseRationalAlgebra

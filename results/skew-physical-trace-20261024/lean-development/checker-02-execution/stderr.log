@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_physical_trace.py", line 153, in <module>
+    try:main()
+        ^^^^^^
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_physical_trace.py", line 138, in main
+    (OUT/(label+'.lean.txt')).write_bytes(p.read_bytes());run(label,['lake','env','lean',p.relative_to(ROOT).as_posix()],reject)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_physical_trace.py", line 75, in run
+    require(code == 0, label+' failed: '+log[:2500])
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_extension.py", line 26, in require
+    if not c:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: positive-controls failed: .lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:6:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'vRationalAlgebra', which is 'noncomputable'
+.lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:7:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'coeffRationalAlgebra', which is 'noncomputable'
+.lake/skew-physical-trace-controls/controls-o44cc4aq/positive-controls.lean:8:6: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'baseRationalAlgebra', which is 'noncomputable'
+

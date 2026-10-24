@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_physical_trace.py", line 153, in <module>
+    try:main()
+        ^^^^^^
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_physical_trace.py", line 138, in main
+    (OUT/(label+'.lean.txt')).write_bytes(p.read_bytes());run(label,['lake','env','lean',p.relative_to(ROOT).as_posix()],reject)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_physical_trace.py", line 75, in run
+    require(code == 0, label+' failed: '+log[:2500])
+  File "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal/check_skew_extension.py", line 26, in require
+    if not c:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: positive-controls failed: .lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:14:75: error: Type mismatch
+  baseToCurve_rational q
+has type
+  baseToCurve
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)
+        q) =
+    (algebraMap ℚ L) q
+but is expected to have type
+  baseToCurve
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring
+          (RatFunc.instAlgebraOfPolynomial CoeffField ℚ))
+        q) =
+    (algebraMap ℚ L) q
+.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:15:86: error: Type mismatch
+  curve_scalar_tower q
+has type
+  (algebraMap BaseField L)
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring baseRationalAlgebra)
+        q) =
+    (algebraMap ℚ L) q
+but is expected to have type
+  (algebraMap BaseField L)
+      ((@algebraMap ℚ BaseField Rat.commSemiring Field.toSemifield.toDivisionSemiring.toSemiring
+          (RatFunc.instAlgebraOfPolynomial CoeffField ℚ))
+        q) =
+    (algebraMap ℚ L) q
+.lake/skew-physical-trace-controls/controls-dx2e2mqe/positive-controls.lean:16:32: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  RatFunc.instAlgebraOfPolynomial CoeffField ℚ
+inferred
+  baseRationalAlgebra
+

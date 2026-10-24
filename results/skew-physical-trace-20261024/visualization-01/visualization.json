@@ -1,0 +1,30 @@
+{
+  "executor": "Pro root integration",
+  "created_utc": "2026-10-24T10:50:41.172721+00:00",
+  "inputs": {
+    "formal/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean": "ca3b3b127a7cbab5091b3fc52e356cf212e2e755caa5fa07bcea31acbb078c67",
+    "results/skew-physical-trace-20261024/lean-development/checker-03/validation.json": "26770567f5ca3aa99f3a5b8028e890a4586e5b9c2f4f490baa5f200e684fbe8b",
+    "scripts/visualize_skew_physical_trace.py": "13b82b92ceba1c69a7e0e12e3b02b0343ba947704a6db742e3a0aaee3f75dfa0"
+  },
+  "outputs": {
+    "physical-trace-bridge.png": "0016e728715fedcf70e00e1f5446dda60f9963ec6a5298aff2ce3c63f22aed5d",
+    "physical-trace-bridge.svg": "8c3d5988606aa733c7a7de3c436dadcba58bf18ae9d505f554e307640abc6463",
+    "generator.py": "13b82b92ceba1c69a7e0e12e3b02b0343ba947704a6db742e3a0aaee3f75dfa0"
+  },
+  "required_declarations": [
+    "physical_base_independent",
+    "baseToCurve_injective",
+    "curve_scalar_tower",
+    "physicalEval_sourceScalar",
+    "physicalSheet_root",
+    "curveBeta_tmul",
+    "trace_curve_baseChange",
+    "trace_curve_sum",
+    "trace_curve_sourceScalar",
+    "physical_evaluation_not_trace"
+  ],
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "matplotlib_version": "3.10.8",
+  "elapsed_seconds": 0.4632912019997093,
+  "scope": "Actual coefficient/tensor maps and scalar traces; unproved physical-form comparison explicitly delimited; visualization is not proof evidence"
+}

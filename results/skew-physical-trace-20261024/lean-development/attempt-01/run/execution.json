@@ -1,0 +1,15 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "lake",
+    "build",
+    "HodgeLab.OneReflectionSkew.PhysicalTraceBridge"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-trace-bridge/formal",
+  "started_utc": "2026-10-24T10:31:52.719048+00:00",
+  "elapsed_seconds": 5.550085505999959,
+  "timeout_seconds": 120,
+  "exit_code": 1,
+  "stdout_sha256": "b06f6e50ac1a9c78a3913026964bc42fcb22bb3431cb3440ef49ffb3b9d54fd3",
+  "stderr_sha256": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+}

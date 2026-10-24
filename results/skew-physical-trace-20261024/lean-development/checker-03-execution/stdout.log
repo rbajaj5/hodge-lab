@@ -1,0 +1,18 @@
+Fresh receipts: /workspace/scratch/b8974c152662/hodge-lab-trace-bridge/results/skew-physical-trace-20261024/lean-development/checker-03
+{"label": "version", "exit_code": 0, "seconds": 0.4647301750001134}
+{"label": "mathlib-head", "exit_code": 0, "seconds": 0.0020221369995852}
+{"label": "build", "exit_code": 0, "seconds": 1.3237303759997303}
+{"label": "axioms", "exit_code": 0, "seconds": 2.408160682000016}
+{"label": "kernel-replay", "exit_code": 0, "seconds": 2.7511629939999693}
+{"label": "positive-controls", "exit_code": 0, "seconds": 4.1638437390001855}
+{"label": "collapsed-base-parameter-rejected", "exit_code": 1, "seconds": 2.3520513739995295}
+{"label": "coefficient-image-zero-rejected", "exit_code": 1, "seconds": 2.310827996999251}
+{"label": "evaluation-as-trace-rejected", "exit_code": 1, "seconds": 2.364263039999969}
+{"label": "scalar-zero-on-sheet-rejected", "exit_code": 1, "seconds": 2.582040162999874}
+{"label": "scalar-sign-mutation-rejected", "exit_code": 1, "seconds": 2.411554600999807}
+{"label": "dropped-twelfth-rejected", "exit_code": 1, "seconds": 2.5200931520002996}
+{"label": "normalized-trace-rejected", "exit_code": 1, "seconds": 2.9802869340001052}
+{"label": "dropped-tensor-scalar-rejected", "exit_code": 1, "seconds": 2.5733256009998513}
+{"label": "single-sheet-constant-trace-rejected", "exit_code": 1, "seconds": 2.3682383160003155}
+{"label": "forbidden-relation-inversion-rejected", "exit_code": 1, "seconds": 2.7596694410003693}
+PASS: 98 declarations, one new-module replay, 39 positive, 10 intended failures

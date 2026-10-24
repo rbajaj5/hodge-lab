@@ -39,6 +39,27 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: physical coefficient field and all-sheet trace bridge
+
+[![Actual physical coefficient and finite-algebra trace maps](results/skew-physical-trace-20261024/visualization-01/physical-trace-bridge.png)](notes/skew-physical-trace-bridge.md)
+
+Lean proves that the actual physical chart coordinates a,v,t are independent
+and constructs an injective map from the existing K=Q(v)(t)(a) into the
+physical curve field, preserving its rational scalars. The quotient
+generator maps to physical r, and `sourceScalar` maps to the exact nonzero
+factor **r¹¹/(12 f_r)**. The full splitting field embeds compatibly, all
+eighteen roots remain distinct, and an actual algebra isomorphism compares
+**Curve tensor_K E** with **Curve¹⁸**. Arbitrary-element trace base change
+and all-sheet summation are proved; the scalar source has trace zero.
+
+Single-root evaluation remains distinct from the degree-18 trace. The
+remaining physical-form comparison needs compatible sheet maps on an
+allowed regular domain; scalar trace zero does not prove exactness of the
+full two-row source. Four-form nonvanishing, whole-function-field identity,
+cohomology/GM, primitive and certificate remain outside this result.
+
+[Proof, commands and limits](notes/skew-physical-trace-bridge.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalTraceBridge.lean) · [Focused receipt](results/skew-physical-trace-20261024/lean-development/checker-03/validation.json)
+
 ### One-reflection-skew: physical curve and compatible Kähler pullback
 
 [![Independent physical curve realization and two allowed pullbacks](results/skew-physical-curve-20261024/visualization-02/physical-curve-pullback.png)](notes/skew-physical-curve-realization.md)
@@ -53,8 +74,9 @@ residual chart assumptions.
 
 The whole ambient fraction field cannot specialize to G=0; its G⁻¹ pole
 term is outside this allowed domain. The realization is not identified with
-the whole hypersurface function field. Comparison with the earlier trace
-field and a residue/cohomology source-class realization remain separate.
+the whole hypersurface function field. The coefficient/finite-algebra
+comparison with the earlier trace field is now proved above; an all-sheet
+physical-form and residue/cohomology source-class realization remain separate.
 No primitive, global clearing, certificate or solve is claimed.
 
 [Proof, commands and limits](notes/skew-physical-curve-realization.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean) · [Focused receipt](results/skew-physical-curve-20261024/lean-development/checker-02/validation.json)

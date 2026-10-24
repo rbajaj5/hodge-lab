@@ -1,0 +1,24 @@
+{
+  "notebook_parent": "2bbbaa312642822c28483ba85cbbccf0af97d6dc",
+  "upstream_commit": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "source_pins_manifest": {
+    "path": "results/skew-physical-trace-20261024/source-pins.json",
+    "sha256": "95bc66f59b8969a48127e5089f2fcab9adc888c7fb77e82c8d0888bca3b18ad6"
+  },
+  "pinned_file_count": 31,
+  "reused_source_receipt": "results/skew-physical-curve-20261024/remote-ci-40084595344/focused-receipt/validation.json",
+  "mathematical_scope": {
+    "base": "Existing K=Q(v)(t)(a) injectively maps to existing Curve=AlgebraicClosure(Q(U,r,w,t)); exact a,v,t images and Q compatibility proved",
+    "quotient": "E=AdjoinRoot f, monic finite free rank18 algebra; no field or irreducibility assumption",
+    "evaluation": "Actual evaluation theta->r; derivative inverse and sourceScalar r^11/(12 f_r), nonzero on physical sheet",
+    "split": "Existing full splitting field embeds into Curve; all18 roots injective and exhaustive; physicalSheet matched by proof",
+    "tensor": "Curve tensor_K E, left Curve-algebra, finite free rank18, actual beta equivalence with Curve^18",
+    "trace": "Arbitrary-element base change, beta conjugacy and full18-sheet sums; scalar source trace0 distinct from its nonzero single-sheet image",
+    "unchanged_boundary": "Regular P[z^-1] maps from142 retained; no whole ambient fraction field specialization killing G",
+    "limits": [
+      "No quotient evaluation injectivity/irreducibility claim",
+      "No all-sheet physical differential-form/source-class identification",
+      "No four-form nonvanishing, minimal/whole hypersurface field, cohomology/GM, primitive, clearing, certificate or solve"
+    ]
+  }
+}

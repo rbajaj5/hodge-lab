@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "2026-10-24T10:38:20.877786+00:00",
+  "executor": "AI reviewer /root/curve_math_review",
+  "review_kind": "read-only API addendum",
+  "executions": {
+    "lean": 0,
+    "symbolic_mathematics": 0
+  },
+  "notes": [
+    "An initial reviewer caution about IntermediateField.isAlgebraic_adjoin_iff_top was corrected immediately after opening its exact signature: it is precisely the required field-adjoin to algebra-adjoin transfer.",
+    "Mathlib.RingTheory.Algebraic.IsLocalization does not exist; IsLocalization.isAlgebraic is in Mathlib.RingTheory.Algebraic.Basic.",
+    "Parent development attempt06 was read, not rerun; its failures are implementation/API-instance errors, not counterexamples."
+  ],
+  "sources": [
+    {
+      "path": "Mathlib/Algebra/Module/Rat.lean",
+      "sha256": "7090b3243059252f1e73657450ffd28d25e528f79cecbebbaf847809dc3f35d6"
+    },
+    {
+      "path": "Mathlib/Algebra/Algebra/Rat.lean",
+      "sha256": "b5bde480c8895dc1d4d5fa46cc1de1d58979e636f7da5dba8eb3e72ad4a4eaee"
+    },
+    {
+      "path": "Mathlib/Algebra/Algebra/Hom/Rat.lean",
+      "sha256": "95fd45686d90b66e9ba81bc7624c075da1288f042bc5efd3f530b1a833ab3f69"
+    },
+    {
+      "path": "Mathlib/Algebra/Algebra/Equiv.lean",
+      "sha256": "ee3938ce814a12e6c16e7460bd2a3e54209e7b6ef86054be23fcccd3e5d371cd"
+    },
+    {
+      "path": "Mathlib/FieldTheory/RatFunc/IntermediateField.lean",
+      "sha256": "4b4aa646af2b51a04b7fa1dc91ca0b7f016b290bf8a047c2cf5bbed21dff4460"
+    },
+    {
+      "path": "Mathlib/FieldTheory/IntermediateField/Adjoin/Defs.lean",
+      "sha256": "f97e4be1231fc5d7f695908e18905eb5440e3976091312d78643f3710f21df5f"
+    },
+    {
+      "path": "Mathlib/RingTheory/AlgebraicIndependent/AlgebraicClosure.lean",
+      "sha256": "3c6b5338dbf5c97d18c6b464aa4185e04d4782254ee8362f6b5b4e38a884ac35"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "status": "PASS_BASELINE_SOURCE_INSPECTION",
+  "executor": "Pro curve_evidence_review read-only AI reviewer",
+  "utc": "2026-10-24T10:31:04.363047+00:00",
+  "python": "3.12.14",
+  "parent": "2bbbaa312642822c28483ba85cbbccf0af97d6dc",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "network_executed_by_reviewer": false,
+  "lean_executed_by_reviewer": false,
+  "symbolic_mathematics_executed_by_reviewer": false,
+  "parent_ledger_bytes": 440921,
+  "parent_ledger_sha256": "1da42f452082925e8d6983c37276a062f336fb4e0a0ca02920403e377fa2ec9f",
+  "source_pins": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 4655,
+      "sha256": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "LEDGER.md",
+      "bytes": 440921,
+      "sha256": "1da42f452082925e8d6983c37276a062f336fb4e0a0ca02920403e377fa2ec9f",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 29022,
+      "sha256": "bec435bbb1d45cf5236be3991b1f3882b0107a10cd24eb6b95ff34655f467388",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "notes/skew-physical-curve-realization.md",
+      "bytes": 17374,
+      "sha256": "39935f9abed6410a4fe9adf3ddff5989fa33992ca22cf01f7aa22c5eb127ab3c",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "notes/skew-scalar-extension-trace.md",
+      "bytes": 16530,
+      "sha256": "b71bbc2ff211fb73ef1c0a984ebd058193e4838a6d9cce0e106b96ec9fa86301",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean",
+      "bytes": 17225,
+      "sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean",
+      "bytes": 19851,
+      "sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean",
+      "bytes": 4107,
+      "sha256": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean",
+      "bytes": 10503,
+      "sha256": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean",
+      "bytes": 9540,
+      "sha256": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean",
+      "bytes": 2995,
+      "sha256": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "results/skew-physical-curve-20261024/inputs/upstream/AGENTS.md",
+      "bytes": 5141,
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "results/skew-physical-curve-20261024/inputs/upstream/data/one-reflection-skew/instance.rec",
+      "bytes": 340,
+      "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "results/skew-physical-curve-20261024/remote-ci-40084595344/focused-receipt/validation.json",
+      "bytes": 34587,
+      "sha256": "8d33a63f9c7c802532f2b734172eaffcc6a46839f7ee112959b0d3498423de05",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "results/skew-physical-curve-20261024/remote-ci-40084595344/ci-receipt-review.json",
+      "bytes": 6309,
+      "sha256": "c321fe714a16f94165a2c4b0d6698b0facc84085aa6d32d42da4bd426cc13112",
+      "matches_parent_raw_bytes": true
+    },
+    {
+      "path": "results/one-reflection-skew-rank-correction/discussion-127.md",
+      "bytes": 37729,
+      "sha256": "08ffc143eb3deb1676261b47986090ec5cc4989d809e68f454b3f02842b92464",
+      "matches_parent_raw_bytes": true
+    }
+  ],
+  "protected_literal": {
+    "q": 1,
+    "A": "X0^3*Y0^3",
+    "variable_order": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "record_sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd"
+  },
+  "reused_remote_evidence": {
+    "run": 40084595344,
+    "scope": "Previous physical-curve unit only; this review does not query remote CI or validate new code"
+  },
+  "git_filter_notice": {
+    "path": "results/one-reflection-skew-rank-correction/discussion-127.md",
+    "raw_bytes_unchanged": true,
+    "crlf_count": 474,
+    "action": "Do not normalize or stage the historical file merely because Git clean filters report it dirty"
+  },
+  "scope_gates": [
+    "Prove transformed (aChart r w,vChart r w,t) independence; do not assume it",
+    "Construct exact Q(v)(t)(a) to Curve embedding with compatible Q-algebra and tower maps",
+    "Bind literal mapped f, evaluation at physical r, derivative and quotient inverse before source-scalar image",
+    "Single evaluation E to Curve is not asserted injective and does not compute algebra trace",
+    "Any trace claim must retain all18 roots/sheets and exact scalar orientation; no normalization or field-extension degree multiplier",
+    "Full two-row differential source, cohomology/exactness and primitive remain distinct from scalar trace",
+    "Preserve prior common P[z^-1] domain; no ambient FractionRing(P) map killing G",
+    "No irreducibility/minimal-function-field claim; four-form nonvanishing still separate"
+  ],
+  "elapsed_seconds": 0.0629305289999138
+}
