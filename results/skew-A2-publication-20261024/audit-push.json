@@ -1,0 +1,25 @@
+{
+  "status": "Audit pushed and read back before upstream mutation",
+  "utc": "2026-10-24T16:55:51.709276+00:00",
+  "parent": "44c5789efc08a51b788844951690f3ec8dd6c162",
+  "commit": "39bc47fa18ea9cb05dcfdb4a1d57e381f6cccd36",
+  "normal_push": true,
+  "checked_files": [
+    {
+      "path": "LEDGER.md",
+      "sha256": "5d23dd65ac76cb004a9a4a70d8e87de0008a0d3e97dfa992dff7b600684c21bf",
+      "bytes": 482050
+    },
+    {
+      "path": "results/skew-A2-publication-20261024/comment.md",
+      "sha256": "d08cad1eca0de2e73fa6e2c040f870b66b669da80e3d2146c182d1a7bd427a71",
+      "bytes": 1994
+    },
+    {
+      "path": "results/skew-A2-publication-20261024/prepublication-audit.json",
+      "sha256": "b2732c11502636619e2d86f40b437e14643ed2899fff89f97a0d21ae56753017",
+      "bytes": 5008
+    }
+  ],
+  "comment_sha256": "d08cad1eca0de2e73fa6e2c040f870b66b669da80e3d2146c182d1a7bd427a71"
+}

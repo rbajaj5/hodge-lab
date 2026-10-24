@@ -1,0 +1,16 @@
+{
+  "id": "DC_kwDOVLOOJc4BJHdj",
+  "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075",
+  "body": "**Full-current search update; no solve.** For the unchanged `one-reflection-skew` target, we tested all six scalar coefficients of three rank-two physical fluxes in\n\n$$\nB+B/A+B/A^2,\\qquad\nB=\\operatorname{span}_{\\mathbb Q}\\{r^m v^n t^k:-10\\le m\\le2,\\ 0\\le n,k\\le2\\},\n$$\n\nwhere $A(r,v)=r^3+r^{-3}+(rv-1)^6/r^{15}$ is the physical chart coefficient, distinct from the protected source $X_0^3Y_0^3$. Both compact source rows, all physical $r,v,t$ derivatives, the packet's $1/12$ normalization and mixed-sector cancellations are retained.\n\n**This declared finite family is excluded over $\\mathbb Q$.** The highest-pole condition restricts only the $A^{-2}$ numerator to the bounded tangent module; all lower-sector coefficients remain free. This leaves 1,698 necessary parameters from the original 2,106. A 1,699-square augmented minor has determinant **14098 modulo 32003** at regular sample points. Separate implementations reconstructed the decisive minor; the linked audit explains the characteristic-zero implication and records each execution's scope.\n\n[Proof details, reproducible checks, visualization and limits](https://github.com/rbajaj5/hodge-lab/blob/44c5789efc08a51b788844951690f3ec8dd6c162/notes/skew-A2-denominator-audit-20261024.md).\n\n**No full primitive, homogeneous certificate, Lean verification of this exclusion, or accepted solve is claimed.** Other numerator supports, pole divisors and pole orders, and general rational or fibre-dependent currents remain open.\n\nCredit **fqlx** for the [compact connection and source formulation](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830), **benediamond** for the [physical cover and preceding reductions](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985), and the hodge.computer contributors for the fixed problem and framework. Prepared for `rbajaj5` with ChatGPT Pro and Codex assistance; separate computational checks do not mean independent human review.\n",
+  "createdAt": "2026-10-24T16:56:21Z",
+  "updatedAt": "2026-10-24T16:56:21Z",
+  "author": {
+    "login": "rbajaj5"
+  },
+  "replyTo": null,
+  "discussion": {
+    "id": "D_kwDOVLOOJc4AqP2y",
+    "number": 127,
+    "url": "https://github.com/hodge-computer/sextics/discussions/127"
+  }
+}

@@ -435,7 +435,7 @@ Plotting and numerical experiments use [`requirements.txt`](requirements.txt); C
 
 The ledger distinguishes numerical observations, exact identities, bounded exclusions, formal proofs, and accepted upstream submissions. Author-reported findings and locally reproduced checks are recorded separately. AI assistance is part of the workflow; each audit states what was actually executed.
 
-The recorded upstream contribution tally is **29 discussion contributions, one closed maintenance PR, and zero accepted authored solves by rbajaj5**. Acknowledgment of a research direction does not transfer solve authorship.
+The recorded upstream contribution tally is **30 discussion contributions, one closed maintenance PR, and zero accepted authored solves by rbajaj5**. The latest publication is the [24 October full-current update in #127](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075). Acknowledgment of a research direction does not transfer solve authorship.
 
 Every upstream post, reply, or substantive edit requires a ledger audit before publication, followed by the actual outcome and permanent link. Routine technical updates stay in this notebook. Discussion 127 is included in the intended monitoring scope; that policy does not itself change an external scheduled monitor.
 

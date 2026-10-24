@@ -4,7 +4,9 @@ Contributions by **rbajaj5** to [hodge-computer/sextics](https://github.com/hodg
 
 Our intent is to understand the fixed problems, share reproducible results and unsuccessful approaches, credit prior mathematical work, and pursue solution credit through the project's verification process. This statement is recorded on **16 October 2026**; the entry below summarizes an earlier public post.
 
-**Current publication tally, through 21 October 2026 (EDT):** **29 discussion contributions**, one closed maintenance PR, and zero accepted authored solves. The two October 21 publications are entries **28 and 29** in [Posts](#posts) below; the Lean addendum edits entry 29 and does not add another contribution. Detailed publication receipts remain in checkpoints 112, 119 and 120. The earlier tally below is preserved as history.
+**Current publication tally, through 24 October 2026 (EDT):** **30 discussion contributions**, one closed maintenance PR, and zero accepted authored solves. The latest publication is [Post 30](#posts), the [bounded full-current update in #127](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075); checkpoints 150–151 record its prior audit and verified outcome. Earlier dated tallies below are preserved as history.
+
+**Historical publication tally, through 21 October 2026 (EDT):** **29 discussion contributions**, one closed maintenance PR, and zero accepted authored solves. The two October 21 publications are entries **28 and 29** in [Posts](#posts) below; the Lean addendum edits entry 29 and does not add another contribution. Detailed publication receipts remain in checkpoints 112, 119 and 120. The earlier tally below is preserved as history.
 
 **Historical publication tally, through 19 October 2026 (EDT):** 27 discussion contributions (originally twenty top-level comments and seven replies); 0 authored issues; 1 maintenance pull request (closed); 0 reviews or review comments; 0 merged authored upstream commits; 0 accepted solves. Commits to Hodge Lab and unpublished experiments are separate from this upstream tally. The maintainer consolidated several holdout updates on 17 October; this records publication history, not the current number of visible comments. See [the maintainer summary](https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085) and checkpoint 70 below. Receiving credit does not increase this tally.
 
@@ -129,6 +131,8 @@ flowchart LR
 28. **21 October 2026, 13:59 EDT / 17:59 UTC — [Moving-branch discussion #146: independent Weierstrass normalization and seed check](https://github.com/hodge-computer/sextics/discussions/146#discussioncomment-19103930).** Bounded exact reconstruction of covariant formulas, the source polynomial and finite-field seed calculations for the already accepted construction. The post does not claim a new solve, full physical transport or Lean/kernel replay; acceptance remains credited to `benediamond`'s PR #172 and the contributors identified in the post. The [pinned audit](https://github.com/rbajaj5/hodge-lab/blob/826ed4150c9b034f0bcd2e7874323e5d07136213/notes/moving-branch-weierstrass-audit.md) and [verified publication receipt](results/moving-branch-weierstrass-audit/publication-outcome.json) were already recorded in checkpoint 112.
 
 29. **21 October 2026, 19:35 EDT / 23:35 UTC — [One-reflection-skew discussion #127: three-coefficient obstruction and comparison of bounds](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234).** Reply under `fqlx`'s companion formulation: an exact certificate for denominator `a` and all four numerator components of total degree at most four, with no increased coverage over the companion screens claimed. Credit `fqlx` for the quotient, residue and companion formulation. The [pinned audit](https://github.com/rbajaj5/hodge-lab/blob/c3ab5214fcff79309ad1e7ae83b9e436afeb1d39/notes/skew-small-obstruction-audit.md) and [verified publication receipt](results/skew-small-obstruction/upstream-publication/publication-outcome.json) are in checkpoint 119. **Edited at 19:56 EDT / 23:56 UTC** to add the bounded Lean verification; [verified edit receipt](formal/results/skew-lean/upstream/outcome.json), checkpoint 120. This is one contribution with an addendum, not two. The 45-versus-504 operator-image comparison and unrestricted rational primitives remain outside the published check.
+
+30. **24 October 2026, 12:56 EDT / 16:56 UTC — [One-reflection-skew discussion #127: bounded A-squared full-current exclusion](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075).** One consolidated top-level update for all six scalar coefficients of three rank-two physical fluxes in `B+B/A+B/A^2`, with r exponents -10 through 2 and v,t degrees at most two. Only the highest-pole numerator is restricted; lower sectors and mixed cancellations remain available. Credits fqlx's compact connection/source formulation and benediamond's physical cover/reductions, and discloses ChatGPT Pro and Codex assistance. Links the [checked audit, reproducible figure and limits](https://github.com/rbajaj5/hodge-lab/blob/44c5789efc08a51b788844951690f3ec8dd6c162/notes/skew-A2-denominator-audit-20261024.md). The 1,994-byte body, rbajaj5 author, exact discussion and top-level status were read back and matched. No full primitive, general rational-current exclusion, new Lean verification or accepted solve is claimed. [Publication receipt](results/skew-A2-publication-20261024/publication-outcome.json); checkpoints 150–151.
 
 ## Pull requests
 
@@ -6414,3 +6418,39 @@ Posts 1–29 and tally 29 discussion contributions / one closed maintenance PR /
 zero accepted authored solves remain unchanged at this audit stage. The
 actual permalink and outcome will be recorded after successful readback.
 All parent ledger bytes are preserved before this append.
+
+### Checkpoint 151 — Verified publication and Posts entry 30, 24 October 2026 EDT
+
+Published the authorized [full-current update to discussion #127](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075)
+at 12:56:21 EDT / 16:56:21 UTC as rbajaj5. This is one new top-level
+contribution. The prior ledger audit was normally pushed and read back in
+commit 39bc47fa18ea9cb05dcfdb4a1d57e381f6cccd36 before the single posting mutation. A fresh discussion
+read immediately before posting confirmed the destination was unlocked and
+contained no identical or potential A-squared update from our account.
+
+A separate GraphQL readback verified the exact 1,994-byte body, author,
+discussion, permanent URL and absent reply parent. Body SHA256:
+d08cad1eca0de2e73fa6e2c040f870b66b669da80e3d2146c182d1a7bd427a71.
+The [publication receipt](results/skew-A2-publication-20261024/publication-outcome.json),
+[read-back body](results/skew-A2-publication-20261024/comment-readback.json)
+and [prior audit push receipt](results/skew-A2-publication-20261024/audit-push.json)
+keep prepared text, notebook publication and actual upstream publication
+distinct. No retry or duplicate posting occurred.
+
+The post credits fqlx's connection/source formulation and benediamond's
+physical cover/reductions. Its claim is only the checked finite-family
+exclusion over Q, retaining both source rows, all physical derivatives,
+normalization and mixed-sector cancellation. It links checkpoint 149's
+immutable evidence and visualization. The target remains unsolved: no
+primitive, unrestricted rational-current obstruction, new Lean verification,
+homogeneous certificate or accepted solve is claimed. No mathematics or
+historical validation was rerun for publication.
+
+Added entry 30 to the prominent Posts list and updated the current tally in
+this ledger and README to **30 discussion contributions, one closed
+maintenance PR, and zero accepted authored solves**. The earlier October 21
+current-tally paragraph is now explicitly labelled a historical snapshot;
+its content, all earlier Posts and every chronological checkpoint remain.
+Apart from the current-summary/index maintenance, this outcome is appended
+to the prior ledger. A reversible byte-level check reconstructs that entire
+prior ledger by removing only these documented edits and this append.
