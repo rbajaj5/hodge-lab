@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXACT_QQ_A3_SUM_FINITE_FAMILY_EXCLUSION",
+  "executor": "a3_denominator_checker AI worker",
+  "created_utc": "2026-10-24T17:03:42.101245+00:00",
+  "seconds": 38.73369647599975,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "script_sha256": "89392de4bea8251facba58449d62d90e3d521a1bb1f27da86aec357a0eee3e05",
+  "reconstruction_receipt_sha256": "68ba04f488d1e3e7aa4447c0b0b265bebba077c92ce5ad67cdb2611de8449b74",
+  "matrix_sha256": "81a5ac8ee1b82bf1e5149e06fe0389c67c6371a058b70f59a84dbfbe256de17b",
+  "matrix_shape": [
+    2460,
+    2401
+  ],
+  "prime": 32003,
+  "rank_coefficient": 2400,
+  "rank_augmented": 2401,
+  "independent_augmented_minor_det_mod_prime": 13752,
+  "are_first_rows_as_set": true,
+  "permutation_inversions": 4,
+  "first_rows_original_order_det_mod_prime": 13752,
+  "scope": "New mathematical Bareiss determinant on already independently reconstructed matrix. Hashes bind phases but are not additional mathematical reconstruction. Full2401 minor excludes2400 necessary parameters over QQ; original2808 family uses imported highest-pole/support theorem, including for homogeneous kernels. No lower tangency or earlier A2 projection assumed. No general rational-current exclusion or primitive."
+}

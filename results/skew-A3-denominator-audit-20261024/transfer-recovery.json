@@ -1,0 +1,27 @@
+{
+  "status": "PASS original ZIP recovered exactly from eight hash-bound binary slices",
+  "original_sha256": "68ad4cd8e28733d42629588179b4f5ed31d458354dfb6a951b1c6844484d22d0",
+  "part_sha256": [
+    "e6f5fb05fb3cffe35629b285ba6c77de6aae3700722a429784d7c4482deab1c7",
+    "105d147223a38b108c177b78fd4eded8543f9089a31eef46bb450c9517b2e44f",
+    "71985b64d48280dfdfbd346059e021b0c40c5cd02d55883aa741de9eec2b7d73",
+    "e1ae7b76df78bbc21709079b088ae7edee295c7fad80e6d445c65e2bfda8d2d4",
+    "19ad06821eaee623f2d604bd3995931d207a8146b5f40ec4f8f787a6635865f0",
+    "04caf967944eafe5ab4c1e1c7db8d2b623bf9f122fb377fdf683e91ab0f5d2de",
+    "60e81f3f60827dd15280f8e03ae915dd36efa477269d403dd86ce030693e2e14",
+    "7cc28e1db2ea88fb53ee0ec20b7826119ce1b4ef966408418699b456da5ebb58"
+  ],
+  "original_bytes": 14745256,
+  "review_sha256": "d8172d5d6360a4cfa057b2940e710eb70c4fbec27a2d62c05775f921d41c750f",
+  "download_failures": [
+    {
+      "route": "original ZIP click plus captured event",
+      "timeout_seconds": 45
+    },
+    {
+      "route": "original ZIP keyboard plus captured event",
+      "timeout_seconds": 30
+    }
+  ],
+  "repair": "New small review ZIP and original binary slices downloaded successfully; no math rerun."
+}

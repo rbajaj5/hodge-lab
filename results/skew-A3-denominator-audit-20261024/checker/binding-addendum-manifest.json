@@ -1,0 +1,35 @@
+{
+  "status": "PASS_IO_BINDING_ONLY",
+  "frozen_utc": "2026-10-24T17:14:17Z",
+  "original_freeze_manifest_sha256": "21084a4caa4bf5ce1382e196e4c4ddac795111df01dcf51721c04695f6b09b2c",
+  "original_frozen_files_verified_unchanged": 15,
+  "scope": "All 5764801 entries in first2401 delivered rows matched; no mathematical rerun",
+  "original_binder_sha256": "a34d8206d9fd74d546317d09bd7d76acb30599a68e553f71f41508e3c3b0b8ec",
+  "files": [
+    {
+      "path": "BINDING-ADDENDUM.md",
+      "bytes": 3011,
+      "sha256": "672dcf47ed9ac664e3db20deb41f7a37a1dbf0c88266cd6d168cfa1bcd7779d9"
+    },
+    {
+      "path": "packet-binding-receipt.json",
+      "bytes": 1044,
+      "sha256": "01ede3589c15b871ea06fe597578ec76c521836b6fc82be67d5c119b1f2edf26"
+    },
+    {
+      "path": "packet-binding.json",
+      "bytes": 1939,
+      "sha256": "f35f9cab38ac35305302d8b92ca7a12bb0973f5cade155da57d39c82f9a62966"
+    },
+    {
+      "path": "packet-binding.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "packet-binding.stdout.log",
+      "bytes": 158,
+      "sha256": "8a9a256bb2bfbb4f3be5ed88d612e81932efcfea0c4067009871ba3ddea27e7f"
+    }
+  ]
+}

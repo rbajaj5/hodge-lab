@@ -1,0 +1,76 @@
+{
+  "frozen_utc": "2026-10-24T17:04:38.012352+00:00",
+  "executor": "a3_denominator_checker AI worker",
+  "mathematical_processes": 2,
+  "additional_math_after_pass": false,
+  "files": {
+    "REVIEW.md": {
+      "bytes": 6318,
+      "sha256": "4f5be19179c203d10ed8a3b581baea647ed3773867e8eb13a6025115b5702c24"
+    },
+    "determinant-01/execution.json": {
+      "bytes": 1534,
+      "sha256": "687b1ae97428fd52e28983611907d052fe153783bf74debc7b9a26b5a6b28e9f"
+    },
+    "determinant-01/result/minor-row-order.json": {
+      "bytes": 23044,
+      "sha256": "cd57711acf8e846bcb50c8123bad12aaaf08c126b0c9945ac9889815ba0af82b"
+    },
+    "determinant-01/result/validation.json": {
+      "bytes": 1280,
+      "sha256": "5b0a75f554ef0e265c63fe86b24429b1c6c610ff3ccbac3919a46ff72198548f"
+    },
+    "determinant-01/runner.py": {
+      "bytes": 1502,
+      "sha256": "ccf6f0bb063e2203a96aaf26fe653528a471261b351fd2b51fac83b440a76a65"
+    },
+    "determinant-01/source.py": {
+      "bytes": 3721,
+      "sha256": "89392de4bea8251facba58449d62d90e3d521a1bb1f27da86aec357a0eee3e05"
+    },
+    "determinant-01/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "determinant-01/stdout.log": {
+      "bytes": 1280,
+      "sha256": "5b0a75f554ef0e265c63fe86b24429b1c6c610ff3ccbac3919a46ff72198548f"
+    },
+    "determinant_A3.py": {
+      "bytes": 3721,
+      "sha256": "89392de4bea8251facba58449d62d90e3d521a1bb1f27da86aec357a0eee3e05"
+    },
+    "reconstruct_A3.py": {
+      "bytes": 8282,
+      "sha256": "ff43e76080909a283ec7f7b08579f78acd04b65aead3c228ac0330011f95d1fa"
+    },
+    "reconstruction-01/execution.json": {
+      "bytes": 1358,
+      "sha256": "6e313bcc31f398cd90a6e3ebd78912274622a7781c0e78b00512d7ebe15f3965"
+    },
+    "reconstruction-01/result/validation.json": {
+      "bytes": 1765,
+      "sha256": "68ba04f488d1e3e7aa4447c0b0b265bebba077c92ce5ad67cdb2611de8449b74"
+    },
+    "reconstruction-01/runner.py": {
+      "bytes": 1502,
+      "sha256": "ccf6f0bb063e2203a96aaf26fe653528a471261b351fd2b51fac83b440a76a65"
+    },
+    "reconstruction-01/source.py": {
+      "bytes": 8282,
+      "sha256": "ff43e76080909a283ec7f7b08579f78acd04b65aead3c228ac0330011f95d1fa"
+    },
+    "reconstruction-01/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reconstruction-01/stdout.log": {
+      "bytes": 1834,
+      "sha256": "f3776d2db44636b56c8248c8dbe9250aacdce73514fc87142ea4b25ec789f570"
+    },
+    "run_bounded.py": {
+      "bytes": 1502,
+      "sha256": "ccf6f0bb063e2203a96aaf26fe653528a471261b351fd2b51fac83b440a76a65"
+    }
+  }
+}

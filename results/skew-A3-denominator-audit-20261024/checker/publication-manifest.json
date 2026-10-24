@@ -1,0 +1,90 @@
+{
+  "status": "independent minor checked; delivered Pro CSV comparison NOT PERFORMED",
+  "matrix_optional_omission": "Regenerate via checked reconstruction script if omitted; do not claim omitted array was published.",
+  "files": [
+    {
+      "path": "A3-minor-receipt.json",
+      "bytes": 1594,
+      "sha256": "3eda49bd584221e4f574f4b8711f1ee9ca3f96a4beb27092422121056b96c39c",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "A3-minor.json",
+      "bytes": 4088,
+      "sha256": "6c2ed5fc2d425e6c3121ffd481d21b742e335fad9c29754f7bb36f497fa57cfc",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "A3-minor.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "A3-minor.stdout.log",
+      "bytes": 711,
+      "sha256": "1d62d9aebeec852e8db7d20afce39cf6bbd3917f6b89f721ac01e706f103dc4c",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "audit_A3_regenerated_minor.py",
+      "bytes": 13532,
+      "sha256": "6a67d1eb51588910446e00de480fc5e170d13b51aaa5f94316f1268113a6acbc",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "bind_delivered_packet.py",
+      "bytes": 5801,
+      "sha256": "a34d8206d9fd74d546317d09bd7d76acb30599a68e553f71f41508e3c3b0b8ec",
+      "role": "prepared unexecuted IO-only binder"
+    },
+    {
+      "path": "check_order3_controls.py",
+      "bytes": 5555,
+      "sha256": "998e485e82495c4f780b755bad570743f179ef75ff67edff1bb49bf3c29c9204",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "order3-controls-receipt.json",
+      "bytes": 792,
+      "sha256": "d291dee761c3bd65809d4f71fd10b274287134218af7a85f759c6de24c8121bf",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "order3-controls.json",
+      "bytes": 2302,
+      "sha256": "c0162a85b164906f02f16ef9d8091f320757192337141eb073ea2d0c89d93ca6",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "order3-controls.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "order3-controls.stdout.log",
+      "bytes": 238,
+      "sha256": "56066a52781751f106276a49242d4822e5f98bbde457fad1fb2b6c056154eb8a",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10867,
+      "sha256": "a3dc050d44fe7ad16ede96854e26cfcf876d7ea0449b0d10df87fd407b9b545a",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "regenerated-inputs.json",
+      "bytes": 398715,
+      "sha256": "5d895b4f58fd3293068e19b7b9a27a0411ea57d4d42d54d5e12c24e605a3f51a",
+      "role": "checked script, report, raw stream, receipt, or README"
+    },
+    {
+      "path": "regenerated-minor.npy",
+      "bytes": 11529730,
+      "sha256": "4ac42e04498fa932c89b32a8e8b9943ae792ce6582a43b39dc5853f604e40298",
+      "role": "independently generated local uint16 matrix; include while author CSV pending or explicitly mark publication omission"
+    }
+  ]
+}

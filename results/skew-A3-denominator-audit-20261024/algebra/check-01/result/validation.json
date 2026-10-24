@@ -1,0 +1,51 @@
+{
+  "status": "PASS_MINIMAL_A3_HIGHEST_POLE_AND_FULL_SCALED_FORMULA",
+  "utc": "2026-10-24T16:59:25.795254+00:00",
+  "seconds": 0.13999999999941792,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "b9ce3996df3d340e17039d557fe346071f7295fd0b597987b4b4b25182af33a1",
+  "prior_validation_sha256": "1d45f2e5e254c7b6c8aa24e3aeee106a5756c5a0f9407cbb9d426ef2f289367c",
+  "prior_injection_sha256": "047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b",
+  "checks": [
+    "new highest-pole shifted residue determinant",
+    "new tau3 coefficient",
+    "power-three quotient rule",
+    "complete scaled four-sector product rule",
+    "replace only the top tangent operator",
+    "coupled next-pole normal target",
+    "highest-pole injection preserves all 2106 lower coefficients"
+  ],
+  "mutations": [
+    {
+      "name": "wrong quotient factor2 instead of3",
+      "nonzero_tau_difference": "3*r**7 - 3*r"
+    },
+    {
+      "name": "omit next-pole off-diagonal row coupling",
+      "witness": "-1/28"
+    }
+  ],
+  "det_R_minus_3I": "10",
+  "tau3": "r**7 + 12*r",
+  "ell": "3*r*(r**6 - 1)",
+  "top_operator": "W3=[T_r*partial_r+T_v*partial_v+(r^7+12r)*I+ell*A*M_a+t*T_v*M_b]*h+(partial_t+N_t)*k",
+  "full_scaled_equation": "A^3*Div_N(P0)+A^2*Div_N(P1)-A*Q1+A*Div_N(P2)-2*Q2+W3=A^3*S",
+  "normal_definition": "Qj=A_r*Pjr+A_v*Pjv",
+  "next_pole_condition": "(R_a-2I)*Q2+W3|A=0=0",
+  "next_pole_normal_target": [
+    "W3_0/2-c*W3_1/(28*b)",
+    "3*W3_1/7"
+  ],
+  "dimensions": {
+    "pure_original": 702,
+    "pure_necessary": 294,
+    "joint_original": 2808,
+    "joint_necessary": 2400,
+    "unrestricted_lower": 2106
+  },
+  "injection_sha256": "2c409fee5e52a11e3b8a1449069e5c238c98d8b6a4ef1cdf3325b4a4b412881c",
+  "domain": "Characteristic zero, physical open r*A*Delta!=0. Pole comparisons use the generic prime smooth A=0 boundary away from b*Delta=0; completed proof and regularity of full source are imported, not rerun.",
+  "scope": "Highest-pole only. All lower P0/P1/P2 remain unrestricted. No completed A^-2 secondary restriction is applied to P2 or P3. No search, solution, exact kernel or characteristic-zero rank upper bound."
+}

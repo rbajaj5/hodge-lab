@@ -1,0 +1,31 @@
+{
+  "status": "PASS_IO_BINDING_ONLY",
+  "script_sha256": "a34d8206d9fd74d546317d09bd7d76acb30599a68e553f71f41508e3c3b0b8ec",
+  "delivered_matrix_file_sha256": "81a5ac8ee1b82bf1e5149e06fe0389c67c6371a058b70f59a84dbfbe256de17b",
+  "delivered_matrix_encoding": "uncompressed UTF-8 CSV",
+  "delivered_uncompressed_matrix_csv_sha256": "81a5ac8ee1b82bf1e5149e06fe0389c67c6371a058b70f59a84dbfbe256de17b",
+  "delivered_inputs_sha256": "ffbb8171c6480c39960a60bb63e9d974fa4924999e8e536635061f1a512cec8a",
+  "frozen_minor_sha256": "4ac42e04498fa932c89b32a8e8b9943ae792ce6582a43b39dc5853f604e40298",
+  "frozen_inputs_sha256": "5d895b4f58fd3293068e19b7b9a27a0411ea57d4d42d54d5e12c24e605a3f51a",
+  "frozen_mathematical_report_sha256": "6c2ed5fc2d425e6c3121ffd481d21b742e335fad9c29754f7bb36f497fa57cfc",
+  "prime": 32003,
+  "seed": 2026102458,
+  "basis_entries_compared": 2400,
+  "sample_domain_records_compared": 1201,
+  "matrix_entries_compared": 5764801,
+  "delivered_matrix_shape": [
+    2460,
+    2401
+  ],
+  "compared_minor_shape": [
+    2401,
+    2401
+  ],
+  "rows_not_compared": 59,
+  "sample_domain_records_not_compared": 29,
+  "source_binding": "The frozen independently generated report pins connection SHA a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d. This binding does not evaluate the source again.",
+  "scope": "Exact I/O equality and cryptographic file binding only. No differentiation, matrix reconstruction, elimination, determinant, or exploratory search rerun. This local check covers2401 rows; no claim to have independently reconstructed the other59 rows.",
+  "publication_note": "The frozen local regenerated-minor.npy may be omitted from the published payload to avoid duplicate matrix storage. The independent reconstruction script regenerates it; this report records its exact bytes hash.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6"
+}

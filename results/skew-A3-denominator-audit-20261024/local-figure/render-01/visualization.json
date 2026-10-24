@@ -1,0 +1,40 @@
+{
+  "status": "RENDERED_FROM_FROZEN_RECEIPTS_NO_MATH_RECOMPUTATION",
+  "utc": "2026-10-24T17:12:24.604514+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "work/A3-denominator-20261024/local-figure/render_receipts.py",
+    "--algebra",
+    "work/A3-denominator-20261024/algebra/check-01/result/validation.json",
+    "--checker",
+    "work/A3-denominator-20261024/checker/A3-minor.json",
+    "--output",
+    "work/A3-denominator-20261024/local-figure/render-01"
+  ],
+  "elapsed_seconds": 0.5779999999940628,
+  "matplotlib": "3.11.1",
+  "generator_sha256": "e288ed1742b8c12b29c7ccd4049f3c4e86f9f367da24600ef788b9e3db0df991",
+  "inputs": [
+    {
+      "path": "work\\A3-denominator-20261024\\algebra\\check-01\\result\\validation.json",
+      "sha256": "66dc9a4b5ee88a101fcf33365845a151472e81c4793f30c506ea9b0c9586e641"
+    },
+    {
+      "path": "work\\A3-denominator-20261024\\checker\\A3-minor.json",
+      "sha256": "6c2ed5fc2d425e6c3121ffd481d21b742e335fad9c29754f7bb36f497fa57cfc"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "A3-receipt-summary.svg",
+      "sha256": "a4727800f0a4c54ef4b71659cbc11532b41e44623a11690cff3c30fe6cb21efd",
+      "bytes": 14838
+    },
+    {
+      "path": "A3-receipt-summary.png",
+      "sha256": "62c36cea7daf9dcc179c4c1f13da98a42d1f453d1ec8544f1b0fb3f05644b969",
+      "bytes": 256479
+    }
+  ],
+  "scope": "Presentation-only fallback. Independent checker receipt is used; delivered Pro CSV equality was not performed in that receipt. No mathematical replay or new inference from visual size."
+}

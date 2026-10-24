@@ -1,0 +1,13 @@
+{
+  "scope": "Coordinator integration only; no mathematical claim or computation changed",
+  "repairs": [
+    {
+      "issue": "Helper renaming changed a status-label string from SHA256 to SHA356",
+      "action": "Corrected the label before publication. Actual sha256 computations, digests and original payload bytes were unaffected."
+    },
+    {
+      "issue": "Staged whitespace check exposed that an optional UI transcript selector captured the previous A-squared response",
+      "action": "Omitted the optional transcript from publication; local work copy retained for diagnosis. The exact A-cubed Pro packet, receipts, matrix and source pins remain separately verified."
+    }
+  ]
+}

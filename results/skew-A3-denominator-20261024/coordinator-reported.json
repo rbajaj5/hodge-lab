@@ -1,0 +1,24 @@
+{
+  "provenance": "User relayed coordinator-side results at17:04UTC; not executed by this worker, and associated local scripts/reports are not copied here",
+  "local_algebra": {
+    "reported_exact_checks": 7,
+    "reported_controls": 2,
+    "reported_seconds": 2.109,
+    "scope": "det(Ra-3I)=10,tau3=r7+12r,full scaled coupling; imported top/support reasoning"
+  },
+  "local_checker": {
+    "reported_implementation": "python-flint0.9.0 nmod_mat.det",
+    "reported_entries": 5764801,
+    "reported_admissible_points": 1201,
+    "reported_first_rows": 2401,
+    "reported_determinant": 13752,
+    "prime": 32003,
+    "reported_process_seconds": 4.453,
+    "reported_controls": 3,
+    "reported_script_sha256": "6a67d1eb51588910446e00de480fc5e170d13b51aaa5f94316f1268113a6acbc",
+    "reported_report_sha256": "6c2ed5fc2d425e6c3121ffd481d21b742e335fad9c29754f7bb36f497fa57cfc",
+    "regeneration_preceded_author_result_and_csv_delivery": true,
+    "delivered_csv_io_binding": "Pending coordinator receipt; not claimed here"
+  },
+  "publication": "Previous A\u00b2 work published; no A\u00b3 publication by this worker; coordinator integration remains separate"
+}

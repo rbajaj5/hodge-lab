@@ -1,0 +1,39 @@
+{
+  "status": "PASS: minimal order3 identities only; no matrix/exclusion/primitive claim",
+  "script_sha256": "998e485e82495c4f780b755bad570743f179ef75ff67edff1bb49bf3c29c9204",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "repository_pin_observed_before_execution": "2dff6afddab993a216ba3f262197ae69aeb9143a",
+  "reciprocal_identities": 3,
+  "negative_controls": [
+    {
+      "coordinate": "r",
+      "correct": "1/9",
+      "mutant": "2/27",
+      "mutation": "use pole coefficient2 instead of3"
+    },
+    {
+      "coordinate": "v",
+      "correct": "-2/9",
+      "mutant": "-4/27",
+      "mutation": "use pole coefficient2 instead of3"
+    }
+  ],
+  "det_R_minus_3I": "10",
+  "tau3": "r**7 + 12*r",
+  "highest_pole": "The A^-4 coefficient is (R-3I)*(A_r P3_r+A_v P3_v), forcing only the highest-pole numerator P3 tangent modulo A.",
+  "reduced_operator": "A^-3*[T_r h3_r+T_v h3_v+(r^7+12r)h3+q A M_a h3+t T_v M_b h3+(partial_t+N_t)k3], q=3r(r^6-1)",
+  "mixed_next_pole": "H3+(R-2I)W2=0 on A=0; W2 is the normal flux of the unrestricted lower P2 numerator. The prior A^2 restrictions do not transfer to P2 in this larger family.",
+  "formal_coupling_control": "H3=(2,0),W2=(1,0) satisfy the next-pole equation with W2 nonzero. Formal local coefficient demonstration only, not a global bounded current.",
+  "necessary_counts": {
+    "pure_V_over_A3": 294,
+    "joint_original": 2808,
+    "joint_top_only": 2400
+  },
+  "basis_scope": "V has -10<=m<=2 and0<=n,k<=2. Highest h3 has -10<=m<=-6,0<=n<=1,0<=k<=2 in both fibre components; k3 has full V. All three lower sectors P2,P1,P0 retain702 entries each.",
+  "source": "r^-4 M_b e0/12 with connection(A_r M_a,A_v M_a+t M_b,N_t), all physical directions and both rows retained",
+  "reused_evidence": "Pinned source/divisor/tangent-module/support theorem is reused, not rerun. Generic A=0,r!=0,Delta!=0 locus remains the same.",
+  "scope": "No exploratory matrix, rank assumption, kernel claim, finite-family exclusion, target solve, or Lean result. Wait for a fixed author specification.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0"
+}

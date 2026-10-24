@@ -6454,3 +6454,101 @@ its content, all earlier Posts and every chronological checkpoint remain.
 Apart from the current-summary/index maintenance, this outcome is appended
 to the prior ledger. A reversible byte-level check reconstructs that entire
 prior ledger by removing only these documented edits and this append.
+
+### Checkpoint 152 — Full-current A-cubed family excluded within bounds, 24 October 2026 EDT
+
+The user requested an actual Goal, reuse of the existing Pro chat and a
+bounded A(r,v)^3-denominator search with Lean benched. The Goal began at
+16:58:06 UTC. The coordinator stopped mathematics at 17:05:14 UTC, after
+7 minutes 8 seconds; integration has a 17:20:14 UTC deadline. Limits were
+45 minutes of research, 15 minutes for integration, 60 seconds per
+mathematical process and 45 seconds per network operation.
+
+The pinned notebook parent is 2dff6afddab993a216ba3f262197ae69aeb9143a;
+the freshly fetched upstream head is 27f4bb9ad8757e5841f884d9d30124a3c97a847d.
+The literal connection SHA256 remains
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Completed source/divisor/tangent/support arguments, earlier searches and
+formal results were reused with their original scope, not rerun.
+
+The [integrated audit](notes/skew-A3-denominator-audit-20261024.md) fixes
+B=span_Q{r^m v^n t^k: -10<=m<=2, 0<=n,k<=2}. Pro explicitly enlarged the
+requested pure B/A^3 family to **(B+B/A+B/A^2+B/A^3)^6**, preserving both
+compact rows, all three physical derivatives, full t connection and the
+positive packet source r^-4 M_b e0/12. Here A is the chart coefficient;
+the protected source remains X_0^3 Y_0^3 with q=1.
+
+The new highest-pole determinant det(R_a-3I)=10 restricts only P3 to the
+reused tangent module. Its new scalar term is tau3=r^7+12r. The complete
+A-cubed-scaled equation retains every lower-sector cancellation. All
+2,106 coefficients of P2,P1,P0 remain free; no prior secondary A-squared
+restriction is applied to them. Thus the original 2,808-parameter family
+has a necessary 2,400-parameter family.
+
+At prime 32003 and fixed seed 2026102458, the first 2,401 augmented rows
+have determinant **13752**, nonzero. Unit input denominators make this a
+nonzero rational minor, while the coefficient matrix has only 2,400 columns.
+This proves exclusion over Q of the declared original sum and its pure
+B/A^3 subfamily. It handles the homogeneous-kernel concern and does not
+require unknown rational coefficients themselves to reduce modulo the prime.
+
+Pro's lead run took 31.73 seconds. Its separate checker reconstructed all
+5,906,460 entries and 1,230 domain records in 7.59 seconds, then computed
+the same determinant by modular Bareiss in 38.94 seconds, retaining 12
+mutation controls. The separate local checker independently rebuilt all
+5,764,801 entries of the decisive minor at 1,201 points before receiving
+Pro's result; exact FLINT returned 13752 in a 4.453-second process, with
+three new quotient/order controls. Local algebra added seven exact checks
+and two controls in 2.109 seconds; separate reciprocal/residue checks kept
+their own count and 8.359-second receipt. These are different executions,
+not pooled counts or independent human reviews.
+
+The [original Pro note](notes/skew-A3-denominator-20261024.md),
+[source, matrix, scripts and receipts](results/skew-A3-denominator-20261024/)
+and [local reproduction evidence](results/skew-A3-denominator-audit-20261024/)
+are preserved. The later CSV equality and archive hashes bind delivered
+artifacts to executed evidence; they are not new mathematical replays.
+The [reproducible inspected figure](results/skew-A3-denominator-20261024/figure-01/result/A3-denominator-certificate.png)
+shows original versus necessary parameter counts and the exact minor.
+A local fallback figure was prepared from frozen receipts during transfer
+trouble and retained; it adds no mathematical check. Two original-ZIP
+download attempts timed out at 45 and 30 seconds. A small review bundle and
+eight binary slices then downloaded successfully. All part hashes and the
+14,745,256-byte reassembled original matched ZIP SHA256
+68ad4cd8e28733d42629588179b4f5ed31d458354dfb6a951b1c6844484d22d0.
+All 46 original Pro payload files are preserved unchanged. The delivered
+matrix, basis and first 1,201 sample records matched the local reconstruction
+in a separate 0.735-second IO-only comparison; this is not another math run.
+The initial local pending-delivery freeze is preserved with a later binding
+addendum. An archive-status label typo was corrected before publication;
+the underlying hashes and payload bytes were unaffected.
+
+Pro used the cached fc4f38a checkout with fresh current-parent connector
+reads and matching source bytes, without claiming a complete newer checkout.
+The coordinator checked those source pins against the actual integration
+parent. No previously failed Git route was retried. No mathematical process
+failed or timed out in this batch.
+
+No primitive was found. This unsuccessful current family is exactly
+excluded within its stated bounds; no process timeout is promoted to a
+negative theorem. Other supports, further poles and arbitrary rational or
+fibre-dependent currents remain outside the result. No full-source
+exactness, fibre-exact lift, global clearing, homogeneous certificate,
+new Lean build or accepted solve is claimed. The changed condition is the
+failure of the third A-pole order with all bounded lower sectors retained.
+No further search or refinement was started after the decisive result.
+
+Credit fqlx for the compact connection and source formulation, benediamond
+for the physical cover and prior reductions, and Benjamin E. Diamond and
+hodge.computer contributors for the fixed problem and framework. This is
+AI-assisted work for Ravi Bajaj, with distinct constructive and checker
+roles. The team board records the structural handoff consumed by Pro and
+Pro's fixed specification consumed by the local checker.
+
+All 486,011 parent ledger bytes remain unchanged before this append.
+No new upstream post, reply, edit or PR is part of this batch. Posts 1–30
+remain intact; the latest actual post is still
+[#127 comment 19167075](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075),
+recorded in checkpoint 151. The tally remains **30 discussion contributions,
+one closed maintenance PR and zero accepted authored solves**. Notebook
+publication and exact remote readback are verified separately.

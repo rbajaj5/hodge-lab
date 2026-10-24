@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T17:00:04.712168+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "work/A3-denominator-20261024/algebra/freeze_artifacts.py"
+  ],
+  "checks": {
+    "successful_execution": true,
+    "bounded_execution": true,
+    "checker_snapshot_matches_execution": true,
+    "checker_snapshot_matches_validation": true,
+    "final_checker_matches_snapshot": true,
+    "runner_snapshot_matches_execution": true,
+    "final_runner_matches_snapshot": true,
+    "injection_matches_validation": true,
+    "pinned_connection_recorded": true,
+    "prior_injection_pin_recorded": true
+  },
+  "final_checker_sha256": "b9ce3996df3d340e17039d557fe346071f7295fd0b597987b4b4b25182af33a1",
+  "injection_sha256": "2c409fee5e52a11e3b8a1449069e5c238c98d8b6a4ef1cdf3325b4a4b412881c",
+  "execution_seconds": 2.1089999999967404,
+  "exact_checks": 7,
+  "mutations": 2,
+  "scope": "Highest-pole only; no matrix search or added secondary constraints."
+}

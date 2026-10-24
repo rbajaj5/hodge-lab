@@ -46,6 +46,19 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the A-cubed family is also excluded
+
+The [new full-current test](notes/skew-A3-denominator-audit-20261024.md)
+allows all six components in `B+B/A+B/A²+B/A³`, with r exponents -10
+through 2 and v,t degrees at most 2. Only the highest sector is forced
+tangent; all 2,106 lower-sector coefficients remain free. The resulting
+2,400-parameter necessary family has a 2,401-square augmented minor with
+determinant **13752 modulo 32003**, independently reconstructed locally.
+This excludes the declared 2,808-parameter family over Q. No primitive was
+found; other supports, poles and general rational currents remain open.
+Lean is benched. This batch adds no upstream post.
+[Evidence, visualization, failed attempts and limits](notes/skew-A3-denominator-audit-20261024.md).
+
 ### One-reflection-skew: the A-squared family is also excluded
 
 The [new full-current test](notes/skew-A2-denominator-audit-20261024.md)

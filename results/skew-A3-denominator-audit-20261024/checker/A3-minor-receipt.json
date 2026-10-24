@@ -1,0 +1,26 @@
+{
+  "exit_code": 0,
+  "outer_timeout": false,
+  "child_watchdog_exit": false,
+  "wall_seconds": 4.453000000008615,
+  "child_limit_seconds": 60,
+  "internal_watchdog_seconds": 58,
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\A3-denominator-20261024\\checker\\audit_A3_regenerated_minor.py",
+    "--child",
+    "--connection",
+    "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+    "--prior-structure",
+    "work\\A-denominator-20261024\\checker\\structure-independent.json"
+  ],
+  "stream_encoding": "UTF-8, raw subprocess bytes without newline translation",
+  "script_sha256": "6a67d1eb51588910446e00de480fc5e170d13b51aaa5f94316f1268113a6acbc",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "stdout_sha256": "1d62d9aebeec852e8db7d20afce39cf6bbd3917f6b89f721ac01e706f103dc4c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "A3-minor.json_sha256": "6c2ed5fc2d425e6c3121ffd481d21b742e335fad9c29754f7bb36f497fa57cfc",
+  "regenerated-inputs.json_sha256": "5d895b4f58fd3293068e19b7b9a27a0411ea57d4d42d54d5e12c24e605a3f51a",
+  "regenerated-minor.npy_sha256": "4ac42e04498fa932c89b32a8e8b9943ae792ce6582a43b39dc5853f604e40298"
+}

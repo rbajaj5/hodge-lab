@@ -1,0 +1,52 @@
+{
+  "public_integration_parent": "2dff6afddab993a216ba3f262197ae69aeb9143a",
+  "public_parent_tree_from_connector": "6d2a644845dd85d3af0deaa10c53fca52768fa6d",
+  "actual_cached_checkout_parent": "fc4f38a338b47addf62d1bf699783302285378fe",
+  "full_integration_parent_materialized": false,
+  "expected_parent_plus_payload_tree_claimed": false,
+  "source_binding": "Fresh live pinned connection byte-equal to cached execution source",
+  "live_read_inputs": {
+    "AGENTS.md": {
+      "bytes": 7455,
+      "sha256": "dcd3c3640a0486d2f74abae2a8f871e69bd0879490a130193bc83d8a40e5b855",
+      "git_blob_sha": "7408805476fd18c48f981fa130b8bb7481a216aa",
+      "source_url": "https://github.com/rbajaj5/hodge-lab/blob/2dff6afddab993a216ba3f262197ae69aeb9143a/AGENTS.md"
+    },
+    "notes/one-reflection-skew-team-board.md": {
+      "bytes": 7565,
+      "sha256": "6309b6033fd0c5111342488b5c2e74643909b7b82cf06cb0b05e61bdacc0a307",
+      "git_blob_sha": "5dc7a3b30953d189e7784d337029aefe067cdefe",
+      "source_url": "https://github.com/rbajaj5/hodge-lab/blob/2dff6afddab993a216ba3f262197ae69aeb9143a/notes/one-reflection-skew-team-board.md"
+    },
+    "notes/skew-A2-denominator-20261024.md": {
+      "bytes": 8883,
+      "sha256": "d787a7f727b873c72d2fa5e58f0f8c0224ae2578b98df2f516ffed76ca8a71e2",
+      "git_blob_sha": "9f9b7713c9f5630236035e0e0d1c130514a431bc",
+      "source_url": "https://github.com/rbajaj5/hodge-lab/blob/2dff6afddab993a216ba3f262197ae69aeb9143a/notes/skew-A2-denominator-20261024.md"
+    },
+    "LEDGER.md": {
+      "bytes": 486011,
+      "sha256": "aa6a2d4ab3c1d92e70a32cf176d418b9aa2b86f6d21840044d0e4e2cd2044eb4",
+      "git_blob_sha": "c0c6c4f83d74190d6b2bca00e5b06a17394ad73b",
+      "source_url": "https://github.com/rbajaj5/hodge-lab/blob/2dff6afddab993a216ba3f262197ae69aeb9143a/LEDGER.md"
+    },
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": {
+      "bytes": 12399,
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+      "git_blob_sha": "615e73cfd69d657b4dc0dbaa0e5d0a958afabacb",
+      "source_url": "https://github.com/rbajaj5/hodge-lab/blob/2dff6afddab993a216ba3f262197ae69aeb9143a/results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json"
+    }
+  },
+  "upstream_dispatch_pin": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "upstream_refetched": false,
+  "failed_git_routes_retried": false,
+  "goal_owner": "coordinator; no worker Goal API",
+  "coordinator_goal_started_utc": "2026-10-24T16:58:06Z",
+  "worker_first_clock_utc": "2026-10-24T16:59:50Z",
+  "mathematical_stop_utc": "2026-10-24T17:04:26Z",
+  "mathematical_deadline_utc": "2026-10-24T17:43:06Z",
+  "math_process_limit_seconds": 60,
+  "network_limit_seconds": 45,
+  "old_mathematics_replayed": false,
+  "new_lower_sector_constraints_imposed": false
+}

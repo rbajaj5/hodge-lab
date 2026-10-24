@@ -1,0 +1,123 @@
+A^-3 highest-pole handoff, 24 October 2026
+=========================================
+
+Result: det(R_a-3I)=10 forces only the highest numerator tangent. The
+pure B/A^3 family has294 necessary coefficients; the enlarged four-sector
+family has2400. Every one of the2106 lower P0/P1/P2 coefficients is retained.
+No further pole refinement, numerical search, primitive or kernel claim.
+
+Source and reused results
+--------------------------
+Read-only parent: 2dff6afddab993a216ba3f262197ae69aeb9143a.
+Pinned literal connection SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Positive packet orientation, ordered compact rows(e0,e1), column inputs,
+d+N. Credit fqlx for the compact connection and benediamond for the cover.
+
+The completed prime/smooth A divisor, generic Delta complement, source
+regularity, low-v-degree tangent module and Laurent support theorem are
+reused from the A^-1 bundle, not rerun. Its final checker SHA256 is
+473e333ef1b3d21fdde74372aec2ae01c50a8e3b32af1087177448e0798f4395;
+the imported exact tangent injection SHA256 is
+047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b.
+The new execution checks these input bindings and evaluates only the new
+power-three identities and full scaled formula. No earlier search or
+secondary A^-2 projection is rerun or imposed.
+
+Definitions and family
+----------------------
+  B=span_Q{r^m v^n t^k:-10<=m<=2,0<=n,k<=2},
+  A=r^3+r^-3+(rv-1)^6/r^15,
+  b=tv, c=t(1-t^2)/7, d=1+t^6,
+  N=(A_r M_a,A_v M_a+t M_b,N_t),
+  N_t=v M_b+c' M_c+d' M_d,
+  S=r^-4 M_b e0/12.
+All matrices are evaluated at the actual physical coefficients a=A,b,c,d.
+All two-vector numerators have each scalar component in B. Put
+  F=P0+P1/A+P2/A^2+P3/A^3,
+  Qj=A_r Pjr+A_v Pjv,
+and D_N(P)=sum_i(partial_i+N_i)P_i for the full physical divergence.
+The pure request sets P0=P1=P2=0. The authorized enlargement retains them.
+
+Highest pole and necessary top support
+--------------------------------------
+At the generic prime A=0 boundary, the imported residue is
+  R_a=[[0,-c/(6b)],[0,-1/3]].
+The order-four pole of D_N(F) is (R_a-3I)Q3/A^4. The determinant of
+R_a-3I is10, so Q3=0 modulo A. Lower sectors cannot affect this order.
+The reused tangent theorem gives
+  P3r=T_r h, P3v=T_v h, P3t=k,
+  T_r=r^2(r^6+1), T_v=r(2r^6+1)v-(3r^6+2),
+where each row of h has support r=-10..-6,v=0..1,t=0..2. Each row of k
+has the original B box. Thus h contributes60 and k234 coefficients.
+This is a necessary restriction, not a nonzero homogeneous kernel.
+
+Top operator and complete scaled equation
+-----------------------------------------
+Reuse ell=T(A)/A=3r(r^6-1). The new scalar term is
+  tau3=div(T)-3ell=r^7+12r.
+Define the complete two-row operator
+  W3=[T_r partial_r+T_v partial_v+tau3 I
+          +ell*A*M_a+t*T_v*M_b]h +(partial_t+N_t)k.
+Then D_N(P3/A^3)=W3/A^3. The exact full equation multiplied by A^3 is
+
+  A^3 D_N(P0)+A^2 D_N(P1)-A Q1
+       +A D_N(P2)-2Q2+W3 = A^3 S.
+
+This follows from D_N(Pj/A^j)=A^-j D_N(Pj)-j A^(-j-1)Qj;
+A_t=0. The top tangent identity is substituted only for P3. All lower
+flux derivatives, A_v chain terms, both compact rows and1/12 remain.
+For the pure top family this specializes to W3=A^3 S.
+
+Next pole stays coupled
+-----------------------
+The order-three boundary equation is
+  (R_a-2I)Q2+W3|A=0=0.
+If W=(W0,W1)=W3|A=0, its explicit normal target is
+  Q2_1=3W1/7,
+  Q2_0=W0/2-c W1/(28b).
+The off-diagonal term couples the rows. A nonzero W can require a nonzero
+Q2, so P2 must not be forced tangent independently. P1 and P0 are likewise
+unrestricted. The previous A^-2 secondary divisibility condition is not
+automatically a condition on P2 in this new coupled problem; none is used.
+This handoff does not solve the next-pole condition or project it further.
+
+Dimensions and reusable map
+----------------------------
+The four scalar sectors B,B/A,B/A^2,B/A^3 are independent. Multiplying a
+relation by A^3 gives possible nonzero v-degree bands18..20,12..14,6..8,
+0..2; highest-degree comparison successively kills every numerator.
+The original joint family has2808 independent coefficients. Top tangency
+alone replaces its highest702 by294, leaving2400. All2106 lower coefficients
+remain; no relation between lower sectors has been assumed.
+
+highest-pole-injection.json is the exact integer map of shape2808x2400.
+Its first2106 columns are identities on P0/P1/P2; its remaining294 columns
+are the imported tangent injection at sector3. It has2700 nonzeros. The
+map is injective by sector independence and the reused top-map injectivity.
+For pure B/A^3, use only the294 top columns.
+
+Every homogeneous current obeys this necessary leading-pole restriction.
+No nonzero exact kernel or characteristic-zero rank upper bound is supplied.
+A modular rank drop alone is not a rational inconsistency certificate.
+
+Execution and scope
+--------------------
+New check-01 passed7 exact checks and2 negative controls in2.109 seconds
+wall time,0.140 seconds symbolic work, exit0. Child timeout60 seconds;
+python -O and explicit failures. Final checker SHA256:
+b9ce3996df3d340e17039d557fe346071f7295fd0b597987b4b4b25182af33a1.
+No failure or timeout occurred. UTF-8 scripts, source snapshots, commands,
+logs, versions and hashes are preserved in this owned subtree.
+
+Run from the workspace with a fresh run name:
+  python -O work/A3-denominator-20261024/algebra/run_bounded.py check-new
+    --connection ABSOLUTE_PINNED_JSON_PATH
+    --prior work/A-denominator-20261024/algebra
+
+Characteristic zero; rational identities on r*A*Delta!=0. Pole comparison
+is at the generic prime smooth A=0 boundary away from b*Delta=0, using the
+completed divisor proof. It is not evaluation at an ordinary allowed point.
+This is a source-bound algebraic necessary reduction. No numerical search,
+Lean, source cancellation, general rational obstruction, repository edit,
+commit or push is claimed.

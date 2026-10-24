@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-10-24T16:58:06Z",
+  "research_deadline_utc": "2026-10-24T17:43:06Z",
+  "parent": "2dff6afddab993a216ba3f262197ae69aeb9143a",
+  "upstream": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "ledger_bytes": 486011,
+  "ledger_sha256": "aa6a2d4ab3c1d92e70a32cf176d418b9aa2b86f6d21840044d0e4e2cd2044eb4",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "initial_family": "B/A^3 all six scalar coefficients of three rank-two physical fluxes; B monomials r^-10..2, v/t0..2",
+  "optional_enlargement": "B+B/A+B/A^2+B/A^3 with all lower sectors free",
+  "bounds": {
+    "research_minutes": 45,
+    "integration_minutes": 15,
+    "math_process_seconds": 60,
+    "network_seconds": 45
+  },
+  "lean": "benched",
+  "pro_chat": "6adb94ec-665c-8325-9a4b-2b4237c63f19",
+  "tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "previous_publication": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075",
+  "critical_scope": "Highest pole alone forces tangency. Retain mixed cancellation with P2,P1,P0. Exact rational candidate or sound scoped exclusion; timeout inconclusive."
+}
