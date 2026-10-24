@@ -1,0 +1,107 @@
+{
+  "status": "PASS_NEW_COUPLED_POLE_CONSTRAINT_AND_TOP_ROW1_V_DIVISIBILITY",
+  "utc": "2026-10-24T16:35:00.165258+00:00",
+  "seconds": 0.34300000000803266,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "97c0355b3fe23cfb741e6bb6e326ed20f8ce565596995b8c95698dbbd985cd27",
+  "prior_validation_sha256": "1d45f2e5e254c7b6c8aa24e3aeee106a5756c5a0f9407cbb9d426ef2f289367c",
+  "prior_injection_sha256": "047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b",
+  "checks": [
+    "new order-three shifted residue determinant",
+    "new order-two tangent zeroth term",
+    "boundary M_b from pinned JSON",
+    "boundary M_c from pinned JSON",
+    "boundary M_d from pinned JSON",
+    "new lower compact row boundary operator",
+    "coupled order-two normal target",
+    "new boundary inverse-v representative",
+    "new lower row has only one nonpolynomial-v term",
+    "lower row x^3 projection",
+    "lower row x^4 projection",
+    "v-divisibility removes both forbidden lower projections",
+    "projection coefficient is a nonzero characteristic-zero rational function",
+    "new 1683-parameter injection keeps all 702 intermediate-pole coefficients"
+  ],
+  "mutations": [
+    {
+      "name": "use power-one quotient correction at power two",
+      "difference": "3*r**7 - 3*r"
+    },
+    {
+      "name": "permit h2 row1 v-constant term",
+      "nonzero_forbidden_Q1_x4_coefficient_at_r1": "5/8"
+    },
+    {
+      "name": "drop off-diagonal residue coupling",
+      "coefficient_at_t2_v1": "-3/56"
+    }
+  ],
+  "det_R_minus_2I": "14/3",
+  "tau2": "r*(4*r**6 + 9)",
+  "ell": "3*r*(r**6 - 1)",
+  "boundary_matrices": {
+    "b": [
+      [
+        "-(12*b*d - c**2)/(6*b*(4*b*d - c**2))",
+        "c*(6*b*d - c**2)/(3*b**2*(4*b*d - c**2))"
+      ],
+      [
+        "0",
+        "-1/(2*b)"
+      ]
+    ],
+    "c": [
+      [
+        "2*c/(3*(4*b*d - c**2))",
+        "-(12*b*d - c**2)/(6*b*(4*b*d - c**2))"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "d": [
+      [
+        "-4*b/(3*(4*b*d - c**2))",
+        "2*c/(3*(4*b*d - c**2))"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "coupled_boundary_operator_W": [
+    "h0*(r*(4*r**6 + 9) + t*(t**3*v*(1 - t**2)**2/49 - 12*t**2*v**2*(t**6 + 1))*(-3*r**6 + r*v*(2*r**6 + 1) - 2)/(-6*t**4*v**2*(1 - t**2)**2/49 + 24*t**3*v**3*(t**6 + 1))) + h1*(3*r*(r**6 - 1)*(t**4*v*(1 - t**2)**3/343 - 4*t**3*v**2*(1 - t**2)*(t**6 + 1)/7)/(-6*t**4*v**2*(1 - t**2)**2/49 + 24*t**3*v**3*(t**6 + 1)) + t*(-t**3*(1 - t**2)**3/343 + 6*t**2*v*(1 - t**2)*(t**6 + 1)/7)*(-3*r**6 + r*v*(2*r**6 + 1) - 2)/(-3*t**4*v**2*(1 - t**2)**2/49 + 12*t**3*v**3*(t**6 + 1))) + hr0*r**2*(r**6 + 1) + hv0*(-3*r**6 + r*v*(2*r**6 + 1) - 2) + k0*(-48*t**8*v**3/(-6*t**4*v**2*(1 - t**2)**2/49 + 24*t**3*v**3*(t**6 + 1)) + 2*t**3*v**2*(1/7 - 3*t**2/7)*(1 - t**2)/(7*(-3*t**4*v**2*(1 - t**2)**2/49 + 12*t**3*v**3*(t**6 + 1))) + v*(t**3*v*(1 - t**2)**2/49 - 12*t**2*v**2*(t**6 + 1))/(-6*t**4*v**2*(1 - t**2)**2/49 + 24*t**3*v**3*(t**6 + 1))) + k1*(12*t**8*v**2*(1 - t**2)/(7*(-3*t**4*v**2*(1 - t**2)**2/49 + 12*t**3*v**3*(t**6 + 1))) + v*(-t**3*(1 - t**2)**3/343 + 6*t**2*v*(1 - t**2)*(t**6 + 1)/7)/(-3*t**4*v**2*(1 - t**2)**2/49 + 12*t**3*v**3*(t**6 + 1)) + (1/7 - 3*t**2/7)*(t**3*v*(1 - t**2)**2/49 - 12*t**2*v**2*(t**6 + 1))/(-6*t**4*v**2*(1 - t**2)**2/49 + 24*t**3*v**3*(t**6 + 1))) + kt0",
+    "h1*(3*r*(r**6 - 1)*(t**4*v**2*(1 - t**2)**2/49 - 4*t**3*v**3*(t**6 + 1))/(-3*t**4*v**2*(1 - t**2)**2/49 + 12*t**3*v**3*(t**6 + 1)) + r*(4*r**6 + 9) + t*(t**3*v*(1 - t**2)**2/49 - 4*t**2*v**2*(t**6 + 1))*(-3*r**6 + r*v*(2*r**6 + 1) - 2)/(-2*t**4*v**2*(1 - t**2)**2/49 + 8*t**3*v**3*(t**6 + 1))) + hr1*r**2*(r**6 + 1) + hv1*(-3*r**6 + r*v*(2*r**6 + 1) - 2) + k1*v*(t**3*v*(1 - t**2)**2/49 - 4*t**2*v**2*(t**6 + 1))/(-2*t**4*v**2*(1 - t**2)**2/49 + 8*t**3*v**3*(t**6 + 1)) + kt1"
+  ],
+  "coupled_order_two": "(R_a-I)*(A_r*P1r+A_v*P1v)+W2=0 mod A",
+  "normal_target": [
+    "W2_0-c*W2_1/(8*b)",
+    "3*W2_1/4"
+  ],
+  "normal_image_imported_support_x": [
+    0,
+    1,
+    2,
+    5
+  ],
+  "inverse_v_representative": "-r*(x**5 - x**4 + x**3 - x**2 + x - 1)/(r**18 + r**12 + 1)",
+  "projection_mu": "r*(3*r**6 + 2)/(2*r**18 + 2*r**12 + 2)",
+  "new_lower_projection": [
+    "-mu*H0",
+    "mu*H0"
+  ],
+  "new_constraint": "Top tangent multiplier h2_1 is divisible by v. Its v-constant coefficient H0(r,t) vanishes. This does not imply that P1 is tangent.",
+  "dimensions": {
+    "original_three_sectors": 2106,
+    "top_tangency_only": 1698,
+    "new_additional_removed": 15,
+    "necessary_after_new_projection": 1683
+  },
+  "injection_sha256": "1f49505c45b184f65e58aee156977509e6eb8f6031d89fb95939c95f44f732af",
+  "domain": "Characteristic zero. Physical identities on r*A*Delta!=0. Pole comparison is at the generic prime A=0 boundary away from b*Delta=0; imported smoothness/primality theorem reused. In the quotient field Q(r,t)[x]/(x^6+r^18+r^12), C+1 is nonzero and thus invertible.",
+  "limits": "No sample matrix search or cancellation. General upper-row and polynomial bounded-lift order-two constraints remain. No exact kernel or characteristic-zero rank upper bound supplied. Previous A^-1 exclusion is not applied to P1 separately."
+}

@@ -18,14 +18,20 @@ by the user toward the solution. Zero trace is reused context, not the
 success criterion. A partial current counts only within its documented scope;
 the remaining source must stay explicit.
 
-The [latest A-denominator batch](skew-A-denominator-audit-20261024.md) tests
-all six physical components in B+B/A, with the explicit numerator bounds
-in that note. The algebra worker's necessary double-pole condition forces
-tangency at A=0. Pro consumed it to reduce the combined 1,404-parameter
-family to 996 possible solution parameters, then obtained an exact
-augmented-minor exclusion. This rules out that combined family, including
-the requested denominator sector, while retaining both source rows and all
-physical derivatives. It does not exclude general rational compact currents.
+The [latest A-squared batch](skew-A2-denominator-audit-20261024.md) tests
+all six physical components in B+B/A+B/A² with explicit numerator bounds.
+The highest-pole theorem restricts only P2. All P1 and P0 parameters remain
+free, preserving mixed cancellation. Pro consumed the structural handoff
+and excluded the 1,698-parameter necessary family by a nonzero 1,699-square
+augmented minor. The local checker independently regenerated that minor.
+This excludes the declared 2,106-parameter sum, not general rational currents.
+The further local v-divisibility constraint was delivered and checked but
+unused: the larger necessary family already gave the exclusion.
+
+The [earlier A-denominator batch](skew-A-denominator-audit-20261024.md)
+supplies reused divisor, tangent-module and support arguments. It was not
+rerun. The changed condition is the new A-squared sector and its coupled
+lower pole, not another review of completed scalar or Lean work.
 
 The [previous full-residual batch](skew-full-residual-20261024.md), centered
 Q/R2, beta, source conventions and earlier Laurent exclusion remain reused
@@ -46,11 +52,11 @@ Pin the current protected input and any changed dependencies at actual dispatch.
 
 | Owner role | Assignment and output | Receiver and acceptance condition | State |
 | --- | --- | --- | --- |
-| Coordinator | Pin the target and common interface; integrate the bounded outcome | Same parent, source convention, fixed problem, explicit limits | Actual Goal used; parent `aa5a30d`, 45-minute research bound; local/provenance evidence and append-only checkpoint integrated |
-| Constructive lead, reused Pro chat | Test the A denominator in the full six-component source equation | Return a full candidate or exact scoped exclusion | Consumed the necessary pole reduction; explicitly tested the larger B+B/A family; delivered a new 997-square nonzero augmented minor; no primitive found |
-| Local algebra worker | Derive the A-pole constraint, complete bounded tangent module and reduced operator | Lead uses a smaller necessary family; checker verifies the proof and source binding | Consumed: 702 denominator parameters reduce to 294; with the old sector, 996. Exact proof, sparse injection and receipts retained |
+| Coordinator | Pin the target and integrate the bounded outcome | Same parent, source convention, fixed problem, explicit limits | Actual Goal used; parent `fc4f38a`; mathematics closed at 16:47:29 UTC within 45 minutes; append-only checkpoint 149 |
+| Constructive lead, reused Pro chat | Test the A-squared denominator in the full six-component equation | Candidate or exact scoped exclusion | Consumed the top-pole handoff; tested B+B/A+B/A²; new 1699-square minor determinant 14098 modulo 32003; no primitive |
+| Local algebra worker | Derive the squared-denominator operator and coupled pole conditions | Lead retains every lower-sector cancellation; checker verifies source binding | Consumed top-pole reduction: 2106 to 1698. Separate v-divisibility refinement to 1683 checked but unused |
 | Lean implementer | No assignment in this batch | None until the user restores this role | **Benched** |
-| Separate local checker | Check the new pole theorem and decisive joint-family minor | Coordinator receives executed evidence and explicit limits | Independent structural audit passed; full decisive-minor reconstruction is recorded in the integrated audit. Timed-out expansion and its replacement retained |
+| Separate local checker | Independently reconstruct the new decisive minor and check coupling | Executed evidence and explicit limits | 2,886,601 entries and determinant independently regenerated; two derivative-error controls detected; subsequent delivered-CSV binding recorded |
 
 Roles may be sequential. Do not create five workers to match five rows.
 Construction and algebra can work in parallel after agreeing their interface.

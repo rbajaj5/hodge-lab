@@ -1,0 +1,44 @@
+all A2 joint matrix entries independently reconstructed (1758, 1699)
+{
+  "status": "PASS_EXACT_QQ_A2_SUM_FINITE_FAMILY_EXCLUSION",
+  "executor": "a2_denominator_checker AI worker",
+  "created_utc": "2026-10-24T16:38:10.842221+00:00",
+  "seconds": 16.178007845002867,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "packet_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "7d1406bfb4741b81e12183e7b259f445637d278ae5e6e1c8fd03308c760a7cba",
+  "author_validation_sha256": "8d05f4b974808deb2e28ffdec2b97618827fdfc10655ff3cb2f5c5621593bf5c",
+  "inputs_sha256": "21d60f4a9cdd180722f6b1aca76b55b813407c195c9af1144049cfdc222280c5",
+  "matrix_sha256": "28ec91d22fb0008e1519f28864a0a50a706dbc74dbcd8411c9bc4dca6805a6e7",
+  "matrix_shape": [
+    1758,
+    1699
+  ],
+  "entries_reconstructed": 2986842,
+  "domain_points_checked": 879,
+  "author_modular_rank_coefficient": 1698,
+  "author_modular_rank_augmented": 1699,
+  "independent_augmented_minor_det_mod_prime": 14098,
+  "prime": 32003,
+  "mutations": {
+    "point": [
+      12817,
+      4220,
+      29800
+    ],
+    "nonzero_differences": {
+      "replace_top_factor_2_by_1": 1400,
+      "omit_top_r_quotient_term": 1737,
+      "omit_top_v_quotient_term": 1063,
+      "reverse_top_quotient_sign": 5600,
+      "omit_P1_r_quotient_term": 9912,
+      "omit_P1_v_quotient_term": 25198,
+      "omit_Av_connection_chain": 3559,
+      "omit_source_1_over_12": 25024,
+      "reverse_source_sign": 22006,
+      "omit_k2_t_derivative": 24421
+    }
+  },
+  "scope": "Necessary1698-parameter current family: h2=60,k2=234,P1=702,P0=702. Full1699 augmented minor proves exclusion over QQ; exclusion of original2106-dimensional sum additionally uses imported top tangency/support theorem. No P1 tangency is imposed. Structural theorem not rerun here. No general rational-current exclusion or primitive."
+}

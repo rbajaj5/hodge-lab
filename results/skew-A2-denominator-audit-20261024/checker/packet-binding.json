@@ -1,0 +1,28 @@
+{
+  "status": "PASS_IO_BINDING_ONLY",
+  "script_sha256": "3b762d5c835ca0a20f4c07808b1d3c18559cc28bd1ef67c2cb1707cc8d34dc55",
+  "delivered_matrix_csv_sha256": "28ec91d22fb0008e1519f28864a0a50a706dbc74dbcd8411c9bc4dca6805a6e7",
+  "delivered_inputs_sha256": "21d60f4a9cdd180722f6b1aca76b55b813407c195c9af1144049cfdc222280c5",
+  "frozen_minor_sha256": "7df9059c44de2ba802470f7388bad9d873783df942e4eda1a6d3d47e2bda7038",
+  "frozen_inputs_sha256": "4fab5fc1d5aa57f120d3a772da05423dc93c094deefaa89c22c90f48e51002af",
+  "frozen_mathematical_report_sha256": "8794831226bc8be8134c1cf1faa67d8a38b5cf976266700fe830bcb3c858e7a9",
+  "prime": 32003,
+  "seed": 2026102432,
+  "basis_entries_compared": 1698,
+  "sample_domain_records_compared": 850,
+  "matrix_entries_compared": 2886601,
+  "delivered_matrix_shape": [
+    1758,
+    1699
+  ],
+  "compared_minor_shape": [
+    1699,
+    1699
+  ],
+  "rows_not_compared": 59,
+  "sample_domain_records_not_compared": 29,
+  "source_binding": "The frozen independently generated report pins connection SHA a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d. This binding does not evaluate the source again.",
+  "scope": "Exact I/O equality and cryptographic file binding only. No differentiation, matrix reconstruction, Gaussian elimination, determinant, or exploratory search rerun. This local check covers1699 rows; Pro separately reports all1758 rows.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6"
+}

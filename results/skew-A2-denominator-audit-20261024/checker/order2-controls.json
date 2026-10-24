@@ -1,0 +1,40 @@
+{
+  "status": "PASS: minimal new order2 controls only; no new finite-family exclusion or primitive",
+  "script_sha256": "87e5949e65800d6bdf1e69afc232232a9da1e8fa2665ffc88b6844b8ca65b514",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "repository_pin_observed_before_execution": "fc4f38a338b47addf62d1bf699783302285378fe",
+  "reciprocal_identities": 3,
+  "negative_controls": [
+    {
+      "coordinate": "r",
+      "correct_derivative": "2/9",
+      "mutant_derivative": "1/9",
+      "mutation": "use pole-order1 derivative coefficient instead of2"
+    },
+    {
+      "coordinate": "v",
+      "correct_derivative": "-4/9",
+      "mutant_derivative": "-2/9",
+      "mutation": "use pole-order1 derivative coefficient instead of2"
+    }
+  ],
+  "det_R_minus_2I": "14/3",
+  "tau2": "4*r**7 + 9*r",
+  "highest_pole": "For J=P2/A^2, the A^-3 coefficient is (R-2I)*(A_r P2_r+A_v P2_v). Its vanishing forces only P2 to be tangent modulo A.",
+  "reused_support": "The prior exact low-v-degree tangent-module/support proof gives P2_r=T_r h2, P2_v=T_v h2; h2 has -10<=m<=-6,0<=n<=1,0<=k<=2 and P2_t is in V.",
+  "reduced_order2_operator": "A^-2*[T_r h2_r+T_v h2_v+r(4r^6+9)h2+q A M_a h2+t T_v M_b h2+(partial_t+N_t)P2_t], q=3r(r^6-1)",
+  "next_pole": "For the sum, A^-2 coefficient is H2+(R-I)*W1 on A=0, where W1=(A_r P1_r+A_v P1_v)|A=0 and H2 is the order2 reduced bracket restricted to A=0 (A M_a restricts to R). It is invalid to force W1=0 unless H2=0 has separately been established.",
+  "formal_coupling_control": "H2=(1,0),W1=(1,0) satisfy H2+(R-I)W1=0 with W1 nonzero. This is a local coefficient demonstration, not a current in the declared global family.",
+  "safe_parameter_counts": {
+    "pure_V_over_A2_top_only": 294,
+    "joint_original_generators": 2106,
+    "joint_top_only_necessary_generators": 1698
+  },
+  "joint_count_reason": "Regular V702 and A^-1 V702 remain unrestricted at the top-pole stage; only A^-2 V702 reduces to294.",
+  "reused_domain": "Generic point of irreducible smooth A=0 on r!=0,Delta!=0, as established in the pinned prior structural report. No repeated chart/source/trace/tangency proof.",
+  "source": "r^-4 M_b e0/12 in positive packet orientation; all physical directions and both fibre rows retained",
+  "scope": "No exploratory matrix, rank calculation, kernel conclusion, full residual check or solvability claim. Wait for a concrete author artifact before the decisive audit.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0"
+}

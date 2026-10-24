@@ -1,0 +1,175 @@
+A^-2 coupled-pole constraints, 24 October 2026
+==============================================
+
+New result: the top A^-2 tangent multiplier's second compact row must be
+divisible by v. This is a necessary condition from the coupled next-pole
+equation, not an independent tangency claim for the A^-1 sector. It removes
+15 parameters from the safe1698-parameter family, leaving1683 necessary
+parameters. Further order-two constraints remain; no search or solve is
+performed here.
+
+Sources and reused evidence
+---------------------------
+Read-only parent: fc4f38a338b47addf62d1bf699783302285378fe.
+Literal connection SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Positive packet orientation; ordered compact rows e0,e1; column inputs;
+coefficient connection d+N. Credit fqlx for the compact connection and
+benediamond for the physical cover.
+
+The completed A^-1 tangency theorem, prime/smooth A divisor proof, support
+bounds, and sparse injection are reused from the previous algebra bundle.
+They are not rerun. Imported injection SHA256:
+047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b.
+Its final checker SHA256:
+473e333ef1b3d21fdde74372aec2ae01c50a8e3b32af1087177448e0798f4395.
+The present execution checks its input bindings and uses the stored residue
+matrix and map. The new boundary M_b,M_c,M_d values, order-three determinant,
+order-two operator and compatibility projection are checked from exact
+expressions. No old exclusion, scalar trace, Lean or matrix search is rerun.
+
+Family and full operator
+------------------------
+Let B=span_Q{r^m v^n t^k:-10<=m<=2,0<=n,k<=2}. Write the six scalar
+components of the physical current as
+  F=P0+P1/A+P2/A^2,
+where each vector component of every Pi belongs to B. Use
+  A=r^3+r^-3+(rv-1)^6/r^15,
+  b=tv, c=t(1-t^2)/7, d=1+t^6,
+  N=(A_r M_a,A_v M_a+t M_b,N_t),
+  N_t=v M_b+c' M_c+d' M_d,
+  S=r^-4 M_b e0/12.
+All six components, both rows and all r,v,t derivatives are retained.
+
+The three scalar sectors are linearly independent: multiplying a proposed
+relation by A^2 gives A^2P0+AP1+P2=0. Their possible nonzero v-degree bands
+are12..14,6..8,0..2, so highest-degree comparison successively forces all
+three terms to vanish. Thus the original family has2106 coefficients.
+This independence is not an operator-kernel claim.
+
+Top pole: only P2 is forced tangent
+-----------------------------------
+Define Qi=A_r Pir+A_v Piv. At the generic prime A=0 divisor the imported
+residue is
+  R=Res(M_a da)=[[0,-c/(6b)],[0,-1/3]].
+The A^-3 coefficient of Div_N(F) is (R-2I)Q2. Its determinant is14/3,
+so Q2=0 modulo A. Source S is regular there, P1 contributes at most
+order two, and P0 at most order one. By the reused low-v-degree tangency
+theorem, necessarily
+  P2r=T_r h, P2v=T_v h, P2t=k,
+  T_r=r^2(r^6+1), T_v=r(2r^6+1)v-(3r^6+2).
+Each row of h initially has support m=-10..-6,n=0..1,k=0..2; each row
+of k has the original box. This is294 top parameters plus1404 unrestricted
+P0/P1 parameters, giving the safe1698-parameter necessary family.
+
+Do not apply the A^-1 tangency theorem separately to P1: the next pole
+is coupled to the surviving top sector.
+
+Full reduced top operator and exact next-pole condition
+-------------------------------------------------------
+Put ell=3r(r^6-1) and tau2=div(T)-2ell=r(4r^6+9). Then
+  Div_N(P2/A^2)=W2/A^2,
+  W2=[T_r partial_r+T_v partial_v+tau2 I
+          +ell*A*M_a+t*T_v*M_b]h +(partial_t+N_t)k.
+W2 is regular at the generic A divisor. With D_N denoting the complete
+physical divergence on an unquotiented current, the full equation is
+
+  A^2 D_N P0 + A D_N P1 - Q1 + W2 = A^2 S.
+
+Restricting this equation to A=0 yields the coupled condition
+  (R-I) Q1 + W2|A=0 = 0.
+Writing W=(W0,W1)=W2|A=0, it is equivalent to
+  Q1_1=(3/4)W1,
+  Q1_0=W0-c W1/(8b).
+The off-diagonal term matters. These are normal-flux targets, not completed
+polynomial lifts for P1. A nonzero W can be cancelled by a non-tangent P1.
+
+Exact boundary matrices used for W
+----------------------------------
+Let D0=4bd-c^2. At a=0,
+  M_b=[[-(12bd-c^2)/(6bD0), c(6bd-c^2)/(3b^2D0)],
+       [0, -1/(2b)]],
+  M_c=[[2c/(3D0), -(12bd-c^2)/(6bD0)], [0,0]],
+  M_d=[[-4b/(3D0), 2c/(3D0)], [0,0]].
+The saved validation records both full rows of W after the actual physical
+substitution and c',d' differentiation. The upper row is not discarded.
+
+New second-row compatibility projection
+----------------------------------------
+The preceding matrices give exactly
+  W1=[T_r partial_r+T_v partial_v
+          +2r^7+19r/2+(3r^6+2)/(2v)]h1
+          +(partial_t-1/(2t))k1.
+Write h1=H0(r,t)+v H1(r,t), and let k1 have v-degree at most2. Every
+term above has polynomial v-degree at most2 except
+  (3r^6+2)H0/(2v).
+
+Use x=rv-1, C=r^18+r^12, H=x^6+C. The imported normal-flux remainder
+of any P1r,P1v with v-degree<=2 has support only x^0,x^1,x^2,x^5:
+  H_r P1r+H_v P1v mod H
+   =B0 P1r+(6/r)[E0*x^5-C*E1-C*E2*x],
+  B0=6r^11(2r^6+1), E=P1r+r^2 P1v.
+The extra r^-15 factor giving Q1 does not change that support.
+
+In Q(r,t)[x]/(H), the exact inverse is
+  1/v = -r*(x^5-x^4+x^3-x^2+x-1)/(C+1).
+Consequently the forbidden x^3 and x^4 coefficients of W1 are
+  (-mu H0, +mu H0), mu=r(3r^6+2)/(2(C+1)).
+Here mu is a nonzero characteristic-zero rational function. Since Q1_1
+must equal3W1/4 and Q1_1 has neither power, H0=0 identically.
+
+Thus h1 is divisible by v. The top second-row multiplier has only
+5*1*3=15 coefficients instead of30; the first row still has30. The top
+sector now has45 h coefficients plus234 k coefficients, hence279.
+Adding all702 P0 and all702 P1 coefficients gives1683 necessary parameters.
+This argument uses cancellation between levels correctly: it tests whether
+P1 can supply the needed normal flux, without setting that flux to zero.
+
+Reusable map, further constraints, and kernel limits
+----------------------------------------------------
+The saved necessary-injection.json is an exact integer matrix of shape
+2106x1683. Its first1404 columns leave every P0 and P1 coefficient free.
+Its remaining columns reuse the top tangent injection and omit precisely
+the15 top h row1/v^0 columns. It has1908 nonzeros and is injective by the
+three-sector independence and the imported injectivity of the tangent map.
+
+This map is necessary, not a parametrization of all next-pole cancellations.
+For the upper row, the x^3,x^4 coefficients of
+  W0-c W1/(8b) modulo H
+must also vanish. Even after those vanish, lifting the normal target over
+Q(r,t) need not respect the fixed Laurent r and polynomial t support of
+P1. These remaining conditions are deliberately left to the full search.
+No claim says the permitted P1 is tangent or that all coupled conditions
+have been solved.
+
+Every homogeneous current in this family obeys the same necessary map.
+No nonzero kernel or characteristic-zero rank upper bound is supplied.
+A full1684-column augmented minor would certify exclusion of this necessary
+family; deficient modular inconsistency alone would still need an exact
+rank upper bound or an exact inconsistency witness. The same applies to
+Pro's larger safe1698-family if it is used without this extra projection.
+
+Domain, execution and limits
+-----------------------------
+Work is in characteristic zero. Physical identities hold on r*A*Delta!=0.
+The pole argument uses the generic A=0 boundary away from b*Delta=0; it
+does not substitute a forbidden ordinary physical point. Prime/smoothness
+and nonempty generic complement are reused from the earlier theorem.
+The inverse-v projection works over Q(r,t), where C+1 is nonzero and hence
+invertible; no new divisor is introduced in the current ansatz itself.
+
+New check-01:14 exact checks and3 negative controls; process2.172 seconds,
+algebra0.343 seconds, exit0, under a60-second child limit and python -O.
+Checker source SHA256:
+97c0355b3fe23cfb741e6bb6e326ed20f8ce565596995b8c95698dbbd985cd27.
+All text is UTF-8. Commands, source snapshots, stdout/stderr, versions and
+input/output hashes are preserved. No failed mathematical process occurred.
+Run with fresh output name from the workspace:
+  python -O work/A2-denominator-20261024/algebra/run_bounded.py check-new
+    --connection ABSOLUTE_PINNED_JSON_PATH
+    --prior work/A-denominator-20261024/algebra
+
+The prior support/primality proof is imported reasoning, not newly executed
+here. The current compact argument and exact algebra are AI-assisted work.
+No numerical search, Lean, repository edit, commit, push, primitive,
+full-source cancellation, or general rational obstruction is claimed.

@@ -1,0 +1,3 @@
+PASS: fixed specification independently regenerated2886601 entries at850 good points
+REJECTED CONTROLS: {"order2_wrong_pole_coefficient": {"point_index": 0, "row": 0, "column": 0, "correct": 21985, "mutant": 23385, "difference": 1400, "mutation": "use divT-q instead of divT-2q"}, "lower_order_omitted_denominator_derivative": {"point_index": 0, "row": 0, "column": 294, "correct": 27030, "mutant": 4939, "difference": 9912, "mutation": "omit -A_r*u from A-scaled lower-pole column"}}
+PASS: independent normalized Gaussian determinant14098 modulo32003

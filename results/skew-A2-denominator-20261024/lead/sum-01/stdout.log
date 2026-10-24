@@ -1,0 +1,35 @@
+assembled (1758, 1699) seconds 3.050899144000141
+{
+  "status": "EXACT_QQ_FINITE_FAMILY_EXCLUDED_BY_MODULAR_MINOR",
+  "executor": "Pro root constructive lead",
+  "created_utc": "2026-10-24T16:37:24.591514+00:00",
+  "elapsed_seconds": 10.88703274100044,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "f0dfa423dea62c243832032ac34068a760b0bebb959475356da3acb0e97e8751",
+  "prime": 32003,
+  "seed": 2026102432,
+  "matrix_shape": [
+    1758,
+    1699
+  ],
+  "rank_top_tangent_block": 294,
+  "rank_coefficient": 1698,
+  "rank_augmented": 1699,
+  "family": "Necessary TOP-tangent subfamily of full six-component B plus B/A plus B/A\u00b2; original2106 parameters, necessary1698; P1 unrestricted",
+  "parameter_sectors": {
+    "h2": 60,
+    "k2": 234,
+    "P1": 702,
+    "P0": 702
+  },
+  "structural_dependency": "Imported coordinator highest-pole det(Ra-2I)=14/3 reasoning plus reused bounded tangent parametrization; only P2 constrained. Not rerun here. Extra h2_second-row divisibility result unused.",
+  "quotient_rule": "direct top -2Ar/A^3 and -2Av/A^3 plus P1 -Ar/A^2 and -Av/A^2 retained; At=0; equation multiplied by A\u00b2",
+  "full_operator": "A\u00b2*sum_i(partial_i+Nphysical_i)F_i, Nphysical=(Ar Ma,Av Ma+t Mb,Nt)",
+  "target": "A\u00b2*r^-4 Mb e0/12",
+  "matrix_sha256": "28ec91d22fb0008e1519f28864a0a50a706dbc74dbcd8411c9bc4dca6805a6e7",
+  "inputs_sha256": "21d60f4a9cdd180722f6b1aca76b55b813407c195c9af1144049cfdc222280c5",
+  "limits": "No completeness beyond declared family and imported necessary-condition theorem; deficient modular rank cannot prove QQ inconsistency without an exact rank upper bound. No primitive or solve claimed."
+}

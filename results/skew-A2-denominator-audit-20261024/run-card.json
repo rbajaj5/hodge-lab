@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-10-24T16:32:00Z",
+  "research_deadline_utc": "2026-10-24T17:17:00Z",
+  "parent": "fc4f38a338b47addf62d1bf699783302285378fe",
+  "upstream": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "ledger_bytes": 474562,
+  "ledger_sha256": "606fc7107d06a5f2a8d282816fab3c8e7bb76ea6ceb42fbac4c54e2c2c732fee",
+  "bounds": {
+    "research_minutes": 45,
+    "integration_minutes": 15,
+    "math_process_seconds": 60,
+    "network_seconds": 45
+  },
+  "initial_family": "All six current components B/A^2, B=span_Q(r^m v^n t^k), -10<=m<=2 and 0<=n,k<=2",
+  "optional_enlargement": "B+B/A+B/A^2 to include mixed cancellation with all previous sectors",
+  "critical_scope": "Top pole tangency does not force lower P1 separately tangent; coupled double-pole constraint retained or lower coefficients unrestricted",
+  "goal": "Try A^2 denominator against full source, not a target solve promise",
+  "lean": "benched",
+  "pro_chat": "6adb94ec-665c-8325-9a4b-2b4237c63f19",
+  "publication": "Prepared for normal Hodge Lab commit and verified readback; no upstream action",
+  "actual_family": "(B+B/A+B/A^2)^6, 2106 original parameters; 1698 necessary parameters",
+  "research_closed_utc": "2026-10-24T16:47:29Z",
+  "integration_deadline_utc": "2026-10-24T17:02:29Z",
+  "outcome": "Exact exclusion of declared family; no primitive"
+}

@@ -1,0 +1,47 @@
+{
+  "notebook_parent": "fc4f38a338b47addf62d1bf699783302285378fe",
+  "notebook_parent_tree": "fa81edd182774be771a00bf03743c8c8aa1cedbd",
+  "upstream_dispatch_pin": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "upstream_refetched_here": false,
+  "inputs": {
+    "AGENTS.md": {
+      "bytes": 7455,
+      "sha256": "dcd3c3640a0486d2f74abae2a8f871e69bd0879490a130193bc83d8a40e5b855",
+      "matches_parent_blob": true
+    },
+    "LEDGER.md": {
+      "bytes": 474562,
+      "sha256": "606fc7107d06a5f2a8d282816fab3c8e7bb76ea6ceb42fbac4c54e2c2c732fee",
+      "matches_parent_blob": true
+    },
+    "notes/skew-A-denominator-20261024.md": {
+      "bytes": 7468,
+      "sha256": "b4aa2ad51002e30074634ea13ac4347a58eabc7bace381b260cff641d7267ebc",
+      "matches_parent_blob": true
+    },
+    "notes/skew-A-denominator-audit-20261024.md": {
+      "bytes": 13029,
+      "sha256": "4f3c466d254b5759b867fd3bdffacf7efda3af73bb755a981024522f26da99c8",
+      "matches_parent_blob": true
+    },
+    "notes/one-reflection-skew-team-board.md": {
+      "bytes": 7353,
+      "sha256": "bdff0973523b0857b5cd6a5f28502a40509f3657b84c87fe6d656a3b3948642f",
+      "matches_parent_blob": true
+    },
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": {
+      "bytes": 12399,
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+      "matches_parent_blob": true
+    }
+  },
+  "worker_first_clock_utc": "2026-10-24T16:34:22Z",
+  "coordinator_goal_activated_utc": "2026-10-24T16:32:00Z",
+  "mathematical_stop_utc": "2026-10-24T16:38:51Z",
+  "deadline_utc": "2026-10-24T17:17:00Z",
+  "mathematical_process_limit_seconds": 60,
+  "network_operation_limit_seconds": 45,
+  "execution_order_note": "New search began using cached unchanged hash-pinned connection while public parent recovery was in progress. Exact parent and source bytes subsequently verified; no source substitution.",
+  "historical_executions": "Reused, not rerun. New checker is a separate AI execution; no human-independence claim.",
+  "additional_1683_refinement_used": false
+}

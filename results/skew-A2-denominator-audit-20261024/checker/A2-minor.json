@@ -1,0 +1,60 @@
+{
+  "status": "PASS: independently regenerated exact characteristic-zero exclusion for declared V+V/A+V/A^2 family",
+  "script_sha256": "e66b601251126a41ded6228236e4106ff8f7376c34a4daad833adaffad6ddc90",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "order2_controls_sha256": "4b6906e9e5423c4907ab1dd46f5fd919ad2d946455d3e0b0eeea7db77509d41f",
+  "regenerated_inputs_sha256": "4fab5fc1d5aa57f120d3a772da05423dc93c094deefaa89c22c90f48e51002af",
+  "saved_minor_sha256": "7df9059c44de2ba802470f7388bad9d873783df942e4eda1a6d3d47e2bda7038",
+  "canonical_minor_int64_bytes_sha256": "fcbd6d373126c8cc32dcfbd93fd2d5fcae4b231988d5c128937181d4862ff37d",
+  "prime": 32003,
+  "prime_verified": true,
+  "seed": 2026102432,
+  "minor_shape": [
+    1699,
+    1699
+  ],
+  "entries_regenerated": 2886601,
+  "sample_points": 850,
+  "excluded_points": 0,
+  "denominator_evaluations": 429250,
+  "coefficient_columns": 1698,
+  "basis_counts": {
+    "h2": 60,
+    "k2": 234,
+    "P1": 702,
+    "P0": 702
+  },
+  "projection1683_used": false,
+  "determinant": 14098,
+  "gaussian_row_swaps": 2,
+  "negative_controls": {
+    "order2_wrong_pole_coefficient": {
+      "point_index": 0,
+      "row": 0,
+      "column": 0,
+      "correct": 21985,
+      "mutant": 23385,
+      "difference": 1400,
+      "mutation": "use divT-q instead of divT-2q"
+    },
+    "lower_order_omitted_denominator_derivative": {
+      "point_index": 0,
+      "row": 0,
+      "column": 294,
+      "correct": 27030,
+      "mutant": 4939,
+      "difference": 9912,
+      "mutation": "omit -A_r*u from A-scaled lower-pole column"
+    }
+  },
+  "normalization": "Whole equation multiplied by A^2; h2 tangent columns use tau2, k2 uses partial_t+Nt, P1 uses A(partial_i+Ni)-Ai, P0 uses A^2(partial_i+Ni), source A^2*r^-4 Mb e0/12",
+  "provenance": "Independently authored rational-polynomial evaluator and symbolic physical Jacobian/monomial derivatives, reduced tangent operator, normalized Gaussian elimination. No Pro script run; no exploratory search. Fixed explicit seed/basis/row specification supplied by coordinator.",
+  "delivered_csv_comparison": "Not performed in this execution; preserve this report and add a separate binding receipt after download.",
+  "characteristic_zero_reason": "All input denominators are units modulo32003 at the integer lifts of the850 sample points. The rational1699-square augmented determinant therefore reduces to14098 and is nonzero. There are only1698 coefficient columns, so no rational constant coefficient vector solves the necessary evaluations. Unknown coefficient denominators need not be prime to32003. The rank obstruction persists after any characteristic-zero constant-field extension.",
+  "structural_dependency": "The prior low-degree tangent/support theorem plus new invertibility of R-2I restrict only the highest-pole numerator, leaving all702 P1 coefficients. This necessary1698 family contains every possible solution in the declared original2106-generator sum. The additional1683 projection is unused.",
+  "scope": "Excludes only full six-component V+V/A+V/A^2 and its subfamily V/A^2 with the stated monomial box. Does not exclude larger supports, A^-3 or other denominators, arbitrary rational compact currents, fibre-dependent sextic functions, or solve the full target.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "sympy": "1.14.0"
+}

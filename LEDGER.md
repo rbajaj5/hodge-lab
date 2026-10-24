@@ -6299,3 +6299,87 @@ searches, checks and failed attempts are AI-assisted work for Ravi Bajaj.
 All parent ledger bytes are preserved. No upstream post, reply, edit or PR
 was made. Posts 1–29 and the tally of 29 discussion contributions / one
 closed maintenance PR / zero accepted authored solves remain unchanged.
+
+### Checkpoint 149 — A-squared full-current family excluded, 24 October 2026 EDT
+
+Used an actual Goal and the existing Pro chat for the user's A(r,v)^2
+denominator request. Notebook parent fc4f38a338b47addf62d1bf699783302285378fe;
+upstream dispatch pin 27f4bb9ad8757e5841f884d9d30124a3c97a847d. Lean stayed
+benched. The 45-minute research limit, 60-second mathematical processes,
+45-second network operations and 15-minute integration limit remained.
+Research closed at 16:47:29 UTC, 15 minutes 29 seconds after Goal activation.
+The [integrated audit](notes/skew-A2-denominator-audit-20261024.md) states the
+full two-row equation, positive packet orientation, inputs and limitations.
+Completed source, divisor/tangency/support, Q/R2, beta and trace checks were
+reused, not rerun or counted as new mathematical evidence.
+
+Pro enlarged the requested pure denominator family to (B+B/A+B/A^2)^6,
+where B=span_Q{r^m v^n t^k:-10<=m<=2,0<=n,k<=2}. This direct sum has
+2,106 parameters. The new highest-pole residue has det(R_a-2I)=14/3,
+forcing only P2 tangent at A=0. The old bounded tangent-module theorem
+then leaves 294 top-sector parameters. All 702 P1/A and 702 P0 parameters
+remain unrestricted: lower-sector tangency cannot be imposed separately,
+because its pole couples to the top sector. The squared-denominator
+operator retains both quotient corrections and has scalar term 4r^7+9r.
+Both compact rows, every physical derivative and the 1/12 source remain.
+
+The new 1,698-parameter necessary family has a 1,699-square augmented minor
+with determinant 14098 modulo 32003. Good reduction makes this a nonzero
+rational minor, excluding the family over Q without reducing unknown
+coefficient denominators modulo the prime. The necessary pole theorem
+extends the exclusion to the entire 2,106-parameter sum. Full coefficient
+rank closes the kernel issue. No primitive was found.
+
+Evidence remains separated by executor. Pro's direct quotient-rule search
+took 11.505 seconds. Its separate checker regenerated all 2,986,842 entries
+and 879 domain records, then used modular Bareiss elimination in 16.519
+seconds, with ten controls. The local checker independently regenerated
+the decisive 2,886,601 entries at 850 points and obtained the same
+determinant by normalized Gaussian elimination in 16.344 seconds. Two
+controls detected a wrong top-sector scalar term and an omitted lower
+quotient derivative. The local check does not claim the remaining 59 rows.
+Its regeneration preceded matrix delivery; later comparison binds the
+existing calculation to the delivered CSV. These are separate AI
+computations, not independent human reviews or Lean/kernel checks.
+
+The local algebra worker passed fourteen exact checks and three controls;
+separate local reciprocal and projection checks are retained. The stronger
+necessary condition that the second component of h is divisible by v
+would reduce 1,698 to 1,683 parameters. It was delivered and separately
+checked but not consumed by Pro's decisive search. The larger family was
+already excluded. The [team board](notes/one-reflection-skew-team-board.md)
+records this distinction; the refinement is not an invented dependency.
+
+All 50 files in the Pro archive passed manifest checks, with ZIP SHA256
+1c254f651668fc2633d338f848f0de8d45162d0c3fd1b80dc48ccde1f16c7d8c.
+The [original note](notes/skew-A2-denominator-20261024.md), full matrix,
+scripts, receipts and [local evidence](results/skew-A2-denominator-audit-20261024)
+are preserved. Hash verification is distinct from mathematical execution.
+The [reproducible inspected figure](results/skew-A2-denominator-20261024/figure-02/result/A2-denominator-certificate.png)
+shows the unrestricted lower sectors, necessary top-sector reduction and
+exact finite-family certificate. Its initial overlapping render is retained.
+
+No mathematical process failed or timed out in this batch. Pro's Git proxy
+failure and two bounded fetch timeouts were resolved by read-only connector
+recovery of the exact parent objects, with Git hashes verified. Initial
+browser download clicks yielded no local artifact; capturing the download
+event recovered the original ZIP. The receiver's payload-layout assumption
+was corrected and all bytes reverified. These transfer/presentation failures
+are not mathematical failures. The unsuccessful mathematical attempt is the
+declared family itself. Pro's standalone export-verifier run is a packaging
+replay, not another independent result.
+
+Other numerator bounds, additional pole divisors, higher powers and arbitrary
+rational or fibre-dependent currents remain outside the exclusion. No
+full-source primitive, fibre-exact lift, global clearing, homogeneous
+certificate or accepted solve is claimed. Completing this Goal completes
+the bounded batch only. Credit fqlx for the compact connection, benediamond
+for the physical cover and earlier reductions, and Benjamin E. Diamond and
+hodge.computer contributors for the fixed problem and framework. New algebra,
+searches and checks are AI-assisted work for Ravi Bajaj.
+
+All 474,562 parent ledger bytes remain unchanged before this append.
+No upstream post, reply, edit or PR was made. Posts 1–29 and the tally of
+29 discussion contributions / one closed maintenance PR / zero accepted
+authored solves remain unchanged. Notebook publication and its exact
+remote readback are handled by the coordinator.

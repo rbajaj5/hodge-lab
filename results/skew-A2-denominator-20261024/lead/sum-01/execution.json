@@ -1,0 +1,27 @@
+{
+  "executor": "Pro root constructive lead",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-A2-denominator/results/skew-A2-denominator-20261024/lead/search_A2_sum.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-A2-denominator/results/skew-A2-denominator-20261024/lead/sum-01/result"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-A2-denominator",
+  "started_utc": "2026-10-24T16:37:13.309767+00:00",
+  "completed_utc": "2026-10-24T16:37:24.814759+00:00",
+  "wall_seconds": 11.505016277002142,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "PYTHONPATH": "/workspace/scratch/b8974c152662/constructive-python",
+  "files": {
+    "runner.py": "3f377dcac2389dd24215aca749c48bec22857430257dfd010730868bcd451b5d",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "f0dfa423dea62c243832032ac34068a760b0bebb959475356da3acb0e97e8751",
+    "stdout.log": "501ad02632190210a1e126de0da435aa10518a47fd60bb26910cb8a80c224055",
+    "result/validation.json": "8d05f4b974808deb2e28ffdec2b97618827fdfc10655ff3cb2f5c5621593bf5c",
+    "result/augmented-matrix.csv": "28ec91d22fb0008e1519f28864a0a50a706dbc74dbcd8411c9bc4dca6805a6e7",
+    "result/inputs.json": "21d60f4a9cdd180722f6b1aca76b55b813407c195c9af1144049cfdc222280c5"
+  }
+}

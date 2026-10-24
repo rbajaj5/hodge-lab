@@ -1,0 +1,18 @@
+PASS new order-three shifted residue determinant
+PASS new order-two tangent zeroth term
+PASS boundary M_b from pinned JSON
+PASS boundary M_c from pinned JSON
+PASS boundary M_d from pinned JSON
+PASS new lower compact row boundary operator
+PASS coupled order-two normal target
+PASS new boundary inverse-v representative
+PASS lower row x^3 projection
+PASS lower row x^4 projection
+PASS v-divisibility removes both forbidden lower projections
+{
+  "status": "PASS_NEW_COUPLED_POLE_CONSTRAINT_AND_TOP_ROW1_V_DIVISIBILITY",
+  "checks": 14,
+  "mutations": 3,
+  "seconds": 0.34300000000803266,
+  "dimension": 1683
+}

@@ -1,0 +1,20 @@
+{
+  "executor": "Pro root plaintext-export reproduction; no new search",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-A2-denominator/results/skew-A2-denominator-20261024/reproduce_minor.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-A2-denominator/results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json"
+  ],
+  "started_utc": "2026-10-24T16:40:51.355128+00:00",
+  "completed_utc": "2026-10-24T16:41:07.481712+00:00",
+  "seconds": 16.12661042000036,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "files": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "927e24a66234a93851963e01e03f4ddbe9a4e85498d31d6548519748014f9f78",
+    "stdout.log": "03786e17c94856e5801591deb69618c0908deb096134c9cf5a7323a47b264c24"
+  }
+}

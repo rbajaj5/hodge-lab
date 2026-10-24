@@ -46,6 +46,20 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the A-squared family is also excluded
+
+The [new full-current test](notes/skew-A2-denominator-audit-20261024.md)
+allows all six components in `B+B/A+B/A²`, with r exponents -10 through 2
+and v,t degrees at most 2 in each numerator. Only the highest pole sector
+is forced tangent; the lower sectors remain unrestricted. The resulting
+1,698-parameter necessary family has a checked nonzero 1,699-square augmented
+minor, excluding the full declared 2,106-parameter family over Q.
+Pro and a separate local checker independently reconstructed the decisive
+minor. No primitive was found, and other supports or poles remain open.
+Goal and the existing Pro chat were reused; Lean stays benched.
+[Evidence, failed routes and limits](notes/skew-A2-denominator-audit-20261024.md)
+· [Reproducible certificate figure](results/skew-A2-denominator-20261024/figure-02/result/A2-denominator-certificate.png).
+
 ### One-reflection-skew: adding an A denominator still fails within the tested bounds
 
 The [new bounded search](notes/skew-A-denominator-audit-20261024.md) permits

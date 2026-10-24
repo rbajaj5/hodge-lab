@@ -1,0 +1,39 @@
+{
+  "label": "Transport evidence reconstructed from observed tool results, not new mathematical executions",
+  "attempts": [
+    {
+      "command": "timeout 45s git fetch --no-tags origin fc4f38a338b47addf62d1bf699783302285378fe",
+      "route": "sandbox configured proxy",
+      "exit": 128,
+      "stderr": "fatal: unable to access 'https://github.com/rbajaj5/hodge-lab.git/': Failed to connect to browser-proxy port 8889 after 0 ms: Couldn't connect to server"
+    },
+    {
+      "command": "timeout 45s git fetch --no-tags origin fc4f38a338b47addf62d1bf699783302285378fe",
+      "route": "approved escalated configured proxy",
+      "exit": 124,
+      "stdout": "",
+      "stderr": "",
+      "timeout_seconds": 45
+    },
+    {
+      "command": "env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY timeout 45s git fetch --no-tags origin fc4f38a338b47addf62d1bf699783302285378fe",
+      "route": "approved escalated direct public Git",
+      "exit": 124,
+      "stdout": "",
+      "stderr": "",
+      "timeout_seconds": 45
+    }
+  ],
+  "successful_read_route": "GitHub connector public GETs: pinned files, compare, recursive tree, missing blobs",
+  "recovery": {
+    "public_commit": "fc4f38a338b47addf62d1bf699783302285378fe",
+    "tree": "fa81edd182774be771a00bf03743c8c8aa1cedbd",
+    "changed_paths_from_previous_parent": 103,
+    "missing_public_blob_contents_fetched": 38,
+    "cached_delivery_blobs_imported": 36,
+    "all_blob_git_hashes_verified": true,
+    "exact_existing_commit_bytes_hash_verified": true,
+    "new_commit_created": false
+  },
+  "no_authentication_retry_loop": true
+}

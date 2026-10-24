@@ -1,0 +1,30 @@
+{
+  "status": "PASS: necessary divisibility of second fibre component h2_1 by v; no full solve/exclusion",
+  "script_sha256": "8f3687bc7fcd97c921eac284b0a64dd223b54c313dec35f9fd483220be790ed7",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "order2_controls_sha256": "4b6906e9e5423c4907ab1dd46f5fd919ad2d946455d3e0b0eeea7db77509d41f",
+  "row_index_convention": "zero-based row1 is the second compact fibre component",
+  "second_row_h_coefficient": "2*r**7 + 19*r/2 + (3*r**6 + 2)/(2*v)",
+  "second_row_Pt_coefficient": "-1/(2*t)",
+  "lower_left_entries": "Both K[1,0] and Nt0[1,0] vanish exactly at a=0",
+  "normal_map_prior_reuse": "The prior normal remainder is for F_r P_r+F_v P_v. The A normal map differs modulo F only by the unit r^-15, so its x3 and x4 projections also vanish.",
+  "inverse_v_mod_F": "-r*(x**5 - x**4 + x**3 - x**2 + x - 1)/(r**18 + r**12 + 1)",
+  "mu": "r*(3*r**6 + 2)/(2*r**18 + 2*r**12 + 2)",
+  "projection_x3": "-mu*H0",
+  "projection_x4": "+mu*H0",
+  "negative_control": {
+    "mutation": "reverse sign of inverse_v",
+    "remainder_of_v_times_mutant_minus1": "-2"
+  },
+  "necessity": "The mixed next-pole equation is W2_1-(4/3)Q1_1=0. Q1_1 has zero x3,x4 projections; mu is a nonzero rational function of r. Thus H0=0 and h2_1=v*H1. No separate tangency condition on the A^-1 numerator is imposed.",
+  "support_after_constraint": "h2 row0 retains30 terms; h2 row1 retains15 terms with v exponent1; P2_t retains234 terms total.",
+  "safe_parameter_counts": {
+    "pure_V_over_A2_necessary": 279,
+    "joint_V_plus_V_over_A_plus_V_over_A2_necessary": 1683
+  },
+  "domain": "Generic r,t with r*t*(C+1)!=0 and the generic A=0,Delta!=0 locus. These denominators are nonzero rational functions; polynomial coefficient identities extend from this dense locus. No specialization to their zero sets is used.",
+  "scope": "Only this necessary mixed next-pole consequence. Other next-pole equations may impose additional constraints. No matrix search, modular rank claim, all-current exclusion or primitive.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0"
+}
