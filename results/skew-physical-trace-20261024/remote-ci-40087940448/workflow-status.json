@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-24T11:12:22.696090+00:00",
+  "source_snapshot": "ci-20261024T111150Z.json",
+  "workflows": [
+    {
+      "id": 40087940458,
+      "name": "CPU checks and certificate replay",
+      "status": "in_progress",
+      "conclusion": null,
+      "head_sha": "a6cf349bba45ecaaf2f8723479c0e179e97f36bc",
+      "html_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/40087940458"
+    },
+    {
+      "id": 40087940448,
+      "name": "Notebook Lean proofs",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "a6cf349bba45ecaaf2f8723479c0e179e97f36bc",
+      "html_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/40087940448"
+    }
+  ]
+}

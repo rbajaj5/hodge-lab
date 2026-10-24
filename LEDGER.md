@@ -5913,3 +5913,52 @@ is compatible physical sheet/form maps fixing common V and z on an allowed
 regular domain. Scalar trace zero does not prove full source exactness.
 The proof commit and fresh remote CI outcome will be recorded separately.
 No upstream post/reply/edit/PR; Posts 1–29 and tally 29/1/0 are unchanged.
+
+
+### Checkpoint 143 — published proof and fresh Lean CI outcome, 24 October 2026 EDT
+
+The reviewed proof is published in [a6cf349bba45ecaaf2f8723479c0e179e97f36bc](https://github.com/rbajaj5/hodge-lab/commit/a6cf349bba45ecaaf2f8723479c0e179e97f36bc),
+with its [normal push/readback record](results/skew-physical-trace-20261024/remote-ci-40087940448/proof-publication.json).
+The full [Notebook Lean proofs run 40087940448](https://github.com/rbajaj5/hodge-lab/actions/runs/40087940448)
+succeeded, including all 25 job steps and the new physical coefficient-field
+and all-sheet trace step. This outcome is pinned to the proof commit, not to
+an older receipt or the later documentation commit.
+
+The fresh GitHub Actions [focused receipt](results/skew-physical-trace-20261024/remote-ci-40087940448/focused/validation.json)
+records 98 audited declarations/instances, one new-module kernel replay,
+39 positive controls and 10 intended False-goal failures in 48.482 seconds.
+Lean is 4.31.0, mathlib is `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`,
+and the remote Python version is 3.12.3. All commands stayed within their
+120-second bounds; the focused limit was 600 seconds. Only `propext`,
+`Classical.choice` and `Quot.sound` occur in the audited axiom sets.
+These are a fresh remote execution, separate from Pro's 36.357-second run.
+
+The coordinator's [receipt/source review](results/skew-physical-trace-20261024/remote-ci-40087940448/ci-receipt-review.json)
+verified the exact run and job commit bindings, 38 committed file bindings,
+48 command-stream hashes and all 10 intended negative failures. Its
+[reproducible validator](results/skew-physical-trace-20261024/remote-ci-40087940448/review_ci_receipt.py)
+requires fresh output, rejects timeouts and verifies that the jobs belong
+to the expected workflow/run/commit. The coordinator did not execute Lean
+locally. The [download receipt](results/skew-physical-trace-20261024/remote-ci-40087940448/artifact-download.json)
+binds the full artifact archive; the focused logs are preserved here.
+The separate [CPU workflow 40087940458](https://github.com/rbajaj5/hodge-lab/actions/runs/40087940458)
+was still running at the saved [status snapshot](results/skew-physical-trace-20261024/remote-ci-40087940448/workflow-status.json);
+its completion is not claimed by this record.
+
+The bounded unit is complete: the existing coefficient field embeds in the
+physical curve field, physical evaluation has scalar r^11/(12 f_r), and the
+actual degree-18 tensor algebra has compatible arbitrary-element trace.
+The [reproducible diagram](results/skew-physical-trace-20261024/visualization-01/physical-trace-bridge.png)
+and [note](notes/skew-physical-trace-bridge.md) retain the distinction between
+one physical sheet and all-sheet trace. The next dependency is compatible
+sheet maps fixing V and z on an allowed regular domain, followed by the
+physical-form/source-class comparison. Scalar trace zero does not prove
+source exactness; no primitive, clearing, certificate or solve is claimed.
+All earlier ledger bytes are preserved. No upstream post/reply/edit/PR was
+made; Posts 1–29 and tally 29 discussions/one closed maintenance PR/zero
+accepted authored solves remain unchanged.
+
+A [separate read-only AI evidence review](results/skew-physical-trace-20261024/remote-ci-40087940448/independent-ci-review.json)
+also verified the artifact/extracted bytes, all 38 file bindings, 48 streams,
+98 actual axiom-log records and the 10 intended failures. It found no
+material mismatch; this is not another Lean run or independent human review.

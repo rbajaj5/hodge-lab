@@ -1,0 +1,258 @@
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalV' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.transformed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.ChartField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.original_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.transformed_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.chartA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.chartV' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_r_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.r_algebraic_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.w_algebraic_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.parameters_algebraic_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.transformed_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.transformed_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalBaseCoords' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_base_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.vRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.coeffRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.qVCoeffTower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.qCoeffBaseTower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.qVBaseTower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.genericBaseCoords' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.coordinateIndex' depends on axioms: [propext]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.coordinateIndex_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.generic_base_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.ratfunc_image_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.GenericCoordinateField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.generic_coordinate_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.generic_vfield_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.generic_coefffield_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.generic_coordinate_field_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.CoordinateFractions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.coordinateFractionRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.genericCoordinateRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.topBaseRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalCoordinateRationalAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.genericCoordinateEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.genericCoordinateEquiv_X' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurveRing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve_a' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve_v' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve_t' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.field_map_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBaseAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveQBaseTower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.baseToCurve_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curve_scalar_tower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.mapped_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_r_aeval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalEval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalEval_theta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalEval_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalEval_inverseDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalEval_sourceScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_sourceScalar_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_source_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.splitToCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.splitToCurve_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.split_base_compatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveRoots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveRoots_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveRoots_aeval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveRoots_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_eq_full_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveRoots_exhaust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalSheet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalSheet_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveSigma_theta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physicalEval_eq_sheet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.CurveTensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.finiteCurveTensor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.freeCurveTensor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveTensorBasis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveTensor_finrank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveSplitScalarTower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveAllEvaluations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBetaHom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBetaHom_tmul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBetaHom_theta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBetaHom_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBetaHom_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBeta_tmul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.curveBeta_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_curve_baseChange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_curveBeta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_curve_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_allSheets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_curve_tmul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_curve_sourceScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.trace_curve_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalTraceBridge.physical_evaluation_not_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,233 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 120854584319,
+      "run_id": 40087940448,
+      "workflow_name": "Notebook Lean proofs",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/rbajaj5/hodge-lab/actions/runs/40087940448",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVMvIls8AAAAcI36b_w",
+      "head_sha": "a6cf349bba45ecaaf2f8723479c0e179e97f36bc",
+      "url": "https://api.github.com/repos/rbajaj5/hodge-lab/actions/jobs/120854584319",
+      "html_url": "https://github.com/rbajaj5/hodge-lab/actions/runs/40087940448/job/120854584319",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-24T10:57:21Z",
+      "started_at": "2026-10-24T10:57:22Z",
+      "completed_at": "2026-10-24T11:11:27Z",
+      "name": "rank-gap",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-24T10:57:23Z",
+          "completed_at": "2026-10-24T10:57:23Z"
+        },
+        {
+          "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-24T10:57:23Z",
+          "completed_at": "2026-10-24T10:57:27Z"
+        },
+        {
+          "name": "Install pinned Elan bootstrap",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-24T10:57:27Z",
+          "completed_at": "2026-10-24T10:57:28Z"
+        },
+        {
+          "name": "Fetch pinned mathlib cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-24T10:57:28Z",
+          "completed_at": "2026-10-24T10:58:55Z"
+        },
+        {
+          "name": "Compile, audit axioms, and replay kernel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-24T10:58:55Z",
+          "completed_at": "2026-10-24T11:00:54Z"
+        },
+        {
+          "name": "Check concrete coefficient obstructions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-24T11:00:54Z",
+          "completed_at": "2026-10-24T11:05:02Z"
+        },
+        {
+          "name": "Check the skew polynomial obstruction",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-24T11:05:02Z",
+          "completed_at": "2026-10-24T11:06:07Z"
+        },
+        {
+          "name": "Check arbitrary degree-four inputs and the mixed-polar comparison",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-24T11:06:07Z",
+          "completed_at": "2026-10-24T11:06:23Z"
+        },
+        {
+          "name": "Check the protected sextic to chart substitution",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-24T11:06:23Z",
+          "completed_at": "2026-10-24T11:06:37Z"
+        },
+        {
+          "name": "Check ordered coordinate volume and chart assumptions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-24T11:06:37Z",
+          "completed_at": "2026-10-24T11:06:55Z"
+        },
+        {
+          "name": "Check local residue normalization and normal chart",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-24T11:06:55Z",
+          "completed_at": "2026-10-24T11:07:15Z"
+        },
+        {
+          "name": "Check the constructed ambient coordinate derivation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-24T11:07:15Z",
+          "completed_at": "2026-10-24T11:07:31Z"
+        },
+        {
+          "name": "Check immutable and fresh receipt separation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-24T11:07:31Z",
+          "completed_at": "2026-10-24T11:07:34Z"
+        },
+        {
+          "name": "Check the actual differential-form reduction",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-24T11:07:34Z",
+          "completed_at": "2026-10-24T11:07:52Z"
+        },
+        {
+          "name": "Check the split trace-free basis and normalization",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-24T11:07:52Z",
+          "completed_at": "2026-10-24T11:08:10Z"
+        },
+        {
+          "name": "Bind the literal physical cover to pinned sources",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-24T11:08:10Z",
+          "completed_at": "2026-10-24T11:08:10Z"
+        },
+        {
+          "name": "Check the conditional physical-cover lemma",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-24T11:08:10Z",
+          "completed_at": "2026-10-24T11:08:30Z"
+        },
+        {
+          "name": "Check generic distinct roots in the physical splitting field",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-24T11:08:30Z",
+          "completed_at": "2026-10-24T11:08:51Z"
+        },
+        {
+          "name": "Check scalar-extension isomorphism and quotient traces",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-24T11:08:51Z",
+          "completed_at": "2026-10-24T11:09:16Z"
+        },
+        {
+          "name": "Check physical-source normalization and selected fibre correction",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-24T11:09:16Z",
+          "completed_at": "2026-10-24T11:09:53Z"
+        },
+        {
+          "name": "Check physical curve and allowed differential pullbacks",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-24T11:09:53Z",
+          "completed_at": "2026-10-24T11:10:35Z"
+        },
+        {
+          "name": "Check physical coefficient field and all-sheet trace bridge",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-10-24T11:10:35Z",
+          "completed_at": "2026-10-24T11:11:24Z"
+        },
+        {
+          "name": "Save concrete proof receipts and logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-10-24T11:11:24Z",
+          "completed_at": "2026-10-24T11:11:25Z"
+        },
+        {
+          "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46,
+          "started_at": "2026-10-24T11:11:25Z",
+          "completed_at": "2026-10-24T11:11:26Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47,
+          "started_at": "2026-10-24T11:11:26Z",
+          "completed_at": "2026-10-24T11:11:26Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/rbajaj5/hodge-lab/check-runs/120854584319",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000002464,
+      "runner_name": "GitHub Actions 1000002464",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

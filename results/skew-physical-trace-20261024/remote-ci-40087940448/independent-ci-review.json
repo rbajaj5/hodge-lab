@@ -1,0 +1,27 @@
+{
+  "status": "APPROVED",
+  "reviewer": "ci_receipt_review; separate read-only AI agent",
+  "timestamp_utc": "2026-10-24T11:13:35.601814+00:00",
+  "proof_commit": "a6cf349bba45ecaaf2f8723479c0e179e97f36bc",
+  "run_id": 40087940448,
+  "artifact_id": 12557299362,
+  "receipt_sha256": "e679780a58fd076d551f85c789e4f8d4ee310816c6301ff63941d5e1de4af95a",
+  "artifact_sha256": "0fd12237327ae5d9d7dfd6cb7c2cf0a0029139d1cb00a01629b8bc43bb718ae8",
+  "verified": {
+    "run_job_workflow_step_commit_bindings": true,
+    "extracted_focused_bytes_match_zip": true,
+    "committed_file_bindings": 38,
+    "command_stream_hashes": 48,
+    "actual_axiom_log_records": 98,
+    "intended_false_failures": 10,
+    "focused_counts": [
+      98,
+      1,
+      39,
+      10
+    ],
+    "validator_guards_and_script_hash": true
+  },
+  "conclusion": "No material evidence mismatch; documented mathematical limits remain appropriate.",
+  "scope": "Read-only receipt, source-byte and archive review. No additional Lean execution or mathematical replay; not independent human review."
+}

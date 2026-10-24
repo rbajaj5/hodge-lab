@@ -246,3 +246,19 @@ kept separate from Pro's 36.357-second Lean run; the coordinator did not
 execute Lean locally. Fresh remote CI belongs to the forthcoming proof
 commit and is not yet claimed here. The stated physical-form boundary and
 Posts 1–29/tally 29/1/0 remain unchanged.
+
+
+## Published verification outcome
+
+The proof was pushed normally as [a6cf349](https://github.com/rbajaj5/hodge-lab/commit/a6cf349bba45ecaaf2f8723479c0e179e97f36bc).
+The full [Lean CI run 40087940448](https://github.com/rbajaj5/hodge-lab/actions/runs/40087940448)
+passed all 25 job steps. Its fresh
+[focused receipt](../results/skew-physical-trace-20261024/remote-ci-40087940448/focused/validation.json)
+records 98 audited declarations, one new-module kernel replay, 39 positive
+controls and 10 deliberate errors rejected, in 48.482 seconds. The
+[coordinator review](../results/skew-physical-trace-20261024/remote-ci-40087940448/ci-receipt-review.json)
+binds 38 committed files and 48 command streams to that exact run and commit.
+It is a receipt/source review, not another local Lean execution.
+The separate repository-wide CPU workflow was still running in the saved
+[status snapshot](../results/skew-physical-trace-20261024/remote-ci-40087940448/workflow-status.json).
+The all-sheet physical-form/source-class boundary above remains unchanged.
