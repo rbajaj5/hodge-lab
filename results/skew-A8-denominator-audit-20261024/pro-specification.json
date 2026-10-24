@@ -1,0 +1,38 @@
+{
+  "declared_before_results": true,
+  "source": "Existing Pro chat; observed 2026-10-24T18:27:10Z",
+  "prime": 65521,
+  "seed": 2026102508,
+  "generator": "Python random.Random; successive randrange(1,p) for r,v,t",
+  "rejections": [
+    "A=0",
+    "Delta=0",
+    "any zero literal connection denominator"
+  ],
+  "points": 3000,
+  "row_order": "compact row0 then1 per point",
+  "scale": "A^8",
+  "columns": [
+    "h8(60)",
+    "k8(234)",
+    "P7(702)",
+    "P6(702)",
+    "P5(702)",
+    "P4(702)",
+    "P3(702)",
+    "P2(702)",
+    "P1(702)",
+    "P0(702)",
+    "positive source"
+  ],
+  "basis_order": "h/k: input row,m,n,k; lower: direction r,v,t then input row,m,n,k; all increasing",
+  "shape": [
+    6000,
+    5911
+  ],
+  "minor": "first5911rows,allcolumns",
+  "minor_points": 2956,
+  "last_point_rows": [
+    0
+  ]
+}

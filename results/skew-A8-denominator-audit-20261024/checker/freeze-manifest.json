@@ -1,0 +1,54 @@
+{
+  "frozen_utc": "2026-10-24T18:28:21Z",
+  "scope": "One successful bounded independent A8 mathematical run; delivered-matrix IO binding pending and unexecuted",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "mathematical_report_sha256": "a9cbcfece3df8b8cd9c1813d685dbb0ad193838292b4212029f6c9c149fb92ff",
+  "local_array_publication_note": "Independent binary matrix included locally; explicitly disclose any public omission. Reproduction script regenerates exact bytes.",
+  "files": [
+    {
+      "path": "A8-minor-receipt.json",
+      "bytes": 1909,
+      "sha256": "a9e686fc67ba2285e79c4522116ce5ad011b9d0390a900b3ffe935cac42b4de2"
+    },
+    {
+      "path": "A8-minor.json",
+      "bytes": 4744,
+      "sha256": "a9cbcfece3df8b8cd9c1813d685dbb0ad193838292b4212029f6c9c149fb92ff"
+    },
+    {
+      "path": "A8-minor.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "A8-minor.stdout.log",
+      "bytes": 785,
+      "sha256": "6e69208714026124b07f527d0c0ede140d933e5db847f8c13d1bc009652d3aa5"
+    },
+    {
+      "path": "audit_A8_regenerated_minor.py",
+      "bytes": 15739,
+      "sha256": "a3ddd2085a67c1081ff1c38807cee17e29c23698fdd7b1f49c00395572fbdaf1"
+    },
+    {
+      "path": "bind_delivered_packet.py",
+      "bytes": 7253,
+      "sha256": "e87416360079bfd6a53ea14575fe9e999ddd6977d1d263efa6675bd0c49383f0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7539,
+      "sha256": "f6f497e82464b9ae38e5049f6d2f32a2d82fcff16d9a0922a03112c1923b19e9"
+    },
+    {
+      "path": "regenerated-inputs.json",
+      "bytes": 983614,
+      "sha256": "bfde47073da9b8c079222adfad49a989c493f73ffc1d2f28d4eb85542dcaafd0"
+    },
+    {
+      "path": "regenerated-minor.npy",
+      "bytes": 69879970,
+      "sha256": "1c41301ad2a113d530bbd3b13c4ee004ac22fb55219b8bab99ae9850d46ac9e6"
+    }
+  ]
+}

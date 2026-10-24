@@ -1,0 +1,60 @@
+A8 full-current handoff — mathematics frozen; integration only
+24 October2026, America/New_York. Math close:14:29:12EDT /18:29:12UTC.
+Integration deadline:14:44:12EDT /18:44:12UTC.
+
+Integration parent:c6e2e54f957eeeaa97cabc7a26df6d81ffd759ee
+Cached execution checkout:fc4f38a338b47addf62d1bf699783302285378fe
+Upstream coordinator pin:27f4bb9ad8757e5841f884d9d30124a3c97a847d
+Current-parent AGENTS,board and connection read via connector; Git blobs and
+source bytes match. No fresh full parent or combined Git tree is claimed.
+ConnectionSHA256:a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d
+
+OWNED ADDITIONS ONLY:notes/skew-A8-denominator-20261024.md and
+results/skew-A8-denominator-20261024/. No shared-file edits,Lean,commit,push
+or upstream actions. Coordinator owns integration and Hodge Lab publication.
+
+RESULT:finite rational-CONSTANT family(B+B/A+...+B/A^8)^6 excluded,where
+B spans r^m v^n t^k,-10<=m<=2,0<=n,k<=2. Original6318 parameters;
+only P8 tangent:top294 plus ALL5616 lower parameters free=5910.
+Bothrows,allphysical derivatives,fullNt,positive r^-4 Mb e0/12 retained.
+Imported det(Ra-8I)=200/3,tau8=-14r^7+27r; lower pole coupling retained.
+
+Fixed prime65521,seed2026102508,3000admissible points; full6000x5911 matrix.
+First5911rows decisive. Coordinator independently reports determinant30337
+mod65521,34,939,921 entries at2956points,26.781s,3controls,exactFLINT0.9.0.
+Pro did NOT execute a determinant or install a backend.
+Pro author:34.721790s,exit0. Separate AI reconstruction:32.314968s,exit0;
+all35,466,000entries,3000domains,basis/rejections match;25controls detected.
+No mathematical failures,timeouts or repairs. One orchestration call aborted
+before dispatch; no code ran,and its operations were reissued.
+Coordinator algebra:7checks+3controls,2.235s process/0.219s algebra,imported.
+Exact6318x5910 injectionSHA32dcdb1291e8ee2cc2703978f95a2b62d8e9a6d5295b8db48c6c37e5a10040a2.
+
+MATRIX:headerless row-major little-endian uint16(<u2),shape(6000,5911),
+70,932,000bytes. Final column positive source.
+SHA256:760a3e5cc7c7e0e941a482f2f554cf372f5145371ebf48ff5498300af20da9b3
+inputs.jsonSHA256:1e635a3e0c6e5be593ce954e638bd37f2453b882110d7da41ce268709772d9c4
+Exactdomains,basislabels and sourcepins included. No rejected samples.
+Coordinator frozenNPYSHA256:1c41301ad2a113d530bbd3b13c4ee004ac22fb55219b8bab99ae9850d46ac9e6
+Optional binder checks these exact matrix hashes and every decisive entry.
+It is IO-only and was NOT executed in Pro; coordinator NPY is not present.
+
+REMAINING:coordinator IO-only decisive-entry/domain/basis matching,then
+shared integration and normal Hodge Lab push. No extra mathematical replay,
+review or setup needed. No primitive,source exactness,general rational-current
+obstruction,cohomology theorem,global clearing,certificate or solve claimed.
+
+ARCHIVE:payload/<repository-relative-path>,MANIFEST.sha256,HANDOFF.txt.
+Full root manifest paths start payload/; verify from unpacked root,then
+apply payload contents only. ADDED-FILES.txt is an inventory,not a Git tree.
+Review ZIP retains all non-matrix payload bytes with its own root manifest.
+Original full manifest/handoff under original-delivery/; omitted-artifacts.json
+identifies only the bulky matrix. Full ZIP and slices retain that matrix.
+PARTS.sha256 paths start parts/. Concatenate part001 onward numerically as
+raw bytes without separators. Everypart<=2,000,000bytes. DELIVERY.json and
+SHA256SUMS.txt contain exact archive,manifest,handoff and slice hashes/sizes.
+No repository/cache/submodule dump. Original bytes immutable after creation.
+
+RUN.md supplies fresh-directory <=60s -O reproduction commands. No old proof
+or receipt rewritten. Reproducible scientific PNG/SVG and generator/input/output
+hashes included; PNG inspected. Credit fqlx,benediamond,hodge.computer framework.

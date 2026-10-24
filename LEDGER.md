@@ -6852,3 +6852,65 @@ Posts 1–30 remain unchanged. The latest upstream contribution is still
 Tally unchanged: **30 discussion contributions, one closed maintenance PR,
 zero accepted authored solves**. Publication and remote readback are checked
 separately; this bounded Goal does not solve the full target.
+
+
+### Checkpoint 158 — 24 October 2026, 14:29 EDT / 18:29 UTC: eighth A-pole full-current family excluded; no primitive
+
+**Hodge Lab only; no hodge-computer post, reply, edit or PR.** The requested
+A(r,v)^8 batch used actual Goal and the existing Pro chat, with Lean benched.
+Parent `c6e2e54f957eeeaa97cabc7a26df6d81ffd759ee`; fresh upstream pin
+`27f4bb9ad8757e5841f884d9d30124a3c97a847d`. The unchanged protected target
+is q=1, source X0^3Y0^3; A here is the distinct physical chart coefficient.
+
+The [audit](notes/skew-A8-denominator-audit-20261024.md) and
+[original Pro note](notes/skew-A8-denominator-20261024.md) describe the
+full six-component `(B+B/A+B/A^2+B/A^3+B/A^4+B/A^5+B/A^6+B/A^7+B/A^8)^6` family,
+with constant rational coefficients and
+`B={r^m v^n t^k:-10<=m<=2,0<=n,k<=2}`. Both source rows, all physical
+r/v/t derivatives, full Nt and positive packet source `r^-4 Mb e0/12`
+remain. Only P8 is forced tangent: det(Ra-8I)=200/3 and tau8=-14r^7+27r.
+There are 6,318 original and 5,910 necessary parameters, including
+**all 5,616 unrestricted lower coefficients**. The next pole remains
+coupled; earlier exclusions were not imposed on a changed lower source.
+
+Executed evidence is separated by owner and scope:
+
+- Local algebra: seven new exact checks and three controls, 2.235 seconds,
+  with exact 6,318-by-5,910 injection. Earlier divisor/module/support
+  arguments were reused, not re-proved.
+- Pro lead: direct quotient-rule 6,000-by-5,911 matrix, 34.722 seconds.
+- Separate Pro checker: all 35,466,000 entries, 3,000 domain/sample records,
+  basis/rejection order and 25 controls, 32.315 seconds. No Pro determinant
+  execution is claimed.
+- Separate local checker: 34,939,921 decisive entries at 2,956 points,
+  **determinant 30,337 modulo 65,521**, 26.781 seconds using exact FLINT;
+  three operator controls detected. Pro fixed prime, seed 2026102508,
+  ordering and the first-5,911-row minor before numerical results.
+- Delivered-file matching, original artifact hashes and source snapshots
+  are recorded separately in the audit. Binding is not another mathematical
+  reconstruction or determinant execution.
+
+The nonzero rational augmented minor excludes the declared bounded family
+and its pure B/A^8 subfamily over Q; unknown coefficient denominators need
+not reduce modulo the prime. **No primitive was found.** Larger supports,
+other divisors, higher powers and general rational or fibre-dependent
+currents remain outside the result. No full-target nonexistence, homogeneous
+certificate, new Lean verification or accepted solve is claimed.
+
+The [reproducible visualization and failed-attempt record](notes/skew-A8-denominator-audit-20261024.md#visualization-and-failed-attempts)
+show the top restriction and every free lower sector. Original scripts,
+receipts and scopes are preserved; the picture is not proof. The literal
+connection SHA256 remains
+`a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d`.
+Mathematics closed at 18:29:12 UTC, 4 minutes 15 seconds after Goal activation;
+bounded artifact integration followed. No old failed setup route was retried.
+
+Credit fqlx for the connection/source, benediamond for the physical cover
+and reductions, and Benjamin E. Diamond and the hodge.computer contributors
+for the fixed problem/framework. This is AI-assisted work for Ravi Bajaj;
+separate implementations are not independent human reviews.
+Posts 1–30 remain unchanged. The latest upstream contribution is still
+[the earlier A-squared update](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075).
+Tally unchanged: **30 discussion contributions, one closed maintenance PR,
+zero accepted authored solves**. Publication and remote readback are checked
+separately; this bounded Goal does not solve the full target.

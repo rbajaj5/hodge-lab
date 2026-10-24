@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T18:26:27.056656+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "results/skew-A8-denominator-audit-20261024/algebra/freeze_artifacts.py"
+  ],
+  "checks": {
+    "successful_execution": true,
+    "bounded_execution": true,
+    "checker_snapshot_matches_execution": true,
+    "checker_snapshot_matches_validation": true,
+    "final_checker_matches_snapshot": true,
+    "runner_snapshot_matches_execution": true,
+    "final_runner_matches_snapshot": true,
+    "injection_matches_validation": true,
+    "pinned_connection_recorded": true,
+    "prior_injection_pin_recorded": true
+  },
+  "checker_sha256": "b74eb6bd383d55e7c699866974e27e28196dc36c2db62c28507452ed4fbddfd2",
+  "runner_sha256": "b66cd5ff141feb949b7a20f50dfdb1dc51cd319c47dd72c62d40feff8012e358",
+  "injection_sha256": "32dcdb1291e8ee2cc2703978f95a2b62d8e9a6d5295b8db48c6c37e5a10040a2",
+  "execution_start_utc": "2026-10-24T18:25:53.084758+00:00",
+  "execution_end_utc": "2026-10-24T18:25:55.326319+00:00",
+  "execution_seconds": 2.235000000000582,
+  "algebra_seconds": 0.21899999999732245,
+  "exact_checks": 7,
+  "controls": 3,
+  "failures": [],
+  "scope": "Only new A8 structural work; original receipts frozen."
+}

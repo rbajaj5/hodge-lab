@@ -1,0 +1,42 @@
+{
+  "failures": [
+    {
+      "kind": "read-only search glob unsupported by Windows rg",
+      "effect": "No artifact changed; used explicit path instead"
+    },
+    {
+      "kind": "working ledger bytes differ from committed blob by Git line endings",
+      "effect": "Initial parent-byte assertion stopped before mutation",
+      "repair": "Verified clean tracked ledger and Git-filtered blob identity, restored exact HEAD ledger bytes for append-only publication",
+      "original_working_bytes": 510721,
+      "parent_blob_bytes": 510660
+    },
+    {
+      "kind": "Read-only git status used non-repository coordinator cwd",
+      "effect": "No artifact changed; reran status with explicit repository workdir"
+    },
+    {
+      "kind": "Two read-only file path lookups failed during integration preparation",
+      "effect": "No artifact changed; used absolute draft path and rg-discovered checker filename",
+      "paths": [
+        "coordinator draft relative to repository directory",
+        "bind_delivered_A8.py instead of bind_delivered_packet.py"
+      ]
+    },
+    {
+      "kind": "Three browser slice download interruptions",
+      "slices": [
+        15,
+        20,
+        26
+      ],
+      "repair": "One retry per missing slice after checking local files; complete original archive hash required",
+      "effect": "No mathematical replay"
+    },
+    {
+      "kind": "Read-only binding-summary lookup before worker completed its write",
+      "effect": "No artifact changed; waited for the worker completion message"
+    }
+  ],
+  "mathematical_effect": false
+}

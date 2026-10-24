@@ -1,0 +1,86 @@
+{
+  "status": "PASS: declared finite family excluded",
+  "script_sha256": "a3ddd2085a67c1081ff1c38807cee17e29c23698fdd7b1f49c00395572fbdaf1",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "reused_A7_report_sha256": "9ab4f9b0617984a5780e5e042f5b660bd86c4dfb0395df24e4a5a411dc655526",
+  "new_order8_controls": {
+    "det_R_minus_8I": "200/3",
+    "tau8": "-14*r**7 + 27*r",
+    "abstract_reciprocal_rule": "d(u^-8)/du=-8u^-9"
+  },
+  "storage_dtype": "<u2",
+  "int64_arithmetic_bound": "8*(prime-1)^3 < 2^63 checked",
+  "regenerated_inputs_sha256": "bfde47073da9b8c079222adfad49a989c493f73ffc1d2f28d4eb85542dcaafd0",
+  "saved_minor_sha256": "1c41301ad2a113d530bbd3b13c4ee004ac22fb55219b8bab99ae9850d46ac9e6",
+  "canonical_minor_int64_bytes_sha256": "cc30952a03c2ce07f502eb40a3b9649f76a4b8e0d6b3d8c07d38d44c817e94e1",
+  "prime": 65521,
+  "prime_verified": true,
+  "seed": 2026102508,
+  "minor_shape": [
+    5911,
+    5911
+  ],
+  "entries_regenerated": 34939921,
+  "sample_points": 2956,
+  "excluded_points": 0,
+  "denominator_evaluations": 1492780,
+  "coefficient_columns": 5910,
+  "basis_counts": {
+    "h8": 60,
+    "k8": 234,
+    "P7": 702,
+    "P6": 702,
+    "P5": 702,
+    "P4": 702,
+    "P3": 702,
+    "P2": 702,
+    "P1": 702,
+    "P0": 702
+  },
+  "all_lower_coefficients_preserved": true,
+  "lower_A2_projection_used": false,
+  "determinant": 30337,
+  "negative_controls": {
+    "top_wrong_order7_tau": {
+      "point_index": 0,
+      "row": 0,
+      "column": 0,
+      "correct": 61811,
+      "mutant": 5428,
+      "difference": 9138,
+      "mutation": "use divT-7q instead of divT-8q"
+    },
+    "P7_wrong_pole_coefficient": {
+      "point_index": 0,
+      "row": 0,
+      "column": 294,
+      "correct": 996,
+      "mutant": 14149,
+      "difference": 13153,
+      "mutation": "use -6*A_r*u instead of -7*A_r*u in P7 column of equation multiplied by A^8"
+    },
+    "P1_omitted_quotient_derivative": {
+      "point_index": 0,
+      "row": 0,
+      "column": 4506,
+      "correct": 30069,
+      "mutant": 44751,
+      "difference": 14682,
+      "mutation": "omit -A^6*A_r*u from P1 column of equation multiplied by A^8; ordinary operator factor A^7"
+    }
+  },
+  "reconstruction_seconds": 4.937999999994645,
+  "determinant_seconds": 21.437000000005355,
+  "normalization": "Whole equation multiplied by A^8; h8 tangent columns use tau8, k8 uses partial_t+Nt, P7 uses A(partial_i+Ni)-7Ai, P6 uses A^2(partial_i+Ni)-6A*Ai, P5 uses A^3(partial_i+Ni)-5A^2*Ai, P4 uses A^4(partial_i+Ni)-4A^3*Ai, P3 uses A^5(partial_i+Ni)-3A^4*Ai, P2 uses A^6(partial_i+Ni)-2A^5*Ai, P1 uses A^7(partial_i+Ni)-A^6*Ai, P0 uses A^8(partial_i+Ni), source A^8*r^-4 Mb e0/12",
+  "provenance": "Independently authored rational-polynomial evaluator, symbolic physical Jacobian and monomial derivatives, and reduced tangent operator. Exact determinant by FLINT through python-flint nmod_mat.det, not an independently authored elimination algorithm. No Pro script replay or exploratory search.",
+  "delivered_csv_comparison": "Not performed in this execution; preserve this report and add a separate binding receipt after download.",
+  "characteristic_zero_reason": "If determinant is nonzero: all input denominators are units modulo the recorded prime at the integer lifts of the2956 sample points. The rational5911-square augmented determinant reduces to the reported nonzero residue, hence is nonzero overQ. There are only5910 coefficient columns, so no rational constant coefficient vector solves these necessary evaluations. Unknown coefficient denominators need not be prime to the recorded prime. This does not infer characteristic-zero rank from a deficient modular rank.",
+  "structural_dependency": "Prior low-degree tangent/support theorem and new invertibility of R-8I restrict only P8. All5616 coefficients in lower P7,P6,P5,P4,P3,P2,P1,P0 are retained. This necessary5910 family contains every possible solution in the declared original6318-generator sum. No lower pole tangency or secondary projection is imposed.",
+  "scope": "If determinant is nonzero, excludes full six-component B+B/A+B/A^2+B/A^3+B/A^4+B/A^5+B/A^6+B/A^7+B/A^8 and its B/A^8 subfamily for -10<=r exponent<=2 and v,t exponents0..2. Does not exclude larger supports, A^-9 or other denominators, arbitrary rational compact currents, fibre-dependent sextic functions; no homogeneous certificate, Lean proof, or full-target solution.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "determinant_backend": "flint.nmod_mat.det"
+}
