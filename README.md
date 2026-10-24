@@ -9,6 +9,8 @@ An independent research notebook by [Ravi Bajaj](https://github.com/rbajaj5), ex
 [How research runs are managed](notes/assured-research-workflow.md): bounded
 discovery, current evidence, independent checks and recovery from failed
 attempts, adapted from Ravi Bajaj's delay-aware runtime-assurance work.
+The [shared target board](notes/one-reflection-skew-team-board.md) assigns
+complementary geometry, algebra and Lean responsibilities with explicit handoffs.
 
 ## Current frontier
 

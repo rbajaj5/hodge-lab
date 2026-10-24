@@ -5991,3 +5991,27 @@ All earlier ledger bytes are preserved. No upstream post, reply, edit or PR;
 Posts 1–29 and tally 29 discussion contributions/one closed maintenance PR/
 zero accepted authored solves remain unchanged. The existing ledger-first
 publication policy remains in force, with no added permission gate or quota.
+
+
+### Checkpoint 145 — shared-target team coordination, 24 October 2026 EDT
+
+Applied the user's basketball-team analogy to the
+[assured research protocol](notes/assured-research-workflow.md) and AGENTS.md.
+Added a [one-reflection-skew target board](notes/one-reflection-skew-team-board.md),
+linked from the README, with complementary geometry, algebra, Lean and
+checking responsibilities. Roles need not be simultaneous agents. Each pass
+names an artifact, input version, assumptions, receiving role and acceptance
+check; the receiver records its actual use or a specific mismatch.
+
+The board targets the existing all-sheet physical-form/source boundary.
+It reuses checkpoint 143 and keeps the broader primitive/certificate target
+open. The board is ready but unassigned; no new mathematical run is claimed.
+A reproducible Mermaid diagram shows the handoffs. Three desk walkthroughs
+cover scalar-only output, forbidden G^-1 evaluation and an interrupted Lean
+run; these review coordination rules, not new mathematical evidence.
+
+This is a documentation/workflow change. Existing proofs, receipts, target
+data and historical ledger bytes are preserved. No upstream post/reply/edit
+or PR; Posts 1–29 and tally 29 discussion contributions/one closed maintenance
+PR/zero accepted authored solves remain unchanged. Publication policy and
+standing authorization are unchanged.

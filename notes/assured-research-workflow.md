@@ -46,12 +46,42 @@ This diagram describes the procedure, not an executed research experiment.
 The Mermaid source is the reproducible diagram; no mathematical evidence is
 inferred from it.
 
-Use one mathematical lead, a second approach only when it is substantively
-different, and a checker. The coordinator integrates and owns publication.
-Reuse the user's requested Pro chat for the lead; record which executor
-actually ran each check. A reviewer reading logs has not executed Lean.
-No extra chats, paid API service, corpus ingestion or model training is
-needed for this policy change.
+## Team coordination: one target, complementary methods
+
+The user's basketball analogy makes the coordination requirement concrete:
+players may prefer different shots, but possession and the target belong
+to the team. Geometry, algebra and Lean agents can prefer different methods;
+their outputs must connect to the same pinned problem and success condition.
+Use the [one-reflection-skew target board](one-reflection-skew-team-board.md)
+as the first concrete application, updating its state at batch boundaries.
+
+| Responsibility | Useful deliverable | Receiver |
+| --- | --- | --- |
+| Geometry/construction lead | An explicit map, domain or candidate construction with assumptions | Algebra and formalization |
+| Algebra worker | An identity for the required source, or a precise residual that defeats the proposed route | Construction lead or formalization |
+| Lean implementer | A theorem matching the agreed statement, with unresolved hypotheses visible | Separate checker |
+| Checker | Scoped exact/kernel evidence or a reproducible counterexample | Coordinator and affected worker |
+| Coordinator | A coherent integrated result, remaining obstruction and next assignment | The next batch and the user |
+
+These are responsibilities, not five required simultaneous agents. Use the
+available slots for a constructive lead, complementary work and a separate
+checker; sequence dependent work. Reuse the requested Pro chat as mathematical
+lead. A worker that authored an artifact does not supply its separate review.
+Record who actually executed checks; reading logs is not a new Lean run.
+
+Every handoff names **artifact and revision, assumptions, exact required
+identity, receiving role, and acceptance check**. The receiver records either
+the downstream step enabled or the specific mismatch. Delivery alone does not
+mean the artifact was used. Keep these records in the existing batch note;
+avoid a second ledger of agent chatter. One person/agent owns each mutable
+artifact, and the coordinator alone integrates shared status and ledger files.
+
+At a batch boundary ask: which target condition was discharged, which route
+was excluded within what bounds, and what now prevents the next step? If
+several agents return equivalent summaries or unused artifacts, change their
+assignments. Do not count messages, agreement, theorem volume or independent
+agent preferences as team progress. A useful failed attempt changes the next
+decision. Research productivity under this policy has not yet been measured.
 
 Before dispatch, record already-running work and its input revision so a
 delayed response cannot silently revive an abandoned assumption. Each worker
@@ -89,11 +119,13 @@ Current decisive question and why it matters:
 Pinned inputs and reused receipts:
 Assumptions / permitted domain / excluded claims:
 Lead / optional alternate / checker / file ownership:
+Shared target condition / artifact receiver / acceptance check:
 Candidate construction or competing explanations:
 Smallest discriminating check and pass/fail meaning:
 Batch budget / process bounds / stop rule:
 Outcome: proposal | checked within scope | failed within scope | interrupted
 Changed dependencies, unresolved objection, and recovery/next check:
+Handoff used by / downstream step enabled / remaining target condition:
 Publication: local | notebook pushed | upstream verified permalink
 ```
 

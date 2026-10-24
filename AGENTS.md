@@ -100,6 +100,14 @@ a research workflow adaptation, not a safety theorem or an automatic gate.
   approach, and a separate checker. Reuse the requested Pro chat for the
   mathematical lead. Assign artifacts and dependencies explicitly; avoid
   sending every agent to review the same finished result.
+- Coordinate as a team with one shared target. Use the protocol's
+  [target board](notes/one-reflection-skew-team-board.md): each assignment
+  names its output, receiving role and acceptance condition. Geometry,
+  algebra and Lean are complementary responsibilities, not competing
+  definitions of success or a requirement to spawn every role at once.
+  A handoff is consumed only when the receiver records its downstream use;
+  a mismatch is blocked or rejected with a reason. At each boundary, record which
+  mathematical condition changed; redirect redundant or unused work.
 - Check delayed handoffs against their actual input versions and assumptions.
   A new commit alone does not invalidate unchanged dependencies, and elapsed
   time does not invalidate a theorem. Prioritize corrections and changed
