@@ -339,3 +339,33 @@ prefix were verified unchanged. Four trailing-whitespace lines in a saved
 failed-attempt log are retained verbatim; staged source and documentation
 pass whitespace checks. No upstream action occurred. Posts 1–29 and the
 29/1/0 tally remain unchanged. Remote CI will be recorded separately.
+
+
+## Published proof and verified remote CI
+
+The proof, diagram, failed attempts and checkpoint 142 were normally pushed
+in [a5f7247](https://github.com/rbajaj5/hodge-lab/commit/a5f724766e9a590655b9b8d25a438132fcc15946).
+[Lean CI 40084595344](https://github.com/rbajaj5/hodge-lab/actions/runs/40084595344)
+completed successfully for that exact proof commit, including the new
+physical-curve step and every preceding notebook verification step.
+
+The fresh GitHub Actions focused receipt records 81 declaration audits,
+one new-module kernel replay, 25 positive controls and eight intended
+False-goal failures in 43.837 seconds. The coordinator independently
+bound its 37 unique source/input files to the proof commit, verified all
+42 command-stream hashes, permitted axiom dependencies and all eight
+intended failures. This is a separate execution from Pro's earlier run;
+the counts are not added together. The new module alone is the subject of
+this focused kernel replay. Full workflow success is recorded separately.
+
+The [remote receipt and review](../results/skew-physical-curve-20261024/remote-ci-40084595344/ci-receipt-review.json)
+retain run/job metadata, archive hash, focused stdout/stderr, source
+snapshots and validation. Fresh receipt SHA256: `8d33a63f9c7c802532f2b734172eaffcc6a46839f7ee112959b0d3498423de05`.
+The coordinator also verified all six visualization source/output bindings.
+No mathematical claim is enlarged by this CI outcome. In particular,
+four-form nonvanishing, trace-tower comparison, residue/cohomology,
+primitive and certificate remain outside this pass.
+
+This subsequent outcome commit changes bookkeeping only; the cited CI run
+belongs to the proof commit above. No upstream publication occurred, and
+the Posts list and contribution tally remain unchanged.

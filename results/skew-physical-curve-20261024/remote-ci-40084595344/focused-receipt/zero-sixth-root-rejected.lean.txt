@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial HodgeLab.OneReflectionSkew
+open PhysicalCurveRealization PhysicalSourceNormalization ChartSubstitution NormalChart
+open ResidueNormalization
+example : z=0 := by simp only [z_ne_zero]

@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial HodgeLab.OneReflectionSkew
+open PhysicalCurveRealization PhysicalSourceNormalization ChartSubstitution NormalChart
+open ResidueNormalization
+example : IsUnit (algebraMap P Regular (chartPolynomial (K:=ℚ))) := by simp only [regular_relation_not_unit]

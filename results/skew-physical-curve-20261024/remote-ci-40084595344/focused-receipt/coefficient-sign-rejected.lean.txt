@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial HodgeLab.OneReflectionSkew
+open PhysicalCurveRealization PhysicalSourceNormalization ChartSubstitution NormalChart
+open ResidueNormalization
+example : (5/72:ℚ)= -(5/72:ℚ) := by norm_num

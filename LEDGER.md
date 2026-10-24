@@ -5757,3 +5757,29 @@ was visually inspected. Historical bytes and staged UTF-8 were checked;
 raw failed-attempt log whitespace is retained, while source/documentation
 formatting passes. Full remote CI is pending the proof commit.
 No upstream post/reply/edit/PR; Posts 1–29 and tally 29/1/0 are unchanged.
+
+
+### Checkpoint 142 — published proof and verified CI outcome, 24 October 2026 EDT
+
+Proof and research evidence were pushed normally in
+[a5f7247](https://github.com/rbajaj5/hodge-lab/commit/a5f724766e9a590655b9b8d25a438132fcc15946).
+[Lean run 40084595344](https://github.com/rbajaj5/hodge-lab/actions/runs/40084595344)
+completed successfully on that exact proof commit, including every prior
+step and the new physical-curve step. The fresh focused run records
+81 declaration audits, one new-module kernel replay, 25 positives and eight
+intended mathematical failures in 43.837 seconds. These are separate
+from Pro's prior 31.691-second run; counts are not combined.
+
+The coordinator [verified the fresh receipt against the committed source](results/skew-physical-curve-20261024/remote-ci-40084595344/ci-receipt-review.json):
+37 unique committed file bindings, 42 command-stream hashes, permitted
+axioms and eight intended False goals. The artifact, exact run/job metadata,
+source snapshots and streams are retained. The full workflow passed; the
+focused kernel replay covers the new module only. Six diagram bindings
+also match. No local coordinator Lean execution is claimed.
+
+The field/common-localization/form equality is now checked and published.
+Separate four-form nonvanishing, whole-function-field identification,
+trace-tower comparison, residue/cohomology, primitive, clearing and
+certificate remain unproved here. No upstream post/reply/edit/PR.
+Posts 1–29 and tally 29 discussion contributions / one closed maintenance
+PR / zero accepted authored solves are unchanged.
