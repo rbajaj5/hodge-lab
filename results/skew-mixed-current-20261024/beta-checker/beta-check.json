@@ -1,0 +1,56 @@
+{
+  "status": "PASS for canonical beta-current operator and exact h-star point; candidate does not solve source",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "e1cdafe11221ac4228357f917c2c6bb5abf58a4afa97942103553e2f34be131f",
+  "checks": [
+    "canonical beta current first connection row vanishes",
+    "second row zero-order coefficient",
+    "scalar operator exterior-form derivation",
+    "h-star point value",
+    "canonical scalar operator point value",
+    "centered target point value",
+    "candidate remainder point value"
+  ],
+  "W": [
+    "t*(t**8 - 3*t**6 - 3*t**2 + 1)/(7*(t**2 + 1)*(t**4 - t**2 + 1))",
+    "t*v*(t**8 - 5*t**6 - 5*t**2 + 1)/(21*a*(t**2 + 1)*(t**4 - t**2 + 1))",
+    "-t**2*(t - 1)*(t + 1)/(21*a)"
+  ],
+  "q": "t*(-4*t**8 + 2*t**6 - 3*t**2 + 1)/(21*a*(t**6 + 1))",
+  "operator_in_base": "Lh=W_a*h_a+W_v*h_v+W_t*h_t+q*h",
+  "operator_on_cover": "Lh=(W_a-A_v*W_v)*h_r/A_r+W_v*h_v_at_fixed_r+W_t*h_t+q*h",
+  "h_star": "-A_v*chi_v/(36*t^2*(W_a-A_v*W_v)); chi_v is at fixed a",
+  "point": {
+    "r": "1",
+    "v": "2",
+    "t": "1",
+    "a": "3",
+    "A_r": "-3",
+    "A_v": "6",
+    "Delta": "1036",
+    "E": "10/21",
+    "W": [
+      "-2/7",
+      "-8/63",
+      "0"
+    ],
+    "q": "-2/63",
+    "chi_v": "-10",
+    "ghat": "38",
+    "h": "7/2",
+    "h_r_h_v_h_t": [
+      "-7/5",
+      "-7",
+      "-14"
+    ],
+    "Lh": "1",
+    "R0_scalar": "19/18",
+    "remainder": "1/18"
+  },
+  "negative_control": {
+    "flip_h_sign_defect": "2"
+  },
+  "domain": "Generic chart a*r*A_r*Delta*t*(1+t^6)*(W_a-A_v*W_v)!=0. The candidate introduces the E=W_a-A_v*W_v divisor; point check does not prove global pole cancellation.",
+  "scope": "New beta current only. Raw h-star scalar current is matched to centered R0=chi_vv e1/(36t^2). It may be added to the known first current. Relation to regular Q/R2 uses their known current equivalence, not a new Q replay.",
+  "provenance": "Independent checker derives the canonical beta wedge flux and uses the pinned connection directly; no proposer script is imported."
+}

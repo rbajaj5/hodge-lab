@@ -1,0 +1,121 @@
+{
+  "status": "PASS: direct current Q and centered residual, not a full solution",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "source_path": "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+  "script_sha256": "85baf3365ab4583913bfff035f473a5cd3fb30f2e7a7652deb8b0cc69b7a40d4",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "checks": [
+    "direct Q identity coefficient chi",
+    "direct Q identity coefficient chi_a",
+    "direct Q identity coefficient chi_v",
+    "direct Q identity coefficient chi_vv",
+    "direct Q identity constant coefficient",
+    "all six current components regular at generic t=0",
+    "Q_a(0)",
+    "Q_t(0)",
+    "Q_v(0)",
+    "Newton reciprocal trace r^-3",
+    "centered chi has zero trace",
+    "centered chi_v has zero trace",
+    "centered g has zero trace",
+    "centered k has zero trace",
+    "centered exact ordinary-point current equation",
+    "centered t=0 residual"
+  ],
+  "sign_controls": [
+    {
+      "name": "flip Q_t sign",
+      "defect": [
+        "252535/2817402",
+        "15205/1408701"
+      ]
+    },
+    {
+      "name": "flip Q_v sign",
+      "defect": [
+        "89402833/228209562",
+        "-27711037/25356618"
+      ]
+    },
+    {
+      "name": "flip residual sign",
+      "defect": [
+        "-211556/440559",
+        "52889/48951"
+      ]
+    }
+  ],
+  "current": {
+    "a": [
+      "(1323*a*chi*t**9 - 1323*a*chi*t**7 + 1323*a*chi*t**3 - 1323*a*chi*t + 4116*chi*t**8*v**2 - 7*chi*t**7*v + 14*chi*t**5*v - 7*chi*t**3*v + 4116*chi*t**2*v**2)/(2000376*a**2*t**12 + 4000752*a**2*t**6 + 2000376*a**2 + 190512*a*t**10*v - 864*a*t**9 - 190512*a*t**8*v + 2592*a*t**7 - 2592*a*t**5 + 190512*a*t**4*v + 864*a*t**3 - 190512*a*t**2*v + 296352*t**9*v**3 - 1512*t**8*v**2 + 3024*t**6*v**2 - 1512*t**4*v**2 + 296352*t**3*v**3)",
+      "(-1029*a*chi*t**7*v + 7*a*chi*t**6 - 14*a*chi*t**4 + 7*a*chi*t**2 - 1029*a*chi*t*v)/(333396*a**2*t**12 + 666792*a**2*t**6 + 333396*a**2 + 31752*a*t**10*v - 144*a*t**9 - 31752*a*t**8*v + 432*a*t**7 - 432*a*t**5 + 31752*a*t**4*v + 144*a*t**3 - 31752*a*t**2*v + 49392*t**9*v**3 - 252*t**8*v**2 + 504*t**6*v**2 - 252*t**4*v**2 + 49392*t**3*v**3)"
+    ],
+    "v": [
+      "(-37044*a**2*chi_v*t**11*v + 189*a**2*chi_v*t**10 - 756*a**2*chi_v*t**8 + 567*a**2*chi_v*t**6 - 37044*a**2*chi_v*t**5*v - 567*a**2*chi_v*t**4 + 756*a**2*chi_v*t**2 - 189*a**2*chi_v + 1176*a*chi*t**9*v - 6*a*chi*t**8 - 1176*a*chi*t**7*v + 18*a*chi*t**6 - 18*a*chi*t**4 + 1176*a*chi*t**3*v + 6*a*chi*t**2 - 1176*a*chi*t*v - 1764*a*chi_v*t**9*v**2 + 9*a*chi_v*t**8*v + 588*a*chi_v*t**7*v**2 - 25*a*chi_v*t**6*v + 23*a*chi_v*t**4*v - 2940*a*chi_v*t**3*v**2 - 7*a*chi_v*t**2*v + 1764*a*chi_v*t*v**2 + 2744*chi*t**8*v**3 - 14*chi*t**7*v**2 + 28*chi*t**5*v**2 - 14*chi*t**3*v**2 + 2744*chi*t**2*v**3 - 2744*chi_v*t**8*v**4 + 14*chi_v*t**7*v**3 - 28*chi_v*t**5*v**3 + 14*chi_v*t**3*v**3 - 2744*chi_v*t**2*v**4)/(2000376*a**3*t**12 + 4000752*a**3*t**6 + 2000376*a**3 + 190512*a**2*t**10*v - 864*a**2*t**9 - 190512*a**2*t**8*v + 2592*a**2*t**7 - 2592*a**2*t**5 + 190512*a**2*t**4*v + 864*a**2*t**3 - 190512*a**2*t**2*v + 296352*a*t**9*v**3 - 1512*a*t**8*v**2 + 3024*a*t**6*v**2 - 1512*a*t**4*v**2 + 296352*a*t**3*v**3)",
+      "(18522*a**2*chi_v*t**10 + 18522*a**2*chi_v*t**4 - 147*a*chi*t**8 + 147*a*chi*t**6 - 147*a*chi*t**2 + 147*a*chi + 1323*a*chi_v*t**8*v - 6*a*chi_v*t**7 - 735*a*chi_v*t**6*v + 14*a*chi_v*t**5 - 10*a*chi_v*t**3 + 1029*a*chi_v*t**2*v + 2*a*chi_v*t - 441*a*chi_v*v - 1372*chi*t**7*v**2 + 7*chi*t**6*v - 14*chi*t**4*v + 7*chi*t**2*v - 1372*chi*t*v**2 + 1372*chi_v*t**7*v**3 - 7*chi_v*t**6*v**2 + 14*chi_v*t**4*v**2 - 7*chi_v*t**2*v**2 + 1372*chi_v*t*v**3)/(666792*a**2*t**12 + 1333584*a**2*t**6 + 666792*a**2 + 63504*a*t**10*v - 288*a*t**9 - 63504*a*t**8*v + 864*a*t**7 - 864*a*t**5 + 63504*a*t**4*v + 288*a*t**3 - 63504*a*t**2*v + 98784*t**9*v**3 - 504*t**8*v**2 + 1008*t**6*v**2 - 504*t**4*v**2 + 98784*t**3*v**3)"
+    ],
+    "t": [
+      "(-9261*a*chi_v*t**12 - 18522*a*chi_v*t**6 - 9261*a*chi_v - 294*chi_v*t**10*v + chi_v*t**9 + 294*chi_v*t**8*v - 3*chi_v*t**7 + 3*chi_v*t**5 - 294*chi_v*t**4*v - chi_v*t**3 + 294*chi_v*t**2*v)/(1000188*a**2*t**12 + 2000376*a**2*t**6 + 1000188*a**2 + 95256*a*t**10*v - 432*a*t**9 - 95256*a*t**8*v + 1296*a*t**7 - 1296*a*t**5 + 95256*a*t**4*v + 432*a*t**3 - 95256*a*t**2*v + 148176*t**9*v**3 - 756*t**8*v**2 + 1512*t**6*v**2 - 756*t**4*v**2 + 148176*t**3*v**3)",
+      "(-147*a*chi_v*t**9 + 147*a*chi_v*t**7 - 147*a*chi_v*t**3 + 147*a*chi_v*t - 1372*chi_v*t**8*v**2 + 7*chi_v*t**7*v - 14*chi_v*t**5*v + 7*chi_v*t**3*v - 1372*chi_v*t**2*v**2)/(666792*a**2*t**12 + 1333584*a**2*t**6 + 666792*a**2 + 63504*a*t**10*v - 288*a*t**9 - 63504*a*t**8*v + 864*a*t**7 - 864*a*t**5 + 63504*a*t**4*v + 288*a*t**3 - 63504*a*t**2*v + 98784*t**9*v**3 - 504*t**8*v**2 + 1008*t**6*v**2 - 504*t**4*v**2 + 98784*t**3*v**3)"
+    ]
+  },
+  "current_denominators_at_t_zero": {
+    "a": [
+      "2000376*a**2",
+      "333396*a**2"
+    ],
+    "v": [
+      "2000376*a**3",
+      "666792*a**2"
+    ],
+    "t": [
+      "1000188*a**2",
+      "666792*a**2"
+    ]
+  },
+  "current_at_t_zero": {
+    "a": [
+      "0",
+      "0"
+    ],
+    "v": [
+      "-chi_v/(10584*a)",
+      "(chi - 3*chi_v*v)/(4536*a)"
+    ],
+    "t": [
+      "-chi_v/(108*a)",
+      "0"
+    ]
+  },
+  "centered_definitions": "chi=r^-3-v^3/3; chi_a=psi_a; chi_v=psi_v-v^2; ghat=psi_vv-2v; khat=v*psi_v-psi-2v^3/3",
+  "reciprocal_newton_sums": [
+    "18",
+    "6*v",
+    "6*v**2",
+    "6*v**3"
+  ],
+  "trace_reason": "Finite separable trace commutes with base derivations. Q and R2 are linear over the base field in chi and its derivatives, so their components have trace zero. This new audit concerns the new centering only.",
+  "ordinary_point": {
+    "a": "3",
+    "v": "2",
+    "t": "1",
+    "chi": "-5/3",
+    "chi_a": "1",
+    "chi_v": "-10",
+    "chi_vv": "38"
+  },
+  "ordinary_point_delta": "1036",
+  "ordinary_point_A_r": "-3",
+  "ordinary_point_centered_residual": [
+    "105778/440559",
+    "-52889/97902"
+  ],
+  "t_zero_centered_residual": [
+    "19/15876",
+    "19/1134"
+  ],
+  "domain": "Generic chart r!=0, a!=0, A_r!=0, Delta!=0. Reduced Q and R2 extend regularly to t=0 on that open. At t=0 Delta=27a^2; no claim at a=0 or cover ramification or discriminant.",
+  "scope": "Q gives B=Div_D(Q)+R2 with a nonzero trace-free remainder. This remains a constructive reduction, not an all-sheet rational primitive or homogeneous certificate.",
+  "provenance": "Independent Codex parallel checker directly loads pinned public fqlx connection JSON from benediamond packet. No proposer checker or old source/chart/rank/trace routine is imported."
+}

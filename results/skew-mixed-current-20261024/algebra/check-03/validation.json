@@ -1,0 +1,156 @@
+{
+  "status": "pass",
+  "scope": "sheet-map compatibility and new regularization of the reused packet one-row residual; no scalar trace or CI replay",
+  "source": "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "seconds": 13.235000000000582,
+  "checks": [
+    {
+      "name": "sheet curve compatibility: pullback p minus compact P = V^3 f/r^15",
+      "result": "pass"
+    },
+    {
+      "name": "sheet four-form Jacobian",
+      "result": "pass"
+    },
+    {
+      "name": "full normalized sheet coefficient, fibre first",
+      "result": "pass"
+    },
+    {
+      "name": "new two-direction current identity row 0",
+      "result": "pass"
+    },
+    {
+      "name": "regularized Nt column vanishes at t=0 row 0",
+      "result": "pass"
+    },
+    {
+      "name": "new residual has no t=0 pole, row 0",
+      "result": "pass"
+    },
+    {
+      "name": "new two-direction current identity row 1",
+      "result": "pass"
+    },
+    {
+      "name": "regularized Nt column vanishes at t=0 row 1",
+      "result": "pass"
+    },
+    {
+      "name": "new residual has no t=0 pole, row 1",
+      "result": "pass"
+    },
+    {
+      "name": "cover derivative k_v = v g",
+      "result": "pass"
+    },
+    {
+      "name": "regularized residual is nonzero at an allowed exact point",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 0 coefficient psi",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 0 coefficient psi_a",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 0 coefficient psi_v",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 0 coefficient g",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current constant term row 0",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current Qv numerator vanishes at t=0 row 0",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current Qv has no t=0 pole row 0",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 1 coefficient psi",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 1 coefficient psi_a",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 1 coefficient psi_v",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current direct identity row 1 coefficient g",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current constant term row 1",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current Qv numerator vanishes at t=0 row 1",
+      "result": "pass"
+    },
+    {
+      "name": "regular-current Qv has no t=0 pole row 1",
+      "result": "pass"
+    }
+  ],
+  "mutations": [
+    {
+      "name": "wrong t-connection sign",
+      "nonzero_exact_witness": [
+        "-8/777",
+        "1849/1554"
+      ]
+    },
+    {
+      "name": "wrong v derivative sign",
+      "nonzero_exact_witness": [
+        "-14/27",
+        "0"
+      ]
+    },
+    {
+      "name": "drop compact row 1",
+      "nonzero_exact_witness": [
+        "0",
+        "-1390/2331"
+      ]
+    }
+  ],
+  "witness": {
+    "f": "0",
+    "f_r": "-3",
+    "g": "42",
+    "k": "-13",
+    "R2_t1": [
+      "5560/20979",
+      "-1390/2331"
+    ],
+    "R2_t0": [
+      "1/756",
+      "1/54"
+    ]
+  },
+  "residual_rows": [
+    "(111132*a**2*g*t**11*v - 567*a**2*g*t**10 + 2268*a**2*g*t**8 - 1701*a**2*g*t**6 + 111132*a**2*g*t**5*v + 1701*a**2*g*t**4 - 2268*a**2*g*t**2 + 567*a**2*g + 5292*a*g*t**9*v**2 - 27*a*g*t**8*v - 1764*a*g*t**7*v**2 + 75*a*g*t**6*v - 69*a*g*t**4*v + 8820*a*g*t**3*v**2 + 21*a*g*t**2*v - 5292*a*g*t*v**2 - 1323*a*k*t**9 + 1323*a*k*t**7 - 1323*a*k*t**3 + 1323*a*k*t + 8232*g*t**8*v**4 - 42*g*t**7*v**3 + 84*g*t**5*v**3 - 42*g*t**3*v**3 + 8232*g*t**2*v**4 - 4116*k*t**8*v**2 + 7*k*t**7*v - 14*k*t**5*v + 7*k*t**3*v - 4116*k*t**2*v**2)/(648*a*(9261*a**2*t**12 + 18522*a**2*t**6 + 9261*a**2 + 882*a*t**10*v - 4*a*t**9 - 882*a*t**8*v + 12*a*t**7 - 12*a*t**5 + 882*a*t**4*v + 4*a*t**3 - 882*a*t**2*v + 1372*t**9*v**3 - 7*t**8*v**2 + 14*t**6*v**2 - 7*t**4*v**2 + 1372*t**3*v**3))",
+    "-(55566*a**2*g*t**10 + 55566*a**2*g*t**4 + 3969*a*g*t**8*v - 18*a*g*t**7 - 2205*a*g*t**6*v + 42*a*g*t**5 - 30*a*g*t**3 + 3087*a*g*t**2*v + 6*a*g*t - 1323*a*g*v + 4116*g*t**7*v**3 - 21*g*t**6*v**2 + 42*g*t**4*v**2 - 21*g*t**2*v**2 + 4116*g*t*v**3 - 2058*k*t**7*v + 14*k*t**6 - 28*k*t**4 + 14*k*t**2 - 2058*k*t*v)/(216*(9261*a**2*t**12 + 18522*a**2*t**6 + 9261*a**2 + 882*a*t**10*v - 4*a*t**9 - 882*a*t**8*v + 12*a*t**7 - 12*a*t**5 + 882*a*t**4*v + 4*a*t**3 - 882*a*t**2*v + 1372*t**9*v**3 - 7*t**8*v**2 + 14*t**6*v**2 - 7*t**4*v**2 + 1372*t**3*v**3))"
+  ],
+  "t0_residual": [
+    "g/(10584*a)",
+    "g*v/(1512*a)"
+  ]
+}

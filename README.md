@@ -10,7 +10,8 @@ An independent research notebook by [Ravi Bajaj](https://github.com/rbajaj5), ex
 discovery, current evidence, independent checks and recovery from failed
 attempts, adapted from Ravi Bajaj's delay-aware runtime-assurance work.
 The [shared target board](notes/one-reflection-skew-team-board.md) assigns
-complementary geometry, algebra and Lean responsibilities with explicit handoffs.
+complementary construction and checking responsibilities with explicit handoffs.
+Lean is benched in the current solution-focused batch at the user's direction.
 
 ## Current frontier
 
@@ -44,6 +45,21 @@ The [focused one-reflection-skew audit](notes/one-reflection-skew-mathematical-a
 The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.md) now binds the corrected rank-four ideal to the protected sextic: all 567 residual coefficients match, with exact two-way rowspace witnesses. This closes a provenance gap, without adding a new denominator exclusion. [Rebuilt operator](results/one-reflection-skew-hessian-source/source-map.png) · [Reproducible receipt](results/one-reflection-skew-hessian-source/validation.json).
 
 ## Selected results
+
+### One-reflection-skew: constructive current with a nonzero remainder
+
+The [24 October solution-focused batch](notes/skew-mixed-current-20261024.md)
+constructs an exact rational current `Q` with `B=Div_N(Q)+R2`, retaining both
+source rows. Centering `chi=r^-3-v^3/3` keeps the current and remainder in the
+full trace-free component. All six current coefficients and `R2` are regular
+at generic `t=0`; the remaining vector is explicitly nonzero. The original
+source was already regular there, so removing the artificial pole is a
+candidate simplification, not a solve. Rank 34 and the other chart divisors
+remain. A separate beta current lowers ramification-pole order but introduces
+other poles and leaves an exact nonzero residual; its trace-free membership
+is not established. Neither route supplies the primitive.
+[Exact checks, failed attempts and limits](notes/skew-mixed-current-20261024.md)
+· [Reproducible remainder plot](results/skew-mixed-current-20261024/regular-current.png).
 
 ### One-reflection-skew: physical coefficient field and all-sheet trace bridge
 

@@ -6015,3 +6015,72 @@ data and historical ledger bytes are preserved. No upstream post/reply/edit
 or PR; Posts 1–29 and tally 29 discussion contributions/one closed maintenance
 PR/zero accepted authored solves remain unchanged. Publication policy and
 standing authorization are unchanged.
+
+
+### Checkpoint 146 — constructive mixed-current batch, 24 October 2026 EDT
+
+Used an actual Goal and the shared-target workflow on the unchanged
+`one-reflection-skew` source, with notebook parent
+`06e88a91ad159035a5b2b422d167d5ae76899772` and upstream dispatch pin
+`27f4bb9ad8757e5841f884d9d30124a3c97a847d`. The user redirected the
+all-sheet-map assignment toward the solution and benched Lean. The existing
+Pro chat was the constructive lead, with a complementary algebra worker and
+a separate local exact checker. No Lean authoring, compilation or CI work
+was performed. The research bound was 45 minutes, with 60-second symbolic
+processes, 45-second network operations and bounded integration.
+
+The [result note](notes/skew-mixed-current-20261024.md) gives a checked
+centered current `Q` with `B=Div_N(Q)+R2`, retaining both rows and all base
+derivatives. Centering `chi=r^-3-v^3/3` corrects the raw scalar trace;
+`Q/R2` are trace-free and regular across generic `t=0` on the stated chart.
+The remainder is explicitly nonzero. The original source was already
+t-regular, so this removes an artifact of an earlier reduction, not an
+obstruction to a solution. Rank 34 and the remaining chart restrictions stay.
+
+Pro consumed that remainder and the centering/denominator corrections. A
+different beta current cancels the third- and second-order `A_r` poles but
+leaves simple ramification poles, introduces double turning-divisor poles,
+and reintroduces t poles. The separate local checker verified the full
+operator, both rows and the exact residual `1/18` at `(r,v,t)=(1,2,1)`.
+Centering alone does not make this root-dependent beta current trace-free;
+its trace projection was not computed. The two routes' regularity gains
+are not simultaneous properties of one current.
+
+Saved local executions remain separate: author check 05 has 29 exact checks
+and three rejected mutations; separate runs have 11 checks/four sign controls,
+16 checks/three controls, seven checks/one control, and 14 pole checks.
+Their scripts, receipts, source bindings and superseded timed-out attempts
+are retained in [the result directory](results/skew-mixed-current-20261024).
+These are AI-agent exact computations, not human review or kernel proofs.
+The coordinator reviewed bindings and scope rather than rerunning the
+mathematics. The early author runs 01/02 lacked contemporaneous snapshot
+hashes; their saved snapshots are not promoted to stronger receipt claims.
+
+The [reproducible visualization](results/skew-mixed-current-20261024/regular-current.png)
+plots both centered residual rows at one allowed cover point, using saved
+exact expressions and endpoints. The generator and input/output hashes are
+included and the rendered image was inspected. Sampling is illustrative,
+not a new solvability test. The [team board](notes/one-reflection-skew-team-board.md)
+records actual downstream consumption and keeps the full target open.
+
+Pro additionally reports a failed polynomial-inverse repair and a complete
+t-only rational exclusion at fixed `(a,v,r)=(3,2,1)` by ranks 6/7. These
+additional findings are **reported, not locally verified**: the advertised
+ZIP and patch downloads both failed, and the re-export request and its
+single retry failed. The [handoff report](results/skew-mixed-current-20261024/pro-report.md)
+preserves the exact reported residual, scope, artifact hashes and UI errors.
+No missing script, receipt or Pro figure is claimed inspected or replayed.
+The local beta checks stand independently of that delivery failure.
+
+Credit fqlx for the compact connection, benediamond for the physical cover
+and earlier current, and Benjamin E. Diamond and hodge.computer contributors
+for the problem/framework. This batch's constructions and checks are
+AI-assisted work for Ravi Bajaj. Reused scalar/curve/trace evidence is not
+new work. No full compact primitive, fibre-exact lift, global clearing,
+homogeneous certificate or accepted solve was produced. The remaining task
+is a mixed current cancelling an explicit survivor with its poles controlled.
+
+All earlier ledger bytes are preserved. No upstream post, reply, edit or PR;
+Posts 1–29 and tally 29 discussion contributions / one closed maintenance PR /
+zero accepted authored solves remain unchanged. The bounded research batch
+is complete; the mathematical target remains open.

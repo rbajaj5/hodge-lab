@@ -1,0 +1,9 @@
+{
+  "count_as_final_evidence": false,
+  "attempts": [
+    {"script_snapshot": "prototype_beta_poles.py", "log": "prototype-beta-poles.log", "result": "58-second watchdog termination", "wall_seconds": 58.890, "reason": "Unnecessary full multivariate expansion before first check"},
+    {"script_snapshot": "prototype_h_pole_expansion.py", "log": "prototype-h-pole-expansion.log", "result": "58-second watchdog termination", "wall_seconds": 58.875, "reason": "Full physical remainder expansion for H-pole test; replaced by exact leading-coefficient gcd"}
+  ],
+  "final_pole_replay": {"script": "check_beta_poles.py", "result": "pass", "checks": 14, "wall_seconds": 17.766},
+  "validation_correction": "An intermediate report computed t-leading fluxes by substitution before cancellation and displayed nan. The final script cancels before substituting and explicitly rejects nonfinite expressions; final report has finite rational leading coefficients."
+}

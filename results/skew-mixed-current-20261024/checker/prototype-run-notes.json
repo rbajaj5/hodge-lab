@@ -1,0 +1,9 @@
+{
+  "purpose": "Record superseded prototype attempts without counting them as final evidence",
+  "attempts": [
+    {"session_id": 71429, "result": "pass", "subprocess_wall_seconds": 59.422, "method": "SymPy expression expansion, superseded"},
+    {"session_id": 35376, "result": "TimeoutExpired", "subprocess_limit_seconds": 60, "method": "duplicate expression-expansion replay; initial wrapper did not preserve TimeoutExpired stdout"},
+    {"session_id": 10814, "result": "watchdog termination", "watchdog_seconds": 58, "partial_stdout": "START independent current checker\nPASS: fixed-a derivative of k equals v*g\nPASS: g is independent of t\nPASS: k is independent of t\n", "method": "expression expansion, superseded"}
+  ],
+  "resolution": "Finalized check_current.py uses exact rational-field differentiation, preserves timeout stdout/stderr in UTF-8, and supports --connection. Final evidence is in the JSON report and matching successful log."
+}

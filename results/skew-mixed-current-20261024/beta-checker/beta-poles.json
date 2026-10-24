@@ -1,0 +1,78 @@
+{
+  "status": "PASS: beta h-star cancels A_r^-3 and A_r^-2 but leaves simple ramification poles and trades denominator support",
+  "script_sha256": "0cac6288c42e02c2f481865f90eff4cab8517e437990f87c131f763edc56b01e",
+  "checks": [
+    "structural exact remainder",
+    "E_r derivative law",
+    "E_v derivative law",
+    "generic jet remainder has at most a simple A_r denominator",
+    "remainder contains no A_rr",
+    "K cancels a and d denominator factors",
+    "flux factored 0",
+    "flux factored 1",
+    "flux factored 2",
+    "generic t orders of J are (-2,-2,-1) and remainder has order -2",
+    "exact residual ordinary point",
+    "actual cover A_r simple pole survives at v=2,t=1 by polynomial gcd",
+    "specialized K numerator for double-H pole",
+    "actual cover remainder has double H poles at v=2,t=1"
+  ],
+  "definitions": {
+    "P": "t**8 - 3*t**6 - 3*t**2 + 1",
+    "Q": "t**8 - 5*t**6 - 5*t**2 + 1",
+    "H": "-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)",
+    "E": "-A_v*t*v*(t**8 - 5*t**6 - 5*t**2 + 1)/(21*a*(t**6 + 1)) + t*(t**8 - 3*t**6 - 3*t**2 + 1)/(7*t**6 + 7)",
+    "chi_v": "-v**2 + 3*A_v/(A_r*r**4)"
+  },
+  "exact_jet_remainder_compact": "(-2*W_a*v/(-A_v*W_v + W_a) + v**2*(A_v**2*W_v/(a*(-A_v*W_v + W_a)) + A_v*W_t*(E_t/(-A_v*W_v + W_a)**2 + 2/(t*(-A_v*W_v + W_a))) + A_v*W_v**2*(A_v**2/a - A_v/v - A_vv)/(-A_v*W_v + W_a)**2 - A_v*q/(-A_v*W_v + W_a) - A_vv*W_v/(-A_v*W_v + W_a)))/(36*t**2) + (-A_rv*W_a*v**2/(-A_v*W_v + W_a) - 3*A_v*(A_v**2*W_v/(a*(-A_v*W_v + W_a)) + A_v*W_t*(E_t/(-A_v*W_v + W_a)**2 + 2/(t*(-A_v*W_v + W_a))) + A_v*W_v**2*(A_v**2/a - A_v/v - A_vv)/(-A_v*W_v + W_a)**2 - A_v*q/(-A_v*W_v + W_a) - A_vv*W_v/(-A_v*W_v + W_a))/r**4 + 3*A_vv*W_a/(r**4*(-A_v*W_v + W_a)))/(36*A_r*t**2)",
+  "auxiliary_J0": "A_v**2*W_v/(a*(-A_v*W_v + W_a)) + A_v*W_t*(E_t/(-A_v*W_v + W_a)**2 + 2/(t*(-A_v*W_v + W_a))) + A_v*W_v**2*(A_v**2/a - A_v/v - A_vv)/(-A_v*W_v + W_a)**2 - A_v*q/(-A_v*W_v + W_a) - A_vv*W_v/(-A_v*W_v + W_a)",
+  "E_v": "W_v*(A_v**2/a - A_v/v - A_vv)",
+  "remainder_with_only_r_Ar_t_H_denominators": "(-6*a*v*(t**8 - 3*t**6 - 3*t**2 + 1)/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)) + v**2*(A_v*(t*(1 - t**2)*(t**6 + 1)*(-A_v*v*(8*t**7 - 30*t**5 - 10*t) + 3*a*(8*t**7 - 18*t**5 - 6*t)) + v*(3*A_v*(t**8 - 3*t**6 - 3*t**2 + 1) - (A_v + A_vv*v)*(t**8 - 5*t**6 - 5*t**2 + 1))*(t**8 - 5*t**6 - 5*t**2 + 1))/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1))**2 + (A_v*(7*t**8 - 5*t**6 + 2) - A_vv*v*(t**8 - 5*t**6 - 5*t**2 + 1))/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1))))/(36*t**2) + (-3*A_rv*a*v**2*(t**8 - 3*t**6 - 3*t**2 + 1)/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)) - 3*A_v*(A_v*(t*(1 - t**2)*(t**6 + 1)*(-A_v*v*(8*t**7 - 30*t**5 - 10*t) + 3*a*(8*t**7 - 18*t**5 - 6*t)) + v*(3*A_v*(t**8 - 3*t**6 - 3*t**2 + 1) - (A_v + A_vv*v)*(t**8 - 5*t**6 - 5*t**2 + 1))*(t**8 - 5*t**6 - 5*t**2 + 1))/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1))**2 + (A_v*(7*t**8 - 5*t**6 + 2) - A_vv*v*(t**8 - 5*t**6 - 5*t**2 + 1))/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)))/r**4 + 9*A_vv*a*(t**8 - 3*t**6 - 3*t**2 + 1)/(r**4*(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1))))/(36*A_r*t**2)",
+  "K_simplified": "A_v*(t*(1 - t**2)*(t**6 + 1)*(-A_v*v*(8*t**7 - 30*t**5 - 10*t) + 3*a*(8*t**7 - 18*t**5 - 6*t)) + v*(3*A_v*(t**8 - 3*t**6 - 3*t**2 + 1) - (A_v + A_vv*v)*(t**8 - 5*t**6 - 5*t**2 + 1))*(t**8 - 5*t**6 - 5*t**2 + 1))/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1))**2 + (A_v*(7*t**8 - 5*t**6 + 2) - A_vv*v*(t**8 - 5*t**6 - 5*t**2 + 1))/(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1))",
+  "H_v_at_fixed_r": "3*A_v*(t**8 - 3*t**6 - 3*t**2 + 1) - (A_v + A_vv*v)*(t**8 - 5*t**6 - 5*t**2 + 1)",
+  "H_t": "-A_v*v*(8*t**7 - 30*t**5 - 10*t) + 3*a*(8*t**7 - 18*t**5 - 6*t)",
+  "auxiliary_substitutions": {
+    "W_a": "t*(t**8 - 3*t**6 - 3*t**2 + 1)/(7*t**6 + 7)",
+    "W_v": "t*v*(t**8 - 5*t**6 - 5*t**2 + 1)/(21*a*(t**6 + 1))",
+    "W_t": "t**2*(1 - t**2)/(21*a)",
+    "q": "t*(-4*t**8 + 2*t**6 - 3*t**2 + 1)/(21*a*(t**6 + 1))",
+    "E_t": "2*A_v*t**6*v*(t**8 - 5*t**6 - 5*t**2 + 1)/(7*a*(t**6 + 1)**2) - A_v*t*v*(8*t**7 - 30*t**5 - 10*t)/(21*a*(t**6 + 1)) - A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1)/(21*a*(t**6 + 1)) - 42*t**6*(t**8 - 3*t**6 - 3*t**2 + 1)/(7*t**6 + 7)**2 + t*(8*t**7 - 18*t**5 - 6*t)/(7*t**6 + 7) + (t**8 - 3*t**6 - 3*t**2 + 1)/(7*t**6 + 7)"
+  },
+  "A_r_residue": "(-A_rv*W_a*v**2/(-A_v*W_v + W_a) - 3*A_v*(A_v**2*W_v/(a*(-A_v*W_v + W_a)) + A_v*W_t*(E_t/(-A_v*W_v + W_a)**2 + 2/(t*(-A_v*W_v + W_a))) + A_v*W_v**2*(A_v**2/a - A_v/v - A_vv)/(-A_v*W_v + W_a)**2 - A_v*q/(-A_v*W_v + W_a) - A_vv*W_v/(-A_v*W_v + W_a))/r**4 + 3*A_vv*W_a/(r**4*(-A_v*W_v + W_a)))/(36*t**2)",
+  "J_factored": [
+    "-A_v*a*(-v**2 + 3*A_v/(A_r*r**4))*(t**8 - 3*t**6 - 3*t**2 + 1)/(12*t**2*(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)))",
+    "-A_v*v*(-v**2 + 3*A_v/(A_r*r**4))*(t**8 - 5*t**6 - 5*t**2 + 1)/(36*t**2*(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)))",
+    "A_v*(1 - t**2)*(-t**6 - 1)*(-v**2 + 3*A_v/(A_r*r**4))/(36*t*(-A_v*v*(t**8 - 5*t**6 - 5*t**2 + 1) + 3*a*(t**8 - 3*t**6 - 3*t**2 + 1)))"
+  ],
+  "J_t_orders": [
+    -2,
+    -2,
+    -1
+  ],
+  "J_t_leading_coefficients": [
+    "(-A_r*A_v*a*r**4*v**2 + 3*A_v**2*a)/(12*A_r*A_v*r**4*v - 36*A_r*a*r**4)",
+    "(-A_r*A_v*r**4*v**3 + 3*A_v**2*v)/(36*A_r*A_v*r**4*v - 108*A_r*a*r**4)",
+    "(-A_r*A_v*r**4*v**2 + 3*A_v**2)/(36*A_r*A_v*r**4*v - 108*A_r*a*r**4)"
+  ],
+  "remainder_t_order": -2,
+  "remainder_t_leading_coefficient": "(4*A_r*A_v*a*r**4*v**2 - A_r*A_vv*a*r**4*v**3 - 6*A_r*a**2*r**4*v + A_rv*A_v*a*r**4*v**3 - 3*A_rv*a**2*r**4*v**2 - 6*A_v**2*a + 9*A_vv*a**2)/(12*A_r*A_v**2*r**4*v**2 - 72*A_r*A_v*a*r**4*v + 108*A_r*a**2*r**4)",
+  "remainder_t_leading_value_at_r1_v2": "-47/6",
+  "actual_cover_specialization": {
+    "v": "2",
+    "t": "1",
+    "A_r_numerator_degree": "18",
+    "residue_numerator_gcd_degree": 0,
+    "residue_denominator_gcd_degree": 0
+  },
+  "H_pole_witness": {
+    "v": "2",
+    "t": "1",
+    "H_numerator_degree": 18,
+    "squarefree": true,
+    "remainder_numerator_coprime_to_H": true,
+    "remainder_denominator_H_power": 2
+  },
+  "denominator_trade": "Besides existing chart factors r,a,t, current introduces H=3aP-vA_vQ. J has H^-1; remainder generally H^-2. Generic t=0 poles are present. This is not simultaneous regularity of the earlier Q and ramification improvement.",
+  "scope": "Exact algebraic identity in formal A jets, then an actual-cover gcd witness. Only this new beta candidate is checked. Nonzero survivor means no full primitive.",
+  "provenance": "Independent derivation from the canonical scalar operator verified separately against the pinned connection."
+}

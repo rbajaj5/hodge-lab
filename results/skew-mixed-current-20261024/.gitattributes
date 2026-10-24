@@ -1,0 +1,4 @@
+# Preserve executed script snapshots, receipts and their byte-level bindings.
+* -text whitespace=cr-at-eol
+# Matplotlib emits spaces inside multiline SVG path data; preserve the hashed output.
+regular-current.svg -whitespace

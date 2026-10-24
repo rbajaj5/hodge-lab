@@ -1,0 +1,20 @@
+PASS: direct Q identity coefficient chi
+PASS: direct Q identity coefficient chi_a
+PASS: direct Q identity coefficient chi_v
+PASS: direct Q identity coefficient chi_vv
+PASS: direct Q identity constant coefficient
+PASS: all six Q denominators nonzero at generic t=0
+PASS: Q_a(0)
+PASS: Q_t(0)
+PASS: Q_v(0)
+PASS: Newton reciprocal trace r^-3
+PASS: centered chi has zero trace
+PASS: centered chi_v has zero trace
+PASS: centered g has zero trace
+PASS: centered k has zero trace
+PASS: centered exact ordinary-point current equation
+PASS: centered t=0 residual
+REJECTED CONTROL: flip Q_t sign [252535/2817402, 15205/1408701]
+REJECTED CONTROL: flip Q_v sign [89402833/228209562, -27711037/25356618]
+REJECTED CONTROL: flip residual sign [-211556/440559, 52889/48951]
+PASS: 16 checks; 3 sign controls rejected

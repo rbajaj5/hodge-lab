@@ -1,0 +1,187 @@
+Exact physical sheet maps and a regular current continuation
+2026-10-24. No Lean, shared-repository mutation, commit, or publication.
+Read-only repository HEAD: 06e88a91ad159035a5b2b422d167d5ae76899772.
+
+1. Precise all-sheet physical identity
+
+Let K=Q(a,v,t), f(R)=R^18+R^12+(vR-1)^6-aR^15, and let rho_j
+be all 18 roots on the generic etale open. Put V=r U in the established
+physical field, retain its z, and put
+ P(V)=aV^3+tvV^2+t(1-t^2)V/7+1+t^6, z^6=-P(V).
+For each j there is a Q-algebra map from the ALLOWED regular domain
+ S0=Q[U,r,w,t,z,z^-1]
+to the common physical algebraic closure, given by
+ U |-> V/rho_j, r |-> rho_j, w |-> (v rho_j-1)/rho_j^2,
+ t |-> t, z |-> z.
+The roots are nonzero because f(0)=1. These maps kill the curve relation,
+fix V=rU after pullback, and fix z. They induce universal differential and
+exterior maps. No map from the entire old ambient fraction field killing
+G is used, and no inverse of G is introduced. If the original square-cover
+chart is needed, choose x_j^2=V/rho_j in the algebraic closure; its sign has
+no effect on this reflection-quotient normalized source.
+
+The exact generic-sheet calculation is
+ p(V/R,R,(vR-1)/R^2,t)-P(V) = V^3 f(R)/R^15,
+ d(V/R) wedge dR wedge d((vR-1)/R^2) wedge dt
+   = R^13/f_R(R) dV wedge da wedge dv wedge dt.
+The differentiated sheet equation supplies R_a=R^15/f_R and
+R_v=-6R(vR-1)^5/f_R. Thus the actual regular normalized source maps to
+ S_j = (5/72) [rho_j^11/f'(rho_j)] V^2/z^11
+           dV wedge da wedge dv wedge dt.
+
+Consequently the PREVIOUSLY PROVED scalar sum sum_j rho_j^11/f'(rho_j)=0
+implies the literal full four-form equality sum_j S_j=0. This is not a new
+scalar trace replay: the new ingredient is common physical sheet maps fixing
+V,z and the full differential Jacobian.
+
+Write phi_j=rho_j^11/f'(rho_j), B=da wedge dv wedge dt and use the literal
+two-row b-column (M_b e0)=(M0,M1)^T and its exact correction R_b0(V).
+Then the inherited source-reduction identity gives, on every sheet,
+ S_j = (phi_j/12) (M0+M1 V) dV/z^5 wedge B
+         + d(phi_j R_b0(V)/(12 z^5)) wedge B.
+Both compact rows, the exact correction, and the unreduced source separately
+sum to zero, because M0,M1,V,z,R_b0 and B are common to all sheets. The
+correction sums to d[(sum_j phi_j)R_b0/(12z^5)] wedge B=0. No row is dropped.
+For this reduction also require Delta!=0; the bare source map needs no Delta.
+All signs here use the fibre-first normalized-source orientation.
+
+2. Why this cancellation does not solve the source equation
+
+The trace map discards exactly the summand in which this source lives. In
+the finite-cover de Rham complex, P_tf=Id-(1/18) unit*Tr commutes with the
+connection. Since Tr(source)=0, P_tf(source)=source, not zero. A primitive
+can be projected to the trace-free summand if one already has a primitive.
+There remain 17 cover coefficients times both compact rows, hence the same
+rank-34 equation. The source lies in power slot 11, but derivatives mix
+cover slots; none of the other 16 trace-free slots can be deleted on that
+ground. All-sheet cancellation supplies no physical single-sheet current.
+
+3. Concrete continuation beyond the REUSED packet current
+
+The packet already proves, with derivatives holding (a,v,t) as indicated,
+ psi=r^-3, phi=-psi_a/3, g=psi_vv,
+ source=phi M_b e0/12 = -psi_a M_b e0/36,
+ source=div_nabla(X)+g e1/(36t^2).
+Its fluxes X_a=psi_v e0/(36t),
+ X_v=-psi_a e0/(36t)-psi_v e1/(36t^2), X_t=0
+and this one-row residual are REUSED, not new claims.
+
+New continuation: set k=v psi_v-psi, so k_v=v g, and use
+ Y_a=0, Y_v=-k e0/(108 a t), Y_t=-g e1/(36t).
+With N_a=M_a, N_v=t M_b and
+ N_t=v M_b+(1-3t^2) M_c/7+6t^5 M_d,
+the EXACT remaining vector is
+ R2 = g [N_t e1+v e0/(3a)]/(36t) + k M_b e0/(108a).
+The identity is source=div_nabla(X+Y)+R2, with BOTH rows retained.
+Since N_t(0)e1=-v e0/(3a), R2 has no t=0 pole (for a!=0, Delta!=0).
+Its values at t=0 are
+ R2(0)=(g/(10584a), g v/(1512a))^T.
+
+The combined current itself can be made regular at t=0. Subtract the
+covariant differentials of the two one-forms
+ Z1=psi_v e1 da/(36t), Z2=psi e0 dt/(36t).
+Flatness means this does not change its divergence. The resulting compact
+rational current Q has particularly short fluxes:
+ Q_a = -psi M_b e0/36,
+ Q_v = [psi M_a e0 - psi_v N_t e1 - k e0/(3a)]/(36t),
+ Q_t = psi_v M_b e1/36.
+Its Q_v numerator vanishes at t=0 in both rows, so the displayed division
+by t is removable. Direct rational substitution verifies
+             source = div_nabla(Q) + R2.
+This direct verification is independent of assuming the two gauge steps.
+The compact vector identity is not asserted to finish the original
+four-form primitive: the packet's fibre exact corrections must accompany
+any lift of a compact current to an absolute differential-form current.
+
+Exact cover formulas, usable without implicit differentiation software:
+ r_v=-6r(vr-1)^5/f_r,
+ r_vv=-(f_vv+2 f_rv r_v+f_rr r_v^2)/f_r,
+ psi_v=-3r^-4 r_v=18(vr-1)^5/(r^3 f_r),
+ g=12r^-5 r_v^2-3r^-4 r_vv,
+ k=18v(vr-1)^5/(r^3 f_r)-r^-3.
+
+Recommended trace-free version (a necessary correction to the raw current):
+Newton sums of inverse roots give Tr(r^-3)=6v^3, hence psi is not trace-free.
+Use chi=psi-v^3/3 in place of psi THROUGHOUT Q and R2. Equivalently replace
+ psi_v by psi_v-v^2, g by g_hat=g-2v, and k by k_hat=k-2v^3/3.
+Then chi_a=psi_a, so the original source is unchanged; all four current
+scalars chi,chi_v,g_hat,k_hat have trace zero. The generic direct Q identity
+was checked with independent symbols for these scalars, so it applies
+unchanged after this substitution. The recommended R2 is therefore
+ R2_tf = (g-2v)[N_t e1+v e0/(3a)]/(36t)
+                    +(k-2v^3/3) M_b e0/(108a).
+This keeps both Q and its remaining source in the rank-34 trace-free system.
+Without this subtraction, raw Q and R2 have compensating nonzero traces.
+
+Domain: characteristic zero, f=0, r f_r z Delta!=0, and a!=0 for the
+new current. Calculations with 1/t take place first on t!=0, then extend
+to t=0 after cancellation. Other divisors remain. In particular g can
+have f_r^-3 poles; this continuation does not remove ramification poles.
+
+4. What the new current enables, and what it does not
+
+The published residual had a naked t^-2 pole introduced by integration by
+parts. The new Q and R2 permit a subsequent current search with no required
+t=0 pole; the inhomogeneous numerator there is explicitly the vector above.
+The short Q uses only the cover scalars psi and psi_v. This is a candidate
+simplification of the inhomogeneous equation, not a lower-rank theorem or
+a proof that a restricted denominator ansatz is complete. It restores both
+compact rows in the residual, can introduce a^-1, and retains ramification
+and discriminant denominators. The original source was already regular at
+t=0, so removing this artificial pole is not itself evidence of exactness.
+
+Precise remaining problem: find rational fluxes (Z_a,Z_v,Z_t) satisfying
+ (D_a+M_a)Z_a+(D_v+t M_b)Z_v+(partial_t+N_t)Z_t=R2.
+For the recommended version replace R2 by R2_tf in this equation. Adding
+the fluxes to Q_tf would solve the compact source equation. Tr(R2_tf)=0,
+so all-sheet cancellation still leaves this exact remaining equation intact.
+
+At the allowed exact point (a,v,r,t)=(3,2,1,1), f=0, f_r=-3,
+Delta=1036, g=42 and k=-13. The new residual is explicitly NONZERO:
+ R2=(5560/20979, -1390/2331)^T.
+At the corresponding t=0 point it is (1/756,1/54)^T. For the full
+physical chart choose V=1, so z^6=-9 at t=1, hence z!=0 and U!=0.
+For the RECOMMENDED trace-free version, g_hat=38 and k_hat=-55/3 there,
+ R2_tf(t=1)=(105778/440559, -52889/97902)^T != 0,
+ R2_tf(t=0)=(19/15876, 19/1134)^T != 0.
+
+5. Execution provenance
+
+check-01: passed 11 exact checks and three rejected mutations; 18.156s
+process, 11.719s calculation, 60s external limit. Its checker and runner
+are separately snapshotted. This run covers sheet compatibility and Y/R2,
+not the later direct Q identity.
+check-02: direct Q test after expanding physical coefficients exceeded
+the 60s process bound. Preserved as a timeout, never counted as success.
+Its distinct checker and runner are snapshotted.
+check-03: passed 25 exact checks and three mutations in 15.625s process,
+13.235s calculation. The portable UTF-8 script checks the direct Q identity
+before the physical substitution, avoiding expanded degree-12 rational
+denominators. check-04 attempted the trace-free current normalization but
+timed out at 60s while re-expanding the shifted cover derivative. Its exact
+snapshot and logs remain preserved. check-05 checks the shift polynomial
+directly, reusing the already checked unshifted derivative identity, and
+adds its exact remaining-source witnesses; see its execution.json and
+validation.json for final status, counts, hashes and stdout/stderr. No Lean ran.
+Final check-05 PASSED: 29 exact checks, three rejected mutations, 15.657s
+process / 13.313s calculation, Python 3.11.9 and SymPy 1.14.0. Each process
+was bounded by 60s. Checker SHA256:
+224e226bed0b876c60566e22e11fa53825aa3f88735825fe6fb4a9d6e92b4560.
+The two timed-out runs remain failures and are not included in passing counts.
+
+The three intended mutations alter the t-connection sign, the v derivative
+sign, and discard residual row 1; each has an exact nonzero witness. The
+full compact connection is read from the pinned source JSON, columns index
+input basis. The final command accepts --connection and has no machine-
+specific source path. Use a fresh output directory/run name.
+
+Reproduce with the final runner:
+ python -O run_bounded.py NEW_RUN_NAME PATH_TO_source-rank2-connection.json
+Each symbolic child is limited to 60s; scripts use explicit exceptions, not
+assertions, and therefore remain active under Python -O.
+
+Initial read-only discovery had two path failures: the requested names
+notes/physical-curve-realization.md and notes/physical-trace-bridge.md do
+not exist; the actual files are notes/skew-physical-curve-realization.md and
+notes/skew-physical-trace-bridge.md and were then read. A broad rg result was
+truncated but supplied those names; no inferred missing-source claim is made.

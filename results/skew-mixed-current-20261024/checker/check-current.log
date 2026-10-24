@@ -1,0 +1,17 @@
+START independent current checker
+PASS: fixed-a derivative of k equals v*g
+PASS: two independent constructions of g agree
+PASS: g is independent of t
+PASS: k is independent of t
+PASS: both rows of R0-div(Y) equal claimed R2
+PASS: Nt(0)e1 equals -v e0/(3a)
+PASS: Delta(0) equals 27 a^2
+PASS: both residual denominators at t=0: [6001128*a**3, 2000376*a**2]
+PASS: explicit regular value at t=0
+PASS: ordinary point direct flux evaluation agrees
+PASS: ordinary t=0 value on same cover point
+REJECTED CONTROL: flip sign of Y_t [-8/777, 1825/518]
+REJECTED CONTROL: flip sign of Y_v [-10904/20979, 13/4662]
+REJECTED CONTROL: use d-M instead of pinned d+M [-242/20979, 2780/2331]
+REJECTED CONTROL: flip k_v=v*g to k_v=-v*g [-14/27, 0]
+PASS: 11 exact identity/regularity checks; 4 sign controls rejected

@@ -1,0 +1,105 @@
+{
+  "status": "PASS: second-current identity and generic t=0 regularity; full equation remains unsolved",
+  "source": "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "3d262829da6fb4da55a41dd832e143ffbb2649732038b85f9152634f10e397f5",
+  "software": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "sympy": "1.14.0"
+  },
+  "conventions": "Packet orientation, columns index input basis, connection d+M; dv/dt derivatives at fixed a; r_t=0.",
+  "new_checks_only": [
+    "fixed-a derivative of k equals v*g",
+    "two independent constructions of g agree",
+    "g is independent of t",
+    "k is independent of t",
+    "both rows of R0-div(Y) equal claimed R2",
+    "Nt(0)e1 equals -v e0/(3a)",
+    "Delta(0) equals 27 a^2",
+    "both reduced residual denominators are nonzero at generic t=0",
+    "explicit regular value at t=0",
+    "ordinary point direct flux evaluation agrees",
+    "ordinary t=0 value on same cover point"
+  ],
+  "deliberate_sign_controls": [
+    {
+      "name": "flip sign of Y_t",
+      "exact_defect": [
+        "-8/777",
+        "1825/518"
+      ]
+    },
+    {
+      "name": "flip sign of Y_v",
+      "exact_defect": [
+        "-10904/20979",
+        "13/4662"
+      ]
+    },
+    {
+      "name": "use d-M instead of pinned d+M",
+      "exact_defect": [
+        "-242/20979",
+        "2780/2331"
+      ]
+    },
+    {
+      "name": "flip k_v=v*g to k_v=-v*g",
+      "exact_defect": [
+        "-14/27",
+        "0"
+      ]
+    }
+  ],
+  "g_definition": "Dv(Dv(r**-3)), Dv=partial_v-(A_v/A_r)*partial_r",
+  "k_definition": "v*Dv(r**-3)-r**-3",
+  "g_rational": "(30*r**40*v**4 - 120*r**39*v**3 + 180*r**38*v**2 - 120*r**37*v + 30*r**36 - 60*r**34*v**4 + 240*r**33*v**3 - 360*r**32*v**2 + 240*r**31*v - 60*r**30 + 108*r**28*v**10 + 30*r**28*v**4 - 1080*r**27*v**9 - 120*r**27*v**3 + 4860*r**26*v**8 + 180*r**26*v**2 - 12960*r**25*v**7 - 120*r**25*v + 22680*r**24*v**6 + 30*r**24 - 27216*r**23*v**5 - 36*r**22*v**10 + 22680*r**22*v**4 + 360*r**21*v**9 - 12960*r**21*v**3 - 1620*r**20*v**8 + 4860*r**20*v**2 + 4320*r**19*v**7 - 1080*r**19*v - 7560*r**18*v**6 + 108*r**18 + 9072*r**17*v**5 - 162*r**16*v**16 - 7560*r**16*v**4 + 2640*r**15*v**15 + 4320*r**15*v**3 - 20160*r**14*v**14 - 1620*r**14*v**2 + 95760*r**13*v**13 + 360*r**13*v - 316680*r**12*v**12 - 36*r**12 + 773136*r**11*v**11 - 1441440*r**10*v**10 + 2093520*r**9*v**9 - 2393820*r**8*v**8 + 2162160*r**7*v**7 - 1537536*r**6*v**6 + 851760*r**5*v**5 - 360360*r**4*v**4 + 112560*r**3*v**3 - 24480*r**2*v**2 + 3312*r*v - 210)/(r**55 - 3*r**49 - 9*r**43*v**6 + 3*r**43 + 60*r**42*v**5 - 165*r**41*v**4 + 240*r**40*v**3 - 195*r**39*v**2 + 84*r**38*v + 18*r**37*v**6 - 16*r**37 - 120*r**36*v**5 + 330*r**35*v**4 - 480*r**34*v**3 + 390*r**33*v**2 - 168*r**32*v + 27*r**31*v**12 - 9*r**31*v**6 + 30*r**31 - 360*r**30*v**11 + 60*r**30*v**5 + 2190*r**29*v**10 - 165*r**29*v**4 - 8040*r**28*v**9 + 240*r**28*v**3 + 19845*r**27*v**8 - 195*r**27*v**2 - 34704*r**26*v**7 + 84*r**26*v - 27*r**25*v**12 + 44100*r**25*v**6 - 15*r**25 + 360*r**24*v**11 - 41040*r**24*v**5 - 2190*r**23*v**10 + 27765*r**23*v**4 + 8040*r**22*v**9 - 13320*r**22*v**3 - 19845*r**21*v**8 + 4302*r**21*v**2 + 34704*r**20*v**7 - 840*r**20*v - 27*r**19*v**18 - 44100*r**19*v**6 + 75*r**19 + 540*r**18*v**17 + 41040*r**18*v**5 - 5085*r**17*v**16 - 27765*r**17*v**4 + 29960*r**16*v**15 + 13320*r**16*v**3 - 123780*r**15*v**14 - 4302*r**15*v**2 + 380856*r**14*v**13 + 840*r**14*v - 904540*r**13*v**12 - 75*r**13 + 1695720*r**12*v**11 - 2543970*r**11*v**10 + 3077360*r**10*v**9 - 3009006*r**9*v**8 + 2372760*r**8*v**7 - 1497860*r**7*v**6 + 746760*r**6*v**5 - 287580*r**5*v**4 + 82552*r**4*v**3 - 16635*r**3*v**2 + 2100*r**2*v - 125*r)",
+  "k_rational": "(-r**18 + r**12 + 9*r**6*v**6 - 50*r**5*v**5 + 115*r**4*v**4 - 140*r**3*v**3 + 95*r**2*v**2 - 34*r*v + 5)/(r**21 - r**15 - 3*r**9*v**6 + 20*r**8*v**5 - 55*r**7*v**4 + 80*r**6*v**3 - 65*r**5*v**2 + 28*r**4*v - 5*r**3)",
+  "current": {
+    "Y_a": [
+      "0",
+      "0"
+    ],
+    "Y_v": [
+      "-k/(108*a*t)",
+      "0"
+    ],
+    "Y_t": [
+      "0",
+      "-g/(36*t)"
+    ]
+  },
+  "residual_regular_rows": [
+    "(111132*a**2*g*t**11*v - 567*a**2*g*t**10 + 2268*a**2*g*t**8 - 1701*a**2*g*t**6 + 111132*a**2*g*t**5*v + 1701*a**2*g*t**4 - 2268*a**2*g*t**2 + 567*a**2*g + 5292*a*g*t**9*v**2 - 27*a*g*t**8*v - 1764*a*g*t**7*v**2 + 75*a*g*t**6*v - 69*a*g*t**4*v + 8820*a*g*t**3*v**2 + 21*a*g*t**2*v - 5292*a*g*t*v**2 - 1323*a*k*t**9 + 1323*a*k*t**7 - 1323*a*k*t**3 + 1323*a*k*t + 8232*g*t**8*v**4 - 42*g*t**7*v**3 + 84*g*t**5*v**3 - 42*g*t**3*v**3 + 8232*g*t**2*v**4 - 4116*k*t**8*v**2 + 7*k*t**7*v - 14*k*t**5*v + 7*k*t**3*v - 4116*k*t**2*v**2)/(6001128*a**3*t**12 + 12002256*a**3*t**6 + 6001128*a**3 + 571536*a**2*t**10*v - 2592*a**2*t**9 - 571536*a**2*t**8*v + 7776*a**2*t**7 - 7776*a**2*t**5 + 571536*a**2*t**4*v + 2592*a**2*t**3 - 571536*a**2*t**2*v + 889056*a*t**9*v**3 - 4536*a*t**8*v**2 + 9072*a*t**6*v**2 - 4536*a*t**4*v**2 + 889056*a*t**3*v**3)",
+    "(-55566*a**2*g*t**10 - 55566*a**2*g*t**4 - 3969*a*g*t**8*v + 18*a*g*t**7 + 2205*a*g*t**6*v - 42*a*g*t**5 + 30*a*g*t**3 - 3087*a*g*t**2*v - 6*a*g*t + 1323*a*g*v - 4116*g*t**7*v**3 + 21*g*t**6*v**2 - 42*g*t**4*v**2 + 21*g*t**2*v**2 - 4116*g*t*v**3 + 2058*k*t**7*v - 14*k*t**6 + 28*k*t**4 - 14*k*t**2 + 2058*k*t*v)/(2000376*a**2*t**12 + 4000752*a**2*t**6 + 2000376*a**2 + 190512*a*t**10*v - 864*a*t**9 - 190512*a*t**8*v + 2592*a*t**7 - 2592*a*t**5 + 190512*a*t**4*v + 864*a*t**3 - 190512*a*t**2*v + 296352*t**9*v**3 - 1512*t**8*v**2 + 3024*t**6*v**2 - 1512*t**4*v**2 + 296352*t**3*v**3)"
+  ],
+  "residual_denominators_at_t_zero": [
+    "6001128*a**3",
+    "2000376*a**2"
+  ],
+  "residual_at_t_zero": [
+    "g/(10584*a)",
+    "g*v/(1512*a)"
+  ],
+  "ordinary_point": {
+    "r": "1",
+    "a": "3",
+    "v": "2",
+    "t": "1",
+    "A_r": "-3",
+    "g": "42",
+    "k": "-13",
+    "Delta": "1036",
+    "residual": [
+      "5560/20979",
+      "-1390/2331"
+    ]
+  },
+  "same_cover_point_at_t_zero_residual": [
+    "1/756",
+    "1/54"
+  ],
+  "domain": "Rational identity in full degree-18 function field; displayed base/cover chart uses r!=0, a!=0, A_r!=0, Delta!=0. Initial flux formulas use t!=0. Residual alone extends to t=0 on this open; current still has poles there. At t=0 Delta=27 a^2.",
+  "scope": "Only a further exact current subtraction and pole removal for its residual. Residual nonzero in both rows. No full rational primitive, homogeneous certificate, all-sheet solution, or new rank/trace/chart conclusion.",
+  "provenance": "Independent checker by a parallel Codex agent. Directly parses public fqlx connection JSON pinned by benediamond packet. Does not import proposer scripts or earlier verification scripts."
+}

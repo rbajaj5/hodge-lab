@@ -1,0 +1,60 @@
+{
+  "type": "receipt/source binding review, not a mathematical replay",
+  "algebra_runs": [
+    {
+      "run": "check-01",
+      "status": "completed",
+      "snapshot_hash_recorded": false,
+      "source_matches": null,
+      "runner_matches": null
+    },
+    {
+      "run": "check-02",
+      "status": "timeout",
+      "snapshot_hash_recorded": false,
+      "source_matches": null,
+      "runner_matches": null
+    },
+    {
+      "run": "check-03",
+      "status": "completed",
+      "snapshot_hash_recorded": true,
+      "source_matches": true,
+      "runner_matches": true
+    },
+    {
+      "run": "check-04",
+      "status": "timeout",
+      "snapshot_hash_recorded": true,
+      "source_matches": true,
+      "runner_matches": true
+    },
+    {
+      "run": "check-05",
+      "status": "completed",
+      "snapshot_hash_recorded": true,
+      "source_matches": true,
+      "runner_matches": true
+    }
+  ],
+  "independent_scripts": [
+    {
+      "script": "checker/check_current.py",
+      "hash_matches": true
+    },
+    {
+      "script": "checker/check_regular_current.py",
+      "hash_matches": true
+    },
+    {
+      "script": "beta-checker/check_beta_candidate.py",
+      "hash_matches": true
+    },
+    {
+      "script": "beta-checker/check_beta_poles.py",
+      "hash_matches": true
+    }
+  ],
+  "final_author_script_matches": true,
+  "early_limit": "check01 and02 have saved snapshots but no snapshot hash in their original execution receipts"
+}
