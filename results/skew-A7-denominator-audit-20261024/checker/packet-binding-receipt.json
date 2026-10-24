@@ -1,0 +1,31 @@
+{
+  "exit_code": 0,
+  "outer_timeout": false,
+  "child_watchdog_exit": false,
+  "wall_seconds": 0.45300000000861473,
+  "child_limit_seconds": 60,
+  "internal_watchdog_seconds": 58,
+  "scope": "I/O-only comparison; no mathematical computation replayed",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-A7-denominator-audit-20261024\\checker\\bind_delivered_packet.py",
+    "--child",
+    "--matrix",
+    "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-A7-denominator-20261024\\lead\\matrix-01\\result\\augmented-matrix.u16.bin",
+    "--inputs",
+    "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-A7-denominator-20261024\\lead\\matrix-01\\result\\inputs.json",
+    "--matrix-sha256",
+    "7ab80831f8757663bc208ecb4a391509ab18080b0a6f776d0a4b57695c9e2230",
+    "--inputs-sha256",
+    "4d67271f1607894a72afab28a39d3ee0e2e1752da414f3e85b6b32f418ee4ded",
+    "--raw-rows",
+    "5280",
+    "--raw-columns",
+    "5209"
+  ],
+  "stream_encoding": "UTF-8 raw bytes",
+  "script_sha256": "cac89d874b2c3b415a3e4472062cc13563fe22e4689b5375a22ccf7b6fbeec61",
+  "stdout_sha256": "9b9d28141615ef6236e7b865aad6ada0fb90c6e703c94705387fd8e0ad7a7953",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "report_sha256": "fef08259f6d061c2a3eb235720c8ace9f403e1297bde6a2d28e5cec0c40b54b5"
+}

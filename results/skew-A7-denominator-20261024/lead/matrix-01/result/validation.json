@@ -1,0 +1,37 @@
+{
+  "status": "ASSEMBLED_DIRECT_QUOTIENT_A7_MATRIX_NO_RANK_CLAIM",
+  "executor": "Pro root constructive lead",
+  "created_utc": "2026-10-24T18:12:13.039799+00:00",
+  "elapsed_seconds": 24.804724448000343,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "190b057b32c157b769dc352db0af230384ccc0a32a3ae98479423665fcfa0ea0",
+  "prime": 65519,
+  "seed": 2026102497,
+  "matrix_shape": [
+    5280,
+    5209
+  ],
+  "matrix_entries": 27503520,
+  "matrix_dtype": "<u2",
+  "matrix_order": "C",
+  "matrix_sha256": "7ab80831f8757663bc208ecb4a391509ab18080b0a6f776d0a4b57695c9e2230",
+  "inputs_sha256": "4d67271f1607894a72afab28a39d3ee0e2e1752da414f3e85b6b32f418ee4ded",
+  "parameter_sectors": {
+    "h7": 60,
+    "k7": 234,
+    "P6": 702,
+    "P5": 702,
+    "P4": 702,
+    "P3": 702,
+    "P2": 702,
+    "P1": 702,
+    "P0": 702
+  },
+  "structural_dependency": "Imported highest-pole det(Ra-7I)=154/3 plus reused bounded tangent/support theorem; only P7 constrained. All lower sectors free.",
+  "quotient_rule": "Direct top -7Ar/A^8 and -7Av/A^8; lower -jAi/A^(j+1), At=0; equation multiplied by A^7",
+  "target": "A^7*r^-4*Mb e0/12",
+  "limits": "Assembly only; exclusion requires nonzero augmented rational minor. No rational primitive claimed."
+}

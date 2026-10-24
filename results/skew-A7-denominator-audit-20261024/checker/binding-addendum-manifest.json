@@ -1,0 +1,37 @@
+{
+  "status": "PASS_IO_BINDING_ONLY",
+  "frozen_utc": "2026-10-24T18:20:45Z",
+  "original_freeze_manifest_sha256": "12f6dfea380f95075638a68427f387b9f26ed9da8b77c936e16a87e7411ccbf2",
+  "original_frozen_payload_files_verified_unchanged": 9,
+  "original_files_including_manifest_verified_unchanged": 10,
+  "scope": "All 27133681 entries in first5209 delivered rows matched; no mathematical rerun",
+  "execution": "One successful 0.453-second IO child run; original frozen binder unchanged",
+  "display_clarification": "P1 ordinary operator factor A6; whole equation A7; omitted correction -A5 Ai. See addendum; executed bytes unchanged.",
+  "files": [
+    {
+      "path": "BINDING-ADDENDUM.md",
+      "bytes": 3646,
+      "sha256": "f25ec60a9d79d06753f2038f80803e69c44c88e237366d11290bf4b99cd5299a"
+    },
+    {
+      "path": "packet-binding-receipt.json",
+      "bytes": 1475,
+      "sha256": "7292f9cdc3e14fc5e02fe33d46061ca7208fe09789637ef755f8dfdc1fd57479"
+    },
+    {
+      "path": "packet-binding.json",
+      "bytes": 1796,
+      "sha256": "fef08259f6d061c2a3eb235720c8ace9f403e1297bde6a2d28e5cec0c40b54b5"
+    },
+    {
+      "path": "packet-binding.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "packet-binding.stdout.log",
+      "bytes": 155,
+      "sha256": "9b9d28141615ef6236e7b865aad6ada0fb90c6e703c94705387fd8e0ad7a7953"
+    }
+  ]
+}

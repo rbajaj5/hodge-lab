@@ -1,0 +1,55 @@
+{
+  "status": "COORDINATOR_REPORTED_EXECUTIONS_NOT_RUN_BY_PRO",
+  "provenance": "User relays in active A7 batch; original coordinator files are not in this packet.",
+  "structural": {
+    "exact_checks": 7,
+    "mutation_controls": 3,
+    "process_seconds": 2.297,
+    "algebra_seconds": 0.187,
+    "frozen_utc": "2026-10-24T18:10:22Z",
+    "byte_bindings": 10,
+    "script_sha256": "aca70673f8a5273e56bbe4f60066102678c3a7157199c8fde29415455c7a1cab",
+    "sparse_injection_sha256": "4b3911f6010235533001c3a042b2106bee6a7282cbb0d677a0951095eff7221e",
+    "det_Ra_minus_7I": "154/3",
+    "tau7": "-11*r^7+24*r",
+    "top_parameters": 294,
+    "unrestricted_lower_parameters": 4914,
+    "necessary_columns": 5208,
+    "original_parameters": 5616,
+    "injection_shape": [
+      5616,
+      5208
+    ],
+    "next_pole": "(Ra-6I)Q6+W7|A=0=0",
+    "failures": [],
+    "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d"
+  },
+  "minor": {
+    "prime": 65519,
+    "seed": 2026102497,
+    "rows": 5209,
+    "columns": 5209,
+    "entries": 27133681,
+    "admissible_points": 2605,
+    "determinant": 56940,
+    "seconds": 18.563,
+    "observed_utc": "2026-10-24T18:12:05Z",
+    "mutation_controls": 3,
+    "timeout": false,
+    "backend": "python-flint0.9.0 exact nmod_mat.det",
+    "script_sha256": "07ddcf92422a9147799d31bfc623f54c81f9df498f2421f0953eb9b2c09725e0",
+    "report_sha256": "9ab4f9b0617984a5780e5e042f5b660bd86c4dfb0395df24e4a5a411dc655526",
+    "decisive_uint16_array_sha256": "8f4a48490018861c4599e08ae1e6da0e279b874c260e96d6350af74110f81b28",
+    "array_container_format": "Not specified in user relay; do not infer raw versus NPY from hash alone.",
+    "coordinator_reports_execution_before_receiving_Pro_matrix_or_numeric_result": true,
+    "delivered_matrix_binding": "PENDING_COORDINATOR_IO_ONLY_COMPARISON",
+    "not_in_this_packet": "Coordinator scripts, original report, and decisive array belong to coordinator-owned audit."
+  },
+  "goal": {
+    "owner": "Original Codex coordinator",
+    "started_utc": "2026-10-24T18:08:45Z",
+    "deadline_utc": "2026-10-24T18:53:45Z",
+    "integration_minutes_after_mathematical_closure": 15,
+    "worker_has_goal_activation_api": false
+  }
+}

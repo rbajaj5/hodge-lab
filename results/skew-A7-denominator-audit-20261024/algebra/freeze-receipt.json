@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T18:10:22.242507+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "results/skew-A7-denominator-audit-20261024/algebra/freeze_artifacts.py"
+  ],
+  "checks": {
+    "successful_execution": true,
+    "bounded_execution": true,
+    "checker_snapshot_matches_execution": true,
+    "checker_snapshot_matches_validation": true,
+    "final_checker_matches_snapshot": true,
+    "runner_snapshot_matches_execution": true,
+    "final_runner_matches_snapshot": true,
+    "injection_matches_validation": true,
+    "pinned_connection_recorded": true,
+    "prior_injection_pin_recorded": true
+  },
+  "checker_sha256": "aca70673f8a5273e56bbe4f60066102678c3a7157199c8fde29415455c7a1cab",
+  "injection_sha256": "4b3911f6010235533001c3a042b2106bee6a7282cbb0d677a0951095eff7221e",
+  "execution_seconds": 2.297000000005937,
+  "exact_checks": 7,
+  "controls": 3,
+  "scope": "Only new A7 structural work; original receipts frozen."
+}

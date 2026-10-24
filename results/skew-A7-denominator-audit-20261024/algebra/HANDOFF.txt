@@ -1,0 +1,120 @@
+A^-7 structural handoff, 24 October 2026
+=======================================
+
+New constants: det(R_a-7I)=154/3 and tau7=-11r^7+24r. Only P7 is forced
+tangent. The necessary family has5,208 coefficients, retaining all4,914
+lower P0 through P6 coefficients. No numerical search or primitive claim.
+
+Receiver and dependencies
+--------------------------
+Receiver: coordinator for the existing Pro lead and independent checker.
+Required use: the full scaled equation below, both compact rows and every
+lower sector retained. Pro owns the constructive search; no further local
+refinement is pursued after this single passed algebra run.
+Parent supplied by coordinator:030d13b75270f6ad1a774e9c11321038fe6305e9.
+No Git or network operation was performed.
+Literal source connection SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Positive packet convention; compact rows(e0,e1), column inputs, d+N.
+Credit fqlx for the compact connection and benediamond for the cover.
+
+Unchanged A-divisor prime/smoothness, generic Delta complement, source
+regularity, tangent module and support proofs are reused without replay.
+Accepted base validation SHA256:
+1d45f2e5e254c7b6c8aa24e3aeee106a5756c5a0f9407cbb9d426ef2f289367c.
+Accepted top injection SHA256:
+047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b.
+The prior A6 structural receipt is also byte-bound; its checker SHA is
+642e1ff19774630891bb9e18d51d10f11d7aacc25b30651e3a6839cb88b62d2b.
+No old determinant, secondary projection, search or Lean check was rerun.
+
+Family and exact physical source
+--------------------------------
+  B=span_Q{r^m v^n t^k:-10<=m<=2,0<=n,k<=2},
+  A=r^3+r^-3+(rv-1)^6/r^15,
+  (a,b,c,d)=(A,tv,t(1-t^2)/7,1+t^6),
+  N=(A_r M_a,A_v M_a+t M_b,N_t),
+  N_t=v M_b+c' M_c+d' M_d,
+  S=r^-4 M_b e0/12.
+Let D_N denote the full physical divergence. Write
+  F=P0+P1/A+P2/A^2+P3/A^3+P4/A^4+P5/A^5+P6/A^6+P7/A^7,
+  Qj=A_r Pjr+A_v Pjv.
+Every scalar numerator component is in B with rational constant
+coefficients. Both rows, A_v chain terms, all physical derivatives, full
+t connection and source factor1/12 are retained.
+
+New highest pole and top operator
+---------------------------------
+The accepted residue R_a=[[0,-c/(6b)],[0,-1/3]] gives independently
+  det(R_a-7I)=(-7)(-22/3)=154/3.
+The order-eight pole is(R_a-7I)Q7/A^8. Every lower sector and the source
+has smaller pole order, so Q7=0 modulo A. The reused bounded tangent
+theorem then forces only
+  (P7r,P7v,P7t)=(T_r h,T_v h,k),
+  T_r=r^2(r^6+1), T_v=r(2r^6+1)v-(3r^6+2).
+Each h component has r support-10..-6,v support0..1,t support0..2;
+each k component belongs to B. This gives60+234=294 top coefficients.
+
+From div(T)=10r^7+3r and ell=T(A)/A=3r^7-3r,
+  tau7=div(T)-7ell=-11r^7+24r.
+The complete two-row operator is
+  W7=[T_r partial_r+T_v partial_v+(-11r^7+24r)I
+          +ell*A*M_a+t*T_v*M_b]h +(partial_t+N_t)k.
+Then D_N(P7/A^7)=W7/A^7. The exact full equation multiplied by A^7 is
+
+  A^7 D_N(P0)
+    +A^6 D_N(P1)-A^5 Q1
+    +A^5 D_N(P2)-2A^4 Q2
+    +A^4 D_N(P3)-3A^3 Q3
+    +A^3 D_N(P4)-4A^2 Q4
+    +A^2 D_N(P5)-5A Q5
+    +A D_N(P6)-6Q6+W7 = A^7 S.
+
+The entire eight-sector quotient rule is checked, substituting a tangent
+form only for P7. The pure top specialization is W7=A^7 S.
+
+Next pole remains coupled
+-------------------------
+The next boundary condition is
+  (R_a-6I)Q6+W7|A=0=0.
+For W=(W0,W1)=W7|A=0 its normal target is
+  Q6_1=3W1/19,
+  Q6_0=W0/6-c W1/(228b).
+The inverse was computed and checked with both rows. Nonzero W can
+require nonzero Q6, so P6 need not be tangent. Every P0 through P6 remains
+unrestricted; no earlier secondary projection or lower-order exclusion
+is applied separately. The lower current must now solve
+S-D_N(P7/A^7), not S. The previous exclusion applies only if P7=0.
+No further coupled condition is derived or imposed here.
+
+Dimensions and injection
+-------------------------
+Each scalar B has117 coefficients and each six-component sector702.
+After multiplication by A^7, the eight sectors have distinct nonzero
+leading v-degree bands42..44,36..38,30..32,24..26,18..20,12..14,6..8,0..2.
+Hence they are independent and the original family has5,616 coefficients.
+Replacing only its top702 by294 gives7*702+294=5,208 necessary parameters,
+with4,914 lower coefficients free. highest-pole-injection.json has shape
+5616x5208 and5,508 integer nonzeros:4,914 lower identity entries plus594
+reused top tangent entries. Sector independence and the reused top-map
+injectivity prove injectivity. No nonzero operator kernel or rank upper
+bound is claimed; a deficient modular rank would require further evidence.
+
+Execution, domain and stop
+--------------------------
+One new <=60-second child:7 exact checks and3 sign/order controls passed;
+process2.297 seconds, algebra0.187 seconds, exit0. No failure or timeout.
+python -O with explicit checks. Checker SHA256:
+aca70673f8a5273e56bbe4f60066102678c3a7157199c8fde29415455c7a1cab.
+UTF-8 scripts, command, source snapshots, logs, versions and hashes are
+preserved. No new mathematical calculation follows these scoped passes.
+
+Reproduce from repository root with a fresh run name:
+  python -O results/skew-A7-denominator-audit-20261024/algebra/run_bounded.py check-new
+Optional --repo ABSOLUTE_REPOSITORY_PATH overrides relative resolution.
+
+Characteristic zero; physical open r*A*Delta!=0. Pole comparison uses the
+generic prime smooth A=0 boundary away from b*Delta=0, under reused proof;
+it is not evaluation at an ordinary allowed point with A=0.
+No numerical search, general rational obstruction, full-source cancellation,
+primitive, shared-file edit, Git, network, Lean or publication action.
