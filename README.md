@@ -39,6 +39,26 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: physical-source factors and a proved four-form correction
+
+[![Physical chart factors, orientation and remaining source-class boundary](results/skew-physical-source-20261023/visualization-02/physical-source-normalization.png)](notes/skew-physical-source-normalization.md)
+
+Lean derives the simpler cover's physical four-form representative from the
+existing normalized pole coefficient. The pinned packet's b-input column 0
+appears with the factor **r¹¹/(12 f_r)** and an explicit
+**d(H) ∧ da ∧ dv ∧ dt** correction. The chart Jacobian, fibre-direction
+constancy of the cover factor, both compact rows, and the three-swap
+orientation sign are proved. The scalar is identified with
+`(1/12) • quotientWeight 11` in the actual quotient and has trace zero.
+
+This is conditional on the stated characteristic-zero field, curve equation
+and nonzero r, fibre coordinate, f_r and cubic Δ. A physical curve-field
+realization with compatible Kähler pullback, and the cohomology/connection
+identification, remain open dependencies. The scalar alone is not the full
+two-row source; no primitive, certificate or solve is claimed.
+
+[Proof, commands and precise limits](notes/skew-physical-source-normalization.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean) · [Execution and review evidence](results/skew-physical-source-20261023)
+
 ### One-reflection-skew: scalar extension and quotient traces in Lean
 
 [![Actual quotient, tensor comparison and trace maps](results/skew-scalar-extension-20261023/visualization-02/scalar-extension-trace.png)](notes/skew-scalar-extension-trace.md)

@@ -1,0 +1,5 @@
+.lake/skew-physical-source-controls/controls-fcsgvh48/positive-controls.lean:35:66: error: unexpected token '('; expected ':=', 'where' or '|'
+.lake/skew-physical-source-controls/controls-fcsgvh48/positive-controls.lean:35:21: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HAdd K (Derivation ℚ K K) K
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

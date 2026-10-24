@@ -1,0 +1,166 @@
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vChart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aChart' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.coverA' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aR' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aW' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.jacobian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vChart_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aChart_eq_coverA' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.physical_cover_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.cubic_coordinate_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fR_expanded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.jacobian_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.Forms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.formD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_square_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_vChart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_aChart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.two_form_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.oldFourForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.newFourForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fibre_gauge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.four_form_jacobian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.source_form_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fibre_last_orientation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.normalized_source_form_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fibreP' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fibrePPrime' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.delta' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.n0' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.n1' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.rNumerator' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.rNumeratorPrime' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.bColumn0' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.bColumn1' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.correction' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.correctionPrime' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_cleared' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.twelve_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_relative_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_module_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_a' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_v' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_t' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.chart_base_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_r' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.baseWedge_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.source_four_form_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.recoverW' depends on axioms: [propext, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vChart_recover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aChart_recover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fR_recover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.rootW' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.root_vChart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.root_aChart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.root_fR' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.root_fR_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.sourceScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.sourceScalar_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.sourceScalar_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

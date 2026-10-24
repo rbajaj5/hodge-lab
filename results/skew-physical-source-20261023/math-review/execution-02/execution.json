@@ -1,0 +1,20 @@
+{
+  "executor": "Pro source_math AI reviewer",
+  "command": [
+    "python3",
+    "-O",
+    "results/skew-physical-source-20261023/math-review/check_selected_normalization.py",
+    "--output-dir",
+    "results/skew-physical-source-20261023/math-review/check-02"
+  ],
+  "cwd": "repository root",
+  "environment_addition": {
+    "PYTHONPATH_prefix": "/tmp/hodge-source-math-deps"
+  },
+  "started_utc": "2026-10-24T01:25:30.951761+00:00",
+  "elapsed_seconds": 1.7246686260041315,
+  "timeout_seconds": 600,
+  "exit_code": 0,
+  "stdout_sha256": "f0b0f738d34975281bb3acbaabf1cd5596c0cd98593368238e974b5387d56ecd",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

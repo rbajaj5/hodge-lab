@@ -1,0 +1,177 @@
+{
+  "specialization": {
+    "v": 2,
+    "t": 3
+  },
+  "ordinary_primitive": "H=psi_r*A_v^2/A_r+K",
+  "K": "-15*v**4/(2*r**12) + 360*v**3/(13*r**13) - 270*v**2/(7*r**14) + 24*v/r**15 - 45/(8*r**16)",
+  "L": "-9*(1820*r**22*v**4 - 6720*r**21*v**3 + 9360*r**20*v**2 - 5824*r**19*v + 1365*r**18 - 1820*r**16*v**4 + 6720*r**15*v**3 - 9360*r**14*v**2 + 5824*r**13*v - 1365*r**12 + 3276*r**10*v**10 - 30800*r**9*v**9 + 130540*r**8*v**8 - 328448*r**7*v**7 + 543285*r**6*v**6 - 617292*r**5*v**5 + 487905*r**4*v**4 - 264880*r**3*v**3 + 94523*r**2*v**2 - 20020*r*v + 1911)/(728*r**32)",
+  "exact_identity": "dH/dr=A_r*psi_vv; A_r*H=L",
+  "initial_residual": "A_r*psi_vv*e1/(36*t^2)",
+  "subtracted_primitive": "H*e1/(36*t^2)",
+  "remaining_twisted_source": "-L*M_a*e1/(36*t^2)",
+  "basis": [
+    {
+      "row": 0,
+      "power": -16
+    },
+    {
+      "row": 0,
+      "power": -15
+    },
+    {
+      "row": 0,
+      "power": -14
+    },
+    {
+      "row": 0,
+      "power": -13
+    },
+    {
+      "row": 0,
+      "power": -12
+    },
+    {
+      "row": 0,
+      "power": -11
+    },
+    {
+      "row": 0,
+      "power": -10
+    },
+    {
+      "row": 0,
+      "power": -9
+    },
+    {
+      "row": 0,
+      "power": -8
+    },
+    {
+      "row": 0,
+      "power": -7
+    },
+    {
+      "row": 0,
+      "power": -6
+    },
+    {
+      "row": 0,
+      "power": -5
+    },
+    {
+      "row": 0,
+      "power": -4
+    },
+    {
+      "row": 0,
+      "power": -3
+    },
+    {
+      "row": 0,
+      "power": -2
+    },
+    {
+      "row": 0,
+      "power": -1
+    },
+    {
+      "row": 0,
+      "power": 0
+    },
+    {
+      "row": 0,
+      "power": 1
+    },
+    {
+      "row": 0,
+      "power": 2
+    },
+    {
+      "row": 1,
+      "power": -16
+    },
+    {
+      "row": 1,
+      "power": -15
+    },
+    {
+      "row": 1,
+      "power": -14
+    },
+    {
+      "row": 1,
+      "power": -13
+    },
+    {
+      "row": 1,
+      "power": -12
+    },
+    {
+      "row": 1,
+      "power": -11
+    },
+    {
+      "row": 1,
+      "power": -10
+    },
+    {
+      "row": 1,
+      "power": -9
+    },
+    {
+      "row": 1,
+      "power": -8
+    },
+    {
+      "row": 1,
+      "power": -7
+    },
+    {
+      "row": 1,
+      "power": -6
+    },
+    {
+      "row": 1,
+      "power": -5
+    },
+    {
+      "row": 1,
+      "power": -4
+    },
+    {
+      "row": 1,
+      "power": -3
+    },
+    {
+      "row": 1,
+      "power": -2
+    },
+    {
+      "row": 1,
+      "power": -1
+    },
+    {
+      "row": 1,
+      "power": 0
+    },
+    {
+      "row": 1,
+      "power": 1
+    },
+    {
+      "row": 1,
+      "power": 2
+    }
+  ],
+  "source_order_zero": -17,
+  "source_order_infinity_at_most": -13,
+  "matrix_shape": [
+    145,
+    38
+  ],
+  "prime": 32003,
+  "coefficient_rank_mod_p": 38,
+  "augmented_rank_mod_p": 39,
+  "claim": "No rational r-direction primitive for the NEW residual; two/three-direction problem still open."
+}

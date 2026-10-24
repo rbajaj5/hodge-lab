@@ -1,0 +1,64 @@
+{
+  "status": "PASS_SOURCE_INSPECTION",
+  "executor": "Pro source_review AI worker",
+  "recorded_utc": "2026-10-24T01:23:22.287958+00:00",
+  "parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "upstream": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "parent_ledger_bytes": 418118,
+  "parent_ledger_sha256": "e636477a85bfbdedbaac88202bb2c461cec32db5c914d186fdaffeb8977a3193",
+  "protected_source_sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+  "protected_source_blob": "2eb2d72427b8cca49a49029c930fe4aa88b81720",
+  "protected_fields": {
+    "id": "one-reflection-skew",
+    "F": "X0**6 + X0**3*X1*Y0*Y1 + X0*X1*Y0**3*Y1/7 - X0*X1*Y0*Y1**3/7 + X1**6 + X1**3*X2*Y0*Y1 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+    "A": "X0**3*Y0**3",
+    "q": "1"
+  },
+  "packet_rec_literal_matches": {
+    "id": true,
+    "F": true,
+    "A": true,
+    "q": true
+  },
+  "packet_record_expressions_match": {
+    "F": true,
+    "A": true
+  },
+  "source_hashes": {
+    "AGENTS.md": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+    "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+    "formal/HodgeLab/OneReflectionSkew/VolumeDensity.lean": "d3950d20c3e330800d816f37eadfb07a5889bc5c67f22e1ac11041cac4ab7620",
+    "formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean": "213abfe2f1ab6d997953bf01e20ce09d7b46b47820675288bee2e27ed1ca2efa",
+    "formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean": "6c995c52e943e61d2bf5b7c3e54cebc98b0286f9c87dcfe6709775c2a5de72f6",
+    "results/skew-cover-followup-19129985/comment-19129985.json": "ea979e16bca2fb7320f38f3f55e349a8cd3efb2dd46afbc350a2f64d6d86da9f",
+    "results/skew-cover-followup-19129985/review-scope.json": "7da9b33e2d23f5e8fc11550a8e20be4c8bfa544c6daf2cd4f46d1b86b2a82394",
+    "results/skew-compact-architecture/packet-integrity.json": "6790ced36245bede54d2c2e6cb4b31132c3032f339dce0a4706d8c1476270ee6",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/README.md": "8abcccf21dbdd7306c5eb7c7c8e5686ea9657b45fba3a7513374d6a03939fe31",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/simple_cover_verify.py": "4ceeb65b8b1839aeead2fcd43378e838846bd685fe808d936ef5f4101dbf2c1d",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/independent_peer_audit.py": "faa8cad1b9d173f3657fff4e71b31e6fe2a63d6103d77d4257eed5c553121ba9",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/instance.rec": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/record.json": "1484e65cbba83500f7e37c5440ea34be46f7289dfd4683fa9def1f5fd97866a2"
+  },
+  "source_conventions": {
+    "canonical_chart": "Y0=1; X0=x,X1=r*x,X2=w*x,Y1=t,Y2=nu,U=x^2",
+    "fibre_basis": [
+      "dV/nu^5",
+      "V*dV/nu^5"
+    ],
+    "connection": "columns index input basis; coefficient derivative partial+M",
+    "packet_source": "+(r^11/f_r)*(M_b e0/12) da wedge dv wedge dt",
+    "standard_projective_sign": "negative of packet when using base-first four-form dr wedge dw wedge dt wedge dU",
+    "old_Lean_order": "alpha=dU wedge dr wedge dw wedge dt; moving dU to last gives minus",
+    "gauge": "V=rU; T=diag(r^-1,r^-2)",
+    "base_jacobians": "dw/dv=1/r; f_r=r^15*A_r on f=0",
+    "coefficient_product": "r^-3 gauge * r^-1 volume * A_r^-1 = r^11/f_r",
+    "not_imported": "fqlx rank17 1/864 belongs to other base/source identification"
+  },
+  "inspection_only": [
+    "No packet script executed",
+    "No Lean executed",
+    "No prior mathematical checker rerun",
+    "No general residue/cohomology source identification inferred from coefficient identities"
+  ]
+}

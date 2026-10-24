@@ -1,0 +1,56 @@
+{
+  "checks_passed": 25,
+  "checks": [
+    "protected F on Y0=1 chart",
+    "protected A on Y0=1 chart",
+    "fibre connection a column 0",
+    "fibre connection a column 1",
+    "fibre connection b column 0",
+    "fibre connection b column 1",
+    "fibre connection c column 0",
+    "fibre connection c column 1",
+    "fibre connection d column 0",
+    "fibre connection d column 1",
+    "standard Omega numerator in dU,dy",
+    "normal-last double-pole source sign",
+    "cleared physical kernel row 0",
+    "cleared physical kernel row 1",
+    "kernel character 0 -2*r*w**5*(1 - t**2)/7",
+    "kernel character 0 r**3*(r**6 + w**6 + 1) - 4*r*w**5*(r**2*w + 1)",
+    "kernel character 1 (t**2/7 - 1/7)*(-r**6 + w**6 + 1)",
+    "kernel character 1 4*r**6*(r**2*w + 1) + (3*r**2*w + 1)*(-r**6 - w**6 - 1)",
+    "kernel character 2 0",
+    "kernel character 2 0",
+    "degree-nine rank659 and augmented660 replay",
+    "ordinary a primitive",
+    "ordinary v derivative",
+    "ab connection flatness",
+    "adjacent compact columns"
+  ],
+  "source_orientation": {
+    "standard_projective_Omega": "sum_i (-1)^i X_i dX_omit_i, variables (X0,X1,X2,Y0,Y1,Y2)",
+    "standard_normal_last_residue": "-M_b e0/12 on Y0=1",
+    "pinned_packet_convention": "+M_b e0/12 on Y0=1",
+    "difference": "One global minus sign. Existence of a primitive and all coefficient ranks are unchanged."
+  },
+  "rank_result": {
+    "degree": 9,
+    "prime": 32003,
+    "columns": 660,
+    "sample_rows": 710,
+    "rank": 659,
+    "augmented_rank": 660
+  },
+  "rank_logic": "The exact nonzero polynomial kernel bounds characteristic-zero coefficient rank by659. The modular matrix bounds coefficient rank below by659 and augmented rank below by660. Therefore the degree<=9 flux P/a ansatz is inconsistent in characteristic zero.",
+  "scope": "All six flux entries of degree<=9, denominator a, and the forced simultaneous-sign parity. Averaging recovers this parity for any solution in the unrestricted bounded ansatz. No restriction or exclusion of other poles/degrees is asserted.",
+  "twisted_IBP": {
+    "F0": "-r^(-3)/3",
+    "current_a": "F0*M_b*e0/12",
+    "current_v": "-F0*M_a*e0/(12*t)",
+    "current_t": "0",
+    "source": "(r^11/f_r)*M_b*e0/12",
+    "remaining_residual": "-r^(-3)*(v*r-1)^5*M_a*e0/(2*t*f_r)",
+    "identity": "source = Div_nabla(current) + remaining_residual",
+    "status": "Exact integration by parts; residual remains unsolved."
+  }
+}

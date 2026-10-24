@@ -1,0 +1,20 @@
+{
+  "executor": "Pro source_math AI reviewer",
+  "command": [
+    "python3",
+    "-m",
+    "pip",
+    "install",
+    "--disable-pip-version-check",
+    "--target",
+    "/tmp/hodge-source-math-deps",
+    "sympy==1.14.0"
+  ],
+  "cwd": "repository root",
+  "started_utc": "2026-10-24T01:25:17.008443+00:00",
+  "elapsed_seconds": 5.271620396997605,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "913c0af1f92ecf4eb0f4ff066cf851230be9be553ea060e6a410be245409bc1c",
+  "stderr_sha256": "abd6f7249a473f07f501069dde0fe2436ada294e0816606ef6d35309752ff944"
+}

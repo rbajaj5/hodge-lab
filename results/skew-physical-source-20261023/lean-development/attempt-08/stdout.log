@@ -1,0 +1,183 @@
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:27:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.vChart_inverse`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:30:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:32:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.aChart_eq_coverA`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:40:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:42:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.physical_cover_equation`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:52:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:58:17: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:58:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:60:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.fR_expanded`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:75:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:87:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_mul`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:89:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_square_zero`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:92:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.d_swap`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:111:57: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:112:69: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:111:57: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:112:69: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:144:17: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:144:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:153:17: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:153:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:177:4: error(lean.unknownIdentifier): Unknown identifier `logInfo`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:192:2: error: Type mismatch
+  source_form_transport (AmbientDerivation.coord 0) (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)
+    (AmbientDerivation.coord 3) (AmbientDerivation.coord 4) (AmbientDerivation.coord_ne_zero 1)
+    (AmbientDerivation.coord_ne_zero 4) hf
+has type
+  (5 * AmbientDerivation.coord 0 ^ 2 / (72 * AmbientDerivation.coord 4 ^ 11)) •
+      oldFourForm (AmbientDerivation.coord 0) (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)
+        (AmbientDerivation.coord 3) =
+    (5 / 72 * (AmbientDerivation.coord 1 ^ 11 / fR (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)) *
+        ((AmbientDerivation.coord 1 * AmbientDerivation.coord 0) ^ 2 / AmbientDerivation.coord 4 ^ 11)) •
+      newFourForm (AmbientDerivation.coord 1 * AmbientDerivation.coord 0)
+        (aChart (AmbientDerivation.coord 1) (AmbientDerivation.coord 2))
+        (vChart (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)) (AmbientDerivation.coord 3)
+but is expected to have type
+  DifferentialForms.residueScalar • DifferentialForms.alpha =
+    (5 / 72 * (AmbientDerivation.coord 1 ^ 11 / fR (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)) *
+        ((AmbientDerivation.coord 1 * AmbientDerivation.coord 0) ^ 2 / AmbientDerivation.coord 4 ^ 11)) •
+      (DifferentialForms.oneForm (AmbientDerivation.coord 1 * AmbientDerivation.coord 0) *
+        (DifferentialForms.oneForm (aChart (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)) *
+          (DifferentialForms.oneForm (vChart (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)) *
+            DifferentialForms.oneForm (AmbientDerivation.coord 3))))
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:215:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.b_column_cleared`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:249:0: warning: automatically included section variable(s) unused in theorem `HodgeLab.OneReflectionSkew.PhysicalSourceNormalization.twelve_factor`:
+  [Algebra ℚ K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℚ K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:268:39: error: unsolved goals
+K : Type u_1
+inst✝² : Field K
+inst✝¹ : CharZero K
+inst✝ : Algebra ℚ K
+D : Derivation ℚ K K
+a b c d0 V z : K
+ha : D a = 0
+hb : D b = 0
+hc : D c = 0
+hd : D d0 = 0
+hV : D V = 1
+hz : z ≠ 0
+hΔ : delta a b c d0 ≠ 0
+hcurve : z ^ 6 + fibreP a b c d0 V = 0
+h : 6 * (z ^ 5 * D z) + (a * (3 * V ^ 2) + b * (2 * V) + c) = 0
+hzD : D z = -fibrePPrime a b c V / (6 * z ^ 5)
+⊢ d0 ^ 2 * (a ^ 2 * D 27) - d0 * (c * (b * (a * D 18))) + c ^ 3 * (a * D 4) + d0 * (b ^ 3 * D 4) = 0
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:270:71: error: unsolved goals
+K : Type u_1
+inst✝² : Field K
+inst✝¹ : CharZero K
+inst✝ : Algebra ℚ K
+D : Derivation ℚ K K
+a b c d0 V z : K
+ha : D a = 0
+hb : D b = 0
+hc : D c = 0
+hd : D d0 = 0
+hV : D V = 1
+hz : z ≠ 0
+hΔ : delta a b c d0 ≠ 0
+hcurve : z ^ 6 + fibreP a b c d0 V = 0
+h : 6 * (z ^ 5 * D z) + (a * (3 * V ^ 2) + b * (2 * V) + c) = 0
+hzD : D z = -fibrePPrime a b c V / (6 * z ^ 5)
+hΔD : D (delta a b c d0) = 0
+⊢ a * b * d0 * V * 12 + a * b * d0 * V ^ 2 * D 3 * 2 + a * b * d0 * V ^ 2 * D 2 * 3 + a * d0 * c * 3 +
+                  a * d0 * c * V * D 3 +
+                a * d0 ^ 2 * D 9 -
+              a * c ^ 2 * V * 4 -
+            a * c ^ 2 * V ^ 2 * D 2 -
+          b * c ^ 2 +
+        b ^ 2 * d0 * 2 +
+      b ^ 2 * d0 * V * D 2 =
+    a * b * d0 * V * 12 + a * d0 * c * 3 - a * c ^ 2 * V * 4 - b * c ^ 2 + b ^ 2 * d0 * 2
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:269:46: warning: This simp argument is unused:
+  D.map_natCast
+
+Hint: Omit it from the simp argument list.
+  simp [delta, ha, hb, hc, hd, smul_eq_mul,̵ ̵D̵.̵m̵a̵p̵_̵n̵a̵t̵C̵a̵s̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean:271:76: warning: This simp argument is unused:
+  D.map_natCast
+
+Hint: Omit it from the simp argument list.
+  simp [rNumerator, rNumeratorPrime, n1, ha, hb, hc, hd, hV, smul_eq_mul,̵ ̵D̵.̵m̵a̵p̵_̵n̵a̵t̵C̵a̵s̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

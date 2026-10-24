@@ -1,0 +1,8 @@
+import HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open Polynomial HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+example : (5/6:ℚ)=(bColumn0 1 0 0 (-2)+bColumn1 1 0 0 (-2))/1^5 := by
+  norm_num [bColumn0,bColumn1,n0,n1,delta]

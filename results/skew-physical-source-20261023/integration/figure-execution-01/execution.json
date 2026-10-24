@@ -1,0 +1,18 @@
+{
+  "executor": "Pro root integration",
+  "command": [
+    "python3",
+    "scripts/visualize_skew_physical_source.py",
+    "--receipt",
+    "results/skew-physical-source-20261023/lean-development/checker-03/validation.json",
+    "--output-dir",
+    "results/skew-physical-source-20261023/visualization-01"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-physical-source",
+  "started_utc": "2026-10-24T01:41:45.429190+00:00",
+  "elapsed_seconds": 1.633920644002501,
+  "timeout_seconds": 120,
+  "exit_code": 1,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "557c520120f6f21705db2d40eb1b9540348ee4132a0d093a2a2bb3d50013cb45"
+}

@@ -1,0 +1,35 @@
+{
+  "notebook_parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "source_pins_manifest": {
+    "path": "results/skew-physical-source-20261023/source-pins.json",
+    "sha256": "3b3fbbbcbb49a999d34638f2ddac47e16b5043554b88e43545e96b65df9d1a21"
+  },
+  "reused_scalar_extension_receipt": "results/skew-scalar-extension-20261023/lean-development/checker-02/validation.json",
+  "mathematical_scope": {
+    "coefficient_field": "Any characteristic-zero field K with explicit Q-algebra; generic quotient specialization uses K=Q(v)(t)(a), L=f.SplittingField",
+    "chart": "r,z,f_r nonzero; V=rU, v=r^-1+rw, a=(1+r^6+w^6)/r^3; selected b-column requires Delta nonzero",
+    "curve_hypothesis": "z^6+cubic(U,r,w,t)=0 is explicit; no ambient-to-hypersurface residue map is constructed",
+    "new_result": "Exact coordinate/Jacobian/exterior-form normalization, explicit fibre-last sign, b variation, one packet b-column reduction, actual four-form representative plus d(H) wedge da wedge dv wedge dt, recovered roots and quotient source scalar image/trace zero",
+    "orientation": "Existing positive5/72 coefficient is fibre-first; moving fibre last changes sign. Packet global normal-last convention is separately pinned.",
+    "quotient_element": "sourceScalar=(1/12)*quotientWeight11 in E=AdjoinRoot f, not a full rank-two vector source",
+    "remaining": [
+      "Ambient residue source to hypersurface/cohomology realization",
+      "Connection/cohomology identification and source-class realization",
+      "Primitive",
+      "Global clearing",
+      "Certificate",
+      "Solve"
+    ],
+    "specialization_limit": "Chart nonzero and curve hypotheses are explicit. Generic root results are reused; singular/zero-denominator controls reject universal-specialization claims."
+  },
+  "packet_binding_checker": {
+    "path": "results/skew-physical-source-20261023/math-review/check_lean_packet_binding.py",
+    "sha256": "21a35306450c4e76b608a0cb0c04c6ce64e67ff1a4fd012b1610d206dce6acab"
+  },
+  "packet_binding_inputs": {
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+    "results/skew-physical-source-20261023/math-review/check_selected_normalization.py": "c5aac719297e09a67143c227316ded7e7600395308a28c19e3ab6c9f66e05eec",
+    "results/skew-physical-source-20261023/math-review/check-02/validation.json": "f0b0f738d34975281bb3acbaabf1cd5596c0cd98593368238e974b5387d56ecd"
+  }
+}

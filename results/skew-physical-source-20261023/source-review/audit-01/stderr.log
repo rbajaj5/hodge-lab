@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-physical-source/results/skew-physical-source-20261023/source-review/audit_saved_evidence.py", line 188, in <module>
+    main()
+  File "/workspace/scratch/b8974c152662/hodge-lab-physical-source/results/skew-physical-source-20261023/source-review/audit_saved_evidence.py", line 37, in main
+    require(digest(FORMAL / path) == expected, 'Source hash mismatch: ' + path)
+  File "/workspace/scratch/b8974c152662/hodge-lab-physical-source/results/skew-physical-source-20261023/source-review/audit_saved_evidence.py", line 13, in require
+    raise RuntimeError(message)
+RuntimeError: Source hash mismatch: check_skew_physical_source_normalization.py

@@ -1,0 +1,251 @@
+import HodgeLab.OneReflectionSkew.DifferentialForms
+import HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+import Mathlib.Tactic.Module
+
+/-!
+Exact coordinate, scalar and exterior-form factors in the physical cover.
+The period/cohomology interpretation of the packet connection is separate.
+-/
+noncomputable section
+
+namespace HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+
+open Polynomial ChartSubstitution PhysicalCoverBinding
+
+variable {K : Type*} [Field K] [CharZero K]
+
+def vChart (r w : K) : K := r⁻¹ + r*w
+def aChart (r w : K) : K := aCoeff r w / r^3
+def coverA (r v : K) : K := r^3 + r⁻¹^3 + (v*r-1)^6/r^15
+def aR (r w : K) : K := 6*r^5/r^3 - 3*aCoeff r w/r^4
+def aW (r w : K) : K := 6*w^5/r^3
+def vR (r w : K) : K := w-r⁻¹^2
+def jacobian (r w : K) : K := aR r w*r - aW r w*vR r w
+def fR (r w : K) : K :=
+  (physicalPolynomial (aChart r w) (vChart r w)).derivative.eval r
+
+theorem vChart_inverse (r w : K) (hr : r ≠ 0) :
+    (vChart r w*r-1)/r^2 = w := by
+  unfold vChart
+  field_simp <;> ring
+
+theorem aChart_eq_coverA (r w : K) (hr : r ≠ 0) :
+    aChart r w = coverA r (vChart r w) := by
+  have hv : vChart r w*r-1 = r^2*w := by
+    unfold vChart
+    field_simp
+    ring
+  rw [coverA, hv]
+  unfold aChart aCoeff
+  field_simp <;> ring
+
+theorem physical_cover_equation (r w : K) (hr : r ≠ 0) :
+    (physicalPolynomial (aChart r w) (vChart r w)).eval r = 0 := by
+  have hv : vChart r w*r-1 = r^2*w := by
+    unfold vChart
+    field_simp
+    ring
+  simp only [physicalPolynomial, eval_sub, eval_add, eval_pow, eval_mul, eval_C,
+    eval_X, eval_one]
+  rw [hv]
+  unfold aChart aCoeff
+  field_simp <;> ring
+
+theorem cubic_coordinate_change (V r w t : K) (hr : r ≠ 0) :
+    cubic (V/r) r w t =
+      aChart r w*V^3 + (t*vChart r w)*V^2 + (t*(1-t^2)/7)*V + (1+t^6) := by
+  unfold cubic aChart vChart aCoeff bCoeff cCoeff dCoeff
+  field_simp <;> ring
+
+theorem fR_expanded (r w : K) :
+    fR r w = 18*r^17 + 12*r^11 +
+      6*vChart r w*(vChart r w*r-1)^5 - 15*aChart r w*r^14 := by
+  simp [fR, physicalPolynomial, derivative_pow]
+  ring
+
+theorem jacobian_eq (r w : K) (hr : r ≠ 0) :
+    jacobian r w = fR r w/r^14 := by
+  rw [fR_expanded]
+  have hv : vChart r w*r-1 = r^2*w := by
+    unfold vChart
+    field_simp
+    ring
+  rw [hv]
+  unfold jacobian aR aW vR aChart aCoeff vChart
+  field_simp <;> ring
+
+section Forms
+
+variable [Algebra ℚ K]
+abbrev Forms := ExteriorAlgebra K (KaehlerDifferential ℚ K)
+
+def formD : Derivation ℚ K (Forms (K := K)) :=
+  (ExteriorAlgebra.ι K).compDer (KaehlerDifferential.D ℚ K)
+
+def d (x : K) : Forms (K := K) := formD x
+
+theorem d_mul (x y : K) : d (x*y) = x • d y + y • d x := formD.leibniz x y
+
+theorem d_square_zero (x : K) : d x*d x = 0 :=
+  ExteriorAlgebra.ι_sq_zero _
+
+theorem d_swap (x y : K) : d x*d y = -(d y*d x) := by
+  apply eq_neg_of_add_eq_zero_left
+  exact ExteriorAlgebra.ι_add_mul_swap _ _
+
+theorem d_vChart (r w : K) : d (vChart r w) = vR r w • d r + r • d w := by
+  change formD (r⁻¹+r*w) = _
+  rw [map_add, formD.leibniz_inv, formD.leibniz]
+  unfold vR d
+  module
+
+theorem d_aChart (r w : K) (hr : r ≠ 0) :
+    d (aChart r w) = aR r w • d r + aW r w • d w := by
+  change formD ((1+r^6+w^6)/r^3) = _
+  rw [formD.leibniz_div]
+  simp only [map_add, Derivation.map_one_eq_zero, formD.leibniz_pow]
+  simp only [Nat.reduceSub, zero_add, ← Nat.cast_smul_eq_nsmul K]
+  unfold aR aW aCoeff d
+  simp only [smul_add, smul_sub, smul_smul]
+  have h1 : (r^3)⁻¹^2*(r^3*(6*r^5) - (1+r^6+w^6)*(3*r^2)) =
+      6*r^5/r^3 - 3*(1+r^6+w^6)/r^4 := by field_simp <;> ring
+  have h2 : (r^3)⁻¹^2*(r^3*(6*w^5)) = 6*w^5/r^3 := by field_simp <;> ring
+  rw [← h1, ← h2]
+  simp only [inv_pow]
+  module
+
+theorem two_form_change (r w : K) (hr : r ≠ 0) :
+    d (aChart r w)*d (vChart r w) = jacobian r w • (d r*d w) := by
+  rw [d_aChart r w hr, d_vChart]
+  simp only [add_mul, mul_add, smul_mul_assoc, mul_smul_comm, smul_smul,
+    d_square_zero, smul_zero, add_zero, zero_add]
+  rw [d_swap w r]
+  simp only [smul_neg]
+  unfold jacobian
+  module
+
+def oldFourForm (U r w t : K) : Forms (K := K) := d U*(d r*(d w*d t))
+def newFourForm (V a v t : K) : Forms (K := K) := d V*(d a*(d v*d t))
+
+theorem fibre_gauge (U r w t : K) :
+    d (r*U)*(d r*(d w*d t)) = r • oldFourForm U r w t := by
+  rw [d_mul]
+  simp only [add_mul, smul_mul_assoc]
+  rw [← mul_assoc (d r) (d r), d_square_zero, zero_mul, smul_zero, add_zero]
+  rfl
+
+theorem four_form_jacobian (U r w t : K) (hr : r ≠ 0) :
+    newFourForm (r*U) (aChart r w) (vChart r w) t =
+      (fR r w/r^13) • oldFourForm U r w t := by
+  unfold newFourForm
+  rw [← mul_assoc (d (aChart r w)), two_form_change r w hr,
+    smul_mul_assoc, mul_smul_comm, mul_assoc, fibre_gauge, smul_smul, jacobian_eq r w hr]
+  congr 1
+  field_simp <;> ring
+
+theorem source_form_transport (U r w t z : K) (hr : r ≠ 0)
+    (hz : z ≠ 0) (hf : fR r w ≠ 0) :
+    (5*U^2/(72*z^11)) • oldFourForm U r w t =
+      ((5/72:K)*(r^11/fR r w)*((r*U)^2/z^11)) •
+        newFourForm (r*U) (aChart r w) (vChart r w) t := by
+  rw [four_form_jacobian U r w t hr, smul_smul]
+  congr 1
+  field_simp <;> ring
+
+theorem fibre_last_orientation (V a v t : K) :
+    newFourForm V a v t = -(d a*(d v*(d t*d V))) := by
+  unfold newFourForm
+  rw [← mul_assoc (d V), d_swap V a]
+  rw [neg_mul, mul_assoc, ← mul_assoc (d V), d_swap V v]
+  rw [neg_mul, mul_neg, neg_neg, mul_assoc, d_swap V t]
+  simp only [mul_neg]
+
+theorem normalized_source_form_transport (U r w t z : K) (hr : r ≠ 0)
+    (hz : z ≠ 0) (hf : fR r w ≠ 0) :
+    ResidueNormalization.normalizedPoleCoefficient U r w t z • oldFourForm U r w t =
+      ((5/72:K)*(r^11/fR r w)*((r*U)^2/z^11)) •
+        newFourForm (r*U) (aChart r w) (vChart r w) t := by
+  rw [ResidueNormalization.normalizedPoleCoefficient_eq U r w t z hz]
+  exact source_form_transport U r w t z hr hz hf
+
+end Forms
+
+/-- Exact reuse of the existing ambient actual four-form, not a new source definition. -/
+theorem old_ambient_form :
+    oldFourForm (AmbientDerivation.coord 0) (AmbientDerivation.coord 1)
+      (AmbientDerivation.coord 2) (AmbientDerivation.coord 3) = DifferentialForms.alpha := rfl
+
+theorem ambient_source_form_transport
+    (hf : fR (AmbientDerivation.coord 1) (AmbientDerivation.coord 2) ≠ 0) :
+    DifferentialForms.residueScalar • DifferentialForms.alpha =
+      ((5/72 : AmbientDerivation.K) *
+        ((AmbientDerivation.coord 1)^11 /
+          fR (AmbientDerivation.coord 1) (AmbientDerivation.coord 2)) *
+        (((AmbientDerivation.coord 1)*(AmbientDerivation.coord 0))^2 /
+          (AmbientDerivation.coord 4)^11)) •
+        newFourForm ((AmbientDerivation.coord 1)*(AmbientDerivation.coord 0))
+          (aChart (AmbientDerivation.coord 1) (AmbientDerivation.coord 2))
+          (vChart (AmbientDerivation.coord 1) (AmbientDerivation.coord 2))
+          (AmbientDerivation.coord 3) := by
+  exact source_form_transport _ _ _ _ _ (AmbientDerivation.coord_ne_zero 1)
+    (AmbientDerivation.coord_ne_zero 4) hf
+
+section FibreColumn
+
+def fibreP (a b c q V : K) : K := a*V^3+b*V^2+c*V+q
+def fibrePPrime (a b c V : K) : K := 3*a*V^2+2*b*V+c
+def delta (a b c q : K) : K :=
+  27*a^2*q^2-18*a*b*c*q+4*a*c^3+4*b^3*q-b^2*c^2
+def n0 (a b c q : K) : K := 27*a*c*q-12*b^2*q+b*c^2
+def n1 (a b c q : K) : K := a*(3*b*q-c^2)
+def rNumerator (a b c q V : K) : K :=
+  2*n1 a b c q*V^2+(3*a*c*q+2*b^2*q-b*c^2)*V+(9*a*q^2-b*c*q)
+def rNumeratorPrime (a b c q V : K) : K :=
+  4*n1 a b c q*V+(3*a*c*q+2*b^2*q-b*c^2)
+def bColumn0 (a b c q : K) : K := n0 a b c q/(6*delta a b c q)
+def bColumn1 (a b c q : K) : K := n1 a b c q/delta a b c q
+def correction (a b c q V : K) : K := rNumerator a b c q V/delta a b c q
+def correctionPrime (a b c q V : K) : K := rNumeratorPrime a b c q V/delta a b c q
+
+/-- The one packet b-column identity, checked as an exact polynomial identity. -/
+theorem b_column_cleared (a b c q V : K) :
+    5*delta a b c q*V^2 =
+      -fibreP a b c q V*(n0 a b c q+6*n1 a b c q*V)
+      -6*fibreP a b c q V*rNumeratorPrime a b c q V
+      +5*fibrePPrime a b c V*rNumerator a b c q V := by
+  unfold delta fibreP fibrePPrime n0 n1 rNumerator rNumeratorPrime
+  ring
+
+theorem b_column_rational (a b c q V : K) (hΔ : delta a b c q ≠ 0) :
+    (5/6:K)*V^2 =
+      -fibreP a b c q V*(bColumn0 a b c q+bColumn1 a b c q*V)
+      -fibreP a b c q V*correctionPrime a b c q V
+      +(5/6:K)*fibrePPrime a b c V*correction a b c q V := by
+  unfold bColumn0 bColumn1 correction correctionPrime
+  field_simp
+  linear_combination b_column_cleared a b c q V
+
+variable [Algebra ℚ K]
+
+theorem b_variation (D : Derivation ℚ K K) (a b c q V z : K)
+    (ha : D a = 0) (hb : D b = 1) (hc : D c = 0) (hq : D q = 0)
+    (hV : D V = 0) (hz : z ≠ 0) (hcurve : z^6+fibreP a b c q V = 0) :
+    D (z⁻¹^5) = (5/6:K)*V^2/z^11 := by
+  have h := congrArg D hcurve
+  simp [fibreP, ha, hb, hc, hq, hV, smul_eq_mul] at h
+  have hzD : D z = -V^2/(6*z^5) := by
+    field_simp
+    linear_combination h
+  rw [D.leibniz_pow, D.leibniz_inv, hzD]
+  simp only [smul_eq_mul, nsmul_eq_mul]
+  norm_num
+  field_simp
+
+/-- The numerical normalization linking the old coefficient to the b variation. -/
+theorem twelve_factor (V z : K) (hz : z ≠ 0) :
+    5*V^2/(72*z^11) = (1/12:K)*((5/6:K)*V^2/z^11) := by
+  field_simp
+
+end FibreColumn
+
+end HodgeLab.OneReflectionSkew.PhysicalSourceNormalization

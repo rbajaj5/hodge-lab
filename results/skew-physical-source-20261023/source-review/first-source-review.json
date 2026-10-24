@@ -1,0 +1,46 @@
+{
+  "status": "DRAFT_SOURCE_INSPECTED",
+  "executor": "Pro source_review AI worker",
+  "recorded_utc": "2026-10-24T01:26:12.908389+00:00",
+  "module": "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean",
+  "module_sha256": "4c949105c679a9b9feb0a918fb88f8f555dc7053e282a7429aef984fc12e83ab",
+  "findings": [
+    {
+      "severity": "info",
+      "finding": "fR is derivative of the literal polynomial holding its coefficient parameters fixed; it is not incorrectly total-differentiated after physical substitution"
+    },
+    {
+      "severity": "info",
+      "finding": "det d(a,v)/d(r,w)=fR/r14; including V=rU makes the four-form factor fR/r13. Combined with U2 gives the desired r11/fR coefficient"
+    },
+    {
+      "severity": "info",
+      "finding": "Form algebra is actual ExteriorAlgebra K (KaehlerDifferential Q K), not a formal scalar symbol for a volume"
+    },
+    {
+      "severity": "info",
+      "finding": "fibre_last_orientation encodes three swaps and a minus sign, matching the packet convention comparison"
+    },
+    {
+      "severity": "requested_provenance_wrapper",
+      "finding": "Start source transport explicitly from reused normalizedPoleCoefficient or concrete residueScalar/alpha, not only the copied5/72 scalar; notified solewriter"
+    },
+    {
+      "severity": "scope",
+      "finding": "No Gauss-Manin/cohomology reduction map to M_b e0 is yet implemented; coefficient and four-form theorem must remain distinct from vector-source identity"
+    },
+    {
+      "severity": "controls",
+      "finding": "Use nonzero scalar controls; forms over Q have zero differentials. r0 inversechart and repeated-rootr1w0 expose missing nonzero hypotheses"
+    }
+  ],
+  "executions": [
+    "Read-only source and saved compile-output inspection; no Lean executed",
+    "No packet mathematical scripts executed; source conventions inspected directly"
+  ],
+  "limits": [
+    "Draft compilation not claimed successful by this review",
+    "No new residue/deRham construction",
+    "No primitive, certificate, solve or arbitrary source descent"
+  ]
+}

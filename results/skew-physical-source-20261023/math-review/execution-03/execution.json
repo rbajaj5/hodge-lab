@@ -1,0 +1,23 @@
+{
+  "executor": "Pro source_math AI reviewer",
+  "started_utc": "2026-10-24T01:37:41.721820+00:00",
+  "completed_utc": "2026-10-24T01:37:41.756401+00:00",
+  "elapsed_seconds": 0.03457881299982546,
+  "command": [
+    "python3",
+    "-O",
+    "results/skew-physical-source-20261023/math-review/check_lean_packet_binding.py",
+    "--lean-sha256",
+    "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+    "--output-dir",
+    "results/skew-physical-source-20261023/math-review/binding-01"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-physical-source",
+  "timeout_seconds": 600,
+  "exit_code": 0,
+  "timed_out": false,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "stdout_sha256": "875d3ea072f9b279896dba3482234d83879cc266b164424f29352ef80003e729",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Literal Lean-definition/source binding; no mathematics or Lean process rerun"
+}

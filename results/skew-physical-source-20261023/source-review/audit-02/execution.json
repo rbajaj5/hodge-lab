@@ -1,0 +1,21 @@
+{
+  "executor": "Pro source_review AI worker",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-physical-source/results/skew-physical-source-20261023/source-review/audit_saved_evidence.py",
+    "--receipt",
+    "results/skew-physical-source-20261023/lean-development/checker-04/validation.json"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-physical-source",
+  "started_utc": "2026-10-24T01:42:26.494661+00:00",
+  "elapsed_seconds": 0.06314757600193843,
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": "a7f09ef5570f94ab99e6edf2df5ccfe957b704fd9a6056c0eab6e2a2e27e65db",
+  "files_sha256": {
+    "stdout.log": "b39295ea66834cf131d28d8a7814030d1bf680258224510df2c6662bc37bd172",
+    "stderr.log": "0ea173ad44cbf343babaa3d44440508c795e506a67eba7d8c48f6a51ce7e7855"
+  }
+}

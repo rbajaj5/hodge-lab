@@ -1,0 +1,132 @@
+{
+  "review_status": "PASS_WITH_EXPLICIT_BOUNDARIES",
+  "reviewer": "Pro source_math AI reviewer; distinct AI worker from the Lean writer, not independent human review",
+  "recorded_utc": "2026-10-24T01:38:56.753368+00:00",
+  "notebook_parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "upstream_parent": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "reviewed_module_sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+  "source_sha256": {
+    "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+    "results/skew-physical-source-20261023/lean-development/attempt-14/execution.json": "7cc751e4e5df04fd55e9b082cc45e8cb0be3be2d635ee1c85eb9aa45c4364664",
+    "results/skew-physical-source-20261023/lean-development/attempt-14/PhysicalSourceNormalization.lean.txt": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+    "results/skew-physical-source-20261023/lean-development/attempt-14/stdout.log": "7c1ec57f0ab02ce0589bf84688b72bcd9943bf368bb4c4f9e4f098baaabfcb87",
+    "results/skew-physical-source-20261023/lean-development/attempt-14/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/skew-physical-source-20261023/math-review/source-inspection.json": "c113da14b02c04149d1145db02626c74a138be07b0c7d02d46cb4ec9980a7ad5",
+    "results/skew-physical-source-20261023/math-review/check-02/validation.json": "f0b0f738d34975281bb3acbaabf1cd5596c0cd98593368238e974b5387d56ecd",
+    "results/skew-physical-source-20261023/math-review/binding-01/validation.json": "875d3ea072f9b279896dba3482234d83879cc266b164424f29352ef80003e729",
+    "results/skew-physical-source-20261023/math-review/check_selected_normalization.py": "c5aac719297e09a67143c227316ded7e7600395308a28c19e3ab6c9f66e05eec",
+    "results/skew-physical-source-20261023/math-review/check_lean_packet_binding.py": "21a35306450c4e76b608a0cb0c04c6ce64e67ff1a4fd012b1610d206dce6acab"
+  },
+  "reviewed_results": [
+    {
+      "declarations": [
+        "cubic_coordinate_change",
+        "physical_cover_equation",
+        "jacobian_eq",
+        "four_form_jacobian"
+      ],
+      "finding": "The protected old cubic, V=rU, v=1/r+rw and a=(1+r^6+w^6)/r^3 are linked by exact identities. The full ordered four-form Jacobian is f_r/r^13; f_r differentiates the physical polynomial at fixed new a,v."
+    },
+    {
+      "declarations": [
+        "source_form_transport",
+        "normalized_source_form_transport",
+        "fibre_last_orientation"
+      ],
+      "finding": "The reused normalized pole coefficient 5U^2/(72z^11) transports to (5/72)(r^11/f_r)(V^2/z^11), multiplying dV wedge da wedge dv wedge dt. Moving dV to the right reverses sign (three transpositions). This is an actual Kähler/exterior-algebra equality."
+    },
+    {
+      "declarations": [
+        "b_variation",
+        "twelve_factor"
+      ],
+      "finding": "The sign +5/6 in coefficient variation follows by differentiating z^6+P=0; 5/72=(1/12)(5/6). b_variation is explicitly conditional on a coefficient-direction derivation, rather than defining the desired source identity."
+    },
+    {
+      "declarations": [
+        "b_column_cleared",
+        "b_column_rational",
+        "b_column_relative_reduction",
+        "b_column_module_reduction"
+      ],
+      "finding": "The exact source-packet b input column zero and correction R satisfy the cleared polynomial identity. The same relation is proved for module-valued derivations fixing a,b,c,d0, with the curve equation and nonzero z,Delta explicit. The specific source coefficients are bound to the pinned packet by the independent exact check and final literal Lean-definition binding."
+    },
+    {
+      "declarations": [
+        "baseWedge",
+        "baseWedge_factor",
+        "source_four_form_reduction"
+      ],
+      "finding": "The main new source theorem constructs W(h)=d(h) wedge da wedge dv wedge dt and proves W(r^11/(12f_r))=0. It derives the whole normalized four-form as the b-column representative plus W(H), where H=(r^11/(12f_r))*R/z^5. It does not assume the desired source identity."
+    },
+    {
+      "declarations": [
+        "vChart_recover",
+        "aChart_recover",
+        "fR_recover",
+        "root_vChart",
+        "root_aChart",
+        "root_fR",
+        "root_fR_ne_zero"
+      ],
+      "finding": "At each existing generic splitting-field root rho, w=(v*rho-1)/rho^2 recovers the chart, a and v match the mapped generic parameters, and fR is exactly the mapped physical polynomial derivative. Nonzero derivative is reused from the completed distinct-root result."
+    },
+    {
+      "declarations": [
+        "sourceScalar",
+        "sourceScalar_image",
+        "sourceScalar_trace"
+      ],
+      "finding": "The actual E quotient element (1/12) times quotientWeight 11 has image rho^11/(12fR) under each sigma_j and trace zero over the existing BaseField. This is the scalar coefficient link, with no splitting-field trace or degree multiplier."
+    }
+  ],
+  "hypotheses_and_domains": {
+    "forms": "An arbitrary characteristic-zero field K with an explicit Algebra Q K; forms are ExteriorAlgebra K (KaehlerDifferential Q K). No algebraic independence is needed for these conditional identities.",
+    "main_source_theorem": [
+      "r != 0",
+      "z != 0",
+      "fR r w != 0",
+      "delta(aChart r w,t*vChart r w,t*(1-t^2)/7,1+t^6) != 0",
+      "z^6+cubic U r w t = 0"
+    ],
+    "quotient_scalar": "The completed generic BaseField Q(v)(t)(a), its physical polynomial, E=AdjoinRoot f, and the existing 18-root splitting-field maps are reused unchanged.",
+    "discriminant_domain": "Delta != 0 is an explicit hypothesis of the fibre-column reduction; this unit does not prove it for a constructed physical curve field."
+  },
+  "orientation_and_packet_binding": {
+    "packet_connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+    "packet_convention": "nabla=d+M; columns index input basis; fibre basis (dV/z^5, V*dV/z^5). JSON fibre variable v is renamed z/nu and must not be confused with the new base v.",
+    "standard_projective_convention": "The packet README and audit explicitly report a global minus relative to standard projective volume in the (X0,X1,X2,Y0,Y1,Y2) ordering with normal differential last. The new theorem states its fibre-first order and proves the three-swap minus; it does not silently identify the two sign conventions.",
+    "other_packet": "No 1/864 from the different fqlx scalar rank-17 presentation is imported. The Ben compact rank-two family and degree-18 trace-free covering factor correspond to a different rank-34 architecture."
+  },
+  "remaining_boundaries": [
+    "No concrete field/function-field model of the physical hypersurface together with a pullback of ambient Kähler forms is constructed. The main theorem applies conditionally to any field and coordinates satisfying its explicit curve and open-chart hypotheses.",
+    "The generic normalizedPoleCoefficient wrapper is proved. The additional direct specialization to the old concrete DifferentialForms.residueScalar/alpha was omitted after saved definitionally different Q-algebra/Kähler-instance errors; no claim is made that this API wrapper compiled.",
+    "The correction is literally d(H) wedge da wedge dv wedge dt. No exterior differential on arbitrary 3-forms, de Rham quotient, residue map, or Gauss-Manin cohomology module is constructed.",
+    "The remaining substantive realization is to identify the represented compact fibre classes and packet connection with the physical residue/cohomology source under the compatible cover maps and stated orientation. The scalar trace theorem alone is not that realization.",
+    "H is only the selected fibre-reduction correction, not a primitive of the whole source. No global primitive, denominator search, clearing, certificate, HasCertificate, or target solve is claimed."
+  ],
+  "smallest_next_dependency": "Construct the compatible physical hypersurface/curve function-field realization and its Kähler pullback on the stated nonzero chart, so the conditional actual four-form theorem applies to the physical residue representative; the cohomology/connection realization must then be stated separately.",
+  "execution_attribution": {
+    "this_reviewer": {
+      "symbolic_check": "10 new exact identities and 5 mutations passed under Python -O / SymPy 1.14.0, 1.724668626 seconds total process time; execution-02 and check-02 are preserved.",
+      "literal_binding": "11 Lean definition bodies and 3 sign/scalar/column mutations passed under Python -O, 0.034578813 seconds process time; execution-03 and binding-01 are preserved.",
+      "lean_processes": 0,
+      "old_focused_math_replays": 0
+    },
+    "other_worker_receipt": {
+      "executor": "Pro source_lean AI worker",
+      "receipt": "results/skew-physical-source-20261023/lean-development/attempt-14/execution.json",
+      "exit_code": 0,
+      "elapsed_seconds": 5.364581512003497,
+      "meaning": "Read and hash-bound; this reviewer did not execute the Lean process."
+    },
+    "coordinator_reported_check": "Any coordinator exact-check counts are supporting user-reported evidence, not this reviewer execution.",
+    "kernel_axioms_ci": "Axiom audit, focused kernel replay, false-goal controls and any remote CI are separate integration/writer executions; they are not claimed by this review."
+  },
+  "failures_and_limits": {
+    "preserved_first_failure": "execution-01 failed before mathematics because SymPy was absent. Its stderr and failed source are saved.",
+    "dependency_resolution": "One pinned SymPy 1.14.0 install to /tmp/hodge-source-math-deps succeeded within the 45-second network limit; dependency-01 is preserved.",
+    "bounds": "This review stays within the one selected normalization/b-column unit and uses no additional mathematical exploration. Each focused reviewer checker had a 600-second subprocess limit; no calculation was interrupted or treated as a result.",
+    "publication": "No commits, pushes, messages upstream or notebook publication by this reviewer."
+  }
+}

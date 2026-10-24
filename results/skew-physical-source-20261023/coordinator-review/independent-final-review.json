@@ -1,0 +1,28 @@
+{
+  "status": "APPROVED WITH DOCUMENTED LIMITS; no blocking defect",
+  "reviewer": "Codex read-only AI agent ci_receipt_review; not independent human review",
+  "execution_scope": "Source, mathematical and receipt review only; no Lean or symbolic replay",
+  "module_sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+  "receipt_sha256": "34cae28bd59e3f86e28b74cac7e46806e10710f327852945b179489201fb0e5b",
+  "findings": [
+    "Main theorem derives a conditional equality of actual Kaehler four-forms without assuming or defining the desired equality.",
+    "Constructed wedge derivation kills a,v,t,r; cover-factor constancy is proved before moving the factor inside the correction.",
+    "The curve equation is differentiated in the module-valued reduction.",
+    "Both literal connection-column rows and their explicit correction are retained.",
+    "Root recovery and scalar image/trace use the actual quotient and all eighteen roots, separately from the rank-two source.",
+    "Packet global convention is distinguished from the proved fibre-order sign.",
+    "CI uses a fresh output path included in uploaded artifacts."
+  ],
+  "verified_counts": {
+    "current_sources_and_snapshots": 9,
+    "pinned_inputs_and_sizes": 44,
+    "parent_git_file_bindings": 25,
+    "command_stream_hashes": 39,
+    "public_declarations": 68,
+    "positive_examples": 19,
+    "intended_false_goal_failures": 7
+  },
+  "allowed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "reported_writer_elapsed_seconds": 27.632,
+  "limits": "Physical curve-field realization and compatible Kaehler pullback, physical Delta nonvanishing, residue/cohomology/connection identification remain outside this result. No primitive or certificate follows."
+}

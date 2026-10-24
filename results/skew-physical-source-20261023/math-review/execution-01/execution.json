@@ -1,0 +1,17 @@
+{
+  "executor": "Pro source_math AI reviewer",
+  "command": [
+    "python3",
+    "-O",
+    "results/skew-physical-source-20261023/math-review/check_selected_normalization.py",
+    "--output-dir",
+    "results/skew-physical-source-20261023/math-review/check-01"
+  ],
+  "cwd": "repository root",
+  "started_utc": "2026-10-24T01:24:39.509010+00:00",
+  "elapsed_seconds": 0.03776572499918984,
+  "timeout_seconds": 600,
+  "exit_code": 1,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "cd5d3c3a452a322ac6a42ef743ede70784594bc65e1d18fe9445a2deb550757d"
+}

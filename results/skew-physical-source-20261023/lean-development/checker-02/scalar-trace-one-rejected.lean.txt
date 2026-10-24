@@ -1,0 +1,7 @@
+import HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open Polynomial HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+example : Algebra.trace BaseField E sourceScalar=1 := by rw [sourceScalar_trace]; norm_num

@@ -1,0 +1,145 @@
+{
+  "checks": [
+    "projective chart connection a",
+    "projective chart connection b",
+    "projective chart connection c",
+    "projective chart connection d",
+    "projective chart connection alpha",
+    "old source and d-alpha transform to canonical source",
+    "physical c sign after chart inversion",
+    "fibre rescaling connection a",
+    "fibre rescaling connection b",
+    "fibre rescaling connection c",
+    "fibre rescaling connection d",
+    "fibre rescaling connection r",
+    "source under fibre rescaling",
+    "new cubic leading coefficient",
+    "new cubic quadratic coefficient",
+    "new cubic linear coefficient",
+    "degree-18 polynomial identity",
+    "physical base volume",
+    "f-r on the cover",
+    "complete transformed source density",
+    "implicit a derivative",
+    "implicit v derivative",
+    "implicit t derivative",
+    "source is algebraic a derivative before rank-2 twist",
+    "codifferent a integration slot 0",
+    "codifferent a integration slot 1",
+    "codifferent a integration slot 2",
+    "codifferent a integration slot 3",
+    "codifferent a integration slot 4",
+    "codifferent a integration slot 5",
+    "codifferent a integration slot 6",
+    "codifferent a integration slot 7",
+    "codifferent a integration slot 8",
+    "codifferent a integration slot 9",
+    "codifferent a integration slot 10",
+    "codifferent a integration slot 11",
+    "codifferent a integration slot 12",
+    "codifferent a integration slot 13",
+    "codifferent a integration slot 15",
+    "codifferent a integration slot 16",
+    "codifferent a integration slot 17",
+    "exceptional slot is d-log r",
+    "twisted closed beta ab",
+    "twisted closed beta ac",
+    "twisted closed beta ad",
+    "twisted closed beta bc",
+    "twisted closed beta bd",
+    "twisted closed beta cd",
+    "companion-column identity",
+    "two-stage current and full remaining one-row source",
+    "degree-nine kernel flux r",
+    "degree-nine kernel flux w",
+    "alpha is closed with fixed d ab",
+    "alpha is closed with fixed d ac",
+    "alpha is closed with fixed d bc"
+  ],
+  "checks_passed": 55,
+  "claim": "Exact source and connection equivalence; not a rational primitive.",
+  "coordinate_maps": {
+    "canonical": "Y0=1, X0=x, X1=r*x, X2=w*x, Y1=t; U=x^2",
+    "simple_base": "v=1/r+r*w; V=r*U",
+    "inverse": "w=(v*r-1)/r^2",
+    "coefficient_map": {
+      "a": "r**3 + r**(-3) + (r*v - 1)**6/r**15",
+      "b": "t*v",
+      "c": "t*(1-t**2)/7",
+      "d": "1+t**6"
+    }
+  },
+  "cover": "-a*r**15 + r**18 + r**12 + (r*v - 1)**6",
+  "cover_degree": 18,
+  "cover_t_derivative": 0,
+  "source_density": "r^11/f_r * M_b*e0/12 in da wedge dv wedge dt",
+  "cover_derivatives": {
+    "r_a": "r**15/(-15*a*r**14 + 18*r**17 + 12*r**11 + 6*v*(r*v - 1)**5)",
+    "r_v": "-6*r*(r*v - 1)**5/(-15*a*r**14 + 18*r**17 + 12*r**11 + 6*v*(r*v - 1)**5)",
+    "r_t": "0"
+  },
+  "rank_two_connection_before_substitution": {
+    "a": [
+      [
+        "(-27*a*d**2 + 6*b*c*d - c**3)/(81*a**2*d**2 - 54*a*b*c*d + 12*a*c**3 + 12*b**3*d - 3*b**2*c**2)",
+        "(36*a*b*d**2 - 9*a*c**2*d - 4*b**2*c*d + b*c**3)/(162*a**3*d**2 - 108*a**2*b*c*d + 24*a**2*c**3 + 24*a*b**3*d - 6*a*b**2*c**2)"
+      ],
+      [
+        "(3*a*c*d - 4*b**2*d + b*c**2)/(54*a**2*d**2 - 36*a*b*c*d + 8*a*c**3 + 8*b**3*d - 2*b**2*c**2)",
+        "(-54*a**2*d**2 + 30*a*b*c*d - 7*a*c**3 - 4*b**3*d + b**2*c**2)/(81*a**3*d**2 - 54*a**2*b*c*d + 12*a**2*c**3 + 12*a*b**3*d - 3*a*b**2*c**2)"
+      ]
+    ],
+    "v": [
+      [
+        "(27*a*c*d*t - 12*b**2*d*t + b*c**2*t)/(162*a**2*d**2 - 108*a*b*c*d + 24*a*c**3 + 24*b**3*d - 6*b**2*c**2)",
+        "(-27*a*d**2*t + 6*b*c*d*t - c**3*t)/(81*a**2*d**2 - 54*a*b*c*d + 12*a*c**3 + 12*b**3*d - 3*b**2*c**2)"
+      ],
+      [
+        "(3*a*b*d*t - a*c**2*t)/(27*a**2*d**2 - 18*a*b*c*d + 4*a*c**3 + 4*b**3*d - b**2*c**2)",
+        "(3*a*c*d*t - 4*b**2*d*t + b*c**2*t)/(54*a**2*d**2 - 36*a*b*c*d + 8*a*c**3 + 8*b**3*d - 2*b**2*c**2)"
+      ]
+    ],
+    "t": [
+      [
+        "(-3402*a**2*d*t**5 + 1386*a*b*c*t**5 - 54*a*b*d*t**2 + 18*a*b*d + 54*a*c**2*t**2 - 18*a*c**2 + 189*a*c*d*v - 336*b**3*t**5 - 12*b**2*c*t**2 + 4*b**2*c - 84*b**2*d*v + 7*b*c**2*v)/(1134*a**2*d**2 - 756*a*b*c*d + 168*a*c**3 + 168*b**3*d - 42*b**2*c**2)",
+        "(756*a*b*d*t**5 - 756*a*c**2*t**5 - 81*a*c*d*t**2 + 27*a*c*d - 378*a*d**2*v + 168*b**2*c*t**5 + 36*b**2*d*t**2 - 12*b**2*d - 3*b*c**2*t**2 + b*c**2 + 84*b*c*d*v - 14*c**3*v)/(1134*a**2*d**2 - 756*a*b*c*d + 168*a*c**3 + 168*b**3*d - 42*b**2*c**2)"
+      ],
+      [
+        "(252*a**2*c*t**5 + 27*a**2*d*t**2 - 9*a**2*d - 84*a*b**2*t**5 - 3*a*b*c*t**2 + a*b*c + 42*a*b*d*v - 14*a*c**2*v)/(378*a**2*d**2 - 252*a*b*c*d + 56*a*c**3 + 56*b**3*d - 14*b**2*c**2)",
+        "(-378*a**2*d*t**5 + 42*a*b*c*t**5 - 18*a*b*d*t**2 + 6*a*b*d + 6*a*c**2*t**2 - 2*a*c**2 + 21*a*c*d*v - 28*b**2*d*v + 7*b*c**2*v)/(378*a**2*d**2 - 252*a*b*c*d + 56*a*c**3 + 56*b**3*d - 14*b**2*c**2)"
+      ]
+    ]
+  },
+  "connection_substitution": {
+    "b": "t*v",
+    "c": "t*(1-t**2)/7",
+    "d": "1+t**6"
+  },
+  "codifferent_integrals": "r^i/f_r = partial_a[r^(i-14)/(i-14)] for i!=14",
+  "codifferent_exception": "slot14 is partial_a(log r); residue1 on the rational r-line",
+  "beta": "(dc-c/3*dlog(a)-2c/3*dlog(d), db-2b/3*dlog(a)-b/3*dlog(d))^T",
+  "beta_identity": "D_M beta = dlog(d)/6 wedge beta",
+  "two_stage_current": {
+    "psi": "r^(-3)",
+    "Xa": "psi_v e0/(36t)",
+    "Xv": "-psi_a e0/(36t)-psi_v e1/(36t^2)",
+    "Xt": "0",
+    "identity": "Div_D X = r11/fr M_b e0/12 - psi_vv e1/(36t^2)",
+    "scope": "Exact rational current subtraction; remaining one-row source is not discarded."
+  },
+  "exact_degree9_kernel": [
+    [
+      "-2*r*w**5*(1 - t**2)/7",
+      "r**3*(r**6 + w**6 + 1) - 4*r*w**5*(r**2*w + 1)"
+    ],
+    [
+      "(t**2/7 - 1/7)*(-r**6 + w**6 + 1)",
+      "4*r**6*(r**2*w + 1) + (3*r**2*w + 1)*(-r**6 - w**6 - 1)"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "degree9_bound_note": "The nonzero exact kernel proves coefficient rank<=659; combine with rank659/augmented660 mod32003."
+}

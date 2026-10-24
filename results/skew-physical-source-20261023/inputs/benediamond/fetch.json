@@ -1,0 +1,93 @@
+{
+  "url": "https://github.com/user-attachments/files/33835156/one-reflection-skew-followup-2026-10-22.zip",
+  "started_utc": "2026-10-24T01:21:38.434551+00:00",
+  "timeout_seconds": 45,
+  "executor": "Pro root integration",
+  "command": "urllib.request.urlopen(url, timeout=45); save exact ZIP and safely extract regular members",
+  "status": "PASS",
+  "bytes": 30606,
+  "sha256": "e83047c7e390acca70cdb1e6525685b1d5af2477f1d0ac52a40e1165e5908e0b",
+  "elapsed_seconds": 0.5487152170026093,
+  "members": [
+    {
+      "name": "one-reflection-skew-followup/README.md",
+      "bytes": 13866,
+      "sha256": "8abcccf21dbdd7306c5eb7c7c8e5686ea9657b45fba3a7513374d6a03939fe31"
+    },
+    {
+      "name": "one-reflection-skew-followup/a_denominator_degree9.json",
+      "bytes": 3172,
+      "sha256": "bd1dd655cf231d0b97c07e9e2ed0478110b74ffca6cc2162c34b6f2554f05c1c"
+    },
+    {
+      "name": "one-reflection-skew-followup/a_denominator_search.py",
+      "bytes": 4419,
+      "sha256": "12bd85d9e22706768cdff7c1b7923a90179998b341f2ce688c7e4289c5d8d56b"
+    },
+    {
+      "name": "one-reflection-skew-followup/independent-peer-audit.json",
+      "bytes": 2439,
+      "sha256": "4360a94ec57c4fe06bb470e2e7bd9a73a965bc4d12af7abe24413439b36df032"
+    },
+    {
+      "name": "one-reflection-skew-followup/independent_peer_audit.py",
+      "bytes": 5992,
+      "sha256": "faa8cad1b9d173f3657fff4e71b31e6fe2a63d6103d77d4257eed5c553121ba9"
+    },
+    {
+      "name": "one-reflection-skew-followup/inputs/instance.rec",
+      "bytes": 3357,
+      "sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f"
+    },
+    {
+      "name": "one-reflection-skew-followup/inputs/record.json",
+      "bytes": 5041,
+      "sha256": "1484e65cbba83500f7e37c5440ea34be46f7289dfd4683fa9def1f5fd97866a2"
+    },
+    {
+      "name": "one-reflection-skew-followup/inputs/source-rank2-connection.json",
+      "bytes": 12399,
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d"
+    },
+    {
+      "name": "one-reflection-skew-followup/requirements.txt",
+      "bytes": 34,
+      "sha256": "7f2e6608da77418fa1d201a307a604aedf1082d0b146119a9f43ce57d37dc166"
+    },
+    {
+      "name": "one-reflection-skew-followup/residual-vertical-r-report.json",
+      "bytes": 2879,
+      "sha256": "f8cbd6eec23de7fcccc811179d09d0aad36fd6abb6bdea2c4c036d5d4671b6bb"
+    },
+    {
+      "name": "one-reflection-skew-followup/residual_vertical_r_test.py",
+      "bytes": 4655,
+      "sha256": "9e626e96e09c782784abe9052ce30176e85727bb6d9b222db05263b9c9f3ac5e"
+    },
+    {
+      "name": "one-reflection-skew-followup/simple-cover-report.json",
+      "bytes": 6043,
+      "sha256": "8303ed690466f6d4408f3d89224d3de61cffaa0867a791e9ccc1c4e56bc11ed7"
+    },
+    {
+      "name": "one-reflection-skew-followup/simple_cover_verify.py",
+      "bytes": 6955,
+      "sha256": "4ceeb65b8b1839aeead2fcd43378e838846bd685fe808d936ef5f4101dbf2c1d"
+    },
+    {
+      "name": "one-reflection-skew-followup/vertical-r-report.json",
+      "bytes": 2224,
+      "sha256": "3a10a739be46381e2ecfbfb8713440d7bf85b8c6d1b293a86e331e0035e4c142"
+    },
+    {
+      "name": "one-reflection-skew-followup/vertical_r_test.py",
+      "bytes": 4504,
+      "sha256": "e1cac3432f4e5dc66fd9337f8b42a720e5b33be11a019926e2e01b88ae066f07"
+    },
+    {
+      "name": "one-reflection-skew-followup/MANIFEST.sha256",
+      "bytes": 1347,
+      "sha256": "afe4bf1e89843811a38a2282b88dc7cafa15c744f2cf91aebc0186ff8c8b2f3f"
+    }
+  ]
+}

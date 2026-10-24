@@ -1,0 +1,196 @@
+{
+  "degree": 9,
+  "prime": 32003,
+  "columns": 660,
+  "sample_rows": 710,
+  "rank": 659,
+  "augmented_rank": 660,
+  "rank_seconds": 0.26787877082824707,
+  "full_column_rank": false,
+  "interpretation": "modular search only",
+  "nullity": 1,
+  "nullspace": [
+    [
+      {
+        "flux": "r",
+        "row": 0,
+        "exponent": [
+          1,
+          5,
+          0
+        ],
+        "coefficient_mod_p": 22859
+      },
+      {
+        "flux": "r",
+        "row": 0,
+        "exponent": [
+          1,
+          5,
+          2
+        ],
+        "coefficient_mod_p": 9144
+      },
+      {
+        "flux": "r",
+        "row": 1,
+        "exponent": [
+          3,
+          0,
+          0
+        ],
+        "coefficient_mod_p": 1
+      },
+      {
+        "flux": "r",
+        "row": 1,
+        "exponent": [
+          1,
+          5,
+          0
+        ],
+        "coefficient_mod_p": 31999
+      },
+      {
+        "flux": "r",
+        "row": 1,
+        "exponent": [
+          3,
+          6,
+          0
+        ],
+        "coefficient_mod_p": 32000
+      },
+      {
+        "flux": "r",
+        "row": 1,
+        "exponent": [
+          9,
+          0,
+          0
+        ],
+        "coefficient_mod_p": 1
+      },
+      {
+        "flux": "w",
+        "row": 0,
+        "exponent": [
+          0,
+          0,
+          0
+        ],
+        "coefficient_mod_p": 27431
+      },
+      {
+        "flux": "w",
+        "row": 0,
+        "exponent": [
+          0,
+          0,
+          2
+        ],
+        "coefficient_mod_p": 4572
+      },
+      {
+        "flux": "w",
+        "row": 0,
+        "exponent": [
+          0,
+          6,
+          0
+        ],
+        "coefficient_mod_p": 27431
+      },
+      {
+        "flux": "w",
+        "row": 0,
+        "exponent": [
+          6,
+          0,
+          0
+        ],
+        "coefficient_mod_p": 4572
+      },
+      {
+        "flux": "w",
+        "row": 0,
+        "exponent": [
+          0,
+          6,
+          2
+        ],
+        "coefficient_mod_p": 4572
+      },
+      {
+        "flux": "w",
+        "row": 0,
+        "exponent": [
+          6,
+          0,
+          2
+        ],
+        "coefficient_mod_p": 27431
+      },
+      {
+        "flux": "w",
+        "row": 1,
+        "exponent": [
+          0,
+          0,
+          0
+        ],
+        "coefficient_mod_p": 32002
+      },
+      {
+        "flux": "w",
+        "row": 1,
+        "exponent": [
+          2,
+          1,
+          0
+        ],
+        "coefficient_mod_p": 32000
+      },
+      {
+        "flux": "w",
+        "row": 1,
+        "exponent": [
+          0,
+          6,
+          0
+        ],
+        "coefficient_mod_p": 32002
+      },
+      {
+        "flux": "w",
+        "row": 1,
+        "exponent": [
+          6,
+          0,
+          0
+        ],
+        "coefficient_mod_p": 3
+      },
+      {
+        "flux": "w",
+        "row": 1,
+        "exponent": [
+          2,
+          7,
+          0
+        ],
+        "coefficient_mod_p": 32000
+      },
+      {
+        "flux": "w",
+        "row": 1,
+        "exponent": [
+          8,
+          1,
+          0
+        ],
+        "coefficient_mod_p": 1
+      }
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "executor": "Pro source_lean AI worker",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean"
+  ],
+  "cwd": "formal",
+  "started_utc": "2026-10-24T01:35:31.208926+00:00",
+  "elapsed_seconds": 4.834877217996109,
+  "timeout_seconds": 120,
+  "exit_code": 1,
+  "files_sha256": {
+    "PhysicalSourceNormalization.lean.txt": "e0dff7a1770210aefcc9d1307f75c5f3a0148b35830b6c499fe3e2f2fb057054",
+    "stdout.log": "87481649d284c00c22122b63dc233cfaaa84c6d43213ca94ad3017668b4935d0",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

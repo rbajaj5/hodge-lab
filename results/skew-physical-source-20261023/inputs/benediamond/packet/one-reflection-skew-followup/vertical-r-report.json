@@ -1,0 +1,151 @@
+{
+  "specialization": {
+    "v": 2,
+    "t": 3
+  },
+  "basis": [
+    {
+      "row": 0,
+      "power": -10
+    },
+    {
+      "row": 0,
+      "power": -9
+    },
+    {
+      "row": 0,
+      "power": -8
+    },
+    {
+      "row": 0,
+      "power": -7
+    },
+    {
+      "row": 0,
+      "power": -6
+    },
+    {
+      "row": 0,
+      "power": -5
+    },
+    {
+      "row": 0,
+      "power": -4
+    },
+    {
+      "row": 0,
+      "power": -3
+    },
+    {
+      "row": 0,
+      "power": -2
+    },
+    {
+      "row": 0,
+      "power": -1
+    },
+    {
+      "row": 0,
+      "power": 0
+    },
+    {
+      "row": 0,
+      "power": 1
+    },
+    {
+      "row": 0,
+      "power": 2
+    },
+    {
+      "row": 1,
+      "power": -10
+    },
+    {
+      "row": 1,
+      "power": -9
+    },
+    {
+      "row": 1,
+      "power": -8
+    },
+    {
+      "row": 1,
+      "power": -7
+    },
+    {
+      "row": 1,
+      "power": -6
+    },
+    {
+      "row": 1,
+      "power": -5
+    },
+    {
+      "row": 1,
+      "power": -4
+    },
+    {
+      "row": 1,
+      "power": -3
+    },
+    {
+      "row": 1,
+      "power": -2
+    },
+    {
+      "row": 1,
+      "power": -1
+    },
+    {
+      "row": 1,
+      "power": 0
+    },
+    {
+      "row": 1,
+      "power": 1
+    },
+    {
+      "row": 1,
+      "power": 2
+    }
+  ],
+  "finite_residue_proof": {
+    "a_zero": "res(a Ma)=[[0,-c/(6b)],[0,-1/3]]",
+    "Delta_zero_trace": "trace(Delta Ma)=-Delta/(3a)-Delta_a/3",
+    "Delta_zero_determinant": "det(Delta Ma)=Delta*(216ad^2-36bcd+7c^3)/(36a)",
+    "conclusion": "At every simple Delta root, residue=(Delta Ma)/Delta_a has trace -1/3 and determinant0."
+  },
+  "good_finite_poles": true,
+  "G_degree": 18,
+  "Delta_numerator_degree": 36,
+  "residue_zero": [
+    [
+      "5",
+      "0"
+    ],
+    [
+      "2/511",
+      "10"
+    ]
+  ],
+  "r_times_connection_at_infinity": [
+    [
+      "-1",
+      "0"
+    ],
+    [
+      "-2/2555",
+      "-2"
+    ]
+  ],
+  "source_order_zero_at_least": 11,
+  "source_order_infinity_at_most": -7,
+  "matrix_shape": [
+    133,
+    26
+  ],
+  "coefficient_rank_mod_p": 26,
+  "augmented_rank_mod_p": 27,
+  "prime": 32003,
+  "claim": "No rational primitive in the r direction over Q(v,t); full three-direction system remains open."
+}

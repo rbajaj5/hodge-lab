@@ -1,0 +1,70 @@
+{
+  "status": "PASS_FINAL_ADVERSARIAL_REVIEW",
+  "executor": "Pro source_review source/evidence AI reviewer",
+  "completed_utc": "2026-10-24T01:42:49.137149+00:00",
+  "parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "upstream": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "module_sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+  "focused_receipt": "results/skew-physical-source-20261023/lean-development/checker-04/validation.json",
+  "focused_receipt_sha256": "34cae28bd59e3f86e28b74cac7e46806e10710f327852945b179489201fb0e5b",
+  "reviewer_executed": {
+    "operation": "Read-only saved source/receipt/hash audit under python3 -O",
+    "receipt": "results/skew-physical-source-20261023/source-review/audit-02/execution.json",
+    "exit_code": 0,
+    "wall_seconds": 0.06314757600193843,
+    "source_context_hashes": 54,
+    "command_stream_hashes": 39,
+    "Lean_commands": 0,
+    "packet_mathematical_runs": 0,
+    "old_mathematics_runs": 0
+  },
+  "writer_executions_verified": {
+    "public_declarations": 68,
+    "new_modules_kernel_replayed": 1,
+    "positive_controls": 19,
+    "intended_false_goals": 7,
+    "literal_packet_definitions": 11,
+    "binding_mutations": 3,
+    "focused_seconds": 27.631794943998102,
+    "not_remote_CI": true
+  },
+  "scope": "Exact normalized-pole chart/Jacobian/orientation and actual four-form b-column representative with literal differential correction; exact generic quotient scalar images and trace zero",
+  "review_conclusions": [
+    "Protected current F,A,q bind to the pinned packet and existing definitions without replacing historical hashes",
+    "The desired source expression is derived, not assumed or defined into its own proof",
+    "All new declarations are audited; only allowed axioms propext, Classical.choice and Quot.sound appear",
+    "Only the new module is kernel-replayed; historical receipts are read as immutable inputs",
+    "Seven negative controls fail at intended False goals, not parser/typeclass failures",
+    "The correction is retained and the full scalar factor is proved constant under the actual fibre-wedge derivation",
+    "The sourceScalar image and zero trace identify a scalar in E, not a full cohomology vector source",
+    "The new CI step allocates a fresh receipt directory under the repaired lifecycle",
+    "README and scoped note explicitly retain physical curve-field, Delta-nonzero and cohomology/connection boundaries"
+  ],
+  "retained_failures": [
+    "Fourteen Lean development attempts remain, including eleven failed attempts and three passes",
+    "Checker01 failed at a positive-control missing-space parser error; corrected checker02 passed",
+    "Checker03 added the automated literal binding gate and passed; checker04 fixed portable relative-path serialization and passed",
+    "Reviewer audit01 rejected the stale checker03 hash after that portability correction; reviewer audit02 matched checker04 and passed",
+    "Known historical discussion127 CRLF Git warning is retained; raw and index bytes equal the parent and must not be staged"
+  ],
+  "limits": [
+    "No physical curve-field realization and compatible Kaehler pullback are constructed",
+    "No ambient residue map, relative cohomology quotient, full Gauss-Manin realization or physical source-class identification is claimed",
+    "Nonzero physical cubic Delta is an explicit hypothesis, separate from generic cover f separability",
+    "The actual correction has the form d(H) wedge da wedge dv wedge dt; no exterior differential on arbitrary three-forms is constructed",
+    "No primitive, clearing, certificate or solve",
+    "No remote CI, Git publication or human independence claim by this reviewer",
+    "Parent ledger prefix was checked before root appended checkpoint141; root retains responsibility for final append-only/staged-tree validation",
+    "The final native-Windows path serialization fix was inspected and Linux executed; no native-Windows runtime execution is claimed"
+  ],
+  "parent_ledger_bytes": 418118,
+  "parent_ledger_sha256": "e636477a85bfbdedbaac88202bb2c461cec32db5c914d186fdaffeb8977a3193",
+  "evidence_sha256": {
+    "results/skew-physical-source-20261023/source-review/frozen-source-review.json": "c2c21bc03b072299422688387806b4312fb35f657cfc2e770570155a34bd41b6",
+    "results/skew-physical-source-20261023/source-review/audit_saved_evidence.py": "a7f09ef5570f94ab99e6edf2df5ccfe957b704fd9a6056c0eab6e2a2e27e65db",
+    "results/skew-physical-source-20261023/source-review/audit-01/execution.json": "0ac821e898894b6767711af8ffe03f71067d14669d5d7017ceda89ee38960174",
+    "results/skew-physical-source-20261023/source-review/audit-02/execution.json": "287a97e8493ebb89d787c83cfa5cddf2f3a9142c6767b2a882d8e654af8bf97e",
+    "results/skew-physical-source-20261023/source-review/audit-02/stdout.log": "b39295ea66834cf131d28d8a7814030d1bf680258224510df2c6662bc37bd172",
+    "results/skew-physical-source-20261023/source-review/audit-02/stderr.log": "0ea173ad44cbf343babaa3d44440508c795e506a67eba7d8c48f6a51ce7e7855"
+  }
+}

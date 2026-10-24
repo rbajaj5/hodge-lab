@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "executor": "Codex coordinator independent exact coefficient checks",
+  "python": "3.11.9",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.3280000000013388,
+  "external_process_bound_seconds": 60,
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "checker_sha256": "eb412611724c4a18fb9134d119f840972cecfecb3f8d1c544411736dd173a437",
+  "equalities": {
+    "b_column_zero_full_fibre_reduction": "zero",
+    "cleared_polynomial_reduction": "zero",
+    "implicit_cubic_b_variation": "zero",
+    "inverse_fifth_power_variation": "zero",
+    "normalization_five_over_72_to_one_over_12": "zero",
+    "ordered_coordinate_jacobian": "zero",
+    "cover_derivative_identity": "zero",
+    "complete_fibre_first_normalization": "zero",
+    "three_base_differentials_orientation": "-1"
+  },
+  "detected_mutations": {
+    "omit_exact_fibre_correction": {
+      "numerator": "18*U**4*a**2*b*d - 6*U**4*a**2*c**2 + 27*U**3*a**2*c*d + 6*U**3*a*b**2*d - 5*U**3*a*b*c**2 + 135*U**2*a**2*d**2 - 45*U**2*a*b*c*d + 14*U**2*a*c**3 + 8*U**2*b**3*d - 4*U**2*b**2*c**2 + 18*U*a*b*d**2 + 21*U*a*c**2*d - 12*U*b**2*c*d + U*b*c**3 + 27*a*c*d**2 - 12*b**2*d**2 + b*c**2*d",
+      "denominator": "162*a**2*d**2 - 108*a*b*c*d + 24*a*c**3 + 24*b**3*d - 6*b**2*c**2"
+    },
+    "reverse_compact_column_sign": {
+      "numerator": "-18*U**4*a**2*b*d + 6*U**4*a**2*c**2 - 27*U**3*a**2*c*d - 6*U**3*a*b**2*d + 5*U**3*a*b*c**2 - 45*U**2*a*b*c*d + 6*U**2*a*c**3 + 12*U**2*b**3*d - U**2*b**2*c**2 - 18*U*a*b*d**2 - 21*U*a*c**2*d + 12*U*b**2*c*d - U*b*c**3 - 27*a*c*d**2 + 12*b**2*d**2 - b*c**2*d",
+      "denominator": "81*a**2*d**2 - 54*a*b*c*d + 12*a*c**3 + 12*b**3*d - 3*b**2*c**2"
+    },
+    "drop_one_over_12": {
+      "numerator": "-55",
+      "denominator": "72"
+    },
+    "replace_slot11_by_slot14": {
+      "numerator": "-r**14 + r**11",
+      "denominator": "-15*a*r**14 + 18*r**17 + 12*r**11 + 6*r**5*v**6 - 30*r**4*v**5 + 60*r**3*v**4 - 60*r**2*v**3 + 30*r*v**2 - 6*v"
+    },
+    "omit_fibre_rescaling": {
+      "numerator": "r**14 - r**11",
+      "denominator": "-15*a*r**14 + 18*r**17 + 12*r**11 + 6*r**5*v**6 - 30*r**4*v**5 + 60*r**3*v**4 - 60*r**2*v**3 + 30*r*v**2 - 6*v"
+    },
+    "ignore_three_swap_sign": {
+      "numerator": "-2",
+      "denominator": "1"
+    }
+  },
+  "assumptions": [
+    "r != 0",
+    "z != 0",
+    "Delta != 0 for compact column",
+    "f_r != 0 for covering Jacobian",
+    "f=0 for derivative relation"
+  ],
+  "orientation": "Positive 1/12 in fibre-first order; moving fibre differential past three base differentials gives a minus sign.",
+  "limits": [
+    "Only b,column0 from the pinned packet is checked; no full connection/gauge/curvature replay.",
+    "No formal K\u00e4hler quotient or cohomology class map is constructed by this script.",
+    "No source primitive, trace-exactness, global clearing or certificate is proved."
+  ]
+}

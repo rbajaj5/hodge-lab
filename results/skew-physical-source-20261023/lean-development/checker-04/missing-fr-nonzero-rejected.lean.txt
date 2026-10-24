@@ -1,0 +1,8 @@
+import HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open Polynomial HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+example : (5/72:ℚ)=((5/72:ℚ)*(1^11/fR 1 0)*(1^2/1^11))*(fR 1 0/1^13) := by
+  norm_num [fR_expanded,vChart,aChart,aCoeff]

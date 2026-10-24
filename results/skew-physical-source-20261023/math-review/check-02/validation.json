@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "executor": "Pro source_math AI reviewer",
+  "started_utc": "2026-10-24T01:25:32.339391+00:00",
+  "completed_utc": "2026-10-24T01:25:32.605236+00:00",
+  "elapsed_seconds": 0.26586601799499476,
+  "budget_seconds": 600,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy_version": "1.14.0",
+  "source_sha256": {
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+    "results/skew-physical-source-20261023/math-review/check_selected_normalization.py": "c5aac719297e09a67143c227316ded7e7600395308a28c19e3ab6c9f66e05eec"
+  },
+  "checks": [
+    "combined four-coordinate Jacobian equals f_r/r^13",
+    "fibre-first source pullback with exact r^11 factor",
+    "coefficient-direction derivative of nu^-5",
+    "one-twelfth coefficient normalization",
+    "packet b column zero first row binding",
+    "packet b column zero second row binding",
+    "packet b column zero exact correction binding",
+    "one-column cleared polynomial reduction",
+    "one-column rational relative differential reduction",
+    "fibre-first to base-first permutation sign"
+  ],
+  "mutation_controls": [
+    "source sign reversal",
+    "r^11 changed to r^10",
+    "unrelated one-over-864 factor",
+    "transpose/input-column mutation",
+    "drop the exact derivative correction"
+  ],
+  "scope": "New combined chart normalization and only packet b column zero; no old full-packet replay, no Lean execution",
+  "limits": [
+    "Rational coefficient identities require nonzero r,nu,f_r,Delta where divided",
+    "The matrix reduction identity is exact modulo a relative derivative; no de Rham quotient or Gauss-Manin connection constructed",
+    "Packet vector convention is opposite standard projective normal-last convention",
+    "No arbitrary source exactness, current search, primitive, certificate or solve"
+  ]
+}

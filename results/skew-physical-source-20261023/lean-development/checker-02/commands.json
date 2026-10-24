@@ -1,0 +1,353 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:39.857603+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.6429512989998329,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stdout": "version.stdout.log",
+    "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stderr": "version.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:40.500871+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.0023213210006360896,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stdout": "mathlib-head.stdout.log",
+    "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stderr": "mathlib-head.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.PhysicalSourceNormalization"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.PhysicalSourceNormalization"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:40.503422+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 1.2978691820026143,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "e254f199f9172e6d4e651f890917b6c974d07c2eef790682b7f738a6f6147054",
+    "stdout": "build.stdout.log",
+    "stdout_sha256": "e254f199f9172e6d4e651f890917b6c974d07c2eef790682b7f738a6f6147054",
+    "stderr": "build.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewPhysicalSource.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewPhysicalSource.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:41.801654+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.407270210002025,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "10dd791e96457663f897bc31b563092a1a31e9663c96adea0dcf613714f281af",
+    "stdout": "axioms.stdout.log",
+    "stdout_sha256": "10dd791e96457663f897bc31b563092a1a31e9663c96adea0dcf613714f281af",
+    "stderr": "axioms.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewPhysicalSource.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewPhysicalSource.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:44.209678+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.8596160570014035,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "2afc2825792ee4f4234281c5a017ad62b282bc186f74bfadda3dfda35b4bc5ff",
+    "stdout": "kernel-replay.stdout.log",
+    "stdout_sha256": "2afc2825792ee4f4234281c5a017ad62b282bc186f74bfadda3dfda35b4bc5ff",
+    "stderr": "kernel-replay.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/positive-controls.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/positive-controls.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:47.072237+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.020517195996945,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "positive-controls.stdout.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "positive-controls.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "missing-r-nonzero-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/missing-r-nonzero-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/missing-r-nonzero-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:50.093423+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.356295259996841,
+    "expected_failure": true,
+    "log": "missing-r-nonzero-rejected.log",
+    "log_lf_sha256": "2ef16734a675b8286c71d1d2ffa87cacde7d7f6886107357f174ae228f18a173",
+    "stdout": "missing-r-nonzero-rejected.stdout.log",
+    "stdout_sha256": "2ef16734a675b8286c71d1d2ffa87cacde7d7f6886107357f174ae228f18a173",
+    "stderr": "missing-r-nonzero-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "missing-fr-nonzero-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/missing-fr-nonzero-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/missing-fr-nonzero-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:52.450553+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.6145616700014216,
+    "expected_failure": true,
+    "log": "missing-fr-nonzero-rejected.log",
+    "log_lf_sha256": "9985ce5df311a7efb73d21cce77e316d0d943af13f5ce27e4a5f888bedf7f310",
+    "stdout": "missing-fr-nonzero-rejected.stdout.log",
+    "stdout_sha256": "9985ce5df311a7efb73d21cce77e316d0d943af13f5ce27e4a5f888bedf7f310",
+    "stderr": "missing-fr-nonzero-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "orientation-sign-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/orientation-sign-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/orientation-sign-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:55.065714+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.516249774998869,
+    "expected_failure": true,
+    "log": "orientation-sign-rejected.log",
+    "log_lf_sha256": "36ecc79f089fbc3be9d921b4c29264e789bac4839cae131a3a1ccd140dac37d2",
+    "stdout": "orientation-sign-rejected.stdout.log",
+    "stdout_sha256": "36ecc79f089fbc3be9d921b4c29264e789bac4839cae131a3a1ccd140dac37d2",
+    "stderr": "orientation-sign-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "wrong-twelve-factor-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/wrong-twelve-factor-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/wrong-twelve-factor-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:57.582713+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.3990502870001364,
+    "expected_failure": true,
+    "log": "wrong-twelve-factor-rejected.log",
+    "log_lf_sha256": "876338c7f6c8c8cc0e717f2a67eb726bc7ada6cdc243bd8b01867e55197d2597",
+    "stdout": "wrong-twelve-factor-rejected.stdout.log",
+    "stdout_sha256": "876338c7f6c8c8cc0e717f2a67eb726bc7ada6cdc243bd8b01867e55197d2597",
+    "stderr": "wrong-twelve-factor-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "missing-delta-nonzero-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/missing-delta-nonzero-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/missing-delta-nonzero-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:39:59.982416+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.4095215999986976,
+    "expected_failure": true,
+    "log": "missing-delta-nonzero-rejected.log",
+    "log_lf_sha256": "13cc55d400dc4c78f53c9273dd8befa83d88c30a7683a45c4a2f0c7d7af04ff9",
+    "stdout": "missing-delta-nonzero-rejected.stdout.log",
+    "stdout_sha256": "13cc55d400dc4c78f53c9273dd8befa83d88c30a7683a45c4a2f0c7d7af04ff9",
+    "stderr": "missing-delta-nonzero-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "dropped-exact-correction-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/dropped-exact-correction-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/dropped-exact-correction-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:40:02.392586+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.3994055220027803,
+    "expected_failure": true,
+    "log": "dropped-exact-correction-rejected.log",
+    "log_lf_sha256": "d718272579ea0ce39a238ed99c4d94780bbb18779135a04cb144788ed690176d",
+    "stdout": "dropped-exact-correction-rejected.stdout.log",
+    "stdout_sha256": "d718272579ea0ce39a238ed99c4d94780bbb18779135a04cb144788ed690176d",
+    "stderr": "dropped-exact-correction-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "scalar-trace-one-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/scalar-trace-one-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-physical-source-controls/controls-jpabhftk/scalar-trace-one-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T01:40:04.792622+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.445989701001963,
+    "expected_failure": true,
+    "log": "scalar-trace-one-rejected.log",
+    "log_lf_sha256": "1291163c8b25ec1b73c1b0eb4ef39b47c6a059ddef7dc04c1dfb0011a1242d42",
+    "stdout": "scalar-trace-one-rejected.stdout.log",
+    "stdout_sha256": "1291163c8b25ec1b73c1b0eb4ef39b47c6a059ddef7dc04c1dfb0011a1242d42",
+    "stderr": "scalar-trace-one-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

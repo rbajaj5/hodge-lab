@@ -1,0 +1,30 @@
+{
+  "parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "upstream": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "start_utc": "2026-10-24T01:20:22Z",
+  "math_deadline_utc": "2026-10-24T02:05:22Z",
+  "max_approaches": 2,
+  "lean_timeout_seconds": 120,
+  "checker_timeout_seconds": 600,
+  "network_timeout_seconds": 45,
+  "packaging_limit_seconds": 300,
+  "parent_ledger_bytes": 418118,
+  "parent_ledger_sha256": "e636477a85bfbdedbaac88202bb2c461cec32db5c914d186fdaffeb8977a3193",
+  "executor": "Pro root integration",
+  "fetches": [
+    {
+      "repository": "rbajaj5/hodge-lab",
+      "command": "timeout 45 git fetch origin main",
+      "exit_code": 0,
+      "elapsed_seconds": 0.527420441
+    },
+    {
+      "repository": "hodge-computer/sextics",
+      "command": "timeout 45 git fetch origin main",
+      "exit_code": 0,
+      "elapsed_seconds": 0.219108468
+    }
+  ],
+  "publication": "Coordinator owns apply/review/push/remote CI; no worker commit or push",
+  "goal": "User reports active coordinator Goal; no worker Goal-control tool exposed"
+}

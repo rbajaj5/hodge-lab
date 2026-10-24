@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "executor": "Codex coordinator; exact field comparison",
+  "protected_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "protected_sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+  "packet_sha256": "fc7e070e4f459a521e3515c3b0d7e85fe4a557e345839f9cdb324491c289063f",
+  "equal_fields": {
+    "id": "one-reflection-skew",
+    "q": "1",
+    "F": "X0**6+X0**3*X1*Y0*Y1+X0*X1*Y0**3*Y1/7-X0*X1*Y0*Y1**3/7+X1**6+X1**3*X2*Y0*Y1+X2**6+Y0**6+Y1**6+Y2**6",
+    "A": "X0**3*Y0**3"
+  },
+  "checker_sha256": "8b336416ccb749d89619f4aa25a6a3c1ce68481ef52bcf4e8b8fec4ad046065a",
+  "limits": "Whitespace-normalized text equality of id,q,F,A; no new polynomial, geometric, or Lean computation. Different rendering metadata is excluded intentionally."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_VISUAL_REVIEW",
+  "executor": "Pro root integration",
+  "recorded_utc": "2026-10-24T01:42:32.200978+00:00",
+  "figure": "results/skew-physical-source-20261023/visualization-02/physical-source-normalization.png",
+  "sha256": "3b623a52184fc37cee77f612cf853823eb50e3cff6eb58a1ba503dd05e8dc171",
+  "observations": [
+    "Labels and equations are legible with no clipping or overlaps",
+    "Actual four-form correction, nonzero hypotheses and unproved physical-field/cohomology boundary are distinguished",
+    "Global packet convention is identified separately from the proved three-swap sign",
+    "Both compact rows and rank34 versus scalar slot11 are explicit"
+  ],
+  "retained_failure": "integration/figure-execution-01: Matplotlib requires braces around fraction numerators/denominators; failed source snapshot retained in visualization-01/generator.py",
+  "receipt_scope": "Figure uses checker-03 source-bound PASS; final checker-only portability change does not alter the frozen theorem source"
+}

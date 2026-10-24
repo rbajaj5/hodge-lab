@@ -1,0 +1,7 @@
+import HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open Polynomial HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+example : (5/72:ℚ)=(1/6:ℚ)*(5/6:ℚ) := by norm_num

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_WITH_PRESERVED_RAW_LOG_WHITESPACE",
+  "executor": "Pro root integration",
+  "recorded_utc": "2026-10-24T01:45:38.361079+00:00",
+  "seconds_since_final_mathematical_check": 202.338455,
+  "packaging_limit_seconds": 300,
+  "expected_staged_tree": "308ddff1b5cec7490b51017cedbbb7b150967a35",
+  "parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "changed_files": 353,
+  "utf8_text_files": 351,
+  "raw_index_payload_equality": true,
+  "parent_ledger_prefix_preserved": true,
+  "parent_ledger_bytes": 418118,
+  "modified_parent_paths": [
+    ".github/workflows/lean.yml",
+    "LEDGER.md",
+    "README.md"
+  ],
+  "all_historical_results_unchanged_in_index": true,
+  "focused_whitespace_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".github/workflows/lean.yml",
+      "README.md",
+      "LEDGER.md",
+      "formal",
+      "notes",
+      "scripts"
+    ],
+    "exit_code": 0
+  },
+  "all_files_whitespace_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9"
+    ],
+    "exit_code": 2,
+    "scope": "Nine preserved raw failed-command log lines only; source/log hashes not rewritten",
+    "log_sha256": "1c78948b1d55360b4d276b03e753862481bbc659e130efcd7b3f50a52a34e8a4"
+  },
+  "review": "Inspected staged workflow/README change, note/proof theorem boundaries, manifest and diff summary; source reviews and exact receipt audits saved separately",
+  "archive_validation": "CRC plus SHA256 of each manifested member verified",
+  "new_math_executed_during_packaging": false,
+  "publication": "None",
+  "full_parent_apply_audit": "Deferred to coordinator as authorized",
+  "archive_payload_members": 353,
+  "packaging_correction": "A packaging manifest filter initially omitted the nested packet MANIFEST.sha256 from the ZIP; corrected to exclude only top-level generated manifest files before delivery. Patch and staged tree were unaffected.",
+  "finalized_utc": "2026-10-24T01:46:12.619739+00:00",
+  "corrected_archive_failure": {
+    "intermediate_zip_sha256": "a6793513f274731847458f8438c471f1cd0ad00c14d2ffffc88ea8c3779246de",
+    "missing_member": "payload/results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/MANIFEST.sha256",
+    "cause": "Basename exclusion intended for top-level generated manifest also matched protected nested manifest",
+    "correction": "Exclude generated files by full path, then verify all 353 payload paths equal changed_paths and all manifested hashes"
+  }
+}

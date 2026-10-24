@@ -1,0 +1,36 @@
+{
+  "executor": "Pro root integration",
+  "created_utc": "2026-10-24T01:41:53.658629+00:00",
+  "inputs": {
+    "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+    "results/skew-physical-source-20261023/lean-development/checker-03/validation.json": "ac4ff88dd825d3fea104112ac73d88b71393ea34893f8a2d22164976bf5db9ef",
+    "scripts/visualize_skew_physical_source.py": "831fb2410a943e2bc806aef4c8491cb020b4a813854a320a268717bb31a91819"
+  },
+  "outputs": {
+    "physical-source-normalization.png": "3b623a52184fc37cee77f612cf853823eb50e3cff6eb58a1ba503dd05e8dc171",
+    "physical-source-normalization.svg": "6ace8a8e942de4467f6d227233b099a4b59be5c9311d5a1f4cb1beba6c9a1302",
+    "generator.py": "831fb2410a943e2bc806aef4c8491cb020b4a813854a320a268717bb31a91819"
+  },
+  "required_declarations": [
+    "source_form_transport",
+    "normalized_source_form_transport",
+    "fibre_last_orientation",
+    "jacobian_eq",
+    "b_column_rational",
+    "b_variation",
+    "twelve_factor",
+    "source_four_form_reduction",
+    "baseWedge_factor",
+    "sourceScalar_image",
+    "sourceScalar_trace"
+  ],
+  "matplotlib_version": "3.10.8",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "elapsed_seconds": 0.5013612090042443,
+  "scope": "Actual chart/factor/orientation identities, selected column and four-form correction; quotient scalar trace; boundary shown explicitly",
+  "limits": [
+    "Visualization is not additional proof evidence",
+    "Packet global orientation convention is sourced; three-swap identity is Lean proved",
+    "No complete relative cohomology, Gauss-Manin realization or full physical-source class identification"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS_FROZEN_SOURCE_REVIEW",
+  "executor": "Pro source_review adversarial source/evidence AI reviewer",
+  "recorded_utc": "2026-10-24T01:38:54.209701+00:00",
+  "source": "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean",
+  "source_sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+  "parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "upstream": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "reviewed_semantics": [
+    "fR is the polynomial derivative with a and v held fixed, evaluated at the chart root",
+    "The new four-coordinate Jacobian is fR/r^13; the base-three Jacobian is fR/r^14",
+    "normalized_source_form_transport reuses the old normalizedPoleCoefficient theorem rather than defining the desired right side as the source",
+    "source_four_form_reduction starts from normalizedPoleCoefficient times actual Kaehler/exterior oldFourForm and derives the physical b-column representative with r^11/(12*fR)",
+    "The correction is literally d(H) wedge da wedge dv wedge dt, where H includes the full r^11/(12*fR) factor; baseWedge_factor proves its fibre-wedge derivative vanishes",
+    "The conditional curve relation and r,z,fR,Delta nonzero hypotheses are explicit",
+    "Both rows are input column zero of the literal packet b matrix; the exact correction is retained",
+    "fibre_last_orientation proves the three-swap minus sign; the packet global residue convention remains a source-reported convention",
+    "sourceScalar is (1/12) times quotientWeight11; sourceScalar_image identifies its scalar image at every existing root and sourceScalar_trace proves trace zero",
+    "rootW reconstruction proves aChart/vChart/fR agreement with the completed generic splitting-field data; generic fR nonzero is reused"
+  ],
+  "limits": [
+    "No Lean executed by this reviewer; passing attempt14 is writer execution evidence until focused receipt audit",
+    "No packet mathematical script or old mathematical checker executed by this reviewer",
+    "No concrete ambient residueScalar/alpha wrapper is present; the old normalized pole coefficient is reused in a new actual-form theorem",
+    "No exterior differential on arbitrary forms, relative cohomology quotient, residue map, Gauss-Manin connection realization or full physical source-class identification is constructed",
+    "The displayed d(H) wedge base term is proved, but its status in a newly constructed de Rham complex is not asserted",
+    "Delta after physical coefficient substitution remains an explicit nonzero hypothesis, not a newly proved generic fact",
+    "The scalar quotient identity alone is not a rank-two source-class identity",
+    "No unsplit descent, primitive, denominator search, clearing, certificate or solve"
+  ],
+  "attribution": "Separate AI review, not independent human review"
+}

@@ -1,0 +1,139 @@
+{
+  "status": "PASS_SAVED_EVIDENCE_AUDIT",
+  "worker": "Pro adversarial source/receipt AI reviewer",
+  "completed_utc": "2026-10-24T01:42:26.551506+00:00",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "elapsed_seconds": 0.030415911998716183,
+  "parent": "bbb8aa406cd2a8b5ddb06d6e14358781b9c215e9",
+  "receipt": "results/skew-physical-source-20261023/lean-development/checker-04/validation.json",
+  "receipt_sha256": "34cae28bd59e3f86e28b74cac7e46806e10710f327852945b179489201fb0e5b",
+  "module_sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+  "source_context_hashes_checked": 54,
+  "output_hashes_checked": 39,
+  "public_declarations": 68,
+  "new_modules_replayed_by_writer": 1,
+  "positive_controls_reported_by_writer": 19,
+  "literal_packet_definition_bindings_reported_by_writer": 11,
+  "packet_binding_mutations_reported_by_writer": [
+    "packet-row-sign",
+    "packet-row-scalar",
+    "packet-input-column"
+  ],
+  "negative_controls_verified": [
+    "missing-r-nonzero-rejected",
+    "missing-fr-nonzero-rejected",
+    "orientation-sign-rejected",
+    "wrong-twelve-factor-rejected",
+    "missing-delta-nonzero-rejected",
+    "dropped-exact-correction-rejected",
+    "scalar-trace-one-rejected"
+  ],
+  "development_attempts": [
+    {
+      "attempt": "attempt-01",
+      "exit_code": 1,
+      "elapsed_seconds": 8.188425994994759
+    },
+    {
+      "attempt": "attempt-02",
+      "exit_code": 1,
+      "elapsed_seconds": 3.930075256001146
+    },
+    {
+      "attempt": "attempt-03",
+      "exit_code": 0,
+      "elapsed_seconds": 3.9184405880005215
+    },
+    {
+      "attempt": "attempt-04",
+      "exit_code": 1,
+      "elapsed_seconds": 4.5116034079983365
+    },
+    {
+      "attempt": "attempt-05",
+      "exit_code": 1,
+      "elapsed_seconds": 4.8021105070001795
+    },
+    {
+      "attempt": "attempt-06",
+      "exit_code": 1,
+      "elapsed_seconds": 4.483985244994983
+    },
+    {
+      "attempt": "attempt-07",
+      "exit_code": 1,
+      "elapsed_seconds": 5.0745509499975014
+    },
+    {
+      "attempt": "attempt-08",
+      "exit_code": 1,
+      "elapsed_seconds": 4.772384588999557
+    },
+    {
+      "attempt": "attempt-09",
+      "exit_code": 1,
+      "elapsed_seconds": 4.964367674998357
+    },
+    {
+      "attempt": "attempt-10",
+      "exit_code": 1,
+      "elapsed_seconds": 5.367965607001679
+    },
+    {
+      "attempt": "attempt-11",
+      "exit_code": 1,
+      "elapsed_seconds": 4.967115519000799
+    },
+    {
+      "attempt": "attempt-12",
+      "exit_code": 1,
+      "elapsed_seconds": 4.834877217996109
+    },
+    {
+      "attempt": "attempt-13",
+      "exit_code": 0,
+      "elapsed_seconds": 4.949588144001609
+    },
+    {
+      "attempt": "attempt-14",
+      "exit_code": 0,
+      "elapsed_seconds": 5.364581512003497
+    }
+  ],
+  "checker_attempts": [
+    {
+      "attempt": "checker-01",
+      "status": "FAIL",
+      "error": "positive-controls failed: .lake/skew-physical-source-controls/controls-fcsgvh48/positive-controls.lean:35:66: error: unexpected token '('; expected ':=', 'where' or '|'\n.lake/skew-physical-source-controls/controls-fcsgvh48/positive-controls.lean:35:21: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  HAdd K (Derivation \u211a K K) K\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n",
+      "commands": 6
+    },
+    {
+      "attempt": "checker-02",
+      "status": "PASS",
+      "error": null,
+      "commands": 13
+    },
+    {
+      "attempt": "checker-03",
+      "status": "PASS",
+      "error": null,
+      "commands": 13
+    },
+    {
+      "attempt": "checker-04",
+      "status": "PASS",
+      "error": null,
+      "commands": 13
+    }
+  ],
+  "parent_ledger_bytes": 418118,
+  "parent_ledger_sha256": "e636477a85bfbdedbaac88202bb2c461cec32db5c914d186fdaffeb8977a3193",
+  "modified_preexisting_paths": [
+    ".github/workflows/lean.yml",
+    "README.md"
+  ],
+  "raw_identical_normalization_only_git_diff": [
+    "results/one-reflection-skew-rank-correction/discussion-127.md"
+  ],
+  "scope": "Read-only source/receipt/hash audit, not a Lean replay or remote CI run; old mathematics not executed."
+}
