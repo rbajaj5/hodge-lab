@@ -46,6 +46,18 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the bounded sixth-power family is excluded
+
+The [A-sixth-power test](notes/skew-A6-denominator-audit-20261024.md)
+retains both compact source rows and all six physical current components.
+Its 4,914-parameter family reduces necessarily to 4,506 coefficients,
+keeping all 4,212 lower coefficients free. An independently reconstructed
+4,507-square augmented minor has determinant **60070 modulo 65521**.
+This excludes the declared bounded family over Q; **no primitive was found**.
+Larger supports and general rational currents remain open. The existing Pro
+chat led the batch, Lean stayed benched, and publication is Hodge Lab only.
+[Executed evidence, visualization, failed attempts and limits](notes/skew-A6-denominator-audit-20261024.md).
+
 ### One-reflection-skew: the bounded fifth-power family is excluded
 
 The [A-fifth-power test](notes/skew-A5-denominator-audit-20261024.md)

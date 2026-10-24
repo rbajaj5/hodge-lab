@@ -1,0 +1,37 @@
+assembled (4560, 4507) seconds 18.48994036699878
+{
+  "status": "ASSEMBLED_DIRECT_QUOTIENT_A6_MATRIX_NO_RANK_CLAIM",
+  "executor": "Pro root constructive lead",
+  "created_utc": "2026-10-24T17:56:16.294364+00:00",
+  "elapsed_seconds": 18.489993838000373,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "2d3cac5e172e57adb330c24931d195e956e10b65f6913da1e4d2ad0c9c9187af",
+  "prime": 65521,
+  "seed": 2026102486,
+  "matrix_shape": [
+    4560,
+    4507
+  ],
+  "matrix_entries": 20551920,
+  "matrix_dtype": "<u2",
+  "matrix_order": "C",
+  "matrix_sha256": "a9dc98a238c3fabc1d19f7fded3ea59c69f836e8c20c9824dafeab3597f45838",
+  "inputs_sha256": "9bf8f320d34d485987866280c3f7925e0d4d1502e48462f2642a96ecf977d627",
+  "parameter_sectors": {
+    "h6": 60,
+    "k6": 234,
+    "P5": 702,
+    "P4": 702,
+    "P3": 702,
+    "P2": 702,
+    "P1": 702,
+    "P0": 702
+  },
+  "structural_dependency": "Imported highest-pole det(Ra-6I)=38 plus reused bounded tangent/support theorem; only P6 constrained. All lower sectors free.",
+  "quotient_rule": "Direct top -6Ar/A^7 and -6Av/A^7; lower -jAi/A^(j+1), At=0; equation multiplied by A^6",
+  "target": "A^6*r^-4*Mb e0/12",
+  "limits": "Assembly only; exclusion requires nonzero augmented rational minor. No rational primitive claimed."
+}

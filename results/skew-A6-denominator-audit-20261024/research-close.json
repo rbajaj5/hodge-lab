@@ -1,0 +1,33 @@
+{
+  "mathematics_closed_utc": "2026-10-24T17:56:56Z",
+  "integration_deadline_utc": "2026-10-24T18:11:56Z",
+  "research_elapsed_seconds": 166,
+  "basis": "Pro reported direct construction and separate reconstruction passed; separate local algebra and exact determinant already passed.",
+  "local_algebra": {
+    "checks": 7,
+    "controls": 3,
+    "seconds": 7.25
+  },
+  "local_checker": {
+    "entries": 20313049,
+    "points": 2254,
+    "seconds": 12.438,
+    "prime": 65521,
+    "determinant": 60070,
+    "controls": 3
+  },
+  "Pro_lead": {
+    "seconds": 19.428,
+    "matrix_shape": [
+      4560,
+      4507
+    ]
+  },
+  "Pro_checker": {
+    "seconds": 18.319,
+    "entries": 20551920,
+    "points": 2280,
+    "controls": 21
+  },
+  "remaining": "IO-only artifact binding, figure inspection, notebook integration, normal push and remote readback. No further mathematical run."
+}

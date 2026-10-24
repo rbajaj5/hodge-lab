@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T17:55:57.622783+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "results/skew-A6-denominator-audit-20261024/algebra/freeze_artifacts.py"
+  ],
+  "checks": {
+    "successful_execution": true,
+    "bounded_execution": true,
+    "checker_snapshot_matches_execution": true,
+    "checker_snapshot_matches_validation": true,
+    "final_checker_matches_snapshot": true,
+    "runner_snapshot_matches_execution": true,
+    "final_runner_matches_snapshot": true,
+    "injection_matches_validation": true,
+    "pinned_connection_recorded": true,
+    "prior_injection_pin_recorded": true
+  },
+  "checker_sha256": "642e1ff19774630891bb9e18d51d10f11d7aacc25b30651e3a6839cb88b62d2b",
+  "injection_sha256": "df304fc2e3ad44fdb572b8d38149e8b31a2bd9674e601c17163ec0561901f048",
+  "execution_seconds": 7.25,
+  "exact_checks": 7,
+  "controls": 3,
+  "scope": "Only new A6 highest-pole structural identities; original receipts frozen."
+}

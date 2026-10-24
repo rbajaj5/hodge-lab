@@ -1,0 +1,49 @@
+{
+  "status": "COORDINATOR_REPORTED_EXECUTIONS_NOT_RUN_BY_PRO",
+  "provenance": "User relay during the active A6 batch; exact coordinator execution timestamps were not supplied.",
+  "structural": {
+    "exact_checks": 7,
+    "mutation_controls": 3,
+    "seconds": 7.25,
+    "script_sha256": "642e1ff19774630891bb9e18d51d10f11d7aacc25b30651e3a6839cb88b62d2b",
+    "det_Ra_minus_6I": "38",
+    "tau6": "-8*r^7+21*r",
+    "top_parameters": 294,
+    "unrestricted_lower_parameters": 4212,
+    "necessary_columns": 4506,
+    "original_parameters": 4914,
+    "injection_shape": [
+      4914,
+      4506
+    ],
+    "next_pole": "(Ra-5I)Q5+W6|A=0=0",
+    "failures": [],
+    "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d"
+  },
+  "minor": {
+    "prime": 65521,
+    "seed": 2026102486,
+    "rows": 4507,
+    "columns": 4507,
+    "entries": 20313049,
+    "admissible_points": 2254,
+    "determinant": 60070,
+    "seconds": 12.438,
+    "mutation_controls": 3,
+    "timeout": false,
+    "backend": "python-flint0.9.0 exact nmod_mat.det",
+    "script_sha256": "c6e087f7e7f4de30ac85a56d957fb6b6289bf0b0991f85f7c0b5991192752984",
+    "report_sha256": "e76ec5b025e4b60e1cff69539b3cc9030f366ebf32e58d7ca55d2764f9bf0d5a",
+    "local_uint16_npy_sha256": "c12a14314359c8ba92f967238cf55e4d88e89b01b160e0af8be8039e8bea9817",
+    "coordinator_reports_execution_before_receiving_Pro_matrix_or_numeric_result": true,
+    "delivered_matrix_binding": "PENDING_COORDINATOR_IO_ONLY_COMPARISON",
+    "not_in_this_packet": "Coordinator scripts, original report, and frozen NPY belong to coordinator-owned audit."
+  },
+  "goal": {
+    "owner": "Original Codex coordinator",
+    "started_utc": "2026-10-24T17:54:10Z",
+    "deadline_utc": "2026-10-24T18:39:10Z",
+    "integration_minutes_after_mathematical_closure": 15,
+    "worker_has_goal_activation_api": false
+  }
+}
