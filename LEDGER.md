@@ -5597,3 +5597,30 @@ Pre-publication preservation check: all 3,680 prior files are unchanged; the
 complete 418,118-byte parent ledger remains a byte-for-byte prefix. Staged
 proof, documentation, workflow and ledger text pass the whitespace check.
 The fetched remote main still matches the pinned parent.
+
+
+### Checkpoint 141 — published proof and remote CI outcome, 23 October 2026 EDT
+
+The reviewed proof was pushed normally as
+[a4a253e](https://github.com/rbajaj5/hodge-lab/commit/a4a253edd610e9a52ef2a44baafdbc158285b176).
+The complete [Lean CI run 40051515847](https://github.com/rbajaj5/hodge-lab/actions/runs/40051515847)
+succeeded on that exact commit. The fresh GitHub Actions focused receipt
+passed 68 declaration audits, one new-module kernel replay, 19 positive and
+seven intended False controls in 33.765s, plus 11 literal bindings and
+three binding mutations. These counts are separate from Pro's local run.
+The [coordinator receipt review](results/skew-physical-source-20261023/coordinator-ci/40051515847/ci-receipt-review.json)
+verified 51 committed-file bindings, 39 command streams, allowed
+axioms and all seven intended failures; the focused outputs are retained.
+
+The bounded unit is complete within its explicit curve/chart hypotheses.
+A compatible physical curve-field/Kähler realization, physical Delta
+nonvanishing and residue/cohomology comparison remain dependencies. No
+primitive, global clearing or certificate was proved. No upstream post,
+reply, edit or PR: Posts 1–29 and tally 29 discussions/one closed maintenance
+PR/zero accepted authored solves are unchanged. Historical ledger and
+receipts remain preserved.
+
+
+The separate [CPU checks workflow](https://github.com/rbajaj5/hodge-lab/actions/runs/40051515841)
+was still in progress at the saved observation. Its completion is not claimed
+or used as evidence for this Lean unit.

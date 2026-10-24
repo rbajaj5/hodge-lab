@@ -450,3 +450,40 @@ streams, all 68 declarations, the 19 positive examples and seven intended
 False-goal failures. It executed no Lean or symbolic replay. It confirmed
 that the actual wedge derivation and factor constancy are proved, and that
 the physical-field, discriminant and cohomology boundaries remain explicit.
+
+
+## Published proof and verified remote CI
+
+The reviewed proof, figure, failed attempts and audit were pushed normally as
+[`a4a253edd610e9a52ef2a44baafdbc158285b176`](https://github.com/rbajaj5/hodge-lab/commit/a4a253edd610e9a52ef2a44baafdbc158285b176).
+The complete [Notebook Lean proofs run 40051515847](https://github.com/rbajaj5/hodge-lab/actions/runs/40051515847)
+**succeeded on that exact commit**, including the prior notebook checks and
+the new physical-source normalization step.
+
+The [fresh remote focused receipt](../results/skew-physical-source-20261023/coordinator-ci/40051515847/focused/validation.json)
+passed **68 declaration audits, one new-module kernel replay, 19 positive
+controls and seven intended false-goal controls** in **33.765 seconds**.
+It also passed eleven literal packet-definition bindings and three binding
+mutations. This is a separate GitHub Actions execution, not a relabeling of
+Pro's local receipt. Counts from the two runs are not added together.
+
+The coordinator's [receipt review](../results/skew-physical-source-20261023/coordinator-ci/40051515847/ci-receipt-review.json)
+binds 51 unique files to committed bytes, verifies all 39 command
+stream hashes, checks the permitted axioms and confirms all seven negative
+controls reached their intended False goals. Remote receipt SHA256:
+`b92be6da649c3b58aea79af1a6ec0a0f6b3b2c916ef0f52f1ab94b6c32aae6d7`. Artifact 12543761894 has archive
+SHA256 `2f6f143650a170f621ce2ad8f4a8eae9dc8dd8c18b2962c15be3a4c7f92bfbbd`. The full focused output and download
+metadata are retained. Lean 4.31.0 and Mathlib
+`fabf563a7c95a166b8d7b6efca11c8b4dc9d911f` remain pinned.
+
+This closes the bounded conditional four-form normalization unit. The next
+substantive dependency remains a compatible physical curve-field realization
+and Kähler pullback, with physical discriminant nonvanishing, followed by the
+residue/cohomology source-class comparison. A primitive, global clearing and
+a certificate remain outside this result. No upstream publication; Posts
+1–29 and the contribution tally remain unchanged.
+
+
+The separate [CPU checks workflow](https://github.com/rbajaj5/hodge-lab/actions/runs/40051515841)
+was still in progress at the saved observation. Its completion is not claimed
+or used as evidence for this Lean unit.

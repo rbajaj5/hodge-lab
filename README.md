@@ -57,6 +57,8 @@ realization with compatible Kähler pullback, and the cohomology/connection
 identification, remain open dependencies. The scalar alone is not the full
 two-row source; no primitive, certificate or solve is claimed.
 
+[Full Lean CI passed on the published proof](https://github.com/rbajaj5/hodge-lab/actions/runs/40051515847).
+
 [Proof, commands and precise limits](notes/skew-physical-source-normalization.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean) · [Execution and review evidence](results/skew-physical-source-20261023)
 
 ### One-reflection-skew: scalar extension and quotient traces in Lean

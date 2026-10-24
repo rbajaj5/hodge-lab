@@ -1,0 +1,9 @@
+import HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open Polynomial HodgeLab.OneReflectionSkew.ChartSubstitution
+open HodgeLab.OneReflectionSkew.PhysicalCoverBinding
+open HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+open HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+example : (5/6:ℚ)= -fibreP 0 0 0 0 1*(bColumn0 0 0 0 0+bColumn1 0 0 0 0*1)-
+    fibreP 0 0 0 0 1*correctionPrime 0 0 0 0 1+(5/6:ℚ)*fibrePPrime 0 0 0 1*correction 0 0 0 0 1 := by
+  norm_num [fibreP,fibrePPrime,bColumn0,bColumn1,correction,correctionPrime,delta,n0,n1,rNumerator,rNumeratorPrime]
