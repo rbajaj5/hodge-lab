@@ -1,0 +1,65 @@
+mkdir -p failed for path /root/.config/matplotlib: [Errno 30] Read-only file system: '/root/.config'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-japth0un because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-A-denominator/results/skew-A-denominator-20261024/render.py", line 41, in <module>
+    fig.savefig(svg,metadata={'Date':None});fig.savefig(png,dpi=160,metadata={'Software':'Matplotlib'});plt.close(fig)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/backend_bases.py", line 2186, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/backend_bases.py", line 2042, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/backends/backend_svg.py", line 1351, in print_svg
+    self.figure.draw(renderer)
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/artist.py", line 94, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/figure.py", line 3257, in draw
+    mimage._draw_list_compositing_images(
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/image.py", line 134, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/axes/_base.py", line 3226, in draw
+    mimage._draw_list_compositing_images(
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/image.py", line 134, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/text.py", line 752, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/text.py", line 382, in _get_layout
+    w, h, d = _get_text_metrics_with_cache(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/text.py", line 69, in _get_text_metrics_with_cache
+    return _get_text_metrics_with_cache_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/text.py", line 77, in _get_text_metrics_with_cache_impl
+    return renderer_ref().get_text_width_height_descent(text, fontprop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/backends/backend_svg.py", line 1299, in get_text_width_height_descent
+    return self._text2path.get_text_width_height_descent(s, prop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/textpath.py", line 60, in get_text_width_height_descent
+    self.mathtext_parser.parse(s, 72, prop)
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/mathtext.py", line 86, in parse
+    return self._parse_cached(s, dpi, prop, antialiased, load_glyph_flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/mathtext.py", line 100, in _parse_cached
+    box = self._parser.parse(s, fontset, fontsize, dpi)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8974c152662/constructive-python/matplotlib/_mathtext.py", line 2167, in parse
+    raise ValueError("\n" + ParseException.explain(err, 0)) from None
+ValueError: 
+\det=26947\pmod{32003}\ne0
+          ^
+ParseFatalException: Unknown symbol: \pmod, found '\'  (at char 10), (line:1, col:11)

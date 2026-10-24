@@ -18,19 +18,20 @@ by the user toward the solution. Zero trace is reused context, not the
 success criterion. A partial current counts only within its documented scope;
 the remaining source must stay explicit.
 
-The [new full-residual batch](skew-full-residual-20261024.md) reuses the
-centered Q/R2 and beta inputs. A fixed polynomial mixed-current family is
-excluded by its nonzero relative residue. A corrected triangular current
-and a simpler comparator both leave exact nonzero two-row remainders.
-The full coupled connection satisfies the generic discriminant image
-condition, giving compatible local boundary values. This preserves the
-broader coupled route but does not construct a global rational primitive.
-The new note distinguishes direct checks, failed drafts and reported evidence.
-Pro's delivered packet also excludes a specified mixed first-jet completion
-and a 702-coefficient six-component physical Laurent family. These are
-scoped routes, not a complete obstruction to rational compact currents.
-The fresh packet is source-bound and preserved with its failures; local
-replays are separately recorded in the integrated note.
+The [latest A-denominator batch](skew-A-denominator-audit-20261024.md) tests
+all six physical components in B+B/A, with the explicit numerator bounds
+in that note. The algebra worker's necessary double-pole condition forces
+tangency at A=0. Pro consumed it to reduce the combined 1,404-parameter
+family to 996 possible solution parameters, then obtained an exact
+augmented-minor exclusion. This rules out that combined family, including
+the requested denominator sector, while retaining both source rows and all
+physical derivatives. It does not exclude general rational compact currents.
+
+The [previous full-residual batch](skew-full-residual-20261024.md), centered
+Q/R2, beta, source conventions and earlier Laurent exclusion remain reused
+inputs. Compatible local boundary data are still not a global primitive.
+The next construction must escape a restriction in an excluded family;
+another supporting lemma is not itself a source cancellation.
 
 Reuse the [physical trace bridge and its evidence](skew-physical-trace-bridge.md)
 at notebook commit `0ddf3af6bca227bbba119d6af8e3e0b102e18254`, including proof
@@ -45,11 +46,11 @@ Pin the current protected input and any changed dependencies at actual dispatch.
 
 | Owner role | Assignment and output | Receiver and acceptance condition | State |
 | --- | --- | --- | --- |
-| Coordinator | Pin the target and common interface; integrate the bounded outcome | Same parent, source convention, fixed problem, explicit limits | Actual Goal used; parent `84f294e`, 45-minute research bound; scoped local evidence integrated |
-| Constructive lead, reused Pro chat | Seek mixed `a,v,t` fluxes with `Div_N(Z)=R2` and test the original physical source | Return a full candidate or a scoped failed family with exact evidence | Consumed both local handoffs; delivered fresh packet with corrected triangular failure, first-jet exclusion and 702-coefficient physical test; no primitive found |
-| Local algebra worker | Construct current and exact remainder, preserving both rows | Lead consumes a concrete residual; separate checker receives reproducible formulas | Reused Q/R2; delivered fixed-L residue obstruction and generic two-row compatibility, with distinct receipts |
+| Coordinator | Pin the target and common interface; integrate the bounded outcome | Same parent, source convention, fixed problem, explicit limits | Actual Goal used; parent `aa5a30d`, 45-minute research bound; local/provenance evidence and append-only checkpoint integrated |
+| Constructive lead, reused Pro chat | Test the A denominator in the full six-component source equation | Return a full candidate or exact scoped exclusion | Consumed the necessary pole reduction; explicitly tested the larger B+B/A family; delivered a new 997-square nonzero augmented minor; no primitive found |
+| Local algebra worker | Derive the A-pole constraint, complete bounded tangent module and reduced operator | Lead uses a smaller necessary family; checker verifies the proof and source binding | Consumed: 702 denominator parameters reduce to 294; with the old sector, 996. Exact proof, sparse injection and receipts retained |
 | Lean implementer | No assignment in this batch | None until the user restores this role | **Benched** |
-| Separate local checker | Check new operators, full residuals, coupled compatibility and Pro's physical Laurent certificate | Coordinator receives executed evidence and explicit limits | Independent decisive-minor reconstruction and different elimination passed; first-jet Pro-code replay and separate reasoning review recorded; earlier failures preserved |
+| Separate local checker | Check the new pole theorem and decisive joint-family minor | Coordinator receives executed evidence and explicit limits | Independent structural audit passed; full decisive-minor reconstruction is recorded in the integrated audit. Timed-out expansion and its replacement retained |
 
 Roles may be sequential. Do not create five workers to match five rows.
 Construction and algebra can work in parallel after agreeing their interface.

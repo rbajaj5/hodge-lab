@@ -1,0 +1,85 @@
+{
+  "status": "PASS_EXACT_NECESSARY_TANGENCY_REDUCTION_NOT_SOURCE_CANCELLATION",
+  "utc": "2026-10-24T16:08:03.890646+00:00",
+  "seconds": 0.2970000000059372,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "473e333ef1b3d21fdde74372aec2ae01c50a8e3b32af1087177448e0798f4395",
+  "checks": [
+    "a-residue matrix from pinned literal connection",
+    "shifted a-residue invertible",
+    "transverse matrices have no a-pole",
+    "full two-row target has no a-pole",
+    "logarithmic vector field T(A)=ell*A",
+    "div(T)-ell=q0",
+    "Fermat coordinate identity",
+    "Eisenstein constant has valuation one at r^2+1",
+    "smooth Fermat derivative in r",
+    "Delta is generically a unit along A=0 by v degrees 3<6",
+    "normal-flux polynomial remainder",
+    "original normal flux has that remainder",
+    "complete two-parameter polynomial syzygy solves all coefficients",
+    "four normal-flux constraints have nonzero exact minor",
+    "syzygy is (Tr,Tv)*h",
+    "primitive tangent vector has no hidden r denominator",
+    "r quotient derivative",
+    "v quotient derivative",
+    "t quotient derivative with A_t=0",
+    "294-column exact sparse injection stays inside 702-column numerator box"
+  ],
+  "mutations": [
+    {
+      "name": "reverse T_v sign",
+      "nonzero_witness_r1_v2": "-12"
+    },
+    {
+      "name": "wrong shifted-residue sign",
+      "det_difference": "-2/3"
+    }
+  ],
+  "A": "(r**18 + r**12 + (r*v - 1)**6)/r**15",
+  "T_r": "r**2*(r**6 + 1)",
+  "T_v": "-3*r**6 + r*v*(2*r**6 + 1) - 2",
+  "ell": "3*r*(r**6 - 1)",
+  "q0": "7*r**7 + 6*r",
+  "a_residue": [
+    [
+      "0",
+      "(-4*b**2*c*d + b*c**3)/(24*b**3*d - 6*b**2*c**2)"
+    ],
+    [
+      "0",
+      "(-4*b**3*d + b**2*c**2)/(12*b**3*d - 3*b**2*c**2)"
+    ]
+  ],
+  "shifted_residue_determinant": "4/3",
+  "normal_remainder": "6*(2*p0*r**18 + p0*r**12 + p0*x**5 + 2*p1*r**18*x - p1*r**18 + p1*r**12*x - p1*r**12 + 2*p2*r**18*x**2 - p2*r**18*x + p2*r**12*x**2 - p2*r**12*x + q0s*r**2*x**5 - q1*r**20 - q1*r**14 - q2*r**20*x - q2*r**14*x)/r",
+  "normal_constraint_minor": "1296*r**34*(2*r**6 + 1)**3",
+  "multiplier_box": {
+    "m": [
+      -10,
+      -6
+    ],
+    "n": [
+      0,
+      1
+    ],
+    "k": [
+      0,
+      2
+    ]
+  },
+  "reduced_operator": "[T_r*partial_r+T_v*partial_v+q0*I+ell*A*M_a+t*T_v*M_b] h +(partial_t+N_t) P_t = A*r^-4*M_b*e0/12",
+  "dimension": {
+    "original": 702,
+    "tangent_h": 60,
+    "free_P_t": 234,
+    "necessary_reduced": 294
+  },
+  "injection_sha256": "047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b",
+  "prime_and_smooth": "w=(rv-1)/r^2 identifies r^3*A with w^6+r^6+1. Eisenstein at r^2+1 over QQ[r] proves irreducibility; derivative 6*r^5 is a unit on r!=0, hence this divisor is smooth. Delta|A=0 has v-degree3, whereas H=r^15*A has v-degree6, so Delta is generically a unit there.",
+  "domain": "Characteristic zero. Rational function identities in QQ(r,v,t), on r*A*Delta != 0. The pole proof uses the generic A=0 boundary away from b*Delta=0; no ordinary point with A=0 is admitted.",
+  "scope": "Every solution and every homogeneous kernel in the stated new numerator box factors through this injection. This gives no kernel dimensions beyond at most294, no matrix rank upper bound, no solution, and no exclusion by itself. The residue constraint is necessary, not sufficient.",
+  "old_box_intersection": "B intersect (B/A)={0}: for nonzero L in B, deg_v(A*L)=6+deg_v(L)>2."
+}

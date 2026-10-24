@@ -1,0 +1,40 @@
+{
+  "status": "PASS_EXACT_QQ_JOINT_FINITE_FAMILY_EXCLUSION",
+  "executor": "a_denominator_checker AI worker",
+  "created_utc": "2026-10-24T16:10:19.760355+00:00",
+  "seconds": 3.575658382000256,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "packet_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "1a40ddc93cf38ddf781ba6f27dae1de16685993a389fc442043887a3567c812e",
+  "author_validation_sha256": "931d4de708243a8ce676cb81b988debf0b283cb9b4973c92de16717254a9603b",
+  "inputs_sha256": "1ba4cb45c4bfe2b750ae15eebc23e5ea3c8beb9376638172164d845a9eeebcb2",
+  "matrix_sha256": "dfd559995c74bf09fab0b74345a65672d80e0e19538e0b5db6c6393e5016babc",
+  "matrix_shape": [
+    1056,
+    997
+  ],
+  "entries_reconstructed": 1052832,
+  "domain_points_checked": 528,
+  "author_modular_rank_coefficient": 996,
+  "author_modular_rank_augmented": 997,
+  "independent_augmented_minor_det_mod_prime": 26947,
+  "prime": 32003,
+  "mutations": {
+    "point": [
+      19366,
+      2493,
+      2152
+    ],
+    "nonzero_differences": {
+      "omit_r_quotient_term": 31126,
+      "omit_v_quotient_term": 388,
+      "reverse_quotient_sign": 31025,
+      "omit_Av_connection_chain": 26921,
+      "omit_source_1_over_12": 3238,
+      "reverse_source_sign": 26773,
+      "omit_Pt_derivative": 23286
+    }
+  },
+  "scope": "Reduced996-parameter current family: h60,Pt234,Laurent702. Exact exclusion follows from the997augmented minor. Exclusion of original1404parameter B/A+B additionally uses the imported necessary tangency/support theorem; that structural theorem was not rerun by this checker. No general current exclusion or solve."
+}

@@ -1,0 +1,20 @@
+PASS a-residue matrix from pinned literal connection
+PASS shifted a-residue invertible
+PASS transverse matrices have no a-pole
+PASS full two-row target has no a-pole
+PASS logarithmic vector field T(A)=ell*A
+PASS div(T)-ell=q0
+PASS normal-flux polynomial remainder
+PASS original normal flux has that remainder
+PASS complete two-parameter polynomial syzygy solves all coefficients
+PASS syzygy is (Tr,Tv)*h
+PASS primitive tangent vector has no hidden r denominator
+PASS r quotient derivative
+PASS v quotient derivative
+PASS t quotient derivative with A_t=0
+{
+  "status": "PASS_EXACT_NECESSARY_TANGENCY_REDUCTION_NOT_SOURCE_CANCELLATION",
+  "checks": 16,
+  "mutations": 2,
+  "seconds": 0.3120000000053551
+}

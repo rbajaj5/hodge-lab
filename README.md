@@ -46,6 +46,20 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: adding an A denominator still fails within the tested bounds
+
+The [new bounded search](notes/skew-A-denominator-audit-20261024.md) permits
+all six current components in `B + B/A`, where B has r exponents -10 through
+2 and v,t degrees at most 2. A checked pole condition forces the new
+numerators tangent to `A=0`, reducing 1,404 initial coefficients to 996
+necessary parameters. A nonzero 997-square augmented minor excludes this
+entire declared family, including mixed cancellations between its sectors.
+Both source rows and every physical derivative remain. This does not
+exclude other numerator bounds or pole divisors, and no primitive was found.
+Goal and the reused Pro chat coordinated the batch; Lean remains benched.
+[Checks, failures and limits](notes/skew-A-denominator-audit-20261024.md)
+· [Support and certificate figure](results/skew-A-denominator-20261024/figure-03/result/A-denominator-certificate.png).
+
 ### One-reflection-skew: full-residual tests and coupled boundary data
 
 The [next bounded cancellation batch](notes/skew-full-residual-20261024.md)

@@ -1,0 +1,34 @@
+assembled (1056, 997) seconds 1.1569175039985566
+{
+  "status": "EXACT_QQ_FINITE_FAMILY_EXCLUDED_BY_MODULAR_MINOR",
+  "executor": "Pro root constructive lead",
+  "created_utc": "2026-10-24T16:09:06.426873+00:00",
+  "elapsed_seconds": 2.6775042269982805,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "6483b3c740ff4c665ae51223745e119de9403a0bd4ee396f9070d788501ccf54",
+  "prime": 32003,
+  "seed": 2026102416,
+  "matrix_shape": [
+    1056,
+    997
+  ],
+  "rank_denominator_tangent_block": 294,
+  "rank_coefficient": 996,
+  "rank_augmented": 997,
+  "family": "Necessary tangent subfamily of full six-component B plus B/A; original1404 parameters, necessary996",
+  "parameter_sectors": {
+    "h": 60,
+    "Pt": 234,
+    "Laurent": 702
+  },
+  "structural_dependency": "Externally checked necessary P_r=T_r h,P_v=T_v h and support bound; coordinator source proof is imported evidence, not a root rerun",
+  "quotient_rule": "direct -Ar/A^2 and -Av/A^2 retained; At=0; equation multiplied by A",
+  "full_operator": "A*sum_i(partial_i+Nphysical_i)F_i, Nphysical=(Ar Ma,Av Ma+t Mb,Nt)",
+  "target": "A*r^-4 Mb e0/12",
+  "matrix_sha256": "dfd559995c74bf09fab0b74345a65672d80e0e19538e0b5db6c6393e5016babc",
+  "inputs_sha256": "1ba4cb45c4bfe2b750ae15eebc23e5ea3c8beb9376638172164d845a9eeebcb2",
+  "limits": "No completeness beyond declared family and imported necessary-condition theorem; deficient modular rank cannot prove QQ inconsistency without an exact rank upper bound. No primitive or solve claimed."
+}

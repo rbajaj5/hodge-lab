@@ -1,0 +1,46 @@
+{
+  "parent": "aa5a30dff2fd70994c48c484845981c141e77ef9",
+  "upstream": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "upstream_status": "Unchanged coordinator-provided pin, not fetched again",
+  "start_utc": "2026-10-24T16:03:55Z",
+  "mathematics_stop_utc": "2026-10-24T16:11:10Z",
+  "deadline_utc": "2026-10-24T16:48:11Z",
+  "inputs": {
+    "AGENTS.md": {
+      "bytes": 7455,
+      "sha256": "dcd3c3640a0486d2f74abae2a8f871e69bd0879490a130193bc83d8a40e5b855",
+      "raw_equals_parent": true
+    },
+    "README.md": {
+      "bytes": 32970,
+      "sha256": "b979ea8a543f2eb39231f4abea47539fe7cc3e5065b3493da653cce35185f346",
+      "raw_equals_parent": true
+    },
+    "LEDGER.md": {
+      "bytes": 468572,
+      "sha256": "0c2045902f3a81c4641e189f485f3074f91e2a07eed98f1f17d1d427f23d8154",
+      "raw_equals_parent": true
+    },
+    "notes/one-reflection-skew-team-board.md": {
+      "bytes": 7356,
+      "sha256": "e54403fa67e016fcda514000051cc542c389eb3176dde9e678c70fe2424205af",
+      "raw_equals_parent": true
+    },
+    "notes/skew-full-residual-20261024.md": {
+      "bytes": 24351,
+      "sha256": "2397f7fe6936c0aed0911795fe5c6170a87cfafe08fe55f16cc8e9f81142bdc8",
+      "raw_equals_parent": true
+    },
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": {
+      "bytes": 12399,
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+      "raw_equals_parent": true
+    }
+  },
+  "goal": "Active coordinator Goal relayed; worker has no Goal API",
+  "publication": "No worker commit/push/upstream action",
+  "old_checks_replayed": false,
+  "new_math_failed_processes": 0,
+  "new_math_timeouts": 0,
+  "structural_evidence": "Coordinator relayed16authorchecks+2controls and separatechecker agreement; original receipts not exported by worker. Explicit theorem/proof in STRUCTURAL-DEPENDENCY.md."
+}

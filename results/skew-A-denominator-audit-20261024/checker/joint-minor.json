@@ -1,0 +1,52 @@
+{
+  "status": "PASS: exact characteristic-zero exclusion of declared joint V+V/A family, using independently checked necessary reduction",
+  "script_sha256": "610c0ebecbcca001cacea08b4029edc37131e2bd0c595ba759cce6a70f637b7b",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "inputs_sha256": "1ba4cb45c4bfe2b750ae15eebc23e5ea3c8beb9376638172164d845a9eeebcb2",
+  "source_matrix_csv_sha256": "dfd559995c74bf09fab0b74345a65672d80e0e19538e0b5db6c6393e5016babc",
+  "author_validation_sha256": "931d4de708243a8ce676cb81b988debf0b283cb9b4973c92de16717254a9603b",
+  "minor_order_sha256": "9cf443baefca4d0e6cea6a49338e150dc5840078d6884acf7ebd3838f552dd6e",
+  "structural_report_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "canonical_rebuilt_minor_bytes_sha256": "2ee74f4d29f183fd72dbb62df9e233aa407d957883106fa56483761a94ca0e08",
+  "prime": 32003,
+  "prime_verified": true,
+  "minor_shape": [
+    997,
+    997
+  ],
+  "entries_checked": 994009,
+  "sample_points_checked": 499,
+  "denominator_evaluations": 251995,
+  "coefficient_columns": 996,
+  "basis_counts": {
+    "h": 60,
+    "Pt": 234,
+    "Laurent": 702
+  },
+  "determinant": 26947,
+  "gaussian_row_swaps": 2,
+  "negative_control": {
+    "omitted_term": "-q*h in A-scaled tangent operator (the denominator derivative)",
+    "point_index": 0,
+    "point": [
+      19366,
+      2493,
+      2152
+    ],
+    "row": 0,
+    "column": 0,
+    "correct_entry": 846,
+    "mutant_entry": 357,
+    "nonzero_difference": 31514
+  },
+  "normalization": "Entire equation multiplied by A. Old Laurent columns scaled A; reduced tangent columns and Pt columns have no1/A; source A*r^-4 M_b e0/12.",
+  "operator": "Coefficient Jacobians derive physical connection. Tangent column uses T_r*h_r+T_v*h_v+(divT-q)*h+q*A*M_a*h+t*T_v*M_b*h, q=3r(r^6-1). Pt uses partial_t+N_t.",
+  "method": "Independently authored rational-polynomial evaluation and symbolic monomial derivatives; normalized-pivot Gaussian elimination. No Pro script execution, no new random points, no exploratory matrix search.",
+  "Delta_at_a_zero": "b^2*(4*b*d-c^2), directly confirmed against pinned JSON. Opposite-sign prose in earlier external handoff is corrected here; historical receipts are unchanged.",
+  "characteristic_zero_reason": "The integer lifts of these499 finite-field points have all rational input denominators prime to32003. Thus the rational997-square augmented determinant reduces to26947 and is nonzero. Its997 columns are independent, while coefficient count is996. This directly closes the kernel/rank upper-bound issue, without assuming unknown solution coefficients have denominators prime to32003.",
+  "family_conclusion": "No full six-component current with every scalar component in V+V/A can solve the pinned equation; in particular none in V/A. V has -10<=m<=2,0<=n,k<=2. The original1404-generator sum is covered by the independently checked necessary996 family.",
+  "limits": "Does not exclude larger supports, higher A-poles, extra denominators, arbitrary rational compact currents or fibre-dependent sextic functions. No target solve or homogeneous certificate. Only first997 rows reconstructed, not the remaining59 rows of the1056-row Pro matrix. Separate Pro replay/checker runs are not ours.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "sympy": "1.14.0"
+}

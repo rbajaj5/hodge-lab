@@ -1,0 +1,167 @@
+A-denominator structural reduction, 24 October 2026
+===================================================
+
+This is a necessary, source-bound reduction of the proposed six-current
+family. It constructs neither a primitive nor a nonzero kernel. It does not
+run a sample matrix search. The original 702 numerator coefficients reduce
+to 294 possible solution coefficients before imposing the remaining full
+two-row operator equation. The same reduction applies to every homogeneous
+kernel of that original finite family.
+
+Input and conventions
+---------------------
+Read-only repository parent: aa5a30dff2fd70994c48c484845981c141e77ef9.
+Pinned connection JSON SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+This is the same literal benediamond packet with the fqlx compact connection.
+Positive packet orientation, two compact rows (e0,e1), column inputs, d+N.
+No Lean or prior completed rank/search/residue certificate was replayed.
+
+Let R=Q[r,r^-1,v,t],
+  A=r^3+r^-3+(rv-1)^6/r^15,
+  b=tv, c=t(1-t^2)/7, d=1+t^6,
+  N=(A_r M_a, A_v M_a+t M_b, N_t),
+  N_t=v M_b+c' M_c+d' M_d.
+The target is the complete two-vector S=r^-4 M_b e0/12.
+Let B be the scalar span r^m v^n t^k with -10<=m<=2, 0<=n,k<=2.
+The family is F_i=P_i/A, where every component of P_r,P_v,P_t lies in B.
+
+1. The new and old scalar families have zero intersection
+--------------------------------------------------------
+If L lies in B and L=P/A with P in B, then A L=P. Over Q(r,t)[v],
+deg_v(A L)=6+deg_v(L)>2 for every nonzero L. Thus L=P=0.
+Consequently B and B/A have no overlap, including after constant-field
+extension. A proposed sum of all six old and new sectors starts with 1404
+independent coefficients; it is not an inclusion of the old box in the new.
+
+2. The A^-2 coefficient forces normal tangency
+---------------------------------------------
+Directly from the pinned matrices,
+  R_a=Res_{a=0}(M_a da)=[[0,-c/(6b)],[0,-1/3]],
+  det(R_a-I)=4/3.
+M_b,M_c,M_d and both rows of S have no a-pole at the generic a=0
+boundary away from b Delta=0. These statements are symbolically checked
+from the literal JSON, not taken only from its descriptive residue field.
+
+The divisor A=0 is prime and smooth in Spec R. Indeed the invertible
+Laurent coordinate change w=(rv-1)/r^2 gives
+  r^3 A=w^6+r^6+1.
+The polynomial w^6+r^6+1 is Eisenstein at the prime r^2+1 of Q[r]: its
+constant coefficient is divisible once by r^2+1; all intermediate
+coefficients are zero; its leading coefficient is1. Gauss's lemma gives
+irreducibility, preserved by adjoining t and localizing at r. Its derivative
+in r is6r^5, a unit on r!=0, so its divisor is smooth in characteristic zero.
+The generic divisor is away from b=0 and Delta=0: H=r^15 A has v-degree6,
+whereas b has degree1 and Delta|a=0,b=tv has nonzero degree3. Thus neither
+can be divisible by H. All boundary arguments below are at this generic
+divisor, NOT at an ordinary point in the allowed open r*A*Delta!=0.
+
+Put Q=A_r P_r+A_v P_v (a two-vector). The only order-two A-pole in
+Div_N(P/A) is
+  A^-2 (R_a-I) Q.
+The -I comes from differentiating 1/A. The R_a comes from M_a dA.
+Other terms have at most simple A-poles. Because S has no A-pole and
+R_a-I is invertible over the divisor function field, Q=0 modulo A.
+The prime ideal (A) in R is the intersection with that divisor's generic
+valuation ideal. Thus this is divisibility in R, not merely pointwise
+vanishing on a chosen specialization. It applies independently to both
+compact rows. No field extension or sheet trace is used.
+
+3. The full low-v-degree tangent module has one generator
+--------------------------------------------------------
+Set x=rv-1, C=r^18+r^12, H=x^6+C, and
+  B0=6r^11(2r^6+1), lambda=(2r^6+1)/(r^6+1).
+Over Q(r,t), write
+  P_r=p0+p1*x+p2*x^2,
+  P_v=q0+q1*x+q2*x^2,
+  E=P_r+r^2 P_v.
+The normal tangency condition is equivalently H | H_r P_r+H_v P_v.
+Its exact remainder is
+  B0 P_r + (6/r)[ E0*x^5-C*E1-C*E2*x ].
+The coefficients of x^5,x^2,x^0,x^1 force respectively
+  E0=0, p2=0, E1=lambda*p0, E2=lambda*p1.
+There are exactly four independent equations (an explicit nonzero
+four-square minor is saved), so this is the complete solution, not merely
+a sufficient syzygy. Consequently
+  (P_r,P_v)=(T_r,T_v) h,
+  T_r=r^2(r^6+1),
+  T_v=r(2r^6+1)v-(3r^6+2),
+with deg_v h<=1 initially over Q(r,t).
+
+There is no hidden denominator in h. The ring R is a UFD; the two
+polynomials T_r,T_v are coprime there. For example the possible nonunit
+content factor r^6+1 of T_r is coprime to the constant-v coefficient
+3r^6+2 of T_v. Any denominator of h in lowest terms would divide both
+T_r and T_v, which is impossible. Hence h belongs to R.
+
+4. Support endpoints are exact; cancellations cannot enlarge the box
+-------------------------------------------------------------------
+View h as a Laurent polynomial in r with coefficients in Q[v,t].
+The leading r term of T_r is r^8, so max_r(T_r h)=max_r(h)+8;
+its extreme coefficient cannot cancel with lower r terms. Therefore
+max_r(h)<=-6. The unique trailing r term of T_v is the nonzero constant
+-2, so min_r(T_v h)=min_r(h), forcing min_r(h)>=-10.
+The leading v coefficient of T_v is r(2r^6+1), nonzero in Q[r,r^-1,t],
+so deg_v(T_v h)=deg_v(h)+1 and deg_v(h)<=1. The factors T_r,T_v are
+independent of t, so the t support is exactly that of h, namely0..2.
+Conversely, every h in the box m=-10..-6,n=0..1,k=0..2 produces P_r,P_v
+inside the original box. The sparse injection checks all these supports.
+There are5*2*3=30 coefficients per compact row, hence60 for h, plus234
+unrestricted P_t coefficients. This gives294 possible solution parameters.
+
+5. Remaining operator and reusable injection
+--------------------------------------------
+The logarithmic identity and divergence are exact:
+  T(A)=ell*A, ell=3r(r^6-1),
+  div(T)-ell=q0=7r^7+6r.
+For arbitrary two-vectors h and P_t, the complete reduced equation is
+
+  [T_r partial_r+T_v partial_v+q0 I+ell*A*M_a+t*T_v*M_b] h
+       +(partial_t+N_t)P_t = A*r^-4*M_b*e0/12.
+
+All matrices are evaluated at the actual physical coefficients. Both rows,
+every r,v,t derivative, and the target normalization remain. This equation
+is equivalent to the original full equation after the necessary tangency
+restriction; it has not been solved here. It has not gained a new divisor.
+
+The generic identity behind it is
+  Div_N(P/A)=A^-1 Div_{N-dlog(A) I}(P).
+The output tangent-injection.json gives P=E*u, with E of shape702x294 and
+594 integer nonzeros in the original direction/row/monomial ordering.
+E is injective: its r component T_r*h forces h=0; then its t component
+forces P_t=0. It can be used directly to form a reduced search matrix.
+
+If the old Laurent sector is added, its current produces at most a simple
+A-pole. Thus the A^-2 argument still forces the new sector tangent, and
+the necessary combined family has702+294=996 parameters. Its two sectors
+remain independent. No claim of source cancellation follows.
+
+6. Rank and kernel limits
+-------------------------
+Every exact homogeneous kernel in the new family lies in im(E), hence has
+dimension at most294. This is a rank LOWER bound408 for the full operator,
+not the characteristic-zero rank UPPER bound needed to certify a deficient
+modular inconsistency. No nonzero exact kernel is supplied here.
+
+If a reduced modular matrix has full294 coefficient-column rank and an
+augmented295-square minor is nonzero, the necessary family is excluded
+over Q. If its modular rank drops, modular augmented inconsistency alone
+does not exclude Q solutions. One still needs either enough exact rational
+kernel vectors (independent over Q) to give a matching characteristic-zero
+rank upper bound, or an exact left-null witness/nonzero pairing or other
+exact inconsistency certificate. The injection is not such a witness.
+
+Execution and reproducibility
+-----------------------------
+Run from this owned directory:
+  python -O run_bounded.py check-new --connection ABSOLUTE_PINNED_JSON_PATH
+Every child process has a60-second timeout, fresh output directory, UTF-8
+logs, and source snapshots/hash bindings. check-01 is the first structural
+run (16checks,2mutations); check-02 adds explicit Fermat/Eisenstein/generic
+Delta checks. Their source snapshots bind those distinct versions.
+The readable primality, UFD and support arguments above are reasoning
+review; the script verifies their exact polynomial identities and finite
+injection, rather than claiming a general theorem prover execution.
+
+No complete search, general rational nonexistence, primitive, global
+certificate, or full-source solve is claimed. No old receipt was changed.

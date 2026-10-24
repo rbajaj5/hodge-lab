@@ -6206,3 +6206,96 @@ where Windows saved CRLF bytes. Original logs/receipts are preserved; the
 integration record verifies normalized text and separately records raw hashes.
 Script and mathematical JSON bindings are unchanged. No mathematical rerun
 was needed for this logging convention correction.
+
+### Checkpoint 148 — A-denominator full-current family excluded, 24 October 2026 EDT
+
+Used an actual Goal and the reused Pro chat on unchanged one-reflection-skew,
+with notebook parent aa5a30dff2fd70994c48c484845981c141e77ef9 and upstream
+dispatch pin 27f4bb9ad8757e5841f884d9d30124a3c97a847d. Lean stayed benched.
+Research was bounded to 45 minutes, each mathematical process to 60 seconds
+and network operation to 45 seconds, with 15 minutes for integration.
+Mathematical work closed at 16:20:09 UTC, 16 minutes 58 seconds after Goal
+activation. The [integrated audit](notes/skew-A-denominator-audit-20261024.md)
+records the full equation, source pin, hypotheses, exact family and limits.
+Completed source conventions, Q/R2, beta, trace and previous exclusions were
+reused; no old computation is counted as new progress.
+
+The requested family has six independent scalar flux components in B/A,
+where B=span_Q{r^m v^n t^k:-10<=m<=2,0<=n,k<=2} and
+A(r,v)=r^3+r^-3+(rv-1)^6/r^15. This A is a physical chart coefficient,
+distinct from the protected source X_0^3Y_0^3. The new space does not
+contain B: their intersection is zero by v-degree. Pro explicitly extended
+the search to B+B/A in all six components, allowing cancellations between
+the old and new sectors. The original sum has 1,404 independent parameters.
+
+The local algebra worker proved a necessary leading-pole condition directly
+from the pinned compact connection. At generic A=0, det(Res_a M_a-I)=4/3,
+so cancellation of the double pole requires A_r P_r+A_v P_v=0 modulo A.
+The Laurent sector has at most a simple pole. The complete low-v-degree
+syzygy is (P_r,P_v)=(T_r,T_v)h, with T_r=r^2(r^6+1) and
+T_v=r(2r^6+1)v-(3r^6+2). Primality, the Laurent UFD and extreme-support
+arguments force h exponents r=-10..-6, v=0..1, t=0..2. The new sector
+therefore has 294 necessary parameters; adding the old 702 gives 996.
+This is a necessary condition on every solution, not an arbitrary truncation
+of the original family or an assumed kernel. The exact sparse injection,
+readable proof, final 20-check/two-control receipt and earlier version are
+retained in [local algebra evidence](results/skew-A-denominator-audit-20261024/algebra).
+The separate checker independently confirmed the structural argument.
+
+Pro consumed this handoff and built the new full-source matrix by direct
+quotient differentiation. Both compact rows, every r/v/t derivative, the
+A_v M_a chain term, denominator derivatives and 1/12 normalization remain.
+The entire equation is multiplied by A for the matrix. Its 996 coefficient
+columns and source have an augmented 997-square minor with determinant
+26947 modulo 32003. Good reduction makes it nonzero in characteristic zero.
+Combining that inconsistency with the necessary pole condition excludes the
+entire declared B+B/A family, hence B/A alone, and closes its kernel issue.
+No reduction of unknown coefficient denominators modulo the prime is assumed.
+
+Evidence is separated by executor and scope. Pro's author search took
+3.127 seconds. Its separate checker rebuilt all 1,052,832 entries and 528
+domain records, then used modular Bareiss elimination in 3.777 seconds.
+The local checker independently reconstructed all 994,009 entries of the
+decisive first-997-row minor at 499 points, with polynomial evaluation,
+symbolic Jacobians and the reduced tangent operator. Normalized Gaussian
+elimination again gave determinant 26947 in 4.485 seconds; omitting the
+denominator correction changed a tested entry and was detected. The local
+audit does not claim replay of the remaining 59 matrix rows or Pro's scripts.
+Its [receipts and commands](results/skew-A-denominator-audit-20261024/checker)
+keep those distinctions explicit. These are separate AI computations,
+not independent human reviews or Lean/kernel checks.
+
+The first local quotient-rule expansion hit its internal 58-second watchdog;
+exit124, logs and original receipt are preserved. Its timeout:false field
+refers only to the outer subprocess. Generic reciprocal identities replaced
+that unnecessary expansion. A coordinator handoff transcribed Delta|a=0
+with the opposite sign; the correct literal JSON convention is
+b^2(4bd-c^2), confirmed by the local audit. The zero-divisor argument is
+unchanged. Historical messages and receipts were not overwritten.
+
+The fresh Pro ZIP has SHA256
+cb6b509c748d253b48a9f4b97cb38ffdae8afadc0b1c4e7dbaf5eac04cdf9b66.
+All 54 payload files passed archive/manifest checks; its
+[original note](notes/skew-A-denominator-20261024.md), source, full sample
+matrix, checkers and failures are preserved. Shared-file changes were
+integrated separately, not blindly applied from a patch. Binding checks
+are not presented as mathematical replays. The
+[reproducible inspected visualization](results/skew-A-denominator-20261024/figure-03/result/A-denominator-certificate.png)
+shows the forced numerator support and finite-family certificate; its
+generator, receipt hashes, failed first render and overlapping second render
+remain. The [team board](notes/one-reflection-skew-team-board.md) records the
+consumed structural handoff and completed scoped check.
+
+No rational primitive was found. Higher powers of A, other numerator bounds,
+other pole divisors and arbitrary rational or fibre-dependent currents are
+not excluded. No source exactness, fibre-exact lift, global clearing,
+homogeneous certificate or accepted solve is claimed. Completing this Goal
+completes the bounded batch, not the mathematical target.
+
+Credit fqlx for the compact connection, benediamond for the physical cover
+and earlier reductions, and Benjamin E. Diamond and hodge.computer
+contributors for the fixed problem and framework. New structural algebra,
+searches, checks and failed attempts are AI-assisted work for Ravi Bajaj.
+All parent ledger bytes are preserved. No upstream post, reply, edit or PR
+was made. Posts 1–29 and the tally of 29 discussion contributions / one
+closed maintenance PR / zero accepted authored solves remain unchanged.

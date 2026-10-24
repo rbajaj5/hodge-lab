@@ -1,0 +1,48 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T16:08:19.674295+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "work/A-denominator-20261024/algebra/freeze_artifacts.py"
+  ],
+  "bindings": [
+    {
+      "run": "check-01",
+      "checks": {
+        "successful_execution": true,
+        "bounded_execution": true,
+        "checker_snapshot_matches_execution": true,
+        "checker_snapshot_matches_validation": true,
+        "runner_snapshot_matches_execution": true,
+        "sparse_injection_matches_validation": true,
+        "pinned_connection_recorded": true
+      },
+      "checker_sha256": "1dcd0d8dc57c3695b9d9c5167ed374671b7cc1696d29122652dad8dd526643b9",
+      "seconds": 2.312999999994645,
+      "algebra_seconds": 0.3120000000053551,
+      "exact_checks": 16,
+      "mutations": 2
+    },
+    {
+      "run": "check-02",
+      "checks": {
+        "successful_execution": true,
+        "bounded_execution": true,
+        "checker_snapshot_matches_execution": true,
+        "checker_snapshot_matches_validation": true,
+        "runner_snapshot_matches_execution": true,
+        "sparse_injection_matches_validation": true,
+        "pinned_connection_recorded": true
+      },
+      "checker_sha256": "473e333ef1b3d21fdde74372aec2ae01c50a8e3b32af1087177448e0798f4395",
+      "seconds": 2.1410000000032596,
+      "algebra_seconds": 0.2970000000059372,
+      "exact_checks": 20,
+      "mutations": 2
+    }
+  ],
+  "final_checker_sha256": "473e333ef1b3d21fdde74372aec2ae01c50a8e3b32af1087177448e0798f4395",
+  "final_injection_sha256": "047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b",
+  "source_versions": "check-01 is preserved first version; check-02 snapshot matches final checker. No receipt rewritten.",
+  "limitations": "No math run in this audit. Independent checker evidence remains in the coordinator-owned checker subtree, not copied here."
+}

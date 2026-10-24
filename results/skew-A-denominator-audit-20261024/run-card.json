@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-24T16:03:11Z",
+  "research_deadline_utc": "2026-10-24T16:48:11Z",
+  "parent": "aa5a30dff2fd70994c48c484845981c141e77ef9",
+  "upstream": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "bounds": {
+    "research_minutes": 45,
+    "math_process_seconds": 60,
+    "network_seconds": 45,
+    "integration_minutes": 15
+  },
+  "ledger_bytes": 468572,
+  "ledger_sha256": "0c2045902f3a81c4641e189f485f3074f91e2a07eed98f1f17d1d427f23d8154",
+  "goal": "Try A(r,v) denominator in full six-component source equation",
+  "initial_family": "Each component in span_Q(r^m v^n t^k/A), -10<=m<=2,0<=n,k<=2",
+  "family_warning": "V/A need not contain V; any sum or extension requires explicit justification",
+  "lean": "benched",
+  "pro_chat": "6adb94ec-665c-8325-9a4b-2b4237c63f19",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "mathematical_stop_utc": "2026-10-24T16:20:09Z",
+  "research_elapsed_seconds": 1018,
+  "final_family": "Six components in B+B/A; necessary pole reduction1404 to996; exact augmented minor exclusion",
+  "target_solved": false
+}

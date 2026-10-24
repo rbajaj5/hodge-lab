@@ -1,0 +1,20 @@
+{
+  "purpose": "plain-text export reproduction of the same certificate; no new search",
+  "executor": "root",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "results/skew-A-denominator-20261024/reproduce_minor.py",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json"
+  ],
+  "start_utc": "2026-10-24T16:13:32.778056+00:00",
+  "end_utc": "2026-10-24T16:13:36.071631+00:00",
+  "seconds": 3.293638956001814,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "files": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "ca5dbe7c03708cbce94c34eaf73c0efd0d1cc4888f89ecd7b9999a03659ad917",
+    "stdout.log": "7e3e975f8fbfe6541485f999a61d7ecef0cd11312389365aa99d558a2c4186a1"
+  }
+}
