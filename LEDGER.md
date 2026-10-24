@@ -6383,3 +6383,34 @@ No upstream post, reply, edit or PR was made. Posts 1–29 and the tally of
 29 discussion contributions / one closed maintenance PR / zero accepted
 authored solves remain unchanged. Notebook publication and its exact
 remote readback are handled by the coordinator.
+
+### Checkpoint 150 — Publication audit for the bounded A-squared update, 24 October 2026 EDT
+
+The user explicitly authorized one consolidated update to discussion #127,
+crediting fqlx and benediamond, followed by a permalink in this ledger and
+the Posts index. The current thread, including all seven top-level comments
+and four replies, was read at 16:53:24 UTC. No identical update was present.
+This is a scoped computational result, not a report that Pro found nothing.
+
+The [reviewed comment body](results/skew-A2-publication-20261024/comment.md)
+links the immutable [checkpoint 149 audit](https://github.com/rbajaj5/hodge-lab/blob/44c5789efc08a51b788844951690f3ec8dd6c162/notes/skew-A2-denominator-audit-20261024.md).
+Its SHA256 is `d08cad1eca0de2e73fa6e2c040f870b66b669da80e3d2146c182d1a7bd427a71`. It reports exclusion over Q only of the explicit
+six-component B+B/A+B/A^2 family, including mixed cancellation. It retains
+both compact source rows, every physical derivative and normalization;
+the top-pole reduction and independently reconstructed minor are stated.
+No increased coverage over every differently presented prior screen is
+claimed. No mathematics is rerun for publication.
+
+Credits link fqlx's compact connection/source formulation and benediamond's
+physical cover/reductions. ChatGPT Pro and Codex assistance are disclosed,
+and separate computational implementations are distinguished from human
+review. Other supports, poles, general rational currents, a full primitive,
+homogeneous certificate, new Lean verification and acceptance remain outside
+the result. The existing reproducible visualization is linked by the audit.
+
+This checkpoint and the [publication audit](results/skew-A2-publication-20261024/prepublication-audit.json)
+must be pushed and read back before posting. Publication is not yet claimed;
+Posts 1–29 and tally 29 discussion contributions / one closed maintenance PR /
+zero accepted authored solves remain unchanged at this audit stage. The
+actual permalink and outcome will be recorded after successful readback.
+All parent ledger bytes are preserved before this append.
