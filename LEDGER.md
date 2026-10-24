@@ -5391,3 +5391,35 @@ be recorded separately. No upstream post, reply, edit or PR: Posts remain
 1–29, with 29 discussion contributions, one closed maintenance PR and zero
 accepted authored solves. Physical-source normalization remains the next
 dependency; no primitive or certificate is claimed.
+
+
+### Published proof and verified CI outcome — 23 October 2026 EDT
+
+The scalar-extension proof, diagram, failed attempts and scoped audit were
+pushed normally in [9cf1e71289b8945a0766dcf8066979b30f2a84af](https://github.com/rbajaj5/hodge-lab/commit/9cf1e71289b8945a0766dcf8066979b30f2a84af).
+The full [Notebook Lean proofs run 40046576101](https://github.com/rbajaj5/hodge-lab/actions/runs/40046576101)
+then succeeded on that exact commit, including all existing workflow steps
+and the new scalar-extension check. Its [fresh GitHub Actions receipt](results/skew-scalar-extension-20261023/coordinator-ci/40046576101/focused/validation.json)
+records 51 declaration/instance audits, one new-module kernel replay,
+19 positive controls and three intended negative failures in 21.465 seconds.
+The same Lean 4.31.0 and Mathlib pins are used; Python is 3.12.3.
+These executed CI counts remain separate from Pro's local run and AI reviews.
+
+The [coordinator receipt review](results/skew-scalar-extension-20261023/coordinator-ci/40046576101/ci-receipt-review.json)
+matched 21 unique committed input/source files, all 27 command-stream hashes,
+the allowed axioms, and all three intended False-goal failures. Receipt SHA256:
+5ea2877c0a2962ef2317dea8c1be95471e36b2f05b86c69a2dd1d35138734440.
+Artifact 12542200194 archive SHA256:
+dcdca3acfafeee73bc42afe3d0a885f750f29a0a6006125f3750d168b69e5333.
+The artifact metadata and complete focused receipt/logs are preserved.
+The separately triggered [CPU workflow 40046575984](https://github.com/rbajaj5/hodge-lab/actions/runs/40046575984)
+was still in progress at the saved read; its completion is not claimed here.
+
+The trace-compatible scalar-extension Goal is mathematically complete within
+the recorded scope. Physical differential-source identification and exact
+scalar/chart normalization remain unverified by this unit; trace zero does
+not supply exactness, a primitive, global clearing or HasCertificate.
+This outcome appends to the exact proof-commit ledger prefix and preserves
+all historical receipts. No upstream post, reply, edit or PR; Posts remain
+1–29, with 29 discussion contributions, one closed maintenance PR and zero
+accepted authored solves.

@@ -1,0 +1,76 @@
+{
+  "source_sha256": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+    "lake-manifest.json": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+    "check_skew_extension.py": "5c5084ef2207bb0da6be852ffaf9c870a265cd2cd3203303ab3af9482ed3d665",
+    "fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "check_skew_scalar_extension.py": "012efb04b63afa087e45dc0469dce76e747f592025271c49ed82796a6d3ea5e4",
+    "AuditSkewScalarExtension.lean": "bacd7b6a6e0217f2391cf9bf5887f2d8ee9bd9b8520162e8fd2b9b90abfadf7b",
+    "ReplaySkewScalarExtension.lean": "fe7ee78a8f7d0fe8ce514d84ee23586c4fcf2b645622890be71e378e7b0e5192",
+    "HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7"
+  },
+  "inputs_sha256": "29d378d18abb807f765003ba1171d89aed43cc65fb3effa43eaa73dc19fd9b1e",
+  "reused_files": {
+    "AGENTS.md": {
+      "sha256": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+      "bytes": 4655
+    },
+    "formal/lean-toolchain": {
+      "sha256": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+      "bytes": 25
+    },
+    "formal/lakefile.toml": {
+      "sha256": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+      "bytes": 238
+    },
+    "formal/lake-manifest.json": {
+      "sha256": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+      "bytes": 3542
+    },
+    "formal/fresh_receipts.py": {
+      "sha256": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+      "bytes": 1565
+    },
+    "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": {
+      "sha256": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+      "bytes": 10503
+    },
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": {
+      "sha256": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+      "bytes": 4107
+    },
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": {
+      "sha256": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+      "bytes": 8377
+    },
+    "formal/HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": {
+      "sha256": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+      "bytes": 7471
+    },
+    "formal/HodgeLab/OneReflectionSkew/TraceKernel.lean": {
+      "sha256": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+      "bytes": 4579
+    },
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json": {
+      "sha256": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835",
+      "bytes": 20182
+    },
+    "results/skew-distinct-roots-20261023/coordinator-ci/40039653837/ci-receipt-review.json": {
+      "sha256": "ed672b474712e59bcb73abfec8b0f39e2baee5fac67a3619b24b23bb00083412",
+      "bytes": 906
+    },
+    "results/skew-distinct-roots-20261023/source-pins.json": {
+      "sha256": "6fe0f411fc38137452ca9816015f7948ddef3b91a871974bb079724d286036d4",
+      "bytes": 3739
+    },
+    "results/skew-distinct-roots-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": {
+      "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "bytes": 340
+    }
+  },
+  "source_pins_manifest": {
+    "path": "results/skew-scalar-extension-20261023/source-pins.json",
+    "sha256": "31cebf14089711c8bca1d3375f74fffc3c708f69366a59047596a99cc4d76bba"
+  }
+}

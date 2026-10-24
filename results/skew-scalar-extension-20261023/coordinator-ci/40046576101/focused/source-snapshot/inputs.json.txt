@@ -1,0 +1,25 @@
+{
+  "notebook_parent": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "upstream_commit": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "source_pins_manifest": {
+    "path": "results/skew-scalar-extension-20261023/source-pins.json",
+    "sha256": "31cebf14089711c8bca1d3375f74fffc3c708f69366a59047596a99cc4d76bba"
+  },
+  "reused_distinct_root_receipt": "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json",
+  "mathematical_scope": {
+    "base_field": "K=Q(v)(t)(a)",
+    "polynomial": "f=X^18+X^12+(vX-1)^6-aX^15",
+    "quotient": "E=AdjoinRoot f; no field or irreducibility assumption",
+    "extension": "L=f.SplittingField",
+    "tensor": "T=L tensor_K E, standard left L-algebra",
+    "new_result": "Actual L algebra equivalences to existing split algebra and split quotient; arbitrary-element trace base change and transport; quotient inverse derivative and all18 weighted trace slots",
+    "remaining": [
+      "physical differential-source normalization",
+      "primitive",
+      "global clearing",
+      "certificate",
+      "solve"
+    ],
+    "specialization_limit": "Generic field only; historical a=2,v=1 repeated-root control retained, not rerun"
+  }
+}

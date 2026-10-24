@@ -1,0 +1,8 @@
+import HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+open scoped TensorProduct BigOperators
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : Algebra.trace BaseField E (quotientWeight 11)=1 := by
+  rw [trace_slot_eleven]
+  norm_num

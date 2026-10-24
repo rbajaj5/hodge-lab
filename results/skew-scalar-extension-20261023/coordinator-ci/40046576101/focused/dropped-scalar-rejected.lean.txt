@@ -1,0 +1,8 @@
+import HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+open scoped TensorProduct BigOperators
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+example : Algebra.trace SplitField T ((2:SplitField)⊗ₜ[BaseField](1:E))=18 := by
+  rw [trace_two_tmul_one]
+  norm_num

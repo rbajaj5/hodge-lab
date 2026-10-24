@@ -198,9 +198,9 @@ the note, figure, ledger append and handoff; worker execution labels remain
 distinct. User-relayed coordinator checks are reported support only.
 
 The earlier full [Lean CI run 40039653837](https://github.com/rbajaj5/hodge-lab/actions/runs/40039653837)
-at proof commit `3f73632b0d99eb22eb69aeb67235099a3818f92b` is confirmed successful
-by a fresh metadata read. It validates the preceding unit, not these new
-unpublished files. The coordinator owns the new full remote CI result.
+at proof commit `3f73632b0d99eb22eb69aeb67235099a3818f92b` validates the preceding
+unit. The new proof has its own successful full remote CI execution, recorded
+below; the old run is not used as validation of these new files.
 
 ## Reproducible figure and exact limits
 
@@ -277,5 +277,37 @@ and [execution record](../results/skew-scalar-extension-20261023/coordinator-rev
 remain separate from Pro's Lean counts. The coordinator visually inspected
 the final diagram and verified preservation of all 2,937 prior result files,
 528 prior formal/policy files, and the full 407,122-byte parent ledger prefix.
-Fresh full remote CI is pending at this integration stage and will be recorded
-separately after publication. No upstream contribution or tally change.
+Fresh full remote CI was pending at the initial integration stage. Its
+verified outcome is recorded below. No upstream contribution or tally change.
+
+## Published proof and verified remote CI
+
+The proof and initial audit were pushed normally as
+[`9cf1e71289b8945a0766dcf8066979b30f2a84af`](https://github.com/rbajaj5/hodge-lab/commit/9cf1e71289b8945a0766dcf8066979b30f2a84af).
+The complete [Notebook Lean proofs run 40046576101](https://github.com/rbajaj5/hodge-lab/actions/runs/40046576101)
+**succeeded on that exact commit**, including the existing notebook checks
+and the new scalar-extension step. This is a fresh GitHub Actions execution,
+separate from Pro's local execution and the reviewers' source inspections.
+
+The new [remote focused receipt](../results/skew-scalar-extension-20261023/coordinator-ci/40046576101/focused/validation.json)
+passed 51 declaration/instance audits, one new-module kernel replay,
+19 positive controls and three intended negative controls in **21.465 seconds**.
+It uses the same pinned Lean 4.31.0 and Mathlib revision as the local result;
+Python is 3.12.3. All imported proofs remain outside this focused module's
+kernel replay, though the complete workflow also executes earlier notebook
+checkers. No counts from different runs are added together.
+
+The coordinator's [receipt review](../results/skew-scalar-extension-20261023/coordinator-ci/40046576101/ci-receipt-review.json)
+verified 21 unique committed file bindings, all 27 command-stream hashes,
+the allowed axioms and all three intended False-goal failures. The receipt's
+SHA256 is `5ea2877c0a2962ef2317dea8c1be95471e36b2f05b86c69a2dd1d35138734440`.
+Artifact 12542200194 has archive SHA256
+`dcdca3acfafeee73bc42afe3d0a885f750f29a0a6006125f3750d168b69e5333`;
+its metadata and the full focused outputs are retained. The separate
+[CPU checks workflow](https://github.com/rbajaj5/hodge-lab/actions/runs/40046575984)
+was still in progress at the recorded read; no completion claim is made for it.
+
+This closes the trace-compatible scalar-extension bridge within the stated
+generic-field hypotheses. Identifying the physical differential-source class,
+including its scalar/chart normalization, is the remaining dependency.
+No upstream publication, primitive, global clearing or certificate is claimed.

@@ -53,7 +53,8 @@ trace **0**, over K itself. No irreducibility or quotient-field assumption.
 
 Pro's new focused local check passed **51 declaration/instance audits, one
 new-module kernel replay, 19 positive and three false-goal controls**.
-Full remote CI for this unit belongs to the coordinator after integration.
+[Full remote Lean CI](https://github.com/rbajaj5/hodge-lab/actions/runs/40046576101)
+also passed on proof commit `9cf1e71`, with a separate source-bound receipt.
 Physical differential-source normalization, a rational primitive and a solve
 remain separate; arbitrary split vectors are not asserted to descend.
 

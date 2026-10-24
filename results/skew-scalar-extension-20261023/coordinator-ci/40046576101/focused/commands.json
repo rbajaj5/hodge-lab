@@ -1,0 +1,245 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:17.604768+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.6633388559999958,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stdout": "version.stdout.log",
+    "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stderr": "version.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:18.268408+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.0018108819999724801,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stdout": "mathlib-head.stdout.log",
+    "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stderr": "mathlib-head.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:18.270464+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 5.328141974000005,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "cfff041e4ad91a1f216e02ba81725fdce2c113b34c834c1f535f0c717ac3024c",
+    "stdout": "build.stdout.log",
+    "stdout_sha256": "cfff041e4ad91a1f216e02ba81725fdce2c113b34c834c1f535f0c717ac3024c",
+    "stderr": "build.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewScalarExtension.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewScalarExtension.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:23.599087+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.3394236469999896,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "4d68be95a6d9b0e9c98f3cc921b55c70c3156046ca6e1fa4777a2df9d3383e31",
+    "stdout": "axioms.stdout.log",
+    "stdout_sha256": "4d68be95a6d9b0e9c98f3cc921b55c70c3156046ca6e1fa4777a2df9d3383e31",
+    "stderr": "axioms.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewScalarExtension.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewScalarExtension.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:25.939358+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.5827127939999173,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "155769e52edafc4ffc08d6d31d3965a6abe281804b14e606215c686133877e8e",
+    "stdout": "kernel-replay.stdout.log",
+    "stdout_sha256": "155769e52edafc4ffc08d6d31d3965a6abe281804b14e606215c686133877e8e",
+    "stderr": "kernel-replay.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/positive-controls.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/positive-controls.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:28.523023+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.425852625999937,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "positive-controls.stdout.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "positive-controls.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "normalized-trace-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/normalized-trace-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/normalized-trace-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:31.949691+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.3494468119999965,
+    "expected_failure": true,
+    "log": "normalized-trace-rejected.log",
+    "log_lf_sha256": "09af74ab3823c4c8ceb9e466d3793949cff8f8c55cff71391d676345ef11d8d9",
+    "stdout": "normalized-trace-rejected.stdout.log",
+    "stdout_sha256": "09af74ab3823c4c8ceb9e466d3793949cff8f8c55cff71391d676345ef11d8d9",
+    "stderr": "normalized-trace-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "dropped-scalar-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/dropped-scalar-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/dropped-scalar-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:34.299932+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.398631268000031,
+    "expected_failure": true,
+    "log": "dropped-scalar-rejected.log",
+    "log_lf_sha256": "df68da8f8110b575eef49ce34dde87b7ab00a68a1da63851647c334b9bd61a61",
+    "stdout": "dropped-scalar-rejected.stdout.log",
+    "stdout_sha256": "df68da8f8110b575eef49ce34dde87b7ab00a68a1da63851647c334b9bd61a61",
+    "stderr": "dropped-scalar-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "slot-eleven-trace-one-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/slot-eleven-trace-one-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7i8zs_dm/slot-eleven-trace-one-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:56:36.699368+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.3203944470000124,
+    "expected_failure": true,
+    "log": "slot-eleven-trace-one-rejected.log",
+    "log_lf_sha256": "40b6c17a42f0c44be7511767029e7d60e94569dcd7ae58a86a31a5a5f9cfe66f",
+    "stdout": "slot-eleven-trace-one-rejected.stdout.log",
+    "stdout_sha256": "40b6c17a42f0c44be7511767029e7d60e94569dcd7ae58a86a31a5a5f9cfe66f",
+    "stderr": "slot-eleven-trace-one-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]
