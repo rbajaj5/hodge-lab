@@ -5962,3 +5962,32 @@ A [separate read-only AI evidence review](results/skew-physical-trace-20261024/r
 also verified the artifact/extracted bytes, all 38 file bindings, 48 streams,
 98 actual axiom-log records and the 10 intended failures. It found no
 material mismatch; this is not another Lean run or independent human review.
+
+
+### Checkpoint 144 — assured-autonomy research workflow, 24 October 2026 EDT
+
+At the user's request, adapted Ravi Bajaj's
+[Delay-Aware Runtime Assurance Lab, pinned at 2909919](https://github.com/rbajaj5/delay-aware-runtime-assurance-lab/tree/2909919c7b4b3e9da3c2cd44cf4724680e8a7813)
+into Hodge Lab's [research operating protocol](notes/assured-research-workflow.md)
+and [agent instructions](AGENTS.md). The README now links the protocol.
+
+The adaptation uses dependency freshness, consequential-message priority,
+attention to deferred work, bounded search horizons, and concrete recovery
+from rejected or stale work. It keeps a constructive lead and separate
+checker, distinguishes the user's objective from a batch deliverable, and
+requires a specific check to resolve disagreement. The note includes a
+reusable run card and a Mermaid workflow diagram. Its current-frontier
+example proposes compatible all-sheet physical-form/source maps; it does
+not start that research run or claim those maps exist.
+
+Reviewed five pinned source files; their local text matches the committed
+text after line-ending normalization. This is source/documentation review,
+not a replay of the autonomy simulations, Lean proofs or Hodge calculations.
+The protocol is coordinator guidance, not an implemented runtime controller,
+a proof checker, or evidence of improved research performance. Completed
+checkpoint 143 results and their limits are reused without alteration.
+
+All earlier ledger bytes are preserved. No upstream post, reply, edit or PR;
+Posts 1–29 and tally 29 discussion contributions/one closed maintenance PR/
+zero accepted authored solves remain unchanged. The existing ledger-first
+publication policy remains in force, with no added permission gate or quota.

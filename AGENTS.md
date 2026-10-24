@@ -80,3 +80,37 @@ publication-destination interpretation, without expanding the project scope.
 
 Prompt 3 and the two verified comment corrections remain complete. Do not
 rerun or republish them. Apply this clarified policy to subsequent work.
+
+## Assured research operation — 24 October 2026
+
+Apply Ravi Bajaj's delay-aware runtime-assurance work through the
+[research operating protocol](notes/assured-research-workflow.md). This is
+a research workflow adaptation, not a safety theorem or an automatic gate.
+
+- Keep the user's mathematical objective and the current decisive bottleneck
+  explicit. Before choosing another lemma, explain which construction or
+  discriminating check it enables. Lemma counts, Lean percentage, commits,
+  agent activity and elapsed time are not measures of a solved target.
+- For each bounded batch, use the short run card in that protocol: pinned
+  inputs, open question, falsifiable outcome, roles, budget and stop rule.
+  Reuse completed checks. When the user requests Goal mode, use the actual
+  Goal facility; a heading saying "Goal" is not activation. A completed batch
+  does not complete a broader Goal unless its stated objective is achieved.
+- Normally keep one constructive lead, an optional genuinely different
+  approach, and a separate checker. Reuse the requested Pro chat for the
+  mathematical lead. Assign artifacts and dependencies explicitly; avoid
+  sending every agent to review the same finished result.
+- Check delayed handoffs against their actual input versions and assumptions.
+  A new commit alone does not invalidate unchanged dependencies, and elapsed
+  time does not invalidate a theorem. Prioritize corrections and changed
+  assumptions; consolidate duplicate progress messages and revisit deferred
+  useful checks at the next batch boundary.
+- On a failed check, stale dependency or timeout, preserve output, withhold
+  only the affected claim, and name the smallest repair or discriminating
+  check. Continue independent work. A timeout is not a negative theorem.
+  Stop repeated unchanged failures rather than expanding the search silently.
+- Promote claims using scoped exact/kernel evidence and source bindings,
+  never reviewer votes. Resolve disagreement with a specific check. Once
+  appropriate checks pass, integrate the result instead of adding review
+  rounds without a new concern. Preserve the ledger/publication policy above;
+  this workflow adds no permission gate or posting quota.

@@ -6,6 +6,10 @@ An independent research notebook by [Ravi Bajaj](https://github.com/rbajaj5), ex
 
 [Research ledger](LEDGER.md) · [Current feedback audit](notes/one-reflection-skew-feedback-audit.md) · [Visual idea atlas](notes/idea-atlas.md) · [Lean proofs](formal/README.md) · [Sources](SOURCES.md)
 
+[How research runs are managed](notes/assured-research-workflow.md): bounded
+discovery, current evidence, independent checks and recovery from failed
+attempts, adapted from Ravi Bajaj's delay-aware runtime-assurance work.
+
 ## Current frontier
 
 **Snapshot: 23 October 2026, 21:44 UTC.** Upstream at [`4a8e09b`](https://github.com/hodge-computer/sextics/tree/4a8e09b6002d250094cb1c1152a6026c55030ead/data) still has **82 targets: 66 accepted and 16 open**. All target `F/q/A` fields and acceptance receipts match the previous pin; generated catalogue files have moved out of Git. [Latest status, source paths and verification scope](notes/catalogue-prym-monitor-20261023.md).
