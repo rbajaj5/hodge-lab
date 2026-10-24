@@ -1,0 +1,44 @@
+{
+  "status": "PASS_TRIANGULAR_FAMILY_ONLY",
+  "executor": "mixed_checker AI worker",
+  "created_utc": "2026-10-24T15:22:17.927352+00:00",
+  "elapsed_seconds": 0.50487781099946,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "packet_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "6bd711a7766b49ad6e063a3708bfc7486dee526283027c5a8143ac11db9a516f",
+  "checks": {
+    "coefficient_scaling": "zero",
+    "fibre_scaling": "zero",
+    "fibre_translation": "zero",
+    "physical_tangent_connection": "zero",
+    "c_parameter_tangency": "zero",
+    "d_parameter_tangency": "zero"
+  },
+  "w": "-t*(588*t**5*v - 3*t**4 + 4*t**2 - 1)/49",
+  "s": "-6*t**6*(t - 1)*(t + 1)/7",
+  "F": [
+    "-3*a*t*(588*t**5*v - 3*t**4 + 4*t**2 - 1)/49",
+    "-t*(126*a*t**6 - 126*a*t**4 + 1176*t**5*v**2 - 5*t**4*v + 6*t**2*v - v)/49",
+    "t**2*(t - 1)**2*(t + 1)**2/49"
+  ],
+  "connection_matrix": [
+    [
+      "12*t**6*v - t*(1/7 - 3*t**2/7)*(1 - t**2)/7",
+      "-6*t**6*(1 - t**2)/7"
+    ],
+    [
+      "0",
+      "24*t**6*v - 2*t*(1/7 - 3*t**2/7)*(1 - t**2)/7"
+    ]
+  ],
+  "mu0": "-t*(3528*t**5*v - 17*t**4 + 22*t**2 - 5)/49",
+  "mu1": "-2*t*(1470*t**5*v - 7*t**4 + 9*t**2 - 2)/49",
+  "full_row0": "3*a*h0a*(-12*t**6*v + t*(1/7 - 3*t**2/7)*(1 - t**2)/7) - h0*t*(3528*t**5*v - 17*t**4 + 22*t**2 - 5)/49 + h0t*t**2*(1 - t**2)**2/49 + h0v*(-18*a*t**7/7 + 18*a*t**5/7 - 24*t**6*v**2 + 5*t**5*v/49 - 6*t**3*v/49 + t*v/49) - 6*h1*t**6*(1 - t**2)/7",
+  "full_row1": "3*a*h1a*(-12*t**6*v + t*(1/7 - 3*t**2/7)*(1 - t**2)/7) - 2*h1*t*(1470*t**5*v - 7*t**4 + 9*t**2 - 2)/49 + h1t*t**2*(1 - t**2)**2/49 + h1v*(-18*a*t**7/7 + 18*a*t**5/7 - 24*t**6*v**2 + 5*t**5*v/49 - 6*t**3*v/49 + t*v/49)",
+  "mutation_witnesses": {
+    "omit_translation_coupling": "1152/7",
+    "wrong_fibre_scaling_sign": "-150396/49"
+  },
+  "scope": "A new mixed-direction triangular two-row current family. h0,h1 remain unknown rational functions. All derivative slots retained. This does not cancel R2, prove trace freedom, or give a primitive."
+}

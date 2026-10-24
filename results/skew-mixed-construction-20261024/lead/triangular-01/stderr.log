@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/lead/triangular_current.py", line 40, in <module>
+    zero('contracted_triangular_connection',madd(contracted,mscale(-1,Gamma)))
+  File "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/lead/triangular_current.py", line 38, in zero
+    if any(z!=0 for z in values):raise RuntimeError(label+' failed')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: contracted_triangular_connection failed

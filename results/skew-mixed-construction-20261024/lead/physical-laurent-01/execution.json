@@ -1,0 +1,27 @@
+{
+  "executor": "Pro root constructive lead",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/lead/physical_laurent_search.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/lead/physical-laurent-01/result"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-mixed-next",
+  "started_utc": "2026-10-24T15:29:27.707751+00:00",
+  "completed_utc": "2026-10-24T15:29:29.178328+00:00",
+  "wall_seconds": 1.4705982679988665,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "PYTHONPATH": "/workspace/scratch/b8974c152662/constructive-python",
+  "files": {
+    "runner.py": "3f377dcac2389dd24215aca749c48bec22857430257dfd010730868bcd451b5d",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "2026ec87ae71477b1b5b7266c467cc9e248365c687d6638caf0ed7913e40a72e",
+    "stdout.log": "4adde7403f3cd1df319899a638e67f754d1113533093ec6beb05094ffff36282",
+    "result/validation.json": "b0e94aeebb632bc2ee6fb6aa9140f66ef06a8038b5e7b2c82c6fe0668c390ba9",
+    "result/augmented-matrix.csv": "a692252576221502d3a34caa01f93580c5cf01b23a35c9657648653a61483985",
+    "result/inputs.json": "b8248538a4312405669a01866e5604053f4a242cbee3750c76a49009b3c53717"
+  }
+}

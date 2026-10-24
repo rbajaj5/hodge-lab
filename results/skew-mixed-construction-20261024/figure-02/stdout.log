@@ -1,0 +1,33 @@
+{
+  "purpose": "illustrate exact full two-row nonzero witnesses, not certify generic solvability",
+  "created_utc": "2026-10-24T15:36:33.518844+00:00",
+  "matplotlib": "3.10.8",
+  "inputs": {
+    "checker/translation-current-02/result/validation.json": "2d389766dd45d3af22149fb3c4536bbc54861080d93a62e4268b2aa377a2cc71",
+    "alternate/first-jet-cert-02/validation.json": "3a059d8567e7855c085cc35db2023cdd42f21113392237a5b7fcb99be587aca0"
+  },
+  "exact_vectors": [
+    [
+      "105778/440559",
+      "-52889/97902"
+    ],
+    [
+      "-242298600715/34686091188",
+      "255188727685/15416040528"
+    ],
+    [
+      "-40/67081",
+      "1945/2414916"
+    ]
+  ],
+  "labels": [
+    "Original residual $R_2$",
+    "Corrected triangular current",
+    "First-jet current, $K=0$"
+  ],
+  "generator_sha256": "4d73734921ba0a46d3735ed2d25bc43f68b1361f84053515ec873021cb2332f9",
+  "outputs": {
+    "full-residuals.svg": "236e407d81e26e7eaffce54a02e5f2bdcc88aa24a9962f1e06d4cf17670b0f47",
+    "full-residuals.png": "d6b9eb6dec9da6a6a554203d49cec620d227a98363b6f2e2c836cd7c4f6128d9"
+  }
+}

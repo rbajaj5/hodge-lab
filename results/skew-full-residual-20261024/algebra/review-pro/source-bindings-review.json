@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "scope": "source/hash/parsed-JSON comparison only; not a mathematical replay",
+  "checks": [
+    {
+      "name": "structure source to saved receipt",
+      "status": "pass",
+      "sha256": "206e57f36888704b8927195e88f847b7f5d47889ba4d8a9918f67413357e3f4f"
+    },
+    {
+      "name": "author system-builder source to saved receipt",
+      "status": "pass",
+      "sha256": "af93af4a97cf5fc30d2845ba3967f7a1f5c67aa5536fe8d3b131a152b313394d"
+    },
+    {
+      "name": "Pro checker source to saved receipt",
+      "status": "pass",
+      "sha256": "f5a9a735825ccf12dbdf7c70b7201685c23e5fc5259e772659a7ea7f80231013"
+    },
+    {
+      "name": "author system to checker input binding",
+      "status": "pass",
+      "sha256": "e3aaba6ed96eb8fde06d80d4f1c184f5d284aa8e8fef2348d136ace1658b8af6"
+    },
+    {
+      "name": "author validation to structure reused binding",
+      "status": "pass",
+      "sha256": "5df9075c41286961b5c529d40806fdfb74716f70c8830a26ad04dd86413ccaf5"
+    },
+    {
+      "name": "replayed checker bytes unchanged",
+      "status": "pass",
+      "sha256": "f5a9a735825ccf12dbdf7c70b7201685c23e5fc5259e772659a7ea7f80231013"
+    },
+    {
+      "name": "replay left-null certificate JSON equals Pro certificate JSON",
+      "status": "pass",
+      "sha256": null
+    }
+  ]
+}

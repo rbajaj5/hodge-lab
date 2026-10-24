@@ -1,0 +1,32 @@
+independent 52x30 coefficient recurrence agrees
+{
+  "status": "PASS_INDEPENDENT_FIRST_JET_SYSTEM_OBSTRUCTION",
+  "executor": "mixed_checker AI worker",
+  "created_utc": "2026-10-24T15:42:44.102433+00:00",
+  "elapsed_seconds": 0.7189999999973224,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "packet_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "author_system_sha256": "e3aaba6ed96eb8fde06d80d4f1c184f5d284aa8e8fef2348d136ace1658b8af6",
+  "script_sha256": "f5a9a735825ccf12dbdf7c70b7201685c23e5fc5259e772659a7ea7f80231013",
+  "matrix_shape": [
+    52,
+    30
+  ],
+  "coefficient_rank": 30,
+  "augmented_rank": 31,
+  "independent_recurrence": "A[(i,n),(j,k)] = coeff(Nij,n-k)+(2k-n-1)*coeff(Delta,n-k+1)*deltaij",
+  "witness_times_rhs": "-43632465369706654107264817498576480029487556301286493802025155366564941119652506040046167103944772779916129380/81",
+  "certificate_sha256": "9356f2632ad626e1db568e70099bed27d2cb4a4955f095b68a5c38e9340c5bc0",
+  "mutations": {
+    "omit_denominator_derivative": {
+      "column": 0,
+      "value": "-11622635929057341708776628922359626910786268956441046968875394701284664121685006287156719681075251510285593355136/3"
+    },
+    "transpose_compact_connection": {
+      "column": 0,
+      "value": "3792791204975192659294435324508710336346028928099657237288552304545715895263869820578905483700209325267187159285/21"
+    }
+  },
+  "scope": "The supplied K=(P0,P1)/Delta family with degrees15/13 is inconsistent at a=3,v=2. The full mixed-current identity and completeness of a larger rational family require their own argument; not inferred from ranks or specialization. No claim excluding arbitrary physical-cover currents."
+}

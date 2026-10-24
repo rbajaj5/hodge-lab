@@ -1,0 +1,123 @@
+{
+  "status": "PASS: generic Delta image compatibility; no v-only local residue obstruction found",
+  "utc": "2026-10-24T15:29:25.369070+00:00",
+  "seconds": 0.375,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "ebd993c870658eaebe55be3c1f6921d486fe413ff1064f0b5d0db2f97b21a167",
+  "prior_residue_sha256": "4577c6649bd004472aa7e0fc1ef090966d6e4df03d09aff506bc0b31b614dcfb",
+  "checks": [
+    "generic residue trace",
+    "generic determinant vanishes on Delta",
+    "generic image certificate b-column0",
+    "generic image certificate b-column1",
+    "generic image certificate c-column1",
+    "generic image certificate d-column1",
+    "full two-row Nv residue matrix",
+    "full two-row R2 residue vector",
+    "point left-null vector",
+    "point full source projection is zero",
+    "point compatible leading regular value",
+    "point eigenvalue polynomial",
+    "point residue-image projector",
+    "physical v derivative of discriminant",
+    "generic residue-image projector numerator"
+  ],
+  "mutations": [
+    {
+      "name": "drop residue row1",
+      "nonzero_projection": "gamma/756 - kappa/2592"
+    },
+    {
+      "name": "wrong leading coefficient -1/3 instead of -3",
+      "defect": [
+        "-(24*gamma - 7*kappa)/20412",
+        "-(24*gamma - 7*kappa)/20412"
+      ]
+    }
+  ],
+  "generic_polynomial_quotients": {
+    "generic determinant vanishes on Delta": [
+      "b*d - c**2/12"
+    ],
+    "generic image certificate b-column0": [
+      "b*d - c**2/12",
+      "0"
+    ],
+    "generic image certificate b-column1": [
+      "0",
+      "b*d - c**2/12"
+    ],
+    "generic image certificate c-column1": [
+      "b*d - c**2/12",
+      "0"
+    ],
+    "generic image certificate d-column1": [
+      "-3*a*d/2 - b*c/3",
+      "-3*a*c/4"
+    ],
+    "generic residue-image projector numerator": [
+      "-b*d + c**2/12",
+      "0",
+      "0",
+      "-b*d + c**2/12"
+    ]
+  },
+  "generic_conditions": "Characteristic zero; Delta=0, Delta_v=t Delta_b !=0, a!=0, physical cover unramified f_r!=0, r!=0; source scalars gamma,kappa regular along this divisor.",
+  "generic_residue_matrix": "C=(Delta M_b)/Delta_b on Delta=0",
+  "generic_eigenvalues": [
+    "0",
+    "-1/3"
+  ],
+  "generic_image_condition": "adj(Delta M_b) S=0 modulo Delta; all displayed quotient identities are exact polynomial divisibility, not a specialization inference",
+  "generic_leading_solution": "Z0=-3 S + u, with u in ker C and S=Res(R2 dv). This is divisor data, not a global rational flux.",
+  "pole_argument": "If a rational v-only correction had pole order m>=1, leading (C-m I)Z_-m=0. Eigenvalues 0,-1/3 exclude all positive integer m, so it must be regular and must obey C Z0=S. Compatibility holds; at n>=1, n I+C is invertible, so the regular local formal recursion has no further resonant obstruction.",
+  "point": {
+    "a": 4,
+    "v": -6,
+    "t": 1,
+    "residue_Nv": [
+      [
+        "-1/6",
+        "-1/6"
+      ],
+      [
+        "-1/6",
+        "-1/6"
+      ]
+    ],
+    "residue_R2": [
+      "gamma/756 - kappa/2592",
+      "gamma/756 - kappa/2592"
+    ],
+    "left_null": [
+      "1",
+      "-1"
+    ],
+    "projection": "0",
+    "leading_Z0": [
+      "-(24*gamma - 7*kappa)/6048",
+      "-(24*gamma - 7*kappa)/6048"
+    ]
+  },
+  "reused_nonzero_scalar_certificate": {
+    "source": "..\\check-01\\validation.json",
+    "not_recomputed": true,
+    "boundary_witness": {
+      "a": 4,
+      "v": -6,
+      "t": 1,
+      "Delta_v": 864,
+      "residue_gamma": "1/756",
+      "residue_kappa": "-1/2592",
+      "cover_polynomial": "r**18 - 4*r**15 + r**12 + 46656*r**6 + 46656*r**5 + 19440*r**4 + 4320*r**3 + 540*r**2 + 36*r + 1",
+      "gcd_f_fr_degree": 0,
+      "residue_denominator": "105815808*r**56 - 1058158080*r**53 + 3738825216*r**50 - 5329981440*r**47 + 4939434888192*r**44 + 4114118615040*r**43 + 1371372871680*r**42 - 32684857067520*r**41 - 27408410588160*r**40 - 9141850916352*r**39 + 59913788368896*r**38 + 51070941573120*r**37 + 17061740881920*r**36 - 19097637027840*r**35 - 18047944212480*r**34 - 6087089627136*r**33 + 76780505606160384*r**32 + 127967289246720000*r**31 + 95974765728952320*r**30 - 213275807420497920*r**29 - 414110714850201600*r**28 - 317425644284958720*r**27 - 90652135211237376*r**26 + 43872960910786560*r**25 + 55690766632488960*r**24 + 27284910842327040*r**23 + 8184354567975936*r**22 + 1651955761225728*r**21 + 398024262555700322304*r**20 + 995060102985272862720*r**19 + 1160903429260169011200*r**18 + 838430253526033244160*r**17 + 419215126738467354624*r**16 + 153712213137127636992*r**15 + 42697836982535454720*r**14 + 9149536496257597440*r**13 + 1524922749376266240*r**12 + 197675171215441920*r**11 + 19767517121544192*r**10 + 1497539175874560*r**9 + 83196620881920*r**8 + 3199870033920*r**7 + 76187381760*r**6 + 846526464*r**5",
+      "residue_numerator_remainder": "1480684296859471173168*r**17 + 3231966567603769352640*r**16 + 4491520705954136643840*r**15 + 3313555094806865987616*r**14 + 6052216082887820606976*r**13 + 7852909964619956063328*r**12 + 15265268670368084241816*r**11 + 28950815741021120714688*r**10 + 37968018852476469759552*r**9 - 5827346092769808494555856*r**8 - 24926822572114254937735584*r**7 - 50802304792010704631059104*r**6 - 37775336354114808534506640*r**5 - 14035638988013467067031744*r**4 - 2936706476948275429821888*r**3 - 353765018019082675788864*r**2 - 23003335023808179263904*r - 627619663911839174784",
+      "gcd_f_residue_numerator_degree": 0,
+      "gcd_f_residue_denominator_degree": 0
+    }
+  },
+  "scope": "The fixed-L scalar residue obstruction is removed by two-row v-connection coupling. This proves generic local compatibility on the stated Delta open, not existence of a global rational v-only primitive and not any conclusion about other divisors or infinity. No old gcd or source reduction replay."
+}

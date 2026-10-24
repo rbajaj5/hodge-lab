@@ -1,0 +1,10 @@
+{
+  "kind": "exact minor row-order postprocessing, no new symbolic search",
+  "executor": "mixed_checker AI worker",
+  "created_utc": "2026-10-24T15:32:47.343263+00:00",
+  "input_sha256": "0c48086d5308ca0ce3dfae7494716b5771b54e706e06d0ab1e1c55fb2c39e5dd",
+  "formula": "inversions=sum(rows[i]>rows[j] for i<j); det_original=(-1)^inversions*det_permuted mod p",
+  "selected_rows_are_first703": true,
+  "row_permutation_inversions": 50,
+  "det_first703_mod32003": 13884
+}

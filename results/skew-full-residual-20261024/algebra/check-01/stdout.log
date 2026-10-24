@@ -1,0 +1,21 @@
+PASS universal scalar coefficient Euler operator
+PASS universal fibre-coordinate Euler operator
+PASS coefficient-Euler lift is existing beta line, not transverse
+PASS tangency two-by-two minor
+PASS polynomial Bezout c U + P J = 1
+PASS beta0 wedge L is da wedge dt
+PASS mixed beta operator first row is exactly minus h_v
+PASS mixed beta operator second row zero-order polynomial
+PASS mixed beta flux wedge construction
+PASS row0 integration-by-parts survivor
+PASS simple discriminant boundary point
+PASS R2 row0 gamma residue
+PASS R2 row0 kappa residue
+{
+  "status": "PASS; polynomial mixed-beta family has a nonzero residue obstruction, not a full-source nonexistence claim",
+  "checks": 15,
+  "mutations": 2,
+  "seconds": 0.6720000000059372,
+  "gcd_residue_numerator": 0,
+  "gcd_residue_denominator": 0
+}

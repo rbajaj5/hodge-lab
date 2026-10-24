@@ -1,0 +1,15 @@
+PASS: universal exact trace
+PASS: determinant divisible by Delta
+PASS: determinant quotient
+PASS: exact quadratic matrix identity
+PASS: adjugate image b-column0
+PASS: image eigenvalue b-column0
+PASS: adjugate image b-column1
+PASS: image eigenvalue b-column1
+PASS: adjugate image c-column1
+PASS: image eigenvalue c-column1
+PASS: adjugate image d-column1
+PASS: image eigenvalue d-column1
+PASS: physical v-transversality factor
+REJECTED CONTROL: leading +3 instead of -3 has nonzero Delta remainder
+PASS: 13 generic polynomial checks and one sign control

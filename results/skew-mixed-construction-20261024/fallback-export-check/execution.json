@@ -1,0 +1,20 @@
+{
+  "purpose": "plain-text export reproduction only; no new mathematical search",
+  "executor": "root",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "results/skew-mixed-construction-20261024/reproduce_laurent.py",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json"
+  ],
+  "started_utc": "2026-10-24T15:35:09.768278+00:00",
+  "completed_utc": "2026-10-24T15:35:11.194519+00:00",
+  "seconds": 1.4262610419973498,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "files": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "f8c8826cd236e8b706a26e67c9022ca3b69d0c523e78ee1ab9de599411a9925d",
+    "stdout.log": "b70a93196b3c0ac5612865ba41b35281cb650fa945ec0bbe45316f9429264774"
+  }
+}

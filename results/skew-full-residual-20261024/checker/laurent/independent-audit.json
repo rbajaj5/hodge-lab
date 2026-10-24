@@ -1,0 +1,35 @@
+{
+  "status": "PASS: complete independent reconstruction of decisive minor and distinct Gaussian determinant algorithm",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "dd7417f43bd8f7cb6442a84bdda909d32103ffc72a42aca243a3d97fbb5513d4",
+  "captured_pro_script_sha256": "96eed72f71c5aeb9ef03511fb19a3a1e6dde826b368e033444ba085ee2ed68dc",
+  "capture_sha256": "0a33f20f56e3895aad71956b3020d9fda1499a8fb76797174a1bacd952c1ccaa",
+  "captured_matrix_npy_sha256": "e893878a7c0ef84fd1ff95ee0e2628cca73460ca0273eaf3d7bc63c5d2541360",
+  "canonical_rebuilt_matrix_bytes_sha256": "11646d843c813f236f3f4e307f3c3303afb2f64868c019edcac16c3a6194b10e",
+  "prime": 32003,
+  "prime_verified": true,
+  "shape": [
+    703,
+    703
+  ],
+  "entries_checked": 494209,
+  "coefficient_columns": 702,
+  "determinant": 13884,
+  "row_swaps": 8,
+  "basis": "Six physical components, each span_Q{r^m v^n t^k: -10<=m<=2,0<=n,k<=2};117 independent monomials per component.",
+  "operator_binding": "Connection obtained by symbolic Jacobian of (A(r,v),tv,t(1-t^2)/7,1+t^6), contracted with literal universal M entries. Every monomial derivative obtained by symbolic differentiation in r,v,t. Source r^-4 M_b e0/12 uses packet positive orientation.",
+  "methods": "Independent rational-polynomial numerator/denominator evaluator; full entry equality against passively captured Pro minor; normalized-pivot Gaussian elimination with pivot-product determinant. Does not use Pro AST evaluator or Bareiss recurrence.",
+  "negative_control": {
+    "omitted_term": "A_v M_a",
+    "point_index": 0,
+    "row": 0,
+    "column": 324,
+    "correct_entry": 2666,
+    "mutant_entry": 12617
+  },
+  "characteristic_zero_reason": "Each selected finite-field point has integer lifts. All rational input denominators are prime units by explicit evaluation checks, so the rational augmented determinant reduces to13884 and is nonzero in Q. Its703 columns are independent while the coefficient matrix has only702 columns. Thus no rational coefficient vector can solve these necessary evaluations, regardless of denominators in hypothetical solution coefficients. The same rank obstruction persists after any characteristic-zero extension of the constant field.",
+  "scope": "Excludes exactly the declared bounded six-component physical Laurent family. It does not exclude additional current denominators, larger exponents, general rational compact currents, fibre-dependent sextic functions, or the target problem. Only the decisive first703 rows are reconstructed; the larger762-row search matrix and the separate first-jet obstruction are not replayed.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "sympy": "1.14.0"
+}

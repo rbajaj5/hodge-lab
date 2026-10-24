@@ -1,0 +1,14 @@
+NEW bounded mathematical handoff — 24 October 2026 EDT
+
+No primitive found. Parent84f294e0235c3fd4b5d4849e565536172a74329c.
+
+Results: (1) original triangular sign formula invalid, retained; corrected Gamma valid but full candidate has exact nonzero two-row residual. (2) Displayed universal mixed first-jet family has no rationalK in Q(a,v,t)^2, by pole bounds and52x30 exact ranks30/31 with Cramer gate. (3) all six physical Laurent flux components with r powers−10..2,v/t degrees0..2 excluded overQ:703x703 augmented determinant13884 mod32003, independently reconstructed. No arbitrary-current exclusion.
+
+Apply: verify parent, git apply --index mixed-construction.patch; git write-tree must match expected-tree.json. No commit/push made here. Shared README/ledger/team-board untouched; coordinator integrates.
+
+Essential fallback: results/skew-mixed-construction-20261024/reproduce_laurent.py requires only NumPy and the parent pinned connection JSON; it reconstructs the minor without this archive's matrix or any old ZIP. Run under timeout60s. The complete formulas and bounds are in notes/skew-mixed-construction-20261024.md.
+
+Exact sourceSHA a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Old Q/R2,beta,t-only,source/curve/trace evidence reused, not rerun. External fixed-L and generic residue-image handoffs attributed separately. All own failures and timeouts retained. Plaintext scripts/results are UTF8; PNG is the only binary payload type.
+
+Remaining: an actual full two-row rational mixed current outside the two excluded families; changed a/v flux constraints or physical-cover coefficients beyond the Laurent box/another justified pole support. No source exactness, fibre-exact lift, primitive, global clearing, certificate or solve.

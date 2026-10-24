@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/alternate/test_universal_first_jet.py",
+    "results/skew-mixed-construction-20261024/alternate/first-jet-result-01"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-mixed-next",
+  "started_utc": "2026-10-24T15:23:27.396167+00:00",
+  "elapsed_seconds": 1.3676049360001343,
+  "exit_code": 0,
+  "timeout_seconds": 60,
+  "timed_out": false,
+  "python_version": "3.12.14",
+  "executor": "Pro mixed_constructive AI worker",
+  "source_sha256": "af93af4a97cf5fc30d2845ba3967f7a1f5c67aa5536fe8d3b131a152b313394d",
+  "stdout_sha256": "642fb27f09884a49d00a100cf89ce8b85d0823d3d4e015c1af3d493656290482",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

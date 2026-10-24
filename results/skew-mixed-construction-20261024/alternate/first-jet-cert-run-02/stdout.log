@@ -1,0 +1,73 @@
+jet_chi_v_coefficient_row_0 PASS
+jet_chi_v_coefficient_row_1 PASS
+jet_chi_physical_chain_rule_row_0 PASS
+jet_chi_physical_chain_rule_row_1 PASS
+generic_residue_trace PASS
+generic_residue_determinant_mod_Delta PASS
+generic_infinity_orders [-3, -2, -2, -3] [-6, -6]
+{
+  "status": "PASS_SCOPED_COMPLETE_UNIVERSAL_K_EXCLUSION",
+  "executor": "Pro mixed_constructive AI worker",
+  "created_utc": "2026-10-24T15:28:02.267387+00:00",
+  "elapsed_seconds": 0.47567341399917495,
+  "sympy_version": "1.14.0",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "206e57f36888704b8927195e88f847b7f5d47889ba4d8a9918f67413357e3f4f",
+  "checks": {
+    "jet_chi_v_coefficient_row_0": "zero",
+    "jet_chi_v_coefficient_row_1": "zero",
+    "jet_chi_physical_chain_rule_row_0": "zero",
+    "jet_chi_physical_chain_rule_row_1": "zero",
+    "generic_residue_trace": "zero",
+    "generic_residue_determinant_mod_Delta": "zero",
+    "generic_infinity_orders": "PASS",
+    "three_mutations_rejected": "PASS"
+  },
+  "generic_Nbar_orders": [
+    -3,
+    -2,
+    -2,
+    -3
+  ],
+  "generic_G_T_orders": [
+    -6,
+    -6
+  ],
+  "reused_system_validation_sha256": "5df9075c41286961b5c529d40806fdfb74716f70c8830a26ad04dd86413ccaf5",
+  "K_zero_actual_cover_point": {
+    "r": "1",
+    "a": "3",
+    "v": "2",
+    "t": "1",
+    "chi": "-5/3",
+    "chi_v": "-10",
+    "chi_vv": "38"
+  },
+  "Div_J_minus_R0_at_K_zero": [
+    "40/67081",
+    "-1945/2414916"
+  ],
+  "mutation_vectors": {
+    "drop_v_connection": [
+      "-3905/134162",
+      "-29945/7244748"
+    ],
+    "wrong_T_sign": [
+      "-80/67081",
+      "1945/1207458"
+    ],
+    "drop_cover_motion_chi_vv": [
+      "0",
+      "-7/6"
+    ]
+  },
+  "pole_argument": [
+    "At a=3,v=2 the saved monic discriminant is squarefree. Since its generic leading coefficient is 27a^2, this proves generic squarefreeness.",
+    "Away from Delta all coefficients and T are regular, so a rational K cannot have a finite pole.",
+    "At a simple Delta root, residue eigenvalues are 0 and -1/3. T has order at most two; K can therefore have at most a simple pole.",
+    "G=diag(t^-3,t^-1); Nbar=O(t^-2) and G*T=O(t^-2). A positive-degree polynomial part of G*K is impossible. Hence K0=O(t^3), K1=O(t), giving deg(P0)<=15,deg(P1)<=13 for K=P/monic(Delta).",
+    "The generic coefficient system and rhs are regular at a=3,v=2. Full column rank30 there supplies an invertible30x30 minor; by Cramer a putative generic solution would be regular there, contradicting exact rank30 versus31. Thus no rational K in Q(a,v,t)^2 solves this displayed universal-family equation."
+  ],
+  "limit": "This excludes the displayed universal mixed first-jet family, not all mixed currents using the actual cover relation. No new global source exactness, trace, primitive or target-solve claim."
+}

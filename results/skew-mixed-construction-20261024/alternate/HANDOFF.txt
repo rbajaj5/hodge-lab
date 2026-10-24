@@ -1,0 +1,111 @@
+NEW CONSTRUCTIVE BATCH — UNIVERSAL MIXED FIRST-JET FAMILY
+Author/executor: Pro mixed_constructive AI worker; not a human independent review.
+Date: 24 October 2026, America/New_York; UTC execution timestamps in receipts.
+Pinned notebook parent: 84f294e0235c3fd4b5d4849e565536172a74329c.
+Pinned upstream (supplied unchanged): 27f4bb9ad8757e5841f884d9d30124a3c97a847d.
+Literal compact connection SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+
+Status: the displayed universal mixed-current family is excluded over
+Q(a,v,t). No rational primitive was found. Arbitrary mixed currents using
+the actual cover relation remain open. This is a new scoped family test,
+not a repetition of the old pure-t R2 obstruction, beta candidate, or trace.
+
+REUSED INPUTS, NOT REPLAYED
+The completed centered Q/R2 and X/Y identities, packet source convention,
+moving-root derivative definitions, and point jets are reused. Both compact
+rows use the positive packet orientation, ordered e0,e1, columns as inputs.
+N_a=M_a; N_v=t M_b; N_t=v M_b+c' M_c+d' M_d,
+c=t(1-t^2)/7, d=1+t^6, chi=r^-3-v^3/3, chi_t=0.
+R0=chi_vv e1/(36t^2), R0=Div_N(Y)+R2.
+
+EXPLICIT NEW FAMILY
+J_a = 0,
+J_v = chi_v e1/(36t^2) - chi M_a e0/(36t),
+J_t = chi K(a,v,t), with K a rational two-component base vector.
+All chi_v,chi_vv are at fixed a, hence include moving-root derivatives.
+There is no a-flux in this family; no nonzero a-flux derivative is omitted.
+
+Put T=(partial_b M_a+M_b M_a)e0/36, evaluated at b=tv,c,d.
+The full two-row identity is
+  Div_N(J)-R0 = chi*((partial_t+N_t)K-T).
+The cancellation uses M_b e1=M_a e0 and partial_v M_a=t partial_b M_a.
+The chi_vv term remains exactly e1/(36t^2); the other chi_v coefficient
+vanishes in both rows. Products N_v*J_v and N_t*J_t are retained.
+
+The corresponding candidate directly for R2 is Z=J-Y:
+  Z_a=0,
+  Z_v=chi_v e1/(36t^2)-chi M_a e0/(36t)
+      +(v chi_v-chi)e0/(108 a t),
+  Z_t=chi K+chi_vv e1/(36t).
+Thus R2-Div_N(Z)=chi*(T-(partial_t+N_t)K).
+This is a mixed v,t current, not a current confined to t.
+
+EXACT DISCRIMINATING RESULT
+At (a,v)=(3,2), let Delta be the monic cubic discriminant after physical
+substitution, degree12, and N=Delta*N_t. For K=P/Delta, the equation is
+  Delta P' + (N-Delta' I)P = Delta^2 T.
+Allow deg P0<=15 and deg P1<=13: 30 coefficients, 52 coefficient equations.
+Author exact QQ ranks: coefficient30, augmented31.
+Separate checker rebuilt the actual coefficient recurrence independently,
+matched all 52x30 entries, and supplied an integer left-null vector w with
+wA=0 and wy!=0. Its files belong to checker/first-jet-system-02/result;
+its execution is separate and not included in author counts.
+
+WHY THESE DEGREES COVER EVERY RATIONAL K IN THIS FAMILY
+1. Generic Delta is squarefree: the saved a3,v2 specialization is squarefree,
+   and generic leading coefficient27a^2 is nonzero.
+2. N_t and T have no finite t poles away from Delta. Any pole of K there
+   would have an uncancellable highest derivative term.
+3. At a simple Delta root, checked trace/determinant identities give residue
+   eigenvalues0,-1/3. T has pole order<=2. A pole of K of order m>1 would
+   have nonzero leading (R-mI), so K has at most simple Delta poles.
+4. With G=diag(t^-3,t^-1), checked infinity orders of
+   G*N_t*G^-1-G'*G^-1 are (-3,-2,-2,-3); orders of G*T are (-6,-6).
+   A positive-degree polynomial part of G*K cannot satisfy the equation.
+   Hence K0=O(t^3), K1=O(t), yielding exactly numerator bounds15,13.
+5. The generic bounded coefficient matrix and rhs are regular at a3,v2.
+   Rank30 there supplies a nonsingular30x30 minor. A hypothetical generic
+   solution is regular there by Cramer's rule, contradicting ranks30/31.
+   This explicitly closes the specialization-pole loophole for this family.
+
+POINT REJECTION AND CONTROLS
+For K=0 and actual cover point (r,v,t,a)=(1,2,1,3), reuse the checked jets
+chi=-5/3, chi_v=-10, chi_vv=38. Then
+  Div_N(J)-R0 = (40/67081, -1945/2414916),
+so R2-Div_N(Z) is its negative. Both surviving rows are nonzero.
+Three fail-closed controls reject dropping N_v*J_v, reversing T's sign,
+and replacing the moving-root chi_vv=38 by fixed-r derivative -4.
+No trace computation or new rank34 claim is made.
+
+EXECUTIONS AND FAILURE
+first-jet-run-01: exit0, 1.368s wrapper, exact52x30 system.
+first-jet-cert-run-01: exit124 at60.021s, expanded generic expressions;
+  stdout/stderr empty, exact failed source retained as source.py.
+  This timeout is not mathematical evidence.
+first-jet-cert-run-02: exit0, 0.816s wrapper, structured polynomial identity,
+  generic pole/infinity certificate, actual point and three controls.
+No unchanged failed process was retried. Structured checking moves the
+universal discriminant numerator algebra before physical substitution.
+Python3.12.14; SymPy1.14.0; all mathematical children run with -O and60s cap.
+No Lean, commits, pushes, upstream actions, or shared notebook edits.
+
+REPRODUCTION (fresh output directory names are mandatory)
+PYTHONPATH=/workspace/scratch/b8974c152662/constructive-python python3 \
+  results/skew-mixed-construction-20261024/alternate/run_bounded.py \
+  results/skew-mixed-construction-20261024/alternate/replay-system-run \
+  results/skew-mixed-construction-20261024/alternate/test_universal_first_jet.py \
+  results/skew-mixed-construction-20261024/alternate/replay-system-result
+PYTHONPATH=/workspace/scratch/b8974c152662/constructive-python python3 \
+  results/skew-mixed-construction-20261024/alternate/run_bounded.py \
+  results/skew-mixed-construction-20261024/alternate/replay-cert-run \
+  results/skew-mixed-construction-20261024/alternate/certify_first_jet_structure.py \
+  results/skew-mixed-construction-20261024/alternate/replay-cert-result
+The structure checker reuses the immutable author first-jet-result-01 receipt;
+its hash is saved. On another machine install SymPy1.14.0 and omit PYTHONPATH.
+
+NEXT DEPENDENCY
+A successful next current must change the constrained a/v fluxes above or
+use the actual algebraic relation satisfied by chi, rather than merely append
+a base-rational chi*K t-flux. Root's direct physical Laurent family is a
+distinct such test. No additional alternate search was started after freeze.

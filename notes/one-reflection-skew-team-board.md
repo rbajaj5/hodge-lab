@@ -18,13 +18,19 @@ by the user toward the solution. Zero trace is reused context, not the
 success criterion. A partial current counts only within its documented scope;
 the remaining source must stay explicit.
 
-The [24 October constructive batch](skew-mixed-current-20261024.md) has a
-checked centered current `Q` with `B=Div_N(Q)+R2`, regular at generic `t=0`.
-`R2` is nonzero. Pro consumed it and proposed a beta current. Separate local
-checks confirm its pole trade and nonzero residual. A further inverse repair
-and fixed-point t-only exclusion are Pro-reported; their file export failed,
-so those additional claims are not locally verified. No primitive or
-certificate was found, and no further search is active.
+The [new full-residual batch](skew-full-residual-20261024.md) reuses the
+centered Q/R2 and beta inputs. A fixed polynomial mixed-current family is
+excluded by its nonzero relative residue. A corrected triangular current
+and a simpler comparator both leave exact nonzero two-row remainders.
+The full coupled connection satisfies the generic discriminant image
+condition, giving compatible local boundary values. This preserves the
+broader coupled route but does not construct a global rational primitive.
+The new note distinguishes direct checks, failed drafts and reported evidence.
+Pro's delivered packet also excludes a specified mixed first-jet completion
+and a 702-coefficient six-component physical Laurent family. These are
+scoped routes, not a complete obstruction to rational compact currents.
+The fresh packet is source-bound and preserved with its failures; local
+replays are separately recorded in the integrated note.
 
 Reuse the [physical trace bridge and its evidence](skew-physical-trace-bridge.md)
 at notebook commit `0ddf3af6bca227bbba119d6af8e3e0b102e18254`, including proof
@@ -39,11 +45,11 @@ Pin the current protected input and any changed dependencies at actual dispatch.
 
 | Owner role | Assignment and output | Receiver and acceptance condition | State |
 | --- | --- | --- | --- |
-| Coordinator | Pin the target and common interface; integrate the bounded outcome | Same parent, source convention, fixed problem, explicit limits | Actual Goal used; parent `06e88a9`, 45-minute research bound; scoped local evidence integrated |
-| Constructive lead, reused Pro chat | Seek mixed `a,v,t` fluxes with `Div_N(Z)=R2` | Return a full candidate or a scoped failed family with exact evidence | Consumed current/corrections; beta candidate checked locally; additional packet delivery failed; search stopped |
-| Local algebra worker | Construct current and exact remainder, preserving both rows | Lead consumes a concrete residual; separate checker receives reproducible formulas | Delivered `Q/R2`; 29 checks and 3 mutation controls passed; further search stopped |
+| Coordinator | Pin the target and common interface; integrate the bounded outcome | Same parent, source convention, fixed problem, explicit limits | Actual Goal used; parent `84f294e`, 45-minute research bound; scoped local evidence integrated |
+| Constructive lead, reused Pro chat | Seek mixed `a,v,t` fluxes with `Div_N(Z)=R2` and test the original physical source | Return a full candidate or a scoped failed family with exact evidence | Consumed both local handoffs; delivered fresh packet with corrected triangular failure, first-jet exclusion and 702-coefficient physical test; no primitive found |
+| Local algebra worker | Construct current and exact remainder, preserving both rows | Lead consumes a concrete residual; separate checker receives reproducible formulas | Reused Q/R2; delivered fixed-L residue obstruction and generic two-row compatibility, with distinct receipts |
 | Lean implementer | No assignment in this batch | None until the user restores this role | **Benched** |
-| Separate local checker | Check `Y`, direct `Q`, centering, beta operator and pole trade | Coordinator receives executed evidence and explicit limits | Separate 11-, 16-, 7- and 14-check runs saved; counts remain separate; scope review completed |
+| Separate local checker | Check new operators, full residuals, coupled compatibility and Pro's physical Laurent certificate | Coordinator receives executed evidence and explicit limits | Independent decisive-minor reconstruction and different elimination passed; first-jet Pro-code replay and separate reasoning review recorded; earlier failures preserved |
 
 Roles may be sequential. Do not create five workers to match five rows.
 Construction and algebra can work in parallel after agreeing their interface.
@@ -54,7 +60,7 @@ assumptions early, but must distinguish that review from an executed replay.
 flowchart LR
   T[Full physical source] --> G[Pro: constructive cancellation]
   T --> A[Algebra: explicit current and remainder]
-  A -->|Centered R2 consumed| G
+  A -->|Failure and compatibility consumed| G
   A --> C[Separate exact checker]
   G -->|Concrete candidate or failed family| C
   C -->|Evidence or failed obligation| R[Coordinator: update target board]

@@ -1,0 +1,15 @@
+{
+  "status": "visually inspected and accepted",
+  "method": "Opened the rendered PNG with view_image and inspected all panels.",
+  "png_sha256": "8d88dca410564748f64fcaafce6842a430bb248a87167205616f8838920bb9f2",
+  "svg_sha256": "1e550fb6fe9a890ba5ad81af9f023ab314fb517e2f894a72a551f3a6237fded3",
+  "observations": [
+    "Complete two-row operator and all coefficient definitions are readable.",
+    "Discriminant boundary is explicitly distinguished from an ordinary evaluation point.",
+    "Three saved exact gcd degrees are separated from the descriptive coefficient-magnitude plot.",
+    "Scope box states fixed L excluded and arbitrary other two-row currents open.",
+    "No clipped formulas, overlapping text, or unreadable labels were found."
+  ],
+  "no_mathematical_rerun": true,
+  "previous_failure": "render-01 retained a Matplotlib unsupported-mathtext-command failure for bmod; render-02 replaces it with a supported text operator. This was a rendering failure, not a mathematical check."
+}

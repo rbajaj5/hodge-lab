@@ -1,0 +1,4 @@
+/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/render.py:25: SyntaxWarning: invalid escape sequence '\m'
+  fig.text(.12,.12,'All bars use the same target: $R_2-\mathrm{Div}_N(Z)$. For the first-jet current, $Z=J-Y$.',fontsize=10)
+mkdir -p failed for path /root/.config/matplotlib: [Errno 30] Read-only file system: '/root/.config'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-uigc310g because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.

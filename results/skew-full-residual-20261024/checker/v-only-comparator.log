@@ -1,0 +1,11 @@
+PASS: formal two-row IBP identity
+PASS: independent alpha jet derivative 0v
+PASS: independent alpha jet derivative 0t
+PASS: independent alpha second-v jet 0
+PASS: independent alpha jet derivative 1v
+PASS: independent alpha jet derivative 1t
+PASS: independent alpha second-v jet 1
+PASS: v-only comparator direct full point divergence
+REJECTED CONTROL: v-only comparator connection sign mutation [-823557085/29553138279, -107900155/13134728124]
+RESULT: v-only comparator full remainder [70505/312731622, -637135/1250926488]
+PASS: 8 scoped checks and one connection-sign control

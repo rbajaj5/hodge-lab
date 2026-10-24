@@ -1,0 +1,39 @@
+{
+  "status": "row0 does NOT cancel exactly",
+  "source_path": "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "47e8de079f9ea7d29d55428acc62e2ddacc316fbe20861be5f0c4a874de434db",
+  "alpha_definition": "(Nt[0,1]+v/(3a))/(36t)",
+  "beta_definition": "Mb[0,0]/(108a)",
+  "alpha_at_t_one": "(189*a**2*v + 6*a*v**2 + 14*v**4)/(20412*a**3 + 1512*a*v**3)",
+  "beta_at_t_one": "-v**2/(2916*a**3 + 216*a*v**3)",
+  "h": "-alpha*chi_v - chi*(-alpha_v + beta*v)",
+  "remaining_scalar_coefficient": "alpha_vv - 2*beta - beta_v*v",
+  "remaining_coefficient_at_t_one": "(4374*a**5 + 10206*a**4*v**2 - 2268*a**3*v**3 + 945*a**2*v**5 + 24*a*v**6 + 14*v**8)/(378*a*(27*a**2 + 2*v**3)**3)",
+  "generic_coefficient_zero": false,
+  "point": {
+    "a": "3",
+    "v": "2",
+    "t": "1",
+    "chi": "-5/3",
+    "chi_v": "-10",
+    "chi_vv": "38",
+    "alpha": "1849/293706",
+    "alpha_v": "486487/152139708",
+    "alpha_vv": "32089/1094560677",
+    "beta": "-1/20979",
+    "beta_v": "-235/5433561"
+  },
+  "point_coefficient": "2080045/9851046093",
+  "point_target_row0": "105778/440559",
+  "point_produced_row0": "789566027/3283682031",
+  "point_row0_remainder": "-10400225/29553138279",
+  "negative_control": {
+    "reverse_current_sign_defect": "1579132054/3283682031"
+  },
+  "assumptions": "L=L_a da+L_t dt depends only on a,t and beta0 wedge L=da wedge dt. Then Div_N(h beta wedge L)_0=-h_v. h_v is at fixed a,t; its formal chi derivatives include cover motion.",
+  "scope": "Only the new proposed row0 integration formula is tested; no full second-row equation, full cancellation, rational primitive, or certificate is claimed.",
+  "provenance": "Independent parallel Codex checker directly parses pinned public connection JSON; no author checker and no old Q/beta replay is imported.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0"
+}

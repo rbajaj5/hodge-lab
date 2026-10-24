@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "C:\Users\anaxe\Documents\Codex\2026-10-16\what-is-hodge-theory-by-the\work\full-residual-20261024\algebra\v-only-local\visualization\render_coupling.py", line 84, in <module>
+    fig.savefig(out/names[0],format='svg',metadata={'Date':receipt['utc']},facecolor=fig.get_facecolor())
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\figure.py", line 3515, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py", line 2289, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py", line 2146, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backends\backend_svg.py", line 1366, in print_svg
+    self.figure.draw(renderer)
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\artist.py", line 94, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\figure.py", line 3282, in draw
+    mimage._draw_list_compositing_images(
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\image.py", line 133, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\text.py", line 853, in draw
+    bbox, info, _ = self._get_layout(renderer)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\text.py", line 479, in _get_layout
+    w, h, d = _get_text_metrics_with_cache(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\text.py", line 59, in _get_text_metrics_with_cache
+    return get_text_metrics(text, fontprop.copy(), ismath, dpi)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\text.py", line 125, in _text_metrics
+    return local_renderer.get_text_width_height_descent(text, fontprop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backends\backend_svg.py", line 1314, in get_text_width_height_descent
+    return self._text2path.get_text_width_height_descent(s, prop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\textpath.py", line 58, in get_text_width_height_descent
+    self.mathtext_parser.parse(s, 72, prop)
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\mathtext.py", line 86, in parse
+    return self._parse_cached(s, dpi, prop, antialiased, load_glyph_flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\mathtext.py", line 100, in _parse_cached
+    box = self._parser.parse(s, fontset, fontsize, dpi)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anaxe\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\_mathtext.py", line 2306, in parse
+    raise ValueError("\n" + err.explain(0)) from None
+ValueError: 
+C=\operatorname{Res}(N_v\,dv)=-\frac16
+                                    ^
+ParseSyntaxException: Expected \frac{num}{den}, found '16'  (at char 36), (line:1, col:37)

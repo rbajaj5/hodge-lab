@@ -46,6 +46,20 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: full-residual tests and coupled boundary data
+
+The [next bounded cancellation batch](notes/skew-full-residual-20261024.md)
+found no full primitive. It excludes a fixed mixed-current family, rejects
+two explicit trials, and records Pro's mixed first-jet and 702-coefficient
+physical Laurent exclusions with their exact bounds and separate checks.
+The full two-row connection nevertheless satisfies the generic discriminant
+compatibility condition, giving local boundary data for a coupled current.
+This does not establish global rationality. Both source rows, all physical
+derivatives, failed signs and verification limits are retained. Goal and
+the reused Pro chat coordinated the batch; Lean remains benched.
+[Checked evidence and failed attempts](notes/skew-full-residual-20261024.md)
+· [Coupled-residue visualization](results/skew-full-residual-20261024/algebra/v-only-local/visualization/render-02/two-row-local-compatibility.png).
+
 ### One-reflection-skew: constructive current with a nonzero remainder
 
 The [24 October solution-focused batch](notes/skew-mixed-current-20261024.md)

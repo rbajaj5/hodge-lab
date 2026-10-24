@@ -1,0 +1,25 @@
+{
+  "executor": "mixed_checker AI worker",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/check_translation_current.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/translation-current-02/result/validation.json"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-mixed-next",
+  "started_utc": "2026-10-24T15:24:36.127325+00:00",
+  "completed_utc": "2026-10-24T15:24:36.943909+00:00",
+  "wall_seconds": 0.8166080670016527,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": "e1841257085a0c3b73e8e22fca6e8fb9e3b62f1df4e9c61e254c4825870b5b14",
+  "PYTHONPATH": "/workspace/scratch/b8974c152662/constructive-python",
+  "files": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "e1841257085a0c3b73e8e22fca6e8fb9e3b62f1df4e9c61e254c4825870b5b14",
+    "stdout.log": "2da5d2f8007754f3e991d3c7493dffa520877108eb9ca73427d8ff2075d24928",
+    "result/validation.json": "2d389766dd45d3af22149fb3c4536bbc54861080d93a62e4268b2aa377a2cc71"
+  }
+}

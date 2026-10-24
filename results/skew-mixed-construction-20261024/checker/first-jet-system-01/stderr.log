@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/check_first_jet_system.py", line 29, in <module>
+    A=S.Matrix([[coeff(Ns[i][j],n-k)+(2*k-n-1)*coeff(Delta,n-k+1)*(i==j) for j,k in labels] for i in range(2) for n in range(26)])
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for *: 'Rational' and 'bool'

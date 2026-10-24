@@ -6084,3 +6084,125 @@ All earlier ledger bytes are preserved. No upstream post, reply, edit or PR;
 Posts 1–29 and tally 29 discussion contributions / one closed maintenance PR /
 zero accepted authored solves remain unchanged. The bounded research batch
 is complete; the mathematical target remains open.
+
+
+### Checkpoint 147 — full-residual cancellation attempts, 24 October 2026 EDT
+
+Used an actual Goal and the reused Pro chat on unchanged `one-reflection-skew`,
+with notebook parent `84f294e0235c3fd4b5d4849e565536172a74329c` and upstream
+dispatch pin `27f4bb9ad8757e5841f884d9d30124a3c97a847d`. Lean stayed benched.
+The completed Q/R2, beta and scalar-trace calculations were reused. Research
+was bounded to 45 minutes, each symbolic process to 60 seconds and each
+network operation to 45 seconds, with a 15-minute integration allowance.
+The [result note](notes/skew-full-residual-20261024.md) retains both compact
+rows, all moving-root derivatives, assumptions and the full failed remainders.
+Mathematical work closed at 15:44:42 UTC, after 29 minutes 20 seconds;
+subsequent integration and publication are recorded separately.
+
+The complementary worker constructed a polynomial one-form L giving the
+mixed family Z=h beta wedge L, without an added divisor in L or its operator.
+Its full first output is -D_v h. A nonzero relative discriminant residue
+excludes every rational h in the compact coefficient field for this fixed L.
+The author proved nonvanishing on all eighteen sheets at the stated boundary
+by exact rational gcds; a separate checker independently certified generic
+nonvanishing through good modular reduction. Neither excludes arbitrary
+mixed currents or arbitrary fibre-dependent corrections.
+
+The initial Pro triangular contraction failed an exact matrix entry check.
+One explicitly supplied sign repair passed, but its full current left two
+nonzero rational residual components. A simpler full two-row integration-
+by-parts comparator also failed at an allowed physical point. The failed
+draft and repaired check remain separate. Removing cover-derivative terms
+was not counted as novel coverage; earlier source reductions already did so.
+
+The next diagnostic found **generic coupled local compatibility**, rather
+than a stronger obstruction. On the stated transverse, unramified part of
+Delta, the residue matrix has eigenvalues 0,-1/3 and the full source residue
+lies in its image. Exact universal adjugate identities give compatible
+regular boundary data Z0=-3 rho modulo the matrix kernel. A separate checker
+verified these polynomial identities directly from the pinned connection.
+The fixed-L scalar obstruction therefore does not extend to full two-row
+coupling. Formal local compatibility does not imply a global rational current;
+other divisors, infinity and global rationality remain unresolved.
+
+New executed evidence stays separated by scope in
+[the saved receipts](results/skew-full-residual-20261024): author fixed-family
+15 checks/two controls; separate first-row point rejection; separate fixed-
+family 11 checks/one control; repaired triangular 13 checks/one control;
+simpler comparator eight checks/one control; author coupled residue 15 checks/
+two controls; separate local eight checks/one control and generic 13 checks/
+one control. These are exact AI-agent computations, not human reviews or
+Lean/kernel executions. The expanded-expression timeout and failed signs
+are retained; they are not positive evidence. Source/script/receipt bindings
+are reviewed separately from mathematical execution.
+
+Two reproducible, inspected figures show the
+[fixed-family certificate](results/skew-full-residual-20261024/algebra/visualization/render-02/mixed-beta-residue-certificate.png)
+and the [full coupled compatibility](results/skew-full-residual-20261024/algebra/v-only-local/visualization/render-02/two-row-local-compatibility.png).
+They read frozen receipts; their generators, input/output hashes and failed
+first renderings are retained. Coefficient bar heights do not prove the
+obstruction. The [team board](notes/one-reflection-skew-team-board.md)
+records the actual handoffs and keeps the primitive objective open.
+
+The coordinator briefly misdescribed the preceding Pro t-only exclusion as
+scalar-only. Reading the retained prior report showed it already concerned
+the full two-vector equation at its fixed point; this was corrected to Pro
+before reuse. It remains previously reported evidence, not a new replay.
+
+The reused Pro lead then delivered a fresh, successfully downloaded 107-file
+packet, ZIP SHA256 `9441abd9f0aea4454bd98bf98c21e280ebf58d701d9fd54911b170a29432009d`.
+Its original [full-source note](notes/skew-mixed-construction-20261024.md),
+scripts, failures, receipts and [third inspected figure](results/skew-mixed-construction-20261024/figure-02/result/full-residuals.png)
+are preserved byte-for-byte. Manifest/member and script/receipt bindings
+passed separately from mathematical checking. Shared ledger/README/board
+edits were integrated by the coordinator, not blindly applied from a patch.
+
+The direct physical test allows all six flux components independently in
+span_Q{r^m v^n t^k: -10<=m<=2, 0<=n,k<=2}. It retains the original physical
+source, both rows, A_v M_a and every derivative. Its 702 coefficient columns
+have an augmented 703-square minor with determinant 13884 modulo 32003.
+A nonzero minor of the fixed rational evaluation matrix excludes this
+declared Laurent family in characteristic zero, regardless of denominators
+in hypothetical constant coefficients. It does not exclude other pole
+supports or arbitrary rational currents. No comparison of coverage with
+fqlx's earlier 504-column space is asserted.
+
+The local checker replayed the Pro verifier unchanged in 3.360 seconds,
+then independently reconstructed all 494,209 entries of the decisive
+703-square minor using rational-polynomial evaluation and symbolic physical
+derivatives. Different Gaussian elimination reproduced determinant 13884
+in 2.687 seconds, and an omitted physical-chain-term control was detected.
+This validates the decisive minor, not every row of the larger search.
+
+Pro's other family fixes J_a=0 and its displayed J_v, with J_t=chi*K(a,v,t).
+The full equation requires (partial_t+N_t)K=T0. The pole/infinity argument
+gives K=P/monic(Delta) with numerator degrees at most (15,13). At (a,v)=(3,2)
+the exact 52-by-30 coefficient system has ranks 30/31; a full-column-rank
+minor supplies the Cramer regularity gate for a hypothetical generic
+solution. This excludes that specified family only. Local replays and
+reasoning review are documented separately in the result note; the old
+pure-t R2 calculation was not rerun.
+
+A separate local worker replayed the unmodified Pro first-jet checker in
+2.719 seconds, reproducing the matrix and exact left-null inconsistency
+witness. Its pole/degree/Cramer reasoning review is separately recorded.
+This is a new execution of Pro code, not a newly authored independent
+implementation; no additional local generic structure replay is claimed.
+
+Credit fqlx for the compact connection, benediamond for the physical cover
+and earlier source reductions, and Benjamin E. Diamond and hodge.computer
+contributors for the fixed problem and framework. These new constructions,
+failed trials and exact checks are AI-assisted work for Ravi Bajaj.
+
+All earlier ledger bytes remain unchanged. No upstream post, reply, edit
+or PR was made. Posts 1–29 and tally 29 discussion contributions / one closed
+maintenance PR / zero accepted authored solves remain unchanged. No full
+compact primitive, fibre-exact lift, global clearing or legal homogeneous
+certificate was obtained. Completion of this bounded batch does not mark
+the mathematical target solved.
+
+Packaging clarification: several local log receipts hash LF subprocess text
+where Windows saved CRLF bytes. Original logs/receipts are preserved; the
+integration record verifies normalized text and separately records raw hashes.
+Script and mathematical JSON bindings are unchanged. No mathematical rerun
+was needed for this logging convention correction.

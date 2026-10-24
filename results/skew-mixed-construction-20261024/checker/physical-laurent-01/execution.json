@@ -1,0 +1,25 @@
+{
+  "executor": "mixed_checker AI worker",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/check_physical_laurent.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/physical-laurent-01/result/validation.json"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-mixed-next",
+  "started_utc": "2026-10-24T15:31:02.108416+00:00",
+  "completed_utc": "2026-10-24T15:31:03.732081+00:00",
+  "wall_seconds": 1.6236901900010707,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": "1262619f0d8c4f37039b2a171daf6a238045ea55d201fc3a2a26ba6830f797fc",
+  "PYTHONPATH": "/workspace/scratch/b8974c152662/constructive-python",
+  "files": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "1262619f0d8c4f37039b2a171daf6a238045ea55d201fc3a2a26ba6830f797fc",
+    "stdout.log": "ee1772778e45e584a707a262e343a66ad178055c62890f6786e7790fd1cce9b4",
+    "result/validation.json": "0c48086d5308ca0ce3dfae7494716b5771b54e706e06d0ab1e1c55fb2c39e5dd"
+  }
+}

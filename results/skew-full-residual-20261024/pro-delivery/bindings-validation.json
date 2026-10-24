@@ -1,0 +1,147 @@
+{
+  "status": "PASS: Pro packet source/script/report/figure bindings, not a mathematical replay",
+  "utc": "2026-10-24T15:43:01.655989+00:00",
+  "checks": [
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-02\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-run-02\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-02\\validation.json",
+      "field": "reused_system_validation_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-result-01\\validation.json"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-run-01\\execution.json",
+      "field": "stdout_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\triangular-02\\stderr.log"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-run-01\\execution.json",
+      "field": "stderr_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\triangular-02\\stderr.log"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-run-02\\execution.json",
+      "field": "stdout_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-run-02\\stdout.log"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-cert-run-02\\execution.json",
+      "field": "stderr_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\triangular-02\\stderr.log"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-result-01\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-run-01\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-run-01\\execution.json",
+      "field": "stdout_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-run-01\\stdout.log"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-run-01\\execution.json",
+      "field": "stderr_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\triangular-02\\stderr.log"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\first-jet-system-02\\result\\validation.json",
+      "field": "packet_sha256",
+      "connection_pin_verified": true
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\first-jet-system-02\\result\\validation.json",
+      "field": "author_system_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\alternate\\first-jet-result-01\\system.json"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\first-jet-system-02\\result\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\checker\\first-jet-system-02\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\first-jet-system-02\\result\\validation.json",
+      "field": "certificate_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\checker\\first-jet-system-02\\result\\left-null-certificate.json"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\minor-row-order.json",
+      "field": "input_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\validation.json"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\validation.json",
+      "field": "packet_sha256",
+      "connection_pin_verified": true
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\validation.json",
+      "field": "inputs_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\inputs.json"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\validation.json",
+      "field": "matrix_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\augmented-matrix.csv"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\physical-laurent-01\\result\\validation.json",
+      "field": "author_validation_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\validation.json"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\translation-current-02\\result\\validation.json",
+      "field": "packet_sha256",
+      "connection_pin_verified": true
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\translation-current-02\\result\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\checker\\translation-current-02\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\triangular-gauge-01\\result\\validation.json",
+      "field": "packet_sha256",
+      "connection_pin_verified": true
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\checker\\triangular-gauge-01\\result\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\checker\\triangular-gauge-01\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\figure-01\\result\\visualization.json",
+      "field": "generator_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\figure-01\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\figure-02\\result\\visualization.json",
+      "field": "generator_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\figure-02\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\validation.json",
+      "field": "script_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\source.py"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\validation.json",
+      "field": "matrix_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\augmented-matrix.csv"
+    },
+    {
+      "receipt": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\validation.json",
+      "field": "inputs_sha256",
+      "bound_file": "results\\skew-mixed-construction-20261024\\lead\\physical-laurent-01\\result\\inputs.json"
+    }
+  ],
+  "figure_inspection": "Coordinator inspected figure-02 PNG: labels, signed symmetric-log display and point-only scope are readable; bar sizes do not measure generic progress."
+}

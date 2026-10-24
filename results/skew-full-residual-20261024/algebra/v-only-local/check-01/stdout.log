@@ -1,0 +1,22 @@
+PASS generic residue trace
+PASS generic determinant vanishes on Delta
+PASS generic image certificate b-column0
+PASS generic image certificate b-column1
+PASS generic image certificate c-column1
+PASS generic image certificate d-column1
+PASS full two-row Nv residue matrix
+PASS full two-row R2 residue vector
+PASS point left-null vector
+PASS point full source projection is zero
+PASS point compatible leading regular value
+PASS point eigenvalue polynomial
+PASS point residue-image projector
+PASS physical v derivative of discriminant
+PASS generic residue-image projector numerator
+{
+  "status": "PASS: generic Delta image compatibility; no v-only local residue obstruction found",
+  "checks": 15,
+  "mutations": 2,
+  "seconds": 0.375,
+  "projection": "0"
+}

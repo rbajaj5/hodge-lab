@@ -1,0 +1,90 @@
+{
+  "status": "Repaired triangular contraction and full two-row identity verified; current still has a nonzero two-row ordinary-point residual",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "source_path": "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+  "script_sha256": "148b8c7fcd87720b845fac57be36b6573ffe3bdeff755cd7f86b8d53d8ad6231",
+  "checks": [
+    "new triangular connection contraction",
+    "formal two-row IBP identity",
+    "independent alpha jet derivative 0v",
+    "independent alpha jet derivative 0t",
+    "independent alpha second-v jet 0",
+    "independent alpha mixed jet 0",
+    "independent alpha second-t jet 0",
+    "independent alpha jet derivative 1v",
+    "independent alpha jet derivative 1t",
+    "independent alpha second-v jet 1",
+    "independent alpha mixed jet 1",
+    "independent alpha second-t jet 1",
+    "triangular direct full point divergence"
+  ],
+  "triangular_Gv": "(63*a*t**8 - 189*a*t**6 - 189*a*t**2 + 63*a + 294*t**7*v**2 - t**6*v + t**2*v - 294*t*v**2)/49",
+  "triangular_Gt": "2*t**2*(147*t**6*v - t**5 + 2*t**3 - t + 147*v)/49",
+  "triangular_Gamma": [
+    [
+      "3*t*(-12*t**6*v + t*(1/7 - 3*t**2/7)*(1 - t**2)/7)/2",
+      "-t*(-12*t**6*(1 - t**2)/7 + (1/7 - 3*t**2/7)*(3*t**6 + 3))"
+    ],
+    [
+      "0",
+      "t*(-12*t**6*v + t*(1/7 - 3*t**2/7)*(1 - t**2)/7)/2"
+    ]
+  ],
+  "generic_identity": "S=alpha/Gv; T=(v beta-calD(S)-Mcal S)/Gv; R2-Div_N J=chi[-beta-calD(T)-Mcal T], with J_v=Gv(S chi_v+T chi), J_t=Gt(S chi_v+T chi).",
+  "point": {
+    "r": "1",
+    "a": "3",
+    "v": "2",
+    "t": "1",
+    "A_r": "-3",
+    "A_v": "6",
+    "chi": "-5/3",
+    "chi_v": "-10",
+    "chi_vv": "38",
+    "target_R2": [
+      "105778/440559",
+      "-52889/97902"
+    ]
+  },
+  "triangular_point": {
+    "Gv": "-108/7",
+    "Gt": "24",
+    "Gamma": [
+      [
+        "-36",
+        "12/7"
+      ],
+      [
+        "0",
+        "-12"
+      ]
+    ],
+    "S": [
+      "-1849/4531464",
+      "1849/2013984"
+    ],
+    "T": [
+      "-28219319/4404583008",
+      "7385249/489398112"
+    ],
+    "residual_coefficient": [
+      "48459720143/11562030396",
+      "-51037745537/5138680176"
+    ],
+    "full_residual": [
+      "-242298600715/34686091188",
+      "255188727685/15416040528"
+    ],
+    "sign_mutation_defect": [
+      "-758155205/642335022",
+      "50405455/61174764"
+    ]
+  },
+  "coefficient_derivative_method": "Exact order-two rational jets in v,t at fixed a; no t specialization before derivatives. All direct symbolic first and second alpha derivatives independently cross-check the jet engine.",
+  "pole_scope": "This route localizes at new Gv!=0 in addition to inherited base poles. Its final residual has root dependence only through chi, with coefficients in Q(a,v,t). Current may still contain chi_v and its f_r denominator. A no-f_r representative is not a newly discharged bottleneck; prior source integrations already supplied such representatives.",
+  "trace_scope": "Coefficients lie in the base field. Centering of chi and chi_v therefore transfers to this current and residual.",
+  "limits": "Nonzero point values disprove full cancellation for this specific repaired current. No general mixed-current exclusion, novel coverage, solution, or certificate is claimed. Existing Q/beta identities and the v-only comparator were not replayed in this run.",
+  "repair_scope": "Exactly one explicit author-approved sign repair: Gv=-tvw+3aq+2vK0 and Gt=-2tK0. The initial failed draft, log, and receipt remain preserved separately.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0"
+}

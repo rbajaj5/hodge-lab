@@ -1,0 +1,25 @@
+{
+  "executor": "mixed_checker AI worker",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/check_triangular_gauge.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/checker/triangular-gauge-01/result/validation.json"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-mixed-next",
+  "started_utc": "2026-10-24T15:22:17.158436+00:00",
+  "completed_utc": "2026-10-24T15:22:18.024931+00:00",
+  "wall_seconds": 0.8665189330022258,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": "6bd711a7766b49ad6e063a3708bfc7486dee526283027c5a8143ac11db9a516f",
+  "PYTHONPATH": "/workspace/scratch/b8974c152662/constructive-python",
+  "files": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source.py": "6bd711a7766b49ad6e063a3708bfc7486dee526283027c5a8143ac11db9a516f",
+    "stdout.log": "f5412c89b83b8c87c902cf12d01fa66bdf75167b0af3dd5be4de76b70868834a",
+    "result/validation.json": "35bee74423ce2341d34c7dc577ea5dad2954a7bf31059ae6fee5519f36fb3755"
+  }
+}

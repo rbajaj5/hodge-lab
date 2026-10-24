@@ -1,0 +1,16 @@
+PASS: new triangular connection contraction
+PASS: formal two-row IBP identity
+PASS: independent alpha jet derivative 0v
+PASS: independent alpha jet derivative 0t
+PASS: independent alpha second-v jet 0
+PASS: independent alpha mixed jet 0
+PASS: independent alpha second-t jet 0
+PASS: independent alpha jet derivative 1v
+PASS: independent alpha jet derivative 1t
+PASS: independent alpha second-v jet 1
+PASS: independent alpha mixed jet 1
+PASS: independent alpha second-t jet 1
+PASS: triangular direct full point divergence
+REJECTED CONTROL: triangular connection sign mutation [-758155205/642335022, 50405455/61174764]
+RESULT: triangular full remainder [-242298600715/34686091188, 255188727685/15416040528]
+PASS: 13 scoped checks and one connection-sign control

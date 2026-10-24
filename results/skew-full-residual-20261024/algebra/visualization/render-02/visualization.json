@@ -1,0 +1,20 @@
+{
+  "status": "rendered and visually inspected; see inspection.json",
+  "kind": "static exact-certificate diagram",
+  "no_mathematical_rerun": true,
+  "rendered_claims_source": "frozen check-01 validation.json; gcd degrees read verbatim, not recomputed",
+  "coefficient_display": "signed base-10 log magnitudes parsed from the saved reduced numerator; descriptive only",
+  "inputs": {
+    "input-validation.json": "4577c6649bd004472aa7e0fc1ef090966d6e4df03d09aff506bc0b31b614dcfb",
+    "input-execution.json": "da5d43a862ee0e72f361cbb320b106bda1e5b5560c1b0a03c665be903645b602"
+  },
+  "generator_sha256": "a7dccc0291136164a4478371f9a597b9c10b797b9aae9960f29824df6c78548a",
+  "matplotlib": "3.11.1",
+  "outputs": {
+    "mixed-beta-residue-certificate.svg": "1e550fb6fe9a890ba5ad81af9f023ab314fb517e2f894a72a551f3a6237fded3",
+    "mixed-beta-residue-certificate.png": "8d88dca410564748f64fcaafce6842a430bb248a87167205616f8838920bb9f2",
+    "coefficient-display-data.json": "dd48daecdef60cbcd9cd8cc566f7bf1393ff6275beef8606cafee59629639596"
+  },
+  "receipt_checks": 15,
+  "receipt_mutations": 2
+}

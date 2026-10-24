@@ -1,0 +1,163 @@
+Full residual: one new polynomial mixed-beta flux family, with an exact obstruction
+2026-10-24; read-only parent 84f294e0235c3fd4b5d4849e565536172a74329c.
+No Lean, shared repository mutation, commit, or publication.
+
+RESULT
+The coefficient-Euler direction is the already used beta direction; it does
+not provide the hoped-for second direction. A new polynomial transverse
+one-form L produces a genuine mixed two-row, three-direction current
+Z=h beta wedge L without a new divisor. Its full first output row is exactly
+-D_v h. A nonzero discriminant residue rules out this entire scalar-h family
+as a solver of the centered R2. This is a precise family exclusion, NOT a
+nonexistence theorem for general mixed currents. Stop expanding this family.
+
+REUSED CONTEXT
+Use a=A(r,v)=r^3+r^-3+(vr-1)^6/r^15, f=r^18+r^12+(vr-1)^6-ar^15,
+c=t(1-t^2)/7, d=1+t^6, b=tv. Cover derivatives are
+D_a=partial_a+(r^15/f_r)partial_r,
+D_v=partial_v-(6r(vr-1)^5/f_r)partial_r, and D_t r=0.
+The exact existing matrix connection has
+N_a=M_a, N_v=t M_b, N_t=v M_b+c' M_c+d' M_d, columns indexing input.
+All derivative statements below use these moving-root derivatives.
+
+Let chi=r^-3-v^3/3, gamma=D_v^2 chi, kappa=v D_v chi-chi. The prior
+centered residual is
+ R2=gamma (N_t e1+v e0/(3a))/(36t)+kappa M_b e0/(108a).
+The apparent t=0 division is removable; that prior result is reused.
+Set A0=((N_t)01+v/(3a))/(36t), B0=(M_b)00/(108a).
+Then R2_0=A0 gamma+B0 kappa. Indices 0,1 denote both compact fibre rows.
+
+1. EXACT SCOPE OF THE EULER-DIRECTION FAILURE
+The two universal coefficient-scaling operators are
+ a M_a+b M_b+c M_c+d M_d=-(5/6)I,
+ 3a M_a+2b M_b+c M_c=-diag(1,2).
+The tangent lift on the physical three-dimensional coefficient surface is
+ T=(a(3c'd-2cd'), v(2c'd-cd'-cd/t), cd).
+For P=t^8-3t^6-3t^2+1 and Q=t^8-5t^6-5t^2+1, the prior beta vector is
+ W=(tP/(7d), tvQ/(21ad), t^2(1-t^2)/(21a)).
+The new exact comparison is T=(3ad/t)W.
+The rank-one statement concerns ONLY tangent combinations of those TWO
+universal Euler scalings. If their coefficients are u,w and t-direction
+speed is gamma_t, tangency imposes d' gamma_t=d u and
+c' gamma_t=c(u+w). The two-by-two coefficient minor is cd, so on cd!=0
+u,w are determined by gamma_t. This does NOT exhaust currents that cancel
+just one off-diagonal connection row, and does not exhaust mixed currents.
+
+2. NEW POLYNOMIAL TRANSVERSE ONE-FORM AND COMPLETE OPERATOR
+The reused vector-valued form is beta=(beta0,beta1), where
+ beta0=-c da/(3a)+(c'-2cd'/(3d))dt,
+ beta1=-2tv da/(3a)+t dv+v(1-td'/(3d))dt.
+It obeys nabla beta=(d'/(6d))dt wedge beta. It is twisted closed, not closed.
+
+Define polynomials
+ J=(4-5t^2)/4,
+ U=7t(17+2t^2+14t^4-5t^6)/4.
+The exact Bezout identity is c U+P J=1. Hence
+ L=-7dJ da-3aU dt
+satisfies beta0 wedge L=da wedge dt. It adds no new divisor.
+
+For arbitrary rational scalar h in the physical cover coefficient field,
+ Z=h beta wedge L
+has the following COMPLETE two-row fluxes in the ordering
+Z_a dv wedge dt+Z_v dt wedge da+Z_t da wedge dv:
+ Z_a=h(0, Wtilde_a)^T,
+ Z_v=h(-1, Wtilde_v)^T,
+ Z_t=h(0, Wtilde_t)^T,
+where
+ Wtilde_a=-3atU,
+ Wtilde_v=-v[7J(d-td'/3)+2tU],
+ Wtilde_t=7tdJ,
+ qtilde=t[-3U+(49/6)d'J+7dJ'].
+The full pinned connection, including the cross-row term from Z_v, gives
+ Div_N Z=(-D_v h,
+          Wtilde_a D_a h+Wtilde_v D_v h+Wtilde_t partial_t h+qtilde h)^T.
+All Wtilde coefficients and qtilde are polynomials. Thus the construction
+does not introduce the prior beta candidate's H divisor, a c divisor, or
+a new t divisor. The displayed beta representation initially uses a,d!=0;
+its polynomial flux form extends across d=0 wherever the original compact
+connection and h make sense. The ordinary generic domain still requires
+r f_r a Delta!=0, and z!=0 when lifting to the physical four-form.
+
+3. A CANONICAL CANDIDATE AND ITS EXACT TWO-ROW SURVIVOR
+Let coefficient derivatives A0_v,B0_v hold a,t fixed, and choose
+ h0=-A0 D_v chi-(v B0-A0_v)chi.
+Then the COMPLETE residual is
+ Rnew_0=(A0_vv-2B0-v B0_v)chi,
+ Rnew_1=R2_1-[Wtilde_a D_a h0+Wtilde_v D_v h0
+                         +Wtilde_t partial_t h0+qtilde h0].
+This removes every f_r pole from the first residual row, because chi itself
+has no f_r denominator; it does not remove the second row. Denominator
+support of h0 is confined to the pre-existing r,f_r,a,Delta support after
+the known removable t factors are canceled. No completeness statement for
+that denominator family is made.
+
+4. DISCRIMINATING FAILURE OF THE ENTIRE h FAMILY
+The first-row equation for a solution in this family would be
+ -D_v h=R2_0.
+Every rational exact relative one-form -D_v h dv has zero residues. This
+condition fails on the discriminant divisor of the ACTUAL residual.
+
+At t=1, c=0,d=2, Delta=108a^2+8v^3. The boundary point a=4,v=-6 has
+Delta=0 and Delta_v=864!=0. This is deliberately a boundary residue test,
+not an allowed-point evaluation of the matrix connection. The two scalar
+coefficients have residues
+ Res(A0 dv)=1/756, Res(B0 dv)=-1/2592.
+Thus
+ Res(R2_0 dv)=gamma/756-kappa/2592.
+
+For reproducibility, put
+ F(r)=r^18-4r^15+r^12+(6r+1)^6,
+ z=f_r|_(a=4,v=-6), p=f_v|_(a=4,v=-6),
+ u=f_vv|_(a=4,v=-6), j=f_rv|_(a=4,v=-6),
+ q=f_rr|_(a=4,v=-6),
+ G=12p^2 z+3r u z^2-6r j p z+3r q p^2.
+The cleared residue is N/(18144 r^5 z^3), with
+ N=24G+126r p z^2+7r^2 z^3-720r^5 z^3.
+This includes the centered gamma=g+12 and kappa=k+144 at v=-6.
+
+The exact univariate calculations give
+ gcd(F,z)=1,
+ gcd(F,N)=1,
+ gcd(F,18144 r^5 z^3)=1.
+Therefore all 18 sheets are unramified over v at this boundary point and
+the residue is defined and NONZERO on every sheet. The final validation
+contains the full expression of F, the residue denominator, and N reduced
+modulo F, so the certificate is reproducible without re-deriving the current.
+
+Why the specialization is sufficient for this scoped claim: Delta_v and
+f_r are units at these boundary points, so the residue is a rational regular
+function on the corresponding generic discriminant branches near this
+point. Its certified nonzero value excludes an identically zero generic
+residue. A hypothetical pole of h in the base parameters a or t cannot
+turn the generic residue of its exact relative derivative into a nonzero
+function. The test does not assert exactness or nonexactness of the full
+two-row de Rham class at the singular fibre.
+
+Consequently there is no rational scalar h with Div_N(h beta wedge L)=R2.
+This excludes only the displayed family. Other mixed fluxes can contribute
+to row0 through D_a or D_t and remain open; no global solution obstruction
+is claimed. The broader search should not keep increasing h's denominator
+degree within this same family.
+
+5. EVIDENCE AND FREEZE
+check-01/validation.json: 15 exact checks and two algebraic mutation
+controls, Python 3.11.9 / SymPy 1.14.0, 0.672s calculation and 2.937s
+bounded child process, exit 0. The external bound was 60s. No symbolic
+failure occurred in this new batch. The initial read-only wildcard rg
+command failed because PowerShell did not expand its wildcard path; the
+correct bounded rg -g search then located the prior note. No data changed.
+
+The pinned connection SHA256 is
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Final checker SHA256 is
+8bd4b2924ab1a284d8792749d601eb12a5874be2056ea915f67a3cd8334d97aa.
+Source snapshots, exact command, stdout/stderr and timeout limit are saved
+under check-01. All IO is explicit UTF-8 and every check uses exceptions,
+so Python -O does not disable validation. Source path is a required CLI
+argument. To reproduce in a fresh directory:
+ python -O run_bounded.py NEW_RUN --connection PATH_TO_CONNECTION_JSON
+
+The worker has stopped expansion of this family. Prior Q/R2 and beta
+checks were not rerun; the two Euler identities were evaluated here as
+inputs to the new tangent-direction comparison. No scalar trace-zero,
+Lean compilation, CI, commit or publication was performed.

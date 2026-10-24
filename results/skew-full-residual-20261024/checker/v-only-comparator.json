@@ -1,0 +1,73 @@
+{
+  "status": "V-only full two-row identity verified; displayed comparator has nonzero ordinary-point residual",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "source_path": "C:\\Users\\anaxe\\Documents\\Codex\\hl-source-20261023\\results\\skew-physical-source-20261023\\inputs\\benediamond\\packet\\one-reflection-skew-followup\\inputs\\source-rank2-connection.json",
+  "script_sha256": "000ea042146ae0527c9c9b6945ee0ea106229dfbbdad7ae911ed580ac1161481",
+  "checks": [
+    "formal two-row IBP identity",
+    "independent alpha jet derivative 0v",
+    "independent alpha jet derivative 0t",
+    "independent alpha second-v jet 0",
+    "independent alpha jet derivative 1v",
+    "independent alpha jet derivative 1t",
+    "independent alpha second-v jet 1",
+    "v-only comparator direct full point divergence"
+  ],
+  "generic_identity": "S=alpha/Gv; T=(v beta-calD(S)-Mcal S)/Gv; R2-Div_N J=chi[-beta-calD(T)-Mcal T], with J_v=Gv(S chi_v+T chi), J_t=Gt(S chi_v+T chi).",
+  "point": {
+    "r": "1",
+    "a": "3",
+    "v": "2",
+    "t": "1",
+    "A_r": "-3",
+    "A_v": "6",
+    "chi": "-5/3",
+    "chi_v": "-10",
+    "chi_vv": "38",
+    "target_R2": [
+      "105778/440559",
+      "-52889/97902"
+    ]
+  },
+  "v_only_point": {
+    "Gv": "1",
+    "Gt": "0",
+    "Gamma": [
+      [
+        "-4/259",
+        "-27/259"
+      ],
+      [
+        "9/259",
+        "-4/259"
+      ]
+    ],
+    "S": [
+      "1849/293706",
+      "-1849/130536"
+    ],
+    "T": [
+      "-1421705/304279416",
+      "-1871/16904412"
+    ],
+    "residual_coefficient": [
+      "-14101/104243874",
+      "127427/416975496"
+    ],
+    "full_residual": [
+      "70505/312731622",
+      "-637135/1250926488"
+    ],
+    "sign_mutation_defect": [
+      "-823557085/29553138279",
+      "-107900155/13134728124"
+    ]
+  },
+  "comparator_generic_identity": "T0=v beta-partial_v(alpha)-N_v alpha; J_v=alpha chi_v+T0 chi; R2-Div_N J=chi[-beta-partial_v(T0)-N_v T0]. J_a=J_t=0.",
+  "coefficient_derivative_method": "Exact order-two rational jets in v,t at fixed a; no t specialization before derivatives. Direct symbolic first alpha derivatives and second-v derivatives independently cross-check the jet engine.",
+  "pole_scope": "The v-only comparator adds no Gv divisor. Its final residual has root dependence only through chi; its coefficient lies in Q(a,v,t), so no f_r denominator remains there. Current may still contain chi_v and its f_r denominator. This is not claimed as a newly discharged bottleneck; earlier source integrations already yield no-f_r representatives.",
+  "trace_scope": "Coefficients lie in the base field. Thus centering of chi and chi_v transfers to this current and residual.",
+  "limits": "Nonzero point values disprove full cancellation for this specific comparator. No general mixed-current exclusion, novel coverage, solution, or certificate is claimed. Existing Q/beta identities and simpler baselines were not replayed.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sympy": "1.14.0"
+}

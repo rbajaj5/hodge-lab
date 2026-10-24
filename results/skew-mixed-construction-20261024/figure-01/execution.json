@@ -1,0 +1,27 @@
+{
+  "executor": "Pro root constructive lead",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/render.py",
+    "/workspace/scratch/b8974c152662/hodge-lab-mixed-next/results/skew-mixed-construction-20261024/figure-01/result"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-mixed-next",
+  "started_utc": "2026-10-24T15:35:41.927755+00:00",
+  "completed_utc": "2026-10-24T15:35:44.201293+00:00",
+  "wall_seconds": 2.2735609880000993,
+  "timeout_seconds": 60,
+  "exit": 0,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "PYTHONPATH": "/workspace/scratch/b8974c152662/constructive-python",
+  "files": {
+    "runner.py": "3f377dcac2389dd24215aca749c48bec22857430257dfd010730868bcd451b5d",
+    "stderr.log": "e43336e41d9878c04297901064e9b2a2fb325dff6335deee8d16cf0dddaa6b58",
+    "source.py": "461eac1a510416e1cdc4e2618c45fa9654a5781608dcebc867c2f5f194d1fac6",
+    "stdout.log": "44b9bbe7d81c908b73a1465ef24c924b84709168910776bc2986c971e3e145ba",
+    "result/full-residuals.png": "8b034bf972a83841149003d9fead6208ada585b74b253fd936e5012698804557",
+    "result/visualization.json": "44b9bbe7d81c908b73a1465ef24c924b84709168910776bc2986c971e3e145ba",
+    "result/full-residuals.svg": "305c7b26f35be2cbca82095dda08451738898f7cb89e58fc4f53616075de93cf"
+  }
+}

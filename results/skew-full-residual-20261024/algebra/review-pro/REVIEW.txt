@@ -1,0 +1,118 @@
+Read-only review and separately executed Pro-code replay: universal first-jet family
+2026-10-24. Reviewed parent: 84f294e0235c3fd4b5d4849e565536172a74329c.
+Pro packet archive SHA256 was supplied by the coordinator as
+9441abd9f0aea4454bd98bf98c21e280ebf58d701d9fd54911b170a29432009d;
+this worker did not redownload or independently hash that archive.
+
+VERDICT
+No mathematical defect found in the claimed exclusion of the EXACT displayed
+first-jet family with K in Q(a,v,t)^2. The argument does not exclude general
+mixed currents or identify a physical primitive. The explicit family has
+J_a=0 and a fixed J_v; only its chi*K t-flux is variable.
+
+INDEPENDENT REASONING REVIEW (NO NEW SYMBOLIC RUN FOR THESE CLAIMS)
+1. With chi_t=0 and the packet column convention,
+ J_v=chi_v e1/(36t^2)-chi M_a e0/(36t), J_t=chi K,
+has exactly
+ Div_N J-R0=chi[(partial_t+N_t)K-T],
+ T=(partial_b M_a+M_b M_a)e0/36.
+The chi_v coefficient cancels because M_b e1=M_a e0; differentiating the
+physical coefficient M_a in v gives t partial_b M_a. This retains the
+moving-root derivatives of chi_v and chi_vv and both connection rows.
+There is no a-flux whose derivative could have been omitted.
+
+2. This factorization applies to the ACTUAL physical chi. It does not need
+chi,chi_v,chi_vv to be algebraically independent formal jets. The previously
+established physical chi is nonzero (its reused value at r=1,v=2 is -5/3),
+so equality of this current with R0 requires the base equation
+ (partial_t+N_t)K=T.
+The exact displayed family is therefore excluded on the actual cover as
+well as in its formal derivation, provided K remains in the specified base
+field. Allowing different a/v fluxes or more general cover-dependent
+coefficient functions is outside this reviewed family.
+
+3. For generic a,v, N_t and T have no finite t poles outside Delta. The
+literal M_a first column and M_b entries show T has at most Delta^-2.
+A rational K cannot have a pole at an ordinary finite point because its
+highest derivative term would have nothing to cancel it.
+At a simple discriminant point, the saved generic trace/determinant
+identities give residue eigenvalues 0,-1/3. If K had order m>1, its leading
+coefficient would be multiplied by R-m I at order m+1>2, where the source
+has no term. This matrix is invertible; hence only simple Delta poles are
+possible. Generic squarefreeness follows from the preserved-degree,
+squarefree specialization a=3,v=2, with leading coefficient 27a^2!=0.
+
+4. The infinity gauge has the correct sign:
+ H=G K, G=diag(t^-3,t^-1),
+ H'+[G N_t G^-1-G'G^-1]H=G T.
+The structure code computes generic entry orders (-3,-2,-2,-3) for that
+gauged connection and (-6,-6) for its source. If H had polynomial growth
+m>=1, its derivative's degree m-1 could not cancel against a connection
+term of degree at most m-2 or the decaying source. Therefore H=O(1), so
+K0=O(t^3), K1=O(t). With at most simple Delta poles and deg Delta=12,
+K=P/Delta has the claimed bounds deg P0<=15, deg P1<=13. A monic
+normalization of Delta changes only nonzero base-field factors.
+
+5. Cramer's rule is valid here. The bounded coefficients of P give a fixed
+finite system over Q(a,v), regular at (3,2); monic normalization only
+requires a!=0 there. Full column rank 30 at that point gives a 30x30
+minor invertible in the local ring. A hypothetical generic solution must
+equal the inverse-minor solution and hence be regular there. It would
+specialize to a solution of the remaining equations, contradicting the
+verified exact left-null inconsistency certificate. Thus this is not an
+unsupported inference from failure at one specialization. Extra generic
+equations would only strengthen the contradiction; the checked submatrix
+already supplies the required minor and incompatible equation.
+
+6. The conversion Z=J-Y has the stated signs, since the prior identity is
+R0=Div_N Y+R2. Consequently
+ R2-Div_N Z=chi[T-(partial_t+N_t)K].
+This is a mixed v,t-current exclusion, not a new pure-t source exclusion.
+
+FRESH EXECUTION, WITH PRECISE ATTRIBUTION
+One bounded replay executed the UNMODIFIED Pro checker
+checker/check_first_jet_system.py. This worker did not author a new
+independent coefficient reconstruction. Its internal result label
+"PASS_INDEPENDENT_FIRST_JET_SYSTEM_OBSTRUCTION" and executor name are
+inherited from Pro's code; replay-01/execution.json supplies the correct
+current attribution.
+
+The extracted packet did not include the historical connection path that
+the Pro code expects. An owned minimal directory mirror was made, containing
+byte-identical Pro checker code, author system.json, and the pinned public
+connection JSON copied from the read-only source checkout. No Pro packet
+or repository bytes were edited. Input bindings and hashes are retained.
+
+The replay independently executed that code's reconstruction of every
+52x30 entry and right-hand-side entry, exact match to the author's system,
+rank 30, augmented rank 31, and an integer left-null certificate with wA=0
+and wy!=0. Both supplied operator mutations were rejected.
+Process time 2.719s, calculation 0.719s, external limit 60s, exit 0;
+Python 3.11.9 and SymPy 1.14.0. Exact command/stdout/stderr are saved.
+The full certificate is replay-01/result/left-null-certificate.json.
+
+REPORTED/INSPECTED BUT NOT REEXECUTED HERE
+The generic jet identities, residue identities, infinity orders, physical
+point rejection, and their mutation vectors were inspected in
+certify_first_jet_structure.py and its saved first-jet-cert-02 receipt.
+They are Pro's executed checks, not new executions by this reviewer. The
+earlier 60-second expanded-expression timeout remains a failed Pro attempt.
+The recurrence checker replay does not by itself prove the generic bounds;
+the separate reasoning review above explains the dependency on the saved
+structured certificate. No completed local-residue check from this worker
+was rerun, and no Lean or broader mathematical search was performed.
+
+SCOPE TO USE IN REPORTING
+"The displayed fixed-a/v-flux first-jet family, with a base-rational
+two-component K t-flux, is excluded. General mixed physical-cover currents
+remain open. A separately executed replay of Pro's recurrence checker
+confirms the specialized exact inconsistency certificate; the generic
+pole/degree/Cramer argument was independently reviewed, not freshly
+symbolically reexecuted by this worker."
+
+SOURCE BINDINGS
+Connection: a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d
+Pro recurrence checker: f5a9a735825ccf12dbdf7c70b7201685c23e5fc5259e772659a7ea7f80231013
+Pro author system: e3aaba6ed96eb8fde06d80d4f1c184f5d284aa8e8fef2348d136ace1658b8af6
+The replay wrapper and own result hashes are in artifact-manifest.json.
+This review is frozen. No additional mathematical execution is requested.

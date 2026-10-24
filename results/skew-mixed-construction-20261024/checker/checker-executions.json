@@ -1,0 +1,50 @@
+{
+  "executor": "mixed_checker AI worker",
+  "executions": [
+    {
+      "path": "first-jet-system-01/execution.json",
+      "exit": 1,
+      "wall_seconds": 0.8665451979977661,
+      "timed_out": false,
+      "sha256": "9d7189f04a983b0aaa9a486c12f65ed232008a05a91c74542b7de7e9f33fe396"
+    },
+    {
+      "path": "first-jet-system-02/execution.json",
+      "exit": 0,
+      "wall_seconds": 1.0172299799996836,
+      "timed_out": false,
+      "sha256": "d989273abe47ce3566f9c37155f15549687db0908d1b5cebe159eb24a87f8ede"
+    },
+    {
+      "path": "physical-laurent-01/execution.json",
+      "exit": 0,
+      "wall_seconds": 1.6236901900010707,
+      "timed_out": false,
+      "sha256": "740475fa2e86e19a5d269e9fbca579e1fdb422d138106c8b603f735fcf9cb944"
+    },
+    {
+      "path": "translation-current-01/execution.json",
+      "exit": 1,
+      "wall_seconds": 0.6658345420000842,
+      "timed_out": false,
+      "sha256": "999f6ffedc38fa199e2927a43c82bf1f8f5103622f223484f481fa073e2b5727"
+    },
+    {
+      "path": "translation-current-02/execution.json",
+      "exit": 0,
+      "wall_seconds": 0.8166080670016527,
+      "timed_out": false,
+      "sha256": "6a2a97dab8ce7d16041df1bdbc955d39af9f3e53aab6a7ea3a3f685a763fdce5"
+    },
+    {
+      "path": "triangular-gauge-01/execution.json",
+      "exit": 0,
+      "wall_seconds": 0.8665189330022258,
+      "timed_out": false,
+      "sha256": "6fcc74b85420aa4b8e7045f641b49964911edca9b3cd1a0946db6fe03fde7bdf"
+    }
+  ],
+  "old_checks_replayed": false,
+  "lean_written_or_run": false,
+  "unexecuted_optional_suggestion": "G=(0,1,lambda) constant-slope family was suggested only, never launched."
+}

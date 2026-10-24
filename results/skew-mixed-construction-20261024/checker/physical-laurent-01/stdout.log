@@ -1,0 +1,40 @@
+all 535686 matrix entries independently reconstructed
+{
+  "status": "PASS_INDEPENDENT_QQ_FINITE_FAMILY_EXCLUSION",
+  "executor": "mixed_checker AI worker",
+  "created_utc": "2026-10-24T15:31:03.656065+00:00",
+  "elapsed_seconds": 1.4175553010027215,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "packet_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "1262619f0d8c4f37039b2a171daf6a238045ea55d201fc3a2a26ba6830f797fc",
+  "inputs_sha256": "b8248538a4312405669a01866e5604053f4a242cbee3750c76a49009b3c53717",
+  "matrix_sha256": "a692252576221502d3a34caa01f93580c5cf01b23a35c9657648653a61483985",
+  "author_validation_sha256": "b0e94aeebb632bc2ee6fb6aa9140f66ef06a8038b5e7b2c82c6fe0668c390ba9",
+  "prime": 32003,
+  "matrix_shape": [
+    762,
+    703
+  ],
+  "independently_reconstructed_entries": 535686,
+  "domain_points_checked": 381,
+  "square_minor_size": 703,
+  "minor_determinant_mod_prime": 13884,
+  "bareiss_row_swaps": 0,
+  "int64_absolute_intermediate_bound": 65548288768016,
+  "mutations": {
+    "sample": [
+      29503,
+      17808,
+      28463
+    ],
+    "nonzero_differences": {
+      "omit_Av_chain_term": 22052,
+      "drop_source_1_over_12": 15551,
+      "reverse_source_sign": 23193,
+      "wrong_laurent_derivative_sign": 24787
+    }
+  },
+  "rational_conclusion": "The 703-column augmented rational sample matrix has a minor nonzero modulo32003, hence nonzero overQ. With702 coefficient columns, the declared finite family is inconsistent overQ. This does not rely on reducing an unknown solution denominator modulo p.",
+  "scope": "All six physical flux components independently span r^m v^n t^k, m=-10..2,n=0..2,k=0..2. Exact bounded-family exclusion only; no exclusion of arbitrary rational mixed currents, no primitive or target solve."
+}

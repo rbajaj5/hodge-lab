@@ -1,0 +1,100 @@
+Two-row v-only local diagnostic: generic positive compatibility
+2026-10-24. This new directory preserves every earlier artifact unchanged.
+No Lean, commit, repository edit, old gcd replay, or global primitive claim.
+
+RESULT
+The fixed-L residue obstruction does NOT extend to all two-row v-only
+corrections. The full connection couples the two nonzero source residues,
+and their left-null projection vanishes. This is an exact GENERIC statement
+on the stated transverse, unramified part of Delta, not an inference from
+one specialization.
+
+1. THE SAME BOUNDARY POINT, BOTH ROWS RETAINED
+At a=4, t=1, v=-6, Delta=0, Delta_v=864, set
+ C=Res(N_v dv), S=Res(R2 dv),
+ s=gamma/756-kappa/2592.
+The new source-bound calculation gives
+ C=-(1/6) [[1,1],[1,1]],
+ S=s (1,1)^T.
+The eigenvalues are 0 and -1/3. A left-null vector is (1,-1), and
+ (1,-1) S=0 EXACTLY.
+The compatible regular leading value is
+ Z0=-3s (1,1)^T+lambda (1,-1)^T.
+The nonzero scalar residue s and cover unramifiedness are retained from
+the preceding frozen certificate; its gcd calculations were not replayed.
+The fact that s is nonzero does not obstruct this vector equation.
+
+2. GENERIC POLYNOMIAL CERTIFICATE
+Work first with the literal universal a,b,c,d connection. Put
+ B=Delta M_b, Delta_b=partial_b Delta, and H=bd-c^2/12.
+The exact new identities are
+ tr(B)=-Delta_b/3,
+ det(B)=Delta H,
+ B^2+(Delta_b/3)B=-Delta H I.
+The full adjugate image certificates needed for R2 are
+ adj(B)(Delta M_b)e0=Delta(H,0)^T,
+ adj(B)(Delta M_b)e1=Delta(0,H)^T,
+ adj(B)(Delta M_c)e1=Delta(H,0)^T,
+ adj(B)(Delta M_d)e1=Delta(-3ad/2-bc/3,-3ac/4)^T.
+These are exact polynomial identities, recorded as quotient polynomials
+in validation.json; no generic claim rests on a point witness.
+
+Under b=tv, c=t(1-t^2)/7, d=1+t^6,
+ Delta_v=t Delta_b,
+ N_v=t M_b, N_t=v M_b+c' M_c+d' M_d.
+Consequently on a simple v-transverse Delta branch,
+ C=Res(N_v dv)=B/Delta_b.
+It has rank one, trace -1/3, determinant zero, and C^2=-C/3. In particular
+its image is its -1/3 eigenspace.
+
+For the previously established centered residual,
+ R2=gamma [N_t e1+v e0/(3a)]/(36t)+kappa M_b e0/(108a),
+the regular added e0 term contributes no discriminant residue. The four
+adjugate identities therefore imply
+ adj(B) S=0 on Delta,
+and rank(B)=1 gives S in image(B)=image(C). Thus C(-3S)=S GENERICALLY.
+
+Hypotheses: characteristic zero; Delta=0; Delta_v=t Delta_b!=0; a!=0;
+the physical cover is unramified there (f_r!=0), and r!=0. These conditions
+make gamma,kappa regular along the divisor. The generic statement is on
+this open part of Delta; no claim is made about its intersections with
+ramification, a=0, tangencies, or other excluded loci.
+
+3. WHAT THE LOCAL POLE ARGUMENT NOW SAYS
+For (D_v+N_v)Z=R2, a pole of integer order m>=1 in a rational Z would
+force (C-m I)Z_-m=0. The eigenvalues 0,-1/3 make that impossible.
+Therefore any such solution must be regular at this generic divisor and
+must satisfy the boundary condition C Z0=S. That condition is SATISFIED,
+with Z0=-3S plus an arbitrary kernel vector.
+
+The regular formal recursion has matrices n I+C for n>=1. Their
+eigenvalues n,n-1/3 are nonzero, so after choosing compatible Z0 the
+subsequent formal coefficients face no resonant obstruction at this
+divisor. This yields local formal compatibility, not a global rational
+v-only current. Other divisors, infinity, and rationality remain untested.
+
+The useful next constraint for a v-only ansatz is therefore regularity
+along generic Delta with the displayed boundary value, rather than a
+nonzero scalar-residue obstruction. Full mixed currents are unaffected.
+
+4. EXECUTION AND REPRODUCTION
+check-01 passed 15 new exact checks and two rejected mutations in 2.359s
+process / 0.375s calculation, under a 60-second child limit. Python 3.11.9,
+SymPy 1.14.0. UTF-8 IO and explicit exceptions remain active under -O.
+The mutations drop row 1 and replace the required -3 factor by -1/3.
+
+Connection SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d
+Checker SHA256:
+ebd993c870658eaebe55be3c1f6921d486fe413ff1064f0b5d0db2f97b21a167
+Reused scalar certificate SHA256:
+4577c6649bd004472aa7e0fc1ef090966d6e4df03d09aff506bc0b31b614dcfb
+
+From this directory, with a fresh run name:
+ python -O run_bounded.py NEW_RUN --connection PATH_TO_CONNECTION_JSON --prior-residue ../check-01/validation.json
+
+The final receipt includes the full residue matrix/vector, zero projection,
+generic quotient polynomials, leading boundary solution, hypotheses, and
+the verbatim reused scalar certificate clearly marked not recomputed.
+Exact source snapshots, command, stdout/stderr and process limit are saved.
+The diagnostic is complete; no broader search was started here.
