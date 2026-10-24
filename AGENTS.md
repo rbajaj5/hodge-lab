@@ -122,3 +122,18 @@ a research workflow adaptation, not a safety theorem or an automatic gate.
   appropriate checks pass, integrate the result instead of adding review
   rounds without a new concern. Preserve the ledger/publication policy above;
   this workflow adds no permission gate or posting quota.
+
+## Upstream update cadence — 24 October 2026
+
+The user's latest preference is roughly one consolidated hodge-computer
+discussion update per day, only when there is something useful and checked
+to share. Batch related findings across experiments; do not publish an
+upstream post, reply, or substantive edit after every notebook push. This
+is a cadence preference, not a daily posting quota or an automatic schedule.
+An explicit later user instruction can change it.
+
+Continue recording checked results, visualizations, limits and failed attempts
+in Hodge Lab between upstream updates. Preserve the existing standing
+authorization, attribution, duplicate checks, ledger audit before publication,
+and permalink/readback afterward. Clearly distinguish notebook pushes from
+actual upstream activity.

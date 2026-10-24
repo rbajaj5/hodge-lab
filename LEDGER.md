@@ -6552,3 +6552,25 @@ remain intact; the latest actual post is still
 recorded in checkpoint 151. The tally remains **30 discussion contributions,
 one closed maintenance PR and zero accepted authored solves**. Notebook
 publication and exact remote readback are verified separately.
+
+
+### Checkpoint 153 — Consolidated upstream cadence, 24 October 2026 EDT
+
+Recorded at 13:19 EDT / 17:19 UTC. The user requested roughly one
+consolidated hodge-computer update per day. The [workflow policy](AGENTS.md)
+now records that preference: accumulate related checked findings in Hodge Lab
+between useful upstream updates, with no daily quota or automatic posting
+schedule. Existing attribution, duplicate checks, ledger-first publication
+and permalink/readback requirements remain in force.
+
+The [A-cubed batch](https://github.com/rbajaj5/hodge-lab/commit/cfd677586321b5dea2c93de4cd00fa6d5003e547)
+was published only to Hodge Lab. The latest recorded upstream publication
+remains the earlier [A-squared update in #127](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075),
+created at 12:56 EDT / 16:56 UTC today and recorded in checkpoint 151 and
+Posts entry 30. This policy maintenance makes no upstream post, reply, edit
+or PR and adds no mathematical claim or research replay.
+
+All parent ledger bytes are preserved before this append. Posts entries and
+the contribution tally remain unchanged: **30 discussion contributions,
+one closed maintenance PR and zero accepted authored solves**. This is
+ordinary workflow maintenance; no new research visualization is required.
