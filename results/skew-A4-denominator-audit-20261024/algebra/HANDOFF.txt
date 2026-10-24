@@ -1,0 +1,145 @@
+A^-4 highest-pole handoff, 24 October 2026
+=========================================
+
+New exact identities: det(R_a-4I)=52/3 and tau4=-2r^7+15r. Only P4 is
+forced tangent. The joint necessary family has3102 coefficients, with all
+2808 lower P0/P1/P2/P3 coefficients unrestricted. This is a structural
+handoff to the existing Pro lead, not a numerical search or a primitive.
+
+Short run card
+---------------
+Objective: help the lead test full-source cancellation after adding A^-4.
+Receiver/acceptance: Pro uses the complete scaled equation below with only
+top tangency; the separate checker verifies new signs/order and the fixed
+lead specification. Coordinator owns shared status, figures and integration.
+Parent: a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf.
+Read: repository AGENTS.md, assured-research-workflow.md and A3 audit note.
+Budget: overall deadline18:05:39 UTC, each mathematical child<=60 seconds.
+Stop: after new identities, controls, sparse map and readable handoff; no
+search, secondary refinement, shared edits, Lean, commit or publication.
+Outcome: checked new identities within scope, awaiting lead downstream use.
+
+Pinned inputs and reused proof
+------------------------------
+Literal connection SHA256:
+a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+Positive packet orientation; compact basis(e0,e1), column inputs, d+N.
+Credit fqlx for the compact connection and benediamond for the physical cover.
+
+The completed A-divisor prime/smoothness proof, source regularity at its
+generic boundary, tangent module and bounded Laurent support are reused
+without rerunning them. Imported A^-1 validation SHA256:
+1d45f2e5e254c7b6c8aa24e3aeee106a5756c5a0f9407cbb9d426ef2f289367c.
+Imported tangent injection SHA256:
+047d04f6d9ee1c70000146506fa2ada26c456fd1dd9de5b2d70e4be811ce828b.
+These are repository-relative inputs; the checker allows --repo override.
+The old A3 determinant and the old secondary A2 projection are not rerun.
+
+Full six-component equation and finite family
+--------------------------------------------
+  A=r^3+r^-3+(rv-1)^6/r^15,
+  (a,b,c,d)=(A,tv,t(1-t^2)/7,1+t^6),
+  N=(A_r M_a,A_v M_a+t M_b,N_t),
+  N_t=v M_b+c' M_c+d' M_d,
+  S=r^-4 M_b e0/12.
+Write D_N(P)=sum_i(partial_i+N_i)P_i, with i=r,v,t. Both compact rows,
+all physical derivatives, A_v chain term and source factor1/12 remain.
+
+Let B=span_Q{r^m v^n t^k:-10<=m<=2,0<=n,k<=2}. Every scalar numerator
+component lies in B, with rational constant coefficients. Set
+  F=P0+P1/A+P2/A^2+P3/A^3+P4/A^4,
+  Qj=A_r Pjr+A_v Pjv.
+Each six-component numerator sector has6*13*3*3=702 coefficients.
+
+New leading pole and top operator
+---------------------------------
+At the generic prime smooth A=0 boundary away from b*Delta=0, reuse
+  R_a=[[0,-c/(6b)],[0,-1/3]].
+The order-five pole of D_N(F) has coefficient(R_a-4I)Q4. Its determinant
+is52/3, nonzero in characteristic zero. Source and all lower sectors have
+lower pole order, so Q4=0 modulo A. The reused tangent theorem then gives
+  (P4r,P4v,P4t)=(T_r h,T_v h,k),
+  T_r=r^2(r^6+1), T_v=r(2r^6+1)v-(3r^6+2).
+Each component of h has r support-10..-6,v support0..1,t support0..2.
+Each component of k lies in B. Thus the top sector has60+234=294 parameters.
+
+Reuse ell=T(A)/A=3r(r^6-1). The new scalar coefficient is
+  tau4=div(T)-4ell=-2r^7+15r.
+Define
+  W4=[T_r partial_r+T_v partial_v+tau4 I
+          +ell*A*M_a+t*T_v*M_b]h +(partial_t+N_t)k.
+Then D_N(P4/A^4)=W4/A^4. This is the full two-row top operator.
+
+Exact A-fourth-scaled equation
+------------------------------
+The quotient rule is D_N(Pj/A^j)=A^-j D_N(Pj)-j A^(-j-1)Qj;
+A_t=0. Substituting the tangent form ONLY for P4 yields
+
+  A^4 D_N(P0)
+    +A^3 D_N(P1)-A^2 Q1
+    +A^2 D_N(P2)-2A Q2
+    +A D_N(P3)-3Q3+W4 = A^4 S.
+
+This can be used directly for the lead's all-six-component columns. The
+script verifies the complete five-sector product rule, not just the top
+term. The pure top specialization sets P0=P1=P2=P3=0 and gives W4=A^4 S.
+
+Next pole and why lower levels must stay free
+---------------------------------------------
+At the next boundary order,
+  (R_a-3I)Q3+W4|A=0=0.
+For W=(W0,W1)=W4|A=0 the normal targets are
+  Q3_1=3W1/10,
+  Q3_0=W0/3-c W1/(60b).
+The off-diagonal row coupling is retained. Nonzero W can require Q3 to be
+nonzero; thus the previous top tangency condition cannot be imposed on P3
+separately. No lower tangency or secondary projection is imposed on any
+P0,P1,P2,P3 here. No further projection of this new coupled condition is
+derived or assumed.
+
+The completed lower-family exclusion says no bounded lower current L
+solves D_N(L)=S. With P4 present, its required equation becomes
+  D_N(L)=S-D_N(P4/A^4).
+The right side has changed. The old exclusion covers P4=0, but cannot
+exclude cancellation with P4 or impose the old lower-family constraints
+unchanged. Adding a new pole order does not establish that it will solve
+the source; the lead must test this enlarged family itself.
+
+Dimensions, injection and kernel limits
+---------------------------------------
+The five sectors are linearly independent: after multiplying a relation
+by A^4 their nonzero leading v-degree bands are24..26,18..20,12..14,6..8,
+0..2. Highest-degree comparison kills each numerator. Thus the original
+joint family has3510 independent coefficients.
+Replacing only its top702 by294 leaves4*702+294=3102 necessary parameters.
+All2808 lower coefficients remain free. The exact integer map
+highest-pole-injection.json has shape3510x3102. Its3402 nonzeros comprise
+2808 identity entries plus594 imported tangent entries.
+Its lower columns are explicit identities; its294 top columns are the
+unchanged tangent injection at sector4. This is an injection of current
+spaces, not a nonzero operator kernel or a source solution.
+
+Every homogeneous current also obeys the leading-pole restriction. No
+exact kernel or characteristic-zero rank upper bound is supplied. A
+deficient modular rank alone would not prove rational inconsistency.
+
+New execution and limits
+-------------------------
+check-01:7 exact identities/count checks and3 sign/order controls passed;
+process2.453 seconds, symbolic work0.187 seconds, exit0, timeout60 seconds,
+python -O with explicit checks. No failure or timeout occurred.
+Checker SHA256:
+7ca72b6082aeb6cd75a75062b24068a1520345e08c46ebe179284e79acd11364.
+UTF-8 sources, exact commands, source snapshots, stdout/stderr, versions
+and input/output hashes are saved. New checks extend the author's earlier
+structural checker; they are not a new independent implementation of the
+completed divisor/tangent theorem.
+
+Reproduce from repository root with a fresh run name:
+  python -O results/skew-A4-denominator-audit-20261024/algebra/run_bounded.py check-new
+An optional --repo ABSOLUTE_REPOSITORY_PATH overrides the relative default.
+
+Physical rational identities hold on r*A*Delta!=0. Pole comparison uses
+the generic A=0 boundary with the imported divisor assumptions; no ordinary
+allowed point with A=0 is used. No numerical search, general rational
+nonexistence, source exactness, primitive, Lean or publication is claimed.

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--only-binary=:all:",
+    "--no-deps",
+    "--disable-pip-version-check",
+    "--retries",
+    "0",
+    "--timeout",
+    "40",
+    "--target",
+    "/workspace/scratch/b8974c152662/constructive-python",
+    "python-flint==0.9.0"
+  ],
+  "started_utc": "2026-10-24T17:24:11.610005+00:00",
+  "wall_seconds": 0.3147058329996071,
+  "exit": 1,
+  "timeout_seconds": 45,
+  "purpose": "Exact modular determinant backend; dependency setup, not mathematics"
+}

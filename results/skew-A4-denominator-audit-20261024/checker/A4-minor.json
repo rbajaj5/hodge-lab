@@ -1,0 +1,80 @@
+{
+  "status": "PASS: declared finite family excluded",
+  "script_sha256": "cefa9592c78c0ccb8b5c1d9ff5e6e6f8473410d43b19484e1fbf9ba013d17faa",
+  "connection_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "prior_structure_sha256": "7493c4076b993709f51b15e612b2b102855887aba76d7907563addabfabf7af7",
+  "reused_A3_report_sha256": "6c2ed5fc2d425e6c3121ffd481d21b742e335fad9c29754f7bb36f497fa57cfc",
+  "new_order4_controls": {
+    "det_R_minus_4I": "52/3",
+    "tau4": "-2*r**7 + 15*r",
+    "abstract_reciprocal_rule": "d(u^-4)/du=-4u^-5"
+  },
+  "regenerated_inputs_sha256": "4f74073f8b69930cb46ecf2a4f787d33876edca3c778dbdd7ed276d9b17da893",
+  "saved_minor_sha256": "8a79cf56d9f01acd1e09e14a8e6b0d7a40db6f945288fb04a0a89008be54efc3",
+  "canonical_minor_int64_bytes_sha256": "8968eaf5fc2346f8217cb187cc3f24d33dfd76612e5867a62b7ccecadef6f686",
+  "prime": 65521,
+  "prime_verified": true,
+  "seed": 2026102469,
+  "minor_shape": [
+    3103,
+    3103
+  ],
+  "entries_regenerated": 9628609,
+  "sample_points": 1552,
+  "excluded_points": 0,
+  "denominator_evaluations": 783760,
+  "coefficient_columns": 3102,
+  "basis_counts": {
+    "h4": 60,
+    "k4": 234,
+    "P3": 702,
+    "P2": 702,
+    "P1": 702,
+    "P0": 702
+  },
+  "all_lower_coefficients_preserved": true,
+  "lower_A2_projection_used": false,
+  "determinant": 28764,
+  "negative_controls": {
+    "top_wrong_order3_tau": {
+      "point_index": 0,
+      "row": 0,
+      "column": 0,
+      "correct": 32782,
+      "mutant": 62509,
+      "difference": 29727,
+      "mutation": "use divT-3q instead of divT-4q"
+    },
+    "P3_wrong_pole_coefficient": {
+      "point_index": 0,
+      "row": 0,
+      "column": 294,
+      "correct": 31853,
+      "mutant": 45920,
+      "difference": 14067,
+      "mutation": "use -2*A_r*u instead of -3*A_r*u in A-scaled P3 column"
+    },
+    "P1_omitted_quotient_derivative": {
+      "point_index": 0,
+      "row": 0,
+      "column": 1698,
+      "correct": 65424,
+      "mutant": 34023,
+      "difference": 34120,
+      "mutation": "omit -A^2*A_r*u from A^3-scaled P1 column"
+    }
+  },
+  "reconstruction_seconds": 2.764999999999418,
+  "determinant_seconds": 3.4539999999979045,
+  "normalization": "Whole equation multiplied by A^4; h4 tangent columns use tau4, k4 uses partial_t+Nt, P3 uses A(partial_i+Ni)-3Ai, P2 uses A^2(partial_i+Ni)-2A*Ai, P1 uses A^3(partial_i+Ni)-A^2*Ai, P0 uses A^4(partial_i+Ni), source A^4*r^-4 Mb e0/12",
+  "provenance": "Independently authored rational-polynomial evaluator, symbolic physical Jacobian and monomial derivatives, and reduced tangent operator. Exact determinant by FLINT through python-flint nmod_mat.det, not an independently authored elimination algorithm. No Pro script replay or exploratory search.",
+  "delivered_csv_comparison": "Not performed in this execution; preserve this report and add a separate binding receipt after download.",
+  "characteristic_zero_reason": "If determinant is nonzero: all input denominators are units modulo the recorded prime at the integer lifts of the1552 sample points. The rational3103-square augmented determinant reduces to the reported nonzero residue, hence is nonzero overQ. There are only3102 coefficient columns, so no rational constant coefficient vector solves these necessary evaluations. Unknown coefficient denominators need not be prime to the recorded prime. This does not infer characteristic-zero rank from a deficient modular rank.",
+  "structural_dependency": "Prior low-degree tangent/support theorem and new invertibility of R-4I restrict only P4. All2808 coefficients in lower P3,P2,P1,P0 are retained. This necessary3102 family contains every possible solution in the declared original3510-generator sum. No lower A^2 or A^3 projection is used.",
+  "scope": "If determinant is nonzero, excludes full six-component B+B/A+B/A^2+B/A^3+B/A^4 and its B/A^4 subfamily for -10<=r exponent<=2 and v,t exponents0..2. Does not exclude larger supports, A^-5 or other denominators, arbitrary rational compact currents, fibre-dependent sextic functions; no homogeneous certificate, Lean proof, or full-target solution.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "determinant_backend": "flint.nmod_mat.det"
+}

@@ -1,0 +1,3 @@
+PASS: independently reconstructed 9628609 entries at 1552 good points
+REJECTED CONTROLS: {"top_wrong_order3_tau": {"point_index": 0, "row": 0, "column": 0, "correct": 32782, "mutant": 62509, "difference": 29727, "mutation": "use divT-3q instead of divT-4q"}, "P3_wrong_pole_coefficient": {"point_index": 0, "row": 0, "column": 294, "correct": 31853, "mutant": 45920, "difference": 14067, "mutation": "use -2*A_r*u instead of -3*A_r*u in A-scaled P3 column"}, "P1_omitted_quotient_derivative": {"point_index": 0, "row": 0, "column": 1698, "correct": 65424, "mutant": 34023, "difference": 34120, "mutation": "omit -A^2*A_r*u from A^3-scaled P1 column"}}
+EXACT DETERMINANT: 28764 modulo 65521 using python-flint 0.9.0

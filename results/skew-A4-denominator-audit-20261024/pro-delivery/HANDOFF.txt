@@ -1,0 +1,44 @@
+A4 bounded six-component current search — changed files only
+24 October 2026 EDT; mathematics stopped17:26:37UTC /13:26:37EDT.
+
+Integration parent: a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf.
+Actual cached execution checkout: fc4f38a338b47addf62d1bf699783302285378fe.
+No full newer parent or expected combined Git tree is claimed.
+Upstream supplied pin:27f4bb9ad8757e5841f884d9d30124a3c97a847d.
+Source SHA256:a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d.
+
+Apply only payload/ to the exact integration parent; verify MANIFEST.sha256.
+Owned paths: notes/skew-A4-denominator-20261024.md and results/skew-A4-denominator-20261024/.
+Coordinator owns README/ledger/team-board integration, normal Hodge Lab publication,
+and delivery binding. No worker Git stage/commit/push, upstream action or Lean.
+
+Full family:(B+B/A+B/A^2+B/A^3+B/A^4)^6, B={r^m v^n t^k:-10<=m<=2,0<=n,k<=2}.
+Original3510 parameters; only topP4 tangent,294top+2808free lower=3102.
+Prime65521, random.Random seed2026102469. Full3160x3103 matrix.
+Columns h4(60),k4(234),P3,P2,P1,P0(702each),positive source; exact labels in inputs.json.
+Raw matrix is row-major little-endian uint16, no header,19,610,960bytes.
+Matrix SHA256:e5822b368f62ac144256f9c3ff933c9ef6fd4002853f7f4fd084c67fb013322c.
+
+Pro executed direct quotient assembly9.295s and separate literal-source
+reconstruction8.944s:9,805,480entries,1580point/domain records,17controls; bothexit0.
+No Pro determinant was run. Two unavailable-FLINT setup attempts retained;
+no backend build or over-budget Bareiss attempt. Figure01 spacing issue
+retained; inspected figure02 accepted. No mathematics rerun afterstop.
+
+COORDINATOR-REPORTED SEPARATE EVIDENCE:
+first3103 augmented rows determinant28764 mod65521,9,628,609entries,
+1552points,6.438s,3controls,python-flint0.9.0.
+Report SHA:c39d7b4ee6207b1ca65f0c545bfd7925d7fc847a1b9ea7cf987d008e9dadb36d.
+Frozen local NPY SHA:8a79cf56d9f01acd1e09e14a8e6b0d7a40db6f945288fb04a0a89008be54efc3.
+Top-pole algebra:7identities+3controls,2.453s, imported; old structural checks reused.
+
+REMAINING INTEGRATION CHECK: bind_local_minor.py compares every delivered
+first3103-row entry against the coordinator's frozen NPY, with both exact hashes.
+This is IO-only; do not recompute the determinant or call binding new mathematics.
+The coordinator's nonzero minor and imported necessary restriction exclude
+this finite rational-coefficient family. No primitive or general exclusion.
+
+Full original archive SHA and length are in external DELIVERY.json and SHA256SUMS.txt.
+If needed concatenate parts in listed numeric order as bytes, without separators.
+A4-review.zip omits only the bulky matrix, retains every other payload byte,
+and has its own manifest/HANDOFF plus exact omitted-artifacts.json.

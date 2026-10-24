@@ -1,0 +1,41 @@
+{
+  "status": "COORDINATOR_REPORTED_EXECUTIONS_NOT_RUN_BY_PRO",
+  "reported_utc": "2026-10-24T17:25:00Z",
+  "precise_report_time": "message delivery; clock minute only, not claimed execution timestamp",
+  "structural": {
+    "exact_checks": 7,
+    "mutation_controls": 3,
+    "seconds": 2.453,
+    "det_Ra_minus_4I": "52/3",
+    "tau4": "-2*r^7+15*r",
+    "top_parameters": 294,
+    "unrestricted_lower_parameters": 2808,
+    "necessary_columns": 3102,
+    "original_parameters": 3510,
+    "next_pole": "(Ra-3I)Q3+W4|A=0=0",
+    "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d"
+  },
+  "minor": {
+    "prime": 65521,
+    "seed": 2026102469,
+    "rows": 3103,
+    "columns": 3103,
+    "entries": 9628609,
+    "admissible_points": 1552,
+    "determinant": 28764,
+    "seconds": 6.438,
+    "mutation_controls": 3,
+    "backend": "python-flint0.9.0 exact nmod_mat.det",
+    "report_sha256": "c39d7b4ee6207b1ca65f0c545bfd7925d7fc847a1b9ea7cf987d008e9dadb36d",
+    "local_uint16_npy_sha256": "8a79cf56d9f01acd1e09e14a8e6b0d7a40db6f945288fb04a0a89008be54efc3",
+    "numeric_result_was_reported_before_Pro_result": true,
+    "delivered_matrix_binding": "PENDING_COORDINATOR_IO_ONLY_COMPARISON",
+    "not_in_this_packet": "Coordinator scripts, original report, and local NPY belong to coordinator-owned audit."
+  },
+  "goal": {
+    "owner": "Original Codex coordinator",
+    "started_utc": "2026-10-24T17:20:39Z",
+    "deadline_utc": "2026-10-24T18:05:39Z",
+    "worker_has_goal_activation_api": false
+  }
+}

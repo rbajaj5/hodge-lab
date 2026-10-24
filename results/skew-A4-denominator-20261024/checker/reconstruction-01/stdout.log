@@ -1,0 +1,199 @@
+{
+  "status": "PASS_INDEPENDENT_A4_MATRIX_RECONSTRUCTION",
+  "executor": "a4_denominator_checker AI worker",
+  "created_utc": "2026-10-24T17:26:37.020674+00:00",
+  "seconds": 8.726779982000153,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "packet_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "6db28e56e3ff61bd8310e2d2a15eb6d3528674880bb11fb4b30b2f77d4e954cd",
+  "author_matrix_validation_sha256": "d8a3dc8c1349af8f3751183cb10ccc7f6b52c1997c004be102b2791e842cfcef",
+  "inputs_sha256": "c721aa1e0b40997fd50f3467b8eb4d2ab702eba171999866bf07007226af1421",
+  "matrix_sha256": "e5822b368f62ac144256f9c3ff933c9ef6fd4002853f7f4fd084c67fb013322c",
+  "independently_reconstructed_bytes_sha256": "e5822b368f62ac144256f9c3ff933c9ef6fd4002853f7f4fd084c67fb013322c",
+  "matrix_format": "row-major little-endian unsigned 16-bit integers, no header",
+  "matrix_shape": [
+    3160,
+    3103
+  ],
+  "entries_reconstructed": 9805480,
+  "domain_points_checked": 1580,
+  "excluded_points_independently_reconstructed": [],
+  "prime": 65521,
+  "seed": 2026102469,
+  "mutations_detected": 17,
+  "mutations": {
+    "replace_top_4_by_3": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 32782,
+      "mutated": 62509,
+      "difference": 29727
+    },
+    "omit_top_r_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 32782,
+      "mutated": 18861,
+      "difference": 51600
+    },
+    "omit_top_v_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 32782,
+      "mutated": 34569,
+      "difference": 1787
+    },
+    "reverse_top_quotient_sign": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 32782,
+      "mutated": 8514,
+      "difference": 41253
+    },
+    "omit_P3_r_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 31853,
+      "mutated": 8533,
+      "difference": 42201
+    },
+    "omit_P3_v_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 34783,
+      "mutated": 8358,
+      "difference": 39096
+    },
+    "omit_P2_r_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 61529,
+      "mutated": 40888,
+      "difference": 44880
+    },
+    "omit_P2_v_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 63476,
+      "mutated": 25322,
+      "difference": 27367
+    },
+    "omit_P1_r_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 65424,
+      "mutated": 34023,
+      "difference": 34120
+    },
+    "omit_P1_v_quotient_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 16470,
+      "mutated": 29509,
+      "difference": 13039
+    },
+    "omit_Av_connection_chain": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 32782,
+      "mutated": 27331,
+      "difference": 60070
+    },
+    "omit_Nt_b_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 26316,
+      "mutated": 52165,
+      "difference": 25849
+    },
+    "omit_Nt_c_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 26316,
+      "mutated": 53783,
+      "difference": 27467
+    },
+    "omit_Nt_d_term": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 26316,
+      "mutated": 12205,
+      "difference": 51410
+    },
+    "omit_source_1_over_12": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 10892,
+      "mutated": 65183,
+      "difference": 54291
+    },
+    "reverse_source_sign": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 10892,
+      "mutated": 54629,
+      "difference": 43737
+    },
+    "omit_k4_t_derivative": {
+      "point": [
+        49047,
+        63177,
+        26843
+      ],
+      "expected": 54100,
+      "mutated": 18487,
+      "difference": 29908
+    }
+  },
+  "structural_dependency": "Imported top-only pole restriction and reused bounded tangent support; not reproved here.",
+  "scope": "All entries, all samples, basis order, and full source reconstructed. No determinant executed by this process. All 2808 lower parameters remain free; source coefficient convention and both output rows retained."
+}

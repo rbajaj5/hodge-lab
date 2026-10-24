@@ -46,6 +46,19 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: the bounded fourth-power family is excluded
+
+The [A-fourth-power test](notes/skew-A4-denominator-audit-20261024.md)
+retains all six physical current components in `B+B/A+B/A²+B/A³+B/A⁴`.
+The same numerator bounds give 3,510 parameters before the highest-pole
+restriction. Only P4 is forced tangent; all 2,808 lower coefficients remain
+free. The necessary 3,102-parameter family has a separately reconstructed
+3,103-square augmented determinant **28764 modulo 65521**, proving exclusion
+over Q within these bounds. No primitive was found. General rational
+currents and other supports or poles remain open. Goal and Pro were reused;
+Lean stayed benched, and this batch is published to Hodge Lab only.
+[Executed evidence, visualization and limits](notes/skew-A4-denominator-audit-20261024.md).
+
 ### One-reflection-skew: the A-cubed family is also excluded
 
 The [new full-current test](notes/skew-A3-denominator-audit-20261024.md)

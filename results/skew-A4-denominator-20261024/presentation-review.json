@@ -1,0 +1,20 @@
+{
+  "executor": "Pro root visual inspection",
+  "created_utc": "2026-10-24T17:31:40.387119+00:00",
+  "presentation_only": true,
+  "attempts": [
+    {
+      "path": "figure-01/result/A4-denominator-certificate.png",
+      "sha256": "f715a4289df504141d3e7895e956e92d5696ddc1b21b7a184cdc0f83fcfb8843",
+      "status": "RETAINED_SPACING_ISSUE",
+      "finding": "First footer too close to x-axis label; no mathematical issue."
+    },
+    {
+      "path": "figure-02/result/A4-denominator-certificate.png",
+      "sha256": "ac48507b356a488caf1c6ee27520dd59f721883d101debde37afde224bd76d41",
+      "status": "INSPECTED_ACCEPTED",
+      "finding": "All five sector labels, original/necessary counts, source scope, imported determinant attribution and limits readable; no overlap or clipping."
+    }
+  ],
+  "mathematics_rerun": false
+}

@@ -18,20 +18,23 @@ by the user toward the solution. Zero trace is reused context, not the
 success criterion. A partial current counts only within its documented scope;
 the remaining source must stay explicit.
 
-The [latest A-cubed batch](skew-A3-denominator-audit-20261024.md) tests
-all six physical components in B+B/A+B/A²+B/A³ with the same explicit
-numerator bounds. Only P3 is forced tangent; all 2,106 lower parameters
-remain free, preserving mixed cancellation. Pro tested the resulting
-2,400-parameter necessary family. A separately reconstructed 2,401-square
-augmented minor has determinant 13752 modulo 32003. This excludes the
-declared 2,808-parameter sum over Q, not general rational currents.
+The [latest fourth-power batch](skew-A4-denominator-audit-20261024.md)
+tests all six physical components in B+B/A+B/A²+B/A³+B/A⁴ with the same
+explicit numerator bounds. Only P4 is forced tangent; all 2,808 lower
+parameters remain free, preserving mixed cancellation. The resulting
+3,102-parameter necessary family has a separately reconstructed
+3,103-square augmented minor with determinant 28764 modulo 65521.
+This excludes the declared 3,510-parameter sum over Q, not general
+rational currents. The [A-cubed result](skew-A3-denominator-audit-20261024.md)
+is retained as completed evidence and was not rerun.
 
 The [A-denominator batch](skew-A-denominator-audit-20261024.md) supplies
 reused divisor, tangent-module and support arguments; the
 [A-squared batch](skew-A2-denominator-audit-20261024.md) remains a separate
 completed result. Neither old search was rerun. The changed condition was
-the new A-cubed sector with all coupled lower poles retained. Its failure
-does not justify applying an A-squared secondary restriction to P2.
+the new fourth-power sector with all coupled lower poles retained. Earlier
+exclusions do not justify separate restrictions on the lower sectors of
+this larger family.
 
 The [previous full-residual batch](skew-full-residual-20261024.md), centered
 Q/R2, beta, source conventions and earlier Laurent exclusion remain reused
@@ -52,11 +55,11 @@ Pin the current protected input and any changed dependencies at actual dispatch.
 
 | Owner role | Assignment and output | Receiver and acceptance condition | State |
 | --- | --- | --- | --- |
-| Coordinator | Pin the target and integrate the bounded outcome | Same source convention, fixed problem, explicit limits | Actual Goal; parent `2dff6af`; append-only checkpoint 152; no upstream action |
-| Constructive lead, reused Pro chat | Test the A-cubed denominator in the full six-component equation | Candidate or exact scoped exclusion | Consumed top-pole handoff; tested B+B/A+B/A²+B/A³; coefficient/augmented ranks 2400/2401; no primitive |
-| Local algebra worker | Derive the order-three operator and coupled pole condition | Lead retains every lower-sector cancellation; checker verifies source binding | Consumed top-pole reduction: 2808 to 2400, det(Ra-3I)=10 and tau3=r^7+12r; all 2106 lower coefficients free |
+| Coordinator | Pin the target and integrate the bounded outcome | Same source convention, fixed problem, explicit limits | Actual Goal; parent `a773c34`; append-only checkpoint 154; Hodge Lab only |
+| Constructive lead, reused Pro chat | Test the fourth-power denominator in the full six-component equation | Candidate or exact scoped exclusion | Consumed top-pole handoff; direct-quotient matrix retained all lower sectors; separate local determinant supplies the certificate |
+| Local algebra worker | Derive the order-four operator and coupled pole condition | Lead retains every lower-sector cancellation; checker verifies source binding | Consumed reduction: 3510 to 3102, det(Ra-4I)=52/3 and tau4=-2r^7+15r; all 2808 lower coefficients free |
 | Lean implementer | No assignment in this batch | None until the user restores this role | **Benched** |
-| Separate local checker | Reconstruct the fixed new decisive minor | Executed evidence and explicit limits | 5,764,801 entries at 1201 points; determinant 13752 via exact FLINT; three new derivative/order controls detected |
+| Separate local checker | Reconstruct the fixed new decisive minor | Executed evidence and explicit limits | 9,628,609 entries at 1552 points; determinant 28764 via exact FLINT; three new operator controls detected; delivery binding recorded separately |
 
 Roles may be sequential. Do not create five workers to match five rows.
 Construction and algebra can work in parallel after agreeing their interface.

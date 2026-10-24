@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BYTE_BINDINGS_PASS",
+  "utc": "2026-10-24T17:22:47.738418+00:00",
+  "command": [
+    "C:\\Users\\anaxe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "results/skew-A4-denominator-audit-20261024/algebra/freeze_artifacts.py"
+  ],
+  "checks": {
+    "successful_execution": true,
+    "bounded_execution": true,
+    "checker_snapshot_matches_execution": true,
+    "checker_snapshot_matches_validation": true,
+    "final_checker_matches_snapshot": true,
+    "runner_snapshot_matches_execution": true,
+    "final_runner_matches_snapshot": true,
+    "injection_matches_validation": true,
+    "pinned_connection_recorded": true,
+    "prior_injection_pin_recorded": true
+  },
+  "final_checker_sha256": "7ca72b6082aeb6cd75a75062b24068a1520345e08c46ebe179284e79acd11364",
+  "injection_sha256": "22ad6a7d38050924c282f0a448203c288e0c47265f78cca710a72cdd6b181959",
+  "execution_seconds": 2.452999999994063,
+  "exact_checks": 7,
+  "mutations": 3,
+  "scope": "New A4 highest-pole identities only; no matrix search or secondary restriction."
+}

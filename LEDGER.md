@@ -6574,3 +6574,94 @@ All parent ledger bytes are preserved before this append. Posts entries and
 the contribution tally remain unchanged: **30 discussion contributions,
 one closed maintenance PR and zero accepted authored solves**. This is
 ordinary workflow maintenance; no new research visualization is required.
+
+
+### Checkpoint 154 — Full-current fourth-power family excluded within bounds, 24 October 2026 EDT
+
+The user requested actual Goal mode, the existing Pro chat, an A(r,v)^4
+denominator search in the full six-component current, Lean benched, and
+publication to Hodge Lab only. Goal began at 13:20:39 EDT / 17:20:39 UTC;
+mathematics stopped at 13:26:37 EDT / 17:26:37 UTC, within the 45-minute
+research window. Integration has a further 15-minute bound. Individual
+mathematical processes have 60-second limits and network operations
+45-second limits. No wider search was started after the decisive result.
+
+Notebook parent: `a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf`.
+Fresh upstream head: `27f4bb9ad8757e5841f884d9d30124a3c97a847d`.
+The unchanged connection SHA256 is
+`a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d`.
+Prior source transport, divisor/tangency/support arguments, A/A²/A³
+exclusions and Lean receipts were reused, not rerun or counted as new work.
+
+The [integrated audit](notes/skew-A4-denominator-audit-20261024.md)
+tests the explicit enlargement (B+B/A+B/A²+B/A³+B/A⁴)^6, with r exponents
+-10 through 2 and v,t degrees at most 2. All coefficients are constant
+rationals in that finite basis. Both compact source rows, all r,v,t
+derivatives, positive packet orientation and the 1/12 factor remain.
+Only P4 is forced tangent by det(Ra-4I)=52/3. Its new scalar term is
+tau4=-2r^7+15r. The entire 2,808-parameter lower part remains free,
+giving 3,102 necessary parameters from 3,510 original parameters.
+The next pole remains coupled; old lower-family exclusions are not
+imposed on a changed residual.
+
+Pro fixed prime 65521, seed 2026102469, column order and the first
+3,103-row minor before calculation. The separate local checker
+reconstructed all 9,628,609 decisive entries at 1,552 admissible points
+before receiving Pro's numerical result. Exact FLINT returned determinant
+**28764 modulo 65521**, nonzero, in a 6.438-second child, with three
+operator mutations detected. Unit input denominators make this a nonzero
+rational augmented minor; with only 3,102 coefficient columns it excludes
+the declared finite family over Q, including the requested pure B/A⁴
+subfamily. No reduction of hypothetical unknown coefficients is assumed.
+
+Pro's direct quotient construction took 9.295 seconds. Its separate
+source reconstruction checked all 9,805,480 entries of the 3160x3103
+matrix, all 1,580 sample/domain records and 17 controls in 8.944 seconds.
+Pro did not run a new determinant: two bounded FLINT setup attempts failed,
+and the route stopped. The local determinant remains separately attributed.
+Local algebra supplied seven new identities and three controls in 2.453
+seconds. Counts and provenance are kept separate; these are AI executions,
+not independent human reviews. No mathematical process failed or timed out.
+A pre-execution coefficient-overflow prevention change, a corrected board
+lookup and dependency setup failures are preserved with their scopes.
+
+All 60 original Pro payload files were imported unchanged. Eleven binary
+slices reconstructed the 20,142,445-byte archive with SHA256
+`8abdf70cb3861435a6b284e57cefdfac0a9f8f58db82cf0ec7d018aa86a843a9`.
+The later 0.375-second IO-only comparison verified every decisive matrix
+entry, all 3,102 basis labels and the first 1,552 point/domain records.
+It did not repeat mathematics. Original pending-delivery receipts remain
+unchanged, with a separate binding addendum. Receiver repairs for explicit
+parts/ and payload/ manifest prefixes, and the resulting initial failed
+assertions/missing-archive extraction, are recorded as integration failures.
+No original payload bytes changed and no download failed.
+
+The [original Pro note](notes/skew-A4-denominator-20261024.md),
+[scripts and receipts](results/skew-A4-denominator-20261024/), and
+[local evidence and binding](results/skew-A4-denominator-audit-20261024/)
+are published together. The [inspected reproducible figure](results/skew-A4-denominator-20261024/figure-02/result/A4-denominator-certificate.png)
+shows the top-only reduction and the exact finite-family certificate;
+its [generator](results/skew-A4-denominator-20261024/render.py) uses frozen
+receipts. The first render's caption-spacing issue is retained with its
+source and output. The figure itself supplies no proof.
+
+No primitive was found. This is an exact failed family within declared
+bounds, not general rational nonexistence, source exactness, global
+clearing, a homogeneous certificate, a new Lean theorem or an accepted
+solve. Other supports, poles, higher powers and arbitrary rational or
+fibre-dependent currents remain open. The shared board records the actual
+structural and matrix-specification handoffs consumed by Pro and the checker.
+
+Credit fqlx for the compact connection and source, benediamond for the
+physical cover and earlier reductions, and Benjamin E. Diamond and the
+hodge.computer contributors for the fixed problem and framework. This is
+AI-assisted work for Ravi Bajaj. Cached Pro checkout fc4f38a is distinguished
+from its current-parent connector reads and actual integration parent;
+source snapshots are bound to the real Git parent, not a fabricated tree.
+
+Every parent ledger byte is preserved before this append. No upstream post,
+reply, edit or PR belongs to this batch. Posts 1–30 remain unchanged;
+the latest actual upstream post is still [#127 comment 19167075](https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075).
+The tally remains **30 discussion contributions, one closed maintenance PR
+and zero accepted authored solves**. Publication and exact remote readback
+are checked separately; this bounded Goal does not solve the full target.

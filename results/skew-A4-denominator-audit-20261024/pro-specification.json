@@ -1,0 +1,23 @@
+{
+  "observed_utc": "2026-10-24T17:23:16.999869+00:00",
+  "result_known_at_dispatch": false,
+  "prime": 65521,
+  "seed": 2026102469,
+  "samples": 1580,
+  "rows": 3160,
+  "coefficient_columns": 3102,
+  "augmented_columns": 3103,
+  "decisive_rows": "first3103",
+  "order": [
+    "h4",
+    "k4",
+    "P3",
+    "P2",
+    "P1",
+    "P0",
+    "positive_source"
+  ],
+  "within_sector": "direction if applicable, compactrow0then1,increasingr_v_texponents",
+  "source": "A4*r^-4*Mb*e0/12",
+  "sample_rule": "successive randrange(1,p) triples, skip A/Delta/literalconnectiondenominator zeros"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "archive_sha256": "8abdf70cb3861435a6b284e57cefdfac0a9f8f58db82cf0ec7d018aa86a843a9",
+  "archive_bytes": 20142445,
+  "parts": [
+    {
+      "file": "A4-denominator.zip.part001",
+      "sha256": "4cf46186facf13bfe2b9eee1434072e04dcea88132ec7ec8e4afc076a631ae5a",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part002",
+      "sha256": "b9c92dddbf113f03d7503b700625f53ab82b4a6903ee353876e687f7fbc89e9d",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part003",
+      "sha256": "6993beda2a09fbb90658729248d6f39ef1f06bf464282b80e41daa5210bd4515",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part004",
+      "sha256": "5ba206a564d89e24f6e21abdeaab9b26b9be3db354a6d9a263bbaa94b4633cc9",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part005",
+      "sha256": "35446c0242af5e89a01ebd4d3a249515c923fac57ebdaa11457a46f9712ecdaf",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part006",
+      "sha256": "5e2accfcefc32db9b286d73cbb7740671a849a1ff1fcf0dbf0296e17566d7bf2",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part007",
+      "sha256": "ea6ae3dc799eeeec03e1b39ac58a226ac7be2a3682fd4574f666ed2480d90b96",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part008",
+      "sha256": "e9addb9231d6a5051a1b18c09159f6bc6c3b0c70c24f3d57f46d512c82b54ef1",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part009",
+      "sha256": "b029dc635b97add0b2cf0f78b47d784103d9d28593e795bc5f2dd3273ed4e1d2",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part010",
+      "sha256": "1bb123215f46e0d8d4be958141173d62490d551fcbe05839f4b1a3a17d0241ab",
+      "bytes": 2000000
+    },
+    {
+      "file": "A4-denominator.zip.part011",
+      "sha256": "285a37f3fc5dd9c0018ed43d2aac510e5c4a8181b794b9022daa254eb71942a6",
+      "bytes": 142445
+    }
+  ],
+  "download_failures": 0,
+  "review_sha256": "11f7f87a73b9ca11c847a4098511527e78fb69b92df8b6422482ee41d05d19b8",
+  "coordinator_repair": "Initial inline reassembler expected bare part names and rejected the manifest parts/ prefix before writing output; a premature extraction then found no archive. This script validates the explicit parts/ directory and maps to observed download basenames. No payload or mathematical computation changed.",
+  "manifest_layout_repair": "The reused receiver expected unprefixed payload paths. The A4 manifest explicitly includes payload/, so its initial assertion rejected a doubled prefix. The adapter now validates and strips that explicit prefix; existing extracted bytes were verified unchanged before import."
+}

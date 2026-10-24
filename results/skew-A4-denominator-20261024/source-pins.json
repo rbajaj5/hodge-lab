@@ -1,0 +1,73 @@
+{
+  "integration_parent": "a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf",
+  "actual_cached_checkout": "fc4f38a338b47addf62d1bf699783302285378fe",
+  "working_directory": "/workspace/scratch/b8974c152662/hodge-lab-A3-denominator",
+  "full_parent_materialized": false,
+  "expected_git_tree_claimed": false,
+  "upstream_dispatch_pin": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "upstream_pin_provenance": "coordinator supplied; no worker upstream refetch",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "cached_execution_source_equals_live_parent_bytes": true,
+  "read_only_connector_snapshots": [
+    {
+      "path": "AGENTS.md",
+      "sha": "c854f86e47fe7e81ae960779226585a1f65d7de4",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf/AGENTS.md",
+      "snapshot": "inputs/AGENTS.md",
+      "sha256": "c6fa2e3422cf470cb1eb8cd7490a8ac80246f6e1c08a430cd2f398cea8148c0d",
+      "bytes": 8253,
+      "git_blob_verified": true
+    },
+    {
+      "path": "notes/skew-A3-denominator-20261024.md",
+      "sha": "16748adf76cf771db626cc7f8728dfc9c9af1d76",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf/notes/skew-A3-denominator-20261024.md",
+      "snapshot": "inputs/skew-A3-denominator-20261024.md",
+      "sha256": "4561c6512e34ee0f69634204e3a6226545534b46fc8d6222691dcc7cbf9fee42",
+      "bytes": 10344,
+      "git_blob_verified": true
+    },
+    {
+      "path": "notes/skew-A3-denominator-audit-20261024.md",
+      "sha": "e6c599a19e5784e9d3c1adaa13f56b64dcc55acc",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf/notes/skew-A3-denominator-audit-20261024.md",
+      "snapshot": "inputs/skew-A3-denominator-audit-20261024.md",
+      "sha256": "bc28742bea5e224db398e9ba477753b11c0dcee9ebb913f2bd9dc9fcde743498",
+      "bytes": 11893,
+      "git_blob_verified": true
+    },
+    {
+      "path": "notes/one-reflection-skew-team-board.md",
+      "sha": "c7d1bdde063697fe9efd16009454cee6b68ee595",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf/notes/one-reflection-skew-team-board.md",
+      "snapshot": "inputs/one-reflection-skew-team-board.md",
+      "sha256": "cfbe4b3eed2eb590eb68efbdd10d1e23c4cd7c35c35f6fd617cd329ed7ca0c0b",
+      "bytes": 7413,
+      "git_blob_verified": true
+    },
+    {
+      "path": "notes/assured-research-workflow.md",
+      "sha": "0848de65f1c55ae9806b5ee7f8eb984ed652373a",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf/notes/assured-research-workflow.md",
+      "snapshot": "inputs/assured-research-workflow.md",
+      "sha256": "1c852e1cc8cf25f92a377c3646b4e5c210699cc69a7cf07f6976ab23f5819d0e",
+      "bytes": 11153,
+      "git_blob_verified": true
+    },
+    {
+      "path": "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json",
+      "sha": "615e73cfd69d657b4dc0dbaa0e5d0a958afabacb",
+      "url": "https://github.com/rbajaj5/hodge-lab/blob/a773c34804b3d0e1e6db2e1b6e31d89f3c3455cf/results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json",
+      "snapshot": "inputs/source-rank2-connection.json",
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+      "bytes": 12399,
+      "git_blob_verified": true
+    }
+  ],
+  "new_writable_scope": [
+    "notes/skew-A4-denominator-20261024.md",
+    "results/skew-A4-denominator-20261024/"
+  ],
+  "known_failed_Git_routes_retried": false,
+  "created_utc": "2026-10-24T17:27:35.203269+00:00"
+}

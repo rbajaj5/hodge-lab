@@ -1,0 +1,34 @@
+{
+  "status": "ASSEMBLED_DIRECT_QUOTIENT_A4_MATRIX_NO_RANK_CLAIM",
+  "executor": "Pro root constructive lead",
+  "created_utc": "2026-10-24T17:26:10.575375+00:00",
+  "elapsed_seconds": 8.631147443000373,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "source_sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+  "script_sha256": "cb7eec254d37482f24a1e951db96fab81886746281a799a92b15ec6327b7bdca",
+  "prime": 65521,
+  "seed": 2026102469,
+  "matrix_shape": [
+    3160,
+    3103
+  ],
+  "matrix_entries": 9805480,
+  "matrix_dtype": "<u2",
+  "matrix_order": "C",
+  "matrix_sha256": "e5822b368f62ac144256f9c3ff933c9ef6fd4002853f7f4fd084c67fb013322c",
+  "inputs_sha256": "c721aa1e0b40997fd50f3467b8eb4d2ab702eba171999866bf07007226af1421",
+  "parameter_sectors": {
+    "h4": 60,
+    "k4": 234,
+    "P3": 702,
+    "P2": 702,
+    "P1": 702,
+    "P0": 702
+  },
+  "structural_dependency": "Imported highest-pole det(Ra-4I)=52/3 plus reused bounded tangent/support theorem; only P4 constrained. All lower sectors free.",
+  "quotient_rule": "Direct top -4Ar/A^5 and -4Av/A^5; lower -jAi/A^(j+1), At=0; equation multiplied by A^4",
+  "target": "A^4*r^-4*Mb e0/12",
+  "limits": "Assembly only; exclusion requires nonzero augmented rational minor. No rational primitive claimed."
+}
