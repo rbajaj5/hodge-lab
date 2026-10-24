@@ -1,0 +1,8 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial HodgeLab.OneReflectionSkew
+open PhysicalCurveRealization PhysicalSourceNormalization ChartSubstitution NormalChart
+open ResidueNormalization
+example : ∃f:AmbientDerivation.K→+*Curve, f AmbientDerivation.G=0 := by
+  have h : ¬∃f:AmbientDerivation.K→+*Curve, f AmbientDerivation.G=0 := by
+    rintro ⟨f,hf⟩;exact no_ambient_field_specialization f hf
+  simp only [h]

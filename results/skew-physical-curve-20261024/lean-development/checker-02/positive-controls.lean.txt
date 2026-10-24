@@ -1,0 +1,37 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial HodgeLab.OneReflectionSkew
+open PhysicalCurveRealization PhysicalSourceNormalization ChartSubstitution NormalChart
+open ResidueNormalization
+
+example : Function.Injective (algebraMap BasePoly Curve) := polynomial_embedding_injective
+example : AlgebraicIndependent ℚ param := parameters_independent
+example : x^2=U := x_square
+example : x≠0 := x_ne_zero
+example : z≠0 := z_ne_zero
+example : z^6+cubic U r w t=0 := curve_equation
+example : CoordinateComparison.skewF (physicalPoint x r w t z)=0 := protected_F_zero
+example : CoordinateComparison.skewA (physicalPoint x r w t z)=x^3 := protected_A_image
+example (i:Fin 6) : physicalMap (X i)=physicalPoint x r w t z i := physicalMap_X i
+example (i:Fin 5) : chartMap (X i)=coords i := chartMap_X i
+example : chartMap (chartPolynomial (K:=ℚ))=0 := chartMap_relation
+example (i:Fin 5) : regularToCurve (algebraMap P Regular (X i))=coords i := regularToCurve_coord i
+example (i:Fin 5) : regularToAmbient (algebraMap P Regular (X i))=AmbientDerivation.coord i := regularToAmbient_coord i
+example (i:Fin 5) : kaehlerPull regularToCurve
+    (KaehlerDifferential.D ℚ Regular (algebraMap P Regular (X i)))=
+    KaehlerDifferential.D ℚ Curve (coords i) := curve_differentials i
+example (i:Fin 5) : curveExterior (regularD (algebraMap P Regular (X i)))=d (coords i) := curve_exterior_coordinates i
+example : ambientExterior regularSource=DifferentialForms.residueScalar•DifferentialForms.alpha := ambient_source
+example : curveExterior regularSource=normalizedPoleCoefficient U r w t z•oldFourForm U r w t := curve_source
+example : (6*z^5)•KaehlerDifferential.D ℚ Curve z+KaehlerDifferential.D ℚ Curve (cubic U r w t)=0 := curve_differential_relation
+example : (2*x)•KaehlerDifferential.D ℚ Curve x=KaehlerDifferential.D ℚ Curve U := square_cover_differential
+example : fR r w≠0 := cover_derivative_ne_zero
+example : delta (aChart r w) (t*vChart r w) (t*(1-t^2)/7) (1+t^6)≠0 := physical_delta_ne_zero
+example : curveExterior regularSource=
+    ((r^11/fR r w/12)*((bColumn0 (aChart r w) (t*vChart r w) (t*(1-t^2)/7) (1+t^6)+
+    bColumn1 (aChart r w) (t*vChart r w) (t*(1-t^2)/7) (1+t^6)*(r*U))/z^5))•
+    newFourForm (r*U) (aChart r w) (vChart r w) t+
+    baseWedge (aChart r w) (vChart r w) t ((r^11/fR r w/12)*
+      (correction (aChart r w) (t*vChart r w) (t*(1-t^2)/7) (1+t^6) (r*U)/z^5)) := realized_source_reduction
+example (f:AmbientDerivation.K→+*Curve) (h:f AmbientDerivation.G=0) : False := no_ambient_field_specialization f h
+example : ¬IsUnit (algebraMap P Regular (chartPolynomial (K:=ℚ))) := regular_relation_not_unit
+example (D:Derivation ℚ Curve Curve) (hU:D U=0) (hr:D r=0) (hw:D w=0) (ht:D t=0) (hz:D z=1) : False := no_unchanged_normal_derivation D hU hr hw ht hz

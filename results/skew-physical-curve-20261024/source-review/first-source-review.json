@@ -1,0 +1,23 @@
+{
+  "status": "INITIAL_SOURCE_SEMANTICS_REVIEW",
+  "executor": "Pro curve_evidence_review adversarial AI reviewer",
+  "recorded_utc": "2026-10-24T09:47:13.890604+00:00",
+  "source": "formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean",
+  "source_sha256": "28a76f4c3000c3817d7cd4a7250c9219b87635f1de14811bd23e836f6b51a9ff",
+  "compiled_status": "Not checked by this reviewer; source is under active writer development",
+  "observations": [
+    "BasePoly=Q[Fin4], Base=Frac(BasePoly), Curve=AlgebraicClosure(Base) are explicit",
+    "Injectivity of polynomial/base embeddings and algebraic independence of four parameters are declared with proofs",
+    "Curve root z is chosen using algebraic closure; cubic7 nonzero is witnessed by zero evaluation",
+    "Square-cover x is chosen with x\u00b2=U, and protected F=0/A=x\u00b3 are linked via existing substitution proofs",
+    "The actual chart polynomial map is constructed from P rather than old ambient K",
+    "No ambient field specialization theorem uses prior G_ne_zero and injectivity of a field hom"
+  ],
+  "open_review_gates": [
+    "Localization, Kaehler and exterior comparison are not yet in this initial snapshot",
+    "The final checker must inventory attributed declarations as well as plain declarations and named instances",
+    "Curve is an algebraic-closure realization, not an identified minimal root field or whole hypersurface function field"
+  ],
+  "reviewer_Lean_executions": 0,
+  "reviewer_symbolic_executions": 0
+}

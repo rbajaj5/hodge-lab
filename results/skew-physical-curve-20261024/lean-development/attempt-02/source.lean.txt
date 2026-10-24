@@ -1,0 +1,277 @@
+import HodgeLab.OneReflectionSkew.PhysicalSourceNormalization
+import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
+import Mathlib.RingTheory.AlgebraicIndependent.Basic
+import Mathlib.RingTheory.Localization.Away.Basic
+
+/-! An actual algebraic realization of the physical chart with independent base coordinates.
+The specialization domain is the polynomial ring, then its z-localization;
+there is deliberately no specialization of the whole ambient fraction field. -/
+namespace HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial ChartSubstitution NormalChart ResidueNormalization
+open PhysicalSourceNormalization
+noncomputable section
+
+abbrev BasePoly := MvPolynomial (Fin 4) ℚ
+abbrev Base := FractionRing BasePoly
+instance baseCharZero : CharZero Base :=
+  charZero_of_injective_algebraMap (IsFractionRing.injective BasePoly Base)
+abbrev Curve := AlgebraicClosure Base
+
+/-- The four coordinates remain algebraically independent in the realization. -/
+def param (i : Fin 4) : Curve := algebraMap BasePoly Curve (X i)
+abbrev U : Curve := param 0
+abbrev r : Curve := param 1
+abbrev w : Curve := param 2
+abbrev t : Curve := param 3
+
+theorem base_embedding_injective : Function.Injective (algebraMap Base Curve) :=
+  (algebraMap Base Curve).injective
+
+theorem polynomial_embedding_injective : Function.Injective (algebraMap BasePoly Curve) := by
+  rw [IsScalarTower.algebraMap_eq BasePoly Base Curve]
+  exact base_embedding_injective.comp (IsFractionRing.injective BasePoly Base)
+
+theorem parameters_independent : AlgebraicIndependent ℚ param := by
+  exact (MvPolynomial.algebraicIndependent_X (Fin 4) ℚ).map'
+    (f := IsScalarTower.toAlgHom ℚ BasePoly Curve) polynomial_embedding_injective
+
+theorem param_ne_zero (i : Fin 4) : param i ≠ 0 := parameters_independent.ne_zero i
+
+/-- Seven times the literal cubic, represented before passage to any field. -/
+def cubic7 : BasePoly :=
+  7*(1+(X 1)^6+(X 2)^6)*(X 0)^3 +
+  7*X 1*X 3*(1+(X 1)^2*X 2)*(X 0)^2 +
+  X 1*X 3*(1-(X 3)^2)*X 0+7*(1+(X 3)^6)
+
+theorem cubic7_ne_zero : cubic7 ≠ 0 := by
+  intro h
+  have hh := congrArg (MvPolynomial.eval (fun _ : Fin 4 => (0 : ℚ))) h
+  norm_num [cubic7, map_ofNat] at hh
+
+theorem cubic7_image : algebraMap BasePoly Curve cubic7 = 7*cubic U r w t := by
+  simp only [cubic7, map_add, map_mul, map_pow, map_sub, map_one, map_ofNat]
+  simp only [cubic, aCoeff, bCoeff, cCoeff, dCoeff, U, r, w, t, param]
+  ring
+
+theorem cubic_ne_zero : cubic U r w t ≠ 0 := by
+  intro h
+  have he : algebraMap BasePoly Curve cubic7 = 0 := by rw [cubic7_image,h,mul_zero]
+  exact cubic7_ne_zero (polynomial_embedding_injective (he.trans (map_zero _).symm))
+
+def z : Curve := (IsAlgClosed.exists_pow_nat_eq (-cubic U r w t)
+  (by norm_num : 0 < (6 : ℕ))).choose
+
+theorem z_power : z^6 = -cubic U r w t :=
+  (IsAlgClosed.exists_pow_nat_eq (-cubic U r w t)
+    (by norm_num : 0 < (6 : ℕ))).choose_spec
+
+theorem curve_equation : z^6+cubic U r w t = 0 := by rw [z_power]; ring
+
+theorem z_ne_zero : z ≠ 0 := by
+  intro hz
+  have h := curve_equation
+  rw [hz] at h
+  apply cubic_ne_zero
+  simpa using h
+
+/-- Recover the original square-cover coordinate; no new parameter is collapsed. -/
+def x : Curve := (IsAlgClosed.exists_pow_nat_eq U (by norm_num : 0 < (2 : ℕ))).choose
+
+theorem x_square : x^2 = U :=
+  (IsAlgClosed.exists_pow_nat_eq U (by norm_num : 0 < (2 : ℕ))).choose_spec
+
+theorem x_ne_zero : x ≠ 0 := by
+  intro hx
+  have h := x_square
+  rw [hx, zero_pow (by decide : (2:ℕ) ≠ 0)] at h
+  exact param_ne_zero 0 h.symm
+
+theorem protected_F_zero : CoordinateComparison.skewF (physicalPoint x r w t z) = 0 := by
+  rw [protected_substitution, x_square]
+  exact curve_equation
+
+theorem protected_A_image : CoordinateComparison.skewA (physicalPoint x r w t z) = x^3 :=
+  protected_source_substitution x r w t z
+
+abbrev P := AmbientDerivation.P
+
+def coords : Fin 5 → Curve := ![U,r,w,t,z]
+def chartMap : P →ₐ[ℚ] Curve := MvPolynomial.aeval coords
+
+@[simp]
+theorem chartMap_X (i : Fin 5) : chartMap (X i) = coords i := by
+  simp [chartMap]
+
+theorem chartMap_relation : chartMap (chartPolynomial (K:=ℚ)) = 0 := by
+  have hc : chartMap (C (1/7 : ℚ)) = (1/7 : Curve) := by simp [chartMap]
+  simp only [chartPolynomial,map_add,map_mul,map_pow,map_sub,map_one,hc,chartMap_X]
+  change z^6+(1+r^6+w^6)*U^3+r*t*(1+r^2*w)*U^2+(1/7:Curve)*r*t*(1-t^2)*U+(1+t^6)=0
+  convert curve_equation using 1 <;> simp only [cubic,aCoeff,bCoeff,cCoeff,dCoeff] <;> ring
+
+/-- An ambient fraction-field specialization killing G would contradict injectivity. -/
+theorem no_ambient_field_specialization (f : AmbientDerivation.K →+* Curve)
+    (h : f AmbientDerivation.G = 0) : False :=
+  AmbientDerivation.G_ne_zero (f.injective (h.trans (map_zero f).symm))
+
+section UniversalPullback
+variable {S T : Type*} [CommRing S] [CommRing T] [Algebra ℚ S] [Algebra ℚ T]
+
+/-- Universal pullback retaining the target's original Q-algebra. -/
+def kaehlerPull (f : S →ₐ[ℚ] T) :
+    KaehlerDifferential ℚ S →ₗ[ℚ] KaehlerDifferential ℚ T := by
+  letI : Algebra S T := f.toRingHom.toAlgebra
+  letI : IsScalarTower ℚ S T := IsScalarTower.of_algHom f
+  exact (KaehlerDifferential.map ℚ ℚ S T).restrictScalars ℚ
+
+theorem kaehlerPull_D (f : S →ₐ[ℚ] T) (s : S) :
+    kaehlerPull f (KaehlerDifferential.D ℚ S s) = KaehlerDifferential.D ℚ T (f s) := by
+  simp [kaehlerPull, KaehlerDifferential.map_D]
+
+/-- The exterior universal property supplies the multiplicative pullback. -/
+def exteriorPull (f : S →ₐ[ℚ] T) :
+    ExteriorAlgebra S (KaehlerDifferential ℚ S) →+*
+      ExteriorAlgebra T (KaehlerDifferential ℚ T) := by
+  letI : Algebra S T := f.toRingHom.toAlgebra
+  letI : IsScalarTower ℚ S T := IsScalarTower.of_algHom f
+  letI : Algebra S (ExteriorAlgebra T (KaehlerDifferential ℚ T)) :=
+    Algebra.compHom _ f.toRingHom
+  letI : IsScalarTower S T (ExteriorAlgebra T (KaehlerDifferential ℚ T)) :=
+    IsScalarTower.of_algebraMap_eq' rfl
+  let g := ((ExteriorAlgebra.ι T).restrictScalars S).comp (KaehlerDifferential.map ℚ ℚ S T)
+  exact (ExteriorAlgebra.lift S ⟨g, fun m => ExteriorAlgebra.ι_sq_zero _⟩).toRingHom
+
+theorem exteriorPull_D (f : S →ₐ[ℚ] T) (s : S) :
+    exteriorPull f (ExteriorAlgebra.ι S (KaehlerDifferential.D ℚ S s)) =
+      ExteriorAlgebra.ι T (KaehlerDifferential.D ℚ T (f s)) := by
+  simp [exteriorPull, KaehlerDifferential.map_D]
+
+theorem exteriorPull_scalar (f : S →ₐ[ℚ] T) (s : S) :
+    exteriorPull f (algebraMap S (ExteriorAlgebra S (KaehlerDifferential ℚ S)) s) =
+      algebraMap T (ExteriorAlgebra T (KaehlerDifferential ℚ T)) (f s) := by
+  simp [exteriorPull]
+
+end UniversalPullback
+
+abbrev Regular := Localization.Away (X (4 : Fin 5) : P)
+def regularZinv : Regular := IsLocalization.Away.invSelf (X (4 : Fin 5) : P)
+
+/-- Only powers of z are inverted; the curve equation is not inverted. -/
+def regularLift {T : Type*} [CommRing T] [Algebra ℚ T]
+    (f : P →ₐ[ℚ] T) (h : IsUnit (f (X 4))) : Regular →ₐ[ℚ] T :=
+  IsLocalization.liftAlgHom (M := Submonoid.powers (X (4 : Fin 5) : P)) (fun y => by
+    obtain ⟨n, hn⟩ := y.property
+    change IsUnit (f y.val)
+    rw [← hn, map_pow]
+    exact h.pow n)
+
+theorem regularLift_polynomial {T : Type*} [CommRing T] [Algebra ℚ T]
+    (f : P →ₐ[ℚ] T) (h : IsUnit (f (X 4))) (p : P) :
+    regularLift f h (algebraMap P Regular p) = f p := by
+  simp [regularLift, IsLocalization.lift_eq]
+
+theorem regularLift_inverse {T : Type*} [Field T] [Algebra ℚ T]
+    (f : P →ₐ[ℚ] T) (h : IsUnit (f (X 4))) :
+    regularLift f h regularZinv = (f (X 4))⁻¹ := by
+  have hh := congrArg (regularLift f h)
+    (IsLocalization.Away.mul_invSelf (S:=Regular) (X (4:Fin 5):P))
+  rw [map_mul,map_one,regularLift_polynomial] at hh
+  apply mul_left_cancel₀ (isUnit_iff_ne_zero.mp h)
+  rw [show f (X 4)*regularLift f h regularZinv=1 from hh,
+    mul_inv_cancel₀ (isUnit_iff_ne_zero.mp h)]
+
+def regularToCurve : Regular →ₐ[ℚ] Curve :=
+  regularLift chartMap (by simpa [coords] using (isUnit_iff_ne_zero.mpr z_ne_zero))
+
+def ambientPolynomialMap : P →ₐ[ℚ] AmbientDerivation.K :=
+  IsScalarTower.toAlgHom ℚ P AmbientDerivation.K
+
+def regularToAmbient : Regular →ₐ[ℚ] AmbientDerivation.K :=
+  regularLift ambientPolynomialMap (isUnit_iff_ne_zero.mpr (AmbientDerivation.coord_ne_zero 4))
+
+theorem regularToCurve_coord (i : Fin 5) :
+    regularToCurve (algebraMap P Regular (X i)) = coords i := by
+  rw [regularToCurve,regularLift_polynomial,chartMap_X]
+
+theorem regularToAmbient_coord (i : Fin 5) :
+    regularToAmbient (algebraMap P Regular (X i)) = AmbientDerivation.coord i := by
+  rw [regularToAmbient,regularLift_polynomial]; rfl
+
+/-- Common regular representative of the previously normalized coefficient. -/
+def regularCoefficient : Regular :=
+  algebraMap P Regular (C (5/72 : ℚ)*(X 0)^2)*regularZinv^11
+
+theorem regularCoefficient_image {T : Type*} [Field T] [CharZero T] [Algebra ℚ T]
+    (f : P →ₐ[ℚ] T) (h : IsUnit (f (X 4))) :
+    regularLift f h regularCoefficient = 5*(f (X 0))^2/(72*(f (X 4))^11) := by
+  simp only [regularCoefficient,map_mul,map_pow,regularLift_polynomial,regularLift_inverse]
+  have hc : f (C (5/72 : ℚ))=(5/72 : T) := by
+    change f (algebraMap ℚ P (5/72))=_
+    rw [f.commutes]; norm_num
+  rw [hc]
+  field_simp
+
+theorem regularCoefficient_curve : regularToCurve regularCoefficient =
+    normalizedPoleCoefficient U r w t z := by
+  rw [regularToCurve,regularCoefficient_image,normalizedPoleCoefficient_eq U r w t z z_ne_zero]
+  simp [coords]
+
+theorem regularCoefficient_ambient : regularToAmbient regularCoefficient =
+    DifferentialForms.residueScalar := by
+  rw [regularToAmbient,regularCoefficient_image]
+  rfl
+
+abbrev RegularExterior := ExteriorAlgebra Regular (KaehlerDifferential ℚ Regular)
+def regularD (s : Regular) : RegularExterior :=
+  ExteriorAlgebra.ι Regular (KaehlerDifferential.D ℚ Regular s)
+def regularFourForm : RegularExterior :=
+  regularD (algebraMap P Regular (X 0)) *
+    (regularD (algebraMap P Regular (X 1)) *
+      (regularD (algebraMap P Regular (X 2)) * regularD (algebraMap P Regular (X 3))))
+def regularSource : RegularExterior := regularCoefficient • regularFourForm
+
+def curveExterior : RegularExterior →+* Forms (K:=Curve) := exteriorPull regularToCurve
+def ambientExterior : RegularExterior →+* DifferentialForms.E := exteriorPull regularToAmbient
+
+theorem curve_differentials (i : Fin 5) :
+    kaehlerPull regularToCurve (KaehlerDifferential.D ℚ Regular (algebraMap P Regular (X i))) =
+      KaehlerDifferential.D ℚ Curve (coords i) := by
+  rw [kaehlerPull_D,regularToCurve_coord]
+
+theorem curve_exterior_coordinates (i : Fin 5) :
+    curveExterior (regularD (algebraMap P Regular (X i))) = d (coords i) := by
+  rw [curveExterior,regularD,exteriorPull_D,regularToCurve_coord]; rfl
+
+theorem ambient_exterior_coordinates (i : Fin 5) :
+    ambientExterior (regularD (algebraMap P Regular (X i))) =
+      DifferentialForms.oneForm (AmbientDerivation.coord i) := by
+  rw [ambientExterior,regularD,exteriorPull_D,regularToAmbient_coord]; rfl
+
+theorem curve_four_form : curveExterior regularFourForm = oldFourForm U r w t := by
+  simp only [regularFourForm,map_mul,curve_exterior_coordinates]
+  rfl
+
+theorem ambient_four_form : ambientExterior regularFourForm = DifferentialForms.alpha := by
+  simp only [regularFourForm,map_mul,ambient_exterior_coordinates]
+  rfl
+
+theorem curve_source : curveExterior regularSource =
+    normalizedPoleCoefficient U r w t z • oldFourForm U r w t := by
+  rw [regularSource,Algebra.smul_def,map_mul,curve_four_form]
+  change exteriorPull regularToCurve (algebraMap Regular RegularExterior regularCoefficient)*_=_
+  rw [exteriorPull_scalar,regularCoefficient_curve,Algebra.smul_def]
+
+theorem ambient_source : ambientExterior regularSource =
+    DifferentialForms.residueScalar • DifferentialForms.alpha := by
+  rw [regularSource,Algebra.smul_def,map_mul,ambient_four_form]
+  change exteriorPull regularToAmbient (algebraMap Regular RegularExterior regularCoefficient)*_=_
+  rw [exteriorPull_scalar,regularCoefficient_ambient,Algebra.smul_def]
+
+/-- The curve equation forces this actual Kähler differential relation. -/
+theorem curve_differential_relation :
+    (6*z^5) • KaehlerDifferential.D ℚ Curve z +
+      KaehlerDifferential.D ℚ Curve (cubic U r w t) = 0 := by
+  have h := congrArg (KaehlerDifferential.D ℚ Curve) curve_equation
+  simpa [map_add, Derivation.leibniz_pow, ← Nat.cast_smul_eq_nsmul Curve, smul_smul] using h
+
+end
+end HodgeLab.OneReflectionSkew.PhysicalCurveRealization

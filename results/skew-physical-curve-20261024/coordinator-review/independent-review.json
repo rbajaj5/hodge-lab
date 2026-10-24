@@ -1,0 +1,31 @@
+{
+  "status": "APPROVED_WITH_LIMITS",
+  "math_reviewer": "Separate Codex read-only agent check_bridge; source review, no new Lean replay",
+  "evidence_reviewer": "Separate Codex read-only agent ci_receipt_review; hashes/logs, no Lean or symbolic replay",
+  "module_sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+  "writer_receipt_sha256": "6c719e214997ec6ca1293d3a613698564e2bacc26cd4bc27bb41f8b811a95bea",
+  "evidence_review_counts": {
+    "source_hashes_and_snapshots": 9,
+    "pinned_inputs": 30,
+    "pinned_inputs_matching_parent_git": 28,
+    "command_stream_hashes": 42,
+    "declarations": 81,
+    "positive_examples": 25,
+    "intended_false_failures": 8
+  },
+  "findings": [
+    "Actual algebraic-closure realization preserves four independent parameters and constructs sixth/square roots.",
+    "The common localization is P[z^-1]; universal Kaehler and exterior maps remain over Q.",
+    "The actual prior source theorem is instantiated with every curve/chart hypothesis discharged.",
+    "Generic nonzero-polynomial certificates do not assert nonvanishing at every specialization.",
+    "Whole ambient-field specialization, inverting G and unchanged normal derivation are correctly excluded."
+  ],
+  "added_scope_limit": "Nonvanishing of the resulting four-form/source is not separately formalized; coefficient nonvanishing and parameter independence must not be conflated with that missing differential-basis proof.",
+  "remaining_limits": [
+    "No whole hypersurface/minimal-field identification",
+    "No old trace-tower comparison",
+    "No general residue/cohomology/connection realization",
+    "No primitive, clearing or certificate"
+  ],
+  "remote_ci": "Pending proof publication; historical CI is separate"
+}

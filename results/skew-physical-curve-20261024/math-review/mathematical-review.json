@@ -1,0 +1,60 @@
+{
+  "status": "PASS_WITH_EXPLICIT_BOUNDARIES",
+  "executor": "Pro curve_math_review AI read-only mathematical/API reviewer",
+  "recorded_utc": "2026-10-24T09:53:19.495087+00:00",
+  "notebook_parent": "e2182223a0395cfb758a2ee09e304eb940b7a67a",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "reviewed_module": "formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean",
+  "module_sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+  "compiled_evidence": {
+    "executor": "Pro root sole Lean writer",
+    "receipt": "results/skew-physical-curve-20261024/lean-development/attempt-05/run/execution.json",
+    "receipt_sha256": "cb8164065b1e8feaf9935d04ae13851408997a574c5fe510c318cd36210eaa3b",
+    "source_snapshot": "results/skew-physical-curve-20261024/lean-development/attempt-05/source.lean.txt",
+    "source_snapshot_sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+    "exit_code": 0,
+    "elapsed_seconds": 7.601827799000148,
+    "timeout_seconds": 120,
+    "classification": "Writer execution, read by this reviewer; not reviewer execution"
+  },
+  "reviewed_mathematical_links": [
+    "BasePoly=Q[U,r,w,t] embeds injectively through its fraction field Base into Curve=AlgebraicClosure Base; parameters_independent proves all four coordinates algebraically independent",
+    "A chosen sixth root z has z^6=-cubic(U,r,w,t), and a chosen square root x has x^2=U; cubic7 nonzero and base injectivity give z nonzero, and U nonzero gives x nonzero",
+    "The prior literal protected substitution gives F(physicalPoint)=0 and A(physicalPoint)=x^3; actual physicalMap and chartMap are polynomial Q-algebra maps",
+    "The actual five-variable chartMap kills chartPolynomial; no compatible specialization of the whole ambient FractionRing(P) is asserted",
+    "Regular=P[z^-1] is an allowed localization with actual Q-algebra maps to both Curve and old Ambient.K, because the image of z is a unit in each target",
+    "The same regularCoefficient has image normalizedPoleCoefficient in Curve and old residueScalar in Ambient.K",
+    "kaehlerPull is the Q-linear restriction of the universal map with the target module action induced by the selected algebra homomorphism; coordinate dU,dr,dw,dt,dz images are proved",
+    "exteriorPull is constructed from ExteriorAlgebra.lift and square-zero degree-one images; its scalar compatibility is proved; actual common regularFourForm and regularSource map to both target forms",
+    "The saved Ambient Q-instance obstruction is resolved by explicitly matching the OreLocalization rational algebra captured by old DifferentialForms.E; it is not replaced by a new mathematical assumption",
+    "curve_differential_relation derives 6*z^5*dz+d(cubic)=0 from the actual relation; square_cover_differential derives 2*x*dx=dU",
+    "frPolynomial_image and deltaPolynomial_image are the correct cleared identities; polynomial evaluations prove their nonzero numerators and injectivity transports this to the actual generic field",
+    "The all-zero evaluation for deltaPolynomial is a nonzero polynomial certificate only, not a physical chart point or a field specialization at r=0",
+    "cover_derivative_ne_zero and physical_delta_ne_zero discharge the fixed realization's f_r and Delta hypotheses; realized_source_reduction therefore instantiates the prior source theorem without residual unproved chart assumptions",
+    "regular_relation_not_unit exposes why G cannot be inverted in the specialization domain; no_ambient_field_specialization and no_unchanged_normal_derivation state the forbidden operations explicitly"
+  ],
+  "remaining_boundaries": [
+    "Curve is the algebraic closure of the independent base field, not identified with the entire irreducible hypersurface function field; no irreducibility or minimality theorem is asserted",
+    "No newly proved comparison of this field tower with the earlier Q(v)(t)(a) splitting field or its trace realization",
+    "No general residue map, de Rham complex, cohomology quotient or full Gauss-Manin/source-class realization",
+    "The actual four-form correction is retained; it is not a primitive of the whole source or a certificate",
+    "Nonvanishing is proved in this independent generic realization, not for every specialization",
+    "Kernel replay, full declaration axiom audit and false-goal execution belong to the writer's focused checker, not this review",
+    "Full remote CI and publication belong to the coordinator"
+  ],
+  "reviewer_executions": {
+    "lean_commands": 0,
+    "symbolic_math_checks": 0,
+    "old_focused_checkers": 0,
+    "remote_CI": 0,
+    "publication": 0,
+    "source_inspection_and_hash_binding": true
+  },
+  "reviewer_artifact_hashes": {
+    "results/skew-physical-curve-20261024/math-review/derivation.md": "1e2dc05e0b10c4550485f3b8949d707b8b733cafa8e90d117eb5c0bf7d3de496",
+    "results/skew-physical-curve-20261024/math-review/nonvanishing-review.md": "c702073980ed2ff0fb6fc5a016a3116f3be6fe0271d28842e67e4297c6f7db2c",
+    "results/skew-physical-curve-20261024/math-review/api-source-fetch.json": "03533ed4115a807c871b457d6bb35d9ce41cd4ce3ea734215957d3a53d36b39b",
+    "results/skew-physical-curve-20261024/math-review/api-addendum.json": "5eb498edeb09f68ab4e9a999c998b8e56838b19cb02fbc4f00b54de5034098a3"
+  },
+  "attribution": "Separate AI mathematical/API review; no claim of independent human review"
+}

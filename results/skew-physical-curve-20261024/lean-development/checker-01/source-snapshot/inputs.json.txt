@@ -1,0 +1,24 @@
+{
+  "notebook_parent": "e2182223a0395cfb758a2ee09e304eb940b7a67a",
+  "upstream_commit": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "source_pins_manifest": {
+    "path": "results/skew-physical-curve-20261024/source-pins.json",
+    "sha256": "e760246f8158526d84a6dae1f948ea95c8c000c3490e34c67960e99a830b203d"
+  },
+  "pinned_file_count": 30,
+  "reused_source_receipt": "results/skew-physical-source-20261023/coordinator-ci/40051515847/focused/validation.json",
+  "mathematical_scope": {
+    "base": "FractionRing(MvPolynomial(Fin4,Q)), four coordinates algebraically independent",
+    "curve": "AlgebraicClosure Base, constructed z^6=-cubic and x^2=U; actual protected F=0 and A=x^3",
+    "allowed_domain": "Regular=P[z^-1], P=Q[U,r,w,t,z]; two compatible Q-algebra maps to old Ambient.K and Curve",
+    "forms": "Universal Kaehler/exterior pullbacks, all five coordinate differentials, common normalized four-form, curve and square differential relations",
+    "nonzero": "r,z,f_r,Delta proved nonzero in this generic realization; no claim for every specialization",
+    "new_result": "Concrete realized_source_reduction without residual curve/chart hypotheses",
+    "forbidden": "No whole ambient fraction field map killing nonzeroG; G not a unit of Regular; no unchanged normal derivation",
+    "limits": [
+      "Not identified with whole irreducible hypersurface function field or minimal root field",
+      "No comparison with prior Q(v)(t)(a) splitting-field tower",
+      "No general residue map, deRham/cohomology connection, primitive, certificate or solve"
+    ]
+  }
+}

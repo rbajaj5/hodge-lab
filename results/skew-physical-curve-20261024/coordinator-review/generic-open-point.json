@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "executor": "Codex coordinator, independent SymPy exact arithmetic",
+  "python": "3.11.9",
+  "sympy": "1.14.0",
+  "source_parent": "e2182223a0395cfb758a2ee09e304eb940b7a67a",
+  "formula_sources": [
+    "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean"
+  ],
+  "point": {
+    "U": 0,
+    "r": 1,
+    "w": 1,
+    "t": 0
+  },
+  "values": {
+    "a": "3",
+    "v": "2",
+    "cubic": "1",
+    "fR": "-3",
+    "Delta": "243"
+  },
+  "fR": "3*r^9*(r^8-3*r^2*w^6-r^2+2*w^5)",
+  "cleared_delta_polynomial_over_Q": true,
+  "jacobian_at_point": "-3",
+  "requirements_checked": 8,
+  "elapsed_seconds": 0.2819999999992433,
+  "script_sha256": "c1d38e8343a3a472b75498089c079ececd3bab4431f819e3d0744b38f2fb7c12",
+  "limits": "Exact polynomial/rational identities and a point witness only. No evaluation of the entire fraction field, no Lean execution, no field/pullback construction or primitive."
+}

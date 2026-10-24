@@ -1,0 +1,17 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "ls-remote",
+    "https://github.com/hodge-computer/sextics.git",
+    "HEAD",
+    "refs/heads/main"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:41:33.679910+00:00",
+  "elapsed_seconds": 0.27507822400002624,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "6a48e35a43e67fb23bd4006f782d7419e46cc05094888f521833ce34b0d68253",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

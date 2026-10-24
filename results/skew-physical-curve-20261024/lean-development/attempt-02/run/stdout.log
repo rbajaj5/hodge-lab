@@ -1,0 +1,77 @@
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:109:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:109:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:127:85: error: unsolved goals
+S : Type u_1
+T : Type u_2
+inst✝³ : CommRing S
+inst✝² : CommRing T
+inst✝¹ : Algebra ℚ S
+inst✝ : Algebra ℚ T
+f : S →ₐ[ℚ] T
+s : S
+⊢ (KaehlerDifferential.map ℚ ℚ S T) ((KaehlerDifferential.D ℚ S) s) = (KaehlerDifferential.D ℚ T) (f s)
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:128:21: warning: This simp argument is unused:
+  KaehlerDifferential.map_D
+
+Hint: Omit it from the simp argument list.
+  simp [kaehlerPull,̵ ̵K̵a̵e̵h̵l̵e̵r̵D̵i̵f̵f̵e̵r̵e̵n̵t̵i̵a̵l̵.̵m̵a̵p̵_̵D̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:145:63: error: unsolved goals
+S : Type u_1
+T : Type u_2
+inst✝³ : CommRing S
+inst✝² : CommRing T
+inst✝¹ : Algebra ℚ S
+inst✝ : Algebra ℚ T
+f : S →ₐ[ℚ] T
+s : S
+⊢ (KaehlerDifferential.map ℚ ℚ S T) ((KaehlerDifferential.D ℚ S) s) = (KaehlerDifferential.D ℚ T) (f s)
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:146:22: warning: This simp argument is unused:
+  KaehlerDifferential.map_D
+
+Hint: Omit it from the simp argument list.
+  simp [exteriorPull,̵ ̵K̵a̵e̵h̵l̵e̵r̵D̵i̵f̵f̵e̵r̵e̵n̵t̵i̵a̵l̵.̵m̵a̵p̵_̵D̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:150:74: error: unsolved goals
+S : Type u_1
+T : Type u_2
+inst✝³ : CommRing S
+inst✝² : CommRing T
+inst✝¹ : Algebra ℚ S
+inst✝ : Algebra ℚ T
+f : S →ₐ[ℚ] T
+s : S
+⊢ (algebraMap S (ExteriorAlgebra T Ω[T⁄ℚ])) s = (algebraMap T (ExteriorAlgebra T Ω[T⁄ℚ])) (f s)
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:233:78: error: Application type mismatch: The argument
+  regularToAmbient
+has type
+  @AlgHom ℚ Regular AmbientDerivation.K Rat.commSemiring OreLocalization.instSemiring OreLocalization.instSemiring
+    OreLocalization.instAlgebra DivisionRing.toRatAlgebra
+but is expected to have type
+  @AlgHom ℚ Regular AmbientDerivation.K Rat.commSemiring CommRing.toCommSemiring.toSemiring
+    CommRing.toCommSemiring.toSemiring OreLocalization.instAlgebra OreLocalization.instAlgebra
+in the application
+  exteriorPull regularToAmbient
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:233:65: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  DivisionRing.toRatAlgebra
+inferred
+  OreLocalization.instAlgebra
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:247:6: warning: declaration uses `sorry`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:244:8: warning: declaration uses `sorry`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:247:71: warning: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:247:71: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:266:2: error: 'change' tactic failed, pattern
+  (exteriorPull regularToAmbient) ((algebraMap Regular RegularExterior) regularCoefficient) * ?m.41 = ?m.43
+is not definitionally equal to target
+  ambientExterior ((algebraMap Regular RegularExterior) regularCoefficient) * DifferentialForms.alpha =
+    DifferentialForms.residueScalar • DifferentialForms.alpha

@@ -83,6 +83,9 @@ jobs:
       - name: Check physical-source normalization and selected fibre correction
         working-directory: formal
         run: timeout 600 python3 -O check_skew_physical_source_normalization.py --output-dir results/runs/ci-skew-source-normalization
+      - name: Check physical curve and allowed differential pullbacks
+        working-directory: formal
+        run: timeout 600 python3 -O check_skew_physical_curve.py --output-dir results/runs/ci-skew-physical-curve
       - name: Save concrete proof receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

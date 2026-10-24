@@ -1,0 +1,19 @@
+{
+  "executor": "Pro curve_math_review AI; read-only source inspection",
+  "recorded_utc": "2026-10-24T09:45:32.310666+00:00",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "sources": {
+    "Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean": "8a67fc0484c9a045e45054df9221f521b1bd07e79564eb2c689af8f85d1d71ab",
+    "Mathlib/Algebra/Algebra/Tower.lean": "f758226c8ca222e1de14458bc7adea746f3a12252cec1729826de85983ce5990",
+    "Mathlib/RingTheory/Localization/Basic.lean": "916491120f9a8aeaf10cc58cd1a7498b8cb84b82cb20935a4d51b9f9d7734737",
+    "Mathlib/RingTheory/AlgebraicIndependent/Basic.lean": "e0da3f39aac71d29da4c0f27684ee0e1d789f660e08f681be70c2e79af05eb96"
+  },
+  "findings": [
+    "Canonical AlgebraicClosure carries compatible algebra and scalar-tower instances",
+    "IsScalarTower.of_algHom retains canonical rational scalar actions",
+    "IsLocalization.liftAlgHom gives an actual rational algebra homomorphism from the allowed localization",
+    "AlgebraicIndependent.map' transports independent variables through injective algebra homomorphisms"
+  ],
+  "executed_mathematical_checks": 0,
+  "executed_lean_commands": 0
+}

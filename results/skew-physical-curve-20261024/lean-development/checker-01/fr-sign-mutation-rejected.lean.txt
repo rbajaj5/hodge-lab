@@ -1,0 +1,5 @@
+import HodgeLab.OneReflectionSkew.PhysicalCurveRealization
+open MvPolynomial HodgeLab.OneReflectionSkew
+open PhysicalCurveRealization PhysicalSourceNormalization ChartSubstitution NormalChart
+open ResidueNormalization
+example : MvPolynomial.eval (fun _:Fin 4=>(1:ℚ)) frPolynomial=3 := by norm_num [frPolynomial,map_ofNat]

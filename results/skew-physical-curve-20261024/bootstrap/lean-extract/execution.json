@@ -1,0 +1,18 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "tar",
+    "--zstd",
+    "-xf",
+    "/tmp/lean-4.31.0-linux.tar.zst",
+    "-C",
+    "/tmp"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:42:18.241685+00:00",
+  "elapsed_seconds": 5.23127765900017,
+  "timeout_seconds": 120,
+  "exit_code": 2,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "9a7d9ad796e8ab9891c75e32cd1cb89c68e353c2502f6cb8aab5ccf13c56ba71"
+}

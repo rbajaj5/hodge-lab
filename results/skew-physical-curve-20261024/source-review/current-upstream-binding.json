@@ -1,0 +1,26 @@
+{
+  "status": "PASS_CURRENT_UPSTREAM_SOURCE_BINDING",
+  "executor": "Pro curve_evidence_review AI source reviewer",
+  "recorded_utc": "2026-10-24T09:43:16.176453+00:00",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "inputs": {
+    "data/one-reflection-skew/instance.rec": {
+      "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "bytes": 340,
+      "old_path": "results/skew-physical-source-20261023/inputs/upstream/data/one-reflection-skew/instance.rec",
+      "old_sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "raw_bytes_unchanged": true
+    },
+    "AGENTS.md": {
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "bytes": 5141,
+      "old_path": "results/ci-receipt-physical-cover-20261023/inputs/upstream/AGENTS.md",
+      "old_sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "raw_bytes_unchanged": true
+    }
+  },
+  "verification_kind": "Read-only comparison of writer-fetched source bytes; no network fetch or mathematical execution by reviewer",
+  "head_receipt": "bootstrap/upstream-head",
+  "fetch_receipt": "inputs/upstream/fetch.json",
+  "no_historical_hash_replacement": true
+}

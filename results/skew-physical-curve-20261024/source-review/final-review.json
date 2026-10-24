@@ -1,0 +1,101 @@
+{
+  "status": "PASS_FINAL_ADVERSARIAL_REVIEW",
+  "executor": "Pro curve_evidence_review source/evidence AI reviewer",
+  "completed_utc": "2026-10-24T09:59:36.702848+00:00",
+  "parent": "e2182223a0395cfb758a2ee09e304eb940b7a67a",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "module_sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+  "focused_receipt": "results/skew-physical-curve-20261024/lean-development/checker-02/validation.json",
+  "focused_receipt_sha256": "6c719e214997ec6ca1293d3a613698564e2bacc26cd4bc27bb41f8b811a95bea",
+  "reviewer_executed": {
+    "operation": "Read-only saved-evidence audit under python3 -O",
+    "receipt": "results/skew-physical-curve-20261024/source-review/audit-execution-01/execution.json",
+    "elapsed_seconds": 0.05445047600005637,
+    "source_context_hashes": 37,
+    "command_stream_hashes": 42,
+    "Lean_commands": 0,
+    "symbolic_mathematics": 0,
+    "prior_focused_mathematics": 0,
+    "remote_CI": 0,
+    "publication": 0
+  },
+  "writer_executions_verified": {
+    "public_declarations_including_local_instance": 81,
+    "new_modules_kernel_replayed": 1,
+    "positive_controls": 25,
+    "intended_false_goals": 8,
+    "focused_seconds": 31.690544258000045,
+    "not_remote_CI": true
+  },
+  "preserved_development_sources_and_streams_inspected": [
+    {
+      "attempt": 1,
+      "source_sha256": "28a76f4c3000c3817d7cd4a7250c9219b87635f1de14811bd23e836f6b51a9ff",
+      "exit_code": 1,
+      "elapsed_seconds": 112.212287543,
+      "receipt": "results/skew-physical-curve-20261024/lean-development/build-imports-and-attempt-01/execution.json"
+    },
+    {
+      "attempt": 2,
+      "source_sha256": "64b3f35c41aff27641bb6101e2750a4c26916fc3b44433dcab96200958c87e21",
+      "exit_code": 1,
+      "elapsed_seconds": 7.7393457820001,
+      "receipt": "results/skew-physical-curve-20261024/lean-development/attempt-02/run/execution.json"
+    },
+    {
+      "attempt": 3,
+      "source_sha256": "60ab081932eb40b2748ccd2a484d1258970f2c3eb0adfade20d7f32e4cd96c03",
+      "exit_code": 1,
+      "elapsed_seconds": 7.00617314200008,
+      "receipt": "results/skew-physical-curve-20261024/lean-development/attempt-03/run/execution.json"
+    },
+    {
+      "attempt": 4,
+      "source_sha256": "7684d7003c1470145c79eda6fd951cc026f6f1b7c70ce8452e7798100b71c4af",
+      "exit_code": 1,
+      "elapsed_seconds": 10.665290215000141,
+      "receipt": "results/skew-physical-curve-20261024/lean-development/attempt-04/run/execution.json"
+    },
+    {
+      "attempt": 5,
+      "source_sha256": "a74e478115cdf3808c365861c1313ee98698d1d3ed9aa8e8031355d4e69f5438",
+      "exit_code": 0,
+      "elapsed_seconds": 7.601827799000148,
+      "receipt": "results/skew-physical-curve-20261024/lean-development/attempt-05/run/execution.json"
+    }
+  ],
+  "checker_history": "Passing checker01 is retained. Checker02 adds explicit UTF-8 decoding portability; mathematical source remains frozen. Neither prior passing receipt is rewritten.",
+  "review_conclusions": [
+    "The current upstream protected record and policy are byte-identical to the prior exact pins",
+    "Actual independent four-parameter base embeds into its algebraic closure; z and x are constructed, not assumed",
+    "Both actual polynomial/chart evaluation maps preserve the protected F/A relation, with x\u00b2=U and nonzero x,z",
+    "The valid common domain is P[z^-1], with compatible Q-algebra maps and proved units; no forbidden full ambient field specialization is introduced",
+    "Universal Kaehler and exterior maps compute all five differentials and the common regular source in both targets",
+    "The old concrete ambient residueScalar/alpha compatibility issue is resolved by the specified Q-algebra choice and allowed common domain",
+    "Generic r,z,f_r,physicalDelta conditions are proved; zero-evaluation witnesses only prove polynomial nonvanishing and transfer through an injective generic map",
+    "The preceding source theorem is instantiated without residual hypotheses as realized_source_reduction",
+    "The forbidden ambient field map and unchanged normal derivation are explicitly ruled out",
+    "All81 new declarations including the local ambientQAlgebra instance are audited, with allowed axioms only",
+    "The eight negative controls fail at intended False goals, without parser/typeclass failures",
+    "Current note accurately distinguishes generic nonzero facts from universal specialization claims and keeps the prior trace-base comparison open"
+  ],
+  "limits": [
+    "Curve=AlgebraicClosure(Frac(Q[U,r,w,t])) is not identified with a minimal root field or a whole irreducible hypersurface function field",
+    "No equality of the chart-map kernel with the principal chart ideal or hypersurface irreducibility is proved",
+    "No embedding/comparison from prior Q(v)(t)(a) trace tower to this Curve, and no proof of independence of(aChart,vChart,t) in this unit",
+    "No general residue map, deRham/cohomology/Gauss-Manin source-class identification, primitive, clearing, certificate or solve",
+    "Reviewer performed no Lean, symbolic mathematics, prior checker replay or publication",
+    "Parent ledger prefix was exact at audit; root owns final append/staged-tree/package validation"
+  ],
+  "parent_ledger_bytes": 430885,
+  "parent_ledger_sha256": "f4e1e853360368889cd83be8536d4f0c509a73464d391311c91639c326abbc66",
+  "review_artifact_sha256": {
+    "results/skew-physical-curve-20261024/source-review/baseline-review.json": "34096b8eb12aaeb181c2ffe5c2a9e994e540eeb02c2982121fa4a404ace70d3b",
+    "results/skew-physical-curve-20261024/source-review/current-upstream-binding.json": "a3753f03026834690a258b8a0edccef7a72d2e9472f3841476d73cf99019fdc1",
+    "results/skew-physical-curve-20261024/source-review/frozen-source-review.json": "717b1f19aa25e537f3696bf5f7a2a806dfa57260f2314812dce432e2001c9767",
+    "results/skew-physical-curve-20261024/source-review/audit_saved_evidence.py": "7fb57c65c1e58c4066a9ed310821a4afefec1893cbd0bd9d9c305262d0797391",
+    "results/skew-physical-curve-20261024/source-review/audit-01/validation.json": "bcec098e78ecdf45eb18c5361e18f93769baea5b9884aeecce71df5fb9c70e2a",
+    "results/skew-physical-curve-20261024/source-review/audit-execution-01/execution.json": "aa5f4647bebd4c6b134e0bc17914e0dcc8e43c636ee6979a38b42b0266c73ae5"
+  },
+  "attribution": "Separate AI review, not independent human review"
+}

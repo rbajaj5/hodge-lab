@@ -1,0 +1,20 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "-C",
+    "/workspace/scratch/b8974c152662/hodge-lab-curve/formal/.lake/packages/batteries",
+    "fetch",
+    "--depth",
+    "1",
+    "origin",
+    "fa08db58b30eb033edcdab331bba000827f9f785"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:42:22.281669+00:00",
+  "elapsed_seconds": 0.4428527329998815,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "111eba297daf88e8e58ea3233d3c5c0d7d61e996f48c9d5d016051d5d910c30a"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-O",
+    "work/physical-curve-field-20261024/check_generic_open_point.py"
+  ],
+  "exit_code": 0,
+  "observed_process_wall_seconds": 5.7890531,
+  "symbolic_elapsed_seconds": 0.2819999999992433,
+  "scope": "Independent exact witness only; no Lean execution. The coordinator script uses explicit RuntimeError requirements and passes under Python -O. Reviewer also inspected a separate print-only exact calculation; counts are not combined.",
+  "reviewer": "/root/check_bridge",
+  "reviewer_environment": {
+    "python": "3.11.9",
+    "sympy": "1.14.0"
+  },
+  "reviewer_output": {
+    "a": "3",
+    "v": "2",
+    "cubic": "1",
+    "fR": "-3",
+    "Delta": "243",
+    "jacobian": "-3"
+  },
+  "reviewer_calculation_seconds": 2.2066004
+}

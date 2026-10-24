@@ -1,0 +1,215 @@
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.ambientQAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.BasePoly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.Base' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.baseCharZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.Curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.param' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.U' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.w' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.t' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.base_embedding_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.polynomial_embedding_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.parameters_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.param_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.cubic7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.cubic7_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.cubic7_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.cubic_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.z_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curve_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.z_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.x_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.x_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.protected_F_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.protected_A_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.P' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.coords' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.chartMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.chartMap_X' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.chartMap_relation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.no_ambient_field_specialization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.kaehlerPull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.kaehlerPull_D' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.exteriorPull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.exteriorPull_D' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.exteriorPull_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.Regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularZinv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularLift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularLift_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularLift_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularToCurve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.ambientPolynomialMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularToAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularToCurve_coord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularToAmbient_coord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularCoefficient_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularCoefficient_curve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularCoefficient_ambient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.RegularExterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularFourForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regularSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curveExterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.ambientExterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curve_differentials' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curve_exterior_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.ambient_exterior_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curve_four_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.ambient_four_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curve_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.ambient_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.curve_differential_relation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.frPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.frPolynomial_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.frPolynomial_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.cover_derivative_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.deltaPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.deltaPolynomial_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.deltaPolynomial_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.physical_delta_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.realized_source_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regular_relation_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.regular_relation_not_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.no_unchanged_normal_derivation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.physicalMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.physicalMap_X' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HodgeLab.OneReflectionSkew.PhysicalCurveRealization.square_cover_differential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

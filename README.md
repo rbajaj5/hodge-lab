@@ -39,6 +39,26 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: physical curve and compatible Kähler pullback
+
+[![Independent physical curve realization and two allowed pullbacks](results/skew-physical-curve-20261024/visualization-02/physical-curve-pullback.png)](notes/skew-physical-curve-realization.md)
+
+Lean constructs an algebraic-closure realization over four independent
+coordinates U,r,w,t, with actual roots z⁶=−cubic and x²=U. The protected
+F vanishes at (x,rx,wx,1,t,z). One normalized four-form over **P[z⁻¹]** maps
+to both the old ambient representative and the curve representative through
+universal Kähler/exterior maps. All required generic r,z,f_r,Δ nonzeros are
+proved, so the preceding source-reduction theorem is instantiated without
+residual chart assumptions.
+
+The whole ambient fraction field cannot specialize to G=0; its G⁻¹ pole
+term is outside this allowed domain. The realization is not identified with
+the whole hypersurface function field. Comparison with the earlier trace
+field and a residue/cohomology source-class realization remain separate.
+No primitive, global clearing, certificate or solve is claimed.
+
+[Proof, commands and limits](notes/skew-physical-curve-realization.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean) · [Focused receipt](results/skew-physical-curve-20261024/lean-development/checker-02/validation.json)
+
 ### One-reflection-skew: physical-source factors and a proved four-form correction
 
 [![Physical chart factors, orientation and remaining source-class boundary](results/skew-physical-source-20261023/visualization-02/physical-source-normalization.png)](notes/skew-physical-source-normalization.md)

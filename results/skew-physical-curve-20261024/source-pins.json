@@ -1,0 +1,133 @@
+{
+  "parent": "e2182223a0395cfb758a2ee09e304eb940b7a67a",
+  "upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+      "bytes": 4655
+    },
+    "formal/HodgeLab/OneReflectionSkew/AmbientDerivation.lean": {
+      "sha256": "6172a74fad84c97a15f8345225fb35cb49e1e9fa806c8a1309f42f83bf6e8cc3",
+      "bytes": 5363
+    },
+    "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean": {
+      "sha256": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+      "bytes": 2995
+    },
+    "formal/HodgeLab/OneReflectionSkew/CoordinateComparison.lean": {
+      "sha256": "d7c88cffbf24278e685dc4cfb44f9899eac2a7095877820c8e771aa28069f684",
+      "bytes": 4444
+    },
+    "formal/HodgeLab/OneReflectionSkew/CoordinateVolume.lean": {
+      "sha256": "2e5525339a4ac23e88ba62addda1b310fb10b7eb3dd664cd2b491f8186ada594",
+      "bytes": 4482
+    },
+    "formal/HodgeLab/OneReflectionSkew/DegreeFour.lean": {
+      "sha256": "8ccad69f0509a2538d34cccc46f2ecf8fc428b12214088b60b0a6a127faea848",
+      "bytes": 6738
+    },
+    "formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean": {
+      "sha256": "6c995c52e943e61d2bf5b7c3e54cebc98b0286f9c87dcfe6709775c2a5de72f6",
+      "bytes": 6672
+    },
+    "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": {
+      "sha256": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+      "bytes": 10503
+    },
+    "formal/HodgeLab/OneReflectionSkew/NormalChart.lean": {
+      "sha256": "2d8050b1ae67b7187634e18add161c2576c920393b3fe416e7b04829782b2232",
+      "bytes": 4341
+    },
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": {
+      "sha256": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+      "bytes": 4107
+    },
+    "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean": {
+      "sha256": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+      "bytes": 19851
+    },
+    "formal/HodgeLab/OneReflectionSkew/ResidueNormalization.lean": {
+      "sha256": "213abfe2f1ab6d997953bf01e20ce09d7b46b47820675288bee2e27ed1ca2efa",
+      "bytes": 4708
+    },
+    "formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean": {
+      "sha256": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+      "bytes": 9540
+    },
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": {
+      "sha256": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+      "bytes": 8377
+    },
+    "formal/HodgeLab/OneReflectionSkew/ThreeCoefficient.lean": {
+      "sha256": "d5b56aa6ec51bf531eb0ed5de858e0e0f921cab5ed7dd9bf6bde6af8abb70138",
+      "bytes": 7595
+    },
+    "formal/HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": {
+      "sha256": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+      "bytes": 7471
+    },
+    "formal/HodgeLab/OneReflectionSkew/TraceKernel.lean": {
+      "sha256": "7e50d6696235b3279d9681bbba596912d416775e21d8519ceed800c0432396cd",
+      "bytes": 4579
+    },
+    "formal/HodgeLab/OneReflectionSkew/VolumeDensity.lean": {
+      "sha256": "d3950d20c3e330800d816f37eadfb07a5889bc5c67f22e1ac11041cac4ab7620",
+      "bytes": 2533
+    },
+    "formal/HodgeLab/RowCertificate.lean": {
+      "sha256": "c1c7d0295647542690e4018c004aa8e11b1a714d4e6ea77964ba6d7cdaf58313",
+      "bytes": 2452
+    },
+    "formal/HodgeLab/SparsePolynomial.lean": {
+      "sha256": "d94557bc849a06105cd3efc111f850387b37171e18004039331505264da1cf50",
+      "bytes": 3755
+    },
+    "formal/fresh_receipts.py": {
+      "sha256": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+      "bytes": 1565
+    },
+    "formal/lake-manifest.json": {
+      "sha256": "e289b6402bf81474573efe24813ee8f2c84f5726d79fbcdba4ee307cc7f63f16",
+      "bytes": 3542
+    },
+    "formal/lakefile.toml": {
+      "sha256": "bdb5f7aa149608390120c01fb4f5ba1ba1d27fa5967e6f94b11d9d43f1ad1447",
+      "bytes": 238
+    },
+    "formal/lean-toolchain": {
+      "sha256": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+      "bytes": 25
+    },
+    "results/skew-physical-curve-20261024/inputs/upstream/AGENTS.md": {
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "bytes": 5141
+    },
+    "results/skew-physical-curve-20261024/inputs/upstream/data/one-reflection-skew/instance.rec": {
+      "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+      "bytes": 340
+    },
+    "results/skew-physical-source-20261023/coordinator-ci/40051515847/ci-receipt-review.json": {
+      "sha256": "7317268f2a03ff88a143122e7a406bdd1c2ea9b8fd231204411eefda4a9d08aa",
+      "bytes": 9098
+    },
+    "results/skew-physical-source-20261023/coordinator-ci/40051515847/focused/validation.json": {
+      "sha256": "b92be6da649c3b58aea79af1a6ec0a0f6b3b2c916ef0f52f1ab94b6c32aae6d7",
+      "bytes": 35733
+    },
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": {
+      "sha256": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d",
+      "bytes": 12399
+    },
+    "results/skew-physical-source-20261023/source-pins.json": {
+      "sha256": "3b3fbbbcbb49a999d34638f2ddac47e16b5043554b88e43545e96b65df9d1a21",
+      "bytes": 9841
+    }
+  },
+  "protected_source": {
+    "path": "results/skew-physical-curve-20261024/inputs/upstream/data/one-reflection-skew/instance.rec",
+    "q": "1",
+    "A": "X0**3*Y0**3",
+    "sha256": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd"
+  },
+  "reuse": "Imported mathematical sources and prior full CI are immutable evidence; no historical focused checker rerun"
+}

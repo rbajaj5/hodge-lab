@@ -1,0 +1,20 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "-C",
+    "formal/.lake/packages/mathlib",
+    "fetch",
+    "--depth",
+    "1",
+    "https://github.com/leanprover-community/mathlib4.git",
+    "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:41:33.662494+00:00",
+  "elapsed_seconds": 7.224354746000017,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "ddca247f1ee5da33bee135792a8eddd17bef2b1c884a72b0ddaef798088a4561"
+}

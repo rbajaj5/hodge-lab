@@ -1,0 +1,26 @@
+{
+  "scope": "Coordinator preliminary mathematical boundary review; no new Lean or symbolic replay",
+  "facts": [
+    {
+      "claim": "A unital homomorphism from AmbientDerivation.K to a nontrivial curve field cannot send AmbientDerivation.G to zero",
+      "evidence": "AmbientDerivation.G_ne_zero plus injectivity of field homomorphisms",
+      "consequence": "Use a polynomial map or localization at a multiplicative set whose images are units."
+    },
+    {
+      "claim": "The old normal derivation cannot descend with unchanged coordinate values",
+      "evidence": "AmbientDerivation.no_unchanged_derivation_on_divisor",
+      "consequence": "Keep tangent/Kahler pullback separate from the normal ambient derivation."
+    },
+    {
+      "claim": "The U=x^2 chart is already a quotient by the reflection coordinate change",
+      "evidence": "ChartSubstitution.protected_substitution identifies F at x with z^6+cubic(x^2,r,w,t)",
+      "consequence": "A field containing U,r,w,t,z alone requires an explicit scope statement; recovering original X0 requires adjoining a square root or working in x coordinates."
+    },
+    {
+      "claim": "A chosen algebraic root can realize a component while retaining injective parameter base",
+      "evidence": "Any field extension of the rational parameter field embeds that field, but irreducibility of z^6+cubic is a separate obligation",
+      "consequence": "Do not label a selected-root/component model the entire physical hypersurface function field unless irreducibility/generic completeness is proved."
+    }
+  ],
+  "status": "SUPPORTING REVIEW; final implementation not yet available"
+}

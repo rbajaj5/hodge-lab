@@ -1,0 +1,20 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "-C",
+    "/workspace/scratch/b8974c152662/hodge-lab-curve/formal/.lake/packages/LeanSearchClient",
+    "fetch",
+    "--depth",
+    "1",
+    "origin",
+    "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:42:22.266930+00:00",
+  "elapsed_seconds": 0.31073218099982114,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "a30c137da7add82c2364ecc3315e242d6a385e85bd0c3de04f2ca9884ade9d2f"
+}

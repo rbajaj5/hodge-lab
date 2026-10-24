@@ -1,0 +1,20 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "-C",
+    "/workspace/scratch/b8974c152662/hodge-lab-curve/formal/.lake/packages/Cli",
+    "fetch",
+    "--depth",
+    "1",
+    "origin",
+    "92564e5770e4d09f2d86dfbf8ada1e9c715b384c"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:42:22.261236+00:00",
+  "elapsed_seconds": 0.2861587749998762,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "6adf59a8b42fa8a95c88abdffcf628e91cd074dfa7d1993f6491adbe9eb14ce5"
+}

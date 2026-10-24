@@ -1,0 +1,18 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "python3",
+    "scripts/visualize_skew_physical_curve.py",
+    "--receipt",
+    "results/skew-physical-curve-20261024/lean-development/checker-01/validation.json",
+    "--output-dir",
+    "results/skew-physical-curve-20261024/visualization-01"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:58:09.521506+00:00",
+  "elapsed_seconds": 2.3451979440001196,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "stdout_sha256": "a65462a4c770b28ee8c6acee300a38fc8fb59f446ed17e4fe21511dc36d0493a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,18 @@
+{
+  "executor": "Pro curve_evidence_review read-only AI reviewer",
+  "command": [
+    "python3",
+    "-O",
+    "results/skew-physical-curve-20261024/source-review/audit_saved_evidence.py",
+    "--receipt",
+    "results/skew-physical-curve-20261024/lean-development/checker-02/validation.json",
+    "--output-dir",
+    "results/skew-physical-curve-20261024/source-review/audit-01"
+  ],
+  "started_utc": "2026-10-24T09:58:50.757534+00:00",
+  "elapsed_seconds": 0.05445047600005637,
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "stdout_sha256": "bcec098e78ecdf45eb18c5361e18f93769baea5b9884aeecce71df5fb9c70e2a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

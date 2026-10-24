@@ -1,0 +1,16 @@
+Fresh receipts: /workspace/scratch/b8974c152662/hodge-lab-curve/results/skew-physical-curve-20261024/lean-development/checker-02
+{"label": "version", "exit_code": 0, "seconds": 0.6313758080000298}
+{"label": "mathlib-head", "exit_code": 0, "seconds": 0.0020880350002698833}
+{"label": "build", "exit_code": 0, "seconds": 1.7344299960000171}
+{"label": "axioms", "exit_code": 0, "seconds": 2.586746363000202}
+{"label": "kernel-replay", "exit_code": 0, "seconds": 2.9260351920001995}
+{"label": "positive-controls", "exit_code": 0, "seconds": 3.6501874660002613}
+{"label": "parameter-collapse-rejected", "exit_code": 1, "seconds": 2.311008561000108}
+{"label": "zero-sixth-root-rejected", "exit_code": 1, "seconds": 2.5243152450002526}
+{"label": "relation-not-killed-rejected", "exit_code": 1, "seconds": 2.406580146000124}
+{"label": "ambient-field-specialization-rejected", "exit_code": 1, "seconds": 2.4521340000001146}
+{"label": "inverted-curve-equation-rejected", "exit_code": 1, "seconds": 2.5512910239999655}
+{"label": "coefficient-sign-rejected", "exit_code": 1, "seconds": 2.1865345770002023}
+{"label": "fr-sign-mutation-rejected", "exit_code": 1, "seconds": 2.658983177999744}
+{"label": "delta-clearing-zero-mutation-rejected", "exit_code": 1, "seconds": 3.0463602489999175}
+PASS: 81 declarations, one new-module replay, 25 positive, 8 intended failures

@@ -1,0 +1,25 @@
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:111:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:111:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:149:63: error: unsolved goals
+S : Type u_1
+T : Type u_2
+inst✝³ : CommRing S
+inst✝² : CommRing T
+inst✝¹ : Algebra ℚ S
+inst✝ : Algebra ℚ T
+f : S →ₐ[ℚ] T
+s : S
+this✝ : Algebra S T := f.toAlgebra
+this : IsScalarTower ℚ S T := IsScalarTower.of_algHom f
+⊢ (KaehlerDifferential.map ℚ ℚ S T) ((KaehlerDifferential.D ℚ S) s) = (KaehlerDifferential.D ℚ T) (f s)
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:152:22: warning: This simp argument is unused:
+  KaehlerDifferential.map_D
+
+Hint: Omit it from the simp argument list.
+  simp [exteriorPull,̵ ̵K̵a̵e̵h̵l̵e̵r̵D̵i̵f̵f̵e̵r̵e̵n̵t̵i̵a̵l̵.̵m̵a̵p̵_̵D̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

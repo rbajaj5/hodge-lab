@@ -1,0 +1,19 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "curl",
+    "-fL",
+    "--max-time",
+    "45",
+    "-o",
+    "/tmp/lean-4.31.0-linux.tar.zst",
+    "https://github.com/leanprover/lean4/releases/download/v4.31.0/lean-4.31.0-linux.tar.zst"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve",
+  "started_utc": "2026-10-24T09:41:33.489222+00:00",
+  "elapsed_seconds": 9.50209701000017,
+  "timeout_seconds": 45,
+  "exit_code": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "15c1015b9b8a156bcd797c14d3d1453563a429509f0cbe0411296c944a4caf46"
+}

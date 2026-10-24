@@ -1,0 +1,48 @@
+{
+  "status": "BASELINE_INSPECTED",
+  "executor": "Pro curve_evidence_review adversarial AI reviewer",
+  "recorded_utc": "2026-10-24T09:41:32.913452+00:00",
+  "parent": "e2182223a0395cfb758a2ee09e304eb940b7a67a",
+  "requested_upstream": "e96be434bd55d6013d7a5854732cb317ca0e43e7",
+  "upstream_fresh_read": "Awaiting root fetch; old protected input reused only as pinned evidence",
+  "parent_ledger_bytes": 430885,
+  "parent_ledger_sha256": "f4e1e853360368889cd83be8536d4f0c509a73464d391311c91639c326abbc66",
+  "source_sha256": {
+    "AGENTS.md": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+    "LEDGER.md": "f4e1e853360368889cd83be8536d4f0c509a73464d391311c91639c326abbc66",
+    "README.md": "e8a79721800262c2b221cca3795e0b71a128abf62334edb9a7e6f784ddcb47fd",
+    "notes/skew-physical-source-normalization.md": "93a4101be563c7d7166b2e7e6cdef0f978d0f61f7efe32c959795ecad2913e08",
+    "formal/HodgeLab/OneReflectionSkew/AmbientDerivation.lean": "6172a74fad84c97a15f8345225fb35cb49e1e9fa806c8a1309f42f83bf6e8cc3",
+    "formal/HodgeLab/OneReflectionSkew/DifferentialForms.lean": "6c995c52e943e61d2bf5b7c3e54cebc98b0286f9c87dcfe6709775c2a5de72f6",
+    "formal/HodgeLab/OneReflectionSkew/ChartSubstitution.lean": "fb1423d71959120c38de0e9efd95c22821ae3e4fe255ce5b6d9be1fcb0dc90b1",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalSourceNormalization.lean": "3a45008d92508ffd0796311fd3d9380a132fc739534a57fe187afb8f174e8288",
+    "results/skew-physical-source-20261023/inputs/upstream/data/one-reflection-skew/instance.rec": "c6621c8845addf857ed30726f86449d5ea3310c7609641db9e326f9b85f10fbd",
+    "results/skew-physical-source-20261023/inputs/benediamond/packet/one-reflection-skew-followup/inputs/source-rank2-connection.json": "a86c01f7fed725aac86e958a10f484b9b340765714c5b228513890977a59ce5d"
+  },
+  "protected_fields": {
+    "id": "one-reflection-skew",
+    "q": "1",
+    "A": "X0**3*Y0**3",
+    "F": "X0**6 + X0**3*X1*Y0*Y1 + X0*X1*Y0**3*Y1/7 - X0*X1*Y0*Y1**3/7 + X1**6 + X1**3*X2*Y0*Y1 + X2**6 + Y0**6 + Y1**6 + Y2**6"
+  },
+  "review_gates": [
+    "Specialization from P or a justified regular localization, never the entire old ambient FractionRing(P)",
+    "Nonzero old G cannot map to zero under a unital field hom; prior G_ne_zero theorem is available",
+    "Old normal coordinate derivation cannot descend unchanged; prior no_unchanged_derivation_on_divisor is available",
+    "Independent base coordinates must be preserved injectively in any chosen root/component extension",
+    "Universal Kaehler pullback and exterior map need compatible scalar structures, explicit images of dU,dr,dw,dt,dz",
+    "Normalized coefficient has only z denominator; P[z^-1] is a valid narrow candidate if z nonzero is proved",
+    "U=x^2 bridge to the protected sextic must be constructed or explicitly left as a square-cover boundary",
+    "Explicit nonzero r,z,f_r,Delta obligations; no claim that cover separability proves physical Delta",
+    "Prior packet sign conventions, both compact rows and rank34 scope remain unchanged",
+    "No whole irreducible hypersurface function-field claim without irreducibility proof; a root extension must be labeled",
+    "No residue/deRham/cohomology/primitive/certificate/solve construction"
+  ],
+  "reviewer_executions": {
+    "Lean_commands": 0,
+    "symbolic_mathematics": 0,
+    "prior_focused_checkers": 0,
+    "publication": 0
+  },
+  "policy": "User no-publication instruction controls this unit; coordinator owns ledger publication and CI; existing ledger history preserved bytewise"
+}

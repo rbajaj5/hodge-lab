@@ -1,0 +1,19 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "--no-recurse-submodules",
+    "https://github.com/rbajaj5/hodge-lab.git",
+    "hodge-lab-curve"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662",
+  "started_utc": "2026-10-24T09:40:10.583298+00:00",
+  "elapsed_seconds": 0.017899661999990713,
+  "timeout_seconds": 45,
+  "exit_code": 128,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "df6f143b31531fddc9b2b070375d78769d49ae68abbf473c0308ebc3202b351a"
+}

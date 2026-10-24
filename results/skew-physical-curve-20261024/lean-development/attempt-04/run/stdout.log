@@ -1,0 +1,529 @@
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:111:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:111:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:294:80: error: unsolved goals
+⊢ (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 2) ^ 5 * 6 -
+          (algebraMap BasePoly Curve) (X 1) ^ 11 * 3 -
+        (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) ^ 6 * 9 +
+      (algebraMap BasePoly Curve) (X 1) ^ 17 * 3 =
+    (algebraMap BasePoly Curve) (X 1) * ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 2 * 30 -
+                                                              (algebraMap BasePoly Curve) (X 1) ^ 2 *
+                                                                    (algebraMap BasePoly Curve) (X 2) *
+                                                                  ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                6 -
+                                                            (algebraMap BasePoly Curve) (X 1) ^ 2 *
+                                                                ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 3 *
+                                                              60 +
+                                                          (algebraMap BasePoly Curve) (X 1) ^ 3 *
+                                                                (algebraMap BasePoly Curve) (X 2) *
+                                                              ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 2 *
+                                                            60 +
+                                                        (algebraMap BasePoly Curve) (X 1) ^ 3 *
+                                                            ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 4 *
+                                                          60 -
+                                                      (algebraMap BasePoly Curve) (X 1) ^ 4 *
+                                                            (algebraMap BasePoly Curve) (X 2) *
+                                                          ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 3 *
+                                                        180 -
+                                                    (algebraMap BasePoly Curve) (X 1) ^ 4 *
+                                                        ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 5 *
+                                                      30 +
+                                                  (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                        (algebraMap BasePoly Curve) (X 2) *
+                                                      ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 4 *
+                                                    240 +
+                                                (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                      (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                    ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 2 *
+                                                  30 +
+                                              (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                  ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+                                                6 -
+                                            (algebraMap BasePoly Curve) (X 1) ^ 6 * (algebraMap BasePoly Curve) (X 2) *
+                                                ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 5 *
+                                              150 -
+                                          (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                              ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 3 *
+                                            180 +
+                                        (algebraMap BasePoly Curve) (X 1) ^ 7 * (algebraMap BasePoly Curve) (X 2) *
+                                            ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+                                          36 +
+                                      (algebraMap BasePoly Curve) (X 1) ^ 7 * (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                          ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 4 *
+                                        360 -
+                                    (algebraMap BasePoly Curve) (X 1) ^ 8 * (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                        ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 5 *
+                                      300 -
+                                  (algebraMap BasePoly Curve) (X 1) ^ 8 * (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                      ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 3 *
+                                    60 +
+                                (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                    ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+                                  90 +
+                              (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                  ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 4 *
+                                240 -
+                            (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 5 *
+                              300 +
+                          (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                              ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+                            120 +
+                        (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) ^ 4 *
+                            ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 4 *
+                          60 -
+                      (algebraMap BasePoly Curve) (X 1) ^ 12 * (algebraMap BasePoly Curve) (X 2) ^ 4 *
+                          ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 5 *
+                        150 -
+                    (algebraMap BasePoly Curve) (X 1) ^ 12 * (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                        ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                      15 -
+                  (algebraMap BasePoly Curve) (X 1) ^ 12 * ((algebraMap BasePoly Curve) (X 1))⁻¹ * 3 +
+                (algebraMap BasePoly Curve) (X 1) ^ 13 * (algebraMap BasePoly Curve) (X 2) ^ 4 *
+                    ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+                  90 -
+              (algebraMap BasePoly Curve) (X 1) ^ 14 * (algebraMap BasePoly Curve) (X 2) ^ 5 *
+                  ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 5 *
+                30 +
+            (algebraMap BasePoly Curve) (X 1) ^ 15 * (algebraMap BasePoly Curve) (X 2) ^ 5 *
+                ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+              36 +
+          (algebraMap BasePoly Curve) (X 1) ^ 17 * (algebraMap BasePoly Curve) (X 2) ^ 6 *
+              ((algebraMap BasePoly Curve) (X 1))⁻¹ ^ 6 *
+            6 +
+        (algebraMap BasePoly Curve) (X 1) ^ 18 * ((algebraMap BasePoly Curve) (X 1))⁻¹ * 3 -
+      ((algebraMap BasePoly Curve) (X 1))⁻¹ * 6
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:297:34: warning: This simp argument is unused:
+  U
+
+Hint: Omit it from the simp argument list.
+  simp only [aChart, ̲aCoeff, ̲vChart,U̵,̵ ̲r, ̲w, ̲t, ̲param]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:297:40: warning: This simp argument is unused:
+  t
+
+Hint: Omit it from the simp argument list.
+  simp only [aChart, ̲aCoeff, ̲vChart, ̲U, ̲r, ̲w,t̵,̵ ̲param]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:321:71: error: unsolved goals
+⊢ ⋯ - ⋯ + ⋯ * ⋯ - ⋯ * ⋯ * 302526 + ⋯ * ⋯ * ⋯ ^ 4 * 302526 - ⋯ ^ 4 * ⋯ ^ 7 * ⋯ (X 3) ^ 8 * 302526 +
+                                                                                              ⋯ (X 1) ^ 4 *
+                                                                                                    ⋯ (X 2) ^ 7 *
+                                                                                                  (algebraMap BasePoly
+                                                                                                        Curve)
+                                                                                                      (X 3) ^
+                                                                                                    10 *
+                                                                                                302526 -
+                                                                                            (algebraMap BasePoly Curve)
+                                                                                                    (X 1) ^
+                                                                                                  4 *
+                                                                                                (algebraMap BasePoly
+                                                                                                      Curve)
+                                                                                                    (X 3) ^
+                                                                                                  4 *
+                                                                                              2401 +
+                                                                                          (algebraMap BasePoly Curve)
+                                                                                                  (X 1) ^
+                                                                                                4 *
+                                                                                              (algebraMap BasePoly
+                                                                                                    Curve)
+                                                                                                  (X 3) ^
+                                                                                                6 *
+                                                                                            4802 -
+                                                                                        (algebraMap BasePoly Curve)
+                                                                                                (X 1) ^
+                                                                                              4 *
+                                                                                            (algebraMap BasePoly Curve)
+                                                                                                (X 3) ^
+                                                                                              8 *
+                                                                                          2401 +
+                                                                                      (algebraMap BasePoly Curve)
+                                                                                                (X 1) ^
+                                                                                              5 *
+                                                                                            (algebraMap BasePoly Curve)
+                                                                                              (X 2) *
+                                                                                          (algebraMap BasePoly Curve)
+                                                                                              (X 3) ^
+                                                                                            3 *
+                                                                                        1411788 +
+                                                                                    (algebraMap BasePoly Curve) (X 1) ^
+                                                                                            5 *
+                                                                                          (algebraMap BasePoly Curve)
+                                                                                            (X 2) *
+                                                                                        (algebraMap BasePoly Curve)
+                                                                                            (X 3) ^
+                                                                                          9 *
+                                                                                      1411788 +
+                                                                                  (algebraMap BasePoly Curve) (X 1) ^
+                                                                                      6 *
+                                                                                    6353046 -
+                                                                                (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                                      (algebraMap BasePoly Curve)
+                                                                                        (X 2) *
+                                                                                    (algebraMap BasePoly Curve) (X 3) ^
+                                                                                      4 *
+                                                                                  4802 +
+                                                                              (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                                    (algebraMap BasePoly Curve) (X 2) *
+                                                                                  (algebraMap BasePoly Curve) (X 3) ^
+                                                                                    6 *
+                                                                                9604 -
+                                                                            (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                                  (algebraMap BasePoly Curve) (X 2) *
+                                                                                (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                                                              4802 +
+                                                                          (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                              (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                                                                            6353046 +
+                                                                        (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                              (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                                                                            (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                                          12706092 +
+                                                                      (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                            (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                                                                          (algebraMap BasePoly Curve) (X 3) ^ 12 *
+                                                                        6353046 +
+                                                                    (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                        (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                                      12706092 +
+                                                                  (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                      (algebraMap BasePoly Curve) (X 3) ^ 12 *
+                                                                    6353046 +
+                                                                (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                      (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                                    (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                                                                  1411788 +
+                                                              (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                    (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                                  (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                                                                1411788 -
+                                                            (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                                  (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                                (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                                                              2401 +
+                                                          (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                                (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                              (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                            4802 -
+                                                        (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                              (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                            (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                                          2401 -
+                                                      (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                          (algebraMap BasePoly Curve) (X 3) ^ 2 *
+                                                        302526 +
+                                                    (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                        (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                                                      302526 -
+                                                  (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                      (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                                    302526 +
+                                                (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                    (algebraMap BasePoly Curve) (X 3) ^ 10 *
+                                                  302526 +
+                                              (algebraMap BasePoly Curve) (X 1) ^ 9 *
+                                                    (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                                  (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                                                470596 +
+                                            (algebraMap BasePoly Curve) (X 1) ^ 9 *
+                                                  (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                                (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                                              470596 +
+                                          (algebraMap BasePoly Curve) (X 1) ^ 9 *
+                                              (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                                            1372 -
+                                        (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 5 *
+                                          4116 +
+                                      (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 7 *
+                                        4116 -
+                                    (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                                      1372 -
+                                  (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) *
+                                      (algebraMap BasePoly Curve) (X 3) ^ 2 *
+                                    302526 +
+                                (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) *
+                                    (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                                  302526 -
+                              (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) *
+                                  (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                302526 +
+                            (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) *
+                                (algebraMap BasePoly Curve) (X 3) ^ 10 *
+                              302526 +
+                          (algebraMap BasePoly Curve) (X 1) ^ 12 * 3176523 +
+                        (algebraMap BasePoly Curve) (X 1) ^ 12 * (algebraMap BasePoly Curve) (X 3) ^ 6 * 6353046 +
+                      (algebraMap BasePoly Curve) (X 1) ^ 12 * (algebraMap BasePoly Curve) (X 3) ^ 12 * 3176523 +
+                    (algebraMap BasePoly Curve) (X 2) ^ 6 * 6353046 +
+                  (algebraMap BasePoly Curve) (X 2) ^ 6 * (algebraMap BasePoly Curve) (X 3) ^ 6 * 12706092 +
+                (algebraMap BasePoly Curve) (X 2) ^ 6 * (algebraMap BasePoly Curve) (X 3) ^ 12 * 6353046 +
+              (algebraMap BasePoly Curve) (X 2) ^ 12 * 3176523 +
+            (algebraMap BasePoly Curve) (X 2) ^ 12 * (algebraMap BasePoly Curve) (X 3) ^ 6 * 6353046 +
+          (algebraMap BasePoly Curve) (X 2) ^ 12 * (algebraMap BasePoly Curve) (X 3) ^ 12 * 3176523 +
+        (algebraMap BasePoly Curve) (X 3) ^ 6 * 6353046 +
+      (algebraMap BasePoly Curve) (X 3) ^ 12 * 3176523 =
+    ⋯ + ⋯ - ⋯ * ⋯ + ⋯ * ⋯ * 471968 - ⋯ * ⋯ * ⋯⁻¹ * 4116 + ⋯ ^ 4 * ⋯ ^ 7 * (⋯ (X 1))⁻¹ * 4116 +
+                                                                                              ⋯ (X 1) ^ 4 *
+                                                                                                    ⋯ (X 3) ^ 9 *
+                                                                                                  ((algebraMap BasePoly
+                                                                                                        Curve)
+                                                                                                      (X 1))⁻¹ *
+                                                                                                469224 -
+                                                                                            ⋯ (X 1) ^ 5 *
+                                                                                                    (algebraMap BasePoly
+                                                                                                        Curve)
+                                                                                                      (X 2) *
+                                                                                                  (algebraMap BasePoly
+                                                                                                        Curve)
+                                                                                                      (X 3) ^
+                                                                                                    2 *
+                                                                                                ((algebraMap BasePoly
+                                                                                                      Curve)
+                                                                                                    (X 1))⁻¹ *
+                                                                                              302526 +
+                                                                                          (algebraMap BasePoly Curve)
+                                                                                                      (X 1) ^
+                                                                                                    5 *
+                                                                                                  (algebraMap BasePoly
+                                                                                                      Curve)
+                                                                                                    (X 2) *
+                                                                                                (algebraMap BasePoly
+                                                                                                      Curve)
+                                                                                                    (X 3) ^
+                                                                                                  4 *
+                                                                                              ((algebraMap BasePoly
+                                                                                                    Curve)
+                                                                                                  (X 1))⁻¹ *
+                                                                                            302526 -
+                                                                                        (algebraMap BasePoly Curve)
+                                                                                                    (X 1) ^
+                                                                                                  5 *
+                                                                                                (algebraMap BasePoly
+                                                                                                    Curve)
+                                                                                                  (X 2) *
+                                                                                              (algebraMap BasePoly
+                                                                                                    Curve)
+                                                                                                  (X 3) ^
+                                                                                                8 *
+                                                                                            ((algebraMap BasePoly Curve)
+                                                                                                (X 1))⁻¹ *
+                                                                                          302526 +
+                                                                                      (algebraMap BasePoly Curve)
+                                                                                                  (X 1) ^
+                                                                                                5 *
+                                                                                              (algebraMap BasePoly
+                                                                                                  Curve)
+                                                                                                (X 2) *
+                                                                                            (algebraMap BasePoly Curve)
+                                                                                                (X 3) ^
+                                                                                              10 *
+                                                                                          ((algebraMap BasePoly Curve)
+                                                                                              (X 1))⁻¹ *
+                                                                                        302526 -
+                                                                                    (algebraMap BasePoly Curve) (X 1) ^
+                                                                                              5 *
+                                                                                            (algebraMap BasePoly Curve)
+                                                                                                (X 2) ^
+                                                                                              7 *
+                                                                                          (algebraMap BasePoly Curve)
+                                                                                              (X 3) ^
+                                                                                            2 *
+                                                                                        ((algebraMap BasePoly Curve)
+                                                                                            (X 1))⁻¹ *
+                                                                                      302526 +
+                                                                                  (algebraMap BasePoly Curve) (X 1) ^
+                                                                                            5 *
+                                                                                          (algebraMap BasePoly Curve)
+                                                                                              (X 2) ^
+                                                                                            7 *
+                                                                                        (algebraMap BasePoly Curve)
+                                                                                            (X 3) ^
+                                                                                          4 *
+                                                                                      ((algebraMap BasePoly Curve)
+                                                                                          (X 1))⁻¹ *
+                                                                                    302526 -
+                                                                                (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                                                        (algebraMap BasePoly Curve)
+                                                                                            (X 2) ^
+                                                                                          7 *
+                                                                                      (algebraMap BasePoly Curve)
+                                                                                          (X 3) ^
+                                                                                        8 *
+                                                                                    ((algebraMap BasePoly Curve)
+                                                                                        (X 1))⁻¹ *
+                                                                                  302526 +
+                                                                              (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                                                      (algebraMap BasePoly Curve)
+                                                                                          (X 2) ^
+                                                                                        7 *
+                                                                                    (algebraMap BasePoly Curve) (X 3) ^
+                                                                                      10 *
+                                                                                  ((algebraMap BasePoly Curve)
+                                                                                      (X 1))⁻¹ *
+                                                                                302526 -
+                                                                            (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                                                  (algebraMap BasePoly Curve) (X 3) ^
+                                                                                    4 *
+                                                                                ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                              2401 +
+                                                                          (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                                                (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                                              ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                            4802 -
+                                                                        (algebraMap BasePoly Curve) (X 1) ^ 5 *
+                                                                              (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                                                            ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                          2401 +
+                                                                      (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                              (algebraMap BasePoly Curve) (X 2) *
+                                                                            (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                                                                          ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                        1411788 +
+                                                                    (algebraMap BasePoly Curve) (X 1) ^ 6 *
+                                                                            (algebraMap BasePoly Curve) (X 2) *
+                                                                          (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                                                                        ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                      1411788 -
+                                                                  (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                          (algebraMap BasePoly Curve) (X 2) *
+                                                                        (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                                                                      ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                    4802 +
+                                                                (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                        (algebraMap BasePoly Curve) (X 2) *
+                                                                      (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                                    ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                  9604 -
+                                                              (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                      (algebraMap BasePoly Curve) (X 2) *
+                                                                    (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                                                  ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                                4802 +
+                                                            (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                    (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                                                                  (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                                ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                              12706092 +
+                                                          (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                                  (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                                                                (algebraMap BasePoly Curve) (X 3) ^ 12 *
+                                                              ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                            6353046 +
+                                                        (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                              (algebraMap BasePoly Curve) (X 2) ^ 6 *
+                                                            ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                          6353046 +
+                                                      (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                            (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                                          ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                        12706092 +
+                                                    (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                          (algebraMap BasePoly Curve) (X 3) ^ 12 *
+                                                        ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                      6353046 +
+                                                  (algebraMap BasePoly Curve) (X 1) ^ 7 *
+                                                      ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                    6353046 +
+                                                (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                        (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                      (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                                                    ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                  1411788 +
+                                              (algebraMap BasePoly Curve) (X 1) ^ 8 *
+                                                      (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                    (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                                                  ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                                1411788 -
+                                            (algebraMap BasePoly Curve) (X 1) ^ 9 *
+                                                    (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                  (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                                                ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                              2401 +
+                                          (algebraMap BasePoly Curve) (X 1) ^ 9 *
+                                                  (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                                (algebraMap BasePoly Curve) (X 3) ^ 6 *
+                                              ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                            4802 -
+                                        (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 2) ^ 2 *
+                                              (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                            ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                          2401 -
+                                      (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 2 *
+                                          ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                        302526 +
+                                    (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                                        ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                      302526 -
+                                  (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                                      ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                    302526 +
+                                (algebraMap BasePoly Curve) (X 1) ^ 9 * (algebraMap BasePoly Curve) (X 3) ^ 10 *
+                                    ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                  302526 +
+                              (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                    (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                                  ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                                470596 +
+                            (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 2) ^ 3 *
+                                  (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                                ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                              470596 +
+                          (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 3) ^ 3 *
+                              ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                            1372 -
+                        (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 3) ^ 5 *
+                            ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                          4116 +
+                      (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 3) ^ 7 *
+                          ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                        4116 -
+                    (algebraMap BasePoly Curve) (X 1) ^ 10 * (algebraMap BasePoly Curve) (X 3) ^ 9 *
+                        ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                      1372 -
+                  (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) *
+                        (algebraMap BasePoly Curve) (X 3) ^ 2 *
+                      ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                    302526 +
+                (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) *
+                      (algebraMap BasePoly Curve) (X 3) ^ 4 *
+                    ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                  302526 -
+              (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) *
+                    (algebraMap BasePoly Curve) (X 3) ^ 8 *
+                  ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+                302526 +
+            (algebraMap BasePoly Curve) (X 1) ^ 11 * (algebraMap BasePoly Curve) (X 2) *
+                  (algebraMap BasePoly Curve) (X 3) ^ 10 *
+                ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+              302526 +
+          (algebraMap BasePoly Curve) (X 1) ^ 13 * (algebraMap BasePoly Curve) (X 3) ^ 6 *
+              ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+            6353046 +
+        (algebraMap BasePoly Curve) (X 1) ^ 13 * (algebraMap BasePoly Curve) (X 3) ^ 12 *
+            ((algebraMap BasePoly Curve) (X 1))⁻¹ *
+          3176523 +
+      (algebraMap BasePoly Curve) (X 1) ^ 13 * ((algebraMap BasePoly Curve) (X 1))⁻¹ * 3176523
+HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean:323:40: warning: This simp argument is unused:
+  U
+
+Hint: Omit it from the simp argument list.
+  simp only [delta, ̲aChart, ̲aCoeff, ̲vChart,U̵,̵ ̲r, ̲w, ̲t, ̲param]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,16 @@
+{
+  "executor": "Pro root sole Lean writer",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "HodgeLab/OneReflectionSkew/PhysicalCurveRealization.lean"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-curve/formal",
+  "started_utc": "2026-10-24T09:52:02.143648+00:00",
+  "elapsed_seconds": 7.601827799000148,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "stdout_sha256": "d5bb671162dd9ed05659d3573c435df2736d46c489a0f766cb4f86a349feaf62",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
