@@ -1,0 +1,164 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:20.047871+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.657011227995099,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stdout": "version.stdout.log",
+    "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stderr": "version.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:20.705424+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.002203372001531534,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stdout": "mathlib-head.stdout.log",
+    "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stderr": "mathlib-head.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:20.707892+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 1.3139531980050378,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "a38b678f55eacf4e82919b09ebdd886a6c1c17d4b1441782768c51bead49729e",
+    "stdout": "build.stdout.log",
+    "stdout_sha256": "a38b678f55eacf4e82919b09ebdd886a6c1c17d4b1441782768c51bead49729e",
+    "stderr": "build.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewScalarExtension.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewScalarExtension.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:22.022209+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.30611789500108,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "4d68be95a6d9b0e9c98f3cc921b55c70c3156046ca6e1fa4777a2df9d3383e31",
+    "stdout": "axioms.stdout.log",
+    "stdout_sha256": "4d68be95a6d9b0e9c98f3cc921b55c70c3156046ca6e1fa4777a2df9d3383e31",
+    "stderr": "axioms.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewScalarExtension.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewScalarExtension.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:24.329148+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.4995514230031404,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "155769e52edafc4ffc08d6d31d3965a6abe281804b14e606215c686133877e8e",
+    "stdout": "kernel-replay.stdout.log",
+    "stdout_sha256": "155769e52edafc4ffc08d6d31d3965a6abe281804b14e606215c686133877e8e",
+    "stderr": "kernel-replay.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7etma_0j/positive-controls.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-7etma_0j/positive-controls.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:27.829764+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 3.931447864997608,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "82073c0f4eb80bb8d015fb21c7922ac106fbf7542fe1242d8fcda3df71173b24",
+    "stdout": "positive-controls.stdout.log",
+    "stdout_sha256": "82073c0f4eb80bb8d015fb21c7922ac106fbf7542fe1242d8fcda3df71173b24",
+    "stderr": "positive-controls.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

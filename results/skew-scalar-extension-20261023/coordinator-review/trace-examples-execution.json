@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T00:37:13.741139+00:00",
+  "argv": [
+    "C:/Users/anaxe/AppData/Local/Programs/Python/Python311/python.exe",
+    "-X",
+    "utf8",
+    "-O",
+    "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\scalar-extension-20261023\\check_trace_examples.py",
+    "--output",
+    "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\scalar-extension-20261023\\trace-examples.json"
+  ],
+  "limit_seconds": 60,
+  "elapsed_seconds": 2.25,
+  "exit_code": 0,
+  "stdout": "{\"status\": \"PASS\", \"equalities\": 17, \"mutations\": 4, \"elapsed_seconds\": 0.3440000000009604}\n",
+  "stderr": "",
+  "change": "Replaced Python assertions with explicit failures; ran with -O. Initial passing source and receipt retained in example-attempt-01."
+}

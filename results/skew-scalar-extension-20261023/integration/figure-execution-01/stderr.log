@@ -1,0 +1,9 @@
+mkdir -p failed for path /root/.config/matplotlib: [Errno 30] Read-only file system: '/root/.config'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-cc7jgqhv because there was an issue with the default path (/root/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-scalar-extension/scripts/visualize_skew_scalar_extension.py", line 139, in <module>
+    main()
+  File "/workspace/scratch/b8974c152662/hodge-lab-scalar-extension/scripts/visualize_skew_scalar_extension.py", line 45, in main
+    expected = receipt['source_lf_sha256'][MODULE.removeprefix('formal/')]
+               ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_lf_sha256'

@@ -1,0 +1,32 @@
+{
+  "reviewer": "Codex read-only reviewer /root/ci_receipt_review",
+  "status": "PASS within documented scope; no blocking defect",
+  "execution_scope": "Source, mathematical and receipt review only; no Lean build or edits",
+  "proof_findings": [
+    "Actual quotient E and left scalar extension T; both ranks established as 18.",
+    "Tensor equivalence constructed by evaluation, interpolation and dimensions.",
+    "Arbitrary-element trace compatibility follows multiplication-map base change.",
+    "Derivative inverse is constructed in E by separability and Bezout; E is not assumed a field.",
+    "Uniform weighted trace formula is transported by the injective base field map.",
+    "No field trace L/K or extension-degree factor; no arbitrary split-vector descent claim."
+  ],
+  "receipt_checks": {
+    "new_or_current_source_hashes": 9,
+    "reused_file_hashes_and_sizes": 14,
+    "manifests": [
+      "input manifest",
+      "source manifest"
+    ],
+    "command_stream_hashes": 27,
+    "declarations_and_instances": 51,
+    "intended_negative_failures": 3,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "module_sha256": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+  "pro_receipt_sha256": "6eb8b276c43f05d37c7b108d155512b311c88a552de3b1ece3b0d4aec46029c7",
+  "limits": "Physical-source identification, normalization, exactness, primitive and certificate remain outside this result."
+}

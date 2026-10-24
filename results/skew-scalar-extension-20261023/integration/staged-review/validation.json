@@ -1,0 +1,28 @@
+{
+  "status": "PASS_WITH_GENERATED_SVG_WHITESPACE",
+  "executor": "Pro root integration",
+  "recorded_utc": "2026-10-24T00:39:18.750992+00:00",
+  "changed_files_before_this_record": 149,
+  "parent_ledger_bytes": 407122,
+  "parent_ledger_sha256": "e29180ed04214ae15f796a5fddffda2eff268c50022eb3b957ac84a431512d8c",
+  "utf8_text_and_staged_bytes": "PASS",
+  "modified_parent_paths": [
+    ".github/workflows/lean.yml",
+    "LEDGER.md",
+    "README.md"
+  ],
+  "full_diff_check_exit": 2,
+  "full_diff_stdout_sha256": "180994cc583881739f81100aa307218e849d7f7059af7be22696b6c0c5e9258c",
+  "scoped_diff_check_command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)*.svg"
+  ],
+  "scoped_diff_check_exit": 0,
+  "explanation": "Matplotlib SVG path data retain generated trailing whitespace to preserve exact image hashes. Source/text diff check passes. Historical CRLF discussion file is raw/index identical parent and unstaged.",
+  "patch_apply_status": "Delegated to coordinator with exact parent; no full-parent archive or additional worktree audit"
+}

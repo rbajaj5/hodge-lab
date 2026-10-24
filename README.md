@@ -39,6 +39,26 @@ The [source-to-Hessian reconstruction](notes/one-reflection-skew-hessian-source.
 
 ## Selected results
 
+### One-reflection-skew: scalar extension and quotient traces in Lean
+
+[![Actual quotient, tensor comparison and trace maps](results/skew-scalar-extension-20261023/visualization-02/scalar-extension-trace.png)](notes/skew-scalar-extension-trace.md)
+
+For the literal degree-18 cover over `K=Q(v)(t)(a)` and its splitting field
+`L`, Lean constructs actual `L`-algebra isomorphisms from `L tensor_K K[X]/(f)`
+to the existing split quotient and all eighteen evaluation components.
+Trace base change holds for every quotient element; trace transport holds
+for every tensor element. The inverse derivative is constructed in the
+quotient ring, and the derivative-weighted slot 17 has trace **1**, slot 11
+trace **0**, over K itself. No irreducibility or quotient-field assumption.
+
+Pro's new focused local check passed **51 declaration/instance audits, one
+new-module kernel replay, 19 positive and three false-goal controls**.
+Full remote CI for this unit belongs to the coordinator after integration.
+Physical differential-source normalization, a rational primitive and a solve
+remain separate; arbitrary split vectors are not asserted to descend.
+
+[Proof, commands and limits](notes/skew-scalar-extension-trace.md) · [Lean module](formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean) · [Focused receipt](results/skew-scalar-extension-20261023/lean-development/checker-02/validation.json)
+
 ### One-reflection-skew: generic distinct roots in Lean
 
 [![Exact eliminant, explicit field tower and eighteen distinct roots](results/skew-distinct-roots-20261023/visualization-02/generic-distinct-roots.png)](notes/skew-generic-distinct-roots.md)

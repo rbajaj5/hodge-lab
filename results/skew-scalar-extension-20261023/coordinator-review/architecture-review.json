@@ -1,0 +1,22 @@
+{
+  "reviewed_utc": "2026-10-24T00:30:24.405759+00:00",
+  "reviewer": "Independent read-only Codex AI agent ci_receipt_review",
+  "scope": "Architecture and hypothesis review of published source; no build or edits",
+  "bridge": "E=AdjoinRoot(f), T=L tensor_K E with left L algebra; beta(l tensor e)_j=l sigma_j(e)",
+  "trace": "For all e, iota(trace_K_E(e)) = trace_L_T(1 tensor e) = sum_j sigma_j(e)",
+  "gates": [
+    "Actual tensor product and quotient, not definitions set equal to the intended split result",
+    "Finite dimension18; no irreducibility or quotient-field assumption",
+    "Canonical generator and scalar images",
+    "Arbitrary-element trace compatibility, using actual Algebra.trace",
+    "No splitting-field trace or [L:K] factor",
+    "Do not claim arbitrary split vectors descend or trace zero implies exactness"
+  ],
+  "controls": [
+    "trace_E(1)=18",
+    "trace_T(2 tensor 1)=36",
+    "reject trace_E(1)=1",
+    "reject loss of tensor scalar factor"
+  ],
+  "recommendation": "Architecture sound; inspect final proof and exact source binding before publication."
+}

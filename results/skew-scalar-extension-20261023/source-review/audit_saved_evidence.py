@@ -1,0 +1,133 @@
+"""Read-only review of new saved evidence; executes no Lean or old mathematics."""
+from pathlib import Path
+import argparse, datetime, hashlib, json, re, subprocess, time
+
+ROOT = Path(__file__).resolve().parents[3]
+FORMAL = ROOT / 'formal'
+PARENT = '716174af1c83b45e4a7c3db8f97a11eb0a3126bb'
+MODULE = 'HodgeLab.OneReflectionSkew.ScalarExtensionTrace'
+ALLOWED_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
+
+def require(condition, message):
+    if not condition:
+        raise RuntimeError(message)
+
+def digest(path, lf=False):
+    data = path.read_bytes()
+    return hashlib.sha256(data.replace(b'\r\n', b'\n') if lf else data).hexdigest()
+
+def git(*args):
+    return subprocess.check_output(['git', *args], cwd=ROOT, timeout=20)
+
+def main():
+    started = time.monotonic()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--receipt', required=True, type=Path)
+    args = parser.parse_args()
+    receipt_path = (ROOT / args.receipt).resolve()
+    require(receipt_path.is_relative_to(ROOT), 'Receipt escapes repository')
+    require(git('rev-parse', 'HEAD').decode().strip() == PARENT, 'Unexpected parent')
+    receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
+    require(receipt['status'] == 'PASS', 'Receipt does not report PASS')
+    require(bool(receipt['worker']), 'Missing execution attribution')
+    require(receipt['new_modules_replayed'] == 1, 'Expected only one new-module replay')
+    require(receipt['elapsed_seconds'] < receipt['total_budget_seconds'] <= 600, 'Checker budget exceeded')
+    formal_hashes = 0
+    for path, expected in receipt['source_sha256'].items():
+        require(digest(FORMAL / path) == expected, 'Source hash mismatch: ' + path)
+        formal_hashes += 1
+    for path, pin in receipt['reused_files'].items():
+        require(digest(ROOT / path) == pin['sha256'], 'Reused source/receipt hash mismatch: ' + path)
+        require((ROOT / path).stat().st_size == pin['bytes'], 'Reused byte count mismatch: ' + path)
+        formal_hashes += 1
+    manifest = receipt['source_pins_manifest']
+    require(digest(ROOT / manifest['path']) == manifest['sha256'], 'Source pin manifest mismatch')
+    formal_hashes += 1
+    inputs = FORMAL / 'results/skew-scalar-extension/inputs.json'
+    require(digest(inputs) == receipt['inputs_sha256'], 'Input manifest mismatch')
+    source = FORMAL / (MODULE.replace('.', '/') + '.lean')
+    text = source.read_text(encoding='utf-8')
+    require(not re.search(r'\b(sorry|admit|axiom|native_decide)\b', text), 'Forbidden proof token')
+    declarations = re.findall(r'^(?:def|abbrev|theorem|lemma|instance) (\w+)', text, re.M)
+    names = {MODULE + '.' + name for name in declarations}
+    require(len(names) == len(declarations) == receipt['new_public_declarations_audited'],
+            'Declaration count mismatch')
+    require(set(receipt['declaration_axioms']) == names, 'Declaration audit missing/extra names')
+    require(all(set(a) <= ALLOWED_AXIOMS for a in receipt['declaration_axioms'].values()),
+            'Unexpected axiom dependency')
+    audit_text = (FORMAL / 'AuditSkewScalarExtension.lean').read_text(encoding='utf-8')
+    require(set(re.findall(r'^#print axioms (\S+)', audit_text, re.M)) == names, 'Audit source names mismatch')
+    replay_text = (FORMAL / 'ReplaySkewScalarExtension.lean').read_text(encoding='utf-8')
+    require(re.findall(r'replayFromImports\s+`(\S+)', replay_text) == [MODULE],
+            'Replay source does not isolate the new module')
+    commands = receipt['commands']
+    require(len({c['label'] for c in commands}) == len(commands), 'Duplicate command labels')
+    output_hashes = 0
+    negatives = []
+    replay_marker = False
+    for command in commands:
+        label = command['label']
+        require(0 <= command['elapsed_seconds'] <= command['bound_seconds'] + 2,
+                'Command elapsed exceeds bound: ' + label)
+        require(command['bound_seconds'] <= 120, 'Command bound above 120 seconds: ' + label)
+        for key, hash_key, lf in [('log', 'log_lf_sha256', True),
+                                  ('stdout', 'stdout_sha256', False),
+                                  ('stderr', 'stderr_sha256', False)]:
+            path = (receipt_path.parent / command[key]).resolve()
+            require(path.is_relative_to(receipt_path.parent), 'Log escapes receipt directory')
+            require(digest(path, lf) == command[hash_key], 'Output hash mismatch: ' + str(path))
+            output_hashes += 1
+        log = (receipt_path.parent / command['log']).read_text(encoding='utf-8')
+        if command['expected_failure']:
+            require(command['exit_code'] == 1, 'Unexpected negative-control exit: ' + label)
+            require(log.count('error:') == 1 and 'unsolved goals' in log and '⊢ False' in log,
+                    'Negative did not expose intended false goal: ' + label)
+            require('failed to synthesize' not in log and 'unknown' not in log.lower(),
+                    'Negative failed for unrelated API/typeclass reason: ' + label)
+            negatives.append(label)
+        else:
+            require(command['exit_code'] == 0, 'Positive command failed: ' + label)
+        if label == 'kernel-replay':
+            require('PASS ' + MODULE in log, 'New-module replay marker missing')
+            replay_marker = True
+    require(replay_marker, 'No kernel-replay command')
+    require(len(negatives) == receipt['negative_controls'], 'Negative count mismatch')
+    require(len(negatives) >= 2, 'Missing scalar/normalization negative controls')
+    historical_changes = git('diff', '--name-only', PARENT).decode().splitlines()
+    allowed_changes = {'README.md', 'LEDGER.md', '.github/workflows/lean.yml'}
+    normalization_only = []
+    for path in historical_changes:
+        if path not in allowed_changes:
+            require((ROOT / path).read_bytes() == git('show', PARENT + ':' + path),
+                    'Historical raw bytes changed: ' + path)
+            require(git('show', ':' + path) == git('show', PARENT + ':' + path),
+                    'Historical staged bytes changed: ' + path)
+            normalization_only.append(path)
+    old_ledger = git('show', PARENT + ':LEDGER.md')
+    ledger = (ROOT / 'LEDGER.md').read_bytes()
+    require(len(old_ledger) == 407122 and ledger.startswith(old_ledger), 'Historical ledger prefix changed')
+    attempts = []
+    for record_path in sorted((ROOT / 'results/skew-scalar-extension-20261023/lean-development').glob('attempt-*/execution.json')):
+        record = json.loads(record_path.read_text(encoding='utf-8'))
+        require(record['timeout_seconds'] <= 120, 'Development command limit exceeded')
+        for path, expected in record['files_sha256'].items():
+            require(digest(record_path.parent / path) == expected, 'Development artifact hash mismatch')
+        attempts.append({'attempt': record_path.parent.name, 'exit_code': record['exit_code'],
+                         'elapsed_seconds': record['elapsed_seconds']})
+    print(json.dumps({'status': 'PASS_SAVED_EVIDENCE_AUDIT',
+        'worker': 'Pro adversarial source/receipt AI reviewer',
+        'completed_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        'elapsed_seconds': time.monotonic() - started,
+        'parent': PARENT, 'receipt': str(receipt_path.relative_to(ROOT)),
+        'receipt_sha256': digest(receipt_path), 'module_sha256': digest(source),
+        'source_context_hashes_checked': formal_hashes, 'output_hashes_checked': output_hashes,
+        'public_declarations': len(names), 'new_modules_replayed_by_writer': 1,
+        'positive_controls_reported_by_writer': receipt['positive_controls'],
+        'negative_controls_verified': negatives, 'development_attempts': attempts,
+        'parent_ledger_bytes': len(old_ledger), 'parent_ledger_sha256': hashlib.sha256(old_ledger).hexdigest(),
+        'modified_preexisting_paths': [p for p in historical_changes if p not in normalization_only],
+        'raw_identical_normalization_only_git_diff': normalization_only,
+        'scope': 'Read-only source/receipt/hash audit, not a Lean replay or remote CI run; old mathematics not executed.'}, indent=2))
+
+if __name__ == '__main__':
+    main()

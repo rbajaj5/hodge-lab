@@ -1,0 +1,39 @@
+import HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+open scoped TensorProduct BigOperators
+open Polynomial HodgeLab.OneReflectionSkew.GenericDistinctRoots
+open HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+open HodgeLab.OneReflectionSkew.TraceFreeBasis HodgeLab.OneReflectionSkew.SplitTraceQuotient
+
+example : Module.Finite BaseField E ∧ Module.Free BaseField E ∧
+    Module.Finite SplitField T ∧ Module.Free SplitField T :=
+  ⟨finiteE,freeE,finiteT,freeT⟩
+example : Module.finrank BaseField E=18 ∧ Module.finrank SplitField T=18 := ⟨finrankE,finrankT⟩
+example : genericPolynomial.map baseToSplit=coverPolynomial (1:SplitField) roots :=
+  mapped_polynomial_eq
+example (l:SplitField) (e:E) (j:Fin 18) : beta (l⊗ₜ[BaseField]e) j=l*sigma j e := beta_tmul l e j
+example : beta (1⊗ₜ[BaseField]theta)=roots := beta_theta
+example (l:SplitField) : beta (l⊗ₜ[BaseField](1:E))=(fun _=>l) := beta_scalar l
+example (e:E) : iota e=1⊗ₜ[BaseField]e := iota_apply e
+example (z:T) : evaluationEquiv 1 one_ne_zero roots roots_injective (quotientComparison z)=beta z :=
+  quotientComparison_evaluation z
+example : quotientComparison (1⊗ₜ[BaseField]theta)=
+    AdjoinRoot.root (coverPolynomial (1:SplitField) roots) := quotientComparison_theta
+example (l:SplitField) : quotientComparison (l⊗ₜ[BaseField](1:E))=algebraMap SplitField Q l :=
+  quotientComparison_scalar l
+example (e:E) : baseToSplit (Algebra.trace BaseField E e)=Algebra.trace SplitField T (1⊗ₜ[BaseField]e) :=
+  trace_baseChange e
+example (e:E) : baseToSplit (Algebra.trace BaseField E e)=∑j,sigma j e := trace_evaluations e
+example (z:T) : Algebra.trace SplitField T z=Algebra.trace SplitField (SplitAlgebra SplitField) (beta z) ∧
+    Algebra.trace SplitField T z=Algebra.trace SplitField Q (quotientComparison z) :=
+  ⟨trace_beta z,trace_quotientComparison z⟩
+example (l:SplitField) (e:E) : Algebra.trace SplitField T (l⊗ₜ[BaseField]e)=
+    l*baseToSplit (Algebra.trace BaseField E e) := trace_tmul l e
+example : Algebra.trace BaseField E 1=18 ∧
+    Algebra.trace SplitField T ((2:SplitField)⊗ₜ[BaseField](1:E))=36 := ⟨trace_one,trace_two_tmul_one⟩
+example : IsUnit derivativeElement ∧ derivativeElement*derivativeInverse=1 :=
+  ⟨derivative_isUnit,derivative_mul_inverse⟩
+example (i:Fin 18) : beta (iota (quotientWeight i))=codifferent 1 roots i := beta_quotientWeight i
+example (i:Fin 18) : Algebra.trace BaseField E (quotientWeight i)=if (i:ℕ)=17 then 1 else 0 :=
+  trace_quotientWeight i
+example : Algebra.trace BaseField E (quotientWeight 17)=1 ∧
+    Algebra.trace BaseField E (quotientWeight 11)=0 := ⟨trace_slot_seventeen,trace_slot_eleven⟩

@@ -1,0 +1,18 @@
+{
+  "executor": "Pro root integration",
+  "command": [
+    "python3",
+    "scripts/visualize_skew_scalar_extension.py",
+    "--receipt",
+    "results/skew-scalar-extension-20261023/lean-development/checker-02/validation.json",
+    "--output-dir",
+    "results/skew-scalar-extension-20261023/visualization-01"
+  ],
+  "cwd": "/workspace/scratch/b8974c152662/hodge-lab-scalar-extension",
+  "started_utc": "2026-10-24T00:36:31.446091+00:00",
+  "elapsed_seconds": 2.2327405030009686,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "stdout_sha256": "a53aebdd30fe17cd04152d5d2a8a1434751228915506b1489a940a1d80361534",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,19 @@
+{
+  "worker": "Pro adversarial source/receipt AI reviewer",
+  "command": [
+    "python3",
+    "-O",
+    "results/skew-scalar-extension-20261023/source-review/audit_saved_evidence.py",
+    "--receipt",
+    "results/skew-scalar-extension-20261023/lean-development/checker-02/validation.json"
+  ],
+  "cwd": "repository root",
+  "started_utc": "2026-10-24T00:35:51.227981+00:00",
+  "elapsed_seconds": 0.6033342629962135,
+  "timeout_seconds": 60,
+  "exit_code": 1,
+  "python": "Python 3.12.14",
+  "script_sha256": "12f9bc76af76c3d904f1f73671d3c93b023fe72bd1bb9d93476e3595e71061d9",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "220efda52ea749782f9f6585e88a0c8e12d2942b87bad6c98214404906c60df4"
+}

@@ -1,0 +1,39 @@
+{
+  "recorded_utc": "2026-10-24T00:37:19.409633+00:00",
+  "executor": "Pro root integration",
+  "purpose": "Checked algebra map and trace commutative diagram",
+  "inputs": {
+    "formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+    "results/skew-scalar-extension-20261023/lean-development/checker-02/validation.json": "6eb8b276c43f05d37c7b108d155512b311c88a552de3b1ece3b0d4aec46029c7",
+    "scripts/visualize_skew_scalar_extension.py": "8051a875e91138f4d6a9ee86df6244fb5aafa326eabaf7d730ef192fc14dd734"
+  },
+  "outputs": {
+    "scalar-extension-trace.png": "873583ee02556d5e65a99efe26bb044ca4b5a10ed49a108c358fc6656c0baaeb",
+    "scalar-extension-trace.svg": "807699e12619dac4a09b7c7f6b3c27b4c48e80d45837d5f104feef2db5a10ae2",
+    "generator.py": "8051a875e91138f4d6a9ee86df6244fb5aafa326eabaf7d730ef192fc14dd734"
+  },
+  "required_declarations": [
+    "beta_tmul",
+    "beta_theta",
+    "beta_scalar",
+    "quotientComparison",
+    "trace_baseChange",
+    "trace_beta",
+    "trace_quotientComparison",
+    "trace_evaluations",
+    "trace_tmul",
+    "trace_one",
+    "trace_two_tmul_one",
+    "beta_quotientWeight",
+    "trace_slot_seventeen",
+    "trace_slot_eleven"
+  ],
+  "matplotlib_version": "3.10.8",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "elapsed_seconds": 0.461003715005063,
+  "limitations": [
+    "Equation/dependency rendering, not additional proof or numerical root evidence",
+    "No claim that arbitrary split vectors descend to E",
+    "Does not establish physical differential-source normalization or a primitive"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "manifest_members": 155,
+  "changed_payload_files": 152,
+  "applied_tree": "18eec566acd3754396ec1844abe82822f11d9c15",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "--index",
+        "C:\\Users\\anaxe\\Documents\\Codex\\scalar-handoff-20261023\\scalar-extension.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--index",
+        "--binary",
+        "C:\\Users\\anaxe\\Documents\\Codex\\scalar-handoff-20261023\\scalar-extension.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "C:/Users/anaxe/Documents/Codex/scalar-handoff-20261023/scalar-extension.patch:1464: trailing whitespace.\n+   <path d=\"M 0 720 \nC:/Users/anaxe/Documents/Codex/scalar-handoff-20261023/scalar-extension.patch:1466: trailing whitespace.\n+L 1152 720 \nC:/Users/anaxe/Documents/Codex/scalar-handoff-20261023/scalar-extension.patch:1468: trailing whitespace.\n+L 1152 0 \nC:/Users/anaxe/Documents/Codex/scalar-handoff-20261023/scalar-extension.patch:1470: trailing whitespace.\n+L 0 0 \nC:/Users/anaxe/Documents/Codex/scalar-handoff-20261023/scalar-extension.patch:1472: trailing whitespace.\n+    <path d=\"M 63.36 257.04 \nwarning: squelched 8355 whitespace errors\nwarning: 8360 lines add whitespace errors.\n"
+    },
+    {
+      "argv": [
+        "git",
+        "write-tree"
+      ],
+      "exit_code": 0,
+      "stdout": "18eec566acd3754396ec1844abe82822f11d9c15\n",
+      "stderr": ""
+    }
+  ]
+}

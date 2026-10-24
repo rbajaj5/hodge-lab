@@ -1,0 +1,7 @@
+.lake/skew-scalar-extension-controls/controls-7etma_0j/positive-controls.lean:26:95: error: unexpected token '('; expected ':=', 'where' or '|'
+.lake/skew-scalar-extension-controls/controls-7etma_0j/positive-controls.lean:26:45: error: Type mismatch
+  Algebra.trace SplitField (SplitAlgebra SplitField)
+has type
+  SplitAlgebra SplitField →ₗ[SplitField] SplitField
+but is expected to have type
+  SplitField

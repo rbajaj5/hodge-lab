@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "executor": "Codex coordinator, separate exact examples",
+  "python": "3.11.9",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.3440000000009604,
+  "checker_sha256": "3efc3b15d8bcbe349ef4cc63bff89d98c3e851315348deb9ebf613618a48941a",
+  "cubic_quotient": "(x-1)(x^2-2)",
+  "extension": "Q(sqrt(2))/Q",
+  "evaluation_determinant": "2*sqrt(2)",
+  "generic_cubic_trace": "3*c0 + c1 + 5*c2 + 3*sqrt(2)*d0 + sqrt(2)*d1 + 5*sqrt(2)*d2",
+  "physical_specialization": {
+    "a": 0,
+    "v": 0,
+    "f": "x**18 + x**12 + 1"
+  },
+  "derivative_inverse": "x**13/62 + x**7/186 - 11*x/186",
+  "equalities": {
+    "beta_multiplication_0_0": "zero",
+    "beta_multiplication_0_1": "zero",
+    "beta_multiplication_0_2": "zero",
+    "beta_multiplication_1_0": "zero",
+    "beta_multiplication_1_1": "zero",
+    "beta_multiplication_1_2": "zero",
+    "beta_multiplication_2_0": "zero",
+    "beta_multiplication_2_1": "zero",
+    "beta_multiplication_2_2": "zero",
+    "arbitrary_tensor_trace": "zero",
+    "explicit_trace_formula": "zero",
+    "trace_one_is_three": "zero",
+    "trace_scalar_two_is_six": "zero",
+    "physical_derivative_inverse": "zero",
+    "physical_specialized_trace17": "zero",
+    "physical_specialized_trace11": "zero",
+    "physical_specialized_trace_one": "zero"
+  },
+  "detected_mutations": {
+    "incorrect_extension_degree_multiplier": "-3",
+    "incorrect_normalized_trace": "2",
+    "dropped_tensor_scalar": "3",
+    "physical_normalized_trace_mutation": "17"
+  },
+  "limits": [
+    "No generic scalar-extension theorem proved by these examples.",
+    "No physical source normalization, primitive or certificate."
+  ]
+}

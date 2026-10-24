@@ -1,0 +1,245 @@
+[
+  {
+    "label": "version",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:42.139484+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.681298417999642,
+    "expected_failure": false,
+    "log": "version.log",
+    "log_lf_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stdout": "version.stdout.log",
+    "stdout_sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b",
+    "stderr": "version.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mathlib-head",
+    "command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "execution_command": [
+      "git",
+      "-C",
+      ".lake/packages/mathlib",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:42.821102+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 0.00199680700461613,
+    "expected_failure": false,
+    "log": "mathlib-head.log",
+    "log_lf_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stdout": "mathlib-head.stdout.log",
+    "stdout_sha256": "b5017ae798c1946ebd517271aeaa1d44720270b74e96ea9b73222061b945ad55",
+    "stderr": "mathlib-head.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "build",
+    "command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+    ],
+    "execution_command": [
+      "lake",
+      "build",
+      "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:42.823381+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 1.376183870001114,
+    "expected_failure": false,
+    "log": "build.log",
+    "log_lf_sha256": "dfbe818597326eff48ec99ca9d6e9619551414e18d9946efc0302d3208505c64",
+    "stdout": "build.stdout.log",
+    "stdout_sha256": "dfbe818597326eff48ec99ca9d6e9619551414e18d9946efc0302d3208505c64",
+    "stderr": "build.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewScalarExtension.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "AuditSkewScalarExtension.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:44.199875+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.351737912002136,
+    "expected_failure": false,
+    "log": "axioms.log",
+    "log_lf_sha256": "4d68be95a6d9b0e9c98f3cc921b55c70c3156046ca6e1fa4777a2df9d3383e31",
+    "stdout": "axioms.stdout.log",
+    "stdout_sha256": "4d68be95a6d9b0e9c98f3cc921b55c70c3156046ca6e1fa4777a2df9d3383e31",
+    "stderr": "axioms.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "kernel-replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewScalarExtension.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      "ReplaySkewScalarExtension.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:46.552392+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 2.6842241140038823,
+    "expected_failure": false,
+    "log": "kernel-replay.log",
+    "log_lf_sha256": "155769e52edafc4ffc08d6d31d3965a6abe281804b14e606215c686133877e8e",
+    "stdout": "kernel-replay.stdout.log",
+    "stdout_sha256": "155769e52edafc4ffc08d6d31d3965a6abe281804b14e606215c686133877e8e",
+    "stderr": "kernel-replay.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "positive-controls",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/positive-controls.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/positive-controls.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:49.238086+00:00",
+    "bound_seconds": 120,
+    "exit_code": 0,
+    "elapsed_seconds": 3.8015008110014605,
+    "expected_failure": false,
+    "log": "positive-controls.log",
+    "log_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "positive-controls.stdout.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "positive-controls.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "normalized-trace-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/normalized-trace-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/normalized-trace-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:53.040439+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.4280886859996826,
+    "expected_failure": true,
+    "log": "normalized-trace-rejected.log",
+    "log_lf_sha256": "b71b73e596680c0fae6a4d42efad2271e50b2e3d07aeeaf264a2ca2716037742",
+    "stdout": "normalized-trace-rejected.stdout.log",
+    "stdout_sha256": "b71b73e596680c0fae6a4d42efad2271e50b2e3d07aeeaf264a2ca2716037742",
+    "stderr": "normalized-trace-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "dropped-scalar-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/dropped-scalar-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/dropped-scalar-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:55.470418+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.8738524619984673,
+    "expected_failure": true,
+    "log": "dropped-scalar-rejected.log",
+    "log_lf_sha256": "95e5fa0eba25dc09868f256154fd47db49888dc206de1b3bbe6a559780ffe159",
+    "stdout": "dropped-scalar-rejected.stdout.log",
+    "stdout_sha256": "95e5fa0eba25dc09868f256154fd47db49888dc206de1b3bbe6a559780ffe159",
+    "stderr": "dropped-scalar-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "slot-eleven-trace-one-rejected",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/slot-eleven-trace-one-rejected.lean"
+    ],
+    "execution_command": [
+      "lake",
+      "env",
+      "lean",
+      ".lake/skew-scalar-extension-controls/controls-ppz_j8az/slot-eleven-trace-one-rejected.lean"
+    ],
+    "cwd": "formal",
+    "started_utc": "2026-10-24T00:34:58.345111+00:00",
+    "bound_seconds": 120,
+    "exit_code": 1,
+    "elapsed_seconds": 2.6011087910010247,
+    "expected_failure": true,
+    "log": "slot-eleven-trace-one-rejected.log",
+    "log_lf_sha256": "047341efdb7d37a1cab455c88d0c67533731d7444ebf79c67e658cd20e66f210",
+    "stdout": "slot-eleven-trace-one-rejected.stdout.log",
+    "stdout_sha256": "047341efdb7d37a1cab455c88d0c67533731d7444ebf79c67e658cd20e66f210",
+    "stderr": "slot-eleven-trace-one-rejected.stderr.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

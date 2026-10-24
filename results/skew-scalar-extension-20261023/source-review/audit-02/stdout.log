@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SAVED_EVIDENCE_AUDIT",
+  "worker": "Pro adversarial source/receipt AI reviewer",
+  "completed_utc": "2026-10-24T00:36:27.423665+00:00",
+  "elapsed_seconds": 0.3810144349990878,
+  "parent": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "receipt": "results/skew-scalar-extension-20261023/lean-development/checker-02/validation.json",
+  "receipt_sha256": "6eb8b276c43f05d37c7b108d155512b311c88a552de3b1ece3b0d4aec46029c7",
+  "module_sha256": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+  "source_context_hashes_checked": 24,
+  "output_hashes_checked": 27,
+  "public_declarations": 51,
+  "new_modules_replayed_by_writer": 1,
+  "positive_controls_reported_by_writer": 19,
+  "negative_controls_verified": [
+    "normalized-trace-rejected",
+    "dropped-scalar-rejected",
+    "slot-eleven-trace-one-rejected"
+  ],
+  "development_attempts": [
+    {
+      "attempt": "attempt-01",
+      "exit_code": 1,
+      "elapsed_seconds": 11.45011998499831
+    },
+    {
+      "attempt": "attempt-02",
+      "exit_code": 1,
+      "elapsed_seconds": 5.392916757999046
+    },
+    {
+      "attempt": "attempt-03",
+      "exit_code": 0,
+      "elapsed_seconds": 5.409463827003492
+    },
+    {
+      "attempt": "attempt-04",
+      "exit_code": 1,
+      "elapsed_seconds": 5.586696188001952
+    },
+    {
+      "attempt": "attempt-05",
+      "exit_code": 0,
+      "elapsed_seconds": 5.643723115004832
+    }
+  ],
+  "parent_ledger_bytes": 407122,
+  "parent_ledger_sha256": "e29180ed04214ae15f796a5fddffda2eff268c50022eb3b957ac84a431512d8c",
+  "modified_preexisting_paths": [
+    ".github/workflows/lean.yml"
+  ],
+  "raw_identical_normalization_only_git_diff": [
+    "results/one-reflection-skew-rank-correction/discussion-127.md"
+  ],
+  "scope": "Read-only source/receipt/hash audit, not a Lean replay or remote CI run; old mathematics not executed."
+}

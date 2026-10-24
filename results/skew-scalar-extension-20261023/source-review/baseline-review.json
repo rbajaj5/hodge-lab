@@ -1,0 +1,55 @@
+{
+  "worker": "Pro adversarial source/receipt AI reviewer",
+  "utc": "2026-10-24T00:30:24.179699+00:00",
+  "parent_expected": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "head_observed": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "source_sha256": {
+    "AGENTS.md": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+    "LEDGER.md": "e29180ed04214ae15f796a5fddffda2eff268c50022eb3b957ac84a431512d8c",
+    "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+    "formal/HodgeLab/OneReflectionSkew/PhysicalCoverBinding.lean": "af2cd2030be987dc51b90f9311969ac45c9abb5cd22e5d855f4020aff2a1663b",
+    "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+    "formal/HodgeLab/OneReflectionSkew/TraceFreeBasis.lean": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+    "formal/fresh_receipts.py": "0f0024fae0a08b6981d89edf4d4d5063a03f3bcaa6880d6883a588bfbb249673",
+    "formal/check_skew_distinct_roots.py": "39cee47d3030ebe61252bfee5a241f3158053b38f72eb7b89771058a390ae2e4",
+    "results/skew-distinct-roots-20261023/lean-development/checker-02/validation.json": "8042bce23d5f79de6f3265da9b43ba0dcae9f42654d8a8b60a076dfb105d1835",
+    "results/skew-distinct-roots-20261023/coordinator-ci/40039653837/ci-receipt-review.json": "ed672b474712e59bcb73abfec8b0f39e2baee5fac67a3619b24b23bb00083412"
+  },
+  "parent_ledger_bytes": 407122,
+  "reused_not_executed": {
+    "distinct_root_local_status": "PASS",
+    "distinct_root_local_checks": {
+      "declarations": 48,
+      "replay": 1
+    },
+    "remote_ci_review_source": "results/skew-distinct-roots-20261023/coordinator-ci/40039653837/ci-receipt-review.json",
+    "remote_ci_review_keys": [
+      "status",
+      "commit",
+      "url",
+      "run_id",
+      "run_started_at",
+      "job_completed_at",
+      "source_context_hashes_verified",
+      "output_hashes_verified",
+      "declarations_audited",
+      "new_module_replays",
+      "positive_controls",
+      "negative_controls",
+      "focused_seconds",
+      "lean_version",
+      "artifact_zip_sha256",
+      "scope"
+    ]
+  },
+  "inspection_findings": [
+    "The concrete base, polynomial, splitting field and Fin18 tuple are already defined without irreducibility or quotient-field assumptions.",
+    "Root tuple is injective and all roots satisfy mapped literal f; new bridge must reuse it.",
+    "Source pin hashes remain historical provenance; no source or old receipt rewrite authorized.",
+    "New trace base change must be derived through actual left-L tensor algebra, not stipulated or replaced by field trace.",
+    "Arbitrary split vectors need not descend; optional derivative-weighted descent needs its element image proof.",
+    "Checker audit regex should include named instance or lemma declarations if new source uses them."
+  ],
+  "scope": "Source inspection and saved receipt reading only; no Lean or old mathematics executed",
+  "blocking_findings": []
+}

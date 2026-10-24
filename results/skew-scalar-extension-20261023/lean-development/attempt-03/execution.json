@@ -1,0 +1,18 @@
+{
+  "executor": "Pro scalar_lean AI worker",
+  "command": [
+    "lake",
+    "build",
+    "HodgeLab.OneReflectionSkew.ScalarExtensionTrace"
+  ],
+  "cwd": "formal",
+  "started_utc": "2026-10-24T00:31:58.919564+00:00",
+  "elapsed_seconds": 5.409463827003492,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "files_sha256": {
+    "ScalarExtensionTrace.lean.txt": "b7114b67cb72bd4a3881678f57cd8db25334ad9c1d88fac438b2d5ac5f14a6c4",
+    "stdout.log": "679c6cfde2f2d7030d93e66810415b181a904a05d8e581881513ee49cdc3a617",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

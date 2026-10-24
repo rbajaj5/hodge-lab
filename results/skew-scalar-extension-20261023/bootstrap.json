@@ -1,0 +1,30 @@
+{
+  "parent": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "upstream": "b790130d43b49ec0ddc6865d0bdc949eeeee2319",
+  "start_utc": "2026-10-24T00:27:29Z",
+  "math_deadline_utc": "2026-10-24T01:12:29Z",
+  "max_approaches": 2,
+  "lean_timeout_s": 120,
+  "checker_timeout_s": 600,
+  "network_timeout_s": 45,
+  "packaging_limit_s": 300,
+  "parent_ledger_bytes": 407122,
+  "parent_ledger_sha256": "e29180ed04214ae15f796a5fddffda2eff268c50022eb3b957ac84a431512d8c",
+  "executor": "Pro root integration",
+  "fetches": [
+    {
+      "command": "timeout 45 git fetch origin main",
+      "repository": "rbajaj5/hodge-lab",
+      "exit": 0,
+      "elapsed_s": 0.599891002
+    },
+    {
+      "command": "timeout 45 git fetch origin main",
+      "repository": "hodge-computer/sextics",
+      "exit": 0,
+      "elapsed_s": 0.22345851
+    }
+  ],
+  "goal_control": "User reports coordinator Goal active; no worker Goal or cross-chat control exposed",
+  "publication": "Coordinator only; no local commit or push authorized for worker"
+}

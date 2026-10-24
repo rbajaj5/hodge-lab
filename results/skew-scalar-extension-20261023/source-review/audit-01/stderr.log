@@ -1,0 +1,9 @@
+warning: in the working copy of 'results/one-reflection-skew-rank-correction/discussion-127.md', CRLF will be replaced by LF the next time Git touches it
+Traceback (most recent call last):
+  File "/workspace/scratch/b8974c152662/hodge-lab-scalar-extension/results/skew-scalar-extension-20261023/source-review/audit_saved_evidence.py", line 125, in <module>
+    main()
+  File "/workspace/scratch/b8974c152662/hodge-lab-scalar-extension/results/skew-scalar-extension-20261023/source-review/audit_saved_evidence.py", line 97, in main
+    require(set(historical_changes) <= {'README.md', 'LEDGER.md', '.github/workflows/lean.yml'},
+  File "/workspace/scratch/b8974c152662/hodge-lab-scalar-extension/results/skew-scalar-extension-20261023/source-review/audit_saved_evidence.py", line 13, in require
+    raise RuntimeError(message)
+RuntimeError: Unexpected pre-existing tracked file change: ['.github/workflows/lean.yml', 'results/one-reflection-skew-rank-correction/discussion-127.md']

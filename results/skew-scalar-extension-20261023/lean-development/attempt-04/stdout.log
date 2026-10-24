@@ -1,0 +1,18 @@
+⚠ [1827/2216] Replayed HodgeLab.OneReflectionSkew.TraceFreeBasis
+warning: HodgeLab/OneReflectionSkew/TraceFreeBasis.lean:69:36: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✖ [2446/2446] Building HodgeLab.OneReflectionSkew.ScalarExtensionTrace (4.4s)
+trace: .> LEAN_PATH=/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-pass/formal/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/b8974c152662/hodge-lab-scalar-extension/formal/.lake/build/lib/lean /workspace/scratch/b8974c152662/lean-environment/toolchains/leanprover--lean4---v4.31.0/bin/lean /workspace/scratch/b8974c152662/hodge-lab-scalar-extension/formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean -o /workspace/scratch/b8974c152662/hodge-lab-scalar-extension/formal/.lake/build/lib/lean/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.olean -i /workspace/scratch/b8974c152662/hodge-lab-scalar-extension/formal/.lake/build/lib/lean/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.ilean -c /workspace/scratch/b8974c152662/hodge-lab-scalar-extension/formal/.lake/build/ir/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.c --setup /workspace/scratch/b8974c152662/hodge-lab-scalar-extension/formal/.lake/build/ir/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.setup.json --json
+error: HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean:172:12: Function expected at
+  Separable.map generic_separable
+but this term has type
+  (map ?m.10 genericPolynomial).Separable
+
+Note: Expected a function because this term is being applied to the argument
+  (AdjoinRoot.mk genericPolynomial)
+error: HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean:171:56: unsolved goals
+⊢ IsUnit derivativeElement
+error: Lean exited with code 1
+Some required targets logged failures:
+- HodgeLab.OneReflectionSkew.ScalarExtensionTrace

@@ -1,0 +1,71 @@
+{
+  "status": "PASS_READ_ONLY_ADVERSARIAL_REVIEW",
+  "worker": "Pro adversarial source/receipt AI reviewer",
+  "completed_utc": "2026-10-24T00:37:21.450130+00:00",
+  "parent": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "reviewed_sha256": {
+    "formal/HodgeLab/OneReflectionSkew/ScalarExtensionTrace.lean": "834ba9f7ee1fdbfa3b378a9c3c693070ecfc60d10a005806c8b3c0e32912d0f7",
+    "formal/check_skew_scalar_extension.py": "012efb04b63afa087e45dc0469dce76e747f592025271c49ed82796a6d3ea5e4",
+    "formal/AuditSkewScalarExtension.lean": "bacd7b6a6e0217f2391cf9bf5887f2d8ee9bd9b8520162e8fd2b9b90abfadf7b",
+    "formal/ReplaySkewScalarExtension.lean": "fe7ee78a8f7d0fe8ce514d84ee23586c4fcf2b645622890be71e378e7b0e5192",
+    "formal/results/skew-scalar-extension/inputs.json": "29d378d18abb807f765003ba1171d89aed43cc65fb3effa43eaa73dc19fd9b1e",
+    "results/skew-scalar-extension-20261023/source-pins.json": "31cebf14089711c8bca1d3375f74fffc3c708f69366a59047596a99cc4d76bba",
+    "notes/skew-scalar-extension-trace.md": "05bae2dc50b428d6552bdf1974480523d480a79ffcb28db9a15d0bfd1d919638",
+    ".github/workflows/lean.yml": "6bc9b6352d325f9e675b5b96436963c2dbbaf70b6c7587da1b75136fc565dedf"
+  },
+  "receipt_sha256": "6eb8b276c43f05d37c7b108d155512b311c88a552de3b1ece3b0d4aec46029c7",
+  "saved_evidence_audit": "audit-02/stdout.log",
+  "executed_here": [
+    "Python -O read-only saved-evidence/hash audit (0.381 seconds); no Lean command or old mathematical checker"
+  ],
+  "reported_and_checked_from_writer": [
+    "Focused checker PASS:51 declaration/instance audits,1 new-module replay,19 positive controls,3 intended false-goal controls;18.815111 seconds.",
+    "All27 command output hashes and24 source/context hashes checked against saved bytes.",
+    "Five exact development snapshots/logs retained; attempts01,02,04 failed and03,05 passed."
+  ],
+  "mathematical_gates": {
+    "actual_quotient_and_left_scalar_tensor": true,
+    "actual_product_and_existing_split_quotient_isomorphisms": true,
+    "canonical_theta_and_scalar_images": true,
+    "explicit_mapped_polynomial_equality": true,
+    "finite_free_instances_and_rank18": true,
+    "arbitrary_e_trace_base_change_derived": true,
+    "arbitrary_z_trace_transport": true,
+    "tensor_scalar_multiplier_preserved": true,
+    "quotient_inverse_derivative_constructed_without_field_assumption": true,
+    "derivative_inverse_and_weight_images_proved": true,
+    "slot17_trace1_and_slot11_trace0_in_E": true,
+    "coefficient_map_injectivity_used_for_pullback": true
+  },
+  "control_findings": [
+    "All three negative controls exit1 with exactly one intended unsolved False goal.",
+    "No unknown identifier/typeclass or timeout error substitutes for the intended false goals.",
+    "Normalized trace1, dropped tensor scalar and wrong slot11 trace are rejected.",
+    "Audited axioms restricted to propext,Classical.choice,Quot.sound; all four named instances included."
+  ],
+  "source_and_workflow_findings": [
+    "Historical sources and receipts remain immutable and are checked before and after the new checker.",
+    "Fresh output allocation rejects existing or protected historical directories before exception-handler writes.",
+    "One focused CI step added; existing fresh-receipt artifact upload includes its outputs.",
+    "Current note correctly separates generic scope, explicit transported elements and physical differential-source normalization.",
+    "No field trace L/K, [L:K] multiplier, irreducibility premise,E-field premise or arbitrary split-vector descent is introduced."
+  ],
+  "ledger_prefix_checked": {
+    "bytes": 407122,
+    "sha256": "e29180ed04214ae15f796a5fddffda2eff268c50022eb3b957ac84a431512d8c",
+    "preserved": true
+  },
+  "retained_review_failure": {
+    "record": "audit-01/execution.json",
+    "cause": "Git clean-filter normalization reported one old CRLF file as changed although raw and index bytes exactly match the parent.",
+    "resolution": "audit-02 checks raw and staged historical bytes; diagnostic saved in raw-newline-diagnostic.json.",
+    "publication_constraint": "Do not stage results/one-reflection-skew-rank-correction/discussion-127.md."
+  },
+  "blocking_findings": [],
+  "limits": [
+    "Separate AI review, not independent human review.",
+    "No new remote CI run or notebook publication by this worker.",
+    "Root remains responsible for final staged tree, appended ledger and handoff packaging.",
+    "No physical source normalization,primitive,global clearing,certificate or solve established."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "timestamp_utc": "2026-10-24T00:31:37.738222+00:00",
+  "executor": "Pro AI mathematical/API reviewer /root/scalar_math",
+  "parent": "716174af1c83b45e4a7c3db8f97a11eb0a3126bb",
+  "inspection_only": true,
+  "lean_executions": 0,
+  "old_math_replays": 0,
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 4655,
+      "sha256": "434be4c867be39b4cc03ba224acef00cd224ce6b52c8c12f0d06c324882af25b",
+      "kind": "notebook source"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/GenericDistinctRoots.lean",
+      "bytes": 10503,
+      "sha256": "7edbe6bde88a36cc68e33cb270cc8a349449ab45e4699df91d806be94138f08b",
+      "kind": "notebook source"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/SplitTraceQuotient.lean",
+      "bytes": 8377,
+      "sha256": "509d51552fff6feece42bf3b9c010f9cb69261bc099b3ec2c52c306fb26b56a8",
+      "kind": "notebook source"
+    },
+    {
+      "path": "formal/HodgeLab/OneReflectionSkew/TraceFreeBasis.lean",
+      "bytes": 7471,
+      "sha256": "e97dff24cf9b7312f6774bfd5ff2668411d44a4f5534c5623ca14947d1b3b68f",
+      "kind": "notebook source"
+    },
+    {
+      "path": "Mathlib/LinearAlgebra/Trace.lean",
+      "bytes": 18672,
+      "sha256": "ea870dd5988e171dd6a13f3940402f9cef924b607c060d074d9c9997edd350bb",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/RingTheory/TensorProduct/Basic.lean",
+      "bytes": 30865,
+      "sha256": "278aed437b7144d410004e1e9fbb6a04269eb46be50989d369ddd1f6fb7bc406",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/RingTheory/TensorProduct/Free.lean",
+      "bytes": 4595,
+      "sha256": "1b73dc87cbd8a6103e6c93f475b122b1736f033d2df13d2c8dc9c8f29b3ec5ce",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/RingTheory/TensorProduct/Quotient.lean",
+      "bytes": 6471,
+      "sha256": "368a99b4b993dd6995fa6bc8913568523bc378a7dc952b6d6f9054f572951624",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/RingTheory/Trace/Basic.lean",
+      "bytes": 26336,
+      "sha256": "083ba3f8b44471d42de338dc7e60cb64dd937efe2099a9797000ceaca95cdcc9",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/RingTheory/AdjoinRoot.lean",
+      "bytes": 45287,
+      "sha256": "3d672d875924ec581e4391b422698e1f527ecd53de54233ce19319d1b4508671",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/RingTheory/Coprime/Basic.lean",
+      "bytes": 24209,
+      "sha256": "24c16c1598b7f647fa5039cc141fab9de7814ab311737529ba3077906c20dc93",
+      "kind": "Mathlib API source"
+    },
+    {
+      "path": "Mathlib/Algebra/Group/Units/Defs.lean",
+      "bytes": 24050,
+      "sha256": "f91c99a3cbbe567cc42b0db937c4bcffe5840bc858ea37ee3b622820c90fffe6",
+      "kind": "Mathlib API source"
+    }
+  ],
+  "selected_approach": "Direct tensor evaluation + interpolation surjectivity + equal finite dimensions; trace base change through multiplication linear maps",
+  "alternative_not_selected": "Generic tensor-quotient and polynomial tensor equivalences",
+  "APIs": [
+    "AlgHom.liftEquiv",
+    "AlgHom.liftEquiv_tmul",
+    "AdjoinRoot.liftAlgHom",
+    "AdjoinRoot.powerBasis",
+    "Algebra.TensorProduct.basis",
+    "Algebra.TensorProduct.basis_apply",
+    "Algebra.baseChange_lmul",
+    "LinearMap.trace_baseChange",
+    "Algebra.trace_eq_of_algEquiv",
+    "TraceFreeBasis.algebra_trace_eq_sum",
+    "SplitTraceQuotient.evaluationEquiv"
+  ],
+  "limits": [
+    "Source inspection and mathematical review are not new Lean execution.",
+    "No source-to-Hessian, physical normalization, numerical root or separability rerun.",
+    "Sigma maps are algebra homomorphisms and are not assumed individually injective."
+  ]
+}

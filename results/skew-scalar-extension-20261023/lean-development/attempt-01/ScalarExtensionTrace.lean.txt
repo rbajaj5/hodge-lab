@@ -1,0 +1,155 @@
+import HodgeLab.OneReflectionSkew.GenericDistinctRoots
+import Mathlib.RingTheory.TensorProduct.Maps
+import Mathlib.RingTheory.TensorProduct.Finite
+import Mathlib.RingTheory.Trace.Basic
+
+/-!
+The literal physical quotient over K=Q(v)(t)(a), its scalar extension to the
+specified splitting field, and trace compatibility for arbitrary elements.
+The tensor algebra has its standard left L-algebra structure. No quotient
+field or irreducibility assumption is made.
+-/
+noncomputable section
+
+namespace HodgeLab.OneReflectionSkew.ScalarExtensionTrace
+
+open scoped TensorProduct BigOperators
+open Polynomial Module GenericDistinctRoots TraceFreeBasis SplitTraceQuotient
+
+abbrev E := AdjoinRoot genericPolynomial
+abbrev T := SplitField ⊗[BaseField] E
+abbrev Q := CoverAlgebra (1 : SplitField) roots
+
+def theta : E := AdjoinRoot.root genericPolynomial
+
+theorem generic_monic : genericPolynomial.Monic :=
+  PhysicalCoverBinding.physical_monic genericA genericV
+
+instance finiteE : Module.Finite BaseField E := generic_monic.finite_adjoinRoot
+instance freeE : Module.Free BaseField E := generic_monic.free_adjoinRoot
+instance finiteT : Module.Finite SplitField T := inferInstance
+instance freeT : Module.Free SplitField T := inferInstance
+
+def quotientBasis : Basis (Fin genericPolynomial.natDegree) BaseField E :=
+  (AdjoinRoot.powerBasis' generic_monic).basis
+
+def tensorBasis : Basis (Fin genericPolynomial.natDegree) SplitField T :=
+  Algebra.TensorProduct.basis SplitField quotientBasis
+
+theorem finrankE : finrank BaseField E = 18 := by
+  rw [Module.finrank_eq_card_basis quotientBasis]
+  simpa using generic_degree
+
+theorem finrankT : finrank SplitField T = 18 := by
+  rw [Module.finrank_eq_card_basis tensorBasis]
+  simpa using generic_degree
+
+/-- Each root gives a K-algebra map from the actual quotient. -/
+def sigma (j : Fin 18) : E →ₐ[BaseField] SplitField :=
+  AdjoinRoot.liftAlgHom genericPolynomial (Algebra.ofId BaseField SplitField)
+    (roots j) (roots_aeval j)
+
+theorem sigma_theta (j : Fin 18) : sigma j theta = roots j := by
+  simp [sigma, theta]
+
+def allEvaluations : E →ₐ[BaseField] SplitAlgebra SplitField :=
+  Pi.algHom BaseField (fun _ : Fin 18 => SplitField) sigma
+
+/-- The forward comparison map uses the standard left scalar structure. -/
+def betaHom : T →ₐ[SplitField] SplitAlgebra SplitField :=
+  Algebra.TensorProduct.lift (Algebra.ofId SplitField (SplitAlgebra SplitField))
+    allEvaluations (fun _ _ => Commute.all _ _)
+
+theorem betaHom_tmul (l : SplitField) (e : E) (j : Fin 18) :
+    betaHom (l ⊗ₜ[BaseField] e) j = l * sigma j e := rfl
+
+theorem betaHom_theta : betaHom (1 ⊗ₜ[BaseField] theta) = roots := by
+  ext j
+  simp [betaHom_tmul, sigma_theta]
+
+theorem betaHom_surjective : Function.Surjective betaHom := by
+  intro y
+  refine ⟨aeval (1 ⊗ₜ[BaseField] theta) (Lagrange.interpolate Finset.univ roots y), ?_⟩
+  rw [← Polynomial.aeval_algHom_apply, betaHom_theta]
+  ext j
+  rw [Polynomial.aeval_pi_apply₂]
+  exact Lagrange.eval_interpolate_at_node y roots_injective.injOn (Finset.mem_univ j)
+
+theorem betaHom_bijective : Function.Bijective betaHom := by
+  have hd : finrank SplitField T = finrank SplitField (SplitAlgebra SplitField) := by
+    rw [finrankT]
+    simp [SplitAlgebra]
+  exact ⟨(LinearMap.injective_iff_surjective_of_finrank_eq_finrank hd
+    (f := betaHom.toLinearMap)).mpr betaHom_surjective, betaHom_surjective⟩
+
+/-- Actual isomorphism with the entire eighteen-component split algebra. -/
+def beta : T ≃ₐ[SplitField] SplitAlgebra SplitField :=
+  AlgEquiv.ofBijective betaHom betaHom_bijective
+
+theorem beta_tmul (l : SplitField) (e : E) (j : Fin 18) :
+    beta (l ⊗ₜ[BaseField] e) j = l * sigma j e := betaHom_tmul l e j
+
+theorem beta_theta : beta (1 ⊗ₜ[BaseField] theta) = roots := betaHom_theta
+
+theorem beta_scalar (l : SplitField) : beta (l ⊗ₜ[BaseField] (1 : E)) = fun _ => l := by
+  ext j
+  simp [beta_tmul]
+
+/-- Comparison with the pre-existing split polynomial quotient itself. -/
+def quotientComparison : T ≃ₐ[SplitField] Q :=
+  beta.trans (evaluationEquiv 1 one_ne_zero roots roots_injective).symm
+
+theorem quotientComparison_evaluation (z : T) :
+    evaluationEquiv 1 one_ne_zero roots roots_injective (quotientComparison z) = beta z := by
+  simp [quotientComparison]
+
+theorem quotientComparison_theta :
+    quotientComparison (1 ⊗ₜ[BaseField] theta) =
+      AdjoinRoot.root (coverPolynomial (1 : SplitField) roots) := by
+  apply (evaluationEquiv 1 one_ne_zero roots roots_injective).injective
+  rw [quotientComparison_evaluation, beta_theta, evaluationEquiv_root]
+
+/-- Trace commutes with scalar extension of multiplication, for every e. -/
+theorem trace_baseChange (e : E) :
+    baseToSplit (Algebra.trace BaseField E e) =
+      Algebra.trace SplitField T (1 ⊗ₜ[BaseField] e) := by
+  change algebraMap BaseField SplitField
+    (LinearMap.trace BaseField E (Algebra.lmul BaseField E e)) =
+    LinearMap.trace SplitField T (Algebra.lmul SplitField T (1 ⊗ₜ[BaseField] e))
+  rw [← Algebra.baseChange_lmul, LinearMap.trace_baseChange]
+
+/-- Conjugacy transports multiplication traces for every tensor element. -/
+theorem trace_beta (z : T) :
+    Algebra.trace SplitField T z = Algebra.trace SplitField (SplitAlgebra SplitField) (beta z) :=
+  (Algebra.trace_eq_of_algEquiv beta z).symm
+
+theorem trace_quotientComparison (z : T) :
+    Algebra.trace SplitField T z = Algebra.trace SplitField Q (quotientComparison z) :=
+  (Algebra.trace_eq_of_algEquiv quotientComparison z).symm
+
+theorem trace_eq_sum (z : T) :
+    Algebra.trace SplitField T z = ∑ j, beta z j := by
+  rw [trace_beta, algebra_trace_eq_sum]
+
+theorem trace_evaluations (e : E) :
+    baseToSplit (Algebra.trace BaseField E e) = ∑ j, sigma j e := by
+  rw [trace_baseChange, trace_eq_sum]
+  simp [beta_tmul]
+
+theorem trace_tmul (l : SplitField) (e : E) :
+    Algebra.trace SplitField T (l ⊗ₜ[BaseField] e) =
+      l * baseToSplit (Algebra.trace BaseField E e) := by
+  rw [trace_eq_sum, trace_evaluations]
+  simp [beta_tmul, Finset.mul_sum]
+
+theorem trace_one : Algebra.trace BaseField E 1 = 18 := by
+  apply baseToSplit_injective
+  rw [trace_evaluations]
+  simp
+
+theorem trace_two_tmul_one :
+    Algebra.trace SplitField T ((2 : SplitField) ⊗ₜ[BaseField] (1 : E)) = 36 := by
+  rw [trace_tmul, trace_one]
+  norm_num
+
+end HodgeLab.OneReflectionSkew.ScalarExtensionTrace
