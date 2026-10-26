@@ -1,0 +1,139 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-10-26T15:27:24.305679+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+      "url": "https://github.com/hodge-computer/sextics/commit/27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+      "message": "Merge pull request #205 from hodge-computer/codex/discussion-details\n\nRender collapsible comments and add smooth arrow-key exploration",
+      "committer_date": "2026-10-24T13:36:01Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "8a43e161eff1b24dbf1c62ff16967a90d42b3158",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/8a43e161eff1b24dbf1c62ff16967a90d42b3158",
+      "message": "Record reported coupled-Klein obstructions and verification limits",
+      "committer_date": "2026-10-26T04:22:38Z"
+    }
+  },
+  "repository_baseline": "repository-heads-20261026T142539Z.json",
+  "repository_head_unchanged": true,
+  "target_policy_pin_count": 383,
+  "target_policy_changes": [],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261026T142540Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261026T152710Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 1,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 8,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [
+    {
+      "discussion": 113,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIl9O",
+        "url": "https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838",
+        "createdAt": "2026-10-19T03:15:29Z",
+        "updatedAt": "2026-10-19T04:00:34Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "29f3de2477a12c20e3501b66c5c88b8400f6592603382a345fa23a2767051d95"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIl9O",
+        "url": "https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838",
+        "createdAt": "2026-10-19T03:15:29Z",
+        "updatedAt": "2026-10-26T14:40:14Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "82745165338932350b414cde777a2c9d5ceb69f4842761088ee221a795b26dd2"
+      }
+    }
+  ],
+  "metadata_changes": [],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

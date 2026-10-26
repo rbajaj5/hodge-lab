@@ -6950,3 +6950,32 @@ upstream post, reply, edit or PR occurred; Posts 1–30 remain unchanged. Tally:
 **30 discussion contributions, one closed maintenance PR, zero accepted
 authored solves**. The separate unpublished #61 research attempt remains
 outside this monitor. Notebook push and remote readback are recorded separately.
+
+
+### Checkpoint 160 — 26 October 2026, 11:27 EDT / 15:27 UTC: split-ternary discussion distinguishes earlier calculations from accepted proof
+
+**Bounded monitoring; Hodge Lab only.** At 14:40:14 UTC, kejace / Kristoffer
+Josefsson prepended a dated clarification to [comment 19029838 in #113](https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838).
+It credits fqlx / Ben Burns for the accepted existence proof in PR159 and
+distinguishes that proof from kejace's earlier small-denominator calculations.
+The entire earlier body is unchanged. Historical no-proof wording is not
+current acceptance status; no expanded witness or degree bound is inferred.
+
+The [status note and evidence](notes/split-ternary-monitor-20261026.md) bind
+the clarification to the pinned published acceptance receipt. Its outer
+formalAcceptance=true records acceptance/publication on 20 October; the
+embedded protected check records kernelReplay=true and witnessChecked=false.
+Ledger entry 97 already recorded this solve and its attribution. This is
+**not new acceptance, a new mathematical result, or new credit to rbajaj5**.
+We checked source identity and receipt metadata, not mathematics or Lean.
+
+All pages of 14 threads (39 comments, 20 replies) were collected. One existing
+comment body/update timestamp changed, while its discussion-level timestamp
+did not; no records were added or removed. Both heads remain pinned at
+upstream `27f4bb9ad8757e5841f884d9d30124a3c97a847d` and Hodge Lab parent
+`8a43e161eff1b24dbf1c62ff16967a90d42b3158`; all 383 target/policy pins match.
+README and earlier ledger text remain unchanged. This ordinary maintenance
+requires no research visualization. No upstream action occurred; Posts 1–30
+and the tally remain **30 discussion contributions, one closed maintenance
+PR, zero accepted authored solves**. Notebook push/readback are recorded
+separately. The unpublished #61 research attempt remains outside this monitor.

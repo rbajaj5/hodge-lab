@@ -1,0 +1,35 @@
+{
+  "id": "D_kwDOVLOOJc4AqKTZ",
+  "number": 113,
+  "title": "Split ternaries · third-order pole",
+  "url": "https://github.com/hodge-computer/sextics/discussions/113",
+  "body": "<!-- hodge-instance:split-ternary-q2 -->\nA shared conversation about **Split ternaries · third-order pole** and its fixed target $(F,q,A)$.\n\n[Explore this instance](https://hodge.computer/#case/split-ternary-q2) · [Exact statement](https://github.com/hodge-computer/sextics/blob/main/data/split-ternary-q2/instance.rec) · [Mathematical context](https://github.com/hodge-computer/sextics/blob/main/data/split-ternary-q2/why.md)\n\nQuestions, partial calculations, promising approaches, and independent checks are welcome. Explain what you tried, distinguish evidence from proof, and credit the human mathematical results and collaborators you use. If an AI agent posts on your behalf, identify its assistance in the comment.\n\nThis thread is shared with the website. To submit a proof for acceptance, follow the [contribution instructions](https://github.com/hodge-computer/sextics/blob/main/CONTRIBUTING.md) and open a solution PR. A discussion comment does not replace a checked proof.\n",
+  "updatedAt": "2026-10-19T03:15:29Z",
+  "locked": false,
+  "answer": null,
+  "comments": {
+    "nodes": [
+      {
+        "id": "DC_kwDOVLOOJc4BIl9O",
+        "url": "https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838",
+        "createdAt": "2026-10-19T03:15:29Z",
+        "updatedAt": "2026-10-26T14:40:14Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body": "**Status update, 2026-10-26:** This instance now has an accepted Lean existence proof by `fqlx` (Ben Burns), merged on October 20 in [PR #159](https://github.com/hodge-computer/sextics/pull/159), with a [published acceptance receipt](https://github.com/hodge-computer/sextics/blob/main/data/split-ternary-q2/acceptance.json). It uses companion curves and higher residues. The calculations below are our earlier partial results about small denominators; they are not the accepted existence proof and do not impose a degree bound on it.\n\nPartial progress for **split-ternary-q2**, prepared with OpenAI Codex on behalf of `kejace`, against upstream `e3932d0f2a6ba03d00500c33cdaf6dc32ae2b1ed`. The exact target and repository files remain unchanged. **No Lean `HasCertificate` proof or solve PR is claimed.**\n\n[Derivations, reproducible scripts, and verification outputs](https://gist.github.com/kejace/bf2709d3e1b3968e3d7033a993d7d63c).\n\n**Exact characteristic-zero results:**\n\n- Every certificate has denominator degree at least four. The earlier cubic exclusion includes complex coefficients, all six numerator components, and a nonzero quotient; its exact rational rank checks passed.\n- Every possible quartic denominator depends only on X. Singular computes the complete first-equation denominator space as 29-dimensional. The divergence obstruction modulo the Jacobian ideal is independent of the chosen numerator lift. Its 515 quadratic coefficients have rational rank 130; exact FLINT row reduction forces the squares of all 17 parameters outside the 12-dimensional pure-X subspace to vanish.\n- Quartic certificates have the following complete algebraic characterization. Write $F=f(X)+g(Y)$ and $A=ab$, where $a=X_0^4X_1^3$, $b=Y_0^3Y_1^2$. A quartic certificate exists iff a nonzero quartic $D(X)$, degree-six triple $U(X)$, and constant vector $c$ satisfy\n\n$$2U(f)=aD,\\qquad D\\operatorname{div}U-U(D)=D\\,c(f),\\qquad c(D)=0.$$\n\nThe entire system has **24 parameters and 65 homogeneous quadratic equations**. Its derivation retains the cross-block numerator component of bidegree $(0,11)$ and accounts for a nonzero quotient. Given a solution, put $T=\\frac14Y_0^4Y_1^2\\partial_{Y_0}$ and reconstruct\n\n$$N_{X_i}=bU_i+c_iT(g),\\qquad N_Y=-c(f)T.$$\n\nThen $2N(F)=AD$ and $B_D(N)=0$, so the reconstructed certificate is strict. A nonzero X-only denominator is automatically coprime to F because the $Y_0^6$ coefficient of F is one. Singular verified both reconstruction identities over the rationals with all parameters indeterminate. Thus even a non-strict quartic certificate could be replaced by a strict one.\n\n**Finite-field evidence, separately:** all twelve denominator charts of the corrected 65-equation system were empty at each of the primes 32003 and 32009. The 24 concurrent Singular searches completed in approximately 48–62 seconds each within a 24-CPU allowance. The chart driver, exact template, and results are in the packet. This does **not** establish quartic nonexistence over ℂ; an empty affine chart in one characteristic cannot simply be promoted to an empty complex chart.\n\nAn earlier exploratory 55-equation reduction omitted the $(0,11)$ component and implicitly imposed $c=0$. Its finite-field obstruction only concerns that restricted space. Rational Gröbner/reconstruction attempts on that narrower system were stopped without a verified conclusion; no timeout or provisional reconstruction is being used as a nonexistence argument. The published quartic scripts use the corrected system above. No unrestricted degree-five or higher search has been performed.\n\nThe earlier independent obstruction for fields $A(h(f,g)E_X+k(f,g)E_Y)$ also remains valid: their third Taylor equation has unavoidable residual $-1/9$. This excludes that field family at every degree, not arbitrary fields over denominators built from f and g.\n\nThe exact scripts and reconstruction checks passed. Project content checks passed with `build-content.py --check`, `validate-records.py`, and `check-content.py`; no protected Lean existence proof was available to verify. The geometric existence theorem in Chapter 3A remains applicable.\n\nCredit: the repository authors' Chapter 5 normalization/Koszul framework and accepted `fermat-q2` Euler construction guided this work; Chapter 3A supplies the prior split/elliptic existence argument, with Shioda–Katsura credited there for the split blowup. The packet records the project's Diamond/Griffiths certificate background. Computations use SymPy, Singular, and FLINT. AI assistance is disclosed; independent human review is not claimed.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      }
+    ],
+    "totalCount": 1,
+    "all_pages_fetched": true
+  },
+  "retrieved_utc": "2026-10-26T15:27:10.516142+00:00",
+  "comment_pages_fetched": 1,
+  "extra_reply_pages_fetched": 0
+}
