@@ -1,0 +1,136 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-10-26T04:17:28.287671+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+      "url": "https://github.com/hodge-computer/sextics/commit/27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+      "message": "Merge pull request #205 from hodge-computer/codex/discussion-details\n\nRender collapsible comments and add smooth arrow-key exploration",
+      "committer_date": "2026-10-24T13:36:01Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "af56c67901a5b178e033be8ca1c7655b95112d8f",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/af56c67901a5b178e033be8ca1c7655b95112d8f",
+      "message": "Exclude bounded A-eighth-power current family with checked certificate",
+      "committer_date": "2026-10-24T18:40:16Z"
+    }
+  },
+  "repository_baseline": "repository-heads-20261026T031345Z.json",
+  "repository_head_unchanged": true,
+  "target_policy_pin_count": 383,
+  "target_policy_changes": [],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261026T031345Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261026T041715Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 1,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 8,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [
+    {
+      "discussion": 116,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJMgE",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19187716",
+        "createdAt": "2026-10-26T03:27:03Z",
+        "updatedAt": "2026-10-26T03:27:03Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "001800eadd872dccb0e0bc93f952815ce014a19a272852aa50a0ce791f2935f3"
+      }
+    }
+  ],
+  "metadata_changes": [
+    {
+      "discussion": 116,
+      "field": "updatedAt",
+      "before": "2026-10-17T18:15:22Z",
+      "after": "2026-10-26T03:27:03Z"
+    }
+  ],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

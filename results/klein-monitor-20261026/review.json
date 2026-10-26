@@ -1,0 +1,52 @@
+{
+  "observed_utc": "2026-10-26T04:17:15.026457+00:00",
+  "recorded_utc": "2026-10-26T04:19:16.434989+00:00",
+  "scope": "Bounded monitoring and notebook status maintenance; no mathematical replay or upstream publication.",
+  "notebook_parent": "af56c67901a5b178e033be8ca1c7655b95112d8f",
+  "upstream_head": "27f4bb9ad8757e5841f884d9d30124a3c97a847d",
+  "discussion_url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19187716",
+  "body_sha256": "001800eadd872dccb0e0bc93f952815ce014a19a272852aa50a0ce791f2935f3",
+  "new_comments": 1,
+  "edited_or_removed_records": 0,
+  "metadata_changes": [
+    "#116 updatedAt"
+  ],
+  "threads": 14,
+  "comments": 39,
+  "replies": 20,
+  "all_pages_fetched": true,
+  "target_policy_pins": 383,
+  "target_policy_changes": 0,
+  "klein_acceptance_receipt_present": false,
+  "linked_packet": {
+    "url": "https://gist.github.com/fqlx/a66456607d1bb86dee4294fa2128f692/06d3d8e2bd59cb6496b1a31e9b9399fdebf82d0a",
+    "downloaded": false,
+    "audited": false
+  },
+  "separate_read_only_review": "klein_monitor_scope: claim boundaries, remaining open families, attribution; no replay or file edits",
+  "commands": [
+    "python -X utf8 work/read_hodge_repository_heads.py",
+    "python -X utf8 work/run_bounded_discussion_monitor.py",
+    "python -X utf8 work/compare_hodge_monitor.py repository-heads-20261026T031345Z.json"
+  ],
+  "request_timeout_seconds": 45,
+  "discussion_total_timeout_seconds": 240,
+  "mathematical_replay": false,
+  "upstream_actions": [],
+  "contribution_tally_changed": false,
+  "ledger_prefix": {
+    "bytes": 514519,
+    "sha256": "f4d303ebf0da5ca50fa90d80eee2545793f8d591cc559b09e9e4aa6085ba4ba7",
+    "preserved_exactly": true
+  },
+  "evidence_sha256": {
+    "discussion-116.json": "5c90f87c41ae279f4df4a752b3a70555d71898da44faa788dd5f5aa81d2c8218",
+    "discussion-116.md": "af98f42cd2d10dc00fbfb5325f4005630fa9931e2e858e31d2291d53fee95c07",
+    "comparison.json": "6f8100b017909626f4fda54e23af779202097fe6f6425a8aca69ddd93d7b092a",
+    "repository-heads.json": "f5f968c6f54c206933fc7e52a1780daefb2344e9653b182da2a2b52dfbd47a20",
+    "repository-before.json": "e21957888922fa700b6de65c524f405a44673b4fe35f00ad65e76ef173717b23",
+    "discussion-manifest.json": "d0857e1e714c85e8f0f78ea1d7da839355305102d37826cb4467491f5036e00e",
+    "discussion-before.json": "759470333de6a4585fd4fe96517ecbb3da5b25ecc6cd907510959bda34c53987",
+    "run.json": "442541e1c1f6839f32f257c154733f07950b7164f9ac7ad3dfb3ba78fab19dad"
+  }
+}

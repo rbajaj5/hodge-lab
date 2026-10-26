@@ -17,6 +17,8 @@ Lean is benched in the current solution-focused batch at the user's direction.
 
 **Snapshot: 23 October 2026, 21:44 UTC.** Upstream at [`4a8e09b`](https://github.com/hodge-computer/sextics/tree/4a8e09b6002d250094cb1c1152a6026c55030ead/data) still has **82 targets: 66 accepted and 16 open**. All target `F/q/A` fields and acceptance receipts match the previous pin; generated catalogue files have moved out of Git. [Latest status, source paths and verification scope](notes/catalogue-prym-monitor-20261023.md).
 
+**Monitoring update: 26 October 2026, 04:17 UTC.** fqlx reports two construction-family obstructions for `klein-coupled-character`; the target remains open. No acceptance records changed. [Report and verification limits](notes/klein-monitor-20261026.md).
+
 | Target | Upstream status | Notebook entry point |
 | --- | --- | --- |
 | `one-reflection-skew` | **Open.** The feedback describes bounded obstructions and a remaining rational-primitive problem. | [Feedback, attribution, and verification limits](notes/one-reflection-skew-feedback-audit.md) · [Degree-seven calculations](notes/one-reflection-skew-degree7.md) |
@@ -24,6 +26,7 @@ Lean is benched in the current solution-focused batch at the user's direction.
 | `cycle-three` | **Accepted existence proof**, credited to `hodgepodgeconjecture` in [PR165](https://github.com/hodge-computer/sextics/pull/165). | [Earlier bounded exclusions](notes/fresh-instance-degree6.md) · [Acceptance audit](LEDGER.md) |
 | `mixed-biweight` | **Accepted existence proof**, credited to `fqlx` in [PR170](https://github.com/hodge-computer/sextics/pull/170), merged and published on 21 October. | [Bounded denominator calculation](notes/mixed-degree6-extra.md) |
 | `mixed-polar` | **Accepted existence proof**, credited to `benediamond` in [PR182](https://github.com/hodge-computer/sextics/pull/182), accepted 22 October UTC (21 October EDT). | [Acceptance, attribution and verification limits](notes/upstream-status-20261022.md) |
+| `klein-coupled-character` | **Open.** fqlx reports obstructions to two specified construction families; broader controls remain open. Not independently replayed here. | [Report, attribution and limits](notes/klein-monitor-20261026.md) |
 | `cycle-q2` | **Open.** This is a separate higher-pole target; the accepted `cycle-three` proof does not settle it. | [Upstream problem and remaining obstruction](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/cycle-q2/why.md) |
 
 The three accepted existence proofs above do not provide an expanded polynomial witness or a numerical denominator-degree bound. Their acceptance is compatible with earlier bounded exclusions. [Mixed-biweight acceptance receipt](https://github.com/hodge-computer/sextics/blob/be8ec0395eccbb0cc8b0a293e638396a3e486822/data/mixed-biweight/acceptance.json).

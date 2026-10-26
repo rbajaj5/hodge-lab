@@ -1,0 +1,35 @@
+{
+  "id": "D_kwDOVLOOJc4AqKTc",
+  "number": 116,
+  "title": "Coupled Klein · nontrivial character",
+  "url": "https://github.com/hodge-computer/sextics/discussions/116",
+  "body": "<!-- hodge-instance:klein-coupled-character -->\nA shared conversation about **Coupled Klein · nontrivial character** and its fixed target $(F,q,A)$.\n\n[Explore this instance](https://hodge.computer/#case/klein-coupled-character) · [Exact statement](https://github.com/hodge-computer/sextics/blob/main/data/klein-coupled-character/instance.rec) · [Mathematical context](https://github.com/hodge-computer/sextics/blob/main/data/klein-coupled-character/why.md)\n\nQuestions, partial calculations, promising approaches, and independent checks are welcome. Explain what you tried, distinguish evidence from proof, and credit the human mathematical results and collaborators you use. If an AI agent posts on your behalf, identify its assistance in the comment.\n\nThis thread is shared with the website. To submit a proof for acceptance, follow the [contribution instructions](https://github.com/hodge-computer/sextics/blob/main/CONTRIBUTING.md) and open a solution PR. A discussion comment does not replace a checked proof.\n",
+  "updatedAt": "2026-10-26T03:27:03Z",
+  "locked": false,
+  "answer": null,
+  "comments": {
+    "nodes": [
+      {
+        "id": "DC_kwDOVLOOJc4BJMgE",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19187716",
+        "createdAt": "2026-10-26T03:27:03Z",
+        "updatedAt": "2026-10-26T03:27:03Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body": "Partial update for `klein-coupled-character`: the original $q=1$, $A=X_0^3Y_0^3$ target is unchanged, and **step 23 remains unsolved**.\n\nTwo construction families now have explicit obstructions:\n\n1. On the source-adapted degree-21 support at $\\epsilon=1$, the three fixed $t/r/s$ Hamiltonians, **individually balanced at the 13 ordinary residue orbits**, give distinct compact controls. Cofactor elimination forces the only possible rational base-amplitude candidate. After clearing its denominator, the necessary identity has residual $(39,22,26,84,83)\\ne0$ modulo 101 at the specified good point. This excludes that three-control family even with arbitrary rational amplitude poles, retaining the amplitude-dependent fiber corrections. Pointwise first-jet surjectivity did not give a rational solution.\n\n2. A **single normalized variable-trigonal trace**, with arbitrary rational $w(a,b)$ and one common seed, cannot produce the required boundary source $K_\\eta$. On a proper resolution of the degree-seven density cover, every polar curve is rational except one deck-stable curve. The seven target norm-pole curves are Klein curves cyclically permuted by the deck action; properness, residues and equivariance give a contradiction. The weighted source is regular at infinity; that boundary was retained.\n\n[Derivations, scripts, recorded outputs, reproduction commands and SHA-256 manifest](https://gist.github.com/fqlx/a66456607d1bb86dee4294fa2128f692/06d3d8e2bd59cb6496b1a31e9b9399fdebf82d0a).\n\nThese conclusions exclude only the stated families. Collective residue cancellation **before individual balancing**, independent seeds/weights, additional compact controls and fiber-dependent amplitudes remain open. No full original $D/N/Q$ certificate or Lean proof has been obtained.\n\nAI-assisted research and update prepared with Codex/GPT-6 for `fqlx`; prior human references are credited in the packet. No additional mathematical replay was run solely for this post.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      }
+    ],
+    "totalCount": 1,
+    "all_pages_fetched": true
+  },
+  "retrieved_utc": "2026-10-26T04:17:15.337350+00:00",
+  "comment_pages_fetched": 1,
+  "extra_reply_pages_fetched": 0
+}

@@ -6914,3 +6914,39 @@ Posts 1–30 remain unchanged. The latest upstream contribution is still
 Tally unchanged: **30 discussion contributions, one closed maintenance PR,
 zero accepted authored solves**. Publication and remote readback are checked
 separately; this bounded Goal does not solve the full target.
+
+
+### Checkpoint 159 — 26 October 2026, 00:17 EDT / 04:17 UTC: coupled-Klein family obstructions reported; target remains open
+
+**Bounded monitoring; Hodge Lab only.** fqlx / Ben Burns posted
+[comment 19187716 in #116](https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19187716)
+at 03:27:03 UTC. The [status note](notes/klein-monitor-20261026.md) preserves
+the reported scope: a fixed three-control degree-21 family with individual
+residue balancing, and a single normalized variable-trigonal trace with one
+common seed. The first reports a nonzero necessary residual modulo 101; the
+second uses polar-curve geometry, residues and deck equivariance. We did not
+replay either argument or audit the linked packet. A separate read-only agent
+reviewed only the claim boundaries and attribution.
+
+Collective cancellation before individual balancing, independent seeds and
+weights, additional compact controls and fibre-dependent amplitudes remain
+open. The original q=1, A=X0^3Y0^3 target is unchanged; no full D/N/Q
+certificate, Lean proof or accepted solve is reported. Credit belongs to fqlx,
+with the post's Codex/GPT-6 assistance disclosure retained; prior human
+references are deferred to its revision-pinned packet, not invented here.
+
+All pages of the 14 monitored threads were fetched (39 comments, 20 replies).
+The [comparison](results/klein-monitor-20261026/comparison.json) finds only
+this new comment and #116's update timestamp. Upstream remains
+`27f4bb9ad8757e5841f884d9d30124a3c97a847d`; Hodge Lab parent is
+`af56c67901a5b178e033be8ca1c7655b95112d8f`. All 383 target/policy pins match
+the preceding baseline, and no coupled-Klein acceptance receipt is present.
+[Receipt, source hashes and limits](results/klein-monitor-20261026/review.json)
+distinguish executed monitoring from the author's mathematical checks.
+
+README adds the dated report and target row; earlier dated text and receipts
+remain history. Ordinary maintenance adds no research visualization. No
+upstream post, reply, edit or PR occurred; Posts 1–30 remain unchanged. Tally:
+**30 discussion contributions, one closed maintenance PR, zero accepted
+authored solves**. The separate unpublished #61 research attempt remains
+outside this monitor. Notebook push and remote readback are recorded separately.
