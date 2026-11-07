@@ -1,0 +1,842 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-11-07T03:49:08.163292+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/commit/2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "message": "Merge pull request #220: quadratic-net support and complementary families\n\nConsolidate quadratic-net support and complementary families in the book",
+      "committer_date": "2026-11-07T00:20:31Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "c47dcb477ba394666e57bcd653ec89a6c8da86a5",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/c47dcb477ba394666e57bcd653ec89a6c8da86a5",
+      "message": "Record split-ternary discussion acceptance clarification",
+      "committer_date": "2026-10-26T15:30:52Z"
+    }
+  },
+  "repository_baseline": "repository-heads-20261101T112804Z.json",
+  "repository_head_unchanged": false,
+  "target_policy_pin_count": 383,
+  "target_policy_changes": [
+    {
+      "path": "AGENTS.md",
+      "before": "023f7734a0cfeed450c241c77049aa54ae0636d6",
+      "after": "c85efd5b6ebce24da2ed15e9647bca0e068d510f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "before": "5f093c306f5d73263de3863b42631a4c9f2c8c9f",
+      "after": "bc7ed6f944c7b4f85c5ae12b2e0892575a3921c6"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "before": "6630320b63f7bd6ef9dcc40a1e4fc268d507d0ed",
+      "after": "aac6ec0de6d1710ea5f8f3126ef0597c1ef9ea5f"
+    },
+    {
+      "path": "README.md",
+      "before": "62e5ee6c662a0e202d8262068c8b5484ba70d332",
+      "after": "4e2e75b484a258ae9562c1dfee71fc57f14c9bad"
+    },
+    {
+      "path": "data/block-q2/acceptance.json",
+      "before": "c5182c19abf5124a2473531c88bd95f478d38e0b",
+      "after": "277f243c957ca6fbf61a1f8975c74be6270e5939"
+    },
+    {
+      "path": "data/block-q2/why.md",
+      "before": "2cd829864b886238c65af507a3fd324f73ed1b7e",
+      "after": "2c38aa474f9b7392f7816264c744b8dac7e0d3ae"
+    },
+    {
+      "path": "data/cofactor-eight/acceptance.json",
+      "before": "d77ff3a4c6bfe257f8f38859c1c91c8f7474ef86",
+      "after": "13ee2c404808fe411caceb0b024fbd036c177386"
+    },
+    {
+      "path": "data/cofactor-mixed/acceptance.json",
+      "before": "41babf2fd50bcae155a6199d4d1bc70de6daf6c9",
+      "after": "5626a22e69b6bca0ba78edaa35f7792de08fc585"
+    },
+    {
+      "path": "data/collision-h3/acceptance.json",
+      "before": "c98fb83579ba7b7781dc9088240b88f84a533ac3",
+      "after": "c74c092b259e17dac8f33f261a2b10d88ecd0df8"
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/acceptance.json",
+      "before": "5efc7eeba446a8f7b3413333bb12a489a0813e31",
+      "after": "34d65d28cce2e3918f62123602a2feab5b5fd180"
+    },
+    {
+      "path": "data/cone-ladder-linear/acceptance.json",
+      "before": "09d9dd3e25932fadeaad07c604ab049ec39a0994",
+      "after": "db3d26efaad1c9312bca91debb8b06178750f03d"
+    },
+    {
+      "path": "data/contact46006/acceptance.json",
+      "before": "2063576b16b7c1464053211b5031a673c187b4a8",
+      "after": "51af92c387bf8675555ad9bf7babcb02451fbfb7"
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/acceptance.json",
+      "before": "1acc01f36357c879bd7124b0c30684d268939c22",
+      "after": "a27a134495079327ab3f2ea08185528348f17429"
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/acceptance.json",
+      "before": "d86035629d9d1af648fdeb65133530e0f2cf3404",
+      "after": "3a66b9aa953ba19a312f280bf01c168e0cbd29f4"
+    },
+    {
+      "path": "data/cycle-q2/why.md",
+      "before": "52f6f09da9c684042a5164671ce972bfbfbd4a9c",
+      "after": "069497e8268daa6cd1d6243f8df1973c1d1c170d"
+    },
+    {
+      "path": "data/cycle-three/acceptance.json",
+      "before": "9ffeaeb86a12cf2d61eb5a02a4acd0b51aa00eac",
+      "after": "c3c21b06c34668e3149017f08dea6e8d1f4ff676"
+    },
+    {
+      "path": "data/cyclic-triple-fano/acceptance.json",
+      "before": "bb4a51853f12671c5303f40e1ba58e4382f9e3fd",
+      "after": "8dc1c24e69b46ae362c3ac32ab7d386fe014c970"
+    },
+    {
+      "path": "data/cyclic-triple-residual/why.md",
+      "before": "e2f30f7634cc69f2666571ee3cb10eaeee0c08e8",
+      "after": "7e139bcbc38b77255792143a1d21e0d7ff588778"
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/acceptance.json",
+      "before": "a984ec92d3e39d3720c2d0aaf1815e9e3b5fe658",
+      "after": "a858c7e51b46dc349fdd5e3a6ef7a0f394a611fb"
+    },
+    {
+      "path": "data/family-block-cube/acceptance.json",
+      "before": "e6f1056a1f38b04d684d45c2bca91e74bc2c3d82",
+      "after": "1cc7c8cec75e69b8038cc20d50a69bdaeecd8a1f"
+    },
+    {
+      "path": "data/family-block-cube/why.md",
+      "before": "82094a361573019451b6ca8d0a169923d6f9ec16",
+      "after": "4800a33eb6badd0e7aab059833cb736a866557f0"
+    },
+    {
+      "path": "data/family-hesse-web/acceptance.json",
+      "before": "68dcc6fa9a1d0efb4d2eee9b1ff6d36fd0f94527",
+      "after": "257d14eba903ae78ef4987c7e62f61a2831a4aff"
+    },
+    {
+      "path": "data/family-passive-contact/acceptance.json",
+      "before": "62171923889d2af5ae707d0454212231fea9e011",
+      "after": "560a7e53f04f9c02655e880f7e79f5b05c8f991d"
+    },
+    {
+      "path": "data/family-root-cube/acceptance.json",
+      "before": "797995864546d6f613ee1cd7491f3327a28d884b",
+      "after": "8830c0874079f60ab3b343d7c39fde8d953614f0"
+    },
+    {
+      "path": "data/family-shear/acceptance.json",
+      "before": "36abdde1d06af96523ce19f0dfd38642976bfaa8",
+      "after": "381d02fbd4d77508b0aeb3325bab9e4bf7c68427"
+    },
+    {
+      "path": "data/family-sylvester-norm/acceptance.json",
+      "before": "e70e08fe025d9a7d6ef08de52c56a8676a67de30",
+      "after": "20f23d28402a6df831eabea40d04ba9b4e1d83f9"
+    },
+    {
+      "path": "data/family-sylvester-norm/why.md",
+      "before": "5e064b2558bc4f6dd94fcfd304b983607975b455",
+      "after": "c50f44bbfc0439467cf5653ebb909efa679e9099"
+    },
+    {
+      "path": "data/family-trace-zero/acceptance.json",
+      "before": "de0f2ceedd1a44b6dcb60fb4ea285dd5daf914d4",
+      "after": "33f9e2268cc1e91525387fc4b0eb4b3919dd81b3"
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/acceptance.json",
+      "before": "1f028fe2ca44c7508b8a482492ccf373406fde2f",
+      "after": "1db07abc975ed8b737273055718c3fbe1c499d3d"
+    },
+    {
+      "path": "data/fermat-q2/acceptance.json",
+      "before": "7ca2b75327849e72101fbfef5c61e5483473eebc",
+      "after": "b4e741025435a1ef245107f37fa9cb5d676645bf"
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/acceptance.json",
+      "before": "7d07924937be1c15b8c3df9fc9e78886f50a59ce",
+      "after": "f0c1bec6e15355f7d3f940887521f7e929d1a076"
+    },
+    {
+      "path": "data/four-plus-two-residual/provenance.json",
+      "before": "05b2cb59abd2205393cbd50e0b8eb4ae98199858",
+      "after": "131e01d04d6e8fd159bd22bf433f99a88299fcdd"
+    },
+    {
+      "path": "data/four-plus-two-residual/why.md",
+      "before": "7468f101c3b8783327b5c38091ba8dc5506314ca",
+      "after": "5848fe010867a739dfd06f4ae2cc3817e78b28ad"
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/acceptance.json",
+      "before": "0fe4d454328f3439031ed90223532f5026dc6a84",
+      "after": "a419f1e74dedece70d810f610fdfe331643f06cf"
+    },
+    {
+      "path": "data/hesse-triangle/acceptance.json",
+      "before": "36706f79028dc400c5c200eac2df382178985ca7",
+      "after": "7502523af77989dc6c54665be0db7c3017471b7b"
+    },
+    {
+      "path": "data/holdout-all-six/acceptance.json",
+      "before": "f243f1e9aca0522c430cf0c7b06a13e75324f065",
+      "after": "29404e26215632f42276e8f5de16cc9daa34052c"
+    },
+    {
+      "path": "data/holdout-bundle/acceptance.json",
+      "before": "4e808e897a5e53b237faf3f66b2d7b16ef120104",
+      "after": "6af6719075105388c1193a35d373bd0d08c7fa01"
+    },
+    {
+      "path": "data/holdout-moving-branch/acceptance.json",
+      "before": "709ca19334babf4ec1140069f45bfc3cabf53460",
+      "after": "155fcea3c9026f54c7182108e4c41ce7d7931556"
+    },
+    {
+      "path": "data/holdout-p-y14/acceptance.json",
+      "before": "45aa22ab63c6fc5d24ae4fdf5b532d160b8bc8ba",
+      "after": "3a58371f84556cc9b8e4fe2657d316069f42937c"
+    },
+    {
+      "path": "data/holdout-p3/acceptance.json",
+      "before": "7030b9630a6296f840a0538fca53373d45a49d6d",
+      "after": "d432d54fc79016abaa8b597292083072ef85c8ad"
+    },
+    {
+      "path": "data/holdout-q2/acceptance.json",
+      "before": "395740d4d7f12d6e4b1a267233d6854478edfc83",
+      "after": "4ce51cd32d55251eb3bd82789bb4ca9229310669"
+    },
+    {
+      "path": "data/holdout-ternary-deformation/acceptance.json",
+      "before": "f2407ebb4c562046edad87b84e23fea1a6e6d7f7",
+      "after": "eb79db91637a3e0bfcc97a6df1bbb82866bd8c5f"
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/acceptance.json",
+      "before": "3e67bbe2af0e301a010e0b01ac680eb899dec66d",
+      "after": "eff08b8a7a97c513e44eec02f9d74e75f787b921"
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/acceptance.json",
+      "before": "78aa292f8aad8b526fb0068c42053035e4fd05d4",
+      "after": "1f4dc19023c408255c8a509c1d205751e46408fa"
+    },
+    {
+      "path": "data/holdout-x04-p/acceptance.json",
+      "before": "dc61b9be6da901ede1bc102e32d07f99515990d1",
+      "after": "7329072a5a94fb6a92b762a1269a796ae26381a8"
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/acceptance.json",
+      "before": "521523be3f06c3292176d7f0af7b07f91772fb81",
+      "after": "668f097e03b9f88c289894d49b208c9ce317fa25"
+    },
+    {
+      "path": "data/holdout-x12-p-y02/acceptance.json",
+      "before": "28c9fb26818261a609f7dc31b05253415d3d3cd4",
+      "after": "cd661b724bf3dffe5fb4ec10a5028c617f3426b6"
+    },
+    {
+      "path": "data/holdout-x13-y13/acceptance.json",
+      "before": "d32293006e3e194fa5ca138a5b7e8bf81930f793",
+      "after": "b98bab3efa6f914f8eccb5ea0a91948b2063d301"
+    },
+    {
+      "path": "data/holdout/acceptance.json",
+      "before": "ae2b86db86a56a419ebbdafcdd0c9b3ac8991a14",
+      "after": "2c316dd473c9dd9fe0ace2bd8828789083cb0a4a"
+    },
+    {
+      "path": "data/klein-hesse/acceptance.json",
+      "before": "47ff13fc00888a895e34907ade87f6a637218834",
+      "after": "62c874ee00040ca4b4ac1d002caa1820aaff1e32"
+    },
+    {
+      "path": "data/klein-rational/acceptance.json",
+      "before": "4056a5e9d6a1a0fd77433fe02e59bdf53838ed4b",
+      "after": "4f745f947d502fd06c1b1d15c07b71411da581d0"
+    },
+    {
+      "path": "data/m3-coupled/acceptance.json",
+      "before": "204b92e98a1977b91d6aa034defaf2f6c62f192a",
+      "after": "12d16d5110df77253bf5214fcbc504b08fb0e4d2"
+    },
+    {
+      "path": "data/m3-coupled/why.md",
+      "before": "6868b56da552cf63e13ed8b70af20d9e5e04c9c2",
+      "after": "924203b3cfb9e3d9afd4e7a472d8cc91555a726b"
+    },
+    {
+      "path": "data/mixed-biweight/acceptance.json",
+      "before": "a71d3045bd0473ddd4c97956302860111c022014",
+      "after": "129379eae8364a41aa1d9eafcc1d75d7deae5a58"
+    },
+    {
+      "path": "data/mixed-polar/acceptance.json",
+      "before": "4c3da6962202e66fbede833d158f213b309abe9d",
+      "after": "d8f59dcfc6b979f5bc8c50dc91456f1e54ae2c03"
+    },
+    {
+      "path": "data/off-paired/why.md",
+      "before": "cfa23f1830ce4ff267108a0d6355d469ed731840",
+      "after": "d2e4fea14fd17a0be02ec5f6b5c6832de4df0cea"
+    },
+    {
+      "path": "data/one-reflection-skew/why.md",
+      "before": "c8c9930215f857586c5e52bc1ff0a2957dc47be6",
+      "after": "53d3226c53ca89c4a81ae6724ff0c948de0d3727"
+    },
+    {
+      "path": "data/one-reflection-y2-sector/acceptance.json",
+      "before": "7a8dc8f41aefbdafbc887530400b8b6db4975965",
+      "after": "6e5fe1e9e13b4d830d5814b12096e1aa55ad1efa"
+    },
+    {
+      "path": "data/one-reflection/acceptance.json",
+      "before": "88e6423a6b577e0d8b015b491fd2c344c8c3050f",
+      "after": "0e5d213c6c18da5d912ed54a5935a1210b89fff6"
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/acceptance.json",
+      "before": "993e570cea7065d934e40a27e32183e2e717296d",
+      "after": "0e6dd622a3475e694960d7441606809f3beacfa0"
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/acceptance.json",
+      "before": "47dde3dad199039f77e2b386f2c3258f16d8fafd",
+      "after": "7e64db46bbcf87dc18e8c9a1d758a204162e40de"
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/acceptance.json",
+      "before": "69bdd99cfd0336d468a975b6f2638ec964917278",
+      "after": "2a38928dc057afe232b669128f0e7c4bef1f9f2b"
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/provenance.json",
+      "before": "e5ce08d4be56f313c151b82d28dad37b354b0e6c",
+      "after": "2a3f0c9bdf942604af01839a6bfdf5bec63c74fb"
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/why.md",
+      "before": "0df42ef5a8b2a6749f7fde2d7e71ff5ee638f072",
+      "after": "1048c3539c28d0fa7da67415f13c388a95019994"
+    },
+    {
+      "path": "data/quadric-contact-broken/acceptance.json",
+      "before": "a2f35320b102da8e6c5da07509d5a673709a73c3",
+      "after": "58a970d8a731662b48b12bf68a20c740519f9925"
+    },
+    {
+      "path": "data/reflection-coupled-fano/acceptance.json",
+      "before": "1a1f3d9675ac9a3bab1356349a9fdaaa8965c967",
+      "after": "fa5e26c1717b2d33b396307e1c8bb9af77d7fbcc"
+    },
+    {
+      "path": "data/split-ternary-q2/acceptance.json",
+      "before": "9fe72e5839a6f63fd18d2b78e4b661c4d1e74c8c",
+      "after": "9a9c280cdb6428bdf85f940139920298d3206ccc"
+    },
+    {
+      "path": "data/split-ternary-q2/why.md",
+      "before": "a31b134d79eac854cd7272d5b9b2a056d3869da5",
+      "after": "ee14ab2eab2332e523ad68a860e62b1f5dceb496"
+    },
+    {
+      "path": "data/symmetric-sextic-residual/provenance.json",
+      "before": "8d76e3870ada553abf9afe226c04cd46e3e696de",
+      "after": "ff7faad908f3b9b255a06eebbed816b441fb0e4f"
+    },
+    {
+      "path": "data/symmetric-sextic-residual/why.md",
+      "before": "bccf76678896693572e7a300312c2255391bcfae",
+      "after": "f6a66c3eea98b738c2ab74c83325ff5440790880"
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/acceptance.json",
+      "before": "180a677254bf8f637b27c150e373075983faa9d3",
+      "after": "1c12c1aa9892042fa9cebd8fd67c2db6e8aee986"
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/acceptance.json",
+      "before": "1f247792d7ded0a095472d89a839c07827b589b1",
+      "after": "ec8bbcc5d314cf32b91a301aba95fb537b6a9fee"
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/acceptance.json",
+      "before": "eb35514bad22260dc0329e9babcdd2bc5b13d444",
+      "after": "f64c9f7795a3a3919878853c58fbd4ca1e88197a"
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/acceptance.json",
+      "before": "3574a8cf3ddd423caffac3f08493a578606ad9d7",
+      "after": "7eb753afc7a83b80ba3769a96a0629602cd2e753"
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/why.md",
+      "before": "2b95ddfb1b9fbcd45fa75f7cc8639f80b43fe636",
+      "after": "56d45d9a9221db6602ac63db15815bca889bb722"
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/acceptance.json",
+      "before": "e31bc59ad704f89db2db9b14951b9095cf330510",
+      "after": "54b8b99dddfee2d76db3a6b0a9f7b39652aa2028"
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/acceptance.json",
+      "before": "4aa0a630f7bc37f39deefb3ea988049efe56c253",
+      "after": "d6f697577452482e43e5677960ccf0aec233c055"
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/acceptance.json",
+      "before": "7fe4c69e04064b06fa4d858c141bfb5a0c6e3716",
+      "after": "e7a2a9c867585bb0fd754087638ef2e8b762d865"
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/why.md",
+      "before": "a30dfa374573703f55e2a273fc4fd124dc8ac2b4",
+      "after": "d407742f011ad78db6cc42be5af5f61bc2cc0b60"
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/acceptance.json",
+      "before": "084fcd21b720cdd02025194c05f78723461e04d1",
+      "after": "b6b7c8c04505bbc6159a20218904ed4619be9e92"
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/why.md",
+      "before": "8568b73dd91d79e913f639e789d3e95fb68063e3",
+      "after": "35145e404f350c73fc0beae2177b44aa423d1fd5"
+    },
+    {
+      "path": "data/twoblock-cubic/acceptance.json",
+      "before": "b4a5f11be609a7659b2566884ecfd4eb7ebfaa2c",
+      "after": "51ffe2011b8d95f8dd85ae95d70835a7fc23ca53"
+    },
+    {
+      "path": "data/twoblock-cubic/why.md",
+      "before": "76cb911f9f170f60fca91aaa6ba330f8c24c75b8",
+      "after": "2a82b10aa2c112d992686982413348d3226193e1"
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/acceptance.json",
+      "before": "50ccea37ec41ee7e21ee14f8749a6a670b431200",
+      "after": "6d5538c6ddf3cdee3370225c7b90873959e59aa8"
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/acceptance.json",
+      "before": "05af5bfeeb6af1c5515fda2ab94d98564ec53373",
+      "after": "80c99771138e588f14afde5a0803bebdfbf21f0b"
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/acceptance.json",
+      "before": "b674715bd9ae089bf0fb01be1293a21de3b4060d",
+      "after": "ead380280a2c15059a59c4243d46964f7517205c"
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/why.md",
+      "before": "1b70472f9e05fbac5b1f852bed5f0debbb8263f3",
+      "after": "14552c4e5f7eaaf331f6360a4f6402499cf878a3"
+    },
+    {
+      "path": "data/xtype-strict-rational-113/acceptance.json",
+      "before": "78320acd9554e1962cb0a3376e8f4c1add6a26ed",
+      "after": "a7b7ab8c70ca8f064306a91b21e23a2f67b67225"
+    },
+    {
+      "path": "data/xtype-strict-rational-113/why.md",
+      "before": "cc2f664d931c7e311f47386727c0f555f3a32eab",
+      "after": "b2e0d8e48f4bdf4abf7122853d32d535e6c45a20"
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/acceptance.json",
+      "before": "19258734bb794f0c0b6c5023a81d121f3999aaa9",
+      "after": "3b4cb7716823a2af352fbb5737927ad351978720"
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/why.md",
+      "before": "23ea726a9994725c9eca200cf9082f73c847865b",
+      "after": "d732660f52fa304fe3d2514671576faf30e26ac9"
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/acceptance.json",
+      "before": "c40949519239882b6733f6767fbe43dfdcc44857",
+      "after": "7fd3b13bb533fba132165d7b30fb06f415f82411"
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/why.md",
+      "before": "4cb042247ebc47d4e45378edce2c20ad1b903ee7",
+      "after": "632d9458a47ca0f4849b91423ac1917e00f3e2bb"
+    },
+    {
+      "path": "formal/README.md",
+      "before": "330b3aaba1f9ac4283ce40d347a153a260b79cb0",
+      "after": "027f3165c348598d07beb062c4638cdfb79aa479"
+    }
+  ],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261101T111833Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261107T034834Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 2,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 3,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 3,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 9,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfbN",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085",
+        "createdAt": "2026-10-17T19:10:33Z",
+        "updatedAt": "2026-10-19T15:47:12Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "88957748500e2566c6bcc86a34b72a8672979465951a5c37a6dd5efdce14282b"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIfbN",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085",
+        "createdAt": "2026-10-17T19:10:33Z",
+        "updatedAt": "2026-11-07T00:25:16Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d66b182ae54bf60ce6d5e1762404cf7cb15b1206c8c06ede488988396c8b0ea6"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIpjF",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19044549",
+        "createdAt": "2026-10-19T15:30:56Z",
+        "updatedAt": "2026-10-19T15:47:13Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d37a93c54aa38737986f2952a8b48a3273395767588f9ee6dbe3c9594fb48d53"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIpjF",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19044549",
+        "createdAt": "2026-10-19T15:30:56Z",
+        "updatedAt": "2026-11-07T00:26:07Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "33b0a9f1157fad74fb5a909e773d579b3bb7539e1b008b7c60bb8dd744ed8a42"
+      }
+    },
+    {
+      "discussion": 112,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIpjI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19044552",
+        "createdAt": "2026-10-19T15:31:00Z",
+        "updatedAt": "2026-10-19T15:47:11Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "c2d273e48f3a22ef8005b35f12529ed027840e60430dc50a8d753dcca60f0c4b"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIpjI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19044552",
+        "createdAt": "2026-10-19T15:31:00Z",
+        "updatedAt": "2026-11-07T00:26:54Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "aaf08fd00f42c9b02362a06e9b466c2a35bbe15a260d1301528e8c0ea1356b6d"
+      }
+    },
+    {
+      "discussion": 115,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBT",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19345491",
+        "createdAt": "2026-11-02T07:45:58Z",
+        "updatedAt": "2026-11-02T07:45:58Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "4059ddeb6b0d7596efe8303b217c2c844edf4e454558502ee5dd34d5c9071f3b"
+      }
+    },
+    {
+      "discussion": 116,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJ2kt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19360045",
+        "createdAt": "2026-11-02T20:40:55Z",
+        "updatedAt": "2026-11-02T20:40:55Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d9a14feed6305a46deea61c57c0a120cd9881588d3f1d9f7746b05b4db5c6174"
+      }
+    },
+    {
+      "discussion": 116,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBM",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19345484",
+        "createdAt": "2026-11-02T07:45:43Z",
+        "updatedAt": "2026-11-02T07:45:43Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "b89fd6cbb839d7f3783e478836023055358f345639a7010899774072b120f6f6"
+      }
+    },
+    {
+      "discussion": 117,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBe",
+        "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19345502",
+        "createdAt": "2026-11-02T07:46:26Z",
+        "updatedAt": "2026-11-02T07:46:26Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "5ca80dbbfaba84c136cf1399dbc8333f64b45347fbf7adc4a6d235e1bcd03949"
+      }
+    },
+    {
+      "discussion": 118,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBY",
+        "url": "https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19345496",
+        "createdAt": "2026-11-02T07:46:12Z",
+        "updatedAt": "2026-11-02T07:46:12Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "b09c7c8cd4727c902496b5080bbd803eb5c7c9eb9cd48494f18ba4aa1c07bd2d"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJDcS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610",
+        "createdAt": "2026-10-23T17:11:49Z",
+        "updatedAt": "2026-10-23T17:11:49Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "b50cb48616bb31ec520e3ce7ca6b3a82385fd0e079d551e355c9fac9c0dbea08"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJDcS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610",
+        "createdAt": "2026-10-23T17:11:49Z",
+        "updatedAt": "2026-11-07T00:22:31Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d4b2a7c3417f5b22c8a927a92670cb317e9351685152cff1a49874af574c0920"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBL",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19345483",
+        "createdAt": "2026-11-02T07:45:38Z",
+        "updatedAt": "2026-11-02T07:45:38Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "c1d03a5e6e1d0741726d0228bc948d0febafe6942ca3101bb4ca20390aef9dff"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BKMQx",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19448881",
+        "createdAt": "2026-11-06T20:46:35Z",
+        "updatedAt": "2026-11-07T00:23:32Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "1cbce3956c3b002c42610e2e6338bd028962fb156bb121a261231d3721a36342"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBQ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19345488",
+        "createdAt": "2026-11-02T07:45:52Z",
+        "updatedAt": "2026-11-02T07:45:52Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "a8be80cbff16ae140cf4b58a6e4ba308b0e60eb15027cb610ed0f2e8e49d3978"
+      }
+    }
+  ],
+  "metadata_changes": [
+    {
+      "discussion": 115,
+      "field": "updatedAt",
+      "before": "2026-10-20T00:00:41Z",
+      "after": "2026-11-02T07:45:58Z"
+    },
+    {
+      "discussion": 116,
+      "field": "updatedAt",
+      "before": "2026-10-26T03:27:03Z",
+      "after": "2026-11-02T20:40:56Z"
+    },
+    {
+      "discussion": 117,
+      "field": "updatedAt",
+      "before": "2026-10-17T18:15:26Z",
+      "after": "2026-11-02T07:46:26Z"
+    },
+    {
+      "discussion": 118,
+      "field": "updatedAt",
+      "before": "2026-10-22T00:19:35Z",
+      "after": "2026-11-02T07:46:12Z"
+    },
+    {
+      "discussion": 120,
+      "field": "updatedAt",
+      "before": "2026-10-23T17:11:49Z",
+      "after": "2026-11-06T20:46:35Z"
+    },
+    {
+      "discussion": 127,
+      "field": "updatedAt",
+      "before": "2026-10-24T16:56:22Z",
+      "after": "2026-11-02T07:45:53Z"
+    }
+  ],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

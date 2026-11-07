@@ -1,0 +1,375 @@
+{
+  "reviewed_utc": "2026-11-07T03:54:04.157871+00:00",
+  "scope": "Bounded read-only policy, documentation, technique-guide and target-context monitoring; no mathematical proof audit, Lean execution or upstream code execution.",
+  "before": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+  "after": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+  "status": "completed",
+  "source_captures": [
+    "policy-source-capture-20261107.json",
+    "policy-technical-source-capture-20261107.json",
+    "policy-book-source-capture-20261107.json"
+  ],
+  "source_integrity": {
+    "all_captures_successful": true,
+    "verified_captures": 25,
+    "checks": "Re-encoded UTF-8 text matches recorded SHA-256 and Git blob SHA-1 for every fetched file."
+  },
+  "source_inventory": [
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "AGENTS.md",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "023f7734a0cfeed450c241c77049aa54ae0636d6",
+      "sha256": "cffff1350be9e8e1013763bd934eb46631db503aa4fc96474dcb512264ad70ed",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/AGENTS.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "AGENTS.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "c85efd5b6ebce24da2ed15e9647bca0e068d510f",
+      "sha256": "edd7a9e1b936f9bacfd9ec0b71d0eb0cb5094a056a6ce93bfc58a7ed849eb0f1",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/AGENTS.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "CONTRIBUTING.md",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "5f093c306f5d73263de3863b42631a4c9f2c8c9f",
+      "sha256": "233bc542f4ad1d9c3a0d652a410dd37b8c4c7da2927eee6f8074412fddbf14f9",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/CONTRIBUTING.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "CONTRIBUTING.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "bc7ed6f944c7b4f85c5ae12b2e0892575a3921c6",
+      "sha256": "d1e379820e94e46295ff332ede92af677804b51ce282c1026b0f5e7427fd295d",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/CONTRIBUTING.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "MAINTAINING.md",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "6630320b63f7bd6ef9dcc40a1e4fc268d507d0ed",
+      "sha256": "574f8ca98f4fd08dab7583a583ab8154d909b3a8127dec550d1733e041cd2da9",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/MAINTAINING.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "MAINTAINING.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "aac6ec0de6d1710ea5f8f3126ef0597c1ef9ea5f",
+      "sha256": "2066a20aa3152419943115850b175e60882bf87b6cb842b731319d1e165acdaa",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/MAINTAINING.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "README.md",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "62e5ee6c662a0e202d8262068c8b5484ba70d332",
+      "sha256": "eb68805d87590066e1b0700103feabf3e0f25d54167646c2325cc1aa42858790",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/README.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "README.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "4e2e75b484a258ae9562c1dfee71fc57f14c9bad",
+      "sha256": "ddcc411962eff0d6afba47bf629b80ec3d3c27eba4e4663c5b9237f2ebcf8000",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/README.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "formal/README.md",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "330b3aaba1f9ac4283ce40d347a153a260b79cb0",
+      "sha256": "60e579b122485250605592c1d9bf02a1b08ac1c79de9ee804ab248ce66eed531",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/formal/README.md"
+    },
+    {
+      "capture": "policy-source-capture-20261107.json",
+      "path": "formal/README.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "027f3165c348598d07beb062c4638cdfb79aa479",
+      "sha256": "cbe7fc65982bc0d9c56064e13e1994c34b75ca31c13553bc2d7e959f9371c17a",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/README.md"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "formal/lean/lean-toolchain",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "025e59548e48cf71f2744154e2890beefe30a258",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/formal/lean/lean-toolchain"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "formal/lean/lean-toolchain",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "a8afa7d1b02d96f0671eba854a8dc4b416beb473",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/lean-toolchain"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "formal/lean/lake-manifest.json",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "bb02ade54e861dcf3187881777dd1f21f3ba5df2",
+      "sha256": "b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/formal/lean/lake-manifest.json"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "formal/lean/lake-manifest.json",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "87d46d3cb17dcd30f7a1d632ba10e691e6212aab",
+      "sha256": "1a38e7336f344b85739e6e957b0638fd66e24912a3c604f9b249739cce2feaa4",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/lake-manifest.json"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "formal/TECHNIQUES.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "357be4bc507f1ffbddbe7fb5a362cb44dc773476",
+      "sha256": "a8d877faa3bc04939ea417b1223f32b881a936111228f9da24aaa5af30cd8768",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/TECHNIQUES.md"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "docs/index.json",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "f347c5683e35702364c03e9574c4e20a3185a9d9",
+      "sha256": "bfc214114247dc336946861545eabce50d565141645be2c151c18046ab145b8f",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/index.json"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "docs/README.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "324a5ac6dcc37e3019df08ff0c9b07b66628c067",
+      "sha256": "b3f1782c17c118fd377a6718fb7ce51f5817f3e5504c8dd57ebe553bf54147a5",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/README.md"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "docs/overview.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "1e1165f370a664660a5563f9a46de804fb5faa2d",
+      "sha256": "41cb5fcc9ce4d584931cc4a3c66440bb000722d94dc487a73d2af213206ae164",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/overview.md"
+    },
+    {
+      "capture": "policy-technical-source-capture-20261107.json",
+      "path": "LICENSE",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/LICENSE"
+    },
+    {
+      "capture": "policy-book-source-capture-20261107.json",
+      "path": "docs/overview.md",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "9d94d59c4b5b8e37195a64b7896519f9fde2d5a5",
+      "sha256": "7ba36e7c29b5c953f430c178e4ffc623ebac33dae5751f99c2e2c86b2fbbc98b",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/docs/overview.md"
+    },
+    {
+      "capture": "policy-book-source-capture-20261107.json",
+      "path": "docs/index.json",
+      "ref": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+      "blob_sha": "04b5c91672d296784ea0004eff093e7601655a97",
+      "sha256": "fbe954bb5d2627e01330c28b9c48fd0e242b2564a03ecc828dea780e972b6bde",
+      "url": "https://github.com/hodge-computer/sextics/blob/83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0/docs/index.json"
+    },
+    {
+      "capture": "policy-book-source-capture-20261107.json",
+      "path": "docs/03b-weighted-threefolds.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "dc9b568fcb8a1a3fea707ab5d54fc986a19e273a",
+      "sha256": "fcd1de36b6c9a9db1616637b67825a5903d4ebcf2e003171aafcbe6d50662e1b",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/03b-weighted-threefolds.md"
+    },
+    {
+      "capture": "policy-book-source-capture-20261107.json",
+      "path": "docs/03c-quadratic-nets.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "c717227850fa002466f35ca118c47fe9b88b7890",
+      "sha256": "f84ad30bc627403db4c656083e7644e6fc59d89ca403cbbd2d36edd5a1afffa1",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/03c-quadratic-nets.md"
+    },
+    {
+      "capture": "policy-book-source-capture-20261107.json",
+      "path": "docs/04-known-locus-and-frontier.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "d2dac124703487184f160304a964e870ff8876d6",
+      "sha256": "c5250ff2763a95b1c97e45c18cd5ebd0d750556bf02f1e3dc7204994dd41e75d",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/04-known-locus-and-frontier.md"
+    },
+    {
+      "capture": "policy-book-source-capture-20261107.json",
+      "path": "docs/02a-binary-blocks.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "blob_sha": "6faedab7518950ab8d112051154f5808e9e75a9f",
+      "sha256": "2d5f6dc2b85ab20fb45b306eddbc19fcdda65c01e83f4e856d2f96c814988c3a",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/02a-binary-blocks.md"
+    }
+  ],
+  "certificate_contract": {
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/README.md#L5-L36",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/CONTRIBUTING.md#L54-L96"
+    ],
+    "changes": [
+      "General contract now permits arbitrary natural ambient dimension n, hypersurface degree d and pole parameter q over C[z_0,...,z_n]. Catalogue specializes n=5,d=6,q in {1,2}.",
+      "Explicitly requires F nonzero and homogeneous of degree d; source A has integer degree d(q+1)-(n+1); N_i has integer degree deg(D)+dq-n. Negative integer degree allows only zero. No separate homogeneity or nonvanishing condition is placed on Q.",
+      "HasCertificate now has explicit arguments F q A; n is inferred from AmbientPoly n and degree is F.totalDegree. Verify keeps explicit degree d in Verify F A d q D N Q; Verify.hasCertificate uses nonvanishing and homogeneity to identify d with totalDegree.",
+      "Optional witness JSON drops the independent d field; denominator degree is determined from D. The protected witness statement supplies HodgeSubmission.d (hypersurface degree).",
+      "The full cleared identity E=F^(q+1)Q, coprimality over C, arbitrary denominator degree, nonzero quotient permission and nonconstructive existence option remain. No new field-parity requirement is imposed."
+    ],
+    "limitation": "This records the documented contract and API migration. No proof correctness or migration replay was executed here."
+  },
+  "toolchain": {
+    "lean_before": "leanprover/lean4:v4.33.0",
+    "lean_after": "leanprover/lean4:v4.33.1",
+    "mathlib_before": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "mathlib_after": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/lean-toolchain",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/lake-manifest.json"
+    ]
+  },
+  "publication_and_maintenance": {
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/MAINTAINING.md#L45-L111",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/CONTRIBUTING.md#L171-L179"
+    ],
+    "changes": [
+      "Current schemaVersion 2 acceptance.json is an attribution record: githubLogin, acceptedAt, and original pullRequest number/url. It carries no source hashes, verifier versions, workflow receipts or stored verification claims.",
+      "Publication reads the merged PR and records credit; current documentation expressly says it no longer inspects CI artifacts or requires particular merge parents. Retries retain attribution.",
+      "Accepted proof sources are now maintained in ordinary maintenance PRs, retaining original contributor, PR and date. Repository build rechecks changed proofs/witnesses/targets and affected applications. Editorial explanation changes require content checks but not Lean replay.",
+      "Shared library is built once, with separate affected-instance checks and shared-module kernel replay; toolchain, dependency and other non-Lean formal/lean changes select the full shared library and accepted applications.",
+      "Protected solve checks still compile in a sandbox, replay modules, audit the exact theorem/transitive axioms, pin checked base/head, and reject changed PR commits. A green solve/lean on maintenance means no new solve; it does not imply a fresh accepted solve.",
+      "Website publishes current main without authenticating historical proof sources or repeating premerge verification. Current source pins, historical acceptance and current CI/replay scope must be recorded separately."
+    ],
+    "historical_handling": "Do not rewrite Hodge Lab historical receipts. Root separately compares all acceptance-record migrations for preserved attribution."
+  },
+  "technique_guide": {
+    "evidence": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/TECHNIQUES.md",
+    "summary": "New indexed guide covers assembly/transport, primitives and clearing, distinct cubic-covariant families, and all accepted applications. It says 41 small explicit witnesses share an assembly/legality interface, while their target identities remain specific. Similar-looking equations do not discharge hypotheses.",
+    "fermat_claim": "Guide and formal README state the shared Fermat module proves every homogeneous odd source of degree 6q at q=1 or 2 through Diamond subset-Euler construction, retaining the original fermat-q2 displayed witness.",
+    "scope_limits": "Holdout GeneralizedCover still fixes that hypersurface; elliptic-companion primitive inputs, finite-cover geometry, source transport, physical closure and denominator checks remain application obligations. Four binary/cyclic/transitive/polar cubic coefficient families are not interchangeable.",
+    "attribution": "formal README retains fqlx attribution for bundle assembly (PR161), holdout machinery (PR128), and shear construction, with OpenAI Codex assistance noted on the latter. This monitor awards no new credit."
+  },
+  "license": {
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/README.md#L5",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/LICENSE"
+    ],
+    "summary": "README now states Apache License 2.0; third-party files retain their accompanying notices. This is a repository-policy observation, not legal advice or a license audit."
+  },
+  "book": {
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/README.md",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/overview.md",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/03b-weighted-threefolds.md",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/03c-quadratic-nets.md",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/04-known-locus-and-frontier.md",
+      "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/02a-binary-blocks.md"
+    ],
+    "publication_scope": "Merged upstream mathematical exposition, as documented by Benjamin Diamond/benediamond commits and PR218, PR219, PR220. Record as author/maintainer-published claims; this monitor did not validate their proofs and does not treat them as protected Lean acceptance.",
+    "changes": [
+      "New Chapter3B states divisor support for anti-invariant H3 of quasismooth sigma-invariant weighted sextic threefolds in P(1,1,1,1,2), via norm-contact curves, Abel-Jacobi derivatives, a finite spanning witness, openness and supported-projector specialization.",
+      "Its two-reflection theorem states all globally invariant H4 is divisor-supported for smooth globally Y-even sextics with an extra reflection in one X and one Y coordinate. Scope includes smooth 4+2 splits and independent transpositions in the two parity blocks; global evenness alone is insufficient.",
+      "New Chapter3C states all-target support for every smooth F(X,Y)=G(X,Q0(Y),Q1(Y),Q2(Y)), with three ternary quadrics and weighted-degree-six G, including singular/reducible discriminants and no additional linear symmetry. Point-pair incidence is the stated transfer mechanism. This is not an arbitrary six-mixed-quadrics theorem.",
+      "Chapter4 presents the complete 88-coefficient cyclic-six family for g=(X,zeta*y,zeta^-1*z0,zeta^-1*z1), g^3=tau, and asserts support through complementary deck/exchange quotients. This differs from the order-six action preserving cycle-q2.",
+      "Chapter2A retains the independent binary-sextic torsion-contact construction and raw/quintic Wronskian spanning statements. The book is reorganized as general mathematical treatments, not a list of checked example tuples.",
+      "The general globally Y-even sextic problem is still expressly open. Two-reflection and quadratic-net families have different/incomparable coefficient scope in the book."
+    ],
+    "attribution_evidence": [
+      "https://github.com/hodge-computer/sextics/commit/262c9d18694bdf5b5953240b918c2f524f4c87b6",
+      "https://github.com/hodge-computer/sextics/commit/dcbe4222637cdfbc12dc01b43c105c162aee622a",
+      "https://github.com/hodge-computer/sextics/commit/a2716a5d55e176ae5f999483b4b3115831385216"
+    ],
+    "literature_attribution": "Chapter3B explicitly cites Voisin Proposition2.1 for the curve-correspondence strategy and Dolgachev for weighted residue/Lefschetz statements. The overview retains Diamond and Voisin references. No new rbajaj5 attribution was identified in the reviewed changes."
+  },
+  "target_context": {
+    "source": "repository-material-20261107.json",
+    "reviewed_paths": [
+      "data/block-q2/why.md",
+      "data/cycle-q2/why.md",
+      "data/cyclic-triple-residual/why.md",
+      "data/family-block-cube/why.md",
+      "data/family-sylvester-norm/why.md",
+      "data/four-plus-two-residual/provenance.json",
+      "data/four-plus-two-residual/why.md",
+      "data/m3-coupled/why.md",
+      "data/off-paired/why.md",
+      "data/one-reflection-skew/why.md",
+      "data/quadratic-cubic-pullback/provenance.json",
+      "data/quadratic-cubic-pullback/why.md",
+      "data/split-ternary-q2/why.md",
+      "data/symmetric-sextic-residual/provenance.json",
+      "data/symmetric-sextic-residual/why.md",
+      "data/three-block-rational-d4-strict/why.md",
+      "data/two-reflection-cubic-surface-d2/why.md",
+      "data/two-ternary-dense-two-odd-hessian-d48/why.md",
+      "data/twoblock-cubic/why.md",
+      "data/xtype-sparse-rational-1m142/why.md",
+      "data/xtype-strict-rational-113/why.md",
+      "data/ytype-companion-231-d4-strict-rational/why.md",
+      "data/ytype-companion-fiberA-d4-strict-rational/why.md"
+    ],
+    "substantive_changes": [
+      {
+        "target": "four-plus-two-residual",
+        "discussion": 120,
+        "evidence": [
+          "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/four-plus-two-residual/why.md",
+          "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/four-plus-two-residual/provenance.json"
+        ],
+        "before": "Existence not established by cited methods.",
+        "after": "Upstream context now says exact-target certificate existence follows from Chapter3B two-reflection support; explicit rational primitive remains additional realization.",
+        "scope": "No new protected Lean acceptance follows from this prose update."
+      },
+      {
+        "target": "symmetric-sextic-residual",
+        "discussion": 117,
+        "evidence": [
+          "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/symmetric-sextic-residual/why.md",
+          "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/symmetric-sextic-residual/provenance.json"
+        ],
+        "before": "Existence not established by cited methods.",
+        "after": "Upstream context now claims Chapter3B covers the exact target after rational coordinate changes diagonalizing independent block transpositions; retains distinction between polynomial symmetry and residue character.",
+        "scope": "No new protected Lean acceptance follows from this prose update."
+      },
+      {
+        "target": "quadratic-cubic-pullback",
+        "evidence": [
+          "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/quadratic-cubic-pullback/why.md",
+          "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/quadratic-cubic-pullback/provenance.json"
+        ],
+        "change": "References Chapter3C as a model, but explicitly retains no existence conclusion: six quadrics mixing both blocks do not establish the ternary-net hypothesis."
+      },
+      {
+        "target": "cycle-q2",
+        "evidence": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/cycle-q2/why.md",
+        "change": "Clarifies the preserved (2,1,0,3,2,1) action only supports its invariant sector, while all-target cyclic-six theorem uses distinct (0,0,0,5,1,5) action broken by the closing coupling. No new solve or extension to the residual target."
+      }
+    ],
+    "other_changes": "cyclic-triple-residual, off-paired and one-reflection-skew retain their missing symmetry/character hypotheses. Other why edits mostly replace chapter references, correct scope descriptions and distinguish deg(D) from hypersurface degree d."
+  },
+  "our_checks": [
+    "Read paired pinned documentation and target-context changes in context.",
+    "Verified source capture byte hashes/Git blob IDs.",
+    "Compared toolchain and mathlib pins."
+  ],
+  "not_executed": [
+    "Lean build or kernel replay",
+    "Finite spanning computation",
+    "Mathematical proof verification",
+    "Upstream scripts or solve publication"
+  ],
+  "contribution_tally_change": 0
+}

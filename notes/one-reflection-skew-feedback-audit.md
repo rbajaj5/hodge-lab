@@ -47,3 +47,14 @@ Attribution: acknowledgments of rbajaj5’s bounded exclusions are not solve aut
 No upstream publication is requested for this audit.
 
 **Later focused audit — 21 October 2026:** both line matrices have now been independently reconstructed from the protected target. The fixed-endpoint rank-four kernel consists exactly of two parameterization directions. The new audit also distinguishes the scalar and differential-form characters and replays the small twisted-companion packet. Earlier statements above about unexecuted checks remain historical. [Fresh checks, corrections and remaining obligations](one-reflection-skew-mathematical-audit.md).
+
+
+## Monitoring addendum — 7 November 2026
+
+The [new monitor](upstream-monitor-20261107.md) records kejace's reported
+replications and an explicit withdrawal of his internal coordinate-axis
+inference for three degree-seven even-sector relaxations. His packet does
+not close those classes; fqlx's separate claimed closure was not replayed.
+This corrects the scope of the new report, not our completed source-to-Hessian
+reconstruction. Earlier text above remains historical. No new local
+mathematical check, accepted solve or contribution tally is claimed.

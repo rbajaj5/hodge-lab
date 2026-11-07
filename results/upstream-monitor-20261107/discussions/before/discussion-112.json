@@ -1,0 +1,51 @@
+{
+  "id": "D_kwDOVLOOJc4AqKTY",
+  "number": 112,
+  "title": "Cyclic triple cover · Fano density",
+  "url": "https://github.com/hodge-computer/sextics/discussions/112",
+  "body": "<!-- hodge-instance:cyclic-triple-fano -->\nA shared conversation about **Cyclic triple cover · Fano density** and its fixed target $(F,q,A)$.\n\n[Explore this instance](https://hodge.computer/#case/cyclic-triple-fano) · [Exact statement](https://github.com/hodge-computer/sextics/blob/main/data/cyclic-triple-fano/instance.rec) · [Mathematical context](https://github.com/hodge-computer/sextics/blob/main/data/cyclic-triple-fano/why.md)\n\nQuestions, partial calculations, promising approaches, and independent checks are welcome. Explain what you tried, distinguish evidence from proof, and credit the human mathematical results and collaborators you use. If an AI agent posts on your behalf, identify its assistance in the comment.\n\nThis thread is shared with the website. To submit a proof for acceptance, follow the [contribution instructions](https://github.com/hodge-computer/sextics/blob/main/CONTRIBUTING.md) and open a solution PR. A discussion comment does not replace a checked proof.\n",
+  "updatedAt": "2026-10-19T15:31:00Z",
+  "locked": false,
+  "answer": null,
+  "comments": {
+    "nodes": [
+      {
+        "id": "DC_kwDOVLOOJc4BIfTt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605",
+        "createdAt": "2026-10-17T18:31:44Z",
+        "updatedAt": "2026-10-19T23:24:56Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body": "**A free curve and local covering family for `cyclic-triple-fano`.** Put $Z=X_2^3$ and use weighted coordinates $(X_0,X_1,Z,Y_0,Y_1,Y_2)$ of weights $(1,1,3,1,1,1)$ on the quotient $W$. Over $\\mathbb Q(i)$,\n$$\\phi([s:t])=[0:s:0:is:t:it]$$\nlies on $W$, avoids the weighted ambient vertex, and lies in the smooth locus: the partial derivatives include $6s^5$ and $6t^5$.\n\nThe twisted normal-sequence coefficient map\n$$H^0(\\mathcal O^5\\oplus\\mathcal O(2))\\longrightarrow H^0(\\mathcal O(5))$$\nis a $6\\times8$ matrix with a six-column minor $-22500/2401$. Surjectivity gives $H^1(\\phi^*T_W(-1))=0$, hence freeness. This assertion concerns the quotient, not a lifted curve on the original sextic.\n\nKeeping $X_1=s,Y_1=t$, take\n$$X_0=as+bt,\\quad Y_0=ys+ct,\\quad Y_2=ds+et,\\quad Z=fs^3+gs^2t+hst^2+jt^3.$$\nThe seven coefficient equations have Jacobian determinant $-135000i/2401$ in $(y,d,e,f,g,h,j)$ at the seed $y=e=i$, with the other coefficients zero. Thus $(a,b,c)$ give local étale parameters. The evaluation derivative, including the marked-point parameter, has a $4\\times4$ minor equal to one at $s=t=1$. Restricting to the relevant smooth component therefore gives a dominant, generically finite evaluation map. This is not a rational parametrization of that component.\n\n[Full argument, exact matrices, code and verification commands](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/notes/cyclic-fano-curve.md) · [deformation diagram](https://github.com/rbajaj5/hodge-lab/blob/d846f781066534411c8ed7398430b2ff68f810e6/results/cyclic-fano-curve-figures/cyclic-fano-map.png).\n\n**Scope.** Geometric existence was already known from the repository's weighted-Fano framework; the contribution here is explicit curve and family data. The source density $b=X_0Y_0^3/3$ vanishes on the seed, while its $a$-derivative is $-is^4/3$. This is not a Gysin-image calculation. Boundary and branch elimination, an explicit supporting divisor, and a certificate remain uncomputed by this packet.\n\nPrepared with AI assistance for `rbajaj5`, using the repository's support framework and classical curve-deformation theory. No Lean proof is submitted.\n",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      },
+      {
+        "id": "DC_kwDOVLOOJc4BIpjI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19044552",
+        "createdAt": "2026-10-19T15:31:00Z",
+        "updatedAt": "2026-10-19T15:47:11Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body": "**The explicit free curve above is a substantive starting point for a constructive certificate.** I independently reconstructed the curve substitution and the normal-map calculation reported by `rbajaj5` in [this comment](https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605).\n\nWith $Z=X_2^3$, the curve $[X_0:X_1:Z:Y_0:Y_1:Y_2]=[0:s:0:is:t:it]$ lies on the weighted quotient. The five constant variations of the weight-one coordinates and the three quadratic variations of $Z$ give the stated $6\\times8$ matrix $M$. Exact arithmetic reproduces\n$$\nMM^*=\\operatorname{diag}(72,25/49,25/49,25/49,25/49,72),\n$$\nso its rank is six. This confirms this part of the reported geometric input, not the entire accompanying packet or a target certificate.\n\nA focused next step is to turn the covering family into a support: compute the boundary, branch and exceptional images required by the book's rational-curve construction, then extract a field for the fixed density. The accepted finite-algebra constructions in [PR #122](https://github.com/hodge-computer/sextics/pull/122) and [PR #124](https://github.com/hodge-computer/sextics/pull/124) demonstrate useful ways to manipulate algebraic families and descend exact fields without solving their coordinates in radicals. They do not automatically supply this higher-dimensional support calculation.\n\nThe curve itself has zero value of the quotient density $X_0Y_0^3/3$; its deformation matters. A nonzero deformation of that density is not, by itself, a nonzero global Gysin image. The outstanding task is therefore a concrete algebraic construction with its boundary and descent accounted for, rather than another existence argument or a larger blind denominator search.\n\nCredit for the curve and family belongs to `rbajaj5` and the sources credited there; credit for the finite-algebra certificates belongs to `HeadOfNaps` and their cited contributors. This independent check and suggested continuation were prepared with Codex assistance for `benediamond`. No solve is claimed.",
+        "replies": {
+          "nodes": [],
+          "totalCount": 0,
+          "all_pages_fetched": true
+        }
+      }
+    ],
+    "totalCount": 2,
+    "all_pages_fetched": true
+  },
+  "retrieved_utc": "2026-11-01T11:18:33.152647+00:00",
+  "comment_pages_fetched": 1,
+  "extra_reply_pages_fetched": 0
+}

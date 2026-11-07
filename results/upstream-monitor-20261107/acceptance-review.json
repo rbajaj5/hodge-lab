@@ -1,0 +1,891 @@
+{
+  "scope": "Metadata/source identity checks only; no Lean run or mathematical proof verification.",
+  "upstream_base": "83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0",
+  "upstream_head": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+  "target_count": 82,
+  "accepted_count": 66,
+  "open_count": 16,
+  "instance_set_unchanged": true,
+  "acceptance_set_unchanged": true,
+  "fixed_instance_proof_record_pin_changes": [],
+  "projection_matches_all": true,
+  "old_formal_acceptance_true_all": true,
+  "receipts": [
+    {
+      "target": "block-q2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T01:00:21Z",
+      "pullRequest": {
+        "number": 38,
+        "url": "https://github.com/hodge-computer/sextics/pull/38"
+      },
+      "old_source_hash": "77ca97cf92e4900422658f76699ac3ca42b2fe593962bab9cff8b8ce117b3d3d",
+      "new_source_hash": "db87a502b6dd85cc6e98c7c472eb680eac3b377c6a0b1d35ca0d6d9c79e1511f"
+    },
+    {
+      "target": "cofactor-eight",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T22:52:41Z",
+      "pullRequest": {
+        "number": 26,
+        "url": "https://github.com/hodge-computer/sextics/pull/26"
+      },
+      "old_source_hash": "e981aa517f5662d9e0cf8f77fd8615c44e2a59eaefcb48dd285f68ab9b6dc434",
+      "new_source_hash": "27ad0a6e0bef32a81561bddaec78c76068be83524881d52be47b9ca5a8a07ea9"
+    },
+    {
+      "target": "cofactor-mixed",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T23:07:11Z",
+      "pullRequest": {
+        "number": 27,
+        "url": "https://github.com/hodge-computer/sextics/pull/27"
+      },
+      "old_source_hash": "bfb4c264b090a053ae8a55c4eca9d879c729a7d00cd40a00f27d2ec11ae3126e",
+      "new_source_hash": "ac9b0f30485a32f430a4fe8169c1c3ed2a99fb013e17e9604e72ff2700a67d2c"
+    },
+    {
+      "target": "collision-h3",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T22:33:55Z",
+      "pullRequest": {
+        "number": 24,
+        "url": "https://github.com/hodge-computer/sextics/pull/24"
+      },
+      "old_source_hash": "b5af2d5e2f5528248185b9a0d3c87224c75334f2a8cf958f76bd4722270359fd",
+      "new_source_hash": "3231052abfa7beef71a10f0c21aae8ba72c7afa4b3c9bc830840382be6a09830"
+    },
+    {
+      "target": "completed-square-nambu-holdout",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T18:52:13Z",
+      "pullRequest": {
+        "number": 11,
+        "url": "https://github.com/hodge-computer/sextics/pull/11"
+      },
+      "old_source_hash": "f8d5040fc2a76d20a92bf9ee9ea1c4ae96a3397de5d71cf8a7fe55637cdd4f14",
+      "new_source_hash": "b54aefd8512c8b7517dde072544b2146358f285c8e3831f92ed135871551a8b0"
+    },
+    {
+      "target": "cone-ladder-linear",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T00:40:31Z",
+      "pullRequest": {
+        "number": 36,
+        "url": "https://github.com/hodge-computer/sextics/pull/36"
+      },
+      "old_source_hash": "ea013159afce625cda03fd5d11f0fa45f496fdf0b7ef6eed6527fffc58e3f01d",
+      "new_source_hash": "8e50ce52467a99e5624d7ac01c1173edd8ecfd2538c6361aea2d4188a72b4857"
+    },
+    {
+      "target": "contact46006",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T23:20:22Z",
+      "pullRequest": {
+        "number": 28,
+        "url": "https://github.com/hodge-computer/sextics/pull/28"
+      },
+      "old_source_hash": "fc8fffa4653609a53f27f180aa31b0678ba23810cd0013534f7f4c87d8ca7212",
+      "new_source_hash": "f4d88ff620f1e00525e620e963d32dabefacf7634b6e072d3cd104117c9bfeeb"
+    },
+    {
+      "target": "coupled-pair-rational-d4-strict",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T19:29:20Z",
+      "pullRequest": {
+        "number": 15,
+        "url": "https://github.com/hodge-computer/sextics/pull/15"
+      },
+      "old_source_hash": "052d255fce292e193672aac79af65465a6c6bbadfaa4e91d132bc6133caec345",
+      "new_source_hash": "c65411835047ea7f17d707aaeb919e0984b8e7b532e392ba3197bf54b62d03f1"
+    },
+    {
+      "target": "crossed-ternary-asymmetric",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "1337isnot1337",
+      "acceptedAt": "2026-10-20T00:06:29Z",
+      "pullRequest": {
+        "number": 149,
+        "url": "https://github.com/hodge-computer/sextics/pull/149"
+      },
+      "old_source_hash": "205c017da38a3424fea7bae1e08985e901c2d40398e03d0db76915e491959f4d",
+      "new_source_hash": "9783b88664deebd996fc20b67f8dc9823d7920962307348d9c7afb7a34140fc7"
+    },
+    {
+      "target": "cycle-three",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "hodgepodgeconjecture",
+      "acceptedAt": "2026-10-21T01:22:13Z",
+      "pullRequest": {
+        "number": 165,
+        "url": "https://github.com/hodge-computer/sextics/pull/165"
+      },
+      "old_source_hash": "8ab8a54bbdb02deb93ec963113006bcb646f1d209233957481b1afbdbd9424c8",
+      "new_source_hash": "529a5bb47c168044c48997aacdbcc8f2defd99985bc7ec2a86401301c9d1aa3c"
+    },
+    {
+      "target": "cyclic-triple-fano",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-20T13:19:48Z",
+      "pullRequest": {
+        "number": 153,
+        "url": "https://github.com/hodge-computer/sextics/pull/153"
+      },
+      "old_source_hash": "6f5cb1f199fc7bfc0e50230cf26d2ff48351d6d0a20a28a95eadf0fb9aefa770",
+      "new_source_hash": "bf6daff9489dd2359540259feef1972d2481744a7f1c92df3c0f4683671fe515"
+    },
+    {
+      "target": "f3-block-x0-quartic-strict",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T18:42:02Z",
+      "pullRequest": {
+        "number": 10,
+        "url": "https://github.com/hodge-computer/sextics/pull/10"
+      },
+      "old_source_hash": "c00f8722302229ca11b1d68a543c8a9055120c93047d822cadc44033e33ff1d1",
+      "new_source_hash": "16f5fde8450416c8cecbed10d4ba73e9d655d41a2eee0c68ec358e9b969dca58"
+    },
+    {
+      "target": "family-block-cube",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T23:29:07Z",
+      "pullRequest": {
+        "number": 29,
+        "url": "https://github.com/hodge-computer/sextics/pull/29"
+      },
+      "old_source_hash": "ff95a0dbe86284cccdf8384bdbf142782144c690af8813a8743f23377661f1e0",
+      "new_source_hash": "06accd4522669bad2354047b31cb6c6d825f30875534a39c836380e2919098fc"
+    },
+    {
+      "target": "family-hesse-web",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T00:17:11Z",
+      "pullRequest": {
+        "number": 34,
+        "url": "https://github.com/hodge-computer/sextics/pull/34"
+      },
+      "old_source_hash": "6b08b3727f0375757a397fb594c59d5b535e2c380812aa2d96a91e5faeeb1b01",
+      "new_source_hash": "c1bbdfd56805fa0a3af5145bf72a8ba25363850411ef75bbe2f27e60049252b0"
+    },
+    {
+      "target": "family-passive-contact",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T00:28:51Z",
+      "pullRequest": {
+        "number": 35,
+        "url": "https://github.com/hodge-computer/sextics/pull/35"
+      },
+      "old_source_hash": "11ee539ed5b40d01ff2b92a0a8477f475cb5cfca4a2f15f430d12109dceae10f",
+      "new_source_hash": "4fb56007279f9c3e0a0f6f33d13cf6fea494f8f9f4ce905a38c05cbe2b5c6b03"
+    },
+    {
+      "target": "family-root-cube",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T23:48:26Z",
+      "pullRequest": {
+        "number": 31,
+        "url": "https://github.com/hodge-computer/sextics/pull/31"
+      },
+      "old_source_hash": "bdaa2ba6f6c960fe8ade132831f2e38925fafc020097609ecab2ba8c731847bd",
+      "new_source_hash": "201835f0003a311570e32a716c4fd6589ddd1b29a7fbedcd4b79ed1a1c7fea5b"
+    },
+    {
+      "target": "family-shear",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T00:08:48Z",
+      "pullRequest": {
+        "number": 33,
+        "url": "https://github.com/hodge-computer/sextics/pull/33"
+      },
+      "old_source_hash": "40e727a003d66a69d06ace22ab4959060584035d84829081b244174c785c8aba",
+      "new_source_hash": "af132b0b146999aaddc408f4a8760d99f34ab188187a2ef901e793a2b8ce8dc8"
+    },
+    {
+      "target": "family-sylvester-norm",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T23:39:47Z",
+      "pullRequest": {
+        "number": 30,
+        "url": "https://github.com/hodge-computer/sextics/pull/30"
+      },
+      "old_source_hash": "f4f924f4ec5b852491736459879640c8fa63c2e17abb9b2936e3a74d7b4ca338",
+      "new_source_hash": "88dba291dd31c1d7066458467ba6773d37b0570f1ed5dfd2e4156b5aeba6d4ed"
+    },
+    {
+      "target": "family-trace-zero",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T23:59:36Z",
+      "pullRequest": {
+        "number": 32,
+        "url": "https://github.com/hodge-computer/sextics/pull/32"
+      },
+      "old_source_hash": "c348133c271fc380c47e1baaed627e9c0a5fb2b5f67caefacf5e6ef2444bfd24",
+      "new_source_hash": "ea48a1d3eff9d31ad39ca5779ac5ff6fd5ba29558904b09234efea70842776f3"
+    },
+    {
+      "target": "fermat-pair-rational-d4-strict",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T17:04:10Z",
+      "pullRequest": {
+        "number": 1,
+        "url": "https://github.com/hodge-computer/sextics/pull/1"
+      },
+      "old_source_hash": "57bc8b22e54ef4b4c75538f4cef6d869a80752ce8a221fda743a36b14f98df00",
+      "new_source_hash": "03edc8c1e844dac6cdc3429fec34148b3770537dd44c207a8eae2784e4f9bae9"
+    },
+    {
+      "target": "fermat-q2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T00:52:14Z",
+      "pullRequest": {
+        "number": 37,
+        "url": "https://github.com/hodge-computer/sextics/pull/37"
+      },
+      "old_source_hash": "6d4d75a05bccb100859a12e40ff9c46b4db728666fc907a152b3c637ca7e9358",
+      "new_source_hash": "9f169e9593c87cbbdb15945b3f061e7471881502ba1799a4539476aa5ad08fe7"
+    },
+    {
+      "target": "fixed-witness-hesse-cofactor-d4-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T19:48:41Z",
+      "pullRequest": {
+        "number": 17,
+        "url": "https://github.com/hodge-computer/sextics/pull/17"
+      },
+      "old_source_hash": "8a701363fd9cb15ce1361a33bf69c3ae1b887b52b5fb5643d5f39a369c07f3e0",
+      "new_source_hash": "23ace235530c75a690839ca2f0499d385b9c54fcb5ec27c422a7051d2f39f67f"
+    },
+    {
+      "target": "hesse-radial-hesse-cofactor-d4-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T19:39:31Z",
+      "pullRequest": {
+        "number": 16,
+        "url": "https://github.com/hodge-computer/sextics/pull/16"
+      },
+      "old_source_hash": "269c4276273a2ef2d8e601cf7e42fc037022c010711acf84664370ee0a3e7c64",
+      "new_source_hash": "057e8c79c81b6c7bb4b1bbd8a807b237ea549b67ea0326ec8ce64295ff2aa041"
+    },
+    {
+      "target": "hesse-triangle",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T22:23:46Z",
+      "pullRequest": {
+        "number": 23,
+        "url": "https://github.com/hodge-computer/sextics/pull/23"
+      },
+      "old_source_hash": "e3183fb436f3ecab3d9ba5f1e0e200d7d03522b726e9558f60a0ac5caf72f103",
+      "new_source_hash": "80eb2fcce7471eacbb068d18a966eed7eea395537b832aff6053de25480e31fb"
+    },
+    {
+      "target": "holdout-all-six",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T19:28:05Z",
+      "pullRequest": {
+        "number": 135,
+        "url": "https://github.com/hodge-computer/sextics/pull/135"
+      },
+      "old_source_hash": "a980e3e45e913eee721e43573029799287af34147d6ae508fe60d307cb99f177",
+      "new_source_hash": "bce1ba0c2555f1a611f78dc3c894182fef474b3f4de03deb5218dc02c8c1a0c1"
+    },
+    {
+      "target": "holdout-bundle",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-20T21:29:12Z",
+      "pullRequest": {
+        "number": 161,
+        "url": "https://github.com/hodge-computer/sextics/pull/161"
+      },
+      "old_source_hash": "74dc67148aea1b343c062320c74f1a155ae9a5f3b1c7be6e5ac5e37e2d9484a3",
+      "new_source_hash": "163b869a7a6c905d8ce55fc7fceacd31e1be989fed79e11f4250e067ff048c5b"
+    },
+    {
+      "target": "holdout-moving-branch",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-21T13:22:41Z",
+      "pullRequest": {
+        "number": 172,
+        "url": "https://github.com/hodge-computer/sextics/pull/172"
+      },
+      "old_source_hash": "7d984537510a9588d4bcba7014fd12dfdb8daa177a5c6bb2a6b20c408262ebf0",
+      "new_source_hash": "be8c6c217118b19bc5703844251f447f71c9bf7134694d6603b339e45bfc665f"
+    },
+    {
+      "target": "holdout-p-y14",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T19:41:15Z",
+      "pullRequest": {
+        "number": 136,
+        "url": "https://github.com/hodge-computer/sextics/pull/136"
+      },
+      "old_source_hash": "8a1e3f5aea256acab6a74827356938e7d1187e1d6ae853a3d06bee468d4dc171",
+      "new_source_hash": "bfe84f15b34a95d9e06990c2f5f83ad58b780db216b9b276514ba8c5831a9de2"
+    },
+    {
+      "target": "holdout-p3",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T19:47:45Z",
+      "pullRequest": {
+        "number": 137,
+        "url": "https://github.com/hodge-computer/sextics/pull/137"
+      },
+      "old_source_hash": "c9d9758b80aa8cd50f8c472df2330adda58e0146f692816417db3e98f9e246d5",
+      "new_source_hash": "10be3378c597ba5b04fc0587272bf5011adc532425831c20fef432157248e03b"
+    },
+    {
+      "target": "holdout-q2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "HeadOfNaps",
+      "acceptedAt": "2026-10-19T14:03:12Z",
+      "pullRequest": {
+        "number": 124,
+        "url": "https://github.com/hodge-computer/sextics/pull/124"
+      },
+      "old_source_hash": "e182b7a298f20115f128c643ed3bfbf89ce572cbb85301164354cc475197f43b",
+      "new_source_hash": "09928bf86969bfa362004119d9ba86a27b1be0ba76eeaac1c0935ec44ce8b026"
+    },
+    {
+      "target": "holdout-ternary-deformation",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "hodgepodgeconjecture",
+      "acceptedAt": "2026-10-20T12:09:17Z",
+      "pullRequest": {
+        "number": 151,
+        "url": "https://github.com/hodge-computer/sextics/pull/151"
+      },
+      "old_source_hash": "c59e5e86ce1845b161a54f6a15181602da4fa4a0687602dcfe5679cb28e3a181",
+      "new_source_hash": "652942650631006b8bc2f265a4e9b152aa5fe69f55ef0d0b7c773ee902ac4416"
+    },
+    {
+      "target": "holdout-x0-x14-y0",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T19:53:17Z",
+      "pullRequest": {
+        "number": 138,
+        "url": "https://github.com/hodge-computer/sextics/pull/138"
+      },
+      "old_source_hash": "508b67da49c4c951c5b73e6b562ceb9cc2629cdd9fec1957b64b7532def1a1e7",
+      "new_source_hash": "bd3eafba838ba8a6b863c0d4355c340db8744b40b6485053f047c146280aac6e"
+    },
+    {
+      "target": "holdout-x0-y03-y12",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T19:58:47Z",
+      "pullRequest": {
+        "number": 139,
+        "url": "https://github.com/hodge-computer/sextics/pull/139"
+      },
+      "old_source_hash": "f74680fb22f419069dd3ee176ca40a49b4c7fc1ebe2d49bf0d98b740fe7cc264",
+      "new_source_hash": "2005c0b413c8c8459b3f0f121a7704feb21c2e48d896c4a9b950abfe43ccc1d4"
+    },
+    {
+      "target": "holdout-x04-p",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T20:04:48Z",
+      "pullRequest": {
+        "number": 140,
+        "url": "https://github.com/hodge-computer/sextics/pull/140"
+      },
+      "old_source_hash": "01bbe55c7ae637811810d88861d554f224ba969cda9e6ed697d9b5d72ad3a235",
+      "new_source_hash": "2f07209f76560f364212399d0ffd9c5ee45e8a26f552f8ca5e4deb9c3b03480b"
+    },
+    {
+      "target": "holdout-x1-y04-y1",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T20:09:48Z",
+      "pullRequest": {
+        "number": 141,
+        "url": "https://github.com/hodge-computer/sextics/pull/141"
+      },
+      "old_source_hash": "9fc701dad1ce2d878d2f7d7d2291a0b595c00c42e8dc0e4f3f97e8907b79ea79",
+      "new_source_hash": "c354e2fbe66c3ff9f39bc9792bc897d418a4b5a13c46763c0ed6f74a4ef88c92"
+    },
+    {
+      "target": "holdout-x12-p-y02",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T20:17:19Z",
+      "pullRequest": {
+        "number": 142,
+        "url": "https://github.com/hodge-computer/sextics/pull/142"
+      },
+      "old_source_hash": "e9741933dad9138e929ac9937ba6198a7f2a8de0328be1ad349fc8bf42afaf59",
+      "new_source_hash": "161cc3003bf388202bda697a15325db9cb6ec7c3b5cb7936faa9a622d9a69834"
+    },
+    {
+      "target": "holdout-x13-y13",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T20:22:50Z",
+      "pullRequest": {
+        "number": 143,
+        "url": "https://github.com/hodge-computer/sextics/pull/143"
+      },
+      "old_source_hash": "cec335d189534a26deac2aeb039c2621d7ea27673b71fc3a2e1debe17f69d793",
+      "new_source_hash": "6ce45a9095b312a2b3389892a5a32c2b79bd2519d3aecf2a151f83b4c4c86ab5"
+    },
+    {
+      "target": "holdout",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T17:08:12Z",
+      "pullRequest": {
+        "number": 128,
+        "url": "https://github.com/hodge-computer/sextics/pull/128"
+      },
+      "old_source_hash": "37ec49a0496b67cadb9272209131234c0ebfda33bfe827a50c40e63e8784c9f9",
+      "new_source_hash": "1e3d662ffb13dadb24ac7a224e9975b21e390f2cb77562226b82e96b633b1db2"
+    },
+    {
+      "target": "klein-hesse",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T22:13:35Z",
+      "pullRequest": {
+        "number": 22,
+        "url": "https://github.com/hodge-computer/sextics/pull/22"
+      },
+      "old_source_hash": "a57565aa271922cd642b0e9a7f1f063fbabe9bb9d42243afd381c75ff6016fd6",
+      "new_source_hash": "75c8fc62b86ba41be463d171ee8598b0a9e323b88bae6a0fc80ae7e3cdbf5472"
+    },
+    {
+      "target": "klein-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T01:48:10Z",
+      "pullRequest": {
+        "number": 42,
+        "url": "https://github.com/hodge-computer/sextics/pull/42"
+      },
+      "old_source_hash": "111e9654a3a19e6b4fa55ea0e076a06d7fb3a413ef8b99f81bebcb786ed9dcfd",
+      "new_source_hash": "4b70072fe2742fd65e80a50bb2c4fcf7bd35c9575115a9c8dbaf088660a971ec"
+    },
+    {
+      "target": "m3-coupled",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T22:04:26Z",
+      "pullRequest": {
+        "number": 21,
+        "url": "https://github.com/hodge-computer/sextics/pull/21"
+      },
+      "old_source_hash": "5f18d4c52107c458b3257f8fe4eb1a93fe4e8bcf7ec0139139cc9a3d725c773e",
+      "new_source_hash": "f4835093bd5c927fe6b4a6547aaa2c5372b1bf6180144c98c2a2537c6ee56794"
+    },
+    {
+      "target": "mixed-biweight",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-21T11:40:04Z",
+      "pullRequest": {
+        "number": 170,
+        "url": "https://github.com/hodge-computer/sextics/pull/170"
+      },
+      "old_source_hash": "386d097c69970e8913a234ea9e161b2b340d9ff36c1246a338e105c204ce37f0",
+      "new_source_hash": "35b25dface397dd936d87d3c869418a7b4ededf6b6e25ace3b6cb6fa3da66bdb"
+    },
+    {
+      "target": "mixed-polar",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-22T00:03:34Z",
+      "pullRequest": {
+        "number": 182,
+        "url": "https://github.com/hodge-computer/sextics/pull/182"
+      },
+      "old_source_hash": "b1b64f19af699d5f769012b27190f50799f5f759b6ad0378a04287a8ba5478d4",
+      "new_source_hash": "f88459be243cbedd0e084b9dc0debd54344e743b58ef5305e055c8f948b3cfe4"
+    },
+    {
+      "target": "one-reflection-y2-sector",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "DiamondJM",
+      "acceptedAt": "2026-10-19T20:58:42Z",
+      "pullRequest": {
+        "number": 144,
+        "url": "https://github.com/hodge-computer/sextics/pull/144"
+      },
+      "old_source_hash": "5372069b14cf04da632d96c0270d10ddfaf5d81943b8a7a7234a5d0ee8cd95c5",
+      "new_source_hash": "65e7310699f2dd3fcd8e0a9aa3fbd833639066a642001f6953354bf4083de080"
+    },
+    {
+      "target": "one-reflection",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-19T07:58:55Z",
+      "pullRequest": {
+        "number": 123,
+        "url": "https://github.com/hodge-computer/sextics/pull/123"
+      },
+      "old_source_hash": "cea2ae5ffe1faf44687325d607591ab6d9916dfbdb8e1608083c8e3163ea09e8",
+      "new_source_hash": "9cd6cae011c952bd7d380d4303051d2f49f5b8f04c2a53b5f4e96c218ef2080d"
+    },
+    {
+      "target": "passive-quadratic-d4-strict-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T20:09:30Z",
+      "pullRequest": {
+        "number": 19,
+        "url": "https://github.com/hodge-computer/sextics/pull/19"
+      },
+      "old_source_hash": "6a955dcc6afebcc50b03ead36e911dccf8cd62f6e3984d81bd91f2ee597c64e7",
+      "new_source_hash": "b1036a3cdfa8c49dad1691426dcc9e37a5a0be60215917d8b0054cff593d1f42"
+    },
+    {
+      "target": "polarized-contact-coupled-d2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T01:09:32Z",
+      "pullRequest": {
+        "number": 39,
+        "url": "https://github.com/hodge-computer/sextics/pull/39"
+      },
+      "old_source_hash": "18fdb82cfb9484ac6b7befe2a2283dee0a6076f669f9125be9b7f9be4407861d",
+      "new_source_hash": "c4a590220c807b06df15536747e8072fc7b4741a4f2bf60093623bd05fd64266"
+    },
+    {
+      "target": "polarized-contact-deformation-d2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T01:20:41Z",
+      "pullRequest": {
+        "number": 40,
+        "url": "https://github.com/hodge-computer/sextics/pull/40"
+      },
+      "old_source_hash": "3e7a76a49d9bf183a1158f50959d5867157fd74bed57f88ea1410855f1fa5fad",
+      "new_source_hash": "778e7f0fd2f2ac5a4d4feb5d12f9e313ef84de5aa6d267e232349c37c879dcd2"
+    },
+    {
+      "target": "quadric-contact-broken",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "HeadOfNaps",
+      "acceptedAt": "2026-10-19T07:37:50Z",
+      "pullRequest": {
+        "number": 122,
+        "url": "https://github.com/hodge-computer/sextics/pull/122"
+      },
+      "old_source_hash": "797aee12baebd1fa005b8500faa2512b51ec632968b1fef7d4ea9cb4c48267f6",
+      "new_source_hash": "1eae1aa97fd0d249dc455361cab465e0d5ee4fa3603e0909fafb5a1bdc40249f"
+    },
+    {
+      "target": "reflection-coupled-fano",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-20T11:52:41Z",
+      "pullRequest": {
+        "number": 150,
+        "url": "https://github.com/hodge-computer/sextics/pull/150"
+      },
+      "old_source_hash": "c6727249e9416d5a17b64dfef5534b68b176f1e8e6fbaaeca9be380a8a3af283",
+      "new_source_hash": "6907dd2ac82ae2077c0facd9132c6a46d147e56fcadb42767681e15951d352f1"
+    },
+    {
+      "target": "split-ternary-q2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "fqlx",
+      "acceptedAt": "2026-10-20T20:26:11Z",
+      "pullRequest": {
+        "number": 159,
+        "url": "https://github.com/hodge-computer/sextics/pull/159"
+      },
+      "old_source_hash": "d43b7a7f0484fea0553c7d125c592614453b3438b921f8bb65cf8ea6d0a3bf23",
+      "new_source_hash": "c5cf69c34affcf53639f36a9baf8c31e969764cd25ebe0b84ae263e709ff1dd2"
+    },
+    {
+      "target": "ternary-collision-cb-d2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T18:33:15Z",
+      "pullRequest": {
+        "number": 9,
+        "url": "https://github.com/hodge-computer/sextics/pull/9"
+      },
+      "old_source_hash": "d3bbabb2dc8b50e4948c6f41e6df07b95732761953eaaab5558c1b9df07097b8",
+      "new_source_hash": "d0d14b055617d48669d057807dadb1c704fd474efbd7962c855c9362e5cf44a7"
+    },
+    {
+      "target": "ternary-collision-cbp-d2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T18:24:23Z",
+      "pullRequest": {
+        "number": 8,
+        "url": "https://github.com/hodge-computer/sextics/pull/8"
+      },
+      "old_source_hash": "f63b83fc8851388a6f53eeb103d4c7420d72d90ebb222176c5df89a7831a15fa",
+      "new_source_hash": "d77638d3053afafd257b312fb1ea36e226f3ff6f7a3506bb2dcc944c3e5169aa"
+    },
+    {
+      "target": "ternary-tangent-residual-h2-d2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T18:02:31Z",
+      "pullRequest": {
+        "number": 6,
+        "url": "https://github.com/hodge-computer/sextics/pull/6"
+      },
+      "old_source_hash": "d462bd7ecb938150add2a44ff35a8e3407a7a8d5526e879e9fd997bb8ae1e65e",
+      "new_source_hash": "4ad580bdf1aa485aab5422bfbb28ecb3342d95e090e47263dd9d479ccc75cd78"
+    },
+    {
+      "target": "three-block-rational-d4-strict",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T18:13:39Z",
+      "pullRequest": {
+        "number": 7,
+        "url": "https://github.com/hodge-computer/sextics/pull/7"
+      },
+      "old_source_hash": "6d1c80b1c665e150596955123141d0e5adf528ba36fe8d743e951b2bc0d281e6",
+      "new_source_hash": "8cb23cc8a3e6c8bcce681a49acd12c92a2be8b343199b32defae3f17724037ff"
+    },
+    {
+      "target": "tie-offblock-ytype-d4-strict-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T19:20:09Z",
+      "pullRequest": {
+        "number": 14,
+        "url": "https://github.com/hodge-computer/sextics/pull/14"
+      },
+      "old_source_hash": "62771a8f4392d28807efa663e32a3af9374268c06d83036f9285ed95c4bd6e3d",
+      "new_source_hash": "ba5b761953993fd275660e4c060ed07cf14194761e6b6b9685964d211589326a"
+    },
+    {
+      "target": "tie-singleton-3odd-strict",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T19:10:53Z",
+      "pullRequest": {
+        "number": 13,
+        "url": "https://github.com/hodge-computer/sextics/pull/13"
+      },
+      "old_source_hash": "3984ef49356ffcd6d84a9ef94554aa636e6651946502b3faea2777cecdc67f84",
+      "new_source_hash": "9e03f90a067e690b7d718a0af936d6e88a86ddd3b1fe7916803699df23a1353b"
+    },
+    {
+      "target": "two-reflection-cubic-surface-d2",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T20:00:14Z",
+      "pullRequest": {
+        "number": 18,
+        "url": "https://github.com/hodge-computer/sextics/pull/18"
+      },
+      "old_source_hash": "ea078201ca98319d9410ea341b0ef2074ca4c909f4e3641731f98d26f5f40e39",
+      "new_source_hash": "de96241e2ddaa0f2ec29c4a5f4849d0ede70d3125a2734b1a01aa334f5287ce4"
+    },
+    {
+      "target": "two-ternary-dense-two-odd-hessian-d48",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-16T01:37:28Z",
+      "pullRequest": {
+        "number": 41,
+        "url": "https://github.com/hodge-computer/sextics/pull/41"
+      },
+      "old_source_hash": "05ebed8cd61f55b8e90b8eb3648249a53fa6e39d7cae41ec8ac59c7073d78fdc",
+      "new_source_hash": "d1bbdee962ae5188f899aaba0ebcb26b757331bb3f177dcf6548ae1a064f201f"
+    },
+    {
+      "target": "twoblock-cubic",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T22:43:02Z",
+      "pullRequest": {
+        "number": 25,
+        "url": "https://github.com/hodge-computer/sextics/pull/25"
+      },
+      "old_source_hash": "21053db6fbff2dcda510aac3e6212ea2e574642c22c7fa056fe697acbbc91fe3",
+      "new_source_hash": "cac3ac8ef8ce3d773033a90232f1864b0568efceb40c66bdf89c77f2fe3a20f8"
+    },
+    {
+      "target": "twoties-crossblock-hesse-cofactor-d4-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T20:24:15Z",
+      "pullRequest": {
+        "number": 20,
+        "url": "https://github.com/hodge-computer/sextics/pull/20"
+      },
+      "old_source_hash": "4ea836f8260fb12291f6ad5c7d83d60d0f5bc332018674309d051ab423d84a7a",
+      "new_source_hash": "41ae31b1491ef8c73f4fbb3c1cfa3676d5df7e64d616d4d6009346704454049a"
+    },
+    {
+      "target": "twoties-tie2-x2-quartic-strict",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T19:01:39Z",
+      "pullRequest": {
+        "number": 12,
+        "url": "https://github.com/hodge-computer/sextics/pull/12"
+      },
+      "old_source_hash": "023bf64312151f5447647c4f3dffe835ce5820f450febee68342fc7db41d3082",
+      "new_source_hash": "94e43e1c37090a48924b9db2797fec1a8296e1318f4b05817b741342f5574f93"
+    },
+    {
+      "target": "xtype-sparse-rational-1m142",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T17:13:25Z",
+      "pullRequest": {
+        "number": 2,
+        "url": "https://github.com/hodge-computer/sextics/pull/2"
+      },
+      "old_source_hash": "fa6b02ef9cf42874f0f1a347b2f4afb548ba31b93e87bffc365c67101fc49d1c",
+      "new_source_hash": "aae1c913caacd073c7e2ff5abe534c1ce2553051f7fadba8414d4e24b6f7cbfd"
+    },
+    {
+      "target": "xtype-strict-rational-113",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T17:29:33Z",
+      "pullRequest": {
+        "number": 3,
+        "url": "https://github.com/hodge-computer/sextics/pull/3"
+      },
+      "old_source_hash": "59ec7442d9f1db8e8346a47e4262ba83105ec834607e82d7766de89e5bb274f8",
+      "new_source_hash": "640bf5797473f0eac2a80c32f9183585cfc747fb565d127941fa30ff59760092"
+    },
+    {
+      "target": "ytype-companion-231-d4-strict-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T17:52:28Z",
+      "pullRequest": {
+        "number": 5,
+        "url": "https://github.com/hodge-computer/sextics/pull/5"
+      },
+      "old_source_hash": "1d2613402ac8e471a0782ebce4b1969fb663c65a6f9b3e18ccdfaf89e1a9c358",
+      "new_source_hash": "aca3c959fe8d93ce34f1d208b16054e84275cdfc90e275c9d47ac3bc8b0dc89c"
+    },
+    {
+      "target": "ytype-companion-fiberA-d4-strict-rational",
+      "projection_matches": true,
+      "original_formal_acceptance": true,
+      "githubLogin": "benediamond",
+      "acceptedAt": "2026-10-15T17:42:29Z",
+      "pullRequest": {
+        "number": 4,
+        "url": "https://github.com/hodge-computer/sextics/pull/4"
+      },
+      "old_source_hash": "aa46d6a4ce7ad12ce3909218cced27b56063f2f47edc2ac20a8aa11bf29f0578",
+      "new_source_hash": "ee388da468e7b9215caf189cced2bfe190e15acd4f1f6b2c37496e8ed41f6809"
+    }
+  ],
+  "open_targets": [
+    "cycle-q2",
+    "cyclic-triple-residual",
+    "dense-rational",
+    "diagonal-permutation",
+    "eight-plane-configuration",
+    "four-plus-two-residual",
+    "klein-coupled-character",
+    "off-paired",
+    "one-reflection-skew",
+    "polarized-k3-remainder",
+    "quadratic-cubic-pullback",
+    "quadric-contact-residual",
+    "rank-one-biquartic",
+    "reflection-coupled-residual",
+    "short-power-presentation",
+    "symmetric-sextic-residual"
+  ]
+}

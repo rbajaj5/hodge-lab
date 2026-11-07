@@ -6979,3 +6979,55 @@ requires no research visualization. No upstream action occurred; Posts 1–30
 and the tally remain **30 discussion contributions, one closed maintenance
 PR, zero accepted authored solves**. Notebook push/readback are recorded
 separately. The unpublished #61 research attempt remains outside this monitor.
+
+
+### Checkpoint 161 — 7 November 2026, 03:48 UTC: receipt migration, new support claims and bounded discussion corrections
+
+**Bounded monitoring; Hodge Lab only.** The [current status note](notes/upstream-monitor-20261107.md)
+records upstream `2d60d08d25fba3e02162b39d4c50f6b467e7f506`, 38 commits after
+`83fbf5c9a0afe9136ce4f1ed324d085a2c899bd0`; notebook parent is
+`c47dcb477ba394666e57bcd653ec89a6c8da86a5`. All pages of the 14 required
+threads were fetched: 47 comments and 20 replies, eight additions, four
+edits, no deletions. Stable IDs, timestamps and body SHA256 catch the edits
+that thread-level timestamps alone miss. Separate repository baselines and
+before/after discussion captures are preserved in the [evidence manifest](results/upstream-monitor-20261107/review.json).
+
+The complete-tree comparison finds 94 of 383 target/policy pins changed.
+All 66 acceptance receipts migrated to schema 2, preserving each original
+contributor, PR and acceptance time exactly; no acceptance was added or
+removed. The catalogue remains 82 targets, 66 accepted submissions and 16
+without accepted submissions. Fixed instance/proof/record pins are unchanged.
+Current compact receipts record attribution, not source hashes or stored
+verification claims. Maintained sources, current CI scope and historical
+protected receipts must now be tracked separately. Lean/toolchain migration,
+the general certificate contract and shared-library maintenance are upstream
+changes; no current Lean replay or CI-success claim is made here.
+
+Upstream now asserts mathematical existence for four-plus-two-residual and
+symmetric-sextic-residual via the book's two-reflection support theorem.
+This explicitly updates the earlier missing-support/existence wording;
+neither has a published acceptance receipt. Benjamin Diamond's #120 contact
+family report does not provide the rational primitive, global traced source
+or instance HasCertificate proof. Finite inverse and conditional suspension
+Lean checks reported by the author do not discharge those gaps. We did not
+verify the theorem or replay the packet. The general even-sextic problem and
+the other targets' missing hypotheses are not settled by these reports.
+
+kejace's six new reports cover bounded exclusions in #115–118, #120 and #127,
+with the exact scope and unresolved mixtures retained. #117 corrects his
+local sector count; #127 withdraws a leading-ideal/coordinate-axis inference
+and does not close the three even-sector classes from that packet.
+Benjamin Diamond's #116 report excludes one cubic-line correspondence.
+Edited #44/#112 summaries reconcile earlier language with already accepted
+proofs, retaining fqlx, HeadOfNaps, fringewidth, rbajaj5 and other attribution.
+Previously recorded work or receiving further credit is not a new contribution.
+These are source/claim reviews; no author-reported mathematics was promoted
+to our executed checks or a new accepted solve.
+
+README and the current feedback note link the update; all earlier ledger
+bytes, receipts and research results remain history. No upstream action or
+research batch occurred; no visualization is required for this maintenance.
+Prompt 3, alternative drafts and the unpublished #61 attempt were not reopened.
+Posts 1–30 and tally remain **30 discussion contributions, one closed
+maintenance PR, zero accepted authored solves**. Normal notebook push and
+remote readback are recorded separately.
