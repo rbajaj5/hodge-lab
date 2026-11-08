@@ -15,6 +15,8 @@ Lean is benched in the current solution-focused batch at the user's direction.
 
 ## Current frontier
 
+**Monitoring update: 8 November 2026, 07:30 UTC.** Upstream adds a book theorem converting ordinary to strict certificates when denominators may change, revises the contact witness and reuses clearing/Piola machinery in existing accepted proofs. General fixed-denominator tests still require their full quotient; no new target acceptance or discussion change occurred. [Statement scopes, source pins and verification limits](notes/upstream-monitor-20261108.md).
+
 **Monitoring update: 7 November 2026, 03:48 UTC.** Upstream at [`2d60d08`](https://github.com/hodge-computer/sextics/tree/2d60d08d25fba3e02162b39d4c50f6b467e7f506) still has **82 targets: 66 accepted submissions and 16 without accepted submissions**. The book now asserts mathematical existence for the four-plus-two and symmetric residual targets; neither has an accepted submission. All 66 acceptance receipts migrated to compact attribution records with original credit, PR and date unchanged. New discussion reports, explicit corrections, source pins and verification limits are recorded in the [7 November monitor](notes/upstream-monitor-20261107.md). Earlier dated snapshots below remain historical.
 
 **Snapshot: 23 October 2026, 21:44 UTC.** Upstream at [`4a8e09b`](https://github.com/hodge-computer/sextics/tree/4a8e09b6002d250094cb1c1152a6026c55030ead/data) still has **82 targets: 66 accepted and 16 open**. All target `F/q/A` fields and acceptance receipts match the previous pin; generated catalogue files have moved out of Git. [Latest status, source paths and verification scope](notes/catalogue-prym-monitor-20261023.md).

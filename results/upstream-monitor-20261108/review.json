@@ -1,0 +1,44 @@
+{
+  "prepared_utc": "2026-11-08T07:35:11.714925+00:00",
+  "notebook_parent": "7b7ee8f7194a8779b95d7ab2dcf55c81839a1996",
+  "upstream_head": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+  "scope": "Bounded source monitoring; no mathematical, Lean or CI replay.",
+  "source_file_mapping": {
+    "repository-heads-20261107T071409Z.json": "repository-before.json",
+    "repository-heads-20261108T072959Z.json": "repository-heads.json",
+    "baseline-before-20261108T073000Z.json": "discussion-baseline.json",
+    "latest.json": "discussion-latest.json",
+    "run-20261108T073000Z.json": "run.json",
+    "comparison-20261108T073000Z.json": "comparison.json",
+    "discussion-identity-review-20261108.json": "discussion-identity-review.json",
+    "status-review-20261108.json": "status-review.json",
+    "policy-review-20261108.json": "policy-review.json",
+    "policy-source-capture-20261108.json": "policy-source-capture-20261108.json"
+  },
+  "evidence_sha256": {
+    "repository-before.json": "adcdbd17511a70452307193551321c79e63c82547514a7c8b1e4b7a2bd36943d",
+    "repository-heads.json": "09ff932af4c8d392b67f767537e97b9890961775407d0fb14d56d2f811dc7080",
+    "discussion-baseline.json": "2f0482630a14543c643e970515f076d1be646b0e4c57149629d776d693eb451b",
+    "discussion-latest.json": "769909983650aedc8baf4886ba0edfad98a3bb70e3de0e90e2da4dbee1071409",
+    "run.json": "84451e6318dc2021ec7122e0c593236ee00c83b604aa43dc072172ab775bef9f",
+    "comparison.json": "f7103092e52434fd7f91971d3aa445e4ec767263f4109556939660fb2d489e3a",
+    "discussion-identity-review.json": "9a540bffe843f6dfc52b8b6195da75855ea4865f597fd479b5803ae61c16e2d9",
+    "status-review.json": "3c15cac9b17ddbd6ff33cf00e367b231caacc4e112d85e5337fca6ce908dcfc8",
+    "policy-review.json": "089ac178fd92813462efbb1077a54082e29fd06f31ebbfb00e97b81f63e4f5c7",
+    "policy-source-capture-20261108.json": "b85c60ebee9598eea46ff80d97b47c1452bbca73e377a2517bf9a3bffeb8df52"
+  },
+  "our_checks": [
+    "Complete14-thread pagination and ID/timestamp/body-hash comparison",
+    "Complete383 target/policy blob comparison",
+    "32 source captures verified against Git blob IDs and SHA256",
+    "Source-scope and attribution reading only"
+  ],
+  "mathematical_checks_executed": false,
+  "upstream_actions": [],
+  "contribution_tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "publication": "Normal commit/push and remote readback recorded separately."
+}

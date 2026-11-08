@@ -1,0 +1,119 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-11-08T07:31:00.970136+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/commit/e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "message": "Merge PR #225: contact geometry and reusable proof calculus\n\nExtract the settled book treatment and promote the clearing and Piola constructions with substantive uses in accepted solves. All 24 CI jobs passed, including 21 sandboxed accepted-application rechecks.",
+      "committer_date": "2026-11-07T21:43:35Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "7b7ee8f7194a8779b95d7ab2dcf55c81839a1996",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/7b7ee8f7194a8779b95d7ab2dcf55c81839a1996",
+      "message": "Record upstream support claims and acceptance receipt migration",
+      "committer_date": "2026-11-07T03:59:25Z"
+    }
+  },
+  "repository_baseline": "repository-heads-20261107T071409Z.json",
+  "repository_head_unchanged": false,
+  "target_policy_pin_count": 383,
+  "target_policy_changes": [
+    {
+      "path": "formal/README.md",
+      "before": "027f3165c348598d07beb062c4638cdfb79aa479",
+      "after": "877bbdd6092fdcd3a39ca270ec6324de2159ae7f"
+    }
+  ],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261107T071408Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261108T073000Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 8,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 2,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 3,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 3,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 9,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [],
+  "metadata_changes": [],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

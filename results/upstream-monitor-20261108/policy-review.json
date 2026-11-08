@@ -1,0 +1,343 @@
+{
+  "reviewed_utc": "2026-11-08T07:33:52.990525+00:00",
+  "status": "completed",
+  "scope": "Bounded read-only maintenance review of merged upstream source/documentation differences; no full research PR223 review or mathematical proof verification.",
+  "before": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+  "after": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+  "comparison": {
+    "commits": 6,
+    "changed_paths": 17,
+    "complete_compare_path_list": true,
+    "note": "17 paths are below the compare endpoint 300-file cap. Root independently checks acceptance and target-pin continuity."
+  },
+  "source_capture": "policy-source-capture-20261108.json",
+  "source_capture_sha256": "b85c60ebee9598eea46ff80d97b47c1452bbca73e377a2517bf9a3bffeb8df52",
+  "source_integrity": {
+    "captures": 32,
+    "all_17_changed_paths_captured": true,
+    "all_sha256_and_git_blob_sha1_checked": true,
+    "network": "45-second bound per read-only request and shared 240-second collection deadline; no retries; all completed without error."
+  },
+  "source_inventory": [
+    {
+      "path": "data/holdout-q2/HoldoutClearing.lean",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/holdout-q2/HoldoutClearing.lean",
+      "blob_sha": "004803d68842f0f9cb6fbd8f0e1d9c7ad364577c",
+      "sha256": "9db1c38222578f2c55ac39ad66ea83231a2e06c1a671a8a48755cf3f442c929f"
+    },
+    {
+      "path": "data/holdout-q2/HoldoutClearing.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/data/holdout-q2/HoldoutClearing.lean",
+      "blob_sha": "75dd4f290aedcb09e66acc1869a639a84c17e25e",
+      "sha256": "20d6b2dbad831f4b9e868f6963cbd1a803c217492c511e03e1a82a8f381e4ab9"
+    },
+    {
+      "path": "data/quadric-contact-broken/HomogeneousClearing.lean",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/data/quadric-contact-broken/HomogeneousClearing.lean",
+      "blob_sha": "21c0c4380ab53bd50ddc0ad214382af59b1fc294",
+      "sha256": "2442f8f1163b4ef79a34b11d67ff66e47b35e3a080fc8d74fcb055ef15c82f98"
+    },
+    {
+      "path": "data/quadric-contact-broken/HomogeneousClearing.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/data/quadric-contact-broken/HomogeneousClearing.lean",
+      "blob_sha": "82a6193f21d69e0d5c35c7f62f1b5a8c83e1bda0",
+      "sha256": "3f0b0d530ed28435fff333ad6e20395a9aa2fbe874b5323d82f8937f0dad7d00"
+    },
+    {
+      "path": "docs/01-certificates.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/01-certificates.md",
+      "blob_sha": "ff442ad35ef09c821f561d1e3e9fc97c43a4bf8f",
+      "sha256": "32071a472199a1a46588b2fb56c4ab71c129d09b3f7baf29aa8c372ea7ef34a4"
+    },
+    {
+      "path": "docs/01-certificates.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/01-certificates.md",
+      "blob_sha": "fd7add21a7a15643e95e76a003d7733582b11ec9",
+      "sha256": "21945871dbfad3021bcb63bb2981228d1fb333d8492220d45597d79758058075"
+    },
+    {
+      "path": "docs/03-geometric-support.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/03-geometric-support.md",
+      "blob_sha": "214fcc01e467125b2dc44f0449c289995435ab15",
+      "sha256": "c76647d4d8aa15fe8a215a3881091cb9ae10c330cf965095f8a002318a10a51c"
+    },
+    {
+      "path": "docs/03-geometric-support.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/03-geometric-support.md",
+      "blob_sha": "c7bd43832ba3c5179b0da26984a52bee93cfb110",
+      "sha256": "5752049b294f011e0227fe85f5cad79ae0f7a38979865043182833aeb506e02e"
+    },
+    {
+      "path": "docs/03b-weighted-threefolds.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/03b-weighted-threefolds.md",
+      "blob_sha": "dc9b568fcb8a1a3fea707ab5d54fc986a19e273a",
+      "sha256": "fcd1de36b6c9a9db1616637b67825a5903d4ebcf2e003171aafcbe6d50662e1b"
+    },
+    {
+      "path": "docs/03b-weighted-threefolds.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/03b-weighted-threefolds.md",
+      "blob_sha": "06a7a68891684981c42d326a19c069e1801bba0d",
+      "sha256": "54c7bd325c782479115a21260b8bdc5ca3154f68a616a3042b8bbab65ed0f4e1"
+    },
+    {
+      "path": "docs/04-known-locus-and-frontier.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/04-known-locus-and-frontier.md",
+      "blob_sha": "d2dac124703487184f160304a964e870ff8876d6",
+      "sha256": "c5250ff2763a95b1c97e45c18cd5ebd0d750556bf02f1e3dc7204994dd41e75d"
+    },
+    {
+      "path": "docs/04-known-locus-and-frontier.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/04-known-locus-and-frontier.md",
+      "blob_sha": "5de69060d9fd5989e34180b3139056d121ea9523",
+      "sha256": "c7ba99ffcaa94db8cacaf07082bfb7d0e99210f6d0d3c48da126d82a0ee1ad21"
+    },
+    {
+      "path": "docs/05-computation.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/05-computation.md",
+      "blob_sha": "08a5d0a3a981053b5d594e8b0338a401d3caf11e",
+      "sha256": "50fd8399562c387f2c80c0299ae66d09ac271b9cf78fa159a7cde24df78c8b13"
+    },
+    {
+      "path": "docs/05-computation.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/05-computation.md",
+      "blob_sha": "c8fa0536115239f3185598c7e21572973de972d0",
+      "sha256": "9ba2173bb2ce812b7b1f4ce224fb96a34dd46066498cdfc18baf099b577f8a27"
+    },
+    {
+      "path": "docs/README.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/README.md",
+      "blob_sha": "324a5ac6dcc37e3019df08ff0c9b07b66628c067",
+      "sha256": "b3f1782c17c118fd377a6718fb7ce51f5817f3e5504c8dd57ebe553bf54147a5"
+    },
+    {
+      "path": "docs/README.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/README.md",
+      "blob_sha": "feb1d333f73d99c2bf9f0837f8d0c3155157166e",
+      "sha256": "2eb230ecd05fafe321357d43d0492a6718d0837b1e9adca191bc4d908df57035"
+    },
+    {
+      "path": "docs/overview.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/docs/overview.md",
+      "blob_sha": "1e1165f370a664660a5563f9a46de804fb5faa2d",
+      "sha256": "41cb5fcc9ce4d584931cc4a3c66440bb000722d94dc487a73d2af213206ae164"
+    },
+    {
+      "path": "docs/overview.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/overview.md",
+      "blob_sha": "a883c240a9dec1110718309e0725e9e81113ada1",
+      "sha256": "c493586b6c86f54992aa4611b5de95df905ed02a3c4eac6f1e54a473083073c1"
+    },
+    {
+      "path": "formal/README.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/README.md",
+      "blob_sha": "027f3165c348598d07beb062c4638cdfb79aa479",
+      "sha256": "cbe7fc65982bc0d9c56064e13e1994c34b75ca31c13553bc2d7e959f9371c17a"
+    },
+    {
+      "path": "formal/README.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/README.md",
+      "blob_sha": "877bbdd6092fdcd3a39ca270ec6324de2159ae7f",
+      "sha256": "359768f00d02de6e79ee5952175110680be00dd1f05746397a7450e783b4fe3c"
+    },
+    {
+      "path": "formal/TECHNIQUES.md",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/TECHNIQUES.md",
+      "blob_sha": "357be4bc507f1ffbddbe7fb5a362cb44dc773476",
+      "sha256": "a8d877faa3bc04939ea417b1223f32b881a936111228f9da24aaa5af30cd8768"
+    },
+    {
+      "path": "formal/TECHNIQUES.md",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/TECHNIQUES.md",
+      "blob_sha": "55fe650295a460b473197fa0c6b6d732658978c9",
+      "sha256": "13e9f9925f9d770ad3efc73cbb2f05453865207c8988ab83b043df8f30f71ed3"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/HoldoutCover/ResiduePiolaPullback.lean",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/HodgeComputer/Constructions/HoldoutCover/ResiduePiolaPullback.lean",
+      "blob_sha": "57ac4cefc112e791f7035f3e11fd6148a48e9889",
+      "sha256": "1e99bbc4f1b0331b924e742731a58a90ad7a996916891c4ec91000ccf1a81d57"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/HoldoutCover/ResiduePiolaPullback.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/lean/HodgeComputer/Constructions/HoldoutCover/ResiduePiolaPullback.lean",
+      "blob_sha": "5e6cd7551604712bb15c9cf6b5763bf73ae4357f",
+      "sha256": "8ef4dc0fc333aa28ef8668885b6bbfaccd12faaf4cc3fb545e2a6ae4910f04da"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/RationalFields.lean",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/HodgeComputer/Constructions/RationalFields.lean",
+      "blob_sha": "0c09a88dc70174a04cf387c78f441c144a05dde8",
+      "sha256": "8258b9e442c4c222b967d50cd924b9d9d83a2b0ec968db6a76eed18ed60e21ee"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/RationalFields.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/lean/HodgeComputer/Constructions/RationalFields.lean",
+      "blob_sha": "8f529423d1f82437b13e78f260ac8606d836e1e8",
+      "sha256": "eee87f87d36df1171974d0bd5d870fd32b7823cc328a14e42024f4dec6059126"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/RationalFields/CommonDenominatorSubstitution.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/lean/HodgeComputer/Constructions/RationalFields/CommonDenominatorSubstitution.lean",
+      "blob_sha": "111680d678038cdd2da0195b276e443685ce5868",
+      "sha256": "ef629b9c0be021c7e1981e32ac2b045debfea1bc2194e2ef1c7a96fa63344d8e"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/ResidueTransport.lean",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/formal/lean/HodgeComputer/Constructions/ResidueTransport.lean",
+      "blob_sha": "684ff29357ee4ab48436a7adf530142672f19a27",
+      "sha256": "26b131c4001560422b7aa4418d0b683de6ce9757eb19314832f3d7b4a3b576b2"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/ResidueTransport.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/lean/HodgeComputer/Constructions/ResidueTransport.lean",
+      "blob_sha": "2d008ef214473384f7036d7290f055fc1be3c5db",
+      "sha256": "63c645aebaa3b45760393a45a42400341a639b20e76d77cb1f3eeb9c9cb74834"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/ResidueTransport/PiolaContraction.lean",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/lean/HodgeComputer/Constructions/ResidueTransport/PiolaContraction.lean",
+      "blob_sha": "f8e17005041552250bc3aa17cc5f85b56077dd18",
+      "sha256": "b74b44403b48a90e816cd49387e64d076493f110b0a3f3a3459084531981d156"
+    },
+    {
+      "path": "scripts/verify-norm-contact-span.py",
+      "ref": "2d60d08d25fba3e02162b39d4c50f6b467e7f506",
+      "url": "https://github.com/hodge-computer/sextics/blob/2d60d08d25fba3e02162b39d4c50f6b467e7f506/scripts/verify-norm-contact-span.py",
+      "blob_sha": "264de5cd95325288972aaf10e162da0e76673fa3",
+      "sha256": "c3af83d827f4f7ab9818650ec918035b538e1cefcbf0d1fe3648f1bb02d836bc"
+    },
+    {
+      "path": "scripts/verify-norm-contact-span.py",
+      "ref": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+      "url": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/scripts/verify-norm-contact-span.py",
+      "blob_sha": "cad31c985fc48148549c3b56eab3f66d2a036261",
+      "sha256": "97f12ba58e079ee45c9bc35757d7bbed8cb4484e4040e9f9dc1259a4f4b1a4da"
+    }
+  ],
+  "ordinary_strict_equivalence": {
+    "classification": "New merged book theorem asserted by upstream, not a theorem replayed or independently proved by this monitor.",
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/05-computation.md#L131",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/05-computation.md#L98",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/01-certificates.md#L103",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/overview.md#L24"
+    ],
+    "stated_scope": "Characteristic-zero coefficient field k; n>=1, nonzero homogeneous F of degree d>0, q>=1, homogeneous A of degree d(q+1)-(n+1). Smoothness and irreducibility are not required for the algebraic strictification statement. It is existence equivalence with unrestricted legal denominator, staying over k.",
+    "conclusion": "From an ordinary homogeneous certificate, the book constructs a normalized strict field satisfying q*v(F)=A and div(v)=0.",
+    "denominator": "Starting from homogeneous denominator D of degree e, choose a coordinate u with nonzero constant u^d leading coefficient of F. Set Delta=Res_u(F,D). The claimed legal homogeneous denominator Delta^q has degree d*q*e. Support may change; this is not preservation of D or of its original ambient open.",
+    "parity": "Optional involution averaging preserves strictness for even F/odd A, but multiplying by the conjugate denominator can further increase degree and lose the intermediate u-degree bound.",
+    "fixed_denominator_limit": "Full quotient Q remains necessary for a general fixed-D search. The special conical case preserves the supplied denominator only when D is independent of the chosen u and F has constant nonzero u^d coefficient; preserving D^2 does not establish existence over D.",
+    "normal_form_limit": "Reducing all current components modulo f^q gives u-degree<q*deg(f), with the source bound degree_u(P)<(q+1)*deg(f). Denominators in the remaining coefficient field stay unrestricted. This reduction does not assert existence.",
+    "gauge_correction": "Chapter1 now explicitly says D -> D+tF preserves coprimality as well as the divisor on X, although it need not preserve strictness of the individual witness. Chapter5 says resultant support is invariant under same-degree D -> D+FG (up to scalar; exact for monic F).",
+    "fixed_open_limit": "The added de Rham comparison distinguishes a regular error form from an exact one. Strictification removes the particular ambient obstruction after controlled support change; it does not make arbitrary regular top forms rationally exact."
+  },
+  "smooth_contact_revision": {
+    "classification": "Replacement of maintained book spanning witness; numerical ranks, lifting and geometric interpretations remain upstream claims in this monitor.",
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/03b-weighted-threefolds.md#L260",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/03b-weighted-threefolds.md#L330",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/scripts/verify-norm-contact-span.py#L17"
+    ],
+    "before": "Book used an integral nodal presentation, arithmetic modulo23 and its quadratic extension, rank69 coefficient derivative at the seed, a two-dimensional nodal slice, and a 48-row minor 22+2v with norm10.",
+    "after": "Book uses a smooth contact built from a line on a cubic surface. It specifies rational weighted G, a simple line solution (2,-3,-2,15) modulo37 with Jacobian determinant3, and an algebraic lift. It reports a smooth genus4 contact curve, an actual smooth parameter curve transverse to19 presentation directions, and a full48-dimensional obstruction span.",
+    "reported_checks": {
+      "coefficient_derivative_rank": 70,
+      "coefficient_minor_mod37": 21,
+      "negative_ideal_rank": 59,
+      "negative_minor_mod37": 4,
+      "curve_singular_ideal_rank": "84/84",
+      "regular_sequence_degree10_rank": "581/581",
+      "transversality_determinant_mod37": 10,
+      "obstruction_rank": 48,
+      "obstruction_minor_mod37": 17,
+      "series_checked_through_order": 50,
+      "residue_normalization_scalar_mod37": 14
+    },
+    "script_scope": "verify-norm-contact-span.py header explicitly replaces the maintained nodal branch with the smooth witness, retaining helper APIs and coefficient-map/gauge/residue infrastructure for older importing research scripts. Script was captured/read but not run.",
+    "important_distinction": "The retained Nov7 fixed-core discussion report and its historical packet are not automatically the current book/script witness. Do not reuse the old modulus/minors as a receipt for the new smooth construction. Replacement is not described as a mathematical refutation of the earlier report.",
+    "construction_limit": "A line on the cubic surface supplies a norm presentation only; smoothness, coefficient condition, normal-rank and spanning obligations are still expressly required."
+  },
+  "shared_lean_reuse": {
+    "classification": "Observed current source imports/call sites and documentation; no Lean compilation or kernel replay.",
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/TECHNIQUES.md#L17",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/data/holdout-q2/HoldoutClearing.lean#L41",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/data/quadric-contact-broken/HomogeneousClearing.lean#L38",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/lean/HodgeComputer/Constructions/HoldoutCover/ResiduePiolaPullback.lean#L81"
+    ],
+    "clearing": "New RationalFields.CommonDenominatorSubstitution exposes cleared_homogeneous, map_cleared, not_dvd_cleared and a fraction-field interpretation. It needs a total-degree bound and equally homogeneous coordinate numerators/common denominator; prime-pullback hypotheses establish legality. In both holdout-q2 and quadric-contact-broken, substantive theorem calls replace duplicated inductive clearing proofs while specialized evaluation/good-specialization interfaces remain in the application.",
+    "piola": "New ResidueTransport.PiolaContraction supplies the contraction identity for finite coordinate sets from inverse matrix and chain-rule data. Current residue_piola_pullback calls it for the normal/contraction term, alongside the existing divergence machinery; coordinate chart, Jacobian and source remain application obligations.",
+    "attribution": "New clearing header attributes extraction from homogeneous transport prepared for fqlx symmetric-sextic draft with OpenAI ChatGPT/Codex assistance, while preserving original accepted-application provenance. Piola header credits preparation for contribution through fqlx with the same assistance. This is machinery reuse, not acceptance of that unfinished draft or new solve credit.",
+    "ci_scope": "Merge commit e3936ff says all24CI jobs passed, including21 sandboxed accepted-application rechecks. This is a merge-message report; CI artifacts/statuses were not fetched or independently established, and none of those checks were executed here."
+  },
+  "proved_usefulness_policy": {
+    "evidence": "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/formal/README.md#L42",
+    "change": "A new shared construction must do substantive proof work in at least one completed solve. Generality/correctness alone do not establish usefulness; machinery used only in unfinished reductions belongs with those research applications.",
+    "contract_boundary": "The changed formal README line concerns shared-library curation. The ordinary Verify/HasCertificate acceptance contract still permits nonzero quotient; strictification is a new book equivalence, not a narrowing of the protected solve requirements."
+  },
+  "other_book_scope": {
+    "evidence": [
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/03-geometric-support.md#L113",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/04-known-locus-and-frontier.md#L408",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/05-computation.md#L273",
+      "https://github.com/hodge-computer/sextics/blob/e3936ff366ae2302f21fb9e5730bbbd284c81d69/docs/05-computation.md#L366"
+    ],
+    "summary": [
+      "Chapter3 adds normal-bundle trace pairings and a curve-family criterion detecting a nonzero supported Hodge image. At a fixed fourfold, nonzero pullback does not alone show the particular input belongs to that image; actual algebraic curve motions are required.",
+      "Chapter4 makes the polarizable-subvariation formulation explicit and adds a conditional dominant smooth-incidence criterion, parity/interpolation restrictions, and rank conditions. It does not assert existence of a dominating construction, and tangent rank on an unverified/nonreduced scheme is insufficient.",
+      "Chapter5 adds finite rational-exactness tests for a supplied curve/differential, with all poles including infinity retained. Zero residues alone do not suffice, and this gives no bound for an unknown higher-dimensional support.",
+      "The cubic-current scalar reduction remains an equivalence of rational differential equations over unrestricted base-coordinate functions, not a claim that the remaining scalar equation is always solvable."
+    ],
+    "general_problem": "Current overview still expressly says the general even-sextic case remains open."
+  },
+  "changes_to_nov7_notebook": [
+    "Append a dated ordinary/strict existence clarification with denominator/support-change and fixed-D limits; retain earlier bounded strict/non-strict computation records as historical and scoped.",
+    "Record that the current Chapter3B/script witness is smooth/mod37 and supersedes the maintained nodal/mod23 witness, without rewriting the Nov7 discussion snapshot or its reported finite checks.",
+    "Record actual maintained accepted-source reuse and the new completed-solve usefulness criterion, without assigning new solve credit or promoting the merge-message CI report to our check.",
+    "Keep Nov7 mathematical-existence assertions for #117/#120 separate from accepted-publication status. No change to those target statuses is inferred from this book/library maintenance."
+  ],
+  "our_executed_checks": [
+    "Pinned before/after source retrieval and text comparison.",
+    "SHA256 and Git blob SHA1 verification for32 captures.",
+    "Read theorem scope, proof-module imports/call sites, policy delta and script header."
+  ],
+  "not_executed": [
+    "Upstream Python script",
+    "Lean build/kernel replay",
+    "Mathematical proof verification",
+    "CI result/artifact verification",
+    "Full research PR223 audit",
+    "Upstream publication or messaging"
+  ],
+  "contribution_tally_change": 0
+}

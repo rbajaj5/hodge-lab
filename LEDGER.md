@@ -7031,3 +7031,41 @@ Prompt 3, alternative drafts and the unpublished #61 attempt were not reopened.
 Posts 1–30 and tally remain **30 discussion contributions, one closed
 maintenance PR, zero accepted authored solves**. Normal notebook push and
 remote readback are recorded separately.
+
+
+### Checkpoint 162 — 8 November 2026, 07:30 UTC: strictification statement and revised contact witness
+
+**Bounded monitoring; Hodge Lab only.** Upstream advanced six commits to
+`e3936ff366ae2302f21fb9e5730bbbd284c81d69` through benediamond's PR224/PR225.
+Notebook parent is `7b7ee8f7194a8779b95d7ab2dcf55c81839a1996`.
+The [new status note](notes/upstream-monitor-20261108.md) records the book's
+ordinary/strict existence equivalence with unrestricted denominators. Its
+resultant conversion may change support and degree; it neither removes the
+full quotient from arbitrary fixed-D tests nor produces a missing certificate.
+The narrower conical case retains exactly the supplied denominator. The
+degree-six q=1 denominator gauge now explicitly preserves coprimality.
+
+The maintained book/script replaces its nodal mod23 witness with a smooth
+contact witness over mod37. Historical #120 discussion evidence is preserved;
+its old finite checks do not authenticate the new script. Shared clearing
+and Piola modules now perform proof work in existing accepted applications,
+with fqlx/ChatGPT/Codex preparation credited in their headers. This does not
+accept an unfinished draft. Upstream's shared-library policy now requires
+substantive use in a completed solve. The merge's passing-CI statement is
+author-reported; we did not execute Lean, the Python check or CI verification.
+
+All 14 discussions (47 comments, 20 replies) are unchanged, including body edits
+and update timestamps. All target/acceptance data pins match; only formal/README
+changed among 383 target/policy pins. The catalogue remains 82 targets, 66
+accepted submissions and 16 without acceptance. Separate head baselines,
+paired source captures, complete discussion identity hashes and scope review
+are in the [evidence manifest](results/upstream-monitor-20261108/review.json).
+Thirty-two extant before/after sources cover all 17 changed paths; no source
+or proof code was copied into the notebook's protected target/formal trees.
+
+README links the dated update. Earlier ledger text and receipts remain history.
+No upstream action or substantive research batch occurred; no visualization
+was needed. Prompt 3, alternative drafts and old research remain closed to this
+monitor. Posts 1–30 and tally remain **30 discussion contributions, one closed
+maintenance PR, zero accepted authored solves**. Notebook push/readback are
+recorded separately.
