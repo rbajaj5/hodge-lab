@@ -1,0 +1,1889 @@
+{
+  "status": "COMPARED",
+  "compared_utc": "2026-11-11T18:18:19.839068+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f",
+      "url": "https://github.com/hodge-computer/sextics/commit/03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f",
+      "message": "Merge pull request #233 from hodge-computer/maintenance/pole-bound-by-resolution\n\nChapter 1: prove the pole bound by resolution, Deligne's degeneration and currents",
+      "committer_date": "2026-11-11T04:35:56Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "27d5498288c7257436fa04f0cdaea18aea58c83d",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/27d5498288c7257436fa04f0cdaea18aea58c83d",
+      "message": "Record strictification scope and updated contact witness",
+      "committer_date": "2026-11-08T07:37:52Z"
+    }
+  },
+  "repository_baseline": "repository-heads-20261108T074509Z.json",
+  "repository_head_unchanged": false,
+  "target_policy_pin_count": 383,
+  "target_policy_changes": [
+    {
+      "path": "AGENTS.md",
+      "before": "c85efd5b6ebce24da2ed15e9647bca0e068d510f",
+      "after": "aeac43db82d97a8337457c807b47c02405de25ec"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "before": "bc7ed6f944c7b4f85c5ae12b2e0892575a3921c6",
+      "after": "57791790ca321e13549de78773a293a492ecdd57"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "before": "aac6ec0de6d1710ea5f8f3126ef0597c1ef9ea5f",
+      "after": "23bf90edb0ba58606fcb016cf93586570dcd9b3b"
+    },
+    {
+      "path": "README.md",
+      "before": "4e2e75b484a258ae9562c1dfee71fc57f14c9bad",
+      "after": "72022bf07f19fd4a1796155d1c92df8ff18975ca"
+    },
+    {
+      "path": "data/cycle-q2/provenance.json",
+      "before": "971ac3494a6b5472400ac5bcf070b0db6f81d11f",
+      "after": "02329ff79062cadbd24e88683e7fee4e88e6bf9a"
+    },
+    {
+      "path": "data/cycle-q2/why.md",
+      "before": "069497e8268daa6cd1d6243f8df1973c1d1c170d",
+      "after": "eef5fb06f6b6f6c13c4dc47ac391e7e4040f3f4b"
+    }
+  ],
+  "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261108T074509Z",
+  "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261111T181803Z",
+  "coverage": [
+    {
+      "discussion": 44,
+      "comments": 16,
+      "replies": 7,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 55,
+      "comments": 2,
+      "replies": 5,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 56,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 111,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 112,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 113,
+      "comments": 1,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 114,
+      "comments": 1,
+      "replies": 2,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 115,
+      "comments": 2,
+      "replies": 1,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 116,
+      "comments": 3,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 117,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 118,
+      "comments": 2,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 119,
+      "comments": 0,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 120,
+      "comments": 4,
+      "replies": 0,
+      "all_pages_fetched": true
+    },
+    {
+      "discussion": 127,
+      "comments": 9,
+      "replies": 4,
+      "all_pages_fetched": true
+    }
+  ],
+  "changed_records": [
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIa2Z",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984345",
+        "createdAt": "2026-10-16T22:52:07Z",
+        "updatedAt": "2026-10-19T23:33:24Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "22dcf89f03b428ef7133fd089689c1b504ec2d3a93f027c10ecd1bc4c0bd088a"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIa2Z",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984345",
+        "createdAt": "2026-10-16T22:52:07Z",
+        "updatedAt": "2026-11-10T20:05:39Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "ef58ca6f6df8dc9d0b02a0233d067fe3bf6ec7e716d42ab8a0d86080fbd6348f"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIa5b",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984539",
+        "createdAt": "2026-10-16T23:11:21Z",
+        "updatedAt": "2026-10-16T23:29:18Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "0e321bea10f857703e315fc9ae824059d8ddb5bc53c118fbe519215d1b152cef"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIa5b",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984539",
+        "createdAt": "2026-10-16T23:11:21Z",
+        "updatedAt": "2026-11-10T20:05:44Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "bcc6d4f12595cd3a588e452160b45d56008c321cca36052e04fb16739d6deb1a"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIa8G",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710",
+        "createdAt": "2026-10-16T23:33:41Z",
+        "updatedAt": "2026-10-19T23:49:17Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "9492ed3a2efee9f4664a9ccb4e88d35003164401f7154c12076415be57da0f4b"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIa8G",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18984710",
+        "createdAt": "2026-10-16T23:33:41Z",
+        "updatedAt": "2026-11-10T20:05:48Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "5149f1a3d1c3c37aa439e62ab1409ffd30b807a81338a9c33f57d2ab097748fc"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIaBW",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18980950",
+        "createdAt": "2026-10-16T18:54:00Z",
+        "updatedAt": "2026-10-16T18:58:16Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "c4dbe62f69c959722824f1931bf0f09dc01d6aff70a07b30b0c7636b3f2857d0"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIaBW",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18980950",
+        "createdAt": "2026-10-16T18:54:00Z",
+        "updatedAt": "2026-11-10T20:05:09Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "48f4f4af3d6365eda6c08f63e57780fcafc7e7d9b8a72be7f1ee5e5aead6c1b0"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIaCZ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18981017",
+        "createdAt": "2026-10-16T18:59:12Z",
+        "updatedAt": "2026-10-16T18:59:12Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "bca123e4959b69f271d8f5c1fd0ef70576e2d8a10d5c31e0e3e47b73f9cd6a0b"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIaCZ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18981017",
+        "createdAt": "2026-10-16T18:59:12Z",
+        "updatedAt": "2026-11-10T20:05:15Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "9fc6b2261803f2b612696c37b792641027c9ff4c249e6499810dcac84081f59b"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIaSM",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982028",
+        "createdAt": "2026-10-16T19:58:06Z",
+        "updatedAt": "2026-10-16T19:58:06Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "aaa171ff6c85a3fbd53c6f0df54da83534f54544e3f8eb455aeb7ad56976411e"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIaSM",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982028",
+        "createdAt": "2026-10-16T19:58:06Z",
+        "updatedAt": "2026-11-10T20:05:20Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "769d9d6810962edde70e17a302d034e1f468e11674dc28439c26ea7d0446da3a"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIagt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982957",
+        "createdAt": "2026-10-16T21:00:49Z",
+        "updatedAt": "2026-10-16T21:00:49Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "dcb4a2687649ac36fa94fd2711c71e70ff26e41c61fffd5985e0011d3d37bac4"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIagt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18982957",
+        "createdAt": "2026-10-16T21:00:49Z",
+        "updatedAt": "2026-11-10T20:05:24Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "0065bb66bda1e9773fbacb2f0c52eeb87e4d5333bfa4d99af8879e7ea411513c"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIals",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983276",
+        "createdAt": "2026-10-16T21:20:14Z",
+        "updatedAt": "2026-10-19T23:33:21Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "9550a992cd8e3da085691ba209104ddccdb045c115baee7bc79ce9f2ed394452"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIals",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983276",
+        "createdAt": "2026-10-16T21:20:14Z",
+        "updatedAt": "2026-11-10T20:05:31Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "03dbe6c16e0acadb8451e28f0d35829d878bc6aba0002762905d5c27d6dc11ce"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIawa",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983962",
+        "createdAt": "2026-10-16T22:18:22Z",
+        "updatedAt": "2026-10-16T22:24:23Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "05884c79f44ff4b49f9a780827bd04ac932ca19643e76e914054a2e8d2d9183c"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIawa",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18983962",
+        "createdAt": "2026-10-16T22:18:22Z",
+        "updatedAt": "2026-11-10T20:05:35Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "8f17689f2ca2a1a750dd3c3ebb0210e50055ceeae42464e6b8ed08c1ae9abebb"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIb4u",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18988590",
+        "createdAt": "2026-10-17T04:57:08Z",
+        "updatedAt": "2026-10-17T04:57:08Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "86c7e46971393239706832899dcbbe06dfc846bd229507b2c2ac6cc90a67ae54"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIb4u",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18988590",
+        "createdAt": "2026-10-17T04:57:08Z",
+        "updatedAt": "2026-11-10T20:06:18Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "68c309d8870261f287239b1eeeecfd592cf2fa2dd7c017e5446ae88e05271af8"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIbNP",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985807",
+        "createdAt": "2026-10-17T00:33:23Z",
+        "updatedAt": "2026-10-17T00:33:23Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "55481700570318daf133565d4013461037c8fdfa9c86636e4f47c7362a4b6b8b"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIbNP",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18985807",
+        "createdAt": "2026-10-17T00:33:23Z",
+        "updatedAt": "2026-11-10T20:05:53Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "f51b8710b5efb53e0128ec8df1f9ffc97348f1545ea798d015d3f45c0ce9bcc9"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIbVG",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986310",
+        "createdAt": "2026-10-17T01:18:12Z",
+        "updatedAt": "2026-10-17T01:18:12Z",
+        "author": {
+          "login": "fringewidth",
+          "name": "Hrishik Sai Bojnal"
+        },
+        "body_sha256": "3bb970de55df78669c01389e146f9137862ce4938bcb62d9bc0d43dc82f49caa"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIbVG",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986310",
+        "createdAt": "2026-10-17T01:18:12Z",
+        "updatedAt": "2026-11-10T20:05:57Z",
+        "author": {
+          "login": "fringewidth",
+          "name": "Hrishik Sai Bojnal"
+        },
+        "body_sha256": "b473d2238ff5bcc720d359a1e4de44ec337cfc425bf6dbf9057176f5f8a462db"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIbXU",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986452",
+        "createdAt": "2026-10-17T01:33:31Z",
+        "updatedAt": "2026-10-17T19:10:31Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "85b472bb7c0f259ec10e3516d92e14ded769bc3cd564b8d2253948d1664b893c"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIbXU",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986452",
+        "createdAt": "2026-10-17T01:33:31Z",
+        "updatedAt": "2026-11-10T20:06:01Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "f736aaaf37220d278d7993249926dfb277d0da056d133e306087c90282d0ca3f"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIbdS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986834",
+        "createdAt": "2026-10-17T02:15:00Z",
+        "updatedAt": "2026-10-17T02:15:00Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "7eb47a14b47c42166e3e3ee0775907e376f581d6becc25f1987fe6e16d1426c9"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIbdS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18986834",
+        "createdAt": "2026-10-17T02:15:00Z",
+        "updatedAt": "2026-11-10T20:06:05Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "43d9b27beff5dffa7bdeacb10cfdef088d9463d87b6fbe833544657a0af06883"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIbp3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18987639",
+        "createdAt": "2026-10-17T03:21:07Z",
+        "updatedAt": "2026-10-17T03:21:07Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "fe72dcade71fa0bb4231ef248b07ed9f100e105da4e896a585f84c3659f1aa99"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIbp3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18987639",
+        "createdAt": "2026-10-17T03:21:07Z",
+        "updatedAt": "2026-11-10T20:06:09Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "78bdf4a637063f11cb65a35b30c0b729bcbfdc37570493aaab79b4651cf54217"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIbxq",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18988138",
+        "createdAt": "2026-10-17T04:14:25Z",
+        "updatedAt": "2026-10-17T04:14:25Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "ecba45c37dd48df9d018e3a4622649cc99de43d1491bd3193b3139e5e9541771"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIbxq",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18988138",
+        "createdAt": "2026-10-17T04:14:25Z",
+        "updatedAt": "2026-11-10T20:06:13Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "8aa6f8bcd9b0afc4db3e87812e95e80d5c951766bc5dd3417cfb878714ab1c77"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIcDA",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18989248",
+        "createdAt": "2026-10-17T05:40:33Z",
+        "updatedAt": "2026-10-17T23:34:40Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "adb02a14410fb0e244dd4d398eb654941c45b58bd8a6e42062a4e2876ed4bf57"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIcDA",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-18989248",
+        "createdAt": "2026-10-17T05:40:33Z",
+        "updatedAt": "2026-11-10T20:06:23Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "ade433549dcf5452d3a7fe9081e44d793772bd759b5f0a806b83fbd72b72574b"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfbN",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085",
+        "createdAt": "2026-10-17T19:10:33Z",
+        "updatedAt": "2026-11-07T00:25:16Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d66b182ae54bf60ce6d5e1762404cf7cb15b1206c8c06ede488988396c8b0ea6"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIfbN",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003085",
+        "createdAt": "2026-10-17T19:10:33Z",
+        "updatedAt": "2026-11-10T20:06:28Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "9476cfea39dc7b8cd847a99958868bc2a63171e5bd59de5225f20a6ee01800aa"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfgq",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19003434",
+        "createdAt": "2026-10-17T19:41:09Z",
+        "updatedAt": "2026-10-17T19:41:09Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "ee51ca2df19168d707a16b6ba3c8356604894d78398d01482493a2a9de268012"
+      },
+      "after": null
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIgq0",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19008180",
+        "createdAt": "2026-10-17T23:34:16Z",
+        "updatedAt": "2026-10-17T23:34:16Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "65266b1c2989918e6c324679e9270d2697649e4cd532f367e843d0ec77bc3ce6"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIgq0",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19008180",
+        "createdAt": "2026-10-17T23:34:16Z",
+        "updatedAt": "2026-11-10T20:06:33Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "7445f0b23eb02e180f1d1921c56743d4da36c25f4820fdb9b83cd7039c3cd96a"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIhul",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19012517",
+        "createdAt": "2026-10-18T06:05:18Z",
+        "updatedAt": "2026-10-18T06:05:18Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "4263ae1e6cb8cc76e9bfc1b190cb509218ef5d13b62ba62a0897f623faca9d06"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIhul",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19012517",
+        "createdAt": "2026-10-18T06:05:18Z",
+        "updatedAt": "2026-11-10T20:06:38Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "1533a922b9bf5bf6a4c2ef2aedcdbf442767f74b1538cbad369ebd6016b876a5"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIp9D",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046211",
+        "createdAt": "2026-10-19T17:07:03Z",
+        "updatedAt": "2026-10-19T17:07:03Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "0e8d0f283c27fd8321dbeef8c7ce576a5cc9454cf735c616ce067f82eb2fde3f"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIp9D",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046211",
+        "createdAt": "2026-10-19T17:07:03Z",
+        "updatedAt": "2026-11-10T20:06:48Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "dd7aec9b427cdaa40afd9fc8ba166dcc53bf2f7a6aa4edeb82c653d4d1803e21"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIpjF",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19044549",
+        "createdAt": "2026-10-19T15:30:56Z",
+        "updatedAt": "2026-11-07T00:26:07Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "33b0a9f1157fad74fb5a909e773d579b3bb7539e1b008b7c60bb8dd744ed8a42"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIpjF",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19044549",
+        "createdAt": "2026-10-19T15:30:56Z",
+        "updatedAt": "2026-11-10T20:06:42Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d3117b0ff1c747a829de616047d9e5b7e741a022c73d6ab145599aa9b8678125"
+      }
+    },
+    {
+      "discussion": 44,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIqFI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046728",
+        "createdAt": "2026-10-19T17:39:07Z",
+        "updatedAt": "2026-10-19T17:39:07Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "09676f576d62be3565fbdedfaec365027ea3e3b64566cbce351e33e53a980b03"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIqFI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/44#discussioncomment-19046728",
+        "createdAt": "2026-10-19T17:39:07Z",
+        "updatedAt": "2026-11-10T20:06:52Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "0c620d043abc9f6808bc411bd80b37160ddec8eecd8e36807bcf22d0b9cc6ef7"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfLz",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002099",
+        "createdAt": "2026-10-17T17:48:00Z",
+        "updatedAt": "2026-10-19T23:33:32Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "81d10283d75f84b4487d6eccaf280580a0651a7ce1c10514815952c39fdad8d7"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIfLz",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002099",
+        "createdAt": "2026-10-17T17:48:00Z",
+        "updatedAt": "2026-11-10T20:03:53Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "d0477be60ef3c4965e69370dc9fb005bb0ac22bbfb8be66313c386364d151fca"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfNv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002223",
+        "createdAt": "2026-10-17T17:59:34Z",
+        "updatedAt": "2026-10-19T23:33:34Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "7ae3a38e98e729f9f2a02af2c7f65bf48951274fc583c01cff4476874fd5d22c"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIfNv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19002223",
+        "createdAt": "2026-10-17T17:59:34Z",
+        "updatedAt": "2026-11-10T20:03:57Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "0240048f16a51e9039854e7521feff0cdbab6ed4e0b308d9ccf3f9dfa98574a1"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIx0m",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19078438",
+        "createdAt": "2026-10-20T17:50:51Z",
+        "updatedAt": "2026-10-20T17:50:51Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "cc49d17e8c74f336ca23b50bcc07d4f06230a4fdb4eaaba81fa4d6406c0b661d"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIx0m",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19078438",
+        "createdAt": "2026-10-20T17:50:51Z",
+        "updatedAt": "2026-11-10T20:04:08Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "c2176bedb0b381e2af87abe5471b2b34df8d3db2f7695e680d7a059427274b89"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIxeY",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077016",
+        "createdAt": "2026-10-20T16:33:48Z",
+        "updatedAt": "2026-10-20T16:33:48Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "96e3a3a3640e323237d6753939a16c3ca5ad6859500e3d8c4aa8deed4a31461e"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIxeY",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077016",
+        "createdAt": "2026-10-20T16:33:48Z",
+        "updatedAt": "2026-11-10T20:04:00Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "1ff857cf170602d97222e5444ee2679a313e1f70b7f8ec60589d0f00fd157101"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIxqv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077807",
+        "createdAt": "2026-10-20T17:13:40Z",
+        "updatedAt": "2026-10-20T17:13:40Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "042f89eaeb49b80db8bd383dc2749ffd6b88d9ee995e2e8c0c34cde656dbfed6"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIxqv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19077807",
+        "createdAt": "2026-10-20T17:13:40Z",
+        "updatedAt": "2026-11-10T20:04:04Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "42412dc61cd2d45a55f4c6d626710d19792663b11a111588749e1b9aacff3d7c"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIyDS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378",
+        "createdAt": "2026-10-20T18:45:52Z",
+        "updatedAt": "2026-10-20T18:45:52Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "6890132a26d43188b709bd989e8f3534997b0c0e5852f1b836d1f81605e5959f"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIyDS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19079378",
+        "createdAt": "2026-10-20T18:45:52Z",
+        "updatedAt": "2026-11-10T20:04:12Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "a677893175d7144ee15b0229e1b41e036d0388a2737af93dc52a33a299886f63"
+      }
+    },
+    {
+      "discussion": 55,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIycn",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999",
+        "createdAt": "2026-10-20T20:18:13Z",
+        "updatedAt": "2026-10-20T23:43:00Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "ad8d04200338d877da1407604bdfff73908871a57f9d37a2cc0d9e8b11e90e8e"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIycn",
+        "url": "https://github.com/hodge-computer/sextics/discussions/55#discussioncomment-19080999",
+        "createdAt": "2026-10-20T20:18:13Z",
+        "updatedAt": "2026-11-10T20:04:14Z",
+        "author": {
+          "login": "hodgepodgeconjecture",
+          "name": null
+        },
+        "body_sha256": "45cb90ac504a67f46dc2c6510cb024b212c733c00befd65e6e090a4f2fb17e13"
+      }
+    },
+    {
+      "discussion": 56,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI3R1",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100789",
+        "createdAt": "2026-10-21T15:24:57Z",
+        "updatedAt": "2026-10-21T15:24:57Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "5072d6c7fb20c5d175043c9bce24511a43f1530c60acaa377a7d31fcafea521e"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI3R1",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100789",
+        "createdAt": "2026-10-21T15:24:57Z",
+        "updatedAt": "2026-11-10T20:03:39Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "44fe2ada64e67a1532bc2ce3e4c63542d494cd7f7c0d7295a9f39257eae4f789"
+      }
+    },
+    {
+      "discussion": 56,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI3Rv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783",
+        "createdAt": "2026-10-21T15:24:48Z",
+        "updatedAt": "2026-10-21T15:24:48Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "01e0eb52e01f89ed30bb5e5e92250d7d43cf9bc8759422f9eb95990d3daa02be"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI3Rv",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100783",
+        "createdAt": "2026-10-21T15:24:48Z",
+        "updatedAt": "2026-11-10T20:03:31Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "ffe75ccb3bb18649ca2b1f828467727a95bfbe4d30a584b589b2e52e8a39dc5a"
+      }
+    },
+    {
+      "discussion": 56,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI3Rw",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100784",
+        "createdAt": "2026-10-21T15:24:53Z",
+        "updatedAt": "2026-10-21T15:24:53Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "484637496325bc19f2033c37d71ab57c513ba07c29de758f23a77edaebd2262d"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI3Rw",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19100784",
+        "createdAt": "2026-10-21T15:24:53Z",
+        "updatedAt": "2026-11-10T20:03:36Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "4ca691758f8f3507545736b6539db804b12e35368d52585f7845ac642d9d15a7"
+      }
+    },
+    {
+      "discussion": 56,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfP3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359",
+        "createdAt": "2026-10-17T18:10:48Z",
+        "updatedAt": "2026-10-21T17:20:37Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "bf7e48695fcd798302db2d996ace907ffe04e38a6cf2a427f3fe627eb570113f"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIfP3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/56#discussioncomment-19002359",
+        "createdAt": "2026-10-17T18:10:48Z",
+        "updatedAt": "2026-11-10T20:03:27Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "272d71a030d6259398c05cbfa0c3e22130751e6830dd9fd8ffec0198d11ecb74"
+      }
+    },
+    {
+      "discussion": 111,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BItFi",
+        "url": "https://github.com/hodge-computer/sextics/discussions/111#discussioncomment-19059042",
+        "createdAt": "2026-10-20T04:58:31Z",
+        "updatedAt": "2026-10-20T05:41:29Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "75e2866c729ebeb5b33b9769e55b7a7f873349a6971af1468d259ee844b79114"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BItFi",
+        "url": "https://github.com/hodge-computer/sextics/discussions/111#discussioncomment-19059042",
+        "createdAt": "2026-10-20T04:58:31Z",
+        "updatedAt": "2026-11-10T19:58:33Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "c8afa043249778eb71477fe0f532d99f50c317bb677b8a2558972d4f2d4e0b15"
+      }
+    },
+    {
+      "discussion": 112,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIfTt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605",
+        "createdAt": "2026-10-17T18:31:44Z",
+        "updatedAt": "2026-10-19T23:24:56Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "91ba43dccc3be4d99aa9186be49e4c12f1768b1f542afea63d5c815fa4c4608f"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIfTt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19002605",
+        "createdAt": "2026-10-17T18:31:44Z",
+        "updatedAt": "2026-11-10T19:58:25Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "6ade5e9bae316f703ddb368638854460577d4ab2389df4c278e0ec29fbea374b"
+      }
+    },
+    {
+      "discussion": 112,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIpjI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19044552",
+        "createdAt": "2026-10-19T15:31:00Z",
+        "updatedAt": "2026-11-07T00:26:54Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "aaf08fd00f42c9b02362a06e9b466c2a35bbe15a260d1301528e8c0ea1356b6d"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIpjI",
+        "url": "https://github.com/hodge-computer/sextics/discussions/112#discussioncomment-19044552",
+        "createdAt": "2026-10-19T15:31:00Z",
+        "updatedAt": "2026-11-10T19:58:28Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "51a92924b9f8c867f345b1ca115c15ce1f4dce69932b0053ab24bbbe5ddf7db3"
+      }
+    },
+    {
+      "discussion": 113,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIl9O",
+        "url": "https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838",
+        "createdAt": "2026-10-19T03:15:29Z",
+        "updatedAt": "2026-10-26T14:40:14Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "82745165338932350b414cde777a2c9d5ceb69f4842761088ee221a795b26dd2"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIl9O",
+        "url": "https://github.com/hodge-computer/sextics/discussions/113#discussioncomment-19029838",
+        "createdAt": "2026-10-19T03:15:29Z",
+        "updatedAt": "2026-11-10T19:58:20Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "41d842b7675d00e908557ebc496f011f59ac3a9098e2db9af9beba1336048b7f"
+      }
+    },
+    {
+      "discussion": 114,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIqYC",
+        "url": "https://github.com/hodge-computer/sextics/discussions/114#discussioncomment-19047938",
+        "createdAt": "2026-10-19T18:44:35Z",
+        "updatedAt": "2026-10-19T18:44:35Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "cd4e15f179cd0303f31ff731559eb8372ad06648bf64e6cea099018b81c8d63c"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIqYC",
+        "url": "https://github.com/hodge-computer/sextics/discussions/114#discussioncomment-19047938",
+        "createdAt": "2026-10-19T18:44:35Z",
+        "updatedAt": "2026-11-10T19:57:56Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "6525eadf6c3d227c90172cd89561ea55b2d036addbfd10a6074ec220412a2de9"
+      }
+    },
+    {
+      "discussion": 114,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIqjy",
+        "url": "https://github.com/hodge-computer/sextics/discussions/114#discussioncomment-19048690",
+        "createdAt": "2026-10-19T19:24:19Z",
+        "updatedAt": "2026-10-19T19:24:19Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "8d8c289d8e24264cdbebf99b6ea9f0dbe4bbc569c3ba21065d13d1816775b018"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIqjy",
+        "url": "https://github.com/hodge-computer/sextics/discussions/114#discussioncomment-19048690",
+        "createdAt": "2026-10-19T19:24:19Z",
+        "updatedAt": "2026-11-10T19:58:00Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "5efd62eaf99c5ae60eb3c94182feb645db29f1036a4ed2478d1cdfa7d577bfac"
+      }
+    },
+    {
+      "discussion": 114,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIrJO",
+        "url": "https://github.com/hodge-computer/sextics/discussions/114#discussioncomment-19051086",
+        "createdAt": "2026-10-19T20:59:51Z",
+        "updatedAt": "2026-10-19T23:04:20Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "4f3927372c0fadd0abe0f2d29b8d23db515cb7ced418cd03d6ccb3f35081d175"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIrJO",
+        "url": "https://github.com/hodge-computer/sextics/discussions/114#discussioncomment-19051086",
+        "createdAt": "2026-10-19T20:59:51Z",
+        "updatedAt": "2026-11-10T19:58:03Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "ac12d0536c6d36e495d31f4061a38bc205cd62f698feac82f11c266a9b153111"
+      }
+    },
+    {
+      "discussion": 115,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIp5k",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19045988",
+        "createdAt": "2026-10-19T16:57:05Z",
+        "updatedAt": "2026-10-19T23:44:08Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "ca6eb9d510ef0221881760ba69ea49000336b1289a3c25ceea8e4adb69485d9c"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIp5k",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19045988",
+        "createdAt": "2026-10-19T16:57:05Z",
+        "updatedAt": "2026-11-10T19:57:45Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "68b844ee991855168500b75510c1713307a154db6fc562b00fe6685f8f1654eb"
+      }
+    },
+    {
+      "discussion": 115,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIr7M",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19054284",
+        "createdAt": "2026-10-20T00:00:41Z",
+        "updatedAt": "2026-10-20T00:00:41Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "a71ae06839149bf33e2c2c246f9df8969dc6572e6d57967d4a0e133cdf26edc2"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIr7M",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19054284",
+        "createdAt": "2026-10-20T00:00:41Z",
+        "updatedAt": "2026-11-10T19:57:48Z",
+        "author": {
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "body_sha256": "f4d7c5708f08162ebf27fb9bc6e2f79f4c5a6aefdebc1e1b8d841a6f8f6544b9"
+      }
+    },
+    {
+      "discussion": 115,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJzBT",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19345491",
+        "createdAt": "2026-11-02T07:45:58Z",
+        "updatedAt": "2026-11-02T07:45:58Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "4059ddeb6b0d7596efe8303b217c2c844edf4e454558502ee5dd34d5c9071f3b"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBT",
+        "url": "https://github.com/hodge-computer/sextics/discussions/115#discussioncomment-19345491",
+        "createdAt": "2026-11-02T07:45:58Z",
+        "updatedAt": "2026-11-10T19:57:51Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "873223eed85bb28ac5187364fac599529770713e30b6d134ef63085cd9975ebd"
+      }
+    },
+    {
+      "discussion": 116,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJ2kt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19360045",
+        "createdAt": "2026-11-02T20:40:55Z",
+        "updatedAt": "2026-11-02T20:40:55Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d9a14feed6305a46deea61c57c0a120cd9881588d3f1d9f7746b05b4db5c6174"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJ2kt",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19360045",
+        "createdAt": "2026-11-02T20:40:55Z",
+        "updatedAt": "2026-11-10T19:57:40Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "74a437a18cac8f59a56549ecd3400ad6b906f35854247f2b6c59a5f8e2d67131"
+      }
+    },
+    {
+      "discussion": 116,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJMgE",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19187716",
+        "createdAt": "2026-10-26T03:27:03Z",
+        "updatedAt": "2026-10-26T03:27:03Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "001800eadd872dccb0e0bc93f952815ce014a19a272852aa50a0ce791f2935f3"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJMgE",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19187716",
+        "createdAt": "2026-10-26T03:27:03Z",
+        "updatedAt": "2026-11-10T19:57:35Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "6e7248370389f8e27ad6ea936299011e818ae150ccea6cd13fc8da3eeee9730e"
+      }
+    },
+    {
+      "discussion": 116,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJzBM",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19345484",
+        "createdAt": "2026-11-02T07:45:43Z",
+        "updatedAt": "2026-11-02T07:45:43Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "b89fd6cbb839d7f3783e478836023055358f345639a7010899774072b120f6f6"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBM",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19345484",
+        "createdAt": "2026-11-02T07:45:43Z",
+        "updatedAt": "2026-11-10T19:57:37Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "b2edd8ee185cfbdb48571c47079e15d59cc2bbcc994adfe437e9e41695bdf1a8"
+      }
+    },
+    {
+      "discussion": 117,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJzBe",
+        "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19345502",
+        "createdAt": "2026-11-02T07:46:26Z",
+        "updatedAt": "2026-11-02T07:46:26Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "5ca80dbbfaba84c136cf1399dbc8333f64b45347fbf7adc4a6d235e1bcd03949"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBe",
+        "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19345502",
+        "createdAt": "2026-11-02T07:46:26Z",
+        "updatedAt": "2026-11-10T19:57:10Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "a69ea57d43a11da7a525f75575e2d66bb5338ef385882a977b20bc5b2bb6756b"
+      }
+    },
+    {
+      "discussion": 117,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BKU90",
+        "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19484532",
+        "createdAt": "2026-11-09T05:35:35Z",
+        "updatedAt": "2026-11-10T19:57:16Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "445e489d1648caca632f6f0330a636c6b4f6f6142d387b0a6a39a0d4f08a13d6"
+      }
+    },
+    {
+      "discussion": 117,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BKUqo",
+        "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19483304",
+        "createdAt": "2026-11-09T03:47:32Z",
+        "updatedAt": "2026-11-10T19:57:13Z",
+        "author": {
+          "login": "kmehltretter82",
+          "name": null
+        },
+        "body_sha256": "1c27f474e5c7a58176dc440cd155dbfcd01ebb8dfc1610f9d2e1966dc79ea438"
+      }
+    },
+    {
+      "discussion": 117,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BKXaf",
+        "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19494559",
+        "createdAt": "2026-11-09T15:01:34Z",
+        "updatedAt": "2026-11-10T19:57:19Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "2d27e26e9f078536d96b56160aab6b42a402b43fe156f79646c869df124ce0d0"
+      }
+    },
+    {
+      "discussion": 118,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI58o",
+        "url": "https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19111720",
+        "createdAt": "2026-10-22T00:19:35Z",
+        "updatedAt": "2026-10-22T00:19:35Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "e4284fd33c2b199d182eadde818c2919363ebce2e88b4bf660ecbfbd0d576372"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI58o",
+        "url": "https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19111720",
+        "createdAt": "2026-10-22T00:19:35Z",
+        "updatedAt": "2026-11-10T19:56:58Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "1477c31caeef5df2d12dd0cc8f6b9ca8646b0d9f873938c63bcdf4b9080112f9"
+      }
+    },
+    {
+      "discussion": 118,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJzBY",
+        "url": "https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19345496",
+        "createdAt": "2026-11-02T07:46:12Z",
+        "updatedAt": "2026-11-02T07:46:12Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "b09c7c8cd4727c902496b5080bbd803eb5c7c9eb9cd48494f18ba4aa1c07bd2d"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBY",
+        "url": "https://github.com/hodge-computer/sextics/discussions/118#discussioncomment-19345496",
+        "createdAt": "2026-11-02T07:46:12Z",
+        "updatedAt": "2026-11-10T21:23:22Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "1372ba95545004437d3ffd477daf0232c8328df1e5539fd33882d39c022b8d3b"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJDcS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610",
+        "createdAt": "2026-10-23T17:11:49Z",
+        "updatedAt": "2026-11-07T00:22:31Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "d4b2a7c3417f5b22c8a927a92670cb317e9351685152cff1a49874af574c0920"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJDcS",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610",
+        "createdAt": "2026-10-23T17:11:49Z",
+        "updatedAt": "2026-11-10T19:56:41Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "039d3b80d2d8b6c28decfc736ce078daf1b257f8d641a62a1aff41dec5d47105"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJzBL",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19345483",
+        "createdAt": "2026-11-02T07:45:38Z",
+        "updatedAt": "2026-11-02T07:45:38Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "c1d03a5e6e1d0741726d0228bc948d0febafe6942ca3101bb4ca20390aef9dff"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBL",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19345483",
+        "createdAt": "2026-11-02T07:45:38Z",
+        "updatedAt": "2026-11-10T19:56:45Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "19e94bf45ff0c6e2577bdbe969a9d9b2c67174236618c9c908283fc493acb4d9"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BKMQx",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19448881",
+        "createdAt": "2026-11-06T20:46:35Z",
+        "updatedAt": "2026-11-07T00:23:32Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "1cbce3956c3b002c42610e2e6338bd028962fb156bb121a261231d3721a36342"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BKMQx",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19448881",
+        "createdAt": "2026-11-06T20:46:35Z",
+        "updatedAt": "2026-11-10T19:56:48Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "25ad78bed780fec3d6a19195b998c5bf5eda2679e8b6e680dd7be5b17d85e95e"
+      }
+    },
+    {
+      "discussion": 120,
+      "before": null,
+      "after": {
+        "id": "DC_kwDOVLOOJc4BKZwd",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19504157",
+        "createdAt": "2026-11-09T23:10:49Z",
+        "updatedAt": "2026-11-10T19:56:51Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "1bd7604bb0e889522c98ba830b84b7dc8dbe30ee63288c94d0261f3b5b92e6f9"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI-aB",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985",
+        "createdAt": "2026-10-22T18:15:28Z",
+        "updatedAt": "2026-10-22T18:15:28Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "bbebae10b90520c5c3d4c6bd0a4f090c26a13bb5ae2feab45562a6589997b521"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI-aB",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19129985",
+        "createdAt": "2026-10-22T18:15:28Z",
+        "updatedAt": "2026-11-10T19:56:09Z",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "body_sha256": "e93ddfe4996b8840cf2703419754414bf214a240732229aeac88437a1954e488"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI51C",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+        "createdAt": "2026-10-21T23:35:55Z",
+        "updatedAt": "2026-10-21T23:56:40Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "ac2976172c1785ab9fe31ae132d52c6bbcb339c5fe905489294f3e5616d62c88"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI51C",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19111234",
+        "createdAt": "2026-10-21T23:35:55Z",
+        "updatedAt": "2026-11-10T19:56:03Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "3a98788194270ae67851abd3fd363b370dc6ae969fdeeda1b0be01e61295f55d"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI5PZ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825",
+        "createdAt": "2026-10-21T20:51:48Z",
+        "updatedAt": "2026-10-21T20:51:48Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "961d54cb9b4b7c446c48a3f70d91e077e0c79b309f5b86145ea97aba55788ca8"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI5PZ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19108825",
+        "createdAt": "2026-10-21T20:51:48Z",
+        "updatedAt": "2026-11-10T19:55:59Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "0ac0b62b37b955f47092ffcb6a47ee2077d1632149c281563dc47287277fa442"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI6dm",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830",
+        "createdAt": "2026-10-22T03:08:57Z",
+        "updatedAt": "2026-10-22T03:08:57Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "26f989791c224d470da34946d8241aa8500c2b2a3f1b435fb7750deab77e7d66"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI6dm",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19113830",
+        "createdAt": "2026-10-22T03:08:57Z",
+        "updatedAt": "2026-11-10T19:56:06Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "042cce4837087bd696536b7b402ecd0f6a767ef94f50f939f2ed5b0d58dac0af"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BI_aX",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19134103",
+        "createdAt": "2026-10-22T22:47:39Z",
+        "updatedAt": "2026-10-22T22:47:39Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "c05ee46bcc7cd03bf16bf94b4e87bad704c7bf7bc07646b679bacad97496b235"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BI_aX",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19134103",
+        "createdAt": "2026-10-22T22:47:39Z",
+        "updatedAt": "2026-11-10T00:02:41Z",
+        "author": {
+          "login": "DiamondJM",
+          "name": "Josh Diamond"
+        },
+        "body_sha256": "12c92ae9b63f0cb6470c4e899e79c84c77703820c3b1aa1b2556c7b08641d32a"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIqxx",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19049585",
+        "createdAt": "2026-10-19T20:22:49Z",
+        "updatedAt": "2026-10-21T16:39:58Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "9ba805ae291580bb0a0be8efcb4f8aecf9447e67a740e89428f27eb50635cba4"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIqxx",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19049585",
+        "createdAt": "2026-10-19T20:22:49Z",
+        "updatedAt": "2026-11-10T19:55:37Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "de922354188d21ec4863aacdcf394e2de9b0fe0389fb0d4ab4d5d891af9dcc82"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIrOk",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19051428",
+        "createdAt": "2026-10-19T21:07:40Z",
+        "updatedAt": "2026-10-19T23:49:13Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "5773a5a809d44eafc972a0da6d9279929333e9a2429993a518b33b45f58bf436"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIrOk",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19051428",
+        "createdAt": "2026-10-19T21:07:40Z",
+        "updatedAt": "2026-11-10T19:55:40Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "0875d9116e8a825186d38f665bdbb3cb15cd93f744e4ef2a920c11cf8a619026"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIrd3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407",
+        "createdAt": "2026-10-19T21:40:46Z",
+        "updatedAt": "2026-10-19T23:49:15Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "f591f318b3eae3e4093dcfe4f4a66edb8f8de3af36424e06269d443efb2893a3"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIrd3",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19052407",
+        "createdAt": "2026-10-19T21:40:46Z",
+        "updatedAt": "2026-11-10T19:55:43Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "df7a96dcb425f4af2235ae194b396d621450e8d9209220940b324e8dca3f7839"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIsx8",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19057788",
+        "createdAt": "2026-10-20T03:46:05Z",
+        "updatedAt": "2026-10-20T03:46:05Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "9c195a757ee2c9d7ab61fc94fdcb1f089f3a32f653edd9f4ed6ba0ed3a6e5d69"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIsx8",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19057788",
+        "createdAt": "2026-10-20T03:46:05Z",
+        "updatedAt": "2026-11-10T19:55:47Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "24ad23a69811842e5bbc3fa07b509a05f73e97135d214373a96b1b21059c57fe"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIx3J",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19078601",
+        "createdAt": "2026-10-20T17:59:22Z",
+        "updatedAt": "2026-10-20T17:59:22Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "84b869d485a3d37f07fca6973e0caea9215c478fd7d137a7cf241d9f5fdce0a9"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIx3J",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19078601",
+        "createdAt": "2026-10-20T17:59:22Z",
+        "updatedAt": "2026-11-10T19:55:50Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "6c075c32b62e0d6f51c9fb80ad82962bbf54066880b1bc26970b9982a699d09f"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BIyQ8",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252",
+        "createdAt": "2026-10-20T19:35:47Z",
+        "updatedAt": "2026-10-21T12:53:37Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "95c0c2ca9b4b3e50e1920dce85ad90add9b75869d7f8dc42976caef2c400a4b8"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BIyQ8",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19080252",
+        "createdAt": "2026-10-20T19:35:47Z",
+        "updatedAt": "2026-11-10T19:55:53Z",
+        "author": {
+          "login": "fqlx",
+          "name": "Ben Burns"
+        },
+        "body_sha256": "359fc131306b004f2e3a6725f76c43cc2906d55869207a42a736b9c1aadb88b9"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJHdj",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075",
+        "createdAt": "2026-10-24T16:56:21Z",
+        "updatedAt": "2026-10-24T16:56:21Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "d08cad1eca0de2e73fa6e2c040f870b66b669da80e3d2146c182d1a7bd427a71"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJHdj",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19167075",
+        "createdAt": "2026-10-24T16:56:21Z",
+        "updatedAt": "2026-11-10T19:56:13Z",
+        "author": {
+          "login": "rbajaj5",
+          "name": null
+        },
+        "body_sha256": "50373787a068948dee950f9b04bad49dadea15ffbb0d815f48a7d0291530e83b"
+      }
+    },
+    {
+      "discussion": 127,
+      "before": {
+        "id": "DC_kwDOVLOOJc4BJzBQ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19345488",
+        "createdAt": "2026-11-02T07:45:52Z",
+        "updatedAt": "2026-11-02T07:45:52Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "a8be80cbff16ae140cf4b58a6e4ba308b0e60eb15027cb610ed0f2e8e49d3978"
+      },
+      "after": {
+        "id": "DC_kwDOVLOOJc4BJzBQ",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19345488",
+        "createdAt": "2026-11-02T07:45:52Z",
+        "updatedAt": "2026-11-10T19:56:16Z",
+        "author": {
+          "login": "kejace",
+          "name": "Kristoffer Josefsson"
+        },
+        "body_sha256": "962b492d67322e2f08f5409910d197f1d50255c1595c8566690a004f1b0cf88c"
+      }
+    }
+  ],
+  "metadata_changes": [
+    {
+      "discussion": 44,
+      "field": "updatedAt",
+      "before": "2026-10-21T12:53:52Z",
+      "after": "2026-11-10T20:07:42Z"
+    },
+    {
+      "discussion": 117,
+      "field": "updatedAt",
+      "before": "2026-11-02T07:46:26Z",
+      "after": "2026-11-09T15:01:35Z"
+    },
+    {
+      "discussion": 120,
+      "field": "updatedAt",
+      "before": "2026-11-06T20:46:35Z",
+      "after": "2026-11-09T23:10:49Z"
+    }
+  ],
+  "scope": "Read-only monitoring; no mathematical replay or publication."
+}

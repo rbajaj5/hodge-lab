@@ -7069,3 +7069,58 @@ was needed. Prompt 3, alternative drafts and old research remain closed to this
 monitor. Posts 1–30 and tally remain **30 discussion contributions, one closed
 maintenance PR, zero accepted authored solves**. Notebook push/readback are
 recorded separately.
+
+
+### Checkpoint 163 — 11 November 2026, 18:18 UTC: cycle-q2 existence assertion and discussion evidence migration
+
+**Bounded monitoring; Hodge Lab only.** The [status note](notes/upstream-monitor-20261111.md)
+pins upstream `03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f`, 28 commits after
+`e3936ff366ae2302f21fb9e5730bbbd284c81d69`; notebook parent is
+`27d5498288c7257436fa04f0cdaea18aea58c83d`. Collection actually occurred on
+11 November, after the heartbeat trigger. The full inventory still has
+82 fixed targets, 66 accepted submissions and 16 without acceptance.
+All instance, acceptance and proof pins match. Six of 383 target/policy
+pins changed; 34 captured sources cover 18 of 19 changed paths, with the
+contact-address-only app patch preserved in the repository comparison.
+
+Benjamin Diamond's target context now asserts cycle-q2 certificate existence
+through Chapter 3D's paired-sign/order-three support argument. The older
+sixth-root quotient limitation remains scoped to that different symmetry.
+This updates the earlier unresolved-existence wording, without a new accepted
+submission or our proof verification. The final chapter uses Hodge loci of
+surface sections; the Fano-fourfold route is a remark. Chapter 1 revises the
+residue and prescribed-support proof while retaining its existing D_red^q
+statement and hypotheses; it does not bound the unknown support degree.
+
+All pages of 14 discussions yielded 51 comments and 19 replies: four new
+records, 66 existing edits and one earlier reply absent. The new #117 posts
+by kmehltretter82, fqlx and benediamond supply reported source identities and
+conditional current/trace reductions; the primitive admission remains.
+The standalone scalar Prove2Me claim is not target acceptance. DiamondJM's
+new #120 post retains a missing rational core field and numerical-model
+limits, explicitly rejecting million-sheet and elimination-impossibility
+inferences from its historical run count. No attachment, Lean, numerical
+or CI checks were executed by us. AI assistance and original attribution
+remain distinct from independent human review.
+
+Bulk edits change evidence links, replay qualifications and current packet
+scopes. kejace's low-degree bounds remain; omitted higher-sector case files
+are not silently promoted to reproducible evidence or declared false. Our
+#127 comment still states rank 15, but its dated correction/audit links were
+removed. The completed notebook correction and Prompt 3 reconstruction
+remain intact. fqlx's earlier #44 T100 reproduction reply is absent from the
+complete capture; its prior body and limits remain history. Neither absence
+nor received credit changes our tally. Editor identity/reason is not inferred
+from original author metadata. The [evidence manifest](results/upstream-monitor-20261111/review.json)
+preserves paired bodies, hashes, source captures and exact differences.
+
+Upstream contributor instructions now centralize in CONTRIBUTING and favor
+self-contained comments with curated attachments; discussion links exclude
+repositories, files, gists and PRs. These restrictions are recorded for any
+separately authorized future action, whose prior ledger audit remains
+required. README/current feedback note are updated; earlier ledger bytes,
+receipts and research results remain history. No upstream action, new research
+or visualization batch occurred. Alternative drafts and the unpublished #61
+attempt were not reopened. Tally remains **30 discussion contributions,
+one closed maintenance PR, zero accepted authored solves**. Normal notebook
+push and remote readback are recorded separately.

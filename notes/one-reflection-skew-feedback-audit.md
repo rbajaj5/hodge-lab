@@ -58,3 +58,17 @@ not close those classes; fqlx's separate claimed closure was not replayed.
 This corrects the scope of the new report, not our completed source-to-Hessian
 reconstruction. Earlier text above remains historical. No new local
 mathematical check, accepted solve or contribution tally is claimed.
+
+
+## Monitoring addendum — 11 November 2026
+
+The [current monitor](upstream-monitor-20261111.md) records a change in public
+evidence presentation. Comment 19049585 still states rank **15**, but its
+dated rank-16-to-15 correction paragraph and notebook audit links are gone.
+The completed [focused audit](one-reflection-skew-mathematical-audit.md) and
+[source reconstruction](one-reflection-skew-hessian-source.md) remain intact;
+neither was rerun. Before/after bodies preserve the explicit correction.
+Other edits migrate or remove evidence links and narrow some current packet
+scopes. They do not constitute a new exclusion, a refutation of preserved
+checks, or a new contribution by us. Original author metadata does not
+identify who edited a comment. No upstream edit or proof replay occurred.

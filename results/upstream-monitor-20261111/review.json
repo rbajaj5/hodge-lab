@@ -1,0 +1,49 @@
+{
+  "prepared_utc": "2026-11-12T00:11:29.741261+00:00",
+  "notebook_parent": "27d5498288c7257436fa04f0cdaea18aea58c83d",
+  "upstream_head": "03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f",
+  "collection_date": "2026-11-11",
+  "scope": "Bounded monitoring, source identity and claim scope only.",
+  "source_file_mapping": {
+    "repository-heads-20261108T074509Z.json": "repository-before.json",
+    "repository-heads-20261111T181800Z.json": "repository-heads.json",
+    "baseline-before-20261111T181803Z.json": "discussion-baseline.json",
+    "latest.json": "discussion-latest.json",
+    "run-20261111T181803Z.json": "run.json",
+    "comparison-20261111T181803Z.json": "comparison.json",
+    "discussion-review-20261111.json": "discussion-review.json",
+    "status-review-20261111.json": "status-review.json",
+    "policy-review-20261111.json": "policy-review.json",
+    "policy-source-capture-20261111.json": "policy-source-capture-20261111.json"
+  },
+  "evidence_sha256": {
+    "repository-before.json": "95a2967f85cf2bedce575efccbec67984ab8dc5d96901df5d2df09d88c642fa5",
+    "repository-heads.json": "b6f9d143a666d7a4f0dd924121149c812ed238b73992303a6ac5e158de9c2bb5",
+    "discussion-baseline.json": "b8c405e959f105f062cef7be0f77aa5f1f3aaeb64345c833eedf9a41054c6ef5",
+    "discussion-latest.json": "5f69d9c44b26c9b25600bd1f61ef4118e6748b40e7043f1bfab16be536b1cff1",
+    "run.json": "b9a9e9860a50929b1815992722bd17e26b170860cdebe0390a3449b30cfdd9cf",
+    "comparison.json": "d04763831f04004570fe5b7b88530196a2c2108728b789abe2144f2be8b3c18f",
+    "discussion-review.json": "d614eb8831fa40357a519ca4c6a08f54e0d852203414296e2025a5730a6906e8",
+    "status-review.json": "38ad7d7b3e29da38ca43f159f275b532dd679604e678f946f6cccfc65db18d16",
+    "policy-review.json": "feb832b152ce1c7d869951e12ae53fc08518e454e5a9cd48fdbca1dce563933b",
+    "policy-source-capture-20261111.json": "89478a235323bffb2cd99edd22051d0af34971ad978af989eeecdfc85421d0a2"
+  },
+  "notebook_agents_sha256": "c6fa2e3422cf470cb1eb8cd7490a8ac80246f6e1c08a430cd2f398cea8148c0d",
+  "prior_ledger_sha256": "1425f5e9a9b3d91c1b860385ea479593ee37bf57b83e0997947bd0377c65795d",
+  "previous_checkpoint": 162,
+  "new_checkpoint": 163,
+  "our_checks": [
+    "All 14 discussions with complete pagination; stable IDs,timestamps and body hashes",
+    "Complete 383 target/policy pins; all 82 instances and 66 acceptances unchanged",
+    "All 34 captured source hashes and Git blob IDs verified; 19 file changes read in context",
+    "Four new, 66 edited, one absent discussion records reviewed with earlier bodies preserved"
+  ],
+  "mathematical_checks_executed": false,
+  "upstream_actions": [],
+  "contribution_tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "publication": "Normal commit/push and remote readback recorded separately."
+}

@@ -1,0 +1,52 @@
+{
+  "reviewed_utc": "2026-11-11T18:19:25.761901+00:00",
+  "upstream_before": "e3936ff366ae2302f21fb9e5730bbbd284c81d69",
+  "upstream_after": "03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f",
+  "notebook_parent": "27d5498288c7257436fa04f0cdaea18aea58c83d",
+  "tree_complete": true,
+  "target_count": 82,
+  "accepted_submission_count": 66,
+  "all_instance_pins_unchanged": true,
+  "all_acceptance_pins_unchanged": true,
+  "all_proof_pins_unchanged": true,
+  "target_policy_pin_count": 383,
+  "changed_pins": [
+    {
+      "path": "AGENTS.md",
+      "before": "c85efd5b6ebce24da2ed15e9647bca0e068d510f",
+      "after": "aeac43db82d97a8337457c807b47c02405de25ec"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "before": "bc7ed6f944c7b4f85c5ae12b2e0892575a3921c6",
+      "after": "57791790ca321e13549de78773a293a492ecdd57"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "before": "aac6ec0de6d1710ea5f8f3126ef0597c1ef9ea5f",
+      "after": "23bf90edb0ba58606fcb016cf93586570dcd9b3b"
+    },
+    {
+      "path": "README.md",
+      "before": "4e2e75b484a258ae9562c1dfee71fc57f14c9bad",
+      "after": "72022bf07f19fd4a1796155d1c92df8ff18975ca"
+    },
+    {
+      "path": "data/cycle-q2/provenance.json",
+      "before": "971ac3494a6b5472400ac5bcf070b0db6f81d11f",
+      "after": "02329ff79062cadbd24e88683e7fee4e88e6bf9a"
+    },
+    {
+      "path": "data/cycle-q2/why.md",
+      "before": "069497e8268daa6cd1d6243f8df1973c1d1c170d",
+      "after": "eef5fb06f6b6f6c13c4dc47ac391e7e4040f3f4b"
+    }
+  ],
+  "commits": 28,
+  "source_change_file_count": 19,
+  "new_records": 4,
+  "removed_records": 1,
+  "edited_records": 66,
+  "scope": "Repository source identity and metadata checks only. No mathematical verification or new acceptance inferred from prose.",
+  "without_accepted_submission_count": 16
+}
