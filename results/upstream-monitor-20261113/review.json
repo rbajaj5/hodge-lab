@@ -1,0 +1,189 @@
+{
+  "repository_observations_utc": {
+    "before": "2026-11-12T00:14:59.873529+00:00",
+    "current": "2026-11-13T15:24:01.304497+00:00"
+  },
+  "compared_utc": "2026-11-13T15:24:38.732053+00:00",
+  "main_heads": {
+    "hodge-computer/sextics": {
+      "before": "03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f",
+      "current": "01b48136366f28affae56762c42d707642baa0d5"
+    },
+    "rbajaj5/hodge-lab": {
+      "before": "be39b4514143d2c40e1240c25f67e4b17b623b4a",
+      "current": "be39b4514143d2c40e1240c25f67e4b17b623b4a"
+    }
+  },
+  "upstream_compare": {
+    "url": "https://github.com/hodge-computer/sextics/compare/03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f...01b48136366f28affae56762c42d707642baa0d5",
+    "commits": 36,
+    "changed_paths": 199
+  },
+  "target_and_policy_inventory": {
+    "files_before": 383,
+    "files_current": 383,
+    "fixed_instance_records": 82,
+    "acceptance_records": 66,
+    "proof_json_records": 66,
+    "targets_without_acceptance": 16,
+    "changed_git_blob_pins": [
+      {
+        "path": "CONTRIBUTING.md",
+        "before": "57791790ca321e13549de78773a293a492ecdd57",
+        "after": "e4b9163a242ec91a5553de9257c4ac4df0d88006"
+      },
+      {
+        "path": "MAINTAINING.md",
+        "before": "23bf90edb0ba58606fcb016cf93586570dcd9b3b",
+        "after": "3043a74111de7fe611f987ecfb31dc007bda562e"
+      },
+      {
+        "path": "formal/README.md",
+        "before": "877bbdd6092fdcd3a39ca270ec6324de2159ae7f",
+        "after": "2c7f89822971244a6c67391ace6869987d4a9081"
+      }
+    ]
+  },
+  "additional_source_blobs": [
+    {
+      "path": ".github/solve-policy.json",
+      "git_blob_sha": "f57e10c8b18dfcb7a68f040c0a9f9d465d77065f",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/.github/solve-policy.json"
+    },
+    {
+      "path": "docs/01-certificates.md",
+      "git_blob_sha": "09dac35b42cfa755c9b0a139db85b942d8e4924b",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/docs/01-certificates.md"
+    },
+    {
+      "path": "docs/overview.md",
+      "git_blob_sha": "b1f002977c4d41249ee088fa5aeaee3c37e99cd5",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/docs/overview.md"
+    },
+    {
+      "path": "formal/TECHNIQUES.md",
+      "git_blob_sha": "65992f338ee78e92ecdab450e471802d9de39379",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/formal/TECHNIQUES.md"
+    },
+    {
+      "path": "formal/lean/lakefile.toml",
+      "git_blob_sha": "344234499b84cb0c096de52fd80f3256e327f04c",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/formal/lean/lakefile.toml"
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Constructions/ResidueTransport/NormalChange.lean",
+      "git_blob_sha": "3b0f9183cd4f93cf46a9c65a12d780b5b9eb1ef5",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/formal/lean/HodgeComputer/Constructions/ResidueTransport/NormalChange.lean"
+    },
+    {
+      "path": "scripts/check-library.py",
+      "git_blob_sha": "9dbc5d92b04ce099575833831008726ae30e8e42",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/scripts/check-library.py"
+    },
+    {
+      "path": "data/cycle-three/solution.md",
+      "git_blob_sha": "583001207d596c7091d77babe645c4cde353f410",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/data/cycle-three/solution.md"
+    },
+    {
+      "path": "data/mixed-polar/solution.md",
+      "git_blob_sha": "c5218ce4ddfe7fe57acaa5469aa36c3c1327bd88",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/data/mixed-polar/solution.md"
+    }
+  ],
+  "discussions": {
+    "baseline_snapshot_utc": "20261112T001458Z",
+    "current_snapshot_utc": "2026-11-13T15:24:00.339454+00:00",
+    "comments": 51,
+    "replies": 19,
+    "record_changes": 0,
+    "thread_metadata_changes": 0,
+    "threads": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 120,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true
+      }
+    ]
+  },
+  "scope": "Read-only GitHub observations. Compared repository heads, Git blob identifiers, the upstream commit range, and complete discussion pages including IDs, timestamps and SHA-256 hashes of UTF-8 bodies. Proof files and accepted publications are tracked separately. This review performed no proof replay or protected verification."
+}

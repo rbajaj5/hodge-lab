@@ -15,6 +15,8 @@ Lean is benched in the current solution-focused batch at the user's direction.
 
 ## Current frontier
 
+**13 November 2026.** Chapter 1 now expresses the universal certificate question at `q=2`. Multiplying a `q=1` numerator by the defining sextic gives the same form at `q=2`. Upstream also raised the solve-proposal limit from 64 to 256 files. The catalogue still lists 66 accepted submissions across 82 targets. [Revised theorem, submission rules and source pins](notes/upstream-monitor-20261113.md).
+
 **Monitoring update: 11 November 2026, 18:18 UTC.** Upstream now asserts existence for `cycle-q2` via paired-sign/order-three support; it still has no accepted submission. All 82 fixed targets and 66 acceptance records are unchanged. New symmetric/four-plus-two construction reports retain their missing primitives. Discussion evidence migrations, narrowed replay scopes and the preserved rank correction are recorded in the [current monitor](notes/upstream-monitor-20261111.md).
 
 **Monitoring update: 8 November 2026, 07:30 UTC.** Upstream adds a book theorem converting ordinary to strict certificates when denominators may change, revises the contact witness and reuses clearing/Piola machinery in existing accepted proofs. General fixed-denominator tests still require their full quotient; no new target acceptance or discussion change occurred. [Statement scopes, source pins and verification limits](notes/upstream-monitor-20261108.md).

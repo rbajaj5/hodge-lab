@@ -7124,3 +7124,10 @@ or visualization batch occurred. Alternative drafts and the unpublished #61
 attempt were not reopened. Tally remains **30 discussion contributions,
 one closed maintenance PR, zero accepted authored solves**. Normal notebook
 push and remote readback are recorded separately.
+
+
+### Checkpoint 164 — 13 November 2026, 15:24 UTC
+
+Chapter 1 now describes Diamond’s Theorem 2.13 as giving an algebraic primitive on the original principal open. This corrects its earlier account requiring an extra partial-derivative localization. The pole-order bound for prescribed support remains a separate argument. The book’s universal q=2 formulation includes the q=1 numerator A through AF. fqlx’s merged PR 236 raises the solve-proposal cap from 64 to 256 files within the existing resource budget. Upstream also reorganized shared code in four accepted cubic applications. [Status note and permanent sources](notes/upstream-monitor-20261113.md)
+
+We compared upstream `03cc4fc1bad78d33c2a40bbfa545dea3ac9aa29f` through `01b48136366f28affae56762c42d707642baa0d5` against the 12 November baseline, starting from Hodge Lab `be39b4514143d2c40e1240c25f67e4b17b623b4a`. All 82 fixed instances, 66 acceptances and 66 proof manifests matched. The complete discussion comparison found 51 comments and 19 replies with matching IDs, timestamps and body hashes. We reviewed upstream sources and executed the monitor only. The contribution tally remains **30 discussion contributions, one closed maintenance PR, zero accepted authored solves**. The ledger audit requirement applies before any separately authorized upstream publication. [Monitor receipt](results/upstream-monitor-20261113/review.json)
