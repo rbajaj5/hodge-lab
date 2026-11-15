@@ -15,6 +15,8 @@ Lean is benched in the current solution-focused batch at the user's direction.
 
 ## Current frontier
 
+**15 November 2026.** The solve policy now allows 996 files and 5½ hours for verification, and removes the aggregate source-size cap. Chapter 1 adds conditions for transferring a certificate between members of a family. Chapter 3D revises two steps in the existing `cycle-q2` argument. The catalogue still has 66 published acceptances across 82 targets. [Policy, theorem scope and source pins](notes/upstream-monitor-20261115.md).
+
 **13 November 2026.** Chapter 1 now expresses the universal certificate question at `q=2`. Multiplying a `q=1` numerator by the defining sextic gives the same form at `q=2`. Upstream also raised the solve-proposal limit from 64 to 256 files. The catalogue still lists 66 accepted submissions across 82 targets. [Revised theorem, submission rules and source pins](notes/upstream-monitor-20261113.md).
 
 **Monitoring update: 11 November 2026, 18:18 UTC.** Upstream now asserts existence for `cycle-q2` via paired-sign/order-three support; it still has no accepted submission. All 82 fixed targets and 66 acceptance records are unchanged. New symmetric/four-plus-two construction reports retain their missing primitives. Discussion evidence migrations, narrowed replay scopes and the preserved rank correction are recorded in the [current monitor](notes/upstream-monitor-20261111.md).

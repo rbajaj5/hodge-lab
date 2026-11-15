@@ -1,0 +1,229 @@
+{
+  "repository_observations_utc": {
+    "before": "2026-11-13T23:35:49.452869+00:00",
+    "current": "2026-11-15T16:14:25.881498+00:00"
+  },
+  "compared_utc": "2026-11-15T16:14:51.541015+00:00",
+  "main_heads": {
+    "hodge-computer/sextics": {
+      "before": "01b48136366f28affae56762c42d707642baa0d5",
+      "current": "34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44"
+    },
+    "rbajaj5/hodge-lab": {
+      "before": "5b2c59f47a6e99de64758c4574c006a9a53b2a34",
+      "current": "5b2c59f47a6e99de64758c4574c006a9a53b2a34"
+    }
+  },
+  "upstream_compare": {
+    "url": "https://github.com/hodge-computer/sextics/compare/01b48136366f28affae56762c42d707642baa0d5...34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44",
+    "commits": 10,
+    "changed_paths": 14
+  },
+  "target_and_policy_inventory": {
+    "files_before": 383,
+    "files_current": 383,
+    "fixed_instance_records": 82,
+    "acceptance_records": 66,
+    "proof_json_records": 66,
+    "targets_without_acceptance": 16,
+    "changed_git_blob_pins": [
+      {
+        "path": "CONTRIBUTING.md",
+        "before": "e4b9163a242ec91a5553de9257c4ac4df0d88006",
+        "after": "35bf4a2544f28074f34ae65537eacacf0675b570"
+      },
+      {
+        "path": "MAINTAINING.md",
+        "before": "3043a74111de7fe611f987ecfb31dc007bda562e",
+        "after": "bdf3913f6c9d977a104bde00664d7e31897c8ef1"
+      }
+    ]
+  },
+  "additional_source_blobs": [
+    {
+      "path": ".github/solve-policy.json",
+      "git_blob_sha": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/.github/solve-policy.json"
+    },
+    {
+      "path": ".github/workflows/repository-build.yml",
+      "git_blob_sha": "4cd28910f3cb44db78424b3a39cdc5d87349be6a",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/.github/workflows/repository-build.yml"
+    },
+    {
+      "path": ".github/workflows/solve-proposal.yml",
+      "git_blob_sha": "21d999706b90e32d8be2ef9c1d5b5c20df7cfc93",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/.github/workflows/solve-proposal.yml"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "git_blob_sha": "35bf4a2544f28074f34ae65537eacacf0675b570",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/CONTRIBUTING.md"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "git_blob_sha": "bdf3913f6c9d977a104bde00664d7e31897c8ef1",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/MAINTAINING.md"
+    },
+    {
+      "path": "docs/01-certificates.md",
+      "git_blob_sha": "31cf273054405dbd706c1123d2b3e78fcd7d12ca",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/docs/01-certificates.md"
+    },
+    {
+      "path": "docs/03-geometric-support.md",
+      "git_blob_sha": "b1421c7c3b258efcba9737f48a4f86d235e90d45",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/docs/03-geometric-support.md"
+    },
+    {
+      "path": "docs/03d-hodge-loci.md",
+      "git_blob_sha": "6774550f2a10fbd8aa8c14bf1fbcfa6ab5104083",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/docs/03d-hodge-loci.md"
+    },
+    {
+      "path": "docs/README.md",
+      "git_blob_sha": "8f10f1127a4dc09014f592f117592dbde88037e0",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/docs/README.md"
+    },
+    {
+      "path": "scripts/proposals/check.py",
+      "git_blob_sha": "fd702616a70c993cafb000d44caf9b0e2d65b931",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/scripts/proposals/check.py"
+    }
+  ],
+  "solve_policy": {
+    "before": {
+      "git_blob_sha": "f57e10c8b18dfcb7a68f040c0a9f9d465d77065f",
+      "url": "https://github.com/hodge-computer/sextics/blob/01b48136366f28affae56762c42d707642baa0d5/.github/solve-policy.json",
+      "policy": {
+        "schemaVersion": 1,
+        "mode": "live",
+        "repository": "hodge-computer/sextics",
+        "maxFiles": 256,
+        "maxBytes": 16777216,
+        "timeoutSeconds": 3600,
+        "memoryMb": 14336
+      }
+    },
+    "current": {
+      "git_blob_sha": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+      "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/.github/solve-policy.json",
+      "policy": {
+        "schemaVersion": 1,
+        "mode": "live",
+        "repository": "hodge-computer/sextics",
+        "maxFiles": 996,
+        "timeoutSeconds": 19800,
+        "memoryMb": 14336
+      }
+    },
+    "merge_pr": "https://github.com/hodge-computer/sextics/pull/251",
+    "workflow_job_timeouts_minutes": {
+      "protected_proposal_verification": {
+        "before": 85,
+        "current": 355
+      },
+      "affected_accepted_application_recheck": {
+        "before": 90,
+        "current": 355
+      }
+    }
+  },
+  "discussions": {
+    "baseline_snapshot_utc": "2026-11-13T23:35:50.582339+00:00",
+    "current_snapshot_utc": "2026-11-15T16:14:25.480065+00:00",
+    "comments": 51,
+    "replies": 19,
+    "record_changes": 0,
+    "thread_metadata_changes": 0,
+    "threads": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 120,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true
+      }
+    ],
+    "matched_record_set_sha256": "6e93c658216dd72687407ce82b4620eb096100ec2d0da4b340475d6ca41154fd",
+    "hash_method": "Ordered threads as listed, each with thread id, number, title, url, updatedAt, locked, answer and body_sha256, and records sorted by id with id, url, createdAt, updatedAt, author, discussion, kind, parent and body_sha256. Hashes use UTF-8. The set digest hashes the UTF-8 JSON array with sorted keys, compact separators and unescaped Unicode."
+  },
+  "scope": "Compared repository heads, Git blob identifiers and commit patches. Recomputed UTF-8 body hashes from both complete discussion captures, compared IDs, timestamps, authors and parent links, and checked both manifests. This monitor performed no mathematical proof replay or protected CI verification."
+}
