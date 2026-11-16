@@ -212,3 +212,8 @@ were bounded at 45 seconds; the complete discussion fetch at 240 seconds.
 A separate read-only agent checked the eight-file diff and unchanged pins.
 Credit Benjamin E. Diamond/upstream contributors for the interface work.
 No upstream action or change to the Posts list.
+
+
+## Attribution update, 16 November 2026
+
+The October observation above records benediamond’s original accepted proof. The current acceptance record credits fqlx and PR 184 for the quadratic-shear replacement. [Current record, source versions and check history](upstream-monitor-20261116.md).

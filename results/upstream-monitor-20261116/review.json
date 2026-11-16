@@ -1,0 +1,1175 @@
+{
+  "observed_utc": "2026-11-16T23:34:16.515176+00:00",
+  "previous_observed_utc": "2026-11-15T16:19:08.362908+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "before": "34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44",
+      "observed": "c1461363e3376217b4d691a8ed0bf9c73eda9e69",
+      "url": "https://github.com/hodge-computer/sextics/commit/c1461363e3376217b4d691a8ed0bf9c73eda9e69"
+    },
+    "rbajaj5/hodge-lab": {
+      "before": "ca6db7bab2a6def0c76abee9c3a6de002f5daf33",
+      "observed": "ca6db7bab2a6def0c76abee9c3a6de002f5daf33",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/ca6db7bab2a6def0c76abee9c3a6de002f5daf33"
+    }
+  },
+  "commits_in_range": 26,
+  "monitored_blobs": 383,
+  "changed_monitored_blobs": [
+    {
+      "path": "CONTRIBUTING.md",
+      "before": "35bf4a2544f28074f34ae65537eacacf0675b570",
+      "after": "452afcd19c7bcffb970354fb0b62666f4becc6e4"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "before": "bdf3913f6c9d977a104bde00664d7e31897c8ef1",
+      "after": "9d1cc4fd21cb733c518a9076d384331b2defa401"
+    },
+    {
+      "path": "data/block-q2/why.md",
+      "before": "2c38aa474f9b7392f7816264c744b8dac7e0d3ae",
+      "after": "3654c79ffd1c54e483fd75b2fb9ebf1bdc17cded"
+    },
+    {
+      "path": "data/cofactor-eight/why.md",
+      "before": "60f7a6b29ccebb5beea995f1ef462570a45da0f2",
+      "after": "8c5be4343d38d3f850ba0377e236516d3e837709"
+    },
+    {
+      "path": "data/cofactor-mixed/why.md",
+      "before": "3acc432b8efa92865b4f325368e166645856bd91",
+      "after": "fe3fe413052eb0041b7e395090bb1637c78eec1a"
+    },
+    {
+      "path": "data/collision-h3/why.md",
+      "before": "7aeb90b09e712d9265a4c01aaa89299180494215",
+      "after": "febcfd66a5ce0ffac23e71e99c8383834c52ffd6"
+    },
+    {
+      "path": "data/completed-square-nambu-holdout/why.md",
+      "before": "e98d63f7a00581b9f170cf5372fcca15a53261ef",
+      "after": "5c1dece6b36260765ea120d47c1cbb1f5ab10328"
+    },
+    {
+      "path": "data/cone-ladder-linear/why.md",
+      "before": "1eeede37c6eec903b051d5cf8ec28d15fa966816",
+      "after": "9851d391f886d007dc62222880b451e62e0d52b1"
+    },
+    {
+      "path": "data/contact46006/why.md",
+      "before": "252efc8f8d308cdbc94eccf5ee1d8ad41fab2dbb",
+      "after": "00651a2cac36d5307291635e771f13734ca84c16"
+    },
+    {
+      "path": "data/coupled-pair-rational-d4-strict/why.md",
+      "before": "f81a86b8c165090b164188671baefb6b5ffb20db",
+      "after": "591ec0387a3dcf2f1b97f4cbb7b327077eadeca4"
+    },
+    {
+      "path": "data/crossed-ternary-asymmetric/why.md",
+      "before": "0372413972ddeebd3505276de848c80418942d6c",
+      "after": "2f3fdf024854513d1f2d1855539bd0f8cbe0b851"
+    },
+    {
+      "path": "data/cycle-q2/why.md",
+      "before": "eef5fb06f6b6f6c13c4dc47ac391e7e4040f3f4b",
+      "after": "caf13e4b06a2ce22db1549e0b4c6c867871d6afe"
+    },
+    {
+      "path": "data/cycle-three/why.md",
+      "before": "895d2f505b788628ff18ce7064bb4722a8681a14",
+      "after": "5594d22cf9675e50aa17ad1ba27aacbf9ddcdc5b"
+    },
+    {
+      "path": "data/cyclic-triple-fano/why.md",
+      "before": "8224afa0a67a23ade7636f935996fb6b3bbd9cd4",
+      "after": "cc2485748f2eb13ade2a77cf505710998e2de59c"
+    },
+    {
+      "path": "data/cyclic-triple-residual/why.md",
+      "before": "7e139bcbc38b77255792143a1d21e0d7ff588778",
+      "after": "b1870c93fec846a772376f7a86b4ceb453559297"
+    },
+    {
+      "path": "data/dense-rational/why.md",
+      "before": "923872470ebb1298434723a52f26bd9c9c483bdd",
+      "after": "24c879578277acb15ae1ec7eed7eddbd1802c70d"
+    },
+    {
+      "path": "data/diagonal-permutation/why.md",
+      "before": "e4739180a7e93380c887ba6c99b1ace6de507256",
+      "after": "cb2e34376c834d109eac35604936c0c0f2b32796"
+    },
+    {
+      "path": "data/f3-block-x0-quartic-strict/why.md",
+      "before": "914fcf28e09decef09428ebe9860ce69288285b6",
+      "after": "71f054245617793065006d0aee7546f31abca72e"
+    },
+    {
+      "path": "data/family-block-cube/why.md",
+      "before": "4800a33eb6badd0e7aab059833cb736a866557f0",
+      "after": "1d643e50fd82f6532d2a51e85378f812b0c81ac3"
+    },
+    {
+      "path": "data/family-hesse-web/why.md",
+      "before": "53f539d1bbf5b90abff0b7d3143436fc37b50dc9",
+      "after": "f9a3aa65a509a91f84b3569b26e8f4f8f3173629"
+    },
+    {
+      "path": "data/family-passive-contact/why.md",
+      "before": "d221911ad8cafa6e3f412be3c6e04e88f1635551",
+      "after": "cea6cfabfc017389dcdd499c540a8d15a8a42f66"
+    },
+    {
+      "path": "data/family-root-cube/why.md",
+      "before": "12f2e00e5be31284d0785472adfd5cad82531759",
+      "after": "6b3035034ce1a299ee80780e6a75f1ccf5281451"
+    },
+    {
+      "path": "data/family-shear/why.md",
+      "before": "b1c12494fe5942c6306d7ae1dbb64f65704af5d4",
+      "after": "9e4773626d4936b2cf4f13531557a954e810be87"
+    },
+    {
+      "path": "data/family-sylvester-norm/why.md",
+      "before": "c50f44bbfc0439467cf5653ebb909efa679e9099",
+      "after": "635120074df52530ad2dd0e6b12ebbf75b31b0c4"
+    },
+    {
+      "path": "data/family-trace-zero/why.md",
+      "before": "e1fad161ba0770e67c65735df589f74fbcec61b9",
+      "after": "003fe31a075d8de426d391e63550e3a56f6960bd"
+    },
+    {
+      "path": "data/fermat-pair-rational-d4-strict/why.md",
+      "before": "1b08fd5ff13423499cddcf06ade38cc9b30a82e8",
+      "after": "10bff02c76ea9e866b3602b76ac302c920646228"
+    },
+    {
+      "path": "data/fermat-q2/why.md",
+      "before": "b750cc41465058719cab16439f96d34619cbc678",
+      "after": "342b5ab83d7fa179f5dc5afd7bd3f36b673c0ed2"
+    },
+    {
+      "path": "data/fixed-witness-hesse-cofactor-d4-rational/why.md",
+      "before": "efaea7ca0cc72f3394fbe31fad31f1521f230e9d",
+      "after": "422cdcf2fe22f14f838c8f15e64caea133d81b4e"
+    },
+    {
+      "path": "data/four-plus-two-residual/why.md",
+      "before": "5848fe010867a739dfd06f4ae2cc3817e78b28ad",
+      "after": "de5b5fec31f817c0389744d00acf7c086c1b078e"
+    },
+    {
+      "path": "data/hesse-radial-hesse-cofactor-d4-rational/why.md",
+      "before": "3cd82725a564a81d865c092b18141ac91e7c10e3",
+      "after": "a750056e18d60ebe8e937dbb2d2acfafd7b59fea"
+    },
+    {
+      "path": "data/hesse-triangle/why.md",
+      "before": "23c8bef1fb6bb49fed65bd9bca81eb06e31b4154",
+      "after": "cc820d43c808722c34503831b95d51b47676e34b"
+    },
+    {
+      "path": "data/holdout-all-six/why.md",
+      "before": "36cda9fff9c462370e0f2319a9474547f46f394f",
+      "after": "30702a56e5ad47c4bf6e47fb0ec8c5afc4f1a341"
+    },
+    {
+      "path": "data/holdout-bundle/why.md",
+      "before": "75e2f7d1c61dd9d7da29d449daf1b7b09b85b9a3",
+      "after": "4f474833a55ce389ef40434460b566809b424d45"
+    },
+    {
+      "path": "data/holdout-moving-branch/why.md",
+      "before": "ec77121f8a4d909b80efb735d362a6a5ecf7201b",
+      "after": "075a2ba0f16a543bfa12123f86a12f927121d0b0"
+    },
+    {
+      "path": "data/holdout-p-y14/why.md",
+      "before": "78a43df2451921f27257c6fc13f835cf057f5cc8",
+      "after": "e19d2b413254979ce3db695374727bce786a58b8"
+    },
+    {
+      "path": "data/holdout-p3/why.md",
+      "before": "378758162b6b0372a4f1a72017ce790e1b00f976",
+      "after": "15d7497b1327ea73a527e435791b4f311745c679"
+    },
+    {
+      "path": "data/holdout-q2/why.md",
+      "before": "bdf985f2ebd44db2f1f8269262b0ed08e3409526",
+      "after": "f3e74701ebb8c636a0b18c3d7796e3f0631ef874"
+    },
+    {
+      "path": "data/holdout-ternary-deformation/why.md",
+      "before": "d057e14e891d469520529ac5ff1b6573eb4e578d",
+      "after": "66f3a14cf5b349a6b8ea7cc776dfc43fe3913c0e"
+    },
+    {
+      "path": "data/holdout-x0-x14-y0/why.md",
+      "before": "a517239a31d36c4d42f02289c18a562c1b9b6714",
+      "after": "3a6b2cf018cd5d2473b45a0fa51458469eb90c09"
+    },
+    {
+      "path": "data/holdout-x0-y03-y12/why.md",
+      "before": "cee07f0427b1dbb37e7b1cf1a0ee674be459bbd7",
+      "after": "d8033dda6eb63eabb32f04c42b3932948327e839"
+    },
+    {
+      "path": "data/holdout-x04-p/why.md",
+      "before": "1cc164c87c908e0e9896e1169d5ade9ffe2d65d5",
+      "after": "9bf8c2edd7203a13cb64d48c166bee8fbd15a796"
+    },
+    {
+      "path": "data/holdout-x1-y04-y1/why.md",
+      "before": "d6a584561e648f5d63aba40d591f6d688bf67d4a",
+      "after": "34a4a02fadb542bdd234442497e37bf2edfce3b0"
+    },
+    {
+      "path": "data/holdout-x12-p-y02/why.md",
+      "before": "1eb910be0dc2f386dc0f64984960ac9fb732bcf7",
+      "after": "59ff08ef510fbc3bb744c4591f4358be71e06bcb"
+    },
+    {
+      "path": "data/holdout-x13-y13/why.md",
+      "before": "90861e38d7289e500b313c9cc8bca851e4196b97",
+      "after": "264293282ca3f631112bb6ee4e0e322a9c4cd05d"
+    },
+    {
+      "path": "data/holdout/why.md",
+      "before": "6a505a08c994e8b06fc24197a7513c6de93b2997",
+      "after": "2fbd56b2062ef267c64ab57ef344b0f537028a11"
+    },
+    {
+      "path": "data/klein-coupled-character/why.md",
+      "before": "071cdec066571bc01bd6d1df24a7b9726d12b447",
+      "after": "171197a2a2ac545d8004e799a97f3db2e84e74cf"
+    },
+    {
+      "path": "data/klein-hesse/why.md",
+      "before": "c34a16f27a26741ad738207d2f2a28a3785146b1",
+      "after": "dc0bd6abec08c43fa6cd6678bd0c8fa51468a8f5"
+    },
+    {
+      "path": "data/klein-rational/why.md",
+      "before": "1e8a7106bb3023b31f4044b27cd005ca13a8dcf3",
+      "after": "aeb15f940d892bd06673376c5ef3807ee574dbe3"
+    },
+    {
+      "path": "data/m3-coupled/why.md",
+      "before": "924203b3cfb9e3d9afd4e7a472d8cc91555a726b",
+      "after": "396a1cd5921691da0b20d854a9e47d1751fbb74d"
+    },
+    {
+      "path": "data/mixed-biweight/why.md",
+      "before": "28f0d0cc77654854b3021261788fb5788ff66472",
+      "after": "d003dfdccd72414bba59ca3b191300500b374546"
+    },
+    {
+      "path": "data/mixed-polar/acceptance.json",
+      "before": "d8f59dcfc6b979f5bc8c50dc91456f1e54ae2c03",
+      "after": "6bf7eb52a9039a58f49f42923412cdf72a3d3e43"
+    },
+    {
+      "path": "data/mixed-polar/why.md",
+      "before": "64671ad1c2ee74c6cbe3ae9135011344e71d26de",
+      "after": "735a9cb72f7df86b2de77e7c41bc046687bce7db"
+    },
+    {
+      "path": "data/off-paired/why.md",
+      "before": "d2e4fea14fd17a0be02ec5f6b5c6832de4df0cea",
+      "after": "d6b99b05d6019b2f1cd936d87a6e78483a714aaf"
+    },
+    {
+      "path": "data/one-reflection-skew/why.md",
+      "before": "53d3226c53ca89c4a81ae6724ff0c948de0d3727",
+      "after": "1719971cc503ce650a8972b887bdb3b8a14bd526"
+    },
+    {
+      "path": "data/one-reflection-y2-sector/why.md",
+      "before": "ae0aaab0ce48c2a4640ba06afe6eef96b0315a42",
+      "after": "b4bb7af3732fb51bce064cc0b6de28b94ec845fc"
+    },
+    {
+      "path": "data/one-reflection/why.md",
+      "before": "468d153352e42edc729597af0bc37ac484af97e6",
+      "after": "b5d18b89fc90a82d38449cf0e3e97f0e990b0f47"
+    },
+    {
+      "path": "data/passive-quadratic-d4-strict-rational/why.md",
+      "before": "dd2e2da8f863b0cc9f86fa1981de2c77b90eba6e",
+      "after": "e9fd235c522fd2cd63c9b4f6071043a42f501d21"
+    },
+    {
+      "path": "data/polarized-contact-coupled-d2/why.md",
+      "before": "01acff774b950f4876dff77ef7ebd310d7542510",
+      "after": "874f3bdd9f9ff83b5b8e9bdd7966b2f3f7866ca4"
+    },
+    {
+      "path": "data/polarized-contact-deformation-d2/why.md",
+      "before": "006f478c43d70898651b4fc20df9129b8483b748",
+      "after": "8545cd0d0ba1847005869d6d92a27dc9d7089b70"
+    },
+    {
+      "path": "data/polarized-k3-remainder/why.md",
+      "before": "a2ec2108b9d3b6c2ac8125b78a0d3fcb19fb0271",
+      "after": "16c9aafedbf69bc4e8a77dea548a55730439738c"
+    },
+    {
+      "path": "data/quadratic-cubic-pullback/why.md",
+      "before": "1048c3539c28d0fa7da67415f13c388a95019994",
+      "after": "fa17efb4d135ea792824961cd519d1048b2a5274"
+    },
+    {
+      "path": "data/quadric-contact-broken/why.md",
+      "before": "1a4926267c9c87f10178274daa0ed9b896cd3dd5",
+      "after": "b3ad41ddac5866d638b34c65fb08a1733da680b1"
+    },
+    {
+      "path": "data/quadric-contact-residual/why.md",
+      "before": "341567cee54ac273525e1d4742cfe854e76dfe14",
+      "after": "255c57764332536b4025b26e6db482bd586b7deb"
+    },
+    {
+      "path": "data/rank-one-biquartic/why.md",
+      "before": "b2a724437536c1eebd9c06e97459cfafae2141ba",
+      "after": "9bc4b8f042be9b4634fa1a72a7ec71a2ec318b01"
+    },
+    {
+      "path": "data/reflection-coupled-fano/why.md",
+      "before": "866f93974560c24adb00ae34a8af1d99be85d6ef",
+      "after": "0b1c2dfbde9b32eb9fb82980153fc50bf4afde47"
+    },
+    {
+      "path": "data/reflection-coupled-residual/why.md",
+      "before": "388d22e6b89be5831fb781216f833db184653231",
+      "after": "3bdd5001b504b7fdd4c282303417c207dd5f5c71"
+    },
+    {
+      "path": "data/split-ternary-q2/why.md",
+      "before": "ee14ab2eab2332e523ad68a860e62b1f5dceb496",
+      "after": "9548182365051e08dac5b729b1c4ed9e8889b93b"
+    },
+    {
+      "path": "data/symmetric-sextic-residual/why.md",
+      "before": "f6a66c3eea98b738c2ab74c83325ff5440790880",
+      "after": "dd75e8118fb0f382b2f9ff6a894791bb745f0ef8"
+    },
+    {
+      "path": "data/ternary-collision-cb-d2/why.md",
+      "before": "99c5a9bd8918bbc99f35a14c26c8f2435a8c3899",
+      "after": "a5fc16973a4206cb36cd987a2a150a0e3dc92de5"
+    },
+    {
+      "path": "data/ternary-collision-cbp-d2/why.md",
+      "before": "88d67a53c360177f93ab958fe49986fcb6b33434",
+      "after": "f97b1eb73e396276dd1d3e66601f550454bb7d79"
+    },
+    {
+      "path": "data/ternary-tangent-residual-h2-d2/why.md",
+      "before": "be82e274c7c6136c43622f54b04421b5b9a4a223",
+      "after": "84ab79496a44731ac2c79b75994314afaf6e9d6c"
+    },
+    {
+      "path": "data/three-block-rational-d4-strict/why.md",
+      "before": "56d45d9a9221db6602ac63db15815bca889bb722",
+      "after": "97dd338f6f41f60c37862d04eb3eca1de5a9edee"
+    },
+    {
+      "path": "data/tie-offblock-ytype-d4-strict-rational/why.md",
+      "before": "6e73f72864ee0d44ec591ab4d16c9b51dbfbb2b2",
+      "after": "cdf8b50b858424a277d4a6271d15b11d246f77d7"
+    },
+    {
+      "path": "data/tie-singleton-3odd-strict/why.md",
+      "before": "f26e72daa9d735f62d8b9e4849e60fe41f7e0f8a",
+      "after": "5c5853120eac78624ba551f1b95b8b2c61005c28"
+    },
+    {
+      "path": "data/two-reflection-cubic-surface-d2/why.md",
+      "before": "d407742f011ad78db6cc42be5af5f61bc2cc0b60",
+      "after": "e81fb28d573755cc6a8748ff1b4c1071df471368"
+    },
+    {
+      "path": "data/two-ternary-dense-two-odd-hessian-d48/why.md",
+      "before": "35145e404f350c73fc0beae2177b44aa423d1fd5",
+      "after": "1318fce576bd3d26e196b51b75aa5920982454af"
+    },
+    {
+      "path": "data/twoblock-cubic/why.md",
+      "before": "2a82b10aa2c112d992686982413348d3226193e1",
+      "after": "69c0060a1dc7cca09707b517a434d4ebd29ce57a"
+    },
+    {
+      "path": "data/twoties-crossblock-hesse-cofactor-d4-rational/why.md",
+      "before": "bc7abcebf747da4ddfdc6f62a1f91411e24f832d",
+      "after": "29d0d65b9c7d8bb547e4cf2e340a9955cbae28a5"
+    },
+    {
+      "path": "data/twoties-tie2-x2-quartic-strict/why.md",
+      "before": "35ba6711ce767a777f7239d68ba3d0bd6fb87059",
+      "after": "786201a7df75b3efd92df676e817969d3cdd5e07"
+    },
+    {
+      "path": "data/xtype-sparse-rational-1m142/why.md",
+      "before": "14552c4e5f7eaaf331f6360a4f6402499cf878a3",
+      "after": "55870a4b53f2ba1b0b305578efc8319d52c4b520"
+    },
+    {
+      "path": "data/xtype-strict-rational-113/why.md",
+      "before": "b2e0d8e48f4bdf4abf7122853d32d535e6c45a20",
+      "after": "2d53ddf542f15561f6d446a3f5ff9a26368d63a2"
+    },
+    {
+      "path": "data/ytype-companion-231-d4-strict-rational/why.md",
+      "before": "d732660f52fa304fe3d2514671576faf30e26ac9",
+      "after": "85108f6b1bfc14385b8ff58c0bc55b0f565f4e6c"
+    },
+    {
+      "path": "data/ytype-companion-fiberA-d4-strict-rational/why.md",
+      "before": "632d9458a47ca0f4849b91423ac1917e00f3e2bb",
+      "after": "8140ab510ed0539a86b12a2ef8835b85ca494c92"
+    },
+    {
+      "path": "formal/README.md",
+      "before": "2c7f89822971244a6c67391ace6869987d4a9081",
+      "after": "9fcf4f424d7ade72f91d1d18e64871a9eacb535e"
+    }
+  ],
+  "full_tree_and_policy_review": {
+    "method": "Recursive Git ls-tree of both exact fetched commits; compare path, file mode, type and object ID across complete trees. Source inspection only; no proof, CI, browser or upstream verifier execution.",
+    "reviewed_utc": "2026-11-16T23:39:32.023626+00:00",
+    "before": {
+      "commit": "34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44",
+      "root_tree": "2f13eb6224528e96921fc298416de15749fd019e",
+      "leaves": 1666
+    },
+    "after": {
+      "commit": "c1461363e3376217b4d691a8ed0bf9c73eda9e69",
+      "root_tree": "a78be634f5405c128fba327a6ac3b5dd0418b372",
+      "leaves": 1455
+    },
+    "compare_url": "https://github.com/hodge-computer/sextics/compare/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44...c1461363e3376217b4d691a8ed0bf9c73eda9e69",
+    "changed_paths": {
+      "total": 541,
+      "added": 14,
+      "deleted": 225,
+      "modified": 302,
+      "exact_same_mode_and_blob_moves": {},
+      "counting": "Path-based. Each deletion and addition is counted independently. Similarity-based rename estimates are unnecessary for these counts. The GitHub compare file listing stopped at 300.",
+      "digest_sha256": "9cc37d53afa2ead1f2c885cdf61527464d7ae8d00d2de883527b2cf2070050f6",
+      "digest_schema": "Lexicographically sorted path objects with keys path,old,new. Old and new values are Git ls-tree header strings, or null. Compact JSON, UTF-8."
+    },
+    "record_inventory": {
+      "instance.rec": {
+        "before": 82,
+        "after": 82,
+        "changed": 0
+      },
+      "proof.json": {
+        "before": 66,
+        "after": 66,
+        "changed": 0
+      },
+      "acceptance.json": {
+        "before": 66,
+        "after": 66,
+        "changed": 1
+      },
+      "provenance.json": {
+        "before": 82,
+        "after": 82,
+        "changed": 0
+      },
+      "why.md": {
+        "before": 82,
+        "after": 82,
+        "changed": 80
+      }
+    },
+    "changed_acceptance_paths": [
+      "data/mixed-polar/acceptance.json"
+    ],
+    "target_motivations": {
+      "changed": 80,
+      "differ_after_ignoring_inline_markdown_link_destinations": [],
+      "normalization": "Replace ](destination) by ] for each inline Markdown link, preserving the label and every other character. All 80 normalized pairs matched.",
+      "normalized_by_path_sha256": "9c3a8e39642c9e066cf201c4f8dff5f7982d09025a795c6d4e5dde43158b9785"
+    },
+    "book": {
+      "changed_files": [
+        "docs/01-certificates.md",
+        "docs/02-explicit-constructions.md",
+        "docs/02a-binary-blocks.md",
+        "docs/03-geometric-support.md",
+        "docs/03a-split-and-k3.md",
+        "docs/03b-weighted-threefolds.md",
+        "docs/03c-quadratic-nets.md",
+        "docs/03d-hodge-loci.md",
+        "docs/04-known-locus-and-frontier.md",
+        "docs/05-computation.md",
+        "docs/README.md",
+        "docs/overview.md"
+      ],
+      "different_after_same_normalization": [
+        "docs/03b-weighted-threefolds.md",
+        "docs/03d-hodge-loci.md"
+      ],
+      "finding": "The two remaining edits replace a general reproduction-scripts directory reference with a direct link naming the same verifier script. The mathematical statements are unchanged."
+    },
+    "rules": {
+      "solve_explanations": "Cite earlier work by solve or book section, retaining contributor credit. No PR links or PR-number references. Repository sources use relative paths or repository-root / paths, never site routes or GitHub file URLs; external papers, discussion comments and reproduction packets may use full HTTPS. Checked before Lean and in the repository build for accepted explanations. Inline math uses \\(...\\), display math uses \\[...\\] or $$...$$, and single unescaped dollar delimiters are rejected. The book and motivations also use repository paths.",
+      "discussions": "Book, instance records and motivations, and solution links use their GitHub blob/main addresses. Other discussion comments, their attachments, and external sites such as papers or Prove2Me may be linked. Project website addresses, other repository files/directories, branches, Git repo or fork roots, gists and PR references including #123 shorthand are disallowed.",
+      "attribution": "Earlier solve and library references migrate from PR numbers to durable solve explanations, named constructions and repository files. The maintenance commits describe preserved contributor credit. These edits confer no new credit to rbajaj5; the changed mixed-polar acceptance record requires separate treatment.",
+      "prs": [
+        "https://github.com/hodge-computer/sextics/pull/257",
+        "https://github.com/hodge-computer/sextics/pull/258",
+        "https://github.com/hodge-computer/sextics/pull/261",
+        "https://github.com/hodge-computer/sextics/pull/262"
+      ],
+      "sources": [
+        {
+          "path": "CONTRIBUTING.md",
+          "before": {
+            "blob": "35bf4a2544f28074f34ae65537eacacf0675b570",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/CONTRIBUTING.md"
+          },
+          "after": {
+            "blob": "452afcd19c7bcffb970354fb0b62666f4becc6e4",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/CONTRIBUTING.md"
+          }
+        },
+        {
+          "path": "MAINTAINING.md",
+          "before": {
+            "blob": "bdf3913f6c9d977a104bde00664d7e31897c8ef1",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/MAINTAINING.md"
+          },
+          "after": {
+            "blob": "9d1cc4fd21cb733c518a9076d384331b2defa401",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/MAINTAINING.md"
+          }
+        },
+        {
+          "path": "scripts/content.py",
+          "before": {
+            "blob": "4299b821eaa4731793f2255c6dd2d903e0b4b901",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/scripts/content.py"
+          },
+          "after": {
+            "blob": "b94536456df127361569c70f5b484ccc9707a8a7",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/scripts/content.py"
+          }
+        },
+        {
+          "path": "scripts/check-content.py",
+          "before": {
+            "blob": "89d6e87d06656bc232275a0af39063fc79bd9d81",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/scripts/check-content.py"
+          },
+          "after": {
+            "blob": "8d4e0b6ad9e24e3749b918c5b6ffe187f1b16327",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/scripts/check-content.py"
+          }
+        },
+        {
+          "path": "scripts/build-content.py",
+          "before": {
+            "blob": "4cb4b0cd3f54ae62b3b28b271197aa3ca1521219",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/scripts/build-content.py"
+          },
+          "after": {
+            "blob": "63311facedce4286d04e90710845acc3b56a7bce",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/scripts/build-content.py"
+          }
+        },
+        {
+          "path": ".github/solve-policy.json",
+          "before": {
+            "blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/.github/solve-policy.json"
+          },
+          "after": {
+            "blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/.github/solve-policy.json"
+          }
+        }
+      ]
+    },
+    "atlas": {
+      "removed_displays": [
+        "holdout-q2",
+        "quadric-contact-broken"
+      ],
+      "reason": "Upstream reports exact norms were too expensive for per-pixel phone rendering. The display definitions/write-ups and their exporters were removed. The prior derivations remain at the old pin; the two acceptance records and proof manifests match between commits.",
+      "meshes": "The 82 atlas slices use numerical in-browser mesh generation from F and saved slice/camera data; the homepage keeps its curated mesh. The final maintenance text specifies a 128-cubed display-cube grid, with sheet disambiguation and refinement. The mesh can miss thin features. Neither this presentation change nor the iOS worker frame-delivery fix changes a solve or verifies a denominator.",
+      "prs": [
+        "https://github.com/hodge-computer/sextics/pull/255",
+        "https://github.com/hodge-computer/sextics/pull/259",
+        "https://github.com/hodge-computer/sextics/pull/260"
+      ],
+      "sources": [
+        {
+          "path": "assets/slice-mesh.js",
+          "before": null,
+          "after": {
+            "blob": "d2cfb081e50c19975361af3097381ce79356951a",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/assets/slice-mesh.js"
+          }
+        },
+        {
+          "path": "slices/curation.md",
+          "before": {
+            "blob": "91920d0cacee1d5453b94b5f692bf92db554ad13",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/slices/curation.md"
+          },
+          "after": {
+            "blob": "9cca6436d909f3836b9d78be0c9398872585e688",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/slices/curation.md"
+          }
+        },
+        {
+          "path": "slices/divisors/holdout-q2.json",
+          "before": {
+            "blob": "99f2bd8c18012db21c9b0bdba2df39619ac475f7",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/slices/divisors/holdout-q2.json"
+          },
+          "after": null
+        },
+        {
+          "path": "slices/divisors/quadric-contact-broken.json",
+          "before": {
+            "blob": "677da0749c45ed252cc2e5bf2f03ee2d64371f5f",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/slices/divisors/quadric-contact-broken.json"
+          },
+          "after": null
+        },
+        {
+          "path": "slices/divisors/holdout-q2.md",
+          "before": {
+            "blob": "471153630c25bd579355351cc5f70baa50669120",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/slices/divisors/holdout-q2.md"
+          },
+          "after": null
+        },
+        {
+          "path": "slices/divisors/quadric-contact-broken.md",
+          "before": {
+            "blob": "c803ef8a1f16955021ae4ce59fd0b4bfce6d4d69",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/slices/divisors/quadric-contact-broken.md"
+          },
+          "after": null
+        },
+        {
+          "path": "scripts/export-holdout-q2-divisor.py",
+          "before": {
+            "blob": "c442a50ced3027cc29f4f8fdda5980eb23bac207",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/scripts/export-holdout-q2-divisor.py"
+          },
+          "after": null
+        },
+        {
+          "path": "scripts/export-quadric-contact-divisor.py",
+          "before": {
+            "blob": "f8c52f6d73db45c7a93ac80dcd65a94a3ca5eadd",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/scripts/export-quadric-contact-divisor.py"
+          },
+          "after": null
+        }
+      ]
+    },
+    "scope": "No upstream action, mathematical replay, acceptance inference from visualization, or new research. Mixed-polar replacement and discussion evidence reviewed separately."
+  },
+  "mixed_polar_acceptance_review": {
+    "repository": "hodge-computer/sextics",
+    "instance": "mixed-polar",
+    "repository_heads": {
+      "before": "34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44",
+      "current": "c1461363e3376217b4d691a8ed0bf9c73eda9e69"
+    },
+    "scope": "Observed source texts, publication metadata and historical GitHub job/commit statuses. Hodge Lab executed no mathematical verification, protected replay or witness extraction.",
+    "target": {
+      "q": 1,
+      "A": "X0*X1*X2*Y0*Y1*Y2",
+      "proof_manifest": {
+        "schemaVersion": 2,
+        "instanceId": "mixed-polar",
+        "theorem": "Submission.certificate"
+      },
+      "construction_scope": "Existence of the homogeneous certificate for this fixed triple, with unrestricted quotient. No expanded denominator or numerator polynomials."
+    },
+    "snapshots": {
+      "before": {
+        "acceptance": {
+          "schemaVersion": 2,
+          "githubLogin": "benediamond",
+          "acceptedAt": "2026-10-22T00:03:34Z",
+          "pullRequest": {
+            "number": 182,
+            "url": "https://github.com/hodge-computer/sextics/pull/182"
+          }
+        },
+        "files": {
+          "instance.rec": {
+            "git_blob": "3960b134e2cba82fcacf3215466731bf92bda486",
+            "sha256": "9d27ac81d67b9d1c3987743839f0da06cf35cc571b6b8de13713ea2c47796f04",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/data/mixed-polar/instance.rec"
+          },
+          "acceptance.json": {
+            "git_blob": "d8f59dcfc6b979f5bc8c50dc91456f1e54ae2c03",
+            "sha256": "f88459be243cbedd0e084b9dc0debd54344e743b58ef5305e055c8f948b3cfe4",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/data/mixed-polar/acceptance.json"
+          },
+          "proof.json": {
+            "git_blob": "98601bb8a6c56e0682962bdae901debe23b5c30d",
+            "sha256": "265313c1e8a849ca38b60d7930b4a830e3a3441ab9725bbb052e86d95e86f1bf",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/data/mixed-polar/proof.json"
+          },
+          "solution.md": {
+            "git_blob": "c5218ce4ddfe7fe57acaa5469aa36c3c1327bd88",
+            "sha256": "73697e1eb86222a93907243938de021d4ec4481296c6b1438f801e243ca3fa72",
+            "url": "https://github.com/hodge-computer/sextics/blob/34993b6d1ad0b0a4b6b4f1c1eb75954e963c2e44/data/mixed-polar/solution.md"
+          }
+        }
+      },
+      "after": {
+        "acceptance": {
+          "schemaVersion": 2,
+          "githubLogin": "fqlx",
+          "acceptedAt": "2026-10-22T00:03:34Z",
+          "pullRequest": {
+            "number": 184,
+            "url": "https://github.com/hodge-computer/sextics/pull/184"
+          }
+        },
+        "files": {
+          "instance.rec": {
+            "git_blob": "3960b134e2cba82fcacf3215466731bf92bda486",
+            "sha256": "9d27ac81d67b9d1c3987743839f0da06cf35cc571b6b8de13713ea2c47796f04",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/data/mixed-polar/instance.rec"
+          },
+          "acceptance.json": {
+            "git_blob": "6bf7eb52a9039a58f49f42923412cdf72a3d3e43",
+            "sha256": "b597e1405473fdac58cf72fdbb612bf106c118f03744dabf2b7be7b207cab938",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/data/mixed-polar/acceptance.json"
+          },
+          "proof.json": {
+            "git_blob": "98601bb8a6c56e0682962bdae901debe23b5c30d",
+            "sha256": "265313c1e8a849ca38b60d7930b4a830e3a3441ab9725bbb052e86d95e86f1bf",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/data/mixed-polar/proof.json"
+          },
+          "solution.md": {
+            "git_blob": "c7392d25b4358e5258c4d1427fbcead9f894b2bd",
+            "sha256": "1d8c4f5815973cd4518840a073a184682afa498e4be2ca72991a3ba65f0f5a89",
+            "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/data/mixed-polar/solution.md"
+          }
+        }
+      }
+    },
+    "pull_requests": {
+      "182": {
+        "number": 182,
+        "html_url": "https://github.com/hodge-computer/sextics/pull/182",
+        "title": "Solve mixed-polar: cubic covariants and Jacobian transport",
+        "state": "closed",
+        "merged": true,
+        "merged_at": "2026-10-22T00:03:34Z",
+        "closed_at": "2026-10-22T00:03:35Z",
+        "created_at": "2026-10-21T22:46:01Z",
+        "merge_commit_sha": "bc29abbedb88e9222d329220580bbfdaf04bed55",
+        "author": "benediamond",
+        "merged_by": "benediamond",
+        "head": "02796bf16efe274ffac4dc29aba3805793ce7a29",
+        "base": "a6b4cc49452abe31ead0be71d04e8146639896d9"
+      },
+      "184": {
+        "number": 184,
+        "html_url": "https://github.com/hodge-computer/sextics/pull/184",
+        "title": "Solve mixed-polar: compact quadratic shear and Jacobian transport",
+        "state": "closed",
+        "merged": true,
+        "merged_at": "2026-11-16T16:39:25Z",
+        "closed_at": "2026-11-16T16:39:25Z",
+        "created_at": "2026-10-21T23:26:52Z",
+        "merge_commit_sha": "aada66a0c866a23472fc73c0194389da95e1a888",
+        "author": "fqlx",
+        "merged_by": "benediamond",
+        "head": "bc9918578e9a918530fdd3ba11d585f72368b518",
+        "base": "6265b11046ac09228082f7332c51bb46e6d4f700"
+      },
+      "254": {
+        "number": 254,
+        "html_url": "https://github.com/hodge-computer/sextics/pull/254",
+        "title": "mixed-polar: replace the polar-family construction with the quadratic shear",
+        "state": "closed",
+        "merged": true,
+        "merged_at": "2026-11-16T16:39:23Z",
+        "closed_at": "2026-11-16T16:39:23Z",
+        "created_at": "2026-11-15T14:25:58Z",
+        "merge_commit_sha": "74def66f09fc76602ad3fc439f789c57f19bd295",
+        "author": "benediamond",
+        "merged_by": "benediamond",
+        "head": "aada66a0c866a23472fc73c0194389da95e1a888",
+        "base": "6265b11046ac09228082f7332c51bb46e6d4f700"
+      }
+    },
+    "verification": {
+      "original_pr182": {
+        "workflow": {
+          "id": 39691712892,
+          "name": "Solve proposal",
+          "status": "completed",
+          "event": "pull_request_target",
+          "conclusion": "success",
+          "head_sha": "02796bf16efe274ffac4dc29aba3805793ce7a29",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39691712892",
+          "created_at": "2026-10-21T23:10:58Z",
+          "updated_at": "2026-10-22T00:02:02Z"
+        },
+        "historical_base": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+        "source": "Original publication and protected-check details are preserved in Hodge Lab’s October acceptance capture.",
+        "acceptance_receipt": "https://github.com/hodge-computer/sextics/blob/84f106ebf0731cbee1926833236361cddac0fc3f/data/mixed-polar/acceptance.json"
+      },
+      "original_pr184": {
+        "workflow": {
+          "id": 39693478207,
+          "name": "Solve proposal",
+          "status": "completed",
+          "event": "pull_request_target",
+          "conclusion": "success",
+          "head_sha": "bc9918578e9a918530fdd3ba11d585f72368b518",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/39693478207",
+          "created_at": "2026-10-21T23:26:56Z",
+          "updated_at": "2026-10-21T23:47:36Z"
+        },
+        "protected_job": {
+          "url": "https://github.com/hodge-computer/sextics/actions/runs/39693478207/job/119545090424",
+          "name": "Protected proposal verification",
+          "conclusion": "success",
+          "step": [
+            "Verify exact statement, kernel replay, and axioms",
+            "success"
+          ]
+        },
+        "proposal_base_reported_by_pr184": "a6b4cc49452abe31ead0be71d04e8146639896d9",
+        "commit_status": {
+          "context": "solve/lean",
+          "state": "success",
+          "target_url": "https://github.com/hodge-computer/sextics/actions/runs/39693478207",
+          "description": "Lean verified; ready for owner merge",
+          "created_at": "2026-10-21T23:46:42Z"
+        }
+      },
+      "adapted_pr254": {
+        "workflow": {
+          "id": 43903364506,
+          "name": "Repository build",
+          "status": "completed",
+          "event": "pull_request",
+          "conclusion": "success",
+          "head_sha": "aada66a0c866a23472fc73c0194389da95e1a888",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/43903364506",
+          "created_at": "2026-11-16T16:04:13Z",
+          "updated_at": "2026-11-16T16:38:26Z"
+        },
+        "job": {
+          "url": "https://github.com/hodge-computer/sextics/actions/runs/43903364506/job/133432205376",
+          "name": "Lean / mixed-polar",
+          "conclusion": "success",
+          "step": [
+            "Recheck affected mathematics without rebuilding the shared library",
+            "success"
+          ]
+        },
+        "author_reported_scope": "PR 254 describes that Repository build recheck as compilation, kernel replay and axiom audit."
+      },
+      "november_publication": {
+        "workflow": {
+          "url": "https://github.com/hodge-computer/sextics/actions/runs/43910116537",
+          "name": "Publish accepted solve",
+          "event": "workflow_dispatch",
+          "conclusion": "success",
+          "head": "74def66f09fc76602ad3fc439f789c57f19bd295",
+          "pull_requests": []
+        },
+        "source_commit_status": {
+          "context": "solve/publication",
+          "state": "success",
+          "target_url": "https://github.com/hodge-computer/sextics/actions/runs/43910116537",
+          "description": "Accepted solve recorded; website deployment follows",
+          "created_at": "2026-11-16T16:41:07Z"
+        }
+      },
+      "november_automatic_runs": [
+        {
+          "id": 43909926181,
+          "name": "Publish accepted solve",
+          "head_sha": "bc9918578e9a918530fdd3ba11d585f72368b518",
+          "conclusion": "startup_failure",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/43909926181"
+        },
+        {
+          "id": 43909813018,
+          "name": "Solve proposal",
+          "head_sha": "bc9918578e9a918530fdd3ba11d585f72368b518",
+          "conclusion": "startup_failure",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/43909813018"
+        },
+        {
+          "id": 43909909845,
+          "name": "Publish accepted solve",
+          "head_sha": "aada66a0c866a23472fc73c0194389da95e1a888",
+          "conclusion": "startup_failure",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/43909909845"
+        },
+        {
+          "id": 43903360722,
+          "name": "Solve proposal",
+          "head_sha": "aada66a0c866a23472fc73c0194389da95e1a888",
+          "conclusion": "startup_failure",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/43903360722"
+        }
+      ]
+    },
+    "construction_history": {
+      "before": "Benjamin Diamond’s reverse-edge cubic uses target-specific general polar covariants and first variations, followed by Jacobian incidence, integration, trace and clearing. Credits hodgepodgeconjecture’s cycle-three architecture, fqlx’s constructions and the maintained shared machinery.",
+      "after": "fqlx’s determinant-one quadratic shear removes the reverse-edge term over a quadratic extension. The balanced first variation uses the transitive cubic, a Jacobian polynomial-family incidence, Piola pullback, normalized trace to the original field and homogeneous clearing. PR 254 adapts the contract argument order and reuses shared modules; its body reports 40 Lean modules in the maintained source versus 41 in the original PR 184 proposal.",
+      "source_credit": "The maintained explanation credits fqlx, hodgepodgeconjecture, HeadOfNaps and Lean/mathlib contributors for shared machinery, Fisher and SageMath for the classical normalization, and acknowledges earlier bounded-denominator work by 1337isnot1337."
+    },
+    "merge_history": {
+      "maintenance_branch_merge": "aada66a0c866a23472fc73c0194389da95e1a888",
+      "parents": [
+        "a2cf9dec2c0cdf83dfa36037e678473a91e5a9ed",
+        "bc9918578e9a918530fdd3ba11d585f72368b518"
+      ],
+      "tree": "a41171f8e191d4bcfa9172f24a8fdfce54a18ae3",
+      "first_parent_tree": "a41171f8e191d4bcfa9172f24a8fdfce54a18ae3",
+      "scope": "The original PR 184 source is a parent. The resulting tree equals the adapted first-parent tree. GitHub records both PRs as merged in November; the retained acceptedAt field records the October acceptance date."
+    },
+    "collected_utc": "2026-11-16T23:37:26.461355+00:00"
+  },
+  "discussion_comparison": {
+    "snapshots": {
+      "before": {
+        "directory": "20261115T161910Z",
+        "retrieved_utc": "2026-11-15T16:19:10.086881+00:00",
+        "comments": 51,
+        "replies": 19
+      },
+      "current": {
+        "directory": "20261116T233417Z",
+        "retrieved_utc": "2026-11-16T23:34:17.659023+00:00",
+        "comments": 52,
+        "replies": 20
+      }
+    },
+    "monitor": "Compared complete thread and reply pages in both snapshots with their manifests. Compared parentage, ID, URL, author, creation/update times and exact body hashes (SHA-256 over the UTF-8 string as returned, including its original line endings).",
+    "coverage": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 120,
+        "comments": 5,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true
+      }
+    ],
+    "count_changes": [
+      {
+        "discussion": 117,
+        "before": {
+          "comments": 4,
+          "replies": 0
+        },
+        "current": {
+          "comments": 4,
+          "replies": 1
+        }
+      },
+      {
+        "discussion": 120,
+        "before": {
+          "comments": 4,
+          "replies": 0
+        },
+        "current": {
+          "comments": 5,
+          "replies": 0
+        }
+      }
+    ],
+    "unchanged_existing_records": 70,
+    "changes": [
+      {
+        "change": "added",
+        "record": {
+          "id": "DC_kwDOVLOOJc4BK8s8",
+          "url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19647292",
+          "author": {
+            "login": "kmehltretter82",
+            "name": null
+          },
+          "createdAt": "2026-11-16T06:12:17Z",
+          "updatedAt": "2026-11-16T06:12:17Z",
+          "discussion": 117,
+          "kind": "reply",
+          "parent_id": "DC_kwDOVLOOJc4BKUqo",
+          "parent_url": "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19483304",
+          "body_sha256": "f60b2f8982b6a1268b8538f13c2f56eac973d4ad86365f709feb29eeec7e4a58"
+        },
+        "context": {
+          "prior_context": [
+            "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19483304",
+            "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19484532",
+            "https://github.com/hodge-computer/sextics/discussions/117#discussioncomment-19494559"
+          ],
+          "credit": "The reply continues fqlx and benediamond on the adjunction/selector route. It discloses Antigravity assistance for kmehltretter82.",
+          "reported_formal_scope": "Four standalone Prove2Me results are reported: removable selector moment, vertical current source, intrinsic point elimination, and Hermite curve reduction. A time-constant vertical current removes one selector moment; the intrinsic 26-equation elimination requires Q V_* nonzero.",
+          "reported_computation": "At lambda=1 the author reports an order-15 expansion from (r,s)=(3,13) over F_37, with 26- and 73-equation cofactor numerators proportional by 28. The tau=0 bidegree-(6,6) curve has 40 reported smooth rational points on the stated locus and a node elsewhere. The reported discriminant data are consistent with genus 4.",
+          "open": "Submission.relative_primitive_exists and the global normalized trace evaluation remain open in this construction. Earlier local helper checks and the upstream book existence claim are separate evidence."
+        }
+      },
+      {
+        "change": "added",
+        "record": {
+          "id": "DC_kwDOVLOOJc4BK86B",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+          "author": {
+            "login": "kmehltretter82",
+            "name": null
+          },
+          "createdAt": "2026-11-16T06:58:11Z",
+          "updatedAt": "2026-11-16T15:29:05Z",
+          "discussion": 120,
+          "kind": "comment",
+          "parent_id": null,
+          "parent_url": null,
+          "body_sha256": "ac0f132d4480a7f02758f98a8bc1e3c813405d081528c0f7869737d5486b9108"
+        },
+        "context": {
+          "prior_context": [
+            "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19345483",
+            "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19448881",
+            "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19504157"
+          ],
+          "credit": "The comment credits kejace and DiamondJM for the core reduction and cyclic suspension, and benediamond for the cubic-chart current and intrinsic model.",
+          "reported_formal_scope": "Three Lean files reportedly formalize splitting, Euler gauge and conditional cyclic suspension with D_6=6DHB; cubic-chart cancellation leaving moments 1,t^2,t^4; and intrinsic point elimination on Q V_* nonzero. Four standalone Prove2Me results are linked.",
+          "reported_family_exclusions": "With D=H^m D_0 and H not dividing D_0, the author claims exclusion for m=0 and deg D <=5; m=1 and deg D_0 <=3; and the two individual denominators H^2 and H^3. The post cites a rank-715 degree-four Macaulay computation for the m=1 degree-three cases and a modular prime 268435399. The earlier full-target degree-five bound by kejace was already recorded.",
+          "reported_explorations": "For higher degrees the post reports finite samples, pencil points, or dimensions (including E1 dimensions for m=0 degree 8), and 66 structured denominators. It reports a three-sheet local blow-up continuation through tau^66 over F_23[v]/(v^2-15), with vanishing constant traces of alpha^2 and alpha^4 and first-order asymmetry. These are bounded calculations.",
+          "open": "The author explicitly leaves CoreCertificate and HasCertificate open in the proposed explicit realization. Earlier book existence and the prior suspension bridge do not supply the missing core field. This is its first observed body; the createdAt and updatedAt timestamps differ."
+        }
+      }
+    ],
+    "removed_records": [],
+    "edited_existing_records": [],
+    "thread_metadata_changes": [
+      {
+        "discussion": 117,
+        "fields": {
+          "updatedAt": {
+            "before": "2026-11-09T15:01:35Z",
+            "current": "2026-11-16T06:12:18Z"
+          }
+        }
+      },
+      {
+        "discussion": 120,
+        "fields": {
+          "updatedAt": {
+            "before": "2026-11-09T23:10:49Z",
+            "current": "2026-11-16T06:58:11Z"
+          }
+        }
+      }
+    ],
+    "upstream_head": "c1461363e3376217b4d691a8ed0bf9c73eda9e69",
+    "published_acceptance_records_at_head": {
+      "symmetric-sextic-residual": false,
+      "four-plus-two-residual": false
+    },
+    "scope": "The monitor read discussion text and catalogue records. Local Lean, Prove2Me, modular matrices, genus and trace calculations are author reports. The monitor did not replay proofs, inspect Prove2Me verdicts, or execute mathematical checks."
+  },
+  "monitor_evidence_sha256": {
+    "mixed-polar-review-20261116.json": "8e400c4799ed6bd7bcab60a8dffb1192081f5028043bdbdf2c67e0be0d5e40e7",
+    "discussion-review-20261116.json": "e95f4ab29011cc4aa7d35ba5e2ec2abca0d935f6ec556f836c42244a2c92357a",
+    "inventory-review-20261116.json": "d5610dfcbb55277f4d0c1be464da467b93e06491fd694d3b4883a10962aad146"
+  },
+  "scope": "GitHub and Git source observations. The discussion review includes hashes of the exact text captured by the monitor. Protected checks, repository maintenance rechecks, published acceptance and author-reported standalone checks are recorded separately."
+}
