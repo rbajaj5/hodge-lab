@@ -15,6 +15,8 @@ Lean is benched in the current solution-focused batch at the user's direction.
 
 ## Current frontier
 
+**17 November 2026.** Chapter 3D states that an order-three symmetry fixing the holomorphic three-form can still give divisor support for the two nontrivial eigenspaces. A separate count in Chapter 4 limits a construction using low-degree surface sections. All 82 targets and 66 acceptance records matched the previous snapshot. [The theorem, the dimension count and their scope](notes/upstream-monitor-20261117.md).
+
 **16 November 2026.** Upstream now credits fqlx’s quadratic-shear proof for `mixed-polar`, previously credited to benediamond. The number of accepted targets remains 66. New reports for the symmetric and four-plus-two residual targets describe partial reductions, and both still lack an accepted submission. [Acceptance history, check records and discussion sources](notes/upstream-monitor-20261116.md).
 
 **15 November 2026.** The solve policy now allows 996 files and 5½ hours for verification, and removes the aggregate source-size cap. Chapter 1 adds conditions for transferring a certificate between members of a family. Chapter 3D revises two steps in the existing `cycle-q2` argument. The catalogue still has 66 published acceptances across 82 targets. [Policy, theorem scope and source pins](notes/upstream-monitor-20261115.md).

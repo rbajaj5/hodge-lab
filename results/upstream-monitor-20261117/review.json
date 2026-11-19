@@ -1,0 +1,207 @@
+{
+  "repository_observations_utc": {
+    "before": "2026-11-17T02:35:08.574095+00:00",
+    "current": "2026-11-17T03:32:28.996528+00:00"
+  },
+  "compared_utc": "2026-11-17T03:33:18.337712+00:00",
+  "source_blob_readback_utc": "2026-11-17T03:35:58.149541+00:00",
+  "main_heads": {
+    "hodge-computer/sextics": {
+      "before": "c1461363e3376217b4d691a8ed0bf9c73eda9e69",
+      "current": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8"
+    },
+    "rbajaj5/hodge-lab": {
+      "before": "6f9fe27c89596f46005c195073a1904fb9278a45",
+      "current": "6f9fe27c89596f46005c195073a1904fb9278a45"
+    }
+  },
+  "upstream_compare": {
+    "url": "https://github.com/hodge-computer/sextics/compare/c1461363e3376217b4d691a8ed0bf9c73eda9e69...0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+    "commits": 2,
+    "commit_pins": [
+      {
+        "sha": "b3ce58cc06949a19a66eeca6773d48e98a11770c",
+        "url": "https://github.com/hodge-computer/sextics/commit/b3ce58cc06949a19a66eeca6773d48e98a11770c",
+        "author_login": "claude"
+      },
+      {
+        "sha": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "url": "https://github.com/hodge-computer/sextics/commit/0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "author_login": "benediamond"
+      }
+    ],
+    "changed_paths": 4,
+    "merged_pr": {
+      "url": "https://github.com/hodge-computer/sextics/pull/263",
+      "number": 263,
+      "author": {
+        "login": "benediamond"
+      },
+      "mergedBy": {
+        "login": "benediamond"
+      },
+      "mergedAt": "2026-11-17T02:45:38Z",
+      "mergeCommit": {
+        "oid": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8"
+      }
+    }
+  },
+  "source_blobs": [
+    {
+      "path": "docs/03d-hodge-loci.md",
+      "status": "modified",
+      "before": {
+        "git_blob": "ee643ef6c42680a3ebdb652348909629773a86c0",
+        "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/docs/03d-hodge-loci.md"
+      },
+      "after": {
+        "git_blob": "746116c53b9ab9b623dc494936e4ac4916cf5190",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/docs/03d-hodge-loci.md"
+      }
+    },
+    {
+      "path": "docs/04-known-locus-and-frontier.md",
+      "status": "modified",
+      "before": {
+        "git_blob": "13643d4a755750f6af6ed05cac356ebeda536c8c",
+        "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/docs/04-known-locus-and-frontier.md"
+      },
+      "after": {
+        "git_blob": "ba17d82e2b364dbaee8683d1c18987e3af17584c",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/docs/04-known-locus-and-frontier.md"
+      }
+    },
+    {
+      "path": "scripts/verify-extension-dimensions.py",
+      "status": "modified",
+      "before": {
+        "git_blob": "e652e27512173b3d9ec33f418ea3773f9a8886e0",
+        "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/scripts/verify-extension-dimensions.py"
+      },
+      "after": {
+        "git_blob": "c57fbb99ed8fe1bdc49244a19b71efeee0b22442",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/scripts/verify-extension-dimensions.py"
+      }
+    },
+    {
+      "path": "scripts/verify-hodge-locus-span.py",
+      "status": "modified",
+      "before": {
+        "git_blob": "584863d4fdb775ac3b13cf7a35c57757248c2674",
+        "url": "https://github.com/hodge-computer/sextics/blob/c1461363e3376217b4d691a8ed0bf9c73eda9e69/scripts/verify-hodge-locus-span.py"
+      },
+      "after": {
+        "git_blob": "075e3dd8a9ab840df6c5fb2f6b46894c3f5d7a4f",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/scripts/verify-hodge-locus-span.py"
+      }
+    }
+  ],
+  "target_and_policy_inventory": {
+    "files_before": 383,
+    "files_current": 383,
+    "changed_git_blob_pins": [],
+    "fixed_instance_records": 82,
+    "acceptance_records": 66,
+    "proof_json_records": 66,
+    "targets_without_acceptance": 16
+  },
+  "discussions": {
+    "before_snapshot": "20261117T023508Z",
+    "current_snapshot": "20261117T033228Z",
+    "threads": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 120,
+        "comments": 5,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true
+      }
+    ],
+    "comments": 52,
+    "replies": 20,
+    "record_changes": 0,
+    "thread_metadata_changes": 0
+  },
+  "upstream_verifier_sources": {
+    "scripts/verify-hodge-locus-span.py": "New source routines reconstruct the order-three non-invariant-sector seed and check a trace ratio and nonvanishing modulo 109. At the Fermat member the code counts character-graded monomials and tests the scalar-symmetry condition on a 63-dimensional graded space in 40 invariant directions. These checks are inputs to the book argument.",
+    "scripts/verify-extension-dimensions.py": "New source routine computes parity-graded section motions minus invariant two-forms for all ten complete-intersection degree pairs 1 <= e1 <= e2 <= 4 and the separate non-stable linear-section count. The chapter scopes the transverse dimension argument to those surfaces."
+  },
+  "scope": "The notebook compared immutable source and record pins and complete discussion snapshots. The eight Git blob IDs were recomputed over the UTF-8 source bytes returned for both commits. The PR metadata identifies a merged book and verifier revision. This run did not execute the upstream verifier scripts, check the proofs, or replay protected CI."
+}
