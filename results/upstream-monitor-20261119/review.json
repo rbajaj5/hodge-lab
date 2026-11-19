@@ -1,0 +1,734 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-11-19T21:02:01.588303+00:00",
+  "scope": "Bounded source, discussion and existing CI monitoring for Hodge Lab checkpoint 168.",
+  "upstream_before": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+  "upstream_head": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+  "notebook_parent": "544469e0c22330d87d5425ff826e1b68cf0a334d",
+  "source_observation_utc": "2026-11-19T20:55:39.100391+00:00",
+  "head_pins": {
+    "hodge-computer/sextics": {
+      "sha": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+      "url": "https://github.com/hodge-computer/sextics/commit/e5f46e0758306e8bb51de12e21e261ec1df19e48",
+      "message": "Merge pull request #267 from hodge-computer/maintenance/lean-4.36.0\n\nUpgrade Lean to 4.36.0, lift elaboration limits repository-wide, and remove the backward option",
+      "committer_date": "2026-11-19T01:00:59Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "544469e0c22330d87d5425ff826e1b68cf0a334d",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/544469e0c22330d87d5425ff826e1b68cf0a334d",
+      "message": "Record order-three sector theorem and bounded surface-section count",
+      "committer_date": "2026-11-19T20:54:43Z"
+    }
+  },
+  "repository_comparison": {
+    "commits": 12,
+    "compare_api_files_returned": 300,
+    "full_tree_inventory": {
+      "method": "Two complete recursive Git trees; compared Git blob IDs and modes for every leaf path. API compare response had stopped at 300 files.",
+      "tree_ids": {
+        "before": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "after": "e5f46e0758306e8bb51de12e21e261ec1df19e48"
+      },
+      "tree_truncated": false,
+      "leaf_paths": {
+        "before": 1455,
+        "after": 1455
+      },
+      "changed_paths": 458,
+      "added": 0,
+      "deleted": 0,
+      "modified": 458,
+      "renames": 0,
+      "paths_and_blob_ids_sha256": "7a113d30e1d34d04cd73f02ca39a749cea6aab37d6b6c44781c62f0a3fab4b5b",
+      "delta_hash_schema": "Sorted list of {path,before,after} keys in that order, compact UTF-8 JSON.",
+      "protected_records": {
+        "instance.rec": {
+          "before": 82,
+          "after": 82,
+          "changes": []
+        },
+        "proof.json": {
+          "before": 66,
+          "after": 66,
+          "changes": []
+        },
+        "acceptance.json": {
+          "before": 66,
+          "after": 66,
+          "changes": []
+        },
+        "provenance.json": {
+          "before": 82,
+          "after": 82,
+          "changes": []
+        },
+        "solution.md": {
+          "before": 66,
+          "after": 66,
+          "changes": []
+        },
+        "witness.json": {
+          "before": 41,
+          "after": 41,
+          "changes": []
+        }
+      },
+      "accepted_targets": 66,
+      "targets_without_acceptance": 16,
+      "repository_policy_inventory_count": 383,
+      "data_lean_modules_modified": 392,
+      "data_instances_with_lean_edits": 65,
+      "formal_lean_modules_modified": 54
+    },
+    "target_policy_changes": [
+      {
+        "path": "CONTRIBUTING.md",
+        "before": "452afcd19c7bcffb970354fb0b62666f4becc6e4",
+        "after": "b5178c02e66e9b50bb015c8979cd118cd11f847a"
+      },
+      {
+        "path": "MAINTAINING.md",
+        "before": "9d1cc4fd21cb733c518a9076d384331b2defa401",
+        "after": "58dc36f447e7d9ee662b79b94bab8f28414cf99e"
+      }
+    ],
+    "fixed_target_scope": "All fixed instance records, proof manifests, acceptance records, provenance records, solution explanations and explicit witness files matched by Git blob ID."
+  },
+  "book": {
+    "sources": [
+      {
+        "path": "docs/03b-weighted-threefolds.md",
+        "commit": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "git_blob": "0c4237acde3a0df2caf7e4c885229cefd585e143",
+        "sha256": "77c6f357b292a536d0005c2f7e02170353596fea9ecbe41af0ba4050c876b3ec",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/docs/03b-weighted-threefolds.md"
+      },
+      {
+        "path": "docs/03d-hodge-loci.md",
+        "commit": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "git_blob": "746116c53b9ab9b623dc494936e4ac4916cf5190",
+        "sha256": "be73f3da861a159548c9772cd65ae1b9264f31b54c84d5b92c0ae47d417e1b9f",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/docs/03d-hodge-loci.md"
+      },
+      {
+        "path": "docs/04-known-locus-and-frontier.md",
+        "commit": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "git_blob": "ba17d82e2b364dbaee8683d1c18987e3af17584c",
+        "sha256": "07b5d72a71693b94d29daee379ddc267a8c4313018319e5a2b4a564ff5dde99b",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/docs/04-known-locus-and-frontier.md"
+      },
+      {
+        "path": "data/four-plus-two-residual/why.md",
+        "commit": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "git_blob": "de5b5fec31f817c0389744d00acf7c086c1b078e",
+        "sha256": "48dc45618edb04604152fd3e72780ebeaadc36211bf0033538f6d65fb07a682f",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/data/four-plus-two-residual/why.md"
+      },
+      {
+        "path": "data/four-plus-two-residual/instance.rec",
+        "commit": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8",
+        "git_blob": "cf644e9df56723b347662bceeb8448d5d3e06b3a",
+        "sha256": "39d5fb570e48df33abd5ceb2a709cb8e00f6ed32cc30eff4952978696d92109b",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/data/four-plus-two-residual/instance.rec"
+      },
+      {
+        "path": "docs/03b-weighted-threefolds.md",
+        "commit": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+        "git_blob": "f047eec9b410a5fc3566fc447b74e07a052631cb",
+        "sha256": "2a894793f7812919b6f04bb481840dbedcd977ef9dbdb345474ee77e20fbfbd4",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/docs/03b-weighted-threefolds.md"
+      },
+      {
+        "path": "docs/03d-hodge-loci.md",
+        "commit": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+        "git_blob": "2ede93ab52b7cebac616d6395e74f4523aeafdef",
+        "sha256": "22c93b004a4919e1137c643af25ea9f4fa392884096fb10f1f207b9e2b08f3b7",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/docs/03d-hodge-loci.md"
+      },
+      {
+        "path": "docs/04-known-locus-and-frontier.md",
+        "commit": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+        "git_blob": "5105a3a5f965e4957290819d392e4c4aa85e9768",
+        "sha256": "932c6eacac43163fe0dc42124aa473484b07f04d55a898734f900d17aeff1a38",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/docs/04-known-locus-and-frontier.md"
+      },
+      {
+        "path": "data/four-plus-two-residual/why.md",
+        "commit": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+        "git_blob": "de5b5fec31f817c0389744d00acf7c086c1b078e",
+        "sha256": "48dc45618edb04604152fd3e72780ebeaadc36211bf0033538f6d65fb07a682f",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/data/four-plus-two-residual/why.md"
+      },
+      {
+        "path": "data/four-plus-two-residual/instance.rec",
+        "commit": "e5f46e0758306e8bb51de12e21e261ec1df19e48",
+        "git_blob": "cf644e9df56723b347662bceeb8448d5d3e06b3a",
+        "sha256": "39d5fb570e48df33abd5ceb2a709cb8e00f6ed32cc30eff4952978696d92109b",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/data/four-plus-two-residual/instance.rec"
+      }
+    ],
+    "claims": [
+      {
+        "source": "docs/03b-weighted-threefolds.md#3b10-sextics-with-a-binary-summand",
+        "pr": 264,
+        "statement": "For a smooth sextic fourfold F=H(x0,x1,x2,x3)+B(s,t) in some linear coordinates, the negative eigenspace of the binary sign is in N^1 H^4. If F is invariant under an involution of signature (3,3), its entire invariant H^4 is in N^1.",
+        "hypotheses": "Smooth degree-six hypersurface and an additive 4+2 splitting. The original splitting may be in arbitrary linear coordinates. The second assertion additionally requires the stated (3,3) involution.",
+        "consequence": "The source obtains certificates for every odd numerator at every positive pole order for an even sextic with a binary summand, using prior support-to-certificate, higher-pole and coefficient-descent results.",
+        "argument_reported": "Order-three quotient for one binary-sign-negative character, cubic and quintic Wronskian spans and finite Fano maps for the other two. A commuting-projection argument chooses a splitting stable under the involution.",
+        "change": "Generalizes the earlier mixed-parity, separately-even binary example of the two-reflection theorem; the prior example is absorbed into this result.",
+        "dimensions": "Chapter 4 adds projective equation-locus dimension 60 and quotient dimension 43. Its mixed-parity stratum has projective dimension 55 and lies in the two-reflection family.",
+        "attribution": "PR and source commit by benediamond, prepared with OpenAI Codex assistance according to the PR."
+      },
+      {
+        "source": "docs/04-known-locus-and-frontier.md#strict-growth-and-sectors",
+        "pr": 265,
+        "statement": "A strict Hall condition on the monomial Higgs graph gives strict dimension growth for images of proper nonzero subspaces. Under the sector hypotheses, every real sub-variation after a dominant smooth connected base change is zero or the whole sector.",
+        "hypotheses": "Finite diagonal group fixing the Fermat sextic in P^5 or P(1,1,1,1,2), real character chi with values ±1 and chi different from the determinant character delta. Equal upper/lower dimensions, strict Hall graph condition, plus two-step Higgs products and surjectivity/no-common-kernel monomial conditions for the middle piece on fourfolds.",
+        "support_corollary": "Requires a finite-type G-stable family of divisor supports dominating the entire invariant coefficient family, whose Gysin image contains a nonzero class in the sector at the geometric generic point.",
+        "change": "The first four table rows recover earlier alternatives. New criterion rows are the fully paired-sign invariant residual sector (58,230,58) and the paired-sign negative/positive sectors (100,424,100)/(108,442,108). Each needs the supporting-family input.",
+        "attribution": "PR authored/merged by benediamond, source commit by Claude. PR and source commit expressly credit fqlx for the strict-growth argument and odd-cycle certificate from the research notes of PR 245. The PR generalizes to matching/connectivity and the fourfold conditions.",
+        "computation_status": "The embedded monomial script and its reported checks were inspected as source and were not run by Hodge Lab."
+      },
+      {
+        "source": "docs/03d-hodge-loci.md#3d7-the-criterion-from-weight-one",
+        "pr": 266,
+        "statement": "Re-proves the moving-class criterion and the existing order-three weighted-threefold theorem of section 3D.4 using Betti/de Rham conjugation, positivity on H^1 of curves, and strict growth of the Higgs maps.",
+        "hypotheses": "Smooth irreducible family of invariant threefold equations with delta different from 1. Retains a seed with surjective Noether–Lefschetz map and a kernel direction pairing nontrivially with the specified residue class. Replaces the scalar-commutant condition by strict growth at one member. The weight-one alternative applies to images of relative curve correspondences over a smooth connected dominant base change.",
+        "conclusions": "A nonzero such correspondence surjects onto the invariant sector. The filtration decomposition and invertibility of the correspondence composed with its transpose follow. Coherent deformation of line bundles and fiber integration supply the moving family and trace interpretation.",
+        "scope_limits": "The extension covers real ±1 characters chi different from delta. It excludes the combined nontrivial complex eigensector of section 3D.6, whose individual upper/lower dimensions differ. It does not directly supply the corresponding fourfold argument. Standard conjugation, horizontality and trace compatibilities remain stated inputs.",
+        "change": "Alternative proof of existing support claims. The section 3D.4 result used by the older cycle-q2 route retains its prior statement; no additional exact-target primitive or accepted solve is supplied.",
+        "attribution": "PR authored/merged by benediamond, source commit by Claude. The PR credits fqlx for strict growth."
+      }
+    ],
+    "four_plus_two_residual": {
+      "target": "q=1, A=X0^3Y0^3",
+      "relation": "The fixed equation already has the mixed-parity 4+2 splitting. Its pinned motivation attributes certificate existence to the earlier two-reflection theorem. PR 264 provides a more general theorem encompassing that family.",
+      "source_comparison": "The instance and motivation blobs are identical at the two pins.",
+      "limits": "The theorem review supplies no extracted rational primitive, full explicit certificate or newly published acceptance. The mathematical-existence claim was already recorded in Hodge Lab.",
+      "acceptance_record_present_in_complete_current_inventory": false
+    },
+    "pull_requests": [
+      {
+        "number": 264,
+        "title": "Divisor support for sextic fourfolds with a binary summand",
+        "html_url": "https://github.com/hodge-computer/sextics/pull/264",
+        "merged": true,
+        "merged_at": "2026-11-18T00:23:47Z",
+        "user": "benediamond",
+        "merged_by": "benediamond",
+        "merge_commit_sha": "32c64aad9f5c3165e550208fbfa903e56d685024",
+        "head": "3e906f1ff51bc6cc3a798679018dadf25e548d0e",
+        "base": "0cb9d23db548bb2c4c33f20d78e51c34826c00a8"
+      },
+      {
+        "number": 265,
+        "title": "Book: strict growth at the Fermat member and a sector alternative",
+        "html_url": "https://github.com/hodge-computer/sextics/pull/265",
+        "merged": true,
+        "merged_at": "2026-11-18T15:18:23Z",
+        "user": "benediamond",
+        "merged_by": "benediamond",
+        "merge_commit_sha": "1eb0b431e0811e92bbf36ccb5613908a2765b433",
+        "head": "fd70f47ffa5c2dc4c4902ee97ef4685e2aa1298d",
+        "base": "32c64aad9f5c3165e550208fbfa903e56d685024"
+      },
+      {
+        "number": 266,
+        "title": "Book: the moving-class criterion from weight one",
+        "html_url": "https://github.com/hodge-computer/sextics/pull/266",
+        "merged": true,
+        "merged_at": "2026-11-18T15:52:41Z",
+        "user": "benediamond",
+        "merged_by": "benediamond",
+        "merge_commit_sha": "c965c28d420b974d26733bb53ee445ff14253fc9",
+        "head": "a3a0cbc14ecd5817dabd20343937db61bfd26f9c",
+        "base": "1eb0b431e0811e92bbf36ccb5613908a2765b433"
+      }
+    ]
+  },
+  "migration": {
+    "pr": {
+      "url": "https://github.com/hodge-computer/sextics/pull/267",
+      "title": "Upgrade Lean to 4.36.0, lift elaboration limits repository-wide, and remove the backward option",
+      "author": {
+        "login": "benediamond"
+      },
+      "mergedBy": {
+        "login": "benediamond"
+      },
+      "mergedAt": "2026-11-19T01:01:00Z",
+      "mergeCommit": {
+        "oid": "e5f46e0758306e8bb51de12e21e261ec1df19e48"
+      },
+      "headRefOid": "e18798da5580624262a3b62dedb781ea498cbb0b",
+      "baseRefOid": "c965c28d420b974d26733bb53ee445ff14253fc9"
+    },
+    "toolchains": {
+      "before": "leanprover/lean4:v4.33.1",
+      "after": "leanprover/lean4:v4.36.0"
+    },
+    "mathlib_pins": {
+      "before": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "after": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842"
+    },
+    "lean_package_options": {
+      "before": {
+        "maxHeartbeats": 0
+      },
+      "after": {
+        "maxHeartbeats": 0,
+        "maxRecDepth": 0
+      }
+    },
+    "verifier": "sandbox.py now reads the trusted package leanOptions via tomllib and passes each entry as -Dname=value to every compiled solve module, including protected generated modules and final wrapper. Its version guard requires 4.36.0.",
+    "contract": "HodgeComputer.Homogeneous retains the coefficient-nonzero/degree proposition with the Mathlib API spelling P.coeff m in place of coeff m P. Related proof steps adapt to the API.",
+    "contributor_policy": "Contributors are instructed not to set maxHeartbeats, maxRecDepth or backward options in individual modules. The PR description says no new enforcement was added for this instruction. Package limits are lifted, with the wall-clock proof budget as the bound.",
+    "compatibility": "allowNonModules=true accommodates the new Mathlib module-system metadata. The library and accepted sources have API/tactic adaptations; no compatibility shim was added according to the PR description.",
+    "solve_policy": {
+      "before": {
+        "schemaVersion": 1,
+        "mode": "live",
+        "repository": "hodge-computer/sextics",
+        "maxFiles": 996,
+        "timeoutSeconds": 19800,
+        "memoryMb": 14336
+      },
+      "after": {
+        "schemaVersion": 1,
+        "mode": "live",
+        "repository": "hodge-computer/sextics",
+        "maxFiles": 996,
+        "timeoutSeconds": 19800,
+        "memoryMb": 14336
+      }
+    },
+    "historical_author_report": "The PR reports direct compile success of all 66 solves on final branch head, excluding sandbox/kernel/axiom checks from that local compile report. Its earlier protected local checks of nine solves and replay of 143 shared modules were at the head after commit 3. Those historical scopes are distinct from the final CI observed below."
+  },
+  "migration_source_pins": [
+    {
+      "path": ".github/solve-policy.json",
+      "before": {
+        "git_blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+        "sha256": "92778e409f29a339bc879bd9335ad1c68f8adb8fa7f978e2d7c19633514a39fd",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/.github/solve-policy.json"
+      },
+      "after": {
+        "git_blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+        "sha256": "92778e409f29a339bc879bd9335ad1c68f8adb8fa7f978e2d7c19633514a39fd",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/.github/solve-policy.json"
+      }
+    },
+    {
+      "path": ".github/workflows/repository-build.yml",
+      "before": {
+        "git_blob": "4cd28910f3cb44db78424b3a39cdc5d87349be6a",
+        "sha256": "772be87a2c40bb74d1a935cfc07c0daaf17244cb65fcccb39369a9bb0e1b42c5",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/.github/workflows/repository-build.yml"
+      },
+      "after": {
+        "git_blob": "4cd28910f3cb44db78424b3a39cdc5d87349be6a",
+        "sha256": "772be87a2c40bb74d1a935cfc07c0daaf17244cb65fcccb39369a9bb0e1b42c5",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/.github/workflows/repository-build.yml"
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "before": {
+        "git_blob": "452afcd19c7bcffb970354fb0b62666f4becc6e4",
+        "sha256": "f6576e0f8be3dc80d5f075bdf12c7c519febb6a104acc6c142fbff46270c092b",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/CONTRIBUTING.md"
+      },
+      "after": {
+        "git_blob": "b5178c02e66e9b50bb015c8979cd118cd11f847a",
+        "sha256": "61a07655bf1233543f7791821b9f5b36a53b164302a01f08cbffb19d48f4b0f6",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/CONTRIBUTING.md"
+      }
+    },
+    {
+      "path": "MAINTAINING.md",
+      "before": {
+        "git_blob": "9d1cc4fd21cb733c518a9076d384331b2defa401",
+        "sha256": "dab1623c0903a4ce1af626196f3db9c204649430ef78e548efe1fe7006655b6f",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/MAINTAINING.md"
+      },
+      "after": {
+        "git_blob": "58dc36f447e7d9ee662b79b94bab8f28414cf99e",
+        "sha256": "b5fc4e84716951ebc3c528eed6c45c9c0691a00c9e02cff81778b11b7c41b8a5",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/MAINTAINING.md"
+      }
+    },
+    {
+      "path": "formal/lean/HodgeComputer/Verify.lean",
+      "before": {
+        "git_blob": "820377b30a0ff3733c54e5e3a159b80bca5bc01d",
+        "sha256": "60b8aaa391c27047d64d12839bc5172bc3d41d4230b15d5009263189026b5f72",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/formal/lean/HodgeComputer/Verify.lean"
+      },
+      "after": {
+        "git_blob": "3e512fe7ad9a20a6e05824e8609260226c0266cc",
+        "sha256": "59318389a00b03f769819932d2b01eb90ec74ce2f8373e0d328aec617e02145d",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/formal/lean/HodgeComputer/Verify.lean"
+      }
+    },
+    {
+      "path": "formal/lean/README.md",
+      "before": {
+        "git_blob": "ebc21ce70610a1fcca58eb15b15e9078143ee3e4",
+        "sha256": "437694ce3cf5c56e9b3d52e987340a6f2cd0a7be79aa7910315bdd05c9584c65",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/formal/lean/README.md"
+      },
+      "after": {
+        "git_blob": "a6cfc95adeab7965b9af3cda6a9813f9b67de48e",
+        "sha256": "13ef0066b80b145085c64a603230f76b854a53fd2388c2f71cf06af32f852d9e",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/formal/lean/README.md"
+      }
+    },
+    {
+      "path": "formal/lean/lake-manifest.json",
+      "before": {
+        "git_blob": "87d46d3cb17dcd30f7a1d632ba10e691e6212aab",
+        "sha256": "1a38e7336f344b85739e6e957b0638fd66e24912a3c604f9b249739cce2feaa4",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/formal/lean/lake-manifest.json"
+      },
+      "after": {
+        "git_blob": "89d3c2a71023ef2cbaa08033a69d18cd71045ef9",
+        "sha256": "0673d3416afd72500e0727b6327406bb5424c5433b57ebce18b9c6930dea2cf3",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/formal/lean/lake-manifest.json"
+      }
+    },
+    {
+      "path": "formal/lean/lakefile.toml",
+      "before": {
+        "git_blob": "344234499b84cb0c096de52fd80f3256e327f04c",
+        "sha256": "000eb337b5f2825e648a3db91ff4e9f5b62b9ca053c992c0c7556d6fe301673b",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/formal/lean/lakefile.toml"
+      },
+      "after": {
+        "git_blob": "da52c2c11bf58c43256144b1c2a65e421a0f5891",
+        "sha256": "214a146b07dab0f9ac3097be818f05655ee03fe7b9b876276759f156b0d7e2f7",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/formal/lean/lakefile.toml"
+      }
+    },
+    {
+      "path": "formal/lean/lean-toolchain",
+      "before": {
+        "git_blob": "a8afa7d1b02d96f0671eba854a8dc4b416beb473",
+        "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/formal/lean/lean-toolchain"
+      },
+      "after": {
+        "git_blob": "00f848359b1cdaf7c12cd6b7acc5b4364752e154",
+        "sha256": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/formal/lean/lean-toolchain"
+      }
+    },
+    {
+      "path": "scripts/check-library.py",
+      "before": {
+        "git_blob": "9dbc5d92b04ce099575833831008726ae30e8e42",
+        "sha256": "0d8e82b54ad5c05e75b50997440bf26fb0f762040056df9c1c905bf41d95d57e",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/scripts/check-library.py"
+      },
+      "after": {
+        "git_blob": "9dbc5d92b04ce099575833831008726ae30e8e42",
+        "sha256": "0d8e82b54ad5c05e75b50997440bf26fb0f762040056df9c1c905bf41d95d57e",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/scripts/check-library.py"
+      }
+    },
+    {
+      "path": "scripts/proposals/sandbox.py",
+      "before": {
+        "git_blob": "630178ac8e13ca002e83e895dd6d1f117cc3dd15",
+        "sha256": "0a37d58541ab0ac99170fc0cb19d0d14782bdd68bcc62489cdff41179ff207ee",
+        "url": "https://github.com/hodge-computer/sextics/blob/0cb9d23db548bb2c4c33f20d78e51c34826c00a8/scripts/proposals/sandbox.py"
+      },
+      "after": {
+        "git_blob": "74a2044571c1a1c702c4d4245b8407826027ffd1",
+        "sha256": "71c8dc60c19c54ccb9c9b2ec8ebfcf35f19202bccc939b54bcbf93a99326f8d6",
+        "url": "https://github.com/hodge-computer/sextics/blob/e5f46e0758306e8bb51de12e21e261ec1df19e48/scripts/proposals/sandbox.py"
+      }
+    }
+  ],
+  "observed_final_pr_head_ci": {
+    "head_sha": "e18798da5580624262a3b62dedb781ea498cbb0b",
+    "repository_build": {
+      "url": "https://github.com/hodge-computer/sextics/actions/runs/44420938242",
+      "id": 44420938242,
+      "conclusion": "success",
+      "jobs_count": 69,
+      "successful_jobs": 69,
+      "application_rechecks_count": 66,
+      "shared_library_replay_job": {
+        "name": "Lean / shared library",
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729266",
+        "conclusion": "success"
+      },
+      "application_job_links": {
+        "cofactor-eight": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729298",
+        "block-q2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729342",
+        "completed-square-nambu-holdout": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729345",
+        "coupled-pair-rational-d4-strict": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729364",
+        "collision-h3": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729372",
+        "contact46006": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729376",
+        "family-shear": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729392",
+        "cofactor-mixed": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729406",
+        "crossed-ternary-asymmetric": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729407",
+        "fixed-witness-hesse-cofactor-d4-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729414",
+        "family-hesse-web": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729415",
+        "family-block-cube": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729416",
+        "cycle-three": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729418",
+        "fermat-q2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729422",
+        "cyclic-triple-fano": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729455",
+        "family-passive-contact": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729457",
+        "cone-ladder-linear": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729459",
+        "family-trace-zero": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729463",
+        "f3-block-x0-quartic-strict": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729468",
+        "fermat-pair-rational-d4-strict": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729480",
+        "holdout": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729490",
+        "family-sylvester-norm": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729496",
+        "hesse-radial-hesse-cofactor-d4-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729501",
+        "holdout-x0-x14-y0": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729506",
+        "holdout-moving-branch": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729510",
+        "holdout-x0-y03-y12": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729515",
+        "holdout-x13-y13": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729517",
+        "mixed-biweight": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729518",
+        "one-reflection": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729522",
+        "passive-quadratic-d4-strict-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729523",
+        "klein-hesse": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729524",
+        "family-root-cube": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729541",
+        "polarized-contact-coupled-d2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729545",
+        "holdout-ternary-deformation": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729562",
+        "holdout-x04-p": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729568",
+        "holdout-p3": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729577",
+        "hesse-triangle": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729595",
+        "quadric-contact-broken": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729605",
+        "holdout-all-six": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729609",
+        "polarized-contact-deformation-d2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729610",
+        "ternary-collision-cbp-d2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729612",
+        "holdout-x12-p-y02": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729615",
+        "one-reflection-y2-sector": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729630",
+        "reflection-coupled-fano": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729635",
+        "three-block-rational-d4-strict": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729653",
+        "two-reflection-cubic-surface-d2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729662",
+        "tie-singleton-3odd-strict": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729667",
+        "m3-coupled": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729679",
+        "two-ternary-dense-two-odd-hessian-d48": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729683",
+        "ternary-collision-cb-d2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729684",
+        "holdout-p-y14": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729692",
+        "mixed-polar": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729693",
+        "klein-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729696",
+        "tie-offblock-ytype-d4-strict-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729708",
+        "split-ternary-q2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729709",
+        "ternary-tangent-residual-h2-d2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729711",
+        "twoties-crossblock-hesse-cofactor-d4-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729733",
+        "twoties-tie2-x2-quartic-strict": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729758",
+        "twoblock-cubic": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729810",
+        "holdout-bundle": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729853",
+        "holdout-q2": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729880",
+        "xtype-sparse-rational-1m142": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219729916",
+        "holdout-x1-y04-y1": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219730062",
+        "ytype-companion-231-d4-strict-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219734077",
+        "xtype-strict-rational-113": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219734209",
+        "ytype-companion-fiberA-d4-strict-rational": "https://github.com/hodge-computer/sextics/actions/runs/44420938242/job/135219734240"
+      }
+    },
+    "check_runs": {
+      "total": 71,
+      "conclusions": {
+        "success": 71
+      }
+    },
+    "solve_lean_status": [
+      {
+        "context": "solve/lean",
+        "state": "success",
+        "description": "No solve changes; see Repository build",
+        "target_url": "https://github.com/hodge-computer/sextics/actions/runs/44420934655"
+      }
+    ],
+    "scope": "Observed GitHub final-PR-head check/job metadata. The pinned workflow calls check-library.py for applications and shared replay. The pinned source calls sandbox.verify for accepted applications and leanchecker for declaration modules. No local proof replay or independent mathematical audit was performed."
+  },
+  "discussions": {
+    "snapshots": {
+      "before": {
+        "directory": "20261117T033228Z",
+        "retrieved_utc": "2026-11-17T03:32:28.995531+00:00",
+        "comments": 52,
+        "replies": 20
+      },
+      "current": {
+        "directory": "20261119T205534Z",
+        "retrieved_utc": "2026-11-19T20:55:34.540417+00:00",
+        "comments": 53,
+        "replies": 20
+      }
+    },
+    "method": "All pages of each thread and reply connection were checked against both manifests. IDs, URLs, original authors, createdAt, updatedAt, exact UTF-8 body SHA-256 and parent relationships were compared. Original body line endings were preserved.",
+    "coverage": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 120,
+        "comments": 6,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true
+      }
+    ],
+    "unchanged_existing_records": 72,
+    "added_records": [
+      {
+        "id": "DC_kwDOVLOOJc4BLIHo",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19694056",
+        "author": {
+          "login": "benediamond",
+          "name": "Benjamin Diamond"
+        },
+        "createdAt": "2026-11-17T23:54:25Z",
+        "updatedAt": "2026-11-18T01:46:14Z",
+        "discussion": 120,
+        "kind": "comment",
+        "parent_id": null,
+        "parent_url": null,
+        "body_sha256": "1c19c225bc0b2af0ba9ceb6b78fc8b3d274346e6342d007c5a669261668fd103"
+      }
+    ],
+    "reported_claims": {
+      "reported_degree_six_reduction": "For four-plus-two-residual at q=1 and A=X0^3 Y0^3, benediamond reports every legal degree-six denominator can be written D=D_c(x)+lambda F, with nonzero [D_c] in the 33-dimensional kernel of multiplication by A in core Jacobian degree six. The restriction includes complex denominators of arbitrary parity.",
+      "reported_equivalence": "The post reports equivalence of a degree-six certificate to a core sextic D_c and degree-seven polynomial core field p satisfying p(H)=A D_c and D_c div(p)=p(D_c). Their rational field p/D_c is divergence-free. Existence for the prescribed source remains open.",
+      "reported_computation_scope": "The author cites maximal Jacobian multiplication ranks and two Hessian systems modulo scalar matrices at p=101 with affine quotient lengths 8 and 257, plus good complete-intersection reduction. These support the stated characteristic-zero reduction in the post. No calculation was replayed by this monitor.",
+      "reported_shared_denominator_obstruction": "The post also reports that one sextic denominator cannot serve every odd sextic source, using a Fermat reduction modulo five and joint injectivity. This claim concerns a shared denominator across sources.",
+      "reported_prym_result": "For C: w^3=f(t^2) mapping to E: w^3=f(v), the anti-invariant target differential dt/w lies in the three-dimensional Prym. The author reports absolute simplicity and geometric rational endomorphism algebra Q(sqrt(-3)), based on Frobenius/root-ratio calculations at 31 and 13. The post concludes the differential cannot come from an elliptic quotient of this Prym.",
+      "prior_context": "The post explicitly sharpens kejace’s degree-at-most-five exclusion. It identifies the new open core condition with the m=0 degree-six family left unresolved by kmehltretter82’s bounded checks and links DiamondJM’s core equation. Divisor support was already attributed to the book’s two-reflection theorem. The new comment supplies an attributed reduction and geometric obstruction while the explicit degree-six pair remains open.",
+      "prior_links": [
+        "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19345483",
+        "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19504157",
+        "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+        "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19150610"
+      ],
+      "attribution": "Benjamin Diamond (benediamond) is the original author. The comment credits OpenAI Codex assistance for calculations and write-up and Claude assistance for the core reduction and independent recomputation. These statements describe AI assistance; this monitor supplies no independent mathematical review.",
+      "linked_reproduction": "The post links four-plus-two-residual.zip containing denominators.py and prym.py, with SageMath commands. The attachment and external mathematics were not retrieved or executed.",
+      "acceptance": "The pinned repository head has no four-plus-two-residual acceptance.json. The post claims no completed certificate for the prescribed source. Previously recorded credit and book support are not new notebook contributions."
+    },
+    "removed_records": [],
+    "edited_existing_records": [],
+    "thread_metadata_changes": [
+      {
+        "discussion": 120,
+        "fields": {
+          "updatedAt": {
+            "before": "2026-11-16T06:58:11Z",
+            "current": "2026-11-17T23:54:25Z"
+          }
+        }
+      }
+    ]
+  },
+  "verification_scope": {
+    "hodge_lab_executed": [
+      "bounded GitHub readers",
+      "complete Git-tree and protected-record comparisons",
+      "complete discussion pagination and ID/timestamp/body-hash comparison",
+      "source and existing CI metadata review",
+      "notebook diff and append-only ledger checks"
+    ],
+    "book": "Published upstream statements and author-reported supporting checks.",
+    "discussion": "Attributed upstream reduction, obstruction and computation reports. The prescribed degree-six core pair remains open.",
+    "protected_verification": "Existing final-PR-head Repository build records, with checker source bindings.",
+    "published_acceptance": "66 acceptance records, all identical to the prior pin.",
+    "mathematical_replay_executed_by_hodge_lab": false
+  },
+  "contribution_tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "publication": "Hodge Lab notebook publication is recorded separately after normal push and remote readback.",
+  "local_capture_hashes": {
+    "repository-heads-20261119T205539Z.json": "94ab3b5d47943280d9dca244f4a25cd6f220de5685410168b55cfef4f1d66d93",
+    "comparison-20261119T205534Z.json": "8e425b9f84838f9b17137f4149885fb032601c8e06f8a2caacc60ad1328821d7",
+    "inventory-review-20261119.json": "fb0f6d8e084bc04fcc0a8becf42f7fa1abae37b2d3d7102f28a392f341bc1ed5",
+    "book-review-20261119.json": "dd438cd81aac6de0974470397096b9c20a96a045ece072f4c84fb4dbf920856f",
+    "discussion-review-20261119.json": "0595244418b0317678e4a4ce1f3f53b826af8976f974d018152430ad4b0f9d07",
+    "run-20261119T205534Z.json": "e4e9db0b5f51a2cac384dc316560bef1ab5a948b4312f81ea938ca520f390682",
+    "full-trees-20261119.json": "27f30720be893366031c0c58b15b3262a8a096f818a06c520b66d55d406bbfea",
+    "migration-source-capture-20261119.json": "0cf0e5ba911ffae11d8cdff9f766b4d7cf621ddf86326017819504266f36af76",
+    "migration-ci-capture-20261119.json": "14d7c3cf2bf70264e65ac293194f036e234120907d475ae86d3638a30cd99f5a",
+    "migration-jobs-capture-20261119.json": "a65c09d329d991ccf96f07408fbfa0370d86d7709ae116f394ac8b766317fd3c"
+  }
+}
