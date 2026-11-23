@@ -1,0 +1,1135 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-11-23T15:25:23.210637+00:00",
+  "automation_id": "hodge-discussion-watch",
+  "heartbeat_trigger_utc": "2026-11-22T19:19:56.687Z",
+  "source_observed_utc": "2026-11-23T15:08:44.757271+00:00",
+  "upstream_before": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+  "upstream_after": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+  "notebook_parent": "1f9c6ac4a487f45e79bdfec72b70cf052bd29ad5",
+  "repository_review": {
+    "observed_utc": "2026-11-23T15:08:44.757271+00:00",
+    "reviewed_utc": "2026-11-23T15:22:24.631217Z",
+    "before": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+    "after": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+    "repository_heads": {
+      "hodge-computer/sextics": {
+        "sha": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "url": "https://github.com/hodge-computer/sextics/commit/a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "message": "Merge pull request #274 from hodge-computer/perf/divisor-shader\n\nMake the divisor display cheap to draw, and refresh five saved views",
+        "committer_date": "2026-11-22T22:30:40Z"
+      },
+      "rbajaj5/hodge-lab": {
+        "sha": "1f9c6ac4a487f45e79bdfec72b70cf052bd29ad5",
+        "url": "https://github.com/rbajaj5/hodge-lab/commit/1f9c6ac4a487f45e79bdfec72b70cf052bd29ad5",
+        "message": "Record paired-exchange support assertion and residual reports",
+        "committer_date": "2026-11-22T13:55:28Z"
+      }
+    },
+    "inventory": {
+      "method": "Compared all non-tree paths, blob IDs and modes in two untruncated recursive Git trees; the before tree is the saved Nov22 pinned tree, the after tree was fetched once. Matched the complete eight-path REST compare response.",
+      "complete": true,
+      "commits": 5,
+      "leaf_paths_before": 1455,
+      "leaf_paths_after": 1455,
+      "changed_paths": 8,
+      "modified": 8,
+      "added": 0,
+      "deleted": 0,
+      "renames": 0,
+      "path_blob_delta": [
+        {
+          "path": "MAINTAINING.md",
+          "before": "f371759afddb72b07d5e37e3e4e7e8effa8ec5d7",
+          "after": "07d34236a36bfe914056963e38ddfac210ce8435"
+        },
+        {
+          "path": "assets/divisor.js",
+          "before": "c3fe4528e93b228b9682856af958b9dd22741b80",
+          "after": "c216b5f5d3a38f3bffe546d85b47161767dcaf93"
+        },
+        {
+          "path": "assets/renderer.js",
+          "before": "bcb010acf0054082c9f4c0d8263160e27af67774",
+          "after": "03ab04d0f37159ea8314ab4c1b320532f1104d9c"
+        },
+        {
+          "path": "slices/cone-ladder-linear.json",
+          "before": "9e1d0ef8fb876a806c6354851ba612fcaf2ef0c8",
+          "after": "cf77901287292dcb782390b4b61269aef33ffb65"
+        },
+        {
+          "path": "slices/family-root-cube.json",
+          "before": "13c69c146633d2afaa2b94d9a56aa0ee55fd5aa1",
+          "after": "d5e5f18f2e4551509d6e29b9b81636f1cdc9f016"
+        },
+        {
+          "path": "slices/klein-hesse.json",
+          "before": "0ae9441e0de1761dbbdb8837cf73187ecc6d10aa",
+          "after": "7a6ae8ae8c7baa5d332fb6228dc3ba0da43fbe2b"
+        },
+        {
+          "path": "slices/symmetric-sextic-residual.json",
+          "before": "4b8a828112867df161a35b7f33ac4a7cf01e0532",
+          "after": "4eeb52a4fe4650ecc7acd0e3ff098d2948e2ef47"
+        },
+        {
+          "path": "slices/twoblock-cubic.json",
+          "before": "2cb3fe9616d105f3f527490675f6b501036069ce",
+          "after": "f34372205571f2dca221d7332a042ef0beb1abea"
+        }
+      ],
+      "records": {
+        "instance.rec": {
+          "before": 82,
+          "after": 82,
+          "changed": []
+        },
+        "acceptance.json": {
+          "before": 66,
+          "after": 66,
+          "changed": []
+        },
+        "proof.json": {
+          "before": 66,
+          "after": 66,
+          "changed": []
+        },
+        "solution.md": {
+          "before": 66,
+          "after": 66,
+          "changed": []
+        },
+        "witness.json": {
+          "before": 41,
+          "after": 41,
+          "changed": []
+        },
+        "provenance.json": {
+          "before": 82,
+          "after": 82,
+          "changed": []
+        },
+        "why.md": {
+          "before": 82,
+          "after": 82,
+          "changed": []
+        }
+      },
+      "catalogue": {
+        "fixed_targets": 82,
+        "published_acceptances": 66,
+        "without_acceptance": 16
+      },
+      "unchanged_protected_prefixes": {
+        "data/": {
+          "before": 1020,
+          "after": 1020,
+          "changed": []
+        },
+        "formal/": {
+          "before": 169,
+          "after": 169,
+          "changed": []
+        },
+        ".github/": {
+          "before": 7,
+          "after": 7,
+          "changed": []
+        },
+        "scripts/": {
+          "before": 30,
+          "after": 30,
+          "changed": []
+        },
+        "slices/divisors/": {
+          "before": 14,
+          "after": 14,
+          "changed": []
+        }
+      },
+      "monitored_pin_count": 383,
+      "monitored_pin_changes": [
+        {
+          "path": "MAINTAINING.md",
+          "before": "f371759afddb72b07d5e37e3e4e7e8effa8ec5d7",
+          "after": "07d34236a36bfe914056963e38ddfac210ce8435"
+        }
+      ],
+      "acceptance_status": "No target equation, accepted proof, acceptance record, witness export, provenance, explanation, Lean source, verifier, workflow or solve-policy blob changed. This is repository-source comparison, not a replay of protected verification."
+    },
+    "merged_maintenance": {
+      "pr": {
+        "url": "https://github.com/hodge-computer/sextics/pull/274",
+        "number": 274,
+        "title": "Make the divisor display cheap to draw, and refresh five saved views",
+        "author": {
+          "login": "benediamond"
+        },
+        "mergedBy": {
+          "login": "benediamond"
+        },
+        "mergedAt": "2026-11-22T22:30:41Z",
+        "mergeCommit": {
+          "oid": "a2533062401756c081b3d665358c0f3e4dbd87c2"
+        },
+        "headRefOid": "f747c1bf6385359d64ecbfc172c6d906b5a91454",
+        "baseRefOid": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda"
+      },
+      "commits": [
+        {
+          "sha": "9ac9922180416eb0bb8d7716c3a5d9e76aa37cb1",
+          "url": "https://github.com/hodge-computer/sextics/commit/9ac9922180416eb0bb8d7716c3a5d9e76aa37cb1",
+          "title": "Renderer: shade only the fragments each pass keeps"
+        },
+        {
+          "sha": "886a4d6b6b273d0340f4ed85850d547a08907630",
+          "url": "https://github.com/hodge-computer/sextics/commit/886a4d6b6b273d0340f4ed85850d547a08907630",
+          "title": "Divisor shader: carry exponents and derivatives only where needed"
+        },
+        {
+          "sha": "d152dce7b9d9691c51153078053e9b0d6c09a25d",
+          "url": "https://github.com/hodge-computer/sextics/commit/d152dce7b9d9691c51153078053e9b0d6c09a25d",
+          "title": "Refresh four saved slices"
+        },
+        {
+          "sha": "f747c1bf6385359d64ecbfc172c6d906b5a91454",
+          "url": "https://github.com/hodge-computer/sextics/commit/f747c1bf6385359d64ecbfc172c6d906b5a91454",
+          "title": "Klein–Hesse · κ = 2: new saved camera"
+        },
+        {
+          "sha": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+          "url": "https://github.com/hodge-computer/sextics/commit/a2533062401756c081b3d665358c0f3e4dbd87c2",
+          "title": "Merge pull request #274 from hodge-computer/perf/divisor-shader"
+        }
+      ],
+      "authorship": "PR author and merger benediamond; all four substantive commits credit Claude Fable 5.2 as coauthor. No new rbajaj5 credit in these commit messages or PR body; no contribution-tally increment for this monitoring.",
+      "source_changes": [
+        {
+          "area": "Renderer",
+          "finding": "A shared dropped(alpha) function implements opaque/peeled-layer and projection-box dissolve tests. Divisor-visible scenes now make a cheap depth-only draw then shade where depth equals the prepass. Scenes without a divisor remain one draw per pass.",
+          "source": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/assets/renderer.js#L215"
+        },
+        {
+          "area": "Shader arithmetic",
+          "finding": "Degree and coefficient bounds select plain arithmetic for eligible expressions (degree at most 6, coefficient bounds within 2^±60); other expressions retain shared power-of-two exponent arithmetic. D jets carry two screen-direction derivatives; F jets carry four sphere-direction derivatives. The source still caps generated expressions at 4,096 nodes. Reading this implementation does not establish numerical correctness.",
+          "source": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/assets/divisor.js#L231"
+        },
+        {
+          "area": "Projection",
+          "finding": "The bounded Newton projection remains capped at four iterations but stops when correction size is below 2.4e-7 (described upstream as two units in the last place).",
+          "source": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/assets/renderer.js#L117"
+        }
+      ],
+      "saved_views": [
+        {
+          "path": "slices/cone-ladder-linear.json",
+          "label": "Split sextic · factored binary form",
+          "changed_fields": [
+            "camera",
+            "centerOriginal",
+            "complexScale",
+            "displayScale",
+            "phaseSigns",
+            "planeMatrix",
+            "seed"
+          ],
+          "scope": "new section and camera; unrestricted according to author",
+          "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/cone-ladder-linear.json"
+        },
+        {
+          "path": "slices/family-root-cube.json",
+          "label": "Root cube · crossed blocks",
+          "changed_fields": [
+            "camera",
+            "centerOriginal",
+            "complexScale",
+            "displayScale",
+            "phaseSigns",
+            "planeMatrix",
+            "seed"
+          ],
+          "scope": "new section and camera; unrestricted according to author",
+          "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/family-root-cube.json"
+        },
+        {
+          "path": "slices/klein-hesse.json",
+          "label": "Klein–Hesse · κ = 2",
+          "changed_fields": [
+            "camera"
+          ],
+          "scope": "same section; camera only",
+          "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/klein-hesse.json"
+        },
+        {
+          "path": "slices/symmetric-sextic-residual.json",
+          "label": "Permutation symmetry · residual sector",
+          "changed_fields": [
+            "camera",
+            "centerOriginal",
+            "complexScale",
+            "displayScale",
+            "planeMatrix",
+            "seed"
+          ],
+          "scope": "new section and camera; unrestricted according to author",
+          "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/symmetric-sextic-residual.json"
+        },
+        {
+          "path": "slices/twoblock-cubic.json",
+          "label": "Two-block · full cubic",
+          "changed_fields": [
+            "camera",
+            "centerOriginal",
+            "complexScale",
+            "displayScale",
+            "planeMatrix",
+            "seed"
+          ],
+          "scope": "new section and camera; unrestricted according to author",
+          "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/twoblock-cubic.json"
+        }
+      ],
+      "reported_checks": {
+        "classification": "Author-reported local checks in PR #274 and commit messages; not executed by Hodge Lab in this monitor.",
+        "timings": {
+          "hardware": "Intel UHD 630; phone-sized 821 × 1825 canvas, not a phone",
+          "units": "milliseconds per frame",
+          "columns": [
+            "baseline main",
+            "prepass only",
+            "prepass and shader change"
+          ],
+          "rows": [
+            {
+              "entry": "Dense two-ternary · Hessian trace",
+              "values": [
+                1526,
+                145,
+                60
+              ]
+            },
+            {
+              "entry": "Cofactor · coupled X block",
+              "values": [
+                1625,
+                137,
+                51
+              ]
+            },
+            {
+              "entry": "One reflection",
+              "values": [
+                780,
+                null,
+                63
+              ]
+            },
+            {
+              "entry": "Fermat · pole order two",
+              "values": [
+                201,
+                null,
+                35
+              ]
+            },
+            {
+              "entry": "The holdout (no divisor)",
+              "values": [
+                27,
+                28,
+                28
+              ]
+            }
+          ],
+          "first_hessian_frame_including_compilation_seconds": {
+            "before": 2.9,
+            "after": 0.6
+          },
+          "homepage_ms_per_frame": {
+            "before": 139,
+            "after": 127
+          }
+        },
+        "framebuffer": "For prepass only: six atlas scenes and homepage described as identical to baseline, subject to one-pixel/one-level baseline repeat noise. After both changes: all 43 divisor displays differ in at most 1,419 of about 1.5 million pixels, almost all by one level; 515 pixels in total differ by more than 8 levels, including 359 in an already dotted Logarithmic shear · chain patch. No-divisor scenes reported identical.",
+        "arithmetic": "Author reports single-precision emulation of the generated shaders highlighted the same sampled points as double precision for all 43 displays, with no non-finite values.",
+        "cross_gpu": "Three entries rendered on Intel also reported to match AMD up to usual GPU differences.",
+        "commands_reported_passed": [
+          "scripts/build-content.py",
+          "scripts/validate-records.py",
+          "scripts/check-content.py",
+          "scripts/test-maintenance.py"
+        ],
+        "limits": [
+          "A real phone was not measured.",
+          "Early depth rejection with discard and depth writes off observed on author AMD/Intel hardware, not confirmed on Mali.",
+          "Heaviest reported 60 ms frame still about 16 fps on stand-in hardware.",
+          "Finite rendering does not establish existence, smoothness, topology, or certificate validity."
+        ],
+        "source": "https://github.com/hodge-computer/sextics/pull/274"
+      }
+    },
+    "policy_context": {
+      "changed": [
+        "MAINTAINING.md visualization paragraphs 157 and 163 now document the conditional exponent arithmetic, directional derivatives, depth prepass and early Newton stop."
+      ],
+      "unchanged": [
+        "Solve/admission rules, target contracts, contribution rules, workflow code, formal verification sources, and accepted records are unchanged by the complete tree comparison.",
+        "slices/curation.md is unchanged; saved planes/cameras are presentation choices independent of targets, and slice-specific divisor factorizations must be regenerated when a restricted plane/phases change."
+      ],
+      "limits_context": "MAINTAINING.md explicitly separates numerical mesh presentation from smoothness, topology and certificate validity; adding a display denominator does not modify accepted proof, acceptance, witness or credit.",
+      "maintaining_source": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/MAINTAINING.md#L145",
+      "curation_source": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/curation.md",
+      "solve_policy": {
+        "mode": "live",
+        "maxFiles": 996,
+        "timeoutSeconds": 19800,
+        "memoryMb": 14336,
+        "git_blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+        "changed": false
+      }
+    },
+    "source_pins": [
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "MAINTAINING.md",
+        "git_blob": "f371759afddb72b07d5e37e3e4e7e8effa8ec5d7",
+        "sha256": "a865758c07df561e49b9e73b54bd1714062eeada3f565aa9ae0ccabdb7696a9c",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/MAINTAINING.md"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "assets/divisor.js",
+        "git_blob": "c3fe4528e93b228b9682856af958b9dd22741b80",
+        "sha256": "69682a3ee435f481ff4bea9de64adeb9474493dab06d951f7ae40466aa3d0ecf",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/assets/divisor.js"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "assets/renderer.js",
+        "git_blob": "bcb010acf0054082c9f4c0d8263160e27af67774",
+        "sha256": "2ba198215ebf51522fcaea72717a844a4b7c44ab87f769366c3cec12f2367271",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/assets/renderer.js"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "slices/cone-ladder-linear.json",
+        "git_blob": "9e1d0ef8fb876a806c6354851ba612fcaf2ef0c8",
+        "sha256": "9dac07fe4e2821836a924a137387e5ac532ff17f55e3b6b8d62d1223e788a190",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/slices/cone-ladder-linear.json"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "slices/family-root-cube.json",
+        "git_blob": "13c69c146633d2afaa2b94d9a56aa0ee55fd5aa1",
+        "sha256": "a1b3e9553f61880f61380b0415fb69a4164ac838f78ecca9bf2689b43b327d2f",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/slices/family-root-cube.json"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "slices/klein-hesse.json",
+        "git_blob": "0ae9441e0de1761dbbdb8837cf73187ecc6d10aa",
+        "sha256": "6668957a52ceeae6aa1c14029f1321c6253df772e2313fce0765168e060a6c04",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/slices/klein-hesse.json"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "slices/symmetric-sextic-residual.json",
+        "git_blob": "4b8a828112867df161a35b7f33ac4a7cf01e0532",
+        "sha256": "b9a8b86e3ccc0dd9cfc819da964e33e2af45c8becfa5492b01b2f72fc4fa36e2",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/slices/symmetric-sextic-residual.json"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "slices/twoblock-cubic.json",
+        "git_blob": "2cb3fe9616d105f3f527490675f6b501036069ce",
+        "sha256": "0a0422982e1020b8d957b534bd777b4f54e74a166e20409648e0be91c2562c04",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/slices/twoblock-cubic.json"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": "slices/curation.md",
+        "git_blob": "f8fc0c610058dd58dad845d22ee1a7bf11afc078",
+        "sha256": "cfa8fb9559c24995e46dd29d859db5c3cfc8fc2ff432a897b56856717e58bf7a",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/slices/curation.md"
+      },
+      {
+        "ref": "a87cbee85d54d3db7ac8ff54f782a16dcd2efcda",
+        "path": ".github/solve-policy.json",
+        "git_blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+        "sha256": "92778e409f29a339bc879bd9335ad1c68f8adb8fa7f978e2d7c19633514a39fd",
+        "url": "https://github.com/hodge-computer/sextics/blob/a87cbee85d54d3db7ac8ff54f782a16dcd2efcda/.github/solve-policy.json"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "MAINTAINING.md",
+        "git_blob": "07d34236a36bfe914056963e38ddfac210ce8435",
+        "sha256": "3f02037a82eac9e8866fccfd1ffc75eb8acf1d3b4b0bb8f8502087d2431bc8f0",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/MAINTAINING.md"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "assets/divisor.js",
+        "git_blob": "c216b5f5d3a38f3bffe546d85b47161767dcaf93",
+        "sha256": "fafce54a280576f39cc25e25e996ad75ff2527d27e3624c382996e822c656d5a",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/assets/divisor.js"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "assets/renderer.js",
+        "git_blob": "03ab04d0f37159ea8314ab4c1b320532f1104d9c",
+        "sha256": "31eddda6eff72bcf17f8416d38818006f1b750987e29f5b764e5e395eb791cb4",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/assets/renderer.js"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "slices/cone-ladder-linear.json",
+        "git_blob": "cf77901287292dcb782390b4b61269aef33ffb65",
+        "sha256": "d5aa4299f359b53bcc75654a1ccc072938d14a8c977dc81e0e12c99b4a541a72",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/cone-ladder-linear.json"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "slices/family-root-cube.json",
+        "git_blob": "d5e5f18f2e4551509d6e29b9b81636f1cdc9f016",
+        "sha256": "b6aadfb0a5785f7df0a22fb4193e12af8f1c2b8302d81fbc2b0439e72f0d0084",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/family-root-cube.json"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "slices/klein-hesse.json",
+        "git_blob": "7a6ae8ae8c7baa5d332fb6228dc3ba0da43fbe2b",
+        "sha256": "3ebde741f73654877c607768d5c00ac1ef9025b311ffde70b0a4fbd77032db36",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/klein-hesse.json"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "slices/symmetric-sextic-residual.json",
+        "git_blob": "4eeb52a4fe4650ecc7acd0e3ff098d2948e2ef47",
+        "sha256": "edf1381d64a79c8537f3a37fccf72a8fff229f1eb3bbaf7f77935a0ffbf7610f",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/symmetric-sextic-residual.json"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "slices/twoblock-cubic.json",
+        "git_blob": "f34372205571f2dca221d7332a042ef0beb1abea",
+        "sha256": "a48cb9c64e564bdd7243fc8181b1b078088e679bda559732bbe12aa5af8a1bda",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/twoblock-cubic.json"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": "slices/curation.md",
+        "git_blob": "f8fc0c610058dd58dad845d22ee1a7bf11afc078",
+        "sha256": "cfa8fb9559c24995e46dd29d859db5c3cfc8fc2ff432a897b56856717e58bf7a",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/slices/curation.md"
+      },
+      {
+        "ref": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "path": ".github/solve-policy.json",
+        "git_blob": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+        "sha256": "92778e409f29a339bc879bd9335ad1c68f8adb8fa7f978e2d7c19633514a39fd",
+        "url": "https://github.com/hodge-computer/sextics/blob/a2533062401756c081b3d665358c0f3e4dbd87c2/.github/solve-policy.json"
+      }
+    ],
+    "evidence_files": [
+      {
+        "path": "work/discussion-monitor/repository-heads-20261123T150844Z.json",
+        "sha256": "fb4be586e231467f9c3a360bf77653fbd3127571ae589a6203c1c8c4bcbd152c",
+        "bytes": 118192
+      },
+      {
+        "path": "work/discussion-monitor/full-trees-20261123.json",
+        "sha256": "779fad05cf9523f0180cb972e0a364cf69ed45ee8f4f5bbebb5c2b32ce1ff9f2",
+        "bytes": 803330
+      },
+      {
+        "path": "work/discussion-monitor/inventory-source-capture-20261123.json",
+        "sha256": "56f029b9c6b70693ae479fb99f8470aa8013165f4206fb938343966e32f0887b",
+        "bytes": 223344
+      }
+    ],
+    "scope": {
+      "executed": [
+        "Bounded primary GitHub metadata/source reads.",
+        "Full recursive-tree inventory and mode/blob comparisons.",
+        "Verified every captured source body byte length and recomputed Git blob SHA-1 against API blob and tree IDs.",
+        "Read complete PR body, relevant complete-source contexts and compare patches; parsed saved-slice JSON to identify changed fields."
+      ],
+      "not_executed": [
+        "No upstream verifier/build/test scripts.",
+        "No mathematical or proof verification, solve or target reconstruction.",
+        "No shader benchmark, GPU/UI test or arithmetic emulation.",
+        "No upstream publication or mutation."
+      ],
+      "conclusion": "Merged presentation/performance maintenance and five saved-view updates; no new mathematical result or acceptance change. Author speed and image checks remain reported checks."
+    }
+  },
+  "discussion_review": {
+    "reviewed_utc": "2026-11-23T15:12:16.010332+00:00",
+    "snapshots": {
+      "before": {
+        "directory": "20261122T155951Z",
+        "retrieved_utc": "2026-11-22T15:59:51.764567+00:00",
+        "manifest_sha256": "c6ca8ee0dd72c18b757db3fc6763400ce1dadf29878e885b9adc963fd5497ee9",
+        "comments": 53,
+        "replies": 23
+      },
+      "current": {
+        "directory": "20261123T150845Z",
+        "retrieved_utc": "2026-11-23T15:08:45.755003+00:00",
+        "manifest_sha256": "a21b441432dfb13b1145ee377cf3fc839775f86a89b9cb9876c75f667bc70a2f",
+        "comments": 53,
+        "replies": 24
+      }
+    },
+    "monitor": "Compared all 14 full raw thread/comment/reply snapshots and both manifests. Checked complete pagination/counts, IDs, author metadata, creation/update timestamps, parent IDs/URLs and SHA-256 of exact UTF-8 body strings without normalizing embedded line endings. Thread ID/title/URL/body hash/lock/answer/update metadata compared separately.",
+    "coverage": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 2,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 120,
+        "comments": 6,
+        "replies": 3,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true,
+        "comment_pages": 1,
+        "extra_reply_pages": 0
+      }
+    ],
+    "unchanged_existing_records": 76,
+    "unchanged_existing_record_ids": [
+      "DC_kwDOVLOOJc4BIaBW",
+      "DC_kwDOVLOOJc4BIaCZ",
+      "DC_kwDOVLOOJc4BIaSM",
+      "DC_kwDOVLOOJc4BIagt",
+      "DC_kwDOVLOOJc4BIawa",
+      "DC_kwDOVLOOJc4BIa5b",
+      "DC_kwDOVLOOJc4BIals",
+      "DC_kwDOVLOOJc4BIa2Z",
+      "DC_kwDOVLOOJc4BIa8G",
+      "DC_kwDOVLOOJc4BIbNP",
+      "DC_kwDOVLOOJc4BIbVG",
+      "DC_kwDOVLOOJc4BIbXU",
+      "DC_kwDOVLOOJc4BIbdS",
+      "DC_kwDOVLOOJc4BIbp3",
+      "DC_kwDOVLOOJc4BIbxq",
+      "DC_kwDOVLOOJc4BIb4u",
+      "DC_kwDOVLOOJc4BIcDA",
+      "DC_kwDOVLOOJc4BIgq0",
+      "DC_kwDOVLOOJc4BIhul",
+      "DC_kwDOVLOOJc4BIfbN",
+      "DC_kwDOVLOOJc4BIpjF",
+      "DC_kwDOVLOOJc4BIp9D",
+      "DC_kwDOVLOOJc4BIqFI",
+      "DC_kwDOVLOOJc4BIfLz",
+      "DC_kwDOVLOOJc4BIfNv",
+      "DC_kwDOVLOOJc4BIxeY",
+      "DC_kwDOVLOOJc4BIxqv",
+      "DC_kwDOVLOOJc4BIx0m",
+      "DC_kwDOVLOOJc4BIyDS",
+      "DC_kwDOVLOOJc4BIycn",
+      "DC_kwDOVLOOJc4BIfP3",
+      "DC_kwDOVLOOJc4BI3Rv",
+      "DC_kwDOVLOOJc4BI3Rw",
+      "DC_kwDOVLOOJc4BI3R1",
+      "DC_kwDOVLOOJc4BItFi",
+      "DC_kwDOVLOOJc4BIfTt",
+      "DC_kwDOVLOOJc4BIpjI",
+      "DC_kwDOVLOOJc4BIl9O",
+      "DC_kwDOVLOOJc4BIqYC",
+      "DC_kwDOVLOOJc4BIqjy",
+      "DC_kwDOVLOOJc4BIrJO",
+      "DC_kwDOVLOOJc4BIp5k",
+      "DC_kwDOVLOOJc4BIr7M",
+      "DC_kwDOVLOOJc4BJzBT",
+      "DC_kwDOVLOOJc4BJMgE",
+      "DC_kwDOVLOOJc4BJzBM",
+      "DC_kwDOVLOOJc4BJ2kt",
+      "DC_kwDOVLOOJc4BJzBe",
+      "DC_kwDOVLOOJc4BKUqo",
+      "DC_kwDOVLOOJc4BK8s8",
+      "DC_kwDOVLOOJc4BLfam",
+      "DC_kwDOVLOOJc4BKU90",
+      "DC_kwDOVLOOJc4BKXaf",
+      "DC_kwDOVLOOJc4BI58o",
+      "DC_kwDOVLOOJc4BJzBY",
+      "DC_kwDOVLOOJc4BJDcS",
+      "DC_kwDOVLOOJc4BJzBL",
+      "DC_kwDOVLOOJc4BKMQx",
+      "DC_kwDOVLOOJc4BKZwd",
+      "DC_kwDOVLOOJc4BK86B",
+      "DC_kwDOVLOOJc4BLfak",
+      "DC_kwDOVLOOJc4BLgAE",
+      "DC_kwDOVLOOJc4BLIHo",
+      "DC_kwDOVLOOJc4BIqxx",
+      "DC_kwDOVLOOJc4BIrOk",
+      "DC_kwDOVLOOJc4BIrd3",
+      "DC_kwDOVLOOJc4BIsx8",
+      "DC_kwDOVLOOJc4BIx3J",
+      "DC_kwDOVLOOJc4BIyQ8",
+      "DC_kwDOVLOOJc4BI5PZ",
+      "DC_kwDOVLOOJc4BI51C",
+      "DC_kwDOVLOOJc4BI6dm",
+      "DC_kwDOVLOOJc4BI-aB",
+      "DC_kwDOVLOOJc4BI_aX",
+      "DC_kwDOVLOOJc4BJHdj",
+      "DC_kwDOVLOOJc4BJzBQ"
+    ],
+    "changes": [
+      {
+        "change": "added_reply",
+        "before": null,
+        "current": {
+          "discussion": 120,
+          "kind": "reply",
+          "id": "DC_kwDOVLOOJc4BLmRD",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19817539",
+          "author": {
+            "login": "kmehltretter82",
+            "name": null
+          },
+          "createdAt": "2026-11-22T18:17:17Z",
+          "updatedAt": "2026-11-22T21:05:02Z",
+          "parent_id": "DC_kwDOVLOOJc4BK86B",
+          "parent_url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+          "body_sha256": "dbe885dad77a00abbb42c1cd0a56964f5a77ce62dadc76f42725e9b767519644"
+        },
+        "parent_context": {
+          "discussion": 120,
+          "kind": "comment",
+          "id": "DC_kwDOVLOOJc4BK86B",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+          "author": {
+            "login": "kmehltretter82",
+            "name": null
+          },
+          "createdAt": "2026-11-16T06:58:11Z",
+          "updatedAt": "2026-11-16T15:29:05Z",
+          "parent_id": null,
+          "parent_url": null,
+          "body_sha256": "ac0f132d4480a7f02758f98a8bc1e3c813405d081528c0f7869737d5486b9108"
+        },
+        "prior_context_records": [
+          {
+            "discussion": 120,
+            "kind": "comment",
+            "id": "DC_kwDOVLOOJc4BKMQx",
+            "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19448881",
+            "author": {
+              "login": "benediamond",
+              "name": "Benjamin Diamond"
+            },
+            "createdAt": "2026-11-06T20:46:35Z",
+            "updatedAt": "2026-11-10T19:56:48Z",
+            "parent_id": null,
+            "parent_url": null,
+            "body_sha256": "25ad78bed780fec3d6a19195b998c5bf5eda2679e8b6e680dd7be5b17d85e95e"
+          },
+          {
+            "discussion": 120,
+            "kind": "comment",
+            "id": "DC_kwDOVLOOJc4BK86B",
+            "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+            "author": {
+              "login": "kmehltretter82",
+              "name": null
+            },
+            "createdAt": "2026-11-16T06:58:11Z",
+            "updatedAt": "2026-11-16T15:29:05Z",
+            "parent_id": null,
+            "parent_url": null,
+            "body_sha256": "ac0f132d4480a7f02758f98a8bc1e3c813405d081528c0f7869737d5486b9108"
+          },
+          {
+            "discussion": 120,
+            "kind": "reply",
+            "id": "DC_kwDOVLOOJc4BLfak",
+            "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19789476",
+            "author": {
+              "login": "kmehltretter82",
+              "name": null
+            },
+            "createdAt": "2026-11-21T05:07:45Z",
+            "updatedAt": "2026-11-21T05:07:45Z",
+            "parent_id": "DC_kwDOVLOOJc4BK86B",
+            "parent_url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+            "body_sha256": "82db374db41156f0822630e61b437cb61d8f552f72f005322ad539acd28f35ee"
+          },
+          {
+            "discussion": 120,
+            "kind": "reply",
+            "id": "DC_kwDOVLOOJc4BLgAE",
+            "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19791876",
+            "author": {
+              "login": "kmehltretter82",
+              "name": null
+            },
+            "createdAt": "2026-11-21T08:33:02Z",
+            "updatedAt": "2026-11-21T13:55:31Z",
+            "parent_id": "DC_kwDOVLOOJc4BK86B",
+            "parent_url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19648129",
+            "body_sha256": "63d1a43f543677b9b539c15445c8fa3327eefee8f540d626a682ab963b5390cf"
+          },
+          {
+            "discussion": 120,
+            "kind": "comment",
+            "id": "DC_kwDOVLOOJc4BLIHo",
+            "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19694056",
+            "author": {
+              "login": "benediamond",
+              "name": "Benjamin Diamond"
+            },
+            "createdAt": "2026-11-17T23:54:25Z",
+            "updatedAt": "2026-11-18T01:46:14Z",
+            "parent_id": null,
+            "parent_url": null,
+            "body_sha256": "1c19c225bc0b2af0ba9ceb6b78fc8b3d274346e6342d007c5a669261668fd103"
+          }
+        ],
+        "context": {
+          "status": "New author-reported partial construction and supporting reductions for four-plus-two-residual; no instantiated target certificate is supplied.",
+          "formal_scope": [
+            "The author reports a conditional four-variable CoreCertificate-to-HasCertificate implication including degree and coprimality obligations, with independent kernel replay on upstream Lean 4.36.0.",
+            "A further author-reported implication takes a supplied three-affine-variable rational-field solution to the protected certificate, with reported kernel replay on 4.33.1 and 4.36.0.",
+            "The mixed-degree clearing lemma maps a supplied cleared polynomial identity to a homogeneous core certificate; the linked Prove2Me verification is reported for that supporting lemma.",
+            "These are implications with missing inputs. Kernel replay is author-reported and is not an observed protected target-verification or publication receipt."
+          ],
+          "contact_and_trace_scope": [
+            "The post reports normalized trace coefficients on three sheets through the coupled nodal seed over F23[v]/(v^2-15), a characteristic-zero formula and a Lean matrix proof.",
+            "A nonzero seven-by-seven minor is reported to exclude using those three sheets alone even with arbitrary regular input differential, all eight odd-odd polynomial-exact directions and the stated rational chart corrections.",
+            "Conic/cubic residue representatives and a Bezout combination reportedly confine complementary poles to a fixed finite set on the normalized parameter curve. Boundary principal parts, normalized source matching and a global rational correction remain.",
+            "The nine-parameter model reports 115 distinct certified solutions at (r,s)=(1/10,1) and at least 440 moving coordinates after symmetry. A combination matching the target on thirteen sheets at one point fails at a nearby r+10^-14; this is not a full-component trace.",
+            "The smooth contact at (4,2) over 11 has reported single-sheet source (9,9,6), rank-48 spanning minor, and rank/dominance criteria. Its relation to the component studied over 23 is explicitly unidentified.",
+            "The marked-chart checks concern a specified complete two-parameter plane and a mod-11 seed: a single simple geometric solution, intermediate algebra rank 480, no weighted-infinity points, and a seven-by-seven residual Jacobian determinant 1. These local/slice statements do not enumerate the global moving family."
+          ],
+          "arithmetic_and_support_scope": [
+            "The author reports a nonzero Frobenius slope-two component at 11,17,23 and full 48-by-48 Cartier-matrix recovery at 11. With a vertical-divisor argument the reported exclusion concerns primitives whose fiber poles are confined to branch, zero and infinity; the contact current has additional poles.",
+            "A support/resultant strategy would compute a polynomial containing the projected swept surface and its sign translate, then solve linear numerator equations for each denominator power. The author has not recovered a usable denominator or the required numerators.",
+            "The exact rational solver and reported finite-search obstructions are described in the post. No solver was run by this monitor.",
+            "A rank-12 obstruction reportedly excludes a primitive using only the derivative in E=H(1,r,c,d) with arbitrary rational coefficients in r,E. A one-point F11 interpolation recovers dlog(F) for a smooth genus-four contact; extending it to the curve parametrizing all contacts remains open."
+          ],
+          "distinct_counts": [
+            {
+              "quantity": "Degree of the selected characteristic-zero projected swept surface",
+              "reported_value": "at least 361",
+              "evidence_reported": "65,341 physical plane monomials of total degree at most 360 independent on one branch of the smooth 11-adic component; 65,536 coefficients checked against 70 coupled contact equations",
+              "limit": "Bound concerns this selected swept surface. Other supports remain possible; this is not a universal denominator-degree bound."
+            },
+            {
+              "quantity": "Generic ratio fiber on the selected parameter curve",
+              "reported_value": "degree at least 48",
+              "limit": "A lower bound for this fiber; not the exact moving degree or the swept-surface degree. Earlier parameter-curve genus and rank-48 spanning claims concern separate quantities."
+            },
+            {
+              "quantity": "Scheme of perfect-cube contact lines on the literal coupled sextic",
+              "reported_value": "finite length 2,628 over C including multiplicities",
+              "evidence_reported": "All six Grassmannian charts exclude contained lines mod11; 60 lines meeting one Plucker hyperplane are isolated in the full Grassmannian; twelve have local length three",
+              "limit": "Counts line contacts. It does not count the moving genus-four curves or their moving degree."
+            }
+          ],
+          "remaining_inputs": [
+            "A rational current with the prescribed source X0^3 Y0^3.",
+            "Full-component trace, boundary principal parts and a closed normalized source combination.",
+            "A verified global rational correction.",
+            "A usable computed denominator and required numerator identity for the proposed resultant search.",
+            "The moving degree for the genus-four contact family and extension of one-point interpolation to the curve parametrizing all contacts."
+          ],
+          "attribution": {
+            "author": "kmehltretter82",
+            "explicit_prior_credit": [
+              "benediamond",
+              "DiamondJM",
+              "kejace",
+              "earlier contributors to discussion 120"
+            ],
+            "assistance_disclosed": "Prepared for kmehltretter82 with Codex.",
+            "history": "The parent and earlier replies already record core/suspension and chart work. Earlier credit remains historical and does not increment Hodge Lab contributions."
+          },
+          "edit_classification": "This is one newly observed reply, created 2026-11-22T18:17:17Z and last updated 2026-11-22T21:05:02Z before the current capture. The two observed snapshots contain no edit to an already observed record."
+        }
+      }
+    ],
+    "removed_records": [],
+    "edited_existing_records": [],
+    "thread_metadata_changes": [
+      {
+        "discussion": 120,
+        "fields": {
+          "updatedAt": {
+            "before": "2026-11-21T08:33:03Z",
+            "current": "2026-11-22T18:17:17Z"
+          }
+        }
+      }
+    ],
+    "upstream_head": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+    "published_acceptance_records_at_head": {
+      "four-plus-two-residual": false,
+      "symmetric-sextic-residual": false
+    },
+    "repository_observation": {
+      "path": "repository-heads-20261123T150844Z.json",
+      "sha256": "fb4be586e231467f9c3a360bf77653fbd3127571ae589a6203c1c8c4bcbd152c",
+      "retrieved_utc": "2026-11-23T15:08:44.757271+00:00",
+      "tree_complete": true
+    },
+    "raw_snapshot_files": [
+      {
+        "path": "20261122T155951Z/discussion-44.json",
+        "sha256": "f267eb6b2f9e43429176a6c5f78819212d2f9b748218dfc5b80d3a69134aa8db"
+      },
+      {
+        "path": "20261122T155951Z/discussion-55.json",
+        "sha256": "d953d432c1d06ab601f2559b085b3811a21d68c996def0252a574957274ba986"
+      },
+      {
+        "path": "20261122T155951Z/discussion-56.json",
+        "sha256": "6fb2388003ab9e943b52376f9690777ddefae76932fc5f8921a058b6ff51fbc5"
+      },
+      {
+        "path": "20261122T155951Z/discussion-111.json",
+        "sha256": "ce24c636cb95d996ffa760cb28fd35d3d9a452779bef84e427adfc7a0c00de4b"
+      },
+      {
+        "path": "20261122T155951Z/discussion-112.json",
+        "sha256": "4a3f70c2da62c5b9b6ae0596966dac16fc6a82de91b700d564c49202a06fa8a2"
+      },
+      {
+        "path": "20261122T155951Z/discussion-113.json",
+        "sha256": "f96aada19d054fc993f7e8ed6be911bd382438372da16bbad449bc2fe5345032"
+      },
+      {
+        "path": "20261122T155951Z/discussion-114.json",
+        "sha256": "ce0e7b34123766a84bda7cacb54a41719c8de6e8ace49ca6a9664def5b28ac89"
+      },
+      {
+        "path": "20261122T155951Z/discussion-115.json",
+        "sha256": "7e9a0e26362c98255801686ef4c2390061b871fb4e6fae2000646bfd247f62e1"
+      },
+      {
+        "path": "20261122T155951Z/discussion-116.json",
+        "sha256": "c7f29e5c985f0fe956d3dfd20563a0f4bc78777688b9e603a6bab6c4f2007db1"
+      },
+      {
+        "path": "20261122T155951Z/discussion-117.json",
+        "sha256": "6834e0a528b9df38fe2a160d7cbb711b237cf64a6f864a215200e45c06f75187"
+      },
+      {
+        "path": "20261122T155951Z/discussion-118.json",
+        "sha256": "feaebd45c93a7559ba6d009a0adc446ce03056e0977672f890d7bdc04c4d600e"
+      },
+      {
+        "path": "20261122T155951Z/discussion-119.json",
+        "sha256": "06a17e3829ebbe45588d32a4dd50e591509f6ddce887e012ba28607c23635ab0"
+      },
+      {
+        "path": "20261122T155951Z/discussion-120.json",
+        "sha256": "52e2e8740f651f8c20aca2b985ed0ec0f11239e4ed024b4f9bd56683905462e7"
+      },
+      {
+        "path": "20261122T155951Z/discussion-127.json",
+        "sha256": "8276743c2cbbf42a02c195336bce0d68a8b6cccd5dbff69efbd4c6737fcc6be2"
+      },
+      {
+        "path": "20261123T150845Z/discussion-44.json",
+        "sha256": "c3d6c04fc2490336e5e05c8d546a376f0c57f0e09e011463a3fcce6293c57b02"
+      },
+      {
+        "path": "20261123T150845Z/discussion-55.json",
+        "sha256": "1cc4de162054dc2a3276c14177b6643584308f1dd8361eb653efac207fb4ca02"
+      },
+      {
+        "path": "20261123T150845Z/discussion-56.json",
+        "sha256": "384746db05bcb80787667f2809dff1f36214227df3fd6840dff8b6d645c4d479"
+      },
+      {
+        "path": "20261123T150845Z/discussion-111.json",
+        "sha256": "10919db42832f99af3589368dac0c86503537e83e3b780bbd2a5d15921c39f76"
+      },
+      {
+        "path": "20261123T150845Z/discussion-112.json",
+        "sha256": "5a304fed8dcaf74b36cc6519daef33098b0a46ce9d052a07a264dfa6833c424a"
+      },
+      {
+        "path": "20261123T150845Z/discussion-113.json",
+        "sha256": "be0661e6e171201ebef9f0f70cd7d2139a986d9fc6f38337e1db089a586a06a8"
+      },
+      {
+        "path": "20261123T150845Z/discussion-114.json",
+        "sha256": "8411297cb1131cf26c0deed6dd172b4e393fa83cd68d2634d9f942da157c5960"
+      },
+      {
+        "path": "20261123T150845Z/discussion-115.json",
+        "sha256": "35cd88465dd65efe00e05623ab74831e4e24b9bd18e217cc54357bd246827616"
+      },
+      {
+        "path": "20261123T150845Z/discussion-116.json",
+        "sha256": "55dac426c48a21b8ac25180557510681ef40cb935effccaa37832686e68d3256"
+      },
+      {
+        "path": "20261123T150845Z/discussion-117.json",
+        "sha256": "f8a2193484005319e67fd442f910067aeeb7ec3c150846e1d095b676686c0e28"
+      },
+      {
+        "path": "20261123T150845Z/discussion-118.json",
+        "sha256": "930b525881f46ff9abea9a985b5102d1a3d214e9d5cfa111159af46e0e26c02b"
+      },
+      {
+        "path": "20261123T150845Z/discussion-119.json",
+        "sha256": "f9051ef1969e443ec5805f578711976632dda994fee4106736a0e14d369c38c4"
+      },
+      {
+        "path": "20261123T150845Z/discussion-120.json",
+        "sha256": "91ec3f7e49f2836489da351e60ed785fe50d9b0bc5d4a8b4bbcc75cbad260285"
+      },
+      {
+        "path": "20261123T150845Z/discussion-127.json",
+        "sha256": "67937359c6986908fb8a91a371878f52bac45239dcfb97205ed99b814067e622"
+      }
+    ],
+    "scope": "Source review only. Mathematical, modular, root-certification, rational-solver, Lean and independent kernel-replay claims remain author-reported. No linked source or attachment was fetched or executed; no proof replay, target solve verification or upstream action occurred. Only the discussion review JSON was written. Hodge Lab contribution tally unchanged."
+  },
+  "capture_files": [
+    {
+      "path": "work/discussion-monitor/inventory-review-20261123.json",
+      "sha256": "1df61001fc42ad92a6d3b4352f76cd06c387f6e080eca76c6764cc01e07fe2bd",
+      "bytes": 19720
+    },
+    {
+      "path": "work/discussion-monitor/discussion-review-20261123.json",
+      "sha256": "14d04f512aca938ac007095d3fb1e82ab0f49e89fb84e1a0bf46c96432a8a3d8",
+      "bytes": 34488
+    },
+    {
+      "path": "work/discussion-monitor/comparison-20261123T150845Z.json",
+      "sha256": "903a8817e149a676985e6687dea62427cc47b80a279683ffcd1da0ff3c175a20",
+      "bytes": 3797
+    },
+    {
+      "path": "work/discussion-monitor/run-20261123T150845Z.json",
+      "sha256": "c5e993369828f376709cd6369f3277882bd0db86e43831f512a8e2165c60b0c3",
+      "bytes": 436
+    }
+  ],
+  "evidence_storage": "Raw discussion bodies, full trees and captured source bytes are retained under work/discussion-monitor in the monitoring workspace. This public receipt preserves source identities, hashes, scope and permanent links.",
+  "executed_checks": [
+    "Complete bounded GitHub discussion collection using work/read_hodge_discussions.py through work/run_bounded_discussion_monitor.py.",
+    "Pinned repository heads and complete tree/source comparisons.",
+    "Discussion IDs, author metadata, timestamps, parent relationships, exact UTF-8 body hashes and thread metadata comparisons.",
+    "Notebook link, JSON, ledger-prefix and restricted-file publication checks."
+  ],
+  "scope": "Bounded source monitoring and notebook maintenance. Discussion mathematical claims, numerical checks and Lean/kernel replay are author-reported. No proof, mathematical reconstruction, shader benchmark or protected verifier was executed. Published acceptance remains 66 of 82 at the pinned head.",
+  "contribution_tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0,
+    "change": 0
+  },
+  "publication": {
+    "destination": "rbajaj5/hodge-lab",
+    "checkpoint": 170,
+    "upstream_mutations": [],
+    "note": "This receipt records the reviewed sources before commit. Actual notebook publication and remote readback are recorded separately in the local publication receipt."
+  }
+}
