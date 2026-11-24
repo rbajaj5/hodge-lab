@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-11-24T11:56:24.603565+00:00",
+  "historical_observation_utc": "2026-11-23T16:29:40Z",
+  "notebook_parent": "564fafb2e76e909258e169c96d9c4f256efbaea1",
+  "checkpoint": 171,
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+      "url": "https://github.com/hodge-computer/sextics/commit/a2533062401756c081b3d665358c0f3e4dbd87c2",
+      "message": "Merge pull request #274 from hodge-computer/perf/divisor-shader\n\nMake the divisor display cheap to draw, and refresh five saved views",
+      "committer_date": "2026-11-22T22:30:40Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "564fafb2e76e909258e169c96d9c4f256efbaea1",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/564fafb2e76e909258e169c96d9c4f256efbaea1",
+      "message": "Record four-plus-two contact report and rendering maintenance",
+      "committer_date": "2026-11-23T15:26:07Z"
+    }
+  },
+  "comparison": {
+    "status": "COMPARED",
+    "compared_utc": "2026-11-23T16:29:58.646366+00:00",
+    "heads": {
+      "hodge-computer/sextics": {
+        "sha": "a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "url": "https://github.com/hodge-computer/sextics/commit/a2533062401756c081b3d665358c0f3e4dbd87c2",
+        "message": "Merge pull request #274 from hodge-computer/perf/divisor-shader\n\nMake the divisor display cheap to draw, and refresh five saved views",
+        "committer_date": "2026-11-22T22:30:40Z"
+      },
+      "rbajaj5/hodge-lab": {
+        "sha": "564fafb2e76e909258e169c96d9c4f256efbaea1",
+        "url": "https://github.com/rbajaj5/hodge-lab/commit/564fafb2e76e909258e169c96d9c4f256efbaea1",
+        "message": "Record four-plus-two contact report and rendering maintenance",
+        "committer_date": "2026-11-23T15:26:07Z"
+      }
+    },
+    "repository_baseline": "repository-heads-20261123T152721Z.json",
+    "repository_head_unchanged": true,
+    "target_policy_pin_count": 383,
+    "target_policy_changes": [],
+    "discussion_baseline": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261123T152721Z",
+    "discussion_snapshot": "C:\\Users\\anaxe\\Documents\\Codex\\2026-10-16\\what-is-hodge-theory-by-the\\work\\discussion-monitor\\20261123T162940Z",
+    "coverage": [
+      {
+        "discussion": 44,
+        "comments": 16,
+        "replies": 7,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 55,
+        "comments": 2,
+        "replies": 5,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 56,
+        "comments": 4,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 111,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 112,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 113,
+        "comments": 1,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 114,
+        "comments": 1,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 115,
+        "comments": 2,
+        "replies": 1,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 116,
+        "comments": 3,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 117,
+        "comments": 4,
+        "replies": 2,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 118,
+        "comments": 2,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 119,
+        "comments": 0,
+        "replies": 0,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 120,
+        "comments": 7,
+        "replies": 4,
+        "all_pages_fetched": true
+      },
+      {
+        "discussion": 127,
+        "comments": 9,
+        "replies": 4,
+        "all_pages_fetched": true
+      }
+    ],
+    "changed_records": [
+      {
+        "discussion": 120,
+        "before": null,
+        "after": {
+          "id": "DC_kwDOVLOOJc4BLqoY",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+          "createdAt": "2026-11-23T16:07:33Z",
+          "updatedAt": "2026-11-23T16:13:28Z",
+          "author": {
+            "login": "Robertboy18",
+            "name": "Robert Joseph"
+          },
+          "body_sha256": "008f210745eb5ccafb5730c22359863626e06b83cdd0ef3edd8e75b4eab2d30e"
+        }
+      },
+      {
+        "discussion": 120,
+        "before": null,
+        "after": {
+          "id": "DC_kwDOVLOOJc4BLqv0",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835892",
+          "createdAt": "2026-11-23T16:27:52Z",
+          "updatedAt": "2026-11-23T16:27:52Z",
+          "author": {
+            "login": "benediamond",
+            "name": "Benjamin Diamond"
+          },
+          "body_sha256": "f65aa0f684f51444fdc6efb6847a283fa78658aef5be226e86c3b5a328be703a"
+        }
+      }
+    ],
+    "metadata_changes": [
+      {
+        "discussion": 120,
+        "field": "updatedAt",
+        "before": "2026-11-22T18:17:17Z",
+        "after": "2026-11-23T16:27:52Z"
+      }
+    ],
+    "scope": "Read-only monitoring; no mathematical replay or publication."
+  },
+  "new_records_with_parent": [
+    {
+      "id": "DC_kwDOVLOOJc4BLqoY",
+      "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+      "createdAt": "2026-11-23T16:07:33Z",
+      "updatedAt": "2026-11-23T16:13:28Z",
+      "author": {
+        "login": "Robertboy18",
+        "name": "Robert Joseph"
+      },
+      "body_sha256": "008f210745eb5ccafb5730c22359863626e06b83cdd0ef3edd8e75b4eab2d30e",
+      "parent": null
+    },
+    {
+      "id": "DC_kwDOVLOOJc4BLqv0",
+      "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835892",
+      "createdAt": "2026-11-23T16:27:52Z",
+      "updatedAt": "2026-11-23T16:27:52Z",
+      "author": {
+        "login": "benediamond",
+        "name": "Benjamin Diamond"
+      },
+      "body_sha256": "f65aa0f684f51444fdc6efb6847a283fa78658aef5be226e86c3b5a328be703a",
+      "parent": {
+        "id": "DC_kwDOVLOOJc4BLqoY",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416"
+      }
+    }
+  ],
+  "claims_scope": "Robert Joseph reported conditional degree-six restrictions; no general nonexistence, independent review, kernel replay or accepted submission established by this monitor. The bounds44/36 concern deck-nontrivial H1,0 of a resolution;48 concerns sigma-odd H2,1(T).",
+  "evidence_availability_at_observation": "Archive named but not linked. Direct reply from benediamond requested missing uploads. This historical snapshot predates the subsequent edit and absent reply; see checkpoint172.",
+  "published_status": "This observation was drafted before interruption and is first published with checkpoint172; not a separate prior notebook publication.",
+  "captures": [
+    {
+      "path": "work/discussion-monitor/repository-heads-20261123T162939Z.json",
+      "sha256": "ec0d8fa53031efa05112304c7fc9c77072d623d270b1ad361149d78b10d50af0"
+    },
+    {
+      "path": "work/discussion-monitor/comparison-20261123T162940Z.json",
+      "sha256": "549dc13ede4e290337834672a6070ee92b17da35590ec94bb335ab7246a3862c"
+    },
+    {
+      "path": "work/discussion-monitor/20261123T162940Z/manifest.json",
+      "sha256": "04a2cc0716949bf0e3f8551299c017d284ad3f0f8ff224d3c459aba95ef89708"
+    },
+    {
+      "path": "work/discussion-monitor/20261123T162940Z/discussion-120.json",
+      "sha256": "d39d8e081d183481301b3b572141d816778d6dc96b60a6871d492e8d246bf6e7"
+    }
+  ],
+  "tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0
+  },
+  "upstream_actions": [],
+  "scope": "Source collection/comparison only; no proof verification."
+}
