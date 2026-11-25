@@ -1,0 +1,1678 @@
+{
+  "schema_version": 1,
+  "automation_id": "hodge-discussion-watch",
+  "heartbeat_trigger_utc": "2026-11-25T00:27:34.710Z",
+  "recorded_utc": "2026-11-25T00:42:58.778324+00:00",
+  "source_observed_utc": "2026-11-25T00:38:16.632612+00:00",
+  "heads": {
+    "hodge-computer/sextics": {
+      "sha": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+      "url": "https://github.com/hodge-computer/sextics/commit/d22d25556ed2de562945e3fb78d1b1cec489f367",
+      "message": "Merge pull request #279 from hodge-computer/docs/frontier-obstructions-sweep\n\nDocument §3D.8 annihilators, weighted-Fano extension counts, and open-instance obstructions",
+      "committer_date": "2026-11-24T20:45:49Z"
+    },
+    "rbajaj5/hodge-lab": {
+      "sha": "c1b1b86ccabd152ec19611034fff14b59f5866b8",
+      "url": "https://github.com/rbajaj5/hodge-lab/commit/c1b1b86ccabd152ec19611034fff14b59f5866b8",
+      "message": "Record symmetric residual acceptance and discussion corrections",
+      "committer_date": "2026-11-24T12:01:24Z"
+    }
+  },
+  "repository_baseline": "repository-heads-20261124T120204Z.json",
+  "upstream_before": "79defa555452e16e3125da280ac2c0103a85a72d",
+  "upstream_after": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+  "notebook_parent": "c1b1b86ccabd152ec19611034fff14b59f5866b8",
+  "repository_review": {
+    "schema_version": 1,
+    "reviewed_utc": "2026-11-25T00:41:17.219702+00:00",
+    "before": "79defa555452e16e3125da280ac2c0103a85a72d",
+    "after": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+    "inventory": {
+      "complete_trees": true,
+      "leaf_paths_before": 1486,
+      "leaf_paths_after": 1486,
+      "commits": 7,
+      "changed_paths": 17,
+      "added": 0,
+      "deleted": 0,
+      "modified": 17,
+      "path_blob_delta": [
+        {
+          "path": "data/cycle-q2/why.md",
+          "before": {
+            "sha": "caf13e4b06a2ce22db1549e0b4c6c867871d6afe",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "9c3372c3cac82380720448ddcf3b4aab0a71b43c",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/cyclic-triple-residual/why.md",
+          "before": {
+            "sha": "b1870c93fec846a772376f7a86b4ceb453559297",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "d0bfcd5159f4f7216973a227d06f144277c8cad6",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/eight-plane-configuration/why.md",
+          "before": {
+            "sha": "97c2dfe2e05c22c13eef746046c615313e680fe2",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "b4831008b9ed902d4a20282544881da5382084e0",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/four-plus-two-residual/why.md",
+          "before": {
+            "sha": "de5b5fec31f817c0389744d00acf7c086c1b078e",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "2d35b616af21042691c1f820a7457e90b246323c",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/klein-coupled-character/why.md",
+          "before": {
+            "sha": "171197a2a2ac545d8004e799a97f3db2e84e74cf",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "8983256c303a368c958c430b21e354fc5790d8ff",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/off-paired/why.md",
+          "before": {
+            "sha": "d6b99b05d6019b2f1cd936d87a6e78483a714aaf",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "4abe8fb9fb53c424b8d429a7fc051aa4c709637f",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/one-reflection-skew/why.md",
+          "before": {
+            "sha": "1719971cc503ce650a8972b887bdb3b8a14bd526",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "9ff1c07f75ce1076cedb07a478a980981eecaa54",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/quadratic-cubic-pullback/why.md",
+          "before": {
+            "sha": "fa17efb4d135ea792824961cd519d1048b2a5274",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "dad19131e3422c05cd460c8e8ab1ede26e5ed868",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/quadric-contact-residual/why.md",
+          "before": {
+            "sha": "bd7f2eb07038f8e346faa04e2c96433ae649d230",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "e1f66c0520946543492520a2cd1e28d488de452a",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/reflection-coupled-residual/why.md",
+          "before": {
+            "sha": "3bdd5001b504b7fdd4c282303417c207dd5f5c71",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "578efab8db90074d3e4afe63e92af37815f6deb9",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/symmetric-sextic-residual/CoverAlgebra.lean",
+          "before": {
+            "sha": "a4e4e05af766dc501b7cae03d864439861f2ce05",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "39b041b6d599a01cce7082d710357bdf3c7ad8dd",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/symmetric-sextic-residual/CoverResidue.lean",
+          "before": {
+            "sha": "6703eec7ec97e481b5eda92cc5e3c855b6ac89b2",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "5447b172d3c23e2ab0ef07173c8cd0f2c01f9cab",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/symmetric-sextic-residual/LocalResidueInf.lean",
+          "before": {
+            "sha": "c0133a00cdd588c3e4ffd545f2065a1674715ff0",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "1b2605d3740c819f75bc75d89ab43874265f58e7",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "data/symmetric-sextic-residual/LocalResidueU0.lean",
+          "before": {
+            "sha": "a2082e76b0414e4e3a208f4249f1e335541dbe86",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "a117cb6e51eef699d88bdc14fa7eac047fef01ab",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "docs/03d-hodge-loci.md",
+          "before": {
+            "sha": "dd735cae65657ec8c7e79d5864bfefb1536e0aeb",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "cd2f5da53c291f9884200a4df403ff6ac401872d",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "docs/04-known-locus-and-frontier.md",
+          "before": {
+            "sha": "a6180418559ec29164bd4f6043728f3950052977",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "57d02f7f8ecdaddf2fa5c06316851356b244f48f",
+            "mode": "100644",
+            "type": "blob"
+          }
+        },
+        {
+          "path": "scripts/verify-extension-dimensions.py",
+          "before": {
+            "sha": "c57fbb99ed8fe1bdc49244a19b71efeee0b22442",
+            "mode": "100644",
+            "type": "blob"
+          },
+          "after": {
+            "sha": "23cd92bddb8690b81c7a30f3c22d01a2113bc2df",
+            "mode": "100644",
+            "type": "blob"
+          }
+        }
+      ],
+      "record_counts": {
+        "instance.rec": {
+          "before": 82,
+          "after": 82,
+          "changed": []
+        },
+        "acceptance.json": {
+          "before": 67,
+          "after": 67,
+          "changed": []
+        },
+        "proof.json": {
+          "before": 67,
+          "after": 67,
+          "changed": []
+        },
+        "solution.md": {
+          "before": 67,
+          "after": 67,
+          "changed": []
+        },
+        "witness.json": {
+          "before": 41,
+          "after": 41,
+          "changed": []
+        },
+        "provenance.json": {
+          "before": 82,
+          "after": 82,
+          "changed": []
+        },
+        "why.md": {
+          "before": 82,
+          "after": 82,
+          "changed": [
+            "data/cycle-q2/why.md",
+            "data/cyclic-triple-residual/why.md",
+            "data/eight-plane-configuration/why.md",
+            "data/four-plus-two-residual/why.md",
+            "data/klein-coupled-character/why.md",
+            "data/off-paired/why.md",
+            "data/one-reflection-skew/why.md",
+            "data/quadratic-cubic-pullback/why.md",
+            "data/quadric-contact-residual/why.md",
+            "data/reflection-coupled-residual/why.md"
+          ]
+        }
+      },
+      "catalogue": {
+        "targets": 82,
+        "accepted": 67,
+        "without_acceptance": 15
+      },
+      "policy_pins": {
+        "CONTRIBUTING.md": {
+          "before": "2d19db6b025cea6df526ccf1c5543be717a906e8",
+          "after": "2d19db6b025cea6df526ccf1c5543be717a906e8"
+        },
+        "MAINTAINING.md": {
+          "before": "a0ca05c91a1605fd8ee3b4fef8a07fa3163ff1db",
+          "after": "a0ca05c91a1605fd8ee3b4fef8a07fa3163ff1db"
+        },
+        ".github/solve-policy.json": {
+          "before": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83",
+          "after": "e50eb7fa890266ae5c3ce9ac167eb73b109cfe83"
+        },
+        ".github/PULL_REQUEST_TEMPLATE.md": {
+          "before": "80c4f349a1ab00ea593256bd57e908a159ae12c7",
+          "after": "80c4f349a1ab00ea593256bd57e908a159ae12c7"
+        },
+        "formal/README.md": {
+          "before": "e7d1c2026db922ab1029835799df288ac73663e7",
+          "after": "e7d1c2026db922ab1029835799df288ac73663e7"
+        }
+      },
+      "all_formal_and_workflow_sources_unchanged": true,
+      "conclusion": "All82fixedinstance records,67acceptance/proof manifests,67solution explanations,41witnesses and82provenance records are unchanged. Ten why.md explanations changed and are reviewed separately. No acceptance or credit change."
+    },
+    "pr277": {
+      "url": "https://github.com/hodge-computer/sextics/pull/277",
+      "author": "benediamond",
+      "title": "Clean up symmetric-sextic-residual imports, dead lets, calc blocks, and elaboration traps",
+      "merged_at": "2026-11-24T16:44:05Z",
+      "head": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+      "merge_commit": "3ab621d29d76f6a7176bbd537aa2afa9ad1745f6",
+      "classification": "Maintenance of four already-accepted symmetric-sextic-residual Lean files: import dependencies, helper factoring, dead code removal and elaboration performance. The PR reports no change to existing theorem statements or shared library modules. This monitor did not independently verify theorem equivalence.",
+      "source_review": [
+        {
+          "file": "CoverAlgebra.lean",
+          "summary": "Drops unused SheetCalculus import/open, replaces three congr1 uses with explicit congrArg and clears local definitions before Sylvester valuation reasoning."
+        },
+        {
+          "file": "CoverResidue.lean",
+          "summary": "Adds direct SheetCalculus import after removing inherited dependency from CoverAlgebra."
+        },
+        {
+          "file": "LocalResidueInf.lean",
+          "summary": "Replaces four rfl proof arguments with ring proofs and clears values before a large change expression."
+        },
+        {
+          "file": "LocalResidueU0.lean",
+          "summary": "Adds two private polymorphic algebra/valuation helpers; simplifies calc blocks, removes unused lets and parameters, shares repeated expressions, and uses clear_value to reduce elaboration work."
+        }
+      ],
+      "author_reported_performance": {
+        "lean": "4.36.0",
+        "jobs": 2,
+        "four_module_seconds_before": 1490.6,
+        "four_module_seconds_after": 914.9,
+        "reduction_percent": 38.6,
+        "scope": "Local timings reported in PR body, not independently benchmarked here."
+      }
+    },
+    "ci": {
+      "exact_pr_head": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+      "tested_candidate_merge": "6bbfe3d37e6acf3ebbe4c25c004b1026e0f3f2d0",
+      "tested_candidate_base": "79defa555452e16e3125da280ac2c0103a85a72d",
+      "actual_final_merge": "3ab621d29d76f6a7176bbd537aa2afa9ad1745f6",
+      "records": [
+        {
+          "id": 138610184099,
+          "name": "publish",
+          "head_sha": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/45440563181/job/138610184099",
+          "started_at": "2026-11-24T16:44:14Z",
+          "completed_at": "2026-11-24T16:44:34Z"
+        },
+        {
+          "id": 138610144073,
+          "name": "Protected proposal verification",
+          "head_sha": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/45440551879/job/138610144073",
+          "started_at": "2026-11-24T16:44:11Z",
+          "completed_at": "2026-11-24T16:44:21Z"
+        },
+        {
+          "id": 138592251743,
+          "name": "Lean / symmetric-sextic-residual",
+          "head_sha": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/45434693789/job/138592251743",
+          "started_at": "2026-11-24T16:18:22Z",
+          "completed_at": "2026-11-24T16:42:53Z"
+        },
+        {
+          "id": 138589730352,
+          "name": "Build shared Lean library",
+          "head_sha": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/45434693789/job/138589730352",
+          "started_at": "2026-11-24T16:14:48Z",
+          "completed_at": "2026-11-24T16:18:19Z"
+        },
+        {
+          "id": 138589212155,
+          "name": "Protected proposal verification",
+          "head_sha": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+          "status": "completed",
+          "conclusion": "skipped",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/45434693608/job/138589212155",
+          "started_at": "2026-11-24T16:14:00Z",
+          "completed_at": "2026-11-24T16:13:59Z"
+        },
+        {
+          "id": 138589209773,
+          "name": "build",
+          "head_sha": "26a7bf824025a806c87bd5769cda71c41ab8f7c4",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/hodge-computer/sextics/actions/runs/45434693789/job/138589209773",
+          "started_at": "2026-11-24T16:14:02Z",
+          "completed_at": "2026-11-24T16:14:44Z"
+        }
+      ],
+      "accepted_application_replay": {
+        "job": 138592251743,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/45434693789/job/138592251743",
+        "conclusion": "success",
+        "observed_log_results": [
+          "Candidate merge checkout6bbfe3d confirmed in fetch and HEAD logs.",
+          "kernel-HodgeChecked passed in3.8s.",
+          "theorem-audit passed in23.5s.",
+          "Replayed0shared modules and checked1accepted application."
+        ],
+        "scope": "Existing GitHub Repository build evidence for the already-accepted application at the PR candidate merge. No local replay performed."
+      },
+      "separate_protected_check": {
+        "job": 138610144073,
+        "url": "https://github.com/hodge-computer/sextics/actions/runs/45440551879/job/138610144073",
+        "conclusion": "failure",
+        "started_at": "2026-11-24T16:44:11Z",
+        "classification": "Post-merge open-PR/context guard failure before Lean",
+        "evidence": "Traceback line4 is the assertion requiring PR state open and correct base repository; PR277 was already merged at16:44:05Z. Environment marks CONTEXT failure and STRUCTURE,EXPLANATION,PROOF,FRESHNESS skipped.",
+        "scope": "No proof check ran in this failed workflow. It does not invalidate the prior successful accepted-application replay or change published acceptance. No rerun attempted."
+      }
+    },
+    "source_pins": [
+      {
+        "path": "data/symmetric-sextic-residual/CoverAlgebra.lean",
+        "blob": "39b041b6d599a01cce7082d710357bdf3c7ad8dd",
+        "sha256": "a3834a4c9d8a705a3d5c54111bfb4511f2133a8247541a50771dfb20f3e0a5fb",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/symmetric-sextic-residual/CoverAlgebra.lean"
+      },
+      {
+        "path": "data/symmetric-sextic-residual/CoverResidue.lean",
+        "blob": "5447b172d3c23e2ab0ef07173c8cd0f2c01f9cab",
+        "sha256": "be4df4243627616f1584e1569744344a97d587025cf97d28b0321ade1c45ca91",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/symmetric-sextic-residual/CoverResidue.lean"
+      },
+      {
+        "path": "data/symmetric-sextic-residual/LocalResidueInf.lean",
+        "blob": "1b2605d3740c819f75bc75d89ab43874265f58e7",
+        "sha256": "85a19243158fae0b5adb083ee5681cd84033f3bccd17e94b1760d51a03f7154c",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/symmetric-sextic-residual/LocalResidueInf.lean"
+      },
+      {
+        "path": "data/symmetric-sextic-residual/LocalResidueU0.lean",
+        "blob": "a117cb6e51eef699d88bdc14fa7eac047fef01ab",
+        "sha256": "87e1aa420d7764816085b5a32bf565b686eaf79315013b0f5a467ff0a07e5b3f",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/symmetric-sextic-residual/LocalResidueU0.lean"
+      }
+    ],
+    "evidence_files": [
+      {
+        "path": "work/discussion-monitor/repository-heads-20261125T003816Z.json",
+        "sha256": "b7d87c0ed34612831279b49f7ad18e78df9dcc02fe519ac9a864f19fb8fb29cc",
+        "bytes": 207871
+      },
+      {
+        "path": "work/discussion-monitor/acceptance-policy-source-20261124.json",
+        "sha256": "0698383e1f7c1470ea13283989b4117d02322f26bb41eced667fe0b7aa0548ec",
+        "bytes": 1337207
+      },
+      {
+        "path": "work/discussion-monitor/inventory-ci-source-20261125.json",
+        "sha256": "d146713b28639f26991bc72d91d244e613a870d52f842660027a4aedfcec191d",
+        "bytes": 1620009
+      },
+      {
+        "path": "work/discussion-monitor/inventory-ci-logs-20261125.json",
+        "sha256": "7060c851e1710cb3d078183823cf905abe6f7eb42487b59977965884fb7bb4f0",
+        "bytes": 44150
+      }
+    ],
+    "scope": "Bounded source, full-tree and existing CI metadata/log review only. No mathematical proof verification, kernel replay, build, test, numerical benchmark or upstream mutation."
+  },
+  "book_review": {
+    "reviewed_utc": "2026-11-25T00:41:40.549833+00:00",
+    "before": "79defa555452e16e3125da280ac2c0103a85a72d",
+    "after": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+    "scope": "Source monitoring only: all mathematical and computational statements below are upstream claims read in context. No script execution, proof reconstruction, verifier run, Lean build or kernel replay.",
+    "source_count": 26,
+    "sources": [
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/cycle-q2/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/cycle-q2/why.md",
+        "blob_sha": "caf13e4b06a2ce22db1549e0b4c6c867871d6afe",
+        "body_sha256": "d7e8612fac673b1500a539e4ce7083ec46393312941ad6a07b7b34a0c52ba27c",
+        "bytes": 3842
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/cyclic-triple-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/cyclic-triple-residual/why.md",
+        "blob_sha": "b1870c93fec846a772376f7a86b4ceb453559297",
+        "body_sha256": "48106dca10784a1c5a9c6d2b3f5b0e7dba26e8ebd1b10f25e2d01755c6524198",
+        "bytes": 2539
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/eight-plane-configuration/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/eight-plane-configuration/why.md",
+        "blob_sha": "97c2dfe2e05c22c13eef746046c615313e680fe2",
+        "body_sha256": "46ebe6f1f101fc33e813e58e41e53e09d8a1b922a783e740c9d91a732b63ef91",
+        "bytes": 1860
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/four-plus-two-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/four-plus-two-residual/why.md",
+        "blob_sha": "de5b5fec31f817c0389744d00acf7c086c1b078e",
+        "body_sha256": "48dc45618edb04604152fd3e72780ebeaadc36211bf0033538f6d65fb07a682f",
+        "bytes": 1796
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/klein-coupled-character/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/klein-coupled-character/why.md",
+        "blob_sha": "171197a2a2ac545d8004e799a97f3db2e84e74cf",
+        "body_sha256": "3a6bb49ccc67493332336cd72fbd524d0e7b5eacc59913d110a23f2535e88c82",
+        "bytes": 2207
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/off-paired/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/off-paired/why.md",
+        "blob_sha": "d6b99b05d6019b2f1cd936d87a6e78483a714aaf",
+        "body_sha256": "7c6a715f2583214b4543d1f979a6f2e9122f400155c565e97d8998e59bf0d54e",
+        "bytes": 2813
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/one-reflection-skew/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/one-reflection-skew/why.md",
+        "blob_sha": "1719971cc503ce650a8972b887bdb3b8a14bd526",
+        "body_sha256": "d081a12db0ebff914ca41de32de4ea9cd286f1c30e6b9d321b760a3dd424fbae",
+        "bytes": 2920
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/quadratic-cubic-pullback/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/quadratic-cubic-pullback/why.md",
+        "blob_sha": "fa17efb4d135ea792824961cd519d1048b2a5274",
+        "body_sha256": "4e6c19ce8f62dae8061bc831c27cc7fa62f2a3e848311f2d9f4afbf36ab878ad",
+        "bytes": 2452
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/quadric-contact-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/quadric-contact-residual/why.md",
+        "blob_sha": "bd7f2eb07038f8e346faa04e2c96433ae649d230",
+        "body_sha256": "001f88afb13189828483b7f8485cfe0554683b67d1adb28ae93edd6372bc2a2c",
+        "bytes": 3386
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "data/reflection-coupled-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/data/reflection-coupled-residual/why.md",
+        "blob_sha": "3bdd5001b504b7fdd4c282303417c207dd5f5c71",
+        "body_sha256": "08f008884a2ae1a1a3dcf797ea430cd8f07cd192b55b138f3e5f5393dc4ac60a",
+        "bytes": 2177
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "docs/03d-hodge-loci.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/docs/03d-hodge-loci.md",
+        "blob_sha": "dd735cae65657ec8c7e79d5864bfefb1536e0aeb",
+        "body_sha256": "2f885fc97c6dbf687856dc6b10d046d00ff47345ecf4c9dd1920a5b6b92bea51",
+        "bytes": 117249
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "docs/04-known-locus-and-frontier.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/docs/04-known-locus-and-frontier.md",
+        "blob_sha": "a6180418559ec29164bd4f6043728f3950052977",
+        "body_sha256": "9a20c2175aa94d2e4d3b03aa05412a0c1ed860fb044ae9f8f9c205031b13e0c1",
+        "bytes": 71008
+      },
+      {
+        "ref": "79defa555452e16e3125da280ac2c0103a85a72d",
+        "path": "scripts/verify-extension-dimensions.py",
+        "url": "https://github.com/hodge-computer/sextics/blob/79defa555452e16e3125da280ac2c0103a85a72d/scripts/verify-extension-dimensions.py",
+        "blob_sha": "c57fbb99ed8fe1bdc49244a19b71efeee0b22442",
+        "body_sha256": "e776f2a6ad4fc2cf479c0e08f027de151edd0215440cbb2c03e89bb8b432630a",
+        "bytes": 4286
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/cycle-q2/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/cycle-q2/why.md",
+        "blob_sha": "9c3372c3cac82380720448ddcf3b4aab0a71b43c",
+        "body_sha256": "ade65abb1168cf788a509b273868ab4e003a65f06ff05a6c8e327e80bf20601c",
+        "bytes": 5434
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/cyclic-triple-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/cyclic-triple-residual/why.md",
+        "blob_sha": "d0bfcd5159f4f7216973a227d06f144277c8cad6",
+        "body_sha256": "291b0c6f8755b3ab4ef0bed64365aa67ef9bc6899efc52ce5b3dac915023b39c",
+        "bytes": 2813
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/eight-plane-configuration/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/eight-plane-configuration/why.md",
+        "blob_sha": "b4831008b9ed902d4a20282544881da5382084e0",
+        "body_sha256": "5465c0ac8f30a897dca45daec4332648b8f620327128d7104692624166499429",
+        "bytes": 2400
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/four-plus-two-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/four-plus-two-residual/why.md",
+        "blob_sha": "2d35b616af21042691c1f820a7457e90b246323c",
+        "body_sha256": "729a5c5b064679182c9b21c9589a21b5f57bd3530fc670b549e7cbe0a4385980",
+        "bytes": 3067
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/klein-coupled-character/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/klein-coupled-character/why.md",
+        "blob_sha": "8983256c303a368c958c430b21e354fc5790d8ff",
+        "body_sha256": "8c4e5c4372692bdd8abe3280a49478ea7c0e01e76da83a972e94bb4c7cd5c7fe",
+        "bytes": 2357
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/off-paired/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/off-paired/why.md",
+        "blob_sha": "4abe8fb9fb53c424b8d429a7fc051aa4c709637f",
+        "body_sha256": "9e24947c9a5cec4f5bf7f0943c3d0b460d87bfb9a6bbbb5fea5c459684286d52",
+        "bytes": 4233
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/one-reflection-skew/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/one-reflection-skew/why.md",
+        "blob_sha": "9ff1c07f75ce1076cedb07a478a980981eecaa54",
+        "body_sha256": "645b857ddff20f9764012c5e25755c192e87c024ff990ab14745b6d80ac2689d",
+        "bytes": 3706
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/quadratic-cubic-pullback/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/quadratic-cubic-pullback/why.md",
+        "blob_sha": "dad19131e3422c05cd460c8e8ab1ede26e5ed868",
+        "body_sha256": "cf2ee667551e705a3559dc6c9a177bd033422cdb71d26cf6d8a06a8f97f6b8c5",
+        "bytes": 3061
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/quadric-contact-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/quadric-contact-residual/why.md",
+        "blob_sha": "e1f66c0520946543492520a2cd1e28d488de452a",
+        "body_sha256": "5a1dcc2cb822ee9cee91b4e10de3543b1c1aa92f710b640df913a58ac621b36f",
+        "bytes": 4653
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "data/reflection-coupled-residual/why.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/reflection-coupled-residual/why.md",
+        "blob_sha": "578efab8db90074d3e4afe63e92af37815f6deb9",
+        "body_sha256": "cf340efb19a5959ef2daee9b2b491bc9158b24acd3728a13b0739134bebfd898",
+        "bytes": 2426
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "docs/03d-hodge-loci.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/docs/03d-hodge-loci.md",
+        "blob_sha": "cd2f5da53c291f9884200a4df403ff6ac401872d",
+        "body_sha256": "a82d1cd8da652fc540a3efbc9d2153e4d1f9527a3de68a93f120671da6d66717",
+        "bytes": 119161
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "docs/04-known-locus-and-frontier.md",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/docs/04-known-locus-and-frontier.md",
+        "blob_sha": "57d02f7f8ecdaddf2fa5c06316851356b244f48f",
+        "body_sha256": "e18dd97fd3d6607ff70fe1d42bb8003fec9855fd5b61c7c71b9aaef6ca18c101",
+        "bytes": 72279
+      },
+      {
+        "ref": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "path": "scripts/verify-extension-dimensions.py",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/scripts/verify-extension-dimensions.py",
+        "blob_sha": "23cd92bddb8690b81c7a30f3c22d01a2113bc2df",
+        "body_sha256": "bc9709c4a083908203cf49992273d4eb4896d312cc5ca8ce845f3dba07739d59",
+        "bytes": 6633
+      }
+    ],
+    "book_changes": {
+      "section_3d8": {
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/docs/03d-hodge-loci.md#3d8-split-quadric-sections-and-a-paired-exchange-fourfold-family",
+        "change": "Adds a remark on split-section degree and Jacobian annihilators; no prior theorem text or finite-results table is removed.",
+        "hypotheses": "The same residue argument is stated for Fprime=F-R q_s q_minus_s, degree d in {1,2,3}, after resolving the common base locus. The automatic annihilators require the specifically stated symmetries.",
+        "d1": "If Fprime retains separate sign changes of the two linear forms, the quartics partial_delta0(Fprime)/(2delta0) and partial_delta1(Fprime)/(2delta1) give two directions whose product with delta0delta1 lies in J(Fprime). They lower the effective moving dimension by two and do not contribute a nonzero two-form.",
+        "d3": "With X2/Y2 exchange and the specified order-three action, and b=X2^3-Y2^3 fixed up to scale, (X2 partial_X2 - Y2 partial_Y2)Fprime is divisible by b. The resulting symmetric cubic H3 has bH3 in J(Fprime), absorbing one dot-a direction.",
+        "d2": "The source says degree-five partials create no corresponding annihilator in S2; the existing two-dimensional kernel can produce the nonzero pairing checked in the original seed.",
+        "interpretation": "A raw kernel/parameter surplus is insufficient if its directions lie in the Jacobian-annihilator subspace. This qualification limits the d1/d3 variants; it does not retract the d2 paired-exchange support result. No numerical raw surplus beyond the stated two/one lost directions is invented here."
+      },
+      "section_4_6": {
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/docs/04-known-locus-and-frontier.md",
+        "change": "Adds moving weighted-Fano extension deficits to the existing fixed-section density-map obstruction.",
+        "hyperplane_double_cover": {
+          "source_notation": "W6 in P(1^5,3), index two",
+          "h31": 70,
+          "h22": 382,
+          "parameters": 40,
+          "tau_cases": [
+            {
+              "parameters": 18,
+              "h31_tau": 32
+            },
+            {
+              "parameters": 21,
+              "h31_tau": 38
+            }
+          ]
+        },
+        "quadric_double_cover": {
+          "source_notation": "W(2,6) in P(1^6,3), index one",
+          "h31": 196,
+          "h22": 912,
+          "parameters": 70,
+          "parameter_split": "20+50, modulo Q2 S1",
+          "tau_cases": [
+            {
+              "quadric_parity": "even",
+              "parameters": 36,
+              "h31_tau": 98
+            },
+            {
+              "quadric_parity": "odd",
+              "parameters": 33,
+              "h31_tau": 98
+            }
+          ]
+        },
+        "scope": "These dimension deficits concern the proposed full Hodge-bundle submersion/dense-rational-Hodge-class mechanism for the specified extensions of a general even sextic. They do not obstruct divisor support from independently supplied cycles, smaller subvariations or different geometry.",
+        "heading": "## 4.6 Quotient representations and extension obstructions"
+      }
+    },
+    "why_notes": {
+      "cycle-q2": {
+        "change": "Adds the order-72 diagonal character sector, order-24 invariant subgroup, toric quotient limitations and a surviving-sign refinement of the threefold section count.",
+        "reported_counts": [
+          "G72 sector Hodge type (6,26,6), with six-dimensional H^(3,1).",
+          "G24 quotient Newton polytope minimum lattice width three; ten width-three directions yield no zero-interior surface fibration.",
+          "G72 unique zero-interior surface fibration recovers cycle-three geometry, but target cube-root twist lifts to a non-uniruled elliptic surface with chi(O)=3 and target-character p_g=1.",
+          "Retaining s0,s1 with gamma reduces fiber h^(2,1) from33 to18; section space dimension5 with n-c=5-1-3=1."
+        ],
+        "scope": "Existing support/certificate existence remains asserted for this exact q=2 target under its paired-sign/order-three symmetry. Moving curves away from the Fermat seed and an explicit primitive remain non-explicit. This is not a newly accepted solve.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/cycle-q2/why.md"
+      },
+      "four-plus-two-residual": {
+        "change": "Explains why the newly accepted symmetric-sextic moving-line construction does not automatically transfer to its less symmetric core, and states the exact suspension equation.",
+        "reported_counts": [
+          "Core projective diagonal symmetry only sigma:(Y0,Y1)->(-Y0,-Y1).",
+          "Binary boundary sextics irreducible over Q with S6 Galois group.",
+          "Anti-invariant H3(T,Q) dimension96, h^(2,1)=48; a curve correspondence spanning it needs parameter-curve genus at least48."
+        ],
+        "reduction": "The source states 2A-2dH(v)+3H div(v)=0 with no F^2 remainder for the displayed suspension lift.",
+        "scope": "Existing two-reflection support gives existence. Additional symmetry used by symmetric-sextic-residual is absent; an explicit rational primitive remains to be supplied. The genus bound is conditional on spanning the specified full sector, not a universal denominator obstruction.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/four-plus-two-residual/why.md"
+      },
+      "quadric-contact-residual": {
+        "change": "Adds a comparison between its conic-bundle reduction and the symmetric-sextic cubic-surface mechanism.",
+        "reported_counts": [
+          "Cross and linear terms remain in the two fiber coordinates.",
+          "Completing the square generically gives a quintic base surface; a specified two-parameter discriminant-factor slice gives a three-nodal quartic K3 surface, not a cubic surface."
+        ],
+        "scope": "The paired-exchange theorem still supplies nonconstructive existence under its stated invariances. Neither cycles nor denominator are produced by that theorem; explicit certificate and formal target proof remain outstanding. New construction limitations do not revoke existence.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/quadric-contact-residual/why.md"
+      },
+      "off-paired": {
+        "change": "Records additional surviving diagonal and exchange symmetry and explains why it does not serve the selected sector.",
+        "reported_counts": [
+          "G36 target-fixed primitive Hodge numbers (0,22,50,22,0).",
+          "Adding X2/Y2 exchange gives nonabelian G72 with six reflections; all six act negatively on the selected sector."
+        ],
+        "scope": "Reflection quotients serve complementary sectors. An order-six quotient is a double cover with weighted-CY3-pencil structure whose holomorphic form is fixed by residual order-three symmetry. Only one pair exchange survives, so the two-exchange §3D.8 theorem does not apply directly; no unrestricted nonexistence conclusion.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/off-paired/why.md"
+      },
+      "one-reflection-skew": {
+        "change": "Adds exact surviving G24 character information and explains the obstruction to this fiberwise Hodge-locus route.",
+        "reported_counts": [
+          "G24 generated by tau, s1 and Y2->zeta6 Y2.",
+          "Target character (1,1,zeta6); complex Hodge numbers (0,44,77,3,0), rational conjugate pair (0,47,154,47,0)."
+        ],
+        "scope": "The paired-sign pencil gives weighted CY3 fibers whose holomorphic three-form has the same (1,zeta6) character as the target. This puts that target outside the stated Chapter3D fiberwise criteria. It is a boundary of those methods, not a nonexistence result for the unrestricted certificate.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/one-reflection-skew/why.md"
+      },
+      "klein-coupled-character": {
+        "change": "Adds the nontrivial target-character Hodge dimensions to the existing invariant-sector/target-character distinction.",
+        "reported_counts": [
+          "Order14 diagonal-group target complex eigenspace (0,26,123,37,0); rational conjugate pair (0,63,246,63,0)."
+        ],
+        "scope": "The order-seven invariant support mechanism serves nineteen H^(3,1) directions, while averaging kills this zeta^3 target. No existence theorem for the selected nontrivial character and no global impossibility theorem are asserted.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/klein-coupled-character/why.md"
+      },
+      "cyclic-triple-residual": {
+        "change": "Adds G18 structure, target-character Hodge dimensions and an age screen for the target-fixing subgroup.",
+        "reported_counts": [
+          "G18 is C6 x C3.",
+          "Complex eigenspace (0,41,119,26,0); rational conjugate pair (0,67,238,67,0).",
+          "Order-six target-fixing subgroup; all nontrivial fixed strata have age at least one."
+        ],
+        "scope": "These are exclusions/screens of specified quotient and transport mechanisms. The weighted-Fano density theorem does not cover the selected cyclic character; the entry does not assert exhaustive obstruction.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/cyclic-triple-residual/why.md"
+      },
+      "quadratic-cubic-pullback": {
+        "change": "Strengthens the explanation why the general six-quadric pullback lies outside both orientations of the ternary-net theorem and its direct pair-transfer model.",
+        "reported_counts": [
+          "Both bidegree contraction ranks are six, while either ternary-net orientation forces at most three under block-linear changes.",
+          "Degree-sixteen quotient cover gives a 120-sheeted unordered-pair cover.",
+          "The pair cover is birationally fibered in smooth genus-four (3,3) curves over a V4 quotient of a 45-nodal (3,3) CY3; smooth models have Kodaira dimension at least one."
+        ],
+        "scope": "The stated determinant-density source remains served, but it differs from this target. The calculations exclude these specific Fano/ternary-net transfers, not every correspondence or denominator.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/quadratic-cubic-pullback/why.md"
+      },
+      "eight-plane-configuration": {
+        "change": "Describes the natural residual surface fibration obtained from [Q0:Q1:Q2] and why it misses the p_g=0 criterion.",
+        "reported_counts": [
+          "General fibers are smooth (2,2,4) complete intersections in P5.",
+          "K=O(2), p_g=19 and quotient p_g=9."
+        ],
+        "scope": "The natural fibration is outside the p_g=0 surface criterion. Another family sweeping a divisor with the required Gysin image remains possible. The planes alone have (2,2) classes and do not serve the H^(3,1) target.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/eight-plane-configuration/why.md"
+      },
+      "reflection-coupled-residual": {
+        "change": "Adds the precise primitive tau-invariant Hodge decomposition by the surviving Y2 reflection.",
+        "reported_counts": [
+          "(208,866,208) splits into served Y2-odd (82,374,82) and target Y2-even (126,492,126)."
+        ],
+        "scope": "The volume/density twist means the known quotient primitive serves only the complementary character. The entry gives no existence conclusion for this selected class and no unrestricted nonexistence conclusion.",
+        "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/data/reflection-coupled-residual/why.md"
+      }
+    },
+    "script_review": {
+      "url": "https://github.com/hodge-computer/sextics/blob/d22d25556ed2de562945e3fb78d1b1cec489f367/scripts/verify-extension-dimensions.py",
+      "new_function": "weighted_fano_extensions",
+      "checked_by_source_read": "Contains pure-integer monomial-enumeration assertions for the displayed parameter versus h31 counts and equivariant refinements; invoked by main. No execution by this monitor.",
+      "scope_limit": "The new function does not check the displayed h22=382/912 values. Those values are preserved as book assertions, not labeled as outputs of this script.",
+      "upstream_report": {
+        "url": "https://github.com/hodge-computer/sextics/pull/279",
+        "merged": true,
+        "merge_commit": "d22d25556ed2de562945e3fb78d1b1cec489f367",
+        "claims": [
+          "verify-extension-dimensions.py passed",
+          "content build and record validation passed",
+          "library planner returned zero Lean jobs",
+          "rendered links/formulas checked"
+        ]
+      },
+      "report_vs_execution": "PR prose reports these checks. Existing CI receipt scope is left to the separate acceptance/policy review; this review does not promote prose to independent execution."
+    },
+    "evidence_files": [
+      {
+        "path": "work/discussion-monitor/book-source-capture-20261125.json",
+        "sha256": "fd9777241f0bde69664c1fc08cd09e345a5b447538041f17c623b5a5a07b9d32",
+        "bytes": 488560
+      },
+      {
+        "path": "work/discussion-monitor/repository-heads-20261125T003816Z.json",
+        "sha256": "b7d87c0ed34612831279b49f7ad18e78df9dcc02fe519ac9a864f19fb8fb29cc",
+        "bytes": 207871
+      },
+      {
+        "path": "work/discussion-monitor/book-pr279-capture-20261125.json",
+        "sha256": "593aa82ee0684206e6192e1d7dc5a2027c53c80fd989bd44a6c0ae2b6ce18027",
+        "bytes": 24114
+      }
+    ],
+    "own_contribution_tally_change": 0,
+    "upstream_mutations": []
+  },
+  "discussion_review": {
+    "schema_version": 1,
+    "reviewed_utc": "2026-11-25T00:40:36.392973+00:00",
+    "method": "Bounded offline review of two complete saved 14-thread captures. Compared IDs, authors, timestamps, exact UTF-8 body SHA-256, parent IDs/URLs and thread metadata. Read changed bodies and relevant prior discussion context. No network or archive access in this review.",
+    "snapshots": [
+      {
+        "directory": "20261124T120205Z",
+        "retrieved_utc": "2026-11-24T12:02:05.212939+00:00",
+        "manifest_sha256": "4076976bb649645d805d93fbdbf201d6be6fa6455f6baf1310057ae8bff44b27",
+        "coverage": [
+          {
+            "discussion": 44,
+            "comments": 16,
+            "replies": 7,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 55,
+            "comments": 2,
+            "replies": 5,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 56,
+            "comments": 4,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 111,
+            "comments": 1,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 112,
+            "comments": 2,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 113,
+            "comments": 1,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 114,
+            "comments": 1,
+            "replies": 2,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 115,
+            "comments": 2,
+            "replies": 1,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 116,
+            "comments": 3,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 117,
+            "comments": 4,
+            "replies": 2,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 118,
+            "comments": 2,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 119,
+            "comments": 0,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 120,
+            "comments": 7,
+            "replies": 3,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 127,
+            "comments": 9,
+            "replies": 4,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          }
+        ],
+        "raw_files": [
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-44.json",
+            "sha256": "635b6dfe3dbe91dc734665576051d23698ae88f96977cea9e4f82d75ad86756e",
+            "bytes": 153929
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-55.json",
+            "sha256": "6f2525a7d4df7e244c4e4541e0f0c9f09f2f9e559c0209af89958720053ca4f0",
+            "bytes": 25222
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-56.json",
+            "sha256": "7f7804d783505cee5812cc2a08824860de7a451bab659c6ef1dfbb6d0cef3305",
+            "bytes": 15919
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-111.json",
+            "sha256": "390568241b859c972ab33022eb9fcea9f4face9725ce10ed6ac89ffcf3fae9c6",
+            "bytes": 7160
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-112.json",
+            "sha256": "a549047daff5a891e308a7ab136d863d986a8de043d173683e3b3fdd6ecf583e",
+            "bytes": 6768
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-113.json",
+            "sha256": "55d1ccf20a687da1b67cbf7ed9e7357dcf7bd67ae151d53c4900d63d3acc9632",
+            "bytes": 6805
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-114.json",
+            "sha256": "fce6ea59893ff4b371a7a891388e559d943d7960b8fab582df5c0b09ada4bc80",
+            "bytes": 14208
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-115.json",
+            "sha256": "fb97c4719885cb8bae474f07e17a1270842bc64ed962b6be490bc9b519dc811a",
+            "bytes": 18005
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-116.json",
+            "sha256": "4404b8809a6fcb5b955edb1abd17d8b2795b4e0cd04bf2ea58017a33ab66d049",
+            "bytes": 12469
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-117.json",
+            "sha256": "71a9e2cc68202f344d097238a7c24a9ff6b0f2dcfeffbda7cc9a4a00f0615b19",
+            "bytes": 33225
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-118.json",
+            "sha256": "386083fd0f05cd0b14a96791fb58f73dd921880c46e043eca04b8a8c23e7a59a",
+            "bytes": 10762
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-119.json",
+            "sha256": "83271b0a1ce0ccdc353e36367981f755f8bdfaf50c5b5d51b91ef4af38fa9630",
+            "bytes": 1509
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-120.json",
+            "sha256": "62cd38dbbbc0f3bdc45c016d0c426387ca872a557a06823d58c3ea37c9056866",
+            "bytes": 62911
+          },
+          {
+            "path": "work/discussion-monitor/20261124T120205Z/discussion-127.json",
+            "sha256": "031e7d7fe3eef4ccf1ec73b05e38b24b7da17459609bfb4993879eacf4cfca21",
+            "bytes": 68010
+          }
+        ]
+      },
+      {
+        "directory": "20261125T003817Z",
+        "retrieved_utc": "2026-11-25T00:38:17.992310+00:00",
+        "manifest_sha256": "4e229d71837617640069a132b2d02c2caee2bf7e09f9910b29e23f5a37016820",
+        "coverage": [
+          {
+            "discussion": 44,
+            "comments": 16,
+            "replies": 7,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 55,
+            "comments": 2,
+            "replies": 5,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 56,
+            "comments": 4,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 111,
+            "comments": 1,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 112,
+            "comments": 2,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 113,
+            "comments": 1,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 114,
+            "comments": 1,
+            "replies": 2,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 115,
+            "comments": 2,
+            "replies": 1,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 116,
+            "comments": 4,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 117,
+            "comments": 4,
+            "replies": 2,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 118,
+            "comments": 2,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 119,
+            "comments": 0,
+            "replies": 0,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 120,
+            "comments": 7,
+            "replies": 4,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          },
+          {
+            "discussion": 127,
+            "comments": 10,
+            "replies": 4,
+            "all_pages_fetched": true,
+            "comment_pages": 1,
+            "extra_reply_pages": 0
+          }
+        ],
+        "raw_files": [
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-44.json",
+            "sha256": "dae9967559acdb4a2053aa690bfb1fa40a4198f8e2318bff9a02b9466f18fa5a",
+            "bytes": 153929
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-55.json",
+            "sha256": "dc355a96cd479002944938f764e330171bd698c79a2b953e5cf109cee106ebac",
+            "bytes": 25222
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-56.json",
+            "sha256": "4b991f9d99e78275e02f0ab2de1457935e4d9953bdbdc2201723462cbad3c22a",
+            "bytes": 15919
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-111.json",
+            "sha256": "ff1ed172d0b44d185f66dd3428ed9d08ee12b45be41a2ada0d818e236611a3cb",
+            "bytes": 7160
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-112.json",
+            "sha256": "bfc2f5b3a360417a43e1b87ea3455c429b7d39e12793767fcfed57eac1db729b",
+            "bytes": 6768
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-113.json",
+            "sha256": "d1124662aa0fd71f30a3042fe27a2a54817fac6ba2aa57f26a5521c4a3deaa33",
+            "bytes": 6805
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-114.json",
+            "sha256": "8063fbe3ef9c722a63a13729439bb5e0c5e86d62a997289aee2dc3a0bdcf4ed7",
+            "bytes": 14208
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-115.json",
+            "sha256": "6ea238cf0b99a1a88fd7c36777553ec00376ddac517d7027f01741375c1f9e1c",
+            "bytes": 18005
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-116.json",
+            "sha256": "7af1cbbe174fff848cd5900acd8a40824cec9a941933688b6b8ac4c39ff1b4ab",
+            "bytes": 14788
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-117.json",
+            "sha256": "408362eebd12aeda55b99c6469fbb3003f2f97cb58fcb59f5908a7bd2cae92fd",
+            "bytes": 33225
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-118.json",
+            "sha256": "61ff0e76d21df381c078f264faf63d3ba42bcce33729155958f18fecbfa640d7",
+            "bytes": 10762
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-119.json",
+            "sha256": "bbca981f20a17e0bffdcebef77d97120b61141e31b0fbd4953030cccaa0c21b6",
+            "bytes": 1509
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-120.json",
+            "sha256": "24770ca4b0ded2a5b1b5d62c88a31202d9ee0908ca373fae8388c5965c47543b",
+            "bytes": 71686
+          },
+          {
+            "path": "work/discussion-monitor/20261125T003817Z/discussion-127.json",
+            "sha256": "dff24568f7f46d59e46bb1262468e0a3581716f8a2cfd55eaa62cc0ba98a5dad",
+            "bytes": 72460
+          }
+        ]
+      }
+    ],
+    "before_records": 78,
+    "after_records": 81,
+    "unchanged_existing_records": 77,
+    "unchanged_existing_record_ids": [
+      "DC_kwDOVLOOJc4BIaBW",
+      "DC_kwDOVLOOJc4BIaCZ",
+      "DC_kwDOVLOOJc4BIaSM",
+      "DC_kwDOVLOOJc4BIagt",
+      "DC_kwDOVLOOJc4BIawa",
+      "DC_kwDOVLOOJc4BIa5b",
+      "DC_kwDOVLOOJc4BIals",
+      "DC_kwDOVLOOJc4BIa2Z",
+      "DC_kwDOVLOOJc4BIa8G",
+      "DC_kwDOVLOOJc4BIbNP",
+      "DC_kwDOVLOOJc4BIbVG",
+      "DC_kwDOVLOOJc4BIbXU",
+      "DC_kwDOVLOOJc4BIbdS",
+      "DC_kwDOVLOOJc4BIbp3",
+      "DC_kwDOVLOOJc4BIbxq",
+      "DC_kwDOVLOOJc4BIb4u",
+      "DC_kwDOVLOOJc4BIcDA",
+      "DC_kwDOVLOOJc4BIgq0",
+      "DC_kwDOVLOOJc4BIhul",
+      "DC_kwDOVLOOJc4BIfbN",
+      "DC_kwDOVLOOJc4BIpjF",
+      "DC_kwDOVLOOJc4BIp9D",
+      "DC_kwDOVLOOJc4BIqFI",
+      "DC_kwDOVLOOJc4BIfLz",
+      "DC_kwDOVLOOJc4BIfNv",
+      "DC_kwDOVLOOJc4BIxeY",
+      "DC_kwDOVLOOJc4BIxqv",
+      "DC_kwDOVLOOJc4BIx0m",
+      "DC_kwDOVLOOJc4BIyDS",
+      "DC_kwDOVLOOJc4BIycn",
+      "DC_kwDOVLOOJc4BIfP3",
+      "DC_kwDOVLOOJc4BI3Rv",
+      "DC_kwDOVLOOJc4BI3Rw",
+      "DC_kwDOVLOOJc4BI3R1",
+      "DC_kwDOVLOOJc4BItFi",
+      "DC_kwDOVLOOJc4BIfTt",
+      "DC_kwDOVLOOJc4BIpjI",
+      "DC_kwDOVLOOJc4BIl9O",
+      "DC_kwDOVLOOJc4BIqYC",
+      "DC_kwDOVLOOJc4BIqjy",
+      "DC_kwDOVLOOJc4BIrJO",
+      "DC_kwDOVLOOJc4BIp5k",
+      "DC_kwDOVLOOJc4BIr7M",
+      "DC_kwDOVLOOJc4BJzBT",
+      "DC_kwDOVLOOJc4BJMgE",
+      "DC_kwDOVLOOJc4BJzBM",
+      "DC_kwDOVLOOJc4BJ2kt",
+      "DC_kwDOVLOOJc4BJzBe",
+      "DC_kwDOVLOOJc4BKUqo",
+      "DC_kwDOVLOOJc4BK8s8",
+      "DC_kwDOVLOOJc4BLfam",
+      "DC_kwDOVLOOJc4BKU90",
+      "DC_kwDOVLOOJc4BKXaf",
+      "DC_kwDOVLOOJc4BI58o",
+      "DC_kwDOVLOOJc4BJzBY",
+      "DC_kwDOVLOOJc4BJDcS",
+      "DC_kwDOVLOOJc4BJzBL",
+      "DC_kwDOVLOOJc4BKMQx",
+      "DC_kwDOVLOOJc4BKZwd",
+      "DC_kwDOVLOOJc4BK86B",
+      "DC_kwDOVLOOJc4BLfak",
+      "DC_kwDOVLOOJc4BLgAE",
+      "DC_kwDOVLOOJc4BLmRD",
+      "DC_kwDOVLOOJc4BLIHo",
+      "DC_kwDOVLOOJc4BIqxx",
+      "DC_kwDOVLOOJc4BIrOk",
+      "DC_kwDOVLOOJc4BIrd3",
+      "DC_kwDOVLOOJc4BIsx8",
+      "DC_kwDOVLOOJc4BIx3J",
+      "DC_kwDOVLOOJc4BIyQ8",
+      "DC_kwDOVLOOJc4BI5PZ",
+      "DC_kwDOVLOOJc4BI51C",
+      "DC_kwDOVLOOJc4BI6dm",
+      "DC_kwDOVLOOJc4BI-aB",
+      "DC_kwDOVLOOJc4BI_aX",
+      "DC_kwDOVLOOJc4BJHdj",
+      "DC_kwDOVLOOJc4BJzBQ"
+    ],
+    "changes": [
+      {
+        "change": "edited",
+        "before": {
+          "discussion": 120,
+          "kind": "comment",
+          "id": "DC_kwDOVLOOJc4BLqoY",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+          "createdAt": "2026-11-23T16:07:33Z",
+          "updatedAt": "2026-11-23T17:47:05Z",
+          "author": {
+            "login": "Robertboy18",
+            "name": "Robert Joseph"
+          },
+          "parent_id": null,
+          "parent_url": null,
+          "body_sha256": "dc06e936da14338a0bde87b96b54fbd4c3a1df6035763a79f9ac6131f83f01e1"
+        },
+        "after": {
+          "discussion": 120,
+          "kind": "comment",
+          "id": "DC_kwDOVLOOJc4BLqoY",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+          "createdAt": "2026-11-23T16:07:33Z",
+          "updatedAt": "2026-11-24T22:10:03Z",
+          "author": {
+            "login": "Robertboy18",
+            "name": "Robert Joseph"
+          },
+          "parent_id": null,
+          "parent_url": null,
+          "body_sha256": "9fdd090bd32285430d9ad327ebdd197840513b6241eb64885fc3227052faf54c"
+        }
+      },
+      {
+        "change": "added",
+        "before": null,
+        "after": {
+          "discussion": 127,
+          "kind": "comment",
+          "id": "DC_kwDOVLOOJc4BLy3L",
+          "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19869131",
+          "createdAt": "2026-11-24T20:46:26Z",
+          "updatedAt": "2026-11-24T20:46:26Z",
+          "author": {
+            "login": "benediamond",
+            "name": "Benjamin Diamond"
+          },
+          "parent_id": null,
+          "parent_url": null,
+          "body_sha256": "2a6d6bacb1cf3a62e26f094720a76ed60cf8a554e3100efede0d453efbeeb0c0"
+        }
+      },
+      {
+        "change": "added",
+        "before": null,
+        "after": {
+          "discussion": 116,
+          "kind": "comment",
+          "id": "DC_kwDOVLOOJc4BLy3R",
+          "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19869137",
+          "createdAt": "2026-11-24T20:46:31Z",
+          "updatedAt": "2026-11-24T20:46:31Z",
+          "author": {
+            "login": "benediamond",
+            "name": "Benjamin Diamond"
+          },
+          "parent_id": null,
+          "parent_url": null,
+          "body_sha256": "fe388e6b00ca3078d39649e87afaa655287cdce52678949aa667e0a924715501"
+        }
+      },
+      {
+        "change": "added",
+        "before": null,
+        "after": {
+          "discussion": 120,
+          "kind": "reply",
+          "id": "DC_kwDOVLOOJc4BLznP",
+          "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19872207",
+          "createdAt": "2026-11-24T23:19:52Z",
+          "updatedAt": "2026-11-24T23:52:22Z",
+          "author": {
+            "login": "DiamondJM",
+            "name": "Josh Diamond"
+          },
+          "parent_id": "DC_kwDOVLOOJc4BLqoY",
+          "parent_url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+          "body_sha256": "9cd6ba4b45f3f3b95393e3d544ca19cab3bd1b1520d4f380c223c12a48fd5c3c"
+        }
+      }
+    ],
+    "thread_metadata_changes": [
+      {
+        "discussion": 116,
+        "field": "updatedAt",
+        "before": "2026-11-02T20:40:56Z",
+        "after": "2026-11-24T20:46:32Z"
+      },
+      {
+        "discussion": 120,
+        "field": "updatedAt",
+        "before": "2026-11-23T16:29:59Z",
+        "after": "2026-11-24T23:52:24Z"
+      },
+      {
+        "discussion": 127,
+        "field": "updatedAt",
+        "before": "2026-11-02T07:45:53Z",
+        "after": "2026-11-24T20:46:26Z"
+      }
+    ],
+    "removed_records": [],
+    "summaries": {
+      "116": {
+        "author": "benediamond",
+        "url": "https://github.com/hodge-computer/sextics/discussions/116#discussioncomment-19869137",
+        "status": "Author labels Hodge calculations exact; this monitor does not verify them. Explicitly no existence proof, certificate or Lean solve; klein-coupled-character remains mathematically open.",
+        "hodge_data_reported": {
+          "group": "G14",
+          "complex_target_character": "zeta_7^3",
+          "complex_hodge_numbers": [
+            0,
+            26,
+            123,
+            37,
+            0
+          ],
+          "authors_minimal_rational_conjugate_pair_label": [
+            0,
+            63,
+            246,
+            63,
+            0
+          ]
+        },
+        "scans_reported": [
+          "No eligible generalized §3D.8 split-section families with nonnegative surplus across stated norm/reflection constructions.",
+          "No eligible moving weighted-Fano extensions with stated section/deck-breaking/surplus conditions.",
+          "All 1469 candidate 4D projections in the specified toric quotient scan yielded no named low-genus, p_g, h^{3,0} or CY3 fibration; minimum interior-point count 3."
+        ],
+        "scope_limit": "Negative results concern the enumerated construction classes. Do not convert the post title unbounded into an unrestricted impossibility theorem.",
+        "prior_context": "Adds to benediamond cubic-line correspondence exclusion19360045, fqlx source reductions and kejace degree-six bound.",
+        "assistance": "Prepared with AI assistance on behalf of benediamond."
+      },
+      "127": {
+        "author": "benediamond",
+        "url": "https://github.com/hodge-computer/sextics/discussions/127#discussioncomment-19869131",
+        "status": "Author calls Hodge data exact; not recomputed here. Explicitly no existence proof, certificate or Lean solve; one-reflection-skew remains mathematically open.",
+        "hodge_data_reported": {
+          "group": "G24",
+          "target_character": "(1,1,zeta_6)",
+          "complex_hodge_numbers": [
+            0,
+            44,
+            77,
+            3,
+            0
+          ],
+          "authors_minimal_rational_conjugate_pair_label": [
+            0,
+            47,
+            154,
+            47,
+            0
+          ]
+        },
+        "obstructions_reported": [
+          "Surviving paired-sign pencil has CY3 holomorphic-form character matching target.",
+          "Fermatcover target lies in double-minus sector with 3-dimensional H^{3,0}, so desired vanishing fails.",
+          "Specified generalized §3D.8 scans across 32 subgroups have no nonnegative-surplus hit; asymmetric raw surplus +3 meets stated Jacobian annihilator wall.",
+          "Eligible weighted-Fano extensions yield no hit.",
+          "All 1462 specified toric projections yield no named lower-genus, p_g or h^{3,0} fibration; the sole CY3 pencil recovers the paired-sign pencil already obstructed."
+        ],
+        "scope_limit": "Reported obstructions apply to stated constructions; multidirectional compact problem remains open.",
+        "attribution": "Complements DiamondJM symmetry notes, fqlx twisted-companion reductions, rbajaj5 and kejace degree bounds.",
+        "prior_credit_handling": "rbajaj5 degree-bound acknowledgment is previously recorded credit, not new contribution or solve authorship; tally unchanged.",
+        "prior_notebook_context": "notes/one-reflection-skew-feedback-audit.md already distinguishes acknowledgment of bounded exclusions from solve authorship/proof premises.",
+        "assistance": "Prepared with AI assistance on behalf of benediamond."
+      },
+      "120_robert_edit": {
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+        "scope": "Four hyphen-to-en-dash typography changes in named theorems only; mathematical text and qualification unchanged.",
+        "current_archive_links": [],
+        "availability": "Named degree-six archive remains unlinked in captured comment.",
+        "continued_status": "44/36 bounds still expressly unreviewed, no Lean, conditional absence-of-substructure premise unproved in the parent post."
+      },
+      "120_diamondjm_reply": {
+        "author": "Josh Diamond (DiamondJM)",
+        "url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19872207",
+        "parent_url": "https://github.com/hodge-computer/sextics/discussions/120#discussioncomment-19835416",
+        "status": "Explicitly uncertified p-adic numerics checked against point counts. No certificate, Lean proof or solve PR. No independent human review or Lean verification claimed.",
+        "prime_list": [
+          19,
+          31,
+          37,
+          43,
+          61,
+          67,
+          73,
+          79,
+          103,
+          109,
+          127,
+          139
+        ],
+        "setting": "Sigma-odd core H^3 rank 96, rank 48 over Q(omega), split into two dual rank 48 p-adic deck pieces at primes 1 mod 6. Reported piece Hodge pairs (32,16)/(16,32).",
+        "results_claimed": [
+          "Ordinarity and factor-degree patterns at 12 primes; first-piece slopes 1 (16 times) and 2 (32 times).",
+          "Trace comparisons with own point counts and kmehltretter82 prior eigen-traces.",
+          "Conditional Hodge-type/factor-degree argument excluding proper nonzero deck-stable sub-Hodge structures of geometric origin.",
+          "At 19,37,67, numerical mod p^2 tests asserted to preserve factor degrees under powers of Frobenius, extending proposed argument to number fields."
+        ],
+        "what_is_missing": [
+          "Full exact characteristic polynomial was not recovered.",
+          "Numerical factorization and power-of-Frobenius checks are not certified.",
+          "DiamondJM explicitly has not checked Robert44/36 bounds.",
+          "Degree-six exclusion depends on those bounds and certification of numerical argument; no target solve."
+        ],
+        "scope_limit": "Phrase conditional on these numerics and geometric-origin restriction must be retained; do not present simplicity or degree-six nonexistence as established.",
+        "archive_links": [
+          "https://github.com/user-attachments/files/35382462/four-plus-two-frobenius.zip"
+        ],
+        "archive_fetched": false,
+        "method_attribution": "Costa, Harvey and Kedlaya controlled reduction; Edgar Costa software ToricControlledReduction commit 74cda9e; patch described as LGPL 2.1.",
+        "prior_attribution": [
+          "Robertboy18 question and proposed degree-six-to-simplicity reduction",
+          "kmehltretter82 and benediamond core reduction",
+          "repository Chapters 2 and 3B"
+        ],
+        "assistance": "Claude Code assistance on behalf of DiamondJM.",
+        "edit_capture_status": "Reply was updated 23:52:22Z before its first capture; no prior body is available for an observed edit diff."
+      }
+    },
+    "verification_scope": {
+      "executed": [
+        "Complete saved-snapshot parsing and pagination-count validation.",
+        "Record, body-hash and parent and thread metadata comparison.",
+        "Read source claims, qualifications, attribution and previous-context records.",
+        "Confirmed Robert edit equals exactly four typography substitutions."
+      ],
+      "not_executed": [
+        "No mathematics, modular ranks, toric enumeration, Frobenius computation or verification.",
+        "No archive or linked source download.",
+        "No Lean/kernel/protected verification.",
+        "No upstream mutation or notebook publication."
+      ],
+      "interpretation": "Exact labels and tests in posts are author-reported checks. Our executed checks establish source identities and observed differences only."
+    },
+    "contribution_tally": {
+      "discussion_contributions": 30,
+      "closed_maintenance_prs": 1,
+      "accepted_authored_solves": 0,
+      "change": 0
+    }
+  },
+  "captures": [
+    {
+      "path": "work/discussion-monitor/discussion-review-20261125.json",
+      "sha256": "432913c63c04fa8059456485af372866aef3b8b482946f4c431eed24c56976a4"
+    },
+    {
+      "path": "work/discussion-monitor/inventory-ci-20261125.json",
+      "sha256": "f49018e004154729344ce384b67577c171be12e24d093aeb49c7e8ebdb4703b8"
+    },
+    {
+      "path": "work/discussion-monitor/book-review-20261125.json",
+      "sha256": "884b7d1eb5cf1146788479a57651ae566c498f3ac5090e52094b769604e44b42"
+    },
+    {
+      "path": "work/discussion-monitor/comparison-20261125T003817Z.json",
+      "sha256": "6705467443095638e1058a03cd04e3748b64f70ca1d8f0178d70e1a1c5681d7d"
+    },
+    {
+      "path": "work/discussion-monitor/run-20261125T003817Z.json",
+      "sha256": "b91fce29270b40938d4a321643f9d8766fe5c9e2f1f855c35773fdde8124837d"
+    }
+  ],
+  "evidence_storage": "Raw discussion bodies/diffs, source captures and existing CI logs remain in local work/discussion-monitor. Public receipt preserves identities/hashes, links, attribution and scope.",
+  "executed": "Bounded source collection and comparison, existing CI record review, notebook publication checks.",
+  "not_executed": "No mathematical/proof verification, kernel replay, numerical script, build, benchmark, archive download or upstream mutation.",
+  "contribution_tally": {
+    "discussion_contributions": 30,
+    "closed_maintenance_prs": 1,
+    "accepted_authored_solves": 0,
+    "change": 0
+  },
+  "publication": {
+    "checkpoint": 173,
+    "destination": "rbajaj5/hodge-lab",
+    "actual_commit_and_remote_readback": "Recorded separately after normal push."
+  }
+}
